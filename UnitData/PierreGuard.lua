@@ -1,0 +1,89 @@
+UndefineClass('PierreGuard')
+DefineClass.PierreGuard = {
+	__parents = { "UnitData" },
+	__generated_by_class = "ModItemUnitDataCompositeDef",
+
+
+	object_class = "UnitData",
+	Health = 82,
+	Agility = 81,
+	Dexterity = 61,
+	Strength = 70,
+	Wisdom = 62,
+	Leadership = 52,
+	Marksmanship = 70,
+	Mechanical = 0,
+	Medical = 0,
+	Portrait = "UI/EnemiesPortraits/LegionRaider",
+	BigPortrait = "UI/Enemies/LegionRaider",
+	Name = T(769842154933, --[[ModItemUnitDataCompositeDef PierreGuard Name]] "Телохранитель Пьера"),
+	Randomization = true,
+	elite = true,
+	eliteCategory = "Legion",
+	Affiliation = "Legion",
+	StartingLevel = 4,
+	neutral_retaliate = true,
+	AIKeywords = {
+		"RunAndGun",
+	},
+	role = "Stormer",
+	MaxAttacks = 2,
+	PickCustomArchetype = function (self, proto_context)
+		local enemy, dist = GetNearestEnemy(self)
+		local archetype = self.archetype
+		local weapon_class = "Firearm"
+		
+		if enemy and dist < 5*const.SlabSizeX then
+			weapon_class = "MeleeWeapon"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if not self:GetActiveWeapons(weapon_class) then
+			AIPlayCombatAction("ChangeWeapon", self, 0)
+		end
+		
+		return archetype
+	end,
+	CustomEquipGear = function (self, items)
+		self:TryEquip(items, "Handheld A", "Firearm")
+		self:TryEquip(items, "Handheld B", "MeleeWeapon")
+	end,
+	MaxHitPoints = 50,
+	StartingPerks = {
+		"AutoWeapons",
+		"Ambidextrous",
+		"Hotblood",
+	},
+	AppearancesList = {
+		PlaceObj('AppearanceWeight', {
+			'Preset', "Legion_Soldier",
+		}),
+		PlaceObj('AppearanceWeight', {
+			'Preset', "Legion_Soldier02",
+		}),
+		PlaceObj('AppearanceWeight', {
+			'Preset', "Legion_Soldier03",
+		}),
+		PlaceObj('AppearanceWeight', {
+			'Preset', "Legion_Soldier04",
+		}),
+		PlaceObj('AppearanceWeight', {
+			'Preset', "Legion_Soldier05",
+		}),
+		PlaceObj('AppearanceWeight', {
+			'Preset', "Legion_Soldier06",
+		}),
+	},
+	Equipment = {
+		"PierreGuard",
+	},
+	AdditionalGroups = {
+		PlaceObj('AdditionalGroup', {
+			'Name', "LegionMale_2",
+		}),
+	},
+	pollyvoice = "Joey",
+	gender = "Male",
+	VoiceResponseId = "LegionRaider",
+}
+
