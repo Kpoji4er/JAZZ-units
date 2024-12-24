@@ -30850,7 +30850,4 @@ return {
 			'Tier', "Personal",
 		}),
 		}),
-	PlaceObj('ModItemCode', {
-		'CodeFileName', "Code/Script.lua",
-	}),
 }

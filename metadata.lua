@@ -163,7 +163,6 @@ return PlaceObj('ModDef', {
 		"Code/StatGainRework.lua",
 		"CharacterEffect/TheGrim.lua",
 		"CharacterEffect/VengefulTemperament.lua",
-		"Code/Script.lua",
 	},
 	'default_options', {},
 	'has_data', true,
