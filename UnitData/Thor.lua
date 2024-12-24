@@ -1,0 +1,172 @@
+UndefineClass('Thor')
+DefineClass.Thor = {
+	__parents = { "UnitData" },
+	__generated_by_class = "ModItemUnitDataCompositeDef",
+
+
+	object_class = "UnitData",
+	Health = 97,
+	Agility = 83,
+	Dexterity = 84,
+	Strength = 89,
+	Wisdom = 93,
+	Leadership = 61,
+	Marksmanship = 74,
+	Mechanical = 35,
+	Explosives = 11,
+	Medical = 72,
+	Portrait = "UI/MercsPortraits/Thor",
+	BigPortrait = "UI/Mercs/Thor",
+	IsMercenary = true,
+	Name = T(928760236378, --[[ModItemUnitDataCompositeDef Thor Name]] "Тор Кауфман"),
+	Nick = T(520222526306, --[[ModItemUnitDataCompositeDef Thor Nick]] "Тор"),
+	AllCapsNick = T(981910118838, --[[ModItemUnitDataCompositeDef Thor AllCapsNick]] "ТОР"),
+	Bio = T(696466543743, --[[ModItemUnitDataCompositeDef Thor Bio]] "Тор только что вернулся с двухнедельного выездного семинара по очистке чакр в Нью-Мексико. Теперь, как он сам сообщает, его жизнь обогатилась двумя вещами: рецептом забойного смузи из авокадо и вновь пробудившейся жаждой приключений. Приверженность Кауфмана философии нью-эйдж делает из него одарённого целителя, а опыт медитации сообщает всем его движениям изящество и бесшумность. Немногочисленные недостатки Тора искупаются его буддийской безмятежностью, а в рукопашном бою равных ему почти нет. Тора отличает пытливый ум; нет такого умения, которое он не мог бы освоить прямо на ходу."),
+	Nationality = "Germany",
+	Title = T(222862793640, --[[ModItemUnitDataCompositeDef Thor Title]] "Позитивное мышление - смертоносная сила"),
+	Email = T(369085666162, --[[ModItemUnitDataCompositeDef Thor Email]] "sila_positiva@aim.com"),
+	snype_nick = T(702556725674, --[[ModItemUnitDataCompositeDef Thor snype_nick]] "sila_positiva"),
+	Refusals = {
+		PlaceObj('MercChatRefusal', {
+			'Lines', {
+				PlaceObj('ChatMessage', {
+					'Text', T(688252716496, --[[ModItemUnitDataCompositeDef Thor Text MercChatRefusal Lines ChatMessage voice:Thor]] "Я сожалею, но сейчас ретроградный Меркурий. Неудачное время для заключения новых договоров. Извини. Поговорим снова, когда звёзды сложатся лучше."),
+				}),
+			},
+			'Conditions', {},
+			'chanceToRoll', 20,
+		}),
+		PlaceObj('MercChatRefusal', {
+			'Lines', {
+				PlaceObj('ChatMessage', {
+					'Text', T(632860633590, --[[ModItemUnitDataCompositeDef Thor Text MercChatRefusal Lines ChatMessage voice:Thor]] "Должен отказаться. Я не доверяю тем, кто вызывает подозрение. Череда недавних смертей у тебя в команде меня смущает."),
+				}),
+			},
+			'Conditions', {
+				PlaceObj('MercChatConditionDeathToll', {
+					PresetValue = "1",
+				}),
+			},
+		}),
+	},
+	Mitigations = {
+		PlaceObj('MercChatMitigation', {
+			'Lines', {
+				PlaceObj('ChatMessage', {
+					'Text', T(928026734452, --[[ModItemUnitDataCompositeDef Thor Text MercChatMitigation Lines ChatMessage voice:Thor]] "Айс считает тебя достойным человеком и поэтому работает с тобой. Так что, если он доверяет тебе, то и я всегда доверяю Айсу."),
+				}),
+			},
+			'Conditions', {
+				PlaceObj('UnitHireStatus', {
+					Status = "Hired",
+					TargetUnit = "Ice",
+				}),
+			},
+			'chanceToRoll', 100,
+		}),
+		PlaceObj('MercChatMitigation', {
+			'Lines', {
+				PlaceObj('ChatMessage', {
+					'Text', T(894479586741, --[[ModItemUnitDataCompositeDef Thor Text MercChatMitigation Lines ChatMessage voice:Thor]] "Мне ещё многому нужно научиться у Омрына. Каждая минута, проведённая рядом с ним, делает меня лучше."),
+				}),
+			},
+			'Conditions', {
+				PlaceObj('CheckAND', {
+					Conditions = {
+						PlaceObj('UnitHireStatus', {
+							Status = "Hired",
+							TargetUnit = "Omryn",
+						}),
+						PlaceObj('MercIsLikedDisliked', {
+							Object = "Omryn",
+							TargetUnit = "Thor",
+						}),
+					},
+				}),
+			},
+			'chanceToRoll', 100,
+		}),
+	},
+	ExtraPartingWords = {
+		PlaceObj('MercChatBranch', {
+			'Lines', {
+				PlaceObj('ChatMessage', {
+					'Text', T(839770835330, --[[ModItemUnitDataCompositeDef Thor Text MercChatBranch Lines ChatMessage voice:Thor]] "Я с радостью поработаю на тебя. Кстати: такими напарниками, как Айс, можно только гордиться. Почему бы тебе не взять в команду и его тоже?"),
+				}),
+			},
+			'Conditions', {
+				PlaceObj('UnitHireStatus', {
+					TargetUnit = "Ice",
+				}),
+			},
+		}),
+	},
+	Offline = {
+		PlaceObj('ChatMessage', {
+			'Text', T(681550588538, --[[ModItemUnitDataCompositeDef Thor Text Offline ChatMessage voice:Thor]] "Вы можете оставить сообщение для Тора, Кассандры и Фенруса. Сейчас мы заняты или просто спим. Я отвечу вам, как только появится такая возможность. Спасибо!"),
+		}),
+	},
+	GreetingAndOffer = {
+		PlaceObj('ChatMessage', {
+			'Text', T(514082345416, --[[ModItemUnitDataCompositeDef Thor Text GreetingAndOffer ChatMessage voice:Thor]] "Привет, я - Тор Кауфман. Я всегда открыт к новым приключениям. Что ты можешь мне предложить?"),
+		}),
+	},
+	ConversationRestart = {
+		PlaceObj('ChatMessage', {
+			'Text', T(310390725970, --[[ModItemUnitDataCompositeDef Thor Text ConversationRestart ChatMessage voice:Thor]] "Рад снова слышать тебя. Я как раз очистил свою прямую кишку и готов обсуждать дела!"),
+		}),
+	},
+	IdleLine = {
+		PlaceObj('ChatMessage', {
+			'Text', T(331040399865, --[[ModItemUnitDataCompositeDef Thor Text IdleLine ChatMessage voice:Thor]] "Пока мы ждём - хочешь, я составлю твой гороскоп?"),
+		}),
+	},
+	PartingWords = {
+		PlaceObj('ChatMessage', {
+			'Text', T(126462930896, --[[ModItemUnitDataCompositeDef Thor Text PartingWords ChatMessage voice:Thor]] "Буду рад работать с тобой."),
+		}),
+	},
+	RehireIntro = {
+		PlaceObj('ChatMessage', {
+			'Text', T(815366988804, --[[ModItemUnitDataCompositeDef Thor Text RehireIntro ChatMessage voice:Thor]] "Скоро истекает срок моего контракта, не хочешь ли продлить его?"),
+		}),
+	},
+	RehireOutro = {
+		PlaceObj('ChatMessage', {
+			'Text', T(419099663092, --[[ModItemUnitDataCompositeDef Thor Text RehireOutro ChatMessage voice:Thor]] "Твоя аура излучает уверенность и положительную энергию! Я с удовольствием остаюсь."),
+		}),
+	},
+	MedicalDeposit = "none",
+	DurationDiscount = "long only",
+	StartingSalary = 1600,
+	SalaryLv1 = 570,
+	SalaryMaxLv = 4950,
+	LegacyNotes = '"This vegetarian New Age healer has an amazing grasp of medicine for a man who\'s never seen the inside of a university med school. He also has a decent grasp for killing quickly and quietly. Born on outskirts of Berlin, he now calls California home where he lives in the mountains with his newborn son and ex-wife, Cassandra."\n\nAdditional info:\n\nSlight German accent\nAn easy-going new age, professional killer with scientific terminology in his dialogue\nSwitches to German expressions when the situation is tense.\nHe switches between the direct rigidity of his upbringing and his new found inner-tranquillity.',
+	StartingLevel = 3,
+	MaxHitPoints = 96,
+	Likes = {
+		"Ice",
+	},
+	LearnToLike = {
+		"Omryn",
+	},
+	StartingPerks = {
+		"Stealthy",
+		"Spiritual",
+		"NaturalHealing",
+		"Savior",
+		"StressManagement",
+	},
+	AppearancesList = {
+		PlaceObj('AppearanceWeight', {
+			'Preset', "Thor",
+		}),
+	},
+	Equipment = {
+		"Thor",
+	},
+	Tier = "Veteran",
+	Specialization = "Doctor",
+	gender = "Male",
+}
+
