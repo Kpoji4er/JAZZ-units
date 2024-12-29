@@ -1,46 +1,33 @@
-UndefineClass('LegionRocketeer_Stronger')
-DefineClass.LegionRocketeer_Stronger = {
+UndefineClass('LegionRocketeer')
+DefineClass.LegionRocketeer = {
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
 
-	comment = "РПГшник",
 	object_class = "UnitData",
-	Health = 90,
+	Health = 70,
 	Agility = 83,
+	Dexterity = 8,
 	Strength = 88,
 	Wisdom = 14,
 	Leadership = 10,
-	Marksmanship = 75,
-	Mechanical = 40,
-	Explosives = 75,
-	Medical = 29,
+	Marksmanship = 12,
+	Mechanical = 0,
+	Explosives = 41,
+	Medical = 0,
 	Portrait = "UI/EnemiesPortraits/LegionArtillery",
 	BigPortrait = "UI/Enemies/LegionRaider",
-	Name = T(164455308660, --[[ModItemUnitDataCompositeDef LegionRocketeer_Stronger Name]] "Гранатомётчик"),
+	Name = T(100080397822, --[[ModItemUnitDataCompositeDef LegionRocketeer Name]] "Ракетчик\nРакетчик"),
 	Randomization = true,
 	Affiliation = "Legion",
-	StartingLevel = 5,
 	neutral_retaliate = true,
 	AIKeywords = {
 		"Ordnance",
-		"Control",
-		"Sniper",
 	},
-	archetype = "Artillery",
 	role = "Artillery",
 	CanManEmplacements = false,
-	PickCustomArchetype = function (self, proto_context)  end,
-	CustomEquipGear = function (self, items)
-		self:TryEquip(items, "Handheld A", "HeavyWeapon")
-		self:TryEquip(items, "Handheld B", "Firearm")
-	end,
+	MaxAttacks = 1,
 	MaxHitPoints = 50,
-	StartingPerks = {
-		"HeavyWeaponsTraining",
-		"Hardened",
-		"ShoulderToShoulder",
-	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
 			'Preset', "Legion_Artillery",
@@ -50,18 +37,6 @@ DefineClass.LegionRocketeer_Stronger = {
 		}),
 		PlaceObj('AppearanceWeight', {
 			'Preset', "Legion_Artillery03",
-		}),
-		PlaceObj('AppearanceWeight', {
-			'Preset', "LegionRoceteer_Stronger",
-			'Weight', 2,
-		}),
-		PlaceObj('AppearanceWeight', {
-			'Preset', "LegionRoceteer_Stronger_alt",
-			'Weight', 2,
-		}),
-		PlaceObj('AppearanceWeight', {
-			'Preset', "LegionRoceteer_Stronger_alt",
-			'Weight', 2,
 		}),
 	},
 	Equipment = {

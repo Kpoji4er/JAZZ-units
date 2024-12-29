@@ -47,9 +47,10 @@ DefineClass.Jazz_lynx = {
 		"AutoWeapons",
 		"NightOps",
 		"MrFixit",
-		"Jazz_Lynx_Perk",
+		"Jazz_Perk_Lynx",
 		"Pessimist",
 		"Deadeye",
+		"Killzone",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

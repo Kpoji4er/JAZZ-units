@@ -17,7 +17,7 @@ return {
 				'Wisdom', 46,
 				'Leadership', 10,
 				'Marksmanship', 70,
-				'Mechanical', 0,
+				'Mechanical', 80,
 				'Explosives', 100,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionArtillery",
@@ -100,7 +100,7 @@ return {
 				'Wisdom', 58,
 				'Leadership', 10,
 				'Marksmanship', 86,
-				'Mechanical', 0,
+				'Mechanical', 80,
 				'Explosives', 66,
 				'Medical', 30,
 				'Portrait', "UI/EnemiesPortraits/LegionRaider",
@@ -181,7 +181,7 @@ return {
 				'Wisdom', 37,
 				'Leadership', 65,
 				'Marksmanship', 90,
-				'Mechanical', 41,
+				'Mechanical', 80,
 				'Explosives', 94,
 				'Medical', 44,
 				'Portrait', "UI/EnemiesPortraits/LegionSoldier",
@@ -271,7 +271,7 @@ return {
 				'Wisdom', 40,
 				'Leadership', 25,
 				'Marksmanship', 73,
-				'Mechanical', 0,
+				'Mechanical', 80,
 				'Explosives', 10,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionSoldier",
@@ -362,7 +362,7 @@ return {
 				'Wisdom', 85,
 				'Leadership', 81,
 				'Marksmanship', 94,
-				'Mechanical', 11,
+				'Mechanical', 80,
 				'Explosives', 75,
 				'Medical', 43,
 				'Portrait', "UI/EnemiesPortraits/LegionOfficer",
@@ -436,7 +436,7 @@ return {
 				'Wisdom', 43,
 				'Leadership', 65,
 				'Marksmanship', 57,
-				'Mechanical', 0,
+				'Mechanical', 80,
 				'Explosives', 54,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionStormer",
@@ -523,7 +523,7 @@ return {
 				'Wisdom', 78,
 				'Leadership', 64,
 				'Marksmanship', 74,
-				'Mechanical', 12,
+				'Mechanical', 80,
 				'Explosives', 5,
 				'Medical', 93,
 				'Portrait', "UI/EnemiesPortraits/LegionMedic",
@@ -594,7 +594,7 @@ return {
 				'Wisdom', 73,
 				'Leadership', 55,
 				'Marksmanship', 90,
-				'Mechanical', 41,
+				'Mechanical', 80,
 				'Explosives', 28,
 				'Medical', 35,
 				'Portrait', "UI/EnemiesPortraits/LegionHeavy",
@@ -687,7 +687,7 @@ return {
 				'Wisdom', 64,
 				'Leadership', 81,
 				'Marksmanship', 72,
-				'Mechanical', 11,
+				'Mechanical', 80,
 				'Explosives', 68,
 				'Medical', 68,
 				'Portrait', "UI/EnemiesPortraits/LegionStormer",
@@ -763,7 +763,7 @@ return {
 				'Wisdom', 23,
 				'Leadership', 14,
 				'Marksmanship', 70,
-				'Mechanical', 0,
+				'Mechanical', 80,
 				'Explosives', 30,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionDemo",
@@ -846,7 +846,7 @@ return {
 				'Wisdom', 25,
 				'Leadership', 20,
 				'Marksmanship', 87,
-				'Mechanical', 65,
+				'Mechanical', 80,
 				'Explosives', 52,
 				'Medical', 59,
 				'Portrait', "UI/EnemiesPortraits/LegionRecon",
@@ -925,7 +925,7 @@ return {
 				'Wisdom', 22,
 				'Leadership', 9,
 				'Marksmanship', 81,
-				'Mechanical', 0,
+				'Mechanical', 80,
 				'Explosives', 72,
 				'Medical', 25,
 				'Portrait', "UI/EnemiesPortraits/LegionStormer",
@@ -1004,7 +1004,7 @@ return {
 				'Wisdom', 70,
 				'Leadership', 29,
 				'Marksmanship', 80,
-				'Mechanical', 0,
+				'Mechanical', 80,
 				'Explosives', 55,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionRecon",
@@ -1089,7 +1089,7 @@ return {
 				'Wisdom', 40,
 				'Leadership', 33,
 				'Marksmanship', 95,
-				'Mechanical', 0,
+				'Mechanical', 80,
 				'Explosives', 40,
 				'Medical', 21,
 				'Portrait', "UI/EnemiesPortraits/LegionSniper",
@@ -1123,6 +1123,7 @@ return {
 					"DeathFromAbove",
 					"HitTheDeck",
 					"LightningReactionNPC",
+					"Stealthy",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -1167,7 +1168,7 @@ return {
 				'Wisdom', 80,
 				'Leadership', 75,
 				'Marksmanship', 95,
-				'Mechanical', 0,
+				'Mechanical', 80,
 				'Explosives', 65,
 				'Medical', 51,
 				'Portrait', "UI/EnemiesPortraits/LegionSniper",
@@ -1249,7 +1250,7 @@ return {
 				'Wisdom', 80,
 				'Leadership', 33,
 				'Marksmanship', 95,
-				'Mechanical', 30,
+				'Mechanical', 80,
 				'Explosives', 70,
 				'Medical', 50,
 				'Portrait', "UI/EnemiesPortraits/LegionSniper",
@@ -1328,7 +1329,7 @@ return {
 				'Wisdom', 80,
 				'Leadership', 10,
 				'Marksmanship', 72,
-				'Mechanical', 50,
+				'Mechanical', 80,
 				'Explosives', 100,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionArtillery",
@@ -1418,7 +1419,6 @@ return {
 				'Wisdom', 58,
 				'Leadership', 10,
 				'Marksmanship', 86,
-				'Mechanical', 0,
 				'Explosives', 66,
 				'Medical', 30,
 				'Portrait', "UI/EnemiesPortraits/LegionRaider",
@@ -1498,7 +1498,7 @@ return {
 				'Wisdom', 14,
 				'Leadership', 10,
 				'Marksmanship', 75,
-				'Mechanical', 33,
+				'Mechanical', 40,
 				'Explosives', 75,
 				'Medical', 29,
 				'Portrait', "UI/EnemiesPortraits/LegionArtillery",
@@ -1580,7 +1580,7 @@ return {
 				'Wisdom', 24,
 				'Leadership', 10,
 				'Marksmanship', 80,
-				'Mechanical', 0,
+				'Mechanical', 20,
 				'Explosives', 63,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionSoldier",
@@ -1672,7 +1672,7 @@ return {
 				'Wisdom', 40,
 				'Leadership', 25,
 				'Marksmanship', 73,
-				'Mechanical', 0,
+				'Mechanical', 20,
 				'Explosives', 85,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionSoldier",
@@ -1768,7 +1768,7 @@ return {
 				'Wisdom', 80,
 				'Leadership', 81,
 				'Marksmanship', 85,
-				'Mechanical', 48,
+				'Mechanical', 70,
 				'Explosives', 50,
 				'Medical', 71,
 				'Portrait', "UI/EnemiesPortraits/LegionOfficer",
@@ -1854,7 +1854,7 @@ return {
 				'Wisdom', 14,
 				'Leadership', 10,
 				'Marksmanship', 50,
-				'Mechanical', 0,
+				'Mechanical', 30,
 				'Explosives', 90,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionArtillery",
@@ -1936,7 +1936,7 @@ return {
 				'Wisdom', 85,
 				'Leadership', 50,
 				'Marksmanship', 74,
-				'Mechanical', 12,
+				'Mechanical', 30,
 				'Explosives', 5,
 				'Medical', 93,
 				'Portrait', "UI/EnemiesPortraits/LegionMedic",
@@ -2016,7 +2016,7 @@ return {
 				'Wisdom', 16,
 				'Leadership', 65,
 				'Marksmanship', 52,
-				'Mechanical', 0,
+				'Mechanical', 30,
 				'Explosives', 50,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionStormer",
@@ -2099,7 +2099,7 @@ return {
 				'Wisdom', 41,
 				'Leadership', 81,
 				'Marksmanship', 75,
-				'Mechanical', 11,
+				'Mechanical', 50,
 				'Explosives', 10,
 				'Medical', 68,
 				'Portrait', "UI/EnemiesPortraits/LegionStormer",
@@ -2233,7 +2233,7 @@ return {
 				'Wisdom', 25,
 				'Leadership', 55,
 				'Marksmanship', 86,
-				'Mechanical', 0,
+				'Mechanical', 50,
 				'Explosives', 28,
 				'Medical', 35,
 				'Portrait', "UI/EnemiesPortraits/LegionHeavy",
@@ -2317,7 +2317,7 @@ return {
 				'Wisdom', 17,
 				'Leadership', 14,
 				'Marksmanship', 66,
-				'Mechanical', 0,
+				'Mechanical', 20,
 				'Explosives', 85,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionDemo",
@@ -2400,7 +2400,7 @@ return {
 				'Wisdom', 14,
 				'Leadership', 14,
 				'Marksmanship', 63,
-				'Mechanical', 0,
+				'Mechanical', 40,
 				'Explosives', 93,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionDemo",
@@ -2480,7 +2480,7 @@ return {
 				'Wisdom', 22,
 				'Leadership', 20,
 				'Marksmanship', 75,
-				'Mechanical', 0,
+				'Mechanical', 20,
 				'Explosives', 42,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionRecon",
@@ -2643,7 +2643,7 @@ return {
 				'Strength', 75,
 				'Leadership', 29,
 				'Marksmanship', 74,
-				'Mechanical', 16,
+				'Mechanical', 20,
 				'Medical', 21,
 				'Portrait', "UI/EnemiesPortraits/LegionRecon",
 				'BigPortrait', "UI/Enemies/LegionRaider",
@@ -2721,7 +2721,7 @@ return {
 				'Wisdom', 35,
 				'Leadership', 33,
 				'Marksmanship', 90,
-				'Mechanical', 0,
+				'Mechanical', 30,
 				'Explosives', 0,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionSniper",
@@ -2804,7 +2804,7 @@ return {
 				'Wisdom', 90,
 				'Leadership', 47,
 				'Marksmanship', 83,
-				'Mechanical', 0,
+				'Mechanical', 50,
 				'Explosives', 90,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionSniper",
@@ -2901,6 +2901,7 @@ return {
 					"StressManagement",
 					"Untraceable",
 					"Hobbler",
+					"Stealthy",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -3137,7 +3138,7 @@ return {
 				'Wisdom', 70,
 				'Leadership', 81,
 				'Marksmanship', 75,
-				'Mechanical', 11,
+				'Mechanical', 15,
 				'Explosives', 48,
 				'Medical', 47,
 				'Portrait', "UI/EnemiesPortraits/LegionOfficer",
@@ -3373,7 +3374,7 @@ return {
 				'Wisdom', 23,
 				'Leadership', 20,
 				'Marksmanship', 70,
-				'Mechanical', 0,
+				'Mechanical', 30,
 				'Explosives', 0,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionHeavy",
@@ -4016,6 +4017,63 @@ return {
 				'gender', "Male",
 				'VoiceResponseId', "LegionRaider",
 			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Legion",
+				'Id', "LegionRocketeer",
+				'object_class', "UnitData",
+				'Health', 70,
+				'Agility', 83,
+				'Dexterity', 8,
+				'Strength', 88,
+				'Wisdom', 14,
+				'Leadership', 10,
+				'Marksmanship', 12,
+				'Mechanical', 0,
+				'Explosives', 41,
+				'Medical', 0,
+				'Portrait', "UI/EnemiesPortraits/LegionArtillery",
+				'BigPortrait', "UI/Enemies/LegionRaider",
+				'Name', T(100080397822, --[[ModItemUnitDataCompositeDef LegionRocketeer Name]] "Ракетчик\nРакетчик"),
+				'Randomization', true,
+				'Affiliation', "Legion",
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Ordnance",
+				},
+				'role', "Artillery",
+				'CanManEmplacements', false,
+				'MaxAttacks', 1,
+				'MaxHitPoints', 50,
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Artillery",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Artillery02",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Artillery03",
+					}),
+				},
+				'Equipment', {
+					"LegionRocketeer",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_2",
+					}),
+				},
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "LegionRaider",
+			}),
 			}),
 		}),
 	PlaceObj('ModItemFolder', {
@@ -4053,6 +4111,7 @@ return {
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"AutoWeapons",
+				"Stealthy",
 			},
 			'AppearancesList', {
 				PlaceObj('AppearanceWeight', {
@@ -4109,6 +4168,7 @@ return {
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"AutoWeapons",
+				"Stealthy",
 			},
 			'AppearancesList', {
 				PlaceObj('AppearanceWeight', {
@@ -4165,6 +4225,7 @@ return {
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"AutoWeapons",
+				"Stealthy",
 			},
 			'AppearancesList', {
 				PlaceObj('AppearanceWeight', {
@@ -4221,6 +4282,7 @@ return {
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"AutoWeapons",
+				"Stealthy",
 			},
 			'AppearancesList', {
 				PlaceObj('AppearanceWeight', {
@@ -4400,6 +4462,7 @@ return {
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"HitTheDeck",
+				"Stealthy",
 			},
 			'AppearancesList', {
 				PlaceObj('AppearanceWeight', {
@@ -5965,6 +6028,7 @@ return {
 			'StartingPerks', {
 				"Deadeye",
 				"Shatterhand",
+				"Stealthy",
 			},
 			'AppearancesList', {
 				PlaceObj('AppearanceWeight', {
@@ -6355,6 +6419,7 @@ return {
 				"RelentlessAdvance",
 				"SteadyBreathing",
 				"TrickShot",
+				"Stealthy",
 			},
 			'AppearancesList', {
 				PlaceObj('AppearanceWeight', {
@@ -6417,6 +6482,7 @@ return {
 				"NightOps",
 				"RelentlessAdvance",
 				"SteadyBreathing",
+				"Stealthy",
 			},
 			'AppearancesList', {
 				PlaceObj('AppearanceWeight', {
@@ -12895,7 +12961,7 @@ return {
 		}),
 		PlaceObj('ModItemAIArchetype', {
 			BaseAttackTargeting = set( "Arms", "BlindFire", "Groin", "InCover", "Legs", "Torso", "Trap" ),
-			BaseAttackWeight = 140,
+			BaseAttackWeight = 200,
 			BaseMovementWeight = 150,
 			Behaviors = {
 				PlaceObj('StandardAI', {
@@ -12910,8 +12976,7 @@ return {
 							'RequiredKeywords', {
 								"Gunner",
 							},
-							'RangeMin', 30,
-							'RangeMax', 80,
+							'RangeMin', 10,
 						}),
 					},
 					'SignatureActions', {
@@ -12929,47 +12994,25 @@ return {
 					'override_attack_id', "BurstFire",
 					'override_cost_id', "MGSetup",
 				}),
-				PlaceObj('ApproachInteractableAI', {
-					'BiasId', "Flanking",
+				PlaceObj('PositioningAI', {
 					'Weight', 200,
-					'OnActivationBiases', {
-						PlaceObj('AIBiasModification', {
-							'BiasId', "MGBurst",
-							'Effect', "priority",
-							'Value', 200,
-							'Period', 2,
-							'ApplyTo', "Team",
-						}),
-					},
-					'RequiredKeywords', {
-						"Control",
-					},
 					'turn_phase', "Late",
+					'OptLocWeight', 200,
 					'EndTurnPolicies', {
-						PlaceObj('AIPolicyTakeCover', {
-							'Weight', 150,
+						PlaceObj('AIPolicyLosToEnemy', nil),
+						PlaceObj('AIPolicyTakeCover', nil),
+						PlaceObj('AIPolicyWeaponRange', {
+							'Required', true,
+							'RangeMin', 10,
+							'RangeMax', 80,
 						}),
 					},
-					'TakeCoverChance', 50,
+					'TargetingPolicies', {
+						PlaceObj('AITargetingCancelShot', nil),
+					},
 				}),
 			},
 			OptLocPolicies = {
-				PlaceObj('AIPolicyWeaponRange', {
-					'RequiredKeywords', {
-						"Gunner",
-					},
-					'Weight', 700,
-					'RangeMin', 40,
-					'RangeMax', 80,
-				}),
-				PlaceObj('AIPolicyWeaponRange', {
-					'RequiredKeywords', {
-						"Gunner",
-					},
-					'Weight', 600,
-					'RangeMin', 60,
-					'RangeMax', 100,
-				}),
 				PlaceObj('AIPolicyLosToEnemy', {
 					'RequiredKeywords', {
 						"Gunner",
@@ -12990,6 +13033,10 @@ return {
 					},
 					'Aiming', "Remaining AP",
 					'AttackTargeting', set( "Arms", "BlindFire", "InCover", "Legs", "Torso" ),
+				}),
+				PlaceObj('AIActionMGSetup', {
+					'Weight', 500,
+					'Priority', true,
 				}),
 			},
 			TargetScoreRandomization = 10,
@@ -20135,9 +20182,10 @@ return {
 					"AutoWeapons",
 					"NightOps",
 					"MrFixit",
-					"Jazz_Lynx_Perk",
+					"Jazz_Perk_Lynx",
 					"Pessimist",
 					"Deadeye",
+					"Killzone",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -20317,9 +20365,13 @@ return {
 					"Reaper",
 				},
 				'StartingPerks', {
-					"Jazz_Buzz_Perk",
+					"Jazz_Perk_Buzz",
 					"HeavyWeaponsTraining",
 					"AutoWeapons",
+					"Psycho",
+					"StressManagement",
+					"ShockAndAwe",
+					"LastWarning",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -20331,6 +20383,187 @@ return {
 				},
 				'Tier', "Veteran",
 				'Specialization', "Marksmen",
+				'pollyvoice', "Amy",
+				'gender', "Female",
+				'VoiceResponseId', "Buns",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "MercenariesOld",
+				'Id', "Jazz_Spider",
+				'object_class', "UnitData",
+				'Health', 81,
+				'Agility', 76,
+				'Dexterity', 56,
+				'Strength', 68,
+				'Wisdom', 90,
+				'Leadership', 16,
+				'Marksmanship', 70,
+				'Mechanical', 0,
+				'Explosives', 0,
+				'Medical', 94,
+				'Portrait', "Mod/Dv3mFVN/Images/SpiderSmall.png",
+				'BigPortrait', "Mod/Dv3mFVN/Images/Spider.png",
+				'IsMercenary', true,
+				'Name', T(473405123801, --[[ModItemUnitDataCompositeDef Jazz_Spider Name]] "Доктор Донна «Паук» Хьюстон"),
+				'Nick', T(640915905655, --[[ModItemUnitDataCompositeDef Jazz_Spider Nick]] "Паук"),
+				'AllCapsNick', T(334919557586, --[[ModItemUnitDataCompositeDef Jazz_Spider AllCapsNick]] "ПАУК"),
+				'Bio', T(413054323111, --[[ModItemUnitDataCompositeDef Jazz_Spider Bio]] "A woman whose skills extend far beyond just firearms and medicine, Monica's resumé reads like she's applying for a lifetime achievement award. She recently produced a series of instructional videos called \"Be Better\" where she teaches the viewer the best ways to home school, perform CPR, shoot automatic weapons, maintain cardiovascular health and lift yourself out of depression through rigorous self-improvement. \n\nAlthough many wonder what she could possibly want from the mercenary life, most fellow A.I.M. members appreciate her expertise and thorough - if priggish - tutoring style."),
+				'Nationality', "USA",
+				'Title', T(212508535115, --[[ModItemUnitDataCompositeDef Jazz_Spider Title]] "Spider"),
+				'Email', T(909543167512, --[[ModItemUnitDataCompositeDef Jazz_Spider Email]] "Spider@aim.com"),
+				'snype_nick', T(942325356772, --[[ModItemUnitDataCompositeDef Jazz_Spider snype_nick]] "Spider"),
+				'Refusals', {
+					PlaceObj('MercChatRefusal', {
+						'Lines', {
+							PlaceObj('ChatMessage', {
+								'Text', T(821279777478, --[[ModItemUnitDataCompositeDef Jazz_Spider Text MercChatRefusal Lines ChatMessage voice:Jazz_Spider]] "You've got Fox on your team. Obviously, you're more interested in the sizzle than the steak. Call me when you're looking for something more than a pretty face."),
+							}),
+						},
+						'Conditions', {
+							PlaceObj('UnitHireStatus', {
+								Status = "Hired",
+								TargetUnit = "Fox",
+							}),
+						},
+					}),
+					PlaceObj('MercChatRefusal', {
+						'Lines', {
+							PlaceObj('ChatMessage', {
+								'Text', T(696989880464, --[[ModItemUnitDataCompositeDef Jazz_Spider Text MercChatRefusal Lines ChatMessage voice:Jazz_Spider]] "You have a man on your team called Reaper. He's a seriously disturbed individual. Some other time, perhaps."),
+							}),
+						},
+						'Conditions', {
+							PlaceObj('UnitHireStatus', {
+								Status = "Hired",
+								TargetUnit = "Reaper",
+							}),
+						},
+					}),
+				},
+				'Haggles', {
+					PlaceObj('MercChatHaggle', {
+						'Lines', {
+							PlaceObj('ChatMessage', {
+								'Text', T(225860032044, --[[ModItemUnitDataCompositeDef Jazz_Spider Text MercChatHaggle Lines ChatMessage voice:Jazz_Spider]] "I have not worked with you before. It is prudent to require some additional financial guarantees when that is the case."),
+							}),
+						},
+						'Conditions', {
+							PlaceObj('MercChatConditionRehire', {}),
+						},
+						'chanceToRoll', 20,
+					}),
+				},
+				'HaggleRehire', {
+					PlaceObj('MercChatHaggle', {
+						'Lines', {
+							PlaceObj('ChatMessage', {
+								'Text', T(541271599319, --[[ModItemUnitDataCompositeDef Jazz_Spider Text MercChatHaggle Lines ChatMessage voice:Jazz_Spider]] "You hired that creep Reaper. There is something really, really wrong with him. If you want to keep me on, I will require extra compensation for the risks involved when working with such an individual."),
+							}),
+						},
+						'Conditions', {
+							PlaceObj('UnitHireStatus', {
+								Status = "Hired",
+								TargetUnit = "Reaper",
+							}),
+						},
+					}),
+					PlaceObj('MercChatHaggle', {
+						'Lines', {
+							PlaceObj('ChatMessage', {
+								'Text', T(461566149527, --[[ModItemUnitDataCompositeDef Jazz_Spider Text MercChatHaggle Lines ChatMessage voice:Jazz_Spider]] "I don't know what possessed you to hire that useless swimsuit model, Fox. Her head is as empty as her breasts. I'm sure they're fake. Pretty sure. Anyway, I'll need more money if I am to tolerate her presence."),
+							}),
+						},
+						'Conditions', {
+							PlaceObj('UnitHireStatus', {
+								Status = "Hired",
+								TargetUnit = "Fox",
+							}),
+						},
+					}),
+				},
+				'Mitigations', {
+					PlaceObj('MercChatMitigation', {
+						'Lines', {
+							PlaceObj('ChatMessage', {
+								'Text', T(456946406060, --[[ModItemUnitDataCompositeDef Jazz_Spider Text MercChatMitigation Lines ChatMessage voice:Jazz_Spider]] "This is an offer I would normally refuse, but having Sidney on the team makes me feel like perhaps you know what you are doing. I'm in."),
+							}),
+						},
+						'Conditions', {
+							PlaceObj('UnitHireStatus', {
+								Status = "Hired",
+								TargetUnit = "Sidney",
+							}),
+						},
+						'chanceToRoll', 100,
+					}),
+				},
+				'Offline', {
+					PlaceObj('ChatMessage', {
+						'Text', T(924338138228, --[[ModItemUnitDataCompositeDef Jazz_Spider Text Offline ChatMessage voice:Jazz_Spider]] "This is Monica Sondergaard. You have naturally been drawn to my superior skills and neat and efficient manner. I am currently unavailable. Please contact me at another time. "),
+					}),
+				},
+				'GreetingAndOffer', {
+					PlaceObj('ChatMessage', {
+						'Text', T(960164746944, --[[ModItemUnitDataCompositeDef Jazz_Spider Text GreetingAndOffer ChatMessage voice:Jazz_Spider]] "Hello. This is Monica Sondergaard. It is a pleasure to meet you. I assume this is about a job and you were drawn to my superior skills and overall neatness."),
+					}),
+				},
+				'ConversationRestart', {
+					PlaceObj('ChatMessage', {
+						'Text', T(409216589716, --[[ModItemUnitDataCompositeDef Jazz_Spider Text ConversationRestart ChatMessage voice:Jazz_Spider]] "It is rude to end conversations abruptly but I will forgive you. Let us proceed."),
+					}),
+				},
+				'IdleLine', {
+					PlaceObj('ChatMessage', {
+						'Text', T(926700611223, --[[ModItemUnitDataCompositeDef Jazz_Spider Text IdleLine ChatMessage voice:Jazz_Spider]] "I do not tolerate time-wasting but I will make an exception. Benevolence is one of my many virtues. Now, let us continue."),
+					}),
+				},
+				'PartingWords', {
+					PlaceObj('ChatMessage', {
+						'Text', T(761489747842, --[[ModItemUnitDataCompositeDef Jazz_Spider Text PartingWords ChatMessage voice:Jazz_Spider]] "Very well. I look forward to working with you."),
+					}),
+				},
+				'RehireIntro', {
+					PlaceObj('ChatMessage', {
+						'Text', T(969064377190, --[[ModItemUnitDataCompositeDef Jazz_Spider Text RehireIntro ChatMessage voice:Jazz_Spider]] "Hello. My contract is expiring. The team will suffer without my superior skill set so I am willing to continue our arrangement."),
+					}),
+				},
+				'RehireOutro', {
+					PlaceObj('ChatMessage', {
+						'Text', T(332091324607, --[[ModItemUnitDataCompositeDef Jazz_Spider Text RehireOutro ChatMessage voice:Jazz_Spider]] "Good. I am pleased we could come to an agreement to continue our contract."),
+					}),
+				},
+				'MedicalDeposit', "large",
+				'StartingSalary', 800,
+				'SalaryIncrease', 200,
+				'SalaryLv1', 400,
+				'SalaryMaxLv', 4300,
+				'LegacyNotes', '"The prim and proper Monica Sondergaard may seem to be an unlikely candidate for the rough and tumble mercenary life, but she more than meets the minimum requirements. Before settling on A.I.M., Buns explored a number of careers: kindergarten teacher, geriatric nurse, Danish sharpshooter at the Atlanta Olympic games, and professional soldier."\n\nAdditional info:\n\nA prim and proper prude, her uptightedness goes hand-in-hand with her professionalism and skill.\nBelieves herself better than anyone else.\nHas a sense of superiority. She\'s a merc because she wants to, not because she has to.\nPuts her feelings before logic.\nTo a Danish person her dialect sounds German or Russian. (To a person with knowledge of the russian language and accent she definitely doesn\'t sound any russian at all. Ivan Dolvich has classic russian accent)',
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "Firearm")
+					self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 79,
+				'Likes', {
+					"Vicki",
+					"Raven",
+				},
+				'Dislikes', {
+					"Buns",
+				},
+				'StartingPerks', {
+					"Jazz_Perk_Spider",
+					"HeavyWeaponsTraining",
+					"AutoWeapons",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Spider",
+					}),
+				},
+				'Equipment', {
+					"LegionMedic_Stronger_Elite",
+				},
+				'Specialization', "Doctor",
 				'pollyvoice', "Amy",
 				'gender', "Female",
 				'VoiceResponseId', "Buns",
@@ -28111,6 +28344,79 @@ return {
 			}),
 			group = "Default",
 			id = "JAZZ_Spouke",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			Armor = "",
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "EquipmentDrMangel_Top",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(14, 26, 20, 255),
+				'EditableColor3', RGBA(14, 26, 20, 255),
+			}),
+			Chest = "",
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			CustomPart1Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(48, 58, 37, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			CustomPart1Offset = point(0, 25, 0),
+			CustomPart1Spot = "Groin",
+			CustomParts = 1,
+			Hair = "NPCFemale_Hair_03",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(42, 32, 21, 255),
+				'EditableColor2', RGBA(35, 27, 18, 255),
+				'EditableColor3', RGBA(32, 24, 16, 255),
+			}),
+			HairParam1 = 44,
+			HairParam2 = 13,
+			Hat = "",
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(220, 124, 0, 255),
+				'EditableColor2', RGBA(220, 140, 28, 255),
+				'EditableColor3', RGBA(154, 116, 73, 255),
+			}),
+			Head = "Head_F_Ca_NPC_07",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hip = "Faction_Acc_Soldier",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(14, 26, 20, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Pants = "EquipmentFemale_Pants_01",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(14, 26, 20, 255),
+				'EditableColor2', RGBA(17, 19, 18, 255),
+				'EditableColor3', RGBA(21, 26, 23, 255),
+			}),
+			Shirt = "",
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(40, 64, 102, 255),
+				'EditableColor2', RGBA(40, 64, 102, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			group = "Test",
+			id = "Spider",
 		}),
 		PlaceObj('ModItemAppearancePreset', {
 			ArmorColor = PlaceObj('ColorizationPropSet', {

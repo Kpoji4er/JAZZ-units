@@ -13,7 +13,6 @@ DefineClass.LegionSharpShooter_Stronger = {
 	Wisdom = 58,
 	Leadership = 10,
 	Marksmanship = 86,
-	Mechanical = 0,
 	Explosives = 66,
 	Medical = 30,
 	Portrait = "UI/EnemiesPortraits/LegionRaider",

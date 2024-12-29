@@ -32,6 +32,7 @@ DefineClass.ArmyCommando_Scout = {
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"AutoWeapons",
+		"Stealthy",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

@@ -51,6 +51,7 @@ DefineClass.AdonisSniper_Elite = {
 	StartingPerks = {
 		"Deadeye",
 		"Shatterhand",
+		"Stealthy",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

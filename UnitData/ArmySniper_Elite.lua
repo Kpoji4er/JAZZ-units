@@ -33,6 +33,7 @@ DefineClass.ArmySniper_Elite = {
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"HitTheDeck",
+		"Stealthy",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
