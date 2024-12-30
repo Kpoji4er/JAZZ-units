@@ -30,6 +30,7 @@ DefineClass.LegionGunner_Stronger = {
 	},
 	archetype = "HeavyGunner",
 	role = "Heavy",
+	RepositionArchetype = "Soldier_Sniper",
 	MaxAttacks = 4,
 	PickCustomArchetype = function (self, proto_context)  end,
 	CustomEquipGear = function (self, items)

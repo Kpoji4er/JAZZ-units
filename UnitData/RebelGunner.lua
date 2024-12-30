@@ -1,29 +1,26 @@
-UndefineClass('ArmyHeavy')
-DefineClass.ArmyHeavy = {
+UndefineClass('RebelGunner')
+DefineClass.RebelGunner = {
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
 
 	object_class = "UnitData",
-	Health = 95,
-	Agility = 88,
-	Dexterity = 75,
-	Strength = 90,
+	Health = 62,
+	Agility = 47,
+	Dexterity = 39,
+	Strength = 59,
 	Wisdom = 30,
-	Leadership = 47,
-	Marksmanship = 91,
+	Leadership = 20,
+	Marksmanship = 55,
 	Mechanical = 0,
 	Explosives = 0,
 	Medical = 0,
-	Portrait = "UI/EnemiesPortraits/ArmyHeavy",
-	Name = T(521261906810, --[[ModItemUnitDataCompositeDef ArmyHeavy Name]] "Пулемётчик"),
+	Portrait = "UI/EnemiesPortraits/RebelHeavy",
+	Name = T(528932222326, --[[ModItemUnitDataCompositeDef RebelGunner Name]] "Ambusher"),
 	Randomization = true,
-	Affiliation = "Army",
-	StartingLevel = 5,
+	Affiliation = "Rebel",
+	StartingLevel = 2,
 	neutral_retaliate = true,
-	AIKeywords = {
-		"Soldier",
-	},
 	archetype = "HeavyGunner",
 	role = "Heavy",
 	RepositionArchetype = "HeavyGunner",
@@ -32,31 +29,38 @@ DefineClass.ArmyHeavy = {
 	MaxHitPoints = 85,
 	StartingPerks = {
 		"AutoWeapons",
-		"Ironclad",
+		"HeavyWeaponsTraining",
+		"MinFreeMove",
+		"NightOps",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
-			'Preset', "GrandChien_Heavy",
+			'Preset', "Heavy_Rebels",
+		}),
+		PlaceObj('AppearanceWeight', {
+			'Preset', "Heavy_Rebels_02",
+		}),
+		PlaceObj('AppearanceWeight', {
+			'Preset', "Heavy_Rebels_03",
 		}),
 	},
 	Equipment = {
-		"ArmyHeavy",
+		"RebelGunner",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {
 			'Weight', 50,
 			'Exclusive', true,
-			'Name', "ArmyMale_1",
+			'Name', "MaquisMale_1",
 		}),
 		PlaceObj('AdditionalGroup', {
 			'Weight', 50,
 			'Exclusive', true,
-			'Name', "ArmyMale_2",
+			'Name', "MaquisMale_2",
 		}),
 	},
-	Tier = "Veteran",
 	pollyvoice = "Joey",
 	gender = "Male",
-	VoiceResponseId = "ArmySoldier",
+	VoiceResponseId = "RebelSoldier",
 }
 

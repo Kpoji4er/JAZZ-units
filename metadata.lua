@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 1,
-	'version', 1202,
+	'version', 1277,
 	'lua_revision', 233360,
 	'saved_with_revision', 350233,
 	'code', {
@@ -103,6 +103,14 @@ return PlaceObj('ModDef', {
 		"UnitData/AdonisDemolitions.lua",
 		"UnitData/AdonisSoldier.lua",
 		"UnitData/AdonisSoldier_Elite.lua",
+		"UnitData/Chimurenga.lua",
+		"UnitData/RebelFlanker.lua",
+		"UnitData/RebelGrenadier.lua",
+		"UnitData/RebelGunner.lua",
+		"UnitData/RebelSentry.lua",
+		"UnitData/RebelSniper.lua",
+		"UnitData/RebelSniper_female.lua",
+		"UnitData/RebelSoldier.lua",
 		"UnitData/MilitiaVeteran.lua",
 		"UnitData/MilitiaRookie.lua",
 		"UnitData/MilitiaElite.lua",
@@ -168,8 +176,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1735510790,
-	'code_hash', 1990068389550168916,
+	'saved', 1735536699,
+	'code_hash', 6432741441175972029,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
@@ -634,6 +642,46 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
 			'Id', "AdonisSoldier_Elite",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Chimurenga",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "RebelFlanker",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "RebelGrenadier",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "RebelGunner",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "RebelSentry",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "RebelSniper",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "RebelSniper_female",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "RebelSoldier",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
