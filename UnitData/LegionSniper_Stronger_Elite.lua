@@ -12,7 +12,7 @@ DefineClass.LegionSniper_Stronger_Elite = {
 	Wisdom = 40,
 	Leadership = 33,
 	Marksmanship = 95,
-	Mechanical = 0,
+	Mechanical = 80,
 	Explosives = 40,
 	Medical = 21,
 	Portrait = "UI/EnemiesPortraits/LegionSniper",
@@ -46,6 +46,7 @@ DefineClass.LegionSniper_Stronger_Elite = {
 		"DeathFromAbove",
 		"HitTheDeck",
 		"LightningReactionNPC",
+		"Stealthy",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

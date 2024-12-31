@@ -1,24 +1,25 @@
-UndefineClass('AdonisFlanker')
-DefineClass.AdonisFlanker = {
+UndefineClass('RebelFlanker')
+DefineClass.RebelFlanker = {
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
 
 	object_class = "UnitData",
-	Health = 82,
-	Agility = 81,
-	Dexterity = 83,
-	Strength = 83,
-	Wisdom = 73,
-	Leadership = 55,
-	Marksmanship = 81,
+	Health = 53,
+	Agility = 80,
+	Dexterity = 74,
+	Strength = 48,
+	Wisdom = 55,
+	Leadership = 29,
+	Marksmanship = 66,
 	Mechanical = 0,
 	Explosives = 0,
 	Medical = 0,
-	Portrait = "UI/EnemiesPortraits/AdonisRecon",
-	Name = T(221376860813, --[[ModItemUnitDataCompositeDef AdonisFlanker Name]] "Коммандос"),
+	Portrait = "UI/EnemiesPortraits/RebelRecon",
+	BigPortrait = "UI/Enemies/LegionRaider",
+	Name = T(956101917669, --[[ModItemUnitDataCompositeDef RebelFlanker Name]] "Envoy"),
 	Randomization = true,
-	Affiliation = "Adonis",
+	Affiliation = "Rebel",
 	StartingLevel = 3,
 	neutral_retaliate = true,
 	AIKeywords = {
@@ -27,41 +28,41 @@ DefineClass.AdonisFlanker = {
 	},
 	archetype = "Skirmisher",
 	role = "Recon",
-	AlwaysUseOpeningAttack = true,
 	MaxAttacks = 2,
-	unitPowerModifier = 75,
 	MaxHitPoints = 50,
 	StartingPerks = {
-		"AutoWeapons",
-		"Hotblood",
+		"MinFreeMove",
 		"NightOps",
-		"RelentlessAdvance",
-		"SteadyBreathing",
-		"Stealthy",
+		"Hotblood",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
-			'Preset', "Adonis_Recon",
+			'Preset', "Recon_Rebels",
+		}),
+		PlaceObj('AppearanceWeight', {
+			'Preset', "Recon_Rebels_02",
+		}),
+		PlaceObj('AppearanceWeight', {
+			'Preset', "Recon_Rebels_03",
 		}),
 	},
 	Equipment = {
-		"AdonisFlanker",
+		"RebelFlanker",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {
 			'Weight', 50,
 			'Exclusive', true,
-			'Name', "AdonisMale_1",
+			'Name', "MaquisMale_1",
 		}),
 		PlaceObj('AdditionalGroup', {
 			'Weight', 50,
 			'Exclusive', true,
-			'Name', "AdonisMale_2",
+			'Name', "MaquisMale_2",
 		}),
 	},
-	Tier = "Veteran",
 	pollyvoice = "Joey",
 	gender = "Male",
-	VoiceResponseId = "AdonisAssault",
+	VoiceResponseId = "RebelSoldier",
 }
 

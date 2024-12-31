@@ -39,6 +39,7 @@ DefineClass.LegionRanger_Stronger = {
 		"StressManagement",
 		"Untraceable",
 		"Hobbler",
+		"Stealthy",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

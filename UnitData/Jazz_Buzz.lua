@@ -166,9 +166,13 @@ DefineClass.Jazz_Buzz = {
 		"Reaper",
 	},
 	StartingPerks = {
-		"Jazz_Buzz_Perk",
+		"Jazz_Perk_Buzz",
 		"HeavyWeaponsTraining",
 		"AutoWeapons",
+		"Psycho",
+		"StressManagement",
+		"ShockAndAwe",
+		"LastWarning",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

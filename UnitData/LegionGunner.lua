@@ -13,7 +13,7 @@ DefineClass.LegionGunner = {
 	Wisdom = 23,
 	Leadership = 20,
 	Marksmanship = 70,
-	Mechanical = 0,
+	Mechanical = 30,
 	Explosives = 0,
 	Medical = 0,
 	Portrait = "UI/EnemiesPortraits/LegionHeavy",
@@ -30,6 +30,7 @@ DefineClass.LegionGunner = {
 	},
 	archetype = "HeavyGunner",
 	role = "Heavy",
+	RepositionArchetype = "Soldier_Sniper",
 	OpeningAttackType = "Overwatch",
 	PickCustomArchetype = function (self, proto_context)  end,
 	CustomEquipGear = function (self, items)

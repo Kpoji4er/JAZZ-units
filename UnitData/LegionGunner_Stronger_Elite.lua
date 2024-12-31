@@ -12,7 +12,7 @@ DefineClass.LegionGunner_Stronger_Elite = {
 	Wisdom = 73,
 	Leadership = 55,
 	Marksmanship = 90,
-	Mechanical = 41,
+	Mechanical = 80,
 	Explosives = 28,
 	Medical = 35,
 	Portrait = "UI/EnemiesPortraits/LegionHeavy",
@@ -30,6 +30,7 @@ DefineClass.LegionGunner_Stronger_Elite = {
 	},
 	archetype = "HeavyGunner",
 	role = "Heavy",
+	RepositionArchetype = "Soldier_Sniper",
 	MaxAttacks = 4,
 	PickCustomArchetype = function (self, proto_context)  end,
 	CustomEquipGear = function (self, items)

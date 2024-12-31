@@ -39,6 +39,7 @@ DefineClass.AdonisFlanker_Elite = {
 		"RelentlessAdvance",
 		"SteadyBreathing",
 		"TrickShot",
+		"Stealthy",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

@@ -1,62 +1,67 @@
-UndefineClass('ArmySniper_Elite')
-DefineClass.ArmySniper_Elite = {
+UndefineClass('RebelSniper')
+DefineClass.RebelSniper = {
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
 
 	object_class = "UnitData",
-	Health = 84,
-	Agility = 94,
-	Dexterity = 94,
+	Health = 49,
+	Agility = 44,
+	Dexterity = 76,
 	Strength = 41,
 	Wisdom = 48,
 	Leadership = 33,
-	Marksmanship = 95,
+	Marksmanship = 88,
 	Mechanical = 0,
 	Explosives = 0,
 	Medical = 0,
-	Portrait = "UI/EnemiesPortraits/ArmySniper",
-	BigPortrait = "UI/Enemies/LegionRaider",
-	Name = T(993675719844, --[[ModItemUnitDataCompositeDef ArmySniper_Elite Name]] "Элитный снайпер"),
+	Portrait = "UI/EnemiesPortraits/RebelSniper",
+	Name = T(574175120582, --[[ModItemUnitDataCompositeDef RebelSniper Name]] "Deadeye"),
 	Randomization = true,
-	Affiliation = "Army",
-	StartingLevel = 7,
+	Affiliation = "Rebel",
+	StartingLevel = 3,
 	neutral_retaliate = true,
 	AIKeywords = {
 		"Sniper",
 	},
-	archetype = "Soldier_Sniper",
 	role = "Marksman",
 	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "PinDown",
 	MaxAttacks = 1,
 	MaxHitPoints = 50,
 	StartingPerks = {
-		"HitTheDeck",
-		"Stealthy",
+		"Deadeye",
+		"MinFreeMove",
+		"NightOps",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
-			'Preset', "GrandChien_Marksman",
+			'Preset', "Marksman_Rebels",
+		}),
+		PlaceObj('AppearanceWeight', {
+			'Preset', "Marksman_Rebels_02",
+		}),
+		PlaceObj('AppearanceWeight', {
+			'Preset', "Marksman_Rebels_03",
 		}),
 	},
 	Equipment = {
-		"ArmySniper",
+		"RebelSniper",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {
 			'Weight', 50,
 			'Exclusive', true,
-			'Name', "ArmyMale_1",
+			'Name', "MaquisMale_1",
 		}),
 		PlaceObj('AdditionalGroup', {
 			'Weight', 50,
 			'Exclusive', true,
-			'Name', "ArmyMale_2",
+			'Name', "MaquisMale_2",
 		}),
 	},
 	pollyvoice = "Joey",
 	gender = "Male",
-	VoiceResponseId = "ArmySoldier",
+	VoiceResponseId = "RebelSoldier",
 }
 

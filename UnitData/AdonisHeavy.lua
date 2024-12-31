@@ -23,6 +23,7 @@ DefineClass.AdonisHeavy = {
 	neutral_retaliate = true,
 	archetype = "HeavyGunner",
 	role = "Heavy",
+	RepositionArchetype = "HeavyGunner",
 	MaxAttacks = 2,
 	unitPowerModifier = 75,
 	MaxHitPoints = 50,
