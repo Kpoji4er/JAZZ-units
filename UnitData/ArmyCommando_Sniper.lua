@@ -28,7 +28,7 @@ DefineClass.ArmyCommando_Sniper = {
 	archetype = "Skirmisher",
 	role = "Recon",
 	OpeningAttackType = "Overwatch",
-	MaxAttacks = 2,
+	MaxAttacks = 10,
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"AutoWeapons",

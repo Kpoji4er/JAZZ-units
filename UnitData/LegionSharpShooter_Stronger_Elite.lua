@@ -30,6 +30,7 @@ DefineClass.LegionSharpShooter_Stronger_Elite = {
 		"Ordnance",
 	},
 	role = "Soldier",
+	MaxAttacks = 10,
 	CustomEquipGear = function (self, items)  end,
 	MaxHitPoints = 50,
 	StartingPerks = {

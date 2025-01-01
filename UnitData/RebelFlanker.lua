@@ -28,7 +28,7 @@ DefineClass.RebelFlanker = {
 	},
 	archetype = "Skirmisher",
 	role = "Recon",
-	MaxAttacks = 2,
+	MaxAttacks = 10,
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"MinFreeMove",

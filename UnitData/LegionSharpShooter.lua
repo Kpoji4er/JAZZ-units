@@ -31,7 +31,7 @@ DefineClass.LegionSharpShooter = {
 	role = "Recon",
 	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "Overwatch",
-	MaxAttacks = 1,
+	MaxAttacks = 10,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 		self:TryEquip(items, "Handheld B", "Pistol")

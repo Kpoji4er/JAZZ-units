@@ -32,6 +32,7 @@ DefineClass.LegionRaidLeader = {
 	},
 	role = "Commander",
 	OpeningAttackType = "Overwatch",
+	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)  end,
 	CustomEquipGear = function (self, items)  end,
 	MaxHitPoints = 80,

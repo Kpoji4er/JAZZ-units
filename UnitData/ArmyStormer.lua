@@ -28,7 +28,7 @@ DefineClass.ArmyStormer = {
 	},
 	role = "Stormer",
 	CanManEmplacements = false,
-	MaxAttacks = 2,
+	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)  end,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "AssaultRifle"--[[, "_762NATO_Tracer","_556_Basic","_556_HP","_762NATO_Basic","_545_EPR"]])

@@ -24,7 +24,7 @@ DefineClass.MilitiaRookie = {
 		"Flank",
 	},
 	role = "Militia",
-	MaxAttacks = 1,
+	MaxAttacks = 10,
 	RewardExperience = 0,
 	StartingPerks = {
 		"AutoWeapons",

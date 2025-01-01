@@ -30,6 +30,7 @@ DefineClass.LegionRaider = {
 	role = "Soldier",
 	OpeningAttackType = "Overwatch",
 	PinnedDownChance = 40,
+	MaxAttacks = 10,
 	CustomEquipGear = function (self, items)  end,
 	MaxHitPoints = 50,
 	StartingPerks = {

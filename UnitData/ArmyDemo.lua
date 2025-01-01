@@ -28,7 +28,7 @@ DefineClass.ArmyDemo = {
 	},
 	archetype = "Skirmisher",
 	role = "Demolitions",
-	MaxAttacks = 1,
+	MaxAttacks = 10,
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"Throwing",

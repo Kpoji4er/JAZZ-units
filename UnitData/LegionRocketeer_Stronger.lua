@@ -30,6 +30,7 @@ DefineClass.LegionRocketeer_Stronger = {
 	archetype = "Artillery",
 	role = "Artillery",
 	CanManEmplacements = false,
+	MaxAttacks = 1,
 	PickCustomArchetype = function (self, proto_context)  end,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "HeavyWeapon")

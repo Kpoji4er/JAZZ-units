@@ -24,7 +24,7 @@ DefineClass.AdonisDedicatedGunner_Elite = {
 	StartingLevel = 6,
 	neutral_retaliate = true,
 	role = "Heavy",
-	MaxAttacks = 4,
+	MaxAttacks = 10,
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"AutoWeapons",

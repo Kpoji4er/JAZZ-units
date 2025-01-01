@@ -29,6 +29,7 @@ DefineClass.LegionRaider_Stronger = {
 		"Flank",
 	},
 	role = "Soldier",
+	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)  end,
 	CustomEquipGear = function (self, items)  end,
 	MaxHitPoints = 50,

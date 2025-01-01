@@ -25,7 +25,7 @@ DefineClass.AdonisDemolitions = {
 		"Explosives",
 	},
 	role = "Artillery",
-	MaxAttacks = 2,
+	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)
 		local enemy, dist = GetNearestEnemy(self)
 		local archetype = self.archetype

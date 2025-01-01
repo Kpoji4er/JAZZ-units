@@ -26,7 +26,7 @@ DefineClass.AdonisMedic = {
 	},
 	archetype = "Medic",
 	role = "Medic",
-	MaxAttacks = 1,
+	MaxAttacks = 10,
 	unitPowerModifier = 65,
 	MaxHitPoints = 80,
 	StartingPerks = {

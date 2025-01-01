@@ -2,11 +2,11 @@ return PlaceObj('ModDef', {
 	'title', "JAZZ Units",
 	'description', "Мод для работы основного JAZZ модаВ",
 	'image', "Mod/Dv3mFVN/Images/JAZZLOGO.jpg",
-	'last_changes', "Обновленны наборы перков у части наемников бляже ко второй части\n\nПерк Лавы переделан.",
+	'last_changes', "Обновленны архетипы",
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 1,
-	'version', 1319,
+	'version', 1354,
 	'lua_revision', 233360,
 	'saved_with_revision', 350233,
 	'code', {
@@ -27,7 +27,6 @@ return PlaceObj('ModDef', {
 		"UnitData/LegionSergant_Stronger_Elite.lua",
 		"UnitData/LegionRanger_Stronger_Elite.lua",
 		"UnitData/LegionMortarman_Stronger_Elite.lua",
-		"UnitData/LegionSharpShooter_Stronger.lua",
 		"UnitData/LegionRocketeer_Stronger.lua",
 		"UnitData/LegionRaider_Stronger.lua",
 		"UnitData/LegionRaider_Demolution_Stronger.lua",
@@ -43,6 +42,7 @@ return PlaceObj('ModDef', {
 		"UnitData/LegionGoon_Stronger.lua",
 		"UnitData/LegionButcher_Stronger.lua",
 		"UnitData/LegionScout_Stronger.lua",
+		"UnitData/LegionSharpShooter_Stronger.lua",
 		"UnitData/LegionSniper_Stronger.lua",
 		"UnitData/LegionSergant_Stronger.lua",
 		"UnitData/LegionRanger_Stronger.lua",
@@ -176,8 +176,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1735625275,
-	'code_hash', -6708841519017031788,
+	'saved', 1735714439,
+	'code_hash', -1974574263686640906,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
@@ -266,11 +266,6 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
-			'Id', "LegionSharpShooter_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
 			'Id', "LegionRocketeer_Stronger",
 			'ClassDisplayName', "Unit",
 		}),
@@ -342,6 +337,11 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
 			'Id', "LegionScout_Stronger",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "LegionSharpShooter_Stronger",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
