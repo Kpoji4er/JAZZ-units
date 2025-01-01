@@ -27,7 +27,7 @@ DefineClass.RebelSniper = {
 	role = "Marksman",
 	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "PinDown",
-	MaxAttacks = 1,
+	MaxAttacks = 10,
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"Deadeye",

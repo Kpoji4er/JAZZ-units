@@ -31,6 +31,7 @@ DefineClass.LegionSergant_Stronger = {
 	},
 	role = "Marksman",
 	OpeningAttackType = "Overwatch",
+	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)  end,
 	CustomEquipGear = function (self, items)  end,
 	MaxHitPoints = 50,

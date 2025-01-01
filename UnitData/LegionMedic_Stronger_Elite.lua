@@ -30,6 +30,7 @@ DefineClass.LegionMedic_Stronger_Elite = {
 	role = "Medic",
 	CanManEmplacements = false,
 	RepositionArchetype = "HeavyGunner",
+	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)  end,
 	MaxHitPoints = 80,
 	StartingPerks = {

@@ -27,7 +27,7 @@ DefineClass.Chimurenga = {
 		"Control",
 	},
 	role = "Commander",
-	MaxAttacks = 2,
+	MaxAttacks = 10,
 	RewardExperience = 0,
 	DefeatBehavior = "Defeated",
 	RetreatBehavior = "None",

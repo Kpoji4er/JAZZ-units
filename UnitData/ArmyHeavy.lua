@@ -28,7 +28,7 @@ DefineClass.ArmyHeavy = {
 	role = "Heavy",
 	RepositionArchetype = "HeavyGunner",
 	OpeningAttackType = "Overwatch",
-	MaxAttacks = 2,
+	MaxAttacks = 10,
 	MaxHitPoints = 85,
 	StartingPerks = {
 		"AutoWeapons",

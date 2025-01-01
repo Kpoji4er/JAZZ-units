@@ -32,6 +32,7 @@ DefineClass.LegionGunner = {
 	role = "Heavy",
 	RepositionArchetype = "Soldier_Sniper",
 	OpeningAttackType = "Overwatch",
+	MaxAttacks = 1,
 	PickCustomArchetype = function (self, proto_context)  end,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")

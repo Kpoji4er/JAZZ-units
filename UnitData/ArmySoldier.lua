@@ -27,6 +27,7 @@ DefineClass.ArmySoldier = {
 		"Smoke",
 	},
 	role = "Soldier",
+	MaxAttacks = 10,
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"AutoWeapons",

@@ -27,7 +27,7 @@ DefineClass.ArmyMedic_Elite = {
 	},
 	archetype = "Medic",
 	role = "Medic",
-	MaxAttacks = 1,
+	MaxAttacks = 10,
 	MaxHitPoints = 80,
 	StartingPerks = {
 		"MinFreeMove",

@@ -30,7 +30,7 @@ DefineClass.LegionSniper = {
 	},
 	archetype = "Soldier_Sniper",
 	role = "Marksman",
-	MaxAttacks = 2,
+	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)  end,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")

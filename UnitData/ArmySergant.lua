@@ -26,7 +26,7 @@ DefineClass.ArmySergant = {
 		"Control",
 	},
 	role = "Soldier",
-	MaxAttacks = 2,
+	MaxAttacks = 10,
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"AutoWeapons",

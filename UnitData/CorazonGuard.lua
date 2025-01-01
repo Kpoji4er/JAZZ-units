@@ -20,6 +20,7 @@ DefineClass.CorazonGuard = {
 	Randomization = true,
 	Affiliation = "Adonis",
 	StartingLevel = 3,
+	MaxAttacks = 10,
 	MaxHitPoints = 80,
 	StartingPerks = {
 		"AutoWeapons",

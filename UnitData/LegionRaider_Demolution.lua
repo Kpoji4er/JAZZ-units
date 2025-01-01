@@ -31,6 +31,7 @@ DefineClass.LegionRaider_Demolution = {
 	role = "Soldier",
 	OpeningAttackType = "Overwatch",
 	PinnedDownChance = 40,
+	MaxAttacks = 10,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "AssaultRifle")
 		self:TryEquip(items, "Handheld A", "GrenadeLauncher")

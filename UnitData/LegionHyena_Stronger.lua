@@ -25,7 +25,7 @@ DefineClass.LegionHyena_Stronger = {
 	archetype = "Beast_Hyena",
 	role = "Beast",
 	CanManEmplacements = false,
-	MaxAttacks = 2,
+	MaxAttacks = 10,
 	MaxHitPoints = 60,
 	StartingPerks = {
 		"MartialArts",

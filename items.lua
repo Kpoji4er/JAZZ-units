@@ -118,6 +118,7 @@ return {
 					"Ordnance",
 				},
 				'role', "Soldier",
+				'MaxAttacks', 10,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
@@ -199,7 +200,7 @@ return {
 					"RunAndGun",
 				},
 				'role', "Soldier",
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -289,6 +290,7 @@ return {
 				'role', "Soldier",
 				'OpeningAttackType', "Overwatch",
 				'PinnedDownChance', 40,
+				'MaxAttacks', 10,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "AssaultRifle")
 					self:TryEquip(items, "Handheld A", "GrenadeLauncher")
@@ -383,7 +385,7 @@ return {
 				'role', "Commander",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 80,
@@ -459,7 +461,7 @@ return {
 				'archetype', "Brute",
 				'role', "Stormer",
 				'CanManEmplacements', false,
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 100,
@@ -541,6 +543,7 @@ return {
 				'role', "Medic",
 				'CanManEmplacements', false,
 				'RepositionArchetype', "HeavyGunner",
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'MaxHitPoints', 80,
 				'StartingPerks', {
@@ -613,7 +616,7 @@ return {
 				'archetype', "HeavyGunner",
 				'role', "Heavy",
 				'RepositionArchetype', "Soldier_Sniper",
-				'MaxAttacks', 4,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -708,7 +711,7 @@ return {
 				'role', "Commander",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 80,
@@ -786,7 +789,7 @@ return {
 				'archetype', "Grenadier",
 				'role', "Demolitions",
 				'CanManEmplacements', false,
-				'MaxAttacks', 5,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -868,7 +871,7 @@ return {
 				'archetype', "Skirmisher",
 				'role', "Recon",
 				'PinnedDownChance', 100,
-				'MaxAttacks', 8,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -947,7 +950,7 @@ return {
 				'archetype', "Brute",
 				'role', "Stormer",
 				'CanManEmplacements', false,
-				'MaxAttacks', 4,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 60,
@@ -1028,7 +1031,7 @@ return {
 				'archetype', "Skirmisher",
 				'role', "Recon",
 				'OpeningAttackType', "Overwatch",
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -1111,7 +1114,7 @@ return {
 				'role', "Marksman",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "PinDown",
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -1191,7 +1194,7 @@ return {
 				'role', "Marksman",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "PinDown",
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -1274,7 +1277,7 @@ return {
 				},
 				'role', "Marksman",
 				'AlwaysUseOpeningAttack', true,
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -1350,7 +1353,7 @@ return {
 				'archetype', "Artillery",
 				'role', "Artillery",
 				'CanManEmplacements', false,
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "HeavyWeapon")
@@ -1410,86 +1413,6 @@ return {
 		}, {
 			PlaceObj('ModItemUnitDataCompositeDef', {
 				'Group', "Legion",
-				'Id', "LegionSharpShooter_Stronger",
-				'comment', "Под шарпшутера элитника тоже есть инвентарь",
-				'object_class', "UnitData",
-				'Health', 80,
-				'Agility', 90,
-				'Dexterity', 73,
-				'Strength', 53,
-				'Wisdom', 58,
-				'Leadership', 10,
-				'Marksmanship', 86,
-				'Explosives', 66,
-				'Medical', 30,
-				'Portrait', "UI/EnemiesPortraits/LegionRaider",
-				'BigPortrait', "UI/Enemies/LegionRaider",
-				'Name', T(477554350185, --[[ModItemUnitDataCompositeDef LegionSharpShooter_Stronger Name]] "Опытный Стрелок"),
-				'Randomization', true,
-				'elite', true,
-				'eliteCategory', "Legion",
-				'Affiliation', "Legion",
-				'StartingLevel', 4,
-				'neutral_retaliate', true,
-				'AIKeywords', {
-					"Sniper",
-					"Control",
-					"Ordnance",
-				},
-				'role', "Soldier",
-				'CustomEquipGear', function (self, items)  end,
-				'MaxHitPoints', 50,
-				'StartingPerks', {
-					"Deadeye",
-					"Flanker",
-					"Untraceable",
-				},
-				'AppearancesList', {
-					PlaceObj('AppearanceWeight', {
-						'Preset', "Legion_Soldier",
-					}),
-					PlaceObj('AppearanceWeight', {
-						'Preset', "Legion_Soldier02",
-					}),
-					PlaceObj('AppearanceWeight', {
-						'Preset', "Legion_Soldier03",
-					}),
-					PlaceObj('AppearanceWeight', {
-						'Preset', "Legion_Soldier04",
-					}),
-					PlaceObj('AppearanceWeight', {
-						'Preset', "Legion_Soldier05",
-					}),
-					PlaceObj('AppearanceWeight', {
-						'Preset', "Legion_Soldier06",
-					}),
-					PlaceObj('AppearanceWeight', {
-						'Preset', "LegionSharpShooter_Stronger",
-						'Weight', 3,
-					}),
-					PlaceObj('AppearanceWeight', {
-						'Preset', "LegionSharpShooter_Stronger_alt",
-						'Weight', 3,
-					}),
-					PlaceObj('AppearanceWeight', {
-						'Preset', "LegionSharpShooter_Stronger_alt_2",
-						'Weight', 3,
-					}),
-				},
-				'Equipment', {
-					"LegionSharpShooter_Stronger",
-				},
-				'AdditionalGroups', {
-					PlaceObj('AdditionalGroup', {
-						'Name', "LegionMale_2",
-					}),
-				},
-				'pollyvoice', "Joey",
-				'gender', "Male",
-				'VoiceResponseId', "LegionRaider",
-			}),
-			PlaceObj('ModItemUnitDataCompositeDef', {
-				'Group', "Legion",
 				'Id', "LegionRocketeer_Stronger",
 				'comment', "РПГшник",
 				'object_class', "UnitData",
@@ -1517,6 +1440,7 @@ return {
 				'archetype', "Artillery",
 				'role', "Artillery",
 				'CanManEmplacements', false,
+				'MaxAttacks', 1,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "HeavyWeapon")
@@ -1598,6 +1522,7 @@ return {
 					"Flank",
 				},
 				'role', "Soldier",
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -1692,6 +1617,7 @@ return {
 				'RepositionArchetype', "HeavyGunner",
 				'OpeningAttackType', "Overwatch",
 				'PinnedDownChance', 40,
+				'MaxAttacks', 10,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "AssaultRifle")
 					self:TryEquip(items, "Handheld A", "GrenadeLauncher")
@@ -1790,7 +1716,7 @@ return {
 				'role', "Commander",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
-				'MaxAttacks', 4,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 80,
@@ -1872,7 +1798,7 @@ return {
 				'archetype', "Artillery",
 				'role', "Artillery",
 				'CanManEmplacements', false,
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "HeavyWeapon")
@@ -1955,7 +1881,7 @@ return {
 				'archetype', "Medic",
 				'role', "Medic",
 				'CanManEmplacements', false,
-				'MaxAttacks', 4,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 80,
@@ -2037,7 +1963,7 @@ return {
 				'role', "Stormer",
 				'CanManEmplacements', false,
 				'RepositionArchetype', "Berserk",
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 100,
@@ -2120,7 +2046,7 @@ return {
 				'RepositionArchetype', "Skirmisher",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 80,
@@ -2197,7 +2123,7 @@ return {
 				'archetype', "Beast_Hyena",
 				'role', "Beast",
 				'CanManEmplacements', false,
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'MaxHitPoints', 60,
 				'StartingPerks', {
 					"MartialArts",
@@ -2253,7 +2179,7 @@ return {
 				'archetype', "HeavyGunner",
 				'role', "Heavy",
 				'RepositionArchetype', "Soldier_Sniper",
-				'MaxAttacks', 4,
+				'MaxAttacks', 1,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -2338,7 +2264,7 @@ return {
 				'archetype', "Grenadier",
 				'role', "Demolitions",
 				'CanManEmplacements', false,
-				'MaxAttacks', 1,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -2420,7 +2346,7 @@ return {
 				'archetype', "Grenadier",
 				'role', "Demolitions",
 				'CanManEmplacements', false,
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -2501,7 +2427,7 @@ return {
 				'archetype', "Skirmisher",
 				'role', "Recon",
 				'PinnedDownChance', 100,
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -2584,7 +2510,7 @@ return {
 				'archetype', "Brute",
 				'role', "Stormer",
 				'CanManEmplacements', false,
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 60,
@@ -2663,7 +2589,7 @@ return {
 				'archetype', "Skirmisher",
 				'role', "Recon",
 				'OpeningAttackType', "Overwatch",
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -2715,6 +2641,87 @@ return {
 			}),
 			PlaceObj('ModItemUnitDataCompositeDef', {
 				'Group', "Legion",
+				'Id', "LegionSharpShooter_Stronger",
+				'comment', "Под шарпшутера элитника тоже есть инвентарь",
+				'object_class', "UnitData",
+				'Health', 80,
+				'Agility', 90,
+				'Dexterity', 73,
+				'Strength', 53,
+				'Wisdom', 58,
+				'Leadership', 10,
+				'Marksmanship', 86,
+				'Explosives', 66,
+				'Medical', 30,
+				'Portrait', "UI/EnemiesPortraits/LegionRaider",
+				'BigPortrait', "UI/Enemies/LegionRaider",
+				'Name', T(477554350185, --[[ModItemUnitDataCompositeDef LegionSharpShooter_Stronger Name]] "Опытный Стрелок"),
+				'Randomization', true,
+				'elite', true,
+				'eliteCategory', "Legion",
+				'Affiliation', "Legion",
+				'StartingLevel', 4,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Sniper",
+					"Control",
+					"Ordnance",
+				},
+				'role', "Soldier",
+				'MaxAttacks', 10,
+				'CustomEquipGear', function (self, items)  end,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"Deadeye",
+					"Flanker",
+					"Untraceable",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Soldier",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Soldier02",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Soldier03",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Soldier04",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Soldier05",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Soldier06",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionSharpShooter_Stronger",
+						'Weight', 3,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionSharpShooter_Stronger_alt",
+						'Weight', 3,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionSharpShooter_Stronger_alt_2",
+						'Weight', 3,
+					}),
+				},
+				'Equipment', {
+					"LegionSharpShooter_Stronger",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Name', "LegionMale_2",
+					}),
+				},
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "LegionRaider",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Legion",
 				'Id', "LegionSniper_Stronger",
 				'object_class', "UnitData",
 				'Agility', 86,
@@ -2741,6 +2748,7 @@ return {
 				'role', "Marksman",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
+				'MaxAttacks', 5,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -2825,6 +2833,7 @@ return {
 				},
 				'role', "Marksman",
 				'OpeningAttackType', "Overwatch",
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -2894,6 +2903,7 @@ return {
 				},
 				'role', "Soldier",
 				'OpeningAttackType', "Overwatch",
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -2980,6 +2990,7 @@ return {
 				'role', "Soldier",
 				'OpeningAttackType', "Overwatch",
 				'PinnedDownChance', 40,
+				'MaxAttacks', 10,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
@@ -3067,6 +3078,7 @@ return {
 				'role', "Soldier",
 				'OpeningAttackType', "Overwatch",
 				'PinnedDownChance', 40,
+				'MaxAttacks', 10,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "AssaultRifle")
 					self:TryEquip(items, "Handheld A", "GrenadeLauncher")
@@ -3159,6 +3171,7 @@ return {
 				},
 				'role', "Commander",
 				'OpeningAttackType', "Overwatch",
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 80,
@@ -3240,7 +3253,7 @@ return {
 				'archetype', "Medic",
 				'role', "Medic",
 				'CanManEmplacements', false,
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 80,
@@ -3314,6 +3327,7 @@ return {
 				'archetype', "Brute",
 				'role', "Stormer",
 				'CanManEmplacements', false,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 100,
@@ -3395,6 +3409,7 @@ return {
 				'role', "Heavy",
 				'RepositionArchetype', "Soldier_Sniper",
 				'OpeningAttackType', "Overwatch",
+				'MaxAttacks', 1,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -3475,7 +3490,7 @@ return {
 				'archetype', "Grenadier",
 				'role', "Demolitions",
 				'CanManEmplacements', false,
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -3555,7 +3570,7 @@ return {
 				'archetype', "Grenadier",
 				'role', "Demolitions",
 				'CanManEmplacements', false,
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -3635,7 +3650,7 @@ return {
 				},
 				'archetype', "Skirmisher",
 				'role', "Recon",
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -3720,7 +3735,7 @@ return {
 				'archetype', "Brute",
 				'role', "Stormer",
 				'CanManEmplacements', false,
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 60,
@@ -3805,6 +3820,7 @@ return {
 				'archetype', "Skirmisher",
 				'role', "Recon",
 				'OpeningAttackType', "Overwatch",
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -3884,7 +3900,7 @@ return {
 				},
 				'archetype', "Soldier_Sniper",
 				'role', "Marksman",
-				'MaxAttacks', 2,
+				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -3968,7 +3984,7 @@ return {
 				'role', "Recon",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
-				'MaxAttacks', 1,
+				'MaxAttacks', 10,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
 					self:TryEquip(items, "Handheld B", "Pistol")
@@ -4110,7 +4126,7 @@ return {
 			'archetype', "Skirmisher",
 			'role', "Recon",
 			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -4167,7 +4183,7 @@ return {
 			'archetype', "Skirmisher",
 			'role', "Recon",
 			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -4224,7 +4240,7 @@ return {
 			'archetype', "Skirmisher",
 			'role', "Recon",
 			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -4281,7 +4297,7 @@ return {
 			'archetype', "Skirmisher",
 			'role', "Recon",
 			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -4338,7 +4354,7 @@ return {
 			},
 			'role', "Stormer",
 			'CanManEmplacements', false,
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)  end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "AssaultRifle"--[[, "_762NATO_Tracer","_556_Basic","_556_HP","_762NATO_Basic","_545_EPR"]])
@@ -4401,6 +4417,7 @@ return {
 				"Smoke",
 			},
 			'role', "Soldier",
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -4460,7 +4477,7 @@ return {
 			'role', "Marksman",
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "PinDown",
-			'MaxAttacks', 1,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"HitTheDeck",
@@ -4517,7 +4534,7 @@ return {
 			'role', "Marksman",
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "PinDown",
-			'MaxAttacks', 1,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"HitTheDeck",
@@ -4574,7 +4591,7 @@ return {
 			'archetype', "Skirmisher",
 			'role', "Recon",
 			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -4683,7 +4700,7 @@ return {
 			'archetype', "Artillery",
 			'role', "Artillery",
 			'CanManEmplacements', false,
-			'MaxAttacks', 1,
+			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
 				local enemy, dist = GetNearestEnemy(self)
 				local archetype = self.archetype
@@ -4761,7 +4778,7 @@ return {
 			},
 			'archetype', "Medic",
 			'role', "Medic",
-			'MaxAttacks', 1,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 80,
 			'StartingPerks', {
 				"MinFreeMove",
@@ -4817,7 +4834,7 @@ return {
 			},
 			'archetype', "Medic",
 			'role', "Medic",
-			'MaxAttacks', 1,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 80,
 			'StartingPerks', {
 				"MinFreeMove",
@@ -4874,7 +4891,7 @@ return {
 			'role', "Heavy",
 			'RepositionArchetype', "HeavyGunner",
 			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 85,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -4931,7 +4948,7 @@ return {
 			},
 			'archetype', "Skirmisher",
 			'role', "Demolitions",
-			'MaxAttacks', 1,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"Throwing",
@@ -4989,7 +5006,7 @@ return {
 			},
 			'archetype', "Skirmisher",
 			'role', "Demolitions",
-			'MaxAttacks', 1,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"Throwing",
@@ -5046,7 +5063,7 @@ return {
 			},
 			'archetype', "Skirmisher",
 			'role', "Commander",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
 				local enemy, dist = GetNearestEnemy(self)
 				local archetype = self.archetype
@@ -5123,7 +5140,7 @@ return {
 			},
 			'archetype', "Skirmisher",
 			'role', "Commander",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
 				local enemy, dist = GetNearestEnemy(self)
 				local archetype = self.archetype
@@ -5188,7 +5205,7 @@ return {
 			},
 			'archetype', "Skirmisher",
 			'role', "Commander",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
 				local enemy, dist = GetNearestEnemy(self)
 				local archetype = self.archetype
@@ -5263,7 +5280,7 @@ return {
 				"Control",
 			},
 			'role', "Soldier",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -5320,7 +5337,7 @@ return {
 				"Control",
 			},
 			'role', "Soldier",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -5376,6 +5393,7 @@ return {
 			'Randomization', true,
 			'Affiliation', "Adonis",
 			'StartingLevel', 3,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 80,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -5427,7 +5445,7 @@ return {
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "Overwatch",
 			'PinnedDownChance', 100,
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
 				local enemy, dist = GetNearestEnemy(self)
 				local archetype = self.archetype
@@ -5506,7 +5524,7 @@ return {
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "Overwatch",
 			'PinnedDownChance', 100,
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
 				local enemy, dist = GetNearestEnemy(self)
 				local archetype = self.archetype
@@ -5587,7 +5605,7 @@ return {
 				"Explosives",
 			},
 			'role', "Soldier",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)  end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "AssaultRifle"--[[, "_762NATO_Tracer","_556_Basic","_556_HP","_762NATO_Basic","_545_EPR"]])
@@ -5650,7 +5668,7 @@ return {
 				"Explosives",
 			},
 			'role', "Soldier",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "AssaultRifle"--[[, "_762NATO_Tracer","_556_Basic","_556_HP","_762NATO_Basic","_545_EPR"]])
 				self:TryEquip(items, "Handheld A", "GrenadeLauncher"--[[, "_40mmFlashbangGrenade","_40mmFragGrenade"]])
@@ -5715,7 +5733,7 @@ return {
 			'role', "Commander",
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 80,
 			'StartingPerks', {
 				"OpportunisticKiller",
@@ -5773,7 +5791,7 @@ return {
 			'role', "Commander",
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'unitPowerModifier', 75,
 			'MaxHitPoints', 80,
 			'StartingPerks', {
@@ -5832,7 +5850,7 @@ return {
 			'role', "Commander",
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'unitPowerModifier', 75,
 			'MaxHitPoints', 80,
 			'StartingPerks', {
@@ -5891,7 +5909,7 @@ return {
 			'role', "Commander",
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'unitPowerModifier', 75,
 			'MaxHitPoints', 80,
 			'StartingPerks', {
@@ -5950,7 +5968,7 @@ return {
 			'role', "Commander",
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'unitPowerModifier', 75,
 			'MaxHitPoints', 80,
 			'StartingPerks', {
@@ -6010,7 +6028,7 @@ return {
 			'role', "Marksman",
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "PinDown",
-			'MaxAttacks', 1,
+			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
 				local enemy, dist = GetNearestEnemy(self)
 				local archetype = self.archetype
@@ -6085,7 +6103,7 @@ return {
 			'role', "Marksman",
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "PinDown",
-			'MaxAttacks', 1,
+			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
 				local enemy, dist = GetNearestEnemy(self)
 				local archetype = self.archetype
@@ -6242,7 +6260,7 @@ return {
 			},
 			'archetype', "Medic",
 			'role', "Medic",
-			'MaxAttacks', 1,
+			'MaxAttacks', 10,
 			'unitPowerModifier', 65,
 			'MaxHitPoints', 80,
 			'StartingPerks', {
@@ -6299,7 +6317,7 @@ return {
 			'archetype', "HeavyGunner",
 			'role', "Heavy",
 			'RepositionArchetype', "HeavyGunner",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'unitPowerModifier', 75,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
@@ -6354,7 +6372,7 @@ return {
 			'StartingLevel', 6,
 			'neutral_retaliate', true,
 			'role', "Heavy",
-			'MaxAttacks', 4,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -6415,7 +6433,7 @@ return {
 			'archetype', "Skirmisher",
 			'role', "Recon",
 			'AlwaysUseOpeningAttack', true,
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -6478,7 +6496,7 @@ return {
 			'archetype', "Skirmisher",
 			'role', "Recon",
 			'AlwaysUseOpeningAttack', true,
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'unitPowerModifier', 75,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
@@ -6541,7 +6559,7 @@ return {
 				"Explosives",
 			},
 			'role', "Artillery",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
 				local enemy, dist = GetNearestEnemy(self)
 				local archetype = self.archetype
@@ -6617,7 +6635,7 @@ return {
 				"Explosives",
 			},
 			'role', "Artillery",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
 				local enemy, dist = GetNearestEnemy(self)
 				local archetype = self.archetype
@@ -6698,7 +6716,7 @@ return {
 			'role', "Soldier",
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'unitPowerModifier', 75,
 			'MaxHitPoints', 80,
 			'StartingPerks', {
@@ -6758,7 +6776,7 @@ return {
 			'role', "Soldier",
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'unitPowerModifier', 75,
 			'MaxHitPoints', 80,
 			'StartingPerks', {
@@ -6821,7 +6839,7 @@ return {
 				"Control",
 			},
 			'role', "Commander",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'RewardExperience', 0,
 			'DefeatBehavior', "Defeated",
 			'RetreatBehavior', "None",
@@ -6870,7 +6888,7 @@ return {
 			},
 			'archetype', "Skirmisher",
 			'role', "Recon",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"MinFreeMove",
@@ -6931,7 +6949,7 @@ return {
 			},
 			'archetype', "Skirmisher",
 			'role', "Demolitions",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"Throwing",
@@ -6992,7 +7010,7 @@ return {
 			'role', "Heavy",
 			'RepositionArchetype', "HeavyGunner",
 			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 85,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -7055,7 +7073,7 @@ return {
 				"Control",
 			},
 			'role', "Commander",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 80,
 			'StartingPerks', {
 				"BeefedUp",
@@ -7114,7 +7132,7 @@ return {
 			'role', "Marksman",
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "PinDown",
-			'MaxAttacks', 1,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"Deadeye",
@@ -7177,7 +7195,7 @@ return {
 			'role', "Marksman",
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "PinDown",
-			'MaxAttacks', 1,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"Deadeye",
@@ -7225,7 +7243,7 @@ return {
 				"Soldier",
 			},
 			'role', "Soldier",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -7303,7 +7321,7 @@ return {
 				"Sniper",
 			},
 			'role', "Militia",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'RewardExperience', 0,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -7364,7 +7382,7 @@ return {
 				"Flank",
 			},
 			'role', "Militia",
-			'MaxAttacks', 1,
+			'MaxAttacks', 10,
 			'RewardExperience', 0,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -7429,7 +7447,7 @@ return {
 				"Flank",
 			},
 			'role', "Militia",
-			'MaxAttacks', 2,
+			'MaxAttacks', 10,
 			'RewardExperience', 0,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -12074,7 +12092,6 @@ return {
 		}),
 		PlaceObj('ModItemAIArchetype', {
 			BaseAttackTargeting = set( "Arms", "BlindFire", "Groin", "InCover", "Legs", "Torso", "Trap" ),
-			BaseAttackWeight = 1000,
 			Behaviors = {
 				PlaceObj('StandardAI', {
 					'BiasId', "Standard",
@@ -12086,18 +12103,11 @@ return {
 						}),
 					},
 					'EndTurnPolicies', {
-						PlaceObj('AIPolicyTakeCover', {
-							'Weight', 90,
-							'visibility_mode', "all",
-						}),
 						PlaceObj('AIPolicyDealDamage', {
 							'Weight', 200,
+							'CheckLOS', false,
 						}),
-						PlaceObj('AIPolicyWeaponRange', {
-							'RangeMin', 60,
-							'RangeMax', 100,
-						}),
-						PlaceObj('AIPolicyAttackAP', nil),
+						PlaceObj('AIPolicyTakeCover', nil),
 					},
 					'TakeCoverChance', 60,
 				}),
@@ -12108,7 +12118,6 @@ return {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "Advance",
 							'Effect', "disable",
-							'Period', 3,
 						}),
 						PlaceObj('AIBiasModification', {
 							'BiasId', "CloseToTeammates",
@@ -12164,6 +12173,9 @@ return {
 						PlaceObj('AIActionBasicAttack', {
 							'BiasId', "SingleShot",
 						}),
+						PlaceObj('AIActionShootLandmine', {
+							'min_score', 100,
+						}),
 					},
 					'TakeCoverChance', 50,
 					'VoiceResponse', "TacticalPressing",
@@ -12171,10 +12183,6 @@ return {
 				PlaceObj('PositioningAI', {
 					'BiasId', "ChangePosition",
 					'OnActivationBiases', {
-						PlaceObj('AIBiasModification', {
-							'BiasId', "ChangePosition",
-							'Value', -80,
-						}),
 						PlaceObj('AIBiasModification', {
 							'BiasId', "Advance",
 							'Value', 80,
@@ -12193,7 +12201,7 @@ return {
 							'RangeMax', 60,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'Weight', 300,
+							'Weight', 500,
 							'visibility_mode', "all",
 						}),
 						PlaceObj('AIPolicyAttackAP', nil),
@@ -12254,16 +12262,16 @@ return {
 					'turn_phase', "Early",
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyWeaponRange', {
-							'RangeMin', 30,
+							'RangeMin', 20,
 							'RangeMax', 80,
 						}),
 						PlaceObj('AIPolicyWeaponRange', {
 							'Weight', 200,
-							'RangeMin', 30,
+							'RangeMin', 5,
 							'RangeMax', 60,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'Weight', 300,
+							'Weight', 50,
 							'visibility_mode', "all",
 						}),
 						PlaceObj('AIPolicyAttackAP', nil),
@@ -12342,6 +12350,7 @@ return {
 				}),
 				PlaceObj('PositioningAI', {
 					'BiasId', "CloseToTeammates",
+					'Weight', 50,
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "CloseToTeammates",
@@ -12395,6 +12404,10 @@ return {
 						PlaceObj('AIActionBasicAttack', {
 							'BiasId', "Overwatch",
 						}),
+						PlaceObj('AIActionHeavyWeaponAttack', {
+							'Weight', 200,
+							'min_score', 50,
+						}),
 					},
 				}),
 				PlaceObj('CustomAI', {
@@ -12417,8 +12430,10 @@ return {
 						}),
 						PlaceObj('AIPolicyLosToEnemy', nil),
 						PlaceObj('AIPolicyDistanceFromStart', {
+							'Weight', 200,
 							'Distance', 10,
 						}),
+						PlaceObj('AIPolicyDistanceFromStart', nil),
 						PlaceObj('AIPolicyWeaponRange', {
 							'RangeMin', 10,
 							'RangeMax', 50,
@@ -12457,7 +12472,7 @@ return {
 				}),
 			},
 			OptLocSearchRadius = 80,
-			PrefStance = "Prone",
+			PrefStance = "Crouch",
 			SignatureActions = {
 				PlaceObj('AIAttackSingleTarget', {
 					'BiasId', "Autofire",
@@ -12498,6 +12513,10 @@ return {
 				PlaceObj('AIActionBasicAttack', {
 					'BiasId', "Overwatch",
 				}),
+				PlaceObj('AIActionBasicAttack', {
+					'BiasId', "AssaultGrenadeThrow",
+				}),
+				PlaceObj('AIActionHeavyWeaponAttack', nil),
 			},
 			TargetBaseScore = 150,
 			TargetScoreRandomization = 10,
@@ -12666,13 +12685,20 @@ return {
 			Behaviors = {
 				PlaceObj('StandardAI', {
 					'EndTurnPolicies', {
-						PlaceObj('AIPolicyLastEnemyPos', {
-							'Weight', 1000,
-						}),
 						PlaceObj('AIPolicyLosToEnemy', {
 							'Weight', 10,
 						}),
 						PlaceObj('AIPolicyTakeCover', nil),
+						PlaceObj('AIPolicyDistanceFromStart', {
+							'Weight', 200,
+						}),
+						PlaceObj('AIPolicyDistanceFromStart', {
+							'Weight', 300,
+							'Distance', 10,
+						}),
+						PlaceObj('AIPolicyProximity', {
+							'Weight', 10,
+						}),
 					},
 					'TakeCoverChance', 0,
 				}),
@@ -12681,6 +12707,9 @@ return {
 			OptLocPolicies = {
 				PlaceObj('AIPolicyLastEnemyPos', nil),
 				PlaceObj('AIPolicyTakeCover', {
+					'Weight', 10,
+				}),
+				PlaceObj('AIPolicyProximity', {
 					'Weight', 10,
 				}),
 			},
@@ -12983,6 +13012,7 @@ return {
 					'Weight', 50,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyDealDamage', nil),
+						PlaceObj('AIPolicyAttackAP', nil),
 					},
 					'TakeCoverChance', 0,
 				}),
@@ -13012,6 +13042,7 @@ return {
 							'visibility_mode', "all",
 						}),
 						PlaceObj('AIPolicyDealDamage', nil),
+						PlaceObj('AIPolicyAttackAP', nil),
 					},
 					'VoiceResponse', "TacticalFocus",
 				}),
@@ -13035,6 +13066,7 @@ return {
 						PlaceObj('AIPolicyAttackAP', {
 							'Weight', 150,
 						}),
+						PlaceObj('AIPolicyAttackAP', nil),
 					},
 					'VoiceResponse', "AIOverwatch",
 				}),
@@ -13090,8 +13122,14 @@ return {
 				PlaceObj('AIActionThrowGrenade', {
 					'BiasId', "AssaultGrenadeThrow",
 					'enemy_score', 200,
-					'min_score', 100,
+					'min_score', 50,
 					'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
+				}),
+				PlaceObj('AIActionShootLandmine', {
+					'min_score', 100,
+				}),
+				PlaceObj('AIActionHeavyWeaponAttack', {
+					'min_score', 50,
 				}),
 			},
 			group = "System",
@@ -13407,7 +13445,7 @@ return {
 						}),
 						PlaceObj('AIPolicyLosToEnemy', nil),
 						PlaceObj('AIPolicyDistanceFromStart', {
-							'Distance', 10,
+							'Distance', 4,
 						}),
 						PlaceObj('AIPolicyWeaponRange', {
 							'RangeMin', 10,
@@ -13505,19 +13543,19 @@ return {
 			TargetScoreRandomization = 10,
 			TargetingPolicies = {
 				PlaceObj('AITargetingEnemyWeapon', {
-					'Weight', 150,
+					'Weight', 15,
 					'EnemyWeapon', "Sniper",
 				}),
 				PlaceObj('AITargetingEnemyWeapon', {
-					'Weight', 140,
+					'Weight', 14,
 					'EnemyWeapon', "MachineGun",
 				}),
 				PlaceObj('AITargetingEnemyWeapon', {
-					'Weight', 130,
+					'Weight', 13,
 					'EnemyWeapon', "HeavyWeapon",
 				}),
 				PlaceObj('AITargetingEnemyHealth', {
-					'Weight', 150,
+					'Weight', 15,
 					'Health', 70,
 				}),
 			},
@@ -13541,9 +13579,8 @@ return {
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyDealDamage', nil),
 						PlaceObj('AIPolicyTakeCover', {
-							'Weight', 50,
+							'Weight', 20,
 						}),
-						PlaceObj('AIPolicyAttackAP', nil),
 					},
 					'TakeCoverChance', 50,
 				}),
@@ -13557,8 +13594,9 @@ return {
 						PlaceObj('AIPolicyTakeCover', {
 							'visibility_mode', "team",
 						}),
-						PlaceObj('AIPolicyLastEnemyPos', nil),
-						PlaceObj('AIPolicyAttackAP', nil),
+						PlaceObj('AIPolicyAttackAP', {
+							'Weight', 20,
+						}),
 					},
 					'TakeCoverChance', 80,
 					'VoiceResponse', "AIFlanking",
@@ -13646,6 +13684,7 @@ return {
 				}),
 				PlaceObj('PositioningAI', {
 					'BiasId', "CloseToTeammates",
+					'Weight', 50,
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "CloseToTeammates",
@@ -13689,6 +13728,9 @@ return {
 						PlaceObj('AIPolicyLosToEnemy', nil),
 						PlaceObj('AIPolicyDistanceFromStart', {
 							'Distance', 10,
+						}),
+						PlaceObj('AIPolicyDistanceFromStart', {
+							'Distance', 15,
 						}),
 						PlaceObj('AIPolicyWeaponRange', {
 							'RangeMin', 10,
@@ -13759,31 +13801,17 @@ return {
 					'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
 					'TargetLastAttackPos', true,
 				}),
-				PlaceObj('AIActionThrowGrenade', {
+				PlaceObj('AIActionBasicAttack', {
 					'BiasId', "AssaultGrenadeThrow",
-					'Weight', 200,
-					'OnActivationBiases', {
-						PlaceObj('AIBiasModification', {
-							'BiasId', "AssaultGrenadeThrow",
-							'Effect', "disable",
-						}),
-						PlaceObj('AIBiasModification', {
-							'BiasId', "AssaultGrenadeThrow",
-							'Value', -10,
-							'Period', 0,
-							'ApplyTo', "Team",
-						}),
-					},
-					'RequiredKeywords', {
-						"Explosives",
-					},
-					'min_score', 100,
-					'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
+				}),
+				PlaceObj('AIActionHeavyWeaponAttack', {
+					'min_score', 50,
 				}),
 			},
 			TargetScoreRandomization = 10,
 			TargetingPolicies = {
 				PlaceObj('AITargetingEnemyHealth', {
+					'Weight', 10,
 					'Health', 90,
 				}),
 			},
@@ -14193,10 +14221,14 @@ return {
 							'RangeMax', 80,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'Weight', 500,
+							'Weight', 50,
 						}),
-						PlaceObj('AIPolicyLosToEnemy', nil),
-						PlaceObj('AIPolicyAttackAP', nil),
+						PlaceObj('AIPolicyLosToEnemy', {
+							'Weight', 20,
+						}),
+						PlaceObj('AIPolicyAttackAP', {
+							'Weight', 50,
+						}),
 					},
 					'TakeCoverChance', 100,
 				}),
@@ -14204,6 +14236,7 @@ return {
 					'BiasId', "SeekEnemy",
 					'Weight', 20,
 					'Label', "FallBack - Seek Enemy",
+					'Fallback', false,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyAttackAP', {
 							'Weight', 50,
@@ -14220,11 +14253,17 @@ return {
 						}),
 						PlaceObj('AIPolicyLosToEnemy', nil),
 						PlaceObj('AIPolicyDistanceFromStart', {
-							'Distance', 10,
+							'Distance', 4,
 						}),
 						PlaceObj('AIPolicyWeaponRange', {
 							'RangeMin', 10,
 							'RangeMax', 50,
+						}),
+					},
+					'SignatureActions', {
+						PlaceObj('AIActionMGSetup', nil),
+						PlaceObj('AIActionMGBurstFire', {
+							'Weight', 50,
 						}),
 					},
 				}),
@@ -14254,6 +14293,10 @@ return {
 					'team_score', 10,
 					'min_score', 100,
 				}),
+				PlaceObj('AIActionMGBurstFire', {
+					'Weight', 50,
+				}),
+				PlaceObj('AIActionHeavyWeaponAttack', nil),
 			},
 			TargetBaseScore = 10,
 			TargetChangePolicy = "restart",
@@ -14268,157 +14311,13 @@ return {
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyDealDamage', {
 							'Weight', 200,
+							'CheckLOS', false,
+						}),
+						PlaceObj('AIPolicyAttackAP', {
+							'Weight', 150,
 						}),
 					},
 					'TakeCoverChance', 0,
-				}),
-				PlaceObj('PositioningAI', {
-					'BiasId', "Indoor",
-					'Weight', 120,
-					'OnActivationBiases', {
-						PlaceObj('AIBiasModification', {
-							'BiasId', "Indoor",
-							'Value', -10,
-							'Period', 10,
-							'ApplyTo', "Team",
-						}),
-					},
-					'Label', "Be indoor",
-					'EndTurnPolicies', {
-						PlaceObj('AIPolicyProximity', {
-							'Weight', 80,
-							'TargetUnits', "allies",
-							'TargetDist', "average",
-							'MinScore', 6,
-						}),
-						PlaceObj('AIPolicyIndoorsOutdoors', {
-							'Required', true,
-						}),
-						PlaceObj('AIPolicyTakeCover', {
-							'visibility_mode', "all",
-						}),
-						PlaceObj('AIPolicyDealDamage', nil),
-						PlaceObj('AIPolicyAttackAP', nil),
-					},
-					'VoiceResponse', "TacticalFocus",
-				}),
-				PlaceObj('PositioningAI', {
-					'BiasId', "CloseToTeammates",
-					'Weight', 30,
-					'OnActivationBiases', {
-						PlaceObj('AIBiasModification', {
-							'BiasId', "CloseToTeammates",
-							'Effect', "disable",
-							'Period', 2,
-						}),
-					},
-					'Label', "CloseToTeammates",
-					'EndTurnPolicies', {
-						PlaceObj('AIPolicyProximity', {
-							'Weight', 200,
-							'TargetUnits', "allies",
-							'MinScore', 3,
-						}),
-						PlaceObj('AIPolicyTakeCover', nil),
-						PlaceObj('AIPolicyAttackAP', {
-							'Weight', 150,
-						}),
-					},
-					'VoiceResponse', "AIOverwatch",
-				}),
-				PlaceObj('PositioningAI', {
-					'BiasId', "Advance",
-					'Label', "Advance",
-					'turn_phase', "Early",
-					'OptLocWeight', 30,
-					'EndTurnPolicies', {
-						PlaceObj('AIPolicyWeaponRange', {
-							'RangeMin', 10,
-							'RangeMax', 30,
-						}),
-						PlaceObj('AIPolicyTakeCover', {
-							'Weight', 20,
-						}),
-						PlaceObj('AIPolicyAttackAP', nil),
-						PlaceObj('AIPolicyProximity', {
-							'AllyPlannedPosition', true,
-							'TargetUnits', "allies",
-							'TargetDist', "average",
-							'MinScore', 6,
-						}),
-						PlaceObj('AIPolicyProximity', {
-							'Weight', 20,
-							'AllyPlannedPosition', true,
-							'MinScore', 6,
-						}),
-						PlaceObj('AIPolicyAttackAP', nil),
-					},
-					'SignatureActions', {
-						PlaceObj('AIAttackSingleTarget', {
-							'Weight', 200,
-							'action_id', "BurstFire",
-							'Aiming', "Remaining AP",
-						}),
-						PlaceObj('AIAttackSingleTarget', {
-							'Weight', 250,
-							'NotificationText', "",
-							'action_id', "AutoFire",
-							'Aiming', "Remaining AP",
-						}),
-						PlaceObj('AIActionThrowGrenade', {
-							'Weight', 300,
-							'min_score', 100,
-							'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
-						}),
-						PlaceObj('AIActionBasicAttack', {
-							'BiasId', "SingleShot",
-						}),
-					},
-					'TakeCoverChance', 80,
-					'VoiceResponse', "TacticalPressing",
-				}),
-				PlaceObj('CustomAI', {
-					'BiasId', "SeekEnemy",
-					'Weight', 20,
-					'Label', "FallBack - Seek Enemy",
-					'EndTurnPolicies', {
-						PlaceObj('AIPolicyAttackAP', {
-							'Weight', 50,
-						}),
-						PlaceObj('AIPolicyProximity', {
-							'Weight', 150,
-							'AllyPlannedPosition', true,
-							'TargetUnits', "allies",
-							'TargetDist', "average",
-						}),
-						PlaceObj('AIPolicyProximity', {
-							'Required', true,
-							'TargetDist', "average",
-						}),
-						PlaceObj('AIPolicyLosToEnemy', nil),
-						PlaceObj('AIPolicyDistanceFromStart', {
-							'Distance', 10,
-						}),
-						PlaceObj('AIPolicyWeaponRange', {
-							'RangeMin', 10,
-							'RangeMax', 50,
-						}),
-					},
-				}),
-				PlaceObj('RetreatAI', {
-					'Weight', 20,
-					'EndTurnPolicies', {
-						PlaceObj('AIPolicyTakeCover', nil),
-						PlaceObj('AIPolicyIndoorsOutdoors', {
-							'Weight', 10,
-						}),
-						PlaceObj('AIPolicyProximity', {
-							'AllyPlannedPosition', true,
-							'TargetUnits', "allies",
-							'MinScore', 2,
-						}),
-					},
-					'TakeCoverChance', 80,
 				}),
 			},
 			Comment = "Keywords: Explosives",
@@ -14433,7 +14332,8 @@ return {
 					'Weight', 150,
 				}),
 			},
-			OptLocSearchRadius = 80,
+			OptLocSearchRadius = 50,
+			PrefStance = "Crouch",
 			SignatureActions = {
 				PlaceObj('AIActionMobileShot', {
 					'Priority', true,
@@ -14489,13 +14389,16 @@ return {
 			TargetScoreRandomization = 10,
 			TargetingPolicies = {
 				PlaceObj('AITargetingEnemyWeapon', {
-					'Weight', 150,
+					'Weight', 15,
 					'EnemyWeapon', "Sniper",
 				}),
 				PlaceObj('AITargetingEnemyWeapon', {
+					'Weight', 10,
 					'EnemyWeapon', "SMG",
 				}),
 				PlaceObj('AITargetingEnemyWeapon', {
+					'Weight', 20,
+					'Score', 10,
 					'EnemyWeapon', "Pistol",
 				}),
 			},

@@ -30,7 +30,7 @@ DefineClass.AdonisFlanker_Elite = {
 	archetype = "Skirmisher",
 	role = "Recon",
 	AlwaysUseOpeningAttack = true,
-	MaxAttacks = 2,
+	MaxAttacks = 10,
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"AutoWeapons",

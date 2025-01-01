@@ -29,6 +29,7 @@ DefineClass.LegionSniper_Stronger = {
 	role = "Marksman",
 	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "Overwatch",
+	MaxAttacks = 5,
 	PickCustomArchetype = function (self, proto_context)  end,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
