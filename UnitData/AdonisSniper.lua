@@ -24,6 +24,7 @@ DefineClass.AdonisSniper = {
 	AIKeywords = {
 		"Sniper",
 	},
+	archetype = "Soldier_Sniper",
 	role = "Marksman",
 	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "PinDown",
