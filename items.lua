@@ -4237,7 +4237,7 @@ return {
 				"Flank",
 				"RunAndGun",
 			},
-			'archetype', "Skirmisher",
+			'archetype', "Soldier_Sniper",
 			'role', "Recon",
 			'OpeningAttackType', "Overwatch",
 			'MaxAttacks', 10,
@@ -6025,6 +6025,7 @@ return {
 			'AIKeywords', {
 				"Sniper",
 			},
+			'archetype', "Soldier_Sniper",
 			'role', "Marksman",
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "PinDown",
@@ -6100,6 +6101,7 @@ return {
 			'AIKeywords', {
 				"Sniper",
 			},
+			'archetype', "Soldier_Sniper",
 			'role', "Marksman",
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "PinDown",
@@ -12092,6 +12094,7 @@ return {
 		}),
 		PlaceObj('ModItemAIArchetype', {
 			BaseAttackTargeting = set( "Arms", "BlindFire", "Groin", "InCover", "Legs", "Torso", "Trap" ),
+			BaseMovementWeight = 50,
 			Behaviors = {
 				PlaceObj('StandardAI', {
 					'BiasId', "Standard",
@@ -12117,7 +12120,8 @@ return {
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "Advance",
-							'Effect', "disable",
+							'Value', -30,
+							'Period', 2,
 						}),
 						PlaceObj('AIBiasModification', {
 							'BiasId', "CloseToTeammates",
@@ -12125,6 +12129,9 @@ return {
 						}),
 					},
 					'Label', "Advance",
+					'RequiredKeywords', {
+						"Soldier",
+					},
 					'turn_phase', "Early",
 					'OptLocWeight', 30,
 					'EndTurnPolicies', {
@@ -12192,19 +12199,19 @@ return {
 					'turn_phase', "Early",
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyWeaponRange', {
+							'Weight', 50,
 							'RangeMin', 30,
 							'RangeMax', 80,
 						}),
 						PlaceObj('AIPolicyWeaponRange', {
-							'Weight', 200,
+							'Weight', 50,
 							'RangeMin', 30,
 							'RangeMax', 60,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'Weight', 500,
+							'Weight', 70,
 							'visibility_mode', "all",
 						}),
-						PlaceObj('AIPolicyAttackAP', nil),
 						PlaceObj('AIPolicyFlanking', {
 							'Weight', 20,
 							'AllyPlannedPosition', true,
@@ -12216,10 +12223,6 @@ return {
 							'TargetUnits', "allies",
 							'TargetDist', "average",
 							'MinScore', 5,
-						}),
-						PlaceObj('AIPolicyEvadeEnemies', {
-							'RangeBase', "Absolute",
-							'Range', 10,
 						}),
 						PlaceObj('AIPolicyIndoorsOutdoors', {
 							'Weight', 20,
@@ -12250,7 +12253,7 @@ return {
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "Flanking",
-							'Value', -100,
+							'Value', -20,
 							'Period', 5,
 						}),
 						PlaceObj('AIBiasModification', {
@@ -12259,6 +12262,9 @@ return {
 						}),
 					},
 					'Label', "Flanking",
+					'RequiredKeywords', {
+						"Soldier",
+					},
 					'turn_phase', "Early",
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyWeaponRange', {
@@ -12333,28 +12339,12 @@ return {
 					'VoiceResponse', "TacticalFocus",
 				}),
 				PlaceObj('PositioningAI', {
-					'Label', "Be Outdoor",
-					'EndTurnPolicies', {
-						PlaceObj('AIPolicyIndoorsOutdoors', {
-							'Required', true,
-							'Indoors', false,
-						}),
-						PlaceObj('AIPolicyDealDamage', {
-							'Weight', 300,
-							'Required', true,
-							'CheckLOS', false,
-						}),
-						PlaceObj('AIPolicyAttackAP', nil),
-					},
-					'VoiceResponse', "AIOverwatch",
-				}),
-				PlaceObj('PositioningAI', {
 					'BiasId', "CloseToTeammates",
 					'Weight', 50,
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "CloseToTeammates",
-							'Effect', "disable",
+							'Value', -30,
 							'Period', 2,
 						}),
 					},
@@ -12367,11 +12357,10 @@ return {
 						}),
 						PlaceObj('AIPolicyTakeCover', nil),
 						PlaceObj('AIPolicyAttackAP', {
-							'Weight', 150,
+							'Weight', 50,
 						}),
-						PlaceObj('AIPolicyAttackAP', nil),
 					},
-					'VoiceResponse', "AIOverwatch",
+					'VoiceResponse', "BecomeAware",
 				}),
 				PlaceObj('HoldPositionAI', {
 					'BiasId', "HoldPositionBehavior",
@@ -12387,6 +12376,9 @@ return {
 						PlaceObj('AIPolicyTakeCover', nil),
 						PlaceObj('AIPolicyDealDamage', nil),
 						PlaceObj('AIPolicyAttackAP', nil),
+						PlaceObj('AIPolicyLosToEnemy', {
+							'Weight', 50,
+						}),
 					},
 					'SignatureActions', {
 						PlaceObj('AIConeAttack', {
@@ -12409,6 +12401,7 @@ return {
 							'min_score', 50,
 						}),
 					},
+					'VoiceResponse', "AIOverwatch",
 				}),
 				PlaceObj('CustomAI', {
 					'BiasId', "SeekEnemy",
@@ -12444,20 +12437,22 @@ return {
 			Comment = "Keywords: Soldier, Sniper, Control, Ordnance, Smoke, Explosives",
 			OptLocPolicies = {
 				PlaceObj('AIPolicyTakeCover', {
-					'Weight', 90,
+					'Weight', 120,
 				}),
 				PlaceObj('AIPolicyHighGround', {
 					'RequiredKeywords', {
 						"Sniper",
 					},
 				}),
-				PlaceObj('AIPolicyLosToEnemy', nil),
+				PlaceObj('AIPolicyLosToEnemy', {
+					'Weight', 50,
+				}),
 				PlaceObj('AIPolicyWeaponRange', {
 					'RequiredKeywords', {
 						"Soldier",
 					},
-					'Weight', 300,
-					'RangeMin', 20,
+					'Weight', 50,
+					'RangeMin', 5,
 					'RangeMax', 100,
 				}),
 				PlaceObj('AIPolicyIndoorsOutdoors', {
@@ -12474,6 +12469,7 @@ return {
 			OptLocSearchRadius = 80,
 			PrefStance = "Crouch",
 			SignatureActions = {
+				PlaceObj('AIActionHeavyWeaponAttack', nil),
 				PlaceObj('AIAttackSingleTarget', {
 					'BiasId', "Autofire",
 					'Weight', 50,
@@ -12510,13 +12506,10 @@ return {
 					'Aiming', "Maximum",
 					'AttackTargeting', set( "Arms", "BlindFire", "Groin", "Head", "InCover", "Legs", "Neck", "Torso", "Trap" ),
 				}),
-				PlaceObj('AIActionBasicAttack', {
-					'BiasId', "Overwatch",
+				PlaceObj('AIActionBasicAttack', nil),
+				PlaceObj('AIActionThrowGrenade', {
+					'min_score', 100,
 				}),
-				PlaceObj('AIActionBasicAttack', {
-					'BiasId', "AssaultGrenadeThrow",
-				}),
-				PlaceObj('AIActionHeavyWeaponAttack', nil),
 			},
 			TargetBaseScore = 150,
 			TargetScoreRandomization = 10,
@@ -12714,6 +12707,9 @@ return {
 				}),
 			},
 			OptLocSearchRadius = 100,
+			SignatureActions = {
+				PlaceObj('AIActionBasicAttack', nil),
+			},
 			group = "System",
 			id = "Scout_LastLocation",
 		}),
@@ -13006,7 +13002,6 @@ return {
 			id = "Berserk",
 		}),
 		PlaceObj('ModItemAIArchetype', {
-			BaseMovementWeight = 10,
 			Behaviors = {
 				PlaceObj('StandardAI', {
 					'Weight', 50,
@@ -13068,7 +13063,7 @@ return {
 						}),
 						PlaceObj('AIPolicyAttackAP', nil),
 					},
-					'VoiceResponse', "AIOverwatch",
+					'VoiceResponse', "BecomeAware",
 				}),
 				PlaceObj('CustomAI', {
 					'BiasId', "SeekEnemy",
@@ -13125,6 +13120,7 @@ return {
 					'min_score', 50,
 					'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
 				}),
+				PlaceObj('AIActionBasicAttack', nil),
 				PlaceObj('AIActionShootLandmine', {
 					'min_score', 100,
 				}),
@@ -13321,7 +13317,9 @@ return {
 						PlaceObj('AIPolicyLosToEnemy', {
 							'Invert', true,
 						}),
-						PlaceObj('AIPolicyWeaponRange', nil),
+						PlaceObj('AIPolicyWeaponRange', {
+							'RangeMin', 30,
+						}),
 					},
 				}),
 				PlaceObj('PositioningAI', {
@@ -13329,7 +13327,9 @@ return {
 					'turn_phase', "Late",
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyLosToEnemy', nil),
-						PlaceObj('AIPolicyWeaponRange', nil),
+						PlaceObj('AIPolicyWeaponRange', {
+							'RangeMin', 40,
+						}),
 						PlaceObj('AIPolicyTakeCover', nil),
 					},
 				}),
@@ -13468,18 +13468,13 @@ return {
 					},
 					'Weight', 200,
 				}),
-				PlaceObj('AIPolicyLosToEnemy', {
-					'RequiredKeywords', {
-						"Soldier",
-					},
-					'Weight', 300,
-				}),
 				PlaceObj('AIPolicyWeaponRange', {
 					'RequiredKeywords', {
 						"Sniper",
 					},
 					'Weight', 160,
-					'RangeMin', 50,
+					'RangeMin', 10,
+					'RangeMax', 100,
 				}),
 			},
 			OptLocSearchRadius = 80,
@@ -13528,7 +13523,6 @@ return {
 					'action_id', "Overwatch",
 				}),
 				PlaceObj('AIActionBasicAttack', {
-					'BiasId', "Standard",
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "Standard",
@@ -13688,7 +13682,7 @@ return {
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "CloseToTeammates",
-							'Effect', "disable",
+							'Value', -30,
 							'Period', 2,
 						}),
 					},
@@ -13705,7 +13699,7 @@ return {
 						}),
 						PlaceObj('AIPolicyAttackAP', nil),
 					},
-					'VoiceResponse', "AIOverwatch",
+					'VoiceResponse', "BecomeAware",
 				}),
 				PlaceObj('CustomAI', {
 					'BiasId', "SeekEnemy",
@@ -13748,7 +13742,7 @@ return {
 					'RangeMax', 12,
 				}),
 				PlaceObj('AIPolicyLosToEnemy', {
-					'Weight', 250,
+					'Weight', 50,
 				}),
 				PlaceObj('AIPolicyTakeCover', {
 					'RequiredKeywords', {
@@ -13801,9 +13795,7 @@ return {
 					'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
 					'TargetLastAttackPos', true,
 				}),
-				PlaceObj('AIActionBasicAttack', {
-					'BiasId', "AssaultGrenadeThrow",
-				}),
+				PlaceObj('AIActionBasicAttack', nil),
 				PlaceObj('AIActionHeavyWeaponAttack', {
 					'min_score', 50,
 				}),
@@ -14108,6 +14100,7 @@ return {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "MGSetup",
 							'Value', -10,
+							'Period', 5,
 						}),
 					},
 					'Label', "MG Setup AI",
@@ -14141,6 +14134,7 @@ return {
 							'cur_zone_mod', 150,
 						}),
 					},
+					'VoiceResponse', "AIOverwatch",
 				}),
 				PlaceObj('PositioningAI', {
 					'BiasId', "MoveToCover",
@@ -14148,7 +14142,8 @@ return {
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "MoveToCover",
-							'Value', -10,
+							'Value', -20,
+							'Period', 5,
 						}),
 					},
 					'Label', "Move to position",
@@ -14161,10 +14156,12 @@ return {
 							'RangeMax', 70,
 						}),
 						PlaceObj('AIPolicyWeaponRange', {
+							'Weight', 50,
 							'RangeMin', 40,
 							'RangeMax', 70,
 						}),
 						PlaceObj('AIPolicyWeaponRange', {
+							'Weight', 20,
 							'RangeMin', 60,
 							'RangeMax', 70,
 						}),
@@ -14195,7 +14192,7 @@ return {
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "MoveToCover",
-							'Effect', "disable",
+							'Value', -30,
 							'Period', 2,
 						}),
 					},
@@ -14205,6 +14202,7 @@ return {
 					'OptLocWeight', 1000,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyWeaponRange', {
+							'Weight', 30,
 							'RangeMin', 20,
 							'RangeMax', 80,
 						}),
@@ -14213,10 +14211,12 @@ return {
 							'RangeMax', 80,
 						}),
 						PlaceObj('AIPolicyWeaponRange', {
+							'Weight', 20,
 							'RangeMin', 40,
 							'RangeMax', 80,
 						}),
 						PlaceObj('AIPolicyWeaponRange', {
+							'Weight', 20,
 							'RangeMin', 60,
 							'RangeMax', 80,
 						}),
@@ -14224,13 +14224,14 @@ return {
 							'Weight', 50,
 						}),
 						PlaceObj('AIPolicyLosToEnemy', {
-							'Weight', 20,
+							'Weight', 80,
 						}),
 						PlaceObj('AIPolicyAttackAP', {
 							'Weight', 50,
 						}),
 					},
 					'TakeCoverChance', 100,
+					'VoiceResponse', "BecomeAware",
 				}),
 				PlaceObj('CustomAI', {
 					'BiasId', "SeekEnemy",
@@ -14248,10 +14249,13 @@ return {
 							'TargetDist', "average",
 						}),
 						PlaceObj('AIPolicyProximity', {
+							'Weight', 80,
 							'Required', true,
 							'TargetDist', "average",
 						}),
-						PlaceObj('AIPolicyLosToEnemy', nil),
+						PlaceObj('AIPolicyLosToEnemy', {
+							'Weight', 120,
+						}),
 						PlaceObj('AIPolicyDistanceFromStart', {
 							'Distance', 4,
 						}),
@@ -14271,10 +14275,7 @@ return {
 			FallbackAction = "overwatch",
 			OptLocPolicies = {
 				PlaceObj('AIPolicyLosToEnemy', {
-					'RequiredKeywords', {
-						"Gunner",
-					},
-					'Weight', 200,
+					'Weight', 30,
 				}),
 				PlaceObj('AIPolicyWeaponRange', {
 					'RangeMin', 5,
@@ -14296,7 +14297,7 @@ return {
 				PlaceObj('AIActionMGBurstFire', {
 					'Weight', 50,
 				}),
-				PlaceObj('AIActionHeavyWeaponAttack', nil),
+				PlaceObj('AIActionBasicAttack', nil),
 			},
 			TargetBaseScore = 10,
 			TargetChangePolicy = "restart",
@@ -14329,7 +14330,7 @@ return {
 					'RangeMax', 6,
 				}),
 				PlaceObj('AIPolicyLosToEnemy', {
-					'Weight', 150,
+					'Weight', 20,
 				}),
 			},
 			OptLocSearchRadius = 50,
@@ -25462,7 +25463,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {

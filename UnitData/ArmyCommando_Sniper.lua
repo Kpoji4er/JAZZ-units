@@ -25,7 +25,7 @@ DefineClass.ArmyCommando_Sniper = {
 		"Flank",
 		"RunAndGun",
 	},
-	archetype = "Skirmisher",
+	archetype = "Soldier_Sniper",
 	role = "Recon",
 	OpeningAttackType = "Overwatch",
 	MaxAttacks = 10,
