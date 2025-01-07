@@ -13591,6 +13591,10 @@ return {
 						PlaceObj('AIPolicyAttackAP', {
 							'Weight', 20,
 						}),
+						PlaceObj('AIPolicyWeaponRange', {
+							'RangeMin', 5,
+							'RangeMax', 80,
+						}),
 					},
 					'TakeCoverChance', 80,
 					'VoiceResponse', "AIFlanking",
@@ -21832,7 +21836,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionMedic_Stronger_Elite",
+					"Loot_JAZZ_Spider",
 				},
 				'Specialization', "Doctor",
 				'pollyvoice', "Amy",
@@ -25463,7 +25467,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
