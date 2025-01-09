@@ -166,8 +166,8 @@ DefineClass.Jazz_Spider = {
 	},
 	StartingPerks = {
 		"Jazz_Perk_Spider",
-		"HeavyWeaponsTraining",
-		"AutoWeapons",
+		"NightOps",
+		"Stealthy",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
@@ -175,7 +175,7 @@ DefineClass.Jazz_Spider = {
 		}),
 	},
 	Equipment = {
-		"LegionMedic_Stronger_Elite",
+		"Loot_JAZZ_Spider",
 	},
 	Specialization = "Doctor",
 	pollyvoice = "Amy",
