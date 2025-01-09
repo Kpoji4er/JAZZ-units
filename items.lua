@@ -12159,6 +12159,13 @@ return {
 							'AllyPlannedPosition', true,
 							'MinScore', 6,
 						}),
+						PlaceObj('AIPolicyDistanceFromStart', {
+							'Distance', 2,
+						}),
+						PlaceObj('AIPolicyDistanceFromStart', {
+							'Distance', 3,
+						}),
+						PlaceObj('AIPolicyDistanceFromStart', nil),
 					},
 					'SignatureActions', {
 						PlaceObj('AIAttackSingleTarget', {
@@ -12273,7 +12280,7 @@ return {
 						}),
 						PlaceObj('AIPolicyWeaponRange', {
 							'Weight', 200,
-							'RangeMin', 5,
+							'RangeMin', 0,
 							'RangeMax', 60,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
@@ -12285,6 +12292,17 @@ return {
 							'Weight', 200,
 							'AllyPlannedPosition', true,
 							'ReserveAttackAP', true,
+						}),
+						PlaceObj('AIPolicyDistanceFromStart', {
+							'Weight', 10,
+							'Distance', 3,
+						}),
+						PlaceObj('AIPolicyDistanceFromStart', {
+							'Weight', 10,
+						}),
+						PlaceObj('AIPolicyDistanceFromStart', {
+							'Weight', 10,
+							'Distance', 6,
 						}),
 					},
 					'SignatureActions', {
@@ -13586,14 +13604,26 @@ return {
 							'Weight', 300,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'visibility_mode', "team",
+							'Weight', 50,
+							'visibility_mode', "all",
 						}),
 						PlaceObj('AIPolicyAttackAP', {
 							'Weight', 20,
 						}),
 						PlaceObj('AIPolicyWeaponRange', {
-							'RangeMin', 5,
+							'RangeMin', 0,
 							'RangeMax', 80,
+						}),
+						PlaceObj('AIPolicyDistanceFromStart', {
+							'Weight', 10,
+							'Distance', 1,
+						}),
+						PlaceObj('AIPolicyDistanceFromStart', {
+							'Weight', 10,
+							'Distance', 3,
+						}),
+						PlaceObj('AIPolicyDistanceFromStart', {
+							'Weight', 10,
 						}),
 					},
 					'TakeCoverChance', 80,
@@ -13606,7 +13636,7 @@ return {
 					'OptLocWeight', 30,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyWeaponRange', {
-							'RangeMin', 10,
+							'RangeMin', 0,
 							'RangeMax', 30,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
@@ -13625,6 +13655,13 @@ return {
 							'MinScore', 6,
 						}),
 						PlaceObj('AIPolicyAttackAP', nil),
+						PlaceObj('AIPolicyDistanceFromStart', {
+							'Distance', 3,
+						}),
+						PlaceObj('AIPolicyDistanceFromStart', nil),
+						PlaceObj('AIPolicyDistanceFromStart', {
+							'Distance', 8,
+						}),
 					},
 					'SignatureActions', {
 						PlaceObj('AIAttackSingleTarget', {
@@ -21827,8 +21864,8 @@ return {
 				},
 				'StartingPerks', {
 					"Jazz_Perk_Spider",
-					"HeavyWeaponsTraining",
-					"AutoWeapons",
+					"NightOps",
+					"Stealthy",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {

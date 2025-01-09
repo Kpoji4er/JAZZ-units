@@ -166,8 +166,8 @@ DefineClass.Jazz_Spider = {
 	},
 	StartingPerks = {
 		"Jazz_Perk_Spider",
-		"HeavyWeaponsTraining",
-		"AutoWeapons",
+		"NightOps",
+		"Stealthy",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
