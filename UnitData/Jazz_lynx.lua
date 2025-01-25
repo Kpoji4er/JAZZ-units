@@ -62,7 +62,7 @@ DefineClass.Jazz_lynx = {
 		"Loot_JAZZ_Lynx",
 	},
 	Tier = "Elite",
-	Specialization = "Autoriflemen",
+	Specialization = "Marksmen",
 	pollyvoice = "Russell",
 	gender = "Male",
 }
