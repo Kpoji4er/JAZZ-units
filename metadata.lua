@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 1,
-	'version', 1380,
+	'version', 1386,
 	'lua_revision', 233360,
 	'saved_with_revision', 350233,
 	'code', {
@@ -173,11 +173,12 @@ return PlaceObj('ModDef', {
 		"Code/StatGainRework.lua",
 		"CharacterEffect/TheGrim.lua",
 		"CharacterEffect/VengefulTemperament.lua",
+		"Code/Script.lua",
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1736410264,
-	'code_hash', -1912096946947257358,
+	'saved', 1737830733,
+	'code_hash', -217633458007738297,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
@@ -981,7 +982,7 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
-			'Id', "Scout_LastLocation",
+			'Id', "Scout_LastLocation__",
 			'ClassDisplayName', "AI Archetype",
 		}),
 		PlaceObj('ModResourcePreset', {

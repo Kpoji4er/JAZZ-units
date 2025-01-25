@@ -12454,9 +12454,6 @@ return {
 			},
 			Comment = "Keywords: Soldier, Sniper, Control, Ordnance, Smoke, Explosives",
 			OptLocPolicies = {
-				PlaceObj('AIPolicyTakeCover', {
-					'Weight', 120,
-				}),
 				PlaceObj('AIPolicyHighGround', {
 					'RequiredKeywords', {
 						"Sniper",
@@ -12482,6 +12479,11 @@ return {
 					'TargetUnits', "allies",
 					'TargetDist', "average",
 					'MinScore', 8,
+				}),
+				PlaceObj('AIPolicyCustomSeekCover', {
+					'Weight', 120,
+					'ScalePerDistance', true,
+					'ForceCheckLastEnemyPos', true,
 				}),
 			},
 			OptLocSearchRadius = 80,
@@ -12729,7 +12731,7 @@ return {
 				PlaceObj('AIActionBasicAttack', nil),
 			},
 			group = "System",
-			id = "Scout_LastLocation",
+			id = "Scout_LastLocation__",
 		}),
 		PlaceObj('ModItemAIArchetype', {
 			BaseAttackTargeting = set( "Arms", "Groin", "Legs", "Torso" ),
@@ -13785,14 +13787,12 @@ return {
 				PlaceObj('AIPolicyLosToEnemy', {
 					'Weight', 50,
 				}),
-				PlaceObj('AIPolicyTakeCover', {
-					'RequiredKeywords', {
-						"Control",
-					},
-					'Weight', 90,
-				}),
 				PlaceObj('AIPolicyIndoorsOutdoors', {
 					'Weight', 20,
+				}),
+				PlaceObj('AIPolicyCustomSeekCover', {
+					'ScalePerDistance', true,
+					'ForceCheckLastEnemyPos', true,
 				}),
 			},
 			OptLocSearchRadius = 50,
@@ -14375,7 +14375,6 @@ return {
 				}),
 			},
 			OptLocSearchRadius = 50,
-			PrefStance = "Crouch",
 			SignatureActions = {
 				PlaceObj('AIActionMobileShot', {
 					'Priority', true,
@@ -14429,21 +14428,6 @@ return {
 				}),
 			},
 			TargetScoreRandomization = 10,
-			TargetingPolicies = {
-				PlaceObj('AITargetingEnemyWeapon', {
-					'Weight', 15,
-					'EnemyWeapon', "Sniper",
-				}),
-				PlaceObj('AITargetingEnemyWeapon', {
-					'Weight', 10,
-					'EnemyWeapon', "SMG",
-				}),
-				PlaceObj('AITargetingEnemyWeapon', {
-					'Weight', 20,
-					'Score', 10,
-					'EnemyWeapon', "Pistol",
-				}),
-			},
 			group = "Simplified",
 			id = "Brute",
 		}),
@@ -21508,7 +21492,7 @@ return {
 					"Loot_JAZZ_Lynx",
 				},
 				'Tier', "Elite",
-				'Specialization', "Autoriflemen",
+				'Specialization', "Marksmen",
 				'pollyvoice', "Russell",
 				'gender', "Male",
 			}),
@@ -21694,7 +21678,7 @@ return {
 					"Loot_JAZZ_Buzz",
 				},
 				'Tier', "Veteran",
-				'Specialization', "Marksmen",
+				'Specialization', "Autoriflemen",
 				'pollyvoice', "Amy",
 				'gender', "Female",
 				'VoiceResponseId', "Buns",
@@ -32466,6 +32450,13 @@ return {
 			'Description', T(695881945070, --[[ModItemCharacterEffectCompositeDef VengefulTemperament Description]] 'Враги, находящиеся в радиусе 5 клеток впадают в панику или бешенство при виде Надвигающегося Урагана "Норма". Зависит от уровня мудрости противника.'),
 			'Icon', "UI/Icons/Perks/VengefulTemperament",
 			'Tier', "Personal",
+		}),
+		}),
+	PlaceObj('ModItemFolder', {
+		'name', "AiActions",
+	}, {
+		PlaceObj('ModItemCode', {
+			'CodeFileName', "Code/Script.lua",
 		}),
 		}),
 }

@@ -183,7 +183,7 @@ DefineClass.Jazz_Buzz = {
 		"Loot_JAZZ_Buzz",
 	},
 	Tier = "Veteran",
-	Specialization = "Marksmen",
+	Specialization = "Autoriflemen",
 	pollyvoice = "Amy",
 	gender = "Female",
 	VoiceResponseId = "Buns",
