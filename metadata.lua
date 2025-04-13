@@ -6,9 +6,9 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 1,
-	'version', 1386,
+	'version', 1404,
 	'lua_revision', 233360,
-	'saved_with_revision', 350233,
+	'saved_with_revision', 366685,
 	'code', {
 		"UnitData/LegionRocketeer_Stronger_Elite.lua",
 		"UnitData/LegionSharpShooter_Stronger_Elite.lua",
@@ -177,8 +177,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1737830733,
-	'code_hash', -217633458007738297,
+	'saved', 1744551017,
+	'code_hash', 7613393694764992313,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",

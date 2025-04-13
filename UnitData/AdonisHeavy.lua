@@ -10,6 +10,7 @@ DefineClass.AdonisHeavy = {
 	Dexterity = 75,
 	Strength = 95,
 	Wisdom = 56,
+	Will = 90,
 	Leadership = 73,
 	Marksmanship = 85,
 	Mechanical = 0,

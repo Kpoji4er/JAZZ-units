@@ -10,6 +10,7 @@ DefineClass.RebelFlanker = {
 	Dexterity = 74,
 	Strength = 48,
 	Wisdom = 55,
+	Will = 90,
 	Leadership = 29,
 	Marksmanship = 66,
 	Mechanical = 0,

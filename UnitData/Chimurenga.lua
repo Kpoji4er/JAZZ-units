@@ -10,6 +10,7 @@ DefineClass.Chimurenga = {
 	Dexterity = 90,
 	Strength = 90,
 	Wisdom = 80,
+	Will = 90,
 	Leadership = 90,
 	Marksmanship = 85,
 	Mechanical = 0,

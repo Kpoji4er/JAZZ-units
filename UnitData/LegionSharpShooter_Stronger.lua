@@ -11,6 +11,7 @@ DefineClass.LegionSharpShooter_Stronger = {
 	Dexterity = 73,
 	Strength = 53,
 	Wisdom = 58,
+	Will = 65,
 	Leadership = 10,
 	Marksmanship = 86,
 	Explosives = 66,

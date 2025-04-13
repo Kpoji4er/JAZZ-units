@@ -9,6 +9,7 @@ DefineClass.LegionScout_Stronger = {
 	Agility = 85,
 	Dexterity = 95,
 	Strength = 75,
+	Will = 65,
 	Leadership = 29,
 	Marksmanship = 74,
 	Mechanical = 20,

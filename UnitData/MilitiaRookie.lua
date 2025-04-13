@@ -9,6 +9,7 @@ DefineClass.MilitiaRookie = {
 	Agility = 70,
 	Strength = 70,
 	Wisdom = 35,
+	Will = 40,
 	Leadership = 10,
 	Marksmanship = 75,
 	Mechanical = 5,

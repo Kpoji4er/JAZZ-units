@@ -10,6 +10,7 @@ DefineClass.ArmyCommando_Demolution = {
 	Dexterity = 88,
 	Strength = 48,
 	Wisdom = 71,
+	Will = 95,
 	Leadership = 29,
 	Marksmanship = 88,
 	Mechanical = 72,

@@ -10,6 +10,7 @@ DefineClass.ArmyHeavy = {
 	Dexterity = 75,
 	Strength = 90,
 	Wisdom = 30,
+	Will = 75,
 	Leadership = 47,
 	Marksmanship = 91,
 	Mechanical = 0,

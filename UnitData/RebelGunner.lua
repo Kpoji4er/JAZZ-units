@@ -10,6 +10,7 @@ DefineClass.RebelGunner = {
 	Dexterity = 39,
 	Strength = 59,
 	Wisdom = 30,
+	Will = 90,
 	Leadership = 20,
 	Marksmanship = 55,
 	Mechanical = 0,

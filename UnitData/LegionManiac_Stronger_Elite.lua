@@ -10,6 +10,7 @@ DefineClass.LegionManiac_Stronger_Elite = {
 	Dexterity = 87,
 	Strength = 95,
 	Wisdom = 43,
+	Will = 75,
 	Leadership = 65,
 	Marksmanship = 57,
 	Mechanical = 80,

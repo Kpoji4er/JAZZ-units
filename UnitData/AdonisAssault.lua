@@ -10,6 +10,7 @@ DefineClass.AdonisAssault = {
 	Dexterity = 85,
 	Strength = 85,
 	Wisdom = 70,
+	Will = 90,
 	Leadership = 50,
 	Marksmanship = 84,
 	Mechanical = 0,

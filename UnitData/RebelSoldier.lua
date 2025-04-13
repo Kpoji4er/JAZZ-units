@@ -10,6 +10,7 @@ DefineClass.RebelSoldier = {
 	Dexterity = 40,
 	Strength = 53,
 	Wisdom = 40,
+	Will = 90,
 	Leadership = 10,
 	Marksmanship = 63,
 	Mechanical = 0,

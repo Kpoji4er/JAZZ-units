@@ -10,6 +10,7 @@ DefineClass.ArmyDemo_Elite = {
 	Dexterity = 79,
 	Strength = 69,
 	Wisdom = 28,
+	Will = 85,
 	Leadership = 14,
 	Marksmanship = 87,
 	Mechanical = 0,

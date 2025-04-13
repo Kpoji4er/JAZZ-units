@@ -9,6 +9,7 @@ DefineClass.RebelGrenadier = {
 	Dexterity = 30,
 	Strength = 75,
 	Wisdom = 14,
+	Will = 90,
 	Leadership = 14,
 	Marksmanship = 43,
 	Mechanical = 0,

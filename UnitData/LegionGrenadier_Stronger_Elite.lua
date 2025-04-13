@@ -10,6 +10,7 @@ DefineClass.LegionGrenadier_Stronger_Elite = {
 	Dexterity = 65,
 	Strength = 78,
 	Wisdom = 23,
+	Will = 75,
 	Leadership = 14,
 	Marksmanship = 70,
 	Mechanical = 80,

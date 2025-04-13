@@ -10,6 +10,7 @@ DefineClass.LegionMortarman_Stronger_Elite = {
 	Dexterity = 70,
 	Strength = 96,
 	Wisdom = 80,
+	Will = 75,
 	Leadership = 10,
 	Marksmanship = 72,
 	Mechanical = 80,

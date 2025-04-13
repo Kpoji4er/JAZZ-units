@@ -10,6 +10,7 @@ DefineClass.ArmyMortar = {
 	Dexterity = 83,
 	Strength = 96,
 	Wisdom = 58,
+	Will = 70,
 	Leadership = 10,
 	Marksmanship = 70,
 	Mechanical = 0,

@@ -11,6 +11,7 @@ DefineClass.LegionGoon = {
 	Dexterity = 80,
 	Strength = 55,
 	Wisdom = 40,
+	Will = 40,
 	Leadership = 20,
 	Marksmanship = 68,
 	Mechanical = 0,

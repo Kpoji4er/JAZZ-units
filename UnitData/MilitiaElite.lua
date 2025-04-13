@@ -10,6 +10,7 @@ DefineClass.MilitiaElite = {
 	Dexterity = 80,
 	Strength = 80,
 	Wisdom = 35,
+	Will = 80,
 	Leadership = 10,
 	Marksmanship = 85,
 	Mechanical = 5,

@@ -10,6 +10,7 @@ DefineClass.LegionGoon_Stronger_Elite = {
 	Dexterity = 85,
 	Strength = 65,
 	Wisdom = 25,
+	Will = 65,
 	Leadership = 20,
 	Marksmanship = 87,
 	Mechanical = 80,

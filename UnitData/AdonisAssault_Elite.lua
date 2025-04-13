@@ -10,6 +10,7 @@ DefineClass.AdonisAssault_Elite = {
 	Dexterity = 90,
 	Strength = 85,
 	Wisdom = 68,
+	Will = 99,
 	Leadership = 84,
 	Marksmanship = 95,
 	Mechanical = 50,

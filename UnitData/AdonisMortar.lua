@@ -10,6 +10,7 @@ DefineClass.AdonisMortar = {
 	Dexterity = 75,
 	Strength = 99,
 	Wisdom = 48,
+	Will = 90,
 	Leadership = 31,
 	Marksmanship = 50,
 	Mechanical = 0,

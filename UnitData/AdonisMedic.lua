@@ -10,6 +10,7 @@ DefineClass.AdonisMedic = {
 	Dexterity = 85,
 	Strength = 53,
 	Wisdom = 96,
+	Will = 90,
 	Leadership = 58,
 	Marksmanship = 66,
 	Mechanical = 41,

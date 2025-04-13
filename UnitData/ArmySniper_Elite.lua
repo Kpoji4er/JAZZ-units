@@ -10,6 +10,7 @@ DefineClass.ArmySniper_Elite = {
 	Dexterity = 94,
 	Strength = 41,
 	Wisdom = 48,
+	Will = 80,
 	Leadership = 33,
 	Marksmanship = 95,
 	Mechanical = 0,

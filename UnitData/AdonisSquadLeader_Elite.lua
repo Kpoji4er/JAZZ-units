@@ -10,6 +10,7 @@ DefineClass.AdonisSquadLeader_Elite = {
 	Dexterity = 84,
 	Strength = 85,
 	Wisdom = 80,
+	Will = 99,
 	Leadership = 91,
 	Marksmanship = 95,
 	Mechanical = 52,

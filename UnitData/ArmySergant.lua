@@ -10,6 +10,7 @@ DefineClass.ArmySergant = {
 	Dexterity = 90,
 	Strength = 68,
 	Wisdom = 47,
+	Will = 90,
 	Leadership = 74,
 	Marksmanship = 80,
 	Mechanical = 0,

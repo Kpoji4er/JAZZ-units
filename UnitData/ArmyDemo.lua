@@ -10,6 +10,7 @@ DefineClass.ArmyDemo = {
 	Dexterity = 30,
 	Strength = 53,
 	Wisdom = 14,
+	Will = 75,
 	Leadership = 14,
 	Marksmanship = 43,
 	Mechanical = 0,

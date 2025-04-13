@@ -10,6 +10,7 @@ DefineClass.AdonisSniper = {
 	Dexterity = 85,
 	Strength = 85,
 	Wisdom = 84,
+	Will = 90,
 	Leadership = 20,
 	Marksmanship = 89,
 	Mechanical = 0,

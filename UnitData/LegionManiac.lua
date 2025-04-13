@@ -11,6 +11,7 @@ DefineClass.LegionManiac = {
 	Dexterity = 75,
 	Strength = 80,
 	Wisdom = 16,
+	Will = 65,
 	Marksmanship = 59,
 	Mechanical = 0,
 	Explosives = 40,

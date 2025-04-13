@@ -10,6 +10,7 @@ DefineClass.ArmyMedic_Elite = {
 	Dexterity = 99,
 	Strength = 65,
 	Wisdom = 84,
+	Will = 80,
 	Leadership = 20,
 	Marksmanship = 65,
 	Mechanical = 12,
