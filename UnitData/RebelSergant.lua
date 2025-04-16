@@ -1,5 +1,5 @@
-UndefineClass('RebelSentry')
-DefineClass.RebelSentry = {
+UndefineClass('RebelSergant')
+DefineClass.RebelSergant = {
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -9,14 +9,13 @@ DefineClass.RebelSentry = {
 	Agility = 71,
 	Strength = 63,
 	Wisdom = 86,
-	Will = 90,
 	Leadership = 73,
 	Marksmanship = 69,
 	Mechanical = 54,
 	Explosives = 57,
 	Medical = 45,
 	Portrait = "UI/EnemiesPortraits/RebelOfficer",
-	Name = T(628639184991, --[[ModItemUnitDataCompositeDef RebelSentry Name]] "Патрульный"),
+	Name = T(865978262125, --[[ModItemUnitDataCompositeDef RebelSergant Name]] "Командир отряда"),
 	Randomization = true,
 	elite = true,
 	eliteCategory = "Maquis",
@@ -42,7 +41,7 @@ DefineClass.RebelSentry = {
 		}),
 	},
 	Equipment = {
-		"RebelSentry",
+		"Adonis_762x39",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {
