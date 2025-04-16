@@ -6,11 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 1,
-<<<<<<< HEAD
 	'version', 1404,
-=======
-	'version', 1400,
->>>>>>> origin/Doc_Leevsy
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
