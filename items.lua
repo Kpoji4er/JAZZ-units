@@ -14500,12 +14500,33 @@ return {
 				}),
 				PlaceObj('AIActionThrowFlare', {
 					'BiasId', "ThrowFlare",
-					'Weight', 200,
+					'Weight', 250,
+					'OnActivationBiases', {
+						PlaceObj('AIBiasModification', {
+							'BiasId', "ThrowFlare",
+							'Value', -20,
+							'Period', 2,
+							'ApplyTo', "Team",
+						}),
+					},
+					'team_score', 1,
+					'self_score_mod', 1,
 					'min_score', 10,
 					'TargetLastAttackPos', true,
 				}),
 				PlaceObj('AIActionThrowFlare', {
 					'BiasId', "ThrowFlare",
+					'Weight', 150,
+					'OnActivationBiases', {
+						PlaceObj('AIBiasModification', {
+							'BiasId', "ThrowFlare",
+							'Value', -20,
+							'Period', 2,
+							'ApplyTo', "Team",
+						}),
+					},
+					'team_score', 0,
+					'self_score_mod', 0,
 					'min_score', 10,
 				}),
 			},
