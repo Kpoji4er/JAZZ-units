@@ -11,6 +11,7 @@ DefineClass.LegionMolotov_Stronger = {
 	Dexterity = 80,
 	Strength = 75,
 	Wisdom = 14,
+	Will = 65,
 	Leadership = 14,
 	Marksmanship = 63,
 	Mechanical = 40,

@@ -10,6 +10,7 @@ DefineClass.LegionScout_Stronger_Elite = {
 	Dexterity = 99,
 	Strength = 75,
 	Wisdom = 70,
+	Will = 75,
 	Leadership = 29,
 	Marksmanship = 80,
 	Mechanical = 80,

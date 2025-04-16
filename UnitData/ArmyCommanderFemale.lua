@@ -10,6 +10,7 @@ DefineClass.ArmyCommanderFemale = {
 	Dexterity = 91,
 	Strength = 63,
 	Wisdom = 91,
+	Will = 80,
 	Leadership = 86,
 	Marksmanship = 80,
 	Mechanical = 54,

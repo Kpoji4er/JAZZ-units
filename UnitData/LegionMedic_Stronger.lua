@@ -10,6 +10,7 @@ DefineClass.LegionMedic_Stronger = {
 	Dexterity = 96,
 	Strength = 42,
 	Wisdom = 85,
+	Will = 65,
 	Leadership = 50,
 	Marksmanship = 74,
 	Mechanical = 30,

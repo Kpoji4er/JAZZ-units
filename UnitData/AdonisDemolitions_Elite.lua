@@ -10,6 +10,7 @@ DefineClass.AdonisDemolitions_Elite = {
 	Dexterity = 84,
 	Strength = 90,
 	Wisdom = 61,
+	Will = 99,
 	Leadership = 31,
 	Marksmanship = 87,
 	Mechanical = 75,

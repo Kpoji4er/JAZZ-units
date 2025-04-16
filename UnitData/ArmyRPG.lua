@@ -10,6 +10,7 @@ DefineClass.ArmyRPG = {
 	Dexterity = 83,
 	Strength = 88,
 	Wisdom = 44,
+	Will = 75,
 	Leadership = 56,
 	Marksmanship = 12,
 	Mechanical = 0,

@@ -10,6 +10,7 @@ DefineClass.RebelSniper = {
 	Dexterity = 76,
 	Strength = 41,
 	Wisdom = 48,
+	Will = 90,
 	Leadership = 33,
 	Marksmanship = 88,
 	Mechanical = 0,

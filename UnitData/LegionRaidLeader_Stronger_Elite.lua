@@ -10,6 +10,7 @@ DefineClass.LegionRaidLeader_Stronger_Elite = {
 	Dexterity = 95,
 	Strength = 95,
 	Wisdom = 85,
+	Will = 99,
 	Leadership = 81,
 	Marksmanship = 94,
 	Mechanical = 80,

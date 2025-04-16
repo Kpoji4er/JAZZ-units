@@ -10,6 +10,7 @@ DefineClass.ArmyCommando_Sniper = {
 	Dexterity = 99,
 	Strength = 66,
 	Wisdom = 71,
+	Will = 95,
 	Leadership = 72,
 	Marksmanship = 93,
 	Mechanical = 0,

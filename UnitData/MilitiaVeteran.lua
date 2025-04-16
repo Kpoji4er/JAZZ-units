@@ -9,6 +9,7 @@ DefineClass.MilitiaVeteran = {
 	Dexterity = 70,
 	Strength = 80,
 	Wisdom = 35,
+	Will = 60,
 	Leadership = 10,
 	Marksmanship = 80,
 	Mechanical = 5,

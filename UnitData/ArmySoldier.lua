@@ -10,6 +10,7 @@ DefineClass.ArmySoldier = {
 	Dexterity = 77,
 	Strength = 53,
 	Wisdom = 31,
+	Will = 75,
 	Leadership = 19,
 	Marksmanship = 80,
 	Mechanical = 0,

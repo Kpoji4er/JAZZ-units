@@ -10,6 +10,7 @@ DefineClass.LegionHyenaHandler_Stronger = {
 	Agility = 85,
 	Dexterity = 55,
 	Wisdom = 41,
+	Will = 65,
 	Leadership = 81,
 	Marksmanship = 75,
 	Mechanical = 50,

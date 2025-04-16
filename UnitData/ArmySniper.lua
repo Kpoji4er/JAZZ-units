@@ -10,6 +10,7 @@ DefineClass.ArmySniper = {
 	Dexterity = 90,
 	Strength = 41,
 	Wisdom = 48,
+	Will = 70,
 	Leadership = 33,
 	Marksmanship = 90,
 	Mechanical = 0,

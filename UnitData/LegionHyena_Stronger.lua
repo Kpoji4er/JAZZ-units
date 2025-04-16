@@ -11,6 +11,7 @@ DefineClass.LegionHyena_Stronger = {
 	Dexterity = 77,
 	Strength = 80,
 	Wisdom = 10,
+	Will = 65,
 	Leadership = 0,
 	Marksmanship = 0,
 	Mechanical = 0,

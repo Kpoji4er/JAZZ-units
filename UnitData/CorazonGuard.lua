@@ -10,6 +10,7 @@ DefineClass.CorazonGuard = {
 	Dexterity = 75,
 	Strength = 85,
 	Wisdom = 80,
+	Will = 99,
 	Leadership = 20,
 	Marksmanship = 95,
 	Mechanical = 0,

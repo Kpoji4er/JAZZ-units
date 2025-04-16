@@ -10,6 +10,7 @@ DefineClass.LegionRocketeer_Stronger_Elite = {
 	Dexterity = 8,
 	Strength = 74,
 	Wisdom = 46,
+	Will = 75,
 	Leadership = 10,
 	Marksmanship = 70,
 	Mechanical = 80,

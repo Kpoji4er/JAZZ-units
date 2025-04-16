@@ -10,6 +10,7 @@ DefineClass.LegionRaidLeader_Stronger = {
 	Dexterity = 80,
 	Strength = 75,
 	Wisdom = 80,
+	Will = 85,
 	Leadership = 81,
 	Marksmanship = 85,
 	Mechanical = 70,

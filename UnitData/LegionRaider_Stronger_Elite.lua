@@ -10,6 +10,7 @@ DefineClass.LegionRaider_Stronger_Elite = {
 	Dexterity = 86,
 	Strength = 70,
 	Wisdom = 37,
+	Will = 75,
 	Leadership = 65,
 	Marksmanship = 90,
 	Mechanical = 80,

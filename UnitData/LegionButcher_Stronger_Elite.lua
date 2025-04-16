@@ -10,6 +10,7 @@ DefineClass.LegionButcher_Stronger_Elite = {
 	Dexterity = 86,
 	Strength = 90,
 	Wisdom = 22,
+	Will = 75,
 	Leadership = 9,
 	Marksmanship = 81,
 	Mechanical = 80,

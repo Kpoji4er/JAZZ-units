@@ -10,6 +10,7 @@ DefineClass.LegionRanger_Stronger = {
 	Dexterity = 80,
 	Strength = 70,
 	Wisdom = 70,
+	Will = 80,
 	Leadership = 53,
 	Marksmanship = 83,
 	Mechanical = 55,

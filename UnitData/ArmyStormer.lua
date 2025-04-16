@@ -9,6 +9,7 @@ DefineClass.ArmyStormer = {
 	Agility = 95,
 	Dexterity = 73,
 	Strength = 95,
+	Will = 90,
 	Leadership = 65,
 	Marksmanship = 87,
 	Mechanical = 0,

@@ -10,6 +10,7 @@ DefineClass.AdonisStormer = {
 	Dexterity = 81,
 	Strength = 85,
 	Wisdom = 80,
+	Will = 85,
 	Leadership = 20,
 	Marksmanship = 95,
 	Mechanical = 0,

@@ -10,6 +10,7 @@ DefineClass.ArmyCommander_Elite = {
 	Dexterity = 90,
 	Strength = 91,
 	Wisdom = 80,
+	Will = 99,
 	Leadership = 87,
 	Marksmanship = 90,
 	Mechanical = 54,

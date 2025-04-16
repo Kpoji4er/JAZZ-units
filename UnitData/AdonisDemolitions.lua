@@ -9,6 +9,7 @@ DefineClass.AdonisDemolitions = {
 	Agility = 72,
 	Strength = 81,
 	Wisdom = 30,
+	Will = 90,
 	Leadership = 31,
 	Marksmanship = 77,
 	Mechanical = 0,

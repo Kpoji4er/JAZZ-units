@@ -11,6 +11,7 @@ DefineClass.LegionRaider_Demolution = {
 	Dexterity = 70,
 	Strength = 70,
 	Wisdom = 40,
+	Will = 55,
 	Leadership = 25,
 	Marksmanship = 73,
 	Mechanical = 0,

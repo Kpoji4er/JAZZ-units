@@ -10,6 +10,7 @@ DefineClass.ArmyScout = {
 	Dexterity = 88,
 	Strength = 48,
 	Wisdom = 71,
+	Will = 75,
 	Leadership = 29,
 	Marksmanship = 88,
 	Mechanical = 0,

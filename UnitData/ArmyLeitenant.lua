@@ -10,6 +10,7 @@ DefineClass.ArmyLeitenant = {
 	Dexterity = 86,
 	Strength = 82,
 	Wisdom = 73,
+	Will = 99,
 	Leadership = 88,
 	Marksmanship = 80,
 	Mechanical = 0,

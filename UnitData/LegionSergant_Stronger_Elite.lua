@@ -10,6 +10,7 @@ DefineClass.LegionSergant_Stronger_Elite = {
 	Dexterity = 95,
 	Strength = 75,
 	Wisdom = 80,
+	Will = 90,
 	Leadership = 75,
 	Marksmanship = 95,
 	Mechanical = 80,

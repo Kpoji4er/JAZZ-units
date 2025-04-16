@@ -10,6 +10,7 @@ DefineClass.AdonisSquadLeader_Corporal = {
 	Dexterity = 75,
 	Strength = 85,
 	Wisdom = 80,
+	Will = 95,
 	Leadership = 62,
 	Marksmanship = 95,
 	Mechanical = 47,

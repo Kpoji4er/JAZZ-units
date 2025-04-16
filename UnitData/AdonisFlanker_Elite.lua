@@ -10,6 +10,7 @@ DefineClass.AdonisFlanker_Elite = {
 	Dexterity = 83,
 	Strength = 47,
 	Wisdom = 77,
+	Will = 99,
 	Leadership = 80,
 	Marksmanship = 92,
 	Mechanical = 56,

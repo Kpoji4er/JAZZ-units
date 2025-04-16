@@ -10,6 +10,7 @@ DefineClass.AdonisDedicatedGunner_Elite = {
 	Dexterity = 89,
 	Strength = 95,
 	Wisdom = 71,
+	Will = 99,
 	Leadership = 72,
 	Marksmanship = 90,
 	Mechanical = 50,

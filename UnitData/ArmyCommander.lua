@@ -10,6 +10,7 @@ DefineClass.ArmyCommander = {
 	Dexterity = 85,
 	Strength = 81,
 	Wisdom = 89,
+	Will = 85,
 	Leadership = 93,
 	Marksmanship = 90,
 	Mechanical = 62,

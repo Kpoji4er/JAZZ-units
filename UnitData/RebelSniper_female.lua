@@ -10,6 +10,7 @@ DefineClass.RebelSniper_female = {
 	Dexterity = 89,
 	Strength = 41,
 	Wisdom = 48,
+	Will = 90,
 	Leadership = 33,
 	Marksmanship = 91,
 	Mechanical = 0,

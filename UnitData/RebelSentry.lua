@@ -9,6 +9,7 @@ DefineClass.RebelSentry = {
 	Agility = 71,
 	Strength = 63,
 	Wisdom = 86,
+	Will = 90,
 	Leadership = 73,
 	Marksmanship = 69,
 	Mechanical = 54,
