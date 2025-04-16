@@ -184,13 +184,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-<<<<<<< HEAD
-	'saved', 1744551017,
-	'code_hash', 7613393694764992313,
-=======
 	'saved', 1739399841,
 	'code_hash', -4134694822504729715,
->>>>>>> origin/Doc_Leevsy
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
