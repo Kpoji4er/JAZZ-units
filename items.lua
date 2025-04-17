@@ -14504,23 +14504,7 @@ return {
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "ThrowFlare",
-							'Value', -20,
-							'Period', 2,
-							'ApplyTo', "Team",
-						}),
-					},
-					'team_score', 1,
-					'self_score_mod', 1,
-					'min_score', 10,
-					'TargetLastAttackPos', true,
-				}),
-				PlaceObj('AIActionThrowFlare', {
-					'BiasId', "ThrowFlare",
-					'Weight', 150,
-					'OnActivationBiases', {
-						PlaceObj('AIBiasModification', {
-							'BiasId', "ThrowFlare",
-							'Value', -20,
+							'Value', -10,
 							'Period', 2,
 							'ApplyTo', "Team",
 						}),
@@ -14528,6 +14512,7 @@ return {
 					'team_score', 0,
 					'self_score_mod', 0,
 					'min_score', 10,
+					'MinDist', 1000,
 				}),
 			},
 			TargetScoreRandomization = 10,
@@ -26393,7 +26378,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
