@@ -164,7 +164,7 @@ DefineClass.Livewire = {
 		"Scoundrel",
 		"MrFixit",
 		"Optimist",
-		"InnerInfo",
+		"InnerInfo_JAZZ",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

@@ -23807,7 +23807,7 @@ return {
 					"Scoundrel",
 					"MrFixit",
 					"Optimist",
-					"InnerInfo",
+					"InnerInfo_JAZZ",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -26378,7 +26378,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
@@ -29098,7 +29098,7 @@ return {
 				},
 				'StartingPerks', {
 					"HeavyWeaponsTraining",
-					"GruntyPerk",
+					"GruntyPerk_JAZZ",
 					"BeefedUp",
 					"TrueGrit",
 					"NightOps",

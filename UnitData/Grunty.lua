@@ -166,7 +166,7 @@ DefineClass.Grunty = {
 	},
 	StartingPerks = {
 		"HeavyWeaponsTraining",
-		"GruntyPerk",
+		"GruntyPerk_JAZZ",
 		"BeefedUp",
 		"TrueGrit",
 		"NightOps",
