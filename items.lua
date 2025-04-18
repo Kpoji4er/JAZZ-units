@@ -12573,6 +12573,16 @@ return {
 							'BiasId', "CloseToTeammates",
 							'Value', 100,
 						}),
+						PlaceObj('AIBiasModification', {
+							'BiasId', "AssaultGrenadeThrow",
+							'Value', 100,
+							'ApplyTo', "Team",
+						}),
+						PlaceObj('AIBiasModification', {
+							'BiasId', "Overwatch",
+							'Value', 100,
+							'Period', 2,
+						}),
 					},
 					'Label', "Advance",
 					'RequiredKeywords', {
@@ -12626,6 +12636,7 @@ return {
 							'Aiming', "Remaining AP",
 						}),
 						PlaceObj('AIActionThrowGrenade', {
+							'BiasId', "AssaultGrenadeThrow",
 							'Weight', 300,
 							'min_score', 100,
 							'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
@@ -12939,7 +12950,10 @@ return {
 			OptLocSearchRadius = 80,
 			PrefStance = "Crouch",
 			SignatureActions = {
-				PlaceObj('AIActionHeavyWeaponAttack', nil),
+				PlaceObj('AIActionHeavyWeaponAttack', {
+					'team_score', -50,
+					'min_score', 50,
+				}),
 				PlaceObj('AIAttackSingleTarget', {
 					'BiasId', "Autofire",
 					'Weight', 50,
@@ -12947,7 +12961,15 @@ return {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "Autofire",
 							'Effect', "disable",
-							'Period', 0,
+						}),
+						PlaceObj('AIBiasModification', {
+							'BiasId', "Advance",
+							'Value', 30,
+							'ApplyTo', "Team",
+						}),
+						PlaceObj('AIBiasModification', {
+							'BiasId', "Overwatch",
+							'Value', 200,
 						}),
 					},
 					'NotificationText', T(477022065166, --[[ModItemAIArchetype Soldier NotificationText]] "Автоматический огонь"),
@@ -12961,12 +12983,26 @@ return {
 				PlaceObj('AIAttackSingleTarget', {
 					'BiasId', "BurstFire",
 					'Weight', 150,
+					'OnActivationBiases', {
+						PlaceObj('AIBiasModification', {
+							'BiasId', "Overwatch",
+							'Value', 20,
+							'ApplyTo', "Team",
+						}),
+					},
 					'RequiredKeywords', {
 						"Soldier",
 					},
 					'action_id', "BurstFire",
 					'Aiming', "Remaining AP",
 					'AttackTargeting', set( "Arms", "BlindFire", "Groin", "InCover", "Legs", "Torso", "Trap" ),
+				}),
+				PlaceObj('AIConeAttack', {
+					'BiasId', "Overwatch",
+					'Weight', 50,
+					'team_score', 0,
+					'min_score', 100,
+					'action_id', "Overwatch",
 				}),
 				PlaceObj('AIAttackSingleTarget', {
 					'BiasId', "BurstFire",
@@ -12978,6 +13014,7 @@ return {
 				}),
 				PlaceObj('AIActionBasicAttack', nil),
 				PlaceObj('AIActionThrowGrenade', {
+					'BiasId', "AssaultGrenadeThrow",
 					'min_score', 100,
 				}),
 				PlaceObj('AIActionThrowFlare', {
@@ -14114,28 +14151,6 @@ return {
 					'Aiming', "Remaining AP",
 					'AttackTargeting', set( "Groin" ),
 				}),
-				PlaceObj('AIConeAttack', {
-					'BiasId', "Overwatch",
-					'Weight', 130,
-					'OnActivationBiases', {
-						PlaceObj('AIBiasModification', {
-							'BiasId', "Overwatch",
-							'Value', -50,
-							'ApplyTo', "Team",
-						}),
-						PlaceObj('AIBiasModification', {
-							'BiasId', "Overwatch",
-							'Effect', "disable",
-							'Value', -50,
-						}),
-					},
-					'RequiredKeywords', {
-						"Soldier",
-					},
-					'team_score', 0,
-					'min_score', 300,
-					'action_id', "Overwatch",
-				}),
 				PlaceObj('AIActionBasicAttack', {
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
@@ -14146,6 +14161,13 @@ return {
 				}),
 				PlaceObj('AIActionCancelShot', {
 					'Weight', 200,
+				}),
+				PlaceObj('AIConeAttack', {
+					'BiasId', "Overwatch",
+					'Weight', 50,
+					'team_score', 0,
+					'min_score', 100,
+					'action_id', "Overwatch",
 				}),
 				PlaceObj('AIActionThrowFlare', {
 					'BiasId', "ThrowFlare",
@@ -14288,6 +14310,12 @@ return {
 				}),
 				PlaceObj('PositioningAI', {
 					'BiasId', "Advance",
+					'OnActivationBiases', {
+						PlaceObj('AIBiasModification', {
+							'BiasId', "RunAndGun",
+							'Value', 100,
+						}),
+					},
 					'Label', "Advance",
 					'turn_phase', "Early",
 					'OptLocWeight', 30,
@@ -14457,14 +14485,60 @@ return {
 			PrefStance = "Crouch",
 			SignatureActions = {
 				PlaceObj('AIActionMobileShot', {
+					'BiasId', "RunAndGun",
 					'Weight', 150,
+					'OnActivationBiases', {
+						PlaceObj('AIBiasModification', {
+							'BiasId', "Overwatch",
+							'Value', 200,
+						}),
+						PlaceObj('AIBiasModification', {
+							'BiasId', "RunAndGun",
+							'Value', 20,
+							'ApplyTo', "Team",
+						}),
+					},
 					'NotificationText', "",
 					'RequiredKeywords', {
 						"RunAndGun",
 					},
 					'action_id', "RunAndGun",
 				}),
+				PlaceObj('AIAttackSingleTarget', {
+					'BiasId', "Autofire",
+					'Weight', 50,
+					'OnActivationBiases', {
+						PlaceObj('AIBiasModification', {
+							'BiasId', "Autofire",
+							'Effect', "disable",
+						}),
+						PlaceObj('AIBiasModification', {
+							'BiasId', "Advance",
+							'Value', 30,
+							'ApplyTo', "Team",
+						}),
+						PlaceObj('AIBiasModification', {
+							'BiasId', "Overwatch",
+							'Value', 200,
+						}),
+					},
+					'NotificationText', T(477022065166, --[[ModItemAIArchetype Skirmisher NotificationText]] "Автоматический огонь"),
+					'RequiredKeywords', {
+						"Soldier",
+					},
+					'action_id', "AutoFire",
+					'Aiming', "Remaining AP",
+					'AttackTargeting', set( "Arms", "BlindFire", "Groin", "InCover", "Legs", "Torso", "Trap" ),
+				}),
+				PlaceObj('AIConeAttack', {
+					'BiasId', "Overwatch",
+					'Weight', 50,
+					'team_score', 0,
+					'min_score', 100,
+					'action_id', "Overwatch",
+				}),
 				PlaceObj('AIActionMobileShot', {
+					'BiasId', "RunAndGun",
 					'Weight', 200,
 					'Priority', true,
 					'NotificationText', "",
@@ -14494,7 +14568,19 @@ return {
 					'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
 					'TargetLastAttackPos', true,
 				}),
-				PlaceObj('AIActionBasicAttack', nil),
+				PlaceObj('AIActionBasicAttack', {
+					'OnActivationBiases', {
+						PlaceObj('AIBiasModification', {
+							'BiasId', "RunAndGun",
+							'Value', 200,
+						}),
+						PlaceObj('AIBiasModification', {
+							'BiasId', "Autofire",
+							'Value', 100,
+							'ApplyTo', "Team",
+						}),
+					},
+				}),
 				PlaceObj('AIActionHeavyWeaponAttack', {
 					'min_score', 50,
 				}),
@@ -15014,6 +15100,7 @@ return {
 			PrefStance = "Prone",
 			SignatureActions = {
 				PlaceObj('AIActionMGSetup', {
+					'BiasId', "Overwatch",
 					'Weight', 500,
 					'enemy_score', 120,
 					'team_score', 10,
