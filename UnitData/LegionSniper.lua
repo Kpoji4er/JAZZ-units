@@ -11,6 +11,7 @@ DefineClass.LegionSniper = {
 	Dexterity = 76,
 	Strength = 65,
 	Wisdom = 70,
+	Will = 30,
 	Leadership = 33,
 	Marksmanship = 78,
 	Mechanical = 24,

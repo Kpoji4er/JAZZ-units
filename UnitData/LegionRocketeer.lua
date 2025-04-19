@@ -10,6 +10,7 @@ DefineClass.LegionRocketeer = {
 	Dexterity = 8,
 	Strength = 88,
 	Wisdom = 14,
+	Will = 30,
 	Leadership = 10,
 	Marksmanship = 12,
 	Mechanical = 0,

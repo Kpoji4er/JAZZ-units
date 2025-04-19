@@ -11,6 +11,7 @@ DefineClass.LegionGunner = {
 	Dexterity = 80,
 	Strength = 89,
 	Wisdom = 23,
+	Will = 40,
 	Leadership = 20,
 	Marksmanship = 70,
 	Mechanical = 30,

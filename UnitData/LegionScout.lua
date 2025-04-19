@@ -11,6 +11,7 @@ DefineClass.LegionScout = {
 	Dexterity = 90,
 	Strength = 65,
 	Wisdom = 50,
+	Will = 40,
 	Leadership = 29,
 	Marksmanship = 70,
 	Mechanical = 0,

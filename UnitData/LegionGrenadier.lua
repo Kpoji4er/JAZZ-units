@@ -11,6 +11,7 @@ DefineClass.LegionGrenadier = {
 	Dexterity = 45,
 	Strength = 75,
 	Wisdom = 14,
+	Will = 35,
 	Leadership = 14,
 	Marksmanship = 63,
 	Mechanical = 0,
