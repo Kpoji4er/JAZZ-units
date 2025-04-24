@@ -22561,8 +22561,8 @@ return {
 				'Mechanical', 0,
 				'Explosives', 0,
 				'Medical', 94,
-				'Portrait', "Mod/Dv3mFVN/Images/SpiderSmall.png",
-				'BigPortrait', "Mod/Dv3mFVN/Images/Spider.png",
+				'Portrait', "Mod/Dv3mFVN/Images/raw copy2Small.png",
+				'BigPortrait', "Mod/Dv3mFVN/Images/raw copy2.png",
 				'IsMercenary', true,
 				'Name', T(473405123801, --[[ModItemUnitDataCompositeDef Jazz_Spider Name]] "Доктор Донна «Паук» Хьюстон"),
 				'Nick', T(640915905655, --[[ModItemUnitDataCompositeDef Jazz_Spider Nick]] "Паук"),
@@ -26475,7 +26475,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
