@@ -10,6 +10,7 @@ DefineClass.Sidney = {
 	Dexterity = 90,
 	Strength = 74,
 	Wisdom = 79,
+	Will = 72,
 	Leadership = 39,
 	Marksmanship = 92,
 	Mechanical = 0,

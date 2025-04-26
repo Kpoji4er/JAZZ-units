@@ -10,6 +10,7 @@ DefineClass.Mouse = {
 	Dexterity = 95,
 	Strength = 50,
 	Wisdom = 75,
+	Will = 60,
 	Leadership = 10,
 	Marksmanship = 68,
 	Mechanical = 4,

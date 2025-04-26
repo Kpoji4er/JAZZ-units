@@ -10,6 +10,7 @@ DefineClass.Steroid = {
 	Dexterity = 48,
 	Strength = 97,
 	Wisdom = 61,
+	Will = 84,
 	Leadership = 9,
 	Marksmanship = 89,
 	Mechanical = 76,

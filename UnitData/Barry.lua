@@ -10,6 +10,7 @@ DefineClass.Barry = {
 	Dexterity = 87,
 	Strength = 78,
 	Wisdom = 91,
+	Will = 67,
 	Leadership = 29,
 	Marksmanship = 70,
 	Mechanical = 46,

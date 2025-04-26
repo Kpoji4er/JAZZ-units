@@ -10,6 +10,7 @@ DefineClass.Buns = {
 	Dexterity = 87,
 	Strength = 56,
 	Wisdom = 93,
+	Will = 75,
 	Leadership = 24,
 	Marksmanship = 86,
 	Mechanical = 8,

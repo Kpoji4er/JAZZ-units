@@ -10,6 +10,7 @@ DefineClass.Len = {
 	Dexterity = 88,
 	Strength = 77,
 	Wisdom = 83,
+	Will = 95,
 	Leadership = 68,
 	Marksmanship = 83,
 	Mechanical = 54,

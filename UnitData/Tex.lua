@@ -10,6 +10,7 @@ DefineClass.Tex = {
 	Dexterity = 75,
 	Strength = 70,
 	Wisdom = 51,
+	Will = 78,
 	Leadership = 1,
 	Marksmanship = 88,
 	Mechanical = 48,

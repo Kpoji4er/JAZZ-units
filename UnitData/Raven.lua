@@ -10,6 +10,7 @@ DefineClass.Raven = {
 	Dexterity = 93,
 	Strength = 68,
 	Wisdom = 78,
+	Will = 78,
 	Leadership = 19,
 	Marksmanship = 94,
 	Mechanical = 5,

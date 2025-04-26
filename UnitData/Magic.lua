@@ -10,6 +10,7 @@ DefineClass.Magic = {
 	Dexterity = 98,
 	Strength = 92,
 	Wisdom = 80,
+	Will = 92,
 	Leadership = 15,
 	Marksmanship = 94,
 	Mechanical = 91,

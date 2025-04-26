@@ -10,6 +10,7 @@ DefineClass.Red = {
 	Dexterity = 81,
 	Strength = 68,
 	Wisdom = 79,
+	Will = 82,
 	Leadership = 21,
 	Marksmanship = 78,
 	Mechanical = 35,

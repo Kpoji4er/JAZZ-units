@@ -9,6 +9,7 @@ DefineClass.Nails = {
 	Dexterity = 88,
 	Strength = 90,
 	Wisdom = 79,
+	Will = 72,
 	Leadership = 30,
 	Marksmanship = 84,
 	Mechanical = 63,

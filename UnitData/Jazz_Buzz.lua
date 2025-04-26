@@ -10,6 +10,7 @@ DefineClass.Jazz_Buzz = {
 	Dexterity = 47,
 	Strength = 68,
 	Wisdom = 90,
+	Will = 49,
 	Leadership = 13,
 	Marksmanship = 96,
 	Mechanical = 5,

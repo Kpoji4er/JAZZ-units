@@ -10,6 +10,7 @@ DefineClass.MD = {
 	Dexterity = 78,
 	Strength = 76,
 	Wisdom = 94,
+	Will = 68,
 	Leadership = 4,
 	Marksmanship = 68,
 	Mechanical = 7,

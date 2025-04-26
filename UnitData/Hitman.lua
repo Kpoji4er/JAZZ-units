@@ -10,6 +10,7 @@ DefineClass.Hitman = {
 	Dexterity = 40,
 	Strength = 72,
 	Wisdom = 74,
+	Will = 89,
 	Leadership = 58,
 	Marksmanship = 88,
 	Mechanical = 11,

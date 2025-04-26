@@ -10,6 +10,7 @@ DefineClass.Ice = {
 	Dexterity = 87,
 	Strength = 84,
 	Wisdom = 78,
+	Will = 82,
 	Leadership = 25,
 	Marksmanship = 87,
 	Mechanical = 42,

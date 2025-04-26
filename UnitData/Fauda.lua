@@ -10,6 +10,7 @@ DefineClass.Fauda = {
 	Dexterity = 45,
 	Strength = 82,
 	Wisdom = 81,
+	Will = 97,
 	Leadership = 64,
 	Marksmanship = 80,
 	Mechanical = 61,
