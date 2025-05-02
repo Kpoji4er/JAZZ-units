@@ -10,6 +10,7 @@ DefineClass.Kalyna = {
 	Dexterity = 73,
 	Strength = 42,
 	Wisdom = 48,
+	Will = 76,
 	Leadership = 6,
 	Marksmanship = 80,
 	Mechanical = 67,

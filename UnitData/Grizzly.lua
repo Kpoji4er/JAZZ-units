@@ -10,6 +10,7 @@ DefineClass.Grizzly = {
 	Dexterity = 51,
 	Strength = 95,
 	Wisdom = 72,
+	Will = 83,
 	Leadership = 18,
 	Marksmanship = 79,
 	Mechanical = 24,

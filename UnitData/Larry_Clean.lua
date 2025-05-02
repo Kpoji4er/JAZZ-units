@@ -10,6 +10,7 @@ DefineClass.Larry_Clean = {
 	Dexterity = 79,
 	Strength = 67,
 	Wisdom = 70,
+	Will = 49,
 	Leadership = 18,
 	Marksmanship = 70,
 	Mechanical = 14,

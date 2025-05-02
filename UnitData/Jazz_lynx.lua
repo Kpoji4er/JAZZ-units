@@ -10,6 +10,7 @@ DefineClass.Jazz_lynx = {
 	Dexterity = 86,
 	Strength = 77,
 	Wisdom = 82,
+	Will = 76,
 	Leadership = 39,
 	Marksmanship = 99,
 	Mechanical = 29,

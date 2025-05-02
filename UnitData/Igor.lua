@@ -10,6 +10,7 @@ DefineClass.Igor = {
 	Dexterity = 74,
 	Strength = 85,
 	Wisdom = 81,
+	Will = 79,
 	Leadership = 4,
 	Marksmanship = 78,
 	Mechanical = 36,

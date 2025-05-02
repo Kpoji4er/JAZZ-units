@@ -10,6 +10,7 @@ DefineClass.Scully = {
 	Dexterity = 95,
 	Strength = 87,
 	Wisdom = 93,
+	Will = 95,
 	Leadership = 70,
 	Marksmanship = 92,
 	Mechanical = 61,

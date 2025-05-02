@@ -10,6 +10,7 @@ DefineClass.Flay = {
 	Dexterity = 78,
 	Strength = 80,
 	Wisdom = 79,
+	Will = 66,
 	Leadership = 12,
 	Marksmanship = 84,
 	Mechanical = 18,

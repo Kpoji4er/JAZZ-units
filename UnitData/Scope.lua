@@ -10,6 +10,7 @@ DefineClass.Scope = {
 	Dexterity = 76,
 	Strength = 64,
 	Wisdom = 83,
+	Will = 77,
 	Leadership = 39,
 	Marksmanship = 99,
 	Mechanical = 4,

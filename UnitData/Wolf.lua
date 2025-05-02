@@ -10,6 +10,7 @@ DefineClass.Wolf = {
 	Dexterity = 86,
 	Strength = 87,
 	Wisdom = 75,
+	Will = 77,
 	Leadership = 58,
 	Marksmanship = 79,
 	Mechanical = 65,

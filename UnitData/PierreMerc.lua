@@ -10,6 +10,7 @@ DefineClass.PierreMerc = {
 	Dexterity = 68,
 	Strength = 78,
 	Wisdom = 56,
+	Will = 85,
 	Leadership = 39,
 	Marksmanship = 77,
 	Mechanical = 5,

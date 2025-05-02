@@ -10,6 +10,7 @@ DefineClass.Meltdown = {
 	Dexterity = 84,
 	Strength = 76,
 	Wisdom = 80,
+	Will = 67,
 	Leadership = 24,
 	Marksmanship = 83,
 	Mechanical = 22,

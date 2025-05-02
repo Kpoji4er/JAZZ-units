@@ -10,6 +10,7 @@ DefineClass.Shadow = {
 	Dexterity = 85,
 	Strength = 89,
 	Wisdom = 77,
+	Will = 85,
 	Leadership = 35,
 	Marksmanship = 90,
 	Mechanical = 12,

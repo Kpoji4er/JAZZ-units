@@ -10,6 +10,7 @@ DefineClass.Grunty = {
 	Dexterity = 75,
 	Strength = 71,
 	Wisdom = 74,
+	Will = 64,
 	Leadership = 21,
 	Marksmanship = 78,
 	Mechanical = 45,

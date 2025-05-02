@@ -10,6 +10,7 @@ DefineClass.Thor = {
 	Dexterity = 84,
 	Strength = 89,
 	Wisdom = 93,
+	Will = 67,
 	Leadership = 61,
 	Marksmanship = 74,
 	Mechanical = 35,

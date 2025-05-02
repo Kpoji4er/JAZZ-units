@@ -10,6 +10,7 @@ DefineClass.Spike = {
 	Dexterity = 91,
 	Strength = 86,
 	Wisdom = 85,
+	Will = 100,
 	Leadership = 85,
 	Marksmanship = 92,
 	Mechanical = 62,
