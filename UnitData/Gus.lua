@@ -10,6 +10,7 @@ DefineClass.Gus = {
 	Dexterity = 84,
 	Strength = 81,
 	Wisdom = 94,
+	Will = 97,
 	Leadership = 85,
 	Marksmanship = 95,
 	Mechanical = 80,

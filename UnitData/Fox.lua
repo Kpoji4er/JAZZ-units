@@ -10,6 +10,7 @@ DefineClass.Fox = {
 	Dexterity = 100,
 	Strength = 56,
 	Wisdom = 76,
+	Will = 55,
 	Leadership = 21,
 	Marksmanship = 69,
 	Mechanical = 15,

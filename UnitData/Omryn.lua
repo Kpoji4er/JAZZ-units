@@ -10,6 +10,7 @@ DefineClass.Omryn = {
 	Dexterity = 66,
 	Strength = 85,
 	Wisdom = 77,
+	Will = 82,
 	Leadership = 15,
 	Marksmanship = 80,
 	Mechanical = 43,

@@ -10,6 +10,7 @@ DefineClass.Ivan = {
 	Dexterity = 95,
 	Strength = 87,
 	Wisdom = 82,
+	Will = 86,
 	Leadership = 44,
 	Marksmanship = 92,
 	Mechanical = 14,

@@ -10,6 +10,7 @@ DefineClass.Larry = {
 	Dexterity = 73,
 	Strength = 67,
 	Wisdom = 58,
+	Will = 94,
 	Leadership = 18,
 	Marksmanship = 62,
 	Mechanical = 14,

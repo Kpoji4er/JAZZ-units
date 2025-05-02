@@ -10,6 +10,7 @@ DefineClass.Blood = {
 	Dexterity = 88,
 	Strength = 83,
 	Wisdom = 73,
+	Will = 76,
 	Leadership = 6,
 	Marksmanship = 78,
 	Mechanical = 23,

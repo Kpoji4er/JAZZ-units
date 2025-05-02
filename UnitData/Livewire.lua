@@ -10,6 +10,7 @@ DefineClass.Livewire = {
 	Dexterity = 80,
 	Strength = 44,
 	Wisdom = 94,
+	Will = 55,
 	Leadership = 24,
 	Marksmanship = 62,
 	Mechanical = 85,

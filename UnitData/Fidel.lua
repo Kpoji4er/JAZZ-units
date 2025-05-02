@@ -10,6 +10,7 @@ DefineClass.Fidel = {
 	Dexterity = 64,
 	Strength = 83,
 	Wisdom = 62,
+	Will = 51,
 	Leadership = 1,
 	Marksmanship = 86,
 	Mechanical = 6,

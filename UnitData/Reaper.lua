@@ -10,6 +10,7 @@ DefineClass.Reaper = {
 	Dexterity = 92,
 	Strength = 81,
 	Wisdom = 81,
+	Will = 73,
 	Leadership = 34,
 	Marksmanship = 97,
 	Mechanical = 41,

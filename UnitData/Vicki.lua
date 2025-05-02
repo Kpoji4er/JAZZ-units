@@ -10,6 +10,7 @@ DefineClass.Vicki = {
 	Dexterity = 72,
 	Strength = 70,
 	Wisdom = 85,
+	Will = 75,
 	Leadership = 33,
 	Marksmanship = 85,
 	Mechanical = 95,

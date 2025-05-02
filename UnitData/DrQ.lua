@@ -10,6 +10,7 @@ DefineClass.DrQ = {
 	Dexterity = 81,
 	Strength = 73,
 	Wisdom = 87,
+	Will = 85,
 	Leadership = 26,
 	Mechanical = 19,
 	Explosives = 20,

@@ -10,6 +10,7 @@ DefineClass.Jazz_Spider = {
 	Dexterity = 56,
 	Strength = 68,
 	Wisdom = 90,
+	Will = 62,
 	Leadership = 16,
 	Marksmanship = 70,
 	Mechanical = 0,

@@ -10,6 +10,7 @@ DefineClass.Raider = {
 	Dexterity = 78,
 	Strength = 80,
 	Wisdom = 76,
+	Will = 90,
 	Leadership = 91,
 	Marksmanship = 84,
 	Mechanical = 12,
