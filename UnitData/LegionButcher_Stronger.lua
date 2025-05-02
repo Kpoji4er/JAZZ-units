@@ -10,7 +10,6 @@ DefineClass.LegionButcher_Stronger = {
 	Dexterity = 86,
 	Strength = 85,
 	Wisdom = 15,
-	Will = 65,
 	Leadership = 9,
 	Marksmanship = 62,
 	Mechanical = 0,

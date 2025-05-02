@@ -1437,7 +1437,7 @@ return {
 				'Agility', 83,
 				'Strength', 88,
 				'Wisdom', 14,
-				'Will', 65,
+				'Will', 55,
 				'Leadership', 10,
 				'Marksmanship', 75,
 				'Mechanical', 40,
@@ -1521,7 +1521,7 @@ return {
 				'Dexterity', 90,
 				'Strength', 70,
 				'Wisdom', 24,
-				'Will', 65,
+				'Will', 55,
 				'Leadership', 10,
 				'Marksmanship', 80,
 				'Mechanical', 20,
@@ -1615,7 +1615,7 @@ return {
 				'Dexterity', 70,
 				'Strength', 70,
 				'Wisdom', 40,
-				'Will', 65,
+				'Will', 55,
 				'Leadership', 25,
 				'Marksmanship', 73,
 				'Mechanical', 20,
@@ -1800,7 +1800,7 @@ return {
 				'Dexterity', 43,
 				'Strength', 96,
 				'Wisdom', 14,
-				'Will', 60,
+				'Will', 40,
 				'Leadership', 10,
 				'Marksmanship', 50,
 				'Mechanical', 30,
@@ -1883,7 +1883,7 @@ return {
 				'Dexterity', 96,
 				'Strength', 42,
 				'Wisdom', 85,
-				'Will', 65,
+				'Will', 40,
 				'Leadership', 50,
 				'Marksmanship', 74,
 				'Mechanical', 30,
@@ -1964,7 +1964,6 @@ return {
 				'Dexterity', 85,
 				'Strength', 95,
 				'Wisdom', 16,
-				'Will', 65,
 				'Leadership', 65,
 				'Marksmanship', 52,
 				'Mechanical', 30,
@@ -2184,7 +2183,7 @@ return {
 				'Dexterity', 90,
 				'Strength', 89,
 				'Wisdom', 25,
-				'Will', 65,
+				'Will', 55,
 				'Leadership', 55,
 				'Marksmanship', 86,
 				'Mechanical', 50,
@@ -2270,7 +2269,7 @@ return {
 				'Dexterity', 62,
 				'Strength', 73,
 				'Wisdom', 17,
-				'Will', 65,
+				'Will', 55,
 				'Leadership', 14,
 				'Marksmanship', 66,
 				'Mechanical', 20,
@@ -2354,7 +2353,7 @@ return {
 				'Dexterity', 80,
 				'Strength', 75,
 				'Wisdom', 14,
-				'Will', 65,
+				'Will', 55,
 				'Leadership', 14,
 				'Marksmanship', 63,
 				'Mechanical', 40,
@@ -2435,7 +2434,6 @@ return {
 				'Agility', 89,
 				'Dexterity', 77,
 				'Wisdom', 22,
-				'Will', 55,
 				'Leadership', 20,
 				'Marksmanship', 75,
 				'Mechanical', 20,
@@ -2518,7 +2516,6 @@ return {
 				'Dexterity', 86,
 				'Strength', 85,
 				'Wisdom', 15,
-				'Will', 65,
 				'Leadership', 9,
 				'Marksmanship', 62,
 				'Mechanical', 0,
@@ -2600,7 +2597,7 @@ return {
 				'Agility', 85,
 				'Dexterity', 95,
 				'Strength', 75,
-				'Will', 65,
+				'Will', 60,
 				'Leadership', 29,
 				'Marksmanship', 74,
 				'Mechanical', 20,
@@ -2681,7 +2678,7 @@ return {
 				'Dexterity', 73,
 				'Strength', 53,
 				'Wisdom', 58,
-				'Will', 65,
+				'Will', 45,
 				'Leadership', 10,
 				'Marksmanship', 86,
 				'Explosives', 66,
@@ -2761,7 +2758,7 @@ return {
 				'Dexterity', 80,
 				'Strength', 70,
 				'Wisdom', 35,
-				'Will', 60,
+				'Will', 45,
 				'Leadership', 33,
 				'Marksmanship', 90,
 				'Mechanical', 30,
@@ -2846,7 +2843,7 @@ return {
 				'Dexterity', 90,
 				'Strength', 70,
 				'Wisdom', 90,
-				'Will', 80,
+				'Will', 70,
 				'Leadership', 47,
 				'Marksmanship', 83,
 				'Mechanical', 50,
@@ -12564,9 +12561,7 @@ return {
 							'Weight', 200,
 							'CheckLOS', false,
 						}),
-						PlaceObj('AIPolicyCustomSeekCover', {
-							'ExposedAtCloseRange_Score', -30,
-						}),
+						PlaceObj('AIPolicyTakeCover', nil),
 					},
 					'TakeCoverChance', 60,
 				}),
@@ -12578,6 +12573,12 @@ return {
 							'BiasId', "Advance",
 							'Value', -30,
 							'Period', 2,
+						}),
+						PlaceObj('AIBiasModification', {
+							'BiasId', "Advance",
+							'Value', 30,
+							'Period', 2,
+							'ApplyTo', "Team",
 						}),
 						PlaceObj('AIBiasModification', {
 							'BiasId', "CloseToTeammates",
@@ -12592,6 +12593,7 @@ return {
 							'BiasId', "Overwatch",
 							'Value', 100,
 							'Period', 2,
+							'ApplyTo', "Team",
 						}),
 					},
 					'Label', "Advance",
@@ -12761,12 +12763,11 @@ return {
 							'Weight', 10,
 							'Distance', 6,
 						}),
-						PlaceObj('AIPolicyCustomSeekCover', {
-							'Weight', 50,
-							'ExposedAtCloseRange_Score', 0,
-						}),
 						PlaceObj('AIPolicyCustomFlanking', {
 							'ScalePerDistance', true,
+						}),
+						PlaceObj('AIPolicyTakeCover', {
+							'Weight', 50,
 						}),
 					},
 					'SignatureActions', {
@@ -12814,10 +12815,7 @@ return {
 						}),
 						PlaceObj('AIPolicyDealDamage', nil),
 						PlaceObj('AIPolicyAttackAP', nil),
-						PlaceObj('AIPolicyCustomSeekCover', {
-							'ScalePerDistance', true,
-							'ForceCheckLastEnemyPos', true,
-						}),
+						PlaceObj('AIPolicyTakeCover', nil),
 					},
 					'VoiceResponse', "TacticalFocus",
 				}),
@@ -12951,10 +12949,8 @@ return {
 					'TargetDist', "average",
 					'MinScore', 8,
 				}),
-				PlaceObj('AIPolicyCustomSeekCover', {
+				PlaceObj('AIPolicyTakeCover', {
 					'Weight', 120,
-					'ScalePerDistance', true,
-					'ForceCheckLastEnemyPos', true,
 				}),
 			},
 			OptLocSearchRadius = 80,
@@ -13960,10 +13956,7 @@ return {
 						PlaceObj('AIPolicyDealDamage', {
 							'Weight', 150,
 						}),
-						PlaceObj('AIPolicyCustomSeekCover', {
-							'ScalePerDistance', true,
-							'ForceCheckLastEnemyPos', true,
-						}),
+						PlaceObj('AIPolicyTakeCover', nil),
 					},
 					'TakeCoverChance', 70,
 				}),
@@ -14120,11 +14113,7 @@ return {
 					},
 					'Weight', 200,
 				}),
-				PlaceObj('AIPolicyCustomSeekCover', {
-					'ScalePerDistance', true,
-					'ForceCheckLastEnemyPos', true,
-					'ExposedAtCloseRange_Score', -200,
-				}),
+				PlaceObj('AIPolicyTakeCover', nil),
 				PlaceObj('AIPolicyCustomFlanking', {
 					'Weight', 20,
 					'OnlyTarget', true,
@@ -14280,6 +14269,7 @@ return {
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyDealDamage', nil),
 						PlaceObj('AIPolicyCustomSeekCover', {
+							'visibility_mode', "self",
 							'ExposedAtCloseRange_Score', -10,
 						}),
 					},
@@ -14307,12 +14297,14 @@ return {
 						PlaceObj('AIPolicyDistanceFromStart', {
 							'Weight', 10,
 						}),
-						PlaceObj('AIPolicyCustomFlanking', {
-							'Weight', 150,
-							'ReserveAttackAP', "AP",
-						}),
 						PlaceObj('AIPolicyCustomSeekCover', {
 							'Weight', 50,
+							'visibility_mode', "self",
+						}),
+						PlaceObj('AIPolicyFlanking', {
+							'Weight', 150,
+							'AllyPlannedPosition', true,
+							'ReserveAttackAP', true,
 						}),
 					},
 					'TakeCoverChance', 80,
@@ -14356,6 +14348,7 @@ return {
 						}),
 						PlaceObj('AIPolicyCustomSeekCover', {
 							'Weight', 20,
+							'visibility_mode', "self",
 						}),
 					},
 					'SignatureActions', {
@@ -14486,10 +14479,7 @@ return {
 				PlaceObj('AIPolicyIndoorsOutdoors', {
 					'Weight', 20,
 				}),
-				PlaceObj('AIPolicyCustomSeekCover', {
-					'ScalePerDistance', true,
-					'ForceCheckLastEnemyPos', true,
-				}),
+				PlaceObj('AIPolicyTakeCover', nil),
 			},
 			OptLocSearchRadius = 50,
 			PrefStance = "Crouch",
@@ -15144,10 +15134,12 @@ return {
 							'CheckLOS', false,
 						}),
 						PlaceObj('AIPolicyAttackAP', nil),
-						PlaceObj('AIPolicyCustomFlanking', nil),
-						PlaceObj('AIPolicyCustomSeekCover', {
-							'ScalePerDistance', true,
-							'ExposedAtCloseRange_Score', 0,
+						PlaceObj('AIPolicyTakeCover', {
+							'Weight', 200,
+						}),
+						PlaceObj('AIPolicyFlanking', {
+							'AllyPlannedPosition', true,
+							'ReserveAttackAP', true,
 						}),
 					},
 					'TakeCoverChance', 0,
@@ -26475,7 +26467,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {

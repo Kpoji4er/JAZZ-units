@@ -9,7 +9,6 @@ DefineClass.LegionGoon_Stronger = {
 	Agility = 89,
 	Dexterity = 77,
 	Wisdom = 22,
-	Will = 55,
 	Leadership = 20,
 	Marksmanship = 75,
 	Mechanical = 20,
