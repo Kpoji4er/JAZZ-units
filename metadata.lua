@@ -183,13 +183,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-<<<<<<< HEAD
-	'saved', 1746200945,
-	'code_hash', 5678456491170307481,
-=======
 	'saved', 1745661155,
 	'code_hash', -2676794781536808190,
->>>>>>> f901a13f20f98e9553cb30bb60551c1fb400168c
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
