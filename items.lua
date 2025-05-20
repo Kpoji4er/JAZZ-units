@@ -5462,6 +5462,7 @@ return {
 			'Randomization', true,
 			'Affiliation', "Adonis",
 			'StartingLevel', 3,
+			'archetype', "Turret",
 			'MaxAttacks', 10,
 			'MaxHitPoints', 80,
 			'StartingPerks', {
@@ -12562,6 +12563,15 @@ return {
 							'CheckLOS', false,
 						}),
 						PlaceObj('AIPolicyTakeCover', nil),
+						PlaceObj('AIPolicyIndoorsOutdoors', {
+							'Weight', 50,
+						}),
+						PlaceObj('AIPolicyProximity', {
+							'Weight', 5,
+							'AllyPlannedPosition', true,
+							'TargetUnits', "allies",
+						}),
+						PlaceObj('AIPolicyTryNotToBeFlanked', nil),
 					},
 					'TakeCoverChance', 60,
 				}),
@@ -12619,13 +12629,13 @@ return {
 						PlaceObj('AIPolicyProximity', {
 							'AllyPlannedPosition', true,
 							'TargetUnits', "allies",
-							'TargetDist', "average",
+							'TargetDist', "total",
 							'MinScore', 6,
 						}),
 						PlaceObj('AIPolicyProximity', {
-							'Weight', 20,
 							'AllyPlannedPosition', true,
-							'MinScore', 6,
+							'TargetDist', "total",
+							'MinScore', 8,
 						}),
 						PlaceObj('AIPolicyDistanceFromStart', {
 							'Distance', 2,
@@ -12634,6 +12644,10 @@ return {
 							'Distance', 3,
 						}),
 						PlaceObj('AIPolicyDistanceFromStart', nil),
+						PlaceObj('AIPolicyLosToEnemy', {
+							'Weight', 50,
+						}),
+						PlaceObj('AIPolicyLastEnemyPos', nil),
 					},
 					'SignatureActions', {
 						PlaceObj('AIAttackSingleTarget', {
@@ -12793,7 +12807,7 @@ return {
 				}),
 				PlaceObj('PositioningAI', {
 					'BiasId', "Indoor",
-					'Weight', 200,
+					'Weight', 300,
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "Indoor",
@@ -12834,6 +12848,12 @@ return {
 						PlaceObj('AIPolicyProximity', {
 							'Weight', 200,
 							'TargetUnits', "allies",
+							'MinScore', 3,
+						}),
+						PlaceObj('AIPolicyProximity', {
+							'Weight', 200,
+							'TargetUnits', "allies",
+							'TargetDist', "average",
 							'MinScore', 3,
 						}),
 						PlaceObj('AIPolicyAttackAP', {
@@ -12924,36 +12944,28 @@ return {
 			Comment = "Keywords: Soldier, Sniper, Control, Ordnance, Smoke, Explosives",
 			OptLocPolicies = {
 				PlaceObj('AIPolicyHighGround', {
-					'RequiredKeywords', {
-						"Sniper",
-					},
-				}),
-				PlaceObj('AIPolicyLosToEnemy', {
 					'Weight', 50,
 				}),
 				PlaceObj('AIPolicyWeaponRange', {
-					'RequiredKeywords', {
-						"Soldier",
-					},
-					'Weight', 50,
+					'Weight', 30,
 					'RangeMin', 5,
 					'RangeMax', 100,
 				}),
-				PlaceObj('AIPolicyIndoorsOutdoors', {
-					'Weight', 30,
-				}),
+				PlaceObj('AIPolicyIndoorsOutdoors', nil),
 				PlaceObj('AIPolicyProximity', {
 					'Required', true,
 					'AllyPlannedPosition', true,
 					'TargetUnits', "allies",
-					'TargetDist', "average",
-					'MinScore', 8,
+					'MinScore', 15,
 				}),
 				PlaceObj('AIPolicyTakeCover', {
 					'Weight', 120,
 				}),
+				PlaceObj('AIPolicyLosToEnemy', {
+					'Weight', 10,
+				}),
 			},
-			OptLocSearchRadius = 80,
+			OptLocSearchRadius = 60,
 			PrefStance = "Crouch",
 			SignatureActions = {
 				PlaceObj('AIActionHeavyWeaponAttack', {
@@ -13049,6 +13061,7 @@ return {
 							'ApplyTo', "Team",
 						}),
 					},
+					'ForbiddenInState', set( "Day", "Sunrise", "Sunset" ),
 					'team_score', 0,
 					'self_score_mod', 0,
 					'min_score', 10,
@@ -13080,6 +13093,7 @@ return {
 							'ApplyTo', "Team",
 						}),
 					},
+					'ForbiddenInState', set( "Day", "Sunrise", "Sunset" ),
 					'team_score', 0,
 					'self_score_mod', 0,
 					'min_score', 10,
@@ -13285,7 +13299,7 @@ return {
 				PlaceObj('AIActionBasicAttack', nil),
 			},
 			group = "System",
-			id = "Scout_LastLocation__",
+			id = "Scout_LastLocation",
 		}),
 		PlaceObj('ModItemAIArchetype', {
 			BaseAttackTargeting = set( "Arms", "Groin", "Legs", "Torso" ),
@@ -13673,7 +13687,6 @@ return {
 			},
 			Comment = "morale-related (cloned Assault)",
 			OptLocPolicies = {
-				PlaceObj('AIPolicyLosToEnemy', nil),
 				PlaceObj('AIPolicyGrenadeRange', {
 					'Weight', 20,
 					'RangeMin', 60,
@@ -13749,6 +13762,7 @@ return {
 							'ApplyTo', "Team",
 						}),
 					},
+					'ForbiddenInState', set( "Day", "Sunrise", "Sunset" ),
 					'min_score', 10,
 					'TargetLastAttackPos', true,
 				}),
@@ -13777,6 +13791,7 @@ return {
 							'ApplyTo', "Team",
 						}),
 					},
+					'ForbiddenInState', set( "Day", "Sunrise", "Sunset" ),
 					'min_score', 10,
 				}),
 			},
@@ -13957,6 +13972,9 @@ return {
 							'Weight', 150,
 						}),
 						PlaceObj('AIPolicyTakeCover', nil),
+						PlaceObj('AIPolicyIndoorsOutdoors', {
+							'Weight', 20,
+						}),
 					},
 					'TakeCoverChance', 70,
 				}),
@@ -14126,6 +14144,12 @@ return {
 					'RangeMin', 10,
 					'RangeMax', 100,
 				}),
+				PlaceObj('AIPolicyIndoorsOutdoors', {
+					'Weight', 150,
+				}),
+				PlaceObj('AIPolicyLosToEnemy', {
+					'Weight', 10,
+				}),
 			},
 			OptLocSearchRadius = 80,
 			PrefStance = "Prone",
@@ -14272,6 +14296,9 @@ return {
 							'visibility_mode', "self",
 							'ExposedAtCloseRange_Score', -10,
 						}),
+						PlaceObj('AIPolicyIndoorsOutdoors', {
+							'Weight', 20,
+						}),
 					},
 					'TakeCoverChance', 50,
 				}),
@@ -14349,6 +14376,10 @@ return {
 						PlaceObj('AIPolicyCustomSeekCover', {
 							'Weight', 20,
 							'visibility_mode', "self",
+						}),
+						PlaceObj('AIPolicyLosToEnemy', nil),
+						PlaceObj('AIPolicyLastEnemyPos', {
+							'Weight', 80,
 						}),
 					},
 					'SignatureActions', {
@@ -14477,11 +14508,11 @@ return {
 					'RangeMax', 100,
 				}),
 				PlaceObj('AIPolicyIndoorsOutdoors', {
-					'Weight', 20,
+					'Weight', 50,
 				}),
 				PlaceObj('AIPolicyTakeCover', nil),
 			},
-			OptLocSearchRadius = 50,
+			OptLocSearchRadius = 60,
 			PrefStance = "Crouch",
 			SignatureActions = {
 				PlaceObj('AIActionMobileShot', {
@@ -14595,6 +14626,7 @@ return {
 							'ApplyTo', "Team",
 						}),
 					},
+					'ForbiddenInState', set( "Day", "Sunrise", "Sunset" ),
 					'team_score', 0,
 					'self_score_mod', 0,
 					'min_score', 10,
@@ -14752,7 +14784,6 @@ return {
 					'Weight', 150,
 					'visibility_mode', "team",
 				}),
-				PlaceObj('AIPolicyLosToEnemy', nil),
 			},
 			OptLocSearchRadius = 80,
 			PrefStance = "Crouch",
@@ -15078,33 +15109,32 @@ return {
 			},
 			FallbackAction = "overwatch",
 			OptLocPolicies = {
-				PlaceObj('AIPolicyLosToEnemy', {
-					'Weight', 30,
-				}),
 				PlaceObj('AIPolicyWeaponRange', {
 					'RangeMin', 5,
-					'RangeMax', 80,
+					'RangeMax', 100,
 				}),
 				PlaceObj('AIPolicyHighGround', {
 					'Weight', 40,
 				}),
-				PlaceObj('AIPolicyCustomFlanking', {
+				PlaceObj('AIPolicyFlanking', {
 					'Weight', 10,
-					'ReserveAttackAP', "AP",
-					'OnlyTarget', true,
-					'ScalePerDistance', true,
 				}),
 				PlaceObj('AIPolicyMGSetupPosScore', nil),
+				PlaceObj('AIPolicyIndoorsOutdoors', {
+					'Indoors', false,
+				}),
 			},
-			OptLocSearchRadius = 100,
+			OptLocSearchRadius = 40,
 			PrefStance = "Prone",
 			SignatureActions = {
 				PlaceObj('AIActionMGSetup', {
 					'BiasId', "Overwatch",
 					'Weight', 500,
+					'AvailableInState', set( "Day", "Night" ),
 					'enemy_score', 120,
 					'team_score', 10,
 					'min_score', 100,
+					'cur_zone_mod', 200,
 				}),
 				PlaceObj('AIActionMGBurstFire', {
 					'Weight', 50,
@@ -15165,11 +15195,9 @@ return {
 					'RangeMin', 0,
 					'RangeMax', 6,
 				}),
-				PlaceObj('AIPolicyLosToEnemy', {
-					'Weight', 20,
-				}),
+				PlaceObj('AIPolicyIndoorsOutdoors', nil),
 			},
-			OptLocSearchRadius = 50,
+			OptLocSearchRadius = 100,
 			SignatureActions = {
 				PlaceObj('AIActionMobileShot', {
 					'Priority', true,
@@ -15246,6 +15274,7 @@ return {
 							'ApplyTo', "Team",
 						}),
 					},
+					'ForbiddenInState', set( "Day", "Sunrise", "Sunset" ),
 					'team_score', 0,
 					'self_score_mod', 0,
 					'min_score', 10,
@@ -15277,6 +15306,7 @@ return {
 							'ApplyTo', "Team",
 						}),
 					},
+					'ForbiddenInState', set( "Day", "Sunrise", "Sunset" ),
 					'team_score', 0,
 					'self_score_mod', 0,
 					'min_score', 10,
