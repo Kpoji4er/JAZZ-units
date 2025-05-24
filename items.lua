@@ -3778,7 +3778,6 @@ return {
 				'archetype', "Brute",
 				'role', "Stormer",
 				'CanManEmplacements', false,
-				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 60,
@@ -13061,7 +13060,6 @@ return {
 							'ApplyTo', "Team",
 						}),
 					},
-					'ForbiddenInState', set( "Day", "Sunrise", "Sunset" ),
 					'team_score', 0,
 					'self_score_mod', 0,
 					'min_score', 10,
@@ -13093,7 +13091,6 @@ return {
 							'ApplyTo', "Team",
 						}),
 					},
-					'ForbiddenInState', set( "Day", "Sunrise", "Sunset" ),
 					'team_score', 0,
 					'self_score_mod', 0,
 					'min_score', 10,
@@ -13297,6 +13294,17 @@ return {
 			OptLocSearchRadius = 100,
 			SignatureActions = {
 				PlaceObj('AIActionBasicAttack', nil),
+				PlaceObj('AIActionThrowFlare', {
+					'team_score', 0,
+					'self_score_mod', 0,
+					'min_score', 100,
+					'TargetLastAttackPos', true,
+				}),
+				PlaceObj('AIActionThrowFlare', {
+					'team_score', 0,
+					'self_score_mod', 0,
+					'min_score', 100,
+				}),
 			},
 			group = "System",
 			id = "Scout_LastLocation",
@@ -13762,7 +13770,6 @@ return {
 							'ApplyTo', "Team",
 						}),
 					},
-					'ForbiddenInState', set( "Day", "Sunrise", "Sunset" ),
 					'min_score', 10,
 					'TargetLastAttackPos', true,
 				}),
@@ -13791,7 +13798,6 @@ return {
 							'ApplyTo', "Team",
 						}),
 					},
-					'ForbiddenInState', set( "Day", "Sunrise", "Sunset" ),
 					'min_score', 10,
 				}),
 			},
@@ -14626,7 +14632,6 @@ return {
 							'ApplyTo', "Team",
 						}),
 					},
-					'ForbiddenInState', set( "Day", "Sunrise", "Sunset" ),
 					'team_score', 0,
 					'self_score_mod', 0,
 					'min_score', 10,
@@ -14787,6 +14792,24 @@ return {
 			},
 			OptLocSearchRadius = 80,
 			PrefStance = "Crouch",
+			SignatureActions = {
+				PlaceObj('AIActionThrowFlare', {
+					'BiasId', "ThrowFlare",
+					'Weight', 250,
+					'OnActivationBiases', {
+						PlaceObj('AIBiasModification', {
+							'BiasId', "ThrowFlare",
+							'Value', -10,
+							'Period', 2,
+							'ApplyTo', "Team",
+						}),
+					},
+					'team_score', 0,
+					'self_score_mod', 0,
+					'min_score', 10,
+					'MinDist', 1000,
+				}),
+			},
 			TargetScoreRandomization = 10,
 			TargetingPolicies = {
 				PlaceObj('AITargetingCancelShot', {
@@ -14893,6 +14916,24 @@ return {
 			},
 			OptLocSearchRadius = 80,
 			PrefStance = "Crouch",
+			SignatureActions = {
+				PlaceObj('AIActionThrowFlare', {
+					'BiasId', "ThrowFlare",
+					'Weight', 250,
+					'OnActivationBiases', {
+						PlaceObj('AIBiasModification', {
+							'BiasId', "ThrowFlare",
+							'Value', -10,
+							'Period', 2,
+							'ApplyTo', "Team",
+						}),
+					},
+					'team_score', 0,
+					'self_score_mod', 0,
+					'min_score', 10,
+					'MinDist', 1000,
+				}),
+			},
 			TargetScoreRandomization = 10,
 			TargetingPolicies = {
 				PlaceObj('AITargetingCancelShot', {
@@ -15274,7 +15315,6 @@ return {
 							'ApplyTo', "Team",
 						}),
 					},
-					'ForbiddenInState', set( "Day", "Sunrise", "Sunset" ),
 					'team_score', 0,
 					'self_score_mod', 0,
 					'min_score', 10,
@@ -15306,7 +15346,6 @@ return {
 							'ApplyTo', "Team",
 						}),
 					},
-					'ForbiddenInState', set( "Day", "Sunrise", "Sunset" ),
 					'team_score', 0,
 					'self_score_mod', 0,
 					'min_score', 10,
