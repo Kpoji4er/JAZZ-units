@@ -6997,7 +6997,7 @@ return {
 				}),
 			},
 			'Equipment', {
-				"Adonis_762x39",
+				"Adonis_AKMAdvReflex",
 			},
 			'AdditionalGroups', {
 				PlaceObj('AdditionalGroup', {
@@ -7055,7 +7055,7 @@ return {
 				}),
 			},
 			'Equipment', {
-				"Adonis_762x39",
+				"Adonis_AKMAdvReflex",
 			},
 			'AdditionalGroups', {
 				PlaceObj('AdditionalGroup', {
@@ -7546,6 +7546,9 @@ return {
 					'Preset', "Demolitions_Rebels_03",
 				}),
 			},
+			'Equipment', {
+				"LegionRocketeer_Stronger",
+			},
 			'AdditionalGroups', {
 				PlaceObj('AdditionalGroup', {
 					'Weight', 50,
@@ -7602,6 +7605,9 @@ return {
 				PlaceObj('AppearanceWeight', {
 					'Preset', "Demolitions_Rebels_03",
 				}),
+			},
+			'Equipment', {
+				"LegionRocketeer_Stronger",
 			},
 			'AdditionalGroups', {
 				PlaceObj('AdditionalGroup', {
@@ -12678,10 +12684,16 @@ return {
 				}),
 				PlaceObj('PositioningAI', {
 					'BiasId', "ChangePosition",
+					'Weight', 150,
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "Advance",
 							'Value', 80,
+						}),
+						PlaceObj('AIBiasModification', {
+							'BiasId', "ChangePosition",
+							'Effect', "disable",
+							'Period', 3,
 						}),
 					},
 					'Label', "Change Position",
@@ -12696,6 +12708,11 @@ return {
 							'Weight', 50,
 							'RangeMin', 30,
 							'RangeMax', 60,
+						}),
+						PlaceObj('AIPolicyWeaponRange', {
+							'Weight', 50,
+							'RangeMin', 30,
+							'RangeMax', 100,
 						}),
 						PlaceObj('AIPolicyProximity', {
 							'Weight', 30,
@@ -12946,22 +12963,24 @@ return {
 					'Weight', 50,
 				}),
 				PlaceObj('AIPolicyWeaponRange', {
-					'Weight', 30,
+					'Weight', 40,
 					'RangeMin', 5,
 					'RangeMax', 100,
 				}),
 				PlaceObj('AIPolicyIndoorsOutdoors', nil),
 				PlaceObj('AIPolicyProximity', {
+					'Weight', 50,
 					'Required', true,
 					'AllyPlannedPosition', true,
 					'TargetUnits', "allies",
+					'TargetDist', "average",
 					'MinScore', 15,
 				}),
 				PlaceObj('AIPolicyTakeCover', {
 					'Weight', 120,
 				}),
 				PlaceObj('AIPolicyLosToEnemy', {
-					'Weight', 10,
+					'Weight', 20,
 				}),
 			},
 			OptLocSearchRadius = 60,
@@ -14297,7 +14316,9 @@ return {
 					},
 					'OptLocWeight', 70,
 					'EndTurnPolicies', {
-						PlaceObj('AIPolicyDealDamage', nil),
+						PlaceObj('AIPolicyDealDamage', {
+							'CheckLOS', false,
+						}),
 						PlaceObj('AIPolicyCustomSeekCover', {
 							'visibility_mode', "self",
 							'ExposedAtCloseRange_Score', -10,
@@ -14466,6 +14487,73 @@ return {
 						PlaceObj('AIPolicyAttackAP', nil),
 					},
 					'VoiceResponse', "BecomeAware",
+				}),
+				PlaceObj('PositioningAI', {
+					'BiasId', "ChangePosition",
+					'Weight', 150,
+					'OnActivationBiases', {
+						PlaceObj('AIBiasModification', {
+							'BiasId', "Advance",
+							'Value', 80,
+						}),
+						PlaceObj('AIBiasModification', {
+							'BiasId', "ChangePosition",
+							'Effect', "disable",
+							'Period', 3,
+						}),
+					},
+					'Label', "Change Position",
+					'turn_phase', "Early",
+					'EndTurnPolicies', {
+						PlaceObj('AIPolicyWeaponRange', {
+							'Weight', 50,
+							'RangeMin', 30,
+							'RangeMax', 80,
+						}),
+						PlaceObj('AIPolicyWeaponRange', {
+							'Weight', 50,
+							'RangeMin', 30,
+							'RangeMax', 60,
+						}),
+						PlaceObj('AIPolicyProximity', {
+							'Weight', 30,
+							'AllyPlannedPosition', true,
+							'TargetUnits', "allies",
+							'TargetDist', "average",
+							'MinScore', 5,
+						}),
+						PlaceObj('AIPolicyIndoorsOutdoors', {
+							'Weight', 20,
+						}),
+						PlaceObj('AIPolicyCustomSeekCover', {
+							'Weight', 70,
+						}),
+						PlaceObj('AIPolicyCustomFlanking', {
+							'Weight', 50,
+							'ReserveAttackAP', "AP",
+							'OnlyTarget', true,
+							'ScalePerDistance', true,
+						}),
+					},
+					'SignatureActions', {
+						PlaceObj('AIAttackSingleTarget', {
+							'Weight', 200,
+							'action_id', "BurstFire",
+							'Aiming', "Remaining AP",
+						}),
+						PlaceObj('AIAttackSingleTarget', {
+							'Weight', 150,
+							'NotificationText', "",
+							'action_id', "AutoFire",
+							'Aiming', "Remaining AP",
+						}),
+						PlaceObj('AIActionThrowGrenade', {
+							'Weight', 300,
+							'min_score', 100,
+							'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
+						}),
+					},
+					'TakeCoverChance', 50,
 				}),
 				PlaceObj('CustomAI', {
 					'BiasId', "SeekEnemy",
@@ -26542,7 +26630,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {

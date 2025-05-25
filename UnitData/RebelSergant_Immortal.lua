@@ -44,7 +44,7 @@ DefineClass.RebelSergant_Immortal = {
 		}),
 	},
 	Equipment = {
-		"Adonis_762x39",
+		"Adonis_AKMAdvReflex",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {
