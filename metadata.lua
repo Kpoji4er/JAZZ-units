@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 1,
-	'version', 1452,
+	'version', 1474,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -183,8 +183,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1748203567,
-	'code_hash', -6193784434792344918,
+	'saved', 1748224591,
+	'code_hash', 7246180883863697497,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
@@ -1014,6 +1014,11 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
 			'Id', "TheMajor",
+			'ClassDisplayName', "AIArchetype",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AIArchetype",
+			'Id', "__Scout_LastLocation",
 			'ClassDisplayName', "AIArchetype",
 		}),
 		PlaceObj('ModResourcePreset', {

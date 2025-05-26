@@ -12962,6 +12962,11 @@ return {
 				PlaceObj('AIPolicyHighGround', {
 					'Weight', 50,
 				}),
+				PlaceObj('AIPolicyHighGround', {
+					'RequiredKeywords', {
+						"Sniper",
+					},
+				}),
 				PlaceObj('AIPolicyWeaponRange', {
 					'Weight', 40,
 					'RangeMin', 5,
@@ -12982,8 +12987,9 @@ return {
 				PlaceObj('AIPolicyLosToEnemy', {
 					'Weight', 20,
 				}),
+				PlaceObj('AIPolicyTryNotToBeFlanked', nil),
 			},
-			OptLocSearchRadius = 60,
+			OptLocSearchRadius = 100,
 			PrefStance = "Crouch",
 			SignatureActions = {
 				PlaceObj('AIActionHeavyWeaponAttack', {
@@ -13115,7 +13121,7 @@ return {
 					'min_score', 10,
 				}),
 			},
-			TargetBaseScore = 150,
+			TargetBaseScore = 75,
 			TargetScoreRandomization = 10,
 			group = "Simplified",
 			id = "Soldier",
@@ -13313,6 +13319,38 @@ return {
 			OptLocSearchRadius = 100,
 			SignatureActions = {
 				PlaceObj('AIActionBasicAttack', nil),
+				PlaceObj('AIActionThrowFlare', {
+					'team_score', 0,
+					'self_score_mod', 0,
+					'min_score', 100,
+					'TargetLastAttackPos', true,
+				}),
+				PlaceObj('AIActionThrowFlare', {
+					'team_score', 0,
+					'self_score_mod', 0,
+					'min_score', 100,
+				}),
+			},
+			group = "System",
+			id = "__Scout_LastLocation",
+		}),
+		PlaceObj('ModItemAIArchetype', {
+			BaseMovementWeight = 10,
+			Behaviors = {
+				PlaceObj('StandardAI', {
+					'TakeCoverChance', 0,
+				}),
+			},
+			Comment = "used to advance toward last known enemy location",
+			FallbackAction = "overwatch",
+			OptLocPolicies = {
+				PlaceObj('AIPolicyLastEnemyPos', nil),
+				PlaceObj('AIPolicyHighGround', {
+					'Weight', 50,
+				}),
+			},
+			OptLocSearchRadius = 80,
+			SignatureActions = {
 				PlaceObj('AIActionThrowFlare', {
 					'team_score', 0,
 					'self_score_mod', 0,
@@ -13725,8 +13763,9 @@ return {
 					'RangeMin', 60,
 					'AllowedAoeTypes', set( "fire", "none", "smoke", "teargas", "toxicgas" ),
 				}),
+				PlaceObj('AIPolicyTryNotToBeFlanked', nil),
 			},
-			OptLocSearchRadius = 80,
+			OptLocSearchRadius = 100,
 			PrefStance = "Crouch",
 			SignatureActions = {
 				PlaceObj('AIAttackSingleTarget', {
@@ -14151,9 +14190,6 @@ return {
 			MoveStance = "Crouch",
 			OptLocPolicies = {
 				PlaceObj('AIPolicyHighGround', {
-					'RequiredKeywords', {
-						"Sniper",
-					},
 					'Weight', 200,
 				}),
 				PlaceObj('AIPolicyTakeCover', nil),
@@ -14175,8 +14211,9 @@ return {
 				PlaceObj('AIPolicyLosToEnemy', {
 					'Weight', 10,
 				}),
+				PlaceObj('AIPolicyTryNotToBeFlanked', nil),
 			},
-			OptLocSearchRadius = 80,
+			OptLocSearchRadius = 100,
 			PrefStance = "Prone",
 			SignatureActions = {
 				PlaceObj('AIAttackSingleTarget', {
@@ -14279,7 +14316,6 @@ return {
 					'min_score', 10,
 				}),
 			},
-			TargetScoreRandomization = 10,
 			TargetingPolicies = {
 				PlaceObj('AITargetingEnemyWeapon', {
 					'Weight', 15,
@@ -14605,8 +14641,18 @@ return {
 					'Weight', 50,
 				}),
 				PlaceObj('AIPolicyTakeCover', nil),
+				PlaceObj('AIPolicyProximity', {
+					'Weight', 150,
+					'AllyPlannedPosition', true,
+					'TargetUnits', "allies",
+					'TargetDist', "average",
+					'MinScore', 50,
+				}),
+				PlaceObj('AIPolicyTryNotToBeFlanked', {
+					'Weight', 30,
+				}),
 			},
-			OptLocSearchRadius = 60,
+			OptLocSearchRadius = 100,
 			PrefStance = "Crouch",
 			SignatureActions = {
 				PlaceObj('AIActionMobileShot', {
@@ -14726,6 +14772,7 @@ return {
 					'MinDist', 1000,
 				}),
 			},
+			TargetBaseScore = 50,
 			TargetScoreRandomization = 10,
 			TargetingPolicies = {
 				PlaceObj('AITargetingEnemyHealth', {
@@ -15272,7 +15319,7 @@ return {
 			},
 			TargetBaseScore = 10,
 			TargetChangePolicy = "restart",
-			TargetScoreRandomization = 10,
+			TargetScoreRandomization = 30,
 			group = "Simplified",
 			id = "HeavyGunner",
 		}),
@@ -15324,7 +15371,27 @@ return {
 					'RangeMin', 0,
 					'RangeMax', 6,
 				}),
+				PlaceObj('AIPolicyWeaponRange', {
+					'RangeMin', 0,
+					'RangeMax', 80,
+				}),
 				PlaceObj('AIPolicyIndoorsOutdoors', nil),
+				PlaceObj('AIPolicyFlanking', {
+					'Weight', 50,
+				}),
+				PlaceObj('AIPolicyProximity', {
+					'Weight', 50,
+					'AllyPlannedPosition', true,
+					'TargetUnits', "allies",
+					'TargetDist', "average",
+					'MinScore', 30,
+				}),
+				PlaceObj('AIPolicyHighGround', {
+					'Weight', 10,
+				}),
+				PlaceObj('AIPolicyTryNotToBeFlanked', {
+					'Weight', 10,
+				}),
 			},
 			OptLocSearchRadius = 100,
 			SignatureActions = {
@@ -15439,7 +15506,8 @@ return {
 					'min_score', 10,
 				}),
 			},
-			TargetScoreRandomization = 10,
+			TargetBaseScore = 80,
+			TargetScoreRandomization = 30,
 			group = "Simplified",
 			id = "Brute",
 		}),
@@ -26630,7 +26698,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
@@ -26647,7 +26715,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
