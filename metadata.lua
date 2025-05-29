@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 1,
-	'version', 1474,
+	'version', 1523,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -183,8 +183,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1748224591,
-	'code_hash', 7246180883863697497,
+	'saved', 1748558311,
+	'code_hash', -9029831449999750954,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
@@ -1003,11 +1003,6 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
-			'Id', "Soldier",
-			'ClassDisplayName', "AIArchetype",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "AIArchetype",
 			'Id', "TurretBoss",
 			'ClassDisplayName', "AIArchetype",
 		}),
@@ -1063,11 +1058,6 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
-			'Id', "Grenadier",
-			'ClassDisplayName', "AIArchetype",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "AIArchetype",
 			'Id', "Artillery",
 			'ClassDisplayName', "AIArchetype",
 		}),
@@ -1078,7 +1068,22 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
-			'Id', "Soldier_Sniper",
+			'Id', "Medic",
+			'ClassDisplayName', "AIArchetype",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AIArchetype",
+			'Id', "Medic_Low",
+			'ClassDisplayName', "AIArchetype",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AIArchetype",
+			'Id', "Grenadier",
+			'ClassDisplayName', "AIArchetype",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AIArchetype",
+			'Id', "Soldier",
 			'ClassDisplayName', "AIArchetype",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -1088,12 +1093,7 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
-			'Id', "Medic",
-			'ClassDisplayName', "AIArchetype",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "AIArchetype",
-			'Id', "Medic_Low",
+			'Id', "Soldier_Sniper",
 			'ClassDisplayName', "AIArchetype",
 		}),
 		PlaceObj('ModResourcePreset', {
