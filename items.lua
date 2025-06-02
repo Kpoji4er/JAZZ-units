@@ -13548,6 +13548,7 @@ return {
 					'turn_phase', "Early",
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyDealDamage', nil),
+						PlaceObj('AIPolicyAttackAP', nil),
 					},
 					'TakeCoverChance', 0,
 				}),
@@ -13606,19 +13607,16 @@ return {
 					'Label', "FallBack - Seek Enemy",
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyProximity', {
-							'Weight', 150,
-							'AllyPlannedPosition', true,
-							'TargetUnits', "allies",
-							'TargetDist', "average",
-						}),
-						PlaceObj('AIPolicyProximity', {
 							'Required', true,
 							'TargetDist', "average",
+							'MinScore', 15,
 						}),
 						PlaceObj('AIPolicyLosToEnemy', nil),
 						PlaceObj('AIPolicyDistanceFromStart', {
+							'Weight', 200,
 							'Distance', 10,
 						}),
+						PlaceObj('AIPolicyDistanceFromStart', nil),
 						PlaceObj('AIPolicyWeaponRange', {
 							'RangeMin', 10,
 							'RangeMax', 50,
@@ -13784,12 +13782,11 @@ return {
 							'TargetDist', "average",
 							'MinScore', 30,
 						}),
-						PlaceObj('AIPolicyTryNotToBeFlanked', nil),
 						PlaceObj('AIPolicyAttackAP', {
-							'Weight', 10,
+							'Weight', 50,
 						}),
 					},
-					'TakeCoverChance', 60,
+					'TakeCoverChance', 80,
 				}),
 				PlaceObj('PositioningAI', {
 					'BiasId', "Advance",
@@ -14144,14 +14141,9 @@ return {
 					'Label', "FallBack - Seek Enemy",
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyProximity', {
-							'Weight', 150,
-							'AllyPlannedPosition', true,
-							'TargetUnits', "allies",
-							'TargetDist', "average",
-						}),
-						PlaceObj('AIPolicyProximity', {
 							'Required', true,
 							'TargetDist', "average",
+							'MinScore', 15,
 						}),
 						PlaceObj('AIPolicyLosToEnemy', nil),
 						PlaceObj('AIPolicyDistanceFromStart', {
@@ -14169,12 +14161,13 @@ return {
 			Comment = "Keywords: Soldier, Sniper, Control, Ordnance, Smoke, Explosives",
 			OptLocPolicies = {
 				PlaceObj('AIPolicyHighGround', {
-					'Weight', 50,
+					'Weight', 30,
 				}),
 				PlaceObj('AIPolicyHighGround', {
 					'RequiredKeywords', {
 						"Sniper",
 					},
+					'Weight', 70,
 				}),
 				PlaceObj('AIPolicyWeaponRange', {
 					'Weight', 40,
@@ -14357,6 +14350,9 @@ return {
 						PlaceObj('AIPolicyIndoorsOutdoors', {
 							'Weight', 20,
 						}),
+						PlaceObj('AIPolicyAttackAP', {
+							'Weight', 30,
+						}),
 					},
 					'TakeCoverChance', 50,
 				}),
@@ -14398,6 +14394,9 @@ return {
 						}),
 						PlaceObj('AIPolicyTakeCover', {
 							'Weight', 50,
+						}),
+						PlaceObj('AIPolicyAttackAP', {
+							'Weight', 20,
 						}),
 					},
 					'SignatureActions', {
@@ -14629,28 +14628,19 @@ return {
 					'Label', "FallBack - Seek Enemy",
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyProximity', {
-							'Weight', 150,
-							'AllyPlannedPosition', true,
-							'TargetUnits', "allies",
-							'TargetDist', "average",
-						}),
-						PlaceObj('AIPolicyProximity', {
 							'Required', true,
 							'TargetDist', "average",
+							'MinScore', 15,
 						}),
 						PlaceObj('AIPolicyLosToEnemy', nil),
 						PlaceObj('AIPolicyDistanceFromStart', {
+							'Weight', 200,
 							'Distance', 10,
 						}),
-						PlaceObj('AIPolicyDistanceFromStart', {
-							'Distance', 15,
-						}),
+						PlaceObj('AIPolicyDistanceFromStart', nil),
 						PlaceObj('AIPolicyWeaponRange', {
 							'RangeMin', 10,
 							'RangeMax', 50,
-						}),
-						PlaceObj('AIPolicyLastEnemyPos', {
-							'Weight', 50,
 						}),
 					},
 				}),
@@ -15405,7 +15395,7 @@ return {
 							'ReserveAttackAP', true,
 						}),
 						PlaceObj('AIPolicyAttackAP', {
-							'Weight', 10,
+							'Weight', 25,
 						}),
 					},
 					'SignatureActions', {
@@ -15428,6 +15418,9 @@ return {
 					'OptLocWeight', 30,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyDealDamage', nil),
+						PlaceObj('AIPolicyAttackAP', {
+							'Weight', 40,
+						}),
 					},
 					'SignatureActions', {
 						PlaceObj('AIActionBasicAttack', nil),
@@ -15453,6 +15446,28 @@ return {
 					},
 					'TakeCoverChance', 80,
 					'VoiceResponse', "TacticalPressing",
+				}),
+				PlaceObj('CustomAI', {
+					'BiasId', "SeekEnemy",
+					'Weight', 20,
+					'Label', "FallBack - Seek Enemy",
+					'EndTurnPolicies', {
+						PlaceObj('AIPolicyProximity', {
+							'Required', true,
+							'TargetDist', "average",
+							'MinScore', 15,
+						}),
+						PlaceObj('AIPolicyLosToEnemy', nil),
+						PlaceObj('AIPolicyDistanceFromStart', {
+							'Weight', 200,
+							'Distance', 10,
+						}),
+						PlaceObj('AIPolicyDistanceFromStart', nil),
+						PlaceObj('AIPolicyWeaponRange', {
+							'RangeMin', 10,
+							'RangeMax', 50,
+						}),
+					},
 				}),
 			},
 			Comment = "Keywords: Explosives",
