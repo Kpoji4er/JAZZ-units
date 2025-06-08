@@ -14198,7 +14198,7 @@ return {
 				}),
 				PlaceObj('AIConeAttack', {
 					'BiasId', "Overwatch",
-					'Weight', 50,
+					'Weight', 20,
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "Overwatch",
