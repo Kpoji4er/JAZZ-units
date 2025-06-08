@@ -13804,12 +13804,6 @@ return {
 							'Value', 100,
 							'ApplyTo', "Team",
 						}),
-						PlaceObj('AIBiasModification', {
-							'BiasId', "Overwatch",
-							'Value', 100,
-							'Period', 2,
-							'ApplyTo', "Team",
-						}),
 					},
 					'Label', "Advance",
 					'RequiredKeywords', {
@@ -14183,10 +14177,6 @@ return {
 							'Value', 30,
 							'ApplyTo', "Team",
 						}),
-						PlaceObj('AIBiasModification', {
-							'BiasId', "Overwatch",
-							'Value', 200,
-						}),
 					},
 					'NotificationText', T(477022065166, --[[ModItemAIArchetype Soldier NotificationText]] "Автоматический огонь"),
 					'RequiredKeywords', {
@@ -14199,13 +14189,6 @@ return {
 				PlaceObj('AIAttackSingleTarget', {
 					'BiasId', "BurstFire",
 					'Weight', 150,
-					'OnActivationBiases', {
-						PlaceObj('AIBiasModification', {
-							'BiasId', "Overwatch",
-							'Value', 20,
-							'ApplyTo', "Team",
-						}),
-					},
 					'RequiredKeywords', {
 						"Soldier",
 					},
@@ -14228,7 +14211,6 @@ return {
 					'action_id', "Overwatch",
 				}),
 				PlaceObj('AIAttackSingleTarget', {
-					'BiasId', "BurstFire",
 					'RequiredKeywords', {
 						"Soldier",
 					},
@@ -14300,6 +14282,15 @@ return {
 					'team_score', 0,
 					'self_score_mod', 0,
 					'min_score', 10,
+				}),
+				PlaceObj('AIActionMobileShot', {
+					'Weight', 15,
+					'NotificationText', "",
+				}),
+				PlaceObj('AIActionMobileShot', {
+					'Weight', 15,
+					'NotificationText', "",
+					'action_id', "RunAndGun",
 				}),
 			},
 			TargetBaseScore = 75,
