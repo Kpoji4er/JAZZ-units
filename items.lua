@@ -12812,7 +12812,7 @@ return {
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyTakeCover', {
 							'Weight', 50,
-							'visibility_mode', "team",
+							'visibility_mode', "self",
 						}),
 						PlaceObj('AIPolicyDealDamage', nil),
 					},
@@ -13258,7 +13258,7 @@ return {
 							'Weight', 20,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'visibility_mode', "team",
+							'visibility_mode', "self",
 						}),
 						PlaceObj('AIPolicyWeaponRange', {
 							'RangeMin', 60,
@@ -13385,7 +13385,7 @@ return {
 			OptLocPolicies = {
 				PlaceObj('AIPolicyTakeCover', {
 					'Weight', 150,
-					'visibility_mode', "team",
+					'visibility_mode', "self",
 				}),
 			},
 			OptLocSearchRadius = 80,
@@ -13429,7 +13429,7 @@ return {
 							'Weight', 20,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'visibility_mode', "team",
+							'visibility_mode', "self",
 						}),
 						PlaceObj('AIPolicyWeaponRange', {
 							'RangeMin', 60,
@@ -13508,7 +13508,7 @@ return {
 			},
 			OptLocPolicies = {
 				PlaceObj('AIPolicyTakeCover', {
-					'visibility_mode', "team",
+					'visibility_mode', "self",
 				}),
 				PlaceObj('AIPolicyLosToEnemy', nil),
 			},
@@ -13575,7 +13575,7 @@ return {
 							'Required', true,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'visibility_mode', "team",
+							'visibility_mode', "self",
 						}),
 						PlaceObj('AIPolicyDealDamage', nil),
 					},
@@ -13643,7 +13643,7 @@ return {
 				}),
 				PlaceObj('AIPolicyTakeCover', {
 					'Weight', 80,
-					'visibility_mode', "team",
+					'visibility_mode', "self",
 				}),
 			},
 			OptLocSearchRadius = 100,
@@ -13763,7 +13763,7 @@ return {
 							'CheckLOS', false,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'visibility_mode', "team",
+							'visibility_mode', "self",
 						}),
 						PlaceObj('AIPolicyIndoorsOutdoors', {
 							'Weight', 50,
@@ -13823,7 +13823,7 @@ return {
 						}),
 						PlaceObj('AIPolicyTakeCover', {
 							'Weight', 20,
-							'visibility_mode', "team",
+							'visibility_mode', "self",
 						}),
 						PlaceObj('AIPolicyProximity', {
 							'AllyPlannedPosition', true,
@@ -13831,12 +13831,15 @@ return {
 							'MinScore', 8,
 						}),
 						PlaceObj('AIPolicyDistanceFromStart', {
+							'Weight', 10,
 							'Distance', 1,
 						}),
 						PlaceObj('AIPolicyDistanceFromStart', {
+							'Weight', 10,
 							'Distance', 2,
 						}),
 						PlaceObj('AIPolicyDistanceFromStart', {
+							'Weight', 10,
 							'Distance', 3,
 						}),
 						PlaceObj('AIPolicyLosToEnemy', {
@@ -13994,7 +13997,7 @@ return {
 							'Weight', 20,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'visibility_mode', "team",
+							'visibility_mode', "self",
 						}),
 					},
 					'SignatureActions', {
@@ -14031,7 +14034,7 @@ return {
 						}),
 						PlaceObj('AIPolicyDealDamage', nil),
 						PlaceObj('AIPolicyTakeCover', {
-							'visibility_mode', "team",
+							'visibility_mode', "self",
 						}),
 					},
 					'VoiceResponse', "TacticalFocus",
@@ -14055,7 +14058,7 @@ return {
 							'MinScore', 3,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'visibility_mode', "team",
+							'visibility_mode', "self",
 						}),
 					},
 					'VoiceResponse', "BecomeAware",
@@ -14076,7 +14079,7 @@ return {
 							'Weight', 50,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'visibility_mode', "all",
+							'visibility_mode', "self",
 						}),
 					},
 					'SignatureActions', {
@@ -14322,7 +14325,7 @@ return {
 							'Weight', 30,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'visibility_mode', "team",
+							'visibility_mode', "self",
 						}),
 					},
 					'TakeCoverChance', 50,
@@ -14360,12 +14363,15 @@ return {
 							'MinScore', 100,
 						}),
 						PlaceObj('AIPolicyDistanceFromStart', {
+							'Weight', 10,
 							'Distance', 1,
 						}),
 						PlaceObj('AIPolicyDistanceFromStart', {
+							'Weight', 10,
 							'Distance', 2,
 						}),
 						PlaceObj('AIPolicyDistanceFromStart', {
+							'Weight', 10,
 							'Distance', 3,
 						}),
 						PlaceObj('AIPolicyLastEnemyPos', {
@@ -14376,7 +14382,7 @@ return {
 						}),
 						PlaceObj('AIPolicyTakeCover', {
 							'Weight', 20,
-							'visibility_mode', "team",
+							'visibility_mode', "self",
 						}),
 					},
 					'SignatureActions', {
@@ -14495,7 +14501,7 @@ return {
 							'Required', true,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'visibility_mode', "team",
+							'visibility_mode', "self",
 						}),
 						PlaceObj('AIPolicyDealDamage', nil),
 					},
@@ -14520,7 +14526,7 @@ return {
 							'MinScore', 70,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'visibility_mode', "team",
+							'visibility_mode', "self",
 						}),
 					},
 					'VoiceResponse', "BecomeAware",
@@ -14564,7 +14570,7 @@ return {
 						}),
 						PlaceObj('AIPolicyTakeCover', {
 							'Weight', 20,
-							'visibility_mode', "team",
+							'visibility_mode', "self",
 						}),
 					},
 					'SignatureActions', {
@@ -14636,7 +14642,7 @@ return {
 					'Weight', 50,
 				}),
 				PlaceObj('AIPolicyTakeCover', {
-					'visibility_mode', "team",
+					'visibility_mode', "self",
 				}),
 			},
 			OptLocSearchRadius = 100,
@@ -14795,7 +14801,7 @@ return {
 							'Weight', 150,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'visibility_mode', "all",
+							'visibility_mode', "self",
 						}),
 						PlaceObj('AIPolicyIndoorsOutdoors', {
 							'Weight', 20,
@@ -14827,7 +14833,7 @@ return {
 							'RangeMin', 40,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'visibility_mode', "all",
+							'visibility_mode', "self",
 						}),
 					},
 				}),
@@ -14840,7 +14846,7 @@ return {
 							'Required', true,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'visibility_mode', "all",
+							'visibility_mode', "self",
 						}),
 						PlaceObj('AIPolicyDealDamage', nil),
 						PlaceObj('AIPolicyWeaponRange', {
@@ -14856,7 +14862,7 @@ return {
 					'turn_phase', "Late",
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyTakeCover', {
-							'visibility_mode', "all",
+							'visibility_mode', "self",
 						}),
 						PlaceObj('AIPolicyDealDamage', nil),
 					},
@@ -14886,7 +14892,7 @@ return {
 						}),
 						PlaceObj('AIPolicyTakeCover', {
 							'Weight', 300,
-							'visibility_mode', "all",
+							'visibility_mode', "self",
 						}),
 						PlaceObj('AIPolicyFlanking', {
 							'Weight', 20,
@@ -14955,7 +14961,7 @@ return {
 					'Weight', 200,
 				}),
 				PlaceObj('AIPolicyTakeCover', {
-					'visibility_mode', "team",
+					'visibility_mode', "self",
 				}),
 				nil,
 				PlaceObj('AIPolicyWeaponRange', {
@@ -15359,7 +15365,7 @@ return {
 						}),
 						PlaceObj('AIPolicyTakeCover', {
 							'Weight', 200,
-							'visibility_mode', "team",
+							'visibility_mode', "self",
 						}),
 						PlaceObj('AIPolicyFlanking', {
 							'AllyPlannedPosition', true,
