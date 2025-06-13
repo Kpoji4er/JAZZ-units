@@ -14035,9 +14035,9 @@ return {
 					'Label', "CloseToTeammates",
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyProximity', {
-							'Weight', 200,
+							'Weight', 300,
 							'TargetUnits', "allies",
-							'TargetDist', "total",
+							'TargetDist', "average",
 							'MinScore', 3,
 						}),
 						PlaceObj('AIPolicyTakeCover', nil),
