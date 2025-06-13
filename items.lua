@@ -14362,25 +14362,12 @@ return {
 						PlaceObj('AIPolicyTakeCover', nil),
 					},
 					'SignatureActions', {
-						PlaceObj('AIAttackSingleTarget', {
-							'Weight', 200,
-							'action_id', "BurstFire",
-							'Aiming', "Remaining AP",
-						}),
-						PlaceObj('AIAttackSingleTarget', {
-							'Weight', 250,
-							'NotificationText', "",
-							'action_id', "AutoFire",
-							'Aiming', "Remaining AP",
-						}),
 						PlaceObj('AIActionThrowGrenade', {
 							'Weight', 300,
 							'min_score', 100,
 							'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
 						}),
-						PlaceObj('AIActionBasicAttack', {
-							'BiasId', "SingleShot",
-						}),
+						PlaceObj('AIActionBasicAttack', nil),
 						PlaceObj('AIActionMobileShot', {
 							'Weight', 300,
 							'NotificationText', "",
@@ -14389,6 +14376,11 @@ return {
 							'Weight', 300,
 							'NotificationText', "",
 							'action_id', "RunAndGun",
+						}),
+						PlaceObj('AIConeAttack', {
+							'Weight', 5,
+							'min_score', 100,
+							'action_id', "Overwatch",
 						}),
 					},
 					'TakeCoverChance', 80,
@@ -14436,22 +14428,12 @@ return {
 						}),
 					},
 					'SignatureActions', {
-						PlaceObj('AIAttackSingleTarget', {
-							'Weight', 200,
-							'action_id', "BurstFire",
-							'Aiming', "Remaining AP",
-						}),
-						PlaceObj('AIAttackSingleTarget', {
-							'Weight', 150,
-							'NotificationText', "",
-							'action_id', "AutoFire",
-							'Aiming', "Remaining AP",
-						}),
 						PlaceObj('AIActionThrowGrenade', {
 							'Weight', 300,
 							'min_score', 100,
 							'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
 						}),
+						PlaceObj('AIActionBasicAttack', nil),
 					},
 				}),
 				PlaceObj('PositioningAI', {
