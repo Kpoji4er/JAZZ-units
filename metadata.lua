@@ -183,8 +183,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1749852838,
-	'code_hash', -9029831449999750954,
+	'saved', 1750015451,
+	'code_hash', -3621543609487674146,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
@@ -763,6 +763,26 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "EnemySquads",
+			'Id', "LegionAttackers_Marksmen_Easy",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "LegionDefenders_Mobile_Easy",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "LegionAttackers_JazzBalanced_Easy_Assault",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "LegionExtraDefenders_Marksmen_Hard",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
 			'Id', "LegionHeavyTroops_Gunners",
 			'ClassDisplayName', "Enemy Squads",
 		}),
@@ -999,17 +1019,22 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
 			'Id', "Beast_Hyena",
-			'ClassDisplayName', "AIArchetype",
+			'ClassDisplayName', "AI Archetype",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AIArchetype",
+			'Id', "Soldier",
+			'ClassDisplayName', "AI Archetype",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
 			'Id', "TurretBoss",
-			'ClassDisplayName', "AIArchetype",
+			'ClassDisplayName', "AI Archetype",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
 			'Id', "TheMajor",
-			'ClassDisplayName', "AIArchetype",
+			'ClassDisplayName', "AI Archetype",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
@@ -1019,52 +1044,57 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
 			'Id', "Scout_LastLocation",
-			'ClassDisplayName', "AIArchetype",
+			'ClassDisplayName', "AI Archetype",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
 			'Id', "PierreGuard",
-			'ClassDisplayName', "AIArchetype",
+			'ClassDisplayName', "AI Archetype",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
 			'Id', "PinnedDown",
-			'ClassDisplayName', "AIArchetype",
+			'ClassDisplayName', "AI Archetype",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
 			'Id', "Panicked",
-			'ClassDisplayName', "AIArchetype",
+			'ClassDisplayName', "AI Archetype",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
 			'Id', "GuardArea",
-			'ClassDisplayName', "AIArchetype",
+			'ClassDisplayName', "AI Archetype",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
 			'Id', "EmplacementGunner",
-			'ClassDisplayName', "AIArchetype",
+			'ClassDisplayName', "AI Archetype",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
 			'Id', "Deserter",
-			'ClassDisplayName', "AIArchetype",
+			'ClassDisplayName', "AI Archetype",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
 			'Id', "Berserk",
-			'ClassDisplayName', "AIArchetype",
+			'ClassDisplayName', "AI Archetype",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AIArchetype",
+			'Id', "Grenadier",
+			'ClassDisplayName', "AI Archetype",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
 			'Id', "Artillery",
-			'ClassDisplayName', "AIArchetype",
+			'ClassDisplayName', "AI Archetype",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
 			'Id', "Turret",
-			'ClassDisplayName', "AIArchetype",
+			'ClassDisplayName', "AI Archetype",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
@@ -1089,7 +1119,7 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
 			'Id', "Skirmisher",
-			'ClassDisplayName', "AIArchetype",
+			'ClassDisplayName', "AI Archetype",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
@@ -1098,13 +1128,18 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
+			'Id', "Medic_Low",
+			'ClassDisplayName', "AI Archetype",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AIArchetype",
 			'Id', "HeavyGunner",
-			'ClassDisplayName', "AIArchetype",
+			'ClassDisplayName', "AI Archetype",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
 			'Id', "Brute",
-			'ClassDisplayName', "AIArchetype",
+			'ClassDisplayName', "AI Archetype",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AppearancePreset",
@@ -2180,48 +2215,48 @@ return PlaceObj('ModDef', {
 			'Class', "StatGainingPrerequisite",
 			'Id', "ResourceDiscovery",
 			'Prop', "failChance",
-			'ClassDisplayName', "StatGainingPrerequisites",
+			'ClassDisplayName', "Stat Gaining Prerequisite",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "StatGainingPrerequisite",
 			'Id', "ExplosiveMultiHit",
 			'Prop', "failChance",
-			'ClassDisplayName', "StatGainingPrerequisites",
+			'ClassDisplayName', "Stat Gaining Prerequisite",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "StatGainingPrerequisite",
 			'Id', "TrapDiscovery",
 			'Prop', "oncePerMapVisit",
-			'ClassDisplayName', "StatGainingPrerequisites",
+			'ClassDisplayName', "Stat Gaining Prerequisite",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "StatGainingPrerequisite",
 			'Id', "TrapDiscovery",
 			'Prop', "failChance",
-			'ClassDisplayName', "StatGainingPrerequisites",
+			'ClassDisplayName', "Stat Gaining Prerequisite",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "StatGainingPrerequisite",
 			'Id', "ResourceDiscovery",
 			'Prop', "oncePerMapVisit",
-			'ClassDisplayName', "StatGainingPrerequisites",
+			'ClassDisplayName', "Stat Gaining Prerequisite",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "StatGainingPrerequisite",
 			'Id', "TrapDisarmMechanical",
 			'Prop', "oncePerMapVisit",
-			'ClassDisplayName', "StatGainingPrerequisites",
+			'ClassDisplayName', "Stat Gaining Prerequisite",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "StatGainingPrerequisite",
 			'Id', "TrapDisarmExplosives",
 			'Prop', "oncePerMapVisit",
-			'ClassDisplayName', "StatGainingPrerequisites",
+			'ClassDisplayName', "Stat Gaining Prerequisite",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "CombatAction",
 			'Id', "VengefulTemperament1",
-			'ClassDisplayName', "Combat Actions",
+			'ClassDisplayName', "Combat Action",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "CharacterEffectCompositeDef",

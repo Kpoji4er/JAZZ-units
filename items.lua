@@ -8266,6 +8266,234 @@ return {
 					id = "LegionHeavyTroops",
 				}),
 				PlaceObj('ModItemEnemySquads', {
+					Comment = "1700 (8)",
+					Units = {
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionRaidLeader",
+								}),
+							},
+							'UnitCountMin', 1,
+							'UnitCountMax', 1,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionGoon",
+								}),
+							},
+							'UnitCountMin', 3,
+							'UnitCountMax', 3,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionGunner",
+								}),
+							},
+							'UnitCountMin', 1,
+							'UnitCountMax', 1,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionSniper",
+								}),
+							},
+							'UnitCountMin', 2,
+							'UnitCountMax', 2,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionRaider",
+								}),
+							},
+							'UnitCountMin', 5,
+							'UnitCountMax', 5,
+						}),
+					},
+					displayName = T(978320603185, --[[ModItemEnemySquads LegionAttackers_Marksmen_Easy displayName]] "Legion Attack Squad"),
+					group = "JazzSquads",
+					id = "LegionAttackers_Marksmen_Easy",
+				}),
+				PlaceObj('ModItemEnemySquads', {
+					Units = {
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionRaider",
+								}),
+							},
+							'UnitCountMin', 2,
+							'UnitCountMax', 2,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionGoon",
+								}),
+							},
+							'UnitCountMin', 2,
+							'UnitCountMax', 2,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionScout",
+								}),
+							},
+							'UnitCountMin', 2,
+							'UnitCountMax', 2,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionHyena",
+								}),
+							},
+							'UnitCountMin', 4,
+							'UnitCountMax', 4,
+						}),
+					},
+					displayName = T(201132567256, --[[ModItemEnemySquads LegionDefenders_Mobile_Easy displayName]] "Legion Squad"),
+					group = "JazzSquads",
+					id = "LegionDefenders_Mobile_Easy",
+				}),
+				PlaceObj('ModItemEnemySquads', {
+					Comment = "1700 (8)",
+					Units = {
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionRaidLeader",
+								}),
+							},
+							'UnitCountMin', 2,
+							'UnitCountMax', 2,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionGoon",
+								}),
+							},
+							'UnitCountMin', 3,
+							'UnitCountMax', 3,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionScout",
+								}),
+							},
+							'UnitCountMin', 6,
+							'UnitCountMax', 6,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionSniper",
+								}),
+							},
+							'UnitCountMin', 2,
+							'UnitCountMax', 2,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionManiac",
+								}),
+							},
+							'UnitCountMin', 3,
+							'UnitCountMax', 3,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionRaider",
+								}),
+							},
+							'UnitCountMin', 8,
+							'UnitCountMax', 8,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionGrenadier",
+								}),
+							},
+							'UnitCountMin', 4,
+							'UnitCountMax', 4,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionGunner",
+								}),
+							},
+							'UnitCountMin', 4,
+							'UnitCountMax', 4,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionRaidLeader_Stronger_Elite",
+								}),
+							},
+							'UnitCountMin', 1,
+							'UnitCountMax', 1,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionMedic",
+								}),
+							},
+							'UnitCountMin', 3,
+							'UnitCountMax', 3,
+						}),
+					},
+					displayName = T(465176557843, --[[ModItemEnemySquads LegionAttackers_JazzBalanced_Easy_Assault displayName]] "Штурмовики Легиона"),
+					group = "JazzSquads",
+					id = "LegionAttackers_JazzBalanced_Easy_Assault",
+				}),
+				PlaceObj('ModItemEnemySquads', {
+					Units = {
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionRaider_Stronger",
+								}),
+							},
+							'UnitCountMin', 2,
+							'UnitCountMax', 2,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionGunner_Stronger",
+								}),
+							},
+							'UnitCountMin', 1,
+							'UnitCountMax', 1,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionSniper_Stronger",
+								}),
+							},
+							'UnitCountMin', 1,
+							'UnitCountMax', 1,
+						}),
+					},
+					displayName = T(629563996275, --[[ModItemEnemySquads LegionExtraDefenders_Marksmen_Hard displayName]] "Heavy Legion Outpost Defenders"),
+					group = "JazzSquads",
+					id = "LegionExtraDefenders_Marksmen_Hard",
+				}),
+				PlaceObj('ModItemEnemySquads', {
 					Units = {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -8317,7 +8545,7 @@ return {
 						}),
 					},
 					comment = "-- Тяжелое усиление Пулеметы Т1/Т2",
-					displayName = T(442187410309, --[[ModItemEnemySquads LegionHeavyTroops_Gunners displayName]] "Отряд Легиона"),
+					displayName = T(442187410309, --[[ModItemEnemySquads LegionHeavyTroops_Gunners displayName]] "Тяжелый Отряд Легиона"),
 					group = "JazzSquads",
 					id = "LegionHeavyTroops_Gunners",
 				}),
@@ -8427,7 +8655,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier_Stronger",
+									'unitType', "LegionGrenadier",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -8658,8 +8886,8 @@ return {
 									'unitType', "LegionManiac_Stronger",
 								}),
 							},
-							'UnitCountMin', 2,
-							'UnitCountMax', 2,
+							'UnitCountMin', 1,
+							'UnitCountMax', 1,
 						}),
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -8667,8 +8895,8 @@ return {
 									'unitType', "LegionGoon",
 								}),
 							},
-							'UnitCountMin', 1,
-							'UnitCountMax', 1,
+							'UnitCountMin', 4,
+							'UnitCountMax', 4,
 						}),
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -8691,7 +8919,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier_Stronger",
+									'unitType', "LegionGrenadier",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -8700,11 +8928,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier_Stronger_Elite",
+									'unitType', "LegionGrenadier",
 								}),
 							},
-							'UnitCountMin', 2,
-							'UnitCountMax', 2,
+							'UnitCountMin', 1,
+							'UnitCountMax', 1,
 						}),
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -8712,8 +8940,8 @@ return {
 									'unitType', "LegionButcher_Stronger",
 								}),
 							},
-							'UnitCountMin', 2,
-							'UnitCountMax', 2,
+							'UnitCountMin', 1,
+							'UnitCountMax', 1,
 						}),
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -9377,8 +9605,8 @@ return {
 									'spawnWeight', 10,
 								}),
 							},
-							'UnitCountMin', 3,
-							'UnitCountMax', 3,
+							'UnitCountMin', 2,
+							'UnitCountMax', 2,
 						}),
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -9386,8 +9614,8 @@ return {
 									'unitType', "LegionGrenadier",
 								}),
 							},
-							'UnitCountMin', 3,
-							'UnitCountMax', 3,
+							'UnitCountMin', 2,
+							'UnitCountMax', 2,
 						}),
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -9395,8 +9623,8 @@ return {
 									'unitType', "LegionManiac",
 								}),
 							},
-							'UnitCountMin', 2,
-							'UnitCountMax', 2,
+							'UnitCountMin', 4,
+							'UnitCountMax', 4,
 						}),
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -9404,8 +9632,8 @@ return {
 									'unitType', "LegionSharpShooter",
 								}),
 							},
-							'UnitCountMin', 2,
-							'UnitCountMax', 2,
+							'UnitCountMin', 3,
+							'UnitCountMax', 3,
 						}),
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -9432,8 +9660,8 @@ return {
 									'spawnWeight', 10,
 								}),
 							},
-							'UnitCountMin', 3,
-							'UnitCountMax', 3,
+							'UnitCountMin', 5,
+							'UnitCountMax', 5,
 						}),
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -9459,8 +9687,8 @@ return {
 									'unitType', "LegionSniper",
 								}),
 							},
-							'UnitCountMin', 2,
-							'UnitCountMax', 2,
+							'UnitCountMin', 3,
+							'UnitCountMax', 3,
 						}),
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -9468,8 +9696,8 @@ return {
 									'unitType', "LegionRaider",
 								}),
 							},
-							'UnitCountMin', 2,
-							'UnitCountMax', 2,
+							'UnitCountMin', 5,
+							'UnitCountMax', 5,
 						}),
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -9477,8 +9705,8 @@ return {
 									'unitType', "LegionGunner",
 								}),
 							},
-							'UnitCountMin', 2,
-							'UnitCountMax', 2,
+							'UnitCountMin', 1,
+							'UnitCountMax', 1,
 						}),
 					},
 					comment = "-- Стартовый отряд на смотровой площадке",
@@ -10428,6 +10656,36 @@ return {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "LegionGunner",
+									'spawnWeight', 1,
+								}),
+							},
+							'UnitCountMin', 1,
+							'UnitCountMax', 1,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionRaider",
+									'spawnWeight', 1,
+								}),
+							},
+							'UnitCountMin', 1,
+							'UnitCountMax', 1,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionRaider",
+									'spawnWeight', 1,
+								}),
+							},
+							'UnitCountMin', 1,
+							'UnitCountMax', 1,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "LegionRaider",
 									'spawnWeight', 1,
 								}),
 							},
