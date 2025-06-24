@@ -13875,7 +13875,7 @@ return {
 			Comment = "morale-related (cloned Assault)",
 			OptLocPolicies = {
 				PlaceObj('AIPolicyHighGround', {
-					'Weight', 50,
+					'Weight', 10,
 				}),
 				PlaceObj('AIPolicyWeaponRange', {
 					'Weight', 90,
@@ -13883,11 +13883,11 @@ return {
 					'RangeMax', 80,
 				}),
 				PlaceObj('AIPolicyProximity', {
-					'Weight', 40,
+					'Weight', 80,
 					'Required', true,
 					'TargetUnits', "allies",
-					'TargetDist', "total",
-					'MinScore', 70,
+					'TargetDist', "average",
+					'MinScore', 40,
 				}),
 				PlaceObj('AIPolicyTakeCover', {
 					'Weight', 80,
