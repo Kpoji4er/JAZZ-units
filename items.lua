@@ -13530,7 +13530,8 @@ return {
 				}),
 				PlaceObj('StandardAI', {
 					'BiasId', "Healer",
-					'Priority', true,
+					'Weight', 200,
+					'Label', "Healer",
 					'Fallback', false,
 					'Score', function (self, unit, proto_context, debug_data)
 						for _, ally in ipairs(unit.team.units) do
@@ -13640,6 +13641,20 @@ return {
 			OptLocPolicies = {
 				PlaceObj('AIPolicyTakeCover', {
 					'Weight', 150,
+					'visibility_mode', "team",
+				}),
+				PlaceObj('AIPolicyHealingRange', {
+					'BleedingWeight', 300,
+				}),
+				PlaceObj('AIPolicyProximity', {
+					'Weight', 50,
+					'AllyPlannedPosition', true,
+					'TargetUnits', "allies",
+					'TargetDist', "total",
+					'MinScore', 40,
+				}),
+				PlaceObj('AIPolicyWeaponRange', {
+					'Weight', 5,
 				}),
 			},
 			OptLocSearchRadius = 80,
