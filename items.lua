@@ -14396,6 +14396,13 @@ return {
 					'RangeMin', 5,
 					'RangeMax', 100,
 				}),
+				PlaceObj('AIPolicyWeaponRange', {
+					'RequiredKeywords', {
+						"Sniper",
+					},
+					'Weight', 80,
+					'RangeMin', 50,
+				}),
 				PlaceObj('AIPolicyIndoorsOutdoors', nil),
 				PlaceObj('AIPolicyProximity', {
 					'Weight', 10,
@@ -15175,21 +15182,19 @@ return {
 				PlaceObj('AIPolicyHighGround', {
 					'Weight', 200,
 				}),
-				PlaceObj('AIPolicyTakeCover', nil),
-				nil,
 				PlaceObj('AIPolicyWeaponRange', {
 					'RequiredKeywords', {
 						"Sniper",
 					},
-					'Weight', 160,
+					'Weight', 80,
 					'RangeMin', 50,
-					'RangeMax', 300,
 				}),
-				PlaceObj('AIPolicyIndoorsOutdoors', {
-					'Weight', 150,
+				PlaceObj('AIPolicyTakeCover', {
+					'Weight', 120,
+					'visibility_mode', "team",
 				}),
 				PlaceObj('AIPolicyLosToEnemy', {
-					'Weight', 10,
+					'Weight', 20,
 				}),
 			},
 			OptLocSearchRadius = 100,
