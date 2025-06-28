@@ -45,7 +45,7 @@ DefineClass.RebelRPG_Immortal = {
 		}),
 	},
 	Equipment = {
-		"LegionRocketeer_Stronger",
+		"RebelRPG",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

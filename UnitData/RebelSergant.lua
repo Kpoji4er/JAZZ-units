@@ -41,7 +41,7 @@ DefineClass.RebelSergant = {
 		}),
 	},
 	Equipment = {
-		"Adonis_AKMAdvReflex",
+		"RebelSergeant",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

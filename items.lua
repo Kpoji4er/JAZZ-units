@@ -6997,7 +6997,7 @@ return {
 				}),
 			},
 			'Equipment', {
-				"Adonis_AKMAdvReflex",
+				"RebelSergeant",
 			},
 			'AdditionalGroups', {
 				PlaceObj('AdditionalGroup', {
@@ -7055,7 +7055,7 @@ return {
 				}),
 			},
 			'Equipment', {
-				"Adonis_AKMAdvReflex",
+				"RebelSergeant",
 			},
 			'AdditionalGroups', {
 				PlaceObj('AdditionalGroup', {
@@ -7547,7 +7547,7 @@ return {
 				}),
 			},
 			'Equipment', {
-				"LegionRocketeer_Stronger",
+				"RebelRPG",
 			},
 			'AdditionalGroups', {
 				PlaceObj('AdditionalGroup', {
@@ -7607,7 +7607,7 @@ return {
 				}),
 			},
 			'Equipment', {
-				"LegionRocketeer_Stronger",
+				"RebelRPG",
 			},
 			'AdditionalGroups', {
 				PlaceObj('AdditionalGroup', {
@@ -34010,20 +34010,5 @@ return {
 	PlaceObj('ModItemFolder', {
 		'name', "LootDefs",
 		'comment', "Луты",
-	}, {
-		PlaceObj('ModItemLootDef', {
-			group = "Default",
-			id = "RebelRPG",
-			PlaceObj('LootEntryLootDef', {
-				loot_def = "LegionRocketeer_Stronger",
-			}),
-		}),
-		PlaceObj('ModItemLootDef', {
-			group = "Default",
-			id = "RebelHeavy_Mortar",
-			PlaceObj('LootEntryLootDef', {
-				loot_def = "ArmyMortar",
-			}),
-		}),
-		}),
+	}),
 }
