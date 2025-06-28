@@ -13032,15 +13032,32 @@ return {
 				}),
 				PlaceObj('AIPolicyHighGround', {
 					'RequiredKeywords', {
-						"Control",
+						"Sniper",
 					},
-					'Weight', 50,
+					'Weight', 150,
 				}),
 				PlaceObj('AIPolicyHighGround', {
 					'RequiredKeywords', {
-						"Sniper",
+						"Soldier",
 					},
 					'Weight', 50,
+				}),
+				PlaceObj('AIPolicyProximity', {
+					'Weight', 10,
+					'MinScore', 50,
+				}),
+				PlaceObj('AIPolicyTakeCover', {
+					'visibility_mode', "team",
+				}),
+				PlaceObj('AIPolicyWeaponRange', {
+					'RangeMin', 50,
+					'RangeMax', 180,
+				}),
+				PlaceObj('AIPolicyWeaponRange', {
+					'RequiredKeywords', {
+						"Sniper",
+					},
+					'RangeMax', 180,
 				}),
 			},
 			OptLocSearchRadius = 80,
@@ -14418,6 +14435,17 @@ return {
 				PlaceObj('AIPolicyLosToEnemy', {
 					'Weight', 20,
 				}),
+				PlaceObj('AIPolicyEvadeEnemies', {
+					'Weight', 50,
+					'Range', 10,
+				}),
+				PlaceObj('AIPolicyEvadeEnemies', {
+					'RequiredKeywords', {
+						"Sniper",
+					},
+					'Weight', 50,
+					'Range', 20,
+				}),
 			},
 			OptLocSearchRadius = 100,
 			PrefStance = "Crouch",
@@ -15188,6 +15216,31 @@ return {
 					},
 					'Weight', 80,
 					'RangeMin', 50,
+					'RangeMax', 200,
+				}),
+				PlaceObj('AIPolicyWeaponRange', {
+					'RequiredKeywords', {
+						"Sniper",
+					},
+					'Weight', 40,
+					'RangeMin', 70,
+					'RangeMax', 130,
+				}),
+				PlaceObj('AIPolicyEvadeEnemies', {
+					'Weight', 30,
+					'Range', 20,
+				}),
+				PlaceObj('AIPolicyEvadeEnemies', {
+					'Weight', 30,
+					'Range', 40,
+				}),
+				PlaceObj('AIPolicyWeaponRange', {
+					'RequiredKeywords', {
+						"Sniper",
+					},
+					'Weight', 40,
+					'RangeMin', 50,
+					'RangeMax', 150,
 				}),
 				PlaceObj('AIPolicyTakeCover', {
 					'Weight', 120,
