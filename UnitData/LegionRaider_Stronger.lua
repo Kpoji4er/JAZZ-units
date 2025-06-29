@@ -8,7 +8,6 @@ DefineClass.LegionRaider_Stronger = {
 	Health = 80,
 	Agility = 90,
 	Dexterity = 90,
-	Strength = 70,
 	Wisdom = 24,
 	Will = 55,
 	Leadership = 10,

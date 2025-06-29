@@ -1519,7 +1519,6 @@ return {
 				'Health', 80,
 				'Agility', 90,
 				'Dexterity', 90,
-				'Strength', 70,
 				'Wisdom', 24,
 				'Will', 55,
 				'Leadership', 10,
@@ -3002,7 +3001,7 @@ return {
 				'Health', 81,
 				'Agility', 80,
 				'Dexterity', 70,
-				'Strength', 70,
+				'Strength', 50,
 				'Wisdom', 40,
 				'Will', 40,
 				'Leadership', 25,
@@ -13831,6 +13830,11 @@ return {
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyDealDamage', nil),
 						PlaceObj('AIPolicyAttackAP', nil),
+						PlaceObj('AIPolicyProximity', {
+							'Weight', 40,
+							'TargetUnits', "allies",
+							'MinScore', 40,
+						}),
 					},
 					'TakeCoverChance', 0,
 				}),
@@ -13912,14 +13916,13 @@ return {
 				PlaceObj('AIPolicyWeaponRange', {
 					'Weight', 90,
 					'RangeMin', 5,
-					'RangeMax', 80,
 				}),
 				PlaceObj('AIPolicyProximity', {
 					'Weight', 80,
 					'Required', true,
 					'TargetUnits', "allies",
 					'TargetDist', "average",
-					'MinScore', 40,
+					'MinScore', 50,
 				}),
 				PlaceObj('AIPolicyTakeCover', {
 					'Weight', 80,
