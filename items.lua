@@ -772,7 +772,7 @@ return {
 				'Health', 85,
 				'Agility', 90,
 				'Dexterity', 65,
-				'Strength', 78,
+				'Strength', 99,
 				'Wisdom', 23,
 				'Will', 75,
 				'Leadership', 14,
@@ -2266,7 +2266,7 @@ return {
 				'Health', 84,
 				'Agility', 85,
 				'Dexterity', 62,
-				'Strength', 73,
+				'Strength', 91,
 				'Wisdom', 17,
 				'Will', 55,
 				'Leadership', 14,
@@ -3504,7 +3504,7 @@ return {
 				'Health', 80,
 				'Agility', 80,
 				'Dexterity', 45,
-				'Strength', 75,
+				'Strength', 85,
 				'Wisdom', 14,
 				'Will', 35,
 				'Leadership', 14,
@@ -27083,7 +27083,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
