@@ -13043,20 +13043,10 @@ return {
 				}),
 				PlaceObj('AIPolicyProximity', {
 					'Weight', 10,
+					'AllyPlannedPosition', true,
+					'TargetUnits', "allies",
+					'TargetDist', "average",
 					'MinScore', 50,
-				}),
-				PlaceObj('AIPolicyTakeCover', {
-					'visibility_mode', "team",
-				}),
-				PlaceObj('AIPolicyWeaponRange', {
-					'RangeMin', 50,
-					'RangeMax', 180,
-				}),
-				PlaceObj('AIPolicyWeaponRange', {
-					'RequiredKeywords', {
-						"Sniper",
-					},
-					'RangeMax', 180,
 				}),
 			},
 			OptLocSearchRadius = 80,
