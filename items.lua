@@ -14612,7 +14612,7 @@ return {
 							'Weight', 150,
 						}),
 						PlaceObj('AIPolicyAvoidDeathZones', {
-							'TargetDist', 12,
+							'TargetDist', 6,
 						}),
 					},
 					'TakeCoverChance', 50,
@@ -14648,18 +14648,6 @@ return {
 							'AllyPlannedPosition', true,
 							'TargetDist', "average",
 							'MinScore', 100,
-						}),
-						PlaceObj('AIPolicyDistanceFromStart', {
-							'Weight', 10,
-							'Distance', 1,
-						}),
-						PlaceObj('AIPolicyDistanceFromStart', {
-							'Weight', 10,
-							'Distance', 2,
-						}),
-						PlaceObj('AIPolicyDistanceFromStart', {
-							'Weight', 10,
-							'Distance', 3,
 						}),
 						PlaceObj('AIPolicyLastEnemyPos', {
 							'Weight', 80,
@@ -14722,18 +14710,6 @@ return {
 							'RangeMax', 60,
 						}),
 						PlaceObj('AIPolicyFlanking', nil),
-						PlaceObj('AIPolicyDistanceFromStart', {
-							'Weight', 40,
-							'Distance', 1,
-						}),
-						PlaceObj('AIPolicyDistanceFromStart', {
-							'Weight', 40,
-							'Distance', 2,
-						}),
-						PlaceObj('AIPolicyDistanceFromStart', {
-							'Weight', 40,
-							'Distance', 4,
-						}),
 					},
 					'SignatureActions', {
 						PlaceObj('AIActionThrowGrenade', {
