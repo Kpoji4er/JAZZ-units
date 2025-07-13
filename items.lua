@@ -13048,6 +13048,10 @@ return {
 					'TargetDist', "average",
 					'MinScore', 50,
 				}),
+				PlaceObj('AIPolicyAvoidDeathZones', {
+					'TargetDist', 25,
+					'Penalty', 150,
+				}),
 			},
 			OptLocSearchRadius = 80,
 			SignatureActions = {
@@ -13830,6 +13834,10 @@ return {
 							'Weight', 80,
 							'MinScore', 40,
 						}),
+						PlaceObj('AIPolicyAvoidDeathZones', {
+							'TargetDist', 12,
+							'Penalty', 30,
+						}),
 					},
 					'TakeCoverChance', 0,
 				}),
@@ -13926,6 +13934,13 @@ return {
 				}),
 				PlaceObj('AIPolicyTakeCover', {
 					'Weight', 80,
+				}),
+				PlaceObj('AIPolicyGrenadeRange', {
+					'RangeMin', 50,
+					'RangeMax', 100,
+				}),
+				PlaceObj('AIPolicyAvoidDeathZones', {
+					'TargetDist', 12,
 				}),
 			},
 			OptLocSearchRadius = 100,
@@ -14060,8 +14075,11 @@ return {
 						PlaceObj('AIPolicyAttackAP', {
 							'Weight', 50,
 						}),
+						PlaceObj('AIPolicyAvoidDeathZones', {
+							'TargetDist', 8,
+						}),
 					},
-					'TakeCoverChance', 80,
+					'TakeCoverChance', 100,
 				}),
 				PlaceObj('PositioningAI', {
 					'BiasId', "Advance",
@@ -14110,24 +14128,15 @@ return {
 							'TargetDist', "average",
 							'MinScore', 8,
 						}),
-						PlaceObj('AIPolicyDistanceFromStart', {
-							'Weight', 10,
-							'Distance', 1,
-						}),
-						PlaceObj('AIPolicyDistanceFromStart', {
-							'Weight', 10,
-							'Distance', 2,
-						}),
-						PlaceObj('AIPolicyDistanceFromStart', {
-							'Weight', 10,
-							'Distance', 3,
-						}),
 						PlaceObj('AIPolicyLosToEnemy', {
 							'Weight', 50,
 						}),
 						PlaceObj('AIPolicyLastEnemyPos', nil),
 						PlaceObj('AIPolicyAttackAP', {
 							'Weight', 50,
+						}),
+						PlaceObj('AIPolicyAvoidDeathZones', {
+							'TargetDist', 4,
 						}),
 					},
 					'SignatureActions', {
@@ -14189,6 +14198,7 @@ return {
 						}),
 					},
 					'Label', "Flanking",
+					'OptLocWeight', 80,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyAttackAP', nil),
 						PlaceObj('AIPolicyWeaponRange', {
@@ -14202,17 +14212,8 @@ return {
 							'RangeMax', 60,
 						}),
 						PlaceObj('AIPolicyFlanking', nil),
-						PlaceObj('AIPolicyDistanceFromStart', {
-							'Weight', 40,
-							'Distance', 1,
-						}),
-						PlaceObj('AIPolicyDistanceFromStart', {
-							'Weight', 40,
-							'Distance', 2,
-						}),
-						PlaceObj('AIPolicyDistanceFromStart', {
-							'Weight', 40,
-							'Distance', 4,
+						PlaceObj('AIPolicyAvoidDeathZones', {
+							'TargetDist', 3,
 						}),
 					},
 					'SignatureActions', {
@@ -14264,7 +14265,7 @@ return {
 						PlaceObj('AIPolicyWeaponRange', {
 							'Weight', 50,
 							'RangeMin', 30,
-							'RangeMax', 100,
+							'RangeMax', 150,
 						}),
 						PlaceObj('AIPolicyProximity', {
 							'Weight', 30,
@@ -14438,16 +14439,9 @@ return {
 				PlaceObj('AIPolicyLosToEnemy', {
 					'Weight', 20,
 				}),
-				PlaceObj('AIPolicyEvadeEnemies', {
-					'Weight', 50,
-					'Range', 10,
-				}),
-				PlaceObj('AIPolicyEvadeEnemies', {
-					'RequiredKeywords', {
-						"Sniper",
-					},
-					'Weight', 50,
-					'Range', 20,
+				PlaceObj('AIPolicyAvoidDeathZones', {
+					'TargetDist', 20,
+					'Penalty', 50,
 				}),
 			},
 			OptLocSearchRadius = 100,
@@ -14616,6 +14610,9 @@ return {
 						}),
 						PlaceObj('AIPolicyTakeCover', {
 							'Weight', 150,
+						}),
+						PlaceObj('AIPolicyAvoidDeathZones', {
+							'TargetDist', 12,
 						}),
 					},
 					'TakeCoverChance', 50,
@@ -14906,6 +14903,10 @@ return {
 					'Weight', 50,
 				}),
 				PlaceObj('AIPolicyTakeCover', nil),
+				PlaceObj('AIPolicyAvoidDeathZones', {
+					'TargetDist', 20,
+					'Penalty', 10,
+				}),
 			},
 			OptLocSearchRadius = 100,
 			PrefStance = "Crouch",
@@ -15251,6 +15252,9 @@ return {
 				}),
 				PlaceObj('AIPolicyLosToEnemy', {
 					'Weight', 20,
+				}),
+				PlaceObj('AIPolicyAvoidDeathZones', {
+					'TargetDist', 25,
 				}),
 			},
 			OptLocSearchRadius = 100,
@@ -15733,6 +15737,7 @@ return {
 					'RangeMax', 80,
 				}),
 				PlaceObj('AIPolicyIndoorsOutdoors', nil),
+				PlaceObj('AIPolicyAvoidDeathZones', nil),
 				nil,
 				PlaceObj('AIPolicyProximity', {
 					'Weight', 50,
