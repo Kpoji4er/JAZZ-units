@@ -13817,6 +13817,7 @@ return {
 			id = "Medic_Low",
 		}),
 		PlaceObj('ModItemAIArchetype', {
+			BaseAttackWeight = 200,
 			Behaviors = {
 				PlaceObj('StandardAI', {
 					'Weight', 50,
@@ -13838,6 +13839,21 @@ return {
 							'TargetDist', 12,
 							'Penalty', 30,
 						}),
+						PlaceObj('AIPolicyWeaponRange', {
+							'Weight', 50,
+							'RangeBase', "Absolute",
+							'RangeMin', 3,
+							'RangeMax', 22,
+						}),
+						PlaceObj('AIPolicyWeaponRange', {
+							'Weight', 50,
+							'RangeMin', 30,
+							'RangeMax', 90,
+						}),
+						PlaceObj('AIPolicyTakeCover', {
+							'Weight', 150,
+							'visibility_mode', "team",
+						}),
 					},
 					'TakeCoverChance', 0,
 				}),
@@ -13853,6 +13869,7 @@ return {
 						}),
 					},
 					'Label', "Be indoor",
+					'OptLocWeight', 200,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyProximity', {
 							'Weight', 80,
@@ -13914,11 +13931,18 @@ return {
 			Comment = "morale-related (cloned Assault)",
 			OptLocPolicies = {
 				PlaceObj('AIPolicyHighGround', {
-					'Weight', 10,
+					'Weight', 40,
 				}),
 				PlaceObj('AIPolicyWeaponRange', {
 					'Weight', 90,
+					'RangeMin', 10,
+					'RangeMax', 80,
+				}),
+				PlaceObj('AIPolicyWeaponRange', {
+					'Weight', 90,
+					'RangeBase', "Absolute",
 					'RangeMin', 5,
+					'RangeMax', 18,
 				}),
 				PlaceObj('AIPolicyProximity', {
 					'Weight', 80,
@@ -13935,12 +13959,8 @@ return {
 				PlaceObj('AIPolicyTakeCover', {
 					'Weight', 80,
 				}),
-				PlaceObj('AIPolicyGrenadeRange', {
-					'RangeMin', 50,
-					'RangeMax', 100,
-				}),
 				PlaceObj('AIPolicyAvoidDeathZones', {
-					'TargetDist', 12,
+					'TargetDist', 40,
 				}),
 			},
 			OptLocSearchRadius = 100,
@@ -14028,11 +14048,13 @@ return {
 					'min_score', 10,
 				}),
 			},
+			TargetChangePolicy = "restart",
 			group = "System",
 			id = "Grenadier",
 		}),
 		PlaceObj('ModItemAIArchetype', {
 			BaseAttackTargeting = set( "Arms", "BlindFire", "Groin", "InCover", "Legs", "Torso", "Trap" ),
+			BaseAttackWeight = 200,
 			BaseMovementWeight = 50,
 			Behaviors = {
 				PlaceObj('StandardAI', {
@@ -14098,6 +14120,7 @@ return {
 						}),
 					},
 					'Label', "Advance",
+					'OptLocWeight', 500,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyWeaponRange', {
 							'RangeMin', 20,
@@ -14413,8 +14436,8 @@ return {
 					'Weight', 20,
 				}),
 				PlaceObj('AIPolicyAvoidDeathZones', {
-					'TargetDist', 20,
-					'Penalty', 50,
+					'TargetDist', 50,
+					'Penalty', 75,
 				}),
 			},
 			OptLocSearchRadius = 100,
@@ -14443,6 +14466,12 @@ return {
 					'BiasId', "AssaultGrenadeThrow",
 					'min_score', 100,
 				}),
+				PlaceObj('AIAttackSingleTarget', {
+					'RequiredKeywords', {
+						"Sniper",
+					},
+					'Aiming', "Maximum",
+				}),
 				PlaceObj('AIActionThrowFlare', {
 					'BiasId', "ThrowFlare",
 					'Weight', 300,
@@ -14469,6 +14498,7 @@ return {
 				}),
 			},
 			TargetBaseScore = 75,
+			TargetChangePolicy = "restart",
 			TargetScoreRandomization = 10,
 			group = "Simplified",
 			id = "Soldier",
@@ -14486,6 +14516,7 @@ return {
 							'Period', 5,
 						}),
 					},
+					'OptLocWeight', 200,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyDealDamage', {
 							'CheckLOS', false,
@@ -14532,6 +14563,7 @@ return {
 						}),
 					},
 					'Label', "Advance",
+					'OptLocWeight', 500,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyWeaponRange', {
 							'RangeMin', 20,
@@ -14798,7 +14830,7 @@ return {
 				}),
 				PlaceObj('AIPolicyTakeCover', nil),
 				PlaceObj('AIPolicyAvoidDeathZones', {
-					'TargetDist', 20,
+					'TargetDist', 30,
 					'Penalty', 40,
 				}),
 			},
@@ -14894,6 +14926,7 @@ return {
 				}),
 			},
 			TargetBaseScore = 50,
+			TargetChangePolicy = "restart",
 			TargetScoreRandomization = 10,
 			TargetingPolicies = {
 				PlaceObj('AITargetingEnemyHealth', {
@@ -14919,9 +14952,11 @@ return {
 						}),
 					},
 					'turn_phase', "Late",
+					'OptLocWeight', 250,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyDealDamage', {
 							'Weight', 150,
+							'CheckLOS', false,
 						}),
 						PlaceObj('AIPolicyTakeCover', nil),
 						PlaceObj('AIPolicyIndoorsOutdoors', {
@@ -14937,8 +14972,9 @@ return {
 					'Weight', 50,
 					'turn_phase', "Late",
 					'EndTurnPolicies', {
-						PlaceObj('AIPolicyLosToEnemy', {
-							'Invert', true,
+						PlaceObj('AIPolicyDealDamage', {
+							'Weight', 150,
+							'CheckLOS', false,
 						}),
 						PlaceObj('AIPolicyWeaponRange', {
 							'RangeMin', 30,
@@ -14949,7 +14985,10 @@ return {
 					'Weight', 200,
 					'turn_phase', "Late",
 					'EndTurnPolicies', {
-						PlaceObj('AIPolicyLosToEnemy', nil),
+						PlaceObj('AIPolicyDealDamage', {
+							'Weight', 150,
+							'CheckLOS', false,
+						}),
 						PlaceObj('AIPolicyWeaponRange', {
 							'RangeMin', 40,
 						}),
@@ -15106,7 +15145,7 @@ return {
 					'Weight', 20,
 				}),
 				PlaceObj('AIPolicyAvoidDeathZones', {
-					'TargetDist', 25,
+					'TargetDist', 50,
 				}),
 			},
 			OptLocSearchRadius = 100,
@@ -15195,7 +15234,11 @@ return {
 					'self_score_mod', 0,
 					'min_score', 10,
 				}),
+				PlaceObj('AIAttackSingleTarget', {
+					'Aiming', "Maximum",
+				}),
 			},
+			TargetChangePolicy = "restart",
 			TargetingPolicies = {
 				PlaceObj('AITargetingEnemyWeapon', {
 					'Weight', 15,
@@ -15429,6 +15472,10 @@ return {
 				PlaceObj('AIPolicyFlanking', {
 					'Weight', 10,
 				}),
+				PlaceObj('AIPolicyAvoidDeathZones', {
+					'TargetDist', 50,
+					'Penalty', 75,
+				}),
 				nil,
 				PlaceObj('AIPolicyIndoorsOutdoors', {
 					'Indoors', false,
@@ -15472,6 +15519,7 @@ return {
 							'Period', 5,
 						}),
 					},
+					'OptLocWeight', 200,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyDealDamage', {
 							'Weight', 200,
@@ -15573,7 +15621,9 @@ return {
 					'RangeMax', 80,
 				}),
 				PlaceObj('AIPolicyIndoorsOutdoors', nil),
-				PlaceObj('AIPolicyAvoidDeathZones', nil),
+				PlaceObj('AIPolicyAvoidDeathZones', {
+					'TargetDist', 30,
+				}),
 				nil,
 				PlaceObj('AIPolicyProximity', {
 					'Weight', 50,
@@ -15670,6 +15720,7 @@ return {
 				}),
 			},
 			TargetBaseScore = 80,
+			TargetChangePolicy = "restart",
 			TargetScoreRandomization = 30,
 			group = "Simplified",
 			id = "Brute",
