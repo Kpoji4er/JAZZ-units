@@ -778,7 +778,7 @@ return {
 				'Leadership', 14,
 				'Marksmanship', 70,
 				'Mechanical', 80,
-				'Explosives', 92,
+				'Explosives', 80,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionDemo",
 				'BigPortrait', "UI/Enemies/LegionRaider",
@@ -2272,7 +2272,7 @@ return {
 				'Leadership', 14,
 				'Marksmanship', 66,
 				'Mechanical', 20,
-				'Explosives', 85,
+				'Explosives', 55,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionDemo",
 				'BigPortrait', "UI/Enemies/LegionRaider",
@@ -15508,7 +15508,7 @@ return {
 			id = "HeavyGunner",
 		}),
 		PlaceObj('ModItemAIArchetype', {
-			BaseMovementWeight = 150,
+			BaseAttackWeight = 150,
 			Behaviors = {
 				PlaceObj('StandardAI', {
 					'BiasId', "Standard",
@@ -15533,7 +15533,7 @@ return {
 							'ReserveAttackAP', true,
 						}),
 						PlaceObj('AIPolicyAttackAP', {
-							'Weight', 25,
+							'Weight', 75,
 						}),
 					},
 					'SignatureActions', {
@@ -15616,15 +15616,15 @@ return {
 					'RangeMin', 0,
 					'RangeMax', 6,
 				}),
-				PlaceObj('AIPolicyWeaponRange', {
-					'RangeMin', 0,
-					'RangeMax', 80,
-				}),
 				PlaceObj('AIPolicyIndoorsOutdoors', nil),
+				PlaceObj('AIPolicyWeaponRange', {
+					'RangeBase', "Absolute",
+					'RangeMin', 0,
+					'RangeMax', 16,
+				}),
 				PlaceObj('AIPolicyAvoidDeathZones', {
 					'TargetDist', 30,
 				}),
-				nil,
 				PlaceObj('AIPolicyProximity', {
 					'Weight', 50,
 					'AllyPlannedPosition', true,
