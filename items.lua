@@ -14054,8 +14054,7 @@ return {
 		}),
 		PlaceObj('ModItemAIArchetype', {
 			BaseAttackTargeting = set( "Arms", "BlindFire", "Groin", "InCover", "Legs", "Torso", "Trap" ),
-			BaseAttackWeight = 200,
-			BaseMovementWeight = 50,
+			BaseAttackWeight = 150,
 			Behaviors = {
 				PlaceObj('StandardAI', {
 					'BiasId', "Standard",
@@ -14067,6 +14066,7 @@ return {
 						}),
 					},
 					'turn_phase', "Late",
+					'OptLocWeight', 150,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyDealDamage', {
 							'Weight', 200,
@@ -14096,7 +14096,6 @@ return {
 				}),
 				PlaceObj('PositioningAI', {
 					'BiasId', "Advance",
-					'Weight', 200,
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "Advance",
@@ -14123,15 +14122,13 @@ return {
 					'OptLocWeight', 500,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyWeaponRange', {
-							'RangeMin', 20,
-							'RangeMax', 60,
+							'RangeBase', "Absolute",
+							'RangeMin', 2,
+							'RangeMax', 32,
 						}),
-						PlaceObj('AIPolicyWeaponRange', {
-							'Weight', 200,
-							'RangeMin', 10,
-							'RangeMax', 40,
+						PlaceObj('AIPolicyTakeCover', {
+							'visibility_mode', "team",
 						}),
-						PlaceObj('AIPolicyTakeCover', nil),
 						PlaceObj('AIPolicyProximity', {
 							'AllyPlannedPosition', true,
 							'TargetDist', "average",
@@ -14268,7 +14265,9 @@ return {
 						PlaceObj('AIPolicyIndoorsOutdoors', {
 							'Weight', 20,
 						}),
-						PlaceObj('AIPolicyTakeCover', nil),
+						PlaceObj('AIPolicyTakeCover', {
+							'visibility_mode', "team",
+						}),
 					},
 					'SignatureActions', {
 						PlaceObj('AIActionThrowGrenade', {
@@ -14303,7 +14302,9 @@ return {
 							'Required', true,
 						}),
 						PlaceObj('AIPolicyDealDamage', nil),
-						PlaceObj('AIPolicyTakeCover', nil),
+						PlaceObj('AIPolicyTakeCover', {
+							'visibility_mode', "team",
+						}),
 					},
 					'VoiceResponse', "TacticalFocus",
 				}),
@@ -14325,49 +14326,11 @@ return {
 							'TargetDist', "average",
 							'MinScore', 3,
 						}),
-						PlaceObj('AIPolicyTakeCover', nil),
+						PlaceObj('AIPolicyTakeCover', {
+							'visibility_mode', "team",
+						}),
 					},
 					'VoiceResponse', "BecomeAware",
-				}),
-				PlaceObj('HoldPositionAI', {
-					'BiasId', "HoldPositionBehavior",
-					'OnActivationBiases', {
-						PlaceObj('AIBiasModification', {
-							'BiasId', "HoldPositionBehavior",
-							'Value', -50,
-							'Period', 3,
-						}),
-					},
-					'turn_phase', "Late",
-					'EndTurnPolicies', {
-						PlaceObj('AIPolicyDealDamage', nil),
-						PlaceObj('AIPolicyLosToEnemy', {
-							'Weight', 50,
-						}),
-						PlaceObj('AIPolicyTakeCover', nil),
-					},
-					'SignatureActions', {
-						PlaceObj('AIConeAttack', {
-							'Weight', 200,
-							'enemy_score', 300,
-							'action_id', "Overwatch",
-						}),
-						PlaceObj('AIActionBasicAttack', {
-							'BiasId', "BurstFire",
-						}),
-						PlaceObj('AIActionBasicAttack', {
-							'BiasId', "SingleShot",
-							'Weight', 20,
-						}),
-						PlaceObj('AIActionBasicAttack', {
-							'BiasId', "Overwatch",
-						}),
-						PlaceObj('AIActionHeavyWeaponAttack', {
-							'Weight', 200,
-							'min_score', 50,
-						}),
-					},
-					'VoiceResponse', "AIOverwatch",
 				}),
 				PlaceObj('CustomAI', {
 					'BiasId', "SeekEnemy",
@@ -14433,7 +14396,7 @@ return {
 					'visibility_mode', "team",
 				}),
 				PlaceObj('AIPolicyLosToEnemy', {
-					'Weight', 20,
+					'Weight', 40,
 				}),
 				PlaceObj('AIPolicyAvoidDeathZones', {
 					'TargetDist', 50,
@@ -14529,6 +14492,7 @@ return {
 						}),
 						PlaceObj('AIPolicyTakeCover', {
 							'Weight', 150,
+							'visibility_mode', "team",
 						}),
 						PlaceObj('AIPolicyAvoidDeathZones', {
 							'TargetDist', 6,
@@ -14566,15 +14530,13 @@ return {
 					'OptLocWeight', 500,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyWeaponRange', {
-							'RangeMin', 20,
-							'RangeMax', 60,
+							'RangeBase', "Absolute",
+							'RangeMin', 1,
+							'RangeMax', 16,
 						}),
-						PlaceObj('AIPolicyWeaponRange', {
-							'Weight', 200,
-							'RangeMin', 10,
-							'RangeMax', 40,
+						PlaceObj('AIPolicyTakeCover', {
+							'visibility_mode', "team",
 						}),
-						PlaceObj('AIPolicyTakeCover', nil),
 						PlaceObj('AIPolicyProximity', {
 							'AllyPlannedPosition', true,
 							'TargetDist', "average",
@@ -14658,6 +14620,9 @@ return {
 							'ReserveAttackAP', true,
 						}),
 						PlaceObj('AIPolicyDealDamage', nil),
+						PlaceObj('AIPolicyTakeCover', {
+							'Weight', 70,
+						}),
 					},
 					'SignatureActions', {
 						PlaceObj('AIActionThrowGrenade', {
@@ -14692,7 +14657,9 @@ return {
 						PlaceObj('AIPolicyIndoorsOutdoors', {
 							'Required', true,
 						}),
-						PlaceObj('AIPolicyTakeCover', nil),
+						PlaceObj('AIPolicyTakeCover', {
+							'visibility_mode', "team",
+						}),
 						PlaceObj('AIPolicyDealDamage', nil),
 					},
 					'VoiceResponse', "TacticalFocus",
@@ -14715,7 +14682,9 @@ return {
 							'TargetDist', "average",
 							'MinScore', 70,
 						}),
-						PlaceObj('AIPolicyTakeCover', nil),
+						PlaceObj('AIPolicyTakeCover', {
+							'visibility_mode', "team",
+						}),
 					},
 					'VoiceResponse', "BecomeAware",
 				}),
@@ -14757,7 +14726,8 @@ return {
 							'Weight', 20,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'Weight', 20,
+							'Weight', 120,
+							'visibility_mode', "team",
 						}),
 					},
 					'SignatureActions', {
@@ -14828,7 +14798,9 @@ return {
 				PlaceObj('AIPolicyIndoorsOutdoors', {
 					'Weight', 50,
 				}),
-				PlaceObj('AIPolicyTakeCover', nil),
+				PlaceObj('AIPolicyTakeCover', {
+					'visibility_mode', "team",
+				}),
 				PlaceObj('AIPolicyAvoidDeathZones', {
 					'TargetDist', 30,
 					'Penalty', 40,
@@ -14958,7 +14930,9 @@ return {
 							'Weight', 150,
 							'CheckLOS', false,
 						}),
-						PlaceObj('AIPolicyTakeCover', nil),
+						PlaceObj('AIPolicyTakeCover', {
+							'visibility_mode', "team",
+						}),
 						PlaceObj('AIPolicyIndoorsOutdoors', {
 							'Weight', 20,
 						}),
@@ -14979,6 +14953,9 @@ return {
 						PlaceObj('AIPolicyWeaponRange', {
 							'RangeMin', 30,
 						}),
+						PlaceObj('AIPolicyTakeCover', {
+							'visibility_mode', "team",
+						}),
 					},
 				}),
 				PlaceObj('PositioningAI', {
@@ -14992,7 +14969,9 @@ return {
 						PlaceObj('AIPolicyWeaponRange', {
 							'RangeMin', 40,
 						}),
-						PlaceObj('AIPolicyTakeCover', nil),
+						PlaceObj('AIPolicyTakeCover', {
+							'visibility_mode', "team",
+						}),
 					},
 				}),
 				PlaceObj('PositioningAI', {
@@ -15003,7 +14982,9 @@ return {
 						PlaceObj('AIPolicyIndoorsOutdoors', {
 							'Required', true,
 						}),
-						PlaceObj('AIPolicyTakeCover', nil),
+						PlaceObj('AIPolicyTakeCover', {
+							'visibility_mode', "team",
+						}),
 						PlaceObj('AIPolicyDealDamage', nil),
 						PlaceObj('AIPolicyWeaponRange', {
 							'RangeMin', 50,
@@ -15013,20 +14994,6 @@ return {
 						}),
 					},
 					'VoiceResponse', "TacticalFocus",
-				}),
-				PlaceObj('HoldPositionAI', {
-					'turn_phase', "Late",
-					'EndTurnPolicies', {
-						PlaceObj('AIPolicyTakeCover', nil),
-						PlaceObj('AIPolicyDealDamage', nil),
-					},
-					'SignatureActions', {
-						PlaceObj('AIActionBasicAttack', {
-							'BiasId', "SingleShot",
-							'Weight', 150,
-						}),
-					},
-					'TakeCoverChance', 100,
 				}),
 				PlaceObj('PositioningAI', {
 					'BiasId', "ChangePosition",
@@ -15046,6 +15013,7 @@ return {
 						}),
 						PlaceObj('AIPolicyTakeCover', {
 							'Weight', 300,
+							'visibility_mode', "team",
 						}),
 						PlaceObj('AIPolicyFlanking', {
 							'Weight', 20,
