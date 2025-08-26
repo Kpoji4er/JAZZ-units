@@ -770,7 +770,7 @@ return {
 				'Id', "LegionGrenadier_Stronger_Elite",
 				'object_class', "UnitData",
 				'Health', 85,
-				'Agility', 90,
+				'Agility', 71,
 				'Dexterity', 65,
 				'Strength', 99,
 				'Wisdom', 23,
@@ -778,7 +778,7 @@ return {
 				'Leadership', 14,
 				'Marksmanship', 70,
 				'Mechanical', 80,
-				'Explosives', 80,
+				'Explosives', 63,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionDemo",
 				'BigPortrait', "UI/Enemies/LegionRaider",
@@ -2264,7 +2264,7 @@ return {
 				'Id', "LegionGrenadier_Stronger",
 				'object_class', "UnitData",
 				'Health', 84,
-				'Agility', 85,
+				'Agility', 72,
 				'Dexterity', 62,
 				'Strength', 91,
 				'Wisdom', 17,
@@ -2272,7 +2272,7 @@ return {
 				'Leadership', 14,
 				'Marksmanship', 66,
 				'Mechanical', 20,
-				'Explosives', 55,
+				'Explosives', 40,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionDemo",
 				'BigPortrait', "UI/Enemies/LegionRaider",
@@ -3502,7 +3502,7 @@ return {
 				'comment', "Гранатометчик | Метатель",
 				'object_class', "UnitData",
 				'Health', 80,
-				'Agility', 80,
+				'Agility', 65,
 				'Dexterity', 45,
 				'Strength', 92,
 				'Wisdom', 14,
@@ -13851,7 +13851,7 @@ return {
 							'RangeMax', 90,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
-							'Weight', 150,
+							'Weight', 80,
 							'visibility_mode', "team",
 						}),
 					},
@@ -13957,7 +13957,7 @@ return {
 					'MinScore', 50,
 				}),
 				PlaceObj('AIPolicyTakeCover', {
-					'Weight', 80,
+					'Weight', 40,
 				}),
 				PlaceObj('AIPolicyAvoidDeathZones', {
 					'TargetDist', 40,
@@ -14099,7 +14099,7 @@ return {
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "Advance",
-							'Value', -50,
+							'Value', -90,
 							'Period', 5,
 						}),
 						PlaceObj('AIBiasModification', {

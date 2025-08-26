@@ -6,7 +6,7 @@ DefineClass.LegionGrenadier_Stronger_Elite = {
 
 	object_class = "UnitData",
 	Health = 85,
-	Agility = 90,
+	Agility = 71,
 	Dexterity = 65,
 	Strength = 99,
 	Wisdom = 23,
@@ -14,7 +14,7 @@ DefineClass.LegionGrenadier_Stronger_Elite = {
 	Leadership = 14,
 	Marksmanship = 70,
 	Mechanical = 80,
-	Explosives = 80,
+	Explosives = 63,
 	Medical = 0,
 	Portrait = "UI/EnemiesPortraits/LegionDemo",
 	BigPortrait = "UI/Enemies/LegionRaider",
