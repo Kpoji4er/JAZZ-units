@@ -14068,14 +14068,6 @@ return {
 					'turn_phase', "Late",
 					'OptLocWeight', 150,
 					'EndTurnPolicies', {
-						PlaceObj('AIPolicyDealDamage', {
-							'Weight', 200,
-							'CheckLOS', false,
-						}),
-						PlaceObj('AIPolicyTakeCover', {
-							'Weight', 150,
-							'visibility_mode', "team",
-						}),
 						PlaceObj('AIPolicyIndoorsOutdoors', {
 							'Weight', 50,
 						}),
@@ -14119,6 +14111,9 @@ return {
 						}),
 					},
 					'Label', "Advance",
+					'Score', function (self, unit, proto_context, debug_data)
+						return self.Weight
+					end,
 					'OptLocWeight', 500,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyWeaponRange', {
@@ -14143,6 +14138,9 @@ return {
 						}),
 						PlaceObj('AIPolicyAvoidDeathZones', {
 							'TargetDist', 4,
+						}),
+						PlaceObj('AIPolicyLastEnemyPos', {
+							'Weight', 10,
 						}),
 					},
 					'SignatureActions', {
@@ -14187,6 +14185,7 @@ return {
 							'NotificationText', "",
 						}),
 					},
+					'VoiceResponse', "TacticalPressing",
 				}),
 				PlaceObj('PositioningAI', {
 					'BiasId', "Flanking",
@@ -15489,10 +15488,6 @@ return {
 					},
 					'OptLocWeight', 200,
 					'EndTurnPolicies', {
-						PlaceObj('AIPolicyDealDamage', {
-							'Weight', 200,
-							'CheckLOS', false,
-						}),
 						PlaceObj('AIPolicyTakeCover', {
 							'Weight', 200,
 						}),
@@ -15520,12 +15515,34 @@ return {
 					'BiasId', "Advance",
 					'Weight', 80,
 					'Label', "Advance",
+					'Score', function (self, unit, proto_context, debug_data)
+						return self.Weight
+					end,
 					'turn_phase', "Early",
-					'OptLocWeight', 30,
+					'OptLocWeight', 80,
 					'EndTurnPolicies', {
-						PlaceObj('AIPolicyDealDamage', nil),
+						PlaceObj('AIPolicyDealDamage', {
+							'CheckLOS', false,
+						}),
 						PlaceObj('AIPolicyAttackAP', {
-							'Weight', 40,
+							'Weight', 50,
+						}),
+						PlaceObj('AIPolicyWeaponRange', {
+							'Weight', 300,
+							'RangeBase', "Melee",
+							'RangeMin', 1,
+							'RangeMax', 3,
+						}),
+						PlaceObj('AIPolicyWeaponRange', {
+							'RangeMin', 0,
+							'RangeMax', 30,
+						}),
+						PlaceObj('AIPolicyLastEnemyPos', nil),
+						PlaceObj('AIPolicyLosToEnemy', {
+							'Weight', 10,
+						}),
+						PlaceObj('AIPolicyTakeCover', {
+							'visibility_mode', "team",
 						}),
 					},
 					'SignatureActions', {
@@ -15610,7 +15627,7 @@ return {
 					'Weight', 10,
 				}),
 				PlaceObj('AIPolicyLastEnemyPos', {
-					'Weight', 10,
+					'Weight', 20,
 				}),
 			},
 			OptLocSearchRadius = 100,
