@@ -778,7 +778,7 @@ return {
 				'Leadership', 14,
 				'Marksmanship', 70,
 				'Mechanical', 80,
-				'Explosives', 63,
+				'Explosives', 85,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionDemo",
 				'BigPortrait', "UI/Enemies/LegionRaider",
@@ -2266,7 +2266,7 @@ return {
 				'Health', 84,
 				'Agility', 72,
 				'Dexterity', 62,
-				'Strength', 91,
+				'Strength', 85,
 				'Wisdom', 17,
 				'Will', 55,
 				'Leadership', 14,
@@ -3504,13 +3504,13 @@ return {
 				'Health', 80,
 				'Agility', 65,
 				'Dexterity', 45,
-				'Strength', 92,
+				'Strength', 70,
 				'Wisdom', 14,
 				'Will', 35,
 				'Leadership', 14,
 				'Marksmanship', 63,
 				'Mechanical', 0,
-				'Explosives', 21,
+				'Explosives', 15,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionDemo",
 				'BigPortrait', "UI/Enemies/LegionRaider",
@@ -26897,7 +26897,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
