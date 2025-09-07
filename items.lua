@@ -14994,7 +14994,7 @@ return {
 				}),
 				PlaceObj('PositioningAI', {
 					'BiasId', "ChangePosition",
-					'Weight', 80,
+					'Weight', 250,
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "ChangePosition",
@@ -15010,6 +15010,7 @@ return {
 						}),
 						PlaceObj('AIPolicyTakeCover', {
 							'Weight', 300,
+							'Required', true,
 							'visibility_mode', "team",
 						}),
 						PlaceObj('AIPolicyFlanking', {
@@ -15019,6 +15020,7 @@ return {
 						}),
 						PlaceObj('AIPolicyEvadeEnemies', {
 							'Weight', 120,
+							'Required', true,
 							'RangeBase', "Absolute",
 							'Range', 10,
 						}),
@@ -15045,6 +15047,7 @@ return {
 						}),
 					},
 					'TakeCoverChance', 50,
+					'VoiceResponse', "TakeCover",
 				}),
 			},
 			Comment = "Keywords: Soldier, Sniper, Control, Ordnance, Smoke, Explosives",
@@ -15776,6 +15779,7 @@ return {
 					'turn_phase', "Late",
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyWeaponRange', {
+							'Required', true,
 							'RangeMin', 10,
 							'RangeMax', 25,
 						}),
@@ -15784,6 +15788,7 @@ return {
 						}),
 						PlaceObj('AIPolicyLastEnemyPos', {
 							'Weight', 10,
+							'Required', true,
 						}),
 						PlaceObj('AIPolicyDealDamage', {
 							'Weight', 230,
@@ -15852,7 +15857,7 @@ return {
 					'Weight', 10,
 				}),
 				PlaceObj('AIPolicyProximity', {
-					'Weight', 10,
+					'Weight', 80,
 					'AllyPlannedPosition', true,
 					'TargetUnits', "allies",
 					'TargetDist', "average",
@@ -16042,6 +16047,7 @@ return {
 					'turn_phase', "Late",
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyWeaponRange', {
+							'Required', true,
 							'RangeMin', 10,
 							'RangeMax', 25,
 						}),
@@ -16105,12 +16111,70 @@ return {
 					'TakeCoverChance', 90,
 					'VoiceResponse', "TacticalPressing",
 				}),
+				PlaceObj('PositioningAI', {
+					'BiasId', "ChangePosition",
+					'Weight', 150,
+					'OnActivationBiases', {
+						PlaceObj('AIBiasModification', {
+							'BiasId', "ChangePosition",
+							'Value', -80,
+						}),
+					},
+					'Label', "Change Position",
+					'turn_phase', "Early",
+					'EndTurnPolicies', {
+						PlaceObj('AIPolicyWeaponRange', {
+							'Weight', 60,
+							'RangeMin', 50,
+						}),
+						PlaceObj('AIPolicyTakeCover', {
+							'Weight', 300,
+							'Required', true,
+							'visibility_mode', "team",
+						}),
+						PlaceObj('AIPolicyFlanking', {
+							'Weight', 20,
+							'AllyPlannedPosition', true,
+							'ReserveAttackAP', true,
+						}),
+						PlaceObj('AIPolicyEvadeEnemies', {
+							'Weight', 120,
+							'Required', true,
+							'RangeBase', "Absolute",
+							'Range', 10,
+						}),
+						PlaceObj('AIPolicyIndoorsOutdoors', {
+							'Weight', 20,
+						}),
+					},
+					'SignatureActions', {
+						PlaceObj('AIAttackSingleTarget', {
+							'Weight', 200,
+							'action_id', "BurstFire",
+							'Aiming', "Remaining AP",
+						}),
+						PlaceObj('AIAttackSingleTarget', {
+							'Weight', 150,
+							'NotificationText', "",
+							'action_id', "AutoFire",
+							'Aiming', "Remaining AP",
+						}),
+						PlaceObj('AIActionThrowGrenade', {
+							'Weight', 300,
+							'min_score', 100,
+							'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
+						}),
+					},
+					'TakeCoverChance', 50,
+					'VoiceResponse', "TakeCover",
+				}),
 			},
 			Comment = "Keywords: Soldier, Sniper, Control, Ordnance, Smoke, Explosives",
 			MoveStance = "Crouch",
 			OptLocPolicies = {
 				PlaceObj('AIPolicyTakeCover', {
 					'Weight', 50,
+					'visibility_mode', "team",
 				}),
 				PlaceObj('AIPolicyHighGround', {
 					'RequiredKeywords', {
@@ -16267,6 +16331,63 @@ return {
 					},
 					'TakeCoverChance', 70,
 					'VoiceResponse', "TacticalFocus",
+				}),
+				PlaceObj('PositioningAI', {
+					'BiasId', "Advance",
+					'Weight', 80,
+					'Label', "Advance",
+					'Score', function (self, unit, proto_context, debug_data)
+						return self.Weight
+					end,
+					'turn_phase', "Early",
+					'OptLocWeight', 80,
+					'EndTurnPolicies', {
+						PlaceObj('AIPolicyDealDamage', {
+							'CheckLOS', false,
+						}),
+						PlaceObj('AIPolicyWeaponRange', {
+							'Weight', 300,
+							'RangeBase', "Melee",
+							'RangeMin', 1,
+							'RangeMax', 3,
+						}),
+						PlaceObj('AIPolicyWeaponRange', {
+							'Required', true,
+							'RangeMin', 0,
+							'RangeMax', 10,
+						}),
+						PlaceObj('AIPolicyLastEnemyPos', nil),
+						PlaceObj('AIPolicyLosToEnemy', {
+							'Weight', 10,
+						}),
+						PlaceObj('AIPolicyTakeCover', {
+							'visibility_mode', "team",
+						}),
+					},
+					'SignatureActions', {
+						PlaceObj('AIActionBasicAttack', nil),
+						PlaceObj('AIConeAttack', {
+							'BiasId', "Overwatch",
+							'Weight', 120,
+							'OnActivationBiases', {
+								PlaceObj('AIBiasModification', {
+									'BiasId', "Overwatch",
+									'Value', -100,
+									'Period', 3,
+								}),
+								PlaceObj('AIBiasModification', {
+									'BiasId', "Overwatch",
+									'Value', 100,
+									'ApplyTo', "Team",
+								}),
+							},
+							'team_score', 0,
+							'min_score', 100,
+							'action_id', "Overwatch",
+						}),
+					},
+					'TakeCoverChance', 80,
+					'VoiceResponse', "TacticalPressing",
 				}),
 				PlaceObj('PositioningAI', {
 					'BiasId', "Flanking",
@@ -27578,7 +27699,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
