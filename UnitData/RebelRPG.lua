@@ -26,7 +26,6 @@ DefineClass.RebelRPG = {
 		"Control",
 		"Sniper",
 	},
-	archetype = "Artillery",
 	role = "Artillery",
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "HeavyWeapon")
