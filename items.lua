@@ -5444,28 +5444,28 @@ return {
 			'Group', "Adonis",
 			'Id', "CorazonGuard",
 			'object_class', "UnitData",
-			'Health', 80,
-			'Agility', 90,
-			'Dexterity', 75,
-			'Strength', 85,
-			'Wisdom', 80,
-			'Will', 99,
-			'Leadership', 20,
-			'Marksmanship', 95,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 25,
+			'Health', 100,
+			'Agility', 100,
+			'Dexterity', 100,
+			'Strength', 100,
+			'Wisdom', 100,
+			'Will', 100,
+			'Leadership', 100,
+			'Marksmanship', 100,
+			'Mechanical', 100,
+			'Explosives', 100,
+			'Medical', 100,
 			'Portrait', "UI/EnemiesPortraits/AdonisSoldier",
 			'Name', T(573011421504, --[[ModItemUnitDataCompositeDef CorazonGuard Name]] "Охранник"),
-			'Randomization', true,
 			'Affiliation', "Adonis",
-			'StartingLevel', 3,
-			'archetype', "Turret",
+			'StartingLevel', 10,
+			'RepositionArchetype', "Skirmisher",
 			'MaxAttacks', 10,
 			'MaxHitPoints', 80,
 			'StartingPerks', {
 				"AutoWeapons",
 				"Berserker",
+				"HitTheDeck",
 			},
 			'AppearancesList', {
 				PlaceObj('AppearanceWeight', {
@@ -15859,7 +15859,9 @@ return {
 					},
 					'Label', "Advance",
 					'Score', function (self, unit, proto_context, debug_data)
-						return self.Weight
+						unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
+						local dest, score = AIScoreReachableVoxels(unit.ai_context, self.EndTurnPolicies, 0)
+						return MulDivRound(score, self.Weight, 100)
 					end,
 					'turn_phase', "Late",
 					'EndTurnPolicies', {
@@ -16155,7 +16157,9 @@ return {
 					},
 					'Label', "Advance",
 					'Score', function (self, unit, proto_context, debug_data)
-						return self.Weight
+						unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
+						local dest, score = AIScoreReachableVoxels(unit.ai_context, self.EndTurnPolicies, 0)
+						return MulDivRound(score, self.Weight, 100)
 					end,
 					'turn_phase', "Late",
 					'EndTurnPolicies', {
@@ -16416,7 +16420,7 @@ return {
 		}),
 		PlaceObj('ModItemAIArchetype', {
 			BaseAttackTargeting = set( "Neck", "Torso" ),
-			BaseMovementWeight = 10,
+			BaseAttackWeight = 120,
 			Behaviors = {
 				PlaceObj('StandardAI', {
 					'EndTurnPolicies', {
@@ -16426,13 +16430,12 @@ return {
 				}),
 				PlaceObj('PositioningAI', {
 					'BiasId', "Indoor",
-					'Weight', 120,
+					'Weight', 140,
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "Indoor",
-							'Value', -10,
-							'Period', 10,
-							'ApplyTo', "Team",
+							'Value', -30,
+							'Period', 15,
 						}),
 					},
 					'Label', "Be indoor",
@@ -16449,11 +16452,11 @@ return {
 						PlaceObj('AIPolicyTakeCover', {
 							'visibility_mode', "team",
 						}),
-						PlaceObj('AIPolicyDealDamage', nil),
-						PlaceObj('AIPolicyWeaponRange', {
-							'RangeBase', "Absolute",
-							'RangeMin', 0,
-							'RangeMax', 12,
+						PlaceObj('AIPolicyDealDamage', {
+							'Weight', 150,
+						}),
+						PlaceObj('AIPolicyLosToEnemy', {
+							'Invert', true,
 						}),
 					},
 					'TakeCoverChance', 70,
@@ -16464,12 +16467,15 @@ return {
 					'Weight', 80,
 					'Label', "Advance",
 					'Score', function (self, unit, proto_context, debug_data)
-						return self.Weight
+						unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
+						local dest, score = AIScoreReachableVoxels(unit.ai_context, self.EndTurnPolicies, 0)
+						return MulDivRound(score, self.Weight, 100)
 					end,
 					'turn_phase', "Early",
 					'OptLocWeight', 80,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyDealDamage', {
+							'Required', true,
 							'CheckLOS', false,
 						}),
 						PlaceObj('AIPolicyLastEnemyPos', nil),
@@ -16505,36 +16511,18 @@ return {
 					'TakeCoverChance', 80,
 					'VoiceResponse', "TacticalPressing",
 				}),
-				PlaceObj('PositioningAI', {
-					'BiasId', "Flanking",
-					'Weight', 500,
-					'Fallback', false,
-					'OptLocWeight', 20,
-					'EndTurnPolicies', {
-						PlaceObj('AIPolicyFlanking', {
-							'Weight', 1000,
-							'Required', true,
-							'ReserveAttackAP', true,
-						}),
-						PlaceObj('AIPolicyDealDamage', nil),
-						PlaceObj('AIPolicyTakeCover', {
-							'Weight', 50,
-							'visibility_mode', "team",
-						}),
-					},
-					'TakeCoverChance', 90,
-					'VoiceResponse', "AIFlanking",
-				}),
 			},
 			Comment = "Keywords: Explosives",
 			OptLocPolicies = {
 				PlaceObj('AIPolicyWeaponRange', {
+					'Weight', 200,
 					'RangeBase', "Melee",
 					'RangeMin', 0,
 					'RangeMax', 6,
 				}),
-				PlaceObj('AIPolicyLosToEnemy', nil),
-				PlaceObj('AIPolicyIndoorsOutdoors', nil),
+				PlaceObj('AIPolicyIndoorsOutdoors', {
+					'Weight', 30,
+				}),
 				PlaceObj('AIPolicyAvoidDeathZones', {
 					'TargetDist', 15,
 					'Penalty', 10,
@@ -27819,7 +27807,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
