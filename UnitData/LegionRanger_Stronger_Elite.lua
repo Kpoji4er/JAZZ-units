@@ -50,6 +50,7 @@ DefineClass.LegionRanger_Stronger_Elite = {
 		"Untraceable",
 		"Hobbler",
 		"Shatterhand",
+		"",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

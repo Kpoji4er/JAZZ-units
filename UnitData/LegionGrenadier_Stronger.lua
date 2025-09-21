@@ -41,6 +41,7 @@ DefineClass.LegionGrenadier_Stronger = {
 		"MinFreeMove",
 		"BreachAndClear",
 		"RelentlessAdvance",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

@@ -128,6 +128,7 @@ return {
 					"Untraceable",
 					"Deadeye",
 					"BunsPerk",
+					"",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -212,6 +213,8 @@ return {
 					"BunsPerk",
 					"TakeAim",
 					"AutoWeapons",
+					"MinFreeMove",
+					"OpportunisticKiller",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -305,6 +308,7 @@ return {
 					"RelentlessAdvance",
 					"BunsPerk",
 					"TakeAim",
+					"MinFreeMove",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -404,6 +408,7 @@ return {
 					"TrueGrit",
 					"Berserker",
 					"AutoWeapons",
+					"OpportunisticKiller",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -637,6 +642,8 @@ return {
 					"OverwatchExpert",
 					"Ironclad",
 					"Counterfire",
+					"HeavyWeaponsTraining",
+					"AutoWeapons",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -892,6 +899,7 @@ return {
 					"CQCTraining",
 					"RelentlessAdvance",
 					"TrueGrit",
+					"MinFreeMove",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -973,6 +981,7 @@ return {
 					"Berserker",
 					"TrueGrit",
 					"LastWarning",
+					"MinFreeMove",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -1222,7 +1231,7 @@ return {
 					"StressManagement",
 					"ShoulderToShoulder",
 					"BattleFocus",
-					"AutoWeapons",
+					"MinFreeMove",
 					"LightningReactionNPC",
 				},
 				'AppearancesList', {
@@ -1307,6 +1316,7 @@ return {
 					"Untraceable",
 					"Hobbler",
 					"Shatterhand",
+					"",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -1548,6 +1558,8 @@ return {
 					"BunsPerk",
 					"RelentlessAdvance",
 					"TakeAim",
+					"MinFreeMove",
+					"OpportunisticKiller",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -1647,6 +1659,8 @@ return {
 					"Flanker",
 					"Optimist",
 					"BunsPerk",
+					"MinFreeMove",
+					"AutoWeapons",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -1746,6 +1760,7 @@ return {
 					"BeefedUp",
 					"BuildingConfidence",
 					"LeadFromTheFront",
+					"OpportunisticKiller",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -1911,6 +1926,7 @@ return {
 					"Ambidextrous",
 					"BeefedUp",
 					"Savior",
+					"MinFreeMove",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -2216,6 +2232,7 @@ return {
 					"OverwatchExpert",
 					"Ironclad",
 					"Counterfire",
+					"HeavyWeaponsTraining",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -2299,6 +2316,7 @@ return {
 					"MinFreeMove",
 					"BreachAndClear",
 					"RelentlessAdvance",
+					"MinFreeMove",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -2463,6 +2481,7 @@ return {
 					"Ambidextrous",
 					"Flanker",
 					"RelentlessAdvance",
+					"MinFreeMove",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -2546,6 +2565,7 @@ return {
 					"BeefedUp",
 					"MeleeTraining",
 					"Berserker",
+					"MinFreeMove",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -2704,6 +2724,7 @@ return {
 					"Deadeye",
 					"Flanker",
 					"Untraceable",
+					"",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -2874,6 +2895,7 @@ return {
 					"StressManagement",
 					"ShoulderToShoulder",
 					"BattleFocus",
+					"",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -2946,6 +2968,8 @@ return {
 					"Untraceable",
 					"Hobbler",
 					"Stealthy",
+					"MinFreeMove",
+					"",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -3029,6 +3053,7 @@ return {
 				'StartingPerks', {
 					"BunsPerk",
 					"RelentlessAdvance",
+					"MinFreeMove",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -3122,6 +3147,7 @@ return {
 					"Flanker",
 					"RelentlessAdvance",
 					"BunsPerk",
+					"MinFreeMove",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -3215,6 +3241,7 @@ return {
 					"GruntyPerk",
 					"BeefedUp",
 					"BuildingConfidence",
+					"OpportunisticKiller",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -3295,6 +3322,7 @@ return {
 				'MaxHitPoints', 80,
 				'StartingPerks', {
 					"BeefedUp",
+					"MinFreeMove",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -3536,6 +3564,7 @@ return {
 				'StartingPerks', {
 					"Throwing",
 					"RelentlessAdvance",
+					"MinFreeMove",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -3698,6 +3727,7 @@ return {
 				'StartingPerks', {
 					"Ambidextrous",
 					"Flanker",
+					"MinFreeMove",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -3784,6 +3814,7 @@ return {
 					"InstantAutopsy",
 					"Berserker",
 					"MeleeTraining",
+					"MinFreeMove",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -3954,6 +3985,7 @@ return {
 					"Deadeye",
 					"Spiritual",
 					"DeathFromAbove",
+					"",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -4037,6 +4069,7 @@ return {
 				'StartingPerks', {
 					"Untraceable",
 					"Flanker",
+					"",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -13067,8 +13100,8 @@ return {
 					'MinScore', 50,
 				}),
 				PlaceObj('AIPolicyAvoidDeathZones', {
-					'TargetDist', 25,
-					'Penalty', 150,
+					'TargetDist', 50,
+					'Penalty', 5,
 				}),
 			},
 			OptLocSearchRadius = 80,
@@ -13850,7 +13883,34 @@ return {
 			BaseAttackWeight = 200,
 			Behaviors = {
 				PlaceObj('StandardAI', {
-					'Weight', 50,
+					'Weight', 10,
+					'EndTurnPolicies', {
+						PlaceObj('AIPolicyDealDamage', {
+							'Weight', 150,
+							'CheckLOS', false,
+						}),
+						PlaceObj('AIPolicyTakeCover', {
+							'Weight', 30,
+							'visibility_mode', "team",
+						}),
+					},
+					'SignatureActions', {
+						PlaceObj('AIActionThrowFlare', {
+							'team_score', -100,
+							'self_score_mod', 0,
+							'min_score', 0,
+						}),
+					},
+					'TakeCoverChance', 75,
+				}),
+				PlaceObj('StandardAI', {
+					'Weight', 500,
+					'Label', "GrenadierBeh",
+					'Score', function (self, unit, proto_context, debug_data)
+						unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
+						local dest, score = AIScoreReachableVoxels(unit.ai_context, self.EndTurnPolicies, 0)
+						return MulDivRound(score, self.Weight, 100)
+					end,
 					'turn_phase', "Early",
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyDealDamage', {
@@ -13870,18 +13930,84 @@ return {
 						}),
 						PlaceObj('AIPolicyWeaponRange', {
 							'Weight', 50,
-							'RangeBase', "Absolute",
-							'RangeMin', 3,
-							'RangeMax', 22,
-						}),
-						PlaceObj('AIPolicyWeaponRange', {
-							'Weight', 50,
 							'RangeMin', 30,
 							'RangeMax', 90,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
 							'Weight', 80,
 							'visibility_mode', "team",
+						}),
+						PlaceObj('AIPolicyWeaponRange', {
+							'Weight', 150,
+							'RangeBase', "Absolute",
+							'RangeMin', 8,
+							'RangeMax', 25,
+						}),
+					},
+					'SignatureActions', {
+						PlaceObj('AIActionBasicAttack', nil),
+						PlaceObj('AIActionThrowGrenade', {
+							'BiasId', "AssaultGrenadeThrow",
+							'enemy_score', 200,
+							'team_score', -100,
+							'min_score', 50,
+							'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
+						}),
+						PlaceObj('AIActionThrowFlare', {
+							'BiasId', "ThrowFlare",
+							'Weight', 200,
+							'OnActivationBiases', {
+								PlaceObj('AIBiasModification', {
+									'BiasId', "ThrowFlare",
+									'Effect', "disable",
+								}),
+								PlaceObj('AIBiasModification', {
+									'BiasId', "ThrowFlare",
+									'Value', -20,
+									'ApplyTo', "Team",
+								}),
+								PlaceObj('AIBiasModification', {
+									'BiasId', "ThrowFlare",
+									'Value', -20,
+									'Period', 2,
+									'ApplyTo', "Team",
+								}),
+								PlaceObj('AIBiasModification', {
+									'BiasId', "ThrowFlare",
+									'Value', -20,
+									'Period', 3,
+									'ApplyTo', "Team",
+								}),
+							},
+							'min_score', 10,
+							'TargetLastAttackPos', true,
+						}),
+						PlaceObj('AIActionThrowFlare', {
+							'BiasId', "ThrowFlare",
+							'OnActivationBiases', {
+								PlaceObj('AIBiasModification', {
+									'BiasId', "ThrowFlare",
+									'Effect', "disable",
+								}),
+								PlaceObj('AIBiasModification', {
+									'BiasId', "ThrowFlare",
+									'Value', -20,
+									'ApplyTo', "Team",
+								}),
+								PlaceObj('AIBiasModification', {
+									'BiasId', "ThrowFlare",
+									'Value', -20,
+									'Period', 2,
+									'ApplyTo', "Team",
+								}),
+								PlaceObj('AIBiasModification', {
+									'BiasId', "ThrowFlare",
+									'Value', -20,
+									'Period', 3,
+									'ApplyTo', "Team",
+								}),
+							},
+							'min_score', 10,
 						}),
 					},
 					'TakeCoverChance', 0,
@@ -13961,6 +14087,9 @@ return {
 					'TargetUnits', "allies",
 					'TargetDist', "average",
 					'MinScore', 50,
+				}),
+				PlaceObj('AIPolicyLosToEnemy', {
+					'Weight', 10,
 				}),
 				PlaceObj('AIPolicyTakeCover', {
 					'Weight', 40,
@@ -15797,15 +15926,7 @@ return {
 				}),
 				PlaceObj('PositioningAI', {
 					'BiasId', "Indoor",
-					'Weight', 120,
-					'OnActivationBiases', {
-						PlaceObj('AIBiasModification', {
-							'BiasId', "Indoor",
-							'Value', -10,
-							'Period', 10,
-							'ApplyTo', "Team",
-						}),
-					},
+					'Weight', 60,
 					'Label', "Be indoor",
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyProximity', {
@@ -15938,6 +16059,7 @@ return {
 				}),
 			},
 			Comment = "Keywords: Flank, Explosives",
+			FallbackAction = "overwatch",
 			OptLocPolicies = {
 				PlaceObj('AIPolicyWeaponRange', {
 					'Weight', 300,
@@ -16017,6 +16139,17 @@ return {
 					'min_score', 0,
 					'MinDist', 1000,
 				}),
+				PlaceObj('AIActionThrowGrenade', {
+					'BiasId', "",
+					'Weight', 300,
+					'enemy_score', 0,
+					'team_score', 50,
+					'self_score_mod', 100,
+					'min_score', 100,
+					'MinDist', 0,
+					'MaxDist', 3000,
+					'AllowedAoeTypes', set( "smoke" ),
+				}),
 			},
 			TargetChangePolicy = "restart",
 			TargetScoreRandomization = 10,
@@ -16089,7 +16222,6 @@ return {
 				}),
 				PlaceObj('PositioningAI', {
 					'BiasId', "Indoor",
-					'Weight', 300,
 					'OnActivationBiases', {
 						PlaceObj('AIBiasModification', {
 							'BiasId', "Indoor",
@@ -16166,9 +16298,6 @@ return {
 						PlaceObj('AIPolicyWeaponRange', {
 							'RangeMin', 10,
 							'RangeMax', 25,
-						}),
-						PlaceObj('AIPolicyAvoidDeathZones', {
-							'TargetDist', 4,
 						}),
 						PlaceObj('AIPolicyLastEnemyPos', {
 							'Weight', 10,
@@ -16263,7 +16392,7 @@ return {
 							'Weight', 120,
 							'Required', true,
 							'RangeBase', "Absolute",
-							'Range', 12,
+							'Range', 8,
 						}),
 						PlaceObj('AIPolicyIndoorsOutdoors', {
 							'Weight', 20,
@@ -16337,8 +16466,8 @@ return {
 					'MinScore', 50,
 				}),
 				PlaceObj('AIPolicyAvoidDeathZones', {
-					'TargetDist', 50,
-					'Penalty', 75,
+					'TargetDist', 40,
+					'Penalty', 5,
 				}),
 				PlaceObj('AIPolicyLastEnemyPos', {
 					'Weight', 80,
@@ -16402,6 +16531,17 @@ return {
 					'team_score', 0,
 					'self_score_mod', 0,
 					'min_score', 10,
+				}),
+				PlaceObj('AIActionThrowGrenade', {
+					'BiasId', "",
+					'Weight', 300,
+					'enemy_score', 0,
+					'team_score', 50,
+					'self_score_mod', 100,
+					'min_score', 100,
+					'MinDist', 0,
+					'MaxDist', 3000,
+					'AllowedAoeTypes', set( "smoke" ),
 				}),
 				PlaceObj('AIActionMobileShot', {
 					'Weight', 15,
@@ -16584,14 +16724,22 @@ return {
 							'Effect', "disable",
 						}),
 					},
-					'RequiredKeywords', {
-						"Nova",
-					},
 					'team_score', 0,
 					'self_score_mod', 100,
 					'MinDist', 0,
 					'MaxDist', 3000,
 					'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
+				}),
+				PlaceObj('AIActionThrowGrenade', {
+					'BiasId', "",
+					'Weight', 300,
+					'enemy_score', 0,
+					'team_score', 50,
+					'self_score_mod', 100,
+					'min_score', 100,
+					'MinDist', 0,
+					'MaxDist', 3000,
+					'AllowedAoeTypes', set( "smoke" ),
 				}),
 				PlaceObj('AIActionThrowFlare', {
 					'BiasId', "ThrowFlare",
@@ -27824,7 +27972,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {

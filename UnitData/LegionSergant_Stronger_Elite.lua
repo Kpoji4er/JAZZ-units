@@ -48,7 +48,7 @@ DefineClass.LegionSergant_Stronger_Elite = {
 		"StressManagement",
 		"ShoulderToShoulder",
 		"BattleFocus",
-		"AutoWeapons",
+		"MinFreeMove",
 		"LightningReactionNPC",
 	},
 	AppearancesList = {

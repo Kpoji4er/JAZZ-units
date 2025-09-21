@@ -42,6 +42,7 @@ DefineClass.LegionRaider_Demolution_Stronger_Elite = {
 		"RelentlessAdvance",
 		"BunsPerk",
 		"TakeAim",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

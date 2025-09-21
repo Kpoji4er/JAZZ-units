@@ -37,6 +37,7 @@ DefineClass.LegionRaider = {
 	StartingPerks = {
 		"BunsPerk",
 		"RelentlessAdvance",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

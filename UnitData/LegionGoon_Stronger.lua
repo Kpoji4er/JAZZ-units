@@ -39,6 +39,7 @@ DefineClass.LegionGoon_Stronger = {
 		"Ambidextrous",
 		"Flanker",
 		"RelentlessAdvance",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

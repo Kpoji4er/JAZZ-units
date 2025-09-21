@@ -40,6 +40,8 @@ DefineClass.LegionRaider_Stronger_Elite = {
 		"BunsPerk",
 		"TakeAim",
 		"AutoWeapons",
+		"MinFreeMove",
+		"OpportunisticKiller",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

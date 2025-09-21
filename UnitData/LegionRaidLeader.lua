@@ -42,6 +42,7 @@ DefineClass.LegionRaidLeader = {
 		"GruntyPerk",
 		"BeefedUp",
 		"BuildingConfidence",
+		"OpportunisticKiller",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

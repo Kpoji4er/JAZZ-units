@@ -41,6 +41,7 @@ DefineClass.LegionGrenadier = {
 	StartingPerks = {
 		"Throwing",
 		"RelentlessAdvance",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

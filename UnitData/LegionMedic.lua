@@ -38,6 +38,7 @@ DefineClass.LegionMedic = {
 	MaxHitPoints = 80,
 	StartingPerks = {
 		"BeefedUp",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
