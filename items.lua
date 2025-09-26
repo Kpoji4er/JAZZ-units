@@ -15287,7 +15287,6 @@ return {
 					'Aiming', "Maximum",
 				}),
 			},
-			TargetChangePolicy = "restart",
 			TargetingPolicies = {
 				PlaceObj('AITargetingEnemyWeapon', {
 					'Weight', 15,
@@ -15598,6 +15597,7 @@ return {
 					},
 				}),
 			},
+			FallbackAction = "overwatch",
 			OptLocPolicies = {
 				PlaceObj('AIPolicyWeaponRange', {
 					'Weight', 600,
@@ -15626,6 +15626,7 @@ return {
 			},
 			OptLocSearchRadius = 80,
 			PrefStance = "Prone",
+			TargetChangePolicy = "restart",
 			TargetScoreRandomization = 10,
 			TargetingPolicies = {
 				PlaceObj('AITargetingEnemyHealth', {
@@ -16553,7 +16554,6 @@ return {
 					'action_id', "RunAndGun",
 				}),
 			},
-			TargetChangePolicy = "restart",
 			TargetScoreRandomization = 10,
 			group = "Simplified",
 			id = "Soldier",
