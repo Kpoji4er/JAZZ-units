@@ -13887,7 +13887,6 @@ return {
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyDealDamage', {
 							'Weight', 150,
-							'CheckLOS', false,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
 							'Weight', 30,
@@ -13914,7 +13913,7 @@ return {
 					'turn_phase', "Early",
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyDealDamage', {
-							'Weight', 200,
+							'Weight', 300,
 							'CheckLOS', false,
 						}),
 						PlaceObj('AIPolicyAttackAP', nil),
@@ -13923,10 +13922,6 @@ return {
 							'TargetUnits', "allies",
 							'TargetDist', "average",
 							'MinScore', 40,
-						}),
-						PlaceObj('AIPolicyAvoidDeathZones', {
-							'TargetDist', 12,
-							'Penalty', 30,
 						}),
 						PlaceObj('AIPolicyWeaponRange', {
 							'Weight', 50,
@@ -14096,6 +14091,7 @@ return {
 				}),
 				PlaceObj('AIPolicyAvoidDeathZones', {
 					'TargetDist', 40,
+					'Penalty', 5,
 				}),
 			},
 			OptLocSearchRadius = 100,
@@ -15902,12 +15898,12 @@ return {
 					'OptLocWeight', 20,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyFlanking', {
-							'Weight', 1000,
-							'Required', true,
+							'Weight', 10,
 							'ReserveAttackAP', true,
 						}),
 						PlaceObj('AIPolicyDealDamage', {
 							'Weight', 150,
+							'Required', true,
 							'CheckLOS', false,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
@@ -16198,12 +16194,12 @@ return {
 					'OptLocWeight', 20,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyFlanking', {
-							'Weight', 1000,
-							'Required', true,
+							'Weight', 10,
 							'ReserveAttackAP', true,
 						}),
 						PlaceObj('AIPolicyDealDamage', {
 							'Weight', 120,
+							'Required', true,
 							'CheckLOS', false,
 						}),
 						PlaceObj('AIPolicyTakeCover', {
@@ -27955,7 +27951,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
@@ -27972,7 +27968,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
