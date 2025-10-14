@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 1,
-	'version', 1456,
+	'version', 1465,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -105,6 +105,7 @@ return PlaceObj('ModDef', {
 		"UnitData/AdonisSoldier_Elite.lua",
 		"UnitData/Chimurenga.lua",
 		"UnitData/RebelSergant_Immortal.lua",
+		"UnitData/RebelSergant_Immortal_M1.lua",
 		"UnitData/RebelSergant.lua",
 		"UnitData/RebelFlanker.lua",
 		"UnitData/RebelGrenadier.lua",
@@ -128,6 +129,7 @@ return PlaceObj('ModDef', {
 		"UnitData/LegionRaider_Ernie_Elite.lua",
 		"UnitData/LegionBrawler_SavannaCamp.lua",
 		"UnitData/LegionRaider_WeakFlagHill.lua",
+		"UnitData/Doctor_Leevsy.lua",
 		"UnitData/Jazz_lynx.lua",
 		"UnitData/Jazz_Buzz.lua",
 		"UnitData/Jazz_Spider.lua",
@@ -183,8 +185,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1750015451,
-	'code_hash', -3621543609487674146,
+	'saved', 1759747685,
+	'code_hash', -1142581145799906662,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
@@ -659,6 +661,11 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
 			'Id', "RebelSergant_Immortal",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "RebelSergant_Immortal_M1",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -1734,6 +1741,16 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
 			'Id', "LegionRaider_WeakFlagHill",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Doctor_Leevsy",
+			'ClassDisplayName', "Appearance preset",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Doctor_Leevsy",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
