@@ -44,6 +44,7 @@ DefineClass.LegionGoon_Stronger_Elite = {
 		"CQCTraining",
 		"RelentlessAdvance",
 		"TrueGrit",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

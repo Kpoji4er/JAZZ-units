@@ -15,7 +15,7 @@ DefineClass.LegionRaider_Demolution_Stronger = {
 	Leadership = 25,
 	Marksmanship = 73,
 	Mechanical = 20,
-	Explosives = 85,
+	Explosives = 21,
 	Medical = 0,
 	Portrait = "UI/EnemiesPortraits/LegionSoldier",
 	BigPortrait = "UI/Enemies/LegionRaider",
@@ -44,6 +44,8 @@ DefineClass.LegionRaider_Demolution_Stronger = {
 		"Flanker",
 		"Optimist",
 		"BunsPerk",
+		"MinFreeMove",
+		"AutoWeapons",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

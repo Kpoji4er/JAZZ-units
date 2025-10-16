@@ -14,7 +14,7 @@ DefineClass.LegionRanger_Stronger = {
 	Leadership = 53,
 	Marksmanship = 83,
 	Mechanical = 55,
-	Explosives = 78,
+	Explosives = 23,
 	Medical = 50,
 	Portrait = "UI/EnemiesPortraits/LegionSniper",
 	BigPortrait = "UI/Enemies/LegionRaider",
@@ -42,6 +42,8 @@ DefineClass.LegionRanger_Stronger = {
 		"Untraceable",
 		"Hobbler",
 		"Stealthy",
+		"MinFreeMove",
+		"",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

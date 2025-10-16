@@ -22,6 +22,11 @@ DefineClass.RebelGunner = {
 	Affiliation = "Rebel",
 	StartingLevel = 2,
 	neutral_retaliate = true,
+	AIKeywords = {
+		"Control",
+		"Soldier",
+		"Gunner",
+	},
 	archetype = "HeavyGunner",
 	role = "Heavy",
 	RepositionArchetype = "HeavyGunner",

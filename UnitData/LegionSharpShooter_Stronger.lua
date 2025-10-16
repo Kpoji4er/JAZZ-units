@@ -38,6 +38,7 @@ DefineClass.LegionSharpShooter_Stronger = {
 		"Deadeye",
 		"Flanker",
 		"Untraceable",
+		"",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

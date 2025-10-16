@@ -45,6 +45,8 @@ DefineClass.LegionGunner_Stronger_Elite = {
 		"OverwatchExpert",
 		"Ironclad",
 		"Counterfire",
+		"HeavyWeaponsTraining",
+		"AutoWeapons",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

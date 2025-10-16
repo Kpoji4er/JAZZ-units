@@ -45,6 +45,7 @@ DefineClass.LegionButcher_Stronger_Elite = {
 		"Berserker",
 		"TrueGrit",
 		"LastWarning",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

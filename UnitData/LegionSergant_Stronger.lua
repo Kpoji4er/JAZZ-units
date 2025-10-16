@@ -42,6 +42,7 @@ DefineClass.LegionSergant_Stronger = {
 		"StressManagement",
 		"ShoulderToShoulder",
 		"BattleFocus",
+		"",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

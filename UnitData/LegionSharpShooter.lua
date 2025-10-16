@@ -41,6 +41,7 @@ DefineClass.LegionSharpShooter = {
 	StartingPerks = {
 		"Untraceable",
 		"Flanker",
+		"",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

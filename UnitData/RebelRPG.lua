@@ -26,7 +26,6 @@ DefineClass.RebelRPG = {
 		"Control",
 		"Sniper",
 	},
-	archetype = "Artillery",
 	role = "Artillery",
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "HeavyWeapon")
@@ -42,6 +41,9 @@ DefineClass.RebelRPG = {
 		PlaceObj('AppearanceWeight', {
 			'Preset', "Demolitions_Rebels_03",
 		}),
+	},
+	Equipment = {
+		"RebelRPG",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

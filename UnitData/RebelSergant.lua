@@ -41,7 +41,7 @@ DefineClass.RebelSergant = {
 		}),
 	},
 	Equipment = {
-		"Adonis_762x39",
+		"RebelSergeant",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

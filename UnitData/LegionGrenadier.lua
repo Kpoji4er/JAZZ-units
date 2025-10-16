@@ -7,15 +7,15 @@ DefineClass.LegionGrenadier = {
 	comment = "Гранатометчик | Метатель",
 	object_class = "UnitData",
 	Health = 80,
-	Agility = 80,
+	Agility = 65,
 	Dexterity = 45,
-	Strength = 75,
+	Strength = 70,
 	Wisdom = 14,
 	Will = 35,
 	Leadership = 14,
 	Marksmanship = 63,
 	Mechanical = 0,
-	Explosives = 79,
+	Explosives = 15,
 	Medical = 0,
 	Portrait = "UI/EnemiesPortraits/LegionDemo",
 	BigPortrait = "UI/Enemies/LegionRaider",
@@ -41,6 +41,7 @@ DefineClass.LegionGrenadier = {
 	StartingPerks = {
 		"Throwing",
 		"RelentlessAdvance",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

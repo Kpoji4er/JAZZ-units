@@ -42,6 +42,7 @@ DefineClass.LegionRaider_Demolution = {
 		"Flanker",
 		"RelentlessAdvance",
 		"BunsPerk",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

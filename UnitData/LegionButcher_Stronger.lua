@@ -41,6 +41,7 @@ DefineClass.LegionButcher_Stronger = {
 		"BeefedUp",
 		"MeleeTraining",
 		"Berserker",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

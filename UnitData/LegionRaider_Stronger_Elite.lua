@@ -14,7 +14,7 @@ DefineClass.LegionRaider_Stronger_Elite = {
 	Leadership = 65,
 	Marksmanship = 90,
 	Mechanical = 80,
-	Explosives = 94,
+	Explosives = 33,
 	Medical = 44,
 	Portrait = "UI/EnemiesPortraits/LegionSoldier",
 	BigPortrait = "UI/Enemies/LegionRaider",
@@ -40,6 +40,8 @@ DefineClass.LegionRaider_Stronger_Elite = {
 		"BunsPerk",
 		"TakeAim",
 		"AutoWeapons",
+		"MinFreeMove",
+		"OpportunisticKiller",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

@@ -39,6 +39,7 @@ DefineClass.LegionGoon = {
 	StartingPerks = {
 		"Ambidextrous",
 		"Flanker",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

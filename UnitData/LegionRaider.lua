@@ -9,13 +9,13 @@ DefineClass.LegionRaider = {
 	Health = 81,
 	Agility = 80,
 	Dexterity = 70,
-	Strength = 70,
+	Strength = 50,
 	Wisdom = 40,
 	Will = 40,
 	Leadership = 25,
 	Marksmanship = 75,
 	Mechanical = 0,
-	Explosives = 54,
+	Explosives = 16,
 	Medical = 0,
 	Portrait = "UI/EnemiesPortraits/LegionSoldier",
 	BigPortrait = "UI/Enemies/LegionRaider",
@@ -37,6 +37,7 @@ DefineClass.LegionRaider = {
 	StartingPerks = {
 		"BunsPerk",
 		"RelentlessAdvance",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

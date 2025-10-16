@@ -8,13 +8,12 @@ DefineClass.LegionRaider_Stronger = {
 	Health = 80,
 	Agility = 90,
 	Dexterity = 90,
-	Strength = 70,
 	Wisdom = 24,
 	Will = 55,
 	Leadership = 10,
 	Marksmanship = 80,
 	Mechanical = 20,
-	Explosives = 63,
+	Explosives = 27,
 	Medical = 0,
 	Portrait = "UI/EnemiesPortraits/LegionSoldier",
 	BigPortrait = "UI/Enemies/LegionRaider",
@@ -38,6 +37,8 @@ DefineClass.LegionRaider_Stronger = {
 		"BunsPerk",
 		"RelentlessAdvance",
 		"TakeAim",
+		"MinFreeMove",
+		"OpportunisticKiller",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

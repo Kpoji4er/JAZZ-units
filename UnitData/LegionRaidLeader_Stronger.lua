@@ -44,6 +44,7 @@ DefineClass.LegionRaidLeader_Stronger = {
 		"BeefedUp",
 		"BuildingConfidence",
 		"LeadFromTheFront",
+		"OpportunisticKiller",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

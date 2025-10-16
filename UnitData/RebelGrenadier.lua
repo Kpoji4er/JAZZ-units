@@ -24,7 +24,7 @@ DefineClass.RebelGrenadier = {
 	AIKeywords = {
 		"Explosives",
 	},
-	archetype = "Skirmisher",
+	archetype = "Grenadier",
 	role = "Demolitions",
 	MaxAttacks = 10,
 	MaxHitPoints = 50,

@@ -39,6 +39,7 @@ DefineClass.LegionMedic_Stronger = {
 		"Ambidextrous",
 		"BeefedUp",
 		"Savior",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

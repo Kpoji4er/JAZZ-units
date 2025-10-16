@@ -6,15 +6,15 @@ DefineClass.LegionGrenadier_Stronger = {
 
 	object_class = "UnitData",
 	Health = 84,
-	Agility = 85,
+	Agility = 72,
 	Dexterity = 62,
-	Strength = 73,
+	Strength = 85,
 	Wisdom = 17,
 	Will = 55,
 	Leadership = 14,
 	Marksmanship = 66,
 	Mechanical = 20,
-	Explosives = 85,
+	Explosives = 40,
 	Medical = 0,
 	Portrait = "UI/EnemiesPortraits/LegionDemo",
 	BigPortrait = "UI/Enemies/LegionRaider",
@@ -41,6 +41,7 @@ DefineClass.LegionGrenadier_Stronger = {
 		"MinFreeMove",
 		"BreachAndClear",
 		"RelentlessAdvance",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

@@ -42,6 +42,7 @@ DefineClass.LegionSniper = {
 		"Deadeye",
 		"Spiritual",
 		"DeathFromAbove",
+		"",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

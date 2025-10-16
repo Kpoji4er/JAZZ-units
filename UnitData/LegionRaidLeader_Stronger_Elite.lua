@@ -48,6 +48,7 @@ DefineClass.LegionRaidLeader_Stronger_Elite = {
 		"TrueGrit",
 		"Berserker",
 		"AutoWeapons",
+		"OpportunisticKiller",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

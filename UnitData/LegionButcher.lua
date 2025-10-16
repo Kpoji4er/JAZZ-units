@@ -40,6 +40,7 @@ DefineClass.LegionButcher = {
 		"InstantAutopsy",
 		"Berserker",
 		"MeleeTraining",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
