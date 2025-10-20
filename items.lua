@@ -4,7 +4,836 @@ return {
 		'comment', "-- Регулярные Легионовцы",
 	}, {
 		PlaceObj('ModItemFolder', {
-			'name', "T3",
+			'name', "LegionAssaulters",
+		}, {
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Legion",
+				'Id', "JAZZ_Legion_AssaultT1_Roughneck",
+				'comment', "Т1 Головорез Roughneck | Пистолеты + Ножи, в лейте пп и калаши, пушит в упор",
+				'object_class', "UnitData",
+				'Health', 55,
+				'Agility', 78,
+				'Dexterity', 80,
+				'Strength', 40,
+				'Wisdom', 5,
+				'Will', 30,
+				'Leadership', 0,
+				'Marksmanship', 65,
+				'Mechanical', 0,
+				'Explosives', 64,
+				'Medical', 0,
+				'Portrait', "UI/EnemiesPortraits/LegionRecon",
+				'BigPortrait', "UI/Enemies/LegionRaider",
+				'Name', T(217901684853, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT1_Roughneck Name]] "Головорез"),
+				'Randomization', true,
+				'Affiliation', "Legion",
+				'StartingLevel', 2,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"MobileShot",
+					"RunAndGun",
+				},
+				'archetype', "Skirmisher",
+				'role', "Stormer",
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					
+					if enemy and dist < 8*const.SlabSizeX then
+						archetype = "Brute"
+						weapon_class = "Melee"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+							self:TryEquip(items, "Handheld A", "Firearm")
+							self:TryEquip(items, "Handheld B", "MeleeWeapon")
+				end,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"MinFreeMove",
+					"TakeAim",
+					"CQCTraining",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Recon",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Recon02",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Recon03",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionGoon",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionGoon_alt",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionGoon_alt_2",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionGoon_alt_3",
+						'Weight', 2,
+					}),
+				},
+				'Equipment', {
+					"LegionGoon",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_2",
+					}),
+				},
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "LegionRaider",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Legion",
+				'Id', "JAZZ_Legion_AssaultT2_Pillager",
+				'comment', "Т2 Грабитель Pillager | ПП + Ножи, только в городах",
+				'object_class', "UnitData",
+				'Health', 70,
+				'Agility', 88,
+				'Dexterity', 95,
+				'Wisdom', 15,
+				'Leadership', 0,
+				'Marksmanship', 75,
+				'Mechanical', 50,
+				'Explosives', 0,
+				'Medical', 0,
+				'Portrait', "UI/EnemiesPortraits/LegionRecon",
+				'BigPortrait', "UI/Enemies/LegionRaider",
+				'Name', T(278695304484, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT2_Pillager Name]] "Грабитель"),
+				'Affiliation', "Legion",
+				'StartingLevel', 5,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"MobileShot",
+					"Flank",
+					"Explosives",
+					"Control",
+				},
+				'archetype', "Skirmisher",
+				'role', "Stormer",
+				'PinnedDownChance', 100,
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					
+					if enemy and dist < 8*const.SlabSizeX then
+						archetype = "Brute"
+						weapon_class = "Melee"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+							self:TryEquip(items, "Handheld A", "Firearm")
+							self:TryEquip(items, "Handheld B", "MeleeWeapon")
+				end,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"CQCTraining",
+					"TakeAim",
+					"RelentlessAdvance",
+					"SteadyBreathing",
+					"MinFreeMove",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Recon",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Recon02",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Recon03",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionGoon_Stronger",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionGoon_Stronger_alt",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionGoon_Stronger_alt_2",
+						'Weight', 2,
+					}),
+				},
+				'Equipment', {
+					"LegionGoon_Stronger",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_2",
+					}),
+				},
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "LegionRaider",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Legion",
+				'Id', "JAZZ_Legion_AssaultT1_Crusher",
+				'comment', "Т1 Громила Crusher | Танк - Дробовик",
+				'object_class', "UnitData",
+				'Health', 75,
+				'Agility', 65,
+				'Dexterity', 75,
+				'Strength', 85,
+				'Wisdom', 5,
+				'Will', 45,
+				'Leadership', 0,
+				'Mechanical', 0,
+				'Explosives', 10,
+				'Medical', 0,
+				'Portrait', "UI/EnemiesPortraits/LegionStormer",
+				'BigPortrait', "UI/Enemies/LegionRaider",
+				'Name', T(188332474737, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT1_Crusher Name]] "Громила"),
+				'Randomization', true,
+				'Affiliation', "Legion",
+				'StartingLevel', 4,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Flank",
+					"Explosives",
+					"Control",
+				},
+				'archetype', "Brute",
+				'role', "Stormer",
+				'CanManEmplacements', false,
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" then
+						archetype = "Brute"
+						weapon_class = "Revolver"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" then
+						archetype = "Brute"
+						weapon_class = "Pistol"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+							self:TryEquip(items, "Handheld A", "Shotgun")
+							self:TryEquip(items, "Handheld B", "Pistol")
+				end,
+				'MaxHitPoints', 100,
+				'StartingPerks', {
+					"BeefedUp",
+					"MinFreeMove",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Stormer",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Stormer02",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Stormer03",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionManiac",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionManiac_alt",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionManiac_alt_2",
+						'Weight', 2,
+					}),
+				},
+				'Equipment', {
+					"LegionBerserker",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_2",
+					}),
+				},
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "LegionRaider",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Legion",
+				'Id', "JAZZ_Legion_AssaultT2_Pyro",
+				'comment', "Т2 Пироман Pyro | Дробовик и молотовы",
+				'object_class', "UnitData",
+				'Health', 85,
+				'Agility', 70,
+				'Dexterity', 80,
+				'Strength', 90,
+				'Wisdom', 15,
+				'Will', 75,
+				'Leadership', 0,
+				'Marksmanship', 75,
+				'Mechanical', 50,
+				'Explosives', 0,
+				'Medical', 0,
+				'Portrait', "UI/EnemiesPortraits/LegionDemo",
+				'BigPortrait', "UI/Enemies/LegionRaider",
+				'Name', T(546032242947, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT2_Pyro Name]] "Пироман"),
+				'Randomization', true,
+				'Affiliation', "Legion",
+				'StartingLevel', 7,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Explosives",
+					"MobileShot",
+					"Control",
+					"Soldier",
+				},
+				'archetype', "Grenadier",
+				'role', "Demolitions",
+				'CanManEmplacements', false,
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)  end,
+				'CustomEquipGear', function (self, items)  end,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"Throwing",
+					"MinFreeMove",
+					"BreachAndClear",
+					"BeefedUp",
+					"RelentlessAdvance",
+					"Berserker",
+					"Ironclad",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Demolishion",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Demolishion02",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Demolishion03",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionGrenadir_Stronger",
+						'Weight', 3,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionGrenadir_Stronger_alt",
+						'Weight', 3,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionGrenadir_Stronger_alt_2",
+						'Weight', 3,
+					}),
+				},
+				'Equipment', {
+					"LegionGrenadier_Stronger",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_2",
+					}),
+				},
+				'pollyvoice', "Russell",
+				'gender', "Male",
+				'VoiceResponseId', "LegionRaider",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Legion",
+				'Id', "JAZZ_Legion_AssaultT3_SkullCrusher",
+				'comment', "Т3 Череполом SkullCrusher | Элитный танк с дробовиком и милишкой",
+				'object_class', "UnitData",
+				'Health', 90,
+				'Agility', 75,
+				'Dexterity', 80,
+				'Strength', 95,
+				'Wisdom', 25,
+				'Will', 85,
+				'Leadership', 0,
+				'Marksmanship', 85,
+				'Mechanical', 85,
+				'Explosives', 35,
+				'Medical', 0,
+				'Portrait', "UI/EnemiesPortraits/LegionStormer",
+				'BigPortrait', "UI/Enemies/LegionRaider",
+				'Name', T(243489839730, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT3_SkullCrusher Name]] "Череполом"),
+				'Randomization', true,
+				'elite', true,
+				'eliteCategory', "Legion",
+				'Affiliation', "Legion",
+				'StartingLevel', 12,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Control",
+					"Smoke",
+					"Flank",
+					"Explosives",
+				},
+				'archetype', "Brute",
+				'role', "Stormer",
+				'CanManEmplacements', false,
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)  end,
+				'CustomEquipGear', function (self, items)  end,
+				'MaxHitPoints', 60,
+				'StartingPerks', {
+					"MinFreeMove",
+					"Throwing",
+					"BreachAndClear",
+					"BeefedUp",
+					"Shatterhand",
+					"NailsPerk",
+					"CQCTraining",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Stormer03",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionButcher_Stronger_Elite",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionButcher_Stronger_Elite_alt",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionButcher_Stronger_Elite_alt_2",
+						'Weight', 2,
+					}),
+				},
+				'Equipment', {
+					"LegionMeleeFighter_Stronger_Elite",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_2",
+					}),
+				},
+				'gender', "Male",
+				'VoiceResponseId', "LegionRaider",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Legion",
+				'Id', "JAZZ_Legion_AssaultT1_Grenadier",
+				'comment', "Т1 Гренадер Grenadier | Огромный приоритет на броски гранат",
+				'object_class', "UnitData",
+				'Health', 70,
+				'Agility', 65,
+				'Dexterity', 70,
+				'Strength', 70,
+				'Wisdom', 5,
+				'Will', 35,
+				'Leadership', 0,
+				'Marksmanship', 55,
+				'Mechanical', 0,
+				'Explosives', 15,
+				'Medical', 0,
+				'Portrait', "UI/EnemiesPortraits/LegionDemo",
+				'BigPortrait', "UI/Enemies/LegionRaider",
+				'Name', T(392427068113, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT1_Grenadier Name]] "Гренадёр"),
+				'Randomization', true,
+				'Affiliation', "Legion",
+				'StartingLevel', 3,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Explosives",
+					"MobileShot",
+					"Flank",
+					"RunAndGun",
+					"Ordnance",
+				},
+				'archetype', "Grenadier",
+				'role', "Demolitions",
+				'CanManEmplacements', false,
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)  end,
+				'CustomEquipGear', function (self, items)  end,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"Throwing",
+					"BreachAndClear",
+					"MinFreeMove",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Demolishion",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Demolishion02",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Demolishion03",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionGrenadir",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionGrenadir_alt",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionGrenadir_alt_2",
+						'Weight', 2,
+					}),
+				},
+				'Equipment', {
+					"LegionGrenadier",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_2",
+					}),
+				},
+				'pollyvoice', "Russell",
+				'gender', "Male",
+				'VoiceResponseId', "LegionRaider",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Legion",
+				'Id', "JAZZ_Legion_AssaultT2_ShockTrooper",
+				'comment', "Т2 Штурмовик Shocktrooper | Штурмовик с ПП/Карабином и гранатами. Стрелок",
+				'object_class', "UnitData",
+				'Health', 75,
+				'Agility', 80,
+				'Dexterity', 85,
+				'Strength', 70,
+				'Wisdom', 15,
+				'Will', 65,
+				'Leadership', 0,
+				'Marksmanship', 70,
+				'Mechanical', 50,
+				'Explosives', 25,
+				'Medical', 0,
+				'Portrait', "UI/EnemiesPortraits/LegionStormer",
+				'BigPortrait', "UI/Enemies/LegionRaider",
+				'Name', T(176382444921, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT2_ShockTrooper Name]] "Штурмовик"),
+				'Randomization', true,
+				'Affiliation', "Legion",
+				'StartingLevel', 6,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Explosives",
+					"Smoke",
+					"Flank",
+					"RunAndGun",
+					"MobileShot",
+				},
+				'archetype', "Brute",
+				'role', "Stormer",
+				'CanManEmplacements', false,
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)  end,
+				'CustomEquipGear', function (self, items)  end,
+				'MaxHitPoints', 60,
+				'StartingPerks', {
+					"MeleeTraining",
+					"Ironclad",
+					"MinFreeMove",
+					"CQCTraining",
+					"RelentlessAdvance",
+					"SteadyBreathing",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Stormer",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Stormer02",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Stormer03",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionButcher_Stronger",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionButcher_Stronger_alt",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionButcher_Stronger_alt_2",
+						'Weight', 2,
+					}),
+				},
+				'Equipment', {
+					"LegionMeleeFighter_Stronger",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_2",
+					}),
+				},
+				'gender', "Male",
+				'VoiceResponseId', "LegionRaider",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Legion",
+				'Id', "JAZZ_Legion_AssaultT3_Punisher",
+				'comment', "Т3 Каратель Punisher | Элитный штурмовик с гранатами",
+				'object_class', "UnitData",
+				'Health', 90,
+				'Agility', 85,
+				'Dexterity', 90,
+				'Strength', 95,
+				'Wisdom', 30,
+				'Will', 80,
+				'Leadership', 0,
+				'Marksmanship', 80,
+				'Mechanical', 80,
+				'Explosives', 50,
+				'Medical', 0,
+				'Portrait', "UI/EnemiesPortraits/LegionStormer",
+				'BigPortrait', "UI/Enemies/LegionRaider",
+				'Name', T(437565517773, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT3_Punisher Name]] "Каратель"),
+				'Randomization', true,
+				'elite', true,
+				'eliteCategory', "Legion",
+				'Affiliation', "Legion",
+				'StartingLevel', 10,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Control",
+					"Explosives",
+					"Flank",
+					"RunAndGun",
+					"MobileShot",
+					"Stim",
+				},
+				'archetype', "Brute",
+				'role', "Stormer",
+				'CanManEmplacements', false,
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)  end,
+				'CustomEquipGear', function (self, items)  end,
+				'MaxHitPoints', 100,
+				'StartingPerks', {
+					"BeefedUp",
+					"Berserker",
+					"Shatterhand",
+					"CQCTraining",
+					"MinFreeMove",
+					"Ironclad",
+					"RelentlessAdvance",
+					"BreachAndClear",
+					"Counterfire",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Stormer",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Stormer02",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Stormer03",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionManiac_Stronger_Elite",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionManiac_Stronger_Elite_alt",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionManiac_Stronger_alt_2",
+						'Weight', 2,
+					}),
+				},
+				'Equipment', {
+					"LegionBerserker_Stronger_Elite",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_2",
+					}),
+				},
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "LegionRaider",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Legion",
+				'Id', "JAZZ_Legion_AssaultT4_Headsman",
+				'comment', "Т4 Палач Headsman | Босс-штурмовик в тяжелой броне с пп/карабином и гранатами",
+				'object_class', "UnitData",
+				'Health', 100,
+				'Agility', 95,
+				'Dexterity', 95,
+				'Strength', 100,
+				'Wisdom', 40,
+				'Will', 60,
+				'Leadership', 0,
+				'Marksmanship', 85,
+				'Mechanical', 85,
+				'Medical', 0,
+				'Portrait', "UI/EnemiesPortraits/LegionStormer",
+				'BigPortrait', "UI/Enemies/LegionRaider",
+				'Name', T(243489839730, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT4_Headsman Name]] "Палач"),
+				'Randomization', true,
+				'elite', true,
+				'eliteCategory', "Legion",
+				'Affiliation', "Legion",
+				'StartingLevel', 15,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Control",
+					"Smoke",
+					"Flank",
+					"Explosives",
+				},
+				'archetype', "Brute",
+				'role', "Stormer",
+				'CanManEmplacements', false,
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)  end,
+				'CustomEquipGear', function (self, items)  end,
+				'MaxHitPoints', 60,
+				'StartingPerks', {
+					"MinFreeMove",
+					"Throwing",
+					"Ironclad",
+					"CQCTraining",
+					"Counterfire",
+					"RelentlessAdvance",
+					"SteadyBreathing",
+					"BeefedUp",
+					"Shatterhand",
+					"NailsPerk",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Stormer03",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionButcher_Stronger_Elite",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionButcher_Stronger_Elite_alt",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionButcher_Stronger_Elite_alt_2",
+						'Weight', 2,
+					}),
+				},
+				'Equipment', {
+					"LegionScout_Stronger_Elite",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_2",
+					}),
+				},
+				'gender', "Male",
+				'VoiceResponseId', "LegionRaider",
+			}),
+			}),
+		PlaceObj('ModItemFolder', {
+			'name', "Legacy T3",
 		}, {
 			PlaceObj('ModItemUnitDataCompositeDef', {
 				'Group', "Legion",
@@ -1436,7 +2265,7 @@ return {
 			}),
 			}),
 		PlaceObj('ModItemFolder', {
-			'name', "T2",
+			'name', "Legacy T2",
 		}, {
 			PlaceObj('ModItemUnitDataCompositeDef', {
 				'Group', "Legion",
@@ -3015,7 +3844,7 @@ return {
 			}),
 			}),
 		PlaceObj('ModItemFolder', {
-			'name', "T1",
+			'name', "Legacy T1",
 		}, {
 			PlaceObj('ModItemUnitDataCompositeDef', {
 				'Group', "Legion",
@@ -3691,92 +4520,6 @@ return {
 			}),
 			PlaceObj('ModItemUnitDataCompositeDef', {
 				'Group', "Legion",
-				'Id', "LegionGoon",
-				'comment', "Пистолетчик | Харасмент",
-				'object_class', "UnitData",
-				'Health', 67,
-				'Agility', 71,
-				'Dexterity', 80,
-				'Strength', 55,
-				'Wisdom', 40,
-				'Will', 30,
-				'Leadership', 20,
-				'Marksmanship', 68,
-				'Mechanical', 0,
-				'Explosives', 64,
-				'Medical', 0,
-				'Portrait', "UI/EnemiesPortraits/LegionRecon",
-				'BigPortrait', "UI/Enemies/LegionRaider",
-				'Name', T(217901684853, --[[ModItemUnitDataCompositeDef LegionGoon Name]] "Головорез"),
-				'Randomization', true,
-				'Affiliation', "Legion",
-				'StartingLevel', 2,
-				'neutral_retaliate', true,
-				'AIKeywords', {
-					"MobileShot",
-					"Control",
-					"Flank",
-					"Explosives",
-				},
-				'archetype', "Skirmisher",
-				'role', "Recon",
-				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
-				'CustomEquipGear', function (self, items)  end,
-				'MaxHitPoints', 50,
-				'StartingPerks', {
-					"Ambidextrous",
-					"Flanker",
-					"MinFreeMove",
-				},
-				'AppearancesList', {
-					PlaceObj('AppearanceWeight', {
-						'Preset', "Legion_Recon",
-					}),
-					PlaceObj('AppearanceWeight', {
-						'Preset', "Legion_Recon02",
-					}),
-					PlaceObj('AppearanceWeight', {
-						'Preset', "Legion_Recon03",
-					}),
-					PlaceObj('AppearanceWeight', {
-						'Preset', "LegionGoon",
-						'Weight', 2,
-					}),
-					PlaceObj('AppearanceWeight', {
-						'Preset', "LegionGoon_alt",
-						'Weight', 2,
-					}),
-					PlaceObj('AppearanceWeight', {
-						'Preset', "LegionGoon_alt_2",
-						'Weight', 2,
-					}),
-					PlaceObj('AppearanceWeight', {
-						'Preset', "LegionGoon_alt_3",
-						'Weight', 2,
-					}),
-				},
-				'Equipment', {
-					"LegionGoon",
-				},
-				'AdditionalGroups', {
-					PlaceObj('AdditionalGroup', {
-						'Weight', 50,
-						'Exclusive', true,
-						'Name', "LegionMale_1",
-					}),
-					PlaceObj('AdditionalGroup', {
-						'Weight', 50,
-						'Exclusive', true,
-						'Name', "LegionMale_2",
-					}),
-				},
-				'pollyvoice', "Joey",
-				'gender', "Male",
-				'VoiceResponseId', "LegionRaider",
-			}),
-			PlaceObj('ModItemUnitDataCompositeDef', {
-				'Group', "Legion",
 				'Id', "LegionButcher",
 				'comment', "Мясник | Рукопашник",
 				'object_class', "UnitData",
@@ -4096,6 +4839,92 @@ return {
 				},
 				'Equipment', {
 					"LegionSharpShooter",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_2",
+					}),
+				},
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "LegionRaider",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Legion",
+				'Id', "LegionGoon",
+				'comment', "Пистолетчик | Харасмент",
+				'object_class', "UnitData",
+				'Health', 67,
+				'Agility', 71,
+				'Dexterity', 80,
+				'Strength', 55,
+				'Wisdom', 40,
+				'Will', 30,
+				'Leadership', 20,
+				'Marksmanship', 68,
+				'Mechanical', 0,
+				'Explosives', 64,
+				'Medical', 0,
+				'Portrait', "UI/EnemiesPortraits/LegionRecon",
+				'BigPortrait', "UI/Enemies/LegionRaider",
+				'Name', T(217901684853, --[[ModItemUnitDataCompositeDef LegionGoon Name]] "Головорез"),
+				'Randomization', true,
+				'Affiliation', "Legion",
+				'StartingLevel', 2,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"MobileShot",
+					"Control",
+					"Flank",
+					"Explosives",
+				},
+				'archetype', "Skirmisher",
+				'role', "Recon",
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)  end,
+				'CustomEquipGear', function (self, items)  end,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"Ambidextrous",
+					"Flanker",
+					"MinFreeMove",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Recon",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Recon02",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Legion_Recon03",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionGoon",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionGoon_alt",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionGoon_alt_2",
+						'Weight', 2,
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "LegionGoon_alt_3",
+						'Weight', 2,
+					}),
+				},
+				'Equipment', {
+					"LegionGoon",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -14167,6 +14996,7 @@ return {
 				}),
 				PlaceObj('AIActionThrowGrenade', {
 					'BiasId', "AssaultGrenadeThrow",
+					'Priority', true,
 					'enemy_score', 200,
 					'team_score', -100,
 					'min_score', 50,
@@ -15138,6 +15968,9 @@ return {
 				PlaceObj('PositioningAI', {
 					'BiasId', "Indoor",
 					'Label', "Be indoor",
+					'Score', function (self, unit, proto_context, debug_data)
+						return self.Weight
+					end,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyIndoorsOutdoors', {
 							'Required', true,
@@ -15654,7 +16487,6 @@ return {
 					},
 				}),
 			},
-			FallbackAction = "overwatch",
 			OptLocPolicies = {
 				PlaceObj('AIPolicyWeaponRange', {
 					'Weight', 600,
@@ -15986,6 +16818,9 @@ return {
 					'BiasId', "Indoor",
 					'Weight', 60,
 					'Label', "Be indoor",
+					'Score', function (self, unit, proto_context, debug_data)
+						return self.Weight
+					end,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyProximity', {
 							'Weight', 80,
@@ -15993,9 +16828,7 @@ return {
 							'TargetDist', "average",
 							'MinScore', 6,
 						}),
-						PlaceObj('AIPolicyIndoorsOutdoors', {
-							'Required', true,
-						}),
+						PlaceObj('AIPolicyIndoorsOutdoors', nil),
 						PlaceObj('AIPolicyTakeCover', {
 							'visibility_mode', "team",
 						}),
@@ -16136,7 +16969,7 @@ return {
 					'MinScore', 100,
 				}),
 				PlaceObj('AIPolicyIndoorsOutdoors', {
-					'Weight', 50,
+					'Weight', 30,
 				}),
 				PlaceObj('AIPolicyAvoidDeathZones', {
 					'TargetDist', 30,
@@ -16147,7 +16980,6 @@ return {
 			PrefStance = "Crouch",
 			SignatureActions = {
 				PlaceObj('AIActionMobileShot', {
-					'Priority', true,
 					'NotificationText', "",
 					'RequiredKeywords', {
 						"RunAndGun",
@@ -16155,7 +16987,6 @@ return {
 					'action_id', "RunAndGun",
 				}),
 				PlaceObj('AIActionMobileShot', {
-					'Priority', true,
 					'NotificationText', "",
 					'RequiredKeywords', {
 						"MobileShot",
@@ -16289,6 +17120,9 @@ return {
 						}),
 					},
 					'Label', "Be indoor",
+					'Score', function (self, unit, proto_context, debug_data)
+						return self.Weight
+					end,
 					'EndTurnPolicies', {
 						PlaceObj('AIPolicyProximity', {
 							'Weight', 80,
@@ -16296,9 +17130,7 @@ return {
 							'TargetDist', "average",
 							'MinScore', 6,
 						}),
-						PlaceObj('AIPolicyIndoorsOutdoors', {
-							'Required', true,
-						}),
+						PlaceObj('AIPolicyIndoorsOutdoors', nil),
 						PlaceObj('AIPolicyDealDamage', {
 							'Weight', 120,
 							'CheckLOS', false,
@@ -28124,7 +28956,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
