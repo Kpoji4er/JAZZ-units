@@ -21,12 +21,14 @@ DefineClass.JAZZ_Legion_AssaultT1_Roughneck = {
 	BigPortrait = "UI/Enemies/LegionRaider",
 	Name = T(217901684853, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT1_Roughneck Name]] "Головорез"),
 	Randomization = true,
+	elite = true,
+	eliteCategory = "Legion",
 	Affiliation = "Legion",
 	StartingLevel = 2,
 	neutral_retaliate = true,
 	AIKeywords = {
+		"CQB",
 		"MobileShot",
-		"RunAndGun",
 	},
 	archetype = "Skirmisher",
 	role = "Stormer",
@@ -49,8 +51,8 @@ DefineClass.JAZZ_Legion_AssaultT1_Roughneck = {
 		return archetype
 	end,
 	CustomEquipGear = function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "MeleeWeapon")
+		self:TryEquip(items, "Handheld A", "Firearm")
+		self:TryEquip(items, "Handheld B", "MeleeWeapon")
 	end,
 	MaxHitPoints = 50,
 	StartingPerks = {

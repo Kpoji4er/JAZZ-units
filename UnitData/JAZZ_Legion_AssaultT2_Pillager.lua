@@ -18,6 +18,8 @@ DefineClass.JAZZ_Legion_AssaultT2_Pillager = {
 	Portrait = "UI/EnemiesPortraits/LegionRecon",
 	BigPortrait = "UI/Enemies/LegionRaider",
 	Name = T(278695304484, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT2_Pillager Name]] "Грабитель"),
+	elite = true,
+	eliteCategory = "Legion",
 	Affiliation = "Legion",
 	StartingLevel = 5,
 	neutral_retaliate = true,
@@ -49,8 +51,8 @@ DefineClass.JAZZ_Legion_AssaultT2_Pillager = {
 		return archetype
 	end,
 	CustomEquipGear = function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "MeleeWeapon")
+		self:TryEquip(items, "Handheld A", "Firearm")
+		self:TryEquip(items, "Handheld B", "MeleeWeapon")
 	end,
 	MaxHitPoints = 50,
 	StartingPerks = {

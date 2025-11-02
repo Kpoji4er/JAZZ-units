@@ -47,6 +47,7 @@ DefineClass.JAZZ_Legion_AssaultT3_SkullCrusher = {
 		"Shatterhand",
 		"NailsPerk",
 		"CQCTraining",
+		"KillingWind",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

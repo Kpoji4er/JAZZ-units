@@ -4,7 +4,7 @@ DefineClass.JAZZ_Legion_AssaultT4_Headsman = {
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
 
-	comment = "Т4 Палач Headsman | Босс-штурмовик в тяжелой броне с пп/карабином и гранатами",
+	comment = "Т4 Палач Headsman | Босс-штурмовик в тяжелой броне с пп/карабином и гранатами + Мачета",
 	object_class = "UnitData",
 	Health = 100,
 	Agility = 95,
@@ -43,12 +43,14 @@ DefineClass.JAZZ_Legion_AssaultT4_Headsman = {
 		"Throwing",
 		"Ironclad",
 		"CQCTraining",
-		"Counterfire",
+		"Hotblood",
 		"RelentlessAdvance",
 		"SteadyBreathing",
 		"BeefedUp",
 		"Shatterhand",
 		"NailsPerk",
+		"SidneyPerk",
+		"KillingWind",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

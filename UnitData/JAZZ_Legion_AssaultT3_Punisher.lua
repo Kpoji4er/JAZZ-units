@@ -50,7 +50,7 @@ DefineClass.JAZZ_Legion_AssaultT3_Punisher = {
 		"Ironclad",
 		"RelentlessAdvance",
 		"BreachAndClear",
-		"Counterfire",
+		"Hotblood",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

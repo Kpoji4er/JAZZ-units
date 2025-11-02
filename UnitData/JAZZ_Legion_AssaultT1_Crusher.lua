@@ -4,7 +4,7 @@ DefineClass.JAZZ_Legion_AssaultT1_Crusher = {
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
 
-	comment = "Т1 Громила Crusher | Танк - Дробовик",
+	comment = "Т1 Громила Crusher | Танк - Дробовик + Пистолет",
 	object_class = "UnitData",
 	Health = 75,
 	Agility = 65,
@@ -20,6 +20,8 @@ DefineClass.JAZZ_Legion_AssaultT1_Crusher = {
 	BigPortrait = "UI/Enemies/LegionRaider",
 	Name = T(188332474737, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT1_Crusher Name]] "Громила"),
 	Randomization = true,
+	elite = true,
+	eliteCategory = "Legion",
 	Affiliation = "Legion",
 	StartingLevel = 4,
 	neutral_retaliate = true,
@@ -56,8 +58,8 @@ DefineClass.JAZZ_Legion_AssaultT1_Crusher = {
 		return archetype
 	end,
 	CustomEquipGear = function (self, items)
-				self:TryEquip(items, "Handheld A", "Shotgun")
-				self:TryEquip(items, "Handheld B", "Pistol")
+		self:TryEquip(items, "Handheld A", "Shotgun")
+		self:TryEquip(items, "Handheld B", "Pistol")
 	end,
 	MaxHitPoints = 100,
 	StartingPerks = {
