@@ -26,10 +26,9 @@ DefineClass.JAZZ_Legion_FrontT2_Raider = {
 	neutral_retaliate = true,
 	AIKeywords = {
 		"Soldier",
-		"Explosives",
 		"Ordnance",
-		"Flank",
 	},
+	archetype = "Legion_Frontliner",
 	role = "Soldier",
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)  end,
@@ -78,7 +77,7 @@ DefineClass.JAZZ_Legion_FrontT2_Raider = {
 		}),
 	},
 	Equipment = {
-		"LegionRaider_Stronger",
+		"Raider_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

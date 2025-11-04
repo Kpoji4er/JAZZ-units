@@ -30,8 +30,11 @@ DefineClass.JAZZ_Legion_LeaderT4_MercenaryCaptain = {
 		"Smoke",
 		"Soldier",
 		"Flank",
-		"Sniper",
+		"Marksman",
+		"Control",
+		"Leader",
 	},
+	archetype = "Legion_Frontliner",
 	role = "Commander",
 	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "Overwatch",
@@ -81,7 +84,7 @@ DefineClass.JAZZ_Legion_LeaderT4_MercenaryCaptain = {
 		}),
 	},
 	Equipment = {
-		"LegionSentry_Stronger_Elite",
+		"MercenaryCaptain_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

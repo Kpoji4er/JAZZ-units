@@ -21,7 +21,6 @@ DefineClass.JAZZ_Legion_FlankerT3_Recon = {
 	BigPortrait = "UI/Enemies/LegionRaider",
 	Name = T(973520781420, --[[ModItemUnitDataCompositeDef JAZZ_Legion_FlankerT3_Recon Name]] "Разведчик"),
 	Randomization = true,
-	elite = true,
 	eliteCategory = "Legion",
 	Affiliation = "Legion",
 	StartingLevel = 10,
@@ -29,25 +28,35 @@ DefineClass.JAZZ_Legion_FlankerT3_Recon = {
 	AIKeywords = {
 		"Flank",
 		"RunAndGun",
-		"MobileShot",
-		"Control",
-		"Explosives",
-		"Ordnance",
+		"CQB",
 	},
-	archetype = "Skirmisher",
+	archetype = "Legion_Assaulter",
 	role = "Recon",
 	OpeningAttackType = "Overwatch",
 	MaxAttacks = 10,
-	PickCustomArchetype = function (self, proto_context)  end,
+	PickCustomArchetype = function (self, proto_context)
+		local stealth_stance = self:GetStanceToStealth()
+		if self:CanStealth(stealth_stance) then
+		 self:Hide()
+		end
+	end,
 	CustomEquipGear = function (self, items)  end,
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"RelentlessAdvance",
 		"MinFreeMove",
-		"Untraceable",
+		"HoldPosition",
 		"CQCTraining",
 		"Flanker",
-		"GruntyPerk",
+		"Counterfire",
+		"OpportunisticKiller",
+		"Untraceable",
+		"Stealthy",
+		"NightOps",
+		"CQCTraining",
+		"LightningReactionNPC",
+		"Hotblood",
+		"FleetingShadow",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
@@ -70,7 +79,7 @@ DefineClass.JAZZ_Legion_FlankerT3_Recon = {
 		}),
 	},
 	Equipment = {
-		"LegionScout_Stronger_Elite",
+		"Recon_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

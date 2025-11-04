@@ -26,22 +26,30 @@ DefineClass.JAZZ_Legion_FlankerT2_Scout = {
 	AIKeywords = {
 		"Flank",
 		"RunAndGun",
-		"Control",
-		"Stim",
+		"CQB",
 	},
-	archetype = "Skirmisher",
+	archetype = "Legion_Assaulter",
 	role = "Recon",
 	OpeningAttackType = "Overwatch",
 	MaxAttacks = 10,
-	PickCustomArchetype = function (self, proto_context)  end,
+	PickCustomArchetype = function (self, proto_context)
+		local stealth_stance = self:GetStanceToStealth()
+		if self:CanStealth(stealth_stance) then
+		 self:Hide()
+		end
+	end,
 	CustomEquipGear = function (self, items)  end,
 	MaxHitPoints = 50,
 	StartingPerks = {
-		"RelentlessAdvance",
-		"Flanker",
+		"HoldPosition",
+		"OpportunisticKiller",
 		"MinFreeMove",
-		"GruntyPerk",
+		"Counterfire",
+		"Flanker",
+		"RelentlessAdvance",
 		"Untraceable",
+		"Stealthy",
+		"CQCTraining",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
@@ -64,7 +72,7 @@ DefineClass.JAZZ_Legion_FlankerT2_Scout = {
 		}),
 	},
 	Equipment = {
-		"LegionScout_Stronger",
+		"Scout_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

@@ -29,10 +29,12 @@ DefineClass.JAZZ_Legion_LeaderT3_Captain = {
 	AIKeywords = {
 		"Control",
 		"Sniper",
-		"Soldier",
+		"Marksman",
 		"Smoke",
 		"Explosives",
+		"Leader",
 	},
+	archetype = "Legion_Frontliner",
 	role = "Marksman",
 	OpeningAttackType = "Overwatch",
 	MaxAttacks = 10,
@@ -71,7 +73,7 @@ DefineClass.JAZZ_Legion_LeaderT3_Captain = {
 		}),
 	},
 	Equipment = {
-		"LegionSergeant_Stronger",
+		"Captain_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

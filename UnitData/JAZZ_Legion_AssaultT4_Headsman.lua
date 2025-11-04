@@ -12,10 +12,10 @@ DefineClass.JAZZ_Legion_AssaultT4_Headsman = {
 	Strength = 100,
 	Wisdom = 40,
 	Will = 60,
-	Leadership = 0,
+	Leadership = 40,
 	Marksmanship = 85,
 	Mechanical = 85,
-	Medical = 0,
+	Medical = 20,
 	Portrait = "UI/EnemiesPortraits/LegionStormer",
 	BigPortrait = "UI/Enemies/LegionRaider",
 	Name = T(243489839730, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT4_Headsman Name]] "Палач"),
@@ -26,17 +26,38 @@ DefineClass.JAZZ_Legion_AssaultT4_Headsman = {
 	StartingLevel = 15,
 	neutral_retaliate = true,
 	AIKeywords = {
-		"Control",
-		"Smoke",
-		"Flank",
-		"Explosives",
+		"CQB",
+		"RunAndGun",
+		"MobileShot",
+		"Heal",
+		"Melee",
 	},
-	archetype = "Brute",
+	archetype = "Legion_Assaulter",
 	role = "Stormer",
 	CanManEmplacements = false,
+	RepositionArchetype = "Legion_Assaulter",
 	MaxAttacks = 10,
-	PickCustomArchetype = function (self, proto_context)  end,
-	CustomEquipGear = function (self, items)  end,
+	PickCustomArchetype = function (self, proto_context)
+		local enemy, dist = GetNearestEnemy(self)
+		local archetype = self.archetype
+		local weapon_class = "Firearm"
+		
+		if enemy and dist < 10*const.SlabSizeX then
+			--archetype = "Brute"
+			weapon_class = "Melee"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if not self:GetActiveWeapons(weapon_class) then
+			AIPlayCombatAction("ChangeWeapon", self, 0)
+		end
+		
+		return archetype
+	end,
+	CustomEquipGear = function (self, items)
+		self:TryEquip(items, "Handheld A", "Firearm")
+		self:TryEquip(items, "Handheld B", "MeleeWeapon")
+	end,
 	MaxHitPoints = 60,
 	StartingPerks = {
 		"MinFreeMove",
@@ -70,7 +91,7 @@ DefineClass.JAZZ_Legion_AssaultT4_Headsman = {
 		}),
 	},
 	Equipment = {
-		"LegionScout_Stronger_Elite",
+		"Headsman_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

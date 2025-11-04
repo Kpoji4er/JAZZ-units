@@ -21,24 +21,24 @@ DefineClass.JAZZ_Legion_AssaultT1_Grenadier = {
 	BigPortrait = "UI/Enemies/LegionRaider",
 	Name = T(392427068113, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT1_Grenadier Name]] "Гренадёр"),
 	Randomization = true,
-	elite = true,
 	eliteCategory = "Legion",
 	Affiliation = "Legion",
 	StartingLevel = 3,
 	neutral_retaliate = true,
 	AIKeywords = {
 		"Explosives",
-		"MobileShot",
-		"Flank",
-		"RunAndGun",
-		"Ordnance",
+		"CQB",
 	},
-	archetype = "Grenadier",
+	archetype = "Legion_Assaulter",
 	role = "Demolitions",
 	CanManEmplacements = false,
+	RepositionArchetype = "Legion_Assaulter",
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)  end,
-	CustomEquipGear = function (self, items)  end,
+	CustomEquipGear = function (self, items)
+		self:TryEquip(items, "Handheld A", "Firearm")
+		self:TryEquip(items, "Handheld B", "PipeBomb")
+	end,
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"Throwing",
@@ -69,7 +69,7 @@ DefineClass.JAZZ_Legion_AssaultT1_Grenadier = {
 		}),
 	},
 	Equipment = {
-		"LegionGrenadier",
+		"Grenadier_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

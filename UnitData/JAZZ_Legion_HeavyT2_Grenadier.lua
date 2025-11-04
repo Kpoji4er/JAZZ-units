@@ -66,7 +66,7 @@ DefineClass.JAZZ_Legion_HeavyT2_Grenadier = {
 		}),
 	},
 	Equipment = {
-		"LegionRocketeer",
+		"HeavyGrenadier_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

@@ -15,7 +15,7 @@ DefineClass.JAZZ_Legion_FrontT3_Veteran = {
 	Leadership = 20,
 	Marksmanship = 85,
 	Mechanical = 50,
-	Explosives = 30,
+	Explosives = 20,
 	Medical = 0,
 	Portrait = "UI/EnemiesPortraits/LegionSoldier",
 	BigPortrait = "UI/Enemies/LegionRaider",
@@ -28,13 +28,52 @@ DefineClass.JAZZ_Legion_FrontT3_Veteran = {
 	neutral_retaliate = true,
 	AIKeywords = {
 		"Soldier",
-		"Explosives",
+		"Ordnance",
 		"RunAndGun",
 	},
+	archetype = "Legion_Frontliner",
 	role = "Soldier",
 	MaxAttacks = 10,
-	PickCustomArchetype = function (self, proto_context)  end,
-	CustomEquipGear = function (self, items)  end,
+	PickCustomArchetype = function (self, proto_context)
+		local function PrimaryNonGL(self)
+		  return self:GetActiveWeapons("AssaultRifle")
+		      or self:GetActiveWeapons("Rifle")
+		      or self:GetActiveWeapons("Carbine")
+		      or self:GetActiveWeapons("BattleRifle")
+		      or self:GetActiveWeapons("SubmachineGun")
+		      or self:GetActiveWeapons("Shotgun")
+		end
+		
+		local enemy, dist = GetNearestEnemy(self)
+		local archetype = self.archetype
+		local weapon_class = "Firearm"
+		local roll = self:Random(100)
+		local chance = 50
+		
+		local weapon_class = "Firearm"
+		if enemy and dist < 40*const.SlabSizeX and dist > 15*const.SlabSizeX and roll < chance then
+		  weapon_class = "GrenadeLauncher"
+		else
+		  weapon_class = (PrimaryNonGL(self) and PrimaryNonGL(self).weapon_class) or "AssaultRifle"
+		end
+		
+		if enemy and dist < 10*const.SlabSizeX then
+			archetype = "Legion_Assaulter"
+			weapon_class = "Melee"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if not self:GetActiveWeapons(weapon_class) then
+		  AIPlayCombatAction("ChangeWeapon", self, 0)
+		end
+		
+		return archetype
+	end,
+	CustomEquipGear = function (self, items)
+		self:TryEquip(items, "Handheld A", "Firearm")
+		self:TryEquip(items, "Handheld B", "GrenadeLauncher")
+		self:TryEquip(items, "Handheld B", "MeleeWeapon")
+	end,
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"RelentlessAdvance",
@@ -79,7 +118,7 @@ DefineClass.JAZZ_Legion_FrontT3_Veteran = {
 		}),
 	},
 	Equipment = {
-		"LegionRaider_Stronger_Elite",
+		"Veteran_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

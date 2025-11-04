@@ -12,7 +12,7 @@ DefineClass.JAZZ_Legion_AssaultT3_SkullCrusher = {
 	Strength = 95,
 	Wisdom = 25,
 	Will = 85,
-	Leadership = 0,
+	Leadership = 30,
 	Marksmanship = 85,
 	Mechanical = 85,
 	Explosives = 35,
@@ -21,23 +21,41 @@ DefineClass.JAZZ_Legion_AssaultT3_SkullCrusher = {
 	BigPortrait = "UI/Enemies/LegionRaider",
 	Name = T(243489839730, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT3_SkullCrusher Name]] "Череполом"),
 	Randomization = true,
-	elite = true,
 	eliteCategory = "Legion",
 	Affiliation = "Legion",
 	StartingLevel = 12,
 	neutral_retaliate = true,
 	AIKeywords = {
-		"Control",
+		"CQB",
+		"Melee",
 		"Smoke",
-		"Flank",
-		"Explosives",
 	},
-	archetype = "Brute",
+	archetype = "Legion_Assaulter",
 	role = "Stormer",
 	CanManEmplacements = false,
+	RepositionArchetype = "Legion_Assaulter",
 	MaxAttacks = 10,
-	PickCustomArchetype = function (self, proto_context)  end,
-	CustomEquipGear = function (self, items)  end,
+	PickCustomArchetype = function (self, proto_context)
+		local enemy, dist = GetNearestEnemy(self)
+		local archetype = self.archetype
+		local weapon_class = "Firearm"
+		
+		if enemy and dist < 10*const.SlabSizeX then
+			--archetype = "Brute"
+			weapon_class = "Melee"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if not self:GetActiveWeapons(weapon_class) then
+			AIPlayCombatAction("ChangeWeapon", self, 0)
+		end
+		
+		return archetype
+	end,
+	CustomEquipGear = function (self, items)
+		self:TryEquip(items, "Handheld A", "Firearm")
+		self:TryEquip(items, "Handheld B", "MeleeWeapon")
+	end,
 	MaxHitPoints = 60,
 	StartingPerks = {
 		"MinFreeMove",
@@ -67,7 +85,7 @@ DefineClass.JAZZ_Legion_AssaultT3_SkullCrusher = {
 		}),
 	},
 	Equipment = {
-		"LegionMeleeFighter_Stronger_Elite",
+		"SkullCrusher_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

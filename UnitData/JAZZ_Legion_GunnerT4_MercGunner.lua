@@ -27,14 +27,14 @@ DefineClass.JAZZ_Legion_GunnerT4_MercGunner = {
 	StartingLevel = 16,
 	neutral_retaliate = true,
 	AIKeywords = {
-		"Control",
+		"MG",
 		"Soldier",
-		"Ordnance",
-		"Gunner",
+		"Flank",
+		"Marksman",
+		"Control",
 	},
-	archetype = "HeavyGunner",
+	archetype = "Legion_Machinegunner",
 	role = "Heavy",
-	RepositionArchetype = "Soldier_Sniper",
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)  end,
 	CustomEquipGear = function (self, items)
@@ -89,7 +89,7 @@ DefineClass.JAZZ_Legion_GunnerT4_MercGunner = {
 		}),
 	},
 	Equipment = {
-		"LegionGunner_Stronger",
+		"MercGunner_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

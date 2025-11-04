@@ -26,30 +26,67 @@ DefineClass.JAZZ_Legion_FlankerT3_Pathfinder = {
 	StartingLevel = 10,
 	neutral_retaliate = true,
 	AIKeywords = {
+		"Flank",
 		"Sniper",
 		"Control",
-		"Heal_Low",
-		"Soldier",
-		"Flank",
-		"RunAndGun",
-		"MobileShot",
 	},
-	role = "Marksman",
+	archetype = "Legion_Frontliner",
+	role = "Recon",
 	AlwaysUseOpeningAttack = true,
 	MaxAttacks = 10,
-	PickCustomArchetype = function (self, proto_context)  end,
+	PickCustomArchetype = function (self, proto_context)
+		local enemy, dist = GetNearestEnemy(self)
+		local archetype = self.archetype
+		local weapon_class = "Firearm"
+		local roll = self:Random(100)
+		local chance = 50
+		
+		if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
+			archetype = "Legion_Assaulter"
+			weapon_class = "Revolver"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
+			archetype = "Legion_Assaulter"
+			weapon_class = "Pistol"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
+			archetype = "Legion_Assaulter"
+			weapon_class = "SubmachineGun"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if not self:GetActiveWeapons(weapon_class) then
+			AIPlayCombatAction("ChangeWeapon", self, 0)
+		end
+		
+		local stealth_stance = self:GetStanceToStealth()
+		if self:CanStealth(stealth_stance) then
+		 self:Hide()
+		end	
+		
+		return archetype
+	end,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 		self:TryEquip(items, "Handheld B", "Firearm")
 	end,
 	MaxHitPoints = 50,
 	StartingPerks = {
-		"BunsPerk",
-		"Stealthy",
-		"StressManagement",
-		"Untraceable",
+		"HoldPosition",
 		"Hobbler",
-		"Shatterhand",
+		"OpportunisticKiller",
+		"Instagib",
+		"FleetingShadow",
+		"Counterfire",
+		"Hardened",
+		"Flanker",
+		"Untraceable",
+		"Hotblood",
+		"LastWarning",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
@@ -63,7 +100,7 @@ DefineClass.JAZZ_Legion_FlankerT3_Pathfinder = {
 		}),
 	},
 	Equipment = {
-		"LegionRanger_Stronger_Elite",
+		"Pathfinder_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

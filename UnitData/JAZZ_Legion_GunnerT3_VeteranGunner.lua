@@ -25,14 +25,14 @@ DefineClass.JAZZ_Legion_GunnerT3_VeteranGunner = {
 	StartingLevel = 14,
 	neutral_retaliate = true,
 	AIKeywords = {
-		"Control",
+		"MG",
 		"Soldier",
-		"Ordnance",
-		"Gunner",
+		"Flank",
+		"Marksman",
+		"Control",
 	},
-	archetype = "HeavyGunner",
+	archetype = "Legion_Machinegunner",
 	role = "Heavy",
-	RepositionArchetype = "Soldier_Sniper",
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)  end,
 	CustomEquipGear = function (self, items)
@@ -83,7 +83,7 @@ DefineClass.JAZZ_Legion_GunnerT3_VeteranGunner = {
 		}),
 	},
 	Equipment = {
-		"LegionGunner_Stronger",
+		"Veteran_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

@@ -26,12 +26,13 @@ DefineClass.JAZZ_Legion_LeaderT1_Sergeant = {
 	StartingLevel = 3,
 	neutral_retaliate = true,
 	AIKeywords = {
-		"Smoke",
-		"Heal_Low",
-		"Flank",
+		"Leader",
+		"Control",
 		"Soldier",
 		"Explosives",
+		"RunAndGun",
 	},
+	archetype = "Legion_Assaulter",
 	role = "Commander",
 	OpeningAttackType = "Overwatch",
 	MaxAttacks = 10,
@@ -73,7 +74,7 @@ DefineClass.JAZZ_Legion_LeaderT1_Sergeant = {
 		}),
 	},
 	Equipment = {
-		"LegionSentry",
+		"Sergeant_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

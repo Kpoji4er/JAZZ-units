@@ -16,25 +16,65 @@ DefineClass.JAZZ_Legion_FrontT4_Mercenary = {
 	Marksmanship = 90,
 	Mechanical = 100,
 	Explosives = 80,
-	Medical = 40,
+	Medical = 80,
 	Portrait = "UI/EnemiesPortraits/LegionSoldier",
 	BigPortrait = "UI/Enemies/LegionRaider",
 	Name = T(918921277026, --[[ModItemUnitDataCompositeDef JAZZ_Legion_FrontT4_Mercenary Name]] "Наемник"),
 	Randomization = true,
 	elite = true,
-	eliteCategory = "Foreigners",
+	eliteCategory = "Mercenary",
 	Affiliation = "Legion",
 	StartingLevel = 15,
 	neutral_retaliate = true,
 	AIKeywords = {
 		"Soldier",
-		"Explosives",
+		"Ordnance",
+		"Marksman",
 		"RunAndGun",
 	},
+	archetype = "Legion_Frontliner",
 	role = "Soldier",
 	MaxAttacks = 10,
-	PickCustomArchetype = function (self, proto_context)  end,
-	CustomEquipGear = function (self, items)  end,
+	PickCustomArchetype = function (self, proto_context)
+		local function PrimaryNonGL(self)
+		  return self:GetActiveWeapons("AssaultRifle")
+		      or self:GetActiveWeapons("Rifle")
+		      or self:GetActiveWeapons("Carbine")
+		      or self:GetActiveWeapons("BattleRifle")
+		      or self:GetActiveWeapons("SubmachineGun")
+		      or self:GetActiveWeapons("Shotgun")
+		end
+		
+		local enemy, dist = GetNearestEnemy(self)
+		local archetype = self.archetype
+		local weapon_class = "Firearm"
+		local roll = self:Random(100)
+		local chance = 50
+		
+		local weapon_class = "Firearm"
+		if enemy and dist < 40*const.SlabSizeX and dist > 15*const.SlabSizeX and roll < chance then
+		  weapon_class = "GrenadeLauncher"
+		else
+		  weapon_class = (PrimaryNonGL(self) and PrimaryNonGL(self).weapon_class) or "AssaultRifle"
+		end
+		
+		if enemy and dist < 10*const.SlabSizeX then
+			archetype = "Legion_Assaulter"
+			weapon_class = "Melee"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if not self:GetActiveWeapons(weapon_class) then
+		  AIPlayCombatAction("ChangeWeapon", self, 0)
+		end
+		
+		return archetype
+	end,
+	CustomEquipGear = function (self, items)
+		self:TryEquip(items, "Handheld A", "Firearm")
+		self:TryEquip(items, "Handheld B", "GrenadeLauncher")
+		self:TryEquip(items, "Handheld B", "MeleeWeapon")
+	end,
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"RelentlessAdvance",
@@ -85,7 +125,7 @@ DefineClass.JAZZ_Legion_FrontT4_Mercenary = {
 		}),
 	},
 	Equipment = {
-		"LegionRaider_Stronger_Elite",
+		"Mercenary_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

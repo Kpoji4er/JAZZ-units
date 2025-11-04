@@ -16,7 +16,7 @@ DefineClass.JAZZ_Legion_FrontT4_MercenarySniper = {
 	Marksmanship = 100,
 	Mechanical = 100,
 	Explosives = 30,
-	Medical = 40,
+	Medical = 80,
 	Portrait = "UI/EnemiesPortraits/LegionSniper",
 	BigPortrait = "UI/Enemies/LegionRaider",
 	Name = T(839107049203, --[[ModItemUnitDataCompositeDef JAZZ_Legion_FrontT4_MercenarySniper Name]] "Наемник снайпер"),
@@ -29,14 +29,44 @@ DefineClass.JAZZ_Legion_FrontT4_MercenarySniper = {
 	AIKeywords = {
 		"Sniper",
 		"Control",
-		"MobileShot",
+		"Marksman",
 	},
-	archetype = "Soldier_Sniper",
+	archetype = "Legion_Frontliner",
 	role = "Marksman",
 	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "PinDown",
 	MaxAttacks = 10,
-	PickCustomArchetype = function (self, proto_context)  end,
+	PickCustomArchetype = function (self, proto_context)
+		local enemy, dist = GetNearestEnemy(self)
+		local archetype = self.archetype
+		local weapon_class = "Firearm"
+		local roll = self:Random(100)
+		local chance = 50
+		
+		if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
+			archetype = "Legion_Assaulter"
+			weapon_class = "Revolver"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
+			archetype = "Legion_Assaulter"
+			weapon_class = "Pistol"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
+			archetype = "Legion_Assaulter"
+			weapon_class = "SubmachineGun"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if not self:GetActiveWeapons(weapon_class) then
+			AIPlayCombatAction("ChangeWeapon", self, 0)
+		end
+		
+		return archetype
+	end,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 		self:TryEquip(items, "Handheld B", "Firearm")
@@ -73,7 +103,7 @@ DefineClass.JAZZ_Legion_FrontT4_MercenarySniper = {
 		}),
 	},
 	Equipment = {
-		"LegionSniper_Stronger_Elite",
+		"MercenarySniper_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

@@ -21,21 +21,18 @@ DefineClass.JAZZ_Legion_AssaultT2_ShockTrooper = {
 	BigPortrait = "UI/Enemies/LegionRaider",
 	Name = T(176382444921, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT2_ShockTrooper Name]] "Штурмовик"),
 	Randomization = true,
-	elite = true,
 	eliteCategory = "Legion",
 	Affiliation = "Legion",
 	StartingLevel = 6,
 	neutral_retaliate = true,
 	AIKeywords = {
-		"Explosives",
-		"Smoke",
-		"Flank",
+		"CQB",
 		"RunAndGun",
-		"MobileShot",
 	},
-	archetype = "Brute",
+	archetype = "Legion_Assaulter",
 	role = "Stormer",
 	CanManEmplacements = false,
+	RepositionArchetype = "Legion_Assaulter",
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)  end,
 	CustomEquipGear = function (self, items)  end,
@@ -72,7 +69,7 @@ DefineClass.JAZZ_Legion_AssaultT2_ShockTrooper = {
 		}),
 	},
 	Equipment = {
-		"LegionMeleeFighter_Stronger",
+		"Shocktrooper_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

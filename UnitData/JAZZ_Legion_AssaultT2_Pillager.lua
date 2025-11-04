@@ -18,19 +18,17 @@ DefineClass.JAZZ_Legion_AssaultT2_Pillager = {
 	Portrait = "UI/EnemiesPortraits/LegionRecon",
 	BigPortrait = "UI/Enemies/LegionRaider",
 	Name = T(278695304484, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT2_Pillager Name]] "Грабитель"),
-	elite = true,
 	eliteCategory = "Legion",
 	Affiliation = "Legion",
 	StartingLevel = 5,
 	neutral_retaliate = true,
 	AIKeywords = {
-		"MobileShot",
-		"Flank",
-		"Explosives",
-		"Control",
+		"CQB",
+		"Soldier",
 	},
-	archetype = "Skirmisher",
+	archetype = "Legion_Assaulter",
 	role = "Stormer",
+	RepositionArchetype = "Legion_Assaulter",
 	PinnedDownChance = 100,
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)
@@ -39,7 +37,7 @@ DefineClass.JAZZ_Legion_AssaultT2_Pillager = {
 		local weapon_class = "Firearm"
 		
 		if enemy and dist < 8*const.SlabSizeX then
-			archetype = "Brute"
+			--archetype = "Brute"
 			weapon_class = "Melee"
 			PlayVoiceResponse(self, "AIArchetypeAngry")
 		end
@@ -86,7 +84,7 @@ DefineClass.JAZZ_Legion_AssaultT2_Pillager = {
 		}),
 	},
 	Equipment = {
-		"LegionGoon_Stronger",
+		"Pillager_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

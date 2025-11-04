@@ -1,11 +1,14 @@
 function AIKeywordsCombo()
 	return {
+		"Melee",
+		"CQB",
+		"Soldier",
+		"Marksman",
+		"Sniper",
+		"Leader",
+		"MG",
 		"Control",
 		"Explosives",
-		"Soldier",
-        "CQB",
-        "Marksman",
-        "Sniper",
 		"Ordnance",
 		"Smoke",
 		"Flank",
@@ -14,6 +17,5 @@ function AIKeywordsCombo()
 		"Stim",
 		"Nova",
 		"Heal",
-
 	}
 end

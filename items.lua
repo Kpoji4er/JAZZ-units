@@ -1247,16 +1247,16 @@ return {
 					group = "JAZZ_SMG",
 					id = "SMGs_Agram2000_AP_silencer",
 					loot = "all",
-					PlaceObj('LootEntryInventoryItem', {
-						item = "Agram2000",
-						stack_max = 1,
-						stack_min = 1,
-					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
 							"PistolSuppressor",
 						},
 						weapon = "Agram2000",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						item = "JAZZ_AMMO_9x19_AP",
+						stack_max = 60,
+						stack_min = 30,
 					}),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -1299,6 +1299,24 @@ return {
 					id = "SMGs_UZI_AP",
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
+						weapon = "UZI",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						item = "JAZZ_AMMO_9x19_AP",
+						stack_max = 60,
+						stack_min = 30,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T2-1",
+					comment = "T2-1",
+					group = "JAZZ_SMG",
+					id = "SMGs_UZI_AP_silencer",
+					loot = "all",
+					PlaceObj('LootEntryUpgradedWeapon', {
+						upgrades = {
+							"PistolSuppressor",
+						},
 						weapon = "UZI",
 					}),
 					PlaceObj('LootEntryInventoryItem', {
@@ -1829,6 +1847,24 @@ return {
 					Comment = "T2-2",
 					comment = "T2-2",
 					group = "JAZZ_Carbine",
+					id = "Carbines_CAR15_AP_silencer",
+					loot = "all",
+					PlaceObj('LootEntryUpgradedWeapon', {
+						upgrades = {
+							"Suppressor",
+						},
+						weapon = "CAR15",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						item = "JAZZ_AMMO_556_M855",
+						stack_max = 80,
+						stack_min = 20,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T2-2",
+					comment = "T2-2",
+					group = "JAZZ_Carbine",
 					id = "Carbines_CAR15_AP_Reflex",
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
@@ -1926,6 +1962,24 @@ return {
 					}),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JAZZ_AMMO_556_M856_Tracer",
+						stack_max = 60,
+						stack_min = 30,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T2-4",
+					comment = "T2-4",
+					group = "JAZZ_Carbine",
+					id = "Carbines_M4A1_silencer",
+					loot = "all",
+					PlaceObj('LootEntryUpgradedWeapon', {
+						upgrades = {
+							"Suppressor",
+						},
+						weapon = "M4A1",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						item = "JAZZ_AMMO_556_M855",
 						stack_max = 60,
 						stack_min = 30,
 					}),
@@ -2385,6 +2439,25 @@ return {
 					Comment = "T2-3",
 					comment = "T2-3",
 					group = "JAZZ_AssaultRifle",
+					id = "AssaultRifles_AKMS_silencer",
+					loot = "all",
+					PlaceObj('LootEntryUpgradedWeapon', {
+						upgrades = {
+							"StockLightUnFolded",
+							"Suppressor",
+						},
+						weapon = "AKM",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						item = "JAZZ_AMMO_762x39_US",
+						stack_max = 90,
+						stack_min = 30,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T2-3",
+					comment = "T2-3",
+					group = "JAZZ_AssaultRifle",
 					id = "AssaultRifles_AKMS",
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
@@ -2833,7 +2906,7 @@ return {
 					Comment = "T2-1",
 					comment = "T2-1",
 					group = "Default",
-					id = "BattleRifles_AR103xScope",
+					id = "BattleRifles_AR10_3xScope",
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
@@ -2842,7 +2915,7 @@ return {
 						weapon = "AR10",
 					}),
 					PlaceObj('LootEntryInventoryItem', {
-						item = "JAZZ_AMMO_762x51_FMJ",
+						item = "JAZZ_AMMO_762x51_M80",
 						stack_max = 40,
 						stack_min = 20,
 					}),
@@ -2860,6 +2933,59 @@ return {
 					}),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JAZZ_AMMO_762x51_FMJ",
+						stack_max = 60,
+						stack_min = 20,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T2-2",
+					comment = "T2-2",
+					group = "Default",
+					id = "BattleRifles_M14_M80",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						item = "M14SAW",
+						stack_max = 1,
+						stack_min = 1,
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						item = "JAZZ_AMMO_762x51_M80",
+						stack_max = 60,
+						stack_min = 20,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T2-2",
+					comment = "T2-2",
+					group = "Default",
+					id = "BattleRifles_M14_M80_Reflex",
+					loot = "all",
+					PlaceObj('LootEntryUpgradedWeapon', {
+						upgrades = {
+							"JAZZ_Reflex_Closed",
+						},
+						weapon = "M14SAW",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						item = "JAZZ_AMMO_762x51_M80",
+						stack_max = 60,
+						stack_min = 20,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T2-2",
+					comment = "T2-2",
+					group = "Default",
+					id = "BattleRifles_M14_M80_Scope",
+					loot = "all",
+					PlaceObj('LootEntryUpgradedWeapon', {
+						upgrades = {
+							"JAZZ_CombatScope_2x",
+						},
+						weapon = "M14SAW",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						item = "JAZZ_AMMO_762x51_M80",
 						stack_max = 60,
 						stack_min = 20,
 					}),
@@ -2956,7 +3082,7 @@ return {
 					Comment = "T2-4",
 					comment = "T2-4",
 					group = "Default",
-					id = "BattleRifles_FNFALGrip",
+					id = "BattleRifles_FNFAL_M80_Grip",
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
@@ -2965,8 +3091,46 @@ return {
 						weapon = "FNFAL",
 					}),
 					PlaceObj('LootEntryInventoryItem', {
-						item = "JAZZ_AMMO_762x51_FMJ",
-						stack_max = 40,
+						item = "JAZZ_AMMO_762x51_M80",
+						stack_max = 60,
+						stack_min = 20,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T2-4",
+					comment = "T2-4",
+					group = "Default",
+					id = "BattleRifles_FNFAL_M80_Grip_Scope",
+					loot = "all",
+					PlaceObj('LootEntryUpgradedWeapon', {
+						upgrades = {
+							"VerticalGrip",
+							"JAZZ_CombatScope_2x",
+						},
+						weapon = "FNFAL",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						item = "JAZZ_AMMO_762x51_M80",
+						stack_max = 60,
+						stack_min = 20,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T2-4",
+					comment = "T2-4",
+					group = "Default",
+					id = "BattleRifles_FNFAL_M80_Grip_Reflex",
+					loot = "all",
+					PlaceObj('LootEntryUpgradedWeapon', {
+						upgrades = {
+							"VerticalGrip",
+							"JAZZ_CombatScope_2x",
+						},
+						weapon = "FNFAL",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						item = "JAZZ_AMMO_762x51_M80",
+						stack_max = 60,
 						stack_min = 20,
 					}),
 				}),
@@ -3019,6 +3183,44 @@ return {
 						item = "JAZZ_AMMO_762x51_M80",
 						stack_max = 50,
 						stack_min = 25,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T2-4",
+					comment = "T2-4",
+					group = "Default",
+					id = "BattleRifles_Galil_M80_Bipod_Scope",
+					loot = "all",
+					PlaceObj('LootEntryUpgradedWeapon', {
+						upgrades = {
+							"Bipod_Galil",
+							"JAZZ_CombatScope_2x",
+						},
+						weapon = "Galil",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						item = "JAZZ_AMMO_762x51_M80",
+						stack_max = 60,
+						stack_min = 20,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T2-4",
+					comment = "T2-4",
+					group = "Default",
+					id = "BattleRifles_Galil_M80_Bipod_Reflex",
+					loot = "all",
+					PlaceObj('LootEntryUpgradedWeapon', {
+						upgrades = {
+							"Bipod_Galil",
+							"JAZZ_CombatScope_2x",
+						},
+						weapon = "Galil",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						item = "JAZZ_AMMO_762x51_M80",
+						stack_max = 60,
+						stack_min = 20,
 					}),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -3078,6 +3280,24 @@ return {
 					Comment = "T2-5",
 					comment = "T2-5",
 					group = "Default",
+					id = "BattleRifles_G3A3_Reflex",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						item = "JAZZ_AMMO_762x51_M61",
+						stack_max = 40,
+						stack_min = 20,
+					}),
+					PlaceObj('LootEntryUpgradedWeapon', {
+						upgrades = {
+							"JAZZ_Reflex_Closed",
+						},
+						weapon = "G3A3",
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T2-5",
+					comment = "T2-5",
+					group = "Default",
 					id = "BattleRifles_G3A4",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', {
@@ -3105,6 +3325,24 @@ return {
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
 							"JAZZ_CombatScope_FeroZ24",
+						},
+						weapon = "G3A4",
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T2-5",
+					comment = "T2-5",
+					group = "Default",
+					id = "BattleRifles_G3A4_Reflex",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						item = "JAZZ_AMMO_762x51_M61",
+						stack_max = 60,
+						stack_min = 30,
+					}),
+					PlaceObj('LootEntryUpgradedWeapon', {
+						upgrades = {
+							"JAZZ_Reflex_M68",
 						},
 						weapon = "G3A4",
 					}),
@@ -3327,6 +3565,25 @@ return {
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
 							"JAZZ_Scope_6x",
+						},
+						weapon = "M21",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						item = "JAZZ_AMMO_762x51_M80",
+						stack_max = 20,
+						stack_min = 10,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T2-3",
+					comment = "T2-3",
+					group = "Default",
+					id = "RiflesSemi_M215xScope_silencer",
+					loot = "all",
+					PlaceObj('LootEntryUpgradedWeapon', {
+						upgrades = {
+							"JAZZ_Scope_Scout",
+							"Suppressor",
 						},
 						weapon = "M21",
 					}),
@@ -3689,6 +3946,25 @@ return {
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
 							"JAZZ_Scope_12x",
+						},
+						weapon = "M24Sniper",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						item = "JAZZ_AMMO_762x51_M118LR",
+						stack_max = 10,
+						stack_min = 5,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T2-5",
+					comment = "T2-5",
+					group = "Default",
+					id = "RiflesBolt_M245xScope_silencer",
+					loot = "all",
+					PlaceObj('LootEntryUpgradedWeapon', {
+						upgrades = {
+							"JAZZ_Scope_Scout",
+							"Suppressor",
 						},
 						weapon = "M24Sniper",
 					}),
@@ -14329,4313 +14605,6179 @@ return {
 				'name', "LEGION",
 			}, {
 				PlaceObj('ModItemFolder', {
+					'name', "ArmorVariants",
+				}, {
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionNoArmor",
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionJackets",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JazzArmor_LeatherJacketBrn",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JazzArmor_LeatherJacketBlk",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JazzArmor_LeatherVest",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JazzArmor_LeatherArmor",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryNoLoot', {
+							weight = 3000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionLightArmor",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JazzArmor_LeatherJacketBrn",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JazzArmor_LeatherJacketBlk",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JazzArmor_LeatherVest",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JazzArmor_LeatherArmor",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryNoLoot', {
+							weight = 3000,
+						}),
+					}),
+					}),
+				PlaceObj('ModItemFolder', {
+					'name', "UnitsInventory",
+				}, {
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Roughneck_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Roughneck_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionKnife50pc",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Crusher_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Crusher_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Legion_PistolList_50pc",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Grenadier_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Grenadier_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_Grenades_3_5",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 50,
+							item = "Molotov",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Pillager_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Pillager_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionKnife",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Pyro_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Pyro_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_Grenade_50pc",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Molotov",
+							stack_max = 3,
+							stack_min = 3,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Shocktrooper_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Shocktrooper_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_Grenades_3_5",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionKnife",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							comment = "50%",
+							generate_chance = 50,
+							item = "SmokeGrenade",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							comment = "50%",
+							generate_chance = 50,
+							item = "ConcussiveGrenade",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "SkullCrusher_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "SkullCrusher_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionMachete",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							comment = "50%",
+							generate_chance = 50,
+							item = "SmokeGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							comment = "50%",
+							generate_chance = 50,
+							item = "Molotov",
+							stack_max = 3,
+							stack_min = 1,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Punisher_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Punisher_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_Grenades_3_5",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							comment = "50%",
+							generate_chance = 50,
+							item = "ConcussiveGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Headsman_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Headsman_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionMachete",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_Grenades_3_5",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_Grenades_3_5",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "FirstAidKit",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 50,
+							item = "Molotov",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Marauder_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Marauder_Firearm",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Rifleman_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Rifleman_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Legion_PistolList_50pc",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Bonemaker_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Bonemaker_Firearm",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							guaranteed = true,
+							item = "Meds",
+							stack_max = 50,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "FirstAidKit",
+							stack_max = 1,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Raider_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Raider_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_Grenade",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionKnife50pc",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Marksman_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Marksman_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_PistolList_50pc",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Ambusher_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Ambusher_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_PistolList",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Veteran_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Veteran_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_Grenades_3_5",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionGL_5pc",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionKnife50pc",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Sniper_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Sniper_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_PistolList",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Mercenary_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Mercenary_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_Grenades_3_5",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "SmokeGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionGL_5pc",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "FirstAidKit",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionKnife",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "MercenarySniper_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "MercenarySniper_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT3_AutoPistol",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "FirstAidKit",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Warden_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Warden_Firearm",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							comment = "30%",
+							generate_chance = 30,
+							item = "FirstAidKit",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_PistolList",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "SmokeGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Scout_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Scout_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_Grenade_50pc",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Skirmisher_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Skirmisher_Firearm",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "SmokeGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							comment = "30%",
+							generate_chance = 30,
+							item = "FirstAidKit",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_PistolList",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Recon_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Recon_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							amount_modifier = 2000000,
+							loot_def = "Legion_Grenade",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "SmokeGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Pathfinder_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Pathfinder_Firearm",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "SmokeGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							comment = "50%",
+							generate_chance = 50,
+							item = "FirstAidKit",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_PistolList",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Ranger_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Ranger_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							amount_modifier = 2000000,
+							loot_def = "Legion_Grenade",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "SmokeGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							comment = "",
+							item = "FirstAidKit",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Gunner_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Gunner_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionKnife50pc",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "GMPG_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "GMPG_Firearm",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							comment = "30%",
+							generate_chance = 30,
+							item = "SmokeGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_PistolList_50pc",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "AssaultGunner_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "AssaultGunner_Firearm",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							comment = "50%",
+							generate_chance = 50,
+							item = "Molotov",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionMachete",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "VeteranGunner_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "VeteranGunner_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_Grenade_50pc",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "MercGunner_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "MercGunner_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							amount_modifier = 2000000,
+							loot_def = "Legion_Grenade_50pc",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							comment = "30%",
+							generate_chance = 30,
+							item = "SmokeGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Sergeant_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Sergeant_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							amount_modifier = 2000000,
+							loot_def = "Legion_Grenade_50pc",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_Grenade",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "SmokeGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "ConcussiveGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "FirstAidKit",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Lieutenant_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Lieutenant_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							amount_modifier = 2000000,
+							loot_def = "Legion_Grenade_50pc",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_Grenade",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "SmokeGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "ConcussiveGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "FirstAidKit",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Captain_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Captain_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							amount_modifier = 2000000,
+							loot_def = "Legion_Grenade_50pc",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_Grenade",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "SmokeGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "ConcussiveGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "FirstAidKit",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "MercenaryCaptain_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "MercenaryCaptain_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							amount_modifier = 2000000,
+							loot_def = "Legion_Grenade_50pc",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_Grenade",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "SmokeGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "ConcussiveGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "FirstAidKit",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Rocketeer_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Rocketeer_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Rocketeer_Launcher",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "HeavyGrenadier_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "HeavyGrenadier_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "HeavyGrenadier_Launcher",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Mortarman_Inventory",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Mortarman_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Mortarman_Launcher",
+						}),
+					}),
+					}),
+				PlaceObj('ModItemFolder', {
+					'name', "UnitsWeapon",
+				}, {
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Roughneck_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_PistolList",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT1_SMG",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_SMG",
+							weight = 30000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_PistolList",
+							weight = 100000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_Carbine",
+							weight = 30000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_PistolList",
+							weight = 1000000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionAKType",
+							weight = 100000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionAKType",
+							weight = 1000000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Crusher_Firearm",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Crusher_12g",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionShotgun",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Grenadier_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_PistolList",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT1_Carbine",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_SMG",
+							weight = 30000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_PistolList",
+							weight = 100000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_Carbine",
+							weight = 30000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_PistolList",
+							weight = 1000000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Pillager_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_PistolList",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_SMG",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Crusher_Firearm",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_PistolList",
+							weight = 100000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_SMG",
+							weight = 50000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Crusher_Firearm",
+							weight = 20000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_PistolList",
+							weight = 1000000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_SMG",
+							weight = 1000000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Pyro_Firearm",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Pyro_12g",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionShotgun",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Shocktrooper_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_SMG",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_SMG",
+							weight = 100000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_Carbine",
+							weight = 30000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_SMG",
+							weight = 1000000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_Carbine",
+							weight = 300000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "SkullCrusher_Firearm",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Crusher_12g",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionShotgun",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Punisher_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionElite_SMG",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionElite_Carbine",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Headsman_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionElite_SMG",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionElite_Carbine",
+							weight = 2000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Marauder_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_PistolList",
+							weight = 15000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_SMG",
+							weight = 20000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_Carbine",
+							weight = 15000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_BattleRifle",
+							weight = 25000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_AssaultRifle",
+							weight = 30000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_RifleBolt",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_RifleSemi",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_LMG",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_GMPG",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_PistolList",
+							weight = 150000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_SMG",
+							weight = 200000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_Carbine",
+							weight = 150000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_BattleRifle",
+							weight = 250000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_AssaultRifle",
+							weight = 300000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_LMG",
+							weight = 30000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_GMPG",
+							weight = 30000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_PistolList",
+							weight = 1500000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_SMG",
+							weight = 2000000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_Carbine",
+							weight = 1500000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_BattleRifle",
+							weight = 2500000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_AssaultRifle",
+							weight = 3000000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_LMG",
+							weight = 300000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_GMPG",
+							weight = 300000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Rifleman_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_RifleBolt",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_RifleSemi",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_BattleRifle",
+							weight = 150000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_RifleSemi",
+							weight = 100000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Bonemaker_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_BattleRifle",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_AssaultRifle",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_Carbine",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_RifleBolt",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_BattleRifle",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_AssaultRifle",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_Carbine",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_RifleSemi",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_BattleRifle",
+							weight = 100000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_AssaultRifle",
+							weight = 100000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_Carbine",
+							weight = 50000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Raider_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_BattleRifle",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_AssaultRifle",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT2_BattleRifle",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT2_AssaultRifle",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT3_BattleRifle",
+							weight = 30000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT3_AssaultRifle",
+							weight = 100000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Marksman_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_RifleSniper",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_BattleRifle",
+							weight = 150000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_RifleSemi",
+							weight = 100000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_BattleRifle",
+							weight = 150000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_RifleSemi",
+							weight = 100000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Ambusher_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_RifleSniper",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_RifleSniper",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_RifleSniper",
+							weight = 100000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Veteran_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT2_AssaultRifle_Elite",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT2_BattleRifle_Elite",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_AssaultRifle_Elite",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_BattleRifle_Elite",
+							weight = 10000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Sniper_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_RifleSniper",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_RifleSniper10x",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_RifleSniper10x",
+							weight = 100000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Mercenary_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionMercenary_AssaultRifle",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "MercenarySniper_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT2_RifleSniper10x",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_RifleSniper10x",
+							weight = 100000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Warden_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Carbines_Winchester",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "1-3",
+							loot_def = "LegionT1_RifleSemi",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT1_RifleBolt",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_RifleSemi",
+							weight = 100000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_RifleSemi",
+							weight = 1000000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Scout_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_SMG",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT1_Carbine",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT2_SMG",
+							weight = 100000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT2_Carbine",
+							weight = 50000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT3_SMG",
+							weight = 1000000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT3_Carbine",
+							weight = 500000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Skirmisher_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_RifleSniper",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_RifleSniper",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_RifleSniper",
+							weight = 100000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Recon_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "SMGs_UZI_AP_silencer",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "SMGs_Agram2000_AP_silencer",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_CAR15_AP_silencer",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AKMS_silencer",
+							weight = 40000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_M4A1_silencer",
+							weight = 20000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_ASVAL",
+							weight = 120000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "3-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_VSS",
+							weight = 120000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Pathfinder_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT2_RifleSniper_silencer",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_RifleSniper_silencer",
+							weight = 10000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Ranger_Firearm",
+						loot = "all",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Recon_Firearm",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Sniper_Firearm",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Gunner_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_LMG",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_LMG",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_LMG",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_GMPG",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_GMPG",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_GMPG",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "GMPG_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_GMPG",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_GMPG",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_GMPG",
+							weight = 100000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "AssaultGunner_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_LMG",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_LMG",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_LMG",
+							weight = 100000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "VeteranGunner_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LMGs_U100",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_GMPG",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "t2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LMGs_U100_Drum",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_GMPG",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "t2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LMGs_FNMinimi",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_GMPG",
+							weight = 100000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "MercGunner_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							comment = "t2",
+							loot_def = "LMGs_U100_Drum",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_GMPG",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "t2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LMGs_FNMinimi",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_GMPG",
+							weight = 1000000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Sergeant_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionElite_SMG",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "2-1",
+							loot_def = "LegionElite_Carbine",
+							weight = 7000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Lieutenant_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT2_AssaultRifle_Elite",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT2_BattleRifle_Elite",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "2-1",
+							loot_def = "LegionElite_Carbine",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT3_AssaultRifle_Elite",
+							weight = 400000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT3_BattleRifle_Elite",
+							weight = 400000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Captain_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT2_AssaultRifle_Elite",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT2_BattleRifle_Elite",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "2-1",
+							loot_def = "LegionElite_Carbine",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT3_AssaultRifle_Elite",
+							weight = 1000000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT3_BattleRifle_Elite",
+							weight = 1500000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "AssaultGunner_Firearm",
+							weight = 25000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "GMPG_Firearm",
+							weight = 10000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "MercenaryCaptain_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Mercenary_Firearm",
+							weight = 50000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "MercenarySniper_Firearm",
+							weight = 30000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "MercGunner_Firearm",
+							weight = 15000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Rocketeer_Launcher",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "RPG",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Rocketeer_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_PistolList",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_SMG",
+							weight = 30000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_PistolList",
+							weight = 100000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_SMG",
+							weight = 30000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_PistolList",
+							weight = 100000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "HeavyGrenadier_Launcher",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "RPG",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionGL",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "HeavyGrenadier_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_AssaultRifle",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_AssaultRifle",
+							weight = 100000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_AssaultRifle",
+							weight = 100000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Mortarman_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_AssaultRifle",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT2_AssaultRifle",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT3_AssaultRifle",
+							weight = 100000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Mortarman_Launcher",
+						loot = "all",
+						PlaceObj('LootEntryInventoryItem', {
+							Condition = 81,
+							item = "MortarInventoryItem",
+							stack_max = 1,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Drop_MortarShell_HE",
+						}),
+					}),
+					}),
+				PlaceObj('ModItemFolder', {
 					'name', "WeaponPresets",
 				}, {
-					PlaceObj('ModItemFolder', {
-						'name', "UnitsWeapon",
-					}, {
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Roughneck_Firearm",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_PistolList",
-								weight = 10000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT1_SMG",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_SMG",
-								weight = 30000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_PistolList",
-								weight = 100000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "2-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 21,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_Carbine",
-								weight = 30000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_PistolList",
-								weight = 1000000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionAKType",
-								weight = 100000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionAKType",
-								weight = 1000000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Crusher_Firearm",
-							loot = "all",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "Crusher_12g",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionShotgun",
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Grenadier_Firearm",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_PistolList",
-								weight = 10000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT1_Carbine",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_SMG",
-								weight = 30000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_PistolList",
-								weight = 100000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "2-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 21,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_Carbine",
-								weight = 30000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_PistolList",
-								weight = 1000000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Pillager_Firearm",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_PistolList",
-								weight = 10000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_SMG",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "Crusher_Firearm",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_PistolList",
-								weight = 100000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "2-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 21,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_SMG",
-								weight = 50000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Crusher_Firearm",
-								weight = 20000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_PistolList",
-								weight = 1000000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_SMG",
-								weight = 1000000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Pyro_Firearm",
-							loot = "all",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "Pyro_12g",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionShotgun",
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Shocktrooper_Firearm",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_SMG",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_SMG",
-								weight = 100000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_Carbine",
-								weight = 30000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_SMG",
-								weight = 1000000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 3,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_Carbine",
-								weight = 300000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "SkullCrusher_Firearm",
-							loot = "all",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "Crusher_12g",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionShotgun",
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Punisher_Firearm",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionElite_SMG",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "2-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 21,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionElite_Carbine",
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Headsman_Firearm",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionElite_SMG",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionElite_Carbine",
-								weight = 2000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Marauder_Firearm",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_PistolList",
-								weight = 15000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_SMG",
-								weight = 20000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_Carbine",
-								weight = 15000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_BattleRifle",
-								weight = 25000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_AssaultRifle",
-								weight = 30000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_RifleBolt",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_RifleSemi",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_LMG",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_GMPG",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_PistolList",
-								weight = 150000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_SMG",
-								weight = 200000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_Carbine",
-								weight = 150000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_BattleRifle",
-								weight = 250000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_AssaultRifle",
-								weight = 300000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_LMG",
-								weight = 30000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_GMPG",
-								weight = 30000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_PistolList",
-								weight = 1500000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_SMG",
-								weight = 2000000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_Carbine",
-								weight = 1500000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_BattleRifle",
-								weight = 2500000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_AssaultRifle",
-								weight = 3000000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_LMG",
-								weight = 300000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_GMPG",
-								weight = 300000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Rifleman_Firearm",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_RifleBolt",
-								weight = 10000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_RifleSemi",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_BattleRifle",
-								weight = 150000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_RifleSemi",
-								weight = 100000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Bonemaker_Firearm",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_BattleRifle",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_AssaultRifle",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_Carbine",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_RifleBolt",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_BattleRifle",
-								weight = 10000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_AssaultRifle",
-								weight = 10000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_Carbine",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_RifleSemi",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_BattleRifle",
-								weight = 100000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_AssaultRifle",
-								weight = 100000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_Carbine",
-								weight = 50000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Raider_Firearm",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_BattleRifle",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_AssaultRifle",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT2_BattleRifle",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT2_AssaultRifle",
-								weight = 10000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT3_BattleRifle",
-								weight = 30000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT3_AssaultRifle",
-								weight = 100000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Marksman_Firearm",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_RifleSniper",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_BattleRifle",
-								weight = 150000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_RifleSemi",
-								weight = 100000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_BattleRifle",
-								weight = 150000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_RifleSemi",
-								weight = 100000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Ambusher_Firearm",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_RifleSniper",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_RifleSniper",
-								weight = 10000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_RifleSniper",
-								weight = 100000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Veteran_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Sniper_Firearm",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_RifleSniper",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_RifleSniper10x",
-								weight = 10000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_RifleSniper10x",
-								weight = 100000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Mercenary_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "MercenarySniper_Firearm",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT2_RifleSniper10x",
-								weight = 10000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_RifleSniper10x",
-								weight = 100000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Warden_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Scout_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Skirmisher_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Recon_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Pathfinder_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Ranger_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Gunner_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "GMPG_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "AssaultGunner_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "VeteranGunner_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "MercGunner_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Sergeant_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Lieutenant_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Captain_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "MercenaryCaptain_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Rocketeer_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "HeavyGrenadier_Firearm",
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "Mortarman_Firearm",
-						}),
-						}),
-					PlaceObj('ModItemFolder', {
-						'name', "Presets",
-					}, {
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionAKType",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "AssaultRifles_Type56",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "Carbines_ZastavaM92",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "AssaultRifles_ZastavaM70",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AK47",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AKM",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AKMS",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_AKSU",
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionShotgun",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_Shotgun",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_Shotgun",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 30,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT3_Shotgun",
-								weight = 5000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT1_PistolList",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_Pistol",
-								weight = 10000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT1_Revolver",
-								weight = 10000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT1_OneHSMG",
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT2_PistolList",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT2_Pistol",
-								weight = 10000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT2_Revolver",
-								weight = 10000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_AutoPistol",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT2_OneHSMG",
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT3_PistolList",
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT3_Pistol",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								loot_def = "LegionT3_Revolver",
-								weight = 5000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionElite_SMG",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1",
-								loot_def = "SMGs_MPL_AP",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1",
-								loot_def = "SMGs_Agram2000_AP",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1",
-								loot_def = "SMGs_BerettaM12_AP",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1",
-								loot_def = "SMGs_M45_AP",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 21,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_UZI_AP",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_UZIStock_AP_Reflex_Drum",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_UZI_AP_Reflex",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_PP19Bizon_Reflex",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_SpectreM4_AP",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "OneHSMG_MP5K_AP",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_MP5A4_AP",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_MP5A2_AP",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_UMP45_P",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "OneHSMG_MP5K_AP_Laser",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_UMP45_P_Reflex",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_MP5A4_AP_Reflex",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_MP5A2_AP_Reflex",
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionElite_Carbine",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "Carbines_Mini14_AP",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "Carbines_Mini14_AP_2xScope",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "Carbines_ZastavaM92_PS",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_CAR15_AP",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_CAR15_AP_Reflex",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_AKSU_PS",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_M4A1_M856",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_G36c_M856",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_AKSU_PP_45mag",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_M4A1_M856_Reflex",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_G36c_M856_Reflex",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_ASVAL",
-								weight = 4000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionMercenary_AssaultRifle",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1",
-								loot_def = "AssaultRifles_Famas_M855",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1",
-								loot_def = "AssaultRifles_ZastavaM70_PS",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1",
-								loot_def = "Carbines_ZastavaM92_PS",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_CAR15_AP",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_CAR15_AP_Reflex",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_AKSU_PS",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_M16A1_M855",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_AKSU_PP_45mag",
-								weight = 50000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_M16A1_Reflex",
-								weight = 100000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_M16A1_Scope",
-								weight = 100000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AK74_PS",
-								weight = 200000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AK74_PP",
-								weight = 300000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AKMDTK_Reflex",
-								weight = 300000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AKMS40Mag_Reflex",
-								weight = 300000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_M16A22xScope",
-								weight = 300000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_M16A23xScope",
-								weight = 300000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_M16A2Reflex",
-								weight = 300000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_M4A1_M856_Reflex",
-								weight = 800000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_G36c_M856_Reflex",
-								weight = 800000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_M4A1_M856_Acog",
-								weight = 800000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AK74_PP_Reflex",
-								weight = 800000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AK74_PP_Scope",
-								weight = 800000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_HK33_Reflex",
-								weight = 800000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_HK33_Scope",
-								weight = 800000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AUG",
-								weight = 1200000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_G36",
-								weight = 1200000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_G36Long",
-								weight = 1200000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_M16A4_Reflex",
-								weight = 1200000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_M16A4_Scope",
-								weight = 1200000,
-							}),
-						}),
-						}),
-					PlaceObj('ModItemFolder', {
-						'name', "WeaponClasses",
-					}, {
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT1_Pistol",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-1",
-								loot_def = "Pistols_MAC1950",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-1",
-								loot_def = "Pistols_TT",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_SWModel52",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_CZ52",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_Makarov",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_P210",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_P38",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_Colt1911",
-								weight = 3000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT2_Pistol",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "Pistols_VectorCP1",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "Pistols_SWModel5906",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "Pistols_HiPower",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_MP443",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_CZ75",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_Beretta",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_DesertEagle",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_Kimber",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_USP45",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_GrizzlyLAR",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_Glock17",
-								weight = 5000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT3_Pistol",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T3-1",
-								loot_def = "Pistols_P220",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_Beretta",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_DesertEagle",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_Kimber",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_USP45",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_Glock17",
-								weight = 5000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT1_Revolver",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-1",
-								loot_def = "Revolvers_SWModel10",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								loot_def = "Revolvers_Colt38Special",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Revolvers_Colt38SpecialShort",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Revolvers_ColtPeaceMaker",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Revolvers_ColtPeaceMakerShort",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Revolvers_ColtM1917",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Revolvers_SWModel19",
-								weight = 3000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT2_Revolver",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "Revolvers_Webley",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Revolvers_MR73",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Revolvers_SWModel29",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Revolvers_ColtAnaconda",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Revolvers_ColtAnacondaShort",
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT3_Revolver",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Revolvers_MR73",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Revolvers_SWModel29",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Revolvers_ColtAnaconda",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Revolvers_ColtAnacondaShort",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T3-1",
-								loot_def = "Revolvers_Korth",
-								weight = 5000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT2_AutoPistol",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Condition = "<",
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Pistols_VectorCP1",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AutoPistols_APS",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AutoPistols_Beretta93r",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AutoPistols_Glock18",
-								weight = 5000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT3_AutoPistol",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								loot_def = "AutoPistols_APS",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AutoPistols_Beretta93r",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AutoPistols_Glock18",
-								weight = 5000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT1_OneHSMG",
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Condition = "<",
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT1_Pistol",
-								weight = 10000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "OneHSMG_Scorpion",
-								weight = 3000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT2_OneHSMG",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Condition = "<",
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "OneHSMG_Scorpion",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								loot_def = "OneHSMG_MicroUZI",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								loot_def = "OneHSMG_MAC10",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "OneHSMG_MP5K",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "OneHSMG_TMP",
-								weight = 2000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT3_OneHSMG",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "OneHSMG_MP5K",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "OneHSMG_TMP",
-								weight = 2000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT1_SMG",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-1",
-								loot_def = "SMGs_MAT49",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-1",
-								loot_def = "SMGs_MP40",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 10,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_M2CarbineShort",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_M2CarbineShort",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_M3GreaseGun",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_Sterling",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_Thompson",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_ThompsonDrum",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_PPSH",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_PPSHDrum",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_PPS43",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_MPL",
-								weight = 4000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT2_SMG",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_MPL",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "SMGs_M45",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "SMGs_Agram2000",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "SMGs_UZI",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_UZIStock",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_BerettaM12",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_SpectreM4",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_PP19Bizon",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_MP5A2",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_MP5A4",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_UMP45",
-								weight = 5000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT3_SMG",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_MP5A2",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_MP5A4",
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "SMGs_UMP45",
-								weight = 5000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT1_Carbine",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-1",
-								loot_def = "Carbines_Winchester",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-1",
-								loot_def = "Carbines_M1Carbine",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_M2Carbine",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_M1A1Carbine",
-								weight = 2000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT2_Carbine",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "Carbines_Mini14",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "Carbines_ZastavaM92",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_CAR15",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_AKSU",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_M4A1",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_G36c",
-								weight = 4000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT3_Carbine",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_AKSU_PS",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_M4A1",
-								weight = 8000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_G36c",
-								weight = 8000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT1_AssaultRifle",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Condition = "<",
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Carbines_M1Carbine",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_M1Garand",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_STG44",
-								weight = 3000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT2_AssaultRifle",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "AssaultRifles_Type56",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "AssaultRifles_M16A1",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_ZastavaM70",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_Famas",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_M16A2",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AK47",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AKM",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AKMS",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AKM40Mag",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AKMDTK",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AK74",
-								weight = 12000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_G36",
-								weight = 6000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT2_AssaultRifle_Elite",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "AssaultRifles_Type56_PS",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "AssaultRifles_M16A1_M855",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_ZastavaM70_PS",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_Famas_M855",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_M16A2Reflex",
-								weight = 8000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_M16A22xScope",
-								weight = 8000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AK47_PS",
-								weight = 8000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AKMDTK_Reflex",
-								weight = 8000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AKMDTK_Scope",
-								weight = 8000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AK74_PS",
-								weight = 8000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AK74_PS_45mag",
-								weight = 8000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AK74_PS_Scope",
-								weight = 24000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_G36",
-								weight = 12000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_G36Long",
-								weight = 12000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT3_AssaultRifle",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AK74_PS",
-								weight = 16000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_G36",
-								weight = 6000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_G36Long",
-								weight = 6000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT3_AssaultRifle_Elite",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_M16A4_Reflex",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_M16A4",
-								weight = 6000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_M16A4_Scope",
-								weight = 6000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AK74_PP",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AK74_PS",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AK74_PS_45mag",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_AK74_PS_Scope",
-								weight = 12000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_G36",
-								weight = 6000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "AssaultRifles_G36Long",
-								weight = 6000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT1_BattleRifle",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Condition = "<",
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesBolt_MAS36",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								loot_def = "BattleRifles_BAR",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Condition = "<",
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_SVT40",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 20,
-										Condition = "<",
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_M1Garand",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "BattleRifles_FG42",
-								weight = 7000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT2_BattleRifle",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "BattleRifles_AR10",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "BattleRifles_M14",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "BattleRifles_FNFAL",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "BattleRifles_Galil",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "BattleRifles_G3A3",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "BattleRifles_G3A4",
-								weight = 4000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT3_BattleRifle",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "BattleRifles_G3A3",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "BattleRifles_G3A4",
-								weight = 4000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT1_Shotgun",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-1",
-								loot_def = "Shotguns_DoubleBarrel",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Shotguns_M1897",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Shotguns_Auto5",
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT2_Shotgun",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "Shotguns_Ithaca",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Shotguns_R870",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Shotguns_Striker",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Shotguns_Spas12",
-								weight = 2000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT3_Shotgun",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T3-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 31,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Shotguns_M41",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T3-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 32,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Shotguns_Usas12",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T3-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 33,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "Shotguns_AA12",
-								weight = 4000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT1_LMG",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Condition = "<",
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LMGs_MAC2429",
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LMGs_U100",
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT2_LMG",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "LMGs_U100",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "LMGs_U100_Drum",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LMGs_RPK",
-								weight = 30000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LMGs_RPKDrum",
-								weight = 30000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LMGs_RPK74",
-								weight = 40000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LMGs_FNMinimi",
-								weight = 50000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT3_LMG",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LMGs_RPK74",
-								weight = 40000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LMGs_FNMinimi",
-								weight = 50000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT1_GMPG",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Condition = "<",
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "GMPGs_DP27",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "GMPGs_MG42",
-								weight = 2000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT2_GMPG",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "GMPGs_RPD",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "GMPGs_AA52",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "GMPGs_M60",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "GMPGs_M60E3",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "GMPGs_PKM",
-								weight = 4000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT3_GMPG",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "GMPGs_M60E3",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "GMPGs_PKM",
-								weight = 4000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT1_RifleSemi",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Condition = "<",
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_SKS",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_M1Garand",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_SVT40Scope",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_SVT40",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_G43",
-								weight = 2000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT2_RifleSemi",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "RiflesSemi_SKS_PS",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-1",
-								loot_def = "RiflesSemi_MAS49",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_ZastavaM76",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_M21",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_M213xScope",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_M215xScope",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_AR10DMR_5xScope",
-								weight = 6000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_G3Sniper_5xScope",
-								weight = 8000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_ZastavaM76",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_DragunovSVD",
-								weight = 4000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT3_RifleSemi",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_AR10DMR_5xScope",
-								weight = 6000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_DragunovSVD",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_G3Sniper_5xScope",
-								weight = 8000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT1_RifleBolt",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-1",
-								loot_def = "RiflesBolt_MAS36",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesBolt_Mosin",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesBolt_Springfield",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesBolt_Gewehr98",
-								weight = 2000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT1_RifleSniper",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesBolt_MosinScope",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesBolt_Gewehr98Scope",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 12,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesBolt_SpringfieldOptics",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_SVT40Scope",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 13,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_G43Scope",
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT2_RifleSniper",
-							PlaceObj('LootEntryLootDef', {
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Condition = "<",
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "LegionT1_RifleSniper",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesBolt_FRF2",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_ZastavaM76",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesBolt_M700",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_DragunovSVD",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_SVU",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T3-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 31,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_BarretM82",
-								weight = 8000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T3-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 31,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_PSG1",
-								weight = 6000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T3-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesBolt_AWM",
-								weight = 2000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT3_RifleSniper",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_DragunovSVD",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-4",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_SVU",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T3-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 31,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_BarretM82",
-								weight = 8000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T3-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 31,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_PSG1",
-								weight = 6000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T3-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 24,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesBolt_AWM",
-								weight = 2000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT2_RifleSniper10x",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T1-3",
-								loot_def = "RiflesSemi_ZastavaM76",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 22,
-										Condition = "<=",
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesBolt_FRF2",
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-3",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 23,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_DragunovSVD_10xScope",
-								weight = 4000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesBolt_M2410xScope",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_BarretM82_10x",
-								weight = 2000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
-							group = "Default",
-							id = "LegionT3_RifleSniper10x",
-							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 25,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_BarretM82_10x",
-								weight = 2000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T3-1",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 31,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesSemi_PSG1_10x",
-								weight = 6000,
-							}),
-							PlaceObj('LootEntryLootDef', {
-								comment = "T3-2",
-								game_conditions = {
-									PlaceObj('QuestIsVariableNum', {
-										Amount = 32,
-										Prop = "JAZZ_Legion_Tier",
-										QuestId = "JAZZ_LegionTier",
-									}),
-								},
-								loot_def = "RiflesBolt_AWM_10x",
-								weight = 2000,
-							}),
-						}),
-						}),
+					PlaceObj('ModItemLootDef', {
+						group = "Enemy - Legion",
+						id = "LegionGL_5pc",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-1",
+							loot_def = "Legion_GL",
+							weight = 15000,
+						}),
+						PlaceObj('LootEntryNoLoot', {
+							weight = 85000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "enemy legion",
+						group = "Enemy - Legion",
+						id = "Legion_Grenade",
+						PlaceObj('LootEntryInventoryItem', {
+							comment = "T1-1",
+							item = "PipeBomb",
+							stack_max = 1,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							item = "HE_Grenade",
+							stack_max = 1,
+							stack_min = 1,
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							comment = "T2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							item = "FragGrenade",
+							stack_max = 1,
+							stack_min = 1,
+							weight = 3000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "enemy legion",
+						group = "Enemy - Legion",
+						id = "Legion_Grenades_3_5",
+						PlaceObj('LootEntryInventoryItem', {
+							comment = "T1-1",
+							item = "PipeBomb",
+							stack_max = 5,
+							stack_min = 3,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							item = "HE_Grenade",
+							stack_max = 5,
+							stack_min = 3,
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							comment = "T2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							item = "FragGrenade",
+							stack_max = 5,
+							stack_min = 3,
+							weight = 3000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "enemy legion",
+						group = "Enemy - Legion",
+						id = "Legion_Grenade_50pc",
+						PlaceObj('LootEntryNoLoot', {}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_Grenade",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionMercenary_AssaultRifle",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1",
+							loot_def = "AssaultRifles_Famas_M855",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1",
+							loot_def = "AssaultRifles_ZastavaM70_PS",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1",
+							loot_def = "Carbines_ZastavaM92_PS",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1",
+							loot_def = "Carbines_CAR15_AP",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1",
+							loot_def = "Carbines_CAR15_AP_Reflex",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1",
+							loot_def = "Carbines_AKSU_PS",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1",
+							loot_def = "AssaultRifles_M16A1_M855",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "Carbines_AKSU_PP_45mag",
+							weight = 50000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_M16A1_Reflex",
+							weight = 100000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_M16A1_Scope",
+							weight = 100000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_FNFAL_M80",
+							weight = 100000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_FNFAL_M80_Grip",
+							weight = 100000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AK74_PS",
+							weight = 200000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AK74_PP",
+							weight = 200000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_FNFAL_M80_Grip_Reflex",
+							weight = 300000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_FNFAL_M80_Grip_Scope",
+							weight = 300000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AKMDTK_Reflex",
+							weight = 300000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AKMS40Mag_Reflex",
+							weight = 300000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_M16A22xScope",
+							weight = 300000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_M16A23xScope",
+							weight = 300000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_M16A2Reflex",
+							weight = 300000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_M4A1_M856_Reflex",
+							weight = 800000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_G36c_M856_Reflex",
+							weight = 800000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_M4A1_M856_Acog",
+							weight = 800000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_Galil_M80_Bipod_Reflex",
+							weight = 800000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_Galil_M80_Bipod_Scope",
+							weight = 800000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AK74_PP_Reflex",
+							weight = 1400000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AK74_PP_Scope",
+							weight = 1200000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_HK33_Reflex",
+							weight = 800000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_HK33_Scope",
+							weight = 800000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AUG",
+							weight = 1200000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_G36",
+							weight = 1200000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_G3A3_Reflex",
+							weight = 800000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_G36Long",
+							weight = 1200000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_G3A34xScope",
+							weight = 800000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_G3A4_Reflex",
+							weight = 800000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_M16A4_Reflex",
+							weight = 1200000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_M16A4_Scope",
+							weight = 1200000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionAKType",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "AssaultRifles_Type56",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Carbines_ZastavaM92",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "AssaultRifles_ZastavaM70",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AK47",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AKM",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AKMS",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_AKSU",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionShotgun",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_Shotgun",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_Shotgun",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_Shotgun",
+							weight = 5000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT1_PistolList",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_Pistol",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_Revolver",
+							weight = 20000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT1_OneHSMG",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT2_PistolList",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT2_Pistol",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT2_Revolver",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_AutoPistol",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_OneHSMG",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT3_PistolList",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT3_Pistol",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT3_Revolver",
+							weight = 5000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Legion_PistolList",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_PistolList",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_PistolList",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_PistolList",
+							weight = 100000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Enemy - Legion",
+						id = "Legion_PistolList_50pc",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Legion_PistolList",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryNoLoot', {
+							weight = 5000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "Legion_Revolvers",
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_Revolver",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT2_Revolver",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT3_Revolver",
+							weight = 100000,
+						}),
+					}),
+					}),
+				PlaceObj('ModItemFolder', {
+					'name', "WeaponClasses",
+				}, {
+					PlaceObj('ModItemLootDef', {
+						Comment = "enemy legion",
+						group = "Enemy - Legion",
+						id = "LegionKnife",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Knife",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Knife_Balanced",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Knife_Sharpened",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Trench_Shovel",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "enemy legion",
+						group = "Enemy - Legion",
+						id = "LegionKnife50pc",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Knife",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Knife_Balanced",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Knife_Sharpened",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Trench_Shovel",
+						}),
+						PlaceObj('LootEntryNoLoot', {
+							weight = 18000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "enemy legion",
+						group = "Enemy - Legion",
+						id = "LegionMachete",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Machete",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Trench_Shovel",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Machete_Crafted",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT1_Pistol",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-1",
+							loot_def = "Pistols_MAC1950",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-1",
+							loot_def = "Pistols_TT",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_SWModel52",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_CZ52",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_Makarov",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_P210",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_P38",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_Colt1911",
+							weight = 3000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT2_Pistol",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "Pistols_VectorCP1",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "Pistols_SWModel5906",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "Pistols_HiPower",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_MP443",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_CZ75",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_Beretta",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_DesertEagle",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_Kimber",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_USP45",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_GrizzlyLAR",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_Glock17",
+							weight = 5000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT3_Pistol",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T3-1",
+							loot_def = "Pistols_P220",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_Beretta",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_DesertEagle",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_Kimber",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_USP45",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_Glock17",
+							weight = 5000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT1_Revolver",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-1",
+							loot_def = "Revolvers_SWModel10",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							loot_def = "Revolvers_Colt38Special",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Revolvers_Colt38SpecialShort",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Revolvers_ColtPeaceMaker",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Revolvers_ColtPeaceMakerShort",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Revolvers_ColtM1917",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Revolvers_SWModel19",
+							weight = 3000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT2_Revolver",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "Revolvers_Webley",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Revolvers_MR73",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Revolvers_SWModel29",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Revolvers_ColtAnaconda",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Revolvers_ColtAnacondaShort",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT3_Revolver",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Revolvers_MR73",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Revolvers_SWModel29",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Revolvers_ColtAnaconda",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Revolvers_ColtAnacondaShort",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T3-1",
+							loot_def = "Revolvers_Korth",
+							weight = 5000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT2_AutoPistol",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Condition = "<",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Pistols_VectorCP1",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AutoPistols_APS",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AutoPistols_Beretta93r",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AutoPistols_Glock18",
+							weight = 5000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT3_AutoPistol",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							loot_def = "AutoPistols_APS",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AutoPistols_Beretta93r",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AutoPistols_Glock18",
+							weight = 5000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT1_OneHSMG",
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Condition = "<",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT1_Pistol",
+							weight = 10000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "OneHSMG_Scorpion",
+							weight = 3000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT2_OneHSMG",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Condition = "<",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "OneHSMG_Scorpion",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							loot_def = "OneHSMG_MicroUZI",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							loot_def = "OneHSMG_MAC10",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "OneHSMG_MP5K",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "OneHSMG_TMP",
+							weight = 2000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT3_OneHSMG",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "OneHSMG_MP5K",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "OneHSMG_TMP",
+							weight = 2000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT1_SMG",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-1",
+							loot_def = "SMGs_MAT49",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-1",
+							loot_def = "SMGs_MP40",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 10,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_M2CarbineShort",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_M2CarbineShort",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_M3GreaseGun",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_Sterling",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_Thompson",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_ThompsonDrum",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_PPSH",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_PPSHDrum",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_PPS43",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_MPL",
+							weight = 4000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT2_SMG",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_MPL",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "SMGs_M45",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "SMGs_Agram2000",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "SMGs_UZI",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_UZIStock",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_BerettaM12",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_SpectreM4",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_PP19Bizon",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_MP5A2",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_MP5A4",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_UMP45",
+							weight = 5000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT3_SMG",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_MP5A2",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_MP5A4",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_UMP45",
+							weight = 5000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionElite_SMG",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1",
+							loot_def = "SMGs_MPL_AP",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1",
+							loot_def = "SMGs_Agram2000_AP",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1",
+							loot_def = "SMGs_BerettaM12_AP",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1",
+							loot_def = "SMGs_M45_AP",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_UZI_AP",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_UZIStock_AP_Reflex_Drum",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_UZI_AP_Reflex",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_PP19Bizon_Reflex",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_SpectreM4_AP",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "OneHSMG_MP5K_AP",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_MP5A4_AP",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_MP5A2_AP",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_UMP45_P",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "OneHSMG_MP5K_AP_Laser",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_UMP45_P_Reflex",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_MP5A4_AP_Reflex",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "SMGs_MP5A2_AP_Reflex",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT1_Carbine",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-1",
+							loot_def = "Carbines_Winchester",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-1",
+							loot_def = "Carbines_M1Carbine",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_M2Carbine",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_M1A1Carbine",
+							weight = 2000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT2_Carbine",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "Carbines_Mini14",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "Carbines_ZastavaM92",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_CAR15",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_AKSU",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_M4A1",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_G36c",
+							weight = 4000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT3_Carbine",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_AKSU_PS",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_M4A1",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_G36c",
+							weight = 8000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionElite_Carbine",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_Mini14_AP",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_Mini14_AP_2xScope",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "Carbines_ZastavaM92_PS",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_CAR15_AP",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_CAR15_AP_Reflex",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_AKSU_PS",
+							weight = 40000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_M4A1_M856",
+							weight = 20000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_G36c_M856",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_AKSU_PP_45mag",
+							weight = 45000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_M4A1_M856_Reflex",
+							weight = 15000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_G36c_M856_Reflex",
+							weight = 15000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_ASVAL",
+							weight = 4000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT1_AssaultRifle",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Condition = "<",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Carbines_M1Carbine",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_M1Garand",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_STG44",
+							weight = 3000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT2_AssaultRifle",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "AssaultRifles_Type56",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "AssaultRifles_M16A1",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_ZastavaM70",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_Famas",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_M16A2",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AK47",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AKM",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AKMS",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AKM40Mag",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AKMDTK",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AK74",
+							weight = 12000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_G36",
+							weight = 6000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT2_AssaultRifle_Elite",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "AssaultRifles_Type56_PS",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "AssaultRifles_M16A1_M855",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_ZastavaM70_PS",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_Famas_M855",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_M16A2Reflex",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_M16A22xScope",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AK47_PS",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AKMDTK_Reflex",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AKMDTK_Scope",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AK74_PS",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AK74_PS_45mag",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AK74_PS_Scope",
+							weight = 24000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_G36",
+							weight = 12000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_G36Long",
+							weight = 12000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT3_AssaultRifle",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AK74_PS",
+							weight = 16000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_G36",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_G36Long",
+							weight = 6000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT3_AssaultRifle_Elite",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_M16A4_Reflex",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_M16A4",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_M16A4_Scope",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AK74_PP",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AK74_PS",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AK74_PS_45mag",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_AK74_PS_Scope",
+							weight = 12000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_G36",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_G36Long",
+							weight = 6000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT1_BattleRifle",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Condition = "<",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesBolt_MAS36",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							loot_def = "BattleRifles_BAR",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Condition = "<",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_SVT40",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Condition = "<",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_M1Garand",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_FG42",
+							weight = 7000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT2_BattleRifle",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "BattleRifles_AR10",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_M14",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_FNFAL",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_Galil",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_G3A3",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_G3A4",
+							weight = 4000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT2_BattleRifle_Elite",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "BattleRifles_AR10",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_AR10_3xScope",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_M14_M80",
+							weight = 12000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_M14_M80_Scope",
+							weight = 14000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_M14_M80_Reflex",
+							weight = 14000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_FNFAL3xScope",
+							weight = 24000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_FNFALDTK",
+							weight = 24000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_GalilDTK",
+							weight = 42000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_GalilLight",
+							weight = 42000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_G3A33xScope",
+							weight = 64000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_G3A4",
+							weight = 64000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT3_BattleRifle",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_G3A3",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_G3A4",
+							weight = 4000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT3_BattleRifle_Elite",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_G3A3_Reflex",
+							weight = 24000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_G3A33xScope",
+							weight = 42000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_G3A4_Reflex",
+							weight = 42000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_G3A33xScope",
+							weight = 64000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_G3A43xScope",
+							weight = 64000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT1_Shotgun",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-1",
+							loot_def = "Shotguns_DoubleBarrel",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Shotguns_M1897",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Shotguns_Auto5",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT2_Shotgun",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "Shotguns_Ithaca",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Shotguns_R870",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Shotguns_Striker",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Shotguns_Spas12",
+							weight = 2000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT3_Shotgun",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T3-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Shotguns_M41",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T3-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Shotguns_Usas12",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T3-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 33,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Shotguns_AA12",
+							weight = 4000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT1_LMG",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Condition = "<",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LMGs_MAC2429",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LMGs_U100",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT2_LMG",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "LMGs_U100",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "LMGs_U100_Drum",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LMGs_RPK",
+							weight = 30000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LMGs_RPKDrum",
+							weight = 30000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LMGs_RPK74",
+							weight = 40000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LMGs_FNMinimi",
+							weight = 50000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT3_LMG",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LMGs_RPK74",
+							weight = 40000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LMGs_FNMinimi",
+							weight = 50000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT1_GMPG",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Condition = "<",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "GMPGs_DP27",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "GMPGs_MG42",
+							weight = 2000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT2_GMPG",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "GMPGs_RPD",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "GMPGs_AA52",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "GMPGs_M60",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "GMPGs_M60E3",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "GMPGs_PKM",
+							weight = 4000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT3_GMPG",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "GMPGs_M60E3",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "GMPGs_PKM",
+							weight = 4000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT1_RifleSemi",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Condition = "<",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_SKS",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_M1Garand",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_SVT40Scope",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_SVT40",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_G43",
+							weight = 2000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT2_RifleSemi",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "RiflesSemi_SKS_PS",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							loot_def = "RiflesSemi_MAS49",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_ZastavaM76",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_M21",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_M213xScope",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_M215xScope",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_AR10DMR_5xScope",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_G3Sniper_5xScope",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_ZastavaM76",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_DragunovSVD",
+							weight = 4000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT3_RifleSemi",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_AR10DMR_5xScope",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_DragunovSVD",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_G3Sniper_5xScope",
+							weight = 8000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT1_RifleBolt",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-1",
+							loot_def = "RiflesBolt_MAS36",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesBolt_Mosin",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesBolt_Springfield",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesBolt_Gewehr98",
+							weight = 2000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT1_RifleSniper",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 1,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesBolt_MosinScope",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesBolt_Gewehr98Scope",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesBolt_SpringfieldOptics",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_SVT40Scope",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_G43Scope",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT2_RifleSniper",
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Condition = "<",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT1_RifleSniper",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesBolt_FRF2",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_ZastavaM76",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesBolt_M700",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_DragunovSVD",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_SVU",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T3-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_BarretM82",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T3-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_PSG1",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T3-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesBolt_AWM",
+							weight = 2000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT3_RifleSniper",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_DragunovSVD",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_SVU",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T3-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_BarretM82",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T3-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_PSG1",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T3-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesBolt_AWM",
+							weight = 2000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT2_RifleSniper_silencer",
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Condition = "<",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT1_RifleSniper",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_M215xScope_silencer",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesBolt_M245xScope_silencer",
+							weight = 2000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT3_RifleSniper_silencer",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesBolt_M245xScope_silencer",
+							weight = 2000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT2_RifleSniper10x",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-3",
+							loot_def = "RiflesSemi_ZastavaM76",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesBolt_FRF2",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_DragunovSVD_10xScope",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesBolt_M2410xScope",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_BarretM82_10x",
+							weight = 2000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionT3_RifleSniper10x",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-5",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_BarretM82_10x",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T3-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesSemi_PSG1_10x",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T3-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "RiflesBolt_AWM_10x",
+							weight = 2000,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						group = "Default",
+						id = "LegionGL",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-1",
+							loot_def = "M79",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 2,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "ChinaLake",
+						}),
+					}),
 					}),
 				}),
 			PlaceObj('ModItemFolder', {
@@ -35693,26 +37835,6 @@ return {
 					PlaceObj('ModItemLootDef', {
 						Comment = "enemy legion",
 						group = "Enemy - Legion",
-						id = "LegionMelee",
-						PlaceObj('LootEntryInventoryItem', {
-							item = "Knife",
-							weight = 10000,
-						}),
-						PlaceObj('LootEntryInventoryItem', {
-							item = "Machete",
-							weight = 5000,
-						}),
-						PlaceObj('LootEntryInventoryItem', {
-							item = "M16Bayonet",
-							weight = 2000,
-						}),
-						PlaceObj('LootEntryInventoryItem', {
-							item = "Trench_Shovel",
-						}),
-					}),
-					PlaceObj('ModItemLootDef', {
-						Comment = "enemy legion",
-						group = "Enemy - Legion",
 						id = "Legion_GoonNoob_Weapon",
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionNoob_Pistol",
@@ -36001,29 +38123,6 @@ return {
 						PlaceObj('LootEntryInventoryItem', {
 							generate_chance = 20,
 							item = "FragGrenade",
-							weight = 2000,
-						}),
-					}),
-					PlaceObj('ModItemLootDef', {
-						Comment = "enemy legion",
-						group = "Enemy - Legion",
-						id = "Legion_T1Gren",
-						PlaceObj('LootEntryInventoryItem', {
-							item = "PipeBomb",
-							stack_max = 2,
-							stack_min = 1,
-							weight = 10000,
-						}),
-						PlaceObj('LootEntryInventoryItem', {
-							item = "HE_Grenade",
-							stack_max = 2,
-							stack_min = 1,
-							weight = 8000,
-						}),
-						PlaceObj('LootEntryInventoryItem', {
-							item = "FragGrenade",
-							stack_max = 2,
-							stack_min = 1,
 							weight = 2000,
 						}),
 					}),
@@ -36657,7 +38756,7 @@ return {
 						id = "LegionGrenadier",
 						loot = "all",
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "Legion_T1Gren",
+							loot_def = "Legion_Grenades_3_5",
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Legion_GrenadierNoob_Weapon",
@@ -45539,10 +47638,1087 @@ return {
 		'name', "Units Legion",
 		'comment', "-- Регулярные Легионовцы",
 	}, {
-		PlaceObj('ModItemCode', {
-			'name', "AIKeywords",
-			'CodeFileName', "Code/AIKeywords.lua",
-		}),
+		PlaceObj('ModItemFolder', {
+			'name', "LegionArchetypes",
+		}, {
+			PlaceObj('ModItemCode', {
+				'name', "AIKeywords",
+				'CodeFileName', "Code/AIKeywords.lua",
+			}),
+			PlaceObj('ModItemAIArchetype', {
+				BaseAttackTargeting = set( "Arms", "Legs", "Torso" ),
+				BaseMovementWeight = 10,
+				Behaviors = {
+					PlaceObj('StandardAI', {
+						'Weight', 10,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', nil),
+							PlaceObj('AIPolicyTakeCover', {
+								'visibility_mode', "team",
+							}),
+						},
+						'TakeCoverChance', 50,
+					}),
+					PlaceObj('PositioningAI', {
+						'BiasId', "MeleeAttack",
+						'Weight', 500,
+						'Label', "Melee AI",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Control",
+						},
+						'OptLocWeight', 20,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyWeaponRange', {
+								'RequiredKeywords', {
+									"Melee",
+								},
+								'Weight', 200,
+								'RangeMin', 0,
+								'RangeMax', 15,
+							}),
+							PlaceObj('AIPolicyTakeCover', {
+								'visibility_mode', "team",
+							}),
+						},
+						'TakeCoverChance', 0,
+						'VoiceResponse', "TacticalPressing",
+					}),
+					PlaceObj('PositioningAI', {
+						'BiasId', "MeleeAttack",
+						'Weight', 500,
+						'Label', "Pillager AI",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Soldier",
+						},
+						'OptLocWeight', 20,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyWeaponRange', {
+								'RequiredKeywords', {
+									"Melee",
+								},
+								'Weight', 200,
+								'RangeMin', 50,
+								'RangeMax', 70,
+							}),
+							PlaceObj('AIPolicyTakeCover', {
+								'visibility_mode', "team",
+							}),
+						},
+						'TakeCoverChance', 0,
+						'VoiceResponse', "TacticalPressing",
+					}),
+					PlaceObj('PositioningAI', {
+						'BiasId', "Flanking",
+						'Weight', 500,
+						'Label', "Flanker AI",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Flank",
+						},
+						'OptLocWeight', 20,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyTakeCover', {
+								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyFlanking', {
+								'Weight', 1000,
+							}),
+						},
+						'TakeCoverChance', 0,
+						'VoiceResponse', "AIFlanking",
+					}),
+				},
+				Comment = "Keywords: Flank, Explosives",
+				OptLocPolicies = {
+					PlaceObj('AIPolicyWeaponRange', {
+						'RequiredKeywords', {
+							"CQB",
+						},
+						'RangeMin', 5,
+						'RangeMax', 20,
+					}),
+					PlaceObj('AIPolicyWeaponRange', {
+						'RequiredKeywords', {
+							"Soldier",
+						},
+						'Weight', 300,
+						'RangeMin', 60,
+						'RangeMax', 70,
+					}),
+					PlaceObj('AIPolicyWeaponRange', {
+						'RequiredKeywords', {
+							"Explosives",
+						},
+						'Weight', 50,
+						'RangeBase', "Absolute",
+						'RangeMin', 12,
+						'RangeMax', 21,
+					}),
+					PlaceObj('AIPolicyWeaponRange', {
+						'RequiredKeywords', {
+							"Melee",
+						},
+						'Weight', 300,
+						'RangeBase', "Melee",
+						'RangeMin', 12,
+						'RangeMax', 21,
+					}),
+					PlaceObj('AIPolicyLosToEnemy', nil),
+					PlaceObj('AIPolicyIndoorsOutdoors', {
+						'Weight', 10,
+					}),
+					PlaceObj('AIPolicyProximity', {
+						'Weight', 10,
+						'AllyPlannedPosition', true,
+						'TargetUnits', "allies",
+						'TargetDist', "average",
+						'MinScore', 50,
+					}),
+					PlaceObj('AIPolicyAvoidDeathZones', {
+						'TargetDist', 20,
+						'Penalty', 5,
+					}),
+					PlaceObj('AIPolicyHealingRange', {
+						'MaxHp', 90,
+						'BleedingWeight', 100,
+						'HpWeight', 10,
+						'SelfHealMod', 1000,
+						'CanUseMod', 1000,
+					}),
+				},
+				OptLocSearchRadius = 80,
+				PrefStance = "Crouch",
+				SignatureActions = {
+					PlaceObj('AIActionMobileShot', {
+						'BiasId', "RunAndGun",
+						'Weight', 200,
+						'Priority', true,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "RunAndGun",
+								'Effect', "disable",
+								'Period', 3,
+							}),
+							PlaceObj('AIBiasModification', {
+								'BiasId', "RunAndGun",
+								'Value', -50,
+								'Period', 0,
+								'ApplyTo', "Team",
+							}),
+						},
+						'NotificationText', "",
+						'RequiredKeywords', {
+							"Control",
+						},
+						'action_id', "RunAndGun",
+					}),
+					PlaceObj('AIActionMobileShot', {
+						'BiasId', "MobileShot",
+						'Weight', 200,
+						'Priority', true,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "MobileShot",
+								'Effect', "disable",
+								'Period', 3,
+							}),
+							PlaceObj('AIBiasModification', {
+								'BiasId', "MobileShot",
+								'Value', -50,
+								'Period', 0,
+								'ApplyTo', "Team",
+							}),
+						},
+						'NotificationText', "",
+						'RequiredKeywords', {
+							"Control",
+						},
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'BiasId', "AssaultGrenadeThrow",
+						'Weight', 300,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "AssaultGrenadeThrow",
+								'Effect', "disable",
+							}),
+							PlaceObj('AIBiasModification', {
+								'BiasId', "AssaultGrenadeThrow",
+								'Value', -50,
+								'Period', 0,
+								'ApplyTo', "Team",
+							}),
+						},
+						'team_score', -100,
+						'min_score', 100,
+						'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'BiasId', "FragGrenade",
+						'Weight', 500,
+						'RequiredKeywords', {
+							"Explosives",
+						},
+						'team_score', -100,
+						'min_score', 100,
+						'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'Weight', 500,
+						'RequiredKeywords', {
+							"Explosives",
+						},
+						'team_score', -100,
+						'min_score', 100,
+						'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
+						'TargetLastAttackPos', true,
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'BiasId', "StunGrenade",
+						'Weight', 300,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "StunGrenade",
+								'Effect', "disable",
+							}),
+						},
+						'min_score', 100,
+						'MinDist', 3000,
+						'AllowedAoeTypes', set( "fire", "none", "smoke", "teargas", "toxicgas" ),
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'BiasId', "SmokeGrenade",
+						'Weight', 300,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "SmokeGrenade",
+								'Effect', "disable",
+							}),
+						},
+						'enemy_score', -100,
+						'team_score', 100,
+						'self_score_mod', 1000,
+						'MinDist', 3000,
+						'AllowedAoeTypes', set( "smoke" ),
+					}),
+					PlaceObj('AIConeAttack', {
+						'BiasId', "OverwatchAssault",
+						'Weight', 50,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "OverwatchAssault",
+								'Value', -50,
+								'ApplyTo', "Team",
+							}),
+							PlaceObj('AIBiasModification', {
+								'BiasId', "OverwatchAssault",
+								'Effect', "disable",
+								'Value', -50,
+								'Period', 2,
+							}),
+						},
+						'RequiredKeywords', {
+							"Soldier",
+						},
+						'team_score', 0,
+						'min_score', 300,
+						'action_id', "Overwatch",
+					}),
+					PlaceObj('AIConeAttack', {
+						'BiasId', "OverwatchAssault",
+						'Weight', 50,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "OverwatchAssault",
+								'Value', -50,
+								'ApplyTo', "Team",
+							}),
+							PlaceObj('AIBiasModification', {
+								'BiasId', "OverwatchAssault",
+								'Effect', "disable",
+								'Value', -50,
+								'Period', 2,
+							}),
+						},
+						'RequiredKeywords', {
+							"Control",
+						},
+						'team_score', 0,
+						'min_score', 300,
+						'action_id', "Overwatch",
+					}),
+					PlaceObj('AIActionBasicAttack', nil),
+					PlaceObj('AIActionThrowFlare', {
+						'BiasId', "ThrowFlare",
+						'Weight', 350,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "ThrowFlare",
+								'Effect', "disable",
+							}),
+						},
+						'team_score', -10,
+						'self_score_mod', 0,
+						'min_score', 0,
+						'MinDist', 1000,
+					}),
+					PlaceObj('AIActionThrowFlare', {
+						'BiasId', "ThrowFlare",
+						'Weight', 350,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "ThrowFlare",
+								'Effect', "disable",
+							}),
+						},
+						'team_score', -10,
+						'self_score_mod', 0,
+						'min_score', 0,
+						'MinDist', 1000,
+					}),
+					PlaceObj('AIActionShootLandmine', {
+						'min_score', 100,
+					}),
+					PlaceObj('AIActionBandage', {
+						'SelfHealMod', 500,
+						'CanUseMod', 1000,
+					}),
+					PlaceObj('AIActionCharge', {
+						'RequiredKeywords', {
+							"Melee",
+						},
+					}),
+					PlaceObj('AIActionCancelShot', {
+						'Weight', 200,
+						'RequiredKeywords', {
+							"Control",
+						},
+						'Aiming', "Maximum",
+					}),
+				},
+				TargetChangePolicy = "restart",
+				TargetScoreRandomization = 10,
+				TargetingPolicies = {
+					PlaceObj('AITargetingEnemyHealth', {
+						'Health', 50,
+					}),
+					PlaceObj('AITargetingEnemyWeapon', {
+						'EnemyWeapon', "Sniper",
+					}),
+				},
+				group = "Legion",
+				id = "Legion_Assaulter",
+			}),
+			PlaceObj('ModItemAIArchetype', {
+				BaseAttackTargeting = set( "Arms", "Legs", "Torso" ),
+				BaseMovementWeight = 10,
+				Behaviors = {
+					PlaceObj('StandardAI', {
+						'Weight', 10,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', nil),
+							PlaceObj('AIPolicyTakeCover', {
+								'visibility_mode', "team",
+							}),
+						},
+						'TakeCoverChance', 50,
+					}),
+					PlaceObj('PositioningAI', {
+						'Weight', 500,
+						'Label', "Sniper AI",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Sniper",
+						},
+						'OptLocWeight', 20,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyWeaponRange', {
+								'RequiredKeywords', {
+									"Sniper",
+								},
+								'Weight', 200,
+								'RangeMin', 50,
+								'RangeMax', 100,
+							}),
+							PlaceObj('AIPolicyTakeCover', {
+								'visibility_mode', "team",
+							}),
+						},
+						'TakeCoverChance', 0,
+						'VoiceResponse', "TacticalPressing",
+					}),
+					PlaceObj('PositioningAI', {
+						'Weight', 500,
+						'Label', "Marksman AI",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Marksman",
+						},
+						'OptLocWeight', 20,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyWeaponRange', {
+								'RequiredKeywords', {
+									"Marksman",
+								},
+								'Weight', 200,
+								'RangeMin', 50,
+								'RangeMax', 75,
+							}),
+							PlaceObj('AIPolicyTakeCover', {
+								'visibility_mode', "team",
+							}),
+						},
+						'TakeCoverChance', 0,
+						'VoiceResponse', "TacticalPressing",
+					}),
+					PlaceObj('PositioningAI', {
+						'BiasId', "Flanking",
+						'Weight', 1000,
+						'Label', "Flanker AI",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Flank",
+						},
+						'OptLocWeight', 20,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyTakeCover', {
+								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyFlanking', {
+								'Weight', 1000,
+							}),
+						},
+						'TakeCoverChance', 0,
+						'VoiceResponse', "AIFlanking",
+					}),
+				},
+				Comment = "Keywords: Flank, Explosives",
+				OptLocPolicies = {
+					PlaceObj('AIPolicyHealingRange', {
+						'RequiredKeywords', {
+							"Heal",
+						},
+						'MaxHp', 90,
+						'BleedingWeight', 3000,
+						'SelfHealMod', 100,
+						'CanUseMod', 300,
+					}),
+					PlaceObj('AIPolicyFlanking', {
+						'RequiredKeywords', {
+							"Marksman",
+						},
+						'Weight', 5,
+						'AllyPlannedPosition', true,
+					}),
+					PlaceObj('AIPolicyFlanking', {
+						'RequiredKeywords', {
+							"Flank",
+						},
+						'AllyPlannedPosition', true,
+					}),
+					PlaceObj('AIPolicyWeaponRange', {
+						'RequiredKeywords', {
+							"Sniper",
+						},
+						'RangeMin', 50,
+						'RangeMax', 100,
+					}),
+					PlaceObj('AIPolicyWeaponRange', {
+						'RequiredKeywords', {
+							"Marksman",
+						},
+						'RangeMin', 50,
+						'RangeMax', 75,
+					}),
+					PlaceObj('AIPolicyWeaponRange', {
+						'RequiredKeywords', {
+							"Soldier",
+						},
+						'Weight', 300,
+						'RangeMin', 40,
+						'RangeMax', 60,
+					}),
+					PlaceObj('AIPolicyWeaponRange', {
+						'RequiredKeywords', {
+							"Melee",
+						},
+						'Weight', 300,
+						'RangeBase', "Melee",
+						'RangeMin', 12,
+						'RangeMax', 21,
+					}),
+					PlaceObj('AIPolicyLosToEnemy', nil),
+					PlaceObj('AIPolicyIndoorsOutdoors', {
+						'Weight', 5,
+					}),
+					PlaceObj('AIPolicyProximity', {
+						'Weight', 5,
+						'AllyPlannedPosition', true,
+						'TargetUnits', "allies",
+						'TargetDist', "average",
+						'MinScore', 50,
+					}),
+					PlaceObj('AIPolicyAvoidDeathZones', {
+						'Weight', 200,
+						'TargetDist', 40,
+						'Penalty', 5,
+					}),
+					PlaceObj('AIPolicyHighGround', {
+						'RequiredKeywords', {
+							"Sniper",
+						},
+					}),
+					PlaceObj('AIPolicyHighGround', {
+						'RequiredKeywords', {
+							"Marksman",
+						},
+						'Weight', 50,
+					}),
+					PlaceObj('AIPolicyHighGround', {
+						'Weight', 20,
+					}),
+				},
+				OptLocSearchRadius = 80,
+				PrefStance = "Crouch",
+				SignatureActions = {
+					PlaceObj('AIActionMobileShot', {
+						'BiasId', "RunAndGun",
+						'Weight', 200,
+						'Priority', true,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "RunAndGun",
+								'Effect', "disable",
+								'Period', 3,
+							}),
+							PlaceObj('AIBiasModification', {
+								'BiasId', "RunAndGun",
+								'Value', -50,
+								'Period', 0,
+								'ApplyTo', "Team",
+							}),
+						},
+						'NotificationText', "",
+						'RequiredKeywords', {
+							"Control",
+						},
+						'action_id', "RunAndGun",
+					}),
+					PlaceObj('AIActionMobileShot', {
+						'BiasId', "MobileShot",
+						'Weight', 200,
+						'Priority', true,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "MobileShot",
+								'Effect', "disable",
+								'Period', 3,
+							}),
+							PlaceObj('AIBiasModification', {
+								'BiasId', "MobileShot",
+								'Value', -50,
+								'Period', 0,
+								'ApplyTo', "Team",
+							}),
+						},
+						'NotificationText', "",
+						'RequiredKeywords', {
+							"Control",
+						},
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'BiasId', "AssaultGrenadeThrow",
+						'Weight', 300,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "AssaultGrenadeThrow",
+								'Effect', "disable",
+							}),
+							PlaceObj('AIBiasModification', {
+								'BiasId', "AssaultGrenadeThrow",
+								'Value', -50,
+								'Period', 0,
+								'ApplyTo', "Team",
+							}),
+						},
+						'team_score', -100,
+						'min_score', 100,
+						'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'BiasId', "FragGrenade",
+						'Weight', 500,
+						'RequiredKeywords', {
+							"Explosives",
+						},
+						'team_score', -100,
+						'min_score', 100,
+						'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'Weight', 500,
+						'RequiredKeywords', {
+							"Explosives",
+						},
+						'team_score', -100,
+						'min_score', 100,
+						'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
+						'TargetLastAttackPos', true,
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'BiasId', "StunGrenade",
+						'Weight', 300,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "StunGrenade",
+								'Effect', "disable",
+							}),
+						},
+						'min_score', 100,
+						'MinDist', 3000,
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'BiasId', "SmokeGrenade",
+						'Weight', 300,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "SmokeGrenade",
+								'Effect', "disable",
+							}),
+						},
+						'enemy_score', -100,
+						'team_score', 100,
+						'self_score_mod', 1000,
+						'MinDist', 3000,
+						'AllowedAoeTypes', set( "smoke" ),
+					}),
+					PlaceObj('AIConeAttack', {
+						'BiasId', "OverwatchAssault",
+						'Weight', 20,
+						'team_score', 0,
+						'min_score', 300,
+						'action_id', "Overwatch",
+					}),
+					PlaceObj('AIConeAttack', {
+						'BiasId', "Overwatch",
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "Overwatch",
+								'Effect', "disable",
+							}),
+						},
+						'RequiredKeywords', {
+							"Control",
+						},
+						'team_score', 0,
+						'min_score', 300,
+						'action_id', "Overwatch",
+					}),
+					PlaceObj('AIConeAttack', {
+						'BiasId', "Overwatch",
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "Overwatch",
+								'Effect', "disable",
+								'Period', 3,
+							}),
+						},
+						'RequiredKeywords', {
+							"Soldier",
+						},
+						'team_score', 0,
+						'min_score', 300,
+						'action_id', "Overwatch",
+					}),
+					PlaceObj('AIActionBasicAttack', nil),
+					PlaceObj('AIActionThrowFlare', {
+						'BiasId', "ThrowFlare",
+						'Weight', 350,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "ThrowFlare",
+								'Effect', "disable",
+							}),
+						},
+						'team_score', -10,
+						'self_score_mod', 0,
+						'min_score', 0,
+						'MinDist', 1000,
+					}),
+					PlaceObj('AIActionThrowFlare', {
+						'BiasId', "ThrowFlare",
+						'Weight', 350,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "ThrowFlare",
+								'Effect', "disable",
+							}),
+						},
+						'team_score', -10,
+						'self_score_mod', 0,
+						'min_score', 0,
+						'MinDist', 1000,
+					}),
+					PlaceObj('AIActionShootLandmine', {
+						'min_score', 100,
+					}),
+					PlaceObj('AIActionHeavyWeaponAttack', {
+						'RequiredKeywords', {
+							"Ordnance",
+						},
+						'team_score', -50,
+						'min_score', 50,
+					}),
+					PlaceObj('AIActionHeavyWeaponAttack', {
+						'BiasId', "RocketFire",
+						'Weight', 200,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "RocketFire",
+								'Effect', "disable",
+							}),
+						},
+						'RequiredKeywords', {
+							"Ordnance",
+						},
+						'self_score_mod', -1000,
+						'MinDist', 5000,
+						'action_id', "RocketLauncherFire",
+						'LimitRange', true,
+						'MaxTargetRange', 30,
+					}),
+					PlaceObj('AIActionBandage', {
+						'SelfHealMod', 500,
+						'CanUseMod', 1000,
+					}),
+					PlaceObj('AIActionCancelShot', {
+						'Weight', 200,
+						'RequiredKeywords', {
+							"Control",
+						},
+						'Aiming', "Maximum",
+					}),
+				},
+				TargetChangePolicy = "restart",
+				TargetScoreRandomization = 10,
+				TargetingPolicies = {
+					PlaceObj('AITargetingEnemyHealth', {
+						'Health', 50,
+					}),
+					PlaceObj('AITargetingEnemyWeapon', {
+						'EnemyWeapon', "Sniper",
+					}),
+				},
+				group = "Legion",
+				id = "Legion_Frontliner",
+			}),
+			PlaceObj('ModItemAIArchetype', {
+				BaseAttackTargeting = set( "Arms", "Legs", "Torso" ),
+				BaseMovementWeight = 10,
+				Behaviors = {
+					PlaceObj('StandardAI', {
+						'Weight', 10,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', nil),
+							PlaceObj('AIPolicyTakeCover', {
+								'visibility_mode', "team",
+							}),
+						},
+						'TakeCoverChance', 50,
+					}),
+					PlaceObj('PositioningAI', {
+						'Weight', 500,
+						'Label', "Sniper AI",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Sniper",
+						},
+						'OptLocWeight', 20,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyWeaponRange', {
+								'RequiredKeywords', {
+									"Sniper",
+								},
+								'Weight', 200,
+								'RangeMin', 50,
+								'RangeMax', 100,
+							}),
+							PlaceObj('AIPolicyTakeCover', {
+								'visibility_mode', "team",
+							}),
+						},
+						'TakeCoverChance', 0,
+						'VoiceResponse', "TacticalPressing",
+					}),
+					PlaceObj('PositioningAI', {
+						'Weight', 500,
+						'Label', "Marksman AI",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Marksman",
+						},
+						'OptLocWeight', 20,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyWeaponRange', {
+								'RequiredKeywords', {
+									"Marksman",
+								},
+								'Weight', 200,
+								'RangeMin', 50,
+								'RangeMax', 75,
+							}),
+							PlaceObj('AIPolicyTakeCover', {
+								'visibility_mode', "team",
+							}),
+						},
+						'TakeCoverChance', 0,
+						'VoiceResponse', "TacticalPressing",
+					}),
+					PlaceObj('PositioningAI', {
+						'BiasId', "Flanking",
+						'Weight', 1000,
+						'Label', "Flanker AI",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Flank",
+						},
+						'OptLocWeight', 20,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyTakeCover', {
+								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyFlanking', {
+								'Weight', 1000,
+							}),
+						},
+						'SignatureActions', {
+							PlaceObj('AIActionMGSetup', {
+								'Weight', 1000,
+							}),
+						},
+						'TakeCoverChance', 0,
+						'VoiceResponse', "AIFlanking",
+					}),
+				},
+				Comment = "Keywords: Flank, Explosives",
+				OptLocPolicies = {
+					PlaceObj('AIPolicyHealingRange', {
+						'RequiredKeywords', {
+							"Heal",
+						},
+						'MaxHp', 90,
+						'BleedingWeight', 3000,
+						'SelfHealMod', 100,
+						'CanUseMod', 300,
+					}),
+					PlaceObj('AIPolicyFlanking', {
+						'RequiredKeywords', {
+							"Marksman",
+						},
+						'Weight', 5,
+						'AllyPlannedPosition', true,
+					}),
+					PlaceObj('AIPolicyFlanking', {
+						'RequiredKeywords', {
+							"Flank",
+						},
+						'AllyPlannedPosition', true,
+					}),
+					PlaceObj('AIPolicyWeaponRange', {
+						'RequiredKeywords', {
+							"CQB",
+						},
+						'RangeMin', 15,
+						'RangeMax', 40,
+					}),
+					PlaceObj('AIPolicyWeaponRange', {
+						'RequiredKeywords', {
+							"Soldier",
+						},
+						'RangeMin', 45,
+						'RangeMax', 80,
+					}),
+					PlaceObj('AIPolicyLosToEnemy', nil),
+					PlaceObj('AIPolicyIndoorsOutdoors', {
+						'Weight', 5,
+					}),
+					PlaceObj('AIPolicyProximity', {
+						'Weight', 5,
+						'AllyPlannedPosition', true,
+						'TargetUnits', "allies",
+						'TargetDist', "average",
+						'MinScore', 50,
+					}),
+					PlaceObj('AIPolicyAvoidDeathZones', {
+						'Weight', 200,
+						'TargetDist', 40,
+						'Penalty', 5,
+					}),
+					PlaceObj('AIPolicyHighGround', {
+						'RequiredKeywords', {
+							"Marksman",
+						},
+					}),
+					PlaceObj('AIPolicyHighGround', {
+						'Weight', 20,
+					}),
+				},
+				OptLocSearchRadius = 80,
+				PrefStance = "Crouch",
+				SignatureActions = {
+					PlaceObj('AIActionThrowGrenade', {
+						'BiasId', "AssaultGrenadeThrow",
+						'Weight', 300,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "AssaultGrenadeThrow",
+								'Effect', "disable",
+							}),
+							PlaceObj('AIBiasModification', {
+								'BiasId', "AssaultGrenadeThrow",
+								'Value', -50,
+								'Period', 0,
+								'ApplyTo', "Team",
+							}),
+						},
+						'team_score', -100,
+						'min_score', 100,
+						'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'BiasId', "FragGrenade",
+						'Weight', 500,
+						'RequiredKeywords', {
+							"Explosives",
+						},
+						'team_score', -100,
+						'min_score', 100,
+						'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'Weight', 500,
+						'RequiredKeywords', {
+							"Explosives",
+						},
+						'team_score', -100,
+						'min_score', 100,
+						'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
+						'TargetLastAttackPos', true,
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'BiasId', "StunGrenade",
+						'Weight', 300,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "StunGrenade",
+								'Effect', "disable",
+							}),
+						},
+						'min_score', 100,
+						'MinDist', 3000,
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'BiasId', "SmokeGrenade",
+						'Weight', 300,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "SmokeGrenade",
+								'Effect', "disable",
+							}),
+						},
+						'enemy_score', -100,
+						'team_score', 100,
+						'self_score_mod', 1000,
+						'MinDist', 3000,
+						'AllowedAoeTypes', set( "smoke" ),
+					}),
+					PlaceObj('AIActionThrowFlare', {
+						'BiasId', "ThrowFlare",
+						'Weight', 350,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "ThrowFlare",
+								'Effect', "disable",
+							}),
+						},
+						'team_score', -10,
+						'self_score_mod', 0,
+						'min_score', 0,
+						'MinDist', 1000,
+					}),
+					PlaceObj('AIActionThrowFlare', {
+						'BiasId', "ThrowFlare",
+						'Weight', 350,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "ThrowFlare",
+								'Effect', "disable",
+							}),
+						},
+						'team_score', -10,
+						'self_score_mod', 0,
+						'min_score', 0,
+						'MinDist', 1000,
+					}),
+					PlaceObj('AIActionShootLandmine', {
+						'min_score', 100,
+					}),
+					PlaceObj('AIActionBandage', {
+						'SelfHealMod', 500,
+						'CanUseMod', 1000,
+					}),
+					PlaceObj('AIActionMGSetup', {
+						'Weight', 300,
+						'RequiredKeywords', {
+							"Control",
+						},
+					}),
+					PlaceObj('AIActionMGSetup', nil),
+					PlaceObj('AIActionMGBurstFire', nil),
+				},
+				TargetChangePolicy = "restart",
+				TargetScoreRandomization = 10,
+				TargetingPolicies = {
+					PlaceObj('AITargetingEnemyHealth', {
+						'Health', 50,
+					}),
+					PlaceObj('AITargetingEnemyWeapon', {
+						'EnemyWeapon', "Sniper",
+					}),
+				},
+				group = "Legion",
+				id = "Legion_Machinegunner",
+			}),
+			}),
 		PlaceObj('ModItemFolder', {
 			'name', "LegionAssaulters",
 			'comment', "Штурмовики - Сближаются для максимального урона",
@@ -45567,7 +48743,6 @@ return {
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(217901684853, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT1_Roughneck Name]] "Головорез"),
 				'Randomization', true,
-				'elite', true,
 				'eliteCategory', "Legion",
 				'Affiliation', "Legion",
 				'StartingLevel', 2,
@@ -45575,17 +48750,20 @@ return {
 				'AIKeywords', {
 					"CQB",
 					"MobileShot",
+					"Melee",
 				},
-				'archetype', "Skirmisher",
+				'archetype', "Legion_Assaulter",
 				'role', "Stormer",
+				'RepositionArchetype', "Legion_Assaulter",
+				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
 					local enemy, dist = GetNearestEnemy(self)
 					local archetype = self.archetype
 					local weapon_class = "Firearm"
 					
-					if enemy and dist < 8*const.SlabSizeX then
-						archetype = "Brute"
+					if enemy and dist < 10*const.SlabSizeX then
+						--archetype = "Brute"
 						weapon_class = "Melee"
 						PlayVoiceResponse(self, "AIArchetypeAngry")
 					end
@@ -45634,7 +48812,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionGoon",
+					"Roughneck_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -45671,33 +48849,34 @@ return {
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(188332474737, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT1_Crusher Name]] "Громила"),
 				'Randomization', true,
-				'elite', true,
 				'eliteCategory', "Legion",
 				'Affiliation', "Legion",
 				'StartingLevel', 4,
 				'neutral_retaliate', true,
 				'AIKeywords', {
-					"Flank",
-					"Explosives",
-					"Control",
+					"CQB",
+					"Melee",
 				},
-				'archetype', "Brute",
+				'archetype', "Legion_Assaulter",
 				'role', "Stormer",
 				'CanManEmplacements', false,
+				'RepositionArchetype', "Legion_Assaulter",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
 					local enemy, dist = GetNearestEnemy(self)
 					local archetype = self.archetype
 					local weapon_class = "Firearm"
+					local roll = self:Random(100)
+					local chance = 50
 					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" then
-						archetype = "Brute"
+					if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
+						archetype = "Legion_Assaulter"
 						weapon_class = "Revolver"
 						PlayVoiceResponse(self, "AIArchetypeAngry")
 					end
 					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" then
-						archetype = "Brute"
+					if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
+						archetype = "Legion_Assaulter"
 						weapon_class = "Pistol"
 						PlayVoiceResponse(self, "AIArchetypeAngry")
 					end
@@ -45741,7 +48920,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionBerserker",
+					"Crusher_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -45779,24 +48958,24 @@ return {
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(392427068113, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT1_Grenadier Name]] "Гренадёр"),
 				'Randomization', true,
-				'elite', true,
 				'eliteCategory', "Legion",
 				'Affiliation', "Legion",
 				'StartingLevel', 3,
 				'neutral_retaliate', true,
 				'AIKeywords', {
 					"Explosives",
-					"MobileShot",
-					"Flank",
-					"RunAndGun",
-					"Ordnance",
+					"CQB",
 				},
-				'archetype', "Grenadier",
+				'archetype', "Legion_Assaulter",
 				'role', "Demolitions",
 				'CanManEmplacements', false,
+				'RepositionArchetype', "Legion_Assaulter",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
-				'CustomEquipGear', function (self, items)  end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "Firearm")
+					self:TryEquip(items, "Handheld B", "PipeBomb")
+				end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
 					"Throwing",
@@ -45827,7 +49006,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionGrenadier",
+					"Grenadier_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -45862,19 +49041,17 @@ return {
 				'Portrait', "UI/EnemiesPortraits/LegionRecon",
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(278695304484, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT2_Pillager Name]] "Грабитель"),
-				'elite', true,
 				'eliteCategory', "Legion",
 				'Affiliation', "Legion",
 				'StartingLevel', 5,
 				'neutral_retaliate', true,
 				'AIKeywords', {
-					"MobileShot",
-					"Flank",
-					"Explosives",
-					"Control",
+					"CQB",
+					"Soldier",
 				},
-				'archetype', "Skirmisher",
+				'archetype', "Legion_Assaulter",
 				'role', "Stormer",
+				'RepositionArchetype', "Legion_Assaulter",
 				'PinnedDownChance', 100,
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
@@ -45883,7 +49060,7 @@ return {
 					local weapon_class = "Firearm"
 					
 					if enemy and dist < 8*const.SlabSizeX then
-						archetype = "Brute"
+						--archetype = "Brute"
 						weapon_class = "Melee"
 						PlayVoiceResponse(self, "AIArchetypeAngry")
 					end
@@ -45930,7 +49107,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionGoon_Stronger",
+					"Pillager_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -45968,23 +49145,41 @@ return {
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(546032242947, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT2_Pyro Name]] "Пироман"),
 				'Randomization', true,
-				'elite', true,
 				'eliteCategory', "Legion",
 				'Affiliation', "Legion",
 				'StartingLevel', 7,
 				'neutral_retaliate', true,
 				'AIKeywords', {
+					"CQB",
+					"Melee",
 					"Explosives",
-					"MobileShot",
-					"Control",
-					"Soldier",
 				},
-				'archetype', "Grenadier",
+				'archetype', "Legion_Assaulter",
 				'role', "Demolitions",
 				'CanManEmplacements', false,
+				'RepositionArchetype', "Legion_Assaulter",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
-				'CustomEquipGear', function (self, items)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					
+					if enemy and dist < 10*const.SlabSizeX then
+						--archetype = "Brute"
+						weapon_class = "Melee"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "Firearm")
+					self:TryEquip(items, "Handheld B", "MeleeWeapon")
+				end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
 					"Throwing",
@@ -46019,7 +49214,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionGrenadier_Stronger",
+					"Pyro_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -46057,21 +49252,18 @@ return {
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(176382444921, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT2_ShockTrooper Name]] "Штурмовик"),
 				'Randomization', true,
-				'elite', true,
 				'eliteCategory', "Legion",
 				'Affiliation', "Legion",
 				'StartingLevel', 6,
 				'neutral_retaliate', true,
 				'AIKeywords', {
-					"Explosives",
-					"Smoke",
-					"Flank",
+					"CQB",
 					"RunAndGun",
-					"MobileShot",
 				},
-				'archetype', "Brute",
+				'archetype', "Legion_Assaulter",
 				'role', "Stormer",
 				'CanManEmplacements', false,
+				'RepositionArchetype', "Legion_Assaulter",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)  end,
@@ -46108,7 +49300,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionMeleeFighter_Stronger",
+					"Shocktrooper_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -46136,7 +49328,7 @@ return {
 				'Strength', 95,
 				'Wisdom', 25,
 				'Will', 85,
-				'Leadership', 0,
+				'Leadership', 30,
 				'Marksmanship', 85,
 				'Mechanical', 85,
 				'Explosives', 35,
@@ -46145,23 +49337,41 @@ return {
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(243489839730, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT3_SkullCrusher Name]] "Череполом"),
 				'Randomization', true,
-				'elite', true,
 				'eliteCategory', "Legion",
 				'Affiliation', "Legion",
 				'StartingLevel', 12,
 				'neutral_retaliate', true,
 				'AIKeywords', {
-					"Control",
+					"CQB",
+					"Melee",
 					"Smoke",
-					"Flank",
-					"Explosives",
 				},
-				'archetype', "Brute",
+				'archetype', "Legion_Assaulter",
 				'role', "Stormer",
 				'CanManEmplacements', false,
+				'RepositionArchetype', "Legion_Assaulter",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
-				'CustomEquipGear', function (self, items)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					
+					if enemy and dist < 10*const.SlabSizeX then
+						--archetype = "Brute"
+						weapon_class = "Melee"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "Firearm")
+					self:TryEquip(items, "Handheld B", "MeleeWeapon")
+				end,
 				'MaxHitPoints', 60,
 				'StartingPerks', {
 					"MinFreeMove",
@@ -46191,7 +49401,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionMeleeFighter_Stronger_Elite",
+					"SkullCrusher_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -46219,7 +49429,7 @@ return {
 				'Strength', 95,
 				'Wisdom', 30,
 				'Will', 80,
-				'Leadership', 0,
+				'Leadership', 30,
 				'Marksmanship', 80,
 				'Mechanical', 80,
 				'Explosives', 50,
@@ -46228,24 +49438,39 @@ return {
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(437565517773, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT3_Punisher Name]] "Каратель"),
 				'Randomization', true,
-				'elite', true,
 				'eliteCategory', "Legion",
 				'Affiliation', "Legion",
 				'StartingLevel', 10,
 				'neutral_retaliate', true,
 				'AIKeywords', {
-					"Control",
-					"Explosives",
-					"Flank",
+					"CQB",
+					"Soldier",
 					"RunAndGun",
 					"MobileShot",
 					"Stim",
 				},
-				'archetype', "Brute",
+				'archetype', "Legion_Assaulter",
 				'role', "Stormer",
 				'CanManEmplacements', false,
+				'RepositionArchetype', "Legion_Assaulter",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					
+					if enemy and dist < 10*const.SlabSizeX then
+						--archetype = "Brute"
+						weapon_class = "Melee"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 100,
 				'StartingPerks', {
@@ -46283,7 +49508,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionBerserker_Stronger_Elite",
+					"Punisher_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -46312,10 +49537,10 @@ return {
 				'Strength', 100,
 				'Wisdom', 40,
 				'Will', 60,
-				'Leadership', 0,
+				'Leadership', 40,
 				'Marksmanship', 85,
 				'Mechanical', 85,
-				'Medical', 0,
+				'Medical', 20,
 				'Portrait', "UI/EnemiesPortraits/LegionStormer",
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(243489839730, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT4_Headsman Name]] "Палач"),
@@ -46326,17 +49551,38 @@ return {
 				'StartingLevel', 15,
 				'neutral_retaliate', true,
 				'AIKeywords', {
-					"Control",
-					"Smoke",
-					"Flank",
-					"Explosives",
+					"CQB",
+					"RunAndGun",
+					"MobileShot",
+					"Heal",
+					"Melee",
 				},
-				'archetype', "Brute",
+				'archetype', "Legion_Assaulter",
 				'role', "Stormer",
 				'CanManEmplacements', false,
+				'RepositionArchetype', "Legion_Assaulter",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
-				'CustomEquipGear', function (self, items)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					
+					if enemy and dist < 10*const.SlabSizeX then
+						--archetype = "Brute"
+						weapon_class = "Melee"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "Firearm")
+					self:TryEquip(items, "Handheld B", "MeleeWeapon")
+				end,
 				'MaxHitPoints', 60,
 				'StartingPerks', {
 					"MinFreeMove",
@@ -46370,7 +49616,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionScout_Stronger_Elite",
+					"Headsman_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -46411,16 +49657,16 @@ return {
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(521007046314, --[[ModItemUnitDataCompositeDef JAZZ_Legion_FrontT1_Marauder Name]] "Мародёр"),
 				'Randomization', true,
-				'elite', true,
 				'eliteCategory', "Legion",
 				'Affiliation', "Legion",
 				'StartingLevel', 5,
 				'neutral_retaliate', true,
 				'AIKeywords', {
 					"Soldier",
-					"Explosives",
 				},
+				'archetype', "Legion_Frontliner",
 				'role', "Soldier",
+				'RepositionArchetype', "Legion_Frontliner",
 				'OpeningAttackType', "Overwatch",
 				'PinnedDownChance', 40,
 				'MaxAttacks', 10,
@@ -46463,7 +49709,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionRaiders",
+					"Marauder_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -46500,24 +49746,54 @@ return {
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(239462113851, --[[ModItemUnitDataCompositeDef JAZZ_Legion_FrontT1_Rifleman Name]] "Стрелок"),
 				'Randomization', true,
-				'elite', true,
 				'eliteCategory', "Legion",
 				'Affiliation', "Legion",
 				'StartingLevel', 4,
 				'neutral_retaliate', true,
 				'AIKeywords', {
-					"Sniper",
-					"Flank",
-					"Nova",
+					"Soldier",
 					"Control",
 				},
-				'role', "Recon",
+				'archetype', "Legion_Frontliner",
+				'role', "Marksman",
+				'RepositionArchetype', "Legion_Frontliner",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					local roll = self:Random(100)
+					local chance = 50
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Revolver"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Pistol"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "SubmachineGun"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
-					self:TryEquip(items, "Handheld B", "Pistol")
+					self:TryEquip(items, "Handheld B", "Firearm")
 				end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
@@ -46551,7 +49827,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionSharpShooter",
+					"Rifleman_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -46595,9 +49871,9 @@ return {
 				'AIKeywords', {
 					"Heal",
 					"Smoke",
-					"Control",
+					"Marksman",
 				},
-				'archetype', "Medic",
+				'archetype', "Legion_Frontliner",
 				'role', "Medic",
 				'CanManEmplacements', false,
 				'MaxAttacks', 10,
@@ -46634,7 +49910,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionMedic_Stronger",
+					"Bonemaker_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -46677,10 +49953,9 @@ return {
 				'neutral_retaliate', true,
 				'AIKeywords', {
 					"Soldier",
-					"Explosives",
 					"Ordnance",
-					"Flank",
 				},
+				'archetype', "Legion_Frontliner",
 				'role', "Soldier",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
@@ -46729,7 +50004,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionRaider_Stronger",
+					"Raider_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -46771,13 +50046,49 @@ return {
 				'StartingLevel', 10,
 				'neutral_retaliate', true,
 				'AIKeywords', {
+					"Marksman",
 					"Sniper",
 					"Control",
-					"Ordnance",
 				},
+				'archetype', "Legion_Frontliner",
 				'role', "Soldier",
 				'MaxAttacks', 10,
-				'CustomEquipGear', function (self, items)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					local roll = self:Random(100)
+					local chance = 50
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Revolver"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Pistol"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "SubmachineGun"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "Firearm")
+					self:TryEquip(items, "Handheld B", "Firearm")
+				end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
 					"Hotblood",
@@ -46822,7 +50133,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionSharpShooter_Stronger",
+					"Marksman_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -46860,14 +50171,39 @@ return {
 				'neutral_retaliate', true,
 				'AIKeywords', {
 					"Sniper",
-					"Control",
+					"Marksman",
+					"Flank",
 				},
-				'archetype', "Soldier_Sniper",
+				'archetype', "Legion_Frontliner",
 				'role', "Marksman",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 5,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					local roll = self:Random(100)
+					
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver"  then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Revolver"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol"  then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Pistol"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
 					self:TryEquip(items, "Handheld B", "Firearm")
@@ -46904,7 +50240,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionSniper_Stronger",
+					"Ambusher_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -46936,7 +50272,7 @@ return {
 				'Leadership', 20,
 				'Marksmanship', 85,
 				'Mechanical', 50,
-				'Explosives', 30,
+				'Explosives', 20,
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionSoldier",
 				'BigPortrait', "UI/Enemies/LegionRaider",
@@ -46949,13 +50285,52 @@ return {
 				'neutral_retaliate', true,
 				'AIKeywords', {
 					"Soldier",
-					"Explosives",
+					"Ordnance",
 					"RunAndGun",
 				},
+				'archetype', "Legion_Frontliner",
 				'role', "Soldier",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
-				'CustomEquipGear', function (self, items)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local function PrimaryNonGL(self)
+					  return self:GetActiveWeapons("AssaultRifle")
+					      or self:GetActiveWeapons("Rifle")
+					      or self:GetActiveWeapons("Carbine")
+					      or self:GetActiveWeapons("BattleRifle")
+					      or self:GetActiveWeapons("SubmachineGun")
+					      or self:GetActiveWeapons("Shotgun")
+					end
+					
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					local roll = self:Random(100)
+					local chance = 50
+					
+					local weapon_class = "Firearm"
+					if enemy and dist < 40*const.SlabSizeX and dist > 15*const.SlabSizeX and roll < chance then
+					  weapon_class = "GrenadeLauncher"
+					else
+					  weapon_class = (PrimaryNonGL(self) and PrimaryNonGL(self).weapon_class) or "AssaultRifle"
+					end
+					
+					if enemy and dist < 10*const.SlabSizeX then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Melee"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+					  AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "Firearm")
+					self:TryEquip(items, "Handheld B", "GrenadeLauncher")
+					self:TryEquip(items, "Handheld B", "MeleeWeapon")
+				end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
 					"RelentlessAdvance",
@@ -47000,7 +50375,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionRaider_Stronger_Elite",
+					"Veteran_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -47044,15 +50419,37 @@ return {
 				'neutral_retaliate', true,
 				'AIKeywords', {
 					"Sniper",
-					"Control",
-					"MobileShot",
 				},
-				'archetype', "Soldier_Sniper",
+				'archetype', "Legion_Frontliner",
 				'role', "Marksman",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "PinDown",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					local roll = self:Random(100)
+					
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver"  then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Revolver"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol"  then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Pistol"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
 					self:TryEquip(items, "Handheld B", "Firearm")
@@ -47084,7 +50481,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionSniper_Stronger_Elite",
+					"Sniper_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -47117,25 +50514,65 @@ return {
 				'Marksmanship', 90,
 				'Mechanical', 100,
 				'Explosives', 80,
-				'Medical', 40,
+				'Medical', 80,
 				'Portrait', "UI/EnemiesPortraits/LegionSoldier",
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(918921277026, --[[ModItemUnitDataCompositeDef JAZZ_Legion_FrontT4_Mercenary Name]] "Наемник"),
 				'Randomization', true,
 				'elite', true,
-				'eliteCategory', "Foreigners",
+				'eliteCategory', "Mercenary",
 				'Affiliation', "Legion",
 				'StartingLevel', 15,
 				'neutral_retaliate', true,
 				'AIKeywords', {
 					"Soldier",
-					"Explosives",
+					"Ordnance",
+					"Marksman",
 					"RunAndGun",
 				},
+				'archetype', "Legion_Frontliner",
 				'role', "Soldier",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
-				'CustomEquipGear', function (self, items)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local function PrimaryNonGL(self)
+					  return self:GetActiveWeapons("AssaultRifle")
+					      or self:GetActiveWeapons("Rifle")
+					      or self:GetActiveWeapons("Carbine")
+					      or self:GetActiveWeapons("BattleRifle")
+					      or self:GetActiveWeapons("SubmachineGun")
+					      or self:GetActiveWeapons("Shotgun")
+					end
+					
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					local roll = self:Random(100)
+					local chance = 50
+					
+					local weapon_class = "Firearm"
+					if enemy and dist < 40*const.SlabSizeX and dist > 15*const.SlabSizeX and roll < chance then
+					  weapon_class = "GrenadeLauncher"
+					else
+					  weapon_class = (PrimaryNonGL(self) and PrimaryNonGL(self).weapon_class) or "AssaultRifle"
+					end
+					
+					if enemy and dist < 10*const.SlabSizeX then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Melee"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+					  AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "Firearm")
+					self:TryEquip(items, "Handheld B", "GrenadeLauncher")
+					self:TryEquip(items, "Handheld B", "MeleeWeapon")
+				end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
 					"RelentlessAdvance",
@@ -47186,7 +50623,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionRaider_Stronger_Elite",
+					"Mercenary_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -47219,7 +50656,7 @@ return {
 				'Marksmanship', 100,
 				'Mechanical', 100,
 				'Explosives', 30,
-				'Medical', 40,
+				'Medical', 80,
 				'Portrait', "UI/EnemiesPortraits/LegionSniper",
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(839107049203, --[[ModItemUnitDataCompositeDef JAZZ_Legion_FrontT4_MercenarySniper Name]] "Наемник снайпер"),
@@ -47232,14 +50669,44 @@ return {
 				'AIKeywords', {
 					"Sniper",
 					"Control",
-					"MobileShot",
+					"Marksman",
 				},
-				'archetype', "Soldier_Sniper",
+				'archetype', "Legion_Frontliner",
 				'role', "Marksman",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "PinDown",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					local roll = self:Random(100)
+					local chance = 50
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Revolver"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Pistol"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "SubmachineGun"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
 					self:TryEquip(items, "Handheld B", "Firearm")
@@ -47276,7 +50743,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionSniper_Stronger_Elite",
+					"MercenarySniper_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -47322,21 +50789,57 @@ return {
 				'neutral_retaliate', true,
 				'AIKeywords', {
 					"Flank",
-					"RunAndGun",
 					"Control",
-					"Explosives",
+					"Marksman",
 				},
-				'archetype', "Skirmisher",
+				'archetype', "Legion_Frontliner",
 				'role', "Recon",
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					local roll = self:Random(100)
+					local chance = 50
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Revolver"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Pistol"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "SubmachineGun"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					local stealth_stance = self:GetStanceToStealth()
+					if self:CanStealth(stealth_stance) then
+					 self:Hide()
+					end	
+					
+					return archetype
+				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
-					"RelentlessAdvance",
+					"HoldPosition",
 					"MinFreeMove",
-					"Untraceable",
+					"OpportunisticKiller",
+					"Counterfire",
+					"OverwatchExpert",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -47362,7 +50865,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionScout",
+					"Warden_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -47405,22 +50908,30 @@ return {
 				'AIKeywords', {
 					"Flank",
 					"RunAndGun",
-					"Control",
-					"Stim",
+					"CQB",
 				},
-				'archetype', "Skirmisher",
+				'archetype', "Legion_Assaulter",
 				'role', "Recon",
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local stealth_stance = self:GetStanceToStealth()
+					if self:CanStealth(stealth_stance) then
+					 self:Hide()
+					end
+				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
-					"RelentlessAdvance",
-					"Flanker",
+					"HoldPosition",
+					"OpportunisticKiller",
 					"MinFreeMove",
-					"GruntyPerk",
+					"Counterfire",
+					"Flanker",
+					"RelentlessAdvance",
 					"Untraceable",
+					"Stealthy",
+					"CQCTraining",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -47443,7 +50954,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionScout_Stronger",
+					"Scout_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -47485,25 +50996,61 @@ return {
 				'StartingLevel', 6,
 				'neutral_retaliate', true,
 				'AIKeywords', {
-					"Control",
-					"Soldier",
+					"Flank",
 					"RunAndGun",
-					"Ordnance",
+					"Marksman",
 				},
-				'role', "Soldier",
+				'archetype', "Legion_Frontliner",
+				'role', "Recon",
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					local roll = self:Random(100)
+					local chance = 50
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Revolver"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Pistol"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "SubmachineGun"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					local stealth_stance = self:GetStanceToStealth()
+					if self:CanStealth(stealth_stance) then
+					 self:Hide()
+					end	
+					
+					return archetype
+				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
-					"BunsPerk",
-					"Stealthy",
-					"StressManagement",
+					"HoldPosition",
+					"OpportunisticKiller",
+					"Counterfire",
+					"Hardened",
+					"Flanker",
 					"Untraceable",
-					"Hobbler",
-					"Stealthy",
 					"MinFreeMove",
+					"Hotblood",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -47529,7 +51076,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionRanger_Stronger",
+					"Skirmisher_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -47567,7 +51114,6 @@ return {
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(973520781420, --[[ModItemUnitDataCompositeDef JAZZ_Legion_FlankerT3_Recon Name]] "Разведчик"),
 				'Randomization', true,
-				'elite', true,
 				'eliteCategory', "Legion",
 				'Affiliation', "Legion",
 				'StartingLevel', 10,
@@ -47575,25 +51121,35 @@ return {
 				'AIKeywords', {
 					"Flank",
 					"RunAndGun",
-					"MobileShot",
-					"Control",
-					"Explosives",
-					"Ordnance",
+					"CQB",
 				},
-				'archetype', "Skirmisher",
+				'archetype', "Legion_Assaulter",
 				'role', "Recon",
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local stealth_stance = self:GetStanceToStealth()
+					if self:CanStealth(stealth_stance) then
+					 self:Hide()
+					end
+				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
 					"RelentlessAdvance",
 					"MinFreeMove",
-					"Untraceable",
+					"HoldPosition",
 					"CQCTraining",
 					"Flanker",
-					"GruntyPerk",
+					"Counterfire",
+					"OpportunisticKiller",
+					"Untraceable",
+					"Stealthy",
+					"NightOps",
+					"CQCTraining",
+					"LightningReactionNPC",
+					"Hotblood",
+					"FleetingShadow",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -47616,7 +51172,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionScout_Stronger_Elite",
+					"Recon_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -47659,30 +51215,67 @@ return {
 				'StartingLevel', 10,
 				'neutral_retaliate', true,
 				'AIKeywords', {
+					"Flank",
 					"Sniper",
 					"Control",
-					"Heal_Low",
-					"Soldier",
-					"Flank",
-					"RunAndGun",
-					"MobileShot",
 				},
-				'role', "Marksman",
+				'archetype', "Legion_Frontliner",
+				'role', "Recon",
 				'AlwaysUseOpeningAttack', true,
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					local roll = self:Random(100)
+					local chance = 50
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Revolver"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Pistol"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "SubmachineGun"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					local stealth_stance = self:GetStanceToStealth()
+					if self:CanStealth(stealth_stance) then
+					 self:Hide()
+					end	
+					
+					return archetype
+				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
 					self:TryEquip(items, "Handheld B", "Firearm")
 				end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
-					"BunsPerk",
-					"Stealthy",
-					"StressManagement",
-					"Untraceable",
+					"HoldPosition",
 					"Hobbler",
-					"Shatterhand",
+					"OpportunisticKiller",
+					"Instagib",
+					"FleetingShadow",
+					"Counterfire",
+					"Hardened",
+					"Flanker",
+					"Untraceable",
+					"Hotblood",
+					"LastWarning",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -47696,7 +51289,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionRanger_Stronger_Elite",
+					"Pathfinder_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -47734,35 +51327,72 @@ return {
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(621106396948, --[[ModItemUnitDataCompositeDef JAZZ_Legion_FlankerT4_Ranger Name]] "Рейнджер"),
 				'Randomization', true,
+				'elite', true,
 				'eliteCategory', "Legion",
 				'Affiliation', "Legion",
 				'StartingLevel', 18,
 				'neutral_retaliate', true,
 				'AIKeywords', {
 					"Sniper",
-					"Control",
-					"Heal_Low",
-					"Soldier",
 					"Flank",
+					"Control",
 					"RunAndGun",
-					"MobileShot",
 				},
-				'role', "Marksman",
+				'archetype', "Legion_Assaulter",
+				'role', "Recon",
 				'AlwaysUseOpeningAttack', true,
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					local roll = self:Random(100)
+					local chance = 50
+					
+					if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "AssaultRifle" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "AssaultRifle"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "SubmachineGun"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					local stealth_stance = self:GetStanceToStealth()
+					if self:CanStealth(stealth_stance) then
+					 self:Hide()
+					end	
+					
+					return archetype
+				end,
 				'CustomEquipGear', function (self, items)
-					self:TryEquip(items, "Handheld A", "Firearm")
+					self:TryEquip(items, "Handheld A", "SniperRifle")
 					self:TryEquip(items, "Handheld B", "Firearm")
 				end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
-					"BunsPerk",
-					"Stealthy",
-					"StressManagement",
+					"HoldPosition",
+					"Counterfire",
+					"OpportunisticKiller",
+					"Instagib",
+					"Infiltrator",
+					"Flanker",
+					"Hardened",
+					"RelentlessAdvance",
 					"Untraceable",
-					"Hobbler",
-					"Shatterhand",
+					"Stealthy",
+					"NightOps",
+					"CQCTraining",
+					"LightningReaction",
+					"Hotblood",
+					"LastWarning",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -47776,7 +51406,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionRanger_Stronger_Elite",
+					"Ranger_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -47823,19 +51453,35 @@ return {
 				'StartingLevel', 3,
 				'neutral_retaliate', true,
 				'AIKeywords', {
-					"Control",
+					"MG",
 					"Soldier",
-					"Gunner",
+					"Control",
 				},
-				'archetype', "HeavyGunner",
+				'archetype', "Legion_Machinegunner",
 				'role', "Heavy",
-				'RepositionArchetype', "Soldier_Sniper",
+				'RepositionArchetype', "Legion_Machinegunner",
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 1,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					
+					if enemy and dist < 10*const.SlabSizeX then
+						--archetype = "Brute"
+						weapon_class = "Melee"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
-					self:TryEquip(items, "Handheld B", "SMG")
+					self:TryEquip(items, "Handheld B", "MeleeWeapon")
 				end,
 				'MaxHitPoints', 85,
 				'StartingPerks', {
@@ -47862,7 +51508,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionGunner",
+					"Gunner_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -47903,14 +51549,12 @@ return {
 				'StartingLevel', 6,
 				'neutral_retaliate', true,
 				'AIKeywords', {
-					"Control",
+					"MG",
 					"Soldier",
-					"Gunner",
-					"Nova",
+					"Control",
 				},
-				'archetype', "HeavyGunner",
+				'archetype', "Legion_Machinegunner",
 				'role', "Heavy",
-				'RepositionArchetype', "Soldier_Sniper",
 				'MaxAttacks', 1,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)
@@ -47948,7 +51592,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionGunner_Stronger",
+					"GMPG_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -47990,19 +51634,32 @@ return {
 				'StartingLevel', 8,
 				'neutral_retaliate', true,
 				'AIKeywords', {
-					"Control",
-					"Soldier",
-					"Ordnance",
-					"Gunner",
+					"MG",
+					"CQB",
 				},
-				'archetype', "HeavyGunner",
+				'archetype', "Legion_Machinegunner",
 				'role', "Heavy",
-				'RepositionArchetype', "Soldier_Sniper",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					
+					if enemy and dist < 10*const.SlabSizeX then
+						--archetype = "Brute"
+						weapon_class = "Melee"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
-					self:TryEquip(items, "Handheld B", "Firearm")
+					self:TryEquip(items, "Handheld B", "MeleeWeapon")
 				end,
 				'MaxHitPoints', 85,
 				'StartingPerks', {
@@ -48043,7 +51700,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionGunner_Stronger",
+					"AssaultGunner_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -48085,14 +51742,14 @@ return {
 				'StartingLevel', 14,
 				'neutral_retaliate', true,
 				'AIKeywords', {
-					"Control",
+					"MG",
 					"Soldier",
-					"Ordnance",
-					"Gunner",
+					"Flank",
+					"Marksman",
+					"Control",
 				},
-				'archetype', "HeavyGunner",
+				'archetype', "Legion_Machinegunner",
 				'role', "Heavy",
-				'RepositionArchetype', "Soldier_Sniper",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)
@@ -48143,7 +51800,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionGunner_Stronger",
+					"Veteran_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -48187,14 +51844,14 @@ return {
 				'StartingLevel', 16,
 				'neutral_retaliate', true,
 				'AIKeywords', {
-					"Control",
+					"MG",
 					"Soldier",
-					"Ordnance",
-					"Gunner",
+					"Flank",
+					"Marksman",
+					"Control",
 				},
-				'archetype', "HeavyGunner",
+				'archetype', "Legion_Machinegunner",
 				'role', "Heavy",
-				'RepositionArchetype', "Soldier_Sniper",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
 				'CustomEquipGear', function (self, items)
@@ -48249,7 +51906,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionGunner_Stronger",
+					"MercGunner_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -48296,12 +51953,13 @@ return {
 				'StartingLevel', 3,
 				'neutral_retaliate', true,
 				'AIKeywords', {
-					"Smoke",
-					"Heal_Low",
-					"Flank",
+					"Leader",
+					"Control",
 					"Soldier",
 					"Explosives",
+					"RunAndGun",
 				},
+				'archetype', "Legion_Assaulter",
 				'role', "Commander",
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
@@ -48343,7 +52001,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionSentry",
+					"Sergeant_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -48392,8 +52050,9 @@ return {
 					"Explosives",
 					"Soldier",
 					"Ordnance",
-					"RunAndGun",
+					"Leader",
 				},
+				'archetype', "Legion_Frontliner",
 				'role', "Commander",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
@@ -48449,7 +52108,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionSentry_Stronger",
+					"Lieutenant_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -48495,10 +52154,12 @@ return {
 				'AIKeywords', {
 					"Control",
 					"Sniper",
-					"Soldier",
+					"Marksman",
 					"Smoke",
 					"Explosives",
+					"Leader",
 				},
+				'archetype', "Legion_Frontliner",
 				'role', "Marksman",
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
@@ -48537,7 +52198,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionSergeant_Stronger",
+					"Captain_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -48584,8 +52245,11 @@ return {
 					"Smoke",
 					"Soldier",
 					"Flank",
-					"Sniper",
+					"Marksman",
+					"Control",
+					"Leader",
 				},
+				'archetype', "Legion_Frontliner",
 				'role', "Commander",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
@@ -48635,7 +52299,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionSentry_Stronger_Elite",
+					"MercenaryCaptain_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -48702,7 +52366,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionRocketeer",
+					"Rocketeer_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -48785,7 +52449,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionRocketeer",
+					"HeavyGrenadier_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -48869,7 +52533,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionMortarman",
+					"Mortarman_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -57194,10 +60858,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT3_Punisher",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSergant_Stronger",
+									'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57206,7 +60870,15 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider_Stronger",
+									'unitType', "JAZZ_Legion_FrontT2_Raider",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT3_Veteran",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
+									'spawnWeight', 10,
 								}),
 							},
 							'UnitCountMin', 3,
@@ -57215,7 +60887,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRocketeer_Stronger",
+									'unitType', "JAZZ_Legion_HeavyT1_Rocketeer",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
+									'spawnWeight', 10,
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57224,7 +60900,16 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper_Stronger",
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
+									'spawnWeight', 50,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+									'spawnWeight', 60,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT3_Sniper",
+									'spawnWeight', 30,
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57233,10 +60918,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMortarman_Stronger",
-								}),
-								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMortarman",
+									'unitType', "JAZZ_Legion_HeavyT3_Mortarman",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57254,7 +60936,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader",
+									'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57263,7 +60945,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+									'spawnWeight', 10,
 								}),
 							},
 							'UnitCountMin', 3,
@@ -57272,7 +60958,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57281,7 +60967,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper",
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT1_Warden",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57290,7 +60979,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider",
+									'unitType', "JAZZ_Legion_FrontT2_Raider",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								}),
 							},
 							'UnitCountMin', 5,
@@ -57306,7 +60998,12 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider",
+									'unitType', "JAZZ_Legion_FrontT3_Veteran",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Raider",
+									'spawnWeight', 10,
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57315,7 +61012,15 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+									'spawnWeight', 10,
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57324,7 +61029,16 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout",
+									'unitType', "JAZZ_Legion_FlankerT2_Scout",
+								}),
+							},
+							'UnitCountMin', 2,
+							'UnitCountMax', 2,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT1_Warden",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57350,79 +61064,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader",
+									'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								}),
-							},
-							'UnitCountMin', 2,
-							'UnitCountMax', 2,
-						}),
-						PlaceObj('EnemySquadUnit', {
-							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
-								}),
-							},
-							'UnitCountMin', 3,
-							'UnitCountMax', 3,
-						}),
-						PlaceObj('EnemySquadUnit', {
-							'weightedList', {
-								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout",
-								}),
-							},
-							'UnitCountMin', 6,
-							'UnitCountMax', 6,
-						}),
-						PlaceObj('EnemySquadUnit', {
-							'weightedList', {
-								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper",
-								}),
-							},
-							'UnitCountMin', 2,
-							'UnitCountMax', 2,
-						}),
-						PlaceObj('EnemySquadUnit', {
-							'weightedList', {
-								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
-								}),
-							},
-							'UnitCountMin', 3,
-							'UnitCountMax', 3,
-						}),
-						PlaceObj('EnemySquadUnit', {
-							'weightedList', {
-								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider",
-								}),
-							},
-							'UnitCountMin', 8,
-							'UnitCountMax', 8,
-						}),
-						PlaceObj('EnemySquadUnit', {
-							'weightedList', {
-								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier",
-								}),
-							},
-							'UnitCountMin', 4,
-							'UnitCountMax', 4,
-						}),
-						PlaceObj('EnemySquadUnit', {
-							'weightedList', {
-								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
-								}),
-							},
-							'UnitCountMin', 4,
-							'UnitCountMax', 4,
-						}),
-						PlaceObj('EnemySquadUnit', {
-							'weightedList', {
-								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader_Stronger_Elite",
+									'unitType', "JAZZ_Legion_AssaultT4_Headsman",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57431,7 +61076,177 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+								}),
+							},
+							'UnitCountMin', 3,
+							'UnitCountMax', 3,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
+									'spawnWeight', 50,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+									'spawnWeight', 50,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT3_Punisher",
+									'spawnWeight', 25,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT4_Headsman",
+									'spawnWeight', 5,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT3_Recon",
+									'spawnWeight', 5,
+								}),
+							},
+							'UnitCountMin', 6,
+							'UnitCountMax', 6,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+									'spawnWeight', 50,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT3_Sniper",
+									'spawnWeight', 10,
+								}),
+							},
+							'UnitCountMin', 2,
+							'UnitCountMax', 2,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+									'spawnWeight', 10,
+								}),
+							},
+							'UnitCountMin', 3,
+							'UnitCountMax', 3,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Raider",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+									'spawnWeight', 50,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT1_Warden",
+									'spawnWeight', 20,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+									'spawnWeight', 20,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
+									'spawnWeight', 50,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
+									'spawnWeight', 40,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT4_Mercenary",
+									'spawnWeight', 1,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT3_Veteran",
+									'spawnWeight', 15,
+								}),
+							},
+							'UnitCountMin', 8,
+							'UnitCountMax', 8,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+									'spawnWeight', 30,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
+									'spawnWeight', 10,
+								}),
+							},
+							'UnitCountMin', 4,
+							'UnitCountMax', 4,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+									'spawnWeight', 80,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+									'spawnWeight', 80,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT3_VeteranGunner",
+									'spawnWeight', 50,
+								}),
+							},
+							'UnitCountMin', 4,
+							'UnitCountMax', 4,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_LeaderT3_Captain",
+									'spawnWeight', 10,
+								}),
+							},
+							'UnitCountMin', 1,
+							'UnitCountMax', 1,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
+									'spawnWeight', 10,
 								}),
 							},
 							'UnitCountMin', 3,
@@ -57447,7 +61262,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider_Stronger",
+									'unitType', "JAZZ_Legion_FrontT3_Veteran",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57456,7 +61271,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner_Stronger",
+									'unitType', "JAZZ_Legion_GunnerT3_VeteranGunner",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57465,7 +61280,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper_Stronger",
+									'unitType', "JAZZ_Legion_FrontT3_Sniper",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57481,10 +61296,19 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader_Stronger",
+									'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSergant_Stronger",
+									'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
+									'spawnWeight', 33,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_LeaderT3_Captain",
+									'spawnWeight', 25,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT4_MercGunner",
+									'spawnWeight', 10,
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57493,7 +61317,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57502,7 +61329,15 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner_Stronger",
+									'unitType', "JAZZ_Legion_GunnerT3_VeteranGunner",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+									'spawnWeight', 10,
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57511,7 +61346,13 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper_Stronger",
+									'unitType', "JAZZ_Legion_FrontT3_Sniper",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT3_Pathfinder",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57520,7 +61361,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic_Stronger",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57537,7 +61378,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider",
+									'unitType', "JAZZ_Legion_FrontT2_Raider",
 									'spawnWeight', 10,
 								}),
 							},
@@ -57547,7 +61388,15 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT1_Warden",
 									'spawnWeight', 10,
 								}),
 							},
@@ -57557,7 +61406,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57566,7 +61415,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier",
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57575,7 +61427,17 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout",
+									'unitType', "JAZZ_Legion_FlankerT2_Scout",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT1_Warden",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+									'spawnWeight', 50,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -57584,7 +61446,15 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter",
+									'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+									'spawnWeight', 50,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
+									'spawnWeight', 50,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -57593,7 +61463,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper",
+									'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57609,8 +61479,12 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader_Stronger",
+									'unitType', "JAZZ_Legion_FrontT3_Veteran",
 									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Raider",
+									'spawnWeight', 1,
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57619,7 +61493,15 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
 									'spawnWeight', 10,
 								}),
 							},
@@ -57629,7 +61511,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic_Stronger",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57638,7 +61520,13 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier",
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT3_Punisher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57647,7 +61535,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout_Stronger",
+									'unitType', "JAZZ_Legion_FlankerT3_Recon",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT3_Pathfinder",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -57656,7 +61547,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter_Stronger",
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -57665,7 +61559,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper_Stronger",
+									'unitType', "JAZZ_Legion_FrontT3_Sniper",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57674,7 +61568,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSergant_Stronger",
+									'unitType', "JAZZ_Legion_LeaderT3_Captain",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57683,7 +61577,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRanger_Stronger",
+									'unitType', "JAZZ_Legion_FlankerT4_Ranger",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57699,7 +61593,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier_Stronger_Elite",
+									'unitType', "JAZZ_Legion_AssaultT4_Headsman",
 									'spawnWeight', 10,
 								}),
 							},
@@ -57709,7 +61603,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon_Stronger_Elite",
+									'unitType', "JAZZ_Legion_FrontT4_Mercenary",
 									'spawnWeight', 10,
 								}),
 							},
@@ -57719,7 +61613,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier_Stronger_Elite",
+									'unitType', "JAZZ_Legion_FrontT4_Mercenary",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57728,7 +61622,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout_Stronger_Elite",
+									'unitType', "JAZZ_Legion_FlankerT3_Recon",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -57737,7 +61631,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRanger_Stronger_Elite",
+									'unitType', "JAZZ_Legion_GunnerT4_MercGunner",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57746,7 +61640,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper_Stronger_Elite",
+									'unitType', "JAZZ_Legion_FrontT4_MercenarySniper",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57762,7 +61656,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
+									'spawnWeight', 10,
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57771,7 +61669,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -57780,7 +61678,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57789,7 +61687,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57798,7 +61696,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier",
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57807,7 +61705,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout",
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57823,7 +61721,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT1_Warden",
+									'spawnWeight', 10,
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57832,7 +61734,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57841,7 +61743,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout",
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57850,7 +61752,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57866,7 +61768,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57875,7 +61777,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								}),
 							},
 							'UnitCountMin', 4,
@@ -57884,7 +61786,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon_Stronger_Elite",
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57893,7 +61795,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT3_Punisher",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57902,7 +61804,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier",
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57911,7 +61813,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier",
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57920,7 +61822,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT4_Headsman",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57929,7 +61831,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher",
+									'unitType', "JAZZ_Legion_FlankerT1_Warden",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57938,7 +61840,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
+									'unitType', "JAZZ_Legion_FrontT2_Raider",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57954,7 +61856,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac_Stronger_Elite",
+									'unitType', "JAZZ_Legion_AssaultT3_Punisher",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -57963,7 +61865,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57972,7 +61874,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57981,7 +61883,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon_Stronger_Elite",
+									'unitType', "JAZZ_Legion_AssaultT4_Headsman",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57990,7 +61892,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic_Stronger_Elite",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -57999,7 +61901,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT3_Punisher",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -58008,7 +61910,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon_Stronger_Elite",
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -58017,7 +61919,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout_Stronger_Elite",
+									'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -58026,7 +61928,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher_Stronger",
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -58035,7 +61937,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher_Stronger_Elite",
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -58069,7 +61971,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionHyenaHandler",
+									'unitType', "JAZZ_Legion_LeaderT3_Captain",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -58078,7 +61980,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionHyenaHandler_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT4_Headsman",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -58101,7 +62003,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper",
+									'unitType', "JAZZ_Legion_FrontT3_Sniper",
 									'spawnWeight', 10,
 								}),
 							},
@@ -58111,7 +62013,19 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+									'spawnWeight', 30,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
+									'spawnWeight', 30,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT3_VeteranGunner",
 									'spawnWeight', 10,
 								}),
 							},
@@ -58121,7 +62035,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 									'spawnWeight', 10,
 								}),
 							},
@@ -58131,7 +62045,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier",
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 									'spawnWeight', 1,
 								}),
 							},
@@ -58141,7 +62055,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider_Jose",
+									'unitType', "JAZZ_Legion_FrontT4_Mercenary",
 									'spawnWeight', 10,
 								}),
 							},
@@ -58151,7 +62065,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider_Ernie_Elite",
+									'unitType', "JAZZ_Legion_LeaderT3_Captain",
 									'spawnWeight', 10,
 								}),
 							},
@@ -58161,7 +62075,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRocketeer_SlowReloader",
+									'unitType', "JAZZ_Legion_HeavyT1_Rocketeer",
 									'spawnWeight', 10,
 								}),
 							},
@@ -58179,7 +62093,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper",
+									'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 									'spawnWeight', 10,
 								}),
 							},
@@ -58189,7 +62103,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader",
+									'unitType', "JAZZ_Legion_LeaderT3_Captain",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -58198,7 +62112,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58207,7 +62121,13 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT3_VeteranGunner",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58216,10 +62136,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
+									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMolotov",
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
 								}),
 							},
 							'UnitCountMin', 6,
@@ -58228,7 +62148,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 									'spawnWeight', 10,
 								}),
 							},
@@ -58238,7 +62158,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier",
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 									'spawnWeight', 1,
 								}),
 							},
@@ -58248,7 +62168,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRocketeer_SlowReloader",
+									'unitType', "JAZZ_Legion_HeavyT1_Rocketeer",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
 									'spawnWeight', 10,
 								}),
 							},
@@ -58258,7 +62181,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout_Stronger",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -58267,7 +62190,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic",
+									'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -58276,7 +62199,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter",
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58294,10 +62217,19 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader",
+									'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider_Demolution",
+									'unitType', "JAZZ_Legion_LeaderT3_Captain",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT4_Headsman",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT3_Punisher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT3_Veteran",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58306,7 +62238,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic_Stronger",
+									'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58315,7 +62250,14 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider",
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Raider",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT3_Veteran",
+									'spawnWeight', 10,
 								}),
 							},
 							'UnitCountMin', 9,
@@ -58324,7 +62266,13 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier",
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58333,7 +62281,18 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
+									'spawnWeight', 50,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT3_VeteranGunner",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58342,7 +62301,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper_Stronger",
+									'unitType', "JAZZ_Legion_FrontT3_Sniper",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT4_MercenarySniper",
+									'spawnWeight', 1,
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58351,7 +62314,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter",
+									'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
+									'spawnWeight', 50,
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58360,7 +62327,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
+									'spawnWeight', 10,
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58369,7 +62340,13 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout",
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT1_Warden",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58387,7 +62364,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58396,7 +62376,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic_Stronger",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58405,7 +62385,19 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider",
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Raider",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT3_Veteran",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT4_Mercenary",
+									'spawnWeight', 1,
 								}),
 							},
 							'UnitCountMin', 9,
@@ -58414,7 +62406,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier",
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58423,7 +62418,15 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT3_VeteranGunner",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT4_MercGunner",
+									'spawnWeight', 1,
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58432,7 +62435,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper_Stronger",
+									'unitType', "JAZZ_Legion_FrontT3_Sniper",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT4_MercenarySniper",
+									'spawnWeight', 10,
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58441,7 +62448,16 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter",
+									'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT1_Warden",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58450,7 +62466,15 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
+									'spawnWeight', 30,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
+									'spawnWeight', 30,
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58459,7 +62483,16 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout",
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT3_Punisher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT3_Recon",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58476,7 +62509,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMolotov",
+									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 									'spawnWeight', 10,
 								}),
 							},
@@ -58486,7 +62519,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier",
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58495,43 +62531,16 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								}),
-							},
-							'UnitCountMin', 4,
-							'UnitCountMax', 4,
-						}),
-						PlaceObj('EnemySquadUnit', {
-							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter",
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
 								}),
-							},
-							'UnitCountMin', 2,
-							'UnitCountMax', 2,
-						}),
-						PlaceObj('EnemySquadUnit', {
-							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter",
+									'unitType', "JAZZ_Legion_AssaultT3_Punisher",
 								}),
-							},
-							'UnitCountMin', 2,
-							'UnitCountMax', 2,
-						}),
-						PlaceObj('EnemySquadUnit', {
-							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout",
-								}),
-							},
-							'UnitCountMin', 10,
-							'UnitCountMax', 10,
-						}),
-						PlaceObj('EnemySquadUnit', {
-							'weightedList', {
-								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT4_Headsman",
 									'spawnWeight', 10,
 								}),
 							},
@@ -58541,16 +62550,13 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher",
+									'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								}),
-							},
-							'UnitCountMin', 6,
-							'UnitCountMax', 6,
-						}),
-						PlaceObj('EnemySquadUnit', {
-							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic",
+									'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -58559,7 +62565,29 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper",
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+								}),
+							},
+							'UnitCountMin', 2,
+							'UnitCountMax', 2,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+								}),
+							},
+							'UnitCountMin', 10,
+							'UnitCountMax', 10,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+									'spawnWeight', 10,
 								}),
 							},
 							'UnitCountMin', 4,
@@ -58568,7 +62596,50 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
+								}),
+							},
+							'UnitCountMin', 6,
+							'UnitCountMax', 6,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
+								}),
+							},
+							'UnitCountMin', 2,
+							'UnitCountMax', 2,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT3_Sniper",
+									'spawnWeight', 10,
+								}),
+							},
+							'UnitCountMin', 4,
+							'UnitCountMax', 4,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT3_VeteranGunner",
 								}),
 							},
 							'UnitCountMin', 4,
@@ -58584,7 +62655,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMolotov",
+									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 									'spawnWeight', 10,
 								}),
 							},
@@ -58594,7 +62665,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier",
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -58603,7 +62674,13 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								}),
 							},
 							'UnitCountMin', 4,
@@ -58612,7 +62689,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter",
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58621,7 +62698,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter",
+									'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -58630,7 +62707,16 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout",
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT1_Warden",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT2_Scout",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								}),
 							},
 							'UnitCountMin', 6,
@@ -58639,7 +62725,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 									'spawnWeight', 10,
 								}),
 							},
@@ -58649,7 +62735,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								}),
 							},
 							'UnitCountMin', 4,
@@ -58658,7 +62744,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -58667,7 +62753,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper",
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58676,7 +62765,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider",
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Raider",
 								}),
 							},
 							'UnitCountMin', 5,
@@ -58685,7 +62777,13 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -58701,7 +62799,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider",
+									'unitType', "JAZZ_Legion_FrontT3_Veteran",
 									'spawnWeight', 10,
 								}),
 							},
@@ -58711,7 +62809,14 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT3_VeteranGunner",
+									'spawnWeight', 10,
 								}),
 							},
 							'UnitCountMin', 5,
@@ -58720,7 +62825,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58729,7 +62837,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -58738,7 +62846,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter",
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -58747,7 +62855,16 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout",
+									'unitType', "JAZZ_Legion_FlankerT2_Scout",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT1_Warden",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								}),
 							},
 							'UnitCountMin', 5,
@@ -58756,7 +62873,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 									'spawnWeight', 10,
 								}),
 							},
@@ -58766,7 +62883,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -58775,7 +62892,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -58784,7 +62901,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRocketeer_SlowReloader",
+									'unitType', "JAZZ_Legion_HeavyT1_Rocketeer",
+									'nameOverride', "",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_HeavyT3_Mortarman",
 									'nameOverride', "",
 								}),
 							},
@@ -58794,7 +62915,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper",
+									'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT3_Sniper",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -58811,19 +62935,19 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider",
+									'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 									'spawnWeight', 50,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider_Demolution",
+									'unitType', "JAZZ_Legion_LeaderT3_Captain",
 									'spawnWeight', 15,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader_Stronger",
+									'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 									'spawnWeight', 40,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider_Demolution_Stronger",
+									'unitType', "JAZZ_Legion_FrontT3_Veteran",
 									'spawnWeight', 15,
 								}),
 							},
@@ -58833,7 +62957,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -58842,10 +62966,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner_Stronger",
+									'unitType', "JAZZ_Legion_GunnerT3_VeteranGunner",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58854,10 +62978,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58866,10 +62990,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader",
+									'unitType', "JAZZ_Legion_FrontT2_Raider",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader_Stronger",
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
 									'spawnWeight', 50,
 								}),
 							},
@@ -58879,22 +63003,13 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter",
+									'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter_Stronger",
-								}),
-							},
-							'UnitCountMin', 3,
-							'UnitCountMax', 3,
-						}),
-						PlaceObj('EnemySquadUnit', {
-							'weightedList', {
-								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout",
+									'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout_Stronger",
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58903,15 +63018,30 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT3_Punisher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT4_Headsman",
+								}),
+							},
+							'UnitCountMin', 3,
+							'UnitCountMax', 3,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 									'spawnWeight', 50,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 									'spawnWeight', 40,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon_Stronger_Elite",
+									'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 									'spawnWeight', 15,
 								}),
 							},
@@ -58921,13 +63051,13 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher_Stronger_Elite",
+									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -58936,13 +63066,13 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic_Stronger",
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic_Stronger_Elite",
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -58951,7 +63081,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRocketeer_SlowReloader",
+									'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
 									'nameOverride', "",
 								}),
 							},
@@ -58961,19 +63091,19 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRocketeer_SlowReloader",
+									'unitType', "JAZZ_Legion_HeavyT3_Mortarman",
 									'nameOverride', "",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRocketeer_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT4_Headsman",
 									'nameOverride', "",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMolotov_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 									'nameOverride', "",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMolotov",
+									'unitType', "JAZZ_Legion_FrontT3_Veteran",
 									'nameOverride', "",
 								}),
 							},
@@ -59021,19 +63151,19 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMolotov",
+									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 									'spawnWeight', 50,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 									'spawnWeight', 50,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 									'spawnWeight', 50,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider",
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
 									'spawnWeight', 50,
 								}),
 							},
@@ -59043,10 +63173,13 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner_Stronger",
+									'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -59055,13 +63188,13 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac_Stronger_Elite",
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -59070,37 +63203,18 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader",
-								}),
-							},
-							'UnitCountMin', 3,
-							'UnitCountMax', 3,
-						}),
-						PlaceObj('EnemySquadUnit', {
-							'weightedList', {
-								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter",
+									'unitType', "JAZZ_Legion_AssaultT4_Headsman",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter_Stronger",
+									'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
+									'spawnWeight', 50,
 								}),
-							},
-							'UnitCountMin', 3,
-							'UnitCountMax', 3,
-						}),
-						PlaceObj('EnemySquadUnit', {
-							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout",
+									'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
+									'spawnWeight', 30,
 								}),
-							},
-							'UnitCountMin', 3,
-							'UnitCountMax', 4,
-						}),
-						PlaceObj('EnemySquadUnit', {
-							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_LeaderT3_Captain",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59110,10 +63224,56 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher",
+									'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher_Stronger",
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
+								}),
+							},
+							'UnitCountMin', 3,
+							'UnitCountMax', 3,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT1_Warden",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT2_Scout",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+								}),
+							},
+							'UnitCountMin', 3,
+							'UnitCountMax', 4,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+									'spawnWeight', 10,
+								}),
+							},
+							'UnitCountMin', 3,
+							'UnitCountMax', 3,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -59122,14 +63282,14 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic",
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic_Stronger",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 									'spawnWeight', 80,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic_Stronger_Elite",
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
 									'spawnWeight', 70,
 								}),
 							},
@@ -59139,7 +63299,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRocketeer_SlowReloader",
+									'unitType', "JAZZ_Legion_HeavyT1_Rocketeer",
+									'nameOverride', "",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
 									'nameOverride', "",
 								}),
 							},
@@ -59149,10 +63313,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper",
+									'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper_Stronger",
+									'unitType', "JAZZ_Legion_FrontT3_Sniper",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -59161,13 +63325,16 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper_Stronger",
+									'unitType', "JAZZ_Legion_FrontT4_MercenarySniper",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter_Stronger",
+									'unitType', "JAZZ_Legion_LeaderT4_MercenaryCaptain",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter_Stronger_Elite",
+									'unitType', "JAZZ_Legion_FlankerT4_Ranger",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT4_MercGunner",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -59184,7 +63351,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT4_Headsman",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -59193,7 +63363,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader",
+									'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -59202,7 +63372,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider_Stronger",
+									'unitType', "JAZZ_Legion_FrontT3_Veteran",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Raider",
 								}),
 							},
 							'UnitCountMin', 4,
@@ -59211,15 +63384,15 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider_Stronger",
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
 									'spawnWeight', 20,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider_Demolution",
+									'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 									'spawnWeight', 70,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider_Demolution_Stronger",
+									'unitType', "JAZZ_Legion_FrontT2_Raider",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -59228,7 +63401,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSergant_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT3_Punisher",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -59237,7 +63410,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider",
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -59246,11 +63419,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner_Stronger",
+									'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
 									'spawnWeight', 50,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 									'spawnWeight', 70,
 								}),
 							},
@@ -59260,11 +63433,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
 									'spawnWeight', 50,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 									'spawnWeight', 50,
 								}),
 							},
@@ -59274,7 +63447,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -59283,11 +63456,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter_Stronger",
+									'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 									'spawnWeight', 50,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter",
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
 									'spawnWeight', 50,
 								}),
 							},
@@ -59297,7 +63470,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout_Stronger",
+									'unitType', "JAZZ_Legion_FlankerT3_Recon",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -59306,7 +63479,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59316,19 +63489,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher",
-								}),
-							},
-							'UnitCountMin', 3,
-							'UnitCountMax', 3,
-						}),
-						PlaceObj('EnemySquadUnit', {
-							'weightedList', {
-								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -59337,7 +63501,16 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRanger_Stronger",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
+								}),
+							},
+							'UnitCountMin', 3,
+							'UnitCountMax', 3,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT4_Ranger",
 									'nameOverride', "",
 								}),
 							},
@@ -59347,7 +63520,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper_Stronger",
+									'unitType', "JAZZ_Legion_FlankerT3_Pathfinder",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT3_Sniper",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -59356,7 +63532,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRanger_Stronger",
+									'unitType', "JAZZ_Legion_FrontT4_MercenarySniper",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -59373,7 +63549,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider_Stronger_Elite",
+									'unitType', "JAZZ_Legion_FrontT3_Veteran",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -59382,7 +63558,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider_Stronger",
+									'unitType', "JAZZ_Legion_FrontT2_Raider",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -59391,7 +63567,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider_Demolution_Stronger",
+									'unitType', "JAZZ_Legion_FrontT3_Veteran",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -59400,7 +63576,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner_Stronger_Elite",
+									'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -59409,7 +63585,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner_Stronger",
+									'unitType', "JAZZ_Legion_GunnerT3_VeteranGunner",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -59418,7 +63594,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac_Stronger_Elite",
+									'unitType', "JAZZ_Legion_AssaultT4_Headsman",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -59427,7 +63603,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -59436,7 +63612,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier_Stronger_Elite",
+									'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -59445,7 +63621,13 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader_Stronger",
+									'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_LeaderT3_Captain",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -59454,7 +63636,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter_Stronger",
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -59463,7 +63645,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSergant_Stronger_Elite",
+									'unitType', "JAZZ_Legion_AssaultT4_Headsman",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -59472,7 +63654,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout_Stronger_Elite",
+									'unitType', "JAZZ_Legion_FlankerT3_Recon",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59482,7 +63664,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT3_Punisher",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59492,7 +63674,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher_Stronger_Elite",
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -59501,7 +63683,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -59510,7 +63692,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic_Stronger_Elite",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -59519,7 +63701,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRocketeer_Stronger_Elite",
+									'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
+									'nameOverride', "",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_HeavyT3_Mortarman",
 									'nameOverride', "",
 								}),
 							},
@@ -59529,7 +63715,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper_Stronger_Elite",
+									'unitType', "JAZZ_Legion_FrontT3_Sniper",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -59538,7 +63724,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper_Stronger",
+									'unitType', "JAZZ_Legion_FrontT4_MercenarySniper",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -59547,7 +63733,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSergant_Stronger_Elite",
+									'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -59569,7 +63755,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59579,7 +63765,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								}),
 							},
 							'UnitCountMin', 4,
@@ -59588,7 +63774,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter",
+									'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59598,7 +63784,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier",
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59608,7 +63794,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout",
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT2_Scout",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59618,7 +63808,15 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59628,7 +63826,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 									'spawnWeight', 1,
 								}),
 							},
@@ -59638,7 +63836,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 									'spawnWeight', 1,
 								}),
 							},
@@ -59648,7 +63846,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider",
+									'unitType', "JAZZ_Legion_FrontT2_Raider",
 									'spawnWeight', 1,
 								}),
 							},
@@ -59658,7 +63856,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider",
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
 									'spawnWeight', 1,
 								}),
 							},
@@ -59668,7 +63866,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider",
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
 									'spawnWeight', 1,
 								}),
 							},
@@ -59678,7 +63876,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider",
+									'unitType', "JAZZ_Legion_FrontT2_Raider",
 									'spawnWeight', 1,
 								}),
 							},
@@ -59696,11 +63894,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 									'spawnWeight', 10,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -59709,10 +63907,13 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -59721,7 +63922,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter",
+									'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59731,7 +63936,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier",
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59741,7 +63946,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout",
+									'unitType', "JAZZ_Legion_FlankerT1_Warden",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59751,7 +63956,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59761,7 +63966,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
+									'unitType', "JAZZ_Legion_AssaultT3_Punisher",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59771,7 +63976,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 									'spawnWeight', 1,
 								}),
 							},
@@ -59781,7 +63986,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 									'spawnWeight', 1,
 								}),
 							},
@@ -59791,11 +63996,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader",
-									'spawnWeight', 1,
+									'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRanger_Stronger",
+									'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
+									'spawnWeight', 1,
 								}),
 							},
 							'UnitCountMin', 1,
@@ -59832,11 +64037,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 									'spawnWeight', 10,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher",
+									'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -59845,10 +64050,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher",
+									'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -59857,7 +64062,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter",
+									'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59867,7 +64072,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier",
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59877,7 +64082,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout",
+									'unitType', "JAZZ_Legion_FlankerT2_Scout",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59887,7 +64092,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout_Stronger",
+									'unitType', "JAZZ_Legion_FlankerT1_Warden",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59897,7 +64102,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59907,7 +64112,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 									'spawnWeight', 1,
 								}),
 							},
@@ -59917,7 +64122,15 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+									'spawnWeight', 1,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
+									'spawnWeight', 1,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 									'spawnWeight', 1,
 								}),
 							},
@@ -59927,11 +64140,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader",
+									'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 									'spawnWeight', 1,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRanger_Stronger",
+									'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -59953,11 +64166,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 									'spawnWeight', 10,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher",
+									'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -59966,10 +64179,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher",
+									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -59978,7 +64191,15 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter",
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59988,7 +64209,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier",
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 									'spawnWeight', 10,
 								}),
 							},
@@ -59998,7 +64219,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout",
+									'unitType', "JAZZ_Legion_AssaultT3_Punisher",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT2_Scout",
 									'spawnWeight', 10,
 								}),
 							},
@@ -60008,7 +64233,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout_Stronger",
+									'unitType', "JAZZ_Legion_FlankerT3_Recon",
 									'spawnWeight', 10,
 								}),
 							},
@@ -60018,7 +64243,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 									'spawnWeight', 10,
 								}),
 							},
@@ -60028,7 +64257,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 									'spawnWeight', 1,
 								}),
 							},
@@ -60038,7 +64267,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
 									'spawnWeight', 1,
 								}),
 							},
@@ -60048,11 +64277,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader",
+									'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 									'spawnWeight', 1,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRanger_Stronger",
+									'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -60074,11 +64303,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 									'spawnWeight', 10,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher",
+									'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								}),
 							},
 							'UnitCountMin', 3,
@@ -60087,10 +64316,10 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionButcher",
+									'unitType', "JAZZ_Legion_FlankerT1_Warden",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								}),
 							},
 							'UnitCountMin', 2,
@@ -60099,7 +64328,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter",
+									'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
 									'spawnWeight', 10,
 								}),
 							},
@@ -60109,7 +64342,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier",
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 									'spawnWeight', 10,
 								}),
 							},
@@ -60119,7 +64352,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout",
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 									'spawnWeight', 10,
 								}),
 							},
@@ -60129,7 +64362,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 									'spawnWeight', 10,
 								}),
 							},
@@ -60139,7 +64372,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionManiac",
+									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
 									'spawnWeight', 10,
 								}),
 							},
@@ -60149,7 +64382,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic",
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 									'spawnWeight', 1,
 								}),
 							},
@@ -60159,7 +64392,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT3_VeteranGunner",
 									'spawnWeight', 1,
 								}),
 							},
@@ -60169,11 +64402,11 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader",
+									'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 									'spawnWeight', 1,
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRanger_Stronger",
+									'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -60195,7 +64428,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider",
+									'unitType', "JAZZ_Legion_FrontT2_Raider",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -60204,7 +64437,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaider_Stronger",
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -60213,7 +64446,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGoon",
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -60222,7 +64455,15 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSharpShooter",
+									'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+									'spawnWeight', 10,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT2_Marksman",
 									'spawnWeight', 10,
 								}),
 							},
@@ -60232,7 +64473,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGrenadier",
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 									'spawnWeight', 10,
 								}),
 							},
@@ -60242,7 +64483,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionScout_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 									'spawnWeight', 10,
 								}),
 							},
@@ -60252,7 +64493,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionMedic_Stronger",
+									'unitType', "JAZZ_Legion_AssaultT3_Punisher",
 									'spawnWeight', 1,
 								}),
 							},
@@ -60262,7 +64503,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionSniper_Stronger",
+									'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -60271,7 +64512,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionGunner",
+									'unitType', "JAZZ_Legion_GunnerT3_VeteranGunner",
 									'spawnWeight', 1,
 								}),
 							},
@@ -60281,7 +64522,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "LegionRaidLeader",
+									'unitType', "JAZZ_Legion_LeaderT3_Captain",
 									'spawnWeight', 1,
 								}),
 							},

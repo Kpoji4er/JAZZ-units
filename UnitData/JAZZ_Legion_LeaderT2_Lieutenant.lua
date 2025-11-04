@@ -32,8 +32,9 @@ DefineClass.JAZZ_Legion_LeaderT2_Lieutenant = {
 		"Explosives",
 		"Soldier",
 		"Ordnance",
-		"RunAndGun",
+		"Leader",
 	},
+	archetype = "Legion_Frontliner",
 	role = "Commander",
 	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "Overwatch",
@@ -89,7 +90,7 @@ DefineClass.JAZZ_Legion_LeaderT2_Lieutenant = {
 		}),
 	},
 	Equipment = {
-		"LegionSentry_Stronger",
+		"Lieutenant_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

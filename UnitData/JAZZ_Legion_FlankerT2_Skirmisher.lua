@@ -25,25 +25,61 @@ DefineClass.JAZZ_Legion_FlankerT2_Skirmisher = {
 	StartingLevel = 6,
 	neutral_retaliate = true,
 	AIKeywords = {
-		"Control",
-		"Soldier",
+		"Flank",
 		"RunAndGun",
-		"Ordnance",
+		"Marksman",
 	},
-	role = "Soldier",
+	archetype = "Legion_Frontliner",
+	role = "Recon",
 	OpeningAttackType = "Overwatch",
 	MaxAttacks = 10,
-	PickCustomArchetype = function (self, proto_context)  end,
+	PickCustomArchetype = function (self, proto_context)
+		local enemy, dist = GetNearestEnemy(self)
+		local archetype = self.archetype
+		local weapon_class = "Firearm"
+		local roll = self:Random(100)
+		local chance = 50
+		
+		if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
+			archetype = "Legion_Assaulter"
+			weapon_class = "Revolver"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
+			archetype = "Legion_Assaulter"
+			weapon_class = "Pistol"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
+			archetype = "Legion_Assaulter"
+			weapon_class = "SubmachineGun"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if not self:GetActiveWeapons(weapon_class) then
+			AIPlayCombatAction("ChangeWeapon", self, 0)
+		end
+		
+		local stealth_stance = self:GetStanceToStealth()
+		if self:CanStealth(stealth_stance) then
+		 self:Hide()
+		end	
+		
+		return archetype
+	end,
 	CustomEquipGear = function (self, items)  end,
 	MaxHitPoints = 50,
 	StartingPerks = {
-		"BunsPerk",
-		"Stealthy",
-		"StressManagement",
+		"HoldPosition",
+		"OpportunisticKiller",
+		"Counterfire",
+		"Hardened",
+		"Flanker",
 		"Untraceable",
-		"Hobbler",
-		"Stealthy",
 		"MinFreeMove",
+		"Hotblood",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
@@ -69,7 +105,7 @@ DefineClass.JAZZ_Legion_FlankerT2_Skirmisher = {
 		}),
 	},
 	Equipment = {
-		"LegionRanger_Stronger",
+		"Skirmisher_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

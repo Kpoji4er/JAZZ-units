@@ -25,19 +25,35 @@ DefineClass.JAZZ_Legion_GunnerT1_Gunner = {
 	StartingLevel = 3,
 	neutral_retaliate = true,
 	AIKeywords = {
-		"Control",
+		"MG",
 		"Soldier",
-		"Gunner",
+		"Control",
 	},
-	archetype = "HeavyGunner",
+	archetype = "Legion_Machinegunner",
 	role = "Heavy",
-	RepositionArchetype = "Soldier_Sniper",
+	RepositionArchetype = "Legion_Machinegunner",
 	OpeningAttackType = "Overwatch",
 	MaxAttacks = 1,
-	PickCustomArchetype = function (self, proto_context)  end,
+	PickCustomArchetype = function (self, proto_context)
+		local enemy, dist = GetNearestEnemy(self)
+		local archetype = self.archetype
+		local weapon_class = "Firearm"
+		
+		if enemy and dist < 10*const.SlabSizeX then
+			--archetype = "Brute"
+			weapon_class = "Melee"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if not self:GetActiveWeapons(weapon_class) then
+			AIPlayCombatAction("ChangeWeapon", self, 0)
+		end
+		
+		return archetype
+	end,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
-		self:TryEquip(items, "Handheld B", "SMG")
+		self:TryEquip(items, "Handheld B", "MeleeWeapon")
 	end,
 	MaxHitPoints = 85,
 	StartingPerks = {
@@ -64,7 +80,7 @@ DefineClass.JAZZ_Legion_GunnerT1_Gunner = {
 		}),
 	},
 	Equipment = {
-		"LegionGunner",
+		"Gunner_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

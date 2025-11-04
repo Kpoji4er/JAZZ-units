@@ -20,33 +20,34 @@ DefineClass.JAZZ_Legion_AssaultT1_Crusher = {
 	BigPortrait = "UI/Enemies/LegionRaider",
 	Name = T(188332474737, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT1_Crusher Name]] "Громила"),
 	Randomization = true,
-	elite = true,
 	eliteCategory = "Legion",
 	Affiliation = "Legion",
 	StartingLevel = 4,
 	neutral_retaliate = true,
 	AIKeywords = {
-		"Flank",
-		"Explosives",
-		"Control",
+		"CQB",
+		"Melee",
 	},
-	archetype = "Brute",
+	archetype = "Legion_Assaulter",
 	role = "Stormer",
 	CanManEmplacements = false,
+	RepositionArchetype = "Legion_Assaulter",
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)
 		local enemy, dist = GetNearestEnemy(self)
 		local archetype = self.archetype
 		local weapon_class = "Firearm"
+		local roll = self:Random(100)
+		local chance = 50
 		
-		if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" then
-			archetype = "Brute"
+		if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
+			archetype = "Legion_Assaulter"
 			weapon_class = "Revolver"
 			PlayVoiceResponse(self, "AIArchetypeAngry")
 		end
 		
-		if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" then
-			archetype = "Brute"
+		if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
+			archetype = "Legion_Assaulter"
 			weapon_class = "Pistol"
 			PlayVoiceResponse(self, "AIArchetypeAngry")
 		end
@@ -90,7 +91,7 @@ DefineClass.JAZZ_Legion_AssaultT1_Crusher = {
 		}),
 	},
 	Equipment = {
-		"LegionBerserker",
+		"Crusher_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

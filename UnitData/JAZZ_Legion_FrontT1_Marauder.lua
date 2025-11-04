@@ -20,16 +20,16 @@ DefineClass.JAZZ_Legion_FrontT1_Marauder = {
 	BigPortrait = "UI/Enemies/LegionRaider",
 	Name = T(521007046314, --[[ModItemUnitDataCompositeDef JAZZ_Legion_FrontT1_Marauder Name]] "Мародёр"),
 	Randomization = true,
-	elite = true,
 	eliteCategory = "Legion",
 	Affiliation = "Legion",
 	StartingLevel = 5,
 	neutral_retaliate = true,
 	AIKeywords = {
 		"Soldier",
-		"Explosives",
 	},
+	archetype = "Legion_Frontliner",
 	role = "Soldier",
+	RepositionArchetype = "Legion_Frontliner",
 	OpeningAttackType = "Overwatch",
 	PinnedDownChance = 40,
 	MaxAttacks = 10,
@@ -72,7 +72,7 @@ DefineClass.JAZZ_Legion_FrontT1_Marauder = {
 		}),
 	},
 	Equipment = {
-		"LegionRaiders",
+		"Marauder_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

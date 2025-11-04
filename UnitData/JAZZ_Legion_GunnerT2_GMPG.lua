@@ -24,14 +24,12 @@ DefineClass.JAZZ_Legion_GunnerT2_GMPG = {
 	StartingLevel = 6,
 	neutral_retaliate = true,
 	AIKeywords = {
-		"Control",
+		"MG",
 		"Soldier",
-		"Gunner",
-		"Nova",
+		"Control",
 	},
-	archetype = "HeavyGunner",
+	archetype = "Legion_Machinegunner",
 	role = "Heavy",
-	RepositionArchetype = "Soldier_Sniper",
 	MaxAttacks = 1,
 	PickCustomArchetype = function (self, proto_context)  end,
 	CustomEquipGear = function (self, items)
@@ -69,7 +67,7 @@ DefineClass.JAZZ_Legion_GunnerT2_GMPG = {
 		}),
 	},
 	Equipment = {
-		"LegionGunner_Stronger",
+		"GMPG_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

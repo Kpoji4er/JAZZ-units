@@ -67,7 +67,7 @@ DefineClass.JAZZ_Legion_HeavyT3_Mortarman = {
 		}),
 	},
 	Equipment = {
-		"LegionMortarman",
+		"Mortarman_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

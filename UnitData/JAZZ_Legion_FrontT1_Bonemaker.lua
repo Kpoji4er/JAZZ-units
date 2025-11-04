@@ -27,9 +27,9 @@ DefineClass.JAZZ_Legion_FrontT1_Bonemaker = {
 	AIKeywords = {
 		"Heal",
 		"Smoke",
-		"Control",
+		"Marksman",
 	},
-	archetype = "Medic",
+	archetype = "Legion_Frontliner",
 	role = "Medic",
 	CanManEmplacements = false,
 	MaxAttacks = 10,
@@ -66,7 +66,7 @@ DefineClass.JAZZ_Legion_FrontT1_Bonemaker = {
 		}),
 	},
 	Equipment = {
-		"LegionMedic_Stronger",
+		"Bonemaker_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {
