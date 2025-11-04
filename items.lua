@@ -3794,7 +3794,7 @@ return {
 					id = "RiflesBolt_MAS36",
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
-						weapon = "Mas36",
+						weapon = "MAS36",
 					}),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JAZZ_AMMO_75French",
@@ -48051,11 +48051,16 @@ return {
 									"Sniper",
 								},
 								'Weight', 200,
+								'Required', true,
 								'RangeMin', 50,
-								'RangeMax', 100,
 							}),
 							PlaceObj('AIPolicyTakeCover', {
 								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyHighGround', {
+								'RequiredKeywords', {
+									"Sniper",
+								},
 							}),
 						},
 						'TakeCoverChance', 0,
@@ -48078,11 +48083,18 @@ return {
 									"Marksman",
 								},
 								'Weight', 200,
+								'Required', true,
 								'RangeMin', 50,
 								'RangeMax', 75,
 							}),
 							PlaceObj('AIPolicyTakeCover', {
 								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyHighGround', {
+								'RequiredKeywords', {
+									"Marksman",
+								},
+								'Weight', 50,
 							}),
 						},
 						'TakeCoverChance', 0,
@@ -48141,7 +48153,6 @@ return {
 							"Sniper",
 						},
 						'RangeMin', 50,
-						'RangeMax', 100,
 					}),
 					PlaceObj('AIPolicyWeaponRange', {
 						'RequiredKeywords', {
@@ -62902,11 +62913,11 @@ return {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_HeavyT1_Rocketeer",
-									'nameOverride', "",
+									'name	', "",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_HeavyT3_Mortarman",
-									'nameOverride', "",
+									
 								}),
 							},
 							'UnitCountMin', 1,
@@ -63082,7 +63093,7 @@ return {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
-									'nameOverride', "",
+									
 								}),
 							},
 							'UnitCountMin', 1,
@@ -63092,19 +63103,19 @@ return {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_HeavyT3_Mortarman",
-									'nameOverride', "",
+									
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_AssaultT4_Headsman",
-									'nameOverride', "",
+									
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
-									'nameOverride', "",
+									
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_FrontT3_Veteran",
-									'nameOverride', "",
+									
 								}),
 							},
 							'UnitCountMin', 1,
@@ -63300,11 +63311,11 @@ return {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_HeavyT1_Rocketeer",
-									'nameOverride', "",
+									
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
-									'nameOverride', "",
+									
 								}),
 							},
 							'UnitCountMin', 1,
@@ -63511,7 +63522,7 @@ return {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_FlankerT4_Ranger",
-									'nameOverride', "",
+									
 								}),
 							},
 							'UnitCountMin', 1,
@@ -63702,11 +63713,11 @@ return {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
-									'nameOverride', "",
+									
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_HeavyT3_Mortarman",
-									'nameOverride', "",
+									
 								}),
 							},
 							'UnitCountMin', 1,
