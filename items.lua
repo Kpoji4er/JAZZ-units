@@ -35077,9 +35077,6 @@ return {
 									id = "LegionNoob_Gewehr9810xScope",
 									loot = "all",
 									PlaceObj('LootEntryUpgradedWeapon', {
-										upgrades = {
-											"JAZZ_CombatScope_FeroZ24",
-										},
 										weapon = "Gewehr98",
 									}),
 									PlaceObj('LootEntryLootDef', {
@@ -37425,9 +37422,6 @@ return {
 										stack_max = 1,
 										stack_min = 1,
 									}),
-									PlaceObj('LootEntryLootDef', {
-										loot_def = "Noob_12g",
-									}),
 								}),
 								PlaceObj('ModItemLootDef', {
 									comment = "T1-",
@@ -38006,7 +38000,7 @@ return {
 							weight = 25000,
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionElite_AssaultRifle",
+							loot_def = "AssaultRifles_STG44",
 							weight = 25000,
 						}),
 					}),
@@ -38015,7 +38009,7 @@ return {
 						group = "Enemy - Legion",
 						id = "Legion_RaidLeaderStrong_Weapon",
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionElite_AssaultRifle",
+							loot_def = "AssaultRifles_STG44",
 							weight = 50000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -38028,7 +38022,7 @@ return {
 						group = "Enemy - Legion",
 						id = "Legion_RaidLeaderElite_Weapon",
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionElite_AssaultRifle",
+							loot_def = "AssaultRifles_STG44",
 							weight = 150000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -38062,7 +38056,7 @@ return {
 						group = "Enemy - Legion",
 						id = "Legion_HyenaElite_Weapon",
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionElite_AssaultRifle",
+							loot_def = "AssaultRifles_STG44",
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionStrong_AssaultRifle",
@@ -39096,7 +39090,7 @@ return {
 						id = "LegionRaider_Stronger_Elite",
 						loot = "all",
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionElite_AssaultRifle",
+							loot_def = "AssaultRifles_STG44",
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Elite_RaiderTorso",
@@ -39156,7 +39150,7 @@ return {
 						id = "LegionMeleeFighter",
 						loot = "all",
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionMelee",
+							loot_def = "LegionKnife",
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Noob_MeleeTorso",
@@ -39183,7 +39177,7 @@ return {
 						id = "LegionMeleeFighter_Stronger",
 						loot = "all",
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionMelee",
+							loot_def = "LegionKnife",
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Strong_MeleeTorso",
@@ -39212,9 +39206,6 @@ return {
 						group = "Enemy - Legion",
 						id = "LegionMeleeFighter_Stronger_Elite",
 						loot = "all",
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionMelee",
-						}),
 						PlaceObj('LootEntryInventoryItem', {
 							Condition = 77,
 							item = "Knife",
@@ -39806,9 +39797,6 @@ return {
 						id = "LegionRanger",
 						loot = "all",
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionMelee",
-						}),
-						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionNoob_SharpRifles",
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -39837,9 +39825,6 @@ return {
 						id = "LegionRanger_Stronger",
 						loot = "all",
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionMelee",
-						}),
-						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionStrong_SharpRifles",
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -39867,9 +39852,6 @@ return {
 						group = "Enemy - Legion",
 						id = "LegionRanger_Stronger_Elite",
 						loot = "all",
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionMelee",
-						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionStrong_SharpRifles",
 						}),
@@ -45465,7 +45447,7 @@ return {
 						id = "ThugCutter",
 						loot = "all",
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionMelee",
+							loot_def = "LegionKnife",
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Armor_ThugTorso",
@@ -45981,7 +45963,7 @@ return {
 						loot_def = "Elite_SharpShooter_Torso",
 					}),
 					PlaceObj('LootEntryLootDef', {
-						loot_def = "LegionElite_AssaultRifle",
+						loot_def = "AssaultRifles_STG44",
 						weight = 40000,
 					}),
 					PlaceObj('LootEntryLootDef', {
@@ -62913,11 +62895,9 @@ return {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_HeavyT1_Rocketeer",
-									'name	', "",
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_HeavyT3_Mortarman",
-									
 								}),
 							},
 							'UnitCountMin', 1,
@@ -63093,7 +63073,6 @@ return {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
-									
 								}),
 							},
 							'UnitCountMin', 1,
@@ -63103,19 +63082,15 @@ return {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_HeavyT3_Mortarman",
-									
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_AssaultT4_Headsman",
-									
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
-									
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_FrontT3_Veteran",
-									
 								}),
 							},
 							'UnitCountMin', 1,
@@ -63311,11 +63286,9 @@ return {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_HeavyT1_Rocketeer",
-									
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
-									
 								}),
 							},
 							'UnitCountMin', 1,
@@ -63522,7 +63495,6 @@ return {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_FlankerT4_Ranger",
-									
 								}),
 							},
 							'UnitCountMin', 1,
@@ -63713,11 +63685,9 @@ return {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
-									
 								}),
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_HeavyT3_Mortarman",
-									
 								}),
 							},
 							'UnitCountMin', 1,
