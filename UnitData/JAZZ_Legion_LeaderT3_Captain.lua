@@ -25,6 +25,7 @@ DefineClass.JAZZ_Legion_LeaderT3_Captain = {
 	eliteCategory = "Legion",
 	Affiliation = "Legion",
 	StartingLevel = 6,
+	villain = true,
 	neutral_retaliate = true,
 	AIKeywords = {
 		"Control",

@@ -4,6 +4,7 @@ DefineClass.Chimurenga = {
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
 
+	comment = "Чебурашка",
 	object_class = "UnitData",
 	Health = 85,
 	Agility = 90,
@@ -13,7 +14,7 @@ DefineClass.Chimurenga = {
 	Will = 90,
 	Leadership = 90,
 	Marksmanship = 85,
-	Mechanical = 0,
+	Mechanical = 100,
 	Explosives = 40,
 	Medical = 25,
 	Portrait = "UI/NPCsPortraits/Chimurenga",

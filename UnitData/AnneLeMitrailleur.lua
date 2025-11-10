@@ -1,37 +1,31 @@
-UndefineClass('RebelGunner')
-DefineClass.RebelGunner = {
+UndefineClass('AnneLeMitrailleur')
+DefineClass.AnneLeMitrailleur = {
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
 
-	comment = "Пулеметчик Штурмовой",
+	comment = "Анка Пулеметчица - Квестовое",
+	__copy_group = "NPC_banter",
 	object_class = "UnitData",
-	Health = 86,
-	Agility = 78,
-	Dexterity = 88,
-	Strength = 80,
-	Wisdom = 15,
-	Will = 65,
-	Leadership = 0,
-	Marksmanship = 76,
-	Mechanical = 100,
-	Explosives = 10,
+	Health = 62,
+	Agility = 47,
+	Dexterity = 39,
+	Strength = 59,
+	Wisdom = 30,
+	Leadership = 20,
+	Marksmanship = 40,
+	Mechanical = 0,
+	Explosives = 0,
 	Medical = 0,
-	Portrait = "UI/EnemiesPortraits/RebelHeavy",
-	BigPortrait = "UI/Enemies/LegionRaider",
-	Name = T(431404906000, --[[ModItemUnitDataCompositeDef RebelGunner Name]] "Засадный пулеметчик"),
+	Portrait = "UI/EnemiesPortraits/RebelStormer",
+	Name = T(313818019736, --[[ModItemUnitDataCompositeDef AnneLeMitrailleur Name]] "Анна ла Митраёз"),
 	Randomization = true,
-	eliteCategory = "Rebels",
 	Affiliation = "Rebel",
-	StartingLevel = 8,
+	StartingLevel = 2,
 	neutral_retaliate = true,
-	AIKeywords = {
-		"MG",
-		"CQB",
-	},
-	archetype = "Rebels_Machinegunner",
+	archetype = "HeavyGunner",
 	role = "Heavy",
-	MaxAttacks = 10,
+	MaxAttacks = 2,
 	PickCustomArchetype = function (self, proto_context)
 		local enemy, dist = GetNearestEnemy(self)
 		local archetype = self.archetype
@@ -60,39 +54,25 @@ DefineClass.RebelGunner = {
 	end,
 	MaxHitPoints = 85,
 	StartingPerks = {
-		"HitTheDeck",
-		"Ironclad",
-		"RelentlessAdvance",
-		"TrueGrit",
+		"AutoWeapons",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
-			'Preset', "Heavy_Rebels",
-		}),
-		PlaceObj('AppearanceWeight', {
-			'Preset', "Heavy_Rebels_02",
-		}),
-		PlaceObj('AppearanceWeight', {
-			'Preset', "Heavy_Rebels_03",
+			'Preset', "RebelFemaleSniper",
 		}),
 	},
 	Equipment = {
-		"RebelGunner",
+		"AnneLeMitrailleur",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {
-			'Weight', 50,
-			'Exclusive', true,
-			'Name', "LegionMale_1",
-		}),
-		PlaceObj('AdditionalGroup', {
-			'Weight', 50,
-			'Exclusive', true,
-			'Name', "LegionMale_2",
+			'Name', "MaquisFemale_1",
 		}),
 	},
-	pollyvoice = "Joey",
-	gender = "Male",
-	VoiceResponseId = "LegionRaider",
+	pollyvoice = "Kendra",
+	gender = "Female",
+	VoiceResponseId = "AnneLeMitrailleur",
+	FallbackMissingVR = "VillagerFemale",
 }
 

@@ -1,5 +1,5 @@
-UndefineClass('RebelSergant')
-DefineClass.RebelSergant = {
+UndefineClass('RebelSergeant_Immortal_M1')
+DefineClass.RebelSergeant_Immortal_M1 = {
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -19,12 +19,12 @@ DefineClass.RebelSergant = {
 	Medical = 70,
 	Portrait = "UI/EnemiesPortraits/RebelOfficer",
 	BigPortrait = "UI/Mercs/IMP_Fixer",
-	Name = T(641054948744, --[[ModItemUnitDataCompositeDef RebelSergant Name]] "Командир отряда"),
+	Name = T(641054948744, --[[ModItemUnitDataCompositeDef RebelSergeant_Immortal_M1 Name]] "Командир отряда"),
 	Randomization = true,
-	elite = true,
 	eliteCategory = "Rebels",
 	Affiliation = "Rebel",
 	StartingLevel = 6,
+	immortal = true,
 	villain = true,
 	neutral_retaliate = true,
 	AIKeywords = {

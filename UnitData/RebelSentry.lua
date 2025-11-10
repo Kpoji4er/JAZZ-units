@@ -4,41 +4,86 @@ DefineClass.RebelSentry = {
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
 
+	comment = "Фланкер Винтовка",
 	object_class = "UnitData",
-	Health = 66,
-	Agility = 71,
-	Strength = 63,
-	Wisdom = 86,
-	Will = 90,
-	Leadership = 73,
-	Marksmanship = 69,
-	Mechanical = 54,
-	Explosives = 57,
-	Medical = 45,
+	Health = 70,
+	Agility = 88,
+	Dexterity = 70,
+	Wisdom = 15,
+	Will = 55,
+	Leadership = 0,
+	Marksmanship = 85,
+	Mechanical = 100,
+	Explosives = 0,
+	Medical = 0,
 	Portrait = "UI/EnemiesPortraits/RebelOfficer",
-	Name = T(628639184991, --[[ModItemUnitDataCompositeDef RebelSentry Name]] "Патрульный"),
+	BigPortrait = "UI/Enemies/LegionRaider",
+	Name = T(477554350185, --[[ModItemUnitDataCompositeDef RebelSentry Name]] "Патрульный"),
 	Randomization = true,
-	elite = true,
-	eliteCategory = "Maquis",
+	eliteCategory = "Rebels",
 	Affiliation = "Rebel",
-	StartingLevel = 5,
+	StartingLevel = 10,
 	neutral_retaliate = true,
 	AIKeywords = {
+		"Marksman",
+		"Sniper",
 		"Control",
 	},
-	role = "Commander",
+	archetype = "Rebels_Frontliner",
+	role = "Soldier",
 	MaxAttacks = 10,
-	MaxHitPoints = 80,
+	PickCustomArchetype = function (self, proto_context)
+		local enemy, dist = GetNearestEnemy(self)
+		local archetype = self.archetype
+		local weapon_class = "Firearm"
+		
+		if enemy and dist < 10*const.SlabSizeX then
+			--archetype = "Brute"
+			weapon_class = "Melee"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if not self:GetActiveWeapons(weapon_class) then
+			AIPlayCombatAction("ChangeWeapon", self, 0)
+		end
+		
+		local stealth_stance = self:GetStanceToStealth()
+		if self:CanStealth(stealth_stance) then
+		 self:Hide()
+		end	
+		
+		return archetype
+	end,
+	CustomEquipGear = function (self, items)
+		self:TryEquip(items, "Handheld A", "Firearm")
+		self:TryEquip(items, "Handheld B", "Firearm")
+	end,
+	MaxHitPoints = 50,
 	StartingPerks = {
-		"BeefedUp",
-		"Berserker",
-		"AutoWeapons",
-		"MinFreeMove",
-		"NightOps",
+		"Hotblood",
+		"OpportunisticKiller",
+		"Instagib",
+		"BunsPerk",
+		"Killzone",
+		"CancelShotPerk",
+		"Spiritual",
+		"Spotter",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
-			'Preset', "Commander_Rebels",
+			'Preset', "Marksman_Rebels",
+		}),
+		PlaceObj('AppearanceWeight', {
+			'Preset', "Soldier_Rebels",
+		}),
+		PlaceObj('AppearanceWeight', {
+			'Preset', "Soldier_Rebels_02",
+		}),
+		PlaceObj('AppearanceWeight', {
+			'Preset', "Soldier_Rebels_03",
+		}),
+		PlaceObj('AppearanceWeight', {
+			'Preset', "Soldier_Rebels_04",
 		}),
 	},
 	Equipment = {
@@ -46,18 +91,11 @@ DefineClass.RebelSentry = {
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {
-			'Weight', 50,
-			'Exclusive', true,
-			'Name', "MaquisMale_1",
-		}),
-		PlaceObj('AdditionalGroup', {
-			'Weight', 50,
-			'Exclusive', true,
-			'Name', "MaquisMale_2",
+			'Name', "LegionMale_2",
 		}),
 	},
 	pollyvoice = "Joey",
 	gender = "Male",
-	VoiceResponseId = "RebelSoldier",
+	VoiceResponseId = "LegionRaider",
 }
 

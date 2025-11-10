@@ -4,37 +4,67 @@ DefineClass.RebelSniper_female = {
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
 
+	comment = "Снайпер Бодитайп 2",
 	object_class = "UnitData",
-	Health = 41,
-	Agility = 44,
-	Dexterity = 89,
-	Strength = 41,
-	Wisdom = 48,
-	Will = 90,
-	Leadership = 33,
-	Marksmanship = 91,
-	Mechanical = 0,
+	Health = 75,
+	Agility = 92,
+	Dexterity = 80,
+	Wisdom = 30,
+	Will = 75,
+	Leadership = 20,
+	Marksmanship = 95,
+	Mechanical = 100,
 	Explosives = 0,
 	Medical = 0,
 	Portrait = "UI/EnemiesPortraits/RebelSniper",
-	Name = T(739758983115, --[[ModItemUnitDataCompositeDef RebelSniper_female Name]] "Снайпер"),
+	Name = T(839107049203, --[[ModItemUnitDataCompositeDef RebelSniper_female Name]] "Снайпер"),
 	Randomization = true,
+	elite = true,
+	eliteCategory = "Legion",
 	Affiliation = "Rebel",
-	StartingLevel = 3,
+	StartingLevel = 12,
 	neutral_retaliate = true,
 	AIKeywords = {
 		"Sniper",
 	},
-	archetype = "Soldier_Sniper",
+	archetype = "Rebels_Frontliner",
 	role = "Marksman",
 	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "PinDown",
 	MaxAttacks = 10,
+	PickCustomArchetype = function (self, proto_context)
+		local enemy, dist = GetNearestEnemy(self)
+		local archetype = self.archetype
+		local weapon_class = "Firearm"
+		
+		if enemy and dist < 10*const.SlabSizeX then
+			--archetype = "Brute"
+			weapon_class = "Melee"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if not self:GetActiveWeapons(weapon_class) then
+			AIPlayCombatAction("ChangeWeapon", self, 0)
+		end
+		
+		return archetype
+	end,
+	CustomEquipGear = function (self, items)
+		self:TryEquip(items, "Handheld A", "Firearm")
+		self:TryEquip(items, "Handheld B", "Firearm")
+	end,
 	MaxHitPoints = 50,
 	StartingPerks = {
-		"Deadeye",
-		"MinFreeMove",
-		"NightOps",
+		"LightningReactionNPC",
+		"Spiritual",
+		"Instagib",
+		"HawksEye",
+		"Killzone",
+		"Spiritual",
+		"DeathFromAbove",
+		"SteadyBreathing",
+		"TrickShot",
+		"Hobbler",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
@@ -46,11 +76,18 @@ DefineClass.RebelSniper_female = {
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {
-			'Name', "MaquisFemale_1",
+			'Weight', 50,
+			'Exclusive', true,
+			'Name', "LegionMale_1",
+		}),
+		PlaceObj('AdditionalGroup', {
+			'Weight', 50,
+			'Exclusive', true,
+			'Name', "LegionMale_2",
 		}),
 	},
-	pollyvoice = "Kendra",
-	gender = "Female",
-	VoiceResponseId = "AnneLeMitrailleur",
+	pollyvoice = "Joey",
+	gender = "Male",
+	VoiceResponseId = "LegionRaider",
 }
 

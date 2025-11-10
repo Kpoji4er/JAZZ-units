@@ -6,13 +6,14 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 1,
-	'version', 1987,
+	'version', 2016,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
 		"Code/EliteEnemyNamesFuncs.lua",
 		"Code/Mercenary.lua",
 		"Code/Legion.lua",
+		"Code/Rebels.lua",
 		"Code/AIKeywords.lua",
 		"UnitData/JAZZ_Legion_AssaultT1_Roughneck.lua",
 		"UnitData/JAZZ_Legion_AssaultT1_Crusher.lua",
@@ -51,56 +52,9 @@ return PlaceObj('ModDef', {
 		"UnitData/JAZZ_Legion_HeavyT1_Rocketeer.lua",
 		"UnitData/JAZZ_Legion_HeavyT2_Grenadier.lua",
 		"UnitData/JAZZ_Legion_HeavyT3_Mortarman.lua",
-		"UnitData/LegionRocketeer_Stronger_Elite.lua",
-		"UnitData/LegionSharpShooter_Stronger_Elite.lua",
-		"UnitData/LegionRaider_Stronger_Elite.lua",
-		"UnitData/LegionRaider_Demolution_Stronger_Elite.lua",
-		"UnitData/LegionRaidLeader_Stronger_Elite.lua",
-		"UnitData/LegionManiac_Stronger_Elite.lua",
-		"UnitData/LegionMedic_Stronger_Elite.lua",
-		"UnitData/LegionGunner_Stronger_Elite.lua",
-		"UnitData/LegionHyenaHandler_Stronger_Elite.lua",
-		"UnitData/LegionGrenadier_Stronger_Elite.lua",
-		"UnitData/LegionGoon_Stronger_Elite.lua",
-		"UnitData/LegionButcher_Stronger_Elite.lua",
-		"UnitData/LegionScout_Stronger_Elite.lua",
-		"UnitData/LegionSniper_Stronger_Elite.lua",
-		"UnitData/LegionSergant_Stronger_Elite.lua",
-		"UnitData/LegionRanger_Stronger_Elite.lua",
-		"UnitData/LegionMortarman_Stronger_Elite.lua",
-		"UnitData/LegionRocketeer_Stronger.lua",
-		"UnitData/LegionRaider_Stronger.lua",
-		"UnitData/LegionRaider_Demolution_Stronger.lua",
-		"UnitData/LegionRaidLeader_Stronger.lua",
-		"UnitData/LegionMortarman_Stronger.lua",
-		"UnitData/LegionMedic_Stronger.lua",
-		"UnitData/LegionManiac_Stronger.lua",
-		"UnitData/LegionHyenaHandler_Stronger.lua",
-		"UnitData/LegionHyena_Stronger.lua",
-		"UnitData/LegionGunner_Stronger.lua",
-		"UnitData/LegionGrenadier_Stronger.lua",
-		"UnitData/LegionMolotov_Stronger.lua",
-		"UnitData/LegionGoon_Stronger.lua",
-		"UnitData/LegionButcher_Stronger.lua",
-		"UnitData/LegionScout_Stronger.lua",
-		"UnitData/LegionSharpShooter_Stronger.lua",
-		"UnitData/LegionSniper_Stronger.lua",
-		"UnitData/LegionSergant_Stronger.lua",
-		"UnitData/LegionRanger_Stronger.lua",
-		"UnitData/LegionRaider.lua",
-		"UnitData/LegionRaider_Demolution.lua",
-		"UnitData/LegionRaidLeader.lua",
-		"UnitData/LegionMedic.lua",
-		"UnitData/LegionManiac.lua",
-		"UnitData/LegionGunner.lua",
-		"UnitData/LegionGrenadier.lua",
-		"UnitData/LegionMolotov.lua",
-		"UnitData/LegionButcher.lua",
-		"UnitData/LegionScout.lua",
-		"UnitData/LegionSniper.lua",
-		"UnitData/LegionSharpShooter.lua",
-		"UnitData/LegionGoon.lua",
-		"UnitData/LegionRocketeer.lua",
+		"UnitData/PierreGuard_Ordnance.lua",
+		"UnitData/ErnyVillage_Boss.lua",
+		"UnitData/PierreGuard.lua",
 		"UnitData/ArmyCommando_Sergant.lua",
 		"UnitData/ArmyCommando_Demolution.lua",
 		"UnitData/ArmyCommando_Sniper.lua",
@@ -145,9 +99,13 @@ return PlaceObj('ModDef', {
 		"UnitData/AdonisSoldier.lua",
 		"UnitData/AdonisSoldier_Elite.lua",
 		"UnitData/Chimurenga.lua",
-		"UnitData/RebelSergant_Immortal.lua",
-		"UnitData/RebelSergant_Immortal_M1.lua",
+		"UnitData/AnneLeMitrailleur.lua",
 		"UnitData/RebelSergant.lua",
+		"UnitData/RebelSergeant.lua",
+		"UnitData/RebelSergant_Immortal.lua",
+		"UnitData/RebelSergeant_Immortal.lua",
+		"UnitData/RebelSergant_Immortal_M1.lua",
+		"UnitData/RebelSergeant_Immortal_M1.lua",
 		"UnitData/RebelFlanker.lua",
 		"UnitData/RebelGrenadier.lua",
 		"UnitData/RebelGunner.lua",
@@ -156,20 +114,12 @@ return PlaceObj('ModDef', {
 		"UnitData/RebelSniper_female.lua",
 		"UnitData/RebelSoldier.lua",
 		"UnitData/RebelRPG.lua",
-		"UnitData/RebelRPG_Immortal.lua",
 		"UnitData/RebelHeavy_Mortar.lua",
+		"UnitData/RebelRPG_Immortal.lua",
 		"UnitData/RebelHeavy_Mortar_Immortal.lua",
 		"UnitData/MilitiaVeteran.lua",
 		"UnitData/MilitiaRookie.lua",
 		"UnitData/MilitiaElite.lua",
-		"UnitData/PierreGuard_Ordnance.lua",
-		"UnitData/ErnyVillage_Boss.lua",
-		"UnitData/PierreGuard.lua",
-		"UnitData/LegionRocketeer_SlowReloader.lua",
-		"UnitData/LegionRaider_PresidentGuard.lua",
-		"UnitData/LegionRaider_Ernie_Elite.lua",
-		"UnitData/LegionBrawler_SavannaCamp.lua",
-		"UnitData/LegionRaider_WeakFlagHill.lua",
 		"UnitData/Doctor_Leevsy.lua",
 		"UnitData/Jazz_lynx.lua",
 		"UnitData/Jazz_Buzz.lua",
@@ -226,8 +176,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1762399261,
-	'code_hash', 3355665665272293566,
+	'saved', 1762794016,
+	'code_hash', -4103887504860033470,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
@@ -307,6 +257,261 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
 			'Id', "LegionArmor_Pants_Body_MediumUp",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "38spl_revolver_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "44cal_revolver_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "357cal_revolver_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "9x19_pistol_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "9x19_pistol_ammo_ap",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "9x18_pistol_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "9x18_pistol_ammo_ap",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "45cal_pistol_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "45cal_revolver_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "762x25_pistol_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "762x25_pistol_ammo_ap",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "9x19_smg_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "9x19_smg_ammo_ap",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "9x18_smg_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "9x18_smg_ammo_ap",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "45cal_smg_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "762x25_smg_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "762x25_smg_ammo_ap",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "30cal_carbine_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "792x33_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "792x33_ammo_ap",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "762x39_ar_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "762x39_ar_ammo_ap",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "762x39_ar_ammo_tracer",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "762x39_mg_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "762x39_mg_ammo_ap",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "556_ar_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "556_ar_ammo_tracer",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "556_ar_ammo_ap",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "556_mg_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "556_mg_ammo_ap",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "545_ar_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "545_ar_ammo_tracer",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "545_ar_ammo_ap",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "545_mg_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "545_mg_ammo_ap",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "75mm_rifle_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "792x57_rifle_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "3006_rifle_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "75mm_mg_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "3006_mg_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "792x57_mg_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "9x39_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "9x39_ammo_ap",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "762x51_ar_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "762x51_ar_ammo_ap",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "762x51_ar_ammo_tracer",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "762x51_sniper_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "762x51_mg_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "762x54_sniper_ammo",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "762x54_mg_ammo",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -696,7 +901,7 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "SMGs_PP19Bizon_Reflex",
+			'Id', "SMGs_PP19Bizon_Reflex_AP",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -776,7 +981,7 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "Carbines_ZastavaM92_PS",
+			'Id', "Carbines_ZastavaM92_AP",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -821,12 +1026,12 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "Carbines_AKSU_PS",
+			'Id', "Carbines_AKSU_AP",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "Carbines_AKSU_PP_45mag",
+			'Id', "Carbines_AKSU_AP_45mag",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -836,7 +1041,12 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "Carbines_M4A1_M856",
+			'Id', "Carbines_M4A1_Tracers",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Carbines_M4A1_AP",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -846,12 +1056,12 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "Carbines_M4A1_M856_Reflex",
+			'Id', "Carbines_M4A1_AP_Reflex",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "Carbines_M4A1_M856_Acog",
+			'Id', "Carbines_M4A1_AP_Acog",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -861,12 +1071,12 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "Carbines_G36c_M856",
+			'Id', "Carbines_G36c_AP",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "Carbines_G36c_M856_Reflex",
+			'Id', "Carbines_G36c_AP_Reflex",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -881,7 +1091,17 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
+			'Id', "Carbines_ASVAL_AP_Reflex",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
 			'Id', "AssaultRifles_STG44",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "AssaultRifles_STG44_AP",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -891,7 +1111,7 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_Type56_PS",
+			'Id', "AssaultRifles_Type56_AP",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -901,17 +1121,17 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_M16A1_M855",
+			'Id', "AssaultRifles_M16A1_AP",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_M16A1_Reflex",
+			'Id', "AssaultRifles_M16A1_AP_Reflex",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_M16A1_Scope",
+			'Id', "AssaultRifles_M16A1_AP_Scope",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -921,7 +1141,7 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_ZastavaM70_PS",
+			'Id', "AssaultRifles_ZastavaM70_AP",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -931,7 +1151,7 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_Famas_M855",
+			'Id', "AssaultRifles_Famas_AP",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -941,22 +1161,22 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_M16A2_M855",
+			'Id', "AssaultRifles_M16A2_AP",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_M16A23xScope",
+			'Id', "AssaultRifles_M16A2_Tracer_3xScope",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_M16A2Reflex",
+			'Id', "AssaultRifles_M16A2_AP_Reflex",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_M16A22xScope",
+			'Id', "AssaultRifles_M16A2_Tracer_2xScope",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -966,7 +1186,7 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_AK47_PS",
+			'Id', "AssaultRifles_AK47_AP",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -986,27 +1206,27 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_AKMDTK",
+			'Id', "AssaultRifles_AKM_AP_DTK",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_AKM40Mag",
+			'Id', "AssaultRifles_AKM_Tracer_40Mag",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_AKMDTK_Reflex",
+			'Id', "AssaultRifles_AKM_AP_DTK_Reflex",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_AKMDTK_Scope",
+			'Id', "AssaultRifles_AKM_AP_DTK_Scope",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_AKMS40Mag_Reflex",
+			'Id', "AssaultRifles_AKMS_AP_40Mag_Reflex",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -1016,12 +1236,12 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_HK33_Reflex",
+			'Id', "AssaultRifles_HK33_AP_Reflex",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_HK33_Scope",
+			'Id', "AssaultRifles_HK33_Tracer_Scope",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -1031,52 +1251,47 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_AK74_PS",
+			'Id', "AssaultRifles_AK74_AP",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_AK74_PS_45mag",
+			'Id', "AssaultRifles_AK74_45mag",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_AK74_PS_Scope",
+			'Id', "AssaultRifles_AK74_Tracer_Scope",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_AK74_PP",
+			'Id', "AssaultRifles_AK74_AP_Reflex",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_AK74_PP_Reflex",
+			'Id', "AssaultRifles_AK74_AP_Scope",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_AK74_PP_Scope",
+			'Id', "AssaultRifles_AUG_AP",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_AUG",
+			'Id', "AssaultRifles_M16A4_AP",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_M16A4",
+			'Id', "AssaultRifles_M16A4_AP_Reflex",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "AssaultRifles_M16A4_Reflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "AssaultRifles_M16A4_Scope",
+			'Id', "AssaultRifles_M16A4_Tracer_Scope",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -1087,6 +1302,26 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
 			'Id', "AssaultRifles_G36Long",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "AssaultRifles_G36_AP",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "AssaultRifles_G36Long_AP",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "AssaultRifles_G36_Tracer",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "AssaultRifles_G36Long_Tracer",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -1106,7 +1341,7 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "BattleRifles_AR10_3xScope",
+			'Id', "BattleRifles_AR10_Tracer_3xScope",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -1116,17 +1351,17 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "BattleRifles_M14_M80",
+			'Id', "BattleRifles_M14_AP",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "BattleRifles_M14_M80_Reflex",
+			'Id', "BattleRifles_M14_AP_Reflex",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "BattleRifles_M14_M80_Scope",
+			'Id', "BattleRifles_M14_AP_Scope",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -1136,7 +1371,7 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "BattleRifles_FNFAL_M80",
+			'Id', "BattleRifles_FNFAL_AP",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -1156,17 +1391,17 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "BattleRifles_FNFAL_M80_Grip",
+			'Id', "BattleRifles_FNFAL_AP_Grip",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "BattleRifles_FNFAL_M80_Grip_Scope",
+			'Id', "BattleRifles_FNFAL_AP_Grip_Scope",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "BattleRifles_FNFAL_M80_Grip_Reflex",
+			'Id', "BattleRifles_FNFAL_AP_Grip_Reflex",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -1181,17 +1416,17 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "BattleRifles_GalilDTK",
+			'Id', "BattleRifles_Galil_AP_DTK",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "BattleRifles_Galil_M80_Bipod_Scope",
+			'Id', "BattleRifles_Galil_AP_Bipod_Scope",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "BattleRifles_Galil_M80_Bipod_Reflex",
+			'Id', "BattleRifles_Galil_AP_Bipod_Reflex",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -1201,32 +1436,32 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "BattleRifles_G3A33xScope",
+			'Id', "BattleRifles_G3A3_Tracer_3xScope",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "BattleRifles_G3A34xScope",
+			'Id', "BattleRifles_G3A3_AP_4xScope",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "BattleRifles_G3A3_Reflex",
+			'Id', "BattleRifles_G3A3_AP_Reflex",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "BattleRifles_G3A4",
+			'Id', "BattleRifles_G3A4_AP",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "BattleRifles_G3A43xScope",
+			'Id', "BattleRifles_G3A4_AP_3xScope",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "BattleRifles_G3A4_Reflex",
+			'Id', "BattleRifles_G3A4_AP_Reflex",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -1271,7 +1506,7 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "RiflesSemi_SKS_PS",
+			'Id', "RiflesSemi_SKS_Tracer",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -3056,17 +3291,52 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "LegionNoArmor",
+			'Id', "Pierre",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "LegionJackets",
+			'Id', "PierreGuard",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "LegionLightArmor",
+			'Id', "PierreGuard_Ordnance",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "LeatherArmor_ScrapPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "LeatherArmor_KevlarPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "LeatherArmor_SteelPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "LegionTorsoJackets",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "LegionTorsoLightArmor",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "LegionTorsoMiddleArmor",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "LegionTorsoHeavyArmor",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -3456,6 +3726,41 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
+			'Id', "FlareGun",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "EnemyValuables_T3",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "EnemyValuables_T2",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "EnemyValuables_T1",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "EnemyValuables_T4",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "EnemyValuables_HighRank",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "NightEquipment",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
 			'Id', "LegionGL_5pc",
 			'ClassDisplayName', "LootDef",
 		}),
@@ -3782,3136 +4087,6 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
 			'Id', "LegionGL",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_9x19",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_38cal",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_357cal",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_9x19",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_9x19",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_9x18",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_762x25",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_44Cal",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_44Cal",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_44Cal",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_45ACP",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_45ACP",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_45ACP",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_50BMG",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_792",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_792_Machinegun",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_3006",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_3006_Machinegun",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_9x39",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_9x39",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_762x39",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_762x39",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_762x39",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_762x51",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_762x51_Sniper",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_762x51_Machinegun",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_75_Machinegun",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_762x51",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_762x51_Sniper",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_762x51_Machinegun",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_762x51",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_762x51_Sniper",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_762x51_Machinegun",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_762x54",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_762x54_Machinegun",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_762x54",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_762x54",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_762x54_Machinegun",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_556",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_556_Machinegun",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_556",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_556_Machinegun",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_556",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_556_Machinegun",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_545",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_545",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_545",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "40mm",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "RPG7Ammo",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "NoobPlate",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "StrongPlate",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "ElitePlate",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_LeatherArmor",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_LeatherArmor",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_LeatherArmor",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_TireArmor",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_TireArmor",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_TireArmor",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_6b13",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_6b13",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_6b13",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_TwaronLight",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_TwaronLight",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_TwaronLight",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_TwaronMedium",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_TwaronMedium",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_TwaronMedium",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_TwaronHeavy",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_TwaronHeavy",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_TwaronHeavy",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_GuardianLight",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_GuardianLight",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_GuardianLight",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_GuardianMedium",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_GuardianMedium",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_GuardianMedium",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_GuardianHeavy",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_GuardianHeavy",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_GuardianHeavy",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_ZylonLight",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_ZylonLight",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_ZylonLight",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_ZylonMedium",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_ZylonMedium",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_ZylonMedium",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_ZylonHeavy",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_ZylonHeavy",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_ZylonHeavy",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_RBA",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_RBA",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_RBA",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_SharpShooter_Torso",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_SharpShooter_Torso",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_SharpShooter_Torso",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_Scout_Torso",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_Scout_Torso",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_Scout_Torso",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_GoonTorso",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_GoonTorso",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_GoonTorso",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_RaiderTorso",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_RaiderTorso",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_RaiderTorso",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_ReconTorso",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_ReconTorso",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_ReconTorso",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_MeleeTorso",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_MeleeTorso",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_MeleeTorso",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_GoonHead",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_GoonHead",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_GoonHead",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_RaiderHead",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_RaiderHead",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_RaiderHead",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_ReconHead",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_ReconHead",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_ReconHead",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_MeleeHead",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_MeleeHead",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_MeleeHead",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_GoonLegs",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_GoonLegs",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_GoonLegs",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_RaiderLegs",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_RaiderLegs",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_RaiderLegs",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_ReconLegs",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_ReconLegs",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_ReconLegs",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Noob_MeleeLegs",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Strong_MeleeLegs",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Elite_MeleeLegs",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Pistol_T1",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Pistol_T2",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Pistol_T3",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Pistol_T1",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Pistol_T2",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Pistol_T3",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Pistol_T1",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Pistol_T2",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Pistol_T3",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Pistol",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Pistol",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Pistol",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Luger",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_MAC1950",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_SWModel52",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_SWModel10",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Colt38Special",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Colt38SpecialShort",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_CZ52",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_P38",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_ColtM1917",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Webley",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_SWModel5906",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_MR73",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_SWModel19",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_SWModel29",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_P210",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Makarov",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_TT",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Colt1911",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Scorpion",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_HiPower",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_ColtPeaceMaker",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_ColtPeaceMakerShort",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_CZ75",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_MicroUZI",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Beretta",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_P220",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_ColtAnacondaShort",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Glock17",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_MAC10",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_MP443",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_MP5KPreset",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Luger",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_SWModel52",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_P210",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Makarov",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_TT",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Colt1911",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Scorpion",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_HiPower",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_ColtPeaceMaker",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Beretta",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_CZ75",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_P220",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_MicroUZI",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_MAC10",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_ColtAnaconda",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_MP443",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_USP45",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_APS",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_MP5K",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Glock17",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_P226",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Glock18",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_DesertEagle",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_TMP",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Luger",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_SWModel52",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_P210",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Colt1911",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Scorpion",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_HiPower",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_ColtPeaceMaker",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_ColtPeaceMakerShort",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_CZ75",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Beretta",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_MicroUZI",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_P220",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_BerettaLaser",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_P220Laser",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_MicroUZILaser",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_ColtAnaconda",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_MAC10",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_ColtAnacondaScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_MP443",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_USP45",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_APS",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_MP5KLaser",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Glock17Laser",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Glock17",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_P226",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Glock18Laser",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_DesertEagle",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_TMP",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_GrizzlyLAR",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Korth",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_SMG",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_SMG",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_MP40",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_MAT49",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Thompson",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_ThompsonDrum",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_PPS43",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_PPSH",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_PPSHDrum",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_M3GreaseGun",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Sterling",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Agram2000",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_M45",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_MPL",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_UZI",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_BerettaM12",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_SpectreM4",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_ZastavaM92",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_MP5A2",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_MP5A4",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_CAR15",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_AKSU",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_MP40",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_MAT49",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Thompson",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_ThompsonDrum",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_PPSH",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_PPSHDrum",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M3GreaseGun",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Sterling",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Agram2000",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M45",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_MPL",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_UZI",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_UZIStock",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_BerettaM12",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_SpectreM4",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_ZastavaM92",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_MP5A2",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_MP5A4",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_CAR15",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_UMP45",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_ASVAL",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_AKSU",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_PP19Bizon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_ThompsonDrum",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_PPSHDrum",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Sterling",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Agram2000",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M45",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_MPL",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Agram2000Silencer",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_MicroUZI_Reflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_BerettaM12",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_UZIStockCompensator",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_UZIReflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_SpectreM4",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_ZastavaM92",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_MP5A2Reflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_MP5A4Scope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_CAR15Reflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_ASVAL",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_PP19Bizon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_UMP45_Reflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_UMP45_Suppressor",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_AKSUGrip",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_AssaultRifle",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_AssaultRifle",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_M14",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Type56",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Famas",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_M16A1",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_ZastavaM70",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_AK47",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_AR10",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_AR103xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_FNFAL",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_FNFAL3xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_FNFALLight",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Galil",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_GalilLight",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_M16A2",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_M16A23xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_G3A3",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_M4A1",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_AKM",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_AKMS",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Type56",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Famas",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_ZastavaM70",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M14",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M16A1",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_AK47",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_AR10",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_AR103xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_FNFAL",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_FNFALLight",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_FNFAL3xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_FNFALDTK",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_FNFALGrip",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Galil",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_GalilLight",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_GalilDTK",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M16A2",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M16A23xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M16A24xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_G3A3",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_G3A33xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_G3A34xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_G3A4",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_G3A43xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M4A1",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_G36",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_G36c",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_AKM",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_AKMDTK",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_AKM40Mag",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_AKMS",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_AVT40",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_AK74",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M16A4",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_AUG",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_WinchesterReflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Mini14Reflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Type56",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M1GarandReflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_FamasScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_ZastavaM70",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M14Reflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_CAR15Scope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M16A1",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M16A1Scope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_AK47",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_AR10Reflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_AR103xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_FNFALReflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_FNFAL3xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_FNFAL4xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_FNFAL5xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_FNFALDTK",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_GalilReflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_GalilScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M16A23xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M16A24xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M16A2Reflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_G3A3Reflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_G3A33xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_G3A34xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_G3A4Reflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M4A1Scope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_G36",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_G36Long",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_G36c",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_G36cReflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_AKMDTK",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_AKMReflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_AKMScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_AKM40ReflexMag",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_AVT40",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_AK74",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M16A4",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_AUG",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_SharpRifles",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_SharpRifles",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_SharpRifles",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_SniperRifles",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_SniperRifles",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_SniperRifles",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Winchester",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_M1Garand",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Gewehr98",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Springfield",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Mosin",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_SKS",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_SVT40",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_M1GarandScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Gewehr983xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Gewehr9810xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_SpringfieldOptics",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Mini14",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Mini143xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Mini145xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Mini1410xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_MosinScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_GarandScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_M21",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_M213xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_M215xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_M2110xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_FRF2",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_M700",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_ZastavaM76",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_DragunovSVD",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_AR10DMR3xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_AR10DMR5xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_M2410xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Winchester",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_SKS",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_SVT40",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_SVT40Scope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Mini14",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Mini143xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Mini145xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Mini1410xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_MosinScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Mosin",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M21",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M213xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M215xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M2110xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_AR10DMR_5xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_G3Sniper_5xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_FRF2",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M700",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_ZastavaM76",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_DragunovSVD",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_DragunovSVD_10xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_AR10DMR3xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_AR10DMR5xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_AR10DMR10xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M2410xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_PSG1",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_AWM",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_BarretM82",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_WinchesterScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_SVT40",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_SVT40Scope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Mini14",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Mini145xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Mini14_5xScope_SBarrel",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Mini1410xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_MosinScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M21",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M215xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M2110xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_AR10DMR_5xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_G3Sniper_10xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_FRF2",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M700",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_ZastavaM76",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_DragunovSVD",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_DragunovSVD_10xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_VSS",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_SVU",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_AR10DMR10xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M2410xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_PSG1_10xScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_AWM",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_BarretM82_10x",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_MG",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_MG",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_MG",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_MAC2429",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_BAR",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_DP27",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_MG42",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_M60",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_RPD",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_RPK",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_FNMAG",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_FNMinimi",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_RPK74",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_MAC2429",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_DP27",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_U100",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M60",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_RPK",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_RPKDrum",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_RPD",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M60E3",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_FNMinimi",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_FNMAG",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_RPK74",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_PKM",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_U100Drum",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M60",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_RPKReflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_RPKScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_RPKDrumReflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M60E3Reflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_FNMinimiShortReflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_FNMinimiLongScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_FNMAGScope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_RPK74Reflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_PKM",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Shotguns",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Shotguns",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Shotguns",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_DoubleBarrel",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_DoubleBarrelShort",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Auto5",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_M1897",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_R870",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Ithaca",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Striker",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionNoob_Spas12",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_DoubleBarrel",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Auto5",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M1897",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_R870",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Ithaca",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Striker",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Spas12",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_Usas12",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_AA12",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionStrong_M41",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Auto5",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M1897",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_R870Reflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_R870Scope",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_IthacaShort",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Striker",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Spas12",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_Usas12",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_M41Reflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionElite_AA12Reflex",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_GoonNoob_Weapon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_GoonStrong_Weapon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_GoonElite_Weapon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_RaiderNoob_Weapon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_RaiderGrenadierNoob_Weapon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_GrenadierNoob_Weapon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_GrenadierStrong_Weapon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_RocketeerStrong_Weapon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_RocketeerElite_Weapon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_MedicStrong_Weapon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_MedicElite_Weapon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_RaidLeaderNoob_Weapon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_RaidLeaderStrong_Weapon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_RaidLeaderElite_Weapon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_HyenaStrong_Weapon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_HyenaElite_Weapon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "NightEquipment",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "FlareGun",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_T1Gren_chance",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_T2Gren_chance",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_T2Gren",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Legion_SUPGren_chance",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "EnemyValuables",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Medicine_Leader",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "EnemyValuables_LowTier",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "EnemyValuablesLeaders",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Pierre",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "PierreGuard",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "PierreGuard_Ordnance",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionGoon",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionGoon_Stronger",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionGoon_Stronger_Elite",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionMedic",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionMedic_Stronger",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionMedic_Stronger_Elite",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "Minion",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionMortarman",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionBerserker",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionBerserker_Stronger",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionBerserker_Stronger_Elite",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionBrawler",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionGrenadier",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionGrenadierMolotov",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionGrenadier_Stronger",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionGrenadier_Stronger_Elite",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionGrenadier_Stronger_Elite_Molotov",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionGunner",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionGunner_Stronger",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionGunner_Stronger_Elite",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionRaiders",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionRaiders_GL",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionRaider_Stronger",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionRaider_Stronger_GL",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionRaider_Stronger_Elite",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionRaider_Stronger_Elite_GL",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionMeleeFighter",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionMeleeFighter_Stronger",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionMeleeFighter_Stronger_Elite",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionRocketeer",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionRocketeer_SlowReloader",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionRocketeer_Stronger",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionRocketeer_Stronger_Elite",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionScout",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionScout_Stronger",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionScout_Stronger_Elite",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionSentry",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionSentry_Stronger",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionSentry_Stronger_Elite",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionSniper",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionSniper_Stronger",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionSniper_Stronger_Elite",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionSharpShooter",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionSharpShooter_Stronger",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionSharpShooter_Stronger_Elite",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionRanger",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionRanger_Stronger",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionRanger_Stronger_Elite",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionSergeant",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionSergeant_Stronger",
-			'ClassDisplayName', "LootDef",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "LootDef",
-			'Id', "LegionSergeant_Stronger_Elite",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -8371,7 +5546,187 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
+			'Id', "RebelSMG",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelsExplosives",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelPPS43",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelPPSH",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelThompson",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelMP40",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelSterling",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelAKSU",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelZastavaM92",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelAPS",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelMakarov",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelMp446",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelScorpion",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelM45",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelAgram",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelASVAL",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
 			'Id', "RebelAR",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelFamas",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelAK",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelZastavaM70",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelAKM",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelAKMS",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelAK74",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelSTG44",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelM2Carbine",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelM1A1Carbine",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelFAL",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelGalil",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelRifle",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelMAS49",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelMAS36",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelM1Garand",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelMosin",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelGewehr",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelSKS",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelSVT",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelVSS",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -8381,7 +5736,67 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
+			'Id', "RebelSVD",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelZastavaM76",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelMosinSniper",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelGewehrSniper",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelFR2",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
 			'Id', "RebelMG",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelRPK",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelRPD",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelPKM",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelMG42",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelDP27",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelAA52",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RebelM60",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -8991,252 +6406,17 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
-			'Id', "LegionRocketeer_Stronger_Elite",
+			'Id', "PierreGuard_Ordnance",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
-			'Id', "LegionSharpShooter_Stronger_Elite",
+			'Id', "ErnyVillage_Boss",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
-			'Id', "LegionRaider_Stronger_Elite",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionRaider_Demolution_Stronger_Elite",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionRaidLeader_Stronger_Elite",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionManiac_Stronger_Elite",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionMedic_Stronger_Elite",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionGunner_Stronger_Elite",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionHyenaHandler_Stronger_Elite",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionGrenadier_Stronger_Elite",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionGoon_Stronger_Elite",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionButcher_Stronger_Elite",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionScout_Stronger_Elite",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionSniper_Stronger_Elite",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionSergant_Stronger_Elite",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionRanger_Stronger_Elite",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionMortarman_Stronger_Elite",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionRocketeer_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionRaider_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionRaider_Demolution_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionRaidLeader_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionMortarman_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionMedic_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionManiac_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionHyenaHandler_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionHyena_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionGunner_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionGrenadier_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionMolotov_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionGoon_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionButcher_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionScout_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionSharpShooter_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionSniper_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionSergant_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionRanger_Stronger",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionRaider",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionRaider_Demolution",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionRaidLeader",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionMedic",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionManiac",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionGunner",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionGrenadier",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionMolotov",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionButcher",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionScout",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionSniper",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionSharpShooter",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionGoon",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionRocketeer",
+			'Id', "PierreGuard",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -9455,8 +6635,38 @@ return PlaceObj('ModDef', {
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
+			'Class', "AIArchetype",
+			'Id', "Rebels_Assaulter",
+			'ClassDisplayName', "AIArchetype",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AIArchetype",
+			'Id', "Rebels_Frontliner",
+			'ClassDisplayName', "AIArchetype",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AIArchetype",
+			'Id', "Rebels_Machinegunner",
+			'ClassDisplayName', "AIArchetype",
+		}),
+		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
 			'Id', "Chimurenga",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "AnneLeMitrailleur",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "RebelSergant",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "RebelSergeant",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -9466,12 +6676,17 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
+			'Id', "RebelSergeant_Immortal",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
 			'Id', "RebelSergant_Immortal_M1",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
-			'Id', "RebelSergant",
+			'Id', "RebelSergeant_Immortal_M1",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -9516,12 +6731,12 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
-			'Id', "RebelRPG_Immortal",
+			'Id', "RebelHeavy_Mortar",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
-			'Id', "RebelHeavy_Mortar",
+			'Id', "RebelRPG_Immortal",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -10528,46 +7743,6 @@ return PlaceObj('ModDef', {
 			'Class', "AppearancePreset",
 			'Id', "LegionSergant_Stronger_Elite_alt",
 			'ClassDisplayName', "Appearance preset",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "PierreGuard_Ordnance",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "ErnyVillage_Boss",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "PierreGuard",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionRocketeer_SlowReloader",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionRaider_PresidentGuard",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionRaider_Ernie_Elite",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionBrawler_SavannaCamp",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "LegionRaider_WeakFlagHill",
-			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AppearancePreset",

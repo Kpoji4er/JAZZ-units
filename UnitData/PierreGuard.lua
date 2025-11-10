@@ -11,7 +11,7 @@ DefineClass.PierreGuard = {
 	Strength = 70,
 	Wisdom = 62,
 	Leadership = 52,
-	Marksmanship = 70,
+	Marksmanship = 86,
 	Mechanical = 0,
 	Medical = 0,
 	Portrait = "UI/EnemiesPortraits/LegionRaider",
@@ -26,6 +26,7 @@ DefineClass.PierreGuard = {
 	AIKeywords = {
 		"RunAndGun",
 	},
+	archetype = "Legion_Frontliner",
 	role = "Stormer",
 	MaxAttacks = 2,
 	PickCustomArchetype = function (self, proto_context)

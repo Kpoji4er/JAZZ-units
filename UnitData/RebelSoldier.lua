@@ -4,35 +4,71 @@ DefineClass.RebelSoldier = {
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
 
+	comment = "Фронтлайнер",
 	object_class = "UnitData",
-	Health = 57,
-	Agility = 48,
-	Dexterity = 40,
-	Strength = 53,
-	Wisdom = 40,
-	Will = 90,
-	Leadership = 10,
-	Marksmanship = 63,
-	Mechanical = 0,
-	Explosives = 0,
+	Health = 88,
+	Agility = 90,
+	Dexterity = 90,
+	Strength = 80,
+	Wisdom = 30,
+	Will = 75,
+	Leadership = 20,
+	Marksmanship = 85,
+	Mechanical = 50,
+	Explosives = 20,
 	Medical = 0,
 	Portrait = "UI/EnemiesPortraits/RebelSoldier",
-	Name = T(323680702583, --[[ModItemUnitDataCompositeDef RebelSoldier Name]] "Повстанец"),
+	BigPortrait = "UI/Enemies/LegionRaider",
+	Name = T(918921277026, --[[ModItemUnitDataCompositeDef RebelSoldier Name]] "Повстанец"),
 	Randomization = true,
+	elite = true,
+	eliteCategory = "Rebels",
 	Affiliation = "Rebel",
-	StartingLevel = 2,
+	StartingLevel = 12,
 	neutral_retaliate = true,
 	AIKeywords = {
 		"Soldier",
+		"Ordnance",
+		"RunAndGun",
 	},
+	archetype = "Rebels_Frontliner",
 	role = "Soldier",
 	MaxAttacks = 10,
+	PickCustomArchetype = function (self, proto_context)
+		local enemy, dist = GetNearestEnemy(self)
+		local archetype = self.archetype
+		local weapon_class = "Firearm"
+		
+		if enemy and dist < 10*const.SlabSizeX then
+			--archetype = "Brute"
+			weapon_class = "Melee"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if not self:GetActiveWeapons(weapon_class) then
+			AIPlayCombatAction("ChangeWeapon", self, 0)
+		end
+		
+		local stealth_stance = self:GetStanceToStealth()
+		if self:CanStealth(stealth_stance) then
+		 self:Hide()
+		end	
+		
+		return archetype
+	end,
+	CustomEquipGear = function (self, items)
+		self:TryEquip(items, "Handheld A", "Firearm")
+		self:TryEquip(items, "Handheld B", "MeleeWeapon")
+	end,
 	MaxHitPoints = 50,
 	StartingPerks = {
+		"RelentlessAdvance",
+		"Ironclad",
+		"TakeAim",
 		"AutoWeapons",
 		"MinFreeMove",
-		"NightOps",
-		"Hotblood",
+		"HitTheDeck",
+		"Hardened",
 		"Shatterhand",
 	},
 	AppearancesList = {
@@ -56,16 +92,16 @@ DefineClass.RebelSoldier = {
 		PlaceObj('AdditionalGroup', {
 			'Weight', 50,
 			'Exclusive', true,
-			'Name', "MaquisMale_1",
+			'Name', "LegionMale_1",
 		}),
 		PlaceObj('AdditionalGroup', {
 			'Weight', 50,
 			'Exclusive', true,
-			'Name', "MaquisMale_2",
+			'Name', "LegionMale_2",
 		}),
 	},
 	pollyvoice = "Joey",
 	gender = "Male",
-	VoiceResponseId = "RebelSoldier",
+	VoiceResponseId = "LegionRaider",
 }
 

@@ -23,11 +23,12 @@ DefineClass.PierreGuard_Ordnance = {
 	Affiliation = "Legion",
 	StartingLevel = 4,
 	neutral_retaliate = true,
+	archetype = "Legion_Frontliner",
 	role = "Soldier",
 	MaxAttacks = 2,
 	CustomEquipGear = function (self, items)
-		self:TryLoadAmmo("Handheld A", "AssaultRifle", "_762WP_Basic")
-		self:TryLoadAmmo("Handheld A", "GrenadeLauncher_M14", "_40mmFlashbangGrenade")
+		self:TryEquip(items, "Handheld A", "Firearm")
+		self:TryEquip(items, "Handheld B", "MeleeWeapon")
 	end,
 	MaxHitPoints = 50,
 	StartingPerks = {

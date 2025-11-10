@@ -25,6 +25,7 @@ DefineClass.JAZZ_Legion_LeaderT4_MercenaryCaptain = {
 	eliteCategory = "Foreigners",
 	Affiliation = "Legion",
 	StartingLevel = 8,
+	villain = true,
 	neutral_retaliate = true,
 	AIKeywords = {
 		"Smoke",
