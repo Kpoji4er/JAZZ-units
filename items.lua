@@ -7202,6 +7202,30 @@ return {
 				'name', "GL",
 			}, {
 				PlaceObj('ModItemLootDef', {
+					Comment = "T1-1",
+					comment = "T1-1",
+					group = "Default",
+					id = "40mm",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						item = "JAZZ_AMMO_40mmFragGrenade",
+						stack_max = 3,
+						stack_min = 1,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T1-1",
+					comment = "T1-1",
+					group = "Default",
+					id = "RPG7Ammo",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						item = "Warhead_Frag",
+						stack_max = 3,
+						stack_min = 1,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
 					comment = "T1-",
 					group = "Default",
 					id = "Legion_GL",
@@ -11225,7 +11249,7 @@ return {
 					}),
 					PlaceObj('LootEntryLootDef', {
 						condition = "Difficulty Normal",
-						loot_def = "LegionStrong_Pistol",
+						loot_def = "Legion_PistolList",
 						weight = 10000,
 					}),
 					PlaceObj('LootEntryInventoryItem', {
@@ -11251,7 +11275,7 @@ return {
 						stack_min = 24,
 					}),
 					PlaceObj('LootEntryLootDef', {
-						loot_def = "LegionStrong_Pistol",
+						loot_def = "Legion_PistolList",
 						weight = 10000,
 					}),
 					PlaceObj('LootEntryInventoryItem', {
@@ -17712,66 +17736,157 @@ return {
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_LeatherArmor",
 								weight = 20000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "LeatherArmor_ScrapPlate",
 								weight = 20000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 13,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_FlakM1955",
 								weight = 30000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 21,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_FlakM1955",
 								weight = 100000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 22,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_FlakM69",
 								weight = 200000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 22,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonLight",
 								weight = 50000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T2-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 23,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "LeatherArmor_KevlarPlate",
 								weight = 300000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 23,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TwaronLight",
 								weight = 300000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 23,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonMedium",
 								weight = 100000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T2-4",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 24,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "LeatherArmor_SteelPlate",
 								weight = 400000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T2-5",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 25,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "TwaronLight_SteelPlate",
 								weight = 500000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T3-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 31,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_RBA",
 								weight = 3000000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T3-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 32,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "RBA_SteelPlate",
 								weight = 4000000,
 							}),
@@ -17793,61 +17908,145 @@ return {
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "TireArmor_ScrapPlate",
 								weight = 20000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_SovietAssaultArmor",
 								weight = 30000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T1-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 13,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "TireArmor_KevlarPlate",
 								weight = 30000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T2-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 21,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "TireArmor_SteelPlate",
 								weight = 100000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 21,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_PASGT",
 								weight = 100000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 22,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonMedium",
 								weight = 200000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 23,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonFull",
 								weight = 300000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 23,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TwaronMedium",
 								weight = 300000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-4",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 24,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_6B3",
 								weight = 400000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T2-5",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 25,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "TwaronMedium_SteelPlate",
 								weight = 500000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T3-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 31,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_6B13",
 								weight = 1000000,
 							}),
 							PlaceObj('LootEntryLootDef', {
-								comment = "T2-5",
+								comment = "T3-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 32,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "6b13_SteelPlate",
 								weight = 500000,
 							}),
@@ -17861,110 +18060,264 @@ return {
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TwaronMedium",
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "ZylonMedium_SteelPlate",
 								weight = 2000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T1-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 13,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "ZylonFull_SteelPlate",
 								weight = 3000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 13,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonFull",
 								weight = 3000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 21,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TwaronLight",
 								weight = 10000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T2-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 21,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "TwaronLight_SteelPlate",
 								weight = 10000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 22,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TwaronMedium",
 								weight = 20000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T2-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 22,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "TwaronMedium_SteelPlate",
 								weight = 20000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T2-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 23,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "TwaronFull_SteelPlate",
 								weight = 30000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 23,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TwaronFull",
 								weight = 30000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 23,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_GuardianLight",
 								weight = 30000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T2-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 23,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "GuardianLight_CeramicPlate",
 								weight = 30000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-4",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 24,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_GuardianMedium",
 								weight = 40000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T2-4",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 24,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "GuardianMedium_CeramicPlate",
 								weight = 40000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-5",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 25,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_GuardianFull",
 								weight = 50000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T2-5",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 25,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "GuardianFull_CeramicPlate",
 								weight = 50000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T3-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 31,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_IBALight",
 								weight = 100000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T3-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 31,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_IBA",
 								weight = 100000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T3-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 32,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_IBAFull",
 								weight = 200000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T3-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 31,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "IBALight_CeramicPlate",
 								weight = 100000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T3-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 31,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "IBAMedium_CeramicPlate",
 								weight = 100000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T3-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 32,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "IBAFull_CeramicPlate",
 								weight = 200000,
 							}),
@@ -17978,46 +18331,109 @@ return {
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ImprovisedCuirass",
 								weight = 2000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TireBrigantine",
 								weight = 2000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 13,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_AssaultCuirass",
 								weight = 3000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 21,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TwaronMedium",
 								weight = 100000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 22,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TwaronFull",
 								weight = 200000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 23,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_6B3",
 								weight = 300000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T2-4",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 24,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "TwaronMedium_SteelPlate",
 								weight = 400000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T2-5",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 25,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "TwaronFull_SteelPlate",
 								weight = 500000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T2-5",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 25,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "6b13_SteelPlate",
 								weight = 3000000,
 							}),
@@ -18031,56 +18447,133 @@ return {
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_Uniform",
 								weight = 20000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 13,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonLight",
 								weight = 30000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T2-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 21,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "ZylonLight_SteelPlate",
 								weight = 20000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 21,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonMedium",
 								weight = 100000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 22,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonFull",
 								weight = 200000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 22,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonLight",
 								weight = 200000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T2-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 23,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "ZylonLight_SteelPlate",
 								weight = 300000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T2-4",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 24,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "ZylonMedium_SteelPlate",
 								weight = 400000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T2-5",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 25,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "ZylonFull_SteelPlate",
 								weight = 500000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T3-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 31,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_RBA",
 								weight = 3000000,
 							}),
 							PlaceObj('LootEntryLootDef', {
 								comment = "T3-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 32,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								loot_def = "RBA_SteelPlate",
 								weight = 4000000,
 							}),
@@ -18099,26 +18592,61 @@ return {
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_LeatherPants",
 								weight = 2000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 13,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_RaiderKneePads",
 								weight = 3000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 22,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_SwatPads",
 								weight = 20000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-4",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 24,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonLegs",
 								weight = 40000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-5",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 25,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TwaronLegs",
 								weight = 50000,
 							}),
@@ -18136,21 +18664,49 @@ return {
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_RaiderKneePads",
 								weight = 2000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 21,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonLegs",
 								weight = 10000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 23,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonHeavyLegs",
 								weight = 20000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-4",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 24,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TwaronLegs",
 								weight = 30000,
 							}),
@@ -18164,41 +18720,97 @@ return {
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonLegs",
 								weight = 10000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 13,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonHeavyLegs",
 								weight = 20000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 21,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TwaronLegs",
 								weight = 100000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 22,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TwaronHeavyLegs",
 								weight = 200000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 23,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_GuardianLegs",
 								weight = 300000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-4",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 24,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_GuardianHeavyLegs",
 								weight = 400000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T3-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 31,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_GuardianLegs",
 								weight = 1000000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T3-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 32,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_GuardianHeavyLegs",
 								weight = 2000000,
 							}),
@@ -18212,19 +18824,47 @@ return {
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_RaiderMetalLeggins",
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 13,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_RaiderMetalLeggins",
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 23,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonHeavyLegs",
 								weight = 30000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-4",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 24,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TwaronHeavyLegs",
 								weight = 40000,
 							}),
@@ -18234,20 +18874,48 @@ return {
 							id = "LegionLegsReconArmor",
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_UniformPants",
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 21,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_CamoKneePads",
 								weight = 10000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 23,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonLegs",
 								weight = 30000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-4",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 24,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonHeavyLegs",
 								weight = 40000,
 							}),
@@ -18266,26 +18934,61 @@ return {
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_AdrianHelmet",
 								weight = 2000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 13,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_SovietHelm",
 								weight = 3000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 22,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonHelm",
 								weight = 20000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-4",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 24,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TwaronHelm",
 								weight = 40000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T3-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 31,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_6b7Helm",
 								weight = 100000,
 							}),
@@ -18300,41 +19003,97 @@ return {
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_SovietHelm",
 								weight = 2000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 13,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_Stahlhelm",
 								weight = 3000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 21,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonHelm",
 								weight = 100000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 22,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TwaronHelm",
 								weight = 200000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 23,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_6b7Helm",
 								weight = 300000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-4",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 24,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_6b7Helm",
 								weight = 400000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-5",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 25,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_PASGTHelm",
 								weight = 500000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T3-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 31,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_STSHHelm",
 								weight = 1000000,
 							}),
@@ -18348,51 +19107,121 @@ return {
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonHelmHeavy",
 								weight = 2000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 13,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TwaronHelm",
 								weight = 5000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 13,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TwaronHelmHeavy",
 								weight = 3000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 21,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ProTecHelm",
 								weight = 10000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 22,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ProTecHelm",
 								weight = 20000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 23,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_PASGTHelm",
 								weight = 30000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-4",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 24,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_GuardianHelm",
 								weight = 400000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-5",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 25,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_GuardianHelmHeavy",
 								weight = 500000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T3-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 31,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_Mich2000",
 								weight = 1000000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T3-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 31,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_Mich2001",
 								weight = 1000000,
 							}),
@@ -18410,41 +19239,97 @@ return {
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_WieldingHelm",
 								weight = 2000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 13,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_MetalHelm",
 								weight = 3000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 21,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_WieldingHelm",
 								weight = 3000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 22,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_MetalHelm",
 								weight = 20000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-3",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 23,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonHelmHeavy",
 								weight = 30000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-4",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 24,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_TwaronHelmHeavy",
 								weight = 40000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-5",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 25,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_STSHHelm",
 								weight = 100000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T3-1",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 31,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_AltynHelm",
 								weight = 300000,
 							}),
@@ -18455,24 +19340,59 @@ return {
 							PlaceObj('LootEntryNoLoot', {}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_UniformCap",
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_CamoBalaclava",
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T1-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 12,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_M1Helm",
 								weight = 3000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-2",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 22,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_ZylonHelm",
 								weight = 5000,
 							}),
 							PlaceObj('LootEntryInventoryItem', {
 								comment = "T2-4",
+								game_conditions = {
+									PlaceObj('QuestIsVariableNum', {
+										Amount = 24,
+										Prop = "JAZZ_Legion_Tier",
+										QuestId = "JAZZ_LegionTier",
+									}),
+								},
 								item = "JazzArmor_PASGTHelm",
 								weight = 30000,
 							}),
@@ -31142,6 +32062,41 @@ return {
 				PlaceObj('ModItemFolder', {
 					'name', "Weapons",
 				}, {
+					PlaceObj('ModItemLootDef', {
+						group = "Enemy - Rebels",
+						id = "RebelsExplosives",
+						PlaceObj('LootEntryInventoryItem', {
+							drop_chance_mod = 0,
+							item = "TimedTNT",
+							stack_max = 5,
+							stack_min = 5,
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Molotov",
+							stack_max = 5,
+							stack_min = 5,
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "TimedC4",
+							stack_max = 5,
+							stack_min = 5,
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "TimedPETN",
+							stack_max = 5,
+							stack_min = 5,
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "ShapedCharge",
+							stack_max = 5,
+							stack_min = 5,
+							weight = 3000,
+						}),
+					}),
 					PlaceObj('ModItemFolder', {
 						'name', "RebelSMG",
 					}, {
@@ -31199,43 +32154,9 @@ return {
 							}),
 						}),
 						PlaceObj('ModItemLootDef', {
-							group = "Enemy - Rebels",
-							id = "RebelsExplosives",
-							PlaceObj('LootEntryInventoryItem', {
-								drop_chance_mod = 0,
-								item = "TimedTNT",
-								stack_max = 5,
-								stack_min = 5,
-								weight = 5000,
-							}),
-							PlaceObj('LootEntryInventoryItem', {
-								item = "Molotov",
-								stack_max = 5,
-								stack_min = 5,
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryInventoryItem', {
-								item = "TimedC4",
-								stack_max = 5,
-								stack_min = 5,
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryInventoryItem', {
-								item = "TimedPETN",
-								stack_max = 5,
-								stack_min = 5,
-								weight = 3000,
-							}),
-							PlaceObj('LootEntryInventoryItem', {
-								item = "ShapedCharge",
-								stack_max = 5,
-								stack_min = 5,
-								weight = 3000,
-							}),
-						}),
-						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelPPS43",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "PPS43",
@@ -31248,6 +32169,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelPPSH",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JAZZ_AMMO_762x25_AP",
 								stack_min = 50,
@@ -31262,6 +32184,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelThompson",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "Thompson",
@@ -31274,6 +32197,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelMP40",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "MP40",
@@ -31286,6 +32210,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelSterling",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "Sterling",
@@ -31298,6 +32223,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelAKSU",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "AKSU",
@@ -31310,6 +32236,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelZastavaM92",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "ZastavaM92",
@@ -31322,6 +32249,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelAPS",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "APS",
@@ -31334,6 +32262,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelMakarov",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "Makarov",
@@ -31346,6 +32275,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelMp446",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "MP446VIKING",
@@ -31358,6 +32288,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelScorpion",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "Scorpion",
@@ -31370,6 +32301,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelM45",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "M45",
@@ -31382,6 +32314,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelAgram",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "Agram2000",
@@ -31394,6 +32327,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelASVAL",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "AS_Val",
@@ -31456,6 +32390,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelFamas",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "FAMAS",
@@ -31468,6 +32403,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelAK",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "AK47",
@@ -31480,6 +32416,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelZastavaM70",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "Zastava_M70",
@@ -31492,6 +32429,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelAKM",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "AKM",
@@ -31504,6 +32442,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelAKMS",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JAZZ_AMMO_762x39_Crafted",
 								stack_min = 50,
@@ -31519,6 +32458,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelAK74",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "AK74",
@@ -31531,6 +32471,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelSTG44",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "STG44",
@@ -31543,6 +32484,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelM2Carbine",
+							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"StockNormal",
@@ -31559,6 +32501,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelM1A1Carbine",
+							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"StockLightUnFolded",
@@ -31573,6 +32516,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelFAL",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "FNFAL",
@@ -31585,6 +32529,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelGalil",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "Galil",
@@ -31632,6 +32577,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelMAS49",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "MAS49",
@@ -31644,6 +32590,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelMAS36",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "MAS36",
@@ -31656,6 +32603,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelM1Garand",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "SKS",
@@ -31668,6 +32616,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelMosin",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "SKS",
@@ -31680,6 +32629,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelGewehr",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "SKS",
@@ -31692,6 +32642,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelSKS",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "SKS",
@@ -31704,6 +32655,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelSVT",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "SVT40",
@@ -31716,6 +32668,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelVSS",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JAZZ_AMMO_9x39_Crafted",
 								stack_min = 50,
@@ -31756,6 +32709,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelSVD",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "DragunovSVD",
@@ -31768,6 +32722,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelZastavaM76",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "ZastavaM76",
@@ -31780,6 +32735,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelMosinSniper",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JAZZ_AMMO_762x54_Match",
 								stack_min = 20,
@@ -31794,6 +32750,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelGewehrSniper",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JAZZ_AMMO_792_APIT",
 								stack_min = 20,
@@ -31808,6 +32765,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelFR2",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "FRF2",
@@ -31856,6 +32814,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelRPK",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "RPK",
@@ -31868,6 +32827,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelRPD",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "RPD",
@@ -31880,6 +32840,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelPKM",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "PKM",
@@ -31892,6 +32853,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelMG42",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "MG42",
@@ -31904,6 +32866,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelDP27",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "DP27",
@@ -31916,6 +32879,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelAA52",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "AA52",
@@ -31928,6 +32892,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RebelM60",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								drop_chance_mod = 0,
 								item = "M60",
@@ -31959,17 +32924,6 @@ return {
 							item = "PP19Bizon",
 							stack_max = 1,
 							stack_min = 1,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableBool', {
-									QuestId = "PantagruelDramas",
-									Vars = set({
-	YoungHearts = false,
-}),
-								}),
-							},
-							loot_def = "Noob_9x18",
 						}),
 						PlaceObj('LootEntryInventoryItem', {
 							game_conditions = {
@@ -32132,7 +33086,6 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "RebelSMG",
-							weight = 40000,
 						}),
 						PlaceObj('LootEntryInventoryItem', {
 							drop_chance_mod = 0,
@@ -32226,6 +33179,7 @@ return {
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
 						id = "RebelRPG",
+						loot = "all",
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "HeavyGrenadier_Launcher",
 						}),
@@ -32249,6 +33203,7 @@ return {
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
 						id = "RebelHeavy_Mortar",
+						loot = "all",
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "ArmyMortar",
 						}),
@@ -65242,7 +66197,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {

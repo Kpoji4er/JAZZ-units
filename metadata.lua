@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 1,
-	'version', 2023,
+	'version', 2024,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -176,7 +176,7 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1762832707,
+	'saved', 1762836454,
 	'code_hash', 7241689485408083504,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
@@ -1792,6 +1792,16 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
 			'Id', "Shotguns_AA12",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "40mm",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RPG7Ammo",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -5691,12 +5701,12 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "RebelSMG",
+			'Id', "RebelsExplosives",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
-			'Id', "RebelsExplosives",
+			'Id', "RebelSMG",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
