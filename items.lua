@@ -34916,6 +34916,10 @@ return {
 							PlaceObj('AIPolicyTakeCover', {
 								'visibility_mode', "team",
 							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
 						},
 						'TakeCoverChance', 50,
 					}),
@@ -34942,6 +34946,10 @@ return {
 							}),
 							PlaceObj('AIPolicyTakeCover', {
 								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
 							}),
 						},
 						'TakeCoverChance', 0,
@@ -34971,6 +34979,10 @@ return {
 							PlaceObj('AIPolicyTakeCover', {
 								'visibility_mode', "team",
 							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
 						},
 						'TakeCoverChance', 0,
 						'VoiceResponse', "TacticalPressing",
@@ -34993,6 +35005,10 @@ return {
 							}),
 							PlaceObj('AIPolicyFlanking', {
 								'Weight', 1000,
+							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
 							}),
 						},
 						'TakeCoverChance', 0,
@@ -35290,6 +35306,10 @@ return {
 							PlaceObj('AIPolicyTakeCover', {
 								'visibility_mode', "team",
 							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 3,
+								'Penalty', 30,
+							}),
 						},
 						'TakeCoverChance', 50,
 					}),
@@ -35320,6 +35340,10 @@ return {
 								'RequiredKeywords', {
 									"Sniper",
 								},
+							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 3,
+								'Penalty', 30,
 							}),
 						},
 						'TakeCoverChance', 0,
@@ -35355,6 +35379,10 @@ return {
 								},
 								'Weight', 50,
 							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 3,
+								'Penalty', 30,
+							}),
 						},
 						'TakeCoverChance', 0,
 						'VoiceResponse', "TacticalPressing",
@@ -35377,6 +35405,10 @@ return {
 							}),
 							PlaceObj('AIPolicyFlanking', {
 								'Weight', 1000,
+							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 3,
+								'Penalty', 30,
 							}),
 						},
 						'TakeCoverChance', 0,
@@ -35965,8 +35997,11 @@ return {
 						'RequiredKeywords', {
 							"Control",
 						},
+						'min_score', 100,
 					}),
-					PlaceObj('AIActionMGSetup', nil),
+					PlaceObj('AIActionMGSetup', {
+						'min_score', 100,
+					}),
 					PlaceObj('AIActionMGBurstFire', nil),
 				},
 				TargetChangePolicy = "restart",
@@ -66144,7 +66179,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
@@ -66161,7 +66196,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
