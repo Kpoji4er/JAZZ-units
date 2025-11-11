@@ -35045,6 +35045,16 @@ return {
 						'TargetDist', "average",
 						'MinScore', 50,
 					}),
+					PlaceObj('AIPolicyProximity', {
+						'RequiredKeywords', {
+							"Leader",
+						},
+						'Weight', 25,
+						'AllyPlannedPosition', true,
+						'TargetUnits', "allies",
+						'TargetDist', "average",
+						'MinScore', 50,
+					}),
 					PlaceObj('AIPolicyAvoidDeathZones', {
 						'TargetDist', 20,
 						'Penalty', 5,
@@ -35424,6 +35434,16 @@ return {
 					}),
 					PlaceObj('AIPolicyProximity', {
 						'Weight', 5,
+						'AllyPlannedPosition', true,
+						'TargetUnits', "allies",
+						'TargetDist', "average",
+						'MinScore', 50,
+					}),
+					PlaceObj('AIPolicyProximity', {
+						'RequiredKeywords', {
+							"Leader",
+						},
+						'Weight', 25,
 						'AllyPlannedPosition', true,
 						'TargetUnits', "allies",
 						'TargetDist', "average",
@@ -35811,6 +35831,16 @@ return {
 					}),
 					PlaceObj('AIPolicyProximity', {
 						'Weight', 5,
+						'AllyPlannedPosition', true,
+						'TargetUnits', "allies",
+						'TargetDist', "average",
+						'MinScore', 50,
+					}),
+					PlaceObj('AIPolicyProximity', {
+						'RequiredKeywords', {
+							"Leader",
+						},
+						'Weight', 25,
 						'AllyPlannedPosition', true,
 						'TargetUnits', "allies",
 						'TargetDist', "average",
@@ -43068,6 +43098,16 @@ return {
 						'TargetDist', "average",
 						'MinScore', 50,
 					}),
+					PlaceObj('AIPolicyProximity', {
+						'RequiredKeywords', {
+							"Leader",
+						},
+						'Weight', 25,
+						'AllyPlannedPosition', true,
+						'TargetUnits', "allies",
+						'TargetDist', "average",
+						'MinScore', 50,
+					}),
 					PlaceObj('AIPolicyAvoidDeathZones', {
 						'TargetDist', 20,
 						'Penalty', 5,
@@ -43301,6 +43341,39 @@ return {
 						},
 						'TakeCoverChance', 50,
 					}),
+				},
+				Comment = "Keywords: Flank, Explosives",
+				OptLocPolicies = {
+					PlaceObj('AIPolicyWeaponRange', {
+						'Weight', 300,
+						'RangeBase', "Melee",
+						'RangeMin', 12,
+						'RangeMax', 21,
+					}),
+				},
+				OptLocSearchRadius = 80,
+				SignatureActions = {
+					PlaceObj('AIActionCharge', nil),
+				},
+				TargetChangePolicy = "restart",
+				TargetScoreRandomization = 10,
+				group = "Legion",
+				id = "Melee",
+			}),
+			PlaceObj('ModItemAIArchetype', {
+				BaseAttackTargeting = set( "Arms", "Legs", "Torso" ),
+				BaseMovementWeight = 10,
+				Behaviors = {
+					PlaceObj('StandardAI', {
+						'Weight', 10,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', nil),
+							PlaceObj('AIPolicyTakeCover', {
+								'visibility_mode', "team",
+							}),
+						},
+						'TakeCoverChance', 50,
+					}),
 					PlaceObj('PositioningAI', {
 						'Weight', 500,
 						'Label', "Sniper AI",
@@ -43444,7 +43517,17 @@ return {
 						'Weight', 1000,
 					}),
 					PlaceObj('AIPolicyProximity', {
-						'Weight', 5,
+						'Weight', 10,
+						'AllyPlannedPosition', true,
+						'TargetUnits', "allies",
+						'TargetDist', "average",
+						'MinScore', 50,
+					}),
+					PlaceObj('AIPolicyProximity', {
+						'RequiredKeywords', {
+							"Leader",
+						},
+						'Weight', 25,
 						'AllyPlannedPosition', true,
 						'TargetUnits', "allies",
 						'TargetDist', "average",
@@ -43834,7 +43917,17 @@ return {
 						'Weight', 1000,
 					}),
 					PlaceObj('AIPolicyProximity', {
-						'Weight', 5,
+						'Weight', 10,
+						'AllyPlannedPosition', true,
+						'TargetUnits', "allies",
+						'TargetDist', "average",
+						'MinScore', 50,
+					}),
+					PlaceObj('AIPolicyProximity', {
+						'RequiredKeywords', {
+							"Leader",
+						},
+						'Weight', 25,
 						'AllyPlannedPosition', true,
 						'TargetUnits', "allies",
 						'TargetDist', "average",
@@ -44136,6 +44229,7 @@ return {
 			},
 			'archetype', "Rebels_Frontliner",
 			'role', "Marksman",
+			'CanManEmplacements', false,
 			'OpeningAttackType', "Overwatch",
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
@@ -44144,7 +44238,7 @@ return {
 				local weapon_class = "Firearm"
 				
 				if enemy and dist < 10*const.SlabSizeX then
-					--archetype = "Brute"
+					archetype = "Melee"
 					weapon_class = "Melee"
 					PlayVoiceResponse(self, "AIArchetypeAngry")
 				end
@@ -44207,7 +44301,7 @@ return {
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
+			'VoiceResponseId', "RebelSoldier",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Rebels",
@@ -44245,6 +44339,7 @@ return {
 			},
 			'archetype', "Rebels_Frontliner",
 			'role', "Marksman",
+			'CanManEmplacements', false,
 			'OpeningAttackType', "Overwatch",
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
@@ -44253,7 +44348,7 @@ return {
 				local weapon_class = "Firearm"
 				
 				if enemy and dist < 10*const.SlabSizeX then
-					--archetype = "Brute"
+					archetype = "Melee"
 					weapon_class = "Melee"
 					PlayVoiceResponse(self, "AIArchetypeAngry")
 				end
@@ -44316,7 +44411,7 @@ return {
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
+			'VoiceResponseId', "RebelSoldier",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Rebels",
@@ -44355,6 +44450,7 @@ return {
 			},
 			'archetype', "Rebels_Frontliner",
 			'role', "Marksman",
+			'CanManEmplacements', false,
 			'OpeningAttackType', "Overwatch",
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
@@ -44363,7 +44459,7 @@ return {
 				local weapon_class = "Firearm"
 				
 				if enemy and dist < 10*const.SlabSizeX then
-					--archetype = "Brute"
+					archetype = "Melee"
 					weapon_class = "Melee"
 					PlayVoiceResponse(self, "AIArchetypeAngry")
 				end
@@ -44426,7 +44522,7 @@ return {
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
+			'VoiceResponseId', "RebelSoldier",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Rebels",
@@ -44465,6 +44561,7 @@ return {
 			},
 			'archetype', "Rebels_Frontliner",
 			'role', "Marksman",
+			'CanManEmplacements', false,
 			'OpeningAttackType', "Overwatch",
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
@@ -44473,7 +44570,7 @@ return {
 				local weapon_class = "Firearm"
 				
 				if enemy and dist < 10*const.SlabSizeX then
-					--archetype = "Brute"
+					archetype = "Melee"
 					weapon_class = "Melee"
 					PlayVoiceResponse(self, "AIArchetypeAngry")
 				end
@@ -44536,7 +44633,7 @@ return {
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
+			'VoiceResponseId', "RebelSoldier",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Rebels",
@@ -44574,6 +44671,7 @@ return {
 			},
 			'archetype', "Rebels_Frontliner",
 			'role', "Marksman",
+			'CanManEmplacements', false,
 			'OpeningAttackType', "Overwatch",
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
@@ -44582,7 +44680,7 @@ return {
 				local weapon_class = "Firearm"
 				
 				if enemy and dist < 10*const.SlabSizeX then
-					--archetype = "Brute"
+					archetype = "Melee"
 					weapon_class = "Melee"
 					PlayVoiceResponse(self, "AIArchetypeAngry")
 				end
@@ -44645,7 +44743,7 @@ return {
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
+			'VoiceResponseId', "RebelSoldier",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Rebels",
@@ -44683,6 +44781,7 @@ return {
 			},
 			'archetype', "Rebels_Frontliner",
 			'role', "Marksman",
+			'CanManEmplacements', false,
 			'OpeningAttackType', "Overwatch",
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
@@ -44691,7 +44790,7 @@ return {
 				local weapon_class = "Firearm"
 				
 				if enemy and dist < 10*const.SlabSizeX then
-					--archetype = "Brute"
+					archetype = "Melee"
 					weapon_class = "Melee"
 					PlayVoiceResponse(self, "AIArchetypeAngry")
 				end
@@ -44754,7 +44853,7 @@ return {
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
+			'VoiceResponseId', "RebelSoldier",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Rebels",
@@ -44788,6 +44887,7 @@ return {
 			},
 			'archetype', "Rebels_Assaulter",
 			'role', "Recon",
+			'CanManEmplacements', false,
 			'OpeningAttackType', "Overwatch",
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
@@ -44796,7 +44896,7 @@ return {
 				local weapon_class = "Firearm"
 				
 				if enemy and dist < 10*const.SlabSizeX then
-					--archetype = "Brute"
+					archetype = "Melee"
 					weapon_class = "Melee"
 					PlayVoiceResponse(self, "AIArchetypeAngry")
 				end
@@ -44861,7 +44961,7 @@ return {
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
+			'VoiceResponseId', "RebelSoldier",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Rebels",
@@ -44903,7 +45003,7 @@ return {
 				local weapon_class = "Firearm"
 				
 				if enemy and dist < 10*const.SlabSizeX then
-					--archetype = "Brute"
+					archetype = "Melee"
 					weapon_class = "Melee"
 					PlayVoiceResponse(self, "AIArchetypeAngry")
 				end
@@ -44959,7 +45059,7 @@ return {
 				}),
 			},
 			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
+			'VoiceResponseId', "RebelSoldier",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Rebels",
@@ -44991,6 +45091,7 @@ return {
 			},
 			'archetype', "Rebels_Machinegunner",
 			'role', "Heavy",
+			'CanManEmplacements', false,
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
 				local enemy, dist = GetNearestEnemy(self)
@@ -44998,7 +45099,7 @@ return {
 				local weapon_class = "Firearm"
 				
 				if enemy and dist < 10*const.SlabSizeX then
-					--archetype = "Brute"
+					archetype = "Melee"
 					weapon_class = "Melee"
 					PlayVoiceResponse(self, "AIArchetypeAngry")
 				end
@@ -45053,7 +45154,7 @@ return {
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
+			'VoiceResponseId', "RebelSoldier",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Legion",
@@ -45092,7 +45193,7 @@ return {
 				local weapon_class = "Firearm"
 				
 				if enemy and dist < 10*const.SlabSizeX then
-					--archetype = "Brute"
+					archetype = "Melee"
 					weapon_class = "Melee"
 					PlayVoiceResponse(self, "AIArchetypeAngry")
 				end
@@ -45150,7 +45251,7 @@ return {
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
+			'VoiceResponseId', "RebelSoldier",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Legion",
@@ -45180,6 +45281,7 @@ return {
 			},
 			'archetype', "Rebels_Frontliner",
 			'role', "Marksman",
+			'CanManEmplacements', false,
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "PinDown",
 			'MaxAttacks', 10,
@@ -45189,7 +45291,7 @@ return {
 				local weapon_class = "Firearm"
 				
 				if enemy and dist < 10*const.SlabSizeX then
-					--archetype = "Brute"
+					archetype = "Melee"
 					weapon_class = "Melee"
 					PlayVoiceResponse(self, "AIArchetypeAngry")
 				end
@@ -45250,7 +45352,7 @@ return {
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
+			'VoiceResponseId', "RebelSoldier",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Legion",
@@ -45280,6 +45382,7 @@ return {
 			},
 			'archetype', "Rebels_Frontliner",
 			'role', "Marksman",
+			'CanManEmplacements', false,
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "PinDown",
 			'MaxAttacks', 10,
@@ -45289,7 +45392,7 @@ return {
 				local weapon_class = "Firearm"
 				
 				if enemy and dist < 10*const.SlabSizeX then
-					--archetype = "Brute"
+					archetype = "Melee"
 					weapon_class = "Melee"
 					PlayVoiceResponse(self, "AIArchetypeAngry")
 				end
@@ -45339,7 +45442,7 @@ return {
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
+			'VoiceResponseId', "AnneLeMitrailleur",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Legion",
@@ -45373,6 +45476,7 @@ return {
 			},
 			'archetype', "Rebels_Frontliner",
 			'role', "Soldier",
+			'CanManEmplacements', false,
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
 				local enemy, dist = GetNearestEnemy(self)
@@ -45380,7 +45484,7 @@ return {
 				local weapon_class = "Firearm"
 				
 				if enemy and dist < 10*const.SlabSizeX then
-					--archetype = "Brute"
+					archetype = "Melee"
 					weapon_class = "Melee"
 					PlayVoiceResponse(self, "AIArchetypeAngry")
 				end
@@ -45442,7 +45546,7 @@ return {
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
+			'VoiceResponseId', "RebelSoldier",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Legion",
@@ -45543,7 +45647,7 @@ return {
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
+			'VoiceResponseId', "RebelSoldier",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Legion",
@@ -45647,7 +45751,7 @@ return {
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
+			'VoiceResponseId', "RebelSoldier",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Legion",
@@ -45749,7 +45853,7 @@ return {
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
+			'VoiceResponseId', "RebelSoldier",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Legion",
@@ -45836,7 +45940,7 @@ return {
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "LegionRaider",
+			'VoiceResponseId', "RebelSoldier",
 		}),
 		}),
 	PlaceObj('ModItemFolder', {
@@ -66150,7 +66254,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
@@ -66167,7 +66271,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {

@@ -100,6 +100,6 @@ DefineClass.RebelRPG = {
 	},
 	pollyvoice = "Joey",
 	gender = "Male",
-	VoiceResponseId = "LegionRaider",
+	VoiceResponseId = "RebelSoldier",
 }
 

@@ -101,6 +101,6 @@ DefineClass.RebelRPG_Immortal = {
 	},
 	pollyvoice = "Joey",
 	gender = "Male",
-	VoiceResponseId = "LegionRaider",
+	VoiceResponseId = "RebelSoldier",
 }
 

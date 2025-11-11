@@ -29,6 +29,7 @@ DefineClass.RebelSniper_female = {
 	},
 	archetype = "Rebels_Frontliner",
 	role = "Marksman",
+	CanManEmplacements = false,
 	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "PinDown",
 	MaxAttacks = 10,
@@ -38,7 +39,7 @@ DefineClass.RebelSniper_female = {
 		local weapon_class = "Firearm"
 		
 		if enemy and dist < 10*const.SlabSizeX then
-			--archetype = "Brute"
+			archetype = "Melee"
 			weapon_class = "Melee"
 			PlayVoiceResponse(self, "AIArchetypeAngry")
 		end
@@ -88,6 +89,6 @@ DefineClass.RebelSniper_female = {
 	},
 	pollyvoice = "Joey",
 	gender = "Male",
-	VoiceResponseId = "LegionRaider",
+	VoiceResponseId = "AnneLeMitrailleur",
 }
 

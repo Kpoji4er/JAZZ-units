@@ -41,7 +41,7 @@ DefineClass.RebelGrenadier = {
 		local weapon_class = "Firearm"
 		
 		if enemy and dist < 10*const.SlabSizeX then
-			--archetype = "Brute"
+			archetype = "Melee"
 			weapon_class = "Melee"
 			PlayVoiceResponse(self, "AIArchetypeAngry")
 		end
@@ -97,6 +97,6 @@ DefineClass.RebelGrenadier = {
 		}),
 	},
 	gender = "Male",
-	VoiceResponseId = "LegionRaider",
+	VoiceResponseId = "RebelSoldier",
 }
 

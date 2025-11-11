@@ -37,6 +37,7 @@ DefineClass.RebelSergant_Immortal_M1 = {
 	},
 	archetype = "Rebels_Frontliner",
 	role = "Marksman",
+	CanManEmplacements = false,
 	OpeningAttackType = "Overwatch",
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)
@@ -45,7 +46,7 @@ DefineClass.RebelSergant_Immortal_M1 = {
 		local weapon_class = "Firearm"
 		
 		if enemy and dist < 10*const.SlabSizeX then
-			--archetype = "Brute"
+			archetype = "Melee"
 			weapon_class = "Melee"
 			PlayVoiceResponse(self, "AIArchetypeAngry")
 		end
@@ -108,6 +109,6 @@ DefineClass.RebelSergant_Immortal_M1 = {
 	},
 	pollyvoice = "Joey",
 	gender = "Male",
-	VoiceResponseId = "LegionRaider",
+	VoiceResponseId = "RebelSoldier",
 }
 

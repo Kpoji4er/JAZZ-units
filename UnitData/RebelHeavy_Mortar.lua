@@ -103,6 +103,6 @@ DefineClass.RebelHeavy_Mortar = {
 	},
 	pollyvoice = "Joey",
 	gender = "Male",
-	VoiceResponseId = "LegionRaider",
+	VoiceResponseId = "RebelSoldier",
 }
 
