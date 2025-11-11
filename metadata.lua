@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 1,
-	'version', 2016,
+	'version', 2023,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -176,8 +176,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1762794016,
-	'code_hash', -4103887504860033470,
+	'saved', 1762832707,
+	'code_hash', 7241689485408083504,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
@@ -3321,6 +3321,91 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
+			'Id', "TireArmor_ScrapPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "TireArmor_KevlarPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "TireArmor_SteelPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "TwaronLight_SteelPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "TwaronMedium_SteelPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "TwaronFull_SteelPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "ZylonLight_SteelPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "ZylonMedium_SteelPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "ZylonFull_SteelPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "GuardianLight_CeramicPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "GuardianMedium_CeramicPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "GuardianFull_CeramicPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "6b13_SteelPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "RBA_SteelPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "IBALight_CeramicPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "IBAMedium_CeramicPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "IBAFull_CeramicPlate",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
 			'Id', "LegionTorsoJackets",
 			'ClassDisplayName', "LootDef",
 		}),
@@ -3336,7 +3421,67 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
+			'Id', "LegionTorsoMercArmor",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
 			'Id', "LegionTorsoHeavyArmor",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "LegionTorsoReconArmor",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "LegionLegsLightArmor",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "LegionLegsMiddleArmor",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "LegionLegsMercArmor",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "LegionLegsHeavyArmor",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "LegionLegsReconArmor",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "LegionHelmetsLightArmor",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "LegionHelmetsMiddleArmor",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "LegionHelmetsMercArmor",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "LegionHelmetsHeavyArmor",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "LegionHelmetsReconArmor",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {

@@ -17509,99 +17509,975 @@ return {
 								item = "JazzArmorPlates_Steel3",
 							}),
 						}),
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "TireArmor_ScrapPlate",
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_TireArmor",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmorPlates_Steel3",
+							}),
 						}),
-					PlaceObj('ModItemLootDef', {
-						group = "Default",
-						id = "LegionTorsoJackets",
-						PlaceObj('LootEntryInventoryItem', {
-							item = "JazzArmor_LeatherJacketBrn",
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "TireArmor_KevlarPlate",
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_TireArmor",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmorPlates_Steel3",
+							}),
 						}),
-						PlaceObj('LootEntryInventoryItem', {
-							item = "JazzArmor_LeatherJacketBlk",
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "TireArmor_SteelPlate",
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_TireArmor",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmorPlates_Steel3",
+							}),
 						}),
-						PlaceObj('LootEntryInventoryItem', {
-							item = "JazzArmor_LeatherVest",
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "TwaronLight_SteelPlate",
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_TwaronLight",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmorPlates_Steel3",
+							}),
 						}),
-						PlaceObj('LootEntryInventoryItem', {
-							item = "JazzArmor_LeatherArmor",
-							weight = 2000,
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "TwaronMedium_SteelPlate",
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_TwaronMedium",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmorPlates_Steel4",
+							}),
 						}),
-						PlaceObj('LootEntryNoLoot', {
-							weight = 3000,
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "TwaronFull_SteelPlate",
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_TwaronFull",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmorPlates_Steel4",
+							}),
 						}),
-					}),
-					PlaceObj('ModItemLootDef', {
-						group = "Default",
-						id = "LegionTorsoLightArmor",
-						PlaceObj('LootEntryInventoryItem', {
-							comment = "T1",
-							item = "JazzArmor_LeatherArmor",
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "ZylonLight_SteelPlate",
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_ZylonLight",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmorPlates_Steel3",
+							}),
 						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "T1-3",
-							loot_def = "LeatherArmor_ScrapPlate",
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "ZylonMedium_SteelPlate",
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_ZylonMedium",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmorPlates_Steel3",
+							}),
 						}),
-						PlaceObj('LootEntryInventoryItem', {
-							comment = "T2-1",
-							item = "JazzArmor_FlakM1955",
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "ZylonFull_SteelPlate",
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_ZylonFull",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmorPlates_Steel4",
+							}),
 						}),
-						PlaceObj('LootEntryInventoryItem', {
-							comment = "T2-1",
-							item = "JazzArmor_FlakM69",
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "GuardianLight_CeramicPlate",
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_GuardianLight",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmorPlates_Ceramics3",
+							}),
 						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "T2-3",
-							loot_def = "LeatherArmor_KevlarPlate",
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "GuardianMedium_CeramicPlate",
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_GuardianMedium",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmorPlates_Ceramics4",
+							}),
 						}),
-						PlaceObj('LootEntryInventoryItem', {
-							comment = "T2-3",
-							item = "JazzArmor_TwaronLight",
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "GuardianFull_CeramicPlate",
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_GuardianFull",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmorPlates_Ceramics5",
+							}),
 						}),
-						PlaceObj('LootEntryInventoryItem', {
-							comment = "T2-5",
-							item = "JazzArmor_RBA",
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "6b13_SteelPlate",
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_6B13",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmorPlates_Steel4",
+							}),
 						}),
-					}),
-					PlaceObj('ModItemLootDef', {
-						group = "Default",
-						id = "LegionTorsoMiddleArmor",
-						PlaceObj('LootEntryInventoryItem', {
-							item = "JazzArmor_LeatherJacketBrn",
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "RBA_SteelPlate",
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_RBA",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmorPlates_Steel4",
+							}),
 						}),
-						PlaceObj('LootEntryInventoryItem', {
-							item = "JazzArmor_LeatherJacketBlk",
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "IBALight_CeramicPlate",
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_IBALight",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmorPlates_Ceramics3",
+							}),
 						}),
-						PlaceObj('LootEntryInventoryItem', {
-							item = "JazzArmor_LeatherVest",
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "IBAMedium_CeramicPlate",
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_IBA",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmorPlates_Ceramics4",
+							}),
 						}),
-						PlaceObj('LootEntryInventoryItem', {
-							item = "JazzArmor_LeatherArmor",
-							weight = 2000,
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "IBAFull_CeramicPlate",
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_IBAFull",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmorPlates_Ceramics5",
+							}),
 						}),
-						PlaceObj('LootEntryNoLoot', {
-							weight = 3000,
 						}),
-					}),
-					PlaceObj('ModItemLootDef', {
-						group = "Default",
-						id = "LegionTorsoHeavyArmor",
-						PlaceObj('LootEntryInventoryItem', {
-							item = "JazzArmor_LeatherJacketBrn",
+					PlaceObj('ModItemFolder', {
+						'name', "Torso",
+					}, {
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "LegionTorsoJackets",
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_LeatherJacketBrn",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_LeatherJacketBlk",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_LeatherVest",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								item = "JazzArmor_LeatherArmor",
+								weight = 2000,
+							}),
+							PlaceObj('LootEntryNoLoot', {
+								weight = 3000,
+							}),
 						}),
-						PlaceObj('LootEntryInventoryItem', {
-							item = "JazzArmor_LeatherJacketBlk",
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "LegionTorsoLightArmor",
+							PlaceObj('LootEntryLootDef', {
+								comment = "T1",
+								loot_def = "LegionTorsoJackets",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-2",
+								item = "JazzArmor_LeatherArmor",
+								weight = 20000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T1-2",
+								loot_def = "LeatherArmor_ScrapPlate",
+								weight = 20000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-3",
+								item = "JazzArmor_FlakM1955",
+								weight = 30000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-1",
+								item = "JazzArmor_FlakM1955",
+								weight = 100000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-2",
+								item = "JazzArmor_FlakM69",
+								weight = 200000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-2",
+								item = "JazzArmor_ZylonLight",
+								weight = 50000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-3",
+								loot_def = "LeatherArmor_KevlarPlate",
+								weight = 300000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-3",
+								item = "JazzArmor_TwaronLight",
+								weight = 300000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-3",
+								item = "JazzArmor_ZylonMedium",
+								weight = 100000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-4",
+								loot_def = "LeatherArmor_SteelPlate",
+								weight = 400000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-5",
+								loot_def = "TwaronLight_SteelPlate",
+								weight = 500000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T3-1",
+								item = "JazzArmor_RBA",
+								weight = 3000000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T3-2",
+								loot_def = "RBA_SteelPlate",
+								weight = 4000000,
+							}),
 						}),
-						PlaceObj('LootEntryInventoryItem', {
-							item = "JazzArmor_LeatherVest",
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "LegionTorsoMiddleArmor",
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-1",
+								item = "JazzArmor_Chainmail",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-1",
+								item = "JazzArmor_TireArmor",
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T1",
+								loot_def = "LegionTorsoJackets",
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T1-2",
+								loot_def = "TireArmor_ScrapPlate",
+								weight = 20000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-2",
+								item = "JazzArmor_SovietAssaultArmor",
+								weight = 30000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T1-3",
+								loot_def = "TireArmor_KevlarPlate",
+								weight = 30000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-1",
+								loot_def = "TireArmor_SteelPlate",
+								weight = 100000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-1",
+								item = "JazzArmor_PASGT",
+								weight = 100000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-2",
+								item = "JazzArmor_ZylonMedium",
+								weight = 200000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-3",
+								item = "JazzArmor_ZylonFull",
+								weight = 300000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-3",
+								item = "JazzArmor_TwaronMedium",
+								weight = 300000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-4",
+								item = "JazzArmor_6B3",
+								weight = 400000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-5",
+								loot_def = "TwaronMedium_SteelPlate",
+								weight = 500000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T3-1",
+								item = "JazzArmor_6B13",
+								weight = 1000000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-5",
+								loot_def = "6b13_SteelPlate",
+								weight = 500000,
+							}),
 						}),
-						PlaceObj('LootEntryInventoryItem', {
-							item = "JazzArmor_LeatherArmor",
-							weight = 2000,
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "LegionTorsoMercArmor",
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-1",
+								item = "JazzArmor_ZylonLight",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-2",
+								item = "JazzArmor_TwaronMedium",
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T1-2",
+								loot_def = "ZylonMedium_SteelPlate",
+								weight = 2000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T1-3",
+								loot_def = "ZylonFull_SteelPlate",
+								weight = 3000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-3",
+								item = "JazzArmor_ZylonFull",
+								weight = 3000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-1",
+								item = "JazzArmor_TwaronLight",
+								weight = 10000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-1",
+								loot_def = "TwaronLight_SteelPlate",
+								weight = 10000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-2",
+								item = "JazzArmor_TwaronMedium",
+								weight = 20000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-2",
+								loot_def = "TwaronMedium_SteelPlate",
+								weight = 20000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-3",
+								loot_def = "TwaronFull_SteelPlate",
+								weight = 30000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-3",
+								item = "JazzArmor_TwaronFull",
+								weight = 30000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-3",
+								item = "JazzArmor_GuardianLight",
+								weight = 30000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-3",
+								loot_def = "GuardianLight_CeramicPlate",
+								weight = 30000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-4",
+								item = "JazzArmor_GuardianMedium",
+								weight = 40000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-4",
+								loot_def = "GuardianMedium_CeramicPlate",
+								weight = 40000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-5",
+								item = "JazzArmor_GuardianFull",
+								weight = 50000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-5",
+								loot_def = "GuardianFull_CeramicPlate",
+								weight = 50000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T3-1",
+								item = "JazzArmor_IBALight",
+								weight = 100000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T3-1",
+								item = "JazzArmor_IBA",
+								weight = 100000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T3-2",
+								item = "JazzArmor_IBAFull",
+								weight = 200000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T3-1",
+								loot_def = "IBALight_CeramicPlate",
+								weight = 100000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T3-1",
+								loot_def = "IBAMedium_CeramicPlate",
+								weight = 100000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T3-2",
+								loot_def = "IBAFull_CeramicPlate",
+								weight = 200000,
+							}),
 						}),
-						PlaceObj('LootEntryNoLoot', {
-							weight = 3000,
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "LegionTorsoHeavyArmor",
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-1",
+								item = "JazzArmor_SovietAssaultArmor",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-2",
+								item = "JazzArmor_ImprovisedCuirass",
+								weight = 2000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-2",
+								item = "JazzArmor_TireBrigantine",
+								weight = 2000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-3",
+								item = "JazzArmor_AssaultCuirass",
+								weight = 3000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-1",
+								item = "JazzArmor_TwaronMedium",
+								weight = 100000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-2",
+								item = "JazzArmor_TwaronFull",
+								weight = 200000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-3",
+								item = "JazzArmor_6B3",
+								weight = 300000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-4",
+								loot_def = "TwaronMedium_SteelPlate",
+								weight = 400000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-5",
+								loot_def = "TwaronFull_SteelPlate",
+								weight = 500000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-5",
+								loot_def = "6b13_SteelPlate",
+								weight = 3000000,
+							}),
 						}),
-					}),
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "LegionTorsoReconArmor",
+							PlaceObj('LootEntryLootDef', {
+								comment = "T1",
+								loot_def = "LegionTorsoJackets",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-2",
+								item = "JazzArmor_Uniform",
+								weight = 20000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-3",
+								item = "JazzArmor_ZylonLight",
+								weight = 30000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-1",
+								loot_def = "ZylonLight_SteelPlate",
+								weight = 20000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-1",
+								item = "JazzArmor_ZylonMedium",
+								weight = 100000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-2",
+								item = "JazzArmor_ZylonFull",
+								weight = 200000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-2",
+								item = "JazzArmor_ZylonLight",
+								weight = 200000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-3",
+								loot_def = "ZylonLight_SteelPlate",
+								weight = 300000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-4",
+								loot_def = "ZylonMedium_SteelPlate",
+								weight = 400000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T2-5",
+								loot_def = "ZylonFull_SteelPlate",
+								weight = 500000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T3-1",
+								item = "JazzArmor_RBA",
+								weight = 3000000,
+							}),
+							PlaceObj('LootEntryLootDef', {
+								comment = "T3-2",
+								loot_def = "RBA_SteelPlate",
+								weight = 4000000,
+							}),
+						}),
+						}),
+					PlaceObj('ModItemFolder', {
+						'name', "Legs",
+					}, {
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "LegionLegsLightArmor",
+							PlaceObj('LootEntryNoLoot', {}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-1",
+								item = "JazzArmor_MotoKneePads",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-2",
+								item = "JazzArmor_LeatherPants",
+								weight = 2000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-3",
+								item = "JazzArmor_RaiderKneePads",
+								weight = 3000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-2",
+								item = "JazzArmor_SwatPads",
+								weight = 20000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-4",
+								item = "JazzArmor_ZylonLegs",
+								weight = 40000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-5",
+								item = "JazzArmor_TwaronLegs",
+								weight = 50000,
+							}),
+						}),
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "LegionLegsMiddleArmor",
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-1",
+								item = "JazzArmor_MotoKneePads",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-1",
+								item = "JazzArmor_LeatherPants",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-2",
+								item = "JazzArmor_RaiderKneePads",
+								weight = 2000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-1",
+								item = "JazzArmor_ZylonLegs",
+								weight = 10000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-3",
+								item = "JazzArmor_ZylonHeavyLegs",
+								weight = 20000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-4",
+								item = "JazzArmor_TwaronLegs",
+								weight = 30000,
+							}),
+						}),
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "LegionLegsMercArmor",
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-1",
+								item = "JazzArmor_CamoKneePads",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-2",
+								item = "JazzArmor_ZylonLegs",
+								weight = 10000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-3",
+								item = "JazzArmor_ZylonHeavyLegs",
+								weight = 20000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-1",
+								item = "JazzArmor_TwaronLegs",
+								weight = 100000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-2",
+								item = "JazzArmor_TwaronHeavyLegs",
+								weight = 200000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-3",
+								item = "JazzArmor_GuardianLegs",
+								weight = 300000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-4",
+								item = "JazzArmor_GuardianHeavyLegs",
+								weight = 400000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T3-1",
+								item = "JazzArmor_GuardianLegs",
+								weight = 1000000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T3-2",
+								item = "JazzArmor_GuardianHeavyLegs",
+								weight = 2000000,
+							}),
+						}),
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "LegionLegsHeavyArmor",
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-1",
+								item = "JazzArmor_RaiderKneePads",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-2",
+								item = "JazzArmor_RaiderMetalLeggins",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-3",
+								item = "JazzArmor_RaiderMetalLeggins",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-3",
+								item = "JazzArmor_ZylonHeavyLegs",
+								weight = 30000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-4",
+								item = "JazzArmor_TwaronHeavyLegs",
+								weight = 40000,
+							}),
+						}),
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "LegionLegsReconArmor",
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-2",
+								item = "JazzArmor_UniformPants",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-1",
+								item = "JazzArmor_CamoKneePads",
+								weight = 10000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-3",
+								item = "JazzArmor_ZylonLegs",
+								weight = 30000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-4",
+								item = "JazzArmor_ZylonHeavyLegs",
+								weight = 40000,
+							}),
+						}),
+						}),
+					PlaceObj('ModItemFolder', {
+						'name', "Helmets",
+					}, {
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "LegionHelmetsLightArmor",
+							PlaceObj('LootEntryNoLoot', {}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1",
+								item = "JazzArmor_ConstructionHelmet",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-2",
+								item = "JazzArmor_AdrianHelmet",
+								weight = 2000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-3",
+								item = "JazzArmor_SovietHelm",
+								weight = 3000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-2",
+								item = "JazzArmor_ZylonHelm",
+								weight = 20000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-4",
+								item = "JazzArmor_TwaronHelm",
+								weight = 40000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T3-1",
+								item = "JazzArmor_6b7Helm",
+								weight = 100000,
+							}),
+						}),
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "LegionHelmetsMiddleArmor",
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-1",
+								item = "JazzArmor_AdrianHelmet",
+								weight = 2000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-2",
+								item = "JazzArmor_SovietHelm",
+								weight = 2000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-3",
+								item = "JazzArmor_Stahlhelm",
+								weight = 3000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-1",
+								item = "JazzArmor_ZylonHelm",
+								weight = 100000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-2",
+								item = "JazzArmor_TwaronHelm",
+								weight = 200000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-3",
+								item = "JazzArmor_6b7Helm",
+								weight = 300000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-4",
+								item = "JazzArmor_6b7Helm",
+								weight = 400000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-5",
+								item = "JazzArmor_PASGTHelm",
+								weight = 500000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T3-1",
+								item = "JazzArmor_STSHHelm",
+								weight = 1000000,
+							}),
+						}),
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "LegionHelmetsMercArmor",
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-1",
+								item = "JazzArmor_ZylonHelm",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-2",
+								item = "JazzArmor_ZylonHelmHeavy",
+								weight = 2000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-3",
+								item = "JazzArmor_TwaronHelm",
+								weight = 5000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-3",
+								item = "JazzArmor_TwaronHelmHeavy",
+								weight = 3000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-1",
+								item = "JazzArmor_ProTecHelm",
+								weight = 10000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-2",
+								item = "JazzArmor_ProTecHelm",
+								weight = 20000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-3",
+								item = "JazzArmor_PASGTHelm",
+								weight = 30000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-4",
+								item = "JazzArmor_GuardianHelm",
+								weight = 400000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-5",
+								item = "JazzArmor_GuardianHelmHeavy",
+								weight = 500000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T3-1",
+								item = "JazzArmor_Mich2000",
+								weight = 1000000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T3-1",
+								item = "JazzArmor_Mich2001",
+								weight = 1000000,
+							}),
+						}),
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "LegionHelmetsHeavyArmor",
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-1",
+								item = "JazzArmor_SovietHelm",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-1",
+								item = "JazzArmor_Stahlhelm",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-2",
+								item = "JazzArmor_WieldingHelm",
+								weight = 2000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-3",
+								item = "JazzArmor_MetalHelm",
+								weight = 3000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-1",
+								item = "JazzArmor_WieldingHelm",
+								weight = 3000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-2",
+								item = "JazzArmor_MetalHelm",
+								weight = 20000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-3",
+								item = "JazzArmor_ZylonHelmHeavy",
+								weight = 30000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-4",
+								item = "JazzArmor_TwaronHelmHeavy",
+								weight = 40000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-5",
+								item = "JazzArmor_STSHHelm",
+								weight = 100000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T3-1",
+								item = "JazzArmor_AltynHelm",
+								weight = 300000,
+							}),
+						}),
+						PlaceObj('ModItemLootDef', {
+							group = "Default",
+							id = "LegionHelmetsReconArmor",
+							PlaceObj('LootEntryNoLoot', {}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-2",
+								item = "JazzArmor_UniformCap",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-2",
+								item = "JazzArmor_CamoBalaclava",
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T1-2",
+								item = "JazzArmor_M1Helm",
+								weight = 3000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-2",
+								item = "JazzArmor_ZylonHelm",
+								weight = 5000,
+							}),
+							PlaceObj('LootEntryInventoryItem', {
+								comment = "T2-4",
+								item = "JazzArmor_PASGTHelm",
+								weight = 30000,
+							}),
+						}),
+						}),
 					}),
 				PlaceObj('ModItemFolder', {
 					'name', "UnitsInventory",
@@ -17621,6 +18497,15 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T1",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -17646,6 +18531,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T1",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoMiddleArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsMiddleArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsMiddleArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -17669,6 +18563,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T1",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoMiddleArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsMiddleArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsMiddleArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -17685,6 +18588,15 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T2",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -17707,6 +18619,15 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T2",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoHeavyArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsHeavyArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -17737,6 +18658,15 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T2",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoMiddleArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsMiddleArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -17769,6 +18699,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T3",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoHeavyArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsHeavyArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsHeavyArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -17792,6 +18731,15 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T3",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoHeavyArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsHeavyArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -17825,6 +18773,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T3",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoHeavyArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsMercArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsHeavyArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -17838,6 +18795,15 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T1",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -17863,6 +18829,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T1",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsLightArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -17886,6 +18861,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T1",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsLightArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -17906,6 +18890,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T2",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoMiddleArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsMiddleArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsMiddleArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -17923,6 +18916,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T2",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsReconArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsReconArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -17939,6 +18941,15 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T2",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoReconArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -17963,6 +18974,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T3",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoMercArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsMiddleArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsMiddleArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -17979,6 +18999,15 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T3",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoReconArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsReconArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsReconArmor",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -18011,6 +19040,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T4",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoMercArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsMercArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsMercArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -18030,6 +19068,15 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T4",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoMercArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsMercArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsMercArmor",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -18058,6 +19105,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T1",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsLightArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -18074,6 +19130,15 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T2",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsReconArmor",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -18102,6 +19167,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T2",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoReconArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsReconArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -18124,6 +19198,15 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T3",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoReconArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsReconArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsReconArmor",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -18152,6 +19235,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T3",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoReconArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsReconArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsReconArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -18179,6 +19271,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T4",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoMercArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsReconArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsReconArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -18195,6 +19296,15 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T1",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -18220,6 +19330,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T2",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoMiddleArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsMiddleArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsMiddleArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -18244,6 +19363,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T2",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoMiddleArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsMiddleArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsMiddleArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -18260,6 +19388,15 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T3",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoMercArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsHeavyArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -18285,6 +19422,15 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T4",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoMercArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsMercArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsMercArmor",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -18320,6 +19466,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T3",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoHeavyArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsMiddleArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsMiddleArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -18353,6 +19508,15 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T4",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoHeavyArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsMercArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsMercArmor",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -18388,6 +19552,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_HighRank",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoMercArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsMercArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsHeavyArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -18422,6 +19595,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_HighRank",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoMercArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsMercArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsMercArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -18438,6 +19620,15 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T1",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsLightArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -18456,6 +19647,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T2",
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoMiddleArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsMiddleArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsMiddleArmor",
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
@@ -18472,6 +19672,15 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "EnemyValuables_T3",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionTorsoMiddleArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionLegsMiddleArmor",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
 					}),

@@ -5,7 +5,6 @@ DefineClass.AnneLeMitrailleur = {
 
 
 	comment = "Анка Пулеметчица - Квестовое",
-	__copy_group = "NPC_banter",
 	object_class = "UnitData",
 	Health = 62,
 	Agility = 47,
