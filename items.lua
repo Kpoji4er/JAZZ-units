@@ -35993,13 +35993,14 @@ return {
 						'min_score', 100,
 					}),
 					PlaceObj('AIActionMGSetup', {
-						'Weight', 300,
+						'Weight', 500,
 						'RequiredKeywords', {
 							"Control",
 						},
 						'min_score', 100,
 					}),
 					PlaceObj('AIActionMGSetup', {
+						'Weight', 200,
 						'min_score', 100,
 					}),
 					PlaceObj('AIActionMGBurstFire', nil),
