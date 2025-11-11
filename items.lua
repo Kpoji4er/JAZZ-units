@@ -34969,6 +34969,69 @@ return {
 						'TakeCoverChance', 0,
 						'VoiceResponse', "AIFlanking",
 					}),
+					PlaceObj('StandardAI', {
+						'BiasId', "Healer",
+						'Priority', true,
+						'Label', "Medic AI",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Heal",
+						},
+						'Score', function (self, unit, proto_context, debug_data)
+							for _, ally in ipairs(unit.team.units) do
+								if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) or ally:HasStatusEffect("Bleeding") then
+									return self.Weight
+								end
+							end
+							return 0
+						end,
+						'turn_phase', "Late",
+						'OptLocWeight', 1,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyHealingRange', {
+								'Weight', 300,
+								'CanUseMod', 1000,
+							}),
+						},
+						'SignatureActions', {
+							PlaceObj('AIActionBandage', {
+								'Priority', true,
+								'RequiredKeywords', {
+									"Heal",
+								},
+								'CanUseMod', 1000,
+							}),
+							PlaceObj('AIActionStim', {
+								'Priority', true,
+								'RequiredKeywords', {
+									"Stim",
+								},
+								'TargetRules', {
+									PlaceObj('AIStimRule', {
+										'Keyword', "Flank",
+										'Weight', 100,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "Control",
+										'Weight', 50,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "Explosives",
+										'Weight', 50,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "Ordnance",
+										'Weight', 50,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "RunAndGun",
+										'Weight', 100,
+									}),
+								},
+							}),
+						},
+						'TakeCoverChance', 0,
+					}),
 				},
 				Comment = "Keywords: Flank, Explosives",
 				OptLocPolicies = {
@@ -35019,13 +35082,6 @@ return {
 					PlaceObj('AIPolicyAvoidDeathZones', {
 						'TargetDist', 20,
 						'Penalty', 5,
-					}),
-					PlaceObj('AIPolicyHealingRange', {
-						'MaxHp', 90,
-						'BleedingWeight', 100,
-						'HpWeight', 10,
-						'SelfHealMod', 1000,
-						'CanUseMod', 1000,
 					}),
 				},
 				OptLocSearchRadius = 80,
@@ -35354,18 +35410,72 @@ return {
 						'TakeCoverChance', 0,
 						'VoiceResponse', "AIFlanking",
 					}),
-				},
-				Comment = "Keywords: Flank, Explosives",
-				OptLocPolicies = {
-					PlaceObj('AIPolicyHealingRange', {
+					PlaceObj('StandardAI', {
+						'BiasId', "Healer",
+						'Priority', true,
+						'Label', "Medic AI",
+						'Fallback', false,
 						'RequiredKeywords', {
 							"Heal",
 						},
-						'MaxHp', 90,
-						'BleedingWeight', 3000,
-						'SelfHealMod', 100,
-						'CanUseMod', 300,
+						'Score', function (self, unit, proto_context, debug_data)
+							for _, ally in ipairs(unit.team.units) do
+								if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) or ally:HasStatusEffect("Bleeding") then
+									return self.Weight
+								end
+							end
+							return 0
+						end,
+						'turn_phase', "Late",
+						'OptLocWeight', 1,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyHealingRange', {
+								'Weight', 300,
+								'CanUseMod', 1000,
+							}),
+						},
+						'SignatureActions', {
+							PlaceObj('AIActionBandage', {
+								'Priority', true,
+								'RequiredKeywords', {
+									"Heal",
+								},
+								'CanUseMod', 1000,
+							}),
+							PlaceObj('AIActionStim', {
+								'Priority', true,
+								'RequiredKeywords', {
+									"Stim",
+								},
+								'TargetRules', {
+									PlaceObj('AIStimRule', {
+										'Keyword', "Flank",
+										'Weight', 100,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "Control",
+										'Weight', 50,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "Explosives",
+										'Weight', 50,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "Ordnance",
+										'Weight', 50,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "RunAndGun",
+										'Weight', 100,
+									}),
+								},
+							}),
+						},
+						'TakeCoverChance', 0,
 					}),
+				},
+				Comment = "Keywords: Flank, Explosives",
+				OptLocPolicies = {
 					PlaceObj('AIPolicyFlanking', {
 						'RequiredKeywords', {
 							"Marksman",
@@ -35770,18 +35880,72 @@ return {
 						'TakeCoverChance', 0,
 						'VoiceResponse', "AIFlanking",
 					}),
-				},
-				Comment = "Keywords: Flank, Explosives",
-				OptLocPolicies = {
-					PlaceObj('AIPolicyHealingRange', {
+					PlaceObj('StandardAI', {
+						'BiasId', "Healer",
+						'Priority', true,
+						'Label', "Medic AI",
+						'Fallback', false,
 						'RequiredKeywords', {
 							"Heal",
 						},
-						'MaxHp', 90,
-						'BleedingWeight', 3000,
-						'SelfHealMod', 100,
-						'CanUseMod', 300,
+						'Score', function (self, unit, proto_context, debug_data)
+							for _, ally in ipairs(unit.team.units) do
+								if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) or ally:HasStatusEffect("Bleeding") then
+									return self.Weight
+								end
+							end
+							return 0
+						end,
+						'turn_phase', "Late",
+						'OptLocWeight', 1,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyHealingRange', {
+								'Weight', 300,
+								'CanUseMod', 1000,
+							}),
+						},
+						'SignatureActions', {
+							PlaceObj('AIActionBandage', {
+								'Priority', true,
+								'RequiredKeywords', {
+									"Heal",
+								},
+								'CanUseMod', 1000,
+							}),
+							PlaceObj('AIActionStim', {
+								'Priority', true,
+								'RequiredKeywords', {
+									"Stim",
+								},
+								'TargetRules', {
+									PlaceObj('AIStimRule', {
+										'Keyword', "Flank",
+										'Weight', 100,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "Control",
+										'Weight', 50,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "Explosives",
+										'Weight', 50,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "Ordnance",
+										'Weight', 50,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "RunAndGun",
+										'Weight', 100,
+									}),
+								},
+							}),
+						},
+						'TakeCoverChance', 0,
 					}),
+				},
+				Comment = "Keywords: Flank, Explosives",
+				OptLocPolicies = {
 					PlaceObj('AIPolicyFlanking', {
 						'RequiredKeywords', {
 							"Marksman",
@@ -43006,6 +43170,69 @@ return {
 						'TakeCoverChance', 0,
 						'VoiceResponse', "AIFlanking",
 					}),
+					PlaceObj('StandardAI', {
+						'BiasId', "Healer",
+						'Priority', true,
+						'Label', "Medic AI",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Heal",
+						},
+						'Score', function (self, unit, proto_context, debug_data)
+							for _, ally in ipairs(unit.team.units) do
+								if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) or ally:HasStatusEffect("Bleeding") then
+									return self.Weight
+								end
+							end
+							return 0
+						end,
+						'turn_phase', "Late",
+						'OptLocWeight', 1,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyHealingRange', {
+								'Weight', 300,
+								'CanUseMod', 1000,
+							}),
+						},
+						'SignatureActions', {
+							PlaceObj('AIActionBandage', {
+								'Priority', true,
+								'RequiredKeywords', {
+									"Heal",
+								},
+								'CanUseMod', 1000,
+							}),
+							PlaceObj('AIActionStim', {
+								'Priority', true,
+								'RequiredKeywords', {
+									"Stim",
+								},
+								'TargetRules', {
+									PlaceObj('AIStimRule', {
+										'Keyword', "Flank",
+										'Weight', 100,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "Control",
+										'Weight', 50,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "Explosives",
+										'Weight', 50,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "Ordnance",
+										'Weight', 50,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "RunAndGun",
+										'Weight', 100,
+									}),
+								},
+							}),
+						},
+						'TakeCoverChance', 0,
+					}),
 				},
 				Comment = "Keywords: Flank, Explosives",
 				OptLocPolicies = {
@@ -43059,13 +43286,6 @@ return {
 					PlaceObj('AIPolicyAvoidDeathZones', {
 						'TargetDist', 20,
 						'Penalty', 5,
-					}),
-					PlaceObj('AIPolicyHealingRange', {
-						'MaxHp', 90,
-						'BleedingWeight', 100,
-						'HpWeight', 10,
-						'SelfHealMod', 1000,
-						'CanUseMod', 1000,
 					}),
 				},
 				OptLocSearchRadius = 80,
@@ -43394,18 +43614,72 @@ return {
 						'TakeCoverChance', 0,
 						'VoiceResponse', "AIFlanking",
 					}),
-				},
-				Comment = "Keywords: Flank, Explosives",
-				OptLocPolicies = {
-					PlaceObj('AIPolicyHealingRange', {
+					PlaceObj('StandardAI', {
+						'BiasId', "Healer",
+						'Priority', true,
+						'Label', "Medic AI",
+						'Fallback', false,
 						'RequiredKeywords', {
 							"Heal",
 						},
-						'MaxHp', 90,
-						'BleedingWeight', 3000,
-						'SelfHealMod', 100,
-						'CanUseMod', 300,
+						'Score', function (self, unit, proto_context, debug_data)
+							for _, ally in ipairs(unit.team.units) do
+								if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) or ally:HasStatusEffect("Bleeding") then
+									return self.Weight
+								end
+							end
+							return 0
+						end,
+						'turn_phase', "Late",
+						'OptLocWeight', 1,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyHealingRange', {
+								'Weight', 300,
+								'CanUseMod', 1000,
+							}),
+						},
+						'SignatureActions', {
+							PlaceObj('AIActionBandage', {
+								'Priority', true,
+								'RequiredKeywords', {
+									"Heal",
+								},
+								'CanUseMod', 1000,
+							}),
+							PlaceObj('AIActionStim', {
+								'Priority', true,
+								'RequiredKeywords', {
+									"Stim",
+								},
+								'TargetRules', {
+									PlaceObj('AIStimRule', {
+										'Keyword', "Flank",
+										'Weight', 100,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "Control",
+										'Weight', 50,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "Explosives",
+										'Weight', 50,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "Ordnance",
+										'Weight', 50,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "RunAndGun",
+										'Weight', 100,
+									}),
+								},
+							}),
+						},
+						'TakeCoverChance', 0,
 					}),
+				},
+				Comment = "Keywords: Flank, Explosives",
+				OptLocPolicies = {
 					PlaceObj('AIPolicyFlanking', {
 						'RequiredKeywords', {
 							"Marksman",
@@ -43813,18 +44087,72 @@ return {
 						'TakeCoverChance', 0,
 						'VoiceResponse', "AIFlanking",
 					}),
-				},
-				Comment = "Keywords: Flank, Explosives",
-				OptLocPolicies = {
-					PlaceObj('AIPolicyHealingRange', {
+					PlaceObj('StandardAI', {
+						'BiasId', "Healer",
+						'Priority', true,
+						'Label', "Medic AI",
+						'Fallback', false,
 						'RequiredKeywords', {
 							"Heal",
 						},
-						'MaxHp', 90,
-						'BleedingWeight', 3000,
-						'SelfHealMod', 100,
-						'CanUseMod', 300,
+						'Score', function (self, unit, proto_context, debug_data)
+							for _, ally in ipairs(unit.team.units) do
+								if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) or ally:HasStatusEffect("Bleeding") then
+									return self.Weight
+								end
+							end
+							return 0
+						end,
+						'turn_phase', "Late",
+						'OptLocWeight', 1,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyHealingRange', {
+								'Weight', 300,
+								'CanUseMod', 1000,
+							}),
+						},
+						'SignatureActions', {
+							PlaceObj('AIActionBandage', {
+								'Priority', true,
+								'RequiredKeywords', {
+									"Heal",
+								},
+								'CanUseMod', 1000,
+							}),
+							PlaceObj('AIActionStim', {
+								'Priority', true,
+								'RequiredKeywords', {
+									"Stim",
+								},
+								'TargetRules', {
+									PlaceObj('AIStimRule', {
+										'Keyword', "Flank",
+										'Weight', 100,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "Control",
+										'Weight', 50,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "Explosives",
+										'Weight', 50,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "Ordnance",
+										'Weight', 50,
+									}),
+									PlaceObj('AIStimRule', {
+										'Keyword', "RunAndGun",
+										'Weight', 100,
+									}),
+								},
+							}),
+						},
+						'TakeCoverChance', 0,
 					}),
+				},
+				Comment = "Keywords: Flank, Explosives",
+				OptLocPolicies = {
 					PlaceObj('AIPolicyFlanking', {
 						'RequiredKeywords', {
 							"Marksman",
