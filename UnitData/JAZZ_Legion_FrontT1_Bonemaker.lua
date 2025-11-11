@@ -33,7 +33,15 @@ DefineClass.JAZZ_Legion_FrontT1_Bonemaker = {
 	role = "Medic",
 	CanManEmplacements = false,
 	MaxAttacks = 10,
-	PickCustomArchetype = function (self, proto_context)  end,
+	PickCustomArchetype = function (self, proto_context)
+		for _, ally in ipairs(self.team.units) do
+			if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) then
+				return "Medic"
+			end
+		end
+		
+		return self.archetype
+	end,
 	CustomEquipGear = function (self, items)  end,
 	MaxHitPoints = 80,
 	StartingPerks = {

@@ -34969,69 +34969,6 @@ return {
 						'TakeCoverChance', 0,
 						'VoiceResponse', "AIFlanking",
 					}),
-					PlaceObj('StandardAI', {
-						'BiasId', "Healer",
-						'Priority', true,
-						'Label', "Medic AI",
-						'Fallback', false,
-						'RequiredKeywords', {
-							"Heal",
-						},
-						'Score', function (self, unit, proto_context, debug_data)
-							for _, ally in ipairs(unit.team.units) do
-								if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) or ally:HasStatusEffect("Bleeding") then
-									return self.Weight
-								end
-							end
-							return 0
-						end,
-						'turn_phase', "Late",
-						'OptLocWeight', 1,
-						'EndTurnPolicies', {
-							PlaceObj('AIPolicyHealingRange', {
-								'Weight', 300,
-								'CanUseMod', 1000,
-							}),
-						},
-						'SignatureActions', {
-							PlaceObj('AIActionBandage', {
-								'Priority', true,
-								'RequiredKeywords', {
-									"Heal",
-								},
-								'CanUseMod', 1000,
-							}),
-							PlaceObj('AIActionStim', {
-								'Priority', true,
-								'RequiredKeywords', {
-									"Stim",
-								},
-								'TargetRules', {
-									PlaceObj('AIStimRule', {
-										'Keyword', "Flank",
-										'Weight', 100,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "Control",
-										'Weight', 50,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "Explosives",
-										'Weight', 50,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "Ordnance",
-										'Weight', 50,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "RunAndGun",
-										'Weight', 100,
-									}),
-								},
-							}),
-						},
-						'TakeCoverChance', 0,
-					}),
 				},
 				Comment = "Keywords: Flank, Explosives",
 				OptLocPolicies = {
@@ -35277,10 +35214,6 @@ return {
 					PlaceObj('AIActionShootLandmine', {
 						'min_score', 100,
 					}),
-					PlaceObj('AIActionBandage', {
-						'SelfHealMod', 500,
-						'CanUseMod', 1000,
-					}),
 					PlaceObj('AIActionCharge', {
 						'RequiredKeywords', {
 							"Melee",
@@ -35409,69 +35342,6 @@ return {
 						},
 						'TakeCoverChance', 0,
 						'VoiceResponse', "AIFlanking",
-					}),
-					PlaceObj('StandardAI', {
-						'BiasId', "Healer",
-						'Priority', true,
-						'Label', "Medic AI",
-						'Fallback', false,
-						'RequiredKeywords', {
-							"Heal",
-						},
-						'Score', function (self, unit, proto_context, debug_data)
-							for _, ally in ipairs(unit.team.units) do
-								if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) or ally:HasStatusEffect("Bleeding") then
-									return self.Weight
-								end
-							end
-							return 0
-						end,
-						'turn_phase', "Late",
-						'OptLocWeight', 1,
-						'EndTurnPolicies', {
-							PlaceObj('AIPolicyHealingRange', {
-								'Weight', 300,
-								'CanUseMod', 1000,
-							}),
-						},
-						'SignatureActions', {
-							PlaceObj('AIActionBandage', {
-								'Priority', true,
-								'RequiredKeywords', {
-									"Heal",
-								},
-								'CanUseMod', 1000,
-							}),
-							PlaceObj('AIActionStim', {
-								'Priority', true,
-								'RequiredKeywords', {
-									"Stim",
-								},
-								'TargetRules', {
-									PlaceObj('AIStimRule', {
-										'Keyword', "Flank",
-										'Weight', 100,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "Control",
-										'Weight', 50,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "Explosives",
-										'Weight', 50,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "Ordnance",
-										'Weight', 50,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "RunAndGun",
-										'Weight', 100,
-									}),
-								},
-							}),
-						},
-						'TakeCoverChance', 0,
 					}),
 				},
 				Comment = "Keywords: Flank, Explosives",
@@ -35759,10 +35629,6 @@ return {
 						'LimitRange', true,
 						'MaxTargetRange', 30,
 					}),
-					PlaceObj('AIActionBandage', {
-						'SelfHealMod', 500,
-						'CanUseMod', 1000,
-					}),
 					PlaceObj('AIActionCancelShot', {
 						'Weight', 200,
 						'RequiredKeywords', {
@@ -35879,69 +35745,6 @@ return {
 						},
 						'TakeCoverChance', 0,
 						'VoiceResponse', "AIFlanking",
-					}),
-					PlaceObj('StandardAI', {
-						'BiasId', "Healer",
-						'Priority', true,
-						'Label', "Medic AI",
-						'Fallback', false,
-						'RequiredKeywords', {
-							"Heal",
-						},
-						'Score', function (self, unit, proto_context, debug_data)
-							for _, ally in ipairs(unit.team.units) do
-								if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) or ally:HasStatusEffect("Bleeding") then
-									return self.Weight
-								end
-							end
-							return 0
-						end,
-						'turn_phase', "Late",
-						'OptLocWeight', 1,
-						'EndTurnPolicies', {
-							PlaceObj('AIPolicyHealingRange', {
-								'Weight', 300,
-								'CanUseMod', 1000,
-							}),
-						},
-						'SignatureActions', {
-							PlaceObj('AIActionBandage', {
-								'Priority', true,
-								'RequiredKeywords', {
-									"Heal",
-								},
-								'CanUseMod', 1000,
-							}),
-							PlaceObj('AIActionStim', {
-								'Priority', true,
-								'RequiredKeywords', {
-									"Stim",
-								},
-								'TargetRules', {
-									PlaceObj('AIStimRule', {
-										'Keyword', "Flank",
-										'Weight', 100,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "Control",
-										'Weight', 50,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "Explosives",
-										'Weight', 50,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "Ordnance",
-										'Weight', 50,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "RunAndGun",
-										'Weight', 100,
-									}),
-								},
-							}),
-						},
-						'TakeCoverChance', 0,
 					}),
 				},
 				Comment = "Keywords: Flank, Explosives",
@@ -36098,10 +35901,6 @@ return {
 					PlaceObj('AIActionShootLandmine', {
 						'min_score', 100,
 					}),
-					PlaceObj('AIActionBandage', {
-						'SelfHealMod', 500,
-						'CanUseMod', 1000,
-					}),
 					PlaceObj('AIActionMGSetup', {
 						'Weight', 300,
 						'RequiredKeywords', {
@@ -36116,6 +35915,18 @@ return {
 				TargetingPolicies = {
 					PlaceObj('AITargetingEnemyHealth', {
 						'Health', 50,
+					}),
+					PlaceObj('AITargetingEnemyWill', {
+						'Will', 80,
+						'AboveWill', true,
+					}),
+					PlaceObj('AITargetingEnemyWill', {
+						'Will', 50,
+						'AboveWill', true,
+					}),
+					PlaceObj('AITargetingEnemyWill', {
+						'Will', 30,
+						'AboveWill', true,
 					}),
 					PlaceObj('AITargetingEnemyWeapon', {
 						'EnemyWeapon', "Sniper",
@@ -37283,7 +37094,15 @@ return {
 				'role', "Medic",
 				'CanManEmplacements', false,
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					for _, ally in ipairs(self.team.units) do
+						if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) then
+							return "Medic"
+						end
+					end
+					
+					return self.archetype
+				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 80,
 				'StartingPerks', {
@@ -43170,69 +42989,6 @@ return {
 						'TakeCoverChance', 0,
 						'VoiceResponse', "AIFlanking",
 					}),
-					PlaceObj('StandardAI', {
-						'BiasId', "Healer",
-						'Priority', true,
-						'Label', "Medic AI",
-						'Fallback', false,
-						'RequiredKeywords', {
-							"Heal",
-						},
-						'Score', function (self, unit, proto_context, debug_data)
-							for _, ally in ipairs(unit.team.units) do
-								if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) or ally:HasStatusEffect("Bleeding") then
-									return self.Weight
-								end
-							end
-							return 0
-						end,
-						'turn_phase', "Late",
-						'OptLocWeight', 1,
-						'EndTurnPolicies', {
-							PlaceObj('AIPolicyHealingRange', {
-								'Weight', 300,
-								'CanUseMod', 1000,
-							}),
-						},
-						'SignatureActions', {
-							PlaceObj('AIActionBandage', {
-								'Priority', true,
-								'RequiredKeywords', {
-									"Heal",
-								},
-								'CanUseMod', 1000,
-							}),
-							PlaceObj('AIActionStim', {
-								'Priority', true,
-								'RequiredKeywords', {
-									"Stim",
-								},
-								'TargetRules', {
-									PlaceObj('AIStimRule', {
-										'Keyword', "Flank",
-										'Weight', 100,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "Control",
-										'Weight', 50,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "Explosives",
-										'Weight', 50,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "Ordnance",
-										'Weight', 50,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "RunAndGun",
-										'Weight', 100,
-									}),
-								},
-							}),
-						},
-						'TakeCoverChance', 0,
-					}),
 				},
 				Comment = "Keywords: Flank, Explosives",
 				OptLocPolicies = {
@@ -43481,15 +43237,6 @@ return {
 					PlaceObj('AIActionShootLandmine', {
 						'min_score', 100,
 					}),
-					PlaceObj('AIActionBandage', {
-						'SelfHealMod', 500,
-						'CanUseMod', 1000,
-					}),
-					PlaceObj('AIActionCharge', {
-						'RequiredKeywords', {
-							"Melee",
-						},
-					}),
 					PlaceObj('AIActionCancelShot', {
 						'Weight', 200,
 						'RequiredKeywords', {
@@ -43613,69 +43360,6 @@ return {
 						},
 						'TakeCoverChance', 0,
 						'VoiceResponse', "AIFlanking",
-					}),
-					PlaceObj('StandardAI', {
-						'BiasId', "Healer",
-						'Priority', true,
-						'Label', "Medic AI",
-						'Fallback', false,
-						'RequiredKeywords', {
-							"Heal",
-						},
-						'Score', function (self, unit, proto_context, debug_data)
-							for _, ally in ipairs(unit.team.units) do
-								if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) or ally:HasStatusEffect("Bleeding") then
-									return self.Weight
-								end
-							end
-							return 0
-						end,
-						'turn_phase', "Late",
-						'OptLocWeight', 1,
-						'EndTurnPolicies', {
-							PlaceObj('AIPolicyHealingRange', {
-								'Weight', 300,
-								'CanUseMod', 1000,
-							}),
-						},
-						'SignatureActions', {
-							PlaceObj('AIActionBandage', {
-								'Priority', true,
-								'RequiredKeywords', {
-									"Heal",
-								},
-								'CanUseMod', 1000,
-							}),
-							PlaceObj('AIActionStim', {
-								'Priority', true,
-								'RequiredKeywords', {
-									"Stim",
-								},
-								'TargetRules', {
-									PlaceObj('AIStimRule', {
-										'Keyword', "Flank",
-										'Weight', 100,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "Control",
-										'Weight', 50,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "Explosives",
-										'Weight', 50,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "Ordnance",
-										'Weight', 50,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "RunAndGun",
-										'Weight', 100,
-									}),
-								},
-							}),
-						},
-						'TakeCoverChance', 0,
 					}),
 				},
 				Comment = "Keywords: Flank, Explosives",
@@ -43966,10 +43650,6 @@ return {
 						'LimitRange', true,
 						'MaxTargetRange', 30,
 					}),
-					PlaceObj('AIActionBandage', {
-						'SelfHealMod', 500,
-						'CanUseMod', 1000,
-					}),
 					PlaceObj('AIActionCancelShot', {
 						'Weight', 200,
 						'RequiredKeywords', {
@@ -44086,69 +43766,6 @@ return {
 						},
 						'TakeCoverChance', 0,
 						'VoiceResponse', "AIFlanking",
-					}),
-					PlaceObj('StandardAI', {
-						'BiasId', "Healer",
-						'Priority', true,
-						'Label', "Medic AI",
-						'Fallback', false,
-						'RequiredKeywords', {
-							"Heal",
-						},
-						'Score', function (self, unit, proto_context, debug_data)
-							for _, ally in ipairs(unit.team.units) do
-								if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) or ally:HasStatusEffect("Bleeding") then
-									return self.Weight
-								end
-							end
-							return 0
-						end,
-						'turn_phase', "Late",
-						'OptLocWeight', 1,
-						'EndTurnPolicies', {
-							PlaceObj('AIPolicyHealingRange', {
-								'Weight', 300,
-								'CanUseMod', 1000,
-							}),
-						},
-						'SignatureActions', {
-							PlaceObj('AIActionBandage', {
-								'Priority', true,
-								'RequiredKeywords', {
-									"Heal",
-								},
-								'CanUseMod', 1000,
-							}),
-							PlaceObj('AIActionStim', {
-								'Priority', true,
-								'RequiredKeywords', {
-									"Stim",
-								},
-								'TargetRules', {
-									PlaceObj('AIStimRule', {
-										'Keyword', "Flank",
-										'Weight', 100,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "Control",
-										'Weight', 50,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "Explosives",
-										'Weight', 50,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "Ordnance",
-										'Weight', 50,
-									}),
-									PlaceObj('AIStimRule', {
-										'Keyword', "RunAndGun",
-										'Weight', 100,
-									}),
-								},
-							}),
-						},
-						'TakeCoverChance', 0,
 					}),
 				},
 				Comment = "Keywords: Flank, Explosives",
@@ -44307,10 +43924,6 @@ return {
 					}),
 					PlaceObj('AIActionShootLandmine', {
 						'min_score', 100,
-					}),
-					PlaceObj('AIActionBandage', {
-						'SelfHealMod', 500,
-						'CanUseMod', 1000,
 					}),
 					PlaceObj('AIActionMGSetup', {
 						'Weight', 300,
@@ -66525,7 +66138,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
