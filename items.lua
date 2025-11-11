@@ -19410,7 +19410,25 @@ return {
 							loot_def = "Roughneck_Firearm",
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "LegionKnife50pc",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionKnife",
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "NightEquipment",
@@ -19439,6 +19457,17 @@ return {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
 									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "Legion_PistolList",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Condition = "<=",
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
@@ -44527,7 +44556,7 @@ return {
 			'Medical', 70,
 			'Portrait', "UI/EnemiesPortraits/RebelOfficer",
 			'BigPortrait', "UI/Mercs/IMP_Fixer",
-			'Name', T(641054948744, --[[ModItemUnitDataCompositeDef RebelSergant_Immortal_M1 Name]] "Командир отряда"),
+			'Name', T(641054948744, --[[ModItemUnitDataCompositeDef RebelSergant_Immortal_M1 Name]] "Контимир Бурда"),
 			'Randomization', true,
 			'eliteCategory', "Rebels",
 			'Affiliation', "Rebel",
@@ -44636,7 +44665,7 @@ return {
 			'Medical', 70,
 			'Portrait', "UI/EnemiesPortraits/RebelOfficer",
 			'BigPortrait', "UI/Mercs/IMP_Fixer",
-			'Name', T(641054948744, --[[ModItemUnitDataCompositeDef RebelSergeant_Immortal_M1 Name]] "Командир отряда"),
+			'Name', T(641054948744, --[[ModItemUnitDataCompositeDef RebelSergeant_Immortal_M1 Name]] "Контимир Бурда"),
 			'Randomization', true,
 			'eliteCategory', "Rebels",
 			'Affiliation', "Rebel",
