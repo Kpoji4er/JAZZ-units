@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 1,
-	'version', 2036,
+	'version', 2039,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -104,7 +104,6 @@ return PlaceObj('ModDef', {
 		"UnitData/RebelSergeant.lua",
 		"UnitData/RebelSergant_Immortal.lua",
 		"UnitData/RebelSergeant_Immortal.lua",
-		"UnitData/RebelSergant_Immortal_M1.lua",
 		"UnitData/RebelSergeant_Immortal_M1.lua",
 		"UnitData/RebelFlanker.lua",
 		"UnitData/RebelGrenadier.lua",
@@ -176,8 +175,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1762859881,
-	'code_hash', 2476888282929449221,
+	'saved', 1762893191,
+	'code_hash', -7304408774746419329,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
@@ -6837,11 +6836,6 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
 			'Id', "RebelSergeant_Immortal",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "RebelSergant_Immortal_M1",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
