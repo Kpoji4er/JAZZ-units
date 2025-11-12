@@ -32485,6 +32485,7 @@ return {
 								stack_min = 50,
 							}),
 							PlaceObj('LootEntryUpgradedWeapon', {
+								drop_chance_mod = 0,
 								upgrades = {
 									"MagLarge_30_40",
 									"StockLightUnFolded",
@@ -37548,33 +37549,10 @@ return {
 						end
 					end
 					
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
 					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						local panicshance = 100-health_perc
+						archetype = "Medic"
 					end
 					
-					if will_perc < 40 then
-						local panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
 					
 					return archetype
 				end,
@@ -44107,9 +44085,7 @@ return {
 						'Weight', 10,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', nil),
-							PlaceObj('AIPolicyTakeCover', {
-								'Required', true,
-							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 						},
 						'TakeCoverChance', 50,
 					}),
@@ -45078,7 +45054,7 @@ return {
 					local roll = self:Random(100)
 					
 					if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "AssaultRifle"  then
-						archetype = "Legion_Assaulter"
+						archetype = "Melee"
 						weapon_class = "AssaultRifle"
 						PlayVoiceResponse(self, "AIArchetypeAngry")
 					end
@@ -45198,9 +45174,9 @@ return {
 					local weapon_class = "Firearm"
 					local roll = self:Random(100)
 					
-					if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "AssaultRifle"  then
-						archetype = "Legion_Assaulter"
-						weapon_class = "AssaultRifle"
+					if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "Firearm"  then
+						archetype = "Legion_Assault"
+						weapon_class = "MeleeWeapon"
 						PlayVoiceResponse(self, "AIArchetypeAngry")
 					end
 					
@@ -45217,7 +45193,7 @@ return {
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "SniperRifle")
-					self:TryEquip(items, "Handheld B", "Firearm")
+					self:TryEquip(items, "Handheld B", "MeleeWeapon")
 				end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
@@ -67184,7 +67160,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {

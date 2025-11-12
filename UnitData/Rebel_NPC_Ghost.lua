@@ -46,7 +46,7 @@ DefineClass.Rebel_NPC_Ghost = {
 		local roll = self:Random(100)
 		
 		if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "AssaultRifle"  then
-			archetype = "Legion_Assaulter"
+			archetype = "Melee"
 			weapon_class = "AssaultRifle"
 			PlayVoiceResponse(self, "AIArchetypeAngry")
 		end

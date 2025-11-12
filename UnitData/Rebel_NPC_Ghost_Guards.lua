@@ -43,9 +43,9 @@ DefineClass.Rebel_NPC_Ghost_Guards = {
 		local weapon_class = "Firearm"
 		local roll = self:Random(100)
 		
-		if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "AssaultRifle"  then
-			archetype = "Legion_Assaulter"
-			weapon_class = "AssaultRifle"
+		if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "Firearm"  then
+			archetype = "Legion_Assault"
+			weapon_class = "MeleeWeapon"
 			PlayVoiceResponse(self, "AIArchetypeAngry")
 		end
 		
@@ -62,7 +62,7 @@ DefineClass.Rebel_NPC_Ghost_Guards = {
 	end,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "SniperRifle")
-		self:TryEquip(items, "Handheld B", "Firearm")
+		self:TryEquip(items, "Handheld B", "MeleeWeapon")
 	end,
 	MaxHitPoints = 50,
 	StartingPerks = {
