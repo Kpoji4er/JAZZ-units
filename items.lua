@@ -33003,6 +33003,92 @@ return {
 					}),
 					PlaceObj('ModItemLootDef', {
 						Comment = "enemy rebels",
+						group = "Enemy - Rebels",
+						id = "Rebel_NPC_Ghost",
+						loot = "all",
+						PlaceObj('LootEntryInventoryItem', {
+							guaranteed = true,
+							item = "DragunovSVD_Custom",
+							stack_max = 1,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							drop_chance_mod = 0,
+							item = "JAZZ_AMMO_762x54_APIT",
+							stack_max = 1,
+							stack_min = 20,
+						}),
+						PlaceObj('LootEntryUpgradedWeapon', {
+							upgrades = {
+								"JAZZ_Reflex_Eotech",
+							},
+							weapon = "AS_Val",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							drop_chance_mod = 0,
+							item = "JAZZ_AMMO_9x39_JHP",
+							stack_max = 1,
+							stack_min = 20,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							drop_chance_mod = 0,
+							item = "JazzArmor_SpectraHelm",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							drop_chance_mod = 0,
+							item = "JazzArmor_SpectraFull",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							drop_chance_mod = 0,
+							item = "JazzArmor_SpectraLegs",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							drop_chance_mod = 0,
+							item = "FragGrenade",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "enemy rebels",
+						group = "Enemy - Rebels",
+						id = "Rebel_NPC_GhostGuards",
+						loot = "all",
+						PlaceObj('LootEntryInventoryItem', {
+							drop_chance_mod = 0,
+							item = "Knife",
+							stack_max = 1,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryUpgradedWeapon', {
+							upgrades = {
+								"JAZZ_Scope_PSO",
+							},
+							weapon = "VSS",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							drop_chance_mod = 0,
+							item = "JAZZ_AMMO_9x39_JHP",
+							stack_max = 1,
+							stack_min = 20,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							drop_chance_mod = 0,
+							item = "JazzArmor_SpectraHelm",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							drop_chance_mod = 0,
+							item = "JazzArmor_SpectraFull",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							drop_chance_mod = 0,
+							item = "JazzArmor_SpectraLegs",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							drop_chance_mod = 0,
+							item = "FragGrenade",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "enemy rebels",
 						group = "Default",
 						id = "RebelSniper",
 						loot = "all",
@@ -43620,9 +43706,7 @@ return {
 						'Weight', 10,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', nil),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 						},
 						'TakeCoverChance', 50,
 					}),
@@ -43675,9 +43759,7 @@ return {
 								'RangeMin', 50,
 								'RangeMax', 70,
 							}),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 						},
 						'TakeCoverChance', 0,
 						'VoiceResponse', "TacticalPressing",
@@ -44051,9 +44133,7 @@ return {
 								'Required', true,
 								'RangeMin', 50,
 							}),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyHighGround', {
 								'RequiredKeywords', {
 									"Sniper",
@@ -44110,9 +44190,7 @@ return {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
 							}),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyFlanking', {
 								'Weight', 1000,
 							}),
@@ -44171,7 +44249,8 @@ return {
 						'Weight', 50,
 					}),
 					PlaceObj('AIPolicyTakeCover', {
-						'Weight', 1000,
+						'Weight', 10,
+						'visibility_mode', "team",
 					}),
 					PlaceObj('AIPolicyProximity', {
 						'Weight', 10,
@@ -44448,9 +44527,7 @@ return {
 						'Weight', 10,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', nil),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 						},
 						'TakeCoverChance', 50,
 					}),
@@ -44727,129 +44804,471 @@ return {
 				id = "Rebels_Machinegunner",
 			}),
 			}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "NPC",
-			'Id', "Chimurenga",
-			'comment', "Чебурашка",
-			'object_class', "UnitData",
-			'Health', 85,
-			'Agility', 90,
-			'Dexterity', 90,
-			'Strength', 90,
-			'Wisdom', 80,
-			'Will', 90,
-			'Leadership', 90,
-			'Marksmanship', 85,
-			'Mechanical', 100,
-			'Explosives', 40,
-			'Medical', 25,
-			'Portrait', "UI/NPCsPortraits/Chimurenga",
-			'BigPortrait', "UI/NPCs/Chimurenga",
-			'Name', T(416911739915, --[[ModItemUnitDataCompositeDef Chimurenga Name]] "Чемуренга"),
-			'Randomization', true,
-			'Affiliation', "Rebel",
-			'StartingLevel', 7,
-			'ImportantNPC', true,
-			'villain', true,
-			'AIKeywords', {
-				"Control",
-			},
-			'role', "Commander",
-			'MaxAttacks', 10,
-			'RewardExperience', 0,
-			'DefeatBehavior', "Defeated",
-			'RetreatBehavior', "None",
-			'StartingPerks', {
-				"AutoWeapons",
-				"BattleFocus",
-				"Ironclad",
-				"HoldPosition",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Chimurenga",
-				}),
-			},
-			'Equipment', {
-				"Chimurenga",
-			},
-			'gender', "Male",
-			'PersistentSessionId', "NPC_Chimurenga",
-			'VoiceResponseId', "Chimurenga",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "NPC_banter",
-			'Id', "AnneLeMitrailleur",
-			'comment', "Анка Пулеметчица - Квестовое",
-			'object_class', "UnitData",
-			'Health', 62,
-			'Agility', 47,
-			'Dexterity', 39,
-			'Strength', 59,
-			'Wisdom', 30,
-			'Leadership', 20,
-			'Marksmanship', 40,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/RebelStormer",
-			'Name', T(313818019736, --[[ModItemUnitDataCompositeDef AnneLeMitrailleur Name]] "Анна ла Митраёз"),
-			'Randomization', true,
-			'Affiliation', "Rebel",
-			'StartingLevel', 2,
-			'neutral_retaliate', true,
-			'archetype', "HeavyGunner",
-			'role', "Heavy",
-			'MaxAttacks', 2,
-			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				
-				if enemy and dist < 10*const.SlabSizeX then
-					--archetype = "Brute"
-					weapon_class = "Melee"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				local stealth_stance = self:GetStanceToStealth()
-				if self:CanStealth(stealth_stance) then
-				 self:Hide()
-				end	
-				
-				return archetype
-			end,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "MeleeWeapon")
-			end,
-			'MaxHitPoints', 85,
-			'StartingPerks', {
-				"AutoWeapons",
-				"MinFreeMove",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "RebelFemaleSniper",
-				}),
-			},
-			'Equipment', {
-				"AnneLeMitrailleur",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Name', "MaquisFemale_1",
-				}),
-			},
-			'pollyvoice', "Kendra",
-			'gender', "Female",
-			'VoiceResponseId', "AnneLeMitrailleur",
-			'FallbackMissingVR', "VillagerFemale",
-		}),
+		PlaceObj('ModItemFolder', {
+			'name', "NPC",
+		}, {
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "NPC",
+				'Id', "Chimurenga",
+				'comment', "Чебурашка",
+				'object_class', "UnitData",
+				'Health', 85,
+				'Agility', 90,
+				'Dexterity', 90,
+				'Strength', 90,
+				'Wisdom', 80,
+				'Will', 90,
+				'Leadership', 90,
+				'Marksmanship', 85,
+				'Mechanical', 100,
+				'Explosives', 40,
+				'Medical', 25,
+				'Portrait', "UI/NPCsPortraits/Chimurenga",
+				'BigPortrait', "UI/NPCs/Chimurenga",
+				'Name', T(416911739915, --[[ModItemUnitDataCompositeDef Chimurenga Name]] "Чемуренга"),
+				'Randomization', true,
+				'Affiliation', "Rebel",
+				'StartingLevel', 7,
+				'ImportantNPC', true,
+				'villain', true,
+				'AIKeywords', {
+					"Control",
+				},
+				'role', "Commander",
+				'MaxAttacks', 10,
+				'RewardExperience', 0,
+				'DefeatBehavior', "Defeated",
+				'RetreatBehavior', "None",
+				'StartingPerks', {
+					"AutoWeapons",
+					"BattleFocus",
+					"Ironclad",
+					"HoldPosition",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Chimurenga",
+					}),
+				},
+				'Equipment', {
+					"Chimurenga",
+				},
+				'gender', "Male",
+				'PersistentSessionId', "NPC_Chimurenga",
+				'VoiceResponseId', "Chimurenga",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "NPC_banter",
+				'Id', "AnneLeMitrailleur",
+				'comment', "Анка Пулеметчица - Квестовое",
+				'object_class', "UnitData",
+				'Health', 62,
+				'Agility', 47,
+				'Dexterity', 39,
+				'Strength', 59,
+				'Wisdom', 30,
+				'Leadership', 20,
+				'Marksmanship', 40,
+				'Mechanical', 0,
+				'Explosives', 0,
+				'Medical', 0,
+				'Portrait', "UI/EnemiesPortraits/RebelStormer",
+				'Name', T(313818019736, --[[ModItemUnitDataCompositeDef AnneLeMitrailleur Name]] "Анна ла Митраёз"),
+				'Randomization', true,
+				'Affiliation', "Rebel",
+				'StartingLevel', 2,
+				'neutral_retaliate', true,
+				'archetype', "HeavyGunner",
+				'role', "Heavy",
+				'MaxAttacks', 2,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					
+					if enemy and dist < 10*const.SlabSizeX then
+						--archetype = "Brute"
+						weapon_class = "Melee"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					local stealth_stance = self:GetStanceToStealth()
+					if self:CanStealth(stealth_stance) then
+					 self:Hide()
+					end	
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "Firearm")
+					self:TryEquip(items, "Handheld B", "MeleeWeapon")
+				end,
+				'MaxHitPoints', 85,
+				'StartingPerks', {
+					"AutoWeapons",
+					"MinFreeMove",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "RebelFemaleSniper",
+					}),
+				},
+				'Equipment', {
+					"AnneLeMitrailleur",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Name', "MaquisFemale_1",
+					}),
+				},
+				'pollyvoice', "Kendra",
+				'gender', "Female",
+				'VoiceResponseId', "AnneLeMitrailleur",
+				'FallbackMissingVR', "VillagerFemale",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Rebels",
+				'Id', "RebelSergeant_Immortal_M1",
+				'comment', "Сержант",
+				'object_class', "UnitData",
+				'Health', 95,
+				'Agility', 90,
+				'Dexterity', 90,
+				'Strength', 80,
+				'Wisdom', 80,
+				'Will', 100,
+				'Leadership', 100,
+				'Marksmanship', 90,
+				'Mechanical', 100,
+				'Explosives', 70,
+				'Medical', 70,
+				'Portrait', "UI/EnemiesPortraits/RebelOfficer",
+				'BigPortrait', "Mod/Dv3mFVN/Images/REBELS_Burda2.png",
+				'Name', T(641054948744, --[[ModItemUnitDataCompositeDef RebelSergeant_Immortal_M1 Name]] "Контимир Бурда"),
+				'Randomization', true,
+				'eliteCategory', "Rebels",
+				'Affiliation', "Rebel",
+				'StartingLevel', 6,
+				'immortal', true,
+				'villain', true,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Control",
+					"Sniper",
+					"Marksman",
+					"Smoke",
+					"Explosives",
+					"Leader",
+				},
+				'archetype', "Rebels_Frontliner",
+				'role', "Marksman",
+				'CanManEmplacements', false,
+				'OpeningAttackType', "Overwatch",
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					
+					if enemy and dist < 10*const.SlabSizeX then
+						archetype = "Melee"
+						weapon_class = "Melee"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					local stealth_stance = self:GetStanceToStealth()
+					if self:CanStealth(stealth_stance) then
+					 self:Hide()
+					end	
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "Firearm")
+					self:TryEquip(items, "Handheld B", "MeleeWeapon")
+				end,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"CQCTraining",
+					"Spiritual",
+					"BattleFocus",
+					"RelentlessAdvance",
+					"ShoulderToShoulder",
+					"AutoWeapons",
+					"Spotter",
+					"TakeAim",
+					"Shatterhand",
+					"OnMyTarget",
+					"Ironclad",
+					"LightStep",
+					"TrickShot",
+					"LeadFromTheFront",
+					"Shatterhand",
+					"Hobbler",
+					"LightningReactionNPC",
+					"Instagib",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Commander_Rebels",
+					}),
+				},
+				'Equipment', {
+					"RebelSergeant",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_2",
+					}),
+				},
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "RebelSoldier",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Legion",
+				'Id', "Rebel_NPC_Ghost",
+				'comment', 'Дьяло "Призрак" Канджура - НПЦ-Снайпер',
+				'object_class', "UnitData",
+				'Health', 100,
+				'Agility', 98,
+				'Dexterity', 98,
+				'Strength', 100,
+				'Wisdom', 80,
+				'Will', 100,
+				'Leadership', 100,
+				'Marksmanship', 100,
+				'Mechanical', 100,
+				'Explosives', 90,
+				'Medical', 90,
+				'Portrait', "UI/EnemiesPortraits/RebelRecon",
+				'BigPortrait', "Mod/Dv3mFVN/Images/REBELS_Ghost.png",
+				'Name', T(325500638329, --[[ModItemUnitDataCompositeDef Rebel_NPC_Ghost Name]] "Призрак"),
+				'Randomization', true,
+				'eliteCategory', "Foreigners",
+				'Affiliation', "Legion",
+				'StartingLevel', 8,
+				'villain', true,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Smoke",
+					"Flank",
+					"Marksman",
+					"Control",
+					"Leader",
+				},
+				'archetype', "Rebels_Frontliner",
+				'role', "Commander",
+				'RepositionArchetype', "Legion_Assaulter",
+				'AlwaysUseOpeningAttack', true,
+				'OpeningAttackType', "Overwatch",
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					local roll = self:Random(100)
+					
+					if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "AssaultRifle"  then
+						archetype = "Legion_Assaulter"
+						weapon_class = "AssaultRifle"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					local stealth_stance = self:GetStanceToStealth()
+					if self:CanStealth(stealth_stance) then
+					 self:Hide()
+					end	
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "SniperRifle")
+					self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 80,
+				'StartingPerks', {
+					"Spotter",
+					"SidneyPerk",
+					"TakeAim",
+					"OnMyTarget",
+					"Ironclad",
+					"LightStep",
+					"TrickShot",
+					"LeadFromTheFront",
+					"Shatterhand",
+					"StressManagement",
+					"Hotblood",
+					"Instagib",
+					"LightningReaction",
+					"HitTheDeck",
+					"CollateralDamage",
+					"Hardened",
+					"Spiritual",
+					"BattleFocus",
+					"RelentlessAdvance",
+					"ShoulderToShoulder",
+					"TrueGrit",
+					"OverwatchExpert",
+					"VengefulTemperament",
+					"HeavyWeaponsTraining",
+					"TagTeam",
+					"BeefedUp",
+					"Killzone",
+					"CQCTraining",
+					"Hobbler",
+					"AutoWeapons",
+					"WeGotThis",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Rebels_NPC_Ghost",
+					}),
+				},
+				'Equipment', {
+					"Rebel_NPC_Ghost",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_2",
+					}),
+				},
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "RebelSoldier",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Legion",
+				'Id', "Rebel_NPC_Ghost_Guards",
+				'comment', "Свита Призрака",
+				'object_class', "UnitData",
+				'Health', 80,
+				'Agility', 98,
+				'Dexterity', 95,
+				'Strength', 72,
+				'Wisdom', 100,
+				'Will', 85,
+				'Leadership', 30,
+				'Marksmanship', 95,
+				'Mechanical', 100,
+				'Explosives', 30,
+				'Medical', 30,
+				'Portrait', "UI/EnemiesPortraits/LegionSniper",
+				'BigPortrait', "UI/Enemies/LegionRaider",
+				'Name', T(621106396948, --[[ModItemUnitDataCompositeDef Rebel_NPC_Ghost_Guards Name]] "Повстанец-Рейнджер"),
+				'Randomization', true,
+				'elite', true,
+				'eliteCategory', "Rebels",
+				'Affiliation', "Rebel",
+				'StartingLevel', 18,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Soldier",
+					"Flank",
+					"Control",
+					"RunAndGun",
+				},
+				'archetype', "Rebels_Frontliner",
+				'role', "Recon",
+				'RepositionArchetype', "Legion_Assaulter",
+				'AlwaysUseOpeningAttack', true,
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					local roll = self:Random(100)
+					
+					if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "AssaultRifle"  then
+						archetype = "Legion_Assaulter"
+						weapon_class = "AssaultRifle"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					local stealth_stance = self:GetStanceToStealth()
+					if self:CanStealth(stealth_stance) then
+					 self:Hide()
+					end	
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "SniperRifle")
+					self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"HoldPosition",
+					"Counterfire",
+					"OpportunisticKiller",
+					"Instagib",
+					"Infiltrator",
+					"Flanker",
+					"Hardened",
+					"RelentlessAdvance",
+					"Untraceable",
+					"Stealthy",
+					"NightOps",
+					"CQCTraining",
+					"LightningReaction",
+					"Hotblood",
+					"LastWarning",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Recon_Rebels",
+					}),
+				},
+				'Equipment', {
+					"Rebel_NPC_GhostGuards",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "LegionMale_2",
+					}),
+				},
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "RebelSoldier",
+			}),
+			}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Rebels",
 			'Id', "RebelSergant",
@@ -45202,116 +45621,6 @@ return {
 			'Name', T(641054948744, --[[ModItemUnitDataCompositeDef RebelSergeant_Immortal Name]] "Командир отряда"),
 			'Randomization', true,
 			'elite', true,
-			'eliteCategory', "Rebels",
-			'Affiliation', "Rebel",
-			'StartingLevel', 6,
-			'immortal', true,
-			'villain', true,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Control",
-				"Sniper",
-				"Marksman",
-				"Smoke",
-				"Explosives",
-				"Leader",
-			},
-			'archetype', "Rebels_Frontliner",
-			'role', "Marksman",
-			'CanManEmplacements', false,
-			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 10,
-			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				
-				if enemy and dist < 10*const.SlabSizeX then
-					archetype = "Melee"
-					weapon_class = "Melee"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				local stealth_stance = self:GetStanceToStealth()
-				if self:CanStealth(stealth_stance) then
-				 self:Hide()
-				end	
-				
-				return archetype
-			end,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "MeleeWeapon")
-			end,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"CQCTraining",
-				"Spiritual",
-				"BattleFocus",
-				"RelentlessAdvance",
-				"ShoulderToShoulder",
-				"AutoWeapons",
-				"Spotter",
-				"TakeAim",
-				"Shatterhand",
-				"OnMyTarget",
-				"Ironclad",
-				"LightStep",
-				"TrickShot",
-				"LeadFromTheFront",
-				"Shatterhand",
-				"Hobbler",
-				"LightningReactionNPC",
-				"Instagib",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Commander_Rebels",
-				}),
-			},
-			'Equipment', {
-				"RebelSergeant",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "LegionMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "LegionMale_2",
-				}),
-			},
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "RebelSoldier",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Rebels",
-			'Id', "RebelSergeant_Immortal_M1",
-			'comment', "Сержант",
-			'object_class', "UnitData",
-			'Health', 95,
-			'Agility', 90,
-			'Dexterity', 90,
-			'Strength', 80,
-			'Wisdom', 80,
-			'Will', 100,
-			'Leadership', 100,
-			'Marksmanship', 90,
-			'Mechanical', 100,
-			'Explosives', 70,
-			'Medical', 70,
-			'Portrait', "UI/EnemiesPortraits/RebelOfficer",
-			'BigPortrait', "Mod/Dv3mFVN/Images/REBELS_Burda2.png",
-			'Name', T(641054948744, --[[ModItemUnitDataCompositeDef RebelSergeant_Immortal_M1 Name]] "Контимир Бурда"),
-			'Randomization', true,
 			'eliteCategory', "Rebels",
 			'Affiliation', "Rebel",
 			'StartingLevel', 6,
@@ -62486,6 +62795,70 @@ return {
 			}),
 			group = "Legion",
 			id = "LegionSergant_Stronger_Elite_alt",
+		}),
+		}),
+	PlaceObj('ModItemFolder', {
+		'name', "Appearance preset Rebels",
+	}, {
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "Faction_Adonis_Top_Camo_03",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(17, 6, 2, 255),
+				'EditableColor2', RGBA(22, 31, 26, 255),
+				'EditableColor3', RGBA(0, 66, 130, 255),
+			}),
+			Chest = "Faction_Binocular_01",
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(9, 8, 8, 255),
+				'EditableColor2', RGBA(32, 26, 22, 255),
+				'EditableColor3', RGBA(22, 18, 15, 255),
+			}),
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat = "MilitiaCostumeMale_Mask_01",
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat2Spot = "Origin",
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(8, 33, 55, 255),
+			}),
+			HatSpot = "Origin",
+			Head = "Male_Head_05",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(255, 255, 255, 255),
+				'EditableColor2', RGBA(255, 255, 255, 255),
+				'EditableColor3', RGBA(255, 255, 255, 255),
+			}),
+			Hip = "Faction_Acc_Recon",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(5, 4, 4, 255),
+				'EditableColor2', RGBA(22, 22, 22, 255),
+				'EditableColor3', RGBA(61, 61, 61, 255),
+			}),
+			Pants = "Faction_GrandChien_Bottom_03",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(46, 60, 39, 255),
+				'EditableColor2', RGBA(25, 38, 18, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			group = "Class Rebels",
+			id = "Rebels_NPC_Ghost",
 		}),
 		}),
 	PlaceObj('ModItemFolder', {

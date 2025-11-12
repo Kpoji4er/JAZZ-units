@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 1,
-	'version', 2062,
+	'version', 2073,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -100,11 +100,13 @@ return PlaceObj('ModDef', {
 		"UnitData/AdonisSoldier_Elite.lua",
 		"UnitData/Chimurenga.lua",
 		"UnitData/AnneLeMitrailleur.lua",
+		"UnitData/RebelSergeant_Immortal_M1.lua",
+		"UnitData/Rebel_NPC_Ghost.lua",
+		"UnitData/Rebel_NPC_Ghost_Guards.lua",
 		"UnitData/RebelSergant.lua",
 		"UnitData/RebelSergeant.lua",
 		"UnitData/RebelSergant_Immortal.lua",
 		"UnitData/RebelSergeant_Immortal.lua",
-		"UnitData/RebelSergeant_Immortal_M1.lua",
 		"UnitData/RebelFlanker.lua",
 		"UnitData/RebelGrenadier.lua",
 		"UnitData/RebelGunner.lua",
@@ -175,8 +177,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1762952892,
-	'code_hash', 6702905853482331111,
+	'saved', 1762966583,
+	'code_hash', -2083892515615799126,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
@@ -5960,6 +5962,16 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
+			'Id', "Rebel_NPC_Ghost",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Rebel_NPC_GhostGuards",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
 			'Id', "RebelSniper",
 			'ClassDisplayName', "LootDef",
 		}),
@@ -6820,6 +6832,21 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
+			'Id', "RebelSergeant_Immortal_M1",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Rebel_NPC_Ghost",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Rebel_NPC_Ghost_Guards",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
 			'Id', "RebelSergant",
 			'ClassDisplayName', "Unit",
 		}),
@@ -6836,11 +6863,6 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
 			'Id', "RebelSergeant_Immortal",
-			'ClassDisplayName', "Unit",
-		}),
-		PlaceObj('ModResourcePreset', {
-			'Class', "UnitDataCompositeDef",
-			'Id', "RebelSergeant_Immortal_M1",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -7896,6 +7918,11 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "AppearancePreset",
 			'Id', "LegionSergant_Stronger_Elite_alt",
+			'ClassDisplayName', "Appearance preset",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Rebels_NPC_Ghost",
 			'ClassDisplayName', "Appearance preset",
 		}),
 		PlaceObj('ModResourcePreset', {
