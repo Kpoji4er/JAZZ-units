@@ -37544,7 +37544,7 @@ return {
 					
 					for _, ally in ipairs(self.team.units) do
 						if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) then
-							archetype "Medic"
+							archetype = "Medic"
 						end
 					end
 					
@@ -43731,9 +43731,7 @@ return {
 								'RangeMin', 0,
 								'RangeMax', 15,
 							}),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 						},
 						'TakeCoverChance', 0,
 						'VoiceResponse', "TacticalPressing",
@@ -43777,9 +43775,7 @@ return {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
 							}),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyFlanking', {
 								'Weight', 1000,
 							}),
@@ -43836,6 +43832,10 @@ return {
 						'TargetUnits', "allies",
 						'TargetDist', "average",
 						'MinScore', 50,
+					}),
+					PlaceObj('AIPolicyTakeCover', {
+						'Weight', 1,
+						'visibility_mode', "team",
 					}),
 					PlaceObj('AIPolicyProximity', {
 						'RequiredKeywords', {
@@ -44108,7 +44108,7 @@ return {
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', nil),
 							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
+								'Required', true,
 							}),
 						},
 						'TakeCoverChance', 50,
@@ -44164,9 +44164,7 @@ return {
 								'RangeMin', 50,
 								'RangeMax', 75,
 							}),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyHighGround', {
 								'RequiredKeywords', {
 									"Marksman",
@@ -44249,9 +44247,10 @@ return {
 						'Weight', 50,
 					}),
 					PlaceObj('AIPolicyTakeCover', {
-						'Weight', 10,
+						'Weight', 1,
 						'visibility_mode', "team",
 					}),
+					PlaceObj('AIPolicyTakeCover', nil),
 					PlaceObj('AIPolicyProximity', {
 						'Weight', 10,
 						'AllyPlannedPosition', true,
@@ -44551,9 +44550,7 @@ return {
 								'RangeMin', 50,
 								'RangeMax', 100,
 							}),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 						},
 						'TakeCoverChance', 0,
 						'VoiceResponse', "TacticalPressing",
@@ -44578,9 +44575,7 @@ return {
 								'RangeMin', 50,
 								'RangeMax', 75,
 							}),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 						},
 						'TakeCoverChance', 0,
 						'VoiceResponse', "TacticalPressing",
@@ -44598,9 +44593,7 @@ return {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
 							}),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyFlanking', {
 								'Weight', 1000,
 							}),

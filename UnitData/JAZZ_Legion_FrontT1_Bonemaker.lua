@@ -41,7 +41,7 @@ DefineClass.JAZZ_Legion_FrontT1_Bonemaker = {
 		
 		for _, ally in ipairs(self.team.units) do
 			if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) then
-				archetype "Medic"
+				archetype = "Medic"
 			end
 		end
 		
