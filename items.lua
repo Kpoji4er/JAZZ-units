@@ -21501,9 +21501,25 @@ return {
 						id = "Warden_Firearm",
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Carbines_Winchester",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_RifleSemi",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "",
+							loot_def = "LegionT1_RifleBolt",
 						}),
 						PlaceObj('LootEntryLootDef', {
 							comment = "1-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "LegionT1_RifleSemi",
 							weight = 10000,
 						}),
@@ -25721,14 +25737,6 @@ return {
 						id = "LegionT1_RifleSemi",
 						PlaceObj('LootEntryLootDef', {
 							comment = "T1-1",
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
-									Condition = "<",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
 							loot_def = "RiflesSemi_SKS",
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -34913,12 +34921,18 @@ return {
 						'Weight', 10,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', nil),
+							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 5,
 								'visibility_mode', "team",
 							}),
 							PlaceObj('AIPolicyAvoidDeathZones', {
 								'TargetDist', 1,
 								'Penalty', 20,
+							}),
+							PlaceObj('AIPolicyFlanking', {
+								'Weight', 5,
+								'AllyPlannedPosition', true,
 							}),
 						},
 						'TakeCoverChance', 50,
@@ -34931,7 +34945,6 @@ return {
 						'RequiredKeywords', {
 							"Control",
 						},
-						'OptLocWeight', 20,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
@@ -34963,7 +34976,6 @@ return {
 						'RequiredKeywords', {
 							"Soldier",
 						},
-						'OptLocWeight', 20,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
@@ -34995,7 +35007,6 @@ return {
 						'RequiredKeywords', {
 							"Flank",
 						},
-						'OptLocWeight', 20,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
@@ -35010,6 +35021,7 @@ return {
 								'TargetDist', 1,
 								'Penalty', 20,
 							}),
+							PlaceObj('AIPolicyLosToEnemy', nil),
 						},
 						'TakeCoverChance', 0,
 						'VoiceResponse', "AIFlanking",
@@ -35063,6 +35075,16 @@ return {
 					}),
 					PlaceObj('AIPolicyProximity', {
 						'RequiredKeywords', {
+							"Soldier",
+						},
+						'Weight', 30,
+						'AllyPlannedPosition', true,
+						'TargetUnits', "allies",
+						'TargetDist', "average",
+						'MinScore', 50,
+					}),
+					PlaceObj('AIPolicyProximity', {
+						'RequiredKeywords', {
 							"Leader",
 						},
 						'Weight', 25,
@@ -35074,6 +35096,10 @@ return {
 					PlaceObj('AIPolicyAvoidDeathZones', {
 						'TargetDist', 20,
 						'Penalty', 5,
+					}),
+					PlaceObj('AIPolicyTakeCover', {
+						'Weight', 10,
+						'visibility_mode', "team",
 					}),
 				},
 				OptLocSearchRadius = 80,
@@ -35303,12 +35329,21 @@ return {
 						'Weight', 10,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', nil),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyAvoidDeathZones', {
 								'TargetDist', 3,
 								'Penalty', 30,
+							}),
+							PlaceObj('AIPolicyFlanking', {
+								'Weight', 5,
+								'AllyPlannedPosition', true,
+							}),
+							PlaceObj('AIPolicyLosToEnemy', {
+								'Weight', 30,
+							}),
+							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 5,
+								'visibility_mode', "team",
 							}),
 						},
 						'TakeCoverChance', 50,
@@ -35320,7 +35355,6 @@ return {
 						'RequiredKeywords', {
 							"Sniper",
 						},
-						'OptLocWeight', 20,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
@@ -35333,9 +35367,7 @@ return {
 								'Required', true,
 								'RangeMin', 50,
 							}),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyHighGround', {
 								'RequiredKeywords', {
 									"Sniper",
@@ -35356,10 +35388,10 @@ return {
 						'RequiredKeywords', {
 							"Marksman",
 						},
-						'OptLocWeight', 20,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
+								'Required', true,
 							}),
 							PlaceObj('AIPolicyWeaponRange', {
 								'RequiredKeywords', {
@@ -35370,9 +35402,7 @@ return {
 								'RangeMin', 50,
 								'RangeMax', 75,
 							}),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyHighGround', {
 								'RequiredKeywords', {
 									"Marksman",
@@ -35382,6 +35412,9 @@ return {
 							PlaceObj('AIPolicyAvoidDeathZones', {
 								'TargetDist', 3,
 								'Penalty', 30,
+							}),
+							PlaceObj('AIPolicyLosToEnemy', {
+								'Weight', 10,
 							}),
 						},
 						'TakeCoverChance', 0,
@@ -35395,21 +35428,21 @@ return {
 						'RequiredKeywords', {
 							"Flank",
 						},
-						'OptLocWeight', 20,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
 							}),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyFlanking', {
 								'Weight', 1000,
+								'Required', true,
+								'AllyPlannedPosition', true,
 							}),
 							PlaceObj('AIPolicyAvoidDeathZones', {
 								'TargetDist', 3,
 								'Penalty', 30,
 							}),
+							PlaceObj('AIPolicyLosToEnemy', nil),
 						},
 						'TakeCoverChance', 0,
 						'VoiceResponse', "AIFlanking",
@@ -35428,28 +35461,30 @@ return {
 						'RequiredKeywords', {
 							"Flank",
 						},
+						'Weight', 200,
 						'AllyPlannedPosition', true,
 					}),
 					PlaceObj('AIPolicyWeaponRange', {
 						'RequiredKeywords', {
 							"Sniper",
 						},
-						'RangeMin', 50,
+						'RangeMin', 40,
+						'RangeMax', 100,
 					}),
 					PlaceObj('AIPolicyWeaponRange', {
 						'RequiredKeywords', {
 							"Marksman",
 						},
-						'RangeMin', 50,
-						'RangeMax', 75,
+						'RangeMin', 30,
+						'RangeMax', 60,
 					}),
 					PlaceObj('AIPolicyWeaponRange', {
 						'RequiredKeywords', {
 							"Soldier",
 						},
 						'Weight', 300,
-						'RangeMin', 40,
-						'RangeMax', 60,
+						'RangeMin', 20,
+						'RangeMax', 50,
 					}),
 					PlaceObj('AIPolicyWeaponRange', {
 						'RequiredKeywords', {
@@ -35460,12 +35495,21 @@ return {
 						'RangeMin', 12,
 						'RangeMax', 21,
 					}),
-					PlaceObj('AIPolicyLosToEnemy', nil),
 					PlaceObj('AIPolicyIndoorsOutdoors', {
 						'Weight', 5,
 					}),
 					PlaceObj('AIPolicyProximity', {
 						'Weight', 5,
+						'AllyPlannedPosition', true,
+						'TargetUnits', "allies",
+						'TargetDist', "average",
+						'MinScore', 50,
+					}),
+					PlaceObj('AIPolicyProximity', {
+						'RequiredKeywords', {
+							"Soldier",
+						},
+						'Weight', 50,
 						'AllyPlannedPosition', true,
 						'TargetUnits', "allies",
 						'TargetDist', "average",
@@ -35499,6 +35543,10 @@ return {
 					}),
 					PlaceObj('AIPolicyHighGround', {
 						'Weight', 20,
+					}),
+					PlaceObj('AIPolicyTakeCover', {
+						'Weight', 20,
+						'visibility_mode', "team",
 					}),
 				},
 				OptLocSearchRadius = 80,
@@ -35740,92 +35788,39 @@ return {
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', nil),
 							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 10,
+							}),
+							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 5,
 								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyFlanking', {
+								'Weight', 5,
+								'AllyPlannedPosition', true,
 							}),
 						},
 						'TakeCoverChance', 50,
 					}),
 					PlaceObj('PositioningAI', {
-						'Weight', 500,
-						'Label', "Sniper AI",
+						'Label', "MGSetup",
 						'Fallback', false,
-						'RequiredKeywords', {
-							"Sniper",
-						},
 						'OptLocWeight', 20,
-						'EndTurnPolicies', {
-							PlaceObj('AIPolicyDealDamage', {
-								'Weight', 300,
-							}),
-							PlaceObj('AIPolicyWeaponRange', {
-								'RequiredKeywords', {
-									"Sniper",
-								},
-								'Weight', 200,
-								'RangeMin', 50,
-								'RangeMax', 100,
-							}),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
-						},
-						'TakeCoverChance', 0,
-						'VoiceResponse', "TacticalPressing",
-					}),
-					PlaceObj('PositioningAI', {
-						'Weight', 500,
-						'Label', "Marksman AI",
-						'Fallback', false,
-						'RequiredKeywords', {
-							"Marksman",
-						},
-						'OptLocWeight', 20,
-						'EndTurnPolicies', {
-							PlaceObj('AIPolicyDealDamage', {
-								'Weight', 300,
-							}),
-							PlaceObj('AIPolicyWeaponRange', {
-								'RequiredKeywords', {
-									"Marksman",
-								},
-								'Weight', 200,
-								'RangeMin', 50,
-								'RangeMax', 75,
-							}),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
-						},
-						'TakeCoverChance', 0,
-						'VoiceResponse', "TacticalPressing",
-					}),
-					PlaceObj('PositioningAI', {
-						'BiasId', "Flanking",
-						'Weight', 1000,
-						'Label', "Flanker AI",
-						'Fallback', false,
-						'RequiredKeywords', {
-							"Flank",
-						},
-						'OptLocWeight', 20,
-						'EndTurnPolicies', {
-							PlaceObj('AIPolicyDealDamage', {
-								'Weight', 300,
-							}),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
-							PlaceObj('AIPolicyFlanking', {
-								'Weight', 1000,
-							}),
-						},
 						'SignatureActions', {
 							PlaceObj('AIActionMGSetup', {
-								'Weight', 1000,
+								'Priority', true,
+								'team_score', 10,
+								'min_score', 100,
+								'cur_zone_mod', 1000,
+							}),
+						},
+						'TargetingPolicies', {
+							PlaceObj('AITargetingEnemyWill', {
+								'Will', 80,
+								'AboveWill', true,
 							}),
 						},
 						'TakeCoverChance', 0,
-						'VoiceResponse', "AIFlanking",
+						'VoiceResponse', "TacticalPressing",
 					}),
 				},
 				Comment = "Keywords: Flank, Explosives",
@@ -35862,7 +35857,7 @@ return {
 						'Weight', 5,
 					}),
 					PlaceObj('AIPolicyProximity', {
-						'Weight', 5,
+						'Weight', 25,
 						'AllyPlannedPosition', true,
 						'TargetUnits', "allies",
 						'TargetDist', "average",
@@ -35997,11 +35992,22 @@ return {
 						'RequiredKeywords', {
 							"Control",
 						},
+						'team_score', 0,
 						'min_score', 100,
 					}),
 					PlaceObj('AIActionMGSetup', {
+						'BiasId', "MGSetup",
 						'Weight', 200,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "MGSetup",
+								'Value', -50,
+								'Period', 2,
+							}),
+						},
+						'team_score', 0,
 						'min_score', 100,
+						'cur_zone_mod', 1000,
 					}),
 					PlaceObj('AIActionMGBurstFire', nil),
 				},
@@ -36082,6 +36088,36 @@ return {
 					
 					if not self:GetActiveWeapons(weapon_class) then
 						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					local panicroll = self:Random(100)
+					local panicshance = 0
+					
+					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+					
+					local wounds = 0
+					local wounded = self:GetStatusEffect("Wounded")
+					local bleeding = self:GetStatusEffect("Bleeding")
+					if wounded then
+						wounds = wounded.stacks 
+					end
+					if bleeding then
+						wounds = wounds + bleeding.stacks 
+					end
+					panicroll = panicroll - 10*wounds
+												
+					if wounds > 1 then
+						local panicshance = 100-health_perc
+					end
+					
+					if will_perc < 40 then
+						local panicshance = Max(panicshance,100-will_perc)
+					end
+					
+					if panicroll < panicshance then
+					PlayVoiceResponse(self, "AIArchetypeScared")
+					archetype = "Deserter"
 					end
 					
 					return archetype
@@ -36197,6 +36233,36 @@ return {
 						AIPlayCombatAction("ChangeWeapon", self, 0)
 					end
 					
+					local panicroll = self:Random(100)
+					local panicshance = 0
+					
+					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+					
+					local wounds = 0
+					local wounded = self:GetStatusEffect("Wounded")
+					local bleeding = self:GetStatusEffect("Bleeding")
+					if wounded then
+						wounds = wounded.stacks 
+					end
+					if bleeding then
+						wounds = wounds + bleeding.stacks 
+					end
+					panicroll = panicroll - 10*wounds
+												
+					if wounds > 1 then
+						local panicshance = 100-health_perc
+					end
+					
+					if will_perc < 40 then
+						local panicshance = Max(panicshance,100-will_perc)
+					end
+					
+					if panicroll < panicshance then
+					PlayVoiceResponse(self, "AIArchetypeScared")
+					archetype = "Deserter"
+					end
+					
 					return archetype
 				end,
 				'CustomEquipGear', function (self, items)
@@ -36283,7 +36349,41 @@ return {
 				'CanManEmplacements', false,
 				'RepositionArchetype', "Legion_Assaulter",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local archetype = self.archetype
+					
+					local panicroll = self:Random(100)
+					local panicshance = 0
+					
+					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+					
+					local wounds = 0
+					local wounded = self:GetStatusEffect("Wounded")
+					local bleeding = self:GetStatusEffect("Bleeding")
+					if wounded then
+						wounds = wounded.stacks 
+					end
+					if bleeding then
+						wounds = wounds + bleeding.stacks 
+					end
+					panicroll = panicroll - 10*wounds
+												
+					if wounds > 1 then
+						local panicshance = 100-health_perc
+					end
+					
+					if will_perc < 40 then
+						local panicshance = Max(panicshance,100-will_perc)
+					end
+					
+					if panicroll < panicshance then
+					PlayVoiceResponse(self, "AIArchetypeScared")
+					archetype = "Deserter"
+					end
+					
+					return archetype
+				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
 					self:TryEquip(items, "Handheld B", "PipeBomb")
@@ -36379,6 +36479,36 @@ return {
 					
 					if not self:GetActiveWeapons(weapon_class) then
 						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					local panicroll = self:Random(100)
+					local panicshance = 0
+					
+					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+					
+					local wounds = 0
+					local wounded = self:GetStatusEffect("Wounded")
+					local bleeding = self:GetStatusEffect("Bleeding")
+					if wounded then
+						wounds = wounded.stacks 
+					end
+					if bleeding then
+						wounds = wounds + bleeding.stacks 
+					end
+					panicroll = panicroll - 10*wounds
+												
+					if wounds > 1 then
+						local panicshance = 100-health_perc
+					end
+					
+					if will_perc < 40 then
+						local panicshance = Max(panicshance,100-will_perc)
+					end
+					
+					if panicroll < panicshance then
+					PlayVoiceResponse(self, "AIArchetypeScared")
+					archetype = "Deserter"
 					end
 					
 					return archetype
@@ -36486,6 +36616,36 @@ return {
 						AIPlayCombatAction("ChangeWeapon", self, 0)
 					end
 					
+					local panicroll = self:Random(100)
+					local panicshance = 0
+					
+					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+					
+					local wounds = 0
+					local wounded = self:GetStatusEffect("Wounded")
+					local bleeding = self:GetStatusEffect("Bleeding")
+					if wounded then
+						wounds = wounded.stacks 
+					end
+					if bleeding then
+						wounds = wounds + bleeding.stacks 
+					end
+					panicroll = panicroll - 10*wounds
+												
+					if wounds > 1 then
+						local panicshance = 100-health_perc
+					end
+					
+					if will_perc < 40 then
+						local panicshance = Max(panicshance,100-will_perc)
+					end
+					
+					if panicroll < panicshance then
+					PlayVoiceResponse(self, "AIArchetypeScared")
+					archetype = "Deserter"
+					end
+					
 					return archetype
 				end,
 				'CustomEquipGear', function (self, items)
@@ -36577,7 +36737,41 @@ return {
 				'CanManEmplacements', false,
 				'RepositionArchetype', "Legion_Assaulter",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local archetype = self.archetype
+					
+					local panicroll = self:Random(100)
+					local panicshance = 0
+					
+					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+					
+					local wounds = 0
+					local wounded = self:GetStatusEffect("Wounded")
+					local bleeding = self:GetStatusEffect("Bleeding")
+					if wounded then
+						wounds = wounded.stacks 
+					end
+					if bleeding then
+						wounds = wounds + bleeding.stacks 
+					end
+					panicroll = panicroll - 10*wounds
+												
+					if wounds > 1 then
+						local panicshance = 100-health_perc
+					end
+					
+					if will_perc < 40 then
+						local panicshance = Max(panicshance,100-will_perc)
+					end
+					
+					if panicroll < panicshance then
+					PlayVoiceResponse(self, "AIArchetypeScared")
+					archetype = "Deserter"
+					end
+					
+					return archetype
+				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 60,
 				'StartingPerks', {
@@ -36982,6 +37176,43 @@ return {
 				'OpeningAttackType', "Overwatch",
 				'PinnedDownChance', 40,
 				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)
+					local archetype = self.archetype
+					
+					local panicroll = self:Random(100)
+					local panicshance = 0
+					
+					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+					
+					local wounds = 0
+					local wounded = self:GetStatusEffect("Wounded")
+					local bleeding = self:GetStatusEffect("Bleeding")
+					if wounded then
+						wounds = wounded.stacks 
+					end
+					if bleeding then
+						wounds = wounds + bleeding.stacks 
+					end
+					panicroll = panicroll - 10*wounds
+												
+					if wounds > 1 then
+						panicshance = 100-health_perc
+					end
+					
+					if will_perc < 40 then
+						panicshance = Max(panicshance,100-will_perc)
+					end
+					
+					if panicroll < panicshance then
+					PlayVoiceResponse(self, "AIArchetypeScared")
+					archetype = "Deserter"
+					end
+					
+					print(panicroll..'against'..panicshance)
+					
+					return archetype
+				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
@@ -37101,6 +37332,36 @@ return {
 						AIPlayCombatAction("ChangeWeapon", self, 0)
 					end
 					
+					local panicroll = self:Random(100)
+					local panicshance = 0
+					
+					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+					
+					local wounds = 0
+					local wounded = self:GetStatusEffect("Wounded")
+					local bleeding = self:GetStatusEffect("Bleeding")
+					if wounded then
+						wounds = wounded.stacks 
+					end
+					if bleeding then
+						wounds = wounds + bleeding.stacks 
+					end
+					panicroll = panicroll - 10*wounds
+												
+					if wounds > 1 then
+						local panicshance = 100-health_perc
+					end
+					
+					if will_perc < 40 then
+						local panicshance = Max(panicshance,100-will_perc)
+					end
+					
+					if panicroll < panicshance then
+					PlayVoiceResponse(self, "AIArchetypeScared")
+					archetype = "Deserter"
+					end
+					
 					return archetype
 				end,
 				'CustomEquipGear', function (self, items)
@@ -37190,13 +37451,46 @@ return {
 				'CanManEmplacements', false,
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
+					local archetype = self.archetype
+					
+					local panicroll = self:Random(100)
+					local panicshance = 0
+					
 					for _, ally in ipairs(self.team.units) do
 						if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) then
-							return "Medic"
+							archetype "Medic"
 						end
 					end
 					
-					return self.archetype
+					
+					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+					
+					local wounds = 0
+					local wounded = self:GetStatusEffect("Wounded")
+					local bleeding = self:GetStatusEffect("Bleeding")
+					if wounded then
+						wounds = wounded.stacks 
+					end
+					if bleeding then
+						wounds = wounds + bleeding.stacks 
+					end
+					panicroll = panicroll - 10*wounds
+												
+					if wounds > 1 then
+						local panicshance = 100-health_perc
+					end
+					
+					if will_perc < 40 then
+						local panicshance = Max(panicshance,100-will_perc)
+					end
+					
+					if panicroll < panicshance then
+					PlayVoiceResponse(self, "AIArchetypeScared")
+					archetype = "Deserter"
+					end
+					
+					return archetype
 				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 80,
@@ -37278,7 +37572,43 @@ return {
 				'archetype', "Legion_Frontliner",
 				'role', "Soldier",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local archetype = self.archetype
+					
+					local panicroll = self:Random(100)
+					local panicshance = 0
+					
+					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+					
+					local wounds = 0
+					local wounded = self:GetStatusEffect("Wounded")
+					local bleeding = self:GetStatusEffect("Bleeding")
+					if wounded then
+						wounds = wounded.stacks 
+					end
+					if bleeding then
+						wounds = wounds + bleeding.stacks 
+					end
+					panicroll = panicroll - 10*wounds
+												
+					if wounds > 1 then
+						local panicshance = 100-health_perc
+					end
+					
+					if will_perc < 40 then
+						local panicshance = Max(panicshance,100-will_perc)
+					end
+					
+					if panicroll < panicshance then
+					PlayVoiceResponse(self, "AIArchetypeScared")
+					archetype = "Deserter"
+					end
+					
+					--print(panicroll..'against'..panicshance)
+					
+					return archetype
+				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
@@ -37403,6 +37733,36 @@ return {
 						AIPlayCombatAction("ChangeWeapon", self, 0)
 					end
 					
+					local panicroll = self:Random(100)
+					local panicshance = 0
+					
+					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+					
+					local wounds = 0
+					local wounded = self:GetStatusEffect("Wounded")
+					local bleeding = self:GetStatusEffect("Bleeding")
+					if wounded then
+						wounds = wounded.stacks 
+					end
+					if bleeding then
+						wounds = wounds + bleeding.stacks 
+					end
+					panicroll = panicroll - 10*wounds
+												
+					if wounds > 1 then
+						local panicshance = 100-health_perc
+					end
+					
+					if will_perc < 40 then
+						local panicshance = Max(panicshance,100-will_perc)
+					end
+					
+					if panicroll < panicshance then
+					PlayVoiceResponse(self, "AIArchetypeScared")
+					archetype = "Deserter"
+					end
+					
 					return archetype
 				end,
 				'CustomEquipGear', function (self, items)
@@ -37520,6 +37880,36 @@ return {
 					
 					if not self:GetActiveWeapons(weapon_class) then
 						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					local panicroll = self:Random(100)
+					local panicshance = 0
+					
+					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+					
+					local wounds = 0
+					local wounded = self:GetStatusEffect("Wounded")
+					local bleeding = self:GetStatusEffect("Bleeding")
+					if wounded then
+						wounds = wounded.stacks 
+					end
+					if bleeding then
+						wounds = wounds + bleeding.stacks 
+					end
+					panicroll = panicroll - 10*wounds
+												
+					if wounds > 1 then
+						local panicshance = 100-health_perc
+					end
+					
+					if will_perc < 40 then
+						local panicshance = Max(panicshance,100-will_perc)
+					end
+					
+					if panicroll < panicshance then
+					PlayVoiceResponse(self, "AIArchetypeScared")
+					archetype = "Deserter"
 					end
 					
 					return archetype
@@ -38150,6 +38540,36 @@ return {
 					 self:Hide()
 					end	
 					
+					local panicroll = self:Random(100)
+					local panicshance = 0
+					
+					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+					
+					local wounds = 0
+					local wounded = self:GetStatusEffect("Wounded")
+					local bleeding = self:GetStatusEffect("Bleeding")
+					if wounded then
+						wounds = wounded.stacks 
+					end
+					if bleeding then
+						wounds = wounds + bleeding.stacks 
+					end
+					panicroll = panicroll - 10*wounds
+												
+					if wounds > 1 then
+						local panicshance = 100-health_perc
+					end
+					
+					if will_perc < 40 then
+						local panicshance = Max(panicshance,100-will_perc)
+					end
+					
+					if panicroll < panicshance then
+					PlayVoiceResponse(self, "AIArchetypeScared")
+					archetype = "Deserter"
+					end
+					
 					return archetype
 				end,
 				'CustomEquipGear', function (self, items)  end,
@@ -38235,10 +38655,70 @@ return {
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					local roll = self:Random(100)
+					local chance = 50
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Revolver"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Pistol"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "SubmachineGun"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
 					local stealth_stance = self:GetStanceToStealth()
 					if self:CanStealth(stealth_stance) then
 					 self:Hide()
+					end	
+					
+					local panicroll = self:Random(100)
+					local panicshance = 0
+					
+					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+					
+					local wounds = 0
+					local wounded = self:GetStatusEffect("Wounded")
+					local bleeding = self:GetStatusEffect("Bleeding")
+					if wounded then
+						wounds = wounded.stacks 
 					end
+					if bleeding then
+						wounds = wounds + bleeding.stacks 
+					end
+					panicroll = panicroll - 10*wounds
+												
+					if wounds > 1 then
+						local panicshance = 100-health_perc
+					end
+					
+					if will_perc < 40 then
+						local panicshance = Max(panicshance,100-will_perc)
+					end
+					
+					if panicroll < panicshance then
+					PlayVoiceResponse(self, "AIArchetypeScared")
+					archetype = "Deserter"
+					end
+					
+					return archetype
 				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -38357,6 +38837,33 @@ return {
 					if self:CanStealth(stealth_stance) then
 					 self:Hide()
 					end	
+					
+					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+					
+					local wounds = 0
+					local wounded = self:GetStatusEffect("Wounded")
+					local bleeding = self:GetStatusEffect("Bleeding")
+					if wounded then
+						wounds = wounded.stacks 
+					end
+					if bleeding then
+						wounds = wounds + bleeding.stacks 
+					end
+					panicroll = panicroll - 10*wounds
+												
+					if wounds > 1 then
+						local panicshance = 100-health_perc
+					end
+					
+					if will_perc < 40 then
+						local panicshance = Max(panicshance,100-will_perc)
+					end
+					
+					if panicroll < panicshance then
+					PlayVoiceResponse(self, "AIArchetypeScared")
+					archetype = "Deserter"
+					end
 					
 					return archetype
 				end,
@@ -38797,6 +39304,36 @@ return {
 						AIPlayCombatAction("ChangeWeapon", self, 0)
 					end
 					
+					local panicroll = self:Random(100)
+					local panicshance = 0
+					
+					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+					
+					local wounds = 0
+					local wounded = self:GetStatusEffect("Wounded")
+					local bleeding = self:GetStatusEffect("Bleeding")
+					if wounded then
+						wounds = wounded.stacks 
+					end
+					if bleeding then
+						wounds = wounds + bleeding.stacks 
+					end
+					panicroll = panicroll - 10*wounds
+												
+					if wounds > 1 then
+						local panicshance = 100-health_perc
+					end
+					
+					if will_perc < 40 then
+						local panicshance = Max(panicshance,100-will_perc)
+					end
+					
+					if panicroll < panicshance then
+					PlayVoiceResponse(self, "AIArchetypeScared")
+					archetype = "Deserter"
+					end
+					
 					return archetype
 				end,
 				'CustomEquipGear', function (self, items)
@@ -38876,7 +39413,61 @@ return {
 				'archetype', "Legion_Machinegunner",
 				'role', "Heavy",
 				'MaxAttacks', 1,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					local roll = self:Random(100)
+					local chance = 50
+					
+					if enemy and dist < 6*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Revolver"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if enemy and dist < 6*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
+						archetype = "Legion_Assaulter"
+						weapon_class = "Pistol"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					local panicroll = self:Random(100)
+					local panicshance = 0
+					
+					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+					
+					local wounds = 0
+					local wounded = self:GetStatusEffect("Wounded")
+					local bleeding = self:GetStatusEffect("Bleeding")
+					if wounded then
+						wounds = wounded.stacks 
+					end
+					if bleeding then
+						wounds = wounds + bleeding.stacks 
+					end
+					panicroll = panicroll - 10*wounds
+												
+					if wounds > 1 then
+						local panicshance = 100-health_perc
+					end
+					
+					if will_perc < 40 then
+						local panicshance = Max(panicshance,100-will_perc)
+					end
+					
+					if panicroll < panicshance then
+					PlayVoiceResponse(self, "AIArchetypeScared")
+					archetype = "Deserter"
+					end
+					
+					return archetype
+				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
 					self:TryEquip(items, "Handheld B", "Firearm")
@@ -38973,6 +39564,36 @@ return {
 					
 					if not self:GetActiveWeapons(weapon_class) then
 						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					local panicroll = self:Random(100)
+					local panicshance = 0
+					
+					local health_perc = MulDivRound(target.HitPoints, 100, target.MaxHitPoints)
+					local will_perc = MulDivRound(target.WillPoints, 100, target.MaxWillPoints)
+					
+					local wounds = 0
+					local wounded = self:GetStatusEffect("Wounded")
+					local bleeding = self:GetStatusEffect("Bleeding")
+					if wounded then
+						wounds = wounded.stacks 
+					end
+					if bleeding then
+						wounds = wounds + bleeding.stacks 
+					end
+					panicroll = panicroll - 10*wounds
+												
+					if wounds > 1 then
+						local panicshance = 100-health_perc
+					end
+					
+					if will_perc < 40 then
+						local panicshance = Max(panicshance,100-will_perc)
+					end
+					
+					if panicroll < panicshance then
+					PlayVoiceResponse(self, "AIArchetypeScared")
+					archetype = "Deserter"
 					end
 					
 					return archetype
@@ -66180,7 +66801,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {

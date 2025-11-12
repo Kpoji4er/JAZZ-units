@@ -46,6 +46,36 @@ DefineClass.JAZZ_Legion_GunnerT2_AssaultGunner = {
 			AIPlayCombatAction("ChangeWeapon", self, 0)
 		end
 		
+		local panicroll = self:Random(100)
+		local panicshance = 0
+		
+		local health_perc = MulDivRound(target.HitPoints, 100, target.MaxHitPoints)
+		local will_perc = MulDivRound(target.WillPoints, 100, target.MaxWillPoints)
+		
+		local wounds = 0
+		local wounded = self:GetStatusEffect("Wounded")
+		local bleeding = self:GetStatusEffect("Bleeding")
+		if wounded then
+			wounds = wounded.stacks 
+		end
+		if bleeding then
+			wounds = wounds + bleeding.stacks 
+		end
+		panicroll = panicroll - 10*wounds
+									
+		if wounds > 1 then
+			local panicshance = 100-health_perc
+		end
+		
+		if will_perc < 40 then
+			local panicshance = Max(panicshance,100-will_perc)
+		end
+		
+		if panicroll < panicshance then
+		PlayVoiceResponse(self, "AIArchetypeScared")
+		archetype = "Deserter"
+		end
+		
 		return archetype
 	end,
 	CustomEquipGear = function (self, items)
