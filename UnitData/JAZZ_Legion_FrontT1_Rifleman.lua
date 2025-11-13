@@ -30,8 +30,6 @@ DefineClass.JAZZ_Legion_FrontT1_Rifleman = {
 	},
 	archetype = "Legion_Frontliner",
 	role = "Marksman",
-	RepositionArchetype = "Legion_Frontliner",
-	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "Overwatch",
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)

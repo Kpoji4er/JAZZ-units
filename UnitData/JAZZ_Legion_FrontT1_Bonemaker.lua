@@ -45,6 +45,7 @@ DefineClass.JAZZ_Legion_FrontT1_Bonemaker = {
 			end
 		end
 		
+		local bleeding = self:GetStatusEffect("Bleeding")
 		if bleeding then
 			archetype = "Medic"
 		end

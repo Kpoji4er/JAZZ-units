@@ -21309,18 +21309,46 @@ return {
 							loot_def = "LegionT1_AssaultRifle",
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "LegionT2_BattleRifle",
 							weight = 3000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "LegionT2_AssaultRifle",
 							weight = 10000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "LegionT3_BattleRifle",
 							weight = 30000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "LegionT3_AssaultRifle",
 							weight = 100000,
 						}),
@@ -21579,18 +21607,46 @@ return {
 							weight = 2000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "LegionT2_SMG",
 							weight = 100000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "LegionT2_Carbine",
 							weight = 50000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "LegionT3_SMG",
 							weight = 1000000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "LegionT3_Carbine",
 							weight = 500000,
 						}),
@@ -21913,6 +21969,12 @@ return {
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
 							},
 							loot_def = "LMGs_FNMinimi",
 						}),
@@ -21937,6 +21999,13 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							comment = "2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "LegionElite_Carbine",
 							weight = 7000,
 						}),
@@ -21954,14 +22023,35 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							comment = "2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "LegionElite_Carbine",
 							weight = 4000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "LegionT3_AssaultRifle_Elite",
 							weight = 400000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "LegionT3_BattleRifle_Elite",
 							weight = 400000,
 						}),
@@ -21979,14 +22069,35 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							comment = "2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "LegionElite_Carbine",
 							weight = 3000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "LegionT3_AssaultRifle_Elite",
 							weight = 1000000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 30,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "LegionT3_BattleRifle_Elite",
 							weight = 1500000,
 						}),
@@ -24364,10 +24475,35 @@ return {
 						group = "Default",
 						id = "LegionElite_Carbine",
 						PlaceObj('LootEntryLootDef', {
+							comment = "T1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Condition = "<",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT1_Carbine",
+							weight = 5000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Condition = "<",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "AssaultRifles_STG44_AP",
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "T2-1",
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
-									Amount = 22,
+									Amount = 21,
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
@@ -24378,7 +24514,7 @@ return {
 							comment = "T2-1",
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
-									Amount = 22,
+									Amount = 21,
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
@@ -24387,6 +24523,13 @@ return {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							comment = "T2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "Carbines_ZastavaM92_AP",
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -36159,7 +36302,6 @@ return {
 				},
 				'archetype', "Legion_Assaulter",
 				'role', "Stormer",
-				'RepositionArchetype', "Legion_Assaulter",
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
@@ -36295,7 +36437,6 @@ return {
 				'archetype', "Legion_Assaulter",
 				'role', "Stormer",
 				'CanManEmplacements', false,
-				'RepositionArchetype', "Legion_Assaulter",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
 					local enemy, dist = GetNearestEnemy(self)
@@ -36434,7 +36575,6 @@ return {
 				'archetype', "Legion_Assaulter",
 				'role', "Demolitions",
 				'CanManEmplacements', false,
-				'RepositionArchetype', "Legion_Assaulter",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
 					local archetype = self.archetype
@@ -36550,7 +36690,6 @@ return {
 				},
 				'archetype', "Legion_Assaulter",
 				'role', "Stormer",
-				'RepositionArchetype', "Legion_Assaulter",
 				'PinnedDownChance', 100,
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
@@ -36686,7 +36825,6 @@ return {
 				'archetype', "Legion_Assaulter",
 				'role', "Demolitions",
 				'CanManEmplacements', false,
-				'RepositionArchetype', "Legion_Assaulter",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
 					local enemy, dist = GetNearestEnemy(self)
@@ -36822,7 +36960,6 @@ return {
 				'archetype', "Legion_Assaulter",
 				'role', "Stormer",
 				'CanManEmplacements', false,
-				'RepositionArchetype', "Legion_Assaulter",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
 					local archetype = self.archetype
@@ -37259,7 +37396,6 @@ return {
 				},
 				'archetype', "Legion_Frontliner",
 				'role', "Soldier",
-				'RepositionArchetype', "Legion_Frontliner",
 				'OpeningAttackType', "Overwatch",
 				'PinnedDownChance', 40,
 				'MaxAttacks', 10,
@@ -37386,8 +37522,6 @@ return {
 				},
 				'archetype', "Legion_Frontliner",
 				'role', "Marksman",
-				'RepositionArchetype', "Legion_Frontliner",
-				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
@@ -37549,6 +37683,7 @@ return {
 						end
 					end
 					
+					local bleeding = self:GetStatusEffect("Bleeding")
 					if bleeding then
 						archetype = "Medic"
 					end
@@ -37673,7 +37808,9 @@ return {
 					
 					return archetype
 				end,
-				'CustomEquipGear', function (self, items)  end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "Firearm")
+				end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
 					"AutoWeapons",
@@ -38568,6 +38705,8 @@ return {
 				},
 				'archetype', "Legion_Frontliner",
 				'role', "Recon",
+				'RepositionArchetype', "Legion_Frontliner",
+				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
@@ -38716,6 +38855,8 @@ return {
 				},
 				'archetype', "Legion_Assaulter",
 				'role', "Recon",
+				'RepositionArchetype', "Legion_Assaulter",
+				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
@@ -38866,6 +39007,8 @@ return {
 				},
 				'archetype', "Legion_Frontliner",
 				'role', "Recon",
+				'RepositionArchetype', "Legion_Frontliner",
+				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
@@ -38901,6 +39044,9 @@ return {
 					if self:CanStealth(stealth_stance) then
 					 self:Hide()
 					end	
+					
+					local panicroll = self:Random(100)
+					local panicshance = 0
 					
 					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
 					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
@@ -39016,6 +39162,8 @@ return {
 				},
 				'archetype', "Legion_Assaulter",
 				'role', "Recon",
+				'RepositionArchetype', "Legion_Assaulter",
+				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
@@ -39112,6 +39260,7 @@ return {
 				},
 				'archetype', "Legion_Frontliner",
 				'role', "Recon",
+				'RepositionArchetype', "Legion_Frontliner",
 				'AlwaysUseOpeningAttack', true,
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
@@ -39231,6 +39380,7 @@ return {
 				},
 				'archetype', "Legion_Assaulter",
 				'role', "Recon",
+				'RepositionArchetype', "Legion_Assaulter",
 				'AlwaysUseOpeningAttack', true,
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
@@ -39967,6 +40117,8 @@ return {
 				},
 				'archetype', "Legion_Assaulter",
 				'role', "Commander",
+				'RepositionArchetype', "Legion_Assaulter",
+				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
@@ -40061,6 +40213,7 @@ return {
 				},
 				'archetype', "Legion_Frontliner",
 				'role', "Commander",
+				'RepositionArchetype', "Legion_Frontliner",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
@@ -40169,6 +40322,8 @@ return {
 				},
 				'archetype', "Legion_Frontliner",
 				'role', "Marksman",
+				'RepositionArchetype', "Legion_Frontliner",
+				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)  end,
@@ -40260,6 +40415,7 @@ return {
 				},
 				'archetype', "Legion_Frontliner",
 				'role', "Commander",
+				'RepositionArchetype', "Legion_Frontliner",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
@@ -67160,7 +67316,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {

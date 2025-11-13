@@ -34,6 +34,7 @@ DefineClass.JAZZ_Legion_FlankerT4_Ranger = {
 	},
 	archetype = "Legion_Assaulter",
 	role = "Recon",
+	RepositionArchetype = "Legion_Assaulter",
 	AlwaysUseOpeningAttack = true,
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)

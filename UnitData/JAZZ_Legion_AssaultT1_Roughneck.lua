@@ -32,7 +32,6 @@ DefineClass.JAZZ_Legion_AssaultT1_Roughneck = {
 	},
 	archetype = "Legion_Assaulter",
 	role = "Stormer",
-	RepositionArchetype = "Legion_Assaulter",
 	OpeningAttackType = "Overwatch",
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)

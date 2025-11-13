@@ -31,6 +31,8 @@ DefineClass.JAZZ_Legion_FlankerT2_Skirmisher = {
 	},
 	archetype = "Legion_Frontliner",
 	role = "Recon",
+	RepositionArchetype = "Legion_Frontliner",
+	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "Overwatch",
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)
@@ -66,6 +68,9 @@ DefineClass.JAZZ_Legion_FlankerT2_Skirmisher = {
 		if self:CanStealth(stealth_stance) then
 		 self:Hide()
 		end	
+		
+		local panicroll = self:Random(100)
+		local panicshance = 0
 		
 		local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
 		local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)

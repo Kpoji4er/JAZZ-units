@@ -68,7 +68,9 @@ DefineClass.JAZZ_Legion_FrontT2_Raider = {
 		
 		return archetype
 	end,
-	CustomEquipGear = function (self, items)  end,
+	CustomEquipGear = function (self, items)
+		self:TryEquip(items, "Handheld A", "Firearm")
+	end,
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"AutoWeapons",

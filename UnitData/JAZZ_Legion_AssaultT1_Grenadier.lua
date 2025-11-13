@@ -32,7 +32,6 @@ DefineClass.JAZZ_Legion_AssaultT1_Grenadier = {
 	archetype = "Legion_Assaulter",
 	role = "Demolitions",
 	CanManEmplacements = false,
-	RepositionArchetype = "Legion_Assaulter",
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)
 		local archetype = self.archetype

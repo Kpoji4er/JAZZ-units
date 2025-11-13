@@ -28,7 +28,6 @@ DefineClass.JAZZ_Legion_AssaultT2_Pillager = {
 	},
 	archetype = "Legion_Assaulter",
 	role = "Stormer",
-	RepositionArchetype = "Legion_Assaulter",
 	PinnedDownChance = 100,
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)

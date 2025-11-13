@@ -29,7 +29,6 @@ DefineClass.JAZZ_Legion_FrontT1_Marauder = {
 	},
 	archetype = "Legion_Frontliner",
 	role = "Soldier",
-	RepositionArchetype = "Legion_Frontliner",
 	OpeningAttackType = "Overwatch",
 	PinnedDownChance = 40,
 	MaxAttacks = 10,

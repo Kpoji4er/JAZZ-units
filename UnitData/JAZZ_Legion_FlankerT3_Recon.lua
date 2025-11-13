@@ -32,6 +32,8 @@ DefineClass.JAZZ_Legion_FlankerT3_Recon = {
 	},
 	archetype = "Legion_Assaulter",
 	role = "Recon",
+	RepositionArchetype = "Legion_Assaulter",
+	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "Overwatch",
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)

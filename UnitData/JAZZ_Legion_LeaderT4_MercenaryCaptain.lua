@@ -37,6 +37,7 @@ DefineClass.JAZZ_Legion_LeaderT4_MercenaryCaptain = {
 	},
 	archetype = "Legion_Frontliner",
 	role = "Commander",
+	RepositionArchetype = "Legion_Frontliner",
 	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "Overwatch",
 	MaxAttacks = 10,

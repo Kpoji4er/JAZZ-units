@@ -35,6 +35,8 @@ DefineClass.JAZZ_Legion_LeaderT1_Sergeant = {
 	},
 	archetype = "Legion_Assaulter",
 	role = "Commander",
+	RepositionArchetype = "Legion_Assaulter",
+	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "Overwatch",
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)  end,

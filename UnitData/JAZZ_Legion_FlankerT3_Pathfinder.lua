@@ -32,6 +32,7 @@ DefineClass.JAZZ_Legion_FlankerT3_Pathfinder = {
 	},
 	archetype = "Legion_Frontliner",
 	role = "Recon",
+	RepositionArchetype = "Legion_Frontliner",
 	AlwaysUseOpeningAttack = true,
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)
