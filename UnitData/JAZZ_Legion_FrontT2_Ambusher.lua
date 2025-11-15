@@ -21,7 +21,6 @@ DefineClass.JAZZ_Legion_FrontT2_Ambusher = {
 	BigPortrait = "UI/Enemies/LegionRaider",
 	Name = T(254157828912, --[[ModItemUnitDataCompositeDef JAZZ_Legion_FrontT2_Ambusher Name]] "Засадник"),
 	Randomization = true,
-	elite = true,
 	eliteCategory = "Legion",
 	Affiliation = "Legion",
 	StartingLevel = 8,

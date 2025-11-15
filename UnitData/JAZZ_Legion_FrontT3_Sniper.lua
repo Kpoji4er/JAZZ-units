@@ -20,7 +20,6 @@ DefineClass.JAZZ_Legion_FrontT3_Sniper = {
 	BigPortrait = "UI/Enemies/LegionRaider",
 	Name = T(839107049203, --[[ModItemUnitDataCompositeDef JAZZ_Legion_FrontT3_Sniper Name]] "Снайпер"),
 	Randomization = true,
-	elite = true,
 	eliteCategory = "Legion",
 	Affiliation = "Legion",
 	StartingLevel = 12,

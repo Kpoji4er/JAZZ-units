@@ -35167,13 +35167,49 @@ return {
 						},
 						'TakeCoverChance', 50,
 					}),
+					PlaceObj('StandardAI', {
+						'Weight', 500,
+						'Label', "Flanker AI",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Nova",
+						},
+						'Score', function (self, unit, proto_context, debug_data)
+							unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
+							local dest, score = AIScoreReachableVoxels(unit.ai_context, self.EndTurnPolicies, 0)
+							return MulDivRound(score, self.Weight, 100)
+						end,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 1,
+								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyFlanking', {
+								'Weight', 1000,
+							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
+							PlaceObj('AIPolicyLosToEnemy', nil),
+							PlaceObj('AIPolicyWeaponRange', {
+								'RangeMin', 0,
+								'RangeMax', 40,
+							}),
+						},
+						'TakeCoverChance', 50,
+					}),
 					PlaceObj('PositioningAI', {
 						'BiasId', "MeleeAttack",
 						'Weight', 500,
 						'Label', "Melee AI",
 						'Fallback', false,
 						'RequiredKeywords', {
-							"Control",
+							"Melee",
 						},
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
@@ -35187,9 +35223,7 @@ return {
 								'RangeMin', 0,
 								'RangeMax', 15,
 							}),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyAvoidDeathZones', {
 								'TargetDist', 1,
 								'Penalty', 20,
@@ -35211,16 +35245,11 @@ return {
 								'Weight', 300,
 							}),
 							PlaceObj('AIPolicyWeaponRange', {
-								'RequiredKeywords', {
-									"Melee",
-								},
 								'Weight', 200,
 								'RangeMin', 50,
 								'RangeMax', 70,
 							}),
-							PlaceObj('AIPolicyTakeCover', {
-								'visibility_mode', "team",
-							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyAvoidDeathZones', {
 								'TargetDist', 1,
 								'Penalty', 20,
@@ -35232,16 +35261,24 @@ return {
 					PlaceObj('PositioningAI', {
 						'BiasId', "Flanking",
 						'Weight', 500,
-						'Label', "Flanker AI",
+						'Label', "Flanker AI POS",
 						'Fallback', false,
 						'RequiredKeywords', {
-							"Flank",
+							"Flanks",
 						},
+						'Score', function (self, unit, proto_context, debug_data)
+							unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
+							local dest, score = AIScoreReachableVoxels(unit.ai_context, self.EndTurnPolicies, 0)
+							return MulDivRound(score, self.Weight, 100)
+						end,
+						'OptLocWeight', 200,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
 							}),
+							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 1,
 								'visibility_mode', "team",
 							}),
 							PlaceObj('AIPolicyFlanking', {
@@ -35252,6 +35289,41 @@ return {
 								'Penalty', 20,
 							}),
 							PlaceObj('AIPolicyLosToEnemy', nil),
+							PlaceObj('AIPolicyWeaponRange', {
+								'RangeMin', 0,
+								'RangeMax', 40,
+							}),
+						},
+						'TakeCoverChance', 0,
+						'VoiceResponse', "AIFlanking",
+					}),
+					PlaceObj('PositioningAI', {
+						'Weight', 500,
+						'Label', "Pillager AI POS",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Nova",
+						},
+						'Score', function (self, unit, proto_context, debug_data)
+							unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
+							local dest, score = AIScoreReachableVoxels(unit.ai_context, self.EndTurnPolicies, 0)
+							return MulDivRound(score, self.Weight, 100)
+						end,
+						'OptLocWeight', 200,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyWeaponRange', {
+								'Weight', 200,
+								'RangeMin', 50,
+								'RangeMax', 70,
+							}),
+							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
 						},
 						'TakeCoverChance', 0,
 						'VoiceResponse', "AIFlanking",
@@ -35325,7 +35397,7 @@ return {
 					}),
 					PlaceObj('AIPolicyAvoidDeathZones', {
 						'TargetDist', 20,
-						'Penalty', 5,
+						'Penalty', 40,
 					}),
 					PlaceObj('AIPolicyTakeCover', {
 						'Weight', 10,
@@ -35650,6 +35722,38 @@ return {
 						'TakeCoverChance', 0,
 						'VoiceResponse', "TacticalPressing",
 					}),
+					PlaceObj('StandardAI', {
+						'Weight', 1000,
+						'Label', "Flanker AI",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Nova",
+						},
+						'Score', function (self, unit, proto_context, debug_data)
+							unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
+							local dest, score = AIScoreReachableVoxels(unit.ai_context, self.EndTurnPolicies, 0)
+							return MulDivRound(score, self.Weight, 100)
+						end,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 1,
+								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyFlanking', {
+								'Weight', 1000,
+							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
+							PlaceObj('AIPolicyLosToEnemy', nil),
+						},
+						'TakeCoverChance', 50,
+					}),
 					PlaceObj('PositioningAI', {
 						'BiasId', "Flanking",
 						'Weight', 1000,
@@ -35665,8 +35769,8 @@ return {
 							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyFlanking', {
 								'Weight', 1000,
-								'Required', true,
 								'AllyPlannedPosition', true,
+								'ReserveAttackAP', true,
 							}),
 							PlaceObj('AIPolicyAvoidDeathZones', {
 								'TargetDist', 3,
@@ -35758,7 +35862,7 @@ return {
 					PlaceObj('AIPolicyAvoidDeathZones', {
 						'Weight', 200,
 						'TargetDist', 40,
-						'Penalty', 5,
+						'Penalty', 60,
 					}),
 					PlaceObj('AIPolicyHighGround', {
 						'RequiredKeywords', {
@@ -36106,7 +36210,7 @@ return {
 					PlaceObj('AIPolicyAvoidDeathZones', {
 						'Weight', 200,
 						'TargetDist', 40,
-						'Penalty', 5,
+						'Penalty', 50,
 					}),
 					PlaceObj('AIPolicyHighGround', {
 						'RequiredKeywords', {
@@ -38045,7 +38149,6 @@ return {
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(254157828912, --[[ModItemUnitDataCompositeDef JAZZ_Legion_FrontT2_Ambusher Name]] "Засадник"),
 				'Randomization', true,
-				'elite', true,
 				'eliteCategory', "Legion",
 				'Affiliation', "Legion",
 				'StartingLevel', 8,
@@ -38189,7 +38292,6 @@ return {
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(918921277026, --[[ModItemUnitDataCompositeDef JAZZ_Legion_FrontT3_Veteran Name]] "Ветеран"),
 				'Randomization', true,
-				'elite', true,
 				'eliteCategory', "Legion",
 				'Affiliation', "Legion",
 				'StartingLevel', 12,
@@ -38323,7 +38425,6 @@ return {
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(839107049203, --[[ModItemUnitDataCompositeDef JAZZ_Legion_FrontT3_Sniper Name]] "Снайпер"),
 				'Randomization', true,
-				'elite', true,
 				'eliteCategory', "Legion",
 				'Affiliation', "Legion",
 				'StartingLevel', 12,
@@ -38995,7 +39096,7 @@ return {
 				'Medical', 50,
 				'Portrait', "UI/EnemiesPortraits/LegionSniper",
 				'BigPortrait', "UI/Enemies/LegionRaider",
-				'Name', T(268314076234, --[[ModItemUnitDataCompositeDef JAZZ_Legion_FlankerT2_Skirmisher Name]] "Застрельщик\nРэйнджер"),
+				'Name', T(268314076234, --[[ModItemUnitDataCompositeDef JAZZ_Legion_FlankerT2_Skirmisher Name]] "Застрельщик"),
 				'Randomization', true,
 				'Affiliation', "Legion",
 				'StartingLevel', 6,

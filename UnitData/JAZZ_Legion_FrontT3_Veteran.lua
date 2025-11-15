@@ -21,7 +21,6 @@ DefineClass.JAZZ_Legion_FrontT3_Veteran = {
 	BigPortrait = "UI/Enemies/LegionRaider",
 	Name = T(918921277026, --[[ModItemUnitDataCompositeDef JAZZ_Legion_FrontT3_Veteran Name]] "Ветеран"),
 	Randomization = true,
-	elite = true,
 	eliteCategory = "Legion",
 	Affiliation = "Legion",
 	StartingLevel = 12,
