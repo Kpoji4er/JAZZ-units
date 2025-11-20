@@ -25168,12 +25168,25 @@ return {
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Condition = "<",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
 							},
 							loot_def = "RiflesBolt_MAS36",
 							weight = 4000,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "BattleRifles_BAR",
 							weight = 4000,
 						}),
@@ -25651,6 +25664,18 @@ return {
 							},
 							loot_def = "LMGs_MAC2429",
 							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1-2",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_BAR",
+							weight = 4000,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							comment = "T1-3",
@@ -47227,6 +47252,823 @@ return {
 			'name', "QuestSquads",
 			'comment', "---- Квестовые отряды",
 		}, {
+			PlaceObj('ModItemEnemySquads', {
+				Comment = "Отряд атаки на Виллу",
+				Units = {
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 4,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 4,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 4,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 2,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 3,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 2,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
+								'spawnWeight', 50,
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 3,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_HeavyT1_Rocketeer",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
+								'spawnWeight', 25,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+				},
+				comment = "Отряд атаки на Виллу",
+				displayName = T(623794979175, --[[ModItemEnemySquads JAZZ_Legion_VillaAttackers_L4 displayName]] "Осадный отряд"),
+				group = "Default",
+				id = "JAZZ_Legion_VillaAttackers_L4",
+			}),
+			PlaceObj('ModItemEnemySquads', {
+				Comment = "Отряд атаки на Виллу",
+				Units = {
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 4,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 4,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 4,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Marauder",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 2,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Marauder",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 2,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Marauder",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 2,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT3_VeteranGunner",
+								'spawnWeight', 25,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT3_VeteranGunner",
+								'spawnWeight', 25,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 2,
+					}),
+				},
+				comment = "Отряд атаки на Виллу",
+				displayName = T(623794979175, --[[ModItemEnemySquads JAZZ_Legion_VillaAttackers_L3 displayName]] "Осадный отряд"),
+				group = "Default",
+				id = "JAZZ_Legion_VillaAttackers_L3",
+			}),
+			PlaceObj('ModItemEnemySquads', {
+				Comment = "Отряд атаки на Виллу",
+				Units = {
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT4_Headsman",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 4,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 4,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 4,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 4,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Marauder",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 2,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Marauder",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 2,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Marauder",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 2,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT3_VeteranGunner",
+								'spawnWeight', 25,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_HeavyT3_Mortarman",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 2,
+					}),
+				},
+				comment = "Отряд атаки на Виллу",
+				displayName = T(623794979175, --[[ModItemEnemySquads JAZZ_Legion_VillaAttackers_L5 displayName]] "Осадный отряд"),
+				group = "Default",
+				id = "JAZZ_Legion_VillaAttackers_L5",
+			}),
+			PlaceObj('ModItemEnemySquads', {
+				Comment = "Отряд атаки на Виллу",
+				Units = {
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_LeaderT3_Captain",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'UnitCountMin', 2,
+						'UnitCountMax', 4,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 4,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 4,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Marauder",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Veteran",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 2,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Marauder",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Veteran",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 2,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT3_VeteranGunner",
+								'spawnWeight', 25,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+				},
+				comment = "Отряд атаки на Виллу",
+				displayName = T(623794979175, --[[ModItemEnemySquads JAZZ_Legion_VillaAttackers_K5 displayName]] "Осадный отряд"),
+				group = "Default",
+				id = "JAZZ_Legion_VillaAttackers_K5",
+			}),
+			PlaceObj('ModItemEnemySquads', {
+				Comment = "Отряд атаки на Виллу",
+				Units = {
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT4_Ranger",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Sniper",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Marauder",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 4,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Sniper",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Marauder",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 4,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Sniper",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Marauder",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 4,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Sniper",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+								'spawnWeight', 50,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Marauder",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 4,
+					}),
+				},
+				comment = "Отряд атаки на Виллу",
+				displayName = T(623794979175, --[[ModItemEnemySquads JAZZ_Legion_VillaAttackers_K3 displayName]] "Осадный отряд"),
+				group = "Default",
+				id = "JAZZ_Legion_VillaAttackers_K3",
+			}),
+			PlaceObj('ModItemEnemySquads', {
+				Comment = "Гарнизон лагеря у виллы",
+				Units = {
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT1_Warden",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Scout",
+								'spawnWeight', 30,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+								'spawnWeight', 50,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 2,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT1_Warden",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Scout",
+								'spawnWeight', 30,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+								'spawnWeight', 50,
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 3,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT1_Warden",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Scout",
+								'spawnWeight', 30,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+								'spawnWeight', 50,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 2,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 2,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Marauder",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 3,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Marauder",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+						},
+						'UnitCountMin', 3,
+						'UnitCountMax', 3,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Marauder",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 3,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+							}),
+						},
+						'UnitCountMin', 0,
+						'UnitCountMax', 1,
+					}),
+				},
+				comment = "Гарнизон лагеря у виллы",
+				displayName = T(614304015048, --[[ModItemEnemySquads JAZZ_Legion_SentrySquad_AroundVilla displayName]] "Охранение лагеря"),
+				group = "Default",
+				id = "JAZZ_Legion_SentrySquad_AroundVilla",
+			}),
 			PlaceObj('ModItemEnemySquads', {
 				Comment = "1700 (9)",
 				Units = {

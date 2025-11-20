@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 9,
-	'version', 2102,
+	'version', 2117,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -177,7 +177,7 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1763180953,
+	'saved', 1763616035,
 	'code_hash', -586244070652202591,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
@@ -6939,6 +6939,36 @@ return PlaceObj('ModDef', {
 			'Class', "UnitDataCompositeDef",
 			'Id', "MilitiaElite",
 			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "JAZZ_Legion_VillaAttackers_L4",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "JAZZ_Legion_VillaAttackers_L3",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "JAZZ_Legion_VillaAttackers_L5",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "JAZZ_Legion_VillaAttackers_K5",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "JAZZ_Legion_VillaAttackers_K3",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "JAZZ_Legion_SentrySquad_AroundVilla",
+			'ClassDisplayName', "Enemy Squads",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "EnemySquads",
