@@ -49,8 +49,8 @@ DefineClass.JAZZ_Legion_GunnerT2_AssaultGunner = {
 		local panicroll = self:Random(100)
 		local panicshance = 0
 		
-		local health_perc = MulDivRound(target.HitPoints, 100, target.MaxHitPoints)
-		local will_perc = MulDivRound(target.WillPoints, 100, target.MaxWillPoints)
+		local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+		local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
 		
 		local wounds = 0
 		local wounded = self:GetStatusEffect("Wounded")
