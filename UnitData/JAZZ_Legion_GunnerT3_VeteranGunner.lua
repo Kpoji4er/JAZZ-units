@@ -83,7 +83,7 @@ DefineClass.JAZZ_Legion_GunnerT3_VeteranGunner = {
 		}),
 	},
 	Equipment = {
-		"Veteran_Inventory",
+		"VeteranGunner_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

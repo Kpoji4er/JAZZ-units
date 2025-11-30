@@ -35178,7 +35178,7 @@ return {
 							PlaceObj('AIPolicyDealDamage', nil),
 							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyTakeCover', {
-								'Weight', 5,
+								'Weight', 30,
 								'visibility_mode', "team",
 							}),
 							PlaceObj('AIPolicyAvoidDeathZones', {
@@ -35274,7 +35274,9 @@ return {
 								'RangeMin', 50,
 								'RangeMax', 70,
 							}),
-							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyTakeCover', {
+								'visibility_mode', "team",
+							}),
 							PlaceObj('AIPolicyAvoidDeathZones', {
 								'TargetDist', 1,
 								'Penalty', 20,
@@ -35669,7 +35671,7 @@ return {
 								'Weight', 30,
 							}),
 							PlaceObj('AIPolicyTakeCover', {
-								'Weight', 5,
+								'Weight', 30,
 								'visibility_mode', "team",
 							}),
 						},
@@ -35765,7 +35767,7 @@ return {
 							}),
 							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyTakeCover', {
-								'Weight', 1,
+								'Weight', 30,
 								'visibility_mode', "team",
 							}),
 							PlaceObj('AIPolicyFlanking', {
@@ -35906,6 +35908,9 @@ return {
 					PlaceObj('AIPolicyTakeCover', {
 						'Weight', 20,
 						'visibility_mode', "team",
+					}),
+					PlaceObj('AIPolicyTakeCover', {
+						'Weight', 40,
 					}),
 				},
 				OptLocSearchRadius = 80,
@@ -39909,8 +39914,8 @@ return {
 					local panicroll = self:Random(100)
 					local panicshance = 0
 					
-					local health_perc = MulDivRound(target.HitPoints, 100, target.MaxHitPoints)
-					local will_perc = MulDivRound(target.WillPoints, 100, target.MaxWillPoints)
+					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
 					
 					local wounds = 0
 					local wounded = self:GetStatusEffect("Wounded")
@@ -40081,7 +40086,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"Veteran_Inventory",
+					"VeteranGunner_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -40629,7 +40634,7 @@ return {
 				'Medical', 0,
 				'Portrait', "UI/EnemiesPortraits/LegionArtillery",
 				'BigPortrait', "UI/Enemies/LegionRaider",
-				'Name', T(100080397822, --[[ModItemUnitDataCompositeDef JAZZ_Legion_HeavyT1_Rocketeer Name]] "Ракетчик\nРакетчик"),
+				'Name', T(100080397822, --[[ModItemUnitDataCompositeDef JAZZ_Legion_HeavyT1_Rocketeer Name]] "Ракетчик"),
 				'Randomization', true,
 				'Affiliation', "Legion",
 				'StartingLevel', 5,
@@ -47715,15 +47720,20 @@ return {
 						'UnitCountMax', 1,
 					}),
 					PlaceObj('EnemySquadUnit', {
-						'UnitCountMin', 2,
-						'UnitCountMax', 4,
-					}),
-					PlaceObj('EnemySquadUnit', {
 						'weightedList', {
 							PlaceObj('UnitTypeListWithWeights', {
 								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								'spawnWeight', 50,
 							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 4,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
 							PlaceObj('UnitTypeListWithWeights', {
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 							}),
@@ -47934,15 +47944,8 @@ return {
 					PlaceObj('EnemySquadUnit', {
 						'weightedList', {
 							PlaceObj('UnitTypeListWithWeights', {
-								'unitType', "JAZZ_Legion_FlankerT1_Warden",
-							}),
-							PlaceObj('UnitTypeListWithWeights', {
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'spawnWeight', 30,
-							}),
-							PlaceObj('UnitTypeListWithWeights', {
-								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
-								'spawnWeight', 50,
 							}),
 						},
 						'UnitCountMin', 1,
@@ -47956,10 +47959,6 @@ return {
 							PlaceObj('UnitTypeListWithWeights', {
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'spawnWeight', 30,
-							}),
-							PlaceObj('UnitTypeListWithWeights', {
-								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
-								'spawnWeight', 50,
 							}),
 						},
 						'UnitCountMin', 2,
@@ -68242,7 +68241,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
