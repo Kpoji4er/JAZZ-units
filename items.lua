@@ -35228,6 +35228,37 @@ return {
 						},
 						'TakeCoverChance', 50,
 					}),
+					PlaceObj('StandardAI', {
+						'BiasId', "MeleeAttack",
+						'Weight', 500,
+						'RequiredKeywords', {
+							"Nova",
+						},
+						'Score', function (self, unit, proto_context, debug_data)
+							unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
+							local dest, score = AIScoreReachableVoxels(unit.ai_context, self.EndTurnPolicies, 0)
+							return MulDivRound(score, self.Weight, 100)
+						end,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyWeaponRange', {
+								'RequiredKeywords', {
+									"Melee",
+								},
+								'Weight', 200,
+								'RangeMin', 0,
+								'RangeMax', 15,
+							}),
+							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
+						},
+						'TakeCoverChance', 50,
+					}),
 					PlaceObj('PositioningAI', {
 						'BiasId', "MeleeAttack",
 						'Weight', 500,
@@ -35245,6 +35276,7 @@ return {
 									"Melee",
 								},
 								'Weight', 200,
+								'Required', true,
 								'RangeMin', 0,
 								'RangeMax', 15,
 							}),
@@ -68241,7 +68273,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
