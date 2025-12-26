@@ -42,7 +42,7 @@ DefineClass.JAZZ_Legion_FlankerT4_Ranger = {
 		local archetype = self.archetype
 		local weapon_class = "Firearm"
 		local roll = self:Random(100)
-		local chance = 50
+		local chance = 70
 		
 		if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "AssaultRifle" and roll < chance then
 			archetype = "Legion_Assaulter"

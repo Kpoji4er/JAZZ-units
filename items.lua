@@ -39551,7 +39551,7 @@ return {
 					local archetype = self.archetype
 					local weapon_class = "Firearm"
 					local roll = self:Random(100)
-					local chance = 50
+					local chance = 70
 					
 					if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "AssaultRifle" and roll < chance then
 						archetype = "Legion_Assaulter"
@@ -41051,7 +41051,7 @@ return {
 				'Medical', 90,
 				'Portrait', "UI/EnemiesPortraits/LegionOfficer",
 				'BigPortrait', "UI/Enemies/LegionRaider",
-				'Name', T(325500638329, --[[ModItemUnitDataCompositeDef ErnyVillage_Boss Name]] "Босс\nБосс"),
+				'Name', T(325500638329, --[[ModItemUnitDataCompositeDef ErnyVillage_Boss Name]] "Босс"),
 				'Randomization', true,
 				'elite', true,
 				'eliteCategory', "Legion",
@@ -75275,4 +75275,8 @@ return {
 			'Tier', "Personal",
 		}),
 		}),
+	PlaceObj('ModItemLocTable', {
+		'language', "English",
+		'filename', "Mod/Dv3mFVN/English.csv",
+	}),
 }

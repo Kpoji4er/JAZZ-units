@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 9,
-	'version', 2128,
+	'version', 2132,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -175,10 +175,16 @@ return PlaceObj('ModDef', {
 		"CharacterEffect/TheGrim.lua",
 		"CharacterEffect/VengefulTemperament.lua",
 	},
+	'loctables', {
+		{
+			filename = "Mod/Dv3mFVN/English.csv",
+			language = "English",
+		},
+	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1764758800,
-	'code_hash', -316527731588835460,
+	'saved', 1766345679,
+	'code_hash', 9044055266885814852,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
