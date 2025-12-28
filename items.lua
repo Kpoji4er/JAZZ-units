@@ -20985,6 +20985,20 @@ return {
 							weight = 15000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							comment = "T1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT1_SMG",
+							weight = 100000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1",
 							loot_def = "LegionT1_SMG",
 							weight = 20000,
 						}),
@@ -21302,6 +21316,23 @@ return {
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
 						id = "Raider_Firearm",
+						PlaceObj('LootEntryLootDef', {
+							comment = "T1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "LegionT1_SMG",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionT1_SMG",
+							weight = 2000,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionT1_BattleRifle",
 						}),
@@ -35902,7 +35933,7 @@ return {
 						'RequiredKeywords', {
 							"Soldier",
 						},
-						'Weight', 50,
+						'Weight', 10,
 						'AllyPlannedPosition', true,
 						'TargetUnits', "allies",
 						'TargetDist', "average",
