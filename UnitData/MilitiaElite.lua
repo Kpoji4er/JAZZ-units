@@ -23,8 +23,9 @@ DefineClass.MilitiaElite = {
 	neutral_retaliate = true,
 	AIKeywords = {
 		"Soldier",
-		"Flank",
+		"Marksman",
 	},
+	archetype = "Rebels_Frontliner",
 	role = "Militia",
 	MaxAttacks = 10,
 	RewardExperience = 0,

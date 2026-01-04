@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 9,
-	'version', 2135,
+	'version', 2146,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -77,6 +77,7 @@ return PlaceObj('ModDef', {
 		"UnitData/ArmyLeitenant.lua",
 		"UnitData/ArmySergant.lua",
 		"UnitData/CorazonGuard.lua",
+		"UnitData/Adonis_CaptainAlvarez_Immortal.lua",
 		"UnitData/AdonisStormer_Elite.lua",
 		"UnitData/AdonisStormer.lua",
 		"UnitData/AdonisAssault_Elite.lua",
@@ -118,8 +119,8 @@ return PlaceObj('ModDef', {
 		"UnitData/RebelHeavy_Mortar.lua",
 		"UnitData/RebelRPG_Immortal.lua",
 		"UnitData/RebelHeavy_Mortar_Immortal.lua",
-		"UnitData/MilitiaVeteran.lua",
 		"UnitData/MilitiaRookie.lua",
+		"UnitData/MilitiaVeteran.lua",
 		"UnitData/MilitiaElite.lua",
 		"UnitData/Doctor_Leevsy.lua",
 		"UnitData/Jazz_lynx.lua",
@@ -183,8 +184,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1766879860,
-	'code_hash', 9164247986814835229,
+	'saved', 1767558890,
+	'code_hash', -2446504069132385429,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
@@ -6243,6 +6244,101 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
+			'Id', "MilitiaRookie_Makarov",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "MilitiaRookie_TT",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "MilitiaRookie_Shotgun",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "MilitiaVeteran_PPSH",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "MilitiaVeteran_PPS",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "MilitiaVeteran_ZastavaM92",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "MilitiaVeteran_Mosin",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "MilitiaVeteran_Type56",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "MilitiaVeteran_DP27",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "MilitiaElite_AKM",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "MilitiaElite_AK74",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "MilitiaElite_AKSU",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "MilitiaElite_AK47",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "MilitiaElite_ZastavaM70",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "MilitiaElite_SVD",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "MilitiaElite_PKM",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "MilitiaRookie_Weapons",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "MilitiaVeteran_Weapons",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "MilitiaElite_Weapons",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
 			'Id', "MilitiaRookie",
 			'ClassDisplayName', "LootDef",
 		}),
@@ -6703,6 +6799,11 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
+			'Id', "Adonis_CaptainAlvarez_Immortal",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
 			'Id', "AdonisStormer_Elite",
 			'ClassDisplayName', "Unit",
 		}),
@@ -6933,12 +7034,12 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
-			'Id', "MilitiaVeteran",
+			'Id', "MilitiaRookie",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
-			'Id', "MilitiaRookie",
+			'Id', "MilitiaVeteran",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {

@@ -42,11 +42,10 @@ DefineClass.Rebel_NPC_Ghost = {
 	PickCustomArchetype = function (self, proto_context)
 		local enemy, dist = GetNearestEnemy(self)
 		local archetype = self.archetype
-		local weapon_class = "Firearm"
-		local roll = self:Random(100)
+		local weapon_class = "SniperRifle"
+		local roll = 100
 		
 		if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "AssaultRifle"  then
-			archetype = "Melee"
 			weapon_class = "AssaultRifle"
 			PlayVoiceResponse(self, "AIArchetypeAngry")
 		end

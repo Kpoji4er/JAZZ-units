@@ -34368,7 +34368,326 @@ return {
 						item = "HK33",
 					}),
 					PlaceObj('LootEntryLootDef', {
-						loot_def = "Strong_556",
+						loot_def = "556_ar_ammo_ap",
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaRookie_Makarov",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "Makarov",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JAZZ_AMMO_9x18_Crafted",
+						stack_max = 20,
+						stack_min = 20,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaRookie_TT",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "TT33",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JAZZ_AMMO_762x25_JHP",
+						stack_max = 20,
+						stack_min = 20,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaRookie_Shotgun",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "DoubleBarrelShotgun",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JAZZ_AMMO_12gauge_Buckshot",
+						stack_max = 20,
+						stack_min = 20,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaVeteran_PPSH",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "PPSH",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JAZZ_AMMO_762x25_AP",
+						stack_max = 71,
+						stack_min = 71,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaVeteran_PPS",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "PPS43",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JAZZ_AMMO_762x25_AP",
+						stack_max = 20,
+						stack_min = 20,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaVeteran_ZastavaM92",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "ZastavaM92",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JAZZ_AMMO_762x39_Crafted",
+						stack_max = 20,
+						stack_min = 20,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaVeteran_Mosin",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "Mosin",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JAZZ_AMMO_762x54_Match",
+						stack_max = 20,
+						stack_min = 20,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaVeteran_Type56",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "Type56",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JAZZ_AMMO_762x39_Crafted",
+						stack_max = 20,
+						stack_min = 20,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaVeteran_DP27",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "DP27",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JAZZ_AMMO_762x54_FMJ",
+						stack_max = 20,
+						stack_min = 20,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaElite_AKM",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "AKM",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JAZZ_AMMO_762x39_APP",
+						stack_max = 71,
+						stack_min = 71,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaElite_AK74",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "AK74",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JAZZ_AMMO_762x39_Army",
+						stack_max = 71,
+						stack_min = 71,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaElite_AKSU",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "AKSU",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JAZZ_AMMO_762x39_Army",
+						stack_max = 71,
+						stack_min = 71,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaElite_AK47",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "AK47",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JAZZ_AMMO_762x39_Army",
+						stack_max = 71,
+						stack_min = 71,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaElite_ZastavaM70",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "Zastava_M70",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JAZZ_AMMO_762x39_Army",
+						stack_max = 71,
+						stack_min = 71,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaElite_SVD",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "DragunovSVD",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JAZZ_AMMO_762x54_Match",
+						stack_max = 71,
+						stack_min = 71,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaElite_PKM",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "PKM",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JAZZ_AMMO_762x54_Tracer",
+						stack_max = 71,
+						stack_min = 71,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaRookie_Weapons",
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "MilitiaRookie_Makarov",
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "MilitiaRookie_TT",
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "MilitiaRookie_Shotgun",
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaVeteran_Weapons",
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "MilitiaVeteran_DP27",
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "MilitiaVeteran_Mosin",
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "MilitiaVeteran_PPS",
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "MilitiaVeteran_PPSH",
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "MilitiaVeteran_Type56",
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "MilitiaVeteran_ZastavaM92",
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "militia",
+					group = "Militia",
+					id = "MilitiaElite_Weapons",
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "MilitiaElite_AK74",
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "MilitiaElite_AK47",
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "MilitiaElite_AKM",
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "MilitiaElite_AKSU",
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "MilitiaElite_PKM",
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "MilitiaElite_SVD",
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "MilitiaElite_ZastavaM70",
 					}),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -34377,16 +34696,11 @@ return {
 					id = "MilitiaRookie",
 					loot = "all",
 					PlaceObj('LootEntryLootDef', {
-						loot_def = "Legion_GoonStrong_Weapon",
+						loot_def = "MilitiaRookie_Weapons",
 					}),
-					PlaceObj('LootEntryLootDef', {
-						loot_def = "Strong_GoonTorso",
-					}),
-					PlaceObj('LootEntryLootDef', {
-						loot_def = "Strong_GoonHead",
-					}),
-					PlaceObj('LootEntryLootDef', {
-						loot_def = "Strong_GoonLegs",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JazzArmor_FlakM69",
 					}),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -34395,16 +34709,19 @@ return {
 					id = "MilitiaVeteran",
 					loot = "all",
 					PlaceObj('LootEntryLootDef', {
-						loot_def = "LegionStrong_AssaultRifle",
+						loot_def = "MilitiaVeteran_Weapons",
 					}),
-					PlaceObj('LootEntryLootDef', {
-						loot_def = "Strong_RaiderTorso",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JazzArmor_6b7Helm",
 					}),
-					PlaceObj('LootEntryLootDef', {
-						loot_def = "Strong_GoonHead",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JazzArmor_CamoKneePads",
 					}),
-					PlaceObj('LootEntryLootDef', {
-						loot_def = "Strong_GoonLegs",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JazzArmor_6B3",
 					}),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -34413,10 +34730,19 @@ return {
 					id = "MilitiaElite",
 					loot = "all",
 					PlaceObj('LootEntryLootDef', {
-						loot_def = "Army_AR",
+						loot_def = "MilitiaElite_Weapons",
 					}),
-					PlaceObj('LootEntryLootDef', {
-						loot_def = "ArmyArmor_PASGT",
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JazzArmor_STSHHelm",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JazzArmor_CamoKneePads",
+					}),
+					PlaceObj('LootEntryInventoryItem', {
+						drop_chance_mod = 0,
+						item = "JazzArmor_6B13",
 					}),
 				}),
 				}),
@@ -42559,1465 +42885,1539 @@ return {
 		'name', "Units Adonis",
 		'comment', "-- Адонис",
 	}, {
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "CorazonGuard",
-			'object_class', "UnitData",
-			'Health', 100,
-			'Agility', 100,
-			'Dexterity', 100,
-			'Strength', 100,
-			'Wisdom', 100,
-			'Will', 100,
-			'Leadership', 100,
-			'Marksmanship', 100,
-			'Mechanical', 100,
-			'Explosives', 100,
-			'Medical', 100,
-			'Portrait', "UI/EnemiesPortraits/AdonisSoldier",
-			'Name', T(573011421504, --[[ModItemUnitDataCompositeDef CorazonGuard Name]] "Охранник"),
-			'Affiliation', "Adonis",
-			'StartingLevel', 10,
-			'RepositionArchetype', "Skirmisher",
-			'MaxAttacks', 10,
-			'MaxHitPoints', 80,
-			'StartingPerks', {
-				"AutoWeapons",
-				"Berserker",
-				"HitTheDeck",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Stormer",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Recon",
-				}),
-			},
-			'Equipment', {
-				"AdonisGuard",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Name', "AdonisMale_1",
-				}),
-			},
-			'pollyvoice', "Russell",
-			'gender', "Male",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisStormer_Elite",
-			'object_class', "UnitData",
-			'Health', 95,
-			'Agility', 90,
-			'Dexterity', 92,
-			'Strength', 85,
-			'Wisdom', 80,
-			'Will', 99,
-			'Leadership', 20,
-			'Marksmanship', 95,
-			'Mechanical', 50,
-			'Explosives', 38,
-			'Medical', 47,
-			'Portrait', "UI/EnemiesPortraits/AdonisStormer",
-			'Name', T(508029880368, --[[ModItemUnitDataCompositeDef AdonisStormer_Elite Name]] "Элитный штурмовик"),
-			'Randomization', true,
-			'elite', true,
-			'eliteCategory', "Foreigners",
-			'Affiliation', "Adonis",
-			'StartingLevel', 7,
-			'neutral_retaliate', true,
-			'archetype', "Brute",
-			'role', "Stormer",
-			'AlwaysUseOpeningAttack', true,
-			'OpeningAttackType', "Overwatch",
-			'PinnedDownChance', 100,
-			'MaxAttacks', 10,
-			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				
-				if enemy and dist < 8*const.SlabSizeX then
-					weapon_class = "Shotgun"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				return archetype
-			end,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "MeleeWeapon")
-			end,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"InstantAutopsy",
-				"CQCTraining",
-				"Shatterhand",
-				"BattleFocus",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Stormer",
-				}),
-			},
-			'Equipment', {
-				"AdonisStormer",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Elite",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisStormer",
-			'object_class', "UnitData",
-			'Health', 95,
-			'Agility', 90,
-			'Dexterity', 81,
-			'Strength', 85,
-			'Wisdom', 80,
-			'Will', 85,
-			'Leadership', 20,
-			'Marksmanship', 95,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 25,
-			'Portrait', "UI/EnemiesPortraits/AdonisStormer",
-			'BigPortrait', "UI/Enemies/LegionRaider",
-			'Name', T(602956738625, --[[ModItemUnitDataCompositeDef AdonisStormer Name]] "Штурмовик"),
-			'Randomization', true,
-			'Affiliation', "Adonis",
-			'StartingLevel', 7,
-			'neutral_retaliate', true,
-			'archetype', "Brute",
-			'role', "Stormer",
-			'AlwaysUseOpeningAttack', true,
-			'OpeningAttackType', "Overwatch",
-			'PinnedDownChance', 100,
-			'MaxAttacks', 10,
-			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				
-				if enemy and dist < 8*const.SlabSizeX then
-					weapon_class = "Shotgun"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				return archetype
-			end,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "SubmachineGun")
-				self:TryEquip(items, "Handheld B", "Shotgun")
-			end,
-			'unitPowerModifier', 75,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"InstantAutopsy",
-				"CQCTraining",
-				"Shatterhand",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Stormer",
-				}),
-			},
-			'Equipment', {
-				"AdonisStormer",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Elite",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisAssault_Elite",
-			'object_class', "UnitData",
-			'Health', 95,
-			'Agility', 92,
-			'Dexterity', 90,
-			'Strength', 85,
-			'Wisdom', 68,
-			'Will', 99,
-			'Leadership', 84,
-			'Marksmanship', 95,
-			'Mechanical', 50,
-			'Explosives', 77,
-			'Medical', 52,
-			'Portrait', "UI/EnemiesPortraits/AdonisSoldier",
-			'Name', T(521607646039, --[[ModItemUnitDataCompositeDef AdonisAssault_Elite Name]] "Элитный Тяжелый Штурмовик"),
-			'Randomization', true,
-			'elite', true,
-			'eliteCategory', "Foreigners",
-			'Affiliation', "Adonis",
-			'StartingLevel', 6,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Soldier",
-				"Ordnance",
-				"Explosives",
-			},
-			'role', "Soldier",
-			'MaxAttacks', 10,
-			'PickCustomArchetype', function (self, proto_context)  end,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "AssaultRifle"--[[, "_762NATO_Tracer","_556_Basic","_556_HP","_762NATO_Basic","_545_EPR"]])
-				self:TryEquip(items, "Handheld A", "GrenadeLauncher"--[[, "_40mmFlashbangGrenade","_40mmFragGrenade"]])
-			end,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"AutoWeapons",
-				"LightningReactionNPC",
-				"StressManagement",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Soldier",
-				}),
-			},
-			'Equipment', {
-				"AdonisAssault_Elite",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Elite",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisAssault",
-			'object_class', "UnitData",
-			'Health', 91,
-			'Agility', 85,
-			'Dexterity', 85,
-			'Strength', 85,
-			'Wisdom', 70,
-			'Will', 90,
-			'Leadership', 50,
-			'Marksmanship', 84,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/AdonisSoldier",
-			'Name', T(472771202525, --[[ModItemUnitDataCompositeDef AdonisAssault Name]] "Тяжелый Штурмовик"),
-			'Randomization', true,
-			'Affiliation', "Adonis",
-			'StartingLevel', 6,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Soldier",
-				"Ordnance",
-				"Explosives",
-			},
-			'role', "Soldier",
-			'MaxAttacks', 10,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "AssaultRifle"--[[, "_762NATO_Tracer","_556_Basic","_556_HP","_762NATO_Basic","_545_EPR"]])
-				self:TryEquip(items, "Handheld A", "GrenadeLauncher"--[[, "_40mmFlashbangGrenade","_40mmFragGrenade"]])
-			end,
-			'unitPowerModifier', 75,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"AutoWeapons",
-				"LightningReactionNPC",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Soldier",
-				}),
-			},
-			'Equipment', {
-				"AdonisAssault",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Elite",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisSquadLeader_Elite",
-			'object_class', "UnitData",
-			'Health', 96,
-			'Agility', 90,
-			'Dexterity', 84,
-			'Strength', 85,
-			'Wisdom', 80,
-			'Will', 99,
-			'Leadership', 91,
-			'Marksmanship', 95,
-			'Mechanical', 52,
-			'Explosives', 84,
-			'Medical', 74,
-			'Portrait', "UI/EnemiesPortraits/AdonisOfficer",
-			'Name', T(137396517830, --[[ModItemUnitDataCompositeDef AdonisSquadLeader_Elite Name]] "Элитный командир"),
-			'Randomization', true,
-			'elite', true,
-			'eliteCategory', "Foreigners",
-			'Affiliation', "Adonis",
-			'StartingLevel', 7,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Control",
-				"Explosives",
-			},
-			'role', "Commander",
-			'AlwaysUseOpeningAttack', true,
-			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 10,
-			'MaxHitPoints', 80,
-			'StartingPerks', {
-				"OpportunisticKiller",
-				"AutoWeapons",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Officer",
-				}),
-			},
-			'Equipment', {
-				"AdonisSquadLeader",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Elite",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisSquadLeader",
-			'object_class', "UnitData",
-			'Health', 88,
-			'Agility', 90,
-			'Dexterity', 75,
-			'Strength', 85,
-			'Wisdom', 80,
-			'Will', 90,
-			'Leadership', 62,
-			'Marksmanship', 95,
-			'Mechanical', 47,
-			'Explosives', 64,
-			'Medical', 49,
-			'Portrait', "UI/EnemiesPortraits/AdonisOfficer",
-			'Name', T(717331783376, --[[ModItemUnitDataCompositeDef AdonisSquadLeader Name]] "Командир"),
-			'Randomization', true,
-			'Affiliation', "Adonis",
-			'StartingLevel', 7,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Control",
-				"Explosives",
-			},
-			'role', "Commander",
-			'AlwaysUseOpeningAttack', true,
-			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 10,
-			'unitPowerModifier', 75,
-			'MaxHitPoints', 80,
-			'StartingPerks', {
-				"OpportunisticKiller",
-				"AutoWeapons",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Officer",
-				}),
-			},
-			'Equipment', {
-				"AdonisSquadLeader",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Elite",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisSquadLeader_Heavy",
-			'object_class', "UnitData",
-			'Health', 88,
-			'Agility', 90,
-			'Dexterity', 75,
-			'Strength', 85,
-			'Wisdom', 80,
-			'Will', 99,
-			'Leadership', 62,
-			'Marksmanship', 95,
-			'Mechanical', 47,
-			'Explosives', 64,
-			'Medical', 49,
-			'Portrait', "UI/EnemiesPortraits/AdonisOfficer",
-			'Name', T(516378752870, --[[ModItemUnitDataCompositeDef AdonisSquadLeader_Heavy Name]] "Командир"),
-			'Randomization', true,
-			'Affiliation', "Adonis",
-			'StartingLevel', 7,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Control",
-				"Explosives",
-			},
-			'role', "Commander",
-			'AlwaysUseOpeningAttack', true,
-			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 10,
-			'unitPowerModifier', 75,
-			'MaxHitPoints', 80,
-			'StartingPerks', {
-				"OpportunisticKiller",
-				"AutoWeapons",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Officer",
-				}),
-			},
-			'Equipment', {
-				"AdonisSquadLeader",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Elite",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisSquadLeader_Corporal",
-			'object_class', "UnitData",
-			'Health', 88,
-			'Agility', 90,
-			'Dexterity', 75,
-			'Strength', 85,
-			'Wisdom', 80,
-			'Will', 95,
-			'Leadership', 62,
-			'Marksmanship', 95,
-			'Mechanical', 47,
-			'Explosives', 64,
-			'Medical', 49,
-			'Portrait', "UI/EnemiesPortraits/AdonisOfficer",
-			'Name', T(756841694440, --[[ModItemUnitDataCompositeDef AdonisSquadLeader_Corporal Name]] "Капрал"),
-			'Randomization', true,
-			'Affiliation', "Adonis",
-			'StartingLevel', 7,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Control",
-				"Explosives",
-			},
-			'role', "Commander",
-			'AlwaysUseOpeningAttack', true,
-			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 10,
-			'unitPowerModifier', 75,
-			'MaxHitPoints', 80,
-			'StartingPerks', {
-				"OpportunisticKiller",
-				"AutoWeapons",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Officer",
-				}),
-			},
-			'Equipment', {
-				"AdonisSquadLeader",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Elite",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisSquadLeader_Sergant",
-			'object_class', "UnitData",
-			'Health', 88,
-			'Agility', 90,
-			'Dexterity', 75,
-			'Strength', 85,
-			'Wisdom', 80,
-			'Will', 99,
-			'Leadership', 62,
-			'Marksmanship', 95,
-			'Mechanical', 47,
-			'Explosives', 64,
-			'Medical', 49,
-			'Portrait', "UI/EnemiesPortraits/AdonisOfficer",
-			'Name', T(475206078375, --[[ModItemUnitDataCompositeDef AdonisSquadLeader_Sergant Name]] "Сержант"),
-			'Randomization', true,
-			'Affiliation', "Adonis",
-			'StartingLevel', 7,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Control",
-				"Explosives",
-			},
-			'role', "Commander",
-			'AlwaysUseOpeningAttack', true,
-			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 10,
-			'unitPowerModifier', 75,
-			'MaxHitPoints', 80,
-			'StartingPerks', {
-				"OpportunisticKiller",
-				"AutoWeapons",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Officer",
-				}),
-			},
-			'Equipment', {
-				"AdonisSquadLeader",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Elite",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisSniper_Elite",
-			'object_class', "UnitData",
-			'Health', 77,
-			'Agility', 90,
-			'Dexterity', 100,
-			'Strength', 85,
-			'Wisdom', 90,
-			'Will', 99,
-			'Leadership', 20,
-			'Marksmanship', 96,
-			'Mechanical', 50,
-			'Explosives', 42,
-			'Medical', 53,
-			'Portrait', "UI/EnemiesPortraits/AdonisSniper",
-			'Name', T(699493638756, --[[ModItemUnitDataCompositeDef AdonisSniper_Elite Name]] "Элитный тактический снайпер"),
-			'Randomization', true,
-			'elite', true,
-			'eliteCategory', "Foreigners",
-			'Affiliation', "Adonis",
-			'StartingLevel', 5,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Sniper",
-			},
-			'archetype', "Soldier_Sniper",
-			'role', "Marksman",
-			'AlwaysUseOpeningAttack', true,
-			'OpeningAttackType', "PinDown",
-			'MaxAttacks', 10,
-			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				
-				if enemy and dist < 5*const.SlabSizeX then
-					archetype = "Skirmisher"
-					weapon_class = "Revolver"
-					PlayVoiceResponse(self, "AIArchetypeScared")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				return archetype
-			end,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"Deadeye",
-				"Shatterhand",
-				"Stealthy",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Marksman",
-				}),
-			},
-			'Equipment', {
-				"AdonisSniper",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Veteran",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisSniper",
-			'object_class', "UnitData",
-			'Health', 78,
-			'Agility', 90,
-			'Dexterity', 85,
-			'Strength', 85,
-			'Wisdom', 84,
-			'Will', 90,
-			'Leadership', 20,
-			'Marksmanship', 89,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 25,
-			'Portrait', "UI/EnemiesPortraits/AdonisSniper",
-			'Name', T(572327347455, --[[ModItemUnitDataCompositeDef AdonisSniper Name]] "Тактический снайпер"),
-			'Randomization', true,
-			'Affiliation', "Adonis",
-			'StartingLevel', 5,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Sniper",
-			},
-			'archetype', "Soldier_Sniper",
-			'role', "Marksman",
-			'AlwaysUseOpeningAttack', true,
-			'OpeningAttackType', "PinDown",
-			'MaxAttacks', 10,
-			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				
-				if enemy and dist < 5*const.SlabSizeX then
-					archetype = "Skirmisher"
-					weapon_class = "Revolver"
-					PlayVoiceResponse(self, "AIArchetypeScared")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				return archetype
-			end,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "SniperRifle")
-				self:TryEquip(items, "Handheld B", "Revolver")
-			end,
-			'unitPowerModifier', 75,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"SteadyBreathing",
-				"Shatterhand",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Marksman",
-				}),
-			},
-			'Equipment', {
-				"AdonisSniper",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Veteran",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisMortar",
-			'object_class', "UnitData",
-			'Health', 77,
-			'Agility', 78,
-			'Dexterity', 75,
-			'Strength', 99,
-			'Wisdom', 48,
-			'Will', 90,
-			'Leadership', 31,
-			'Marksmanship', 50,
-			'Mechanical', 0,
-			'Explosives', 94,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/AdonisArtillery",
-			'BigPortrait', "UI/Enemies/LegionRaider",
-			'Name', T(502877891049, --[[ModItemUnitDataCompositeDef AdonisMortar Name]] "Эксперт-взрывотехник"),
-			'Randomization', true,
-			'Affiliation', "Adonis",
-			'StartingLevel', 6,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Explosives",
-			},
-			'archetype', "Artillery",
-			'role', "Artillery",
-			'MaxAttacks', 1,
-			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Mortar"
-				
-				if GameState.Underground or enemy and dist < 7*const.SlabSizeX then
-					archetype = "Skirmisher"
-					weapon_class = "Revolver"
-					PlayVoiceResponse(self, "AIArchetypeScared")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				return archetype
-			end,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Mortar")
-				self:TryEquip(items, "Handheld B", "Revolver")
-			end,
-			'unitPowerModifier', 75,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"Throwing",
-				"HeavyWeaponsTraining",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Artillery",
-				}),
-			},
-			'Equipment', {
-				"AdonisMortar",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Veteran",
-			'pollyvoice', "Russell",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisMedic",
-			'object_class', "UnitData",
-			'Health', 100,
-			'Agility', 91,
-			'Dexterity', 85,
-			'Strength', 53,
-			'Wisdom', 96,
-			'Will', 90,
-			'Leadership', 58,
-			'Marksmanship', 66,
-			'Mechanical', 41,
-			'Explosives', 39,
-			'Medical', 93,
-			'Portrait', "UI/EnemiesPortraits/AdonisMedic",
-			'Name', T(781673427808, --[[ModItemUnitDataCompositeDef AdonisMedic Name]] "Санитар"),
-			'Randomization', true,
-			'Affiliation', "Adonis",
-			'StartingLevel', 7,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Heal",
-			},
-			'archetype', "Medic",
-			'role', "Medic",
-			'MaxAttacks', 10,
-			'unitPowerModifier', 65,
-			'MaxHitPoints', 80,
-			'StartingPerks', {
-				"Savior",
-				"Caretaker",
-				"Shatterhand",
-				"Hotblood",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Medic",
-				}),
-			},
-			'Equipment', {
-				"AdonisMedic",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Elite",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisHeavy",
-			'object_class', "UnitData",
-			'Health', 97,
-			'Agility', 86,
-			'Dexterity', 75,
-			'Strength', 95,
-			'Wisdom', 56,
-			'Will', 90,
-			'Leadership', 73,
-			'Marksmanship', 85,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/AdonisHeavy",
-			'Name', T(595437803097, --[[ModItemUnitDataCompositeDef AdonisHeavy Name]] "Пулеметчик"),
-			'Randomization', true,
-			'Affiliation', "Adonis",
-			'StartingLevel', 6,
-			'neutral_retaliate', true,
-			'archetype', "HeavyGunner",
-			'role', "Heavy",
-			'RepositionArchetype', "HeavyGunner",
-			'MaxAttacks', 10,
-			'unitPowerModifier', 75,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"AutoWeapons",
-				"HeavyWeaponsTraining",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Heavy",
-				}),
-			},
-			'Equipment', {
-				"AdonisHeavy",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Elite",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisDedicatedGunner_Elite",
-			'object_class', "UnitData",
-			'Health', 94,
-			'Agility', 91,
-			'Dexterity', 89,
-			'Strength', 95,
-			'Wisdom', 71,
-			'Will', 99,
-			'Leadership', 72,
-			'Marksmanship', 90,
-			'Mechanical', 50,
-			'Explosives', 81,
-			'Medical', 52,
-			'Portrait', "UI/EnemiesPortraits/AdonisHeavy",
-			'Name', T(240327953184, --[[ModItemUnitDataCompositeDef AdonisDedicatedGunner_Elite Name]] "Пулеметчик"),
-			'Randomization', true,
-			'elite', true,
-			'eliteCategory', "Foreigners",
-			'Affiliation', "Adonis",
-			'StartingLevel', 6,
-			'neutral_retaliate', true,
-			'role', "Heavy",
-			'MaxAttacks', 10,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"AutoWeapons",
-				"HeavyWeaponsTraining",
-				"CollateralDamage",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Soldier",
-				}),
-			},
-			'Equipment', {
-				"AdonisAssault_Elite",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Elite",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisFlanker_Elite",
-			'object_class', "UnitData",
-			'Health', 92,
-			'Agility', 99,
-			'Dexterity', 83,
-			'Strength', 47,
-			'Wisdom', 77,
-			'Will', 99,
-			'Leadership', 80,
-			'Marksmanship', 92,
-			'Mechanical', 56,
-			'Explosives', 77,
-			'Medical', 55,
-			'Portrait', "UI/EnemiesPortraits/AdonisRecon",
-			'Name', T(836704980538, --[[ModItemUnitDataCompositeDef AdonisFlanker_Elite Name]] "Элитный коммандос"),
-			'Randomization', true,
-			'elite', true,
-			'eliteCategory', "Foreigners",
-			'Affiliation', "Adonis",
-			'StartingLevel', 3,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Flank",
-				"RunAndGun",
-			},
-			'archetype', "Skirmisher",
-			'role', "Recon",
-			'AlwaysUseOpeningAttack', true,
-			'MaxAttacks', 10,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"AutoWeapons",
-				"Hotblood",
-				"NightOps",
-				"RelentlessAdvance",
-				"SteadyBreathing",
-				"TrickShot",
-				"Stealthy",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Recon",
-				}),
-			},
-			'Equipment', {
-				"AdonisFlanker",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Veteran",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisFlanker",
-			'object_class', "UnitData",
-			'Health', 82,
-			'Agility', 81,
-			'Dexterity', 83,
-			'Strength', 83,
-			'Wisdom', 73,
-			'Will', 90,
-			'Leadership', 55,
-			'Marksmanship', 81,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/AdonisRecon",
-			'Name', T(221376860813, --[[ModItemUnitDataCompositeDef AdonisFlanker Name]] "Коммандос"),
-			'Randomization', true,
-			'Affiliation', "Adonis",
-			'StartingLevel', 3,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Flank",
-				"RunAndGun",
-			},
-			'archetype', "Skirmisher",
-			'role', "Recon",
-			'AlwaysUseOpeningAttack', true,
-			'MaxAttacks', 10,
-			'unitPowerModifier', 75,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"AutoWeapons",
-				"Hotblood",
-				"NightOps",
-				"RelentlessAdvance",
-				"SteadyBreathing",
-				"Stealthy",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Recon",
-				}),
-			},
-			'Equipment', {
-				"AdonisFlanker",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Veteran",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisDemolitions_Elite",
-			'object_class', "UnitData",
-			'Health', 87,
-			'Agility', 87,
-			'Dexterity', 84,
-			'Strength', 90,
-			'Wisdom', 61,
-			'Will', 99,
-			'Leadership', 31,
-			'Marksmanship', 87,
-			'Mechanical', 75,
-			'Explosives', 98,
-			'Medical', 34,
-			'Portrait', "UI/EnemiesPortraits/AdonisDemo",
-			'Name', T(199825051946, --[[ModItemUnitDataCompositeDef AdonisDemolitions_Elite Name]] "Мастер-взрывотехник"),
-			'Randomization', true,
-			'elite', true,
-			'eliteCategory', "Foreigners",
-			'Affiliation', "Adonis",
-			'StartingLevel', 6,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Ordnance",
-				"Explosives",
-			},
-			'role', "Artillery",
-			'MaxAttacks', 10,
-			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "GrenadeLauncher"
-				
-				if enemy and dist < 7*const.SlabSizeX then
-					archetype = "Skirmisher"
-					weapon_class = "Firearm"
-					PlayVoiceResponse(self, "AIArchetypeScared")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				return archetype
-			end,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "GrenadeLauncher")
-				self:TryEquip(items, "Handheld B", "Firearm")
-			end,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"Throwing",
-				"Berserker",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Demolition",
-				}),
-			},
-			'Equipment', {
-				"AdonisDemolitions",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Veteran",
-			'pollyvoice', "Russell",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisDemolitions",
-			'object_class', "UnitData",
-			'Health', 77,
-			'Agility', 72,
-			'Strength', 81,
-			'Wisdom', 30,
-			'Will', 90,
-			'Leadership', 31,
-			'Marksmanship', 77,
-			'Mechanical', 0,
-			'Explosives', 75,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/AdonisDemo",
-			'Name', T(869728810732, --[[ModItemUnitDataCompositeDef AdonisDemolitions Name]] "Эксперт-взрывотехник"),
-			'Randomization', true,
-			'Affiliation', "Adonis",
-			'StartingLevel', 6,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Ordnance",
-				"Explosives",
-			},
-			'role', "Artillery",
-			'MaxAttacks', 10,
-			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "GrenadeLauncher"
-				
-				if enemy and dist < 7*const.SlabSizeX then
-					archetype = "Skirmisher"
-					weapon_class = "Firearm"
-					PlayVoiceResponse(self, "AIArchetypeScared")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				return archetype
-			end,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "GrenadeLauncher")
-				self:TryEquip(items, "Handheld B", "Firearm")
-			end,
-			'unitPowerModifier', 75,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"Throwing",
-				"Berserker",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Demolition",
-				}),
-			},
-			'Equipment', {
-				"AdonisDemolitions",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Veteran",
-			'pollyvoice', "Russell",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisSoldier",
-			'object_class', "UnitData",
-			'Health', 88,
-			'Agility', 90,
-			'Dexterity', 75,
-			'Strength', 85,
-			'Wisdom', 80,
-			'Will', 90,
-			'Leadership', 62,
-			'Marksmanship', 95,
-			'Mechanical', 47,
-			'Explosives', 64,
-			'Medical', 49,
-			'Portrait', "UI/EnemiesPortraits/AdonisOfficer",
-			'Name', T(770093869034, --[[ModItemUnitDataCompositeDef AdonisSoldier Name]] "Стрелок"),
-			'Randomization', true,
-			'Affiliation', "Adonis",
-			'StartingLevel', 7,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Soldier",
-				"Flank",
-				"Explosives",
-			},
-			'role', "Soldier",
-			'AlwaysUseOpeningAttack', true,
-			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 10,
-			'unitPowerModifier', 75,
-			'MaxHitPoints', 80,
-			'StartingPerks', {
-				"OpportunisticKiller",
-				"AutoWeapons",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Officer",
-				}),
-			},
-			'Equipment', {
-				"AdonisSquadLeader",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Elite",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Adonis",
-			'Id', "AdonisSoldier_Elite",
-			'object_class', "UnitData",
-			'Health', 88,
-			'Agility', 90,
-			'Dexterity', 75,
-			'Strength', 85,
-			'Wisdom', 80,
-			'Will', 99,
-			'Leadership', 62,
-			'Marksmanship', 95,
-			'Mechanical', 47,
-			'Explosives', 64,
-			'Medical', 49,
-			'Portrait', "UI/EnemiesPortraits/AdonisOfficer",
-			'Name', T(843953750983, --[[ModItemUnitDataCompositeDef AdonisSoldier_Elite Name]] "Элитный стрелок"),
-			'Randomization', true,
-			'Affiliation', "Adonis",
-			'StartingLevel', 7,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Soldier",
-				"Flank",
-				"Explosives",
-			},
-			'role', "Soldier",
-			'AlwaysUseOpeningAttack', true,
-			'OpeningAttackType', "Overwatch",
-			'MaxAttacks', 10,
-			'unitPowerModifier', 75,
-			'MaxHitPoints', 80,
-			'StartingPerks', {
-				"OpportunisticKiller",
-				"AutoWeapons",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Adonis_Officer",
-				}),
-			},
-			'Equipment', {
-				"AdonisSquadLeader",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "AdonisMale_2",
-				}),
-			},
-			'Tier', "Elite",
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "AdonisAssault",
-		}),
+		PlaceObj('ModItemFolder', {
+			'name', "AdonisNPC",
+		}, {
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "CorazonGuard",
+				'object_class', "UnitData",
+				'Health', 100,
+				'Agility', 100,
+				'Dexterity', 100,
+				'Strength', 100,
+				'Wisdom', 100,
+				'Will', 100,
+				'Leadership', 100,
+				'Marksmanship', 100,
+				'Mechanical', 100,
+				'Explosives', 100,
+				'Medical', 100,
+				'Portrait', "UI/EnemiesPortraits/AdonisSoldier",
+				'Name', T(573011421504, --[[ModItemUnitDataCompositeDef CorazonGuard Name]] "Охранник"),
+				'elite', true,
+				'eliteCategory', "Foreigners",
+				'Affiliation', "Adonis",
+				'StartingLevel', 10,
+				'archetype', "Rebels_Frontliner",
+				'RepositionArchetype', "Skirmisher",
+				'MaxAttacks', 10,
+				'MaxHitPoints', 80,
+				'StartingPerks', {
+					"AutoWeapons",
+					"Berserker",
+					"HitTheDeck",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Stormer",
+					}),
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Recon",
+					}),
+				},
+				'Equipment', {
+					"AdonisGuard",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Name', "AdonisMale_1",
+					}),
+				},
+				'pollyvoice', "Russell",
+				'gender', "Male",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "Adonis_CaptainAlvarez_Immortal",
+				'object_class', "UnitData",
+				'Health', 88,
+				'Agility', 90,
+				'Dexterity', 75,
+				'Strength', 85,
+				'Wisdom', 80,
+				'Will', 90,
+				'Leadership', 62,
+				'Marksmanship', 95,
+				'Mechanical', 47,
+				'Explosives', 64,
+				'Medical', 49,
+				'Portrait', "UI/EnemiesPortraits/AdonisOfficer",
+				'BigPortrait', "Mod/Dv3mFVN/Images/Adonis_ALVAREZ.png",
+				'Name', T(717331783376, --[[ModItemUnitDataCompositeDef Adonis_CaptainAlvarez_Immortal Name]] "Капитан Альварез"),
+				'Randomization', true,
+				'Affiliation', "Adonis",
+				'StartingLevel', 7,
+				'immortal', true,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Control",
+					"Explosives",
+				},
+				'archetype', "Rebels_Frontliner",
+				'role', "Commander",
+				'AlwaysUseOpeningAttack', true,
+				'OpeningAttackType', "Overwatch",
+				'MaxAttacks', 10,
+				'unitPowerModifier', 75,
+				'MaxHitPoints', 80,
+				'StartingPerks', {
+					"OpportunisticKiller",
+					"AutoWeapons",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Officer",
+					}),
+				},
+				'Equipment', {
+					"AdonisSquadLeader",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Elite",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			}),
+		PlaceObj('ModItemFolder', {
+			'name', "AdonisUnits",
+		}, {
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisStormer_Elite",
+				'object_class', "UnitData",
+				'Health', 95,
+				'Agility', 90,
+				'Dexterity', 92,
+				'Strength', 85,
+				'Wisdom', 80,
+				'Will', 99,
+				'Leadership', 20,
+				'Marksmanship', 95,
+				'Mechanical', 50,
+				'Explosives', 38,
+				'Medical', 47,
+				'Portrait', "UI/EnemiesPortraits/AdonisStormer",
+				'Name', T(508029880368, --[[ModItemUnitDataCompositeDef AdonisStormer_Elite Name]] "Элитный штурмовик"),
+				'Randomization', true,
+				'elite', true,
+				'eliteCategory', "Foreigners",
+				'Affiliation', "Adonis",
+				'StartingLevel', 7,
+				'neutral_retaliate', true,
+				'archetype', "Brute",
+				'role', "Stormer",
+				'AlwaysUseOpeningAttack', true,
+				'OpeningAttackType', "Overwatch",
+				'PinnedDownChance', 100,
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					
+					if enemy and dist < 8*const.SlabSizeX then
+						weapon_class = "Shotgun"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "Firearm")
+					self:TryEquip(items, "Handheld B", "MeleeWeapon")
+				end,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"InstantAutopsy",
+					"CQCTraining",
+					"Shatterhand",
+					"BattleFocus",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Stormer",
+					}),
+				},
+				'Equipment', {
+					"AdonisStormer",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Elite",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisStormer",
+				'object_class', "UnitData",
+				'Health', 95,
+				'Agility', 90,
+				'Dexterity', 81,
+				'Strength', 85,
+				'Wisdom', 80,
+				'Will', 85,
+				'Leadership', 20,
+				'Marksmanship', 95,
+				'Mechanical', 0,
+				'Explosives', 0,
+				'Medical', 25,
+				'Portrait', "UI/EnemiesPortraits/AdonisStormer",
+				'BigPortrait', "UI/Enemies/LegionRaider",
+				'Name', T(602956738625, --[[ModItemUnitDataCompositeDef AdonisStormer Name]] "Штурмовик"),
+				'Randomization', true,
+				'Affiliation', "Adonis",
+				'StartingLevel', 7,
+				'neutral_retaliate', true,
+				'archetype', "Brute",
+				'role', "Stormer",
+				'AlwaysUseOpeningAttack', true,
+				'OpeningAttackType', "Overwatch",
+				'PinnedDownChance', 100,
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					
+					if enemy and dist < 8*const.SlabSizeX then
+						weapon_class = "Shotgun"
+						PlayVoiceResponse(self, "AIArchetypeAngry")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "SubmachineGun")
+					self:TryEquip(items, "Handheld B", "Shotgun")
+				end,
+				'unitPowerModifier', 75,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"InstantAutopsy",
+					"CQCTraining",
+					"Shatterhand",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Stormer",
+					}),
+				},
+				'Equipment', {
+					"AdonisStormer",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Elite",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisAssault_Elite",
+				'object_class', "UnitData",
+				'Health', 95,
+				'Agility', 92,
+				'Dexterity', 90,
+				'Strength', 85,
+				'Wisdom', 68,
+				'Will', 99,
+				'Leadership', 84,
+				'Marksmanship', 95,
+				'Mechanical', 50,
+				'Explosives', 77,
+				'Medical', 52,
+				'Portrait', "UI/EnemiesPortraits/AdonisSoldier",
+				'Name', T(521607646039, --[[ModItemUnitDataCompositeDef AdonisAssault_Elite Name]] "Элитный Тяжелый Штурмовик"),
+				'Randomization', true,
+				'elite', true,
+				'eliteCategory', "Foreigners",
+				'Affiliation', "Adonis",
+				'StartingLevel', 6,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Soldier",
+					"Ordnance",
+					"Explosives",
+				},
+				'role', "Soldier",
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)  end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "AssaultRifle"--[[, "_762NATO_Tracer","_556_Basic","_556_HP","_762NATO_Basic","_545_EPR"]])
+					self:TryEquip(items, "Handheld A", "GrenadeLauncher"--[[, "_40mmFlashbangGrenade","_40mmFragGrenade"]])
+				end,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"AutoWeapons",
+					"LightningReactionNPC",
+					"StressManagement",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Soldier",
+					}),
+				},
+				'Equipment', {
+					"AdonisAssault_Elite",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Elite",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisAssault",
+				'object_class', "UnitData",
+				'Health', 91,
+				'Agility', 85,
+				'Dexterity', 85,
+				'Strength', 85,
+				'Wisdom', 70,
+				'Will', 90,
+				'Leadership', 50,
+				'Marksmanship', 84,
+				'Mechanical', 0,
+				'Explosives', 0,
+				'Medical', 0,
+				'Portrait', "UI/EnemiesPortraits/AdonisSoldier",
+				'Name', T(472771202525, --[[ModItemUnitDataCompositeDef AdonisAssault Name]] "Тяжелый Штурмовик"),
+				'Randomization', true,
+				'Affiliation', "Adonis",
+				'StartingLevel', 6,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Soldier",
+					"Ordnance",
+					"Explosives",
+				},
+				'role', "Soldier",
+				'MaxAttacks', 10,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "AssaultRifle"--[[, "_762NATO_Tracer","_556_Basic","_556_HP","_762NATO_Basic","_545_EPR"]])
+					self:TryEquip(items, "Handheld A", "GrenadeLauncher"--[[, "_40mmFlashbangGrenade","_40mmFragGrenade"]])
+				end,
+				'unitPowerModifier', 75,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"AutoWeapons",
+					"LightningReactionNPC",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Soldier",
+					}),
+				},
+				'Equipment', {
+					"AdonisAssault",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Elite",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisSquadLeader_Elite",
+				'object_class', "UnitData",
+				'Health', 96,
+				'Agility', 90,
+				'Dexterity', 84,
+				'Strength', 85,
+				'Wisdom', 80,
+				'Will', 99,
+				'Leadership', 91,
+				'Marksmanship', 95,
+				'Mechanical', 52,
+				'Explosives', 84,
+				'Medical', 74,
+				'Portrait', "UI/EnemiesPortraits/AdonisOfficer",
+				'Name', T(137396517830, --[[ModItemUnitDataCompositeDef AdonisSquadLeader_Elite Name]] "Элитный командир"),
+				'Randomization', true,
+				'elite', true,
+				'eliteCategory', "Foreigners",
+				'Affiliation', "Adonis",
+				'StartingLevel', 7,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Control",
+					"Explosives",
+				},
+				'role', "Commander",
+				'AlwaysUseOpeningAttack', true,
+				'OpeningAttackType', "Overwatch",
+				'MaxAttacks', 10,
+				'MaxHitPoints', 80,
+				'StartingPerks', {
+					"OpportunisticKiller",
+					"AutoWeapons",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Officer",
+					}),
+				},
+				'Equipment', {
+					"AdonisSquadLeader",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Elite",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisSquadLeader",
+				'object_class', "UnitData",
+				'Health', 88,
+				'Agility', 90,
+				'Dexterity', 75,
+				'Strength', 85,
+				'Wisdom', 80,
+				'Will', 90,
+				'Leadership', 62,
+				'Marksmanship', 95,
+				'Mechanical', 47,
+				'Explosives', 64,
+				'Medical', 49,
+				'Portrait', "UI/EnemiesPortraits/AdonisOfficer",
+				'Name', T(717331783376, --[[ModItemUnitDataCompositeDef AdonisSquadLeader Name]] "Командир"),
+				'Randomization', true,
+				'Affiliation', "Adonis",
+				'StartingLevel', 7,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Control",
+					"Explosives",
+				},
+				'role', "Commander",
+				'AlwaysUseOpeningAttack', true,
+				'OpeningAttackType', "Overwatch",
+				'MaxAttacks', 10,
+				'unitPowerModifier', 75,
+				'MaxHitPoints', 80,
+				'StartingPerks', {
+					"OpportunisticKiller",
+					"AutoWeapons",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Officer",
+					}),
+				},
+				'Equipment', {
+					"AdonisSquadLeader",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Elite",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisSquadLeader_Heavy",
+				'object_class', "UnitData",
+				'Health', 88,
+				'Agility', 90,
+				'Dexterity', 75,
+				'Strength', 85,
+				'Wisdom', 80,
+				'Will', 99,
+				'Leadership', 62,
+				'Marksmanship', 95,
+				'Mechanical', 47,
+				'Explosives', 64,
+				'Medical', 49,
+				'Portrait', "UI/EnemiesPortraits/AdonisOfficer",
+				'Name', T(516378752870, --[[ModItemUnitDataCompositeDef AdonisSquadLeader_Heavy Name]] "Командир"),
+				'Randomization', true,
+				'Affiliation', "Adonis",
+				'StartingLevel', 7,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Control",
+					"Explosives",
+				},
+				'role', "Commander",
+				'AlwaysUseOpeningAttack', true,
+				'OpeningAttackType', "Overwatch",
+				'MaxAttacks', 10,
+				'unitPowerModifier', 75,
+				'MaxHitPoints', 80,
+				'StartingPerks', {
+					"OpportunisticKiller",
+					"AutoWeapons",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Officer",
+					}),
+				},
+				'Equipment', {
+					"AdonisSquadLeader",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Elite",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisSquadLeader_Corporal",
+				'object_class', "UnitData",
+				'Health', 88,
+				'Agility', 90,
+				'Dexterity', 75,
+				'Strength', 85,
+				'Wisdom', 80,
+				'Will', 95,
+				'Leadership', 62,
+				'Marksmanship', 95,
+				'Mechanical', 47,
+				'Explosives', 64,
+				'Medical', 49,
+				'Portrait', "UI/EnemiesPortraits/AdonisOfficer",
+				'Name', T(756841694440, --[[ModItemUnitDataCompositeDef AdonisSquadLeader_Corporal Name]] "Капрал"),
+				'Randomization', true,
+				'Affiliation', "Adonis",
+				'StartingLevel', 7,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Control",
+					"Explosives",
+				},
+				'role', "Commander",
+				'AlwaysUseOpeningAttack', true,
+				'OpeningAttackType', "Overwatch",
+				'MaxAttacks', 10,
+				'unitPowerModifier', 75,
+				'MaxHitPoints', 80,
+				'StartingPerks', {
+					"OpportunisticKiller",
+					"AutoWeapons",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Officer",
+					}),
+				},
+				'Equipment', {
+					"AdonisSquadLeader",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Elite",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisSquadLeader_Sergant",
+				'object_class', "UnitData",
+				'Health', 88,
+				'Agility', 90,
+				'Dexterity', 75,
+				'Strength', 85,
+				'Wisdom', 80,
+				'Will', 99,
+				'Leadership', 62,
+				'Marksmanship', 95,
+				'Mechanical', 47,
+				'Explosives', 64,
+				'Medical', 49,
+				'Portrait', "UI/EnemiesPortraits/AdonisOfficer",
+				'Name', T(475206078375, --[[ModItemUnitDataCompositeDef AdonisSquadLeader_Sergant Name]] "Сержант"),
+				'Randomization', true,
+				'Affiliation', "Adonis",
+				'StartingLevel', 7,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Control",
+					"Explosives",
+				},
+				'role', "Commander",
+				'AlwaysUseOpeningAttack', true,
+				'OpeningAttackType', "Overwatch",
+				'MaxAttacks', 10,
+				'unitPowerModifier', 75,
+				'MaxHitPoints', 80,
+				'StartingPerks', {
+					"OpportunisticKiller",
+					"AutoWeapons",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Officer",
+					}),
+				},
+				'Equipment', {
+					"AdonisSquadLeader",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Elite",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisSniper_Elite",
+				'object_class', "UnitData",
+				'Health', 77,
+				'Agility', 90,
+				'Dexterity', 100,
+				'Strength', 85,
+				'Wisdom', 90,
+				'Will', 99,
+				'Leadership', 20,
+				'Marksmanship', 96,
+				'Mechanical', 50,
+				'Explosives', 42,
+				'Medical', 53,
+				'Portrait', "UI/EnemiesPortraits/AdonisSniper",
+				'Name', T(699493638756, --[[ModItemUnitDataCompositeDef AdonisSniper_Elite Name]] "Элитный тактический снайпер"),
+				'Randomization', true,
+				'elite', true,
+				'eliteCategory', "Foreigners",
+				'Affiliation', "Adonis",
+				'StartingLevel', 5,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Sniper",
+				},
+				'archetype', "Soldier_Sniper",
+				'role', "Marksman",
+				'AlwaysUseOpeningAttack', true,
+				'OpeningAttackType', "PinDown",
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					
+					if enemy and dist < 5*const.SlabSizeX then
+						archetype = "Skirmisher"
+						weapon_class = "Revolver"
+						PlayVoiceResponse(self, "AIArchetypeScared")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"Deadeye",
+					"Shatterhand",
+					"Stealthy",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Marksman",
+					}),
+				},
+				'Equipment', {
+					"AdonisSniper",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Veteran",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisSniper",
+				'object_class', "UnitData",
+				'Health', 78,
+				'Agility', 90,
+				'Dexterity', 85,
+				'Strength', 85,
+				'Wisdom', 84,
+				'Will', 90,
+				'Leadership', 20,
+				'Marksmanship', 89,
+				'Mechanical', 0,
+				'Explosives', 0,
+				'Medical', 25,
+				'Portrait', "UI/EnemiesPortraits/AdonisSniper",
+				'Name', T(572327347455, --[[ModItemUnitDataCompositeDef AdonisSniper Name]] "Тактический снайпер"),
+				'Randomization', true,
+				'Affiliation', "Adonis",
+				'StartingLevel', 5,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Sniper",
+				},
+				'archetype', "Soldier_Sniper",
+				'role', "Marksman",
+				'AlwaysUseOpeningAttack', true,
+				'OpeningAttackType', "PinDown",
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Firearm"
+					
+					if enemy and dist < 5*const.SlabSizeX then
+						archetype = "Skirmisher"
+						weapon_class = "Revolver"
+						PlayVoiceResponse(self, "AIArchetypeScared")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "SniperRifle")
+					self:TryEquip(items, "Handheld B", "Revolver")
+				end,
+				'unitPowerModifier', 75,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"SteadyBreathing",
+					"Shatterhand",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Marksman",
+					}),
+				},
+				'Equipment', {
+					"AdonisSniper",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Veteran",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisMortar",
+				'object_class', "UnitData",
+				'Health', 77,
+				'Agility', 78,
+				'Dexterity', 75,
+				'Strength', 99,
+				'Wisdom', 48,
+				'Will', 90,
+				'Leadership', 31,
+				'Marksmanship', 50,
+				'Mechanical', 0,
+				'Explosives', 94,
+				'Medical', 0,
+				'Portrait', "UI/EnemiesPortraits/AdonisArtillery",
+				'BigPortrait', "UI/Enemies/LegionRaider",
+				'Name', T(502877891049, --[[ModItemUnitDataCompositeDef AdonisMortar Name]] "Эксперт-взрывотехник"),
+				'Randomization', true,
+				'Affiliation', "Adonis",
+				'StartingLevel', 6,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Explosives",
+				},
+				'archetype', "Artillery",
+				'role', "Artillery",
+				'MaxAttacks', 1,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "Mortar"
+					
+					if GameState.Underground or enemy and dist < 7*const.SlabSizeX then
+						archetype = "Skirmisher"
+						weapon_class = "Revolver"
+						PlayVoiceResponse(self, "AIArchetypeScared")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "Mortar")
+					self:TryEquip(items, "Handheld B", "Revolver")
+				end,
+				'unitPowerModifier', 75,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"Throwing",
+					"HeavyWeaponsTraining",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Artillery",
+					}),
+				},
+				'Equipment', {
+					"AdonisMortar",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Veteran",
+				'pollyvoice', "Russell",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisMedic",
+				'object_class', "UnitData",
+				'Health', 100,
+				'Agility', 91,
+				'Dexterity', 85,
+				'Strength', 53,
+				'Wisdom', 96,
+				'Will', 90,
+				'Leadership', 58,
+				'Marksmanship', 66,
+				'Mechanical', 41,
+				'Explosives', 39,
+				'Medical', 93,
+				'Portrait', "UI/EnemiesPortraits/AdonisMedic",
+				'Name', T(781673427808, --[[ModItemUnitDataCompositeDef AdonisMedic Name]] "Санитар"),
+				'Randomization', true,
+				'Affiliation', "Adonis",
+				'StartingLevel', 7,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Heal",
+				},
+				'archetype', "Medic",
+				'role', "Medic",
+				'MaxAttacks', 10,
+				'unitPowerModifier', 65,
+				'MaxHitPoints', 80,
+				'StartingPerks', {
+					"Savior",
+					"Caretaker",
+					"Shatterhand",
+					"Hotblood",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Medic",
+					}),
+				},
+				'Equipment', {
+					"AdonisMedic",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Elite",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisHeavy",
+				'object_class', "UnitData",
+				'Health', 97,
+				'Agility', 86,
+				'Dexterity', 75,
+				'Strength', 95,
+				'Wisdom', 56,
+				'Will', 90,
+				'Leadership', 73,
+				'Marksmanship', 85,
+				'Mechanical', 0,
+				'Explosives', 0,
+				'Medical', 0,
+				'Portrait', "UI/EnemiesPortraits/AdonisHeavy",
+				'Name', T(595437803097, --[[ModItemUnitDataCompositeDef AdonisHeavy Name]] "Пулеметчик"),
+				'Randomization', true,
+				'Affiliation', "Adonis",
+				'StartingLevel', 6,
+				'neutral_retaliate', true,
+				'archetype', "HeavyGunner",
+				'role', "Heavy",
+				'RepositionArchetype', "HeavyGunner",
+				'MaxAttacks', 10,
+				'unitPowerModifier', 75,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"AutoWeapons",
+					"HeavyWeaponsTraining",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Heavy",
+					}),
+				},
+				'Equipment', {
+					"AdonisHeavy",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Elite",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisDedicatedGunner_Elite",
+				'object_class', "UnitData",
+				'Health', 94,
+				'Agility', 91,
+				'Dexterity', 89,
+				'Strength', 95,
+				'Wisdom', 71,
+				'Will', 99,
+				'Leadership', 72,
+				'Marksmanship', 90,
+				'Mechanical', 50,
+				'Explosives', 81,
+				'Medical', 52,
+				'Portrait', "UI/EnemiesPortraits/AdonisHeavy",
+				'Name', T(240327953184, --[[ModItemUnitDataCompositeDef AdonisDedicatedGunner_Elite Name]] "Пулеметчик"),
+				'Randomization', true,
+				'elite', true,
+				'eliteCategory', "Foreigners",
+				'Affiliation', "Adonis",
+				'StartingLevel', 6,
+				'neutral_retaliate', true,
+				'role', "Heavy",
+				'MaxAttacks', 10,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"AutoWeapons",
+					"HeavyWeaponsTraining",
+					"CollateralDamage",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Soldier",
+					}),
+				},
+				'Equipment', {
+					"AdonisAssault_Elite",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Elite",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisFlanker_Elite",
+				'object_class', "UnitData",
+				'Health', 92,
+				'Agility', 99,
+				'Dexterity', 83,
+				'Strength', 47,
+				'Wisdom', 77,
+				'Will', 99,
+				'Leadership', 80,
+				'Marksmanship', 92,
+				'Mechanical', 56,
+				'Explosives', 77,
+				'Medical', 55,
+				'Portrait', "UI/EnemiesPortraits/AdonisRecon",
+				'Name', T(836704980538, --[[ModItemUnitDataCompositeDef AdonisFlanker_Elite Name]] "Элитный коммандос"),
+				'Randomization', true,
+				'elite', true,
+				'eliteCategory', "Foreigners",
+				'Affiliation', "Adonis",
+				'StartingLevel', 3,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Flank",
+					"RunAndGun",
+				},
+				'archetype', "Skirmisher",
+				'role', "Recon",
+				'AlwaysUseOpeningAttack', true,
+				'MaxAttacks', 10,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"AutoWeapons",
+					"Hotblood",
+					"NightOps",
+					"RelentlessAdvance",
+					"SteadyBreathing",
+					"TrickShot",
+					"Stealthy",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Recon",
+					}),
+				},
+				'Equipment', {
+					"AdonisFlanker",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Veteran",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisFlanker",
+				'object_class', "UnitData",
+				'Health', 82,
+				'Agility', 81,
+				'Dexterity', 83,
+				'Strength', 83,
+				'Wisdom', 73,
+				'Will', 90,
+				'Leadership', 55,
+				'Marksmanship', 81,
+				'Mechanical', 0,
+				'Explosives', 0,
+				'Medical', 0,
+				'Portrait', "UI/EnemiesPortraits/AdonisRecon",
+				'Name', T(221376860813, --[[ModItemUnitDataCompositeDef AdonisFlanker Name]] "Коммандос"),
+				'Randomization', true,
+				'Affiliation', "Adonis",
+				'StartingLevel', 3,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Flank",
+					"RunAndGun",
+				},
+				'archetype', "Skirmisher",
+				'role', "Recon",
+				'AlwaysUseOpeningAttack', true,
+				'MaxAttacks', 10,
+				'unitPowerModifier', 75,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"AutoWeapons",
+					"Hotblood",
+					"NightOps",
+					"RelentlessAdvance",
+					"SteadyBreathing",
+					"Stealthy",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Recon",
+					}),
+				},
+				'Equipment', {
+					"AdonisFlanker",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Veteran",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisDemolitions_Elite",
+				'object_class', "UnitData",
+				'Health', 87,
+				'Agility', 87,
+				'Dexterity', 84,
+				'Strength', 90,
+				'Wisdom', 61,
+				'Will', 99,
+				'Leadership', 31,
+				'Marksmanship', 87,
+				'Mechanical', 75,
+				'Explosives', 98,
+				'Medical', 34,
+				'Portrait', "UI/EnemiesPortraits/AdonisDemo",
+				'Name', T(199825051946, --[[ModItemUnitDataCompositeDef AdonisDemolitions_Elite Name]] "Мастер-взрывотехник"),
+				'Randomization', true,
+				'elite', true,
+				'eliteCategory', "Foreigners",
+				'Affiliation', "Adonis",
+				'StartingLevel', 6,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Ordnance",
+					"Explosives",
+				},
+				'role', "Artillery",
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "GrenadeLauncher"
+					
+					if enemy and dist < 7*const.SlabSizeX then
+						archetype = "Skirmisher"
+						weapon_class = "Firearm"
+						PlayVoiceResponse(self, "AIArchetypeScared")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "GrenadeLauncher")
+					self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"Throwing",
+					"Berserker",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Demolition",
+					}),
+				},
+				'Equipment', {
+					"AdonisDemolitions",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Veteran",
+				'pollyvoice', "Russell",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisDemolitions",
+				'object_class', "UnitData",
+				'Health', 77,
+				'Agility', 72,
+				'Strength', 81,
+				'Wisdom', 30,
+				'Will', 90,
+				'Leadership', 31,
+				'Marksmanship', 77,
+				'Mechanical', 0,
+				'Explosives', 75,
+				'Medical', 0,
+				'Portrait', "UI/EnemiesPortraits/AdonisDemo",
+				'Name', T(869728810732, --[[ModItemUnitDataCompositeDef AdonisDemolitions Name]] "Эксперт-взрывотехник"),
+				'Randomization', true,
+				'Affiliation', "Adonis",
+				'StartingLevel', 6,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Ordnance",
+					"Explosives",
+				},
+				'role', "Artillery",
+				'MaxAttacks', 10,
+				'PickCustomArchetype', function (self, proto_context)
+					local enemy, dist = GetNearestEnemy(self)
+					local archetype = self.archetype
+					local weapon_class = "GrenadeLauncher"
+					
+					if enemy and dist < 7*const.SlabSizeX then
+						archetype = "Skirmisher"
+						weapon_class = "Firearm"
+						PlayVoiceResponse(self, "AIArchetypeScared")
+					end
+					
+					if not self:GetActiveWeapons(weapon_class) then
+						AIPlayCombatAction("ChangeWeapon", self, 0)
+					end
+					
+					return archetype
+				end,
+				'CustomEquipGear', function (self, items)
+					self:TryEquip(items, "Handheld A", "GrenadeLauncher")
+					self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'unitPowerModifier', 75,
+				'MaxHitPoints', 50,
+				'StartingPerks', {
+					"Throwing",
+					"Berserker",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Demolition",
+					}),
+				},
+				'Equipment', {
+					"AdonisDemolitions",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Veteran",
+				'pollyvoice', "Russell",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisSoldier",
+				'object_class', "UnitData",
+				'Health', 88,
+				'Agility', 90,
+				'Dexterity', 75,
+				'Strength', 85,
+				'Wisdom', 80,
+				'Will', 90,
+				'Leadership', 62,
+				'Marksmanship', 95,
+				'Mechanical', 47,
+				'Explosives', 64,
+				'Medical', 49,
+				'Portrait', "UI/EnemiesPortraits/AdonisOfficer",
+				'Name', T(770093869034, --[[ModItemUnitDataCompositeDef AdonisSoldier Name]] "Стрелок"),
+				'Randomization', true,
+				'Affiliation', "Adonis",
+				'StartingLevel', 7,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Soldier",
+					"Flank",
+					"Explosives",
+				},
+				'role', "Soldier",
+				'AlwaysUseOpeningAttack', true,
+				'OpeningAttackType', "Overwatch",
+				'MaxAttacks', 10,
+				'unitPowerModifier', 75,
+				'MaxHitPoints', 80,
+				'StartingPerks', {
+					"OpportunisticKiller",
+					"AutoWeapons",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Officer",
+					}),
+				},
+				'Equipment', {
+					"AdonisSquadLeader",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Elite",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			PlaceObj('ModItemUnitDataCompositeDef', {
+				'Group', "Adonis",
+				'Id', "AdonisSoldier_Elite",
+				'object_class', "UnitData",
+				'Health', 88,
+				'Agility', 90,
+				'Dexterity', 75,
+				'Strength', 85,
+				'Wisdom', 80,
+				'Will', 99,
+				'Leadership', 62,
+				'Marksmanship', 95,
+				'Mechanical', 47,
+				'Explosives', 64,
+				'Medical', 49,
+				'Portrait', "UI/EnemiesPortraits/AdonisOfficer",
+				'Name', T(843953750983, --[[ModItemUnitDataCompositeDef AdonisSoldier_Elite Name]] "Элитный стрелок"),
+				'Randomization', true,
+				'Affiliation', "Adonis",
+				'StartingLevel', 7,
+				'neutral_retaliate', true,
+				'AIKeywords', {
+					"Soldier",
+					"Flank",
+					"Explosives",
+				},
+				'role', "Soldier",
+				'AlwaysUseOpeningAttack', true,
+				'OpeningAttackType', "Overwatch",
+				'MaxAttacks', 10,
+				'unitPowerModifier', 75,
+				'MaxHitPoints', 80,
+				'StartingPerks', {
+					"OpportunisticKiller",
+					"AutoWeapons",
+				},
+				'AppearancesList', {
+					PlaceObj('AppearanceWeight', {
+						'Preset', "Adonis_Officer",
+					}),
+				},
+				'Equipment', {
+					"AdonisSquadLeader",
+				},
+				'AdditionalGroups', {
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_1",
+					}),
+					PlaceObj('AdditionalGroup', {
+						'Weight', 50,
+						'Exclusive', true,
+						'Name', "AdonisMale_2",
+					}),
+				},
+				'Tier', "Elite",
+				'pollyvoice', "Joey",
+				'gender', "Male",
+				'VoiceResponseId', "AdonisAssault",
+			}),
+			}),
 		}),
 	PlaceObj('ModItemFolder', {
 		'name', "Units Rebels",
@@ -45400,11 +45800,10 @@ return {
 				'PickCustomArchetype', function (self, proto_context)
 					local enemy, dist = GetNearestEnemy(self)
 					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					local roll = self:Random(100)
+					local weapon_class = "SniperRifle"
+					local roll = 100
 					
 					if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "AssaultRifle"  then
-						archetype = "Melee"
 						weapon_class = "AssaultRifle"
 						PlayVoiceResponse(self, "AIArchetypeAngry")
 					end
@@ -47132,68 +47531,6 @@ return {
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Civilians",
-			'Id', "MilitiaVeteran",
-			'object_class', "UnitData",
-			'Agility', 85,
-			'Dexterity', 70,
-			'Strength', 80,
-			'Wisdom', 35,
-			'Will', 60,
-			'Leadership', 10,
-			'Marksmanship', 80,
-			'Mechanical', 5,
-			'Explosives', 5,
-			'Medical', 15,
-			'Portrait', "UI/EnemiesPortraits/MilitiaSoldier",
-			'Name', T(789759429990, --[[ModItemUnitDataCompositeDef MilitiaVeteran Name]] "Опытный"),
-			'StartingLevel', 3,
-			'militia', true,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Soldier",
-				"Sniper",
-			},
-			'role', "Militia",
-			'MaxAttacks', 10,
-			'RewardExperience', 0,
-			'StartingPerks', {
-				"AutoWeapons",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Militia_Demolition",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Militia_Stormer",
-				}),
-			},
-			'Equipment', {
-				"MilitiaRookie",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 25,
-					'Exclusive', true,
-					'Name', "Militia_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 75,
-					'Exclusive', true,
-					'Name', "Militia_2",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Name', "MilitiaVeteran",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 25,
-					'Name', "CivilianMale_3",
-				}),
-			},
-			'gender', "Male",
-			'VoiceResponseId', "MilitiaRookie",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Civilians",
 			'Id', "MilitiaRookie",
 			'object_class', "UnitData",
 			'Health', 55,
@@ -47213,8 +47550,8 @@ return {
 			'neutral_retaliate', true,
 			'AIKeywords', {
 				"Soldier",
-				"Flank",
 			},
+			'archetype', "Rebels_Assaulter",
 			'role', "Militia",
 			'MaxAttacks', 10,
 			'RewardExperience', 0,
@@ -47259,6 +47596,68 @@ return {
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Civilians",
+			'Id', "MilitiaVeteran",
+			'object_class', "UnitData",
+			'Agility', 85,
+			'Dexterity', 70,
+			'Strength', 80,
+			'Wisdom', 35,
+			'Will', 60,
+			'Leadership', 10,
+			'Marksmanship', 80,
+			'Mechanical', 5,
+			'Explosives', 5,
+			'Medical', 15,
+			'Portrait', "UI/EnemiesPortraits/MilitiaSoldier",
+			'Name', T(789759429990, --[[ModItemUnitDataCompositeDef MilitiaVeteran Name]] "Опытный"),
+			'StartingLevel', 3,
+			'militia', true,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"Soldier",
+			},
+			'archetype', "Rebels_Frontliner",
+			'role', "Militia",
+			'MaxAttacks', 10,
+			'RewardExperience', 0,
+			'StartingPerks', {
+				"AutoWeapons",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Militia_Demolition",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Militia_Stormer",
+				}),
+			},
+			'Equipment', {
+				"MilitiaRookie",
+			},
+			'AdditionalGroups', {
+				PlaceObj('AdditionalGroup', {
+					'Weight', 25,
+					'Exclusive', true,
+					'Name', "Militia_1",
+				}),
+				PlaceObj('AdditionalGroup', {
+					'Weight', 75,
+					'Exclusive', true,
+					'Name', "Militia_2",
+				}),
+				PlaceObj('AdditionalGroup', {
+					'Name', "MilitiaVeteran",
+				}),
+				PlaceObj('AdditionalGroup', {
+					'Weight', 25,
+					'Name', "CivilianMale_3",
+				}),
+			},
+			'gender', "Male",
+			'VoiceResponseId', "MilitiaRookie",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "Civilians",
 			'Id', "MilitiaElite",
 			'object_class', "UnitData",
 			'Health', 70,
@@ -47279,8 +47678,9 @@ return {
 			'neutral_retaliate', true,
 			'AIKeywords', {
 				"Soldier",
-				"Flank",
+				"Marksman",
 			},
+			'archetype', "Rebels_Frontliner",
 			'role', "Militia",
 			'MaxAttacks', 10,
 			'RewardExperience', 0,
@@ -68304,7 +68704,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
