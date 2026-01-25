@@ -31,7 +31,7 @@ DefineClass.Fidel = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(601499126033, --[[ModItemUnitDataCompositeDef Fidel Text MercChatRefusal Lines ChatMessage voice:Fidel]] "Мерзкие подростки написали на двери Фиделя плохие слова. Фидель поставил растяжку и ждёт, когда бомба взорвётся. Тогда он прибьёт к двери их оторванные конечности, чтобы другим неповадно было. Так что сейчас Фидель занят. Позже?"),
+					'Text', T(601499126033, --[[ModItemUnitDataCompositeDef Fidel Text MercChatRefusal Lines ChatMessage voice:Fidel]] "Мерзкий дети написали на двери Фиделя гадость. Всё. Фидель ждёт: наступят на мину — бабах и Фидель прибьёт к двери их кусочки — будет им урок. Хехе. Кароче… Фидель занят по семейным обстоятельствам, скажем так. Позже тогда, да? Давай!"),
 				}),
 			},
 			'Conditions', {},
@@ -40,7 +40,7 @@ DefineClass.Fidel = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(322149216469, --[[ModItemUnitDataCompositeDef Fidel Text MercChatRefusal Lines ChatMessage voice:Fidel]] "Фиделю скучно. Ты не просишь его убивать врагов. Фидель больше не хочет на тебя работать."),
+					'Text', T(322149216469, --[[ModItemUnitDataCompositeDef Fidel Text MercChatRefusal Lines ChatMessage voice:Fidel]] "Фиделю скучна работа. Ты не просишь Фиделя убивать враг. Фидель больше не будет работать тебе."),
 				}),
 			},
 			'Conditions', {
@@ -51,37 +51,37 @@ DefineClass.Fidel = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(821638510526, --[[ModItemUnitDataCompositeDef Fidel Text Offline ChatMessage voice:Fidel]] "Это машина, которая говорит, как Фидель. Фидель сейчас убивает врагов. Если хочешь нанять Фиделя убивать врагов, свяжись с ним позже. Если враг - это ты, Фидель найдёт тебя и убьёт."),
+			'Text', T(821638510526, --[[ModItemUnitDataCompositeDef Fidel Text Offline ChatMessage voice:Fidel]] "Это машина, которая говорит, как Фидель. Сейчас Фидель убивает врагов. Хочешь нанять Фиделя убивать врагов — перезвонишь. Или ТЫ враг?! Фидель идёт за тобой. Хехе."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(400111149290, --[[ModItemUnitDataCompositeDef Fidel Text GreetingAndOffer ChatMessage voice:Fidel]] "Это машина, которая говорит, как Фидель. Ты хочешь нанять Фиделя убивать врагов? Фидель тоже хочет их убивать. Ну что, договорились?"),
+			'Text', T(400111149290, --[[ModItemUnitDataCompositeDef Fidel Text GreetingAndOffer ChatMessage voice:Fidel]] "Это машина с голосом Фиделя. Хочешь убивать людей руками Фиделя? Фидель тоже хочет убивать своими руками! Ну так это самое, договорились, да?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(781594867566, --[[ModItemUnitDataCompositeDef Fidel Text ConversationRestart ChatMessage voice:Fidel]] "Тебе пришлось отвлечься, чтобы убивать врагов? Фидель понимает. Фидель тоже так делает."),
+			'Text', T(781594867566, --[[ModItemUnitDataCompositeDef Fidel Text ConversationRestart ChatMessage voice:Fidel]] "Тянет убивать вражин, а не болтать? Ой. Не волнуйся! Фиделя тоже — ай как тянет! Хехе."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(101738114840, --[[ModItemUnitDataCompositeDef Fidel Text IdleLine ChatMessage voice:Fidel]] "ГОВОРИ, МАШИНА! ГОВОРИ! ИЛИ ФИДЕЛЬ ТЕБЯ ВЗОРВЁТ!"),
+			'Text', T(101738114840, --[[ModItemUnitDataCompositeDef Fidel Text IdleLine ChatMessage voice:Fidel]] "ГОВОРИ, МАШИНА! ГОВОРИ! ИЛИ ФИДЕЛЬ ВЗОРВАТЬ ТЕБЯ!"),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(783316549514, --[[ModItemUnitDataCompositeDef Fidel Text PartingWords ChatMessage voice:Fidel]] "Надеюсь, там будет много врагов. Фидель заскучал."),
+			'Text', T(783316549514, --[[ModItemUnitDataCompositeDef Fidel Text PartingWords ChatMessage voice:Fidel]] "Ох, надеюсь там будет много вражин. А то Фиделю скучно."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(337330388680, --[[ModItemUnitDataCompositeDef Fidel Text RehireIntro ChatMessage voice:Fidel]] "Машина говорит, контракт Фиделя скоро кончится. У тебя ещё много врагов. Заплати Фиделю, чтобы он их убил."),
+			'Text', T(337330388680, --[[ModItemUnitDataCompositeDef Fidel Text RehireIntro ChatMessage voice:Fidel]] "Машина говорит «Фидель, контракт кончается». А сколько ещё врагов! Плати, чтоб Фидель убивать! Давай!"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(100497682392, --[[ModItemUnitDataCompositeDef Fidel Text RehireOutro ChatMessage voice:Fidel]] "Хорошо. Иду убивать."),
+			'Text', T(100497682392, --[[ModItemUnitDataCompositeDef Fidel Text RehireOutro ChatMessage voice:Fidel]] "Хорошо. Хехехе. Убивать не терпится."),
 		}),
 	},
 	MedicalDeposit = "none",

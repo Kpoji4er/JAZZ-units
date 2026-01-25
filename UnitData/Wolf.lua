@@ -22,7 +22,7 @@ DefineClass.Wolf = {
 	Name = T(415973309831, --[[ModItemUnitDataCompositeDef Wolf Name]] "Питер Сандерсон «Волк»"),
 	Nick = T(854057195964, --[[ModItemUnitDataCompositeDef Wolf Nick]] "Волк"),
 	AllCapsNick = T(772197398311, --[[ModItemUnitDataCompositeDef Wolf AllCapsNick]] "ВОЛК"),
-	Bio = T(947517898504, --[[ModItemUnitDataCompositeDef Wolf Bio]] "Ненадолго покинув A.I.M., чтобы занять должность инструктора в элитном (и весьма высокооплачиваемом) загородном пейнтбольном клубе для состоятельных бизнесменов, Волк в конце концов устал учить заплывших жиром сорокалетних топ-менеджеров, как делать вид, что они убивают друг друга. Окончательно его добил недельный выездной лагерь, где он пытался обучить своих подопечных основам тактики и ночных операций, пока те шарились по лесу в светоотражающих оранжевых жилетах. Вернувшись в город, Сандерс сообщил, что более чем готов вновь поработать наёмником. Волк - один из самых всесторонне подготовленных бойцов A.I.M., пользующийся популярностью у клиентов, которым нужен мастер на все руки. Спешите заключить с ним контракт сейчас, пока это не сделали за вас другие!"),
+	Bio = T(947517898504, --[[ModItemUnitDataCompositeDef Wolf Bio]] "Ненадолго покинув A.I.M., чтобы занять должность инструктора в элитном (и весьма высокооплачиваемом) загородном пейнтбольном клубе для состоятельных бизнесменов, Волк в конце концов устал учить заплывших жиром сорокалетних топ-менеджеров, как делать вид, что они убивают друг друга. Окончательно его добил недельный выездной лагерь, где он пытался обучить своих подопечных основам тактики и ночных операций, пока те шарились по лесу в светоотражающих оранжевых жилетах. Вернувшись в город, Сандерсон сообщил, что более чем готов вновь поработать наёмником. Волк - один из самых всесторонне подготовленных бойцов A.I.M., пользующийся популярностью у клиентов, которым нужен мастер на все руки. Спешите заключить с ним контракт сейчас, пока это не сделали за вас другие!"),
 	Nationality = "USA",
 	Title = T(474239652453, --[[ModItemUnitDataCompositeDef Wolf Title]] "Универсальный наёмник"),
 	Email = T(478313327038, --[[ModItemUnitDataCompositeDef Wolf Email]] "volk1@aim.com"),
@@ -31,7 +31,7 @@ DefineClass.Wolf = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(339046331040, --[[ModItemUnitDataCompositeDef Wolf Text MercChatRefusal Lines ChatMessage voice:Wolf]] "Мы с Лиской... у нас с ней было. А теперь она погибла, и всё по твоей вине. Так что проваливай. Я никогда больше не буду на тебя работать."),
+					'Text', T(339046331040, --[[ModItemUnitDataCompositeDef Wolf Text MercChatRefusal Lines ChatMessage voice:Wolf]] "У нас с Лиской... так складывалось всё. А теперь она погибла, и всё по твоей вине. Так что катись к чёрту - не буду я на тебя работать. Никогда."),
 				}),
 			},
 			'Conditions', {
@@ -55,7 +55,7 @@ DefineClass.Wolf = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(317941837726, --[[ModItemUnitDataCompositeDef Wolf Text MercChatHaggle Lines ChatMessage voice:Wolf]] "Послужной список у тебя неважный - судя по тому, сколько народу с твоих заданий не возвращается. Если хочешь, чтобы я на тебя работал, придётся заплатить больше."),
+					'Text', T(317941837726, --[[ModItemUnitDataCompositeDef Wolf Text MercChatHaggle Lines ChatMessage voice:Wolf]] "С таким послужным списком пусть тебе послужит кто-нибудь другой, ага? А то я в ахере, сколько народу с твоих заданий не возвращается. Если хочешь, чтобы я на тебя работал, придётся заплатить больше."),
 				}),
 			},
 			'Conditions', {
@@ -70,7 +70,7 @@ DefineClass.Wolf = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(836197395161, --[[ModItemUnitDataCompositeDef Wolf Text MercChatHaggle Lines ChatMessage voice:Wolf]] "Новые контракты, новые ставки. Я сегодня лучше, чем вчера."),
+					'Text', T(836197395161, --[[ModItemUnitDataCompositeDef Wolf Text MercChatHaggle Lines ChatMessage voice:Wolf]] "Новые контракты, новые ставки. Я сегодня лучше, чем вчера. Смекаешь?"),
 				}),
 			},
 			'Conditions', {},
@@ -81,13 +81,27 @@ DefineClass.Wolf = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(833123233503, --[[ModItemUnitDataCompositeDef Wolf Text MercChatMitigation Lines ChatMessage voice:Wolf]] "Если Лиска с тобой, то и я, разумеется, тоже! Считай, что я в деле."),
+					'Text', T(833123233503, --[[ModItemUnitDataCompositeDef Wolf Text MercChatMitigation Lines ChatMessage voice:Wolf]] "Коли Лисонька с тобой, то и зад мой тоже твой! Эм... Извини, на радостях пытался в рифму, вышло неудачно."),
 				}),
 			},
 			'Conditions', {
 				PlaceObj('UnitHireStatus', {
 					Status = "Hired",
 					TargetUnit = "Fox",
+				}),
+			},
+			'chanceToRoll', 100,
+		}),
+		PlaceObj('MercChatMitigation', {
+			'Lines', {
+				PlaceObj('ChatMessage', {
+					'Text', T(374415667329, --[[ModItemUnitDataCompositeDef Wolf Text MercChatMitigation Lines ChatMessage voice:Wolf]] "По поводу операции есть известные сомнения, сечешь, шеф? Но, раз уж на тебя работает Рысь... О'кей, я в деле."),
+				}),
+			},
+			'Conditions', {
+				PlaceObj('UnitHireStatus', {
+					Status = "Hired",
+					TargetUnit = "Jazz_Lynx",
 				}),
 			},
 			'chanceToRoll', 100,
@@ -112,22 +126,22 @@ DefineClass.Wolf = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(929760186481, --[[ModItemUnitDataCompositeDef Wolf Text Offline ChatMessage voice:Wolf]] "Это Волк. Я сейчас в спортивном зале, но я напишу, когда освобожусь."),
+			'Text', T(929760186481, --[[ModItemUnitDataCompositeDef Wolf Text Offline ChatMessage voice:Wolf]] "Это Волк. Я ща в спортивном зале, но как освобожусь, напишу."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(479719341895, --[[ModItemUnitDataCompositeDef Wolf Text GreetingAndOffer ChatMessage voice:Wolf]] "Волк на связи. Если у тебя есть деньги, можем договориться."),
+			'Text', T(479719341895, --[[ModItemUnitDataCompositeDef Wolf Text GreetingAndOffer ChatMessage voice:Wolf]] "Волк на связи. Если у тебя ещё и с деньгами связи имеются, то можем договориться."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(205981379707, --[[ModItemUnitDataCompositeDef Wolf Text ConversationRestart ChatMessage voice:Wolf]] "Нас разъединили. Попробуем ещё разок."),
+			'Text', T(205981379707, --[[ModItemUnitDataCompositeDef Wolf Text ConversationRestart ChatMessage voice:Wolf]] "Нас разъединили, походу. Попробуем ещё разок."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(450435284152, --[[ModItemUnitDataCompositeDef Wolf Text IdleLine ChatMessage voice:Wolf]] "Эй! Чего молчишь?"),
+			'Text', T(450435284152, --[[ModItemUnitDataCompositeDef Wolf Text IdleLine ChatMessage voice:Wolf]] "Ау! Чё молчишь?"),
 		}),
 	},
 	PartingWords = {
@@ -137,7 +151,7 @@ DefineClass.Wolf = {
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(565646668072, --[[ModItemUnitDataCompositeDef Wolf Text RehireIntro ChatMessage voice:Wolf]] "Мой контракт почти что истёк. Расскажи про твои планы. Меня люди ждут."),
+			'Text', T(565646668072, --[[ModItemUnitDataCompositeDef Wolf Text RehireIntro ChatMessage voice:Wolf]] "Мой контракт почти что истёк. Чё у тебя там, планы на продление есть? А то меня люди важные ждут."),
 		}),
 	},
 	RehireOutro = {
@@ -156,6 +170,7 @@ DefineClass.Wolf = {
 	MaxHitPoints = 90,
 	Likes = {
 		"Fox",
+		"Jazz_Lynx",
 	},
 	StartingPerks = {
 		"Teacher",

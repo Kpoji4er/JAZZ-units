@@ -19,9 +19,9 @@ DefineClass.Grunty = {
 	Portrait = "UI/MercsPortraits/Grunty",
 	BigPortrait = "UI/Mercs/Grunty",
 	IsMercenary = true,
-	Name = T(509794901102, --[[ModItemUnitDataCompositeDef Grunty Name]] "Гельмут Грунтер «Грунти»"),
-	Nick = T(844792410600, --[[ModItemUnitDataCompositeDef Grunty Nick]] "Грунти"),
-	AllCapsNick = T(878015981670, --[[ModItemUnitDataCompositeDef Grunty AllCapsNick]] "ГРУНТИ"),
+	Name = T(509794901102, --[[ModItemUnitDataCompositeDef Grunty Name]] "Гельмут Грунтер «Хряп»"),
+	Nick = T(844792410600, --[[ModItemUnitDataCompositeDef Grunty Nick]] "Хряп"),
+	AllCapsNick = T(878015981670, --[[ModItemUnitDataCompositeDef Grunty AllCapsNick]] "ХРЯП "),
 	Bio = T(805883834301, --[[ModItemUnitDataCompositeDef Grunty Bio]] "Боец, стремительно взлетающий к вершинам карьеры наёмника, Хряп пользуется большой популярностью среди клиентов A.I.M. Гельмут - отличный солдат с умеренными денежными запросами, а дружелюбная матера общения и оптимизм делают его прекрасным товарищем по команде. Хряп - универсал, умеющий отлично обращаться с тяжелым оружием, так что едва ли найдётся тактическая задача, из которой он не вышел бы с победой."),
 	Nationality = "Germany",
 	Title = T(559710714576, --[[ModItemUnitDataCompositeDef Grunty Title]] "Наёмник хоть куда. В самом расцвете лет"),
@@ -124,7 +124,7 @@ DefineClass.Grunty = {
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(552434878051, --[[ModItemUnitDataCompositeDef Grunty Text GreetingAndOffer ChatMessage voice:Grunty]] "Hallo, das ist Грунти, Гельмут Грунтер. Желаешь предложить мне работу?"),
+			'Text', T(552434878051, --[[ModItemUnitDataCompositeDef Grunty Text GreetingAndOffer ChatMessage voice:Grunty]] "Hallo, das ist Хряп, Гельмут Грунтер. Желаешь предложить мне работу?"),
 		}),
 	},
 	ConversationRestart = {
