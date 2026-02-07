@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 9,
-	'version', 2189,
+	'version', 2200,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -207,8 +207,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1769353519,
-	'code_hash', -9049184955220348447,
+	'saved', 1770488664,
+	'code_hash', 5963603501196941186,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
@@ -8271,14 +8271,14 @@ return PlaceObj('ModDef', {
 			'ClassDisplayName', "Banter",
 		}),
 		PlaceObj('ModResourcePreset', {
-			'Class', "VoiceResponse",
-			'Id', "JAZZ_Merc_Spouke",
-			'ClassDisplayName', "Unit voice responses",
-		}),
-		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
 			'Id', "JAZZ_Merc_Spouke",
 			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "JAZZ_Merc_Spouke",
+			'ClassDisplayName', "Unit voice responses",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
