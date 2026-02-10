@@ -103,7 +103,7 @@ DefineClass.Steroid = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(558558300486, --[[ModItemUnitDataCompositeDef Steroid Text MercChatBranch Lines ChatMessage voice:Steroid]] "Работать в одной команде с Игорем Долвичем - это неприятно. Пожалуйста, не давай ему лезть ко мне со своим пахучим коммунизмом."),
+					'Text', T(558558300486, --[[ModItemUnitDataCompositeDef Steroid Text MercChatBranch Lines ChatMessage voice:Steroid]] "Работать близко-преблизко с Игорем Долвичем - это неприятно. Пожалуйста, не давай ему лезть ко мне со своим пахучим коммунизмом."),
 				}),
 			},
 			'Conditions', {
@@ -121,7 +121,7 @@ DefineClass.Steroid = {
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(853380302875, --[[ModItemUnitDataCompositeDef Steroid Text GreetingAndOffer ChatMessage voice:Steroid]] "Это Бобби Гонтарски. Ты даёшь мне работу?"),
+			'Text', T(853380302875, --[[ModItemUnitDataCompositeDef Steroid Text GreetingAndOffer ChatMessage voice:Steroid]] "Говорит Анаболик Гонтарски. Ты даёшь мне работу?"),
 		}),
 	},
 	ConversationRestart = {
@@ -131,12 +131,12 @@ DefineClass.Steroid = {
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(799080241348, --[[ModItemUnitDataCompositeDef Steroid Text IdleLine ChatMessage voice:Steroid]] "Ты зачем замолчал? Упражнения делаешь?"),
+			'Text', T(799080241348, --[[ModItemUnitDataCompositeDef Steroid Text IdleLine ChatMessage voice:Steroid]] "Ты зачем замолчал? Долго что-то упражнения делаешь?"),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(508884817963, --[[ModItemUnitDataCompositeDef Steroid Text PartingWords ChatMessage voice:Steroid]] "Спасибо за работу, гмм. Завидимся."),
+			'Text', T(508884817963, --[[ModItemUnitDataCompositeDef Steroid Text PartingWords ChatMessage voice:Steroid]] "Спасибо за пердоставленную работу, гмм. Завидимся."),
 		}),
 	},
 	RehireIntro = {

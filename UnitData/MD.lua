@@ -31,10 +31,10 @@ DefineClass.MD = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(589316307933, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "М-м-м... У вас в команде Анаболик. Нет, я против него лично ничего не имею, но... он до меня вечно докапывается. Говорит, что я «слабак и баба»."),
+					'Text', T(589316307933, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Ммм… Анаболик тоже будет. Нет, я против него ничего личного не имею, но... он любит дразниться — говорит, что я «слабак и баба»."),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(377316958854, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Нет, он в чём-то, может быть, и прав. Но мне потребуются средства на посещение психолога."),
+					'Text', T(377316958854, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Нет, конечно, я могу его понять. Но мне же потом платить за психотерапию потребуется…"),
 				}),
 			},
 			'Conditions', {
@@ -48,10 +48,10 @@ DefineClass.MD = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(255971337240, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Всё бы ничего, но мы с Лавой не слишком ладим. Она вечно шутит, что я напоминаю ей какашку, которую как-то сожрал один из её псов."),
+					'Text', T(255971337240, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Всё чудесно. Просто с Лавой мы не очень ладим. Она всё говорит, что я напоминаю ей ту каку, что однажды ел её пёс."),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(706928440131, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Ну, то есть, может, так оно и есть. Я же её не видел. Вдруг между нами и впрямь есть некоторое сходство... Но это всё несколько расшатывает моё психологическое здоровье. Будет здорово, если вы оплатите мне психологическую реабилитацию."),
+					'Text', T(706928440131, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Конечно, может и так. Я же не видел. Кака могла быть похожа. Просто это сильно подкашивает меня, и оплата новых сессий психотерапии будет очень кстати."),
 				}),
 			},
 			'Conditions', {
@@ -65,10 +65,10 @@ DefineClass.MD = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(133732872963, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Ой. У вас там будет Гвоздь, да? Он как-то наехал на меня своим мотоциклом. Потом развернулся и ещё раз наехал. А потом ещё накричал, что я испачкал ему колёса кровью."),
+					'Text', T(133732872963, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Боже мой. Гвоздь тоже с вами? Он переехал меня как-то мотоцикл- Байком! Он вроде велел называть байком. Потом развернулся и опять переехал. Пару раз. А потом ещё и обматерил, так как я изпачкал ему шины кровью."),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(812957826017, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Ну, то есть я, конечно, тоже виноват, что не успел отпрыгнуть. В общем, он так любит мне об этом напоминать, что мне потребуются дополнительные деньги, чтобы восстановиться от ПТСР."),
+					'Text', T(812957826017, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Ну, допускаю, что я виноват, нужно было успеть отпрыгнуть. Словом… он так любит вспоминать это, что мне будут нужны средства на лечение ПТСР."),
 				}),
 			},
 			'Conditions', {
@@ -82,40 +82,40 @@ DefineClass.MD = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(232520855092, --[[ModItemUnitDataCompositeDef MD Text Offline ChatMessage voice:MD]] "Привет! Это доктор Майкл Доусон, и я не на месте. Если вы напишете мне ещё раз... Хотя кого я обманываю? Никто мне не пишет ещё раз. Все идут и нанимают настоящих, дорогих профессионалов вроде Сиднея или Доктора Кью."),
+			'Text', T(232520855092, --[[ModItemUnitDataCompositeDef MD Text Offline ChatMessage voice:MD]] "Привет! Это доктор Майкл Доусон. Не могу разговаривать. Перезвоните позже… А, хотя зачем я стараюсь? Никто не перезвонит. Возьмут и обратятся к людям подороже, поопытнее... к Сиднею там или Доку Кью."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(844200702211, --[[ModItemUnitDataCompositeDef MD Text GreetingAndOffer ChatMessage voice:MD]] "Привет! Это точно не розыгрыш? А то в прошлый раз кто-то из коллег позвонил мне, представился чужим именем и заманил на две недели в Камбоджу. Так вы точно настоящий наниматель?"),
+			'Text', T(844200702211, --[[ModItemUnitDataCompositeDef MD Text GreetingAndOffer ChatMessage voice:MD]] "Привет. А это не розыгрыш? А то мне позвонил один наёмник, представился чужим именем и я на две недели застрял в Камбодже. Это ведь реальное предложение?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(156327251175, --[[ModItemUnitDataCompositeDef MD Text ConversationRestart ChatMessage voice:MD]] "Ох, слава богу! Я уже думал, что вам не подхожу."),
+			'Text', T(156327251175, --[[ModItemUnitDataCompositeDef MD Text ConversationRestart ChatMessage voice:MD]] "Ох, слава Богу! Думал вы меня отвергли."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(514838144823, --[[ModItemUnitDataCompositeDef MD Text IdleLine ChatMessage voice:MD]] "М-м-м... вы там, надеюсь, не передумали? Ведь не передумали же?"),
+			'Text', T(514838144823, --[[ModItemUnitDataCompositeDef MD Text IdleLine ChatMessage voice:MD]] "А-а-м-м-м... Вы же не передумали меня брать, нет? Да?"),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(204072676737, --[[ModItemUnitDataCompositeDef MD Text PartingWords ChatMessage voice:MD]] "Ух ты. Я уже и не надеялся. Вы... вы уверены, что хотите меня нанять?"),
+			'Text', T(204072676737, --[[ModItemUnitDataCompositeDef MD Text PartingWords ChatMessage voice:MD]] "Ух ты! Я уж и не надеялся. Уверены? Точно? Вы ничего не спутали? Точно-точно???"),
 		}),
 		PlaceObj('ChatMessage', {
-			'Text', T(248975416845, --[[ModItemUnitDataCompositeDef MD Text PartingWords ChatMessage voice:MD]] "Ну то есть да, конечно же, вы уверены. Как глупо с моей стороны. Простите. Так куда мы отправляемся? В Африку? Пойду упакую шорты."),
+			'Text', T(248975416845, --[[ModItemUnitDataCompositeDef MD Text PartingWords ChatMessage voice:MD]] "Что это я… конечно ничего... Т-то есть конечно точно. Глупости говорю, простите. Так куда отправляемся? В Африку? Ой, я шортики возьму."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(141535236983, --[[ModItemUnitDataCompositeDef MD Text RehireIntro ChatMessage voice:MD]] "М-м-м... Даже и не знаю, как сказать, но... мой м-м-м... контракт. Он, знаете ли... скоро заканчивается. Может быть, я мог бы продолжить работать на вас?"),
+			'Text', T(141535236983, --[[ModItemUnitDataCompositeDef MD Text RehireIntro ChatMessage voice:MD]] "М-м-м... Даже не знаю, как сказать, но… м-м-мой контракт… заканчивается. Видимо. Можем, продлить его, если не против."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(169241431651, --[[ModItemUnitDataCompositeDef MD Text RehireOutro ChatMessage voice:MD]] "Это... ух ты. Спасибо вам! Ну, тогда я продолжу м-м-м... делать то, что делал всё это время?"),
+			'Text', T(169241431651, --[[ModItemUnitDataCompositeDef MD Text RehireOutro ChatMessage voice:MD]] "Вы… Ого! Спасибо! Я тогда пойду, э-э-у-у… продолжать вот это… всё — да?"),
 		}),
 	},
 	MedicalDeposit = "large",

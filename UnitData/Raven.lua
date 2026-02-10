@@ -86,6 +86,20 @@ DefineClass.Raven = {
 			},
 			'chanceToRoll', 100,
 		}),
+		PlaceObj('MercChatMitigation', {
+			'Lines', {
+				PlaceObj('ChatMessage', {
+					'Text', T(543496909776, --[[ModItemUnitDataCompositeDef Raven Text MercChatMitigation Lines ChatMessage voice:Raven]] "Честно говоря, мне это все не очень нравится, но в команде - доктор  Хьюстон, Паук. Она - то, что надо! Так что я согласна."),
+				}),
+			},
+			'Conditions', {
+				PlaceObj('UnitHireStatus', {
+					Status = "Hired",
+					TargetUnit = "Jazz_Spider",
+				}),
+			},
+			'chanceToRoll', 100,
+		}),
 	},
 	ExtraPartingWords = {
 		PlaceObj('MercChatBranch', {
@@ -152,6 +166,7 @@ DefineClass.Raven = {
 	MaxHitPoints = 85,
 	Likes = {
 		"Raider",
+		"Jazz_Spider",
 	},
 	StartingPerks = {
 		"AutoWeapons",

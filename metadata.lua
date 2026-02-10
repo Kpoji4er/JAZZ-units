@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 9,
-	'version', 2173,
+	'version', 2200,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -146,7 +146,7 @@ return PlaceObj('ModDef', {
 		"UnitData/MilitiaElite.lua",
 		"UnitData/Doctor_Leevsy.lua",
 		"UnitData/Merc_BarrySeal.lua",
-		"UnitData/Jazz_lynx.lua",
+		"UnitData/Jazz_Lynx.lua",
 		"UnitData/Jazz_Buzz.lua",
 		"UnitData/Jazz_Spider.lua",
 		"UnitData/JAZZ_Ivanov.lua",
@@ -208,8 +208,13 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
+<<<<<<< HEAD
 	'saved', 1769261138,
 	'code_hash', -3749099156651958422,
+=======
+	'saved', 1770488664,
+	'code_hash', 5963603501196941186,
+>>>>>>> refs/remotes/origin/main
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
@@ -8223,8 +8228,13 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
-			'Id', "Jazz_lynx",
+			'Id', "Jazz_Lynx",
 			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Lynx",
+			'ClassDisplayName', "Unit voice responses",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
@@ -8232,9 +8242,19 @@ return PlaceObj('ModDef', {
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Buzz",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
 			'Id', "Jazz_Spider",
 			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Spider",
+			'ClassDisplayName', "Unit voice responses",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
@@ -8257,14 +8277,14 @@ return PlaceObj('ModDef', {
 			'ClassDisplayName', "Banter",
 		}),
 		PlaceObj('ModResourcePreset', {
-			'Class', "VoiceResponse",
-			'Id', "JAZZ_Merc_Spouke",
-			'ClassDisplayName', "Unit voice responses",
-		}),
-		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
 			'Id', "JAZZ_Merc_Spouke",
 			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "JAZZ_Merc_Spouke",
+			'ClassDisplayName', "Unit voice responses",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
@@ -8475,6 +8495,26 @@ return PlaceObj('ModDef', {
 			'Class', "UnitDataCompositeDef",
 			'Id', "Barry",
 			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Raven",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Thor",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Vicki",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Wolf",
+			'ClassDisplayName', "Unit voice responses",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AppearancePreset",

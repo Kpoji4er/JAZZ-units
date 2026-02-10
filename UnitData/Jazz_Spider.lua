@@ -10,7 +10,7 @@ DefineClass.Jazz_Spider = {
 	Dexterity = 56,
 	Strength = 68,
 	Wisdom = 90,
-	Will = 62,
+	Will = 47,
 	Leadership = 16,
 	Marksmanship = 70,
 	Mechanical = 0,
@@ -19,94 +19,95 @@ DefineClass.Jazz_Spider = {
 	Portrait = "Mod/Dv3mFVN/Images/raw copy2Small.png",
 	BigPortrait = "Mod/Dv3mFVN/Images/raw copy2.png",
 	IsMercenary = true,
-	Name = T(473405123801, --[[ModItemUnitDataCompositeDef Jazz_Spider Name]] "Доктор Донна «Паук» Хьюстон"),
-	Nick = T(640915905655, --[[ModItemUnitDataCompositeDef Jazz_Spider Nick]] "Паук"),
-	AllCapsNick = T(334919557586, --[[ModItemUnitDataCompositeDef Jazz_Spider AllCapsNick]] "ПАУК"),
-	Bio = T(413054323111, --[[ModItemUnitDataCompositeDef Jazz_Spider Bio]] "A woman whose skills extend far beyond just firearms and medicine, Monica's resumé reads like she's applying for a lifetime achievement award. She recently produced a series of instructional videos called \"Be Better\" where she teaches the viewer the best ways to home school, perform CPR, shoot automatic weapons, maintain cardiovascular health and lift yourself out of depression through rigorous self-improvement. \n\nAlthough many wonder what she could possibly want from the mercenary life, most fellow A.I.M. members appreciate her expertise and thorough - if priggish - tutoring style."),
+	Name = T(513131038337, --[[ModItemUnitDataCompositeDef Jazz_Spider Name]] "Доктор Донна «Паук» Хьюстон"),
+	Nick = T(234064899192, --[[ModItemUnitDataCompositeDef Jazz_Spider Nick]] "Паук"),
+	AllCapsNick = T(641563680463, --[[ModItemUnitDataCompositeDef Jazz_Spider AllCapsNick]] "ПАУК"),
+	Bio = T(303546330037, --[[ModItemUnitDataCompositeDef Jazz_Spider Bio]] 'После ухода из Организации таких, без преувеличения "светил" полевой хирургии, как Митча Шудлема, Берни Гловлесса и "Стеллы" Траммелл по разным естественным и противоестественным причинам, проведение полевых операций с высоким риском травматизма (то есть, почти любых операций Организации) стало под угрозой отказа для потенциальных заказчиков. К счастью, "новая кровь" не замедлила влиться в наш дружный коллектив, чему мы несказанно рады. Конечно, мы не устаем задавться вопросом, что в полевых операциях забыла молодой и перспективный хирург-травматолог, держащий на собственных изящных плечах практически всю неотложную Damage-хирургию своего округа, но некоторые вопросы так и не должны быть заданы. Дело либо не в деньгах, либо наоборот, в деньгах настолько больших, что Организации лучше не знать подробностей. Так или иначе, Доктор Хьюстон вполне способна собрать человеческий паззл правильно, даже если от человека осталась только та часть, которая дышит. Однако, не стоит удивляться, если при этом ваша фамилия окажется вписана в графу напротив согласия на использование экспериментального препарата, не прошедшего клинические испытания. Позывной "Паук" пришел вместе с ней в организацию с легкой руки Кирка "Статика". Там какая-то своя история, мы не вникали. И все же, стоит заметить, что для человека без боевого опыта и хоть сколько-нибудь тренированной физической формы, Донна чрезвычайно мягко ступает, и видит в темноте, как кошка.'),
 	Nationality = "USA",
-	Title = T(212508535115, --[[ModItemUnitDataCompositeDef Jazz_Spider Title]] "Spider"),
-	Email = T(909543167512, --[[ModItemUnitDataCompositeDef Jazz_Spider Email]] "Spider@aim.com"),
-	snype_nick = T(942325356772, --[[ModItemUnitDataCompositeDef Jazz_Spider snype_nick]] "Spider"),
+	Title = T(717418830781, --[[ModItemUnitDataCompositeDef Jazz_Spider Title]] "Алмазная Донна полевой хирургии."),
+	Email = T(923960576868, --[[ModItemUnitDataCompositeDef Jazz_Spider Email]] "HoustonMD@aim.com"),
+	snype_nick = T(481545511185, --[[ModItemUnitDataCompositeDef Jazz_Spider snype_nick]] "HoustonMD"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(821279777478, --[[ModItemUnitDataCompositeDef Jazz_Spider Text MercChatRefusal Lines ChatMessage voice:Jazz_Spider]] "You've got Fox on your team. Obviously, you're more interested in the sizzle than the steak. Call me when you're looking for something more than a pretty face."),
+					'Text', T(302600089671, --[[ModItemUnitDataCompositeDef Jazz_Spider Text MercChatRefusal Lines ChatMessage voice:Jazz_Spider]] "Учитывая специфику нашей работы, я требую хотя бы минимум уважения. Я нахожу, что мисс Зондергад весьма невоспитана и чрезвычайно склонна к снобизму. Это просто невыносимо. Извините."),
 				}),
 			},
 			'Conditions', {
 				PlaceObj('UnitHireStatus', {
 					Status = "Hired",
-					TargetUnit = "Fox",
+					TargetUnit = "Buns",
 				}),
 			},
+			'chanceToRoll', 30,
 		}),
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(696989880464, --[[ModItemUnitDataCompositeDef Jazz_Spider Text MercChatRefusal Lines ChatMessage voice:Jazz_Spider]] "You have a man on your team called Reaper. He's a seriously disturbed individual. Some other time, perhaps."),
+					'Text', T(318587916867, --[[ModItemUnitDataCompositeDef Jazz_Spider Text MercChatRefusal Lines ChatMessage voice:Jazz_Spider]] "Очевидно, ваш бюджет не позволит вам адекватно оценить мою работу."),
 				}),
 			},
 			'Conditions', {
-				PlaceObj('UnitHireStatus', {
-					Status = "Hired",
-					TargetUnit = "Reaper",
-				}),
+				PlaceObj('MercChatConditionMoney', {}),
 			},
+			'chanceToRoll', 10,
 		}),
-	},
-	Haggles = {
-		PlaceObj('MercChatHaggle', {
+		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(225860032044, --[[ModItemUnitDataCompositeDef Jazz_Spider Text MercChatHaggle Lines ChatMessage voice:Jazz_Spider]] "I have not worked with you before. It is prudent to require some additional financial guarantees when that is the case."),
+					'Text', T(205050620277, --[[ModItemUnitDataCompositeDef Jazz_Spider Text MercChatRefusal Lines ChatMessage voice:Jazz_Spider]] "Не представляю, как можно это сделать. Как врач, я стараюсь уважать чужую жизнь, насколько это возможно при такой работе, конечно. Судя по вашей биографии, вы придерживаетесь другой философии. Я очень разборчива когда дело доходит до контракта. Вы для меня слегка... вульгарны, пожалуй."),
 				}),
 			},
 			'Conditions', {
-				PlaceObj('MercChatConditionRehire', {}),
+				PlaceObj('MercChatConditionDeathToll', {
+					PresetValue = "2+",
+				}),
 			},
-			'chanceToRoll', 20,
+			'chanceToRoll', 100,
 		}),
-	},
-	HaggleRehire = {
-		PlaceObj('MercChatHaggle', {
+		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(541271599319, --[[ModItemUnitDataCompositeDef Jazz_Spider Text MercChatHaggle Lines ChatMessage voice:Jazz_Spider]] "You hired that creep Reaper. There is something really, really wrong with him. If you want to keep me on, I will require extra compensation for the risks involved when working with such an individual."),
+					'Text', T(207048313891, --[[ModItemUnitDataCompositeDef Jazz_Spider Text MercChatRefusal Lines ChatMessage voice:Jazz_Spider]] "Не представляю, как можно это сделать. Как врач, я стараюсь уважать чужую жизнь, насколько это возможно при такой работе, конечно. Судя по вашей биографии, вы придерживаетесь другой философии. Я очень разборчива когда дело доходит до контракта. Вы для меня слегка... вульгарны, пожалуй."),
 				}),
 			},
 			'Conditions', {
-				PlaceObj('UnitHireStatus', {
-					Status = "Hired",
-					TargetUnit = "Reaper",
+				PlaceObj('MercChatConditionDeathToll', {
+					PresetValue = "2+",
 				}),
 			},
-		}),
-		PlaceObj('MercChatHaggle', {
-			'Lines', {
-				PlaceObj('ChatMessage', {
-					'Text', T(461566149527, --[[ModItemUnitDataCompositeDef Jazz_Spider Text MercChatHaggle Lines ChatMessage voice:Jazz_Spider]] "I don't know what possessed you to hire that useless swimsuit model, Fox. Her head is as empty as her breasts. I'm sure they're fake. Pretty sure. Anyway, I'll need more money if I am to tolerate her presence."),
-				}),
-			},
-			'Conditions', {
-				PlaceObj('UnitHireStatus', {
-					Status = "Hired",
-					TargetUnit = "Fox",
-				}),
-			},
+			'chanceToRoll', 100,
+			'Type', "rehire",
 		}),
 	},
+	Haggles = {},
+	HaggleRehire = {},
 	Mitigations = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(456946406060, --[[ModItemUnitDataCompositeDef Jazz_Spider Text MercChatMitigation Lines ChatMessage voice:Jazz_Spider]] "This is an offer I would normally refuse, but having Sidney on the team makes me feel like perhaps you know what you are doing. I'm in."),
+					'Text', T(579655211150, --[[ModItemUnitDataCompositeDef Jazz_Spider Text MercChatMitigation Lines ChatMessage voice:Jazz_Spider]] "Мы с Вики Вотерс отлично ладим. Поэтому я готова ответить на ваше предложение согласием, несмотря на некоторые сомнения. Я уверена, что вместе с Вики мы сумеем со всем этим справится."),
 				}),
 			},
 			'Conditions', {
 				PlaceObj('UnitHireStatus', {
 					Status = "Hired",
-					TargetUnit = "Sidney",
+					TargetUnit = "Vicki",
+				}),
+			},
+			'chanceToRoll', 100,
+		}),
+		PlaceObj('MercChatMitigation', {
+			'Lines', {
+				PlaceObj('ChatMessage', {
+					'Text', T(299698692708, --[[ModItemUnitDataCompositeDef Jazz_Spider Text MercChatMitigation Lines ChatMessage voice:Jazz_Spider]] "Я вовсе не в восторге от этого проекта. Но скажу без затей: по моему мнению, Сова - отличный товарищ, и я доверяю ей полностью. Поэтому - я согласна!"),
+				}),
+			},
+			'Conditions', {
+				PlaceObj('UnitHireStatus', {
+					Status = "Hired",
+					TargetUnit = "Raven",
 				}),
 			},
 			'chanceToRoll', 100,
@@ -114,45 +115,43 @@ DefineClass.Jazz_Spider = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(924338138228, --[[ModItemUnitDataCompositeDef Jazz_Spider Text Offline ChatMessage voice:Jazz_Spider]] "This is Monica Sondergaard. You have naturally been drawn to my superior skills and neat and efficient manner. I am currently unavailable. Please contact me at another time. "),
+			'Text', T(954128588772, --[[ModItemUnitDataCompositeDef Jazz_Spider Text Offline ChatMessage voice:Jazz_Spider]] "Доктор Хьюстон. Меня нет на месте, но, если вы оставите сообщение, кто-нибудь свяжется с вами в ближайшее время. Если нужна срочная медицинская помощь, позвоните в клинику по номеру JL5-1494."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(960164746944, --[[ModItemUnitDataCompositeDef Jazz_Spider Text GreetingAndOffer ChatMessage voice:Jazz_Spider]] "Hello. This is Monica Sondergaard. It is a pleasure to meet you. I assume this is about a job and you were drawn to my superior skills and overall neatness."),
+			'Text', T(898527816735, --[[ModItemUnitDataCompositeDef Jazz_Spider Text GreetingAndOffer ChatMessage voice:Jazz_Spider]] "Доктор Хьюстон. Чем могу служить? Хорошо, поговорим о том, насколько долгий контракт вы собирались мне предложить."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(409216589716, --[[ModItemUnitDataCompositeDef Jazz_Spider Text ConversationRestart ChatMessage voice:Jazz_Spider]] "It is rude to end conversations abruptly but I will forgive you. Let us proceed."),
+			'Text', T(334995525715, --[[ModItemUnitDataCompositeDef Jazz_Spider Text ConversationRestart ChatMessage voice:Jazz_Spider]] " Простите, я хотела сказать... Послушайте, у меня есть и другие дела на сегодня!"),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(926700611223, --[[ModItemUnitDataCompositeDef Jazz_Spider Text IdleLine ChatMessage voice:Jazz_Spider]] "I do not tolerate time-wasting but I will make an exception. Benevolence is one of my many virtues. Now, let us continue."),
+			'Text', T(669174238474, --[[ModItemUnitDataCompositeDef Jazz_Spider Text IdleLine ChatMessage voice:Jazz_Spider]] "Я слишком занята. Обязательно позвоните мне, когда выясните для себя, что вам, собственно, нужно."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(761489747842, --[[ModItemUnitDataCompositeDef Jazz_Spider Text PartingWords ChatMessage voice:Jazz_Spider]] "Very well. I look forward to working with you."),
+			'Text', T(499758495969, --[[ModItemUnitDataCompositeDef Jazz_Spider Text PartingWords ChatMessage voice:Jazz_Spider]] "Отлично, похоже, что все в порядке. Готова к службе!"),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(969064377190, --[[ModItemUnitDataCompositeDef Jazz_Spider Text RehireIntro ChatMessage voice:Jazz_Spider]] "Hello. My contract is expiring. The team will suffer without my superior skill set so I am willing to continue our arrangement."),
+			'Text', T(569935050433, --[[ModItemUnitDataCompositeDef Jazz_Spider Text RehireIntro ChatMessage voice:Jazz_Spider]] "Похоже, мой контракт почти закончен. Поговорим о продлении, или мне подумать о другой работе?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(332091324607, --[[ModItemUnitDataCompositeDef Jazz_Spider Text RehireOutro ChatMessage voice:Jazz_Spider]] "Good. I am pleased we could come to an agreement to continue our contract."),
+			'Text', T(506384671724, --[[ModItemUnitDataCompositeDef Jazz_Spider Text RehireOutro ChatMessage voice:Jazz_Spider]] "Очень хорошо! Я с нетерпением жду новых заданий."),
 		}),
 	},
 	MedicalDeposit = "large",
-	StartingSalary = 800,
-	SalaryIncrease = 200,
 	SalaryLv1 = 400,
 	SalaryMaxLv = 4300,
-	LegacyNotes = '"The prim and proper Monica Sondergaard may seem to be an unlikely candidate for the rough and tumble mercenary life, but she more than meets the minimum requirements. Before settling on A.I.M., Buns explored a number of careers: kindergarten teacher, geriatric nurse, Danish sharpshooter at the Atlanta Olympic games, and professional soldier."\n\nAdditional info:\n\nA prim and proper prude, her uptightedness goes hand-in-hand with her professionalism and skill.\nBelieves herself better than anyone else.\nHas a sense of superiority. She\'s a merc because she wants to, not because she has to.\nPuts her feelings before logic.\nTo a Danish person her dialect sounds German or Russian. (To a person with knowledge of the russian language and accent she definitely doesn\'t sound any russian at all. Ivan Dolvich has classic russian accent)',
+	LegacyNotes = "",
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 		self:TryEquip(items, "Handheld B", "Firearm")
@@ -181,6 +180,6 @@ DefineClass.Jazz_Spider = {
 	Specialization = "Doctor",
 	pollyvoice = "Amy",
 	gender = "Female",
-	VoiceResponseId = "Buns",
+	VoiceResponseId = "Jazz_Spider",
 }
 

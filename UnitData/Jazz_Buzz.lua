@@ -6,165 +6,190 @@ DefineClass.Jazz_Buzz = {
 
 	object_class = "UnitData",
 	Health = 71,
-	Agility = 84,
-	Dexterity = 47,
+	Agility = 85,
+	Dexterity = 64,
 	Strength = 68,
 	Wisdom = 90,
-	Will = 49,
 	Leadership = 13,
 	Marksmanship = 96,
 	Mechanical = 5,
 	Explosives = 19,
-	Medical = 0,
+	Medical = 15,
 	Portrait = "Mod/Dv3mFVN/Images/buzzsmall 3.png",
 	BigPortrait = "Mod/Dv3mFVN/Images/buzzbig 2.png",
 	IsMercenary = true,
-	Name = T(753330501613, --[[ModItemUnitDataCompositeDef Jazz_Buzz Name]] 'Луиза "Тоска" Гарно'),
+	Name = T(753330501613, --[[ModItemUnitDataCompositeDef Jazz_Buzz Name]] "Луиза Гарно «Тоска»"),
 	Nick = T(980611805568, --[[ModItemUnitDataCompositeDef Jazz_Buzz Nick]] "Тоска"),
 	AllCapsNick = T(971951422708, --[[ModItemUnitDataCompositeDef Jazz_Buzz AllCapsNick]] "ТОСКА"),
-	Bio = T(499440250102, --[[ModItemUnitDataCompositeDef Jazz_Buzz Bio]] "A woman whose skills extend far beyond just firearms and medicine, Monica's resumé reads like she's applying for a lifetime achievement award. She recently produced a series of instructional videos called \"Be Better\" where she teaches the viewer the best ways to home school, perform CPR, shoot automatic weapons, maintain cardiovascular health and lift yourself out of depression through rigorous self-improvement. \n\nAlthough many wonder what she could possibly want from the mercenary life, most fellow A.I.M. members appreciate her expertise and thorough - if priggish - tutoring style."),
-	Nationality = "Denmark",
-	Title = T(335290711519, --[[ModItemUnitDataCompositeDef Jazz_Buzz Title]] "Buns Will Teach You"),
-	Email = T(515826095239, --[[ModItemUnitDataCompositeDef Jazz_Buzz Email]] "MonicaSondergaard@aim.com"),
-	snype_nick = T(229551591966, --[[ModItemUnitDataCompositeDef Jazz_Buzz snype_nick]] "MonicaSondergaard"),
+	Bio = T(499440250102, --[[ModItemUnitDataCompositeDef Jazz_Buzz Bio]] 'После скандального расставания с Робертсом "Рысью", о котором, наверное, слышали даже марсиане, Луиза ожесточилась и возненавидела, кажется, вообще всех людей. Рысь - за то что он есть, себя - за то что была к нему привязана, мужчин - за то, что Рысь - мужчина, женщин - за то, что они рожают мужчин. И быть бы беде, если б один незадачливый наниматель не пригласил их обоих в команду, нанимая AIM для освобождения заложников на нефтяной платформе, захваченной радикальным крылом зоозащитной организации. Робертс поимел ... неосторожность получить тяжелое ранение в ходе операции и это привело Тоску в состояние неописуемой ярости. Буквально - описать то, что происходило на платформе, не смог никто. Зоозащитникам понадобилось новое боевое крыло, нанимателю  - новая нефтяная платформа, а заложники были найдены в состоянии крайнего истощения через неделю на самодельном плоту в Атлантическом океане. Так или иначе, Луиза готова к выполнению заданий как никто другой, и горе тому, кто попробует ее разозлить.\n'),
+	Nationality = "USA",
+	Title = T(335290711519, --[[ModItemUnitDataCompositeDef Jazz_Buzz Title]] "Посмотри ей в глаза"),
+	Email = T(515826095239, --[[ModItemUnitDataCompositeDef Jazz_Buzz Email]] "LouisaGarneau@aim.com"),
+	snype_nick = T(229551591966, --[[ModItemUnitDataCompositeDef Jazz_Buzz snype_nick]] "lonelyandsad"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(982241068756, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text MercChatRefusal Lines ChatMessage voice:Jazz_Buzz]] "You've got Fox on your team. Obviously, you're more interested in the sizzle than the steak. Call me when you're looking for something more than a pretty face."),
+					'Text', T(444688786443, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text MercChatRefusal Lines ChatMessage voice:Jazz_Buzz]] "Я в этом участвовать не буду, да и тебе это на самом деле не нужно. Иначе Рысь - покойник."),
 				}),
 			},
 			'Conditions', {
 				PlaceObj('UnitHireStatus', {
 					Status = "Hired",
-					TargetUnit = "Fox",
+					TargetUnit = "Jazz_Lynx",
 				}),
 			},
+			'chanceToRoll', 30,
 		}),
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(805740776486, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text MercChatRefusal Lines ChatMessage voice:Jazz_Buzz]] "You have a man on your team called Reaper. He's a seriously disturbed individual. Some other time, perhaps."),
+					'Text', T(786568878374, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text MercChatRefusal Lines ChatMessage voice:Jazz_Buzz]] "Ага, конечно. Как будто ты имеешь хоть малейшее представление о том, что делаешь! Иди, проветрись!"),
+				}),
+			},
+			'chanceToRoll', 10,
+		}),
+		PlaceObj('MercChatRefusal', {
+			'Lines', {
+				PlaceObj('ChatMessage', {
+					'Text', T(759861895798, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text MercChatRefusal Lines ChatMessage voice:Jazz_Buzz]] "Не представляю, как. Тебе наверняка придется продать свой труп на опыты, чтобы мне заплатить, а я столько ждать не собираюсь."),
 				}),
 			},
 			'Conditions', {
-				PlaceObj('UnitHireStatus', {
-					Status = "Hired",
-					TargetUnit = "Reaper",
+				PlaceObj('MercChatConditionMoney', {}),
+			},
+			'chanceToRoll', 20,
+		}),
+		PlaceObj('MercChatRefusal', {
+			'Lines', {
+				PlaceObj('ChatMessage', {
+					'Text', T(247207957208, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text MercChatRefusal Lines ChatMessage voice:Jazz_Buzz]] "Ну да, я тут сижу и жду, когда ты появишься. У меня другие планы."),
 				}),
 			},
+			'chanceToRoll', 20,
 		}),
 	},
 	Haggles = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(494807403174, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text MercChatHaggle Lines ChatMessage voice:Jazz_Buzz]] "I have not worked with you before. It is prudent to require some additional financial guarantees when that is the case."),
+					'Text', T(292221319285, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text MercChatHaggle Lines ChatMessage voice:Jazz_Buzz]] "Подумай еще разок. Меня может вырвать от одной мысли, что придется опять общаться с Рысью. Я просто говорю, что меня... вырвет, именно так."),
+				}),
+				PlaceObj('ChatMessage', {
+					'Text', T(522569897458, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text MercChatHaggle Lines ChatMessage voice:Jazz_Buzz]] "Я пойду... Только держи от меня подальше этого сукиного сына Рысь и всех остальных мужиков тоже."),
 				}),
 			},
 			'Conditions', {
-				PlaceObj('MercChatConditionRehire', {}),
+				PlaceObj('UnitHireStatus', {
+					Status = "Hired",
+					TargetUnit = "Jazz_Lynx",
+				}),
 			},
-			'chanceToRoll', 20,
+			'chanceToRoll', 30,
 		}),
 	},
 	HaggleRehire = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(103790630999, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text MercChatHaggle Lines ChatMessage voice:Jazz_Buzz]] "You hired that creep Reaper. There is something really, really wrong with him. If you want to keep me on, I will require extra compensation for the risks involved when working with such an individual."),
+					'Text', T(554240280022, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text MercChatHaggle Lines ChatMessage voice:Jazz_Buzz]] "Подумай еще разок. Меня может вырвать от одной мысли, что придется опять общаться с Рысью. Я просто говорю, что меня... вырвет, именно так."),
 				}),
-			},
-			'Conditions', {
-				PlaceObj('UnitHireStatus', {
-					Status = "Hired",
-					TargetUnit = "Reaper",
-				}),
-			},
-		}),
-		PlaceObj('MercChatHaggle', {
-			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(528516598797, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text MercChatHaggle Lines ChatMessage voice:Jazz_Buzz]] "I don't know what possessed you to hire that useless swimsuit model, Fox. Her head is as empty as her breasts. I'm sure they're fake. Pretty sure. Anyway, I'll need more money if I am to tolerate her presence."),
+					'Text', T(983520435571, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text MercChatHaggle Lines ChatMessage voice:Jazz_Buzz]] "Что я могу сказать? Я имею полное право потребовать большего."),
 				}),
 			},
 			'Conditions', {
 				PlaceObj('UnitHireStatus', {
 					Status = "Hired",
-					TargetUnit = "Fox",
+					TargetUnit = "Jazz_Lynx",
 				}),
 			},
+			'chanceToRoll', 30,
 		}),
 	},
 	Mitigations = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(954566012855, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text MercChatMitigation Lines ChatMessage voice:Jazz_Buzz]] "This is an offer I would normally refuse, but having Sidney on the team makes me feel like perhaps you know what you are doing. I'm in."),
+					'Text', T(428218963534, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text MercChatMitigation Lines ChatMessage voice:Jazz_Buzz]] "Я бы осталась тут с Рысью еще ненадолго."),
 				}),
 			},
 			'Conditions', {
 				PlaceObj('UnitHireStatus', {
 					Status = "Hired",
-					TargetUnit = "Sidney",
+					TargetUnit = "Jazz_Lynx",
 				}),
 			},
-			'chanceToRoll', 100,
+			'chanceToRoll', 30,
+		}),
+	},
+	ExtraPartingWords = {
+		PlaceObj('MercChatBranch', {
+			'Lines', {
+				PlaceObj('ChatMessage', {
+					'Text', T(995807055541, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text MercChatBranch Lines ChatMessage voice:Jazz_Buzz]] "Если тебе нужен настоящий профи, ну, или, по крайней мере, настоящий красавчик, обратись к Рыси."),
+				}),
+			},
+			'Conditions', {
+				PlaceObj('UnitHireStatus', {
+					TargetUnit = "Jazz_Lynx",
+				}),
+			},
 		}),
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(989297701636, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text Offline ChatMessage voice:Jazz_Buzz]] "This is Monica Sondergaard. You have naturally been drawn to my superior skills and neat and efficient manner. I am currently unavailable. Please contact me at another time. "),
+			'Text', T(708253621531, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text Offline ChatMessage voice:Jazz_Buzz]] "Тоски Гарно сейчас нет. Скажите, что нужно. Учтите, что все лица мужского пола успеют сто раз умереть, прежде чем я им перезвоню."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(717722918473, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text GreetingAndOffer ChatMessage voice:Jazz_Buzz]] "Hello. This is Monica Sondergaard. It is a pleasure to meet you. I assume this is about a job and you were drawn to my superior skills and overall neatness."),
+			'Text', T(965333256165, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text GreetingAndOffer ChatMessage voice:Jazz_Buzz]] "Так к какому решению ты собираешься придти?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(807010058203, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text ConversationRestart ChatMessage voice:Jazz_Buzz]] "It is rude to end conversations abruptly but I will forgive you. Let us proceed."),
+			'Text', T(500434425609, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text ConversationRestart ChatMessage voice:Jazz_Buzz]] "Слушай внимательно. Я сказала..."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(967496388609, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text IdleLine ChatMessage voice:Jazz_Buzz]] "I do not tolerate time-wasting but I will make an exception. Benevolence is one of my many virtues. Now, let us continue."),
+			'Text', T(500086555472, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text IdleLine ChatMessage voice:Jazz_Buzz]] "Ты заметил, как я стреляю? Я умею обращаться с любым оружием!"),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(301863070084, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text PartingWords ChatMessage voice:Jazz_Buzz]] "Very well. I look forward to working with you."),
+			'Text', T(517772094687, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text PartingWords ChatMessage voice:Jazz_Buzz]] "Ладно... я так думаю."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(545215268578, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text RehireIntro ChatMessage voice:Jazz_Buzz]] "Hello. My contract is expiring. The team will suffer without my superior skill set so I am willing to continue our arrangement."),
+			'Text', T(150639393097, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text RehireIntro ChatMessage voice:Jazz_Buzz]] "Ты хочешь, чтобы я еще осталась, или как?"),
+		}),
+		PlaceObj('ChatMessage', {
+			'Text', T(300114486496, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text RehireIntro ChatMessage voice:Jazz_Buzz]] "Просто, чтобы ты знал - контракт почти закончен."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(464662860223, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text RehireOutro ChatMessage voice:Jazz_Buzz]] "Good. I am pleased we could come to an agreement to continue our contract."),
+			'Text', T(713865724075, --[[ModItemUnitDataCompositeDef Jazz_Buzz Text RehireOutro ChatMessage voice:Jazz_Buzz]] "Окей, я остаюсь."),
 		}),
 	},
 	MedicalDeposit = "large",
-	StartingSalary = 655,
-	SalaryIncrease = 260,
-	SalaryLv1 = 400,
+	Haggling = "high",
+	StartingSalary = 1950,
+	SalaryIncrease = 300,
+	SalaryLv1 = 700,
 	SalaryMaxLv = 4300,
-	LegacyNotes = '"The prim and proper Monica Sondergaard may seem to be an unlikely candidate for the rough and tumble mercenary life, but she more than meets the minimum requirements. Before settling on A.I.M., Buns explored a number of careers: kindergarten teacher, geriatric nurse, Danish sharpshooter at the Atlanta Olympic games, and professional soldier."\n\nAdditional info:\n\nA prim and proper prude, her uptightedness goes hand-in-hand with her professionalism and skill.\nBelieves herself better than anyone else.\nHas a sense of superiority. She\'s a merc because she wants to, not because she has to.\nPuts her feelings before logic.\nTo a Danish person her dialect sounds German or Russian. (To a person with knowledge of the russian language and accent she definitely doesn\'t sound any russian at all. Ivan Dolvich has classic russian accent)',
-	StartingLevel = 2,
+	LegacyNotes = "",
+	StartingLevel = 4,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 		self:TryEquip(items, "Handheld B", "Firearm")
 	end,
 	MaxHitPoints = 79,
 	Likes = {
-		"Sidney",
-	},
-	Dislikes = {
-		"Fox",
-		"Reaper",
+		"Jazz_Lynx",
 	},
 	StartingPerks = {
 		"Jazz_Perk_Buzz",
@@ -183,10 +208,10 @@ DefineClass.Jazz_Buzz = {
 	Equipment = {
 		"Loot_JAZZ_Buzz",
 	},
-	Tier = "Veteran",
+	Tier = "Elite",
 	Specialization = "Autoriflemen",
 	pollyvoice = "Amy",
 	gender = "Female",
-	VoiceResponseId = "Buns",
+	VoiceResponseId = "Jazz_Buzz",
 }
 

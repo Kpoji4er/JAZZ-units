@@ -31,7 +31,7 @@ DefineClass.Omryn = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(455048670549, --[[ModItemUnitDataCompositeDef Omryn Text MercChatHaggle Lines ChatMessage voice:Omryn]] "Плохой знак, главный. Работать будет трудно. Трудная работа - больше кушать, однако."),
+					'Text', T(455048670549, --[[ModItemUnitDataCompositeDef Omryn Text MercChatHaggle Lines ChatMessage voice:Omryn]] "Эээ, плохие знаки чую, начальник. Работа непростая будет. Трудная работа - больше кушать, однако."),
 				}),
 			},
 			'Conditions', {},
@@ -42,7 +42,7 @@ DefineClass.Omryn = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(885814480955, --[[ModItemUnitDataCompositeDef Omryn Text MercChatHaggle Lines ChatMessage voice:Omryn]] "Мне нравится работать на тебя, главный, но еды даёшь очень мало. Дай больше денег на еду, чтоб я не голодал, и мы договоримся."),
+					'Text', T(885814480955, --[[ModItemUnitDataCompositeDef Omryn Text MercChatHaggle Lines ChatMessage voice:Omryn]] "Работа нравится, начальник, только вот жратвы мала-мала не хватает. Жрать хочется всегда, давай денег больше. Уговор?"),
 				}),
 			},
 			'Conditions', {},
@@ -51,7 +51,7 @@ DefineClass.Omryn = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(956878799729, --[[ModItemUnitDataCompositeDef Omryn Text MercChatHaggle Lines ChatMessage voice:Omryn]] "Много битв, главный, а сна мало. Если не отдохну - голова кружиться будет. Надо больше еды, однако. Больше денег - больше еды. Дай больше денег, и мы договоримся."),
+					'Text', T(956878799729, --[[ModItemUnitDataCompositeDef Omryn Text MercChatHaggle Lines ChatMessage voice:Omryn]] "Драться заставляешь, начальник. а выспаться не даешь. Без сна какой я работник? И пожрать бы. И вообще. Денег давай. Уговор?"),
 				}),
 			},
 			'Conditions', {
@@ -63,37 +63,37 @@ DefineClass.Omryn = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(902519634531, --[[ModItemUnitDataCompositeDef Omryn Text Offline ChatMessage voice:Omryn]] "Это Омрын. День духов, однако. Работать нельзя. Я скажу, когда день духов закончится."),
+			'Text', T(902519634531, --[[ModItemUnitDataCompositeDef Omryn Text Offline ChatMessage voice:Omryn]] "Омрын у аппарата. День духов, однако. Работать никак нельзя. Я сам скажу, когда день духов закончится."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(927832147316, --[[ModItemUnitDataCompositeDef Omryn Text GreetingAndOffer ChatMessage voice:Omryn]] "Я Омрын. Ты - главный? Ты даёшь Омрыну работу? А она несложная?"),
+			'Text', T(927832147316, --[[ModItemUnitDataCompositeDef Omryn Text GreetingAndOffer ChatMessage voice:Omryn]] "Омрын у аппарата. Ты, что ли, тут начальник? Работу мала-мала даешь? Только чтоб нетяжелую."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(620358003115, --[[ModItemUnitDataCompositeDef Omryn Text ConversationRestart ChatMessage voice:Omryn]] "Ты уходил спать? Спать - полезно, однако. Вот поговорю с тобой - тоже буду спать."),
+			'Text', T(620358003115, --[[ModItemUnitDataCompositeDef Omryn Text ConversationRestart ChatMessage voice:Omryn]] "Ты там подушку придавил, да? Спать - хорошо, однако. А хорошо поспать - еще лучше. Вот поговорим, я тоже прикорну."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(343432743008, --[[ModItemUnitDataCompositeDef Omryn Text IdleLine ChatMessage voice:Omryn]] "Молодец, однако. Тоже перекусить ходишь. Мы с тобой поладим, главный!"),
+			'Text', T(343432743008, --[[ModItemUnitDataCompositeDef Omryn Text IdleLine ChatMessage voice:Omryn]] "Это ты хорошо придумал, вприкуску разговоры разговаривать. Это мы с тобой поладим, начальник."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(441195752933, --[[ModItemUnitDataCompositeDef Omryn Text PartingWords ChatMessage voice:Omryn]] "Хорошо. Договорились. Я приду в этот твой Гран-Шьен. Но сперва надо поесть и поспать. Сил набраться, однако!"),
+			'Text', T(441195752933, --[[ModItemUnitDataCompositeDef Omryn Text PartingWords ChatMessage voice:Omryn]] "Отлично, начальник! Уговор! Поеду я в твой Гранд-шьен. Вот только поем сначала. И храпака дам минут на триста. Чтоб силы набраться, однако."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(280135101598, --[[ModItemUnitDataCompositeDef Omryn Text RehireIntro ChatMessage voice:Omryn]] "Главный, контракт кончается! Омрыну нужны деньги на еду. Давай новый контракт делать!"),
+			'Text', T(280135101598, --[[ModItemUnitDataCompositeDef Omryn Text RehireIntro ChatMessage voice:Omryn]] "Контракт выходит, начальник! Омрыну,  жрать надо будет, а для такого надо денег заработать. Давай по-новой контракт заводить."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(763826917260, --[[ModItemUnitDataCompositeDef Omryn Text RehireOutro ChatMessage voice:Omryn]] "Договорились. Теперь можно поесть и поспать, однако."),
+			'Text', T(763826917260, --[[ModItemUnitDataCompositeDef Omryn Text RehireOutro ChatMessage voice:Omryn]] "Уговор. Теперь и поесть можно. А как поедим, можно и поспать."),
 		}),
 	},
 	StartingSalary = 650,

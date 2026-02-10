@@ -46,7 +46,7 @@ DefineClass.Grizzly = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(515442003007, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatHaggle Lines ChatMessage voice:Grizzly]] "У тебя в отряде сплошь иностранцы. Что, трудно было нормальных американцев набрать? Нет, я не расист, но если хочешь, чтоб я доверил свою жизнь чёртовым иностранцам, придётся доплатить."),
+					'Text', T(515442003007, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatHaggle Lines ChatMessage voice:Grizzly]] "У тебя в отряде сплошь иностранцы. Чё, трудно было нормальных американских вояк набрать? Нет, я не расист, но если хочешь, чтоб я доверил свою жизнь чумазым иностранцам, придётся доплатить."),
 				}),
 			},
 			'Conditions', {
@@ -62,7 +62,7 @@ DefineClass.Grizzly = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(330985534421, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatMitigation Lines ChatMessage voice:Grizzly]] "Я и моя Тень? Мы с ним одной закваски. Я в деле."),
+					'Text', T(330985534421, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatMitigation Lines ChatMessage voice:Grizzly]] "Я и моя Тень? Мы с ним одной закваски! Блин, я в деле!"),
 				}),
 			},
 			'Conditions', {
@@ -104,7 +104,7 @@ DefineClass.Grizzly = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(467797906670, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatBranch Lines ChatMessage voice:Grizzly]] "Волк мне - считай, братишка. Не хочешь и его тоже позвать? Он отличный солдат."),
+					'Text', T(467797906670, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatBranch Lines ChatMessage voice:Grizzly]] "Ооо, а хочешь услышать, как мы с Волком на пару завываем? Он-то мне - считай, братишка. Может, позовёшь его? Он отличный солдат, клык даю. "),
 				}),
 			},
 			'Conditions', {
@@ -126,12 +126,12 @@ DefineClass.Grizzly = {
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(261408286901, --[[ModItemUnitDataCompositeDef Grizzly Text ConversationRestart ChatMessage voice:Grizzly]] "Попробуем ещё разок. Может, ещё договоримся."),
+			'Text', T(261408286901, --[[ModItemUnitDataCompositeDef Grizzly Text ConversationRestart ChatMessage voice:Grizzly]] "Попробуем ещё разок. Может, ты и выйдешь из спячки."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(672618998313, --[[ModItemUnitDataCompositeDef Grizzly Text IdleLine ChatMessage voice:Grizzly]] "Кончай тормозить. Куй железо, пока горячо."),
+			'Text', T(672618998313, --[[ModItemUnitDataCompositeDef Grizzly Text IdleLine ChatMessage voice:Grizzly]] "Кончай лапу сосать. Куй железо, пока горячо."),
 		}),
 	},
 	PartingWords = {

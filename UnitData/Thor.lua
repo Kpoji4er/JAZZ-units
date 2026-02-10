@@ -87,6 +87,20 @@ DefineClass.Thor = {
 			},
 			'chanceToRoll', 100,
 		}),
+		PlaceObj('MercChatMitigation', {
+			'Lines', {
+				PlaceObj('ChatMessage', {
+					'Text', T(457634741369, --[[ModItemUnitDataCompositeDef Thor Text MercChatMitigation Lines ChatMessage voice:Thor]] "Я многому научился у Паука, и еще большему научусь. Всегда готов поработать с ней в паре, а раз уж она работает на вас, то значит и я согласен."),
+				}),
+			},
+			'Conditions', {
+				PlaceObj('UnitHireStatus', {
+					Status = "Hired",
+					TargetUnit = "Jazz_Spider",
+				}),
+			},
+			'chanceToRoll', 100,
+		}),
 	},
 	ExtraPartingWords = {
 		PlaceObj('MercChatBranch', {
@@ -147,6 +161,7 @@ DefineClass.Thor = {
 	MaxHitPoints = 96,
 	Likes = {
 		"Ice",
+		"Jazz_Spider",
 	},
 	LearnToLike = {
 		"Omryn",
