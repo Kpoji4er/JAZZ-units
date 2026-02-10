@@ -45,11 +45,15 @@ DefineClass.Merc_BarrySeal = {
 	StartingPerks = {
 		"NightOps",
 		"Negotiator",
+		"Chaaaarge",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
 			'Preset', "ForeignMerc_01",
 		}),
+	},
+	Equipment = {
+		"Ice",
 	},
 	AdditionalGroups = {},
 	gender = "Male",

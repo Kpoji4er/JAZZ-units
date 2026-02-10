@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 9,
-	'version', 2170,
+	'version', 2173,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -198,6 +198,7 @@ return PlaceObj('ModDef', {
 		"Code/StatGainRework.lua",
 		"CharacterEffect/TheGrim.lua",
 		"CharacterEffect/VengefulTemperament.lua",
+		"CharacterEffect/Chaaaarge.lua",
 	},
 	'loctables', {
 		{
@@ -207,8 +208,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1769148306,
-	'code_hash', 4926954953397121879,
+	'saved', 1769261138,
+	'code_hash', -3749099156651958422,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
@@ -8730,6 +8731,11 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "CharacterEffectCompositeDef",
 			'Id', "VengefulTemperament",
+			'ClassDisplayName', "Character effect",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "CharacterEffectCompositeDef",
+			'Id', "Chaaaarge",
 			'ClassDisplayName', "Character effect",
 		}),
 	},
