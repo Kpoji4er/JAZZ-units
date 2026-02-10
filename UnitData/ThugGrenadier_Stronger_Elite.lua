@@ -27,6 +27,10 @@ DefineClass.ThugGrenadier_Stronger_Elite = {
 	archetype = "Skirmisher",
 	role = "Demolitions",
 	MaxAttacks = 2,
+	CustomEquipGear = function (self, items)
+		self:TryEquip(items, "Handheld A", "Firearm")
+		self:TryEquip(items, "Handheld B", "Firearm")
+	end,
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"Throwing",
@@ -44,7 +48,7 @@ DefineClass.ThugGrenadier_Stronger_Elite = {
 		}),
 	},
 	Equipment = {
-		"LegionT3_BattleRifle_Elite",
+		"LegionT2_RifleSemi",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

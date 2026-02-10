@@ -35639,7 +35639,6 @@ return {
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
 				self:TryEquip(items, "Handheld B", "MeleeWeapon")
-				self:TryLoadAmmo("Handheld A", "Shotgun", "_12gauge_Breacher")
 			end,
 			'MaxHitPoints', 100,
 			'StartingPerks', {
@@ -35676,6 +35675,70 @@ return {
 				}),
 			},
 			'pollyvoice', "Joey",
+			'gender', "Male",
+			'VoiceResponseId', "ThugGunner",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "Thugs",
+			'Id', "ThugCutter_Stronger_Elite",
+			'object_class', "UnitData",
+			'Health', 88,
+			'Agility', 96,
+			'Dexterity', 91,
+			'Strength', 91,
+			'Wisdom', 79,
+			'Leadership', 9,
+			'Marksmanship', 38,
+			'Mechanical', 0,
+			'Explosives', 11,
+			'Medical', 0,
+			'Portrait', "UI/EnemiesPortraits/ThugRecon",
+			'Name', T(172909044395, --[[ModItemUnitDataCompositeDef ThugCutter_Stronger_Elite Name]] "Badass Slasher"),
+			'Randomization', true,
+			'Affiliation', "Thugs",
+			'StartingLevel', 8,
+			'neutral_retaliate', true,
+			'archetype', "Brute",
+			'role', "Stormer",
+			'MaxAttacks', 2,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+			end,
+			'MaxHitPoints', 60,
+			'StartingPerks', {
+				"MinFreeMove",
+				"HardBlow",
+				"InstantAutopsy",
+				"ColdHeart",
+				"TrueGrit",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Recon",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Recon_1",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Recon_2",
+				}),
+			},
+			'Equipment', {
+				"LegionT3_OneHSMG",
+			},
+			'AdditionalGroups', {
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "ThugMale_1",
+				}),
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "ThugMale_2",
+				}),
+			},
 			'gender', "Male",
 			'VoiceResponseId', "ThugGunner",
 		}),
@@ -35719,8 +35782,7 @@ return {
 			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "MeleeWeapon")
-				self:TryLoadAmmo("Handheld A", "Shotgun", "_12gauge_Breacher")
+				self:TryEquip(items, "Handheld B", "Firearm")
 			end,
 			'MaxHitPoints', 100,
 			'StartingPerks', {
@@ -35764,66 +35826,6 @@ return {
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Thugs",
-			'Id', "ThugCutter_Stronger_Elite",
-			'object_class', "UnitData",
-			'Health', 88,
-			'Agility', 96,
-			'Dexterity', 91,
-			'Strength', 91,
-			'Wisdom', 79,
-			'Leadership', 9,
-			'Marksmanship', 38,
-			'Mechanical', 0,
-			'Explosives', 11,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/ThugRecon",
-			'Name', T(172909044395, --[[ModItemUnitDataCompositeDef ThugCutter_Stronger_Elite Name]] "Badass Slasher"),
-			'Randomization', true,
-			'Affiliation', "Thugs",
-			'StartingLevel', 8,
-			'neutral_retaliate', true,
-			'archetype', "Brute",
-			'role', "Stormer",
-			'MaxAttacks', 2,
-			'MaxHitPoints', 60,
-			'StartingPerks', {
-				"MinFreeMove",
-				"HardBlow",
-				"InstantAutopsy",
-				"ColdHeart",
-				"TrueGrit",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Recon",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Recon_1",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Recon_2",
-				}),
-			},
-			'Equipment', {
-				"LegionT3_OneHSMG",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_2",
-				}),
-			},
-			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Thugs",
 			'Id', "ThugCutter_Stronger",
 			'object_class', "UnitData",
 			'Health', 53,
@@ -35845,6 +35847,10 @@ return {
 			'archetype', "Brute",
 			'role', "Stormer",
 			'MaxAttacks', 2,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+			end,
 			'MaxHitPoints', 60,
 			'StartingPerks', {
 				"MinFreeMove",
@@ -35904,6 +35910,10 @@ return {
 			'archetype', "Brute",
 			'role', "Stormer",
 			'MaxAttacks', 2,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+			end,
 			'MaxHitPoints', 60,
 			'StartingPerks', {
 				"MinFreeMove",
@@ -35965,8 +35975,7 @@ return {
 			'MaxAttacks', 2,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "MeleeWeapon")
-				self:TryLoadAmmo("Handheld A", "AssaultRifle", "_556_HP")
+				self:TryEquip(items, "Handheld B", "Firearm")
 			end,
 			'MaxHitPoints', 80,
 			'StartingPerks', {
@@ -36030,7 +36039,6 @@ return {
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
 				self:TryEquip(items, "Handheld B", "MeleeWeapon")
-				self:TryLoadAmmo("Handheld A", "AssaultRifle", "_556_HP")
 			end,
 			'MaxHitPoints', 80,
 			'StartingPerks', {
@@ -36092,8 +36100,7 @@ return {
 			'MaxAttacks', 2,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "MeleeWeapon")
-				self:TryLoadAmmo("Handheld A", "AssaultRifle", "_762WP_HP")
+				self:TryEquip(items, "Handheld B", "Firearm")
 			end,
 			'MaxHitPoints', 80,
 			'StartingPerks', {
@@ -36152,6 +36159,10 @@ return {
 			},
 			'role', "Soldier",
 			'MaxAttacks', 1,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+			end,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -36214,6 +36225,10 @@ return {
 			},
 			'role', "Soldier",
 			'MaxAttacks', 2,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+			end,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -36276,6 +36291,10 @@ return {
 			},
 			'role', "Soldier",
 			'MaxAttacks', 2,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+			end,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"AutoWeapons",
@@ -36339,6 +36358,10 @@ return {
 			'archetype', "Skirmisher",
 			'role', "Demolitions",
 			'MaxAttacks', 2,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+			end,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"Throwing",
@@ -36460,6 +36483,10 @@ return {
 			'archetype', "Skirmisher",
 			'role', "Demolitions",
 			'MaxAttacks', 2,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+			end,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"Throwing",
@@ -36477,7 +36504,7 @@ return {
 				}),
 			},
 			'Equipment', {
-				"LegionT3_BattleRifle_Elite",
+				"LegionT2_RifleSemi",
 			},
 			'AdditionalGroups', {
 				PlaceObj('AdditionalGroup', {
@@ -36518,6 +36545,10 @@ return {
 			'archetype', "HeavyGunner",
 			'role', "Heavy",
 			'MaxAttacks', 2,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+			end,
 			'MaxHitPoints', 85,
 			'StartingPerks', {
 				"HeavyWeaponsTraining",
@@ -36576,6 +36607,10 @@ return {
 			'archetype', "HeavyGunner",
 			'role', "Heavy",
 			'MaxAttacks', 2,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+			end,
 			'MaxHitPoints', 85,
 			'StartingPerks', {
 				"HeavyWeaponsTraining",
@@ -36634,6 +36669,10 @@ return {
 			'archetype', "HeavyGunner",
 			'role', "Heavy",
 			'MaxAttacks', 2,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+			end,
 			'MaxHitPoints', 85,
 			'StartingPerks', {
 				"HeavyWeaponsTraining",
@@ -36696,6 +36735,10 @@ return {
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "PinDown",
 			'MaxAttacks', 1,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+			end,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"MinFreeMove",
@@ -36758,6 +36801,10 @@ return {
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "PinDown",
 			'MaxAttacks', 1,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+			end,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"MinFreeMove",
@@ -36820,6 +36867,10 @@ return {
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "PinDown",
 			'MaxAttacks', 1,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+			end,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
 				"MinFreeMove",
@@ -71597,7 +71648,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
@@ -75796,14 +75847,14 @@ return {
 					T(247898865318, --[[ModItemVoiceResponse Raven 1]] "Иду."),
 					T(653588347155, --[[ModItemVoiceResponse Raven 2]] "Принято."),
 					T(125700676311, --[[ModItemVoiceResponse Raven 3]] "Занимаю позицию."),
-					T(844654423441, --[[ModItemVoiceResponse Raven 2]] "Поняла."),
-					T(941784428136, --[[ModItemVoiceResponse Raven 3]] "Выдвигаюсь."),
-					T(461553528421, --[[ModItemVoiceResponse Raven 4]] "Сделаю."),
+					T(844654423441, --[[ModItemVoiceResponse Raven 4]] "Поняла."),
+					T(941784428136, --[[ModItemVoiceResponse Raven 5]] "Выдвигаюсь."),
+					T(461553528421, --[[ModItemVoiceResponse Raven 6]] "Сделаю."),
 				},
 				CombatMovementStealth = {
 					T(905667247801, --[[ModItemVoiceResponse Raven 1]] "Иду в ночи."),
-					T(529681881007, --[[ModItemVoiceResponse Raven 3]] "Пробираюсь незамеченной."),
-					T(753817278280, --[[ModItemVoiceResponse Raven 1]] "И опомниться не успеет."),
+					T(529681881007, --[[ModItemVoiceResponse Raven 2]] "Пробираюсь незамеченной."),
+					T(753817278280, --[[ModItemVoiceResponse Raven 3]] "И опомниться не успеет."),
 				},
 				CombatStartDetected = {
 					T(844986300930, --[[ModItemVoiceResponse Raven 1]] "Нас заметили! Работаем."),
@@ -75858,8 +75909,8 @@ return {
 					T(152538707940, --[[ModItemVoiceResponse Raven 1]] "Вперёд."),
 					T(342805753850, --[[ModItemVoiceResponse Raven 2]] "Идём!"),
 					T(628267938877, --[[ModItemVoiceResponse Raven 3]] "Пошли! Пошли! Пошли!"),
-					T(844654423441, --[[ModItemVoiceResponse Raven 2]] "Поняла."),
-					T(941784428136, --[[ModItemVoiceResponse Raven 3]] "Выдвигаюсь."),
+					T(844654423441, --[[ModItemVoiceResponse Raven 4]] "Поняла."),
+					T(941784428136, --[[ModItemVoiceResponse Raven 5]] "Выдвигаюсь."),
 				},
 				HealReceived = {
 					T(186585673696, --[[ModItemVoiceResponse Raven 1]] "То, что доктор прописал."),
@@ -76022,7 +76073,7 @@ return {
 				},
 				SelectionStealth = {
 					T(753817278280, --[[ModItemVoiceResponse Raven 1]] "И опомниться не успеет."),
-					T(311474735821, --[[ModItemVoiceResponse Raven 1]] "Прячусь."),
+					T(311474735821, --[[ModItemVoiceResponse Raven 2]] "Прячусь."),
 					T(529681881007, --[[ModItemVoiceResponse Raven 3]] "Пробираюсь незамеченной."),
 				},
 				SeriouslyWounded = {
@@ -76138,9 +76189,9 @@ return {
 					T(536220246908, --[[ModItemVoiceResponse Thor 1]] "Отличная идея!"),
 					T(649995186616, --[[ModItemVoiceResponse Thor 2]] "Твоя уверенность в себе вселяет в меня уверенность."),
 					T(368519919626, --[[ModItemVoiceResponse Thor 3]] "С радостью."),
-					T(952631426114, --[[ModItemVoiceResponse Thor 2]] "Да!"),
-					T(193075117702, --[[ModItemVoiceResponse Thor 3]] "Чудно!"),
-					T(528104783195, --[[ModItemVoiceResponse Thor 4]] "Уже иду."),
+					T(952631426114, --[[ModItemVoiceResponse Thor 4]] "Да!"),
+					T(193075117702, --[[ModItemVoiceResponse Thor 5]] "Чудно!"),
+					T(528104783195, --[[ModItemVoiceResponse Thor 6]] "Уже иду."),
 				},
 				CombatMovementStealth = {
 					T(233142554090, --[[ModItemVoiceResponse Thor 1]] "Я предпочитаю ходить босиком."),
@@ -76205,7 +76256,7 @@ return {
 					T(552328031564, --[[ModItemVoiceResponse Thor 1]] "Мы идём к цели!"),
 					T(476814248345, --[[ModItemVoiceResponse Thor 2]] "Все сделайте глубокий вдох... и выдох."),
 					T(229678381560, --[[ModItemVoiceResponse Thor 3]] "Да!"),
-					T(193075117702, --[[ModItemVoiceResponse Thor 3]] "Чудно!"),
+					T(193075117702, --[[ModItemVoiceResponse Thor 4]] "Чудно!"),
 					T(503925022031, --[[ModItemVoiceResponse Thor 5]] "Любое путешествие начинается с первого шага."),
 				},
 				HealReceived = {
@@ -76383,8 +76434,8 @@ return {
 				SelectionStealth = {
 					T(919835201725, --[[ModItemVoiceResponse Thor 1]] "Я впитываю неподвижность этого мира."),
 					T(463581498371, --[[ModItemVoiceResponse Thor 2]] "Кто успокаивает свои мысли, и сам становится тише."),
-					T(643569506533, --[[ModItemVoiceResponse Thor 2]] "Залог успеха - мысленно представлять желаемый результат."),
-					T(355094374279, --[[ModItemVoiceResponse Thor 3]] "Я буду как ветер."),
+					T(643569506533, --[[ModItemVoiceResponse Thor 3]] "Залог успеха - мысленно представлять желаемый результат."),
+					T(355094374279, --[[ModItemVoiceResponse Thor 4]] "Я буду как ветер."),
 				},
 				SeriouslyWounded = {
 					T(759466379237, --[[ModItemVoiceResponse Thor 1]] "Похоже, на меня сейчас наедет колесо сансары."),
@@ -76490,7 +76541,7 @@ return {
 				},
 				BecomeHidden = {
 					T(105282043754, --[[ModItemVoiceResponse Vicki 1]] "Прошмыгнула"),
-					T(695559602723, --[[ModItemVoiceResponse Vicki 3]] "Без лишнего шума."),
+					T(695559602723, --[[ModItemVoiceResponse Vicki 2]] "Без лишнего шума."),
 				},
 				BusySatView = {
 					T(319866576382, --[[ModItemVoiceResponse Vicki 1]] "Я тут вожусь еще немного."),
@@ -76519,9 +76570,9 @@ return {
 					T(581036882789, --[[ModItemVoiceResponse Vicki 5]] "Погуляем."),
 				},
 				CombatMovementStealth = {
-					T(343554808532, --[[ModItemVoiceResponse Vicki 3]] "Я молча."),
-					T(688060994277, --[[ModItemVoiceResponse Vicki 4]] "Ш-ш-ш..."),
-					T(975555338759, --[[ModItemVoiceResponse Vicki 5]] "Я тихо."),
+					T(343554808532, --[[ModItemVoiceResponse Vicki 1]] "Я молча."),
+					T(688060994277, --[[ModItemVoiceResponse Vicki 2]] "Ш-ш-ш..."),
+					T(975555338759, --[[ModItemVoiceResponse Vicki 3]] "Я тихо."),
 				},
 				CombatStartDetected = {
 					T(172979322092, --[[ModItemVoiceResponse Vicki 1]] "Они нас привидели!"),
@@ -76696,9 +76747,9 @@ return {
 					T(963171414466, --[[ModItemVoiceResponse Vicki 2]] "Я убиваюсь тихо."),
 				},
 				Order = {
-					T(781039780736, --[[ModItemVoiceResponse Vicki 4]] "Вперёд."),
+					T(781039780736, --[[ModItemVoiceResponse Vicki 1]] "Вперёд."),
 					T(373797711312, --[[ModItemVoiceResponse Vicki 2]] "Как захотите."),
-					T(581036882789, --[[ModItemVoiceResponse Vicki 5]] "Погуляем."),
+					T(581036882789, --[[ModItemVoiceResponse Vicki 3]] "Погуляем."),
 					T(630840274742, --[[ModItemVoiceResponse Vicki 4]] "Ya man."),
 					T(691423125493, --[[ModItemVoiceResponse Vicki 5]] "Хожу."),
 				},
@@ -76745,7 +76796,7 @@ return {
 				},
 				SelectionStealth = {
 					T(568148975578, --[[ModItemVoiceResponse Vicki 1]] "Ya man. Тихо-тихо."),
-					T(695559602723, --[[ModItemVoiceResponse Vicki 3]] "Без лишнего шума."),
+					T(695559602723, --[[ModItemVoiceResponse Vicki 2]] "Без лишнего шума."),
 					T(343554808532, --[[ModItemVoiceResponse Vicki 3]] "Я молча."),
 					T(688060994277, --[[ModItemVoiceResponse Vicki 4]] "Ш-ш-ш..."),
 					T(975555338759, --[[ModItemVoiceResponse Vicki 5]] "Я тихо."),
@@ -76865,14 +76916,14 @@ return {
 					T(806860010381, --[[ModItemVoiceResponse Wolf 1]] "Бегом, бегом, бегом!"),
 					T(674715493767, --[[ModItemVoiceResponse Wolf 2]] "Смотрите и учитесь."),
 					T(750705482381, --[[ModItemVoiceResponse Wolf 3]] "Волчком, ВОЛЧКОМ!"),
-					T(785779643663, --[[ModItemVoiceResponse Wolf 2]] "Океюшки."),
-					T(317999974840, --[[ModItemVoiceResponse Wolf 3]] "Это можно."),
-					T(220861073049, --[[ModItemVoiceResponse Wolf 4]] "Волчара поскакал."),
+					T(785779643663, --[[ModItemVoiceResponse Wolf 4]] "Океюшки."),
+					T(317999974840, --[[ModItemVoiceResponse Wolf 5]] "Это можно."),
+					T(220861073049, --[[ModItemVoiceResponse Wolf 6]] "Волчара поскакал."),
 				},
 				CombatMovementStealth = {
 					T(544404662770, --[[ModItemVoiceResponse Wolf 1]] "Волк вышел на охоту."),
 					T(621834881278, --[[ModItemVoiceResponse Wolf 2]] "Готовлюсь подловить добычу."),
-					T(274240057906, --[[ModItemVoiceResponse Wolf 2]] "Работаю спокойно и без шума."),
+					T(274240057906, --[[ModItemVoiceResponse Wolf 3]] "Работаю спокойно и без шума."),
 				},
 				CombatStartDetected = {
 					T(988181110649, --[[ModItemVoiceResponse Wolf 1]] "Ёхты, кажись, кто-то их предупредил!"),
@@ -76927,8 +76978,8 @@ return {
 					T(225228388151, --[[ModItemVoiceResponse Wolf 1]] "Все за вожаком стаи!"),
 					T(152110877592, --[[ModItemVoiceResponse Wolf 2]] "Пошмыгали!"),
 					T(517382606631, --[[ModItemVoiceResponse Wolf 3]] "Волчок поведёт!"),
-					T(317999974840, --[[ModItemVoiceResponse Wolf 3]] "Это можно."),
-					T(220861073049, --[[ModItemVoiceResponse Wolf 4]] "Волчара поскакал."),
+					T(317999974840, --[[ModItemVoiceResponse Wolf 4]] "Это можно."),
+					T(220861073049, --[[ModItemVoiceResponse Wolf 5]] "Волчара поскакал."),
 				},
 				HealReceived = {
 					T(695795043805, --[[ModItemVoiceResponse Wolf 1]] "Сойдёт. Мне пора обратно в бой."),
@@ -77098,7 +77149,7 @@ return {
 				SelectionStealth = {
 					T(544404662770, --[[ModItemVoiceResponse Wolf 1]] "Волк вышел на охоту."),
 					T(274240057906, --[[ModItemVoiceResponse Wolf 2]] "Работаю спокойно и без шума."),
-					T(235943355501, --[[ModItemVoiceResponse Wolf 2]] "Смотрите и учитесь. Показываю в стиле коммандос."),
+					T(235943355501, --[[ModItemVoiceResponse Wolf 3]] "Смотрите и учитесь. Показываю в стиле коммандос."),
 				},
 				SeriouslyWounded = {
 					T(251402676717, --[[ModItemVoiceResponse Wolf 1]] "Шеф, меня неслабо помяло. Передохнуть бы."),
@@ -80056,6 +80107,7 @@ return {
 							self:SetParameter("attacked", true)
 						end
 					end,
+					param_bindings = false,
 				}),
 				PlaceObj('UnitReaction', {
 					Event = "OnCombatEnd",
@@ -80063,6 +80115,7 @@ return {
 						self:SetParameter("attacked", false)
 						self:SetParameter("applied", false)
 					end,
+					param_bindings = false,
 				}),
 				PlaceObj('UnitReaction', {
 					Event = "OnBeginTurn",
@@ -80078,6 +80131,7 @@ return {
 							end
 						end
 					end,
+					param_bindings = false,
 				}),
 			},
 			'DisplayName', T(982240783679, --[[ModItemCharacterEffectCompositeDef Chaaaarge DisplayName]] "Find My Feet"),

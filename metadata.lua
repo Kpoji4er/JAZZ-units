@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 9,
-	'version', 2200,
+	'version', 2202,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -16,8 +16,8 @@ return PlaceObj('ModDef', {
 		"Code/Rebels.lua",
 		"UnitData/ThugEnforcer.lua",
 		"UnitData/ThugEnforcer_Stronger.lua",
-		"UnitData/ThugEnforcer_Stronger_Elite.lua",
 		"UnitData/ThugCutter_Stronger_Elite.lua",
+		"UnitData/ThugEnforcer_Stronger_Elite.lua",
 		"UnitData/ThugCutter_Stronger.lua",
 		"UnitData/ThugCutter.lua",
 		"UnitData/ThugBoss_Stronger_Elite.lua",
@@ -208,8 +208,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1769261138,
-	'code_hash', -3749099156651958422,
+	'saved', 1770760423,
+	'code_hash', -2455125612514417717,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
@@ -6508,12 +6508,12 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
-			'Id', "ThugEnforcer_Stronger_Elite",
+			'Id', "ThugCutter_Stronger_Elite",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
-			'Id', "ThugCutter_Stronger_Elite",
+			'Id', "ThugEnforcer_Stronger_Elite",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {

@@ -42,7 +42,6 @@ DefineClass.ThugEnforcer_Stronger = {
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 		self:TryEquip(items, "Handheld B", "MeleeWeapon")
-		self:TryLoadAmmo("Handheld A", "Shotgun", "_12gauge_Breacher")
 	end,
 	MaxHitPoints = 100,
 	StartingPerks = {

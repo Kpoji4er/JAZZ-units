@@ -28,8 +28,7 @@ DefineClass.ThugBoss_Stronger_Elite = {
 	MaxAttacks = 2,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
-		self:TryEquip(items, "Handheld B", "MeleeWeapon")
-		self:TryLoadAmmo("Handheld A", "AssaultRifle", "_556_HP")
+		self:TryEquip(items, "Handheld B", "Firearm")
 	end,
 	MaxHitPoints = 80,
 	StartingPerks = {

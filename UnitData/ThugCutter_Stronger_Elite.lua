@@ -24,6 +24,10 @@ DefineClass.ThugCutter_Stronger_Elite = {
 	archetype = "Brute",
 	role = "Stormer",
 	MaxAttacks = 2,
+	CustomEquipGear = function (self, items)
+		self:TryEquip(items, "Handheld A", "Firearm")
+		self:TryEquip(items, "Handheld B", "Firearm")
+	end,
 	MaxHitPoints = 60,
 	StartingPerks = {
 		"MinFreeMove",

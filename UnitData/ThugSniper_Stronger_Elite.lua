@@ -27,6 +27,10 @@ DefineClass.ThugSniper_Stronger_Elite = {
 	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "PinDown",
 	MaxAttacks = 1,
+	CustomEquipGear = function (self, items)
+		self:TryEquip(items, "Handheld A", "Firearm")
+		self:TryEquip(items, "Handheld B", "Firearm")
+	end,
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"MinFreeMove",

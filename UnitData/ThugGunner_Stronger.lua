@@ -24,6 +24,10 @@ DefineClass.ThugGunner_Stronger = {
 	archetype = "HeavyGunner",
 	role = "Heavy",
 	MaxAttacks = 2,
+	CustomEquipGear = function (self, items)
+		self:TryEquip(items, "Handheld A", "Firearm")
+		self:TryEquip(items, "Handheld B", "Firearm")
+	end,
 	MaxHitPoints = 85,
 	StartingPerks = {
 		"HeavyWeaponsTraining",

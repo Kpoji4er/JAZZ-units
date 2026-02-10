@@ -4,7 +4,6 @@ DefineClass.Chaaaarge = {
 	__generated_by_class = "ModItemCharacterEffectCompositeDef",
 
 
-	__copy_group = "Perk-Personal",
 	object_class = "Perk",
 	unit_reactions = {
 		PlaceObj('UnitReaction', {

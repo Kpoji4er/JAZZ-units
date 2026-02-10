@@ -27,6 +27,10 @@ DefineClass.ThugGoon_Stronger_Elite = {
 	},
 	role = "Soldier",
 	MaxAttacks = 2,
+	CustomEquipGear = function (self, items)
+		self:TryEquip(items, "Handheld A", "Firearm")
+		self:TryEquip(items, "Handheld B", "Firearm")
+	end,
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"AutoWeapons",

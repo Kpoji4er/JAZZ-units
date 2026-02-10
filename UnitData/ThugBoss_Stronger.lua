@@ -29,7 +29,6 @@ DefineClass.ThugBoss_Stronger = {
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 		self:TryEquip(items, "Handheld B", "MeleeWeapon")
-		self:TryLoadAmmo("Handheld A", "AssaultRifle", "_556_HP")
 	end,
 	MaxHitPoints = 80,
 	StartingPerks = {
