@@ -208,13 +208,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-<<<<<<< HEAD
 	'saved', 1769261138,
 	'code_hash', -3749099156651958422,
-=======
-	'saved', 1770488664,
-	'code_hash', 5963603501196941186,
->>>>>>> refs/remotes/origin/main
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
