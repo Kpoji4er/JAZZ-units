@@ -5,38 +5,71 @@ DefineClass.ThugSniper_Stronger = {
 
 
 	object_class = "UnitData",
-	Health = 76,
-	Agility = 91,
-	Dexterity = 69,
-	Strength = 81,
-	Wisdom = 37,
-	Leadership = 50,
-	Marksmanship = 85,
-	Mechanical = 0,
+	Health = 75,
+	Agility = 92,
+	Dexterity = 80,
+	Wisdom = 30,
+	Will = 75,
+	Leadership = 20,
+	Marksmanship = 95,
+	Mechanical = 50,
 	Explosives = 0,
 	Medical = 0,
 	Portrait = "UI/EnemiesPortraits/ThugSniper",
-	Name = T(430351656850, --[[ModItemUnitDataCompositeDef ThugSniper_Stronger Name]] "Tough Headhunter"),
+	Name = T(376372530640, --[[ModItemUnitDataCompositeDef ThugSniper_Stronger Name]] "Снайпер"),
 	Randomization = true,
 	Affiliation = "Thugs",
-	StartingLevel = 5,
+	StartingLevel = 12,
 	neutral_retaliate = true,
 	AIKeywords = {
 		"Sniper",
 	},
+	archetype = "Legion_Frontliner",
 	role = "Marksman",
 	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "PinDown",
-	MaxAttacks = 1,
+	MaxAttacks = 10,
+	PickCustomArchetype = function (self, proto_context)
+		local enemy, dist = GetNearestEnemy(self)
+		local archetype = self.archetype
+		local weapon_class = "Firearm"
+		local roll = self:Random(100)
+		
+		
+		if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver"  then
+			archetype = "Legion_Assaulter"
+			weapon_class = "Revolver"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol"  then
+			archetype = "Legion_Assaulter"
+			weapon_class = "Pistol"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if not self:GetActiveWeapons(weapon_class) then
+			AIPlayCombatAction("ChangeWeapon", self, 0)
+		end
+		
+		return archetype
+	end,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 		self:TryEquip(items, "Handheld B", "Firearm")
 	end,
 	MaxHitPoints = 50,
 	StartingPerks = {
-		"MinFreeMove",
-		"Shatterhand",
 		"LightningReactionNPC",
+		"Spiritual",
+		"Instagib",
+		"HawksEye",
+		"Killzone",
+		"Spiritual",
+		"DeathFromAbove",
+		"SteadyBreathing",
+		"TrickShot",
+		"Hobbler",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
@@ -50,22 +83,22 @@ DefineClass.ThugSniper_Stronger = {
 		}),
 	},
 	Equipment = {
-		"LegionT2_RifleSniper_silencer",
+		"Sniper_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {
 			'Weight', 50,
 			'Exclusive', true,
-			'Name', "ThugMale_1",
+			'Name', "LegionMale_1",
 		}),
 		PlaceObj('AdditionalGroup', {
 			'Weight', 50,
 			'Exclusive', true,
-			'Name', "ThugMale_2",
+			'Name', "LegionMale_2",
 		}),
 	},
 	pollyvoice = "Joey",
 	gender = "Male",
-	VoiceResponseId = "ThugGunner",
+	VoiceResponseId = "LegionRaider",
 }
 

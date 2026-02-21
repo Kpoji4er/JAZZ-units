@@ -24,17 +24,31 @@ DefineClass.ThugBoss_Balumba = {
 	neutral_retaliate = true,
 	AIKeywords = {
 		"Control",
+		"Sniper",
+		"Marksman",
+		"Smoke",
+		"Explosives",
+		"Leader",
 	},
+	archetype = "Legion_Frontliner",
 	role = "Commander",
-	MaxAttacks = 2,
+	MaxAttacks = 5,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 		self:TryEquip(items, "Handheld B", "Firearm")
 	end,
 	MaxHitPoints = 80,
 	StartingPerks = {
+		"CQCTraining",
+		"Spiritual",
+		"BattleFocus",
+		"RelentlessAdvance",
+		"ShoulderToShoulder",
 		"AutoWeapons",
-		"Counterfire",
+		"Spotter",
+		"Spotter",
+		"TakeAim",
+		"Ironclad",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
@@ -45,7 +59,7 @@ DefineClass.ThugBoss_Balumba = {
 		}),
 	},
 	Equipment = {
-		"LegionT1_LMG",
+		"Captain_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {

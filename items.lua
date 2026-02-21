@@ -35544,17 +35544,31 @@ return {
 				'neutral_retaliate', true,
 				'AIKeywords', {
 					"Control",
+					"Sniper",
+					"Marksman",
+					"Smoke",
+					"Explosives",
+					"Leader",
 				},
+				'archetype', "Legion_Frontliner",
 				'role', "Commander",
-				'MaxAttacks', 2,
+				'MaxAttacks', 5,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
 					self:TryEquip(items, "Handheld B", "Firearm")
 				end,
 				'MaxHitPoints', 80,
 				'StartingPerks', {
+					"CQCTraining",
+					"Spiritual",
+					"BattleFocus",
+					"RelentlessAdvance",
+					"ShoulderToShoulder",
 					"AutoWeapons",
-					"Counterfire",
+					"Spotter",
+					"Spotter",
+					"TakeAim",
+					"Ironclad",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -35565,7 +35579,7 @@ return {
 					}),
 				},
 				'Equipment', {
-					"LegionT1_LMG",
+					"Captain_Inventory",
 				},
 				'AdditionalGroups', {
 					PlaceObj('AdditionalGroup', {
@@ -35587,6 +35601,7 @@ return {
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Thugs",
 			'Id', "ThugEnforcer",
+			'comment', "Т1 Мародер Marauder | Рандомное между ШВ, БВ, Карабином и ПП (В начале). Можно даже легкий пулемет",
 			'object_class', "UnitData",
 			'Health', 75,
 			'Agility', 69,
@@ -35604,35 +35619,54 @@ return {
 			'Affiliation', "Thugs",
 			'StartingLevel', 3,
 			'neutral_retaliate', true,
-			'archetype', "Brute",
-			'role', "Stormer",
+			'AIKeywords', {
+				"Soldier",
+			},
+			'archetype', "Legion_Frontliner",
+			'role', "Soldier",
 			'MaxAttacks', 2,
 			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
 				local archetype = self.archetype
-				local weapon_class = "Firearm"
 				
-				if enemy and dist < 8*const.SlabSizeX then
-					weapon_class = "MeleeWeapon"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
+				local panicroll = self:Random(100)
+				local panicshance = 0
+				
+				local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+				local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+				
+				local wounds = 0
+				local wounded = self:GetStatusEffect("Wounded")
+				local bleeding = self:GetStatusEffect("Bleeding")
+				if wounded then
+					wounds = wounded.stacks 
+				end
+				if bleeding then
+					wounds = wounds + bleeding.stacks 
+				end
+				panicroll = panicroll - 10*wounds
+											
+				if wounds > 1 then
+					panicshance = 100-health_perc
 				end
 				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
+				if will_perc < 40 then
+					panicshance = Max(panicshance,100-will_perc)
 				end
+				
+				if panicroll < panicshance then
+				PlayVoiceResponse(self, "AIArchetypeScared")
+				archetype = "Deserter"
+				end
+				
+				print(panicroll..'against'..panicshance)
 				
 				return archetype
 			end,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "MeleeWeapon")
-			end,
+			'CustomEquipGear', function (self, items)  end,
 			'MaxHitPoints', 100,
 			'StartingPerks', {
-				"Berserker",
-				"BeefedUp",
+				"TakeAim",
 				"MinFreeMove",
-				"Shatterhand",
 			},
 			'AppearancesList', {
 				PlaceObj('AppearanceWeight', {
@@ -35646,7 +35680,7 @@ return {
 				}),
 			},
 			'Equipment', {
-				"LegionT1_Shotgun",
+				"Marauder_Inventory",
 			},
 			'AdditionalGroups', {
 				PlaceObj('AdditionalGroup', {
@@ -35667,6 +35701,7 @@ return {
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Thugs",
 			'Id', "ThugEnforcer_Stronger",
+			'comment', "Т2 Застрельщик Skirmisher | Дальний флангер с Боевой/снайперсокй винтовкой. хорошо видит и пытается прятаться",
 			'object_class', "UnitData",
 			'Health', 75,
 			'Agility', 97,
@@ -35684,15 +35719,33 @@ return {
 			'Affiliation', "Thugs",
 			'StartingLevel', 5,
 			'neutral_retaliate', true,
-			'archetype', "Brute",
-			'role', "Stormer",
+			'AIKeywords', {
+				"Flank",
+				"RunAndGun",
+				"Marksman",
+			},
+			'archetype', "Legion_Frontliner",
+			'role', "Recon",
+			'RepositionArchetype', "Legion_Frontliner",
 			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
+				local roll = self:Random(100)
+				local chance = 50
 				
-				if enemy and dist < 8*const.SlabSizeX then
-					weapon_class = "MeleeWeapon"
+				if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
+					archetype = "Legion_Assaulter"
+					weapon_class = "Revolver"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
+					archetype = "Legion_Assaulter"
+					weapon_class = "Pistol"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
+					archetype = "Legion_Assaulter"
+					weapon_class = "SubmachineGun"
 					PlayVoiceResponse(self, "AIArchetypeAngry")
 				end
 				
@@ -35700,19 +35753,55 @@ return {
 					AIPlayCombatAction("ChangeWeapon", self, 0)
 				end
 				
+				local stealth_stance = self:GetStanceToStealth()
+				if self:CanStealth(stealth_stance) then
+				 self:Hide()
+				end	
+				
+				local panicroll = self:Random(100)
+				local panicshance = 0
+				
+				local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+				local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+				
+				local wounds = 0
+				local wounded = self:GetStatusEffect("Wounded")
+				local bleeding = self:GetStatusEffect("Bleeding")
+				if wounded then
+					wounds = wounded.stacks 
+				end
+				if bleeding then
+					wounds = wounds + bleeding.stacks 
+				end
+				panicroll = panicroll - 10*wounds
+											
+				if wounds > 1 then
+					local panicshance = 100-health_perc
+				end
+				
+				if will_perc < 40 then
+					local panicshance = Max(panicshance,100-will_perc)
+				end
+				
+				if panicroll < panicshance then
+				PlayVoiceResponse(self, "AIArchetypeScared")
+				archetype = "Deserter"
+				end
+				
 				return archetype
 			end,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "MeleeWeapon")
-			end,
+			'CustomEquipGear', function (self, items)  end,
 			'MaxHitPoints', 100,
 			'StartingPerks', {
-				"Berserker",
-				"BeefedUp",
+				"HoldPosition",
+				"OpportunisticKiller",
+				"Counterfire",
+				"Hardened",
+				"Flanker",
+				"Untraceable",
 				"MinFreeMove",
-				"Shatterhand",
-				"StressManagement",
+				"MinFreeMove",
+				"Hotblood",
 			},
 			'AppearancesList', {
 				PlaceObj('AppearanceWeight', {
@@ -35726,7 +35815,7 @@ return {
 				}),
 			},
 			'Equipment', {
-				"LegionT2_SMG",
+				"Skirmisher_Inventory",
 			},
 			'AdditionalGroups', {
 				PlaceObj('AdditionalGroup', {
@@ -35745,98 +35834,59 @@ return {
 			'VoiceResponseId', "ThugGunner",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Thugs",
-			'Id', "ThugCutter_Stronger_Elite",
-			'object_class', "UnitData",
-			'Health', 88,
-			'Agility', 96,
-			'Dexterity', 91,
-			'Strength', 91,
-			'Wisdom', 79,
-			'Leadership', 9,
-			'Marksmanship', 38,
-			'Mechanical', 0,
-			'Explosives', 11,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/ThugRecon",
-			'Name', T(172909044395, --[[ModItemUnitDataCompositeDef ThugCutter_Stronger_Elite Name]] "Badass Slasher"),
-			'Randomization', true,
-			'Affiliation', "Thugs",
-			'StartingLevel', 8,
-			'neutral_retaliate', true,
-			'archetype', "Brute",
-			'role', "Stormer",
-			'MaxAttacks', 2,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "Firearm")
-			end,
-			'MaxHitPoints', 60,
-			'StartingPerks', {
-				"MinFreeMove",
-				"HardBlow",
-				"InstantAutopsy",
-				"ColdHeart",
-				"TrueGrit",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Recon",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Recon_1",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Recon_2",
-				}),
-			},
-			'Equipment', {
-				"LegionT3_OneHSMG",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_2",
-				}),
-			},
-			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Thugs",
+			'Group', "Legion",
 			'Id', "ThugEnforcer_Stronger_Elite",
+			'comment', "Т3 Следопыт Pathfinder | Винтовк с глушителем и оптикой, камуфляж, полный стелс",
 			'object_class', "UnitData",
 			'Health', 75,
-			'Agility', 97,
-			'Dexterity', 93,
-			'Strength', 95,
-			'Wisdom', 16,
-			'Leadership', 65,
-			'Marksmanship', 43,
-			'Mechanical', 0,
-			'Explosives', 33,
-			'Medical', 0,
+			'Agility', 95,
+			'Dexterity', 92,
+			'Strength', 70,
+			'Wisdom', 80,
+			'Will', 75,
+			'Leadership', 15,
+			'Marksmanship', 90,
+			'Mechanical', 50,
+			'Explosives', 15,
+			'Medical', 20,
 			'Portrait', "UI/EnemiesPortraits/ThugStormer",
-			'Name', T(656775620928, --[[ModItemUnitDataCompositeDef ThugEnforcer_Stronger_Elite Name]] "Badass Enforcer"),
+			'Name', T(123943777379, --[[ModItemUnitDataCompositeDef ThugEnforcer_Stronger_Elite Name]] "Badass Enforcer"),
 			'Randomization', true,
 			'Affiliation', "Thugs",
-			'StartingLevel', 8,
+			'StartingLevel', 10,
 			'neutral_retaliate', true,
-			'archetype', "Brute",
-			'role', "Stormer",
+			'AIKeywords', {
+				"Flank",
+				"Sniper",
+				"Control",
+			},
+			'archetype', "Legion_Frontliner",
+			'role', "Recon",
+			'RepositionArchetype', "Legion_Frontliner",
+			'AlwaysUseOpeningAttack', true,
+			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
 				local enemy, dist = GetNearestEnemy(self)
 				local archetype = self.archetype
 				local weapon_class = "Firearm"
+				local roll = self:Random(100)
+				local chance = 50
 				
-				if enemy and dist < 8*const.SlabSizeX then
-					weapon_class = "MeleeWeapon"
+				if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
+					archetype = "Legion_Assaulter"
+					weapon_class = "Revolver"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
+					archetype = "Legion_Assaulter"
+					weapon_class = "Pistol"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
+					archetype = "Legion_Assaulter"
+					weapon_class = "SubmachineGun"
 					PlayVoiceResponse(self, "AIArchetypeAngry")
 				end
 				
@@ -35844,462 +35894,814 @@ return {
 					AIPlayCombatAction("ChangeWeapon", self, 0)
 				end
 				
+				local stealth_stance = self:GetStanceToStealth()
+				if self:CanStealth(stealth_stance) then
+				 self:Hide()
+				end	
+				
 				return archetype
 			end,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "Firearm")
-			end,
-			'MaxHitPoints', 100,
-			'StartingPerks', {
-				"Berserker",
-				"BeefedUp",
-				"MinFreeMove",
-				"Shatterhand",
-				"StressManagement",
-				"ColdHeart",
-				"InstantAutopsy",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Stormer",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Stormer_1",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Stormer_2",
-				}),
-			},
-			'Equipment', {
-				"LegionT3_AssaultRifle",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_2",
-				}),
-			},
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Thugs",
-			'Id', "ThugCutter_Stronger",
-			'object_class', "UnitData",
-			'Health', 53,
-			'Agility', 96,
-			'Dexterity', 91,
-			'Strength', 91,
-			'Wisdom', 79,
-			'Leadership', 9,
-			'Marksmanship', 38,
-			'Mechanical', 0,
-			'Explosives', 11,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/ThugRecon",
-			'Name', T(535074496977, --[[ModItemUnitDataCompositeDef ThugCutter_Stronger Name]] "Tough Slasher"),
-			'Randomization', true,
-			'Affiliation', "Thugs",
-			'StartingLevel', 5,
-			'neutral_retaliate', true,
-			'archetype', "Brute",
-			'role', "Stormer",
-			'MaxAttacks', 2,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "Firearm")
-			end,
-			'MaxHitPoints', 60,
-			'StartingPerks', {
-				"MinFreeMove",
-				"HardBlow",
-				"InstantAutopsy",
-				"ColdHeart",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Recon",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Recon_1",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Recon_2",
-				}),
-			},
-			'Equipment', {
-				"LegionT2_Carbine",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_2",
-				}),
-			},
-			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Thugs",
-			'Id', "ThugCutter",
-			'object_class', "UnitData",
-			'Health', 53,
-			'Agility', 96,
-			'Dexterity', 91,
-			'Strength', 61,
-			'Wisdom', 79,
-			'Leadership', 9,
-			'Marksmanship', 38,
-			'Mechanical', 0,
-			'Explosives', 11,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/ThugRecon",
-			'Name', T(447902373075, --[[ModItemUnitDataCompositeDef ThugCutter Name]] "Slasher"),
-			'Randomization', true,
-			'Affiliation', "Thugs",
-			'StartingLevel', 2,
-			'neutral_retaliate', true,
-			'archetype', "Brute",
-			'role', "Stormer",
-			'MaxAttacks', 2,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "Firearm")
-			end,
-			'MaxHitPoints', 60,
-			'StartingPerks', {
-				"MinFreeMove",
-				"HardBlow",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Recon",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Recon_1",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Recon_2",
-				}),
-			},
-			'Equipment', {
-				"LegionT2_AutoPistol",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_2",
-				}),
-			},
-			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Thugs",
-			'Id', "ThugBoss_Stronger_Elite",
-			'object_class', "UnitData",
-			'Health', 92,
-			'Agility', 76,
-			'Dexterity', 80,
-			'Strength', 75,
-			'Wisdom', 23,
-			'Leadership', 22,
-			'Marksmanship', 89,
-			'Mechanical', 12,
-			'Explosives', 14,
-			'Medical', 6,
-			'Portrait', "UI/EnemiesPortraits/ThugOfficer",
-			'Name', T(422851262372, --[[ModItemUnitDataCompositeDef ThugBoss_Stronger_Elite Name]] "Badass Watchman"),
-			'Randomization', true,
-			'Affiliation', "Thugs",
-			'StartingLevel', 9,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Control",
-			},
-			'role', "Commander",
-			'MaxAttacks', 2,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "Firearm")
-			end,
-			'MaxHitPoints', 80,
-			'StartingPerks', {
-				"BeefedUp",
-				"AutoWeapons",
-				"Counterfire",
-				"HoldPosition",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Officer",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Officer_1",
-				}),
-			},
-			'Equipment', {
-				"LegionT3_LMG",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_2",
-				}),
-			},
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Thugs",
-			'Id', "ThugBoss_Stronger",
-			'object_class', "UnitData",
-			'Health', 92,
-			'Agility', 76,
-			'Dexterity', 80,
-			'Strength', 75,
-			'Wisdom', 23,
-			'Leadership', 22,
-			'Marksmanship', 89,
-			'Mechanical', 12,
-			'Explosives', 14,
-			'Medical', 6,
-			'Portrait', "UI/EnemiesPortraits/ThugOfficer",
-			'Name', T(275780386229, --[[ModItemUnitDataCompositeDef ThugBoss_Stronger Name]] "Tough Watchman"),
-			'Randomization', true,
-			'Affiliation', "Thugs",
-			'StartingLevel', 7,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Control",
-			},
-			'role', "Commander",
-			'MaxAttacks', 2,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "MeleeWeapon")
-			end,
-			'MaxHitPoints', 80,
-			'StartingPerks', {
-				"BeefedUp",
-				"AutoWeapons",
-				"Counterfire",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Officer",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Officer_1",
-				}),
-			},
-			'Equipment', {
-				"LegionT2_LMG",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_2",
-				}),
-			},
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Thugs",
-			'Id', "ThugBoss",
-			'object_class', "UnitData",
-			'Health', 82,
-			'Agility', 76,
-			'Dexterity', 80,
-			'Strength', 75,
-			'Wisdom', 23,
-			'Leadership', 22,
-			'Marksmanship', 70,
-			'Mechanical', 12,
-			'Explosives', 14,
-			'Medical', 6,
-			'Portrait', "UI/EnemiesPortraits/ThugOfficer",
-			'Name', T(546600230248, --[[ModItemUnitDataCompositeDef ThugBoss Name]] "Watchman"),
-			'Randomization', true,
-			'Affiliation', "Thugs",
-			'StartingLevel', 5,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Control",
-			},
-			'role', "Commander",
-			'MaxAttacks', 2,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "Firearm")
-			end,
-			'MaxHitPoints', 80,
-			'StartingPerks', {
-				"AutoWeapons",
-				"Counterfire",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Officer",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Officer_1",
-				}),
-			},
-			'Equipment', {
-				"LegionT1_LMG",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_2",
-				}),
-			},
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Thugs",
-			'Id', "ThugGoon",
-			'object_class', "UnitData",
-			'Health', 50,
-			'Agility', 66,
-			'Dexterity', 30,
-			'Strength', 50,
-			'Wisdom', 30,
-			'Leadership', 20,
-			'Marksmanship', 66,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/ThugSoldier",
-			'BigPortrait', "UI/EnemiesPortraits/Unknown",
-			'Name', T(816845859658, --[[ModItemUnitDataCompositeDef ThugGoon Name]] "Ganger"),
-			'Randomization', true,
-			'Affiliation', "Thugs",
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Smoke",
-			},
-			'role', "Soldier",
-			'MaxAttacks', 1,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
 				self:TryEquip(items, "Handheld B", "Firearm")
 			end,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
-				"AutoWeapons",
-				"Shatterhand",
+				"HoldPosition",
+				"Hobbler",
+				"OpportunisticKiller",
+				"Instagib",
+				"FleetingShadow",
+				"Counterfire",
+				"Hardened",
+				"Flanker",
+				"Untraceable",
 				"Hotblood",
+				"LastWarning",
 			},
 			'AppearancesList', {
 				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Soldier",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Soldier_1",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Soldier_2",
+					'Preset', "Thug_Recon",
 				}),
 			},
 			'Equipment', {
-				"LegionT1_PistolList",
+				"Pathfinder_Inventory",
 			},
 			'AdditionalGroups', {
 				PlaceObj('AdditionalGroup', {
 					'Weight', 50,
 					'Exclusive', true,
-					'Name', "ThugMale_1",
+					'Name', "LegionMale_1",
 				}),
 				PlaceObj('AdditionalGroup', {
 					'Weight', 50,
 					'Exclusive', true,
-					'Name', "ThugMale_2",
+					'Name', "LegionMale_2",
 				}),
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
+			'VoiceResponseId', "LegionRaider",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Thugs",
-			'Id', "ThugGoon_Stronger",
+			'Group', "Legion",
+			'Id', "ThugCutter_Stronger_Elite",
+			'comment', "Т3 Череполом SkullCrusher | Элитный танк с дробовиком и милишкой",
 			'object_class', "UnitData",
-			'Health', 50,
-			'Agility', 87,
-			'Dexterity', 63,
-			'Strength', 50,
-			'Wisdom', 30,
-			'Leadership', 20,
-			'Marksmanship', 66,
-			'Mechanical', 0,
-			'Explosives', 0,
+			'Health', 90,
+			'Agility', 75,
+			'Dexterity', 80,
+			'Strength', 95,
+			'Wisdom', 25,
+			'Will', 85,
+			'Leadership', 30,
+			'Marksmanship', 85,
+			'Mechanical', 85,
+			'Explosives', 35,
 			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/ThugSoldier",
-			'BigPortrait', "UI/EnemiesPortraits/Unknown",
-			'Name', T(738601014127, --[[ModItemUnitDataCompositeDef ThugGoon_Stronger Name]] "Tough Ganger"),
+			'Portrait', "UI/EnemiesPortraits/ThugRecon",
+			'Name', T(856730692631, --[[ModItemUnitDataCompositeDef ThugCutter_Stronger_Elite Name]] "Badass Slasher"),
+			'Randomization', true,
+			'Affiliation', "Thugs",
+			'StartingLevel', 12,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"CQB",
+				"Melee",
+				"Smoke",
+			},
+			'archetype', "Legion_Assaulter",
+			'role', "Stormer",
+			'CanManEmplacements', false,
+			'RepositionArchetype', "Legion_Assaulter",
+			'MaxAttacks', 10,
+			'PickCustomArchetype', function (self, proto_context)
+				local enemy, dist = GetNearestEnemy(self)
+				local archetype = self.archetype
+				local weapon_class = "Firearm"
+				
+				if enemy and dist < 10*const.SlabSizeX then
+					--archetype = "Brute"
+					weapon_class = "Melee"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if not self:GetActiveWeapons(weapon_class) then
+					AIPlayCombatAction("ChangeWeapon", self, 0)
+				end
+				
+				return archetype
+			end,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "MeleeWeapon")
+			end,
+			'MaxHitPoints', 60,
+			'StartingPerks', {
+				"MinFreeMove",
+				"Throwing",
+				"BreachAndClear",
+				"BeefedUp",
+				"Shatterhand",
+				"NailsPerk",
+				"CQCTraining",
+				"KillingWind",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "ThugElite",
+				}),
+			},
+			'Equipment', {
+				"SkullCrusher_Inventory",
+			},
+			'AdditionalGroups', {
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_1",
+				}),
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_2",
+				}),
+			},
+			'gender', "Male",
+			'VoiceResponseId', "LegionRaider",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "Legion",
+			'Id', "ThugCutter_Stronger",
+			'comment', "Т2 Налетчик Raider | ШВ, иногда ГП/Гранатомет",
+			'object_class', "UnitData",
+			'Health', 78,
+			'Agility', 88,
+			'Dexterity', 84,
+			'Strength', 75,
+			'Wisdom', 15,
+			'Will', 65,
+			'Leadership', 0,
+			'Marksmanship', 80,
+			'Mechanical', 35,
+			'Explosives', 20,
+			'Medical', 0,
+			'Portrait', "UI/EnemiesPortraits/ThugRecon",
+			'Name', T(876691514477, --[[ModItemUnitDataCompositeDef ThugCutter_Stronger Name]] "Tough Slasher"),
+			'Randomization', true,
+			'Affiliation', "Thugs",
+			'StartingLevel', 8,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"Soldier",
+				"Ordnance",
+			},
+			'archetype', "Legion_Frontliner",
+			'role', "Soldier",
+			'MaxAttacks', 10,
+			'PickCustomArchetype', function (self, proto_context)
+				local archetype = self.archetype
+				
+				local panicroll = self:Random(100)
+				local panicshance = 0
+				
+				local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+				local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+				
+				local wounds = 0
+				local wounded = self:GetStatusEffect("Wounded")
+				local bleeding = self:GetStatusEffect("Bleeding")
+				if wounded then
+					wounds = wounded.stacks 
+				end
+				if bleeding then
+					wounds = wounds + bleeding.stacks 
+				end
+				panicroll = panicroll - 10*wounds
+											
+				if wounds > 1 then
+					local panicshance = 100-health_perc
+				end
+				
+				if will_perc < 40 then
+					local panicshance = Max(panicshance,100-will_perc)
+				end
+				
+				if panicroll < panicshance then
+				PlayVoiceResponse(self, "AIArchetypeScared")
+				archetype = "Deserter"
+				end
+				
+				--print(panicroll..'against'..panicshance)
+				
+				return archetype
+			end,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+			end,
+			'MaxHitPoints', 50,
+			'StartingPerks', {
+				"AutoWeapons",
+				"TakeAim",
+				"MinFreeMove",
+				"HitTheDeck",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Recon_2",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Recon_1",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Recon",
+				}),
+			},
+			'Equipment', {
+				"Raider_Inventory",
+			},
+			'AdditionalGroups', {
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_1",
+				}),
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_2",
+				}),
+			},
+			'pollyvoice', "Joey",
+			'gender', "Male",
+			'VoiceResponseId', "LegionRaider",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "Legion",
+			'Id', "ThugCutter",
+			'comment', "Т1 Часовой (Дозорный?) Warden (Watchman?) | Хорошо видит, Дальний флангер с болтовкой/самозарядкой",
+			'object_class', "UnitData",
+			'Agility', 70,
+			'Dexterity', 65,
+			'Strength', 50,
+			'Will', 45,
+			'Leadership', 10,
+			'Marksmanship', 75,
+			'Mechanical', 0,
+			'Explosives', 15,
+			'Medical', 10,
+			'Portrait', "UI/EnemiesPortraits/ThugRecon",
+			'Name', T(944663926313, --[[ModItemUnitDataCompositeDef ThugCutter Name]] "Slasher"),
 			'Randomization', true,
 			'Affiliation', "Thugs",
 			'StartingLevel', 3,
 			'neutral_retaliate', true,
 			'AIKeywords', {
-				"Smoke",
+				"Flank",
+				"Control",
+				"Marksman",
 			},
-			'role', "Soldier",
-			'MaxAttacks', 2,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "Firearm")
+			'archetype', "Legion_Frontliner",
+			'role', "Recon",
+			'RepositionArchetype', "Legion_Frontliner",
+			'AlwaysUseOpeningAttack', true,
+			'OpeningAttackType', "Overwatch",
+			'MaxAttacks', 10,
+			'PickCustomArchetype', function (self, proto_context)
+				local enemy, dist = GetNearestEnemy(self)
+				local archetype = self.archetype
+				local weapon_class = "Firearm"
+				local roll = self:Random(100)
+				local chance = 50
+				
+				if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
+					archetype = "Legion_Assaulter"
+					weapon_class = "Revolver"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
+					archetype = "Legion_Assaulter"
+					weapon_class = "Pistol"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
+					archetype = "Legion_Assaulter"
+					weapon_class = "SubmachineGun"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if not self:GetActiveWeapons(weapon_class) then
+					AIPlayCombatAction("ChangeWeapon", self, 0)
+				end
+				
+				local stealth_stance = self:GetStanceToStealth()
+				if self:CanStealth(stealth_stance) then
+				 self:Hide()
+				end	
+				
+				local panicroll = self:Random(100)
+				local panicshance = 0
+				
+				local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+				local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+				
+				local wounds = 0
+				local wounded = self:GetStatusEffect("Wounded")
+				local bleeding = self:GetStatusEffect("Bleeding")
+				if wounded then
+					wounds = wounded.stacks 
+				end
+				if bleeding then
+					wounds = wounds + bleeding.stacks 
+				end
+				panicroll = panicroll - 10*wounds
+											
+				if wounds > 1 then
+					local panicshance = 100-health_perc
+				end
+				
+				if will_perc < 40 then
+					local panicshance = Max(panicshance,100-will_perc)
+				end
+				
+				if panicroll < panicshance then
+				PlayVoiceResponse(self, "AIArchetypeScared")
+				archetype = "Deserter"
+				end
+				
+				return archetype
 			end,
+			'CustomEquipGear', function (self, items)  end,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
+				"HoldPosition",
+				"MinFreeMove",
+				"OpportunisticKiller",
+				"Counterfire",
+				"OverwatchExpert",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Legion_Recon",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Legion_Recon02",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Legion_Recon03",
+				}),
+			},
+			'Equipment', {
+				"Warden_Inventory",
+			},
+			'AdditionalGroups', {
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_1",
+				}),
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_2",
+				}),
+			},
+			'pollyvoice', "Joey",
+			'gender', "Male",
+			'VoiceResponseId', "LegionRaider",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "Thugs",
+			'Id', "ThugBoss_Stronger_Elite",
+			'object_class', "UnitData",
+			'Health', 95,
+			'Agility', 90,
+			'Dexterity', 90,
+			'Strength', 80,
+			'Wisdom', 80,
+			'Will', 100,
+			'Leadership', 100,
+			'Marksmanship', 90,
+			'Mechanical', 100,
+			'Explosives', 70,
+			'Medical', 70,
+			'Portrait', "UI/EnemiesPortraits/ThugOfficer",
+			'Name', T(927223711798, --[[ModItemUnitDataCompositeDef ThugBoss_Stronger_Elite Name]] "Советник"),
+			'Randomization', true,
+			'elite', true,
+			'Affiliation', "Thugs",
+			'StartingLevel', 6,
+			'villain', true,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"Control",
+				"Sniper",
+				"Marksman",
+				"Smoke",
+				"Explosives",
+				"Leader",
+			},
+			'archetype', "Legion_Frontliner",
+			'role', "Marksman",
+			'RepositionArchetype', "Legion_Frontliner",
+			'AlwaysUseOpeningAttack', true,
+			'OpeningAttackType', "Overwatch",
+			'MaxAttacks', 10,
+			'PickCustomArchetype', function (self, proto_context)  end,
+			'CustomEquipGear', function (self, items)  end,
+			'MaxHitPoints', 50,
+			'StartingPerks', {
+				"CQCTraining",
+				"Spiritual",
+				"BattleFocus",
+				"RelentlessAdvance",
+				"ShoulderToShoulder",
 				"AutoWeapons",
+				"Spotter",
+				"TakeAim",
 				"Shatterhand",
+				"OnMyTarget",
+				"Ironclad",
+				"LightStep",
+				"TrickShot",
+				"LeadFromTheFront",
+				"Shatterhand",
+				"Hobbler",
+				"LightningReactionNPC",
+				"Instagib",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Officer",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Officer_1",
+				}),
+			},
+			'Equipment', {
+				"Captain_Inventory",
+			},
+			'AdditionalGroups', {
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_1",
+				}),
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_2",
+				}),
+			},
+			'pollyvoice', "Joey",
+			'gender', "Male",
+			'VoiceResponseId', "LegionRaider",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "Thugs",
+			'Id', "ThugBoss_Stronger",
+			'object_class', "UnitData",
+			'Health', 90,
+			'Agility', 85,
+			'Dexterity', 85,
+			'Strength', 80,
+			'Wisdom', 70,
+			'Will', 90,
+			'Leadership', 80,
+			'Marksmanship', 88,
+			'Mechanical', 100,
+			'Explosives', 50,
+			'Medical', 50,
+			'Portrait', "UI/EnemiesPortraits/ThugOfficer",
+			'Name', T(317025941794, --[[ModItemUnitDataCompositeDef ThugBoss_Stronger Name]] "Командир"),
+			'Randomization', true,
+			'elite', true,
+			'Affiliation', "Thugs",
+			'StartingLevel', 7,
+			'villain', true,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"Control",
+				"Smoke",
+				"Explosives",
+				"Soldier",
+				"Ordnance",
+				"Leader",
+			},
+			'archetype', "Legion_Frontliner",
+			'role', "Commander",
+			'RepositionArchetype', "Legion_Frontliner",
+			'AlwaysUseOpeningAttack', true,
+			'OpeningAttackType', "Overwatch",
+			'MaxAttacks', 10,
+			'PickCustomArchetype', function (self, proto_context)  end,
+			'CustomEquipGear', function (self, items)  end,
+			'MaxHitPoints', 80,
+			'StartingPerks', {
+				"CQCTraining",
+				"Spiritual",
+				"BattleFocus",
+				"RelentlessAdvance",
+				"ShoulderToShoulder",
+				"AutoWeapons",
+				"Spotter",
+				"SidneyPerk",
+				"TakeAim",
+				"OnMyTarget",
+				"Ironclad",
+				"LightStep",
+				"TrickShot",
+				"LeadFromTheFront",
+				"Hobbler",
+				"Shatterhand",
+				"LightningReactionNPC",
+				"StressManagement",
 				"Hotblood",
+				"Instagib",
+				"HitTheDeck",
+				"CollateralDamage",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Officer",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Officer_1",
+				}),
+			},
+			'Equipment', {
+				"Lieutenant_Inventory",
+			},
+			'AdditionalGroups', {
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_1",
+				}),
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_2",
+				}),
+			},
+			'pollyvoice', "Joey",
+			'gender', "Male",
+			'VoiceResponseId', "LegionRaider",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "Thugs",
+			'Id', "ThugBoss",
+			'object_class', "UnitData",
+			'Health', 90,
+			'Agility', 85,
+			'Dexterity', 85,
+			'Strength', 80,
+			'Wisdom', 70,
+			'Will', 90,
+			'Leadership', 80,
+			'Marksmanship', 88,
+			'Mechanical', 100,
+			'Explosives', 50,
+			'Medical', 50,
+			'Portrait', "UI/EnemiesPortraits/ThugOfficer",
+			'Name', T(641400217995, --[[ModItemUnitDataCompositeDef ThugBoss Name]] "Командир"),
+			'Randomization', true,
+			'elite', true,
+			'Affiliation', "Thugs",
+			'StartingLevel', 7,
+			'villain', true,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"Control",
+				"Smoke",
+				"Explosives",
+				"Soldier",
+				"Ordnance",
+				"Leader",
+			},
+			'archetype', "Legion_Frontliner",
+			'role', "Commander",
+			'RepositionArchetype', "Legion_Frontliner",
+			'AlwaysUseOpeningAttack', true,
+			'OpeningAttackType', "Overwatch",
+			'MaxAttacks', 10,
+			'PickCustomArchetype', function (self, proto_context)  end,
+			'CustomEquipGear', function (self, items)  end,
+			'MaxHitPoints', 80,
+			'StartingPerks', {
+				"CQCTraining",
+				"Spiritual",
+				"BattleFocus",
+				"RelentlessAdvance",
+				"ShoulderToShoulder",
+				"AutoWeapons",
+				"Spotter",
+				"SidneyPerk",
+				"TakeAim",
+				"OnMyTarget",
+				"Ironclad",
+				"LightStep",
+				"TrickShot",
+				"LeadFromTheFront",
+				"Hobbler",
+				"Shatterhand",
+				"LightningReactionNPC",
+				"StressManagement",
+				"Hotblood",
+				"Instagib",
+				"HitTheDeck",
+				"CollateralDamage",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Officer",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Officer_1",
+				}),
+			},
+			'Equipment', {
+				"Lieutenant_Inventory",
+			},
+			'AdditionalGroups', {
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_1",
+				}),
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_2",
+				}),
+			},
+			'pollyvoice', "Joey",
+			'gender', "Male",
+			'VoiceResponseId', "LegionRaider",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "Thugs",
+			'Id', "ThugGoon",
+			'object_class', "UnitData",
+			'Health', 85,
+			'Agility', 85,
+			'Dexterity', 75,
+			'Strength', 40,
+			'Wisdom', 50,
+			'Will', 75,
+			'Leadership', 50,
+			'Marksmanship', 70,
+			'Mechanical', 0,
+			'Explosives', 0,
+			'Medical', 90,
+			'Portrait', "UI/EnemiesPortraits/ThugSoldier",
+			'Name', T(812831809650, --[[ModItemUnitDataCompositeDef ThugGoon Name]] "Костоправ"),
+			'Randomization', true,
+			'Affiliation', "Thugs",
+			'StartingLevel', 5,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"Heal",
+				"Smoke",
+				"Marksman",
+			},
+			'archetype', "Legion_Frontliner",
+			'role', "Medic",
+			'CanManEmplacements', false,
+			'MaxAttacks', 10,
+			'PickCustomArchetype', function (self, proto_context)
+				local archetype = self.archetype
+				
+				local panicroll = self:Random(100)
+				local panicshance = 0
+				
+				for _, ally in ipairs(self.team.units) do
+					if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) then
+						archetype = "Medic"
+					end
+				end
+				
+				local bleeding = self:GetStatusEffect("Bleeding")
+				if bleeding then
+					archetype = "Medic"
+				end
+				
+				
+				return archetype
+			end,
+			'CustomEquipGear', function (self, items)  end,
+			'MaxHitPoints', 80,
+			'StartingPerks', {
+				"Caretaker",
+				"BeefedUp",
+				"Savior",
+				"MinFreeMove",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Medic",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Medic_1",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Medic_2",
+				}),
+			},
+			'Equipment', {
+				"Bonemaker_Inventory",
+			},
+			'AdditionalGroups', {
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_1",
+				}),
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_2",
+				}),
+			},
+			'pollyvoice', "Joey",
+			'gender', "Male",
+			'VoiceResponseId', "LegionRaider",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "Thugs",
+			'Id', "ThugGoon_Stronger",
+			'object_class', "UnitData",
+			'Health', 75,
+			'Agility', 80,
+			'Dexterity', 85,
+			'Strength', 70,
+			'Wisdom', 15,
+			'Will', 65,
+			'Leadership', 0,
+			'Marksmanship', 70,
+			'Mechanical', 50,
+			'Explosives', 25,
+			'Medical', 0,
+			'Portrait', "UI/EnemiesPortraits/ThugSoldier",
+			'Name', T(765470374054, --[[ModItemUnitDataCompositeDef ThugGoon_Stronger Name]] "Штурмовик"),
+			'Randomization', true,
+			'Affiliation', "Thugs",
+			'StartingLevel', 6,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"CQB",
+				"RunAndGun",
+			},
+			'archetype', "Legion_Assaulter",
+			'role', "Stormer",
+			'CanManEmplacements', false,
+			'MaxAttacks', 10,
+			'PickCustomArchetype', function (self, proto_context)
+				local archetype = self.archetype
+				
+				local panicroll = self:Random(100)
+				local panicshance = 0
+				
+				local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+				local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+				
+				local wounds = 0
+				local wounded = self:GetStatusEffect("Wounded")
+				local bleeding = self:GetStatusEffect("Bleeding")
+				if wounded then
+					wounds = wounded.stacks 
+				end
+				if bleeding then
+					wounds = wounds + bleeding.stacks 
+				end
+				panicroll = panicroll - 10*wounds
+											
+				if wounds > 1 then
+					local panicshance = 100-health_perc
+				end
+				
+				if will_perc < 40 then
+					local panicshance = Max(panicshance,100-will_perc)
+				end
+				
+				if panicroll < panicshance then
+				PlayVoiceResponse(self, "AIArchetypeScared")
+				archetype = "Deserter"
+				end
+				
+				return archetype
+			end,
+			'CustomEquipGear', function (self, items)  end,
+			'MaxHitPoints', 60,
+			'StartingPerks', {
+				"MeleeTraining",
+				"Ironclad",
+				"MinFreeMove",
+				"CQCTraining",
+				"RelentlessAdvance",
+				"SteadyBreathing",
 			},
 			'AppearancesList', {
 				PlaceObj('AppearanceWeight', {
@@ -36313,59 +36715,91 @@ return {
 				}),
 			},
 			'Equipment', {
-				"LegionT3_AutoPistol",
+				"Shocktrooper_Inventory",
 			},
 			'AdditionalGroups', {
 				PlaceObj('AdditionalGroup', {
 					'Weight', 50,
 					'Exclusive', true,
-					'Name', "ThugMale_1",
+					'Name', "LegionMale_1",
 				}),
 				PlaceObj('AdditionalGroup', {
 					'Weight', 50,
 					'Exclusive', true,
-					'Name', "ThugMale_2",
+					'Name', "LegionMale_2",
 				}),
 			},
-			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
+			'VoiceResponseId', "LegionRaider",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Thugs",
 			'Id', "ThugGoon_Stronger_Elite",
 			'object_class', "UnitData",
 			'Health', 100,
-			'Agility', 87,
-			'Dexterity', 63,
-			'Strength', 50,
-			'Wisdom', 30,
-			'Leadership', 20,
-			'Marksmanship', 66,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
+			'Agility', 95,
+			'Dexterity', 95,
+			'Strength', 100,
+			'Wisdom', 40,
+			'Will', 60,
+			'Leadership', 40,
+			'Marksmanship', 85,
+			'Mechanical', 85,
+			'Medical', 20,
 			'Portrait', "UI/EnemiesPortraits/ThugSoldier",
-			'BigPortrait', "UI/EnemiesPortraits/Unknown",
-			'Name', T(222209892712, --[[ModItemUnitDataCompositeDef ThugGoon_Stronger_Elite Name]] "Badass Ganger"),
+			'Name', T(515735951720, --[[ModItemUnitDataCompositeDef ThugGoon_Stronger_Elite Name]] "Палач"),
 			'Randomization', true,
+			'elite', true,
 			'Affiliation', "Thugs",
-			'StartingLevel', 6,
+			'StartingLevel', 15,
 			'neutral_retaliate', true,
 			'AIKeywords', {
-				"Smoke",
+				"CQB",
+				"RunAndGun",
+				"MobileShot",
+				"Heal",
+				"Melee",
 			},
-			'role', "Soldier",
-			'MaxAttacks', 2,
+			'archetype', "Legion_Assaulter",
+			'role', "Stormer",
+			'CanManEmplacements', false,
+			'RepositionArchetype', "Legion_Assaulter",
+			'MaxAttacks', 10,
+			'PickCustomArchetype', function (self, proto_context)
+				local enemy, dist = GetNearestEnemy(self)
+				local archetype = self.archetype
+				local weapon_class = "Firearm"
+				
+				if enemy and dist < 10*const.SlabSizeX then
+					--archetype = "Brute"
+					weapon_class = "Melee"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if not self:GetActiveWeapons(weapon_class) then
+					AIPlayCombatAction("ChangeWeapon", self, 0)
+				end
+				
+				return archetype
+			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "Firearm")
+				self:TryEquip(items, "Handheld B", "MeleeWeapon")
 			end,
-			'MaxHitPoints', 50,
+			'MaxHitPoints', 60,
 			'StartingPerks', {
-				"AutoWeapons",
-				"Shatterhand",
+				"MinFreeMove",
+				"Throwing",
+				"Ironclad",
+				"CQCTraining",
 				"Hotblood",
+				"RelentlessAdvance",
+				"SteadyBreathing",
+				"BeefedUp",
+				"Shatterhand",
+				"NailsPerk",
+				"SidneyPerk",
+				"KillingWind",
 			},
 			'AppearancesList', {
 				PlaceObj('AppearanceWeight', {
@@ -36373,442 +36807,770 @@ return {
 				}),
 				PlaceObj('AppearanceWeight', {
 					'Preset', "Thug_Soldier_1",
+					'Weight', 2,
 				}),
 				PlaceObj('AppearanceWeight', {
 					'Preset', "Thug_Soldier_2",
+					'Weight', 2,
 				}),
 			},
 			'Equipment', {
-				"LegionT3_Shotgun",
+				"Headsman_Inventory",
 			},
 			'AdditionalGroups', {
 				PlaceObj('AdditionalGroup', {
 					'Weight', 50,
 					'Exclusive', true,
-					'Name', "ThugMale_1",
+					'Name', "LegionMale_1",
 				}),
 				PlaceObj('AdditionalGroup', {
 					'Weight', 50,
 					'Exclusive', true,
-					'Name', "ThugMale_2",
+					'Name', "LegionMale_2",
 				}),
 			},
-			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
+			'VoiceResponseId', "LegionRaider",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Thugs",
 			'Id', "ThugGrenadier",
 			'object_class', "UnitData",
-			'Health', 61,
-			'Agility', 80,
-			'Dexterity', 30,
-			'Strength', 78,
-			'Wisdom', 30,
-			'Leadership', 30,
-			'Marksmanship', 50,
+			'Health', 70,
+			'Agility', 65,
+			'Dexterity', 70,
+			'Strength', 70,
+			'Wisdom', 5,
+			'Will', 35,
+			'Leadership', 0,
+			'Marksmanship', 55,
 			'Mechanical', 0,
-			'Explosives', 46,
+			'Explosives', 15,
 			'Medical', 0,
 			'Portrait', "UI/EnemiesPortraits/ThugDemo",
-			'BigPortrait', "UI/EnemiesPortraits/Unknown",
-			'Name', T(830731724070, --[[ModItemUnitDataCompositeDef ThugGrenadier Name]] "Demo"),
-			'Randomization', true,
-			'Affiliation', "Thugs",
-			'StartingLevel', 2,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Explosives",
-			},
-			'archetype', "Skirmisher",
-			'role', "Demolitions",
-			'MaxAttacks', 2,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "Firearm")
-			end,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"Throwing",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Demolishion",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Demolishion_1",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Demolishion_2",
-				}),
-			},
-			'Equipment', {
-				"Pistols_Colt1911",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_2",
-				}),
-			},
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Thugs",
-			'Id', "ThugGrenadier_Stronger",
-			'object_class', "UnitData",
-			'Health', 61,
-			'Agility', 80,
-			'Dexterity', 30,
-			'Strength', 78,
-			'Wisdom', 30,
-			'Leadership', 30,
-			'Marksmanship', 50,
-			'Mechanical', 0,
-			'Explosives', 70,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/ThugDemo",
-			'Name', T(323504148172, --[[ModItemUnitDataCompositeDef ThugGrenadier_Stronger Name]] "Tough Demo"),
-			'Randomization', true,
-			'Affiliation', "Thugs",
-			'StartingLevel', 4,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Explosives",
-			},
-			'archetype', "Skirmisher",
-			'role', "Demolitions",
-			'MaxAttacks', 2,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"Throwing",
-				"CollateralDamage",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Demolishion",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Demolishion_1",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Demolishion_2",
-				}),
-			},
-			'Equipment', {
-				"LegionT2_GMPG",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_2",
-				}),
-			},
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Thugs",
-			'Id', "ThugGrenadier_Stronger_Elite",
-			'object_class', "UnitData",
-			'Health', 61,
-			'Agility', 80,
-			'Dexterity', 30,
-			'Strength', 78,
-			'Wisdom', 30,
-			'Leadership', 30,
-			'Marksmanship', 50,
-			'Mechanical', 0,
-			'Explosives', 100,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/ThugDemo",
-			'Name', T(460897741854, --[[ModItemUnitDataCompositeDef ThugGrenadier_Stronger_Elite Name]] "Badass Demo"),
-			'Randomization', true,
-			'Affiliation', "Thugs",
-			'StartingLevel', 6,
-			'neutral_retaliate', true,
-			'AIKeywords', {
-				"Explosives",
-			},
-			'archetype', "Skirmisher",
-			'role', "Demolitions",
-			'MaxAttacks', 2,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "Firearm")
-			end,
-			'MaxHitPoints', 50,
-			'StartingPerks', {
-				"Throwing",
-				"CollateralDamage",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Demolishion",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Demolishion_1",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Demolishion_2",
-				}),
-			},
-			'Equipment', {
-				"LegionT2_RifleSemi",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_2",
-				}),
-			},
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Thugs",
-			'Id', "ThugGunner",
-			'object_class', "UnitData",
-			'Health', 62,
-			'Agility', 77,
-			'Dexterity', 39,
-			'Strength', 82,
-			'Wisdom', 30,
-			'Leadership', 20,
-			'Marksmanship', 63,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/ThugHeavy",
-			'Name', T(822326464643, --[[ModItemUnitDataCompositeDef ThugGunner Name]] "Gun-runner"),
-			'Randomization', true,
-			'Affiliation', "Thugs",
-			'StartingLevel', 2,
-			'neutral_retaliate', true,
-			'archetype', "HeavyGunner",
-			'role', "Heavy",
-			'MaxAttacks', 2,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "Firearm")
-			end,
-			'MaxHitPoints', 85,
-			'StartingPerks', {
-				"HeavyWeaponsTraining",
-				"AutoWeapons",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Heavy",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Heavy_1",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Heavy_2",
-				}),
-			},
-			'Equipment', {
-				"LegionT1_GMPG",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_2",
-				}),
-			},
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Thugs",
-			'Id', "ThugGunner_Stronger",
-			'object_class', "UnitData",
-			'Health', 62,
-			'Agility', 77,
-			'Dexterity', 39,
-			'Strength', 82,
-			'Wisdom', 30,
-			'Leadership', 20,
-			'Marksmanship', 84,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/ThugHeavy",
-			'Name', T(373187345626, --[[ModItemUnitDataCompositeDef ThugGunner_Stronger Name]] "Tough Gun-runner"),
-			'Randomization', true,
-			'Affiliation', "Thugs",
-			'StartingLevel', 4,
-			'neutral_retaliate', true,
-			'archetype', "HeavyGunner",
-			'role', "Heavy",
-			'MaxAttacks', 2,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "Firearm")
-			end,
-			'MaxHitPoints', 85,
-			'StartingPerks', {
-				"HeavyWeaponsTraining",
-				"AutoWeapons",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Heavy",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Heavy_1",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Heavy_2",
-				}),
-			},
-			'Equipment', {
-				"LegionT2_LMG",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_2",
-				}),
-			},
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Thugs",
-			'Id', "ThugGunner_Stronger_Elite",
-			'object_class', "UnitData",
-			'Health', 62,
-			'Agility', 77,
-			'Dexterity', 39,
-			'Strength', 82,
-			'Wisdom', 30,
-			'Leadership', 20,
-			'Marksmanship', 84,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/ThugHeavy",
-			'Name', T(440890020852, --[[ModItemUnitDataCompositeDef ThugGunner_Stronger_Elite Name]] "Badass Gun-runner"),
-			'Randomization', true,
-			'Affiliation', "Thugs",
-			'StartingLevel', 7,
-			'neutral_retaliate', true,
-			'archetype', "HeavyGunner",
-			'role', "Heavy",
-			'MaxAttacks', 2,
-			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
-				self:TryEquip(items, "Handheld B", "Firearm")
-			end,
-			'MaxHitPoints', 85,
-			'StartingPerks', {
-				"HeavyWeaponsTraining",
-				"AutoWeapons",
-				"Killzone",
-			},
-			'AppearancesList', {
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Heavy",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Heavy_1",
-				}),
-				PlaceObj('AppearanceWeight', {
-					'Preset', "Thug_Heavy_2",
-				}),
-			},
-			'Equipment', {
-				"LegionT3_GMPG",
-			},
-			'AdditionalGroups', {
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_1",
-				}),
-				PlaceObj('AdditionalGroup', {
-					'Weight', 50,
-					'Exclusive', true,
-					'Name', "ThugMale_2",
-				}),
-			},
-			'pollyvoice', "Joey",
-			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
-		}),
-		PlaceObj('ModItemUnitDataCompositeDef', {
-			'Group', "Thugs",
-			'Id', "ThugSniper",
-			'object_class', "UnitData",
-			'Health', 49,
-			'Agility', 91,
-			'Dexterity', 62,
-			'Wisdom', 55,
-			'Leadership', 50,
-			'Marksmanship', 85,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
-			'Portrait', "UI/EnemiesPortraits/ThugSniper",
-			'Name', T(850188223732, --[[ModItemUnitDataCompositeDef ThugSniper Name]] "Headhunter"),
+			'BigPortrait', "UI/Enemies/LegionRaider",
+			'Name', T(947641553708, --[[ModItemUnitDataCompositeDef ThugGrenadier Name]] "Гренадёр"),
 			'Randomization', true,
 			'Affiliation', "Thugs",
 			'StartingLevel', 3,
 			'neutral_retaliate', true,
 			'AIKeywords', {
+				"Explosives",
+				"CQB",
+			},
+			'archetype', "Legion_Assaulter",
+			'role', "Demolitions",
+			'CanManEmplacements', false,
+			'MaxAttacks', 10,
+			'PickCustomArchetype', function (self, proto_context)
+				local archetype = self.archetype
+				
+				local panicroll = self:Random(100)
+				local panicshance = 0
+				
+				local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+				local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+				
+				local wounds = 0
+				local wounded = self:GetStatusEffect("Wounded")
+				local bleeding = self:GetStatusEffect("Bleeding")
+				if wounded then
+					wounds = wounded.stacks 
+				end
+				if bleeding then
+					wounds = wounds + bleeding.stacks 
+				end
+				panicroll = panicroll - 10*wounds
+											
+				if wounds > 1 then
+					local panicshance = 100-health_perc
+				end
+				
+				if will_perc < 40 then
+					local panicshance = Max(panicshance,100-will_perc)
+				end
+				
+				if panicroll < panicshance then
+				PlayVoiceResponse(self, "AIArchetypeScared")
+				archetype = "Deserter"
+				end
+				
+				return archetype
+			end,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "PipeBomb")
+			end,
+			'MaxHitPoints', 50,
+			'StartingPerks', {
+				"Throwing",
+				"BreachAndClear",
+				"MinFreeMove",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Demolishion",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Demolishion_1",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Demolishion_2",
+				}),
+			},
+			'Equipment', {
+				"Grenadier_Inventory",
+			},
+			'AdditionalGroups', {
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_1",
+				}),
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_2",
+				}),
+			},
+			'pollyvoice', "Russell",
+			'gender', "Male",
+			'VoiceResponseId', "LegionRaider",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "Thugs",
+			'Id', "ThugGrenadier_Stronger",
+			'object_class', "UnitData",
+			'Health', 70,
+			'Agility', 88,
+			'Dexterity', 95,
+			'Wisdom', 15,
+			'Leadership', 0,
+			'Marksmanship', 75,
+			'Mechanical', 50,
+			'Explosives', 0,
+			'Medical', 0,
+			'Portrait', "UI/EnemiesPortraits/ThugDemo",
+			'Name', T(654442681700, --[[ModItemUnitDataCompositeDef ThugGrenadier_Stronger Name]] "Грабитель"),
+			'Affiliation', "Thugs",
+			'StartingLevel', 5,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"CQB",
+				"Soldier",
+			},
+			'archetype', "Legion_Assaulter",
+			'role', "Stormer",
+			'PinnedDownChance', 100,
+			'MaxAttacks', 10,
+			'PickCustomArchetype', function (self, proto_context)
+				local enemy, dist = GetNearestEnemy(self)
+				local archetype = self.archetype
+				local weapon_class = "Firearm"
+				
+				if enemy and dist < 8*const.SlabSizeX then
+					--archetype = "Brute"
+					weapon_class = "Melee"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if not self:GetActiveWeapons(weapon_class) then
+					AIPlayCombatAction("ChangeWeapon", self, 0)
+				end
+				
+				local panicroll = self:Random(100)
+				local panicshance = 0
+				
+				local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+				local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+				
+				local wounds = 0
+				local wounded = self:GetStatusEffect("Wounded")
+				local bleeding = self:GetStatusEffect("Bleeding")
+				if wounded then
+					wounds = wounded.stacks 
+				end
+				if bleeding then
+					wounds = wounds + bleeding.stacks 
+				end
+				panicroll = panicroll - 10*wounds
+											
+				if wounds > 1 then
+					local panicshance = 100-health_perc
+				end
+				
+				if will_perc < 40 then
+					local panicshance = Max(panicshance,100-will_perc)
+				end
+				
+				if panicroll < panicshance then
+				PlayVoiceResponse(self, "AIArchetypeScared")
+				archetype = "Deserter"
+				end
+				
+				return archetype
+			end,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "MeleeWeapon")
+			end,
+			'MaxHitPoints', 50,
+			'StartingPerks', {
+				"CQCTraining",
+				"TakeAim",
+				"RelentlessAdvance",
+				"SteadyBreathing",
+				"MinFreeMove",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Demolishion",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Demolishion_1",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Demolishion_2",
+				}),
+			},
+			'Equipment', {
+				"Pillager_Inventory",
+			},
+			'AdditionalGroups', {
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_1",
+				}),
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_2",
+				}),
+			},
+			'pollyvoice', "Joey",
+			'gender', "Male",
+			'VoiceResponseId', "LegionRaider",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "Thugs",
+			'Id', "ThugGrenadier_Stronger_Elite",
+			'object_class', "UnitData",
+			'Health', 98,
+			'Agility', 92,
+			'Dexterity', 95,
+			'Strength', 98,
+			'Wisdom', 50,
+			'Will', 90,
+			'Leadership', 30,
+			'Marksmanship', 88,
+			'Mechanical', 100,
+			'Explosives', 20,
+			'Medical', 20,
+			'Portrait', "UI/EnemiesPortraits/ThugDemo",
+			'Name', T(931285992937, --[[ModItemUnitDataCompositeDef ThugGrenadier_Stronger_Elite Name]] "Наемник Пулеметчик"),
+			'Randomization', true,
+			'elite', true,
+			'Affiliation', "Thugs",
+			'StartingLevel', 16,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"MG",
+				"Soldier",
+				"Flank",
+				"Marksman",
+				"Control",
+			},
+			'archetype', "Legion_Machinegunner",
+			'role', "Heavy",
+			'MaxAttacks', 10,
+			'PickCustomArchetype', function (self, proto_context)  end,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+			end,
+			'MaxHitPoints', 85,
+			'StartingPerks', {
+				"HitTheDeck",
+				"CollateralDamage",
+				"Ironclad",
+				"Hardened",
+				"RelentlessAdvance",
+				"TrueGrit",
+				"OverwatchExpert",
+				"HeavyWeaponsTraining",
+				"Spotter",
+				"Enfilade",
+				"Killzone",
+				"Hobbler",
+				"AutoWeapons",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Demolishion",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Demolishion_1",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Demolishion_2",
+				}),
+			},
+			'Equipment', {
+				"MercGunner_Inventory",
+			},
+			'AdditionalGroups', {
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_1",
+				}),
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_2",
+				}),
+			},
+			'pollyvoice', "Joey",
+			'gender', "Male",
+			'VoiceResponseId', "LegionRaider",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "Thugs",
+			'Id', "ThugGunner",
+			'object_class', "UnitData",
+			'Health', 65,
+			'Agility', 75,
+			'Dexterity', 70,
+			'Strength', 70,
+			'Wisdom', 5,
+			'Will', 45,
+			'Leadership', 0,
+			'Marksmanship', 65,
+			'Mechanical', 20,
+			'Explosives', 0,
+			'Medical', 0,
+			'Portrait', "UI/EnemiesPortraits/ThugHeavy",
+			'Name', T(747716825453, --[[ModItemUnitDataCompositeDef ThugGunner Name]] "Пуляло"),
+			'Randomization', true,
+			'Affiliation', "Thugs",
+			'StartingLevel', 3,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"MG",
+				"Soldier",
+				"Control",
+			},
+			'archetype', "Legion_Machinegunner",
+			'role', "Heavy",
+			'RepositionArchetype', "Legion_Machinegunner",
+			'OpeningAttackType', "Overwatch",
+			'MaxAttacks', 1,
+			'PickCustomArchetype', function (self, proto_context)
+				local enemy, dist = GetNearestEnemy(self)
+				local archetype = self.archetype
+				local weapon_class = "Firearm"
+				
+				if enemy and dist < 10*const.SlabSizeX then
+					--archetype = "Brute"
+					weapon_class = "Melee"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if not self:GetActiveWeapons(weapon_class) then
+					AIPlayCombatAction("ChangeWeapon", self, 0)
+				end
+				
+				local panicroll = self:Random(100)
+				local panicshance = 0
+				
+				local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+				local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+				
+				local wounds = 0
+				local wounded = self:GetStatusEffect("Wounded")
+				local bleeding = self:GetStatusEffect("Bleeding")
+				if wounded then
+					wounds = wounded.stacks 
+				end
+				if bleeding then
+					wounds = wounds + bleeding.stacks 
+				end
+				panicroll = panicroll - 10*wounds
+											
+				if wounds > 1 then
+					local panicshance = 100-health_perc
+				end
+				
+				if will_perc < 40 then
+					local panicshance = Max(panicshance,100-will_perc)
+				end
+				
+				if panicroll < panicshance then
+				PlayVoiceResponse(self, "AIArchetypeScared")
+				archetype = "Deserter"
+				end
+				
+				return archetype
+			end,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "MeleeWeapon")
+			end,
+			'MaxHitPoints', 85,
+			'StartingPerks', {
+				"HitTheDeck",
+				"Ironclad",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Heavy",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Heavy_1",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Heavy_2",
+				}),
+			},
+			'Equipment', {
+				"Gunner_Inventory",
+			},
+			'AdditionalGroups', {
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_1",
+				}),
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_2",
+				}),
+			},
+			'pollyvoice', "Joey",
+			'gender', "Male",
+			'VoiceResponseId', "LegionRaider",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "Thugs",
+			'Id', "ThugGunner_Stronger",
+			'object_class', "UnitData",
+			'Health', 86,
+			'Agility', 78,
+			'Dexterity', 88,
+			'Strength', 80,
+			'Wisdom', 15,
+			'Will', 65,
+			'Leadership', 0,
+			'Marksmanship', 76,
+			'Mechanical', 50,
+			'Explosives', 10,
+			'Medical', 0,
+			'Portrait', "UI/EnemiesPortraits/ThugHeavy",
+			'Name', T(548780115142, --[[ModItemUnitDataCompositeDef ThugGunner_Stronger Name]] "Коммандо"),
+			'Randomization', true,
+			'Affiliation', "Thugs",
+			'StartingLevel', 8,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"MG",
+				"CQB",
+			},
+			'archetype', "Legion_Machinegunner",
+			'role', "Heavy",
+			'MaxAttacks', 10,
+			'PickCustomArchetype', function (self, proto_context)
+				local enemy, dist = GetNearestEnemy(self)
+				local archetype = self.archetype
+				local weapon_class = "Firearm"
+				
+				if enemy and dist < 10*const.SlabSizeX then
+					--archetype = "Brute"
+					weapon_class = "Melee"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if not self:GetActiveWeapons(weapon_class) then
+					AIPlayCombatAction("ChangeWeapon", self, 0)
+				end
+				
+				local panicroll = self:Random(100)
+				local panicshance = 0
+				
+				local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+				local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+				
+				local wounds = 0
+				local wounded = self:GetStatusEffect("Wounded")
+				local bleeding = self:GetStatusEffect("Bleeding")
+				if wounded then
+					wounds = wounded.stacks 
+				end
+				if bleeding then
+					wounds = wounds + bleeding.stacks 
+				end
+				panicroll = panicroll - 10*wounds
+											
+				if wounds > 1 then
+					local panicshance = 100-health_perc
+				end
+				
+				if will_perc < 40 then
+					local panicshance = Max(panicshance,100-will_perc)
+				end
+				
+				if panicroll < panicshance then
+				PlayVoiceResponse(self, "AIArchetypeScared")
+				archetype = "Deserter"
+				end
+				
+				return archetype
+			end,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "MeleeWeapon")
+			end,
+			'MaxHitPoints', 85,
+			'StartingPerks', {
+				"HitTheDeck",
+				"Ironclad",
+				"RelentlessAdvance",
+				"TrueGrit",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Heavy",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Heavy_1",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Heavy_2",
+				}),
+			},
+			'Equipment', {
+				"AssaultGunner_Inventory",
+			},
+			'AdditionalGroups', {
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_1",
+				}),
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_2",
+				}),
+			},
+			'pollyvoice', "Joey",
+			'gender', "Male",
+			'VoiceResponseId', "LegionRaider",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "Thugs",
+			'Id', "ThugGunner_Stronger_Elite",
+			'object_class', "UnitData",
+			'Health', 75,
+			'Agility', 82,
+			'Dexterity', 78,
+			'Strength', 85,
+			'Wisdom', 15,
+			'Leadership', 0,
+			'Marksmanship', 74,
+			'Mechanical', 50,
+			'Explosives', 50,
+			'Medical', 0,
+			'Portrait', "UI/EnemiesPortraits/ThugHeavy",
+			'Name', T(347920605650, --[[ModItemUnitDataCompositeDef ThugGunner_Stronger_Elite Name]] "Гранатомётчик"),
+			'Randomization', true,
+			'Affiliation', "Thugs",
+			'StartingLevel', 8,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"Ordnance",
+				"Control",
 				"Sniper",
 			},
-			'role', "Marksman",
-			'AlwaysUseOpeningAttack', true,
-			'OpeningAttackType', "PinDown",
+			'archetype', "Artillery",
+			'role', "Artillery",
+			'CanManEmplacements', false,
 			'MaxAttacks', 1,
+			'PickCustomArchetype', function (self, proto_context)
+				local function PrimaryNonGL(self)
+				  return self:GetActiveWeapons("AssaultRifle")
+				      or self:GetActiveWeapons("Rifle")
+				      or self:GetActiveWeapons("Carbine")
+				      or self:GetActiveWeapons("BattleRifle")
+				      or self:GetActiveWeapons("SubmachineGun")
+				      or self:GetActiveWeapons("Shotgun")
+				end
+				
+				local enemy, dist = GetNearestEnemy(self)
+				local archetype = self.archetype
+				local weapon_class = "Firearm"
+				local roll = self:Random(100)
+				local chance = 50
+				
+				local weapon_class = "Firearm"
+				if enemy and dist < 40*const.SlabSizeX and dist > 15*const.SlabSizeX and roll < chance then
+				  weapon_class = "GrenadeLauncher"
+				else
+				  weapon_class = (PrimaryNonGL(self) and PrimaryNonGL(self).weapon_class) or "AssaultRifle"
+				end
+				
+				if enemy and dist < 10*const.SlabSizeX then
+					archetype = "Legion_Assaulter"
+					weapon_class = "Melee"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if not self:GetActiveWeapons(weapon_class) then
+				  AIPlayCombatAction("ChangeWeapon", self, 0)
+				end
+				
+				return archetype
+			end,
+			'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "HeavyWeapon")
+				self:TryEquip(items, "Handheld B", "Firearm")
+			end,
+			'MaxHitPoints', 50,
+			'StartingPerks', {
+				"HeavyWeaponsTraining",
+				"Hardened",
+			},
+			'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Heavy",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Heavy_1",
+				}),
+				PlaceObj('AppearanceWeight', {
+					'Preset', "Thug_Heavy_2",
+				}),
+			},
+			'Equipment', {
+				"HeavyGrenadier_Inventory",
+			},
+			'AdditionalGroups', {
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_1",
+				}),
+				PlaceObj('AdditionalGroup', {
+					'Weight', 50,
+					'Exclusive', true,
+					'Name', "LegionMale_2",
+				}),
+			},
+			'pollyvoice', "Joey",
+			'gender', "Male",
+			'VoiceResponseId', "LegionRaider",
+		}),
+		PlaceObj('ModItemUnitDataCompositeDef', {
+			'Group', "Thugs",
+			'Id', "ThugSniper",
+			'object_class', "UnitData",
+			'Agility', 85,
+			'Dexterity', 65,
+			'Strength', 50,
+			'Wisdom', 5,
+			'Will', 40,
+			'Leadership', 0,
+			'Marksmanship', 80,
+			'Mechanical', 0,
+			'Explosives', 0,
+			'Medical', 0,
+			'Portrait', "UI/EnemiesPortraits/ThugSniper",
+			'Name', T(669687407644, --[[ModItemUnitDataCompositeDef ThugSniper Name]] "Стрелок"),
+			'Randomization', true,
+			'Affiliation', "Thugs",
+			'StartingLevel', 4,
+			'neutral_retaliate', true,
+			'AIKeywords', {
+				"Soldier",
+				"Control",
+			},
+			'archetype', "Legion_Frontliner",
+			'role', "Marksman",
+			'OpeningAttackType', "Overwatch",
+			'MaxAttacks', 10,
+			'PickCustomArchetype', function (self, proto_context)
+				local enemy, dist = GetNearestEnemy(self)
+				local archetype = self.archetype
+				local weapon_class = "Firearm"
+				local roll = self:Random(100)
+				local chance = 50
+				
+				if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
+					archetype = "Legion_Assaulter"
+					weapon_class = "Revolver"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
+					archetype = "Legion_Assaulter"
+					weapon_class = "Pistol"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
+					archetype = "Legion_Assaulter"
+					weapon_class = "SubmachineGun"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if not self:GetActiveWeapons(weapon_class) then
+					AIPlayCombatAction("ChangeWeapon", self, 0)
+				end
+				
+				local panicroll = self:Random(100)
+				local panicshance = 0
+				
+				local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
+				local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
+				
+				local wounds = 0
+				local wounded = self:GetStatusEffect("Wounded")
+				local bleeding = self:GetStatusEffect("Bleeding")
+				if wounded then
+					wounds = wounded.stacks 
+				end
+				if bleeding then
+					wounds = wounds + bleeding.stacks 
+				end
+				panicroll = panicroll - 10*wounds
+											
+				if wounds > 1 then
+					local panicshance = 100-health_perc
+				end
+				
+				if will_perc < 40 then
+					local panicshance = Max(panicshance,100-will_perc)
+				end
+				
+				if panicroll < panicshance then
+				PlayVoiceResponse(self, "AIArchetypeScared")
+				archetype = "Deserter"
+				end
+				
+				return archetype
+			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
 				self:TryEquip(items, "Handheld B", "Firearm")
 			end,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
-				"MinFreeMove",
-				"Shatterhand",
+				"OpportunisticKiller",
+				"Instagib",
+				"CancelShotPerk",
+				"Spotter",
+				"Spiritual",
 			},
 			'AppearancesList', {
 				PlaceObj('AppearanceWeight', {
@@ -36822,60 +37584,93 @@ return {
 				}),
 			},
 			'Equipment', {
-				"LegionT1_RifleSniper",
+				"Rifleman_Inventory",
 			},
 			'AdditionalGroups', {
 				PlaceObj('AdditionalGroup', {
 					'Weight', 50,
 					'Exclusive', true,
-					'Name', "ThugMale_1",
+					'Name', "LegionMale_1",
 				}),
 				PlaceObj('AdditionalGroup', {
 					'Weight', 50,
 					'Exclusive', true,
-					'Name', "ThugMale_2",
+					'Name', "LegionMale_2",
 				}),
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
+			'VoiceResponseId', "LegionRaider",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Thugs",
 			'Id', "ThugSniper_Stronger",
 			'object_class', "UnitData",
-			'Health', 76,
-			'Agility', 91,
-			'Dexterity', 69,
-			'Strength', 81,
-			'Wisdom', 37,
-			'Leadership', 50,
-			'Marksmanship', 85,
-			'Mechanical', 0,
+			'Health', 75,
+			'Agility', 92,
+			'Dexterity', 80,
+			'Wisdom', 30,
+			'Will', 75,
+			'Leadership', 20,
+			'Marksmanship', 95,
+			'Mechanical', 50,
 			'Explosives', 0,
 			'Medical', 0,
 			'Portrait', "UI/EnemiesPortraits/ThugSniper",
-			'Name', T(430351656850, --[[ModItemUnitDataCompositeDef ThugSniper_Stronger Name]] "Tough Headhunter"),
+			'Name', T(376372530640, --[[ModItemUnitDataCompositeDef ThugSniper_Stronger Name]] "Снайпер"),
 			'Randomization', true,
 			'Affiliation', "Thugs",
-			'StartingLevel', 5,
+			'StartingLevel', 12,
 			'neutral_retaliate', true,
 			'AIKeywords', {
 				"Sniper",
 			},
+			'archetype', "Legion_Frontliner",
 			'role', "Marksman",
 			'AlwaysUseOpeningAttack', true,
 			'OpeningAttackType', "PinDown",
-			'MaxAttacks', 1,
+			'MaxAttacks', 10,
+			'PickCustomArchetype', function (self, proto_context)
+				local enemy, dist = GetNearestEnemy(self)
+				local archetype = self.archetype
+				local weapon_class = "Firearm"
+				local roll = self:Random(100)
+				
+				
+				if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver"  then
+					archetype = "Legion_Assaulter"
+					weapon_class = "Revolver"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol"  then
+					archetype = "Legion_Assaulter"
+					weapon_class = "Pistol"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if not self:GetActiveWeapons(weapon_class) then
+					AIPlayCombatAction("ChangeWeapon", self, 0)
+				end
+				
+				return archetype
+			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
 				self:TryEquip(items, "Handheld B", "Firearm")
 			end,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
-				"MinFreeMove",
-				"Shatterhand",
 				"LightningReactionNPC",
+				"Spiritual",
+				"Instagib",
+				"HawksEye",
+				"Killzone",
+				"Spiritual",
+				"DeathFromAbove",
+				"SteadyBreathing",
+				"TrickShot",
+				"Hobbler",
 			},
 			'AppearancesList', {
 				PlaceObj('AppearanceWeight', {
@@ -36889,61 +37684,108 @@ return {
 				}),
 			},
 			'Equipment', {
-				"LegionT2_RifleSniper_silencer",
+				"Sniper_Inventory",
 			},
 			'AdditionalGroups', {
 				PlaceObj('AdditionalGroup', {
 					'Weight', 50,
 					'Exclusive', true,
-					'Name', "ThugMale_1",
+					'Name', "LegionMale_1",
 				}),
 				PlaceObj('AdditionalGroup', {
 					'Weight', 50,
 					'Exclusive', true,
-					'Name', "ThugMale_2",
+					'Name', "LegionMale_2",
 				}),
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
+			'VoiceResponseId', "LegionRaider",
 		}),
 		PlaceObj('ModItemUnitDataCompositeDef', {
 			'Group', "Thugs",
 			'Id', "ThugSniper_Stronger_Elite",
 			'object_class', "UnitData",
-			'Health', 49,
-			'Agility', 91,
-			'Dexterity', 62,
-			'Wisdom', 55,
-			'Leadership', 50,
-			'Marksmanship', 85,
-			'Mechanical', 0,
-			'Explosives', 0,
-			'Medical', 0,
+			'Health', 80,
+			'Agility', 98,
+			'Dexterity', 95,
+			'Strength', 72,
+			'Wisdom', 100,
+			'Will', 85,
+			'Leadership', 30,
+			'Marksmanship', 95,
+			'Mechanical', 100,
+			'Explosives', 30,
+			'Medical', 30,
 			'Portrait', "UI/EnemiesPortraits/ThugSniper",
-			'Name', T(376972491822, --[[ModItemUnitDataCompositeDef ThugSniper_Stronger_Elite Name]] "Badass Headhunter"),
+			'Name', T(290103631560, --[[ModItemUnitDataCompositeDef ThugSniper_Stronger_Elite Name]] "Рейнджер"),
 			'Randomization', true,
+			'elite', true,
 			'Affiliation', "Thugs",
-			'StartingLevel', 7,
+			'StartingLevel', 18,
 			'neutral_retaliate', true,
 			'AIKeywords', {
 				"Sniper",
+				"Flank",
+				"Control",
+				"RunAndGun",
 			},
-			'role', "Marksman",
+			'archetype', "Legion_Assaulter",
+			'role', "Recon",
+			'RepositionArchetype', "Legion_Assaulter",
 			'AlwaysUseOpeningAttack', true,
-			'OpeningAttackType', "PinDown",
-			'MaxAttacks', 1,
+			'MaxAttacks', 10,
+			'PickCustomArchetype', function (self, proto_context)
+				local enemy, dist = GetNearestEnemy(self)
+				local archetype = self.archetype
+				local weapon_class = "Firearm"
+				local roll = self:Random(100)
+				local chance = 70
+				
+				if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "AssaultRifle" and roll < chance then
+					archetype = "Legion_Assaulter"
+					weapon_class = "AssaultRifle"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
+					archetype = "Legion_Assaulter"
+					weapon_class = "SubmachineGun"
+					PlayVoiceResponse(self, "AIArchetypeAngry")
+				end
+				
+				if not self:GetActiveWeapons(weapon_class) then
+					AIPlayCombatAction("ChangeWeapon", self, 0)
+				end
+				
+				local stealth_stance = self:GetStanceToStealth()
+				if self:CanStealth(stealth_stance) then
+				 self:Hide()
+				end	
+				
+				return archetype
+			end,
 			'CustomEquipGear', function (self, items)
-				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld A", "SniperRifle")
 				self:TryEquip(items, "Handheld B", "Firearm")
 			end,
 			'MaxHitPoints', 50,
 			'StartingPerks', {
-				"MinFreeMove",
-				"Shatterhand",
-				"LightningReactionNPC",
-				"Deadeye",
-				"ColdHeart",
+				"HoldPosition",
+				"Counterfire",
+				"OpportunisticKiller",
+				"Instagib",
+				"Infiltrator",
+				"Flanker",
+				"Hardened",
+				"RelentlessAdvance",
+				"Untraceable",
+				"Stealthy",
+				"NightOps",
+				"CQCTraining",
+				"LightningReaction",
+				"Hotblood",
+				"LastWarning",
 			},
 			'AppearancesList', {
 				PlaceObj('AppearanceWeight', {
@@ -36957,23 +37799,23 @@ return {
 				}),
 			},
 			'Equipment', {
-				"LegionT3_RifleSniper_silencer",
+				"Ranger_Inventory",
 			},
 			'AdditionalGroups', {
 				PlaceObj('AdditionalGroup', {
 					'Weight', 50,
 					'Exclusive', true,
-					'Name', "ThugMale_1",
+					'Name', "LegionMale_1",
 				}),
 				PlaceObj('AdditionalGroup', {
 					'Weight', 50,
 					'Exclusive', true,
-					'Name', "ThugMale_2",
+					'Name', "LegionMale_2",
 				}),
 			},
 			'pollyvoice', "Joey",
 			'gender', "Male",
-			'VoiceResponseId', "ThugGunner",
+			'VoiceResponseId', "LegionRaider",
 		}),
 		}),
 	PlaceObj('ModItemFolder', {

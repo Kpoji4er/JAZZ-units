@@ -5,65 +5,88 @@ DefineClass.ThugGoon = {
 
 
 	object_class = "UnitData",
-	Health = 50,
-	Agility = 66,
-	Dexterity = 30,
-	Strength = 50,
-	Wisdom = 30,
-	Leadership = 20,
-	Marksmanship = 66,
+	Health = 85,
+	Agility = 85,
+	Dexterity = 75,
+	Strength = 40,
+	Wisdom = 50,
+	Will = 75,
+	Leadership = 50,
+	Marksmanship = 70,
 	Mechanical = 0,
 	Explosives = 0,
-	Medical = 0,
+	Medical = 90,
 	Portrait = "UI/EnemiesPortraits/ThugSoldier",
-	BigPortrait = "UI/EnemiesPortraits/Unknown",
-	Name = T(816845859658, --[[ModItemUnitDataCompositeDef ThugGoon Name]] "Ganger"),
+	Name = T(812831809650, --[[ModItemUnitDataCompositeDef ThugGoon Name]] "Костоправ"),
 	Randomization = true,
 	Affiliation = "Thugs",
+	StartingLevel = 5,
 	neutral_retaliate = true,
 	AIKeywords = {
+		"Heal",
 		"Smoke",
+		"Marksman",
 	},
-	role = "Soldier",
-	MaxAttacks = 1,
-	CustomEquipGear = function (self, items)
-		self:TryEquip(items, "Handheld A", "Firearm")
-		self:TryEquip(items, "Handheld B", "Firearm")
+	archetype = "Legion_Frontliner",
+	role = "Medic",
+	CanManEmplacements = false,
+	MaxAttacks = 10,
+	PickCustomArchetype = function (self, proto_context)
+		local archetype = self.archetype
+		
+		local panicroll = self:Random(100)
+		local panicshance = 0
+		
+		for _, ally in ipairs(self.team.units) do
+			if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) then
+				archetype = "Medic"
+			end
+		end
+		
+		local bleeding = self:GetStatusEffect("Bleeding")
+		if bleeding then
+			archetype = "Medic"
+		end
+		
+		
+		return archetype
 	end,
-	MaxHitPoints = 50,
+	CustomEquipGear = function (self, items)  end,
+	MaxHitPoints = 80,
 	StartingPerks = {
-		"AutoWeapons",
-		"Shatterhand",
-		"Hotblood",
+		"Caretaker",
+		"BeefedUp",
+		"Savior",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
-			'Preset', "Thug_Soldier",
+			'Preset', "Thug_Medic",
 		}),
 		PlaceObj('AppearanceWeight', {
-			'Preset', "Thug_Soldier_1",
+			'Preset', "Thug_Medic_1",
 		}),
 		PlaceObj('AppearanceWeight', {
-			'Preset', "Thug_Soldier_2",
+			'Preset', "Thug_Medic_2",
 		}),
 	},
 	Equipment = {
-		"LegionT1_PistolList",
+		"Bonemaker_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {
 			'Weight', 50,
 			'Exclusive', true,
-			'Name', "ThugMale_1",
+			'Name', "LegionMale_1",
 		}),
 		PlaceObj('AdditionalGroup', {
 			'Weight', 50,
 			'Exclusive', true,
-			'Name', "ThugMale_2",
+			'Name', "LegionMale_2",
 		}),
 	},
 	pollyvoice = "Joey",
 	gender = "Male",
-	VoiceResponseId = "ThugGunner",
+	VoiceResponseId = "LegionRaider",
 }
 

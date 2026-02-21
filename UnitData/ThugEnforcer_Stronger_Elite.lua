@@ -4,32 +4,57 @@ DefineClass.ThugEnforcer_Stronger_Elite = {
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
 
+	comment = "Т3 Следопыт Pathfinder | Винтовк с глушителем и оптикой, камуфляж, полный стелс",
 	object_class = "UnitData",
 	Health = 75,
-	Agility = 97,
-	Dexterity = 93,
-	Strength = 95,
-	Wisdom = 16,
-	Leadership = 65,
-	Marksmanship = 43,
-	Mechanical = 0,
-	Explosives = 33,
-	Medical = 0,
+	Agility = 95,
+	Dexterity = 92,
+	Strength = 70,
+	Wisdom = 80,
+	Will = 75,
+	Leadership = 15,
+	Marksmanship = 90,
+	Mechanical = 50,
+	Explosives = 15,
+	Medical = 20,
 	Portrait = "UI/EnemiesPortraits/ThugStormer",
-	Name = T(656775620928, --[[ModItemUnitDataCompositeDef ThugEnforcer_Stronger_Elite Name]] "Badass Enforcer"),
+	Name = T(123943777379, --[[ModItemUnitDataCompositeDef ThugEnforcer_Stronger_Elite Name]] "Badass Enforcer"),
 	Randomization = true,
 	Affiliation = "Thugs",
-	StartingLevel = 8,
+	StartingLevel = 10,
 	neutral_retaliate = true,
-	archetype = "Brute",
-	role = "Stormer",
+	AIKeywords = {
+		"Flank",
+		"Sniper",
+		"Control",
+	},
+	archetype = "Legion_Frontliner",
+	role = "Recon",
+	RepositionArchetype = "Legion_Frontliner",
+	AlwaysUseOpeningAttack = true,
+	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)
 		local enemy, dist = GetNearestEnemy(self)
 		local archetype = self.archetype
 		local weapon_class = "Firearm"
+		local roll = self:Random(100)
+		local chance = 50
 		
-		if enemy and dist < 8*const.SlabSizeX then
-			weapon_class = "MeleeWeapon"
+		if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
+			archetype = "Legion_Assaulter"
+			weapon_class = "Revolver"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
+			archetype = "Legion_Assaulter"
+			weapon_class = "Pistol"
+			PlayVoiceResponse(self, "AIArchetypeAngry")
+		end
+		
+		if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
+			archetype = "Legion_Assaulter"
+			weapon_class = "SubmachineGun"
 			PlayVoiceResponse(self, "AIArchetypeAngry")
 		end
 		
@@ -37,50 +62,53 @@ DefineClass.ThugEnforcer_Stronger_Elite = {
 			AIPlayCombatAction("ChangeWeapon", self, 0)
 		end
 		
+		local stealth_stance = self:GetStanceToStealth()
+		if self:CanStealth(stealth_stance) then
+		 self:Hide()
+		end	
+		
 		return archetype
 	end,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 		self:TryEquip(items, "Handheld B", "Firearm")
 	end,
-	MaxHitPoints = 100,
+	MaxHitPoints = 50,
 	StartingPerks = {
-		"Berserker",
-		"BeefedUp",
-		"MinFreeMove",
-		"Shatterhand",
-		"StressManagement",
-		"ColdHeart",
-		"InstantAutopsy",
+		"HoldPosition",
+		"Hobbler",
+		"OpportunisticKiller",
+		"Instagib",
+		"FleetingShadow",
+		"Counterfire",
+		"Hardened",
+		"Flanker",
+		"Untraceable",
+		"Hotblood",
+		"LastWarning",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
-			'Preset', "Thug_Stormer",
-		}),
-		PlaceObj('AppearanceWeight', {
-			'Preset', "Thug_Stormer_1",
-		}),
-		PlaceObj('AppearanceWeight', {
-			'Preset', "Thug_Stormer_2",
+			'Preset', "Thug_Recon",
 		}),
 	},
 	Equipment = {
-		"LegionT3_AssaultRifle",
+		"Pathfinder_Inventory",
 	},
 	AdditionalGroups = {
 		PlaceObj('AdditionalGroup', {
 			'Weight', 50,
 			'Exclusive', true,
-			'Name', "ThugMale_1",
+			'Name', "LegionMale_1",
 		}),
 		PlaceObj('AdditionalGroup', {
 			'Weight', 50,
 			'Exclusive', true,
-			'Name', "ThugMale_2",
+			'Name', "LegionMale_2",
 		}),
 	},
 	pollyvoice = "Joey",
 	gender = "Male",
-	VoiceResponseId = "ThugGunner",
+	VoiceResponseId = "LegionRaider",
 }
 
