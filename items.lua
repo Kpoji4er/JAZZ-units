@@ -81048,6 +81048,9 @@ return {
 			'Tier', "Personal",
 		}),
 		}),
+	PlaceObj('ModItemFolder', {
+		'name', "New folder",
+	}),
 	PlaceObj('ModItemLocTable', {
 		'language', "English",
 		'filename', "Mod/Dv3mFVN/English.csv",
