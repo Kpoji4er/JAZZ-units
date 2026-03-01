@@ -51923,7 +51923,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "JAZZ_Legion_LeaderT3_Captain",
+									'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								}),
 							},
 							'UnitCountMin', 1,
@@ -51932,7 +51932,7 @@ return {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
 								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "JAZZ_Legion_FlankerT4_Ranger",
+									'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								}),
 							},
 							'UnitCountMin', 1,
