@@ -58,14 +58,13 @@ DefineClass.JAZZ_Legion_AssaultT3_SkullCrusher = {
 	end,
 	MaxHitPoints = 60,
 	StartingPerks = {
-		"MinFreeMove",
 		"Throwing",
 		"BreachAndClear",
 		"BeefedUp",
-		"Shatterhand",
 		"NailsPerk",
 		"CQCTraining",
 		"KillingWind",
+		"Hotblood",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

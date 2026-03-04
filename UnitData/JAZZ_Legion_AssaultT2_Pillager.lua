@@ -87,7 +87,6 @@ DefineClass.JAZZ_Legion_AssaultT2_Pillager = {
 		"TakeAim",
 		"RelentlessAdvance",
 		"SteadyBreathing",
-		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

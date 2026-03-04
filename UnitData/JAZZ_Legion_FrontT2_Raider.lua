@@ -75,7 +75,6 @@ DefineClass.JAZZ_Legion_FrontT2_Raider = {
 	StartingPerks = {
 		"AutoWeapons",
 		"TakeAim",
-		"MinFreeMove",
 		"HitTheDeck",
 	},
 	AppearancesList = {

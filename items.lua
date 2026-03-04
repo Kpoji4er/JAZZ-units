@@ -39446,7 +39446,6 @@ return {
 				'StartingPerks', {
 					"Throwing",
 					"BreachAndClear",
-					"MinFreeMove",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -39576,7 +39575,6 @@ return {
 					"TakeAim",
 					"RelentlessAdvance",
 					"SteadyBreathing",
-					"MinFreeMove",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -39707,7 +39705,6 @@ return {
 				'MaxHitPoints', 50,
 				'StartingPerks', {
 					"Throwing",
-					"MinFreeMove",
 					"BreachAndClear",
 					"BeefedUp",
 					"RelentlessAdvance",
@@ -39931,14 +39928,13 @@ return {
 				end,
 				'MaxHitPoints', 60,
 				'StartingPerks', {
-					"MinFreeMove",
 					"Throwing",
 					"BreachAndClear",
 					"BeefedUp",
-					"Shatterhand",
 					"NailsPerk",
 					"CQCTraining",
 					"KillingWind",
+					"Hotblood",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -40033,9 +40029,7 @@ return {
 				'StartingPerks', {
 					"BeefedUp",
 					"Berserker",
-					"Shatterhand",
 					"CQCTraining",
-					"MinFreeMove",
 					"Ironclad",
 					"RelentlessAdvance",
 					"BreachAndClear",
@@ -40142,7 +40136,6 @@ return {
 				end,
 				'MaxHitPoints', 60,
 				'StartingPerks', {
-					"MinFreeMove",
 					"Throwing",
 					"Ironclad",
 					"CQCTraining",
@@ -40150,7 +40143,6 @@ return {
 					"RelentlessAdvance",
 					"SteadyBreathing",
 					"BeefedUp",
-					"Shatterhand",
 					"NailsPerk",
 					"SidneyPerk",
 					"KillingWind",
@@ -40267,7 +40259,6 @@ return {
 				'MaxHitPoints', 50,
 				'StartingPerks', {
 					"TakeAim",
-					"MinFreeMove",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -40524,7 +40515,6 @@ return {
 					"Caretaker",
 					"BeefedUp",
 					"Savior",
-					"MinFreeMove",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -40642,7 +40632,6 @@ return {
 				'StartingPerks', {
 					"AutoWeapons",
 					"TakeAim",
-					"MinFreeMove",
 					"HitTheDeck",
 				},
 				'AppearancesList', {
@@ -41073,10 +41062,8 @@ return {
 					"Ironclad",
 					"TakeAim",
 					"AutoWeapons",
-					"MinFreeMove",
 					"HitTheDeck",
 					"Hardened",
-					"Shatterhand",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -41315,7 +41302,6 @@ return {
 					"Ironclad",
 					"TakeAim",
 					"AutoWeapons",
-					"MinFreeMove",
 					"Hardened",
 					"Shatterhand",
 					"HitTheDeck",
@@ -41754,13 +41740,13 @@ return {
 				'StartingPerks', {
 					"HoldPosition",
 					"OpportunisticKiller",
-					"MinFreeMove",
 					"Counterfire",
 					"Flanker",
 					"RelentlessAdvance",
 					"Untraceable",
 					"Stealthy",
 					"CQCTraining",
+					"MinFreeMove",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -42957,7 +42943,7 @@ return {
 					"AutoWeapons",
 					"Spotter",
 					"TakeAim",
-					"Shatterhand",
+					"Hotblood",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -43060,7 +43046,6 @@ return {
 					"TrickShot",
 					"LeadFromTheFront",
 					"Hobbler",
-					"Shatterhand",
 					"LightningReactionNPC",
 					"StressManagement",
 					"Hotblood",
@@ -43168,7 +43153,6 @@ return {
 					"LightStep",
 					"TrickShot",
 					"LeadFromTheFront",
-					"Shatterhand",
 					"Hobbler",
 					"LightningReactionNPC",
 					"Instagib",
@@ -43255,7 +43239,6 @@ return {
 					"LightStep",
 					"TrickShot",
 					"LeadFromTheFront",
-					"Shatterhand",
 					"StressManagement",
 					"Hotblood",
 					"Instagib",

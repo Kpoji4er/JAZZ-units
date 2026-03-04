@@ -51,7 +51,7 @@ DefineClass.JAZZ_Legion_LeaderT1_Sergeant = {
 		"AutoWeapons",
 		"Spotter",
 		"TakeAim",
-		"Shatterhand",
+		"Hotblood",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

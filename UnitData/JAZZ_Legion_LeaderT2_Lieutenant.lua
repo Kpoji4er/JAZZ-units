@@ -60,7 +60,6 @@ DefineClass.JAZZ_Legion_LeaderT2_Lieutenant = {
 		"TrickShot",
 		"LeadFromTheFront",
 		"Hobbler",
-		"Shatterhand",
 		"LightningReactionNPC",
 		"StressManagement",
 		"Hotblood",

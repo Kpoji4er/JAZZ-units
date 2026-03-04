@@ -53,7 +53,6 @@ DefineClass.JAZZ_Legion_LeaderT4_MercenaryCaptain = {
 		"LightStep",
 		"TrickShot",
 		"LeadFromTheFront",
-		"Shatterhand",
 		"StressManagement",
 		"Hotblood",
 		"Instagib",

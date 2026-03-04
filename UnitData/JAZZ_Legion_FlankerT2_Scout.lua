@@ -105,13 +105,13 @@ DefineClass.JAZZ_Legion_FlankerT2_Scout = {
 	StartingPerks = {
 		"HoldPosition",
 		"OpportunisticKiller",
-		"MinFreeMove",
 		"Counterfire",
 		"Flanker",
 		"RelentlessAdvance",
 		"Untraceable",
 		"Stealthy",
 		"CQCTraining",
+		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

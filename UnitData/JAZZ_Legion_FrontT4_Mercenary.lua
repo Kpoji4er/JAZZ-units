@@ -82,7 +82,6 @@ DefineClass.JAZZ_Legion_FrontT4_Mercenary = {
 		"Ironclad",
 		"TakeAim",
 		"AutoWeapons",
-		"MinFreeMove",
 		"Hardened",
 		"Shatterhand",
 		"HitTheDeck",

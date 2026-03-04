@@ -79,10 +79,8 @@ DefineClass.JAZZ_Legion_FrontT3_Veteran = {
 		"Ironclad",
 		"TakeAim",
 		"AutoWeapons",
-		"MinFreeMove",
 		"HitTheDeck",
 		"Hardened",
-		"Shatterhand",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

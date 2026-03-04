@@ -59,7 +59,6 @@ DefineClass.JAZZ_Legion_FrontT1_Bonemaker = {
 		"Caretaker",
 		"BeefedUp",
 		"Savior",
-		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

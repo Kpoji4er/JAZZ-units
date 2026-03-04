@@ -73,7 +73,6 @@ DefineClass.JAZZ_Legion_FrontT1_Marauder = {
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"TakeAim",
-		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

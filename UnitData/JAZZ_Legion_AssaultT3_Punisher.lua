@@ -59,9 +59,7 @@ DefineClass.JAZZ_Legion_AssaultT3_Punisher = {
 	StartingPerks = {
 		"BeefedUp",
 		"Berserker",
-		"Shatterhand",
 		"CQCTraining",
-		"MinFreeMove",
 		"Ironclad",
 		"RelentlessAdvance",
 		"BreachAndClear",

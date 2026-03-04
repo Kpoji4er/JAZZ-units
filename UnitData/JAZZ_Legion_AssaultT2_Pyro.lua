@@ -88,7 +88,6 @@ DefineClass.JAZZ_Legion_AssaultT2_Pyro = {
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"Throwing",
-		"MinFreeMove",
 		"BreachAndClear",
 		"BeefedUp",
 		"RelentlessAdvance",

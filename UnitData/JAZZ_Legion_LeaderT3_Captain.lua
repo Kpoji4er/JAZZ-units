@@ -59,7 +59,6 @@ DefineClass.JAZZ_Legion_LeaderT3_Captain = {
 		"LightStep",
 		"TrickShot",
 		"LeadFromTheFront",
-		"Shatterhand",
 		"Hobbler",
 		"LightningReactionNPC",
 		"Instagib",

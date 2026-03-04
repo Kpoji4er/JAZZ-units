@@ -76,7 +76,6 @@ DefineClass.JAZZ_Legion_AssaultT1_Grenadier = {
 	StartingPerks = {
 		"Throwing",
 		"BreachAndClear",
-		"MinFreeMove",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

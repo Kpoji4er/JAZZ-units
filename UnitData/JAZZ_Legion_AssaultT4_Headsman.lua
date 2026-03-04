@@ -60,7 +60,6 @@ DefineClass.JAZZ_Legion_AssaultT4_Headsman = {
 	end,
 	MaxHitPoints = 60,
 	StartingPerks = {
-		"MinFreeMove",
 		"Throwing",
 		"Ironclad",
 		"CQCTraining",
@@ -68,7 +67,6 @@ DefineClass.JAZZ_Legion_AssaultT4_Headsman = {
 		"RelentlessAdvance",
 		"SteadyBreathing",
 		"BeefedUp",
-		"Shatterhand",
 		"NailsPerk",
 		"SidneyPerk",
 		"KillingWind",
