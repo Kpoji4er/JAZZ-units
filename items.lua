@@ -37903,6 +37903,7 @@ return {
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
+								'Required', true,
 							}),
 							PlaceObj('AIPolicyWeaponRange', {
 								'RequiredKeywords', {
@@ -37931,13 +37932,13 @@ return {
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
+								'Required', true,
 							}),
 							PlaceObj('AIPolicyWeaponRange', {
 								'RequiredKeywords', {
 									"Melee",
 								},
 								'Weight', 200,
-								'Required', true,
 								'RangeMin', 0,
 								'RangeMax', 15,
 							}),
@@ -46737,6 +46738,7 @@ return {
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
+								'Required', true,
 							}),
 							PlaceObj('AIPolicyWeaponRange', {
 								'RequiredKeywords', {
@@ -46763,6 +46765,7 @@ return {
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
+								'Required', true,
 							}),
 							PlaceObj('AIPolicyWeaponRange', {
 								'RequiredKeywords', {
