@@ -72,7 +72,7 @@ DefineClass.Buns = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(574540805848, --[[ModItemUnitDataCompositeDef Buns Text MercChatHaggle Lines ChatMessage voice:Buns]] "Вы наняли этого ненормального «Жнеца». У этой образины определённо не все дома! Хотите со мной работать, тогда уж потрудитесь компенсировать мне неблагоприятные условия труда."),
+					'Text', T(574540805848, --[[ModItemUnitDataCompositeDef Buns Text MercChatHaggle Lines ChatMessage voice:Buns]] "Вы наняли этого ненормального «Жнеца». Это очень, очень больной человек. Если хотите, чтобы я продолжила наше сотрудничество, вам придётся заплатить. Считайте это компенсацией за неблагоприятные условия работы."),
 				}),
 			},
 			'Conditions', {
@@ -85,7 +85,7 @@ DefineClass.Buns = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(998763690178, --[[ModItemUnitDataCompositeDef Buns Text MercChatHaggle Lines ChatMessage voice:Buns]] "Не знаю, что побудило вас нанять эту бестолковую фотомодель Лиску! У неё в голове то же, что в груди. Наверняка один силикон. Я уверена… Так или иначе, терпеть её присутствие без доплаты я не намерена."),
+					'Text', T(998763690178, --[[ModItemUnitDataCompositeDef Buns Text MercChatHaggle Lines ChatMessage voice:Buns]] "Не знаю, что побудило вас нанять эту бестолковую фотомодель Лиску. Готова поспорить, у неё даже бюст ненастоящий. Да-да. Так или иначе, терпеть её присутствие без доплаты я не намерена."),
 				}),
 			},
 			'Conditions', {
@@ -100,7 +100,7 @@ DefineClass.Buns = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(691020141104, --[[ModItemUnitDataCompositeDef Buns Text MercChatMitigation Lines ChatMessage voice:Buns]] "Обычно я не соглашаюсь на такие предложения. Но коль скоро на вас работает… Сидней, возможно, у вас всё просчитано. Я в деле."),
+					'Text', T(691020141104, --[[ModItemUnitDataCompositeDef Buns Text MercChatMitigation Lines ChatMessage voice:Buns]] "Обычно я не соглашаюсь на такие предложения. Но коль скоро на вас работает Сидней, возможно, вы не совсем бездарь. Я в деле."),
 				}),
 			},
 			'Conditions', {
@@ -114,17 +114,17 @@ DefineClass.Buns = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(545257109553, --[[ModItemUnitDataCompositeDef Buns Text Offline ChatMessage voice:Buns]] "Это Моника Зондергад. Полагаю, вам рекомендовали меня как образцового, исполнительного и аккуратного сотрудника. В данный момент я недоступна. Свяжитесь со мной позже."),
+			'Text', T(545257109553, --[[ModItemUnitDataCompositeDef Buns Text Offline ChatMessage voice:Buns]] "Это Моника Зондергад. Полагаю, вам рекомендовали меня как образцового, чистоплотного и исполнительного сотрудника. В данный момент я отсутствую. Свяжитесь со мной в другое время."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(852499190735, --[[ModItemUnitDataCompositeDef Buns Text GreetingAndOffer ChatMessage voice:Buns]] "Приветствую. Это Моника Зондергад. Рада знакомству. Полагаю, вам требуются работники, и вас покорили мои образцовые навыки и аккуратный подход."),
+			'Text', T(852499190735, --[[ModItemUnitDataCompositeDef Buns Text GreetingAndOffer ChatMessage voice:Buns]] "Приветствую. Моника Зондергад. Рада знакомству. Полагаю, вам требуются работники, и вы не смогли устоять перед моими образцовыми навыками и общей чистоплотностью."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(698087255368, --[[ModItemUnitDataCompositeDef Buns Text ConversationRestart ChatMessage voice:Buns]] "Невежливо так резко обрывать разговор, но я вас прощаю. Продолжим."),
+			'Text', T(698087255368, --[[ModItemUnitDataCompositeDef Buns Text ConversationRestart ChatMessage voice:Buns]] "Невежливо обрывать разговор, но я вас прощаю. Продолжим."),
 		}),
 	},
 	IdleLine = {
@@ -134,17 +134,17 @@ DefineClass.Buns = {
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(906674942216, --[[ModItemUnitDataCompositeDef Buns Text PartingWords ChatMessage voice:Buns]] "Вот и славненько. Жду плодотворного сотрудничества."),
+			'Text', T(906674942216, --[[ModItemUnitDataCompositeDef Buns Text PartingWords ChatMessage voice:Buns]] "Очень хорошо. Буду ждать начала нашего сотрудничества."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(918365695405, --[[ModItemUnitDataCompositeDef Buns Text RehireIntro ChatMessage voice:Buns]] "Добрый день. Наш контракт подходит к концу. Боюсь, команде тяжело придётся без моих навыков, так что я готова продлить его действие."),
+			'Text', T(918365695405, --[[ModItemUnitDataCompositeDef Buns Text RehireIntro ChatMessage voice:Buns]] "Добрый день. Наш контракт подходит к концу. Моё отсутствие станет большим ударом для всей команды, так что я готова продлить его действие."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(558845485811, --[[ModItemUnitDataCompositeDef Buns Text RehireOutro ChatMessage voice:Buns]] "Хорошо. Я рада, что мы пришли к соглашению и контракт продлён."),
+			'Text', T(558845485811, --[[ModItemUnitDataCompositeDef Buns Text RehireOutro ChatMessage voice:Buns]] "Отлично. Я рада, что мы смогли прийти к соглашению и продолжить сотрудничество."),
 		}),
 	},
 	MedicalDeposit = "large",

@@ -56,7 +56,7 @@ DefineClass.Blood = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(588114353209, --[[ModItemUnitDataCompositeDef Blood Text MercChatHaggle Lines ChatMessage voice:Blood]] "Я надеялся, что командировка будет посодержательнее. Хочешь, чтоб я тусовался в лагере и харчи готовил - без проблем. Но я не хочу помирать со скуки, штампуя бургеры. Мне меню поинтересней нужно, может, накинешь немного на него?"),
+					'Text', T(588114353209, --[[ModItemUnitDataCompositeDef Blood Text MercChatHaggle Lines ChatMessage voice:Blood]] "Я надеялся, что командировка будет посодержательнее. Хочешь, чтоб я тусовался в лагере и харчи готовил - без проблем. Но я не хочу помирать со скуки, штампуя бургеры. Скинься на продукты поинтереснее - и всё будет тип-топ."),
 				}),
 			},
 			'Conditions', {
@@ -82,12 +82,12 @@ DefineClass.Blood = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(267868205180, --[[ModItemUnitDataCompositeDef Blood Text Offline ChatMessage voice:Blood]] "Нифига себе, чудо техники эти ваши автоответчики! Ништяк! Хе-хе-хе! XXI Век на дворе! Оставьте сообщение, и я с вами свяжусь."),
+			'Text', T(267868205180, --[[ModItemUnitDataCompositeDef Blood Text Offline ChatMessage voice:Blood]] "Зацените чудо техники! Крутотень! Добро пожаловать в XXI век! Оставьте сообщение, и я с вами свяжусь."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(199682617046, --[[ModItemUnitDataCompositeDef Blood Text GreetingAndOffer ChatMessage voice:Blood]] "Да, это Блад. Что там такое?"),
+			'Text', T(199682617046, --[[ModItemUnitDataCompositeDef Blood Text GreetingAndOffer ChatMessage voice:Blood]] "Блад слушает. Что там?"),
 		}),
 	},
 	ConversationRestart = {
@@ -97,7 +97,7 @@ DefineClass.Blood = {
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(905505064939, --[[ModItemUnitDataCompositeDef Blood Text IdleLine ChatMessage voice:Blood]] "Шевелись, дружище. У меня курятина подгорает."),
+			'Text', T(905505064939, --[[ModItemUnitDataCompositeDef Blood Text IdleLine ChatMessage voice:Blood]] "Давай, друг, рожай. У меня ужин на плите."),
 		}),
 	},
 	PartingWords = {
@@ -107,12 +107,12 @@ DefineClass.Blood = {
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(408648943422, --[[ModItemUnitDataCompositeDef Blood Text RehireIntro ChatMessage voice:Blood]] "Печально это говорить, дружище, но у меня контракт тут почти истек. Как поступим, а?"),
+			'Text', T(408648943422, --[[ModItemUnitDataCompositeDef Blood Text RehireIntro ChatMessage voice:Blood]] "Мне грустно об этом говорить, друг, но мой срок здесь кончается. Что будем делать?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(729529774361, --[[ModItemUnitDataCompositeDef Blood Text RehireOutro ChatMessage voice:Blood]] "Отлично! Продолжим смаковать местные блюда и мочить всяких гадов!"),
+			'Text', T(729529774361, --[[ModItemUnitDataCompositeDef Blood Text RehireOutro ChatMessage voice:Blood]] "Отлично! Продолжим смаковать местные блюда и мочить плохих парней!"),
 		}),
 	},
 	MedicalDeposit = "large",

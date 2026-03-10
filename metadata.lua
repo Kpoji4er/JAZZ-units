@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 9,
-	'version', 2223,
+	'version', 2234,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -209,8 +209,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1772876020,
-	'code_hash', 5064937588894500001,
+	'saved', 1773100847,
+	'code_hash', 4865020225193681891,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
@@ -7044,12 +7044,12 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
-			'Id', "Rebels_Assaulter",
+			'Id', "Melee",
 			'ClassDisplayName', "AIArchetype",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
-			'Id', "Melee",
+			'Id', "Rebels_Assaulter",
 			'ClassDisplayName', "AIArchetype",
 		}),
 		PlaceObj('ModResourcePreset', {

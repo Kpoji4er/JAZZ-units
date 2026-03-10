@@ -38371,6 +38371,30 @@ return {
 						},
 						'TakeCoverChance', 50,
 					}),
+					PlaceObj('StandardAI', {
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Required', true,
+							}),
+							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 3,
+								'Penalty', 30,
+							}),
+							PlaceObj('AIPolicyFlanking', {
+								'Weight', 5,
+								'AllyPlannedPosition', true,
+							}),
+							PlaceObj('AIPolicyLosToEnemy', {
+								'Weight', 30,
+							}),
+							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 30,
+								'visibility_mode', "team",
+							}),
+						},
+						'TakeCoverChance', 50,
+					}),
 					PlaceObj('PositioningAI', {
 						'Weight', 500,
 						'Label', "Sniper AI",
@@ -38381,6 +38405,7 @@ return {
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
+								'Required', true,
 							}),
 							PlaceObj('AIPolicyWeaponRange', {
 								'RequiredKeywords', {
@@ -38458,6 +38483,7 @@ return {
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
+								'Required', true,
 							}),
 							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyTakeCover', {
@@ -38486,6 +38512,7 @@ return {
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
+								'Required', true,
 							}),
 							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyFlanking', {
@@ -38860,15 +38887,17 @@ return {
 						'TakeCoverChance', 50,
 					}),
 					PlaceObj('PositioningAI', {
+						'Weight', 200,
 						'Label', "MGSetup",
 						'Fallback', false,
 						'OptLocWeight', 20,
 						'SignatureActions', {
 							PlaceObj('AIActionMGSetup', {
+								'Weight', 200,
 								'Priority', true,
 								'team_score', 10,
 								'min_score', 100,
-								'cur_zone_mod', 1000,
+								'cur_zone_mod', 70,
 							}),
 						},
 						'TargetingPolicies', {
@@ -39052,6 +39081,7 @@ return {
 						},
 						'team_score', 0,
 						'min_score', 100,
+						'cur_zone_mod', 70,
 					}),
 					PlaceObj('AIActionMGSetup', {
 						'BiasId', "MGSetup",
@@ -39059,12 +39089,12 @@ return {
 						'OnActivationBiases', {
 							PlaceObj('AIBiasModification', {
 								'BiasId', "MGSetup",
-								'Value', -50,
+								'Value', -30,
 								'Period', 2,
 							}),
 						},
 						'team_score', 0,
-						'min_score', 100,
+						'min_score', 70,
 						'cur_zone_mod', 1000,
 					}),
 					PlaceObj('AIActionMGBurstFire', nil),
@@ -39115,7 +39145,7 @@ return {
 				'Mechanical', 0,
 				'Explosives', 64,
 				'Medical', 0,
-				'Portrait', "UI/EnemiesPortraits/LegionRecon",
+				'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Roughneck.png",
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(217901684853, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT1_Roughneck Name]] "Головорез"),
 				'Randomization', true,
@@ -39250,7 +39280,7 @@ return {
 				'Mechanical', 0,
 				'Explosives', 10,
 				'Medical', 0,
-				'Portrait', "UI/EnemiesPortraits/LegionStormer",
+				'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Crusher.png",
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(188332474737, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT1_Crusher Name]] "Громила"),
 				'Randomization', true,
@@ -39388,7 +39418,7 @@ return {
 				'Mechanical', 0,
 				'Explosives', 15,
 				'Medical', 0,
-				'Portrait', "UI/EnemiesPortraits/LegionDemo",
+				'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Grenadier.png",
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(392427068113, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT1_Grenadier Name]] "Гренадёр"),
 				'Randomization', true,
@@ -39504,7 +39534,7 @@ return {
 				'Mechanical', 50,
 				'Explosives', 0,
 				'Medical', 0,
-				'Portrait', "UI/EnemiesPortraits/LegionRecon",
+				'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Pillager.png",
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(278695304484, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT2_Pillager Name]] "Грабитель"),
 				'eliteCategory', "Legion",
@@ -39635,7 +39665,7 @@ return {
 				'Mechanical', 50,
 				'Explosives', 0,
 				'Medical', 0,
-				'Portrait', "UI/EnemiesPortraits/LegionDemo",
+				'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Pyro.png",
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(546032242947, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT2_Pyro Name]] "Пироман"),
 				'Randomization', true,
@@ -39770,7 +39800,7 @@ return {
 				'Mechanical', 50,
 				'Explosives', 25,
 				'Medical', 0,
-				'Portrait', "UI/EnemiesPortraits/LegionStormer",
+				'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Shocktrooper.png",
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(176382444921, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT2_ShockTrooper Name]] "Штурмовик"),
 				'Randomization', true,
@@ -39888,7 +39918,7 @@ return {
 				'Mechanical', 85,
 				'Explosives', 35,
 				'Medical', 0,
-				'Portrait', "UI/EnemiesPortraits/LegionStormer",
+				'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Skullcrusher.png",
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(243489839730, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT3_SkullCrusher Name]] "Череполом"),
 				'Randomization', true,
@@ -39988,7 +40018,7 @@ return {
 				'Mechanical', 80,
 				'Explosives', 50,
 				'Medical', 0,
-				'Portrait', "UI/EnemiesPortraits/LegionStormer",
+				'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Punisher.png",
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(437565517773, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT3_Punisher Name]] "Каратель"),
 				'Randomization', true,
@@ -40093,7 +40123,7 @@ return {
 				'Marksmanship', 85,
 				'Mechanical', 85,
 				'Medical', 20,
-				'Portrait', "UI/EnemiesPortraits/LegionStormer",
+				'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Headsman.png",
 				'BigPortrait', "UI/Enemies/LegionRaider",
 				'Name', T(243489839730, --[[ModItemUnitDataCompositeDef JAZZ_Legion_AssaultT4_Headsman Name]] "Палач"),
 				'Randomization', true,
@@ -46722,19 +46752,102 @@ return {
 						'Weight', 10,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', nil),
-							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyTakeCover', {
+								'visibility_mode', "team",
+							}),
 						},
 						'TakeCoverChance', 50,
 					}),
-					PlaceObj('PositioningAI', {
-						'BiasId', "MeleeAttack",
+				},
+				Comment = "Keywords: Flank, Explosives",
+				OptLocPolicies = {
+					PlaceObj('AIPolicyWeaponRange', {
+						'Weight', 300,
+						'RangeBase', "Melee",
+						'RangeMin', 12,
+						'RangeMax', 21,
+					}),
+				},
+				OptLocSearchRadius = 80,
+				SignatureActions = {
+					PlaceObj('AIActionCharge', nil),
+				},
+				TargetChangePolicy = "restart",
+				TargetScoreRandomization = 10,
+				group = "Legion",
+				id = "Melee",
+			}),
+			PlaceObj('ModItemAIArchetype', {
+				BaseAttackTargeting = set( "Arms", "Legs", "Torso" ),
+				BaseMovementWeight = 10,
+				Behaviors = {
+					PlaceObj('StandardAI', {
+						'Weight', 10,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', nil),
+							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 30,
+								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
+							PlaceObj('AIPolicyFlanking', {
+								'Weight', 5,
+								'AllyPlannedPosition', true,
+							}),
+						},
+						'TakeCoverChance', 50,
+					}),
+					PlaceObj('StandardAI', {
 						'Weight', 500,
-						'Label', "Melee AI",
+						'Label', "Flanker AI",
 						'Fallback', false,
 						'RequiredKeywords', {
-							"Control",
+							"Nova",
 						},
-						'OptLocWeight', 20,
+						'Score', function (self, unit, proto_context, debug_data)
+							unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
+							local dest, score = AIScoreReachableVoxels(unit.ai_context, self.EndTurnPolicies, 0)
+							return MulDivRound(score, self.Weight, 100)
+						end,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 1,
+								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyFlanking', {
+								'Weight', 1000,
+							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
+							PlaceObj('AIPolicyLosToEnemy', nil),
+							PlaceObj('AIPolicyWeaponRange', {
+								'RangeMin', 0,
+								'RangeMax', 40,
+							}),
+						},
+						'TakeCoverChance', 50,
+					}),
+					PlaceObj('StandardAI', {
+						'BiasId', "MeleeAttack",
+						'Weight', 500,
+						'RequiredKeywords', {
+							"Nova",
+						},
+						'Score', function (self, unit, proto_context, debug_data)
+							unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
+							local dest, score = AIScoreReachableVoxels(unit.ai_context, self.EndTurnPolicies, 0)
+							return MulDivRound(score, self.Weight, 100)
+						end,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
@@ -46749,6 +46862,39 @@ return {
 								'RangeMax', 15,
 							}),
 							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
+						},
+						'TakeCoverChance', 50,
+					}),
+					PlaceObj('PositioningAI', {
+						'BiasId', "MeleeAttack",
+						'Weight', 500,
+						'Label', "Melee AI",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Melee",
+						},
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+								'Required', true,
+							}),
+							PlaceObj('AIPolicyWeaponRange', {
+								'RequiredKeywords', {
+									"Melee",
+								},
+								'Weight', 200,
+								'RangeMin', 0,
+								'RangeMax', 15,
+							}),
+							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
 						},
 						'TakeCoverChance', 0,
 						'VoiceResponse', "TacticalPressing",
@@ -46761,21 +46907,22 @@ return {
 						'RequiredKeywords', {
 							"Soldier",
 						},
-						'OptLocWeight', 20,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
-								'Required', true,
 							}),
 							PlaceObj('AIPolicyWeaponRange', {
-								'RequiredKeywords', {
-									"Melee",
-								},
 								'Weight', 200,
 								'RangeMin', 50,
 								'RangeMax', 70,
 							}),
-							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyTakeCover', {
+								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
 						},
 						'TakeCoverChance', 0,
 						'VoiceResponse', "TacticalPressing",
@@ -46783,19 +46930,68 @@ return {
 					PlaceObj('PositioningAI', {
 						'BiasId', "Flanking",
 						'Weight', 500,
-						'Label', "Flanker AI",
+						'Label', "Flanker AI POS",
 						'Fallback', false,
 						'RequiredKeywords', {
-							"Flank",
+							"Flanks",
 						},
-						'OptLocWeight', 20,
+						'Score', function (self, unit, proto_context, debug_data)
+							unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
+							local dest, score = AIScoreReachableVoxels(unit.ai_context, self.EndTurnPolicies, 0)
+							return MulDivRound(score, self.Weight, 100)
+						end,
+						'OptLocWeight', 200,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
 							}),
 							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 1,
+								'visibility_mode', "team",
+							}),
 							PlaceObj('AIPolicyFlanking', {
 								'Weight', 1000,
+							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
+							PlaceObj('AIPolicyLosToEnemy', nil),
+							PlaceObj('AIPolicyWeaponRange', {
+								'RangeMin', 0,
+								'RangeMax', 40,
+							}),
+						},
+						'TakeCoverChance', 0,
+						'VoiceResponse', "AIFlanking",
+					}),
+					PlaceObj('PositioningAI', {
+						'Weight', 500,
+						'Label', "Pillager AI POS",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Nova",
+						},
+						'Score', function (self, unit, proto_context, debug_data)
+							unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
+							local dest, score = AIScoreReachableVoxels(unit.ai_context, self.EndTurnPolicies, 0)
+							return MulDivRound(score, self.Weight, 100)
+						end,
+						'OptLocWeight', 200,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyWeaponRange', {
+								'Weight', 200,
+								'RangeMin', 50,
+								'RangeMax', 70,
+							}),
+							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
 							}),
 						},
 						'TakeCoverChance', 0,
@@ -46839,10 +47035,7 @@ return {
 					}),
 					PlaceObj('AIPolicyLosToEnemy', nil),
 					PlaceObj('AIPolicyIndoorsOutdoors', {
-						'Weight', 50,
-					}),
-					PlaceObj('AIPolicyTakeCover', {
-						'Weight', 1000,
+						'Weight', 10,
 					}),
 					PlaceObj('AIPolicyProximity', {
 						'Weight', 10,
@@ -46851,9 +47044,15 @@ return {
 						'TargetDist', "average",
 						'MinScore', 50,
 					}),
-					PlaceObj('AIPolicyTakeCover', {
-						'Weight', 1,
-						'visibility_mode', "team",
+					PlaceObj('AIPolicyProximity', {
+						'RequiredKeywords', {
+							"Soldier",
+						},
+						'Weight', 30,
+						'AllyPlannedPosition', true,
+						'TargetUnits', "allies",
+						'TargetDist', "average",
+						'MinScore', 50,
 					}),
 					PlaceObj('AIPolicyProximity', {
 						'RequiredKeywords', {
@@ -46867,7 +47066,11 @@ return {
 					}),
 					PlaceObj('AIPolicyAvoidDeathZones', {
 						'TargetDist', 20,
-						'Penalty', 5,
+						'Penalty', 40,
+					}),
+					PlaceObj('AIPolicyTakeCover', {
+						'Weight', 10,
+						'visibility_mode', "team",
 					}),
 				},
 				OptLocSearchRadius = 80,
@@ -47063,6 +47266,11 @@ return {
 					PlaceObj('AIActionShootLandmine', {
 						'min_score', 100,
 					}),
+					PlaceObj('AIActionCharge', {
+						'RequiredKeywords', {
+							"Melee",
+						},
+					}),
 					PlaceObj('AIActionCancelShot', {
 						'Weight', 200,
 						'RequiredKeywords', {
@@ -47092,40 +47300,46 @@ return {
 						'Weight', 10,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', nil),
+							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 3,
+								'Penalty', 30,
+							}),
+							PlaceObj('AIPolicyFlanking', {
+								'Weight', 5,
+								'AllyPlannedPosition', true,
+							}),
+							PlaceObj('AIPolicyLosToEnemy', {
+								'Weight', 30,
+							}),
 							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 30,
 								'visibility_mode', "team",
 							}),
 						},
 						'TakeCoverChance', 50,
 					}),
-				},
-				Comment = "Keywords: Flank, Explosives",
-				OptLocPolicies = {
-					PlaceObj('AIPolicyWeaponRange', {
-						'Weight', 300,
-						'RangeBase', "Melee",
-						'RangeMin', 12,
-						'RangeMax', 21,
-					}),
-				},
-				OptLocSearchRadius = 80,
-				SignatureActions = {
-					PlaceObj('AIActionCharge', nil),
-				},
-				TargetChangePolicy = "restart",
-				TargetScoreRandomization = 10,
-				group = "Legion",
-				id = "Melee",
-			}),
-			PlaceObj('ModItemAIArchetype', {
-				BaseAttackTargeting = set( "Arms", "Legs", "Torso" ),
-				BaseMovementWeight = 10,
-				Behaviors = {
 					PlaceObj('StandardAI', {
-						'Weight', 10,
 						'EndTurnPolicies', {
-							PlaceObj('AIPolicyDealDamage', nil),
+							PlaceObj('AIPolicyDealDamage', {
+								'Required', true,
+							}),
 							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 3,
+								'Penalty', 30,
+							}),
+							PlaceObj('AIPolicyFlanking', {
+								'Weight', 5,
+								'AllyPlannedPosition', true,
+							}),
+							PlaceObj('AIPolicyLosToEnemy', {
+								'Weight', 30,
+							}),
+							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 30,
+								'visibility_mode', "team",
+							}),
 						},
 						'TakeCoverChance', 50,
 					}),
@@ -47136,10 +47350,10 @@ return {
 						'RequiredKeywords', {
 							"Sniper",
 						},
-						'OptLocWeight', 20,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
+								'Required', true,
 							}),
 							PlaceObj('AIPolicyWeaponRange', {
 								'RequiredKeywords', {
@@ -47155,6 +47369,10 @@ return {
 									"Sniper",
 								},
 							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 3,
+								'Penalty', 30,
+							}),
 						},
 						'TakeCoverChance', 0,
 						'VoiceResponse', "TacticalPressing",
@@ -47166,10 +47384,10 @@ return {
 						'RequiredKeywords', {
 							"Marksman",
 						},
-						'OptLocWeight', 20,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
+								'Required', true,
 							}),
 							PlaceObj('AIPolicyWeaponRange', {
 								'RequiredKeywords', {
@@ -47187,9 +47405,49 @@ return {
 								},
 								'Weight', 50,
 							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 3,
+								'Penalty', 30,
+							}),
+							PlaceObj('AIPolicyLosToEnemy', {
+								'Weight', 10,
+							}),
 						},
 						'TakeCoverChance', 0,
 						'VoiceResponse', "TacticalPressing",
+					}),
+					PlaceObj('StandardAI', {
+						'Weight', 1000,
+						'Label', "Flanker AI",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Nova",
+						},
+						'Score', function (self, unit, proto_context, debug_data)
+							unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
+							local dest, score = AIScoreReachableVoxels(unit.ai_context, self.EndTurnPolicies, 0)
+							return MulDivRound(score, self.Weight, 100)
+						end,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+								'Required', true,
+							}),
+							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 30,
+								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyFlanking', {
+								'Weight', 1000,
+							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
+							PlaceObj('AIPolicyLosToEnemy', nil),
+						},
+						'TakeCoverChance', 50,
 					}),
 					PlaceObj('PositioningAI', {
 						'BiasId', "Flanking",
@@ -47199,15 +47457,22 @@ return {
 						'RequiredKeywords', {
 							"Flank",
 						},
-						'OptLocWeight', 20,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', {
 								'Weight', 300,
+								'Required', true,
 							}),
 							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyFlanking', {
 								'Weight', 1000,
+								'AllyPlannedPosition', true,
+								'ReserveAttackAP', true,
 							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 3,
+								'Penalty', 30,
+							}),
+							PlaceObj('AIPolicyLosToEnemy', nil),
 						},
 						'TakeCoverChance', 0,
 						'VoiceResponse', "AIFlanking",
@@ -47226,28 +47491,30 @@ return {
 						'RequiredKeywords', {
 							"Flank",
 						},
+						'Weight', 200,
 						'AllyPlannedPosition', true,
 					}),
 					PlaceObj('AIPolicyWeaponRange', {
 						'RequiredKeywords', {
 							"Sniper",
 						},
-						'RangeMin', 50,
+						'RangeMin', 40,
+						'RangeMax', 100,
 					}),
 					PlaceObj('AIPolicyWeaponRange', {
 						'RequiredKeywords', {
 							"Marksman",
 						},
-						'RangeMin', 50,
-						'RangeMax', 75,
+						'RangeMin', 30,
+						'RangeMax', 60,
 					}),
 					PlaceObj('AIPolicyWeaponRange', {
 						'RequiredKeywords', {
 							"Soldier",
 						},
 						'Weight', 300,
-						'RangeMin', 40,
-						'RangeMax', 60,
+						'RangeMin', 20,
+						'RangeMax', 50,
 					}),
 					PlaceObj('AIPolicyWeaponRange', {
 						'RequiredKeywords', {
@@ -47258,16 +47525,20 @@ return {
 						'RangeMin', 12,
 						'RangeMax', 21,
 					}),
-					PlaceObj('AIPolicyLosToEnemy', nil),
 					PlaceObj('AIPolicyIndoorsOutdoors', {
-						'Weight', 50,
+						'Weight', 5,
 					}),
-					PlaceObj('AIPolicyTakeCover', {
-						'Weight', 1,
-						'visibility_mode', "team",
-					}),
-					PlaceObj('AIPolicyTakeCover', nil),
 					PlaceObj('AIPolicyProximity', {
+						'Weight', 5,
+						'AllyPlannedPosition', true,
+						'TargetUnits', "allies",
+						'TargetDist', "average",
+						'MinScore', 50,
+					}),
+					PlaceObj('AIPolicyProximity', {
+						'RequiredKeywords', {
+							"Soldier",
+						},
 						'Weight', 10,
 						'AllyPlannedPosition', true,
 						'TargetUnits', "allies",
@@ -47287,7 +47558,7 @@ return {
 					PlaceObj('AIPolicyAvoidDeathZones', {
 						'Weight', 200,
 						'TargetDist', 40,
-						'Penalty', 5,
+						'Penalty', 60,
 					}),
 					PlaceObj('AIPolicyHighGround', {
 						'RequiredKeywords', {
@@ -47302,6 +47573,13 @@ return {
 					}),
 					PlaceObj('AIPolicyHighGround', {
 						'Weight', 20,
+					}),
+					PlaceObj('AIPolicyTakeCover', {
+						'Weight', 20,
+						'visibility_mode', "team",
+					}),
+					PlaceObj('AIPolicyTakeCover', {
+						'Weight', 40,
 					}),
 				},
 				OptLocSearchRadius = 80,
@@ -47542,85 +47820,40 @@ return {
 						'Weight', 10,
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', nil),
-							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 10,
+							}),
+							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 5,
+								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyFlanking', {
+								'Weight', 5,
+								'AllyPlannedPosition', true,
+							}),
 						},
 						'TakeCoverChance', 50,
 					}),
 					PlaceObj('PositioningAI', {
-						'Weight', 500,
-						'Label', "Sniper AI",
+						'Label', "MGSetup",
 						'Fallback', false,
-						'RequiredKeywords', {
-							"Sniper",
-						},
 						'OptLocWeight', 20,
-						'EndTurnPolicies', {
-							PlaceObj('AIPolicyDealDamage', {
-								'Weight', 300,
-							}),
-							PlaceObj('AIPolicyWeaponRange', {
-								'RequiredKeywords', {
-									"Sniper",
-								},
-								'Weight', 200,
-								'RangeMin', 50,
-								'RangeMax', 100,
-							}),
-							PlaceObj('AIPolicyTakeCover', nil),
-						},
-						'TakeCoverChance', 0,
-						'VoiceResponse', "TacticalPressing",
-					}),
-					PlaceObj('PositioningAI', {
-						'Weight', 500,
-						'Label', "Marksman AI",
-						'Fallback', false,
-						'RequiredKeywords', {
-							"Marksman",
-						},
-						'OptLocWeight', 20,
-						'EndTurnPolicies', {
-							PlaceObj('AIPolicyDealDamage', {
-								'Weight', 300,
-							}),
-							PlaceObj('AIPolicyWeaponRange', {
-								'RequiredKeywords', {
-									"Marksman",
-								},
-								'Weight', 200,
-								'RangeMin', 50,
-								'RangeMax', 75,
-							}),
-							PlaceObj('AIPolicyTakeCover', nil),
-						},
-						'TakeCoverChance', 0,
-						'VoiceResponse', "TacticalPressing",
-					}),
-					PlaceObj('PositioningAI', {
-						'BiasId', "Flanking",
-						'Weight', 1000,
-						'Label', "Flanker AI",
-						'Fallback', false,
-						'RequiredKeywords', {
-							"Flank",
-						},
-						'OptLocWeight', 20,
-						'EndTurnPolicies', {
-							PlaceObj('AIPolicyDealDamage', {
-								'Weight', 300,
-							}),
-							PlaceObj('AIPolicyTakeCover', nil),
-							PlaceObj('AIPolicyFlanking', {
-								'Weight', 1000,
-							}),
-						},
 						'SignatureActions', {
 							PlaceObj('AIActionMGSetup', {
-								'Weight', 1000,
+								'Priority', true,
+								'team_score', 10,
+								'min_score', 100,
+								'cur_zone_mod', 1000,
+							}),
+						},
+						'TargetingPolicies', {
+							PlaceObj('AITargetingEnemyWill', {
+								'Will', 80,
+								'AboveWill', true,
 							}),
 						},
 						'TakeCoverChance', 0,
-						'VoiceResponse', "AIFlanking",
+						'VoiceResponse', "TacticalPressing",
 					}),
 				},
 				Comment = "Keywords: Flank, Explosives",
@@ -47654,13 +47887,10 @@ return {
 					}),
 					PlaceObj('AIPolicyLosToEnemy', nil),
 					PlaceObj('AIPolicyIndoorsOutdoors', {
-						'Weight', 50,
-					}),
-					PlaceObj('AIPolicyTakeCover', {
-						'Weight', 1000,
+						'Weight', 5,
 					}),
 					PlaceObj('AIPolicyProximity', {
-						'Weight', 10,
+						'Weight', 25,
 						'AllyPlannedPosition', true,
 						'TargetUnits', "allies",
 						'TargetDist', "average",
@@ -47679,7 +47909,7 @@ return {
 					PlaceObj('AIPolicyAvoidDeathZones', {
 						'Weight', 200,
 						'TargetDist', 40,
-						'Penalty', 5,
+						'Penalty', 50,
 					}),
 					PlaceObj('AIPolicyHighGround', {
 						'RequiredKeywords', {
@@ -47791,12 +48021,27 @@ return {
 						'min_score', 100,
 					}),
 					PlaceObj('AIActionMGSetup', {
-						'Weight', 300,
+						'Weight', 500,
 						'RequiredKeywords', {
 							"Control",
 						},
+						'team_score', 0,
+						'min_score', 100,
 					}),
-					PlaceObj('AIActionMGSetup', nil),
+					PlaceObj('AIActionMGSetup', {
+						'BiasId', "MGSetup",
+						'Weight', 200,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "MGSetup",
+								'Value', -50,
+								'Period', 2,
+							}),
+						},
+						'team_score', 0,
+						'min_score', 100,
+						'cur_zone_mod', 1000,
+					}),
 					PlaceObj('AIActionMGBurstFire', nil),
 				},
 				TargetChangePolicy = "restart",
@@ -47804,6 +48049,18 @@ return {
 				TargetingPolicies = {
 					PlaceObj('AITargetingEnemyHealth', {
 						'Health', 50,
+					}),
+					PlaceObj('AITargetingEnemyWill', {
+						'Will', 80,
+						'AboveWill', true,
+					}),
+					PlaceObj('AITargetingEnemyWill', {
+						'Will', 50,
+						'AboveWill', true,
+					}),
+					PlaceObj('AITargetingEnemyWill', {
+						'Will', 30,
+						'AboveWill', true,
 					}),
 					PlaceObj('AITargetingEnemyWeapon', {
 						'EnemyWeapon', "Sniper",
@@ -48182,6 +48439,7 @@ return {
 				'eliteCategory', "Foreigners",
 				'Affiliation', "Legion",
 				'StartingLevel', 8,
+				'immortal', true,
 				'villain', true,
 				'neutral_retaliate', true,
 				'AIKeywords', {
@@ -68150,8 +68408,8 @@ return {
 					'Mechanical', 0,
 					'Explosives', 0,
 					'Medical', 94,
-					'Portrait', "Mod/Dv3mFVN/Images/raw copy2Small.png",
-					'BigPortrait', "Mod/Dv3mFVN/Images/raw copy2.png",
+					'Portrait', "Mod/Dv3mFVN/Images/SpiderSmall.png",
+					'BigPortrait', "Mod/Dv3mFVN/Images/SpiderBig.png",
 					'IsMercenary', true,
 					'Name', T(513131038337, --[[ModItemUnitDataCompositeDef Jazz_Spider Name]] "Доктор Донна «Паук» Хьюстон"),
 					'Nick', T(234064899192, --[[ModItemUnitDataCompositeDef Jazz_Spider Nick]] "Паук"),
@@ -69632,7 +69890,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(455048670549, --[[ModItemUnitDataCompositeDef Omryn Text MercChatHaggle Lines ChatMessage voice:Omryn]] "Эээ, плохие знаки чую, начальник. Работа непростая будет. Трудная работа - больше кушать, однако."),
+								'Text', T(455048670549, --[[ModItemUnitDataCompositeDef Omryn Text MercChatHaggle Lines ChatMessage voice:Omryn]] "Плохой знак, главный. Работать будет трудно. Трудная работа - больше кушать, однако."),
 							}),
 						},
 						'Conditions', {},
@@ -69643,7 +69901,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(885814480955, --[[ModItemUnitDataCompositeDef Omryn Text MercChatHaggle Lines ChatMessage voice:Omryn]] "Работа нравится, начальник, только вот жратвы мала-мала не хватает. Жрать хочется всегда, давай денег больше. Уговор?"),
+								'Text', T(885814480955, --[[ModItemUnitDataCompositeDef Omryn Text MercChatHaggle Lines ChatMessage voice:Omryn]] "Мне нравится работать на тебя, главный, но еды даёшь очень мало. Дай больше денег на еду, чтоб я не голодал, и мы договоримся."),
 							}),
 						},
 						'Conditions', {},
@@ -69652,7 +69910,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(956878799729, --[[ModItemUnitDataCompositeDef Omryn Text MercChatHaggle Lines ChatMessage voice:Omryn]] "Драться заставляешь, начальник. а выспаться не даешь. Без сна какой я работник? И пожрать бы. И вообще. Денег давай. Уговор?"),
+								'Text', T(956878799729, --[[ModItemUnitDataCompositeDef Omryn Text MercChatHaggle Lines ChatMessage voice:Omryn]] "Много битв, главный, а сна мало. Если не отдохну - голова кружиться будет. Надо больше еды, однако. Больше денег - больше еды. Дай больше денег, и мы договоримся."),
 							}),
 						},
 						'Conditions', {
@@ -69664,37 +69922,37 @@ return {
 				},
 				'Offline', {
 					PlaceObj('ChatMessage', {
-						'Text', T(902519634531, --[[ModItemUnitDataCompositeDef Omryn Text Offline ChatMessage voice:Omryn]] "Омрын у аппарата. День духов, однако. Работать никак нельзя. Я сам скажу, когда день духов закончится."),
+						'Text', T(902519634531, --[[ModItemUnitDataCompositeDef Omryn Text Offline ChatMessage voice:Omryn]] "Это Омрын. День духов, однако. Работать нельзя. Я скажу, когда день духов закончится."),
 					}),
 				},
 				'GreetingAndOffer', {
 					PlaceObj('ChatMessage', {
-						'Text', T(927832147316, --[[ModItemUnitDataCompositeDef Omryn Text GreetingAndOffer ChatMessage voice:Omryn]] "Омрын у аппарата. Ты, что ли, тут начальник? Работу мала-мала даешь? Только чтоб нетяжелую."),
+						'Text', T(927832147316, --[[ModItemUnitDataCompositeDef Omryn Text GreetingAndOffer ChatMessage voice:Omryn]] "Я Омрын. Ты - главный? Ты даёшь Омрыну работу? А она несложная?"),
 					}),
 				},
 				'ConversationRestart', {
 					PlaceObj('ChatMessage', {
-						'Text', T(620358003115, --[[ModItemUnitDataCompositeDef Omryn Text ConversationRestart ChatMessage voice:Omryn]] "Ты там подушку придавил, да? Спать - хорошо, однако. А хорошо поспать - еще лучше. Вот поговорим, я тоже прикорну."),
+						'Text', T(620358003115, --[[ModItemUnitDataCompositeDef Omryn Text ConversationRestart ChatMessage voice:Omryn]] "Ты уходил спать? Спать - полезно, однако. Вот поговорю с тобой - тоже буду спать."),
 					}),
 				},
 				'IdleLine', {
 					PlaceObj('ChatMessage', {
-						'Text', T(343432743008, --[[ModItemUnitDataCompositeDef Omryn Text IdleLine ChatMessage voice:Omryn]] "Это ты хорошо придумал, вприкуску разговоры разговаривать. Это мы с тобой поладим, начальник."),
+						'Text', T(343432743008, --[[ModItemUnitDataCompositeDef Omryn Text IdleLine ChatMessage voice:Omryn]] "Молодец, однако. Тоже перекусить ходишь. Мы с тобой поладим, главный!"),
 					}),
 				},
 				'PartingWords', {
 					PlaceObj('ChatMessage', {
-						'Text', T(441195752933, --[[ModItemUnitDataCompositeDef Omryn Text PartingWords ChatMessage voice:Omryn]] "Отлично, начальник! Уговор! Поеду я в твой Гранд-шьен. Вот только поем сначала. И храпака дам минут на триста. Чтоб силы набраться, однако."),
+						'Text', T(441195752933, --[[ModItemUnitDataCompositeDef Omryn Text PartingWords ChatMessage voice:Omryn]] "Хорошо. Договорились. Я приду в этот твой Гран-Шьен. Но сперва надо поесть и поспать. Сил набраться, однако!"),
 					}),
 				},
 				'RehireIntro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(280135101598, --[[ModItemUnitDataCompositeDef Omryn Text RehireIntro ChatMessage voice:Omryn]] "Контракт выходит, начальник! Омрыну,  жрать надо будет, а для такого надо денег заработать. Давай по-новой контракт заводить."),
+						'Text', T(280135101598, --[[ModItemUnitDataCompositeDef Omryn Text RehireIntro ChatMessage voice:Omryn]] "Главный, контракт кончается! Омрыну нужны деньги на еду. Давай новый контракт делать!"),
 					}),
 				},
 				'RehireOutro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(763826917260, --[[ModItemUnitDataCompositeDef Omryn Text RehireOutro ChatMessage voice:Omryn]] "Уговор. Теперь и поесть можно. А как поедим, можно и поспать."),
+						'Text', T(763826917260, --[[ModItemUnitDataCompositeDef Omryn Text RehireOutro ChatMessage voice:Omryn]] "Договорились. Теперь можно поесть и поспать, однако."),
 					}),
 				},
 				'StartingSalary', 650,
@@ -70265,7 +70523,7 @@ return {
 				'Name', T(415973309831, --[[ModItemUnitDataCompositeDef Wolf Name]] "Питер Сандерсон «Волк»"),
 				'Nick', T(854057195964, --[[ModItemUnitDataCompositeDef Wolf Nick]] "Волк"),
 				'AllCapsNick', T(772197398311, --[[ModItemUnitDataCompositeDef Wolf AllCapsNick]] "ВОЛК"),
-				'Bio', T(947517898504, --[[ModItemUnitDataCompositeDef Wolf Bio]] "Ненадолго покинув A.I.M., чтобы занять должность инструктора в элитном (и весьма высокооплачиваемом) загородном пейнтбольном клубе для состоятельных бизнесменов, Волк в конце концов устал учить заплывших жиром сорокалетних топ-менеджеров, как делать вид, что они убивают друг друга. Окончательно его добил недельный выездной лагерь, где он пытался обучить своих подопечных основам тактики и ночных операций, пока те шарились по лесу в светоотражающих оранжевых жилетах. Вернувшись в город, Сандерсон сообщил, что более чем готов вновь поработать наёмником. Волк - один из самых всесторонне подготовленных бойцов A.I.M., пользующийся популярностью у клиентов, которым нужен мастер на все руки. Спешите заключить с ним контракт сейчас, пока это не сделали за вас другие!"),
+				'Bio', T(947517898504, --[[ModItemUnitDataCompositeDef Wolf Bio]] "Ненадолго покинув A.I.M., чтобы занять должность инструктора в элитном (и весьма высокооплачиваемом) загородном пейнтбольном клубе для состоятельных бизнесменов, Волк в конце концов устал учить заплывших жиром сорокалетних топ-менеджеров, как делать вид, что они убивают друг друга. Окончательно его добил недельный выездной лагерь, где он пытался обучить своих подопечных основам тактики и ночных операций, пока те шарились по лесу в светоотражающих оранжевых жилетах. Вернувшись в город, Сандерс сообщил, что более чем готов вновь поработать наёмником. Волк - один из самых всесторонне подготовленных бойцов A.I.M., пользующийся популярностью у клиентов, которым нужен мастер на все руки. Спешите заключить с ним контракт сейчас, пока это не сделали за вас другие!"),
 				'Nationality', "USA",
 				'Title', T(474239652453, --[[ModItemUnitDataCompositeDef Wolf Title]] "Универсальный наёмник"),
 				'Email', T(478313327038, --[[ModItemUnitDataCompositeDef Wolf Email]] "volk1@aim.com"),
@@ -70274,7 +70532,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(339046331040, --[[ModItemUnitDataCompositeDef Wolf Text MercChatRefusal Lines ChatMessage voice:Wolf]] "У нас с Лиской... так складывалось всё. А теперь она погибла, и всё по твоей вине. Так что катись к чёрту - не буду я на тебя работать. Никогда."),
+								'Text', T(339046331040, --[[ModItemUnitDataCompositeDef Wolf Text MercChatRefusal Lines ChatMessage voice:Wolf]] "Мы с Лиской... у нас с ней было. А теперь она погибла, и всё по твоей вине. Так что проваливай. Я никогда больше не буду на тебя работать."),
 							}),
 						},
 						'Conditions', {
@@ -70298,7 +70556,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(317941837726, --[[ModItemUnitDataCompositeDef Wolf Text MercChatHaggle Lines ChatMessage voice:Wolf]] "С таким послужным списком пусть тебе послужит кто-нибудь другой, ага? А то я в ахере, сколько народу с твоих заданий не возвращается. Если хочешь, чтобы я на тебя работал, придётся заплатить больше."),
+								'Text', T(317941837726, --[[ModItemUnitDataCompositeDef Wolf Text MercChatHaggle Lines ChatMessage voice:Wolf]] "Послужной список у тебя неважный - судя по тому, сколько народу с твоих заданий не возвращается. Если хочешь, чтобы я на тебя работал, придётся заплатить больше."),
 							}),
 						},
 						'Conditions', {
@@ -70313,7 +70571,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(836197395161, --[[ModItemUnitDataCompositeDef Wolf Text MercChatHaggle Lines ChatMessage voice:Wolf]] "Новые контракты, новые ставки. Я сегодня лучше, чем вчера. Смекаешь?"),
+								'Text', T(836197395161, --[[ModItemUnitDataCompositeDef Wolf Text MercChatHaggle Lines ChatMessage voice:Wolf]] "Новые контракты, новые ставки. Я сегодня лучше, чем вчера."),
 							}),
 						},
 						'Conditions', {},
@@ -70324,7 +70582,7 @@ return {
 					PlaceObj('MercChatMitigation', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(833123233503, --[[ModItemUnitDataCompositeDef Wolf Text MercChatMitigation Lines ChatMessage voice:Wolf]] "Коли Лисонька с тобой, то и зад мой тоже твой! Эм... Извини, на радостях пытался в рифму, вышло неудачно."),
+								'Text', T(833123233503, --[[ModItemUnitDataCompositeDef Wolf Text MercChatMitigation Lines ChatMessage voice:Wolf]] "Если Лиска с тобой, то и я, разумеется, тоже! Считай, что я в деле."),
 							}),
 						},
 						'Conditions', {
@@ -70369,22 +70627,22 @@ return {
 				},
 				'Offline', {
 					PlaceObj('ChatMessage', {
-						'Text', T(929760186481, --[[ModItemUnitDataCompositeDef Wolf Text Offline ChatMessage voice:Wolf]] "Это Волк. Я ща в спортивном зале, но как освобожусь, напишу."),
+						'Text', T(929760186481, --[[ModItemUnitDataCompositeDef Wolf Text Offline ChatMessage voice:Wolf]] "Это Волк. Я сейчас в спортивном зале, но я напишу, когда освобожусь."),
 					}),
 				},
 				'GreetingAndOffer', {
 					PlaceObj('ChatMessage', {
-						'Text', T(479719341895, --[[ModItemUnitDataCompositeDef Wolf Text GreetingAndOffer ChatMessage voice:Wolf]] "Волк на связи. Если у тебя ещё и с деньгами связи имеются, то можем договориться."),
+						'Text', T(479719341895, --[[ModItemUnitDataCompositeDef Wolf Text GreetingAndOffer ChatMessage voice:Wolf]] "Волк на связи. Если у тебя есть деньги, можем договориться."),
 					}),
 				},
 				'ConversationRestart', {
 					PlaceObj('ChatMessage', {
-						'Text', T(205981379707, --[[ModItemUnitDataCompositeDef Wolf Text ConversationRestart ChatMessage voice:Wolf]] "Нас разъединили, походу. Попробуем ещё разок."),
+						'Text', T(205981379707, --[[ModItemUnitDataCompositeDef Wolf Text ConversationRestart ChatMessage voice:Wolf]] "Нас разъединили. Попробуем ещё разок."),
 					}),
 				},
 				'IdleLine', {
 					PlaceObj('ChatMessage', {
-						'Text', T(450435284152, --[[ModItemUnitDataCompositeDef Wolf Text IdleLine ChatMessage voice:Wolf]] "Ау! Чё молчишь?"),
+						'Text', T(450435284152, --[[ModItemUnitDataCompositeDef Wolf Text IdleLine ChatMessage voice:Wolf]] "Эй! Чего молчишь?"),
 					}),
 				},
 				'PartingWords', {
@@ -70394,7 +70652,7 @@ return {
 				},
 				'RehireIntro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(565646668072, --[[ModItemUnitDataCompositeDef Wolf Text RehireIntro ChatMessage voice:Wolf]] "Мой контракт почти что истёк. Чё у тебя там, планы на продление есть? А то меня люди важные ждут."),
+						'Text', T(565646668072, --[[ModItemUnitDataCompositeDef Wolf Text RehireIntro ChatMessage voice:Wolf]] "Мой контракт почти что истёк. Расскажи про твои планы. Меня люди ждут."),
 					}),
 				},
 				'RehireOutro', {
@@ -70488,7 +70746,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(486816886469, --[[ModItemUnitDataCompositeDef Vicki Text MercChatRefusal Lines ChatMessage voice:Vicki]] "Нет уж, спасибо, man. Слышала, ты опять мальчуковый клуб собрал. Я второй раз на те же грабли не хожу. Мужики вокруг всегда ведут себя так, как будто им тринадцать."),
+								'Text', T(486816886469, --[[ModItemUnitDataCompositeDef Vicki Text MercChatRefusal Lines ChatMessage voice:Vicki]] "Нет уж. Я слышать, у тебя не отряд, а клуб бойскаутов. Я не повторять эту ошибку дважды. Эти мальчишки рядом со мной всегда терять голову."),
 							}),
 						},
 						'Conditions', {
@@ -70502,7 +70760,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(249681548198, --[[ModItemUnitDataCompositeDef Vicki Text MercChatRefusal Lines ChatMessage voice:Vicki]] "Нет уж, man. О тебе нехорошие слухи говорят. Я сделаю друзьям звяк-звяк, узнаю, стоит ли тебе верить. Позвони в другой раз."),
+								'Text', T(249681548198, --[[ModItemUnitDataCompositeDef Vicki Text MercChatRefusal Lines ChatMessage voice:Vicki]] "Нет уж. О тебе ходить нехорошие слухи. Мне нужно кое-что обсудить с друзьями, прежде чем я тебе поверить. Пиши мне потом."),
 							}),
 						},
 						'Conditions', {},
@@ -70513,7 +70771,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(723908821448, --[[ModItemUnitDataCompositeDef Vicki Text MercChatHaggle Lines ChatMessage voice:Vicki]] "Не верю я тебе, man. Часто у тебя наёмники убиваются, плохой знак. Я за себя постоять могу, но работать буду только за больший гонорар. "),
+								'Text', T(723908821448, --[[ModItemUnitDataCompositeDef Vicki Text MercChatHaggle Lines ChatMessage voice:Vicki]] "Я тебе не доверять. На тебе много мёртвых наёмников, а это очень плохо. Я уметь выживать, но тогда ты платить мне больше."),
 							}),
 						},
 						'Conditions', {
@@ -70528,7 +70786,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(901575776171, --[[ModItemUnitDataCompositeDef Vicki Text MercChatHaggle Lines ChatMessage voice:Vicki]] "Раз ты этого козлину Смайли нанял, заплатишь мне больше. Штраф, да? За то, что с этим хамлом работать."),
+								'Text', T(901575776171, --[[ModItemUnitDataCompositeDef Vicki Text MercChatHaggle Lines ChatMessage voice:Vicki]] "Ты будешь платить мне больше - штраф за то, что нанять такого козла, как Смайли. Этого сопляка надо учить себя вести."),
 							}),
 						},
 						'Conditions', {
@@ -70552,7 +70810,7 @@ return {
 					PlaceObj('MercChatMitigation', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(581903016213, --[[ModItemUnitDataCompositeDef Vicki Text MercChatMitigation Lines ChatMessage voice:Vicki]] "Ладно, скажу правду, были у меня предложения и получше, но хочется наконец с женщинами поработать, да? Везде одни мальчишки. Давай, по рукам."),
+								'Text', T(581903016213, --[[ModItemUnitDataCompositeDef Vicki Text MercChatMitigation Lines ChatMessage voice:Vicki]] "Я думать о более выгодных предложениях, правда. Но мне нравится работать с другими женщинами. А то в наше время в командах одни мальчишки. Так что я согласна."),
 							}),
 						},
 						'Conditions', {
@@ -70581,7 +70839,7 @@ return {
 				},
 				'Offline', {
 					PlaceObj('ChatMessage', {
-						'Text', T(155504263416, --[[ModItemUnitDataCompositeDef Vicki Text Offline ChatMessage voice:Vicki]] "Это Вики Уотерс. Я на войне или в гараже. Скажи самое важное, и я тебе звяк-звяк сразу, как смогу."),
+						'Text', T(155504263416, --[[ModItemUnitDataCompositeDef Vicki Text Offline ChatMessage voice:Vicki]] "Это Виктория Уотерс. Я на войне или в гараже. Скажи самое важное, и я связаться с тобой сразу, как могу."),
 					}),
 				},
 				'GreetingAndOffer', {
@@ -70591,7 +70849,7 @@ return {
 				},
 				'ConversationRestart', {
 					PlaceObj('ChatMessage', {
-						'Text', T(654047163706, --[[ModItemUnitDataCompositeDef Vicki Text ConversationRestart ChatMessage voice:Vicki]] "Ты вернулся? Хорошо."),
+						'Text', T(654047163706, --[[ModItemUnitDataCompositeDef Vicki Text ConversationRestart ChatMessage voice:Vicki]] "Ты возвращаться? Хорошо."),
 					}),
 				},
 				'IdleLine', {
@@ -70601,7 +70859,7 @@ return {
 				},
 				'PartingWords', {
 					PlaceObj('ChatMessage', {
-						'Text', T(490243743780, --[[ModItemUnitDataCompositeDef Vicki Text PartingWords ChatMessage voice:Vicki]] "Я рада, то мы приходили к соглашению. Я тебе покажу, как настоящий боец это делает!"),
+						'Text', T(490243743780, --[[ModItemUnitDataCompositeDef Vicki Text PartingWords ChatMessage voice:Vicki]] "Я рада, то мы приходить к соглашению. Теперь я показать, как настоящий боец это делает!"),
 					}),
 				},
 				'RehireIntro', {
@@ -70611,7 +70869,7 @@ return {
 				},
 				'RehireOutro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(672945741836, --[[ModItemUnitDataCompositeDef Vicki Text RehireOutro ChatMessage voice:Vicki]] "Да-да. Кто распробовать Вики Уотерс, всегда приходит за ещё!"),
+						'Text', T(672945741836, --[[ModItemUnitDataCompositeDef Vicki Text RehireOutro ChatMessage voice:Vicki]] "Да-да. Кто распробовать Вики Уотерс, всегда приходить за ещё!"),
 					}),
 				},
 				'MedicalDeposit', "large",
@@ -70869,7 +71127,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(313041068988, --[[ModItemUnitDataCompositeDef Tex Text MercChatRefusal Lines ChatMessage voice:Tex]] "Ой-ёй-ёй. Извини, партнёр. У меня крупные съёмки на носу. С кучей смертельно опасных трюков. Кругрые сутки репетирую. Пиши позже."),
+								'Text', T(313041068988, --[[ModItemUnitDataCompositeDef Tex Text MercChatRefusal Lines ChatMessage voice:Tex]] "Извини, партнёр. У меня большие съёмки на носу. Очень трудный трюк. Круглые сутки репетирую. Пиши позже."),
 							}),
 						},
 						'Conditions', {},
@@ -70880,7 +71138,7 @@ return {
 					PlaceObj('MercChatMitigation', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(435944476423, --[[ModItemUnitDataCompositeDef Tex Text MercChatMitigation Lines ChatMessage voice:Tex]] "Риска там? У! Ей в боршом кино сниматься надо, а не на мареньких войнах бегать. Уаа! У неё такие таранты! Почту за честь работать с ней снова. Ради такого я даже отрожу другие съёмки."),
+								'Text', T(435944476423, --[[ModItemUnitDataCompositeDef Tex Text MercChatMitigation Lines ChatMessage voice:Tex]] "У тебя там Лиска? Ей в большом кино сниматься надо, а не на маленьких войнах бегать. У неё такие таланты! Почту за честь работать с ней снова. Ради такого я даже отложу другие съёмки."),
 							}),
 						},
 						'Conditions', {
@@ -70894,7 +71152,7 @@ return {
 				},
 				'Offline', {
 					PlaceObj('ChatMessage', {
-						'Text', T(209674255281, --[[ModItemUnitDataCompositeDef Tex Text Offline ChatMessage voice:Tex]] "Вы дозвонились до Текса Колберна - профессионального актёра, каскадёра и сордата удачи. Я сейчас занят на съёмках. Большая картина, куча спецэффектов. Свяжусь с вами позже. Может, даже автограф дам."),
+						'Text', T(209674255281, --[[ModItemUnitDataCompositeDef Tex Text Offline ChatMessage voice:Tex]] "Вы дозвонились до Текса Колберна - профессионального актёра, каскадёра и солдата удачи. Я сейчас занят на съёмках. Большая картина, куча спецэффектов. Свяжусь с вами позже. Может, даже автограф дам."),
 					}),
 				},
 				'GreetingAndOffer', {
@@ -70904,27 +71162,27 @@ return {
 				},
 				'ConversationRestart', {
 					PlaceObj('ChatMessage', {
-						'Text', T(699864175196, --[[ModItemUnitDataCompositeDef Tex Text ConversationRestart ChatMessage voice:Tex]] "Продоржим разговор, партнёр. Так что ты там говорир?"),
+						'Text', T(699864175196, --[[ModItemUnitDataCompositeDef Tex Text ConversationRestart ChatMessage voice:Tex]] "Продолжим разговор, партнёр. Так что ты говорил?"),
 					}),
 				},
 				'IdleLine', {
 					PlaceObj('ChatMessage', {
-						'Text', T(684216191720, --[[ModItemUnitDataCompositeDef Tex Text IdleLine ChatMessage voice:Tex]] "Эй! Партнёр, мне ещё автографы ставить. Не задерживай меня."),
+						'Text', T(684216191720, --[[ModItemUnitDataCompositeDef Tex Text IdleLine ChatMessage voice:Tex]] "Партнёр, мне ещё автографы ставить. Не задерживай меня."),
 					}),
 				},
 				'PartingWords', {
 					PlaceObj('ChatMessage', {
-						'Text', T(478717643527, --[[ModItemUnitDataCompositeDef Tex Text PartingWords ChatMessage voice:Tex]] "Ай, вдарим по рукам, партнёр. У-ху! Ковбой Текс уже несется на твоё ранчо."),
+						'Text', T(478717643527, --[[ModItemUnitDataCompositeDef Tex Text PartingWords ChatMessage voice:Tex]] "По рукам, партнёр. Жди меня на своём ранчо."),
 					}),
 				},
 				'RehireIntro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(260654543464, --[[ModItemUnitDataCompositeDef Tex Text RehireIntro ChatMessage voice:Tex]] "Эй, партнёр, я сейчас на расхват. Если хочешь, чтобы я и дарьше всем отказывал, пора подписать новый контракт."),
+						'Text', T(260654543464, --[[ModItemUnitDataCompositeDef Tex Text RehireIntro ChatMessage voice:Tex]] "Партнёр, я сейчас на расхват. Если хочешь, чтобы я и дальше всем отказывал, пора подписать новый контракт."),
 					}),
 				},
 				'RehireOutro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(871041368651, --[[ModItemUnitDataCompositeDef Tex Text RehireOutro ChatMessage voice:Tex]] "Мой реворвер снова к твоим услугам, партнёр. Возвращение регенды!"),
+						'Text', T(871041368651, --[[ModItemUnitDataCompositeDef Tex Text RehireOutro ChatMessage voice:Tex]] "Мой револьвер снова к твоим услугам, партнёр. Возвращение легенды."),
 					}),
 				},
 				'StartingSalary', 1800,
@@ -71066,7 +71324,7 @@ return {
 					PlaceObj('MercChatBranch', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(558558300486, --[[ModItemUnitDataCompositeDef Steroid Text MercChatBranch Lines ChatMessage voice:Steroid]] "Работать близко-преблизко с Игорем Долвичем - это неприятно. Пожалуйста, не давай ему лезть ко мне со своим пахучим коммунизмом."),
+								'Text', T(558558300486, --[[ModItemUnitDataCompositeDef Steroid Text MercChatBranch Lines ChatMessage voice:Steroid]] "Работать в одной команде с Игорем Долвичем - это неприятно. Пожалуйста, не давай ему лезть ко мне со своим пахучим коммунизмом."),
 							}),
 						},
 						'Conditions', {
@@ -71084,7 +71342,7 @@ return {
 				},
 				'GreetingAndOffer', {
 					PlaceObj('ChatMessage', {
-						'Text', T(853380302875, --[[ModItemUnitDataCompositeDef Steroid Text GreetingAndOffer ChatMessage voice:Steroid]] "Говорит Анаболик Гонтарски. Ты даёшь мне работу?"),
+						'Text', T(853380302875, --[[ModItemUnitDataCompositeDef Steroid Text GreetingAndOffer ChatMessage voice:Steroid]] "Это Бобби Гонтарски. Ты даёшь мне работу?"),
 					}),
 				},
 				'ConversationRestart', {
@@ -71094,12 +71352,12 @@ return {
 				},
 				'IdleLine', {
 					PlaceObj('ChatMessage', {
-						'Text', T(799080241348, --[[ModItemUnitDataCompositeDef Steroid Text IdleLine ChatMessage voice:Steroid]] "Ты зачем замолчал? Долго что-то упражнения делаешь?"),
+						'Text', T(799080241348, --[[ModItemUnitDataCompositeDef Steroid Text IdleLine ChatMessage voice:Steroid]] "Ты зачем замолчал? Упражнения делаешь?"),
 					}),
 				},
 				'PartingWords', {
 					PlaceObj('ChatMessage', {
-						'Text', T(508884817963, --[[ModItemUnitDataCompositeDef Steroid Text PartingWords ChatMessage voice:Steroid]] "Спасибо за пердоставленную работу, гмм. Завидимся."),
+						'Text', T(508884817963, --[[ModItemUnitDataCompositeDef Steroid Text PartingWords ChatMessage voice:Steroid]] "Спасибо за работу, гмм. Завидимся."),
 					}),
 				},
 				'RehireIntro', {
@@ -72800,7 +73058,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(766632300489, --[[ModItemUnitDataCompositeDef Nails Text MercChatRefusal Lines ChatMessage voice:Nails]] "С тобой в банке-то хоть здороваются? Наруби капусты — тогда с тобой и побазарим."),
+								'Text', T(766632300489, --[[ModItemUnitDataCompositeDef Nails Text MercChatRefusal Lines ChatMessage voice:Nails]] "В банке небось с тобой уже даже не здороваются! Наруби капусты, а потом уже ко мне подкатывай, лады?"),
 							}),
 						},
 						'Conditions', {
@@ -72810,7 +73068,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(456685093723, --[[ModItemUnitDataCompositeDef Nails Text MercChatRefusal Lines ChatMessage voice:Nails]] "Без обид, бродяга, мы кататься едем. Давай в другой раз."),
+								'Text', T(456685093723, --[[ModItemUnitDataCompositeDef Nails Text MercChatRefusal Lines ChatMessage voice:Nails]] "Извини, бродяга, у меня скоро байк-ралли. Может, в другой раз."),
 							}),
 						},
 						'Conditions', {},
@@ -72821,7 +73079,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(321697258530, --[[ModItemUnitDataCompositeDef Nails Text MercChatHaggle Lines ChatMessage voice:Nails]] "Вернусь я с задания или нет - это бабушка надвое сказала. Парень я рисковый, но за риск надо конкретно отсыпать, бродяга."),
+								'Text', T(321697258530, --[[ModItemUnitDataCompositeDef Nails Text MercChatHaggle Lines ChatMessage voice:Nails]] "Вернусь я с задания или нет - это бабушка надвое сказала. Парень я рисковый, но не забесплатно, бродяга."),
 							}),
 						},
 						'Conditions', {
@@ -72836,7 +73094,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(429290818592, --[[ModItemUnitDataCompositeDef Nails Text MercChatHaggle Lines ChatMessage voice:Nails]] "Когда товар крутеет, цены растут. Меня уже зовёт дорога. Не хочешь прощаться — бахни сверху, бродяга."),
+								'Text', T(429290818592, --[[ModItemUnitDataCompositeDef Nails Text MercChatHaggle Lines ChatMessage voice:Nails]] "Когда товар крутеет, цены растут. Меня уже тянет на вольные дороги. Хочешь, чтоб я остался, - повышай ставку, бродяга."),
 							}),
 						},
 						'Conditions', {},
@@ -72847,7 +73105,7 @@ return {
 					PlaceObj('MercChatMitigation', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(857732043501, --[[ModItemUnitDataCompositeDef Nails Text MercChatMitigation Lines ChatMessage voice:Nails]] "Короче. Лиска с тобой? Я с тобой! Это без базара."),
+								'Text', T(857732043501, --[[ModItemUnitDataCompositeDef Nails Text MercChatMitigation Lines ChatMessage voice:Nails]] "Эй, если Лиска с тобой - и я с тобой. На это можешь смело ставить."),
 							}),
 						},
 						'Conditions', {
@@ -72863,10 +73121,10 @@ return {
 					PlaceObj('MercChatBranch', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(632674475914, --[[ModItemUnitDataCompositeDef Nails Text MercChatBranch Lines ChatMessage voice:Nails]] "Э, Лиску-то нанять не хочешь? Девочка мастер поднимать... э... боевой дух. Сечёшь? И на задании о-о-чень полезна. Ручки у неё рабочие!"),
+								'Text', T(632674475914, --[[ModItemUnitDataCompositeDef Nails Text MercChatBranch Lines ChatMessage voice:Nails]] "Может, наймешь Лиску? Она мастер поднимать... э... боевой дух. Ну, ты понял, да? И в деле тоже о-о-очень хороша. Золотые руки!"),
 							}),
 							PlaceObj('ChatMessage', {
-								'Text', T(818028279133, --[[ModItemUnitDataCompositeDef Nails Text MercChatBranch Lines ChatMessage voice:Nails]] "Эт самое, ладно. Ща вернусь тогда, я быстро."),
+								'Text', T(818028279133, --[[ModItemUnitDataCompositeDef Nails Text MercChatBranch Lines ChatMessage voice:Nails]] "Ладно. Мне ещё надо одно дело сделать."),
 							}),
 						},
 						'Conditions', {
@@ -72878,32 +73136,32 @@ return {
 				},
 				'Offline', {
 					PlaceObj('ChatMessage', {
-						'Text', T(927826728791, --[[ModItemUnitDataCompositeDef Nails Text Offline ChatMessage voice:Nails]] "Гвоздь! Отвечу, слышь, когда отвечу. Дела ща тут делаю."),
+						'Text', T(927826728791, --[[ModItemUnitDataCompositeDef Nails Text Offline ChatMessage voice:Nails]] "Это Гвоздь. Я напишу, когда смогу. Сейчас дел по горло."),
 					}),
 				},
 				'GreetingAndOffer', {
 					PlaceObj('ChatMessage', {
-						'Text', T(487748725487, --[[ModItemUnitDataCompositeDef Nails Text GreetingAndOffer ChatMessage voice:Nails]] "Хай, бродяга! Надо подкатить, помутить и откатить? Эт ко мне!"),
+						'Text', T(487748725487, --[[ModItemUnitDataCompositeDef Nails Text GreetingAndOffer ChatMessage voice:Nails]] "Здорово, бродяга. Ищешь кого-то, кто может подрулить, сделать дело и вовремя свалить, да?"),
 					}),
 				},
 				'ConversationRestart', {
 					PlaceObj('ChatMessage', {
-						'Text', T(635363764783, --[[ModItemUnitDataCompositeDef Nails Text ConversationRestart ChatMessage voice:Nails]] "Досмотрел свою порнушку, бродяга? Тогда давай уже за дело."),
+						'Text', T(635363764783, --[[ModItemUnitDataCompositeDef Nails Text ConversationRestart ChatMessage voice:Nails]] "Что, бродяга, досмотрел порнуху? Тогда вернёмся к нашему делу."),
 					}),
 				},
 				'IdleLine', {
 					PlaceObj('ChatMessage', {
-						'Text', T(315553885416, --[[ModItemUnitDataCompositeDef Nails Text IdleLine ChatMessage voice:Nails]] "Бро-одяга-а! Харош пялить там на тёлочек, алё. У меня дел дохрена."),
+						'Text', T(315553885416, --[[ModItemUnitDataCompositeDef Nails Text IdleLine ChatMessage voice:Nails]] "Эй, бродяга! На тёлок пялиться будешь в своё свободное время. У меня ещё дел до хрена."),
 					}),
 				},
 				'PartingWords', {
 					PlaceObj('ChatMessage', {
-						'Text', T(490165429885, --[[ModItemUnitDataCompositeDef Nails Text PartingWords ChatMessage voice:Nails]] "Замётано. Только имей в виду: со мной косуха в комплекте. Я её не снимаю. Ваще. И даже! ВАЩЕ! НЕ ПРОСИ!"),
+						'Text', T(490165429885, --[[ModItemUnitDataCompositeDef Nails Text PartingWords ChatMessage voice:Nails]] "Замётано. Да, и ещё одно: моя косуха всегда при мне. Я её не снимаю. Никогда. Так что ДАЖЕ. НЕ. ПРОСИ."),
 					}),
 				},
 				'RehireIntro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(223858526991, --[[ModItemUnitDataCompositeDef Nails Text RehireIntro ChatMessage voice:Nails]] "У нас контрактик на исходе-то, бродяга. Чё день грядущий нам базарит?"),
+						'Text', T(223858526991, --[[ModItemUnitDataCompositeDef Nails Text RehireIntro ChatMessage voice:Nails]] "Контракт к концу подходит, бродяга. Что тебе там бабка нагадала?"),
 					}),
 				},
 				'RehireOutro', {
@@ -72993,10 +73251,10 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(891526878797, --[[ModItemUnitDataCompositeDef Mouse Text MercChatRefusal Lines ChatMessage voice:Mouse]] "Я не работаю с Лиской! От неё одни неприятности. Рано или поздно кто-нибудь точно поплатится за её выходки."),
+								'Text', T(891526878797, --[[ModItemUnitDataCompositeDef Mouse Text MercChatRefusal Lines ChatMessage voice:Mouse]] "Не буду я работать вместе с Лиской. От таких, как она, одни неприятности... Рано или поздно кто-нибудь из парней поплатится за её выходки."),
 							}),
 							PlaceObj('ChatMessage', {
-								'Text', T(682431868600, --[[ModItemUnitDataCompositeDef Mouse Text MercChatRefusal Lines ChatMessage voice:Mouse]] "Не хотелось бы там оказаться. Прости."),
+								'Text', T(682431868600, --[[ModItemUnitDataCompositeDef Mouse Text MercChatRefusal Lines ChatMessage voice:Mouse]] "Не хочу оказаться рядом, когда это произойдёт. Прости."),
 							}),
 						},
 						'Conditions', {
@@ -73009,7 +73267,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(841418933816, --[[ModItemUnitDataCompositeDef Mouse Text MercChatRefusal Lines ChatMessage voice:Mouse]] "Не могу работать с этим Рыжим, этим клоуном. И ты меня не заставишь. Прости. Я пас."),
+								'Text', T(841418933816, --[[ModItemUnitDataCompositeDef Mouse Text MercChatRefusal Lines ChatMessage voice:Mouse]] "Я не выношу этого клоуна Рыжего. И ты меня не заставишь. Прости, но я пас."),
 							}),
 						},
 						'Conditions', {
@@ -73032,7 +73290,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(619207175584, --[[ModItemUnitDataCompositeDef Mouse Text MercChatRefusal Lines ChatMessage voice:Mouse]] "Не беси меня Анаболиком в отряде. Я с шовинистом таким работать не буду — тошнит от этих свиней. Ищи дурака, я пас."),
+								'Text', T(619207175584, --[[ModItemUnitDataCompositeDef Mouse Text MercChatRefusal Lines ChatMessage voice:Mouse]] "Какого хрена у тебя в команде Анаболик? С этим шовинистом я работать отказываюсь. Меня от таких, как он, тошнит. Найди ему замену - или я валю нахрен с пляжа."),
 							}),
 						},
 						'Conditions', {
@@ -73057,7 +73315,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(180090348249, --[[ModItemUnitDataCompositeDef Mouse Text MercChatHaggle Lines ChatMessage voice:Mouse]] "Ох. Одни мужики, что ли? Все мерзкие — вонючая свинота… Ладно, я переживу, но с тебя тогда доплата."),
+								'Text', T(180090348249, --[[ModItemUnitDataCompositeDef Mouse Text MercChatHaggle Lines ChatMessage voice:Mouse]] "Фу, да у тебя в отряде одни парни. Парни тупые и не моются. Я, конечно, могу потерпеть, но тогда и денег запрошу больше."),
 							}),
 						},
 						'Conditions', {
@@ -73073,7 +73331,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(640263685398, --[[ModItemUnitDataCompositeDef Mouse Text MercChatHaggle Lines ChatMessage voice:Mouse]] "Ненавижу работать с Лиской. Она же ведь… Ох. Хочешь, чтобы я с ней работала — мне нужно больше вкусненького."),
+								'Text', T(640263685398, --[[ModItemUnitDataCompositeDef Mouse Text MercChatHaggle Lines ChatMessage voice:Mouse]] "Ненавижу работать с Лиской. Она вся такая... ох. Если хочешь, чтобы я с ней и дальше уживалась, предложи мне больше сыра."),
 							}),
 						},
 						'Conditions', {
@@ -73088,7 +73346,7 @@ return {
 					PlaceObj('MercChatMitigation', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(708602087780, --[[ModItemUnitDataCompositeDef Mouse Text MercChatMitigation Lines ChatMessage voice:Mouse]] "Хотела отказаться, но смотрю у тебя и девочки есть. Может ты не так уж плох."),
+								'Text', T(708602087780, --[[ModItemUnitDataCompositeDef Mouse Text MercChatMitigation Lines ChatMessage voice:Mouse]] "Я уж хотела отказаться, но вижу, что у тебя в команде есть девчонки. Не так уж ты и безнадёжен, наверно."),
 							}),
 						},
 						'Conditions', {
@@ -73103,37 +73361,37 @@ return {
 				},
 				'Offline', {
 					PlaceObj('ChatMessage', {
-						'Text', T(882365282152, --[[ModItemUnitDataCompositeDef Mouse Text Offline ChatMessage voice:Mouse]] "Привет! Говорит Анита Бахман. Я сейчас супер занята. Давай скажу, когда буду готова пообщаться?"),
+						'Text', T(882365282152, --[[ModItemUnitDataCompositeDef Mouse Text Offline ChatMessage voice:Mouse]] "Привет! Это Анита Бахман. Я сейчас супер занята. Как насчёт списаться, когда освобожусь?"),
 					}),
 				},
 				'GreetingAndOffer', {
 					PlaceObj('ChatMessage', {
-						'Text', T(194998168832, --[[ModItemUnitDataCompositeDef Mouse Text GreetingAndOffer ChatMessage voice:Mouse]] "Привет. Я — Мышь. Нужна на задании, да?"),
+						'Text', T(194998168832, --[[ModItemUnitDataCompositeDef Mouse Text GreetingAndOffer ChatMessage voice:Mouse]] "Привет, это Мышь. У тебя ко мне задание, да?"),
 					}),
 				},
 				'ConversationRestart', {
 					PlaceObj('ChatMessage', {
-						'Text', T(675625901057, --[[ModItemUnitDataCompositeDef Mouse Text ConversationRestart ChatMessage voice:Mouse]] "О. Обычно это я пропадаю. Так о чём мы говорили?"),
+						'Text', T(675625901057, --[[ModItemUnitDataCompositeDef Mouse Text ConversationRestart ChatMessage voice:Mouse]] "Хе. Обычно это я исчезаю без следа. Так о чём мы говорили?"),
 					}),
 				},
 				'IdleLine', {
 					PlaceObj('ChatMessage', {
-						'Text', T(516121446556, --[[ModItemUnitDataCompositeDef Mouse Text IdleLine ChatMessage voice:Mouse]] "Эй, я умею оставаться незаметной, но давай-ка без приколов."),
+						'Text', T(516121446556, --[[ModItemUnitDataCompositeDef Mouse Text IdleLine ChatMessage voice:Mouse]] "Эй! Я, конечно, знаю шутку про «Доктор, меня все игнорируют», но это уже перебор."),
 					}),
 				},
 				'PartingWords', {
 					PlaceObj('ChatMessage', {
-						'Text', T(792755268170, --[[ModItemUnitDataCompositeDef Mouse Text PartingWords ChatMessage voice:Mouse]] "Класс! Ох, надо только Стелле сказать. Устроит она мне — никак не привыкнет старушка."),
+						'Text', T(792755268170, --[[ModItemUnitDataCompositeDef Mouse Text PartingWords ChatMessage voice:Mouse]] "Отлично! Теперь осталось известить об этом Стеллу. Чую, будет скандал: она-то до сих пор жалеет, что ушла."),
 					}),
 				},
 				'RehireIntro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(752819054890, --[[ModItemUnitDataCompositeDef Mouse Text RehireIntro ChatMessage voice:Mouse]] "Эй! Как насчёт продлить контракт?"),
+						'Text', T(752819054890, --[[ModItemUnitDataCompositeDef Mouse Text RehireIntro ChatMessage voice:Mouse]] "Привет. Как насчёт продлить мой контракт?"),
 					}),
 				},
 				'RehireOutro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(814767561017, --[[ModItemUnitDataCompositeDef Mouse Text RehireOutro ChatMessage voice:Mouse]] "Класс. Тогда под ногами не путаюсь."),
+						'Text', T(814767561017, --[[ModItemUnitDataCompositeDef Mouse Text RehireOutro ChatMessage voice:Mouse]] "Отлично! Тогда не буду путаться у тебя под ногами."),
 					}),
 				},
 				'StartingSalary', 680,
@@ -73549,10 +73807,10 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(589316307933, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Ммм… Анаболик тоже будет. Нет, я против него ничего личного не имею, но... он любит дразниться — говорит, что я «слабак и баба»."),
+								'Text', T(589316307933, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "М-м-м... У вас в команде Анаболик. Нет, я против него лично ничего не имею, но... он до меня вечно докапывается. Говорит, что я «слабак и баба»."),
 							}),
 							PlaceObj('ChatMessage', {
-								'Text', T(377316958854, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Нет, конечно, я могу его понять. Но мне же потом платить за психотерапию потребуется…"),
+								'Text', T(377316958854, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Нет, он в чём-то, может быть, и прав. Но мне потребуются средства на посещение психолога."),
 							}),
 						},
 						'Conditions', {
@@ -73566,10 +73824,10 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(255971337240, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Всё чудесно. Просто с Лавой мы не очень ладим. Она всё говорит, что я напоминаю ей ту каку, что однажды ел её пёс."),
+								'Text', T(255971337240, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Всё бы ничего, но мы с Лавой не слишком ладим. Она вечно шутит, что я напоминаю ей какашку, которую как-то сожрал один из её псов."),
 							}),
 							PlaceObj('ChatMessage', {
-								'Text', T(706928440131, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Конечно, может и так. Я же не видел. Кака могла быть похожа. Просто это сильно подкашивает меня, и оплата новых сессий психотерапии будет очень кстати."),
+								'Text', T(706928440131, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Ну, то есть, может, так оно и есть. Я же её не видел. Вдруг между нами и впрямь есть некоторое сходство... Но это всё несколько расшатывает моё психологическое здоровье. Будет здорово, если вы оплатите мне психологическую реабилитацию."),
 							}),
 						},
 						'Conditions', {
@@ -73583,10 +73841,10 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(133732872963, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Боже мой. Гвоздь тоже с вами? Он переехал меня как-то мотоцикл- Байком! Он вроде велел называть байком. Потом развернулся и опять переехал. Пару раз. А потом ещё и обматерил, так как я изпачкал ему шины кровью."),
+								'Text', T(133732872963, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Ой. У вас там будет Гвоздь, да? Он как-то наехал на меня своим мотоциклом. Потом развернулся и ещё раз наехал. А потом ещё накричал, что я испачкал ему колёса кровью."),
 							}),
 							PlaceObj('ChatMessage', {
-								'Text', T(812957826017, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Ну, допускаю, что я виноват, нужно было успеть отпрыгнуть. Словом… он так любит вспоминать это, что мне будут нужны средства на лечение ПТСР."),
+								'Text', T(812957826017, --[[ModItemUnitDataCompositeDef MD Text MercChatHaggle Lines ChatMessage voice:MD]] "Ну, то есть я, конечно, тоже виноват, что не успел отпрыгнуть. В общем, он так любит мне об этом напоминать, что мне потребуются дополнительные деньги, чтобы восстановиться от ПТСР."),
 							}),
 						},
 						'Conditions', {
@@ -73600,40 +73858,40 @@ return {
 				},
 				'Offline', {
 					PlaceObj('ChatMessage', {
-						'Text', T(232520855092, --[[ModItemUnitDataCompositeDef MD Text Offline ChatMessage voice:MD]] "Привет! Это доктор Майкл Доусон. Не могу разговаривать. Перезвоните позже… А, хотя зачем я стараюсь? Никто не перезвонит. Возьмут и обратятся к людям подороже, поопытнее... к Сиднею там или Доку Кью."),
+						'Text', T(232520855092, --[[ModItemUnitDataCompositeDef MD Text Offline ChatMessage voice:MD]] "Привет! Это доктор Майкл Доусон, и я не на месте. Если вы напишете мне ещё раз... Хотя кого я обманываю? Никто мне не пишет ещё раз. Все идут и нанимают настоящих, дорогих профессионалов вроде Сиднея или Доктора Кью."),
 					}),
 				},
 				'GreetingAndOffer', {
 					PlaceObj('ChatMessage', {
-						'Text', T(844200702211, --[[ModItemUnitDataCompositeDef MD Text GreetingAndOffer ChatMessage voice:MD]] "Привет. А это не розыгрыш? А то мне позвонил один наёмник, представился чужим именем и я на две недели застрял в Камбодже. Это ведь реальное предложение?"),
+						'Text', T(844200702211, --[[ModItemUnitDataCompositeDef MD Text GreetingAndOffer ChatMessage voice:MD]] "Привет! Это точно не розыгрыш? А то в прошлый раз кто-то из коллег позвонил мне, представился чужим именем и заманил на две недели в Камбоджу. Так вы точно настоящий наниматель?"),
 					}),
 				},
 				'ConversationRestart', {
 					PlaceObj('ChatMessage', {
-						'Text', T(156327251175, --[[ModItemUnitDataCompositeDef MD Text ConversationRestart ChatMessage voice:MD]] "Ох, слава Богу! Думал вы меня отвергли."),
+						'Text', T(156327251175, --[[ModItemUnitDataCompositeDef MD Text ConversationRestart ChatMessage voice:MD]] "Ох, слава богу! Я уже думал, что вам не подхожу."),
 					}),
 				},
 				'IdleLine', {
 					PlaceObj('ChatMessage', {
-						'Text', T(514838144823, --[[ModItemUnitDataCompositeDef MD Text IdleLine ChatMessage voice:MD]] "А-а-м-м-м... Вы же не передумали меня брать, нет? Да?"),
+						'Text', T(514838144823, --[[ModItemUnitDataCompositeDef MD Text IdleLine ChatMessage voice:MD]] "М-м-м... вы там, надеюсь, не передумали? Ведь не передумали же?"),
 					}),
 				},
 				'PartingWords', {
 					PlaceObj('ChatMessage', {
-						'Text', T(204072676737, --[[ModItemUnitDataCompositeDef MD Text PartingWords ChatMessage voice:MD]] "Ух ты! Я уж и не надеялся. Уверены? Точно? Вы ничего не спутали? Точно-точно???"),
+						'Text', T(204072676737, --[[ModItemUnitDataCompositeDef MD Text PartingWords ChatMessage voice:MD]] "Ух ты. Я уже и не надеялся. Вы... вы уверены, что хотите меня нанять?"),
 					}),
 					PlaceObj('ChatMessage', {
-						'Text', T(248975416845, --[[ModItemUnitDataCompositeDef MD Text PartingWords ChatMessage voice:MD]] "Что это я… конечно ничего... Т-то есть конечно точно. Глупости говорю, простите. Так куда отправляемся? В Африку? Ой, я шортики возьму."),
+						'Text', T(248975416845, --[[ModItemUnitDataCompositeDef MD Text PartingWords ChatMessage voice:MD]] "Ну то есть да, конечно же, вы уверены. Как глупо с моей стороны. Простите. Так куда мы отправляемся? В Африку? Пойду упакую шорты."),
 					}),
 				},
 				'RehireIntro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(141535236983, --[[ModItemUnitDataCompositeDef MD Text RehireIntro ChatMessage voice:MD]] "М-м-м... Даже не знаю, как сказать, но… м-м-мой контракт… заканчивается. Видимо. Можем, продлить его, если не против."),
+						'Text', T(141535236983, --[[ModItemUnitDataCompositeDef MD Text RehireIntro ChatMessage voice:MD]] "М-м-м... Даже и не знаю, как сказать, но... мой м-м-м... контракт. Он, знаете ли... скоро заканчивается. Может быть, я мог бы продолжить работать на вас?"),
 					}),
 				},
 				'RehireOutro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(169241431651, --[[ModItemUnitDataCompositeDef MD Text RehireOutro ChatMessage voice:MD]] "Вы… Ого! Спасибо! Я тогда пойду, э-э-у-у… продолжать вот это… всё — да?"),
+						'Text', T(169241431651, --[[ModItemUnitDataCompositeDef MD Text RehireOutro ChatMessage voice:MD]] "Это... ух ты. Спасибо вам! Ну, тогда я продолжу м-м-м... делать то, что делал всё это время?"),
 					}),
 				},
 				'MedicalDeposit', "large",
@@ -74070,7 +74328,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(801318908726, --[[ModItemUnitDataCompositeDef Ivan Text MercChatRefusal Lines ChatMessage voice:Ivan]] "Игорь работал на кретинов, вроде тебя, и погиб. Шваль ты, а не командир. Так что иди-ка нахер."),
+								'Text', T(801318908726, --[[ModItemUnitDataCompositeDef Ivan Text MercChatRefusal Lines ChatMessage voice:Ivan]] "Игорь погиб, потому что связался с kretinami вроде тебя. Я не пойду. Ты плохой komandir, из-за тебя Игорь погиб."),
 							}),
 						},
 						'Conditions', {
@@ -74083,7 +74341,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(385900044934, --[[ModItemUnitDataCompositeDef Ivan Text MercChatRefusal Lines ChatMessage voice:Ivan]] "Отставить! У тебя с деньгами проблемы, голубчик. А я устал от дураков без денег, за которыми потом мне подтирать приходится."),
+								'Text', T(385900044934, --[[ModItemUnitDataCompositeDef Ivan Text MercChatRefusal Lines ChatMessage voice:Ivan]] "Nyet! От тебя одни problems, а денег нет. Я устал от durakov без денег, за которыми мне потом подтирать."),
 							}),
 						},
 						'Conditions', {
@@ -74095,7 +74353,7 @@ return {
 					PlaceObj('MercChatMitigation', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(405562095128, --[[ModItemUnitDataCompositeDef Ivan Text MercChatMitigation Lines ChatMessage voice:Ivan]] "Все это плохо пахнет, но я соглашусь. За Игорьком глаз да глаз нужен, пригляжу за ним.  Сколько раз еще из-за племяша придется с идиотами работать, а? "),
+								'Text', T(405562095128, --[[ModItemUnitDataCompositeDef Ivan Text MercChatMitigation Lines ChatMessage voice:Ivan]] "Дурацкая затея, но я согласен. Все-таки Игорь - rodnya, буду за ним приглядывать. Сколько раз мне из-за Игоря ещё придётся с такими idiotami работать..."),
 							}),
 						},
 						'Conditions', {
@@ -74111,7 +74369,7 @@ return {
 					PlaceObj('MercChatBranch', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(166369730019, --[[ModItemUnitDataCompositeDef Ivan Text MercChatBranch Lines ChatMessage voice:Ivan]] "Племяшку моего возьми тоже, Игорька. Он, конечно, говна бесполезного кусок, но так хоть от бутылки оторвется. Как к сиське мамкиной прилип."),
+								'Text', T(166369730019, --[[ModItemUnitDataCompositeDef Ivan Text MercChatBranch Lines ChatMessage voice:Ivan]] "Plemyannika моего найми. Он, конечно, govna бесполезного кусок, но так он хоть какое-то время пить не будет."),
 							}),
 						},
 						'Conditions', {
@@ -74125,7 +74383,7 @@ return {
 					PlaceObj('MercChatBranch', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152187545209, --[[ModItemUnitDataCompositeDef Ivan Text MercChatBranch Lines ChatMessage voice:Ivan]] "Я слышал, Хряп ищет работу. Мы с ним хорошо сработались, возьми его тоже. "),
+								'Text', T(152187545209, --[[ModItemUnitDataCompositeDef Ivan Text MercChatBranch Lines ChatMessage voice:Ivan]] "Я слышал, Грунти ищет работу. Грунти - хороший soldat. Найми его."),
 							}),
 						},
 						'Conditions', {
@@ -74137,37 +74395,37 @@ return {
 				},
 				'Offline', {
 					PlaceObj('ChatMessage', {
-						'Text', T(638867606061, --[[ModItemUnitDataCompositeDef Ivan Text Offline ChatMessage voice:Ivan]] "Это Иван Долвич. Я сейчас на задании, свяжусь с тобой позже. Не названивай мне, как последний осел."),
+						'Text', T(638867606061, --[[ModItemUnitDataCompositeDef Ivan Text Offline ChatMessage voice:Ivan]] "Это Иван Долвич. Я на задании. Перезвоню позже. Если ты durak, больше не звони."),
 					}),
 				},
 				'GreetingAndOffer', {
 					PlaceObj('ChatMessage', {
-						'Text', T(618731597504, --[[ModItemUnitDataCompositeDef Ivan Text GreetingAndOffer ChatMessage voice:Ivan]] "Это Иван Долвич. Хочешь предложить мне работу? Надеюсь, деньги у тебя есть. Эти ослы думают, что можно просто позвонить в AIM и спросить Ивана."),
+						'Text', T(618731597504, --[[ModItemUnitDataCompositeDef Ivan Text GreetingAndOffer ChatMessage voice:Ivan]] "Это Иван Долвич. У тебя есть zadaniye? Очередной дебил хочет меня нанять. Надеюсь, хотя бы у этого деньги будут."),
 					}),
 				},
 				'ConversationRestart', {
 					PlaceObj('ChatMessage', {
-						'Text', T(163444722395, --[[ModItemUnitDataCompositeDef Ivan Text ConversationRestart ChatMessage voice:Ivan]] "Алё, куда пропал там? Идиоты всякие названивают…"),
+						'Text', T(163444722395, --[[ModItemUnitDataCompositeDef Ivan Text ConversationRestart ChatMessage voice:Ivan]] "Ты куда пропал? Idioty, тратят моё время..."),
 					}),
 				},
 				'IdleLine', {
 					PlaceObj('ChatMessage', {
-						'Text', T(191528611145, --[[ModItemUnitDataCompositeDef Ivan Text IdleLine ChatMessage voice:Ivan]] "Ты здесь, идиотина? У меня дела есть вообще-то. Шевели шестеренками!"),
+						'Text', T(191528611145, --[[ModItemUnitDataCompositeDef Ivan Text IdleLine ChatMessage voice:Ivan]] "Ты здесь, idiotina? Я занят. Не будем тратить время."),
 					}),
 				},
 				'PartingWords', {
 					PlaceObj('ChatMessage', {
-						'Text', T(370387628463, --[[ModItemUnitDataCompositeDef Ivan Text PartingWords ChatMessage voice:Ivan]] "Хорошо, договорились. Поеду я в этот ваш Гранд-Шьен"),
+						'Text', T(370387628463, --[[ModItemUnitDataCompositeDef Ivan Text PartingWords ChatMessage voice:Ivan]] "Хорошо. Договорились. Я поеду в этот ваш Гран-Шьен."),
 					}),
 				},
 				'RehireIntro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(429789494124, --[[ModItemUnitDataCompositeDef Ivan Text RehireIntro ChatMessage voice:Ivan]] "Мой контракт скоро закончится. Продлевать будем, или глазками хлопать? Останешься без Ивана, ослик!"),
+						'Text', T(429789494124, --[[ModItemUnitDataCompositeDef Ivan Text RehireIntro ChatMessage voice:Ivan]] "Мой kontrakt скоро закончится. Как насчёт обновить его? Ты что, совсем durak - остаться без Ивана?"),
 					}),
 				},
 				'RehireOutro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(231732374331, --[[ModItemUnitDataCompositeDef Ivan Text RehireOutro ChatMessage voice:Ivan]] "Согласен. Командира бы поумнее, но работаем с тем, что есть."),
+						'Text', T(231732374331, --[[ModItemUnitDataCompositeDef Ivan Text RehireOutro ChatMessage voice:Ivan]] "Хорошо. Этот, похоже, не настолько durak, как все остальные, раз хочет со мной работать."),
 					}),
 				},
 				'StartingSalary', 4500,
@@ -74488,7 +74746,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(947420046783, --[[ModItemUnitDataCompositeDef Ice Text MercChatRefusal Lines ChatMessage voice:Ice]] "Ох, ёпт. Чувак, реально забыл: обещал другану помочь с переездом. Мой косяк. Мир!"),
+								'Text', T(947420046783, --[[ModItemUnitDataCompositeDef Ice Text MercChatRefusal Lines ChatMessage voice:Ice]] "Ох, блин. Чувак, реально забыл: обещал другану помочь с переездом. Мой косяк. Мир!"),
 							}),
 						},
 						'Conditions', {},
@@ -74497,7 +74755,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(449305513325, --[[ModItemUnitDataCompositeDef Ice Text MercChatRefusal Lines ChatMessage voice:Ice]] "Задания-однодневки - это не моё, друг. Зови, если нужно как следует покуралесить."),
+								'Text', T(449305513325, --[[ModItemUnitDataCompositeDef Ice Text MercChatRefusal Lines ChatMessage voice:Ice]] "Задания-однодневки - это не моё, друг. Зови, если нужно как следует вложиться."),
 							}),
 						},
 						'Type', "duration",
@@ -74507,7 +74765,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(253254561122, --[[ModItemUnitDataCompositeDef Ice Text MercChatHaggle Lines ChatMessage voice:Ice]] "Мы с тобой ещё не ныряли на делишки. Может, ты нормальный мужик... а может, нет. Подкинь ещё бабосов, там видно будет."),
+								'Text', T(253254561122, --[[ModItemUnitDataCompositeDef Ice Text MercChatHaggle Lines ChatMessage voice:Ice]] "Я тебя не знаю. Может, ты нормальный мужик... а может, нет. Подкинь ещё, там видно будет."),
 							}),
 						},
 						'Conditions', {
@@ -74520,7 +74778,7 @@ return {
 					PlaceObj('MercChatMitigation', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(451725402409, --[[ModItemUnitDataCompositeDef Ice Text MercChatMitigation Lines ChatMessage voice:Ice]] "Йоу, с Магом я всегда готов работать. Уже иду."),
+								'Text', T(451725402409, --[[ModItemUnitDataCompositeDef Ice Text MercChatMitigation Lines ChatMessage voice:Ice]] "Йо, с Магом я всегда готов работать. Уже иду."),
 							}),
 						},
 						'Conditions', {
@@ -74534,7 +74792,7 @@ return {
 					PlaceObj('MercChatMitigation', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(220360813308, --[[ModItemUnitDataCompositeDef Ice Text MercChatMitigation Lines ChatMessage voice:Ice]] "Гризли своё дело знает. Раз он в твоей пати, значит, ты нормалдесный чувак. Я в деле."),
+								'Text', T(220360813308, --[[ModItemUnitDataCompositeDef Ice Text MercChatMitigation Lines ChatMessage voice:Ice]] "Гризли своё дело знает. Если он с тобой, значит, ты нормальный мужик. Я в деле."),
 							}),
 						},
 						'Conditions', {
@@ -74548,7 +74806,7 @@ return {
 					PlaceObj('MercChatMitigation', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(196058391078, --[[ModItemUnitDataCompositeDef Ice Text MercChatMitigation Lines ChatMessage voice:Ice]] "Фа-а-ак!.. У тебя в отряде Блад? Это всем чувакам чувак. Лады. Считай, я согласен."),
+								'Text', T(196058391078, --[[ModItemUnitDataCompositeDef Ice Text MercChatMitigation Lines ChatMessage voice:Ice]] "Бли-и-ин... У тебя в отряде Блад? Это всем чувакам чувак. Лады. Считай, я согласен."),
 							}),
 						},
 						'Conditions', {
@@ -74600,37 +74858,37 @@ return {
 				},
 				'Offline', {
 					PlaceObj('ChatMessage', {
-						'Text', T(439765835734, --[[ModItemUnitDataCompositeDef Ice Text Offline ChatMessage voice:Ice]] "Эт Айс Уильямс. Я ща занят, но если это по работе, скиньте сообщение, я вам в ответку звякну-шмякну."),
+						'Text', T(439765835734, --[[ModItemUnitDataCompositeDef Ice Text Offline ChatMessage voice:Ice]] "Это Айс Уильямс. Я сейчас занят, но если это по работе, скиньте сообщение, я отпишусь."),
 					}),
 				},
 				'GreetingAndOffer', {
 					PlaceObj('ChatMessage', {
-						'Text', T(796351074859, --[[ModItemUnitDataCompositeDef Ice Text GreetingAndOffer ChatMessage voice:Ice]] "Айс у аппарата. Чо как?"),
+						'Text', T(796351074859, --[[ModItemUnitDataCompositeDef Ice Text GreetingAndOffer ChatMessage voice:Ice]] "Айс. Как дела?"),
 					}),
 				},
 				'ConversationRestart', {
 					PlaceObj('ChatMessage', {
-						'Text', T(394207735795, --[[ModItemUnitDataCompositeDef Ice Text ConversationRestart ChatMessage voice:Ice]] "Ну камон, чел. Чё там за делишки у тя, колись шустрей."),
+						'Text', T(394207735795, --[[ModItemUnitDataCompositeDef Ice Text ConversationRestart ChatMessage voice:Ice]] "Я весь внимание. Ну, давай."),
 					}),
 				},
 				'IdleLine', {
 					PlaceObj('ChatMessage', {
-						'Text', T(879227309291, --[[ModItemUnitDataCompositeDef Ice Text IdleLine ChatMessage voice:Ice]] "Эт чё, игра такая? Типа я должен оттелепатировать, чё ты там замыслил?"),
+						'Text', T(879227309291, --[[ModItemUnitDataCompositeDef Ice Text IdleLine ChatMessage voice:Ice]] "Это что, игра такая? Типа я должен угадать, что у тебя на уме?"),
 					}),
 				},
 				'PartingWords', {
 					PlaceObj('ChatMessage', {
-						'Text', T(306254363554, --[[ModItemUnitDataCompositeDef Ice Text PartingWords ChatMessage voice:Ice]] "Ништяк. Найс темка, чел, заценим, чё там."),
+						'Text', T(306254363554, --[[ModItemUnitDataCompositeDef Ice Text PartingWords ChatMessage voice:Ice]] "Отлично. Давай попробуем!"),
 					}),
 				},
 				'RehireIntro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(722650285343, --[[ModItemUnitDataCompositeDef Ice Text RehireIntro ChatMessage voice:Ice]] "Контракт почти вышел. Чо как, обновляем?"),
+						'Text', T(722650285343, --[[ModItemUnitDataCompositeDef Ice Text RehireIntro ChatMessage voice:Ice]] "Контракт почти вышел. Как насчёт обновить?"),
 					}),
 				},
 				'RehireOutro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(425548162876, --[[ModItemUnitDataCompositeDef Ice Text RehireOutro ChatMessage voice:Ice]] "Супер, супер. Лан, не будем терять время."),
+						'Text', T(425548162876, --[[ModItemUnitDataCompositeDef Ice Text RehireOutro ChatMessage voice:Ice]] "Супер, супер. Не будем терять время."),
 					}),
 				},
 				'DurationDiscount', "long only",
@@ -75145,9 +75403,9 @@ return {
 				'Portrait', "UI/MercsPortraits/Grunty",
 				'BigPortrait', "UI/Mercs/Grunty",
 				'IsMercenary', true,
-				'Name', T(509794901102, --[[ModItemUnitDataCompositeDef Grunty Name]] "Гельмут Грунтер «Хряп»"),
-				'Nick', T(844792410600, --[[ModItemUnitDataCompositeDef Grunty Nick]] "Хряп"),
-				'AllCapsNick', T(878015981670, --[[ModItemUnitDataCompositeDef Grunty AllCapsNick]] "ХРЯП "),
+				'Name', T(509794901102, --[[ModItemUnitDataCompositeDef Grunty Name]] "Гельмут Грунтер «Грунти»"),
+				'Nick', T(844792410600, --[[ModItemUnitDataCompositeDef Grunty Nick]] "Грунти"),
+				'AllCapsNick', T(878015981670, --[[ModItemUnitDataCompositeDef Grunty AllCapsNick]] "ГРУНТИ"),
 				'Bio', T(805883834301, --[[ModItemUnitDataCompositeDef Grunty Bio]] "Боец, стремительно взлетающий к вершинам карьеры наёмника, Хряп пользуется большой популярностью среди клиентов A.I.M. Гельмут - отличный солдат с умеренными денежными запросами, а дружелюбная матера общения и оптимизм делают его прекрасным товарищем по команде. Хряп - универсал, умеющий отлично обращаться с тяжелым оружием, так что едва ли найдётся тактическая задача, из которой он не вышел бы с победой."),
 				'Nationality', "Germany",
 				'Title', T(559710714576, --[[ModItemUnitDataCompositeDef Grunty Title]] "Наёмник хоть куда. В самом расцвете лет"),
@@ -75250,7 +75508,7 @@ return {
 				},
 				'GreetingAndOffer', {
 					PlaceObj('ChatMessage', {
-						'Text', T(552434878051, --[[ModItemUnitDataCompositeDef Grunty Text GreetingAndOffer ChatMessage voice:Grunty]] "Hallo, das ist Хряп, Гельмут Грунтер. Желаешь предложить мне работу?"),
+						'Text', T(552434878051, --[[ModItemUnitDataCompositeDef Grunty Text GreetingAndOffer ChatMessage voice:Grunty]] "Hallo, das ist Грунти, Гельмут Грунтер. Желаешь предложить мне работу?"),
 					}),
 				},
 				'ConversationRestart', {
@@ -75395,7 +75653,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(515442003007, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatHaggle Lines ChatMessage voice:Grizzly]] "У тебя в отряде сплошь иностранцы. Чё, трудно было нормальных американских вояк набрать? Нет, я не расист, но если хочешь, чтоб я доверил свою жизнь чумазым иностранцам, придётся доплатить."),
+								'Text', T(515442003007, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatHaggle Lines ChatMessage voice:Grizzly]] "У тебя в отряде сплошь иностранцы. Что, трудно было нормальных американцев набрать? Нет, я не расист, но если хочешь, чтоб я доверил свою жизнь чёртовым иностранцам, придётся доплатить."),
 							}),
 						},
 						'Conditions', {
@@ -75411,7 +75669,7 @@ return {
 					PlaceObj('MercChatMitigation', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(330985534421, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatMitigation Lines ChatMessage voice:Grizzly]] "Я и моя Тень? Мы с ним одной закваски! Блин, я в деле!"),
+								'Text', T(330985534421, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatMitigation Lines ChatMessage voice:Grizzly]] "Я и моя Тень? Мы с ним одной закваски. Я в деле."),
 							}),
 						},
 						'Conditions', {
@@ -75453,7 +75711,7 @@ return {
 					PlaceObj('MercChatBranch', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(467797906670, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatBranch Lines ChatMessage voice:Grizzly]] "Ооо, а хочешь услышать, как мы с Волком на пару завываем? Он-то мне - считай, братишка. Может, позовёшь его? Он отличный солдат, клык даю. "),
+								'Text', T(467797906670, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatBranch Lines ChatMessage voice:Grizzly]] "Волк мне - считай, братишка. Не хочешь и его тоже позвать? Он отличный солдат."),
 							}),
 						},
 						'Conditions', {
@@ -75475,12 +75733,12 @@ return {
 				},
 				'ConversationRestart', {
 					PlaceObj('ChatMessage', {
-						'Text', T(261408286901, --[[ModItemUnitDataCompositeDef Grizzly Text ConversationRestart ChatMessage voice:Grizzly]] "Попробуем ещё разок. Может, ты и выйдешь из спячки."),
+						'Text', T(261408286901, --[[ModItemUnitDataCompositeDef Grizzly Text ConversationRestart ChatMessage voice:Grizzly]] "Попробуем ещё разок. Может, ещё договоримся."),
 					}),
 				},
 				'IdleLine', {
 					PlaceObj('ChatMessage', {
-						'Text', T(672618998313, --[[ModItemUnitDataCompositeDef Grizzly Text IdleLine ChatMessage voice:Grizzly]] "Кончай лапу сосать. Куй железо, пока горячо."),
+						'Text', T(672618998313, --[[ModItemUnitDataCompositeDef Grizzly Text IdleLine ChatMessage voice:Grizzly]] "Кончай тормозить. Куй железо, пока горячо."),
 					}),
 				},
 				'PartingWords', {
@@ -75586,7 +75844,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(968862205775, --[[ModItemUnitDataCompositeDef Fox Text MercChatRefusal Lines ChatMessage voice:Fox]] "Ещё чего! Пока у тебя в команде этот надутый матрас Анаболик, на меня не рассчитывай!"),
+								'Text', T(968862205775, --[[ModItemUnitDataCompositeDef Fox Text MercChatRefusal Lines ChatMessage voice:Fox]] "Ещё чего! Пока у тебя в команде этот надувной матрас Анаболик, на меня даже не рассчитывай!"),
 							}),
 						},
 						'Conditions', {
@@ -75599,7 +75857,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(424506783398, --[[ModItemUnitDataCompositeDef Fox Text MercChatRefusal Lines ChatMessage voice:Fox]] "Ой, совсем забыла. Меня ждёт реальная голливудская звезда в пляжном домике на закрытый кастинг! Это мой шанс протолкнуться!  Покажу ему всё, что умею!"),
+								'Text', T(424506783398, --[[ModItemUnitDataCompositeDef Fox Text MercChatRefusal Lines ChatMessage voice:Fox]] "Прости, я тут вспомнила: одна знаменитость пригласила меня в свой личный пляжный домик на закрытые кинопробы. Это мой шанс попасть в Голливуд! Мне не терпится показать все свои достоинства!"),
 							}),
 						},
 						'Conditions', {},
@@ -75610,7 +75868,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(690973322218, --[[ModItemUnitDataCompositeDef Fox Text MercChatHaggle Lines ChatMessage voice:Fox]] "У тебя в команде тупой перекаченный Анаболик, а это дополнительный стресс. Нужен стимул побольше для этой работки."),
+								'Text', T(690973322218, --[[ModItemUnitDataCompositeDef Fox Text MercChatHaggle Lines ChatMessage voice:Fox]] "То, что ты нанял в команду этого тупого качка Анаболика, внесло в работу много лишнего стресса. Теперь мне потребуется денежный стимул, чтобы продолжить здесь работать."),
 							}),
 						},
 						'Conditions', {
@@ -75624,7 +75882,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(545857097628, --[[ModItemUnitDataCompositeDef Fox Text MercChatHaggle Lines ChatMessage voice:Fox]] "Этот жутик Смайли тупо меня бесит! Если хочешь, чтобы я осталась в команде, плати больше, и я не откручу его сальные лапки."),
+								'Text', T(545857097628, --[[ModItemUnitDataCompositeDef Fox Text MercChatHaggle Lines ChatMessage voice:Fox]] "Этот лапотник Смайли меня достал! Если хочешь, чтоб я осталась в команде, придётся доплатить. Считай это платой за то, что я не отрублю ему его мерзкие грабли."),
 							}),
 						},
 						'Conditions', {
@@ -75648,7 +75906,7 @@ return {
 					PlaceObj('MercChatMitigation', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(160370239004, --[[ModItemUnitDataCompositeDef Fox Text MercChatMitigation Lines ChatMessage voice:Fox]] "Ой, Волчок уже в обойме, тогда и я! Покажусь ему в новом бикини!"),
+								'Text', T(160370239004, --[[ModItemUnitDataCompositeDef Fox Text MercChatMitigation Lines ChatMessage voice:Fox]] "Если Волчок уже с тобой, я согласна! Не терпится показаться ему в новом бикини!"),
 							}),
 						},
 						'Conditions', {
@@ -75662,7 +75920,7 @@ return {
 					PlaceObj('MercChatMitigation', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(158023635837, --[[ModItemUnitDataCompositeDef Fox Text MercChatMitigation Lines ChatMessage voice:Fox]] "Когда в команде медвежонок Гризли — это команда по мне."),
+								'Text', T(158023635837, --[[ModItemUnitDataCompositeDef Fox Text MercChatMitigation Lines ChatMessage voice:Fox]] "Если в команде есть мой медвежонок Гризли, я тоже в неё хочу!"),
 							}),
 						},
 						'Conditions', {
@@ -75678,7 +75936,7 @@ return {
 					PlaceObj('MercChatBranch', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(168114906666, --[[ModItemUnitDataCompositeDef Fox Text MercChatBranch Lines ChatMessage voice:Fox]] "О'кей, договорились. Кстати, слышала Волк свободен, а я люблю работать с ним. Буду очень благодарна, если и его наймёшь"),
+								'Text', T(168114906666, --[[ModItemUnitDataCompositeDef Fox Text MercChatBranch Lines ChatMessage voice:Fox]] "О'кей, договорились. Кстати, я тут слышала, Волк тоже свободен. Обожаю работать c ним в паре. Если наймёшь и его - буду тебе о-о-очень благодарна."),
 							}),
 						},
 						'Conditions', {
@@ -75690,7 +75948,7 @@ return {
 					PlaceObj('MercChatBranch', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(202992877509, --[[ModItemUnitDataCompositeDef Fox Text MercChatBranch Lines ChatMessage voice:Fox]] "О'кей. Договорились. Просто предложение. Гризли тоже свободен. У меня очень гибкие условия труда, когда рядышком мой медвежонок Гризли!"),
+								'Text', T(202992877509, --[[ModItemUnitDataCompositeDef Fox Text MercChatBranch Lines ChatMessage voice:Fox]] "О'кей, договорились! Кстати, мысль: я знаю, что Гризли сейчас не занят. Возьми к себе и моего медвежонка тоже - а уж я придумаю, как выразить мою благодарность."),
 							}),
 						},
 						'Conditions', {
@@ -75702,17 +75960,17 @@ return {
 				},
 				'Offline', {
 					PlaceObj('ChatMessage', {
-						'Text', T(372042629873, --[[ModItemUnitDataCompositeDef Fox Text Offline ChatMessage voice:Fox]] "Это Синтия Газмен. Я сейчас связана по рукам и ногам, но регулярно проверяю входящие. Так что наговори что-нибудь и может встретимся с тобой! А если бы вы предпочли, чтобы я проигнорировала ваш звонок, подышите в трубку - разок, не больше."),
+						'Text', T(372042629873, --[[ModItemUnitDataCompositeDef Fox Text Offline ChatMessage voice:Fox]] "Это Синтия Газмен. Я сейчас связана по рукам и ногам, но регулярно проверяю автоответчик. Так что можете оставить сообщение, и я с вами наверняка встречусь!"),
 					}),
 				},
 				'GreetingAndOffer', {
 					PlaceObj('ChatMessage', {
-						'Text', T(303692254961, --[[ModItemUnitDataCompositeDef Fox Text GreetingAndOffer ChatMessage voice:Fox]] "Лиска слушает. Если ты по работе — ушки на макушке. И не только они. У меня всё на своём месте."),
+						'Text', T(303692254961, --[[ModItemUnitDataCompositeDef Fox Text GreetingAndOffer ChatMessage voice:Fox]] "Лиска слушает. Если хочешь предложить мне задание, я готова работать, не покладая рук. И других частей тела."),
 					}),
 				},
 				'ConversationRestart', {
 					PlaceObj('ChatMessage', {
-						'Text', T(258922001582, --[[ModItemUnitDataCompositeDef Fox Text ConversationRestart ChatMessage voice:Fox]] "Снова ты, а? Я знала, что передо мной не устоишь."),
+						'Text', T(258922001582, --[[ModItemUnitDataCompositeDef Fox Text ConversationRestart ChatMessage voice:Fox]] "А, снова ты? Я знала, что произведу на тебя впечатление."),
 					}),
 				},
 				'IdleLine', {
@@ -75722,17 +75980,17 @@ return {
 				},
 				'PartingWords', {
 					PlaceObj('ChatMessage', {
-						'Text', T(210052524908, --[[ModItemUnitDataCompositeDef Fox Text PartingWords ChatMessage voice:Fox]] "Кайф! Бросаю в сумочку лосьон от солнца и перевязочные пакеты, и сразу к тебе."),
+						'Text', T(210052524908, --[[ModItemUnitDataCompositeDef Fox Text PartingWords ChatMessage voice:Fox]] "Отлично! Сейчас упакую солнцезащитный крем и перевязочные пакеты - и скоро буду у тебя."),
 					}),
 				},
 				'RehireIntro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(972810372163, --[[ModItemUnitDataCompositeDef Fox Text RehireIntro ChatMessage voice:Fox]] "Я девушка занятая, и желающих - хоть отбавляй на меня. Не жди последней минутки — решай наше будущее."),
+						'Text', T(972810372163, --[[ModItemUnitDataCompositeDef Fox Text RehireIntro ChatMessage voice:Fox]] "Я девушка занятая, и желающих - хоть отбавляй. Не советую откладывать продление контракта на последний момент."),
 					}),
 				},
 				'RehireOutro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(760883994778, --[[ModItemUnitDataCompositeDef Fox Text RehireOutro ChatMessage voice:Fox]] "Рада, что приглянулась тебе. И это я ещё не всё тебе показала."),
+						'Text', T(760883994778, --[[ModItemUnitDataCompositeDef Fox Text RehireOutro ChatMessage voice:Fox]] "Рада, что я тебе приглянулась. И это я ещё не всё тебе показала."),
 					}),
 				},
 				'MedicalDeposit', "large",
@@ -75851,7 +76109,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(601499126033, --[[ModItemUnitDataCompositeDef Fidel Text MercChatRefusal Lines ChatMessage voice:Fidel]] "Мерзкий дети написали на двери Фиделя гадость. Всё. Фидель ждёт: наступят на мину — бабах и Фидель прибьёт к двери их кусочки — будет им урок. Хехе. Кароче… Фидель занят по семейным обстоятельствам, скажем так. Позже тогда, да? Давай!"),
+								'Text', T(601499126033, --[[ModItemUnitDataCompositeDef Fidel Text MercChatRefusal Lines ChatMessage voice:Fidel]] "Мерзкие подростки написали на двери Фиделя плохие слова. Фидель поставил растяжку и ждёт, когда бомба взорвётся. Тогда он прибьёт к двери их оторванные конечности, чтобы другим неповадно было. Так что сейчас Фидель занят. Позже?"),
 							}),
 						},
 						'Conditions', {},
@@ -75860,7 +76118,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(322149216469, --[[ModItemUnitDataCompositeDef Fidel Text MercChatRefusal Lines ChatMessage voice:Fidel]] "Фиделю скучна работа. Ты не просишь Фиделя убивать враг. Фидель больше не будет работать тебе."),
+								'Text', T(322149216469, --[[ModItemUnitDataCompositeDef Fidel Text MercChatRefusal Lines ChatMessage voice:Fidel]] "Фиделю скучно. Ты не просишь его убивать врагов. Фидель больше не хочет на тебя работать."),
 							}),
 						},
 						'Conditions', {
@@ -75871,37 +76129,37 @@ return {
 				},
 				'Offline', {
 					PlaceObj('ChatMessage', {
-						'Text', T(821638510526, --[[ModItemUnitDataCompositeDef Fidel Text Offline ChatMessage voice:Fidel]] "Это машина, которая говорит, как Фидель. Сейчас Фидель убивает врагов. Хочешь нанять Фиделя убивать врагов — перезвонишь. Или ТЫ враг?! Фидель идёт за тобой. Хехе."),
+						'Text', T(821638510526, --[[ModItemUnitDataCompositeDef Fidel Text Offline ChatMessage voice:Fidel]] "Это машина, которая говорит, как Фидель. Фидель сейчас убивает врагов. Если хочешь нанять Фиделя убивать врагов, свяжись с ним позже. Если враг - это ты, Фидель найдёт тебя и убьёт."),
 					}),
 				},
 				'GreetingAndOffer', {
 					PlaceObj('ChatMessage', {
-						'Text', T(400111149290, --[[ModItemUnitDataCompositeDef Fidel Text GreetingAndOffer ChatMessage voice:Fidel]] "Это машина с голосом Фиделя. Хочешь убивать людей руками Фиделя? Фидель тоже хочет убивать своими руками! Ну так это самое, договорились, да?"),
+						'Text', T(400111149290, --[[ModItemUnitDataCompositeDef Fidel Text GreetingAndOffer ChatMessage voice:Fidel]] "Это машина, которая говорит, как Фидель. Ты хочешь нанять Фиделя убивать врагов? Фидель тоже хочет их убивать. Ну что, договорились?"),
 					}),
 				},
 				'ConversationRestart', {
 					PlaceObj('ChatMessage', {
-						'Text', T(781594867566, --[[ModItemUnitDataCompositeDef Fidel Text ConversationRestart ChatMessage voice:Fidel]] "Тянет убивать вражин, а не болтать? Ой. Не волнуйся! Фиделя тоже — ай как тянет! Хехе."),
+						'Text', T(781594867566, --[[ModItemUnitDataCompositeDef Fidel Text ConversationRestart ChatMessage voice:Fidel]] "Тебе пришлось отвлечься, чтобы убивать врагов? Фидель понимает. Фидель тоже так делает."),
 					}),
 				},
 				'IdleLine', {
 					PlaceObj('ChatMessage', {
-						'Text', T(101738114840, --[[ModItemUnitDataCompositeDef Fidel Text IdleLine ChatMessage voice:Fidel]] "ГОВОРИ, МАШИНА! ГОВОРИ! ИЛИ ФИДЕЛЬ ВЗОРВАТЬ ТЕБЯ!"),
+						'Text', T(101738114840, --[[ModItemUnitDataCompositeDef Fidel Text IdleLine ChatMessage voice:Fidel]] "ГОВОРИ, МАШИНА! ГОВОРИ! ИЛИ ФИДЕЛЬ ТЕБЯ ВЗОРВЁТ!"),
 					}),
 				},
 				'PartingWords', {
 					PlaceObj('ChatMessage', {
-						'Text', T(783316549514, --[[ModItemUnitDataCompositeDef Fidel Text PartingWords ChatMessage voice:Fidel]] "Ох, надеюсь там будет много вражин. А то Фиделю скучно."),
+						'Text', T(783316549514, --[[ModItemUnitDataCompositeDef Fidel Text PartingWords ChatMessage voice:Fidel]] "Надеюсь, там будет много врагов. Фидель заскучал."),
 					}),
 				},
 				'RehireIntro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(337330388680, --[[ModItemUnitDataCompositeDef Fidel Text RehireIntro ChatMessage voice:Fidel]] "Машина говорит «Фидель, контракт кончается». А сколько ещё врагов! Плати, чтоб Фидель убивать! Давай!"),
+						'Text', T(337330388680, --[[ModItemUnitDataCompositeDef Fidel Text RehireIntro ChatMessage voice:Fidel]] "Машина говорит, контракт Фиделя скоро кончится. У тебя ещё много врагов. Заплати Фиделю, чтобы он их убил."),
 					}),
 				},
 				'RehireOutro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(100497682392, --[[ModItemUnitDataCompositeDef Fidel Text RehireOutro ChatMessage voice:Fidel]] "Хорошо. Хехехе. Убивать не терпится."),
+						'Text', T(100497682392, --[[ModItemUnitDataCompositeDef Fidel Text RehireOutro ChatMessage voice:Fidel]] "Хорошо. Иду убивать."),
 					}),
 				},
 				'MedicalDeposit', "none",
@@ -76204,7 +76462,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(574540805848, --[[ModItemUnitDataCompositeDef Buns Text MercChatHaggle Lines ChatMessage voice:Buns]] "Вы наняли этого ненормального «Жнеца». У этой образины определённо не все дома! Хотите со мной работать, тогда уж потрудитесь компенсировать мне неблагоприятные условия труда."),
+								'Text', T(574540805848, --[[ModItemUnitDataCompositeDef Buns Text MercChatHaggle Lines ChatMessage voice:Buns]] "Вы наняли этого ненормального «Жнеца». Это очень, очень больной человек. Если хотите, чтобы я продолжила наше сотрудничество, вам придётся заплатить. Считайте это компенсацией за неблагоприятные условия работы."),
 							}),
 						},
 						'Conditions', {
@@ -76217,7 +76475,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(998763690178, --[[ModItemUnitDataCompositeDef Buns Text MercChatHaggle Lines ChatMessage voice:Buns]] "Не знаю, что побудило вас нанять эту бестолковую фотомодель Лиску! У неё в голове то же, что в груди. Наверняка один силикон. Я уверена… Так или иначе, терпеть её присутствие без доплаты я не намерена."),
+								'Text', T(998763690178, --[[ModItemUnitDataCompositeDef Buns Text MercChatHaggle Lines ChatMessage voice:Buns]] "Не знаю, что побудило вас нанять эту бестолковую фотомодель Лиску. Готова поспорить, у неё даже бюст ненастоящий. Да-да. Так или иначе, терпеть её присутствие без доплаты я не намерена."),
 							}),
 						},
 						'Conditions', {
@@ -76232,7 +76490,7 @@ return {
 					PlaceObj('MercChatMitigation', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(691020141104, --[[ModItemUnitDataCompositeDef Buns Text MercChatMitigation Lines ChatMessage voice:Buns]] "Обычно я не соглашаюсь на такие предложения. Но коль скоро на вас работает… Сидней, возможно, у вас всё просчитано. Я в деле."),
+								'Text', T(691020141104, --[[ModItemUnitDataCompositeDef Buns Text MercChatMitigation Lines ChatMessage voice:Buns]] "Обычно я не соглашаюсь на такие предложения. Но коль скоро на вас работает Сидней, возможно, вы не совсем бездарь. Я в деле."),
 							}),
 						},
 						'Conditions', {
@@ -76246,17 +76504,17 @@ return {
 				},
 				'Offline', {
 					PlaceObj('ChatMessage', {
-						'Text', T(545257109553, --[[ModItemUnitDataCompositeDef Buns Text Offline ChatMessage voice:Buns]] "Это Моника Зондергад. Полагаю, вам рекомендовали меня как образцового, исполнительного и аккуратного сотрудника. В данный момент я недоступна. Свяжитесь со мной позже."),
+						'Text', T(545257109553, --[[ModItemUnitDataCompositeDef Buns Text Offline ChatMessage voice:Buns]] "Это Моника Зондергад. Полагаю, вам рекомендовали меня как образцового, чистоплотного и исполнительного сотрудника. В данный момент я отсутствую. Свяжитесь со мной в другое время."),
 					}),
 				},
 				'GreetingAndOffer', {
 					PlaceObj('ChatMessage', {
-						'Text', T(852499190735, --[[ModItemUnitDataCompositeDef Buns Text GreetingAndOffer ChatMessage voice:Buns]] "Приветствую. Это Моника Зондергад. Рада знакомству. Полагаю, вам требуются работники, и вас покорили мои образцовые навыки и аккуратный подход."),
+						'Text', T(852499190735, --[[ModItemUnitDataCompositeDef Buns Text GreetingAndOffer ChatMessage voice:Buns]] "Приветствую. Моника Зондергад. Рада знакомству. Полагаю, вам требуются работники, и вы не смогли устоять перед моими образцовыми навыками и общей чистоплотностью."),
 					}),
 				},
 				'ConversationRestart', {
 					PlaceObj('ChatMessage', {
-						'Text', T(698087255368, --[[ModItemUnitDataCompositeDef Buns Text ConversationRestart ChatMessage voice:Buns]] "Невежливо так резко обрывать разговор, но я вас прощаю. Продолжим."),
+						'Text', T(698087255368, --[[ModItemUnitDataCompositeDef Buns Text ConversationRestart ChatMessage voice:Buns]] "Невежливо обрывать разговор, но я вас прощаю. Продолжим."),
 					}),
 				},
 				'IdleLine', {
@@ -76266,17 +76524,17 @@ return {
 				},
 				'PartingWords', {
 					PlaceObj('ChatMessage', {
-						'Text', T(906674942216, --[[ModItemUnitDataCompositeDef Buns Text PartingWords ChatMessage voice:Buns]] "Вот и славненько. Жду плодотворного сотрудничества."),
+						'Text', T(906674942216, --[[ModItemUnitDataCompositeDef Buns Text PartingWords ChatMessage voice:Buns]] "Очень хорошо. Буду ждать начала нашего сотрудничества."),
 					}),
 				},
 				'RehireIntro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(918365695405, --[[ModItemUnitDataCompositeDef Buns Text RehireIntro ChatMessage voice:Buns]] "Добрый день. Наш контракт подходит к концу. Боюсь, команде тяжело придётся без моих навыков, так что я готова продлить его действие."),
+						'Text', T(918365695405, --[[ModItemUnitDataCompositeDef Buns Text RehireIntro ChatMessage voice:Buns]] "Добрый день. Наш контракт подходит к концу. Моё отсутствие станет большим ударом для всей команды, так что я готова продлить его действие."),
 					}),
 				},
 				'RehireOutro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(558845485811, --[[ModItemUnitDataCompositeDef Buns Text RehireOutro ChatMessage voice:Buns]] "Хорошо. Я рада, что мы пришли к соглашению и контракт продлён."),
+						'Text', T(558845485811, --[[ModItemUnitDataCompositeDef Buns Text RehireOutro ChatMessage voice:Buns]] "Отлично. Я рада, что мы смогли прийти к соглашению и продолжить сотрудничество."),
 					}),
 				},
 				'MedicalDeposit', "large",
@@ -76385,7 +76643,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(588114353209, --[[ModItemUnitDataCompositeDef Blood Text MercChatHaggle Lines ChatMessage voice:Blood]] "Я надеялся, что командировка будет посодержательнее. Хочешь, чтоб я тусовался в лагере и харчи готовил - без проблем. Но я не хочу помирать со скуки, штампуя бургеры. Мне меню поинтересней нужно, может, накинешь немного на него?"),
+								'Text', T(588114353209, --[[ModItemUnitDataCompositeDef Blood Text MercChatHaggle Lines ChatMessage voice:Blood]] "Я надеялся, что командировка будет посодержательнее. Хочешь, чтоб я тусовался в лагере и харчи готовил - без проблем. Но я не хочу помирать со скуки, штампуя бургеры. Скинься на продукты поинтереснее - и всё будет тип-топ."),
 							}),
 						},
 						'Conditions', {
@@ -76411,12 +76669,12 @@ return {
 				},
 				'Offline', {
 					PlaceObj('ChatMessage', {
-						'Text', T(267868205180, --[[ModItemUnitDataCompositeDef Blood Text Offline ChatMessage voice:Blood]] "Нифига себе, чудо техники эти ваши автоответчики! Ништяк! Хе-хе-хе! XXI Век на дворе! Оставьте сообщение, и я с вами свяжусь."),
+						'Text', T(267868205180, --[[ModItemUnitDataCompositeDef Blood Text Offline ChatMessage voice:Blood]] "Зацените чудо техники! Крутотень! Добро пожаловать в XXI век! Оставьте сообщение, и я с вами свяжусь."),
 					}),
 				},
 				'GreetingAndOffer', {
 					PlaceObj('ChatMessage', {
-						'Text', T(199682617046, --[[ModItemUnitDataCompositeDef Blood Text GreetingAndOffer ChatMessage voice:Blood]] "Да, это Блад. Что там такое?"),
+						'Text', T(199682617046, --[[ModItemUnitDataCompositeDef Blood Text GreetingAndOffer ChatMessage voice:Blood]] "Блад слушает. Что там?"),
 					}),
 				},
 				'ConversationRestart', {
@@ -76426,7 +76684,7 @@ return {
 				},
 				'IdleLine', {
 					PlaceObj('ChatMessage', {
-						'Text', T(905505064939, --[[ModItemUnitDataCompositeDef Blood Text IdleLine ChatMessage voice:Blood]] "Шевелись, дружище. У меня курятина подгорает."),
+						'Text', T(905505064939, --[[ModItemUnitDataCompositeDef Blood Text IdleLine ChatMessage voice:Blood]] "Давай, друг, рожай. У меня ужин на плите."),
 					}),
 				},
 				'PartingWords', {
@@ -76436,12 +76694,12 @@ return {
 				},
 				'RehireIntro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(408648943422, --[[ModItemUnitDataCompositeDef Blood Text RehireIntro ChatMessage voice:Blood]] "Печально это говорить, дружище, но у меня контракт тут почти истек. Как поступим, а?"),
+						'Text', T(408648943422, --[[ModItemUnitDataCompositeDef Blood Text RehireIntro ChatMessage voice:Blood]] "Мне грустно об этом говорить, друг, но мой срок здесь кончается. Что будем делать?"),
 					}),
 				},
 				'RehireOutro', {
 					PlaceObj('ChatMessage', {
-						'Text', T(729529774361, --[[ModItemUnitDataCompositeDef Blood Text RehireOutro ChatMessage voice:Blood]] "Отлично! Продолжим смаковать местные блюда и мочить всяких гадов!"),
+						'Text', T(729529774361, --[[ModItemUnitDataCompositeDef Blood Text RehireOutro ChatMessage voice:Blood]] "Отлично! Продолжим смаковать местные блюда и мочить плохих парней!"),
 					}),
 				},
 				'MedicalDeposit', "large",
@@ -77403,26 +77661,26 @@ return {
 			}),
 			PlaceObj('ModItemVoiceResponse', {
 				ActivityFinished = {
-					T(917545842774, --[[ModItemVoiceResponse Vicki 1]] "Тут всё выполнила."),
+					T(917545842774, --[[ModItemVoiceResponse Vicki 1]] "Я всё сделать."),
 				},
 				ActivityStarted = {
-					T(319372683896, --[[ModItemVoiceResponse Vicki 1]] "Я спаяю твой заказ!"),
+					T(319372683896, --[[ModItemVoiceResponse Vicki 1]] "Приступим."),
 				},
 				AimAttack = {
-					T(860296431945, --[[ModItemVoiceResponse Vicki 1]] "Как два пальца об кирпич."),
-					T(904050159369, --[[ModItemVoiceResponse Vicki 2]] "Пора убиваться."),
-					T(601090111034, --[[ModItemVoiceResponse Vicki 3]] "Я нежно жать на спуск."),
+					T(860296431945, --[[ModItemVoiceResponse Vicki 1]] "Это быть просто."),
+					T(904050159369, --[[ModItemVoiceResponse Vicki 2]] "Пора убивать."),
+					T(601090111034, --[[ModItemVoiceResponse Vicki 3]] "Я плавно спускать курок."),
 				},
 				AimAttackStealth = {
-					T(568148975578, --[[ModItemVoiceResponse Vicki 1]] "Ya man. Тихо-тихо."),
-					T(245256387639, --[[ModItemVoiceResponse Vicki 2]] "Они ничего не увидят."),
+					T(568148975578, --[[ModItemVoiceResponse Vicki 1]] "Ya mon. Тихо-тихо."),
+					T(245256387639, --[[ModItemVoiceResponse Vicki 2]] "Они ничего не увидеть."),
 					T(695559602723, --[[ModItemVoiceResponse Vicki 3]] "Без лишнего шума."),
 				},
 				AimAttack_Low = {
-					T(563235146921, --[[ModItemVoiceResponse Vicki 1]] "Да даже если мне духи укажут!"),
+					T(563235146921, --[[ModItemVoiceResponse Vicki 1]] "Даже если духи меня направлять!"),
 				},
 				AimAttack_LowStealth = {
-					T(494107495598, --[[ModItemVoiceResponse Vicki 1]] "Давай я лучше напротив встану."),
+					T(494107495598, --[[ModItemVoiceResponse Vicki 1]] "Даже если я стоять прямо в упор."),
 				},
 				AmmoLow = {
 					T(583927980907, --[[ModItemVoiceResponse Vicki 1]] "Пушка скоро пустеет."),
@@ -77434,14 +77692,14 @@ return {
 					T(365356501599, --[[ModItemVoiceResponse Vicki 1]] "Мне не жалко!"),
 				},
 				BecomeHidden = {
-					T(105282043754, --[[ModItemVoiceResponse Vicki 1]] "Прошмыгнула"),
+					T(105282043754, --[[ModItemVoiceResponse Vicki 1]] "Крадусь тихо."),
 					T(695559602723, --[[ModItemVoiceResponse Vicki 2]] "Без лишнего шума."),
 				},
 				BusySatView = {
-					T(319866576382, --[[ModItemVoiceResponse Vicki 1]] "Я тут вожусь еще немного."),
+					T(319866576382, --[[ModItemVoiceResponse Vicki 1]] "Ещё не готово."),
 				},
 				Claustrophobic = {
-					T(371513475544, --[[ModItemVoiceResponse Vicki 1]] "Так тесно, man, голова нехорошо... Мне здесь не нравится, совсем."),
+					T(371513475544, --[[ModItemVoiceResponse Vicki 1]] "Такое место! Я вся сжиматься, страшно очень... Мне здесь не нравится, совсем."),
 				},
 				Climbing = {
 					T(454757483843, --[[ModItemVoiceResponse Vicki 1]] "(climbing)"),
@@ -77451,17 +77709,17 @@ return {
 					T(748918593561, --[[ModItemVoiceResponse Vicki 1]] "Я бы очень не надеялась. Мы все равно не одни пока."),
 				},
 				CombatEndEnemiesRetreated = {
-					T(603542313178, --[[ModItemVoiceResponse Vicki 1]] "Они бегутся от страха!"),
+					T(603542313178, --[[ModItemVoiceResponse Vicki 1]] "Они бежать от страха!"),
 				},
 				CombatEndNoEnemies = {
-					T(802082922959, --[[ModItemVoiceResponse Vicki 1]] "Ya man! Последний был!"),
+					T(802082922959, --[[ModItemVoiceResponse Vicki 1]] "Ya mon! Последний был!"),
 				},
 				CombatMovement = {
-					T(989634282538, --[[ModItemVoiceResponse Vicki 1]] "Ya man."),
+					T(989634282538, --[[ModItemVoiceResponse Vicki 1]] "Ya mon."),
 					T(744350424241, --[[ModItemVoiceResponse Vicki 2]] "Иду работать."),
 					T(105927135081, --[[ModItemVoiceResponse Vicki 3]] "Хожу."),
 					T(781039780736, --[[ModItemVoiceResponse Vicki 4]] "Вперёд."),
-					T(581036882789, --[[ModItemVoiceResponse Vicki 5]] "Погуляем."),
+					T(581036882789, --[[ModItemVoiceResponse Vicki 5]] "Я гулять."),
 				},
 				CombatMovementStealth = {
 					T(343554808532, --[[ModItemVoiceResponse Vicki 1]] "Я молча."),
@@ -77469,64 +77727,64 @@ return {
 					T(975555338759, --[[ModItemVoiceResponse Vicki 3]] "Я тихо."),
 				},
 				CombatStartDetected = {
-					T(172979322092, --[[ModItemVoiceResponse Vicki 1]] "Они нас привидели!"),
+					T(172979322092, --[[ModItemVoiceResponse Vicki 1]] "Они нас видеть!"),
 				},
 				CombatStartPlayer = {
-					T(213195516569, --[[ModItemVoiceResponse Vicki 1]] "О-хо! Время смертельной Вики!"),
+					T(213195516569, --[[ModItemVoiceResponse Vicki 1]] "О-хо! Пора убивать."),
 				},
 				CombatTaskCompleted = {
 					T(334241593109, --[[ModItemVoiceResponse Vicki 1]] "Респект! Халтура готова!"),
 				},
 				CombatTaskFailed = {
-					T(115236674463, --[[ModItemVoiceResponse Vicki 1]] "Бесит бросать халтурку на полдороге! Всю ночь теперь ворочаться буду!"),
+					T(115236674463, --[[ModItemVoiceResponse Vicki 1]] "Не любить бросать халтуру не готовой. Буду плохо спать."),
 				},
 				CombatTaskGiven = {
 					T(639854462351, --[[ModItemVoiceResponse Vicki 1]] "Нам есть халтура. Чтобы не скучать."),
 				},
 				Comment = "Jamaican accent. Mechanic. Determined. Competent. Age: Adult, mature.",
 				ContractExpired = {
-					T(961723683392, --[[ModItemVoiceResponse Vicki 1]] "Контракт почти всё, man. Нужно меня - я буду в гараже."),
+					T(961723683392, --[[ModItemVoiceResponse Vicki 1]] "Контракт заканчиваться, правда. Хочешь меня - я буду в мастерской."),
 				},
 				DeathBuddy1 = {
-					T(362189435612, --[[ModItemVoiceResponse Vicki 1]] "Паук, ты была такая... Жалко тебя потерять, сестричка. Очень жалко..."),
+					T(362189435612, --[[ModItemVoiceResponse Vicki 1]] "Паук, ты была такая... Жалко тебя потерять, сестричка. Так жалко..."),
 				},
 				DeathGeneral = {
 					T(641538346159, --[[ModItemVoiceResponse Vicki 1]] "Пусть тебя направят духи, друг."),
 				},
 				DeathLearnToDislike1 = {
-					T(611831818551, --[[ModItemVoiceResponse Vicki 1]] "Он был козёл невоспитанный, но он был просто мальчик. Детям умирать неправильно."),
+					T(611831818551, --[[ModItemVoiceResponse Vicki 1]] "Он быть глупый козёл, но он быть только мальчик. Детям умирать неправильно."),
 				},
 				DoorLocked = {
 					T(138350648013, --[[ModItemVoiceResponse Vicki 1]] "Заперто. Это недолго."),
 				},
 				Downed = {
 					T(686408593572, --[[ModItemVoiceResponse Vicki 1]] "Такое даже я не починить."),
-					T(423846615548, --[[ModItemVoiceResponse Vicki 2]] "Скажи Джеймсу... не трогать мои... mi тачки."),
+					T(423846615548, --[[ModItemVoiceResponse Vicki 2]] "Скажи Джеймсу... не лапать мои... mi тачки."),
 				},
 				Exhausted = {
-					T(135056393694, --[[ModItemVoiceResponse Vicki 1]] "Надо спать. Бак опустевает."),
+					T(135056393694, --[[ModItemVoiceResponse Vicki 1]] "Надо спать. Бак совсем пустой."),
 				},
 				FriendlyFireBuddy1 = TConcat({
 					T(763366416906, --[[ModItemVoiceResponse Vicki FriendlyFireBuddy1 VoiceResponse FriendlyFireBuddy1 - Played on friendly fire by the unit hit if the hitting unit is Liked - Jazz_Spider. voice:Vicki]] "Сеструха, я тя люблю и все такое, но убери свою пушку с моей спины!")
 				}),
 				FriendlyFireGeneral = {
-					T(274629405649, --[[ModItemVoiceResponse Vicki 1]] "Ты нарываешься!"),
+					T(274629405649, --[[ModItemVoiceResponse Vicki 1]] "Ты нарываться."),
 				},
 				FriendlyFireLearnToDislike1 = {
-					T(191502064244, --[[ModItemVoiceResponse Vicki 1]] "Этот мальчик думает только о девочка. Больше вообще не думает."),
+					T(191502064244, --[[ModItemVoiceResponse Vicki 1]] "Этот мальчик думать только о девочках. Больше вообще не думать."),
 				},
 				GasAreaSelection = {
 					T(790479867187, --[[ModItemVoiceResponse Vicki 1]] "(кашляет)"),
 				},
 				GroupOrder = {
-					T(550470930101, --[[ModItemVoiceResponse Vicki 1]] "Пошли гулять."),
+					T(550470930101, --[[ModItemVoiceResponse Vicki 1]] "Мы гулять."),
 					T(574224204136, --[[ModItemVoiceResponse Vicki 2]] "За мной."),
-					T(336590450752, --[[ModItemVoiceResponse Vicki 3]] "Ya man."),
+					T(336590450752, --[[ModItemVoiceResponse Vicki 3]] "Ya mon."),
 					T(781039780736, --[[ModItemVoiceResponse Vicki 4]] "Вперёд."),
 					T(691423125493, --[[ModItemVoiceResponse Vicki 5]] "Хожу."),
 				},
 				HealReceived = {
-					T(420236253274, --[[ModItemVoiceResponse Vicki 1]] "Перебрать мне подвеску, и я почти как новенькая!"),
+					T(420236253274, --[[ModItemVoiceResponse Vicki 1]] "Как новая."),
 				},
 				HeavilyWoundedSelection = {
 					T(977305205304, --[[ModItemVoiceResponse Vicki 1]] "Мне как-то плохо."),
@@ -77536,20 +77794,20 @@ return {
 					T(807139324003, --[[ModItemVoiceResponse Vicki 2]] "(heavy breath_2)"),
 				},
 				Idle = {
-					T(583172918387, --[[ModItemVoiceResponse Vicki 1]] "Совсем скучаю тут. Мне бы руки чем-нибудь занять, man."),
+					T(583172918387, --[[ModItemVoiceResponse Vicki 1]] "Скучно. Хочу что-нибудь поделать."),
 				},
 				InteractableFound = {
 					T(549200596685, --[[ModItemVoiceResponse Vicki 1]] "Ой. Надо посмотреть."),
-					T(283593640775, --[[ModItemVoiceResponse Vicki 2]] "Это надо разглядеть."),
+					T(283593640775, --[[ModItemVoiceResponse Vicki 2]] "Это стоит проверить."),
 				},
 				InterestingSector = {
-					T(244207860762, --[[ModItemVoiceResponse Vicki 1]] "В секторочке что-то интересное есть, определенно."),
+					T(244207860762, --[[ModItemVoiceResponse Vicki 1]] "В этом секторе быть что-то интересное."),
 				},
 				ItemDeteriorates = {
-					T(870608957557, --[[ModItemVoiceResponse Vicki 1]] "Мои шмотки надо б на верстаке пошкрябать."),
+					T(870608957557, --[[ModItemVoiceResponse Vicki 1]] "Снаряжение надо ремонтировать."),
 				},
 				ItemInPoorConditionEquipped = {
-					T(277486901740, --[[ModItemVoiceResponse Vicki 1]] "Мне это самой починять, да?"),
+					T(277486901740, --[[ModItemVoiceResponse Vicki 1]] "Чур, без меня не чинить, да?"),
 				},
 				Jumping = {
 					T(917980613347, --[[ModItemVoiceResponse Vicki 1]] "(jumping over something)"),
@@ -77559,102 +77817,102 @@ return {
 					T(844199942341, --[[ModItemVoiceResponse Vicki KillFriendlyFireBuddy1 VoiceResponse KillFriendlyFireBuddy1 - Played when a unit kills an ally with friendly fire and the dying unit is Liked - Jazz_Spider. voice:Vicki]] "Подруга, как жеж это... Я... Ты... Тя... О, Матерь Божья, как стыдно очень!")
 				}),
 				KillFriendlyFireGeneral = {
-					T(893127367874, --[[ModItemVoiceResponse Vicki 1]] "Грустный день. Вики сегодня свыше крыши смертельная."),
+					T(893127367874, --[[ModItemVoiceResponse Vicki 1]] "Плохой день. Я быть слишком смертоносная."),
 				},
 				KillFriendlyFireLearnToDislike1 = {
-					T(650367989495, --[[ModItemVoiceResponse Vicki 1]] "Я не специально, правда. Но думаю, сёстрам будет успокойней теперь."),
+					T(650367989495, --[[ModItemVoiceResponse Vicki 1]] "Что ж. Я не специально, но думать, сёстры быть только рады."),
 				},
 				LearnToDislike1 = {
-					T(773778742124, --[[ModItemVoiceResponse Vicki 1]] "Мне не нравится Смайли. Вечно на девушек глаза делает. Точно нехорошее задумал."),
+					T(773778742124, --[[ModItemVoiceResponse Vicki 1]] "Мне не нравится Смайли. Он вечно глазеть на девушек. Точно нехорошее думать."),
 				},
 				LevelUp = {
-					T(353367638832, --[[ModItemVoiceResponse Vicki 1]] "Ух ты да! Я всё хорошее!"),
+					T(353367638832, --[[ModItemVoiceResponse Vicki 1]] "Хорошо! Я становлюсь всё лучше!"),
 				},
 				LockedItemMove = {
-					T(936324954041, --[[ModItemVoiceResponse Vicki 1]] "Заведи себе свой инструмент, да, чувак?"),
+					T(936324954041, --[[ModItemVoiceResponse Vicki 1]] "Не тронь мои инструменты."),
 				},
 				LootFound = {
 					T(770739535232, --[[ModItemVoiceResponse Vicki 1]] "Смотри сюда свои глаза."),
 					T(865521243755, --[[ModItemVoiceResponse Vicki 2]] "Это интересно."),
-					T(971509644042, --[[ModItemVoiceResponse Vicki 3]] "Здесь что-то есть, man."),
+					T(971509644042, --[[ModItemVoiceResponse Vicki 3]] "Здесь что-то есть, правда."),
 				},
 				LootOpened = {
-					T(331124232570, --[[ModItemVoiceResponse Vicki 1]] "Понадейся, хорошие шмотки тут найти!"),
+					T(331124232570, --[[ModItemVoiceResponse Vicki 1]] "Я надейся, тут есть хорошие вещи."),
 				},
 				LowChanceShot = {
-					T(128566458631, --[[ModItemVoiceResponse Vicki 1]] "Ya man! Кури теперь через эту дырку!"),
+					T(128566458631, --[[ModItemVoiceResponse Vicki 1]] "Ya mon! Головой думать надо!"),
 				},
 				ManyEnemiesSelection = {
-					T(535749925624, --[[ModItemVoiceResponse Vicki 1]] "Мне тут грубияны идут!"),
+					T(535749925624, --[[ModItemVoiceResponse Vicki 1]] "Грубияны окружать меня!"),
 				},
 				MineDisarmed = {
-					T(615946925382, --[[ModItemVoiceResponse Vicki 1]] "Теперь не бабахать тебе."),
+					T(615946925382, --[[ModItemVoiceResponse Vicki 1]] "Теперь не бабахать."),
 				},
 				MineFound = {
-					T(917447088752, --[[ModItemVoiceResponse Vicki 1]] "Берегись лепешки с бабахом!"),
+					T(917447088752, --[[ModItemVoiceResponse Vicki 1]] "Берегись бабаха!"),
 				},
 				MineNearbySelection = {
-					T(615774905947, --[[ModItemVoiceResponse Vicki 1]] "Плохое дело. Я не хочу туда ходиться."),
+					T(615774905947, --[[ModItemVoiceResponse Vicki 1]] "Плохое дело. Я не хотеть туда ходить."),
 				},
 				MissHighChance = {
-					T(319450865976, --[[ModItemVoiceResponse Vicki 1]] "Как я промазаться?"),
+					T(319450865976, --[[ModItemVoiceResponse Vicki 1]] "Как я промазать?"),
 				},
 				MissedByKillShot = {
-					T(713906697674, --[[ModItemVoiceResponse Vicki 1]] "Меня защищают духи!"),
+					T(713906697674, --[[ModItemVoiceResponse Vicki 1]] "Меня защищать духи!"),
 				},
 				MockGeneral = {
-					T(625821422565, --[[ModItemVoiceResponse Vicki 1]] "Ничего страшного, man, у всех бывает."),
+					T(625821422565, --[[ModItemVoiceResponse Vicki 1]] "У тебя быть всё под контролем, правда."),
 				},
 				MockLearnToDislike1 = TConcat({
-					T(872009026452, --[[ModItemVoiceResponse Vicki MockLearnToDislike1 VoiceResponse MockLearnToDislike1 - Played on a high chance miss by Smiley. voice:Vicki]] "Бросай смотреться на девушек - может, тогда и попадешь.")
+					T(872009026452, --[[ModItemVoiceResponse Vicki MockLearnToDislike1 VoiceResponse MockLearnToDislike1 - Played on a high chance miss by Smiley. voice:Vicki]] "Бросай смотреть на девушек - и, может, тогда попадать.")
 				}),
 				MockLike1 = TConcat({
 					T(619763824975, --[[ModItemVoiceResponse Vicki MockLike1 VoiceResponse MockLike1 - Played on a high chance miss by Jazz_Spider. voice:Vicki]] "Не парься, сестра, я тя и в пушках и в движках прикрою! ")
 				}),
 				NoAmmo = {
-					T(639861807206, --[[ModItemVoiceResponse Vicki 1]] "В пушке закончилось!"),
+					T(639861807206, --[[ModItemVoiceResponse Vicki 1]] "В пушке быть пусто."),
 				},
 				NotNow = {
-					T(193417861302, --[[ModItemVoiceResponse Vicki 1]] "Потом болтаться будем!"),
+					T(193417861302, --[[ModItemVoiceResponse Vicki 1]] "Не сейчас."),
 				},
 				OpponentFound = {
 					T(621547282985, --[[ModItemVoiceResponse Vicki 1]] "Тс-с! Враги!"),
-					T(156449293871, --[[ModItemVoiceResponse Vicki 2]] "Опять эти скоты!"),
-					T(857984215880, --[[ModItemVoiceResponse Vicki 3]] "Наблюдаю скотов."),
+					T(156449293871, --[[ModItemVoiceResponse Vicki 2]] "Опять эти ублюдки!"),
+					T(857984215880, --[[ModItemVoiceResponse Vicki 3]] "Я видеть ублюдков."),
 				},
 				OpponentKilled = {
 					T(144631168580, --[[ModItemVoiceResponse Vicki 1]] "Этот точно быть убитый."),
 					T(164885783183, --[[ModItemVoiceResponse Vicki 2]] "Пока-пока."),
-					T(839733610656, --[[ModItemVoiceResponse Vicki 3]] "Скотина - всё."),
-					T(860245897450, --[[ModItemVoiceResponse Vicki 4]] "Ты их строишь, я их складываю!"),
-					T(441070340116, --[[ModItemVoiceResponse Vicki 5]] "Одного грубияна стало меньше."),
+					T(839733610656, --[[ModItemVoiceResponse Vicki 3]] "Ублюдок всё."),
+					T(860245897450, --[[ModItemVoiceResponse Vicki 4]] "Ты их ставить - я валить."),
+					T(441070340116, --[[ModItemVoiceResponse Vicki 5]] "Одного грубияна стать меньше."),
 				},
 				OpponentKilledAnimal = {
-					T(191552006518, --[[ModItemVoiceResponse Vicki 1]] "Эта зверь больше не будет беспокоить."),
+					T(191552006518, --[[ModItemVoiceResponse Vicki 1]] "Эта зверь больше не беспокоить."),
 				},
 				OpponentKilledHeadshot = {
-					T(371015821950, --[[ModItemVoiceResponse Vicki 1]] "А хорошо подстрелила!"),
-					T(980755066341, --[[ModItemVoiceResponse Vicki 2]] "Кто сможет лучшее? А?"),
+					T(371015821950, --[[ModItemVoiceResponse Vicki 1]] "Точная стрельба!"),
+					T(980755066341, --[[ModItemVoiceResponse Vicki 2]] "Кто пробовать лучше? А?"),
 				},
 				OpponentKilledStealth = {
 					T(874716759078, --[[ModItemVoiceResponse Vicki 1]] "Меня не видеть."),
-					T(963171414466, --[[ModItemVoiceResponse Vicki 2]] "Я убиваюсь тихо."),
+					T(963171414466, --[[ModItemVoiceResponse Vicki 2]] "Я убивать тихо."),
 				},
 				Order = {
 					T(781039780736, --[[ModItemVoiceResponse Vicki 1]] "Вперёд."),
-					T(373797711312, --[[ModItemVoiceResponse Vicki 2]] "Как захотите."),
-					T(581036882789, --[[ModItemVoiceResponse Vicki 3]] "Погуляем."),
-					T(630840274742, --[[ModItemVoiceResponse Vicki 4]] "Ya man."),
+					T(373797711312, --[[ModItemVoiceResponse Vicki 2]] "Я слушать приказ."),
+					T(581036882789, --[[ModItemVoiceResponse Vicki 3]] "Я гулять."),
+					T(630840274742, --[[ModItemVoiceResponse Vicki 4]] "Ya mon."),
 					T(691423125493, --[[ModItemVoiceResponse Vicki 5]] "Хожу."),
 				},
 				Outnumbered = {
-					T(492300479566, --[[ModItemVoiceResponse Vicki 1]] "Это кто столько грубиянов призвал?"),
+					T(492300479566, --[[ModItemVoiceResponse Vicki 1]] "Кто звать этих грубиянов?"),
 				},
 				Overwatch = {
-					T(361654974396, --[[ModItemVoiceResponse Vicki 1]] "Смотрю в два глаза."),
+					T(361654974396, --[[ModItemVoiceResponse Vicki 1]] "Я смотреть в оба."),
 				},
 				OverwatchSelection = {
-					T(916381268574, --[[ModItemVoiceResponse Vicki 1]] "Грубияны кладут на меня глаз!"),
+					T(916381268574, --[[ModItemVoiceResponse Vicki 1]] "Грубияны класть на меня глаз!"),
 				},
 				Pain = {
 					T(822401091969, --[[ModItemVoiceResponse Vicki 1]] "Р-р-р!"),
@@ -77672,24 +77930,24 @@ return {
 					T(390899348731, --[[ModItemVoiceResponse Vicki PraisesBuddy1 VoiceResponse PraisesBuddy1 - Played on a successful kill by Jazz_Spider. voice:Vicki]] "Паук... Горжусь я ей. Способная деваха! ")
 				}),
 				PraisesFemale = {
-					T(993283891351, --[[ModItemVoiceResponse Vicki 1]] "Ай, красавица!"),
+					T(993283891351, --[[ModItemVoiceResponse Vicki 1]] "Хорошо!"),
 				},
 				PraisesLearnToDislike1 = {
-					T(960441619489, --[[ModItemVoiceResponse Vicki 1]] "Вот прекрати ты за каждой юбкой таскать - вышел бы из тебя толк!"),
+					T(960441619489, --[[ModItemVoiceResponse Vicki 1]] "Ты стать бы ещё лучше, не смотри ты девушкам под юбки."),
 				},
 				PraisesMale = {
 					T(290681132647, --[[ModItemVoiceResponse Vicki 1]] "Неплохо для мужика."),
 				},
 				SectorArrived = {
-					T(347410768338, --[[ModItemVoiceResponse Vicki 1]] "Я в точке. Что дальше?"),
+					T(347410768338, --[[ModItemVoiceResponse Vicki 1]] "Я прийти. Что дальше?"),
 				},
 				Selection = {
 					T(811846779903, --[[ModItemVoiceResponse Vicki 1]] "Да?"),
-					T(829388315960, --[[ModItemVoiceResponse Vicki 2]] "Слушаю."),
+					T(829388315960, --[[ModItemVoiceResponse Vicki 2]] "Я слушать."),
 					T(822227356760, --[[ModItemVoiceResponse Vicki 3]] "Где?"),
 				},
 				SelectionStealth = {
-					T(568148975578, --[[ModItemVoiceResponse Vicki 1]] "Ya man. Тихо-тихо."),
+					T(568148975578, --[[ModItemVoiceResponse Vicki 1]] "Ya mon. Тихо-тихо."),
 					T(695559602723, --[[ModItemVoiceResponse Vicki 2]] "Без лишнего шума."),
 					T(343554808532, --[[ModItemVoiceResponse Vicki 3]] "Я молча."),
 					T(688060994277, --[[ModItemVoiceResponse Vicki 4]] "Ш-ш-ш..."),
@@ -77697,15 +77955,15 @@ return {
 				},
 				SeriouslyWounded = {
 					T(288825391025, --[[ModItemVoiceResponse Vicki 1]] "Во мне быть много вмятин. Мне надо помочь."),
-					T(839301389386, --[[ModItemVoiceResponse Vicki 2]] "Джа! Кажется, я скоро не жива, man!"),
-					T(715502417196, --[[ModItemVoiceResponse Vicki 3]] "Ещё такая рана - и я умирать буду, правда!"),
+					T(839301389386, --[[ModItemVoiceResponse Vicki 2]] "Господи Сусе! Кажется, я этого не выжить, правда!"),
+					T(715502417196, --[[ModItemVoiceResponse Vicki 3]] "Ещё такая рана - и я умирать, правда!"),
 				},
 				Startled = {
 					T(989888040933, --[[ModItemVoiceResponse Vicki 1]] "А?"),
 					T(735885937759, --[[ModItemVoiceResponse Vicki 2]] "Что за..."),
 				},
 				SurroundedPain = {
-					T(697531697974, --[[ModItemVoiceResponse Vicki 1]] "Ох. У меня здесь проблема."),
+					T(697531697974, --[[ModItemVoiceResponse Vicki 1]] "Ох. У меня быть проблема."),
 					T(226078075901, --[[ModItemVoiceResponse Vicki 2]] "Они меня окружать!"),
 				},
 				TacticalFocus = {
@@ -77715,7 +77973,7 @@ return {
 					T(629188222726, --[[ModItemVoiceResponse Vicki 1]] "Роскошность!"),
 				},
 				TacticalPressing = {
-					T(117755589547, --[[ModItemVoiceResponse Vicki 1]] "Да! Мы их крепко затрепали, man!"),
+					T(117755589547, --[[ModItemVoiceResponse Vicki 1]] "Да! Мы их измотать, правда!"),
 				},
 				TakeCover = {
 					T(860845375531, --[[ModItemVoiceResponse Vicki 1]] "Я лежать!"),
@@ -77724,50 +77982,50 @@ return {
 					T(806615134965, --[[ModItemVoiceResponse Vicki 1]] "Мне плохо тут быть!"),
 				},
 				ThrowGrenade = {
-					T(296189149948, --[[ModItemVoiceResponse Vicki 1]] "Бросаю бабах-ананас!"),
+					T(296189149948, --[[ModItemVoiceResponse Vicki 1]] "Я бросать ананас!"),
 				},
 				Tired = {
 					T(637123530518, --[[ModItemVoiceResponse Vicki 1]] "Мне спать нужно."),
 				},
 				Travelling = {
-					T(477712081000, --[[ModItemVoiceResponse Vicki 1]] "Врагов здесь не имеется. Надо дальше."),
+					T(477712081000, --[[ModItemVoiceResponse Vicki 1]] "Врагов здесь не быть. Надо дальше."),
 				},
 				ValuableItemFound = {
-					T(447761117846, --[[ModItemVoiceResponse Vicki 1]] "Я сменяла бы это на много карбюраторов!"),
-					T(833717101300, --[[ModItemVoiceResponse Vicki 2]] "Ох, man... Такой подарок должен быть в обёртке!"),
+					T(447761117846, --[[ModItemVoiceResponse Vicki 1]] "Я менять это на много карбюраторов!"),
+					T(833717101300, --[[ModItemVoiceResponse Vicki 2]] "Ох... Такой подарок должен быть в обёртке!"),
 				},
 				WeaponBroken = {
 					T(368117462568, --[[ModItemVoiceResponse Vicki 1]] "Эту штуку пора отправлять в мастерскую!"),
 				},
 				WeaponJammed = {
-					T(440011612278, --[[ModItemVoiceResponse Vicki 1]] "Чё? Ты офигел заклиниваться?"),
+					T(440011612278, --[[ModItemVoiceResponse Vicki 1]] "Что? Ты меня подставлять?"),
 				},
 				Wounded = {
 					T(136380207450, --[[ModItemVoiceResponse Vicki 1]] "Ох, только не опять!"),
 					T(295103513285, --[[ModItemVoiceResponse Vicki 2]] "Во мне рана!"),
-					T(548770804711, --[[ModItemVoiceResponse Vicki 3]] "Ничего! На мне зажёвывает, как на собаке!"),
+					T(548770804711, --[[ModItemVoiceResponse Vicki 3]] "Это ерунда, правда! Меня синяками не покроешь!"),
 				},
 				group = "MercenariesOld",
 				id = "Vicki",
 			}),
 			PlaceObj('ModItemVoiceResponse', {
 				ActivityFinished = {
-					T(199262599409, --[[ModItemVoiceResponse Wolf 1]] "Волк сделал свои делишки. Чё дальше?"),
+					T(199262599409, --[[ModItemVoiceResponse Wolf 1]] "Я всё сделал. Что дальше?"),
 				},
 				ActivityStarted = {
 					T(677674496739, --[[ModItemVoiceResponse Wolf 1]] "О'кей. Начнём."),
 				},
 				AimAttack = {
 					T(236203299389, --[[ModItemVoiceResponse Wolf 1]] "А теперь внимание."),
-					T(796939834008, --[[ModItemVoiceResponse Wolf 2]] "Зырьте, щас рухнет, как первокурсница на бухиче."),
-					T(869897823244, --[[ModItemVoiceResponse Wolf 3]] "Придет серенький волчок и укусит за бочок!"),
+					T(796939834008, --[[ModItemVoiceResponse Wolf 2]] "Сейчас эта красава упадёт."),
+					T(869897823244, --[[ModItemVoiceResponse Wolf 3]] "Сейчас Волк сделает «ам!»."),
 				},
 				AimAttackStealth = {
-					T(638573815982, --[[ModItemVoiceResponse Wolf 1]] "Сюрпризик от ВолкЭкспресс, крошка."),
+					T(638573815982, --[[ModItemVoiceResponse Wolf 1]] "А теперь - сюрприз, крошка."),
 					T(235943355501, --[[ModItemVoiceResponse Wolf 2]] "Смотрите и учитесь. Показываю в стиле коммандос."),
 				},
 				AimAttack_Low = {
-					T(327506112223, --[[ModItemVoiceResponse Wolf 1]] "Да скорее Волк в цирке выступать начнёт!"),
+					T(327506112223, --[[ModItemVoiceResponse Wolf 1]] "Шансы ни к чёрту."),
 				},
 				AimAttack_LowStealth = {
 					T(427723916708, --[[ModItemVoiceResponse Wolf 1]] "Если промахнусь - это будет залёт!"),
@@ -77786,16 +78044,16 @@ return {
 					T(318502377234, --[[ModItemVoiceResponse Wolf 1]] "Вот так. Ясно? Продолжай прижимать здесь."),
 				},
 				BecomeHidden = {
-					T(479450722614, --[[ModItemVoiceResponse Wolf 1]] "Кхе, зырь фокус: ВОЛК-НЕВИДИМКА!"),
+					T(479450722614, --[[ModItemVoiceResponse Wolf 1]] "Фокус. Теперь меня не видно, да?"),
 					T(235943355501, --[[ModItemVoiceResponse Wolf 2]] "Смотрите и учитесь. Показываю в стиле коммандос."),
 				},
 				BusySatView = {
-					T(663481536105, --[[ModItemVoiceResponse Wolf 1]] "Работа не Воооолк!"),
+					T(663481536105, --[[ModItemVoiceResponse Wolf 1]] "В процессе."),
 				},
 				Climbing = {
 					T(654637411785, --[[ModItemVoiceResponse Wolf 1]] "(climbing)"),
 					T(844269525939, --[[ModItemVoiceResponse Wolf 2]] "(climbing_2)"),
-					T(636996380095, --[[ModItemVoiceResponse Wolf 3]] "(карабкается_3) Ух, худеть надо."),
+					T(636996380095, --[[ModItemVoiceResponse Wolf 3]] "(climbing_3)"),
 				},
 				CombatEndEnemiesRemain = {
 					T(878939538097, --[[ModItemVoiceResponse Wolf 1]] "Будьте готовы. Они ждут момента, когда мы расслабимся."),
@@ -77804,15 +78062,15 @@ return {
 					T(892448492026, --[[ModItemVoiceResponse Wolf 1]] "Похоже, они отступили. Сектор безопасен."),
 				},
 				CombatEndNoEnemies = {
-					T(272164567216, --[[ModItemVoiceResponse Wolf 1]] "Хух, закончили! Осталось лишь уведомить их родственников."),
+					T(272164567216, --[[ModItemVoiceResponse Wolf 1]] "Осталось уведомить их родственников."),
 				},
 				CombatMovement = {
 					T(806860010381, --[[ModItemVoiceResponse Wolf 1]] "Бегом, бегом, бегом!"),
 					T(674715493767, --[[ModItemVoiceResponse Wolf 2]] "Смотрите и учитесь."),
-					T(750705482381, --[[ModItemVoiceResponse Wolf 3]] "Волчком, ВОЛЧКОМ!"),
-					T(785779643663, --[[ModItemVoiceResponse Wolf 4]] "Океюшки."),
+					T(750705482381, --[[ModItemVoiceResponse Wolf 3]] "Танцуем!"),
+					T(785779643663, --[[ModItemVoiceResponse Wolf 4]] "Будет сделано."),
 					T(317999974840, --[[ModItemVoiceResponse Wolf 5]] "Это можно."),
-					T(220861073049, --[[ModItemVoiceResponse Wolf 6]] "Волчара поскакал."),
+					T(220861073049, --[[ModItemVoiceResponse Wolf 6]] "Без проблем."),
 				},
 				CombatMovementStealth = {
 					T(544404662770, --[[ModItemVoiceResponse Wolf 1]] "Волк вышел на охоту."),
@@ -77820,26 +78078,26 @@ return {
 					T(274240057906, --[[ModItemVoiceResponse Wolf 3]] "Работаю спокойно и без шума."),
 				},
 				CombatStartDetected = {
-					T(988181110649, --[[ModItemVoiceResponse Wolf 1]] "Ёхты, кажись, кто-то их предупредил!"),
+					T(988181110649, --[[ModItemVoiceResponse Wolf 1]] "Похоже, кто-то их предупредил!"),
 				},
 				CombatStartPlayer = {
-					T(915135599484, --[[ModItemVoiceResponse Wolf 1]] "Пора клыки показать!"),
+					T(915135599484, --[[ModItemVoiceResponse Wolf 1]] "Пора браться за работу."),
 				},
 				CombatTaskCompleted = {
-					T(710403617126, --[[ModItemVoiceResponse Wolf 1]] "Загогулена решена, шеф."),
+					T(710403617126, --[[ModItemVoiceResponse Wolf 1]] "Мы решили эту задачку, шеф."),
 				},
 				CombatTaskFailed = {
-					T(736908020747, --[[ModItemVoiceResponse Wolf 1]] "Похоже, загогулены команде пока не по зубам. Ну, мы это поправим."),
+					T(736908020747, --[[ModItemVoiceResponse Wolf 1]] "Похоже, задачки команде пока не по зубам. Ну, мы это поправим."),
 				},
 				CombatTaskGiven = {
-					T(499511597743, --[[ModItemVoiceResponse Wolf 1]] "Шеф, я тут загогулену придумал. Даёшь добро?"),
+					T(499511597743, --[[ModItemVoiceResponse Wolf 1]] "Шеф, я тут задачку придумал. Даёшь добро?"),
 				},
 				Comment = "Standard American accent. Manly. Confident. Instructor. Age: Adult, mature.",
 				ContractExpired = {
-					T(656691643392, --[[ModItemVoiceResponse Wolf 1]] "Похоже, наш контракт истёк. С тобой очень приятно работать. Ну, теперь ты знаешь, что я умею. И КАК УМЕЮ. Хех. Если понадоблюсь, звякни, ладушки?"),
+					T(656691643392, --[[ModItemVoiceResponse Wolf 1]] "Похоже, наш контракт истёк. С тобой очень приятно работать. Ну, теперь ты знаешь, что я умею. Если понадоблюсь, позови."),
 				},
 				DeathBuddy1 = {
-					T(173129435212, --[[ModItemVoiceResponse Wolf 1]] "О нет. Лиска, малыш, только не ты. Я хотел с тобой... Э- э... чтобы мы... прошвырнулись как-нибудь в Вегас."),
+					T(173129435212, --[[ModItemVoiceResponse Wolf 1]] "О нет. Лиска, малыш, только не ты. Я хотел с тобой... чтобы мы... прошвырнулись как-нибудь в Вегас."),
 				},
 				DeathBuddy2 = TConcat({
 					T(698036404720, --[[ModItemVoiceResponse Wolf DeathBuddy2 VoiceResponse DeathBuddy2 - Played on the death of Jazz_Lynx. voice:Wolf]] "Рыси мне будет не хватать. Он мою задницу всегда прикрывал, когда приходилось тяжело.")
@@ -77848,32 +78106,32 @@ return {
 					T(334996145978, --[[ModItemVoiceResponse Wolf 1]] "Пусть это будет для всех уроком. Слушайте, что я вам говорю, и тогда у вас будет шанс."),
 				},
 				DoorLocked = {
-					T(539894222918, --[[ModItemVoiceResponse Wolf 1]] "Заперто. Может, взломкать, а?"),
+					T(539894222918, --[[ModItemVoiceResponse Wolf 1]] "Заперто. Может, вскрыть?"),
 				},
 				Downed = {
-					T(769162767485, --[[ModItemVoiceResponse Wolf 1]] "Темнеет в глазах, шеф. Кажись, я отвылся."),
+					T(769162767485, --[[ModItemVoiceResponse Wolf 1]] "Темнеет в глазах, шеф. Кажется, я не выкарабкаюсь."),
 				},
 				Exhausted = {
-					T(483418570836, --[[ModItemVoiceResponse Wolf 1]] "Знаешь, если не спать - невозможно сосредоточиться. Я вззз...дремну минут пять..."),
+					T(483418570836, --[[ModItemVoiceResponse Wolf 1]] "Знаешь, если не спать - невозможно сосредоточиться. Я вздремну минут пять."),
 				},
 				FriendlyFireBuddy1 = {
-					T(540727543550, --[[ModItemVoiceResponse Wolf 1]] "Ух... Лисок, малыш, не перебарщивай с заигрыванием... Ууу бл..."),
+					T(540727543550, --[[ModItemVoiceResponse Wolf 1]] "Лиска, малыш, ты что, со мной заигрываешь?"),
 				},
 				FriendlyFireBuddy2 = TConcat({
 					T(188581782749, --[[ModItemVoiceResponse Wolf FriendlyFireBuddy2 VoiceResponse FriendlyFireBuddy2 - Played on friendly fire by the unit hit if the hitting unit is Liked - Jazz_Lynx. voice:Wolf]] "Черт. Руди же не мог сделать этого случайно. Это такой намек, чтоб я укрытие занял, точно.")
 				}),
 				FriendlyFireGeneral = {
-					T(590967630348, --[[ModItemVoiceResponse Wolf 1]] "Ух! Собака, повтори курс начальной стрелковой!"),
+					T(590967630348, --[[ModItemVoiceResponse Wolf 1]] "Видать, пора повторить курс начальной стрелковой."),
 				},
 				GasAreaSelection = {
 					T(670487169271, --[[ModItemVoiceResponse Wolf 1]] "(кашляет)"),
 				},
 				GroupOrder = {
-					T(225228388151, --[[ModItemVoiceResponse Wolf 1]] "Все за вожаком стаи!"),
-					T(152110877592, --[[ModItemVoiceResponse Wolf 2]] "Пошмыгали!"),
-					T(517382606631, --[[ModItemVoiceResponse Wolf 3]] "Волчок поведёт!"),
+					T(225228388151, --[[ModItemVoiceResponse Wolf 1]] "Слышу, шеф."),
+					T(152110877592, --[[ModItemVoiceResponse Wolf 2]] "Потопали."),
+					T(517382606631, --[[ModItemVoiceResponse Wolf 3]] "Сделаем, шеф."),
 					T(317999974840, --[[ModItemVoiceResponse Wolf 4]] "Это можно."),
-					T(220861073049, --[[ModItemVoiceResponse Wolf 5]] "Волчара поскакал."),
+					T(220861073049, --[[ModItemVoiceResponse Wolf 5]] "Без проблем."),
 				},
 				HealReceived = {
 					T(695795043805, --[[ModItemVoiceResponse Wolf 1]] "Сойдёт. Мне пора обратно в бой."),
@@ -77890,11 +78148,11 @@ return {
 					T(861612939341, --[[ModItemVoiceResponse Wolf 2]] "(heavy breath_2)"),
 				},
 				Idle = {
-					T(192729935448, --[[ModItemVoiceResponse Wolf 1]] "Люблю иногда лапки оттянуть..."),
+					T(192729935448, --[[ModItemVoiceResponse Wolf 1]] "Люблю иногда отдохнуть как следует."),
 				},
 				InteractableFound = {
 					T(220148359899, --[[ModItemVoiceResponse Wolf 1]] "Это стоит осмотреть."),
-					T(583355294524, --[[ModItemVoiceResponse Wolf 2]] "Глянуть бы вблизи на это."),
+					T(583355294524, --[[ModItemVoiceResponse Wolf 2]] "На это стоит посмотреть вблизи."),
 				},
 				InterestingSector = {
 					T(957518195151, --[[ModItemVoiceResponse Wolf 1]] "Ладно, прочешем местность. Если тут что-нибудь есть, мы это найдём."),
@@ -77910,33 +78168,33 @@ return {
 					T(551997646852, --[[ModItemVoiceResponse Wolf 2]] "(jumping over something_2)"),
 				},
 				KillFriendlyFireBuddy1 = {
-					T(406488612859, --[[ModItemVoiceResponse Wolf 1]] "Нет! Лиска! Госп.. малыш! Я н-не нарочно... Ну куда я попёрся, если нихера не умею!!!"),
+					T(406488612859, --[[ModItemVoiceResponse Wolf 1]] "Нет! Лиска, малыш, я не нарочно. Ну куда меня понесло?"),
 				},
 				KillFriendlyFireBuddy2 = TConcat({
 					T(299656832368, --[[ModItemVoiceResponse Wolf KillFriendlyFireBuddy2 VoiceResponse KillFriendlyFireBuddy2 - Played when a unit kills an ally with friendly fire and the dying unit is Liked - Jazz_Lynx. voice:Wolf]] "Да как так-то... Рысь, ты был такой молодой, такой сильный... Сколько женщин было у тебя впереди!")
 				}),
 				KillFriendlyFireGeneral = {
-					T(529500038430, --[[ModItemVoiceResponse Wolf 1]] "Ёхты... Надо было так и оставаться тренером по пейнтболу."),
+					T(529500038430, --[[ModItemVoiceResponse Wolf 1]] "Надо было так и оставаться тренером по пейнтболу."),
 				},
 				LevelUp = {
 					T(545128601527, --[[ModItemVoiceResponse Wolf 1]] "Чем дольше живёшь - тем труднее тебя убить. Я всегда так говорю."),
 				},
 				LootFound = {
 					T(256342419251, --[[ModItemVoiceResponse Wolf 1]] "Там что-то есть."),
-					T(165729272985, --[[ModItemVoiceResponse Wolf 2]] "Чё это там такое?"),
+					T(165729272985, --[[ModItemVoiceResponse Wolf 2]] "Что это может быть?"),
 					T(276394518029, --[[ModItemVoiceResponse Wolf 3]] "Поищем снаряжение."),
 				},
 				LootOpened = {
 					T(255991569321, --[[ModItemVoiceResponse Wolf 1]] "Надеюсь, там будет новая пушка. Но и протеиновый батончик сойдёт."),
 				},
 				LowChanceShot = {
-					T(499162515717, --[[ModItemVoiceResponse Wolf 1]] "Аууу! Вот что здоровый образ жизни делает!"),
+					T(499162515717, --[[ModItemVoiceResponse Wolf 1]] "Зашибись! Вот что здоровый образ жизни делает!"),
 				},
 				ManyEnemiesSelection = {
-					T(525307874223, --[[ModItemVoiceResponse Wolf 1]] "Стая вражин, шеф. Сказать по правде - огроменная свора."),
+					T(525307874223, --[[ModItemVoiceResponse Wolf 1]] "Враги, шеф. Сказать по правде - очень много врагов."),
 				},
 				MeleeEnemiesClosing = {
-					T(252679931567, --[[ModItemVoiceResponse Wolf 1]] "Враг мне тут в спину дышит!"),
+					T(252679931567, --[[ModItemVoiceResponse Wolf 1]] "Враг дышит мне в спину."),
 				},
 				MineDisarmed = {
 					T(611744449028, --[[ModItemVoiceResponse Wolf 1]] "Салаги хоть ходить спокойно смогут."),
@@ -77948,7 +78206,7 @@ return {
 					T(146566902805, --[[ModItemVoiceResponse Wolf 1]] "Эта штука может рвануть. Я бы попытался разминировать - но результат не гарантирую."),
 				},
 				MissHighChance = {
-					T(815338021300, --[[ModItemVoiceResponse Wolf 1]] "А вот такое НЕ ПОВТОРЯЙТЕ за мной. И вообще, вы ничего не видели..."),
+					T(815338021300, --[[ModItemVoiceResponse Wolf 1]] "А вот так НЕ ДЕЛАЙТЕ. И не заставляйте меня повторять."),
 				},
 				MissedByKillShot = {
 					T(777506095973, --[[ModItemVoiceResponse Wolf 1]] "Чуть башку мне не снесло!"),
@@ -77963,7 +78221,7 @@ return {
 					T(261881212602, --[[ModItemVoiceResponse Wolf MockLike2 VoiceResponse MockLike2 - Played on a high chance miss by Jazz_Lynx. voice:Wolf]] "Ну дела, Рысь промазал! Теперь я точно видел все!")
 				}),
 				NoAmmo = {
-					T(109958081893, --[[ModItemVoiceResponse Wolf 1]] "Пульки! Пульки бы не помешали!"),
+					T(109958081893, --[[ModItemVoiceResponse Wolf 1]] "Пули! Пули не помешают!"),
 				},
 				NotNow = {
 					T(717459080879, --[[ModItemVoiceResponse Wolf 1]] "Не сейчас, шеф. Не до того."),
@@ -77974,40 +78232,40 @@ return {
 				},
 				OpponentKilled = {
 					T(880662313512, --[[ModItemVoiceResponse Wolf 1]] "Ещё одна зарубка."),
-					T(556040216609, --[[ModItemVoiceResponse Wolf 2]] "Плюс один в копилочку!"),
+					T(556040216609, --[[ModItemVoiceResponse Wolf 2]] "Плюс один мне."),
 					T(867325907155, --[[ModItemVoiceResponse Wolf 3]] "Цель поражена, шеф!"),
 					T(493327262582, --[[ModItemVoiceResponse Wolf 4]] "В клочья!"),
-					T(134144226816, --[[ModItemVoiceResponse Wolf 5]] "Безумно можно быть первым!"),
+					T(134144226816, --[[ModItemVoiceResponse Wolf 5]] "Одним врагом меньше."),
 				},
 				OpponentKilledAnimal = {
 					T(518636816712, --[[ModItemVoiceResponse Wolf 1]] "Пришлось усыпить зверя."),
 				},
 				OpponentKilledHeadshot = {
 					T(161621849445, --[[ModItemVoiceResponse Wolf 1]] "Учитесь, леди и джентльмены."),
-					T(781801972781, --[[ModItemVoiceResponse Wolf 2]] "Все увидели? Потом чтоб повторили. "),
+					T(781801972781, --[[ModItemVoiceResponse Wolf 2]] "Образцово-показательно. Всем бы так."),
 				},
 				OpponentKilledMelee = {
-					T(345104317066, --[[ModItemVoiceResponse Wolf 1]] "Свяжешься с Волком - попадешь на клыки!"),
+					T(345104317066, --[[ModItemVoiceResponse Wolf 1]] "Дразнишь Волка - познакомишься с его клыками!"),
 				},
 				OpponentKilledStealth = {
-					T(980547961507, --[[ModItemVoiceResponse Wolf 1]] "Вот так работают коммандос. Заметочки все сделали?"),
-					T(855528249117, --[[ModItemVoiceResponse Wolf 2]] 'Правило трёх "С": Скрытно, Стильно... Э... Элегантно!'),
+					T(980547961507, --[[ModItemVoiceResponse Wolf 1]] "Вот как работают коммандос. Все запомнили?"),
+					T(855528249117, --[[ModItemVoiceResponse Wolf 2]] "Незаметно, тихо, чисто."),
 				},
 				Order = {
 					T(843760997764, --[[ModItemVoiceResponse Wolf 1]] "Не проблема, шеф."),
-					T(785779643663, --[[ModItemVoiceResponse Wolf 2]] "Океюшки."),
+					T(785779643663, --[[ModItemVoiceResponse Wolf 2]] "Будет сделано."),
 					T(317999974840, --[[ModItemVoiceResponse Wolf 3]] "Это можно."),
-					T(220861073049, --[[ModItemVoiceResponse Wolf 4]] "Волчара поскакал."),
-					T(701988083271, --[[ModItemVoiceResponse Wolf 5]] "Принял, потопал."),
+					T(220861073049, --[[ModItemVoiceResponse Wolf 4]] "Без проблем."),
+					T(701988083271, --[[ModItemVoiceResponse Wolf 5]] "Вас понял, шеф."),
 				},
 				Outnumbered = {
-					T(400237287617, --[[ModItemVoiceResponse Wolf 1]] "Тут свора падлюк, шэф!"),
+					T(400237287617, --[[ModItemVoiceResponse Wolf 1]] "Шеф, их больше."),
 				},
 				Overwatch = {
-					T(835778396061, --[[ModItemVoiceResponse Wolf 1]] "Присмотрю за щенками."),
+					T(835778396061, --[[ModItemVoiceResponse Wolf 1]] "Присмотрю за волчатами."),
 				},
 				OverwatchSelection = {
-					T(704441026261, --[[ModItemVoiceResponse Wolf 1]] "Жёваный пёс! Враги меня зацелили!"),
+					T(704441026261, --[[ModItemVoiceResponse Wolf 1]] "Чёрт! Враги меня зацелили."),
 				},
 				Pain = {
 					T(713887591584, --[[ModItemVoiceResponse Wolf 1]] "Pain1"),
@@ -78021,24 +78279,24 @@ return {
 					T(597931624755, --[[ModItemVoiceResponse Wolf 1]] "Видали? А попробует рыпнуться - пуля в лоб."),
 				},
 				PraisesBuddy1 = {
-					T(790824546414, --[[ModItemVoiceResponse Wolf 1]] "Шикарная девчонка, Лиска. И ЭТИ ДВЕ ЕЁ СЛАВНЫЕ... Пушки. Вообще огонь!"),
+					T(790824546414, --[[ModItemVoiceResponse Wolf 1]] "Шикарная девчонка, Лиска. И пушки у неё - зашибись."),
 				},
 				PraisesBuddy2 = TConcat({
 					T(176578784013, --[[ModItemVoiceResponse Wolf PraisesBuddy2 VoiceResponse PraisesBuddy2 - Played on a successful kill by Jazz_Lynx. voice:Wolf]] "Вот вам и Рысь, вашу мамашу!")
 				}),
 				PraisesFemale = {
-					T(337158033234, --[[ModItemVoiceResponse Wolf 1]] "Ага, запомнила-таки уроки? Молодчинка!"),
+					T(337158033234, --[[ModItemVoiceResponse Wolf 1]] "Ага, ты запомнила урок? Молодец!"),
 				},
 				PraisesMale = {
 					T(400714280503, --[[ModItemVoiceResponse Wolf 1]] "Недурно! Может, ещё сделаю из тебя бойца!"),
 				},
 				SectorArrived = {
-					T(725427460695, --[[ModItemVoiceResponse Wolf 1]] "Пришёл Серенький Волчок. Дальнейшие распоряжения?"),
+					T(725427460695, --[[ModItemVoiceResponse Wolf 1]] "Я на месте, шеф. Каков будет план?"),
 				},
 				Selection = {
-					T(278892294782, --[[ModItemVoiceResponse Wolf 1]] "Волчара слушает."),
-					T(992397919450, --[[ModItemVoiceResponse Wolf 2]] "Ауф!"),
-					T(293449158590, --[[ModItemVoiceResponse Wolf 3]] "Чё задумал, шеф?"),
+					T(278892294782, --[[ModItemVoiceResponse Wolf 1]] "Волк."),
+					T(992397919450, --[[ModItemVoiceResponse Wolf 2]] "Йоу."),
+					T(293449158590, --[[ModItemVoiceResponse Wolf 3]] "Какой будет план, шеф?"),
 				},
 				SelectionStealth = {
 					T(544404662770, --[[ModItemVoiceResponse Wolf 1]] "Волк вышел на охоту."),
@@ -78056,7 +78314,7 @@ return {
 				},
 				SurroundedPain = {
 					T(866948660074, --[[ModItemVoiceResponse Wolf 1]] "Шеф, мне бы здесь помощь не помешала!"),
-					T(519537880970, --[[ModItemVoiceResponse Wolf 2]] "Ситуёвина уже не забавная ни разу!"),
+					T(519537880970, --[[ModItemVoiceResponse Wolf 2]] "Дело плохо!"),
 				},
 				TacticalCareful = {
 					T(142009751417, --[[ModItemVoiceResponse Wolf 1]] "Все в укрытие! Зря не высовываться!"),
@@ -78065,16 +78323,16 @@ return {
 					T(775000837886, --[[ModItemVoiceResponse Wolf 1]] "Спокойно! Высматривайте цели!"),
 				},
 				TacticalKilling = {
-					T(510000362080, --[[ModItemVoiceResponse Wolf 1]] "Аууу!"),
+					T(510000362080, --[[ModItemVoiceResponse Wolf 1]] "Аыыыыы!"),
 				},
 				TacticalLastEnemy = {
-					T(813811328429, --[[ModItemVoiceResponse Wolf 1]] "Последний щенок заныкался, шеф!"),
+					T(813811328429, --[[ModItemVoiceResponse Wolf 1]] "Остался последний, шеф."),
 				},
 				TacticalLoss = {
 					T(751978259977, --[[ModItemVoiceResponse Wolf 1]] "Шеф, у нас потери. Может, отступим?"),
 				},
 				TacticalPressing = {
-					T(655276118575, --[[ModItemVoiceResponse Wolf 1]] "Ёхты... Чую, пора выть."),
+					T(655276118575, --[[ModItemVoiceResponse Wolf 1]] "Чую, пора выть."),
 				},
 				TacticalReposition = {
 					T(694016969532, --[[ModItemVoiceResponse Wolf 1]] "Вот так. Не нарывайтесь. Пусть сами на нас выйдут."),
@@ -78083,7 +78341,7 @@ return {
 					T(749467011304, --[[ModItemVoiceResponse Wolf 1]] "Спокойствие! Действуем по плану - или все тут поляжем."),
 				},
 				TakeCover = {
-					T(326410213843, --[[ModItemVoiceResponse Wolf 1]] "Залёг в норку."),
+					T(326410213843, --[[ModItemVoiceResponse Wolf 1]] "Залёг в нору."),
 				},
 				ThreatSelection = {
 					T(533090508219, --[[ModItemVoiceResponse Wolf 1]] "Хреновое место, шеф."),
@@ -78098,7 +78356,7 @@ return {
 					T(713727509126, --[[ModItemVoiceResponse Wolf 1]] "Здесь ничего не происходит, шеф. Двигаемся дальше."),
 				},
 				ValuableItemFound = {
-					T(413515084179, --[[ModItemVoiceResponse Wolf 1]] "Ооопа! Иди к папочке!"),
+					T(413515084179, --[[ModItemVoiceResponse Wolf 1]] "Иди к папочке!"),
 				},
 				WeaponBroken = {
 					T(187188167254, --[[ModItemVoiceResponse Wolf 1]] "Эта пушка кончилась! Дайте другую!"),
@@ -78109,7 +78367,7 @@ return {
 				Wounded = {
 					T(436112397819, --[[ModItemVoiceResponse Wolf 1]] "Я под огнём!"),
 					T(449092364257, --[[ModItemVoiceResponse Wolf 2]] "Чёрт, больно!"),
-					T(908924725779, --[[ModItemVoiceResponse Wolf 3]] "Мда... Теперь я уверен, что мы не на пейнтболе!"),
+					T(908924725779, --[[ModItemVoiceResponse Wolf 3]] "Да, это вам не пейнтбол!"),
 				},
 				group = "MercenariesOld",
 				id = "Wolf",

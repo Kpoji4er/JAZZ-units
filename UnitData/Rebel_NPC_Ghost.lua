@@ -24,6 +24,7 @@ DefineClass.Rebel_NPC_Ghost = {
 	eliteCategory = "Foreigners",
 	Affiliation = "Legion",
 	StartingLevel = 8,
+	immortal = true,
 	villain = true,
 	neutral_retaliate = true,
 	AIKeywords = {

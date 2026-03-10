@@ -31,7 +31,7 @@ DefineClass.Vicki = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(486816886469, --[[ModItemUnitDataCompositeDef Vicki Text MercChatRefusal Lines ChatMessage voice:Vicki]] "Нет уж, спасибо, man. Слышала, ты опять мальчуковый клуб собрал. Я второй раз на те же грабли не хожу. Мужики вокруг всегда ведут себя так, как будто им тринадцать."),
+					'Text', T(486816886469, --[[ModItemUnitDataCompositeDef Vicki Text MercChatRefusal Lines ChatMessage voice:Vicki]] "Нет уж. Я слышать, у тебя не отряд, а клуб бойскаутов. Я не повторять эту ошибку дважды. Эти мальчишки рядом со мной всегда терять голову."),
 				}),
 			},
 			'Conditions', {
@@ -45,7 +45,7 @@ DefineClass.Vicki = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(249681548198, --[[ModItemUnitDataCompositeDef Vicki Text MercChatRefusal Lines ChatMessage voice:Vicki]] "Нет уж, man. О тебе нехорошие слухи говорят. Я сделаю друзьям звяк-звяк, узнаю, стоит ли тебе верить. Позвони в другой раз."),
+					'Text', T(249681548198, --[[ModItemUnitDataCompositeDef Vicki Text MercChatRefusal Lines ChatMessage voice:Vicki]] "Нет уж. О тебе ходить нехорошие слухи. Мне нужно кое-что обсудить с друзьями, прежде чем я тебе поверить. Пиши мне потом."),
 				}),
 			},
 			'Conditions', {},
@@ -56,7 +56,7 @@ DefineClass.Vicki = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(723908821448, --[[ModItemUnitDataCompositeDef Vicki Text MercChatHaggle Lines ChatMessage voice:Vicki]] "Не верю я тебе, man. Часто у тебя наёмники убиваются, плохой знак. Я за себя постоять могу, но работать буду только за больший гонорар. "),
+					'Text', T(723908821448, --[[ModItemUnitDataCompositeDef Vicki Text MercChatHaggle Lines ChatMessage voice:Vicki]] "Я тебе не доверять. На тебе много мёртвых наёмников, а это очень плохо. Я уметь выживать, но тогда ты платить мне больше."),
 				}),
 			},
 			'Conditions', {
@@ -71,7 +71,7 @@ DefineClass.Vicki = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(901575776171, --[[ModItemUnitDataCompositeDef Vicki Text MercChatHaggle Lines ChatMessage voice:Vicki]] "Раз ты этого козлину Смайли нанял, заплатишь мне больше. Штраф, да? За то, что с этим хамлом работать."),
+					'Text', T(901575776171, --[[ModItemUnitDataCompositeDef Vicki Text MercChatHaggle Lines ChatMessage voice:Vicki]] "Ты будешь платить мне больше - штраф за то, что нанять такого козла, как Смайли. Этого сопляка надо учить себя вести."),
 				}),
 			},
 			'Conditions', {
@@ -95,7 +95,7 @@ DefineClass.Vicki = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(581903016213, --[[ModItemUnitDataCompositeDef Vicki Text MercChatMitigation Lines ChatMessage voice:Vicki]] "Ладно, скажу правду, были у меня предложения и получше, но хочется наконец с женщинами поработать, да? Везде одни мальчишки. Давай, по рукам."),
+					'Text', T(581903016213, --[[ModItemUnitDataCompositeDef Vicki Text MercChatMitigation Lines ChatMessage voice:Vicki]] "Я думать о более выгодных предложениях, правда. Но мне нравится работать с другими женщинами. А то в наше время в командах одни мальчишки. Так что я согласна."),
 				}),
 			},
 			'Conditions', {
@@ -124,7 +124,7 @@ DefineClass.Vicki = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(155504263416, --[[ModItemUnitDataCompositeDef Vicki Text Offline ChatMessage voice:Vicki]] "Это Вики Уотерс. Я на войне или в гараже. Скажи самое важное, и я тебе звяк-звяк сразу, как смогу."),
+			'Text', T(155504263416, --[[ModItemUnitDataCompositeDef Vicki Text Offline ChatMessage voice:Vicki]] "Это Виктория Уотерс. Я на войне или в гараже. Скажи самое важное, и я связаться с тобой сразу, как могу."),
 		}),
 	},
 	GreetingAndOffer = {
@@ -134,7 +134,7 @@ DefineClass.Vicki = {
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(654047163706, --[[ModItemUnitDataCompositeDef Vicki Text ConversationRestart ChatMessage voice:Vicki]] "Ты вернулся? Хорошо."),
+			'Text', T(654047163706, --[[ModItemUnitDataCompositeDef Vicki Text ConversationRestart ChatMessage voice:Vicki]] "Ты возвращаться? Хорошо."),
 		}),
 	},
 	IdleLine = {
@@ -144,7 +144,7 @@ DefineClass.Vicki = {
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(490243743780, --[[ModItemUnitDataCompositeDef Vicki Text PartingWords ChatMessage voice:Vicki]] "Я рада, то мы приходили к соглашению. Я тебе покажу, как настоящий боец это делает!"),
+			'Text', T(490243743780, --[[ModItemUnitDataCompositeDef Vicki Text PartingWords ChatMessage voice:Vicki]] "Я рада, то мы приходить к соглашению. Теперь я показать, как настоящий боец это делает!"),
 		}),
 	},
 	RehireIntro = {
@@ -154,7 +154,7 @@ DefineClass.Vicki = {
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(672945741836, --[[ModItemUnitDataCompositeDef Vicki Text RehireOutro ChatMessage voice:Vicki]] "Да-да. Кто распробовать Вики Уотерс, всегда приходит за ещё!"),
+			'Text', T(672945741836, --[[ModItemUnitDataCompositeDef Vicki Text RehireOutro ChatMessage voice:Vicki]] "Да-да. Кто распробовать Вики Уотерс, всегда приходить за ещё!"),
 		}),
 	},
 	MedicalDeposit = "large",
