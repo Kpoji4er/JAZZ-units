@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 9,
-	'version', 2234,
+	'version', 2237,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -209,8 +209,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1773100847,
-	'code_hash', 4865020225193681891,
+	'saved', 1773185088,
+	'code_hash', -3663607239684405824,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
