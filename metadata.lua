@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 9,
-	'version', 2237,
+	'version', 2239,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -209,8 +209,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1773185088,
-	'code_hash', -3663607239684405824,
+	'saved', 1773505952,
+	'code_hash', 8386687673048072064,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
@@ -6621,6 +6621,11 @@ return PlaceObj('ModDef', {
 			'Class', "AIArchetype",
 			'Id', "Legion_Machinegunner",
 			'ClassDisplayName', "AIArchetype",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemyRole",
+			'Id', "NewEnemyRole",
+			'ClassDisplayName', "EnemyRole",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",

@@ -17506,6 +17506,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "LeatherArmor_ScrapPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_LeatherArmor",
 							}),
@@ -17516,6 +17517,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "LeatherArmor_KevlarPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_LeatherArmor",
 							}),
@@ -17526,6 +17528,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "LeatherArmor_SteelPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_LeatherArmor",
 							}),
@@ -17536,6 +17539,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "TireArmor_ScrapPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_TireArmor",
 							}),
@@ -17546,6 +17550,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "TireArmor_KevlarPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_TireArmor",
 							}),
@@ -17556,6 +17561,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "TireArmor_SteelPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_TireArmor",
 							}),
@@ -17566,6 +17572,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "TwaronLight_SteelPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_TwaronLight",
 							}),
@@ -17576,6 +17583,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "TwaronMedium_SteelPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_TwaronMedium",
 							}),
@@ -17586,6 +17594,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "TwaronFull_SteelPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_TwaronFull",
 							}),
@@ -17596,6 +17605,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "ZylonLight_SteelPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_ZylonLight",
 							}),
@@ -17606,6 +17616,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "ZylonMedium_SteelPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_ZylonMedium",
 							}),
@@ -17616,6 +17627,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "ZylonFull_SteelPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_ZylonFull",
 							}),
@@ -17626,6 +17638,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "GuardianLight_CeramicPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_GuardianLight",
 							}),
@@ -17636,6 +17649,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "GuardianMedium_CeramicPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_GuardianMedium",
 							}),
@@ -17646,6 +17660,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "GuardianFull_CeramicPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_GuardianFull",
 							}),
@@ -17656,6 +17671,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "6b13_SteelPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_6B13",
 							}),
@@ -17666,6 +17682,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "RBA_SteelPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_RBA",
 							}),
@@ -17676,6 +17693,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "IBALight_CeramicPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_IBALight",
 							}),
@@ -17686,6 +17704,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "IBAMedium_CeramicPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_IBA",
 							}),
@@ -17696,6 +17715,7 @@ return {
 						PlaceObj('ModItemLootDef', {
 							group = "Default",
 							id = "IBAFull_CeramicPlate",
+							loot = "all",
 							PlaceObj('LootEntryInventoryItem', {
 								item = "JazzArmor_IBAFull",
 							}),
@@ -39125,6 +39145,10 @@ return {
 				id = "Legion_Machinegunner",
 			}),
 			}),
+		PlaceObj('ModItemEnemyRole', {
+			group = "Legion",
+			id = "NewEnemyRole",
+		}),
 		PlaceObj('ModItemFolder', {
 			'name', "LegionAssaulters",
 			'comment', "Штурмовики - Сближаются для максимального урона",
@@ -72817,7 +72841,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
 							}),
 						},
 						'Conditions', {
@@ -77006,7 +77030,7 @@ return {
 				CombatMovementStealth = {
 					T(905667247801, --[[ModItemVoiceResponse Raven 1]] "Иду в ночи."),
 					T(529681881007, --[[ModItemVoiceResponse Raven 2]] "Пробираюсь незамеченной."),
-					T(753817278280, --[[ModItemVoiceResponse Raven 1]] "И опомниться не успеет."),
+					T(753817278280, --[[ModItemVoiceResponse Raven 3]] "И опомниться не успеет."),
 				},
 				CombatStartDetected = {
 					T(844986300930, --[[ModItemVoiceResponse Raven 1]] "Нас заметили! Работаем."),
@@ -77177,9 +77201,9 @@ return {
 				},
 				Order = {
 					T(117389638068, --[[ModItemVoiceResponse Raven 1]] "Принято."),
-					T(844654423441, --[[ModItemVoiceResponse Raven 4]] "Поняла."),
-					T(941784428136, --[[ModItemVoiceResponse Raven 5]] "Выдвигаюсь."),
-					T(461553528421, --[[ModItemVoiceResponse Raven 6]] "Сделаю."),
+					T(844654423441, --[[ModItemVoiceResponse Raven 2]] "Поняла."),
+					T(941784428136, --[[ModItemVoiceResponse Raven 3]] "Выдвигаюсь."),
+					T(461553528421, --[[ModItemVoiceResponse Raven 4]] "Сделаю."),
 					T(100076440608, --[[ModItemVoiceResponse Raven 5]] "Иду."),
 				},
 				Outnumbered = {
@@ -77225,8 +77249,8 @@ return {
 				},
 				SelectionStealth = {
 					T(753817278280, --[[ModItemVoiceResponse Raven 1]] "И опомниться не успеет."),
-					T(311474735821, --[[ModItemVoiceResponse Raven 1]] "Прячусь."),
-					T(529681881007, --[[ModItemVoiceResponse Raven 2]] "Пробираюсь незамеченной."),
+					T(311474735821, --[[ModItemVoiceResponse Raven 2]] "Прячусь."),
+					T(529681881007, --[[ModItemVoiceResponse Raven 3]] "Пробираюсь незамеченной."),
 				},
 				SeriouslyWounded = {
 					T(261686321931, --[[ModItemVoiceResponse Raven 1]] "Аптечку... обезбол... хоть что-нибудь!"),
@@ -77408,7 +77432,7 @@ return {
 					T(552328031564, --[[ModItemVoiceResponse Thor 1]] "Мы идём к цели!"),
 					T(476814248345, --[[ModItemVoiceResponse Thor 2]] "Все сделайте глубокий вдох... и выдох."),
 					T(229678381560, --[[ModItemVoiceResponse Thor 3]] "Да!"),
-					T(193075117702, --[[ModItemVoiceResponse Thor 5]] "Чудно!"),
+					T(193075117702, --[[ModItemVoiceResponse Thor 4]] "Чудно!"),
 					T(503925022031, --[[ModItemVoiceResponse Thor 5]] "Любое путешествие начинается с первого шага."),
 				},
 				HealReceived = {
@@ -77534,9 +77558,9 @@ return {
 				},
 				Order = {
 					T(996956301376, --[[ModItemVoiceResponse Thor 1]] "Твоя целеустремлённость - пример для нас!"),
-					T(952631426114, --[[ModItemVoiceResponse Thor 4]] "Да!"),
-					T(193075117702, --[[ModItemVoiceResponse Thor 5]] "Чудно!"),
-					T(528104783195, --[[ModItemVoiceResponse Thor 6]] "Уже иду."),
+					T(952631426114, --[[ModItemVoiceResponse Thor 2]] "Да!"),
+					T(193075117702, --[[ModItemVoiceResponse Thor 3]] "Чудно!"),
+					T(528104783195, --[[ModItemVoiceResponse Thor 4]] "Уже иду."),
 					T(503925022031, --[[ModItemVoiceResponse Thor 5]] "Любое путешествие начинается с первого шага."),
 				},
 				Outnumbered = {
@@ -77586,8 +77610,8 @@ return {
 				SelectionStealth = {
 					T(919835201725, --[[ModItemVoiceResponse Thor 1]] "Я впитываю неподвижность этого мира."),
 					T(463581498371, --[[ModItemVoiceResponse Thor 2]] "Кто успокаивает свои мысли, и сам становится тише."),
-					T(643569506533, --[[ModItemVoiceResponse Thor 2]] "Залог успеха - мысленно представлять желаемый результат."),
-					T(355094374279, --[[ModItemVoiceResponse Thor 3]] "Я буду как ветер."),
+					T(643569506533, --[[ModItemVoiceResponse Thor 3]] "Залог успеха - мысленно представлять желаемый результат."),
+					T(355094374279, --[[ModItemVoiceResponse Thor 4]] "Я буду как ветер."),
 				},
 				SeriouslyWounded = {
 					T(759466379237, --[[ModItemVoiceResponse Thor 1]] "Похоже, на меня сейчас наедет колесо сансары."),
@@ -77693,7 +77717,7 @@ return {
 				},
 				BecomeHidden = {
 					T(105282043754, --[[ModItemVoiceResponse Vicki 1]] "Крадусь тихо."),
-					T(695559602723, --[[ModItemVoiceResponse Vicki 3]] "Без лишнего шума."),
+					T(695559602723, --[[ModItemVoiceResponse Vicki 2]] "Без лишнего шума."),
 				},
 				BusySatView = {
 					T(319866576382, --[[ModItemVoiceResponse Vicki 1]] "Ещё не готово."),
@@ -77899,9 +77923,9 @@ return {
 					T(963171414466, --[[ModItemVoiceResponse Vicki 2]] "Я убивать тихо."),
 				},
 				Order = {
-					T(781039780736, --[[ModItemVoiceResponse Vicki 4]] "Вперёд."),
+					T(781039780736, --[[ModItemVoiceResponse Vicki 1]] "Вперёд."),
 					T(373797711312, --[[ModItemVoiceResponse Vicki 2]] "Я слушать приказ."),
-					T(581036882789, --[[ModItemVoiceResponse Vicki 5]] "Я гулять."),
+					T(581036882789, --[[ModItemVoiceResponse Vicki 3]] "Я гулять."),
 					T(630840274742, --[[ModItemVoiceResponse Vicki 4]] "Ya mon."),
 					T(691423125493, --[[ModItemVoiceResponse Vicki 5]] "Хожу."),
 				},
@@ -77948,10 +77972,10 @@ return {
 				},
 				SelectionStealth = {
 					T(568148975578, --[[ModItemVoiceResponse Vicki 1]] "Ya mon. Тихо-тихо."),
-					T(695559602723, --[[ModItemVoiceResponse Vicki 3]] "Без лишнего шума."),
-					T(343554808532, --[[ModItemVoiceResponse Vicki 1]] "Я молча."),
-					T(688060994277, --[[ModItemVoiceResponse Vicki 2]] "Ш-ш-ш..."),
-					T(975555338759, --[[ModItemVoiceResponse Vicki 3]] "Я тихо."),
+					T(695559602723, --[[ModItemVoiceResponse Vicki 2]] "Без лишнего шума."),
+					T(343554808532, --[[ModItemVoiceResponse Vicki 3]] "Я молча."),
+					T(688060994277, --[[ModItemVoiceResponse Vicki 4]] "Ш-ш-ш..."),
+					T(975555338759, --[[ModItemVoiceResponse Vicki 5]] "Я тихо."),
 				},
 				SeriouslyWounded = {
 					T(288825391025, --[[ModItemVoiceResponse Vicki 1]] "Во мне быть много вмятин. Мне надо помочь."),
@@ -78130,8 +78154,8 @@ return {
 					T(225228388151, --[[ModItemVoiceResponse Wolf 1]] "Слышу, шеф."),
 					T(152110877592, --[[ModItemVoiceResponse Wolf 2]] "Потопали."),
 					T(517382606631, --[[ModItemVoiceResponse Wolf 3]] "Сделаем, шеф."),
-					T(317999974840, --[[ModItemVoiceResponse Wolf 5]] "Это можно."),
-					T(220861073049, --[[ModItemVoiceResponse Wolf 6]] "Без проблем."),
+					T(317999974840, --[[ModItemVoiceResponse Wolf 4]] "Это можно."),
+					T(220861073049, --[[ModItemVoiceResponse Wolf 5]] "Без проблем."),
 				},
 				HealReceived = {
 					T(695795043805, --[[ModItemVoiceResponse Wolf 1]] "Сойдёт. Мне пора обратно в бой."),
@@ -78253,9 +78277,9 @@ return {
 				},
 				Order = {
 					T(843760997764, --[[ModItemVoiceResponse Wolf 1]] "Не проблема, шеф."),
-					T(785779643663, --[[ModItemVoiceResponse Wolf 4]] "Будет сделано."),
-					T(317999974840, --[[ModItemVoiceResponse Wolf 5]] "Это можно."),
-					T(220861073049, --[[ModItemVoiceResponse Wolf 6]] "Без проблем."),
+					T(785779643663, --[[ModItemVoiceResponse Wolf 2]] "Будет сделано."),
+					T(317999974840, --[[ModItemVoiceResponse Wolf 3]] "Это можно."),
+					T(220861073049, --[[ModItemVoiceResponse Wolf 4]] "Без проблем."),
 					T(701988083271, --[[ModItemVoiceResponse Wolf 5]] "Вас понял, шеф."),
 				},
 				Outnumbered = {
@@ -78300,8 +78324,8 @@ return {
 				},
 				SelectionStealth = {
 					T(544404662770, --[[ModItemVoiceResponse Wolf 1]] "Волк вышел на охоту."),
-					T(274240057906, --[[ModItemVoiceResponse Wolf 3]] "Работаю спокойно и без шума."),
-					T(235943355501, --[[ModItemVoiceResponse Wolf 2]] "Смотрите и учитесь. Показываю в стиле коммандос."),
+					T(274240057906, --[[ModItemVoiceResponse Wolf 2]] "Работаю спокойно и без шума."),
+					T(235943355501, --[[ModItemVoiceResponse Wolf 3]] "Смотрите и учитесь. Показываю в стиле коммандос."),
 				},
 				SeriouslyWounded = {
 					T(251402676717, --[[ModItemVoiceResponse Wolf 1]] "Шеф, меня неслабо помяло. Передохнуть бы."),
