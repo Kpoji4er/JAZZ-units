@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 9,
-	'version', 2239,
+	'version', 2242,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -209,8 +209,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1773505952,
-	'code_hash', 8386687673048072064,
+	'saved', 1773710953,
+	'code_hash', -2408964465973957144,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
@@ -7390,6 +7390,36 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "EnemySquads",
 			'Id', "3rd_Patrol",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "LegionAttackers_Balanced_Hard",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "LegionAttackers_Marksmen_Hard",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "LegionAttackers_Ordnance_Easy",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "LegionAttackers_Ordnance_Hard",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "LegionAttackers_Shock_Easy",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "LegionAttackers_Shock_Hard",
 			'ClassDisplayName', "Enemy Squads",
 		}),
 		PlaceObj('ModResourcePreset', {
