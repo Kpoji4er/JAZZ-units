@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 9,
-	'version', 2242,
+	'version', 2245,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -209,7 +209,7 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1773710953,
+	'saved', 1773711210,
 	'code_hash', -2408964465973957144,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
@@ -7390,6 +7390,16 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "EnemySquads",
 			'Id', "3rd_Patrol",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "DiamondBriefcase",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "StartingShipments",
 			'ClassDisplayName', "Enemy Squads",
 		}),
 		PlaceObj('ModResourcePreset', {

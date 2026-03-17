@@ -55158,6 +55158,120 @@ return {
 					},
 				}),
 				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Shipments",
+				'comment', "корованы",
+			}, {
+				PlaceObj('ModItemEnemySquads', {
+					DiamondBriefcase = true,
+					Units = {
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_LeaderT4_MercenaryCaptain",
+								}),
+							},
+							'UnitCountMin', 1,
+							'UnitCountMax', 2,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT4_Headsman",
+									'spawnWeight', 10,
+								}),
+							},
+							'UnitCountMin', 3,
+							'UnitCountMax', 6,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT4_Mercenary",
+									'spawnWeight', 10,
+								}),
+							},
+							'UnitCountMin', 8,
+							'UnitCountMax', 12,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT4_MercGunner",
+								}),
+							},
+							'UnitCountMin', 2,
+							'UnitCountMax', 4,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT4_MercenarySniper",
+								}),
+							},
+							'UnitCountMin', 2,
+							'UnitCountMax', 4,
+						}),
+					},
+					group = "Diamond Shipments",
+					id = "DiamondBriefcase",
+				}),
+				PlaceObj('ModItemEnemySquads', {
+					Comment = "Small legion squad initially on the map. Slightly randomizing where they spawn.",
+					DiamondBriefcase = true,
+					Units = {
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_LeaderT4_MercenaryCaptain",
+								}),
+							},
+							'UnitCountMin', 1,
+							'UnitCountMax', 1,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT4_Headsman",
+									'spawnWeight', 10,
+								}),
+							},
+							'UnitCountMin', 1,
+							'UnitCountMax', 2,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT4_Mercenary",
+									'spawnWeight', 10,
+								}),
+							},
+							'UnitCountMin', 2,
+							'UnitCountMax', 8,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT4_MercGunner",
+								}),
+							},
+							'UnitCountMin', 1,
+							'UnitCountMax', 2,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT4_MercenarySniper",
+								}),
+							},
+							'UnitCountMin', 1,
+							'UnitCountMax', 2,
+						}),
+					},
+					group = "Diamond Shipments",
+					id = "StartingShipments",
+				}),
+				}),
 			}),
 		PlaceObj('ModItemFolder', {
 			'name', "Attackers",
