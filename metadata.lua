@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 9,
-	'version', 2245,
+	'version', 2247,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -200,6 +200,7 @@ return PlaceObj('ModDef', {
 		"CharacterEffect/TheGrim.lua",
 		"CharacterEffect/VengefulTemperament.lua",
 		"CharacterEffect/Chaaaarge.lua",
+		"UnitData/Jazz_RecruterG10.lua",
 	},
 	'loctables', {
 		{
@@ -209,8 +210,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1773711210,
-	'code_hash', -2408964465973957144,
+	'saved', 1777668515,
+	'code_hash', -6495555260113203212,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
@@ -8823,6 +8824,11 @@ return PlaceObj('ModDef', {
 			'Class', "CharacterEffectCompositeDef",
 			'Id', "Chaaaarge",
 			'ClassDisplayName', "Character effect",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_RecruterG10",
+			'ClassDisplayName', "Unit",
 		}),
 	},
 	'steam_id', "3323312979",

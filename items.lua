@@ -55164,6 +55164,8 @@ return {
 			}, {
 				PlaceObj('ModItemEnemySquads', {
 					DiamondBriefcase = true,
+					-- Required by InitDiamondBriefcaseSquads assert(squadDefCarrier); must be Units[] index with count 1..1
+					DiamondBriefcaseCarrier = 1,
 					Units = {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -55172,7 +55174,7 @@ return {
 								}),
 							},
 							'UnitCountMin', 1,
-							'UnitCountMax', 2,
+							'UnitCountMax', 1,
 						}),
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -55219,6 +55221,7 @@ return {
 				PlaceObj('ModItemEnemySquads', {
 					Comment = "Small legion squad initially on the map. Slightly randomizing where they spawn.",
 					DiamondBriefcase = true,
+					DiamondBriefcaseCarrier = 1,
 					Units = {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -82616,5 +82619,53 @@ return {
 		'name', "TranslatedVoices",
 		'language', "Any",
 		'translatedVoicesFolder', "Mod/Dv3mFVN/voices",
+	}),
+	PlaceObj('ModItemUnitDataCompositeDef', {
+		'Group', "NPC",
+		'Id', "Jazz_RecruterG10",
+		'object_class', "UnitData",
+		'Health', 96,
+		'Agility', 95,
+		'Dexterity', 89,
+		'Strength', 85,
+		'Wisdom', 86,
+		'Will', 80,
+		'Leadership', 76,
+		'Marksmanship', 84,
+		'Mechanical', 83,
+		'Explosives', 70,
+		'Medical', 76,
+		'Portrait', "UI/EnemiesPortraits/ArmyHeavy",
+		'Name', T(951442777109, --[[ModItemUnitDataCompositeDef Jazz_RecruterG10 Name]] "Тёмный Властелин"),
+		'Randomization', true,
+		'Affiliation', "Civilian",
+		'StartingLevel', 6,
+		'neutral_retaliate', true,
+		'AIKeywords', {
+			"Control",
+		},
+		'role', "Soldier",
+		'MaxAttacks', 2,
+		'PickCustomArchetype', function (self, proto_context)  end,
+		'MaxHitPoints', 50,
+		'StartingPerks', {
+			"AutoWeapons",
+			"Berserker",
+			"HoldPosition",
+			"DieselPerk",
+		},
+		'AppearancesList', {
+			PlaceObj('AppearanceWeight', {
+				'Preset', "Landsbach_SuperSoldier_Stormer",
+			}),
+		},
+		'Equipment', {
+			"Nazi_UHMWPE_Set_Heavy",
+		},
+		'AdditionalGroups', {},
+		'Tier', "Elite",
+		'pollyvoice', "Joey",
+		'gender', "Male",
+		'VoiceResponseId', "SuperSoldier_Assault",
 	}),
 }
