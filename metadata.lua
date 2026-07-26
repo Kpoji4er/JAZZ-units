@@ -7365,6 +7365,26 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "EnemySquads",
+			'Id', "LegionGlobalAI_Garrison",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "LegionGlobalAI_Patrol",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "LegionGlobalAI_Recon",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
+			'Id', "LegionGlobalAI_Convoy",
+			'ClassDisplayName', "Enemy Squads",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "EnemySquads",
 			'Id', "OutlookPatrool",
 			'ClassDisplayName', "Enemy Squads",
 		}),
