@@ -19,19 +19,19 @@ DefineClass.Grizzly = {
 	Portrait = "UI/MercsPortraits/Grizzly",
 	BigPortrait = "UI/Mercs/Grizzly",
 	IsMercenary = true,
-	Name = T(118208459244, --[[ModItemUnitDataCompositeDef Grizzly Name]] "Стив Борнелл «Гризли»"),
-	Nick = T(954696021309, --[[ModItemUnitDataCompositeDef Grizzly Nick]] "Гризли"),
-	AllCapsNick = T(136802932068, --[[ModItemUnitDataCompositeDef Grizzly AllCapsNick]] "ГРИЗЛИ"),
-	Bio = T(163594350898, --[[ModItemUnitDataCompositeDef Grizzly Bio]] "Сказать, что Стив Борнелл крут, - это ещё ничего не сказать. В бою это ходячая машина для убийства. Если враг пеший - он может голыми руками порвать его, как тузик грелку. Если прячется в танке - разнести к чертям собачьим выстрелом из гранатомёта. И в драке, и в перестрелке за Гризли вы как за каменной стеной."),
+	Name = T(118208459244, --[[ModItemUnitDataCompositeDef Grizzly Name]] "Steve \"Grizzly\" Bornell"),
+	Nick = T(954696021309, --[[ModItemUnitDataCompositeDef Grizzly Nick]] "Grizzly"),
+	AllCapsNick = T(136802932068, --[[ModItemUnitDataCompositeDef Grizzly AllCapsNick]] "GRIZZLY"),
+	Bio = T(163594350898, --[[ModItemUnitDataCompositeDef Grizzly Bio]] "Steve Bornell is so tough he doesn't just spit nails when he eats iron, he swallows rocks and craps out concrete bunkers. Never one to shy away from a fight, he can beat you to a pulp with his bare hands or take out the tank you're driving with a rocket launcher. And when you need a friend, Grizzly is the big cuddly bear in your corner."),
 	Nationality = "USA",
-	Title = T(978696341509, --[[ModItemUnitDataCompositeDef Grizzly Title]] "Зверская сила"),
+	Title = T(978696341509, --[[ModItemUnitDataCompositeDef Grizzly Title]] "A Bear of a Man"),
 	Email = T(669497410975, --[[ModItemUnitDataCompositeDef Grizzly Email]] "grizz@aim.com"),
 	snype_nick = T(158191965405, --[[ModItemUnitDataCompositeDef Grizzly snype_nick]] "grizz"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(533291715108, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatRefusal Lines ChatMessage voice:Grizzly]] "Я с Доктором Кью не работаю и тебе не советую. Хочешь умный совет? Держись от него подальше."),
+					'Text', T(533291715108, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatRefusal Lines ChatMessage voice:Grizzly]] "I don't work with Dr. Q., and take my advice, you shouldn't either. Word to the wise, beware of him."),
 				}),
 			},
 			'Conditions', {
@@ -46,7 +46,7 @@ DefineClass.Grizzly = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(515442003007, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatHaggle Lines ChatMessage voice:Grizzly]] "У тебя в отряде сплошь иностранцы. Что, трудно было нормальных американцев набрать? Нет, я не расист, но если хочешь, чтоб я доверил свою жизнь чёртовым иностранцам, придётся доплатить."),
+					'Text', T(515442003007, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatHaggle Lines ChatMessage voice:Grizzly]] "You've got too many foreigners in that team of yours. I'm looking to hang out with some good old US soldiers, dammit. I'm not racist, but if I'm gonna be trusting damn foreigners with my life, it's gonna cost extra."),
 				}),
 			},
 			'Conditions', {
@@ -62,7 +62,7 @@ DefineClass.Grizzly = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(330985534421, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatMitigation Lines ChatMessage voice:Grizzly]] "Я и моя Тень? Мы с ним одной закваски. Я в деле."),
+					'Text', T(330985534421, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatMitigation Lines ChatMessage voice:Grizzly]] "Hey, me and my Shadow. We're two of a kind, man. I'm in."),
 				}),
 			},
 			'Conditions', {
@@ -76,7 +76,7 @@ DefineClass.Grizzly = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(457905575962, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatMitigation Lines ChatMessage voice:Grizzly]] "У тебя тут не всё в порядке, но ради того, чтобы еще раз посмотреть, как Волк воет на луну... от такого не откажешься."),
+					'Text', T(457905575962, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatMitigation Lines ChatMessage voice:Grizzly]] "You got problems, but a chance to see the Wolf howl again... that appeals."),
 				}),
 			},
 			'Conditions', {
@@ -92,7 +92,7 @@ DefineClass.Grizzly = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(360731833087, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatBranch Lines ChatMessage voice:Grizzly]] "Будет круто снова поработать с Тенью. Не хочешь и его тоже позвать? Вдвоём мы с ним - сила."),
+					'Text', T(360731833087, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatBranch Lines ChatMessage voice:Grizzly]] "It will be good to have my Shadow back. Why don't you give him a call as well. We'll be formidable. "),
 				}),
 			},
 			'Conditions', {
@@ -104,7 +104,7 @@ DefineClass.Grizzly = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(467797906670, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatBranch Lines ChatMessage voice:Grizzly]] "Волк мне - считай, братишка. Не хочешь и его тоже позвать? Он отличный солдат."),
+					'Text', T(467797906670, --[[ModItemUnitDataCompositeDef Grizzly Text MercChatBranch Lines ChatMessage voice:Grizzly]] "I remember Wolf howling way back when. Why don't you give him a call as well. He's an excellent soldier."),
 				}),
 			},
 			'Conditions', {
@@ -116,37 +116,37 @@ DefineClass.Grizzly = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(445648002358, --[[ModItemUnitDataCompositeDef Grizzly Text Offline ChatMessage voice:Grizzly]] "Это Стив Борнелл. Я сейчас не на месте, так что вот. Попробуйте в другой раз."),
+			'Text', T(445648002358, --[[ModItemUnitDataCompositeDef Grizzly Text Offline ChatMessage voice:Grizzly]] "Yeah, this is Steve Bornell. I'm not here right now, so that's that. Try me another time."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(476655841150, --[[ModItemUnitDataCompositeDef Grizzly Text GreetingAndOffer ChatMessage voice:Grizzly]] "Борнелл слушает. Чего надо?"),
+			'Text', T(476655841150, --[[ModItemUnitDataCompositeDef Grizzly Text GreetingAndOffer ChatMessage voice:Grizzly]] "Bornell here. Whaddaya want?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(261408286901, --[[ModItemUnitDataCompositeDef Grizzly Text ConversationRestart ChatMessage voice:Grizzly]] "Попробуем ещё разок. Может, ещё договоримся."),
+			'Text', T(261408286901, --[[ModItemUnitDataCompositeDef Grizzly Text ConversationRestart ChatMessage voice:Grizzly]] "Let's do this again. We may sign a contract yet. "),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(672618998313, --[[ModItemUnitDataCompositeDef Grizzly Text IdleLine ChatMessage voice:Grizzly]] "Кончай тормозить. Куй железо, пока горячо."),
+			'Text', T(672618998313, --[[ModItemUnitDataCompositeDef Grizzly Text IdleLine ChatMessage voice:Grizzly]] "Enough woolgathering. Get your head in the game. "),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(994320539737, --[[ModItemUnitDataCompositeDef Grizzly Text PartingWords ChatMessage voice:Grizzly]] "Супер! Теперь повеселимся."),
+			'Text', T(994320539737, --[[ModItemUnitDataCompositeDef Grizzly Text PartingWords ChatMessage voice:Grizzly]] "Excellent! I've been looking for some fun."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(213572996234, --[[ModItemUnitDataCompositeDef Grizzly Text RehireIntro ChatMessage voice:Grizzly]] "Да, насчёт контракта. Он почти закончился. Будем продлевать или как?"),
+			'Text', T(213572996234, --[[ModItemUnitDataCompositeDef Grizzly Text RehireIntro ChatMessage voice:Grizzly]] "Yeah, about this contract. It's about up. Are we renewing, or what's the deal?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(509310335150, --[[ModItemUnitDataCompositeDef Grizzly Text RehireOutro ChatMessage voice:Grizzly]] "Второй раз всегда лучше получается. Так? Так!"),
+			'Text', T(509310335150, --[[ModItemUnitDataCompositeDef Grizzly Text RehireOutro ChatMessage voice:Grizzly]] "It's always better the next time around, right? Right!"),
 		}),
 	},
 	MedicalDeposit = "none",

@@ -19,19 +19,19 @@ DefineClass.Ice = {
 	Portrait = "UI/MercsPortraits/Ice",
 	BigPortrait = "UI/Mercs/Ice",
 	IsMercenary = true,
-	Name = T(487023376427, --[[ModItemUnitDataCompositeDef Ice Name]] "Айс Уильямс"),
-	Nick = T(176437286252, --[[ModItemUnitDataCompositeDef Ice Nick]] "Айс"),
-	AllCapsNick = T(117433013766, --[[ModItemUnitDataCompositeDef Ice AllCapsNick]] "АЙС"),
-	Bio = T(207628950939, --[[ModItemUnitDataCompositeDef Ice Bio]] "Один из наиболее востребованных наёмников в A.I.M., Айс пользуется популярностью как у новых, так и у постоянных клиентов благодаря своей ненавязчивой, дружеской манере общения. Хотя Уильямс с лёгкостью обращается и со снайперским оружием, его излюбленный режим стрельбы - старая добрая очередь из автомата, и он с готовностью делится с коллегами практическими советами, как лучше контролировать увод ствола в сторону."),
+	Name = T(487023376427, --[[ModItemUnitDataCompositeDef Ice Name]] "Ice Williams"),
+	Nick = T(176437286252, --[[ModItemUnitDataCompositeDef Ice Nick]] "Ice"),
+	AllCapsNick = T(117433013766, --[[ModItemUnitDataCompositeDef Ice AllCapsNick]] "ICE"),
+	Bio = T(207628950939, --[[ModItemUnitDataCompositeDef Ice Bio]] "One of A.I.M.'s most popular mercs among both new and frequent clients, Ice's smooth and friendly demeanor makes him highly sought after. Although an expert marksman with a sniper rifle, nothing gives Ice greater joy than going full auto. He can often be found teaching other mercs how to control muzzle climb during sustained bursts."),
 	Nationality = "USA",
-	Title = T(634721638536, --[[ModItemUnitDataCompositeDef Ice Title]] "Настоящий «айс»"),
-	Email = T(234986731479, --[[ModItemUnitDataCompositeDef Ice Email]] "ice@aim.com"),
-	snype_nick = T(680935424578, --[[ModItemUnitDataCompositeDef Ice snype_nick]] "ice"),
+	Title = T(634721638536, --[[ModItemUnitDataCompositeDef Ice Title]] "Ice is in da House"),
+	Email = T(234986731479, --[[ModItemUnitDataCompositeDef Ice Email]] "ice_cold@aim.com"),
+	snype_nick = T(680935424578, --[[ModItemUnitDataCompositeDef Ice snype_nick]] "ice_cold"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(980198563693, --[[ModItemUnitDataCompositeDef Ice Text MercChatRefusal Lines ChatMessage voice:Ice]] "Похоже, у тебя туго с бабками. Нет бабок - нет шмоток, нет шмоток - нет Айсмена. Сечёшь?"),
+					'Text', T(980198563693, --[[ModItemUnitDataCompositeDef Ice Text MercChatRefusal Lines ChatMessage voice:Ice]] "Looks to me like you ain't got the cheddar. No cheddar, no bling. No bling, no Iceman, know what I'm sayin?"),
 				}),
 			},
 			'Conditions', {
@@ -41,7 +41,7 @@ DefineClass.Ice = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(947420046783, --[[ModItemUnitDataCompositeDef Ice Text MercChatRefusal Lines ChatMessage voice:Ice]] "Ох, блин. Чувак, реально забыл: обещал другану помочь с переездом. Мой косяк. Мир!"),
+					'Text', T(947420046783, --[[ModItemUnitDataCompositeDef Ice Text MercChatRefusal Lines ChatMessage voice:Ice]] "Oh, damn dude. Totally forgot. I promised my homie I'd help him move into his new crib. My bad. Peace."),
 				}),
 			},
 			'Conditions', {},
@@ -50,7 +50,7 @@ DefineClass.Ice = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(449305513325, --[[ModItemUnitDataCompositeDef Ice Text MercChatRefusal Lines ChatMessage voice:Ice]] "Задания-однодневки - это не моё, друг. Зови, если нужно как следует вложиться."),
+					'Text', T(449305513325, --[[ModItemUnitDataCompositeDef Ice Text MercChatRefusal Lines ChatMessage voice:Ice]] "Ain't worth my time to do no short stint. I need a longer term gig."),
 				}),
 			},
 			'Type', "duration",
@@ -60,7 +60,7 @@ DefineClass.Ice = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(253254561122, --[[ModItemUnitDataCompositeDef Ice Text MercChatHaggle Lines ChatMessage voice:Ice]] "Я тебя не знаю. Может, ты нормальный мужик... а может, нет. Подкинь ещё, там видно будет."),
+					'Text', T(253254561122, --[[ModItemUnitDataCompositeDef Ice Text MercChatHaggle Lines ChatMessage voice:Ice]] "I ain't never worked with you. You might be cool... might not be. Throw in a little extra and we'll see."),
 				}),
 			},
 			'Conditions', {
@@ -73,7 +73,7 @@ DefineClass.Ice = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(451725402409, --[[ModItemUnitDataCompositeDef Ice Text MercChatMitigation Lines ChatMessage voice:Ice]] "Йо, с Магом я всегда готов работать. Уже иду."),
+					'Text', T(451725402409, --[[ModItemUnitDataCompositeDef Ice Text MercChatMitigation Lines ChatMessage voice:Ice]] "Yo, I'm always down to work with Magic. I'm in."),
 				}),
 			},
 			'Conditions', {
@@ -87,7 +87,7 @@ DefineClass.Ice = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(220360813308, --[[ModItemUnitDataCompositeDef Ice Text MercChatMitigation Lines ChatMessage voice:Ice]] "Гризли своё дело знает. Если он с тобой, значит, ты нормальный мужик. Я в деле."),
+					'Text', T(220360813308, --[[ModItemUnitDataCompositeDef Ice Text MercChatMitigation Lines ChatMessage voice:Ice]] "Grizzly is quality. If he's on your team, then I guess you're all right. Count me in."),
 				}),
 			},
 			'Conditions', {
@@ -101,7 +101,7 @@ DefineClass.Ice = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(196058391078, --[[ModItemUnitDataCompositeDef Ice Text MercChatMitigation Lines ChatMessage voice:Ice]] "Бли-и-ин... У тебя в отряде Блад? Это всем чувакам чувак. Лады. Считай, я согласен."),
+					'Text', T(196058391078, --[[ModItemUnitDataCompositeDef Ice Text MercChatMitigation Lines ChatMessage voice:Ice]] "Daaaamn... You got Blood working for you? That dude's the real deal. Aight. Sign me up."),
 				}),
 			},
 			'Conditions', {
@@ -117,7 +117,7 @@ DefineClass.Ice = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(355937024201, --[[ModItemUnitDataCompositeDef Ice Text MercChatBranch Lines ChatMessage voice:Ice]] "Заметано. Йо, еще одно: Маг - наш человек. Найми и его тоже."),
+					'Text', T(355937024201, --[[ModItemUnitDataCompositeDef Ice Text MercChatBranch Lines ChatMessage voice:Ice]] "It's a deal. And yo, check it out. Magic's my man. You should hire him too."),
 				}),
 			},
 			'Conditions', {
@@ -129,7 +129,7 @@ DefineClass.Ice = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(446131633228, --[[ModItemUnitDataCompositeDef Ice Text MercChatBranch Lines ChatMessage voice:Ice]] "Замётано. А если хочешь совсем как взрослый, найми и Гризли тоже. Он крутой мужик."),
+					'Text', T(446131633228, --[[ModItemUnitDataCompositeDef Ice Text MercChatBranch Lines ChatMessage voice:Ice]] "It's a deal. And if you really mean business, you should hire Grizzly. He's pretty fly."),
 				}),
 			},
 			'Conditions', {
@@ -141,7 +141,7 @@ DefineClass.Ice = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(354674179288, --[[ModItemUnitDataCompositeDef Ice Text MercChatBranch Lines ChatMessage voice:Ice]] "Замётано. Кстати, Блад, говорят, тож работу ищет. Найми-ка ты и его. Чувак - талантище."),
+					'Text', T(354674179288, --[[ModItemUnitDataCompositeDef Ice Text MercChatBranch Lines ChatMessage voice:Ice]] "It's a deal. I hear Blood is lookin for work. You should hire him. That dude's got talent."),
 				}),
 			},
 			'Conditions', {
@@ -153,37 +153,37 @@ DefineClass.Ice = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(439765835734, --[[ModItemUnitDataCompositeDef Ice Text Offline ChatMessage voice:Ice]] "Это Айс Уильямс. Я сейчас занят, но если это по работе, скиньте сообщение, я отпишусь."),
+			'Text', T(439765835734, --[[ModItemUnitDataCompositeDef Ice Text Offline ChatMessage voice:Ice]] "This is Ice Williams. I ain't available right now, but if you got a job you need me to do, then leave a note. I'll holla back at ya."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(796351074859, --[[ModItemUnitDataCompositeDef Ice Text GreetingAndOffer ChatMessage voice:Ice]] "Айс. Как дела?"),
+			'Text', T(796351074859, --[[ModItemUnitDataCompositeDef Ice Text GreetingAndOffer ChatMessage voice:Ice]] "Ice here. S'up?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(394207735795, --[[ModItemUnitDataCompositeDef Ice Text ConversationRestart ChatMessage voice:Ice]] "Я весь внимание. Ну, давай."),
+			'Text', T(394207735795, --[[ModItemUnitDataCompositeDef Ice Text ConversationRestart ChatMessage voice:Ice]] "Hit me up with an offer. Let's do this."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(879227309291, --[[ModItemUnitDataCompositeDef Ice Text IdleLine ChatMessage voice:Ice]] "Это что, игра такая? Типа я должен угадать, что у тебя на уме?"),
+			'Text', T(879227309291, --[[ModItemUnitDataCompositeDef Ice Text IdleLine ChatMessage voice:Ice]] "You playin some kinda game? Am I supposed to guess what's on your mind?"),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(306254363554, --[[ModItemUnitDataCompositeDef Ice Text PartingWords ChatMessage voice:Ice]] "Отлично. Давай попробуем!"),
+			'Text', T(306254363554, --[[ModItemUnitDataCompositeDef Ice Text PartingWords ChatMessage voice:Ice]] "Aight, let's give it a spin."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(722650285343, --[[ModItemUnitDataCompositeDef Ice Text RehireIntro ChatMessage voice:Ice]] "Контракт почти вышел. Как насчёт обновить?"),
+			'Text', T(722650285343, --[[ModItemUnitDataCompositeDef Ice Text RehireIntro ChatMessage voice:Ice]] "Contract's almost done. We gonna re-up?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(425548162876, --[[ModItemUnitDataCompositeDef Ice Text RehireOutro ChatMessage voice:Ice]] "Супер, супер. Не будем терять время."),
+			'Text', T(425548162876, --[[ModItemUnitDataCompositeDef Ice Text RehireOutro ChatMessage voice:Ice]] "Cool, cool. Let's get back to business."),
 		}),
 	},
 	DurationDiscount = "long only",

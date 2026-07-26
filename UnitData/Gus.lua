@@ -19,23 +19,23 @@ DefineClass.Gus = {
 	Portrait = "UI/MercsPortraits/Gus",
 	BigPortrait = "UI/Mercs/Gus",
 	IsMercenary = true,
-	Name = T(427138476543, --[[ModItemUnitDataCompositeDef Gus Name]] "Гас Тарболс"),
-	Nick = T(732907985726, --[[ModItemUnitDataCompositeDef Gus Nick]] "Гас"),
-	AllCapsNick = T(980126090528, --[[ModItemUnitDataCompositeDef Gus AllCapsNick]] "ГАС"),
+	Name = T(427138476543, --[[ModItemUnitDataCompositeDef Gus Name]] "Gus Tarballs"),
+	Nick = T(732907985726, --[[ModItemUnitDataCompositeDef Gus Nick]] "Gus"),
+	AllCapsNick = T(980126090528, --[[ModItemUnitDataCompositeDef Gus AllCapsNick]] "GUS"),
 	HireStatus = "Retired",
-	Bio = T(257144197846, --[[ModItemUnitDataCompositeDef Gus Bio]] "Ходят слухи, что, когда вновь избранный правитель Арулько предложил Тарболсу пост старшего военного советника, старый солдат отказался, заявив: «Я вам не штабная крыса, чёрт подери!» Он всё-таки задержался достаточно, чтобы помочь подготовить первые несколько отрядов новой армии Арулько, но в конце концов покинул страну, проворчав что-то насчёт новой ноги. На данный момент его анкета всё ещё значится в списке находящихся на активной боевой службе наёмников, однако Гас уже несколько месяцев как не отвечает на звонки."),
+	Bio = T(257144197846, --[[ModItemUnitDataCompositeDef Gus Bio]] "Although offered a position as senior military advisor to the restored monarchy in Arulco, the badly limping Tarballs reportedly turned down the offer because he wasn't 'a dang paper pusher'. After spending a couple of weeks helping to train a few squads of Arulco's new army in the use of heavy weapons, he grumbled something about finding himself a new leg and disappeared into the hinterland. As of this moment, he is still on A.I.M.'s active duty roster, but he hasn't checked his voicemail in months."),
 	Nationality = "USA",
-	Title = T(453788960669, --[[ModItemUnitDataCompositeDef Gus Title]] "Ненавидит штабную работу"),
-	Email = T(844112356581, --[[ModItemUnitDataCompositeDef Gus Email]] "napalm_poutru@aim.com"),
-	snype_nick = T(568370092426, --[[ModItemUnitDataCompositeDef Gus snype_nick]] "napalm_poutru"),
+	Title = T(453788960669, --[[ModItemUnitDataCompositeDef Gus Title]] "Not Cut Out for Management"),
+	Email = T(844112356581, --[[ModItemUnitDataCompositeDef Gus Email]] "morningnapalm@aim.com"),
+	snype_nick = T(568370092426, --[[ModItemUnitDataCompositeDef Gus snype_nick]] "morningnapalm"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(367663661849, --[[ModItemUnitDataCompositeDef Gus Text MercChatRefusal Lines ChatMessage voice:Gus]] "Отбой, Деревянский. Я теперь на пенсии. Рад бы, конечно, снова пострелять, но нога ни к чёрту."),
+					'Text', T(367663661849, --[[ModItemUnitDataCompositeDef Gus Text MercChatRefusal Lines ChatMessage voice:Gus]] "No can do, Woodsman. I am retired now. Not that I ain't itching to get back into combat, but this damn leg hurts like a sunuvabitch."),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(434798682432, --[[ModItemUnitDataCompositeDef Gus Text MercChatRefusal Lines ChatMessage voice:Gus]] "Мне страсть как охота потусить снова со старыми друзьями, но засранцы почти все на том свете. Эх, а я по ним скучаю... Ладно, пенсия - она и есть пенсия. Иди подоставай кого-нибудь ещё."),
+					'Text', T(434798682432, --[[ModItemUnitDataCompositeDef Gus Text MercChatRefusal Lines ChatMessage voice:Gus]] "I still dream of going out there with my old buddies, but most of them are dead by now. I miss those bastards. Anyhoo, retired means retired, Woody. Go bark up some other tree. "),
 				}),
 			},
 			'Conditions', {
@@ -48,10 +48,10 @@ DefineClass.Gus = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(263880823235, --[[ModItemUnitDataCompositeDef Gus Text MercChatMitigation Lines ChatMessage voice:Gus]] "Чёрт, Деревяшкин, я ж сказал: на пенсии я! Мне дома положено сидеть, телек смотреть. Хотя... тряхнуть стариной с Леном... да и денег у тебя, похоже, на меня хватит..."),
+					'Text', T(263880823235, --[[ModItemUnitDataCompositeDef Gus Text MercChatMitigation Lines ChatMessage voice:Gus]] "Dammit, I am retired, Woody. I should be staying at home doing whatever it is that retired people do. But being on the field again with Len... and it's not like you can't afford me either. "),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(886757961404, --[[ModItemUnitDataCompositeDef Gus Text MercChatMitigation Lines ChatMessage voice:Gus]] "Хрен с тобой, Деревяга. Я в деле. Смотри, чтоб я об этом не пожалел."),
+					'Text', T(886757961404, --[[ModItemUnitDataCompositeDef Gus Text MercChatMitigation Lines ChatMessage voice:Gus]] "Damn... I'm in, Woodruff. Don't make me regret my decision. "),
 				}),
 			},
 			'Conditions', {
@@ -72,10 +72,10 @@ DefineClass.Gus = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(700927801510, --[[ModItemUnitDataCompositeDef Gus Text MercChatMitigation Lines ChatMessage voice:Gus]] "Посмотри в словаре, что значит «пенсия», Деревяшкин. По мне - это значит «сиди и плюй в потолок»."),
+					'Text', T(700927801510, --[[ModItemUnitDataCompositeDef Gus Text MercChatMitigation Lines ChatMessage voice:Gus]] "You really need to check what retired means, Woody. It means being a miserable old coot as far as I can tell. "),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(976770556216, --[[ModItemUnitDataCompositeDef Gus Text MercChatMitigation Lines ChatMessage voice:Gus]] "Но раз уж ты уломал Лысого и даже покрыл все его алименты, значит, ты не лыком шит. Чёрт, Дубинкин, убедил ты меня. За дело. К чёрту пенсию."),
+					'Text', T(976770556216, --[[ModItemUnitDataCompositeDef Gus Text MercChatMitigation Lines ChatMessage voice:Gus]] "But you convinced Scully to join and even paid all his alimony, so I guess you ain't so bad. Damn you, Woodstuff, you have me convinced. I'm going with you. Screw retirement."),
 				}),
 			},
 			'Conditions', {
@@ -98,10 +98,10 @@ DefineClass.Gus = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(498050185462, --[[ModItemUnitDataCompositeDef Gus Text MercChatBranch Lines ChatMessage voice:Gus]] "Раз уж ты собираешь стариков-разбойников, что б тебе не нанять и Лысого? Он - профи, каких мало. Да и свалить от своих бывших жён подальше будет рад."),
+					'Text', T(498050185462, --[[ModItemUnitDataCompositeDef Gus Text MercChatBranch Lines ChatMessage voice:Gus]] "Since you're putting the old gang back together, why not hire Scully as well? He's top notch and he'll be happy to get away from the ex-wives for a while."),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(476258380189, --[[ModItemUnitDataCompositeDef Gus Text MercChatBranch Lines ChatMessage voice:Gus]] "Ладно, Деревядзе, конец связи. Скоро свидимся."),
+					'Text', T(476258380189, --[[ModItemUnitDataCompositeDef Gus Text MercChatBranch Lines ChatMessage voice:Gus]] "Anyway, Tarballs out. I'll be seeing you soon, Woodchip."),
 				}),
 			},
 			'Conditions', {
@@ -113,10 +113,10 @@ DefineClass.Gus = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(723868347890, --[[ModItemUnitDataCompositeDef Gus Text MercChatBranch Lines ChatMessage voice:Gus]] "Я слышал, Лен всё ещё зажигает. Он толковый солдат, хоть и упёртый как хрен знает что. Если предпочитаешь старпёров вроде меня, советую его тоже нанять."),
+					'Text', T(723868347890, --[[ModItemUnitDataCompositeDef Gus Text MercChatBranch Lines ChatMessage voice:Gus]] "I hear Len is still out and about. He's a good soldier, even if he acts like he has a stick up his ass most of the time. If you're into old geezers like me, you should get him as well. "),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(476258380189, --[[ModItemUnitDataCompositeDef Gus Text MercChatBranch Lines ChatMessage voice:Gus]] "Ладно, Деревядзе, конец связи. Скоро свидимся."),
+					'Text', T(476258380189, --[[ModItemUnitDataCompositeDef Gus Text MercChatBranch Lines ChatMessage voice:Gus]] "Anyway, Tarballs out. I'll be seeing you soon, Woodchip."),
 				}),
 			},
 			'Conditions', {
@@ -128,37 +128,37 @@ DefineClass.Gus = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(318037696742, --[[ModItemUnitDataCompositeDef Gus Text Offline ChatMessage voice:Gus]] "Валите нахрен, я на пенсии. Больше никаких заданий, сплошной отдых. День, мать его, за днём. И не пишите мне больше."),
+			'Text', T(318037696742, --[[ModItemUnitDataCompositeDef Gus Text Offline ChatMessage voice:Gus]] "I am retired. Leave me alone. No more jobs, just freaking retirement. All day every day. Don't contact me again."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(535111747196, --[[ModItemUnitDataCompositeDef Gus Text GreetingAndOffer ChatMessage voice:Gus]] "Не-не-не, Деревяшка. Я пас. На этот раз - реально. Я с этой чёртовой ногой еле ковыляю."),
+			'Text', T(535111747196, --[[ModItemUnitDataCompositeDef Gus Text GreetingAndOffer ChatMessage voice:Gus]] "No. No way, Woody. I am out. For real this time. I can barely walk, anyway, with this blasted leg. "),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(623440416332, --[[ModItemUnitDataCompositeDef Gus Text ConversationRestart ChatMessage voice:Gus]] "Обломись, Деревяшкин. Я ещё не в маразме. Думаешь, если напишешь мне пять минут спустя, я уже всё забуду? Сказано же: я пас."),
+			'Text', T(623440416332, --[[ModItemUnitDataCompositeDef Gus Text ConversationRestart ChatMessage voice:Gus]] "Nope, Woody. I'm not going senile. You can't call me 5 minutes later and expect me to have forgotten our conversation. I'm still out."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(174739397106, --[[ModItemUnitDataCompositeDef Gus Text IdleLine ChatMessage voice:Gus]] "Я не понял: кто тут старый пердун, не врубающийся в новые технологии, - ты или я? В чём затык? Комп завис? Или мозги твои?"),
+			'Text', T(174739397106, --[[ModItemUnitDataCompositeDef Gus Text IdleLine ChatMessage voice:Gus]] "I'm supposed to be the old geezer out of touch with technology. What's the matter? Cat got your tongue? Or your mouse?"),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(374431190814, --[[ModItemUnitDataCompositeDef Gus Text PartingWords ChatMessage voice:Gus]] "Выходит, скоро свидимся, Деревяшка."),
+			'Text', T(374431190814, --[[ModItemUnitDataCompositeDef Gus Text PartingWords ChatMessage voice:Gus]] "I guess I'll be seeing you soon, Woodward."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(615386056408, --[[ModItemUnitDataCompositeDef Gus Text RehireIntro ChatMessage voice:Gus]] "Слышь, Деревяшкин! Раз уж ты меня сюда вытащил, может, не забудешь про меня и мой чёртов контракт, а?"),
+			'Text', T(615386056408, --[[ModItemUnitDataCompositeDef Gus Text RehireIntro ChatMessage voice:Gus]] "Hey, Woody! Since you got me out and about the least you can do is extend my goddamned contract."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(509965443319, --[[ModItemUnitDataCompositeDef Gus Text RehireOutro ChatMessage voice:Gus]] "Вот так-то. А теперь наваляем этим гадам, пока у меня нога опять не разболелась."),
+			'Text', T(509965443319, --[[ModItemUnitDataCompositeDef Gus Text RehireOutro ChatMessage voice:Gus]] "Damn right. Now let's get the bastards before my leg starts hurting again."),
 		}),
 	},
 	DurationDiscount = "none",

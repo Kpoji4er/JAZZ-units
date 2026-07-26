@@ -19,19 +19,19 @@ DefineClass.Tex = {
 	Portrait = "UI/MercsPortraits/Tex",
 	BigPortrait = "UI/Mercs/Tex",
 	IsMercenary = true,
-	Name = T(686198945827, --[[ModItemUnitDataCompositeDef Tex Name]] "Текс Р. Колберн"),
-	Nick = T(384280286220, --[[ModItemUnitDataCompositeDef Tex Nick]] "Текс"),
-	AllCapsNick = T(656022978516, --[[ModItemUnitDataCompositeDef Tex AllCapsNick]] "ТЕКС"),
-	Bio = T(855301635048, --[[ModItemUnitDataCompositeDef Tex Bio]] "Учитывая, что ни один из кинопродюсеров так и не захотел положить начало новой эпохе «суши-вестернов», о которой так мечтал Текс, Колберн вынужденно вернулся к ремеслу наёмника. Однако неудачный поворот кинокарьеры не смутил вечного оптимиста Текса. Он всё так же любит похвастаться друзьям-наёмникам своей стрельбой с обеих рук и искусством зрелищно крутить револьверы. \nНа поле боя вы обыкновенно можете увидеть его стоящим на фоне закатного солнца и мужественно смотрящим вдаль из-под полей ковбойской шляпы."),
+	Name = T(686198945827, --[[ModItemUnitDataCompositeDef Tex Name]] "Tex R. Colburn"),
+	Nick = T(384280286220, --[[ModItemUnitDataCompositeDef Tex Nick]] "Tex"),
+	AllCapsNick = T(656022978516, --[[ModItemUnitDataCompositeDef Tex AllCapsNick]] "TEX"),
+	Bio = T(855301635048, --[[ModItemUnitDataCompositeDef Tex Bio]] "With scripts for Asian-themed westerns drying up like the proverbial Kyoto tumbleweed, Tex has returned to the mercenary trade. Not discouraged by this seeming reversal of fortune, the irrepressible Colburn loves showing off his ambidextrous skills and fancy pistol-twirling for his fellow mercs. \nOn the battlefield, you can find him with the sun at his back, squinting a steely glare out from under his ten-gallon hat."),
 	Nationality = "Japan",
-	Title = T(415603758957, --[[ModItemUnitDataCompositeDef Tex Title]] "Ковбой из Страны восходящего солнца"),
+	Title = T(415603758957, --[[ModItemUnitDataCompositeDef Tex Title]] "Cowboy of the Rising Sun"),
 	Email = T(595579036754, --[[ModItemUnitDataCompositeDef Tex Email]] "cowboydirector@aim.com"),
 	snype_nick = T(568991391705, --[[ModItemUnitDataCompositeDef Tex snype_nick]] "cowboydirector"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(313041068988, --[[ModItemUnitDataCompositeDef Tex Text MercChatRefusal Lines ChatMessage voice:Tex]] "Извини, партнёр. У меня большие съёмки на носу. Очень трудный трюк. Круглые сутки репетирую. Пиши позже."),
+					'Text', T(313041068988, --[[ModItemUnitDataCompositeDef Tex Text MercChatRefusal Lines ChatMessage voice:Tex]] "Very sad, partner. I have big scene coming up. Very hard stunt. I am working 24-hours a day. Try again another time."),
 				}),
 			},
 			'Conditions', {},
@@ -42,7 +42,7 @@ DefineClass.Tex = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(435944476423, --[[ModItemUnitDataCompositeDef Tex Text MercChatMitigation Lines ChatMessage voice:Tex]] "У тебя там Лиска? Ей в большом кино сниматься надо, а не на маленьких войнах бегать. У неё такие таланты! Почту за честь работать с ней снова. Ради такого я даже отложу другие съёмки."),
+					'Text', T(435944476423, --[[ModItemUnitDataCompositeDef Tex Text MercChatMitigation Lines ChatMessage voice:Tex]] "Fox is there? She should be fighting in big movies, not little battlefields. She is so talented! I will be honored to work with her again. I will change schedule for this."),
 				}),
 			},
 			'Conditions', {
@@ -56,37 +56,37 @@ DefineClass.Tex = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(209674255281, --[[ModItemUnitDataCompositeDef Tex Text Offline ChatMessage voice:Tex]] "Вы дозвонились до Текса Колберна - профессионального актёра, каскадёра и солдата удачи. Я сейчас занят на съёмках. Большая картина, куча спецэффектов. Свяжусь с вами позже. Может, даже автограф дам."),
+			'Text', T(209674255281, --[[ModItemUnitDataCompositeDef Tex Text Offline ChatMessage voice:Tex]] "You have reached Tex R. Colburn - professional actor, stuntman, and mercenary. I am shooting a movie right now. Big scene, lots of special effects. I will reach you later. I may even give autograph."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(454484491550, --[[ModItemUnitDataCompositeDef Tex Text GreetingAndOffer ChatMessage voice:Tex]] "Arigato. Это Текс. Ты набираешь отряд?"),
+			'Text', T(454484491550, --[[ModItemUnitDataCompositeDef Tex Text GreetingAndOffer ChatMessage voice:Tex]] "Arigato. This is Tex. You are gathering a posse to fight?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(699864175196, --[[ModItemUnitDataCompositeDef Tex Text ConversationRestart ChatMessage voice:Tex]] "Продолжим разговор, партнёр. Так что ты говорил?"),
+			'Text', T(699864175196, --[[ModItemUnitDataCompositeDef Tex Text ConversationRestart ChatMessage voice:Tex]] "Let us continue discussion, partner. You were saying?"),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(684216191720, --[[ModItemUnitDataCompositeDef Tex Text IdleLine ChatMessage voice:Tex]] "Партнёр, мне ещё автографы ставить. Не задерживай меня."),
+			'Text', T(684216191720, --[[ModItemUnitDataCompositeDef Tex Text IdleLine ChatMessage voice:Tex]] "I have a lot of autographs to sign, partner. Do not make wait. "),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(478717643527, --[[ModItemUnitDataCompositeDef Tex Text PartingWords ChatMessage voice:Tex]] "По рукам, партнёр. Жди меня на своём ранчо."),
+			'Text', T(478717643527, --[[ModItemUnitDataCompositeDef Tex Text PartingWords ChatMessage voice:Tex]] "You have got yourself a deal, partner. This here cowboy is coming your way."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(260654543464, --[[ModItemUnitDataCompositeDef Tex Text RehireIntro ChatMessage voice:Tex]] "Партнёр, я сейчас на расхват. Если хочешь, чтобы я и дальше всем отказывал, пора подписать новый контракт."),
+			'Text', T(260654543464, --[[ModItemUnitDataCompositeDef Tex Text RehireIntro ChatMessage voice:Tex]] "I have many calls for work, partner. If I continue saying no, we must make new deal."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(871041368651, --[[ModItemUnitDataCompositeDef Tex Text RehireOutro ChatMessage voice:Tex]] "Мой револьвер снова к твоим услугам, партнёр. Возвращение легенды."),
+			'Text', T(871041368651, --[[ModItemUnitDataCompositeDef Tex Text RehireOutro ChatMessage voice:Tex]] "My six-shooter is ready, partner. Let's return to Dodge city."),
 		}),
 	},
 	StartingSalary = 1800,

@@ -19,19 +19,19 @@ DefineClass.Hitman = {
 	Portrait = "UI/MercsPortraits/Hitman",
 	BigPortrait = "UI/Mercs/Hitman",
 	IsMercenary = true,
-	Name = T(799859181071, --[[ModItemUnitDataCompositeDef Hitman Name]] "Фрэнк Хеннеси «Стрелок»"),
-	Nick = T(946077284416, --[[ModItemUnitDataCompositeDef Hitman Nick]] "Стрелок"),
-	AllCapsNick = T(734624158090, --[[ModItemUnitDataCompositeDef Hitman AllCapsNick]] "СТРЕЛОК"),
-	Bio = T(649246167400, --[[ModItemUnitDataCompositeDef Hitman Bio]] "Проведя последние несколько лет в безуспешных попытках сбросить лишний вес, Фрэнк вынужден был признать, что стал очередным обладателем пивного животика (несмотря на то, что все в A.I.M. знают его как любителя женского пола, а не пива). Тем не менее, Хеннеси остаётся одним из лучших мастеров обращения с огнестрельным оружием и метательными ножами, а обходительные манеры делают из него превосходного инструктора. «Стрелок» - весомое во всех смыслах добавление к любой команде."),
+	Name = T(799859181071, --[[ModItemUnitDataCompositeDef Hitman Name]] "Frank \"Hitman\" Hennessy"),
+	Nick = T(946077284416, --[[ModItemUnitDataCompositeDef Hitman Nick]] "Hitman"),
+	AllCapsNick = T(734624158090, --[[ModItemUnitDataCompositeDef Hitman AllCapsNick]] "HITMAN"),
+	Bio = T(649246167400, --[[ModItemUnitDataCompositeDef Hitman Bio]] "After spending the last couple of years fighting his own Battle of the Bulge, Frank has begrudgingly admitted that he is afflicted with \"Dad Bod\", although as far as A.I.M. knows he has no children nor even a wife. Still, he remains one of A.I.M.'s best marksmen and his throwing arm is as strong as ever. On top of that, his affable manner serves him well when teaching and training others in the field. A valuable, if slightly oversized, addition to any team."),
 	Nationality = "USA",
-	Title = T(831408309409, --[[ModItemUnitDataCompositeDef Hitman Title]] "Обходительный киллер"),
-	Email = T(626379380637, --[[ModItemUnitDataCompositeDef Hitman Email]] "strelok@aim.com"),
-	snype_nick = T(645661687272, --[[ModItemUnitDataCompositeDef Hitman snype_nick]] "strelok"),
+	Title = T(831408309409, --[[ModItemUnitDataCompositeDef Hitman Title]] "The Affable Assassin"),
+	Email = T(626379380637, --[[ModItemUnitDataCompositeDef Hitman Email]] "hitman@aim.com"),
+	snype_nick = T(645661687272, --[[ModItemUnitDataCompositeDef Hitman snype_nick]] "hitman"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(808348013682, --[[ModItemUnitDataCompositeDef Hitman Text MercChatRefusal Lines ChatMessage voice:Hitman]] "Нет уж, я с Рейдером работать не намерен. Тупой, как пробка, а строит из себя начальника. Извиняй, ас, но эту ошибку я повторять не намерен."),
+					'Text', T(808348013682, --[[ModItemUnitDataCompositeDef Hitman Text MercChatRefusal Lines ChatMessage voice:Hitman]] "No way am I working with Raider. Man's thicker than a 2x4, but acts like he's the best one around here. Sorry, Ace, not going through that again."),
 				}),
 			},
 			'Conditions', {
@@ -45,7 +45,7 @@ DefineClass.Hitman = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(601719461266, --[[ModItemUnitDataCompositeDef Hitman Text MercChatRefusal Lines ChatMessage voice:Hitman]] "Скажем так, ас: поговаривают, что у тебя солдаты мрут, как мухи. А мне моя жизнь дорога. Извини, я на такие риски не иду."),
+					'Text', T(601719461266, --[[ModItemUnitDataCompositeDef Hitman Text MercChatRefusal Lines ChatMessage voice:Hitman]] "Let's just say you don't have the best reputation in terms of keeping those who work for you alive. I value my life too much, Ace. Sorry, but I can't accept your offer."),
 				}),
 			},
 			'Conditions', {
@@ -59,7 +59,7 @@ DefineClass.Hitman = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(620001696951, --[[ModItemUnitDataCompositeDef Hitman Text MercChatHaggle Lines ChatMessage voice:Hitman]] "Говорят, у тебя денег куры не клюют, ас. Я согласен поработать на тебя, если ты и мне бабок отвалишь."),
+					'Text', T(620001696951, --[[ModItemUnitDataCompositeDef Hitman Text MercChatHaggle Lines ChatMessage voice:Hitman]] "Word on the street is you are rolling in it, Ace. I will work for you if you divert some of that extra cheddar my way."),
 				}),
 			},
 			'Conditions', {
@@ -73,7 +73,7 @@ DefineClass.Hitman = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(554415577338, --[[ModItemUnitDataCompositeDef Hitman Text MercChatHaggle Lines ChatMessage voice:Hitman]] "Слышь, ас, мне тут сказали, тебе деньжат привалило. Хочешь, чтоб я и дальше на тебя работал, - делись."),
+					'Text', T(554415577338, --[[ModItemUnitDataCompositeDef Hitman Text MercChatHaggle Lines ChatMessage voice:Hitman]] "Well, Ace, I happen to know you are swimming in dough right now. I want a piece of that pie if we are to continue our mutual cooperation."),
 				}),
 			},
 			'Conditions', {
@@ -85,7 +85,7 @@ DefineClass.Hitman = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(531216698923, --[[ModItemUnitDataCompositeDef Hitman Text MercChatHaggle Lines ChatMessage voice:Hitman]] "Знаешь, ас. Профи-то я профи, но я тут на тебя вкалываю, как на трёх работах. А рук и ног у меня не три пары. Хочешь, чтоб я и дальше в таком режиме работал, придётся отстегнуть мне денег, и немало."),
+					'Text', T(531216698923, --[[ModItemUnitDataCompositeDef Hitman Text MercChatHaggle Lines ChatMessage voice:Hitman]] "I know I'm good, Ace, but I've seen a lot of action lately. You are using me like a work horse, and I may be a lot of things but a horse ain't one. If we are to continue working like this, a big old wad of cash needs to come my way."),
 				}),
 			},
 			'Conditions', {
@@ -99,7 +99,7 @@ DefineClass.Hitman = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(630933806416, --[[ModItemUnitDataCompositeDef Hitman Text MercChatMitigation Lines ChatMessage voice:Hitman]] "Что ж. С такой красоткой, как Сова, кто откажется? Я в деле, ас. Хоть оно мне и не нравится."),
+					'Text', T(630933806416, --[[ModItemUnitDataCompositeDef Hitman Text MercChatMitigation Lines ChatMessage voice:Hitman]] "Well, with a fox like Raven on the team, how's a man to say no? I'm in, Ace, against my better judgement."),
 				}),
 			},
 			'Conditions', {
@@ -113,7 +113,7 @@ DefineClass.Hitman = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(219051126945, --[[ModItemUnitDataCompositeDef Hitman Text MercChatMitigation Lines ChatMessage voice:Hitman]] "Ну, ас, Хряпа ты уломал, а где Хряп - считай, операция удалась. Я тогда тоже согласен. Надеюсь, я об этом не пожалею."),
+					'Text', T(219051126945, --[[ModItemUnitDataCompositeDef Hitman Text MercChatMitigation Lines ChatMessage voice:Hitman]] "Well, you got Grunty somehow, and he is the key to a solid operation. I guess I'm in too. I hope I don't regret this, Ace."),
 				}),
 			},
 			'Conditions', {
@@ -127,37 +127,37 @@ DefineClass.Hitman = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(933155613749, --[[ModItemUnitDataCompositeDef Hitman Text Offline ChatMessage voice:Hitman]] "Стрелок Хеннеси, наёмник! Я тут в отлучке, ас, так что напишу, когда вернусь. Счастливо тебе."),
+			'Text', T(933155613749, --[[ModItemUnitDataCompositeDef Hitman Text Offline ChatMessage voice:Hitman]] "Hitman Henessy, mercenary for hire! I am out and about, Ace. You will get a note when I get back in. Have a good one."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(349490027919, --[[ModItemUnitDataCompositeDef Hitman Text GreetingAndOffer ChatMessage voice:Hitman]] "Здорово, ас! Кажется, ты хочешь предложить мне работу."),
+			'Text', T(349490027919, --[[ModItemUnitDataCompositeDef Hitman Text GreetingAndOffer ChatMessage voice:Hitman]] "Hey, Ace! Looks like you got a job for me."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(588171612533, --[[ModItemUnitDataCompositeDef Hitman Text ConversationRestart ChatMessage voice:Hitman]] "Ты здесь, ас? На чём мы остановились?"),
+			'Text', T(588171612533, --[[ModItemUnitDataCompositeDef Hitman Text ConversationRestart ChatMessage voice:Hitman]] "You with me again, Ace? Where were we?"),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(286657788041, --[[ModItemUnitDataCompositeDef Hitman Text IdleLine ChatMessage voice:Hitman]] "Ты там заснул, ас? Давай уже к делу."),
+			'Text', T(286657788041, --[[ModItemUnitDataCompositeDef Hitman Text IdleLine ChatMessage voice:Hitman]] "Did you fall asleep, Ace? Let's get the ball rolling."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(949447625244, --[[ModItemUnitDataCompositeDef Hitman Text PartingWords ChatMessage voice:Hitman]] "Значит, по рукам, ас. Ты не пожалеешь, что нанял меня."),
+			'Text', T(949447625244, --[[ModItemUnitDataCompositeDef Hitman Text PartingWords ChatMessage voice:Hitman]] "Looks like we got ourselves a contract, Ace. You will not regret having me there."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(830992502289, --[[ModItemUnitDataCompositeDef Hitman Text RehireIntro ChatMessage voice:Hitman]] "Ас, мой контракт того и гляди закончится. Не хочешь застолбить меня на подольше?"),
+			'Text', T(830992502289, --[[ModItemUnitDataCompositeDef Hitman Text RehireIntro ChatMessage voice:Hitman]] "Contract's about to expire, Ace. Let's get this little matter squared away."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(798713629390, --[[ModItemUnitDataCompositeDef Hitman Text RehireOutro ChatMessage voice:Hitman]] "Отлично, ас. Я знал, что тебе нужны первоклассные стрелки."),
+			'Text', T(798713629390, --[[ModItemUnitDataCompositeDef Hitman Text RehireOutro ChatMessage voice:Hitman]] "Good, Ace. I knew you would appreciate a first-class hitman."),
 		}),
 	},
 	StartingSalary = 900,

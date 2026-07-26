@@ -19,19 +19,19 @@ DefineClass.Fidel = {
 	Portrait = "UI/MercsPortraits/Fidel",
 	BigPortrait = "UI/Mercs/Fidel",
 	IsMercenary = true,
-	Name = T(118909675158, --[[ModItemUnitDataCompositeDef Fidel Name]] "Фидель Дахан"),
-	Nick = T(489035873223, --[[ModItemUnitDataCompositeDef Fidel Nick]] "Фидель"),
-	AllCapsNick = T(127950817003, --[[ModItemUnitDataCompositeDef Fidel AllCapsNick]] "ФИДЕЛЬ"),
-	Bio = T(888155597181, --[[ModItemUnitDataCompositeDef Fidel Bio]] "Хотя власти Арулько так и не объявили его в розыск, мало кто сомневается, что именно Фидель взорвал пункт проката видеокассет в Альме после того, как владелец отказался пускать его в заднюю комнату магазинчика. По счастью, - правда, не на взгляд самого Фиделя - обошлось без жертв. Руководство A.I.M. допустило Фиделя к дальнейшей службе, так как специалисты-взрывотехники, равно хорошо владеющие и стрелковым оружием, всегда нарасхват."),
+	Name = T(118909675158, --[[ModItemUnitDataCompositeDef Fidel Name]] "Fidel Dahan"),
+	Nick = T(489035873223, --[[ModItemUnitDataCompositeDef Fidel Nick]] "Fidel"),
+	AllCapsNick = T(127950817003, --[[ModItemUnitDataCompositeDef Fidel AllCapsNick]] "FIDEL"),
+	Bio = T(888155597181, --[[ModItemUnitDataCompositeDef Fidel Bio]] "Although not officially listed as a suspect by Arulco authorities, there is little doubt at A.I.M. that Fidel blew up a video store in Alma after the proprietor refused to allow him into the back room. Thankfully, no one was hurt - a fact Fidel seems to lament - and A.I.M. has cleared him for active duty due to the high demand for his skills with explosives and firearms."),
 	Nationality = "Cuba",
-	Title = T(337961143159, --[[ModItemUnitDataCompositeDef Fidel Title]] "Ходячий Карибский кризис"),
-	Email = T(735301247589, --[[ModItemUnitDataCompositeDef Fidel Email]] "fidel_bomba@aim.com"),
-	snype_nick = T(843991705045, --[[ModItemUnitDataCompositeDef Fidel snype_nick]] "fidel_bomba"),
+	Title = T(337961143159, --[[ModItemUnitDataCompositeDef Fidel Title]] "The Continuing Cuban Crisis"),
+	Email = T(735301247589, --[[ModItemUnitDataCompositeDef Fidel Email]] "fidelmakeboom@aim.com"),
+	snype_nick = T(843991705045, --[[ModItemUnitDataCompositeDef Fidel snype_nick]] "fidelmakeboom"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(601499126033, --[[ModItemUnitDataCompositeDef Fidel Text MercChatRefusal Lines ChatMessage voice:Fidel]] "Мерзкие подростки написали на двери Фиделя плохие слова. Фидель поставил растяжку и ждёт, когда бомба взорвётся. Тогда он прибьёт к двери их оторванные конечности, чтобы другим неповадно было. Так что сейчас Фидель занят. Позже?"),
+					'Text', T(601499126033, --[[ModItemUnitDataCompositeDef Fidel Text MercChatRefusal Lines ChatMessage voice:Fidel]] "Nasty teenagers write bad words on Fidel's door. So, Fidel waits and when booby trap explodes, Fidel must nail the body parts to the door to teach them lesson. So, Fidel is busy now. Maybe later."),
 				}),
 			},
 			'Conditions', {},
@@ -40,7 +40,7 @@ DefineClass.Fidel = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(322149216469, --[[ModItemUnitDataCompositeDef Fidel Text MercChatRefusal Lines ChatMessage voice:Fidel]] "Фиделю скучно. Ты не просишь его убивать врагов. Фидель больше не хочет на тебя работать."),
+					'Text', T(322149216469, --[[ModItemUnitDataCompositeDef Fidel Text MercChatRefusal Lines ChatMessage voice:Fidel]] "Fidel is bored with job. You don't use Fidel to kill enemy. Fidel no more work for you."),
 				}),
 			},
 			'Conditions', {
@@ -51,37 +51,37 @@ DefineClass.Fidel = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(821638510526, --[[ModItemUnitDataCompositeDef Fidel Text Offline ChatMessage voice:Fidel]] "Это машина, которая говорит, как Фидель. Фидель сейчас убивает врагов. Если хочешь нанять Фиделя убивать врагов, свяжись с ним позже. Если враг - это ты, Фидель найдёт тебя и убьёт."),
+			'Text', T(821638510526, --[[ModItemUnitDataCompositeDef Fidel Text Offline ChatMessage voice:Fidel]] "This is machine that talks like Fidel. Fidel is killing enemy now. If you want to hire Fidel to kill enemy, contact later. If you are enemy, Fidel is coming for you."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(400111149290, --[[ModItemUnitDataCompositeDef Fidel Text GreetingAndOffer ChatMessage voice:Fidel]] "Это машина, которая говорит, как Фидель. Ты хочешь нанять Фиделя убивать врагов? Фидель тоже хочет их убивать. Ну что, договорились?"),
+			'Text', T(400111149290, --[[ModItemUnitDataCompositeDef Fidel Text GreetingAndOffer ChatMessage voice:Fidel]] "This is machine that talks like Fidel. You want Fidel to kill enemies? Fidel also want to kill enemies. What is job?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(781594867566, --[[ModItemUnitDataCompositeDef Fidel Text ConversationRestart ChatMessage voice:Fidel]] "Тебе пришлось отвлечься, чтобы убивать врагов? Фидель понимает. Фидель тоже так делает."),
+			'Text', T(781594867566, --[[ModItemUnitDataCompositeDef Fidel Text ConversationRestart ChatMessage voice:Fidel]] "You had urge to kill enemy instead of talking? No worries. Fidel has same urges."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(101738114840, --[[ModItemUnitDataCompositeDef Fidel Text IdleLine ChatMessage voice:Fidel]] "ГОВОРИ, МАШИНА! ГОВОРИ! ИЛИ ФИДЕЛЬ ТЕБЯ ВЗОРВЁТ!"),
+			'Text', T(101738114840, --[[ModItemUnitDataCompositeDef Fidel Text IdleLine ChatMessage voice:Fidel]] "TALK, MACHINE! TALK! FIDEL WILL BLOW YOU UP! "),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(783316549514, --[[ModItemUnitDataCompositeDef Fidel Text PartingWords ChatMessage voice:Fidel]] "Надеюсь, там будет много врагов. Фидель заскучал."),
+			'Text', T(783316549514, --[[ModItemUnitDataCompositeDef Fidel Text PartingWords ChatMessage voice:Fidel]] "I hope there is a lot of enemy. Fidel is bored."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(337330388680, --[[ModItemUnitDataCompositeDef Fidel Text RehireIntro ChatMessage voice:Fidel]] "Машина говорит, контракт Фиделя скоро кончится. У тебя ещё много врагов. Заплати Фиделю, чтобы он их убил."),
+			'Text', T(337330388680, --[[ModItemUnitDataCompositeDef Fidel Text RehireIntro ChatMessage voice:Fidel]] "Machine says Fidel contract expires. There is still more enemy. Hire Fidel to kill enemy."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(100497682392, --[[ModItemUnitDataCompositeDef Fidel Text RehireOutro ChatMessage voice:Fidel]] "Хорошо. Иду убивать."),
+			'Text', T(100497682392, --[[ModItemUnitDataCompositeDef Fidel Text RehireOutro ChatMessage voice:Fidel]] "Good. Now, we go kill."),
 		}),
 	},
 	MedicalDeposit = "none",

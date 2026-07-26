@@ -18,19 +18,19 @@ DefineClass.Nails = {
 	Portrait = "UI/MercsPortraits/Nails",
 	BigPortrait = "UI/Mercs/Nails",
 	IsMercenary = true,
-	Name = T(837593519203, --[[ModItemUnitDataCompositeDef Nails Name]] "Эдгар Сморф «Гвоздь»"),
-	Nick = T(516388631352, --[[ModItemUnitDataCompositeDef Nails Nick]] "Гвоздь"),
-	AllCapsNick = T(597544800039, --[[ModItemUnitDataCompositeDef Nails AllCapsNick]] "ГВОЗДЬ"),
-	Bio = T(622487091001, --[[ModItemUnitDataCompositeDef Nails Bio]] "Основав первую в истории Арулько банду байкеров, Гвоздь вскоре с отвращением покинул её, поскольку так и не смог убедить товарищей сделать ограбления винных магазинов и поджоги автозаправок (тех, что бодяжат бензин, разумеется) двумя столпами их совместной деятельности. Сейчас Гвоздь рассматривает предложения нанимателей, которым пригодится его навык обращения со взрывчаткой и механизмами и крутой нрав. Он готов лететь куда угодно и стрелять по кому угодно при условии, что от него не будут требовать расстаться с косухой (во многих местах уже продырявленной и изрядно попахивающей)."),
+	Name = T(837593519203, --[[ModItemUnitDataCompositeDef Nails Name]] "Edgar \"Nails\" Smorth"),
+	Nick = T(516388631352, --[[ModItemUnitDataCompositeDef Nails Nick]] "Nails"),
+	AllCapsNick = T(597544800039, --[[ModItemUnitDataCompositeDef Nails AllCapsNick]] "NAILS"),
+	Bio = T(622487091001, --[[ModItemUnitDataCompositeDef Nails Bio]] "Soon after starting Arulco's first biker gang, Nails resigned in disgust when he couldn't convince the other members that robbing liquor stores and blowing up gas stations (just the lame ones, of course) should be central pillars of their charter. Nails is ready to make his talents with explosives, tools and badassery available to the highest bidder. He's willing to go anywhere and shoot anyone, just don't ever ask him to take off his leather jacket, even though it has several bullet holes in it and is starting to smell like belly button lint."),
 	Nationality = "USA",
-	Title = T(494228139073, --[[ModItemUnitDataCompositeDef Nails Title]] "Не трожь косуху"),
-	Email = T(150606437691, --[[ModItemUnitDataCompositeDef Nails Email]] "kosuhu_ne_otdam@aim.com"),
-	snype_nick = T(309985618460, --[[ModItemUnitDataCompositeDef Nails snype_nick]] "kosuhu_ne_otdam"),
+	Title = T(494228139073, --[[ModItemUnitDataCompositeDef Nails Title]] "Don't Touch the Vest"),
+	Email = T(150606437691, --[[ModItemUnitDataCompositeDef Nails Email]] "hellbent4lthr@aim.com"),
+	snype_nick = T(309985618460, --[[ModItemUnitDataCompositeDef Nails snype_nick]] "hellbent4lthr"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(766632300489, --[[ModItemUnitDataCompositeDef Nails Text MercChatRefusal Lines ChatMessage voice:Nails]] "В банке небось с тобой уже даже не здороваются! Наруби капусты, а потом уже ко мне подкатывай, лады?"),
+					'Text', T(766632300489, --[[ModItemUnitDataCompositeDef Nails Text MercChatRefusal Lines ChatMessage voice:Nails]] "The bank teller won't even give ya the time of day! How about ya get some cash first, then try to do business?"),
 				}),
 			},
 			'Conditions', {
@@ -40,7 +40,7 @@ DefineClass.Nails = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(456685093723, --[[ModItemUnitDataCompositeDef Nails Text MercChatRefusal Lines ChatMessage voice:Nails]] "Извини, бродяга, у меня скоро байк-ралли. Может, в другой раз."),
+					'Text', T(456685093723, --[[ModItemUnitDataCompositeDef Nails Text MercChatRefusal Lines ChatMessage voice:Nails]] "Sorry, Scooter. I got a rally soon. Maybe some other time."),
 				}),
 			},
 			'Conditions', {},
@@ -51,7 +51,7 @@ DefineClass.Nails = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(321697258530, --[[ModItemUnitDataCompositeDef Nails Text MercChatHaggle Lines ChatMessage voice:Nails]] "Вернусь я с задания или нет - это бабушка надвое сказала. Парень я рисковый, но не забесплатно, бродяга."),
+					'Text', T(321697258530, --[[ModItemUnitDataCompositeDef Nails Text MercChatHaggle Lines ChatMessage voice:Nails]] "I could flip a coin as to whether I come back alive. I'm OK with a gamble but at a better price, Scooter."),
 				}),
 			},
 			'Conditions', {
@@ -66,7 +66,7 @@ DefineClass.Nails = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(429290818592, --[[ModItemUnitDataCompositeDef Nails Text MercChatHaggle Lines ChatMessage voice:Nails]] "Когда товар крутеет, цены растут. Меня уже тянет на вольные дороги. Хочешь, чтоб я остался, - повышай ставку, бродяга."),
+					'Text', T(429290818592, --[[ModItemUnitDataCompositeDef Nails Text MercChatHaggle Lines ChatMessage voice:Nails]] "When the tough want to get going, the price goes up. I'm feelin' the need for the open road. You want me to stay, then you gotta pony up some extra dough, Scooter."),
 				}),
 			},
 			'Conditions', {},
@@ -77,7 +77,7 @@ DefineClass.Nails = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(857732043501, --[[ModItemUnitDataCompositeDef Nails Text MercChatMitigation Lines ChatMessage voice:Nails]] "Эй, если Лиска с тобой - и я с тобой. На это можешь смело ставить."),
+					'Text', T(857732043501, --[[ModItemUnitDataCompositeDef Nails Text MercChatMitigation Lines ChatMessage voice:Nails]] "Hey, the Fox is with you, I'm with you. You can bank on that."),
 				}),
 			},
 			'Conditions', {
@@ -93,10 +93,10 @@ DefineClass.Nails = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(632674475914, --[[ModItemUnitDataCompositeDef Nails Text MercChatBranch Lines ChatMessage voice:Nails]] "Может, наймешь Лиску? Она мастер поднимать... э... боевой дух. Ну, ты понял, да? И в деле тоже о-о-очень хороша. Золотые руки!"),
+					'Text', T(632674475914, --[[ModItemUnitDataCompositeDef Nails Text MercChatBranch Lines ChatMessage voice:Nails]] "How about ya hire the Fox? It'll be good for, uh, morale - know what I'm sayin'? She's handy on a mission too. She's reeeeeeal good with her hands."),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(818028279133, --[[ModItemUnitDataCompositeDef Nails Text MercChatBranch Lines ChatMessage voice:Nails]] "Ладно. Мне ещё надо одно дело сделать."),
+					'Text', T(818028279133, --[[ModItemUnitDataCompositeDef Nails Text MercChatBranch Lines ChatMessage voice:Nails]] "Whatever, I gotta split before I reach ya. "),
 				}),
 			},
 			'Conditions', {
@@ -108,37 +108,37 @@ DefineClass.Nails = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(927826728791, --[[ModItemUnitDataCompositeDef Nails Text Offline ChatMessage voice:Nails]] "Это Гвоздь. Я напишу, когда смогу. Сейчас дел по горло."),
+			'Text', T(927826728791, --[[ModItemUnitDataCompositeDef Nails Text Offline ChatMessage voice:Nails]] "This is Nails. I'll get to you when I get to you. I'm busy doing stuff right now."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(487748725487, --[[ModItemUnitDataCompositeDef Nails Text GreetingAndOffer ChatMessage voice:Nails]] "Здорово, бродяга. Ищешь кого-то, кто может подрулить, сделать дело и вовремя свалить, да?"),
+			'Text', T(487748725487, --[[ModItemUnitDataCompositeDef Nails Text GreetingAndOffer ChatMessage voice:Nails]] "Hey Scooter, need someone to ride in, get the job done, and ride out, do ya?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(635363764783, --[[ModItemUnitDataCompositeDef Nails Text ConversationRestart ChatMessage voice:Nails]] "Что, бродяга, досмотрел порнуху? Тогда вернёмся к нашему делу."),
+			'Text', T(635363764783, --[[ModItemUnitDataCompositeDef Nails Text ConversationRestart ChatMessage voice:Nails]] "Back from looking at porn, are ya Scooter? Let's get back to business."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(315553885416, --[[ModItemUnitDataCompositeDef Nails Text IdleLine ChatMessage voice:Nails]] "Эй, бродяга! На тёлок пялиться будешь в своё свободное время. У меня ещё дел до хрена."),
+			'Text', T(315553885416, --[[ModItemUnitDataCompositeDef Nails Text IdleLine ChatMessage voice:Nails]] "Scooter! Stop watching celebrity sex videos on my time. I got shit to do."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(490165429885, --[[ModItemUnitDataCompositeDef Nails Text PartingWords ChatMessage voice:Nails]] "Замётано. Да, и ещё одно: моя косуха всегда при мне. Я её не снимаю. Никогда. Так что ДАЖЕ. НЕ. ПРОСИ."),
+			'Text', T(490165429885, --[[ModItemUnitDataCompositeDef Nails Text PartingWords ChatMessage voice:Nails]] "We got a deal. Just one thing you should know. My vest goes with me everywhere. I never take it off. Ever. And don't... EVER... ASK."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(223858526991, --[[ModItemUnitDataCompositeDef Nails Text RehireIntro ChatMessage voice:Nails]] "Контракт к концу подходит, бродяга. Что тебе там бабка нагадала?"),
+			'Text', T(223858526991, --[[ModItemUnitDataCompositeDef Nails Text RehireIntro ChatMessage voice:Nails]] "We're coming up on the end of this contract, Scooter. What's the crystal ball telling ya?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(418152484689, --[[ModItemUnitDataCompositeDef Nails Text RehireOutro ChatMessage voice:Nails]] "Замётано. Понавожу тут шухеру ещё немного."),
+			'Text', T(418152484689, --[[ModItemUnitDataCompositeDef Nails Text RehireOutro ChatMessage voice:Nails]] "We got a deal. Looks like I'll be getting in more trouble around these parts."),
 		}),
 	},
 	MedicalDeposit = "none",

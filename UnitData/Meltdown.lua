@@ -19,19 +19,19 @@ DefineClass.Meltdown = {
 	Portrait = "UI/MercsPortraits/Meltdown",
 	BigPortrait = "UI/Mercs/Meltdown",
 	IsMercenary = true,
-	Name = T(627005316845, --[[ModItemUnitDataCompositeDef Meltdown Name]] "Норма Джессоп «Лава»"),
-	Nick = T(801416212893, --[[ModItemUnitDataCompositeDef Meltdown Nick]] "Лава"),
-	AllCapsNick = T(518123328833, --[[ModItemUnitDataCompositeDef Meltdown AllCapsNick]] "ЛАВА"),
-	Bio = T(973893751536, --[[ModItemUnitDataCompositeDef Meltdown Bio]] "Норма Джессоп - женщина, шутки с которой плохи. С одинаковой готовностью поливая противников матом и свинцом, Лава обожает, когда от врага остаются лишь брызги крови и висящие по кустам кишки. Хотя она в совершенстве владеет стрельбой из пистолетов по-македонски, больше всего ей по нраву тяжёлые пушки. Как она сама любит выражаться, «Не было случайных пострадавших - деньги на ветер». В местах, недавно посещённых Нормой, страховые компании отказывают пострадавшим в выплатах."),
+	Name = T(627005316845, --[[ModItemUnitDataCompositeDef Meltdown Name]] "Norma \"Meltdown\" Jessop"),
+	Nick = T(801416212893, --[[ModItemUnitDataCompositeDef Meltdown Nick]] "Meltdown"),
+	AllCapsNick = T(518123328833, --[[ModItemUnitDataCompositeDef Meltdown AllCapsNick]] "MELTDOWN"),
+	Bio = T(973893751536, --[[ModItemUnitDataCompositeDef Meltdown Bio]] "As fierce as she is profane, Norma Jessop is a woman not to be taken lightly. Always ready and eager for a fight, Meltdown revels in killing her enemies in the bloodiest and most explosive way imaginable. Although ambidextrous and often seen with a pistol in each hand, her preference is for heavy weapons. As she likes to say, 'if there isn't at least a little collateral damage, you didn't do it right'. Property insurers refuse to pay out any claims in locations Norma recently visited."),
 	Nationality = "USA",
-	Title = T(771770749853, --[[ModItemUnitDataCompositeDef Meltdown Title]] "Не будите во мне зверя"),
-	Email = T(337960420959, --[[ModItemUnitDataCompositeDef Meltdown Email]] "lava69@aim.com"),
-	snype_nick = T(672285437236, --[[ModItemUnitDataCompositeDef Meltdown snype_nick]] "lava69"),
+	Title = T(771770749853, --[[ModItemUnitDataCompositeDef Meltdown Title]] "Goddamned Role Model"),
+	Email = T(337960420959, --[[ModItemUnitDataCompositeDef Meltdown Email]] "trailerqueen69@aim.com"),
+	snype_nick = T(672285437236, --[[ModItemUnitDataCompositeDef Meltdown snype_nick]] "trailerqueen69"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(585931569314, --[[ModItemUnitDataCompositeDef Meltdown Text MercChatRefusal Lines ChatMessage voice:Meltdown]] "Да блин! Чёртовы псы опять грызутся... Нет, стоп... Твою ж! Всё, я пошла. Соседского ушлёпка опять в больницу везти надо. НЕ ТРОЖЬТЕ МОИХ СОБАК! Для вас, дебилов, табличку повесила."),
+					'Text', T(585931569314, --[[ModItemUnitDataCompositeDef Meltdown Text MercChatRefusal Lines ChatMessage voice:Meltdown]] "Aw damn! Goddamn dogs are fightin again... Hang on... Shit. Gotta go. Gotta take the neighbor's kid to the hospital again. MY FRIGGIN DOGS AIN'T FOR PETTIN! Says so right there on the sign."),
 				}),
 			},
 			'Conditions', {},
@@ -40,7 +40,7 @@ DefineClass.Meltdown = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(461192928382, --[[ModItemUnitDataCompositeDef Meltdown Text MercChatRefusal Lines ChatMessage voice:Meltdown]] "Закатай губу, мальчик! У тебя репутация гробовщика. Если мне жить надоест, я лучше со своим бывшим съедусь!"),
+					'Text', T(461192928382, --[[ModItemUnitDataCompositeDef Meltdown Text MercChatRefusal Lines ChatMessage voice:Meltdown]] "No way, pal! You got a bad rep for gettin mercs killed. If I wanted to do something suicidal, I'd move back in with my ex!"),
 				}),
 			},
 			'Conditions', {
@@ -54,7 +54,7 @@ DefineClass.Meltdown = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(569509023059, --[[ModItemUnitDataCompositeDef Meltdown Text MercChatHaggle Lines ChatMessage voice:Meltdown]] "Слышь, ты? Я думала, мне хоть пострелять в кого дадут. А то у меня сегодня из движухи - только то, что я на толчке полдня просидела. Я сюда не штаны протирать и глазки строить приехала. Гони ещё бабла, или я отсюда сваливаю."),
+					'Text', T(569509023059, --[[ModItemUnitDataCompositeDef Meltdown Text MercChatHaggle Lines ChatMessage voice:Meltdown]] "Hey! I thought I was gonna see some action. Most danger I've seen so far was the tacos I had for lunch. Thought I'd never get off the toilet. I got better things to do than hang around and look pretty for ya. Kick in some extra money or I'll start these boots a-walkin."),
 				}),
 			},
 			'Conditions', {
@@ -66,7 +66,7 @@ DefineClass.Meltdown = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(108651033026, --[[ModItemUnitDataCompositeDef Meltdown Text MercChatMitigation Lines ChatMessage voice:Meltdown]] "Я уже хотела послать тебя в жопу, но увидела, на какой куче бабла ты сидишь. Это я люблю. Надеюсь, это значит, что ты прикупишь мне новых цацек. Уломал, короче."),
+					'Text', T(108651033026, --[[ModItemUnitDataCompositeDef Meltdown Text MercChatMitigation Lines ChatMessage voice:Meltdown]] "I was about to tell you where to stick it, but I see you're sitting on a fat wad of dough. Mama like. I hope that means you'll buy me some nice toys to play with. All right, I'm in."),
 				}),
 			},
 			'Conditions', {
@@ -79,37 +79,37 @@ DefineClass.Meltdown = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(853843382687, --[[ModItemUnitDataCompositeDef Meltdown Text Offline ChatMessage voice:Meltdown]] "Это Лава. Кто-то хочет предложить мне работу? Тогда пусть оставит сообщение. Или катится к чёрту."),
+			'Text', T(853843382687, --[[ModItemUnitDataCompositeDef Meltdown Text Offline ChatMessage voice:Meltdown]] "This here's Meltdown's account. You want to offer me a job? Leave a message. Otherwise, piss off."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(359198286308, --[[ModItemUnitDataCompositeDef Meltdown Text GreetingAndOffer ChatMessage voice:Meltdown]] "Лава слушает. Это насчёт работы?"),
+			'Text', T(359198286308, --[[ModItemUnitDataCompositeDef Meltdown Text GreetingAndOffer ChatMessage voice:Meltdown]] "Meltdown here. This about a job?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(805237372457, --[[ModItemUnitDataCompositeDef Meltdown Text ConversationRestart ChatMessage voice:Meltdown]] "Опять ты? Какого хрена тебе надо?"),
+			'Text', T(805237372457, --[[ModItemUnitDataCompositeDef Meltdown Text ConversationRestart ChatMessage voice:Meltdown]] "You again? The hell you want?"),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(533736630214, --[[ModItemUnitDataCompositeDef Meltdown Text IdleLine ChatMessage voice:Meltdown]] "Эй, ты там вообще? На порносайты, что ли, отвлекся? Смотри, не вздумай пробовать ту увеличивающую хрень на арахисовом масле, как мой бывший."),
+			'Text', T(533736630214, --[[ModItemUnitDataCompositeDef Meltdown Text IdleLine ChatMessage voice:Meltdown]] "Hey, you still there? You lookin at porn or something? You better not be doing that thing with peanut butter my ex used to do when he was on the internet."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(221657714144, --[[ModItemUnitDataCompositeDef Meltdown Text PartingWords ChatMessage voice:Meltdown]] "Хорошо. Замётано. Готовься: надвигается ураган Норма."),
+			'Text', T(221657714144, --[[ModItemUnitDataCompositeDef Meltdown Text PartingWords ChatMessage voice:Meltdown]] "All right. Deal. Get ready. Hurricane Norma's a-comin."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(933208110208, --[[ModItemUnitDataCompositeDef Meltdown Text RehireIntro ChatMessage voice:Meltdown]] "Слышь, босс. Контрактик-то наш того и гляди протухнет. Тебе надо, чтоб я и дальше убивала врагов, или где?"),
+			'Text', T(933208110208, --[[ModItemUnitDataCompositeDef Meltdown Text RehireIntro ChatMessage voice:Meltdown]] "Hey there, boss. Our little contract is almost up. You want me to keep killing folk for you or what?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(450120703239, --[[ModItemUnitDataCompositeDef Meltdown Text RehireOutro ChatMessage voice:Meltdown]] "Сойдёт. Потусуюсь тут ещё. С тебя - цели, с меня - трупы."),
+			'Text', T(450120703239, --[[ModItemUnitDataCompositeDef Meltdown Text RehireOutro ChatMessage voice:Meltdown]] "Good enough. I'll stick around. You keep giving me targets and I'll keep giving you bodies."),
 		}),
 	},
 	MedicalDeposit = "large",

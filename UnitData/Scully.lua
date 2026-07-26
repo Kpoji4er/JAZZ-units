@@ -19,19 +19,19 @@ DefineClass.Scully = {
 	Portrait = "UI/MercsPortraits/Scully",
 	BigPortrait = "UI/Mercs/Scully",
 	IsMercenary = true,
-	Name = T(357879375429, --[[ModItemUnitDataCompositeDef Scully Name]] "Роберт Джеймс Салливан"),
-	Nick = T(639079993068, --[[ModItemUnitDataCompositeDef Scully Nick]] "Лысый"),
-	AllCapsNick = T(250215016589, --[[ModItemUnitDataCompositeDef Scully AllCapsNick]] "ЛЫСЫЙ"),
-	Bio = T(953273652898, --[[ModItemUnitDataCompositeDef Scully Bio]] "Хотя Салливан и родился в Англии, годы, проведённые им за катанием по волнам у берегов Австралии, сделали его неотличимым от урождённых жителей этой страны. Многие бойцы считают Лысого едва ли не лучшим наёмником A.I.M. - наверняка отчасти благодаря его врождённому дружелюбию. Как бы там ни было, трудно найти такое задание, с которым он не справился бы на ура. Салливан превосходно работает холодным оружием, но уверенно обращается и с огнестрельным и взрывчаткой, а также инструментами и аптечкой."),
+	Name = T(357879375429, --[[ModItemUnitDataCompositeDef Scully Name]] "Robert James Sullivan"),
+	Nick = T(639079993068, --[[ModItemUnitDataCompositeDef Scully Nick]] "Scully"),
+	AllCapsNick = T(250215016589, --[[ModItemUnitDataCompositeDef Scully AllCapsNick]] "SCULLY"),
+	Bio = T(953273652898, --[[ModItemUnitDataCompositeDef Scully Bio]] "Although he hails from the British Isles, considerable time spent catching waves down under has made Scully all but indistinguishable from an Aussie. Many mercs consider him to be perhaps the best soldier in A.I.M.'s ranks, although his friendly disposition no doubt contributes to his popularity. Regardless, there is very little this man can't do and do well. He excels at knife fighting but can reliably work with firearms and explosives as well as toolboxes and med kits."),
 	Nationality = "England",
-	Title = T(167544469426, --[[ModItemUnitDataCompositeDef Scully Title]] "Серийный холостяк"),
-	Email = T(681435230668, --[[ModItemUnitDataCompositeDef Scully Email]] "surfer@aim.com"),
-	snype_nick = T(160407166740, --[[ModItemUnitDataCompositeDef Scully snype_nick]] "surfer"),
+	Title = T(167544469426, --[[ModItemUnitDataCompositeDef Scully Title]] "Unchained Virility"),
+	Email = T(681435230668, --[[ModItemUnitDataCompositeDef Scully Email]] "surfercad@aim.com"),
+	snype_nick = T(160407166740, --[[ModItemUnitDataCompositeDef Scully snype_nick]] "surfercad"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(745877789753, --[[ModItemUnitDataCompositeDef Scully Text MercChatRefusal Lines ChatMessage voice:Scully]] "Никаких шансов, приятель. Я бы с удовольствием, но надо ещё на жизнь зарабатывать - а у тебя, похоже, с деньгами туго."),
+					'Text', T(745877789753, --[[ModItemUnitDataCompositeDef Scully Text MercChatRefusal Lines ChatMessage voice:Scully]] "Tough luck, mate. Would have liked to help you out, but I got to get paid and you don't look like you will be able to pay for long. "),
 				}),
 			},
 			'Conditions', {
@@ -43,7 +43,7 @@ DefineClass.Scully = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(818027287856, --[[ModItemUnitDataCompositeDef Scully Text MercChatHaggle Lines ChatMessage voice:Scully]] "Приятель, ты не представляешь, сколько у меня бывших жен. И все хотят алименты. Ты уж подкинь денег, чтоб мне было чем с ними расплачиваться."),
+					'Text', T(818027287856, --[[ModItemUnitDataCompositeDef Scully Text MercChatHaggle Lines ChatMessage voice:Scully]] "These ex-wives, mate. They want the shirt off my back. I'll need something extra to be able to pay them all. "),
 				}),
 			},
 			'Conditions', {},
@@ -53,7 +53,7 @@ DefineClass.Scully = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(912379028022, --[[ModItemUnitDataCompositeDef Scully Text MercChatHaggle Lines ChatMessage voice:Scully]] "Мне нужно собрать ребёнка в школу. Или в колледж. Или в садик. Я в этих детях и сам уже путаюсь. Короче, нужны ещё деньги. Выручишь меня, а?"),
+					'Text', T(912379028022, --[[ModItemUnitDataCompositeDef Scully Text MercChatHaggle Lines ChatMessage voice:Scully]] "One of my kids needs something for school. Or college. Or kindergarten. Hard to keep track. Anyway, I need you to spare some more green. Right, mate?"),
 				}),
 			},
 			'Conditions', {},
@@ -61,37 +61,37 @@ DefineClass.Scully = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(856479969152, --[[ModItemUnitDataCompositeDef Scully Text Offline ChatMessage voice:Scully]] "Это Роберт Джеймс Салливан. Меня нет дома, приятель. Я дам знать, когда вернусь, - если только это не по поводу алиментов. Если да - катитесь к чёрту."),
+			'Text', T(856479969152, --[[ModItemUnitDataCompositeDef Scully Text Offline ChatMessage voice:Scully]] "This is Robert James Sullivan. I'm out right now, mate. I'll make sure to let you know when I'm back, unless you are one of my exes. In which case, piss off."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(216691834397, --[[ModItemUnitDataCompositeDef Scully Text GreetingAndOffer ChatMessage voice:Scully]] "Здорово, приятель. Хочешь предложить мне работу?"),
+			'Text', T(216691834397, --[[ModItemUnitDataCompositeDef Scully Text GreetingAndOffer ChatMessage voice:Scully]] "Hey, mate. Got some business for me?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(315006940630, --[[ModItemUnitDataCompositeDef Scully Text ConversationRestart ChatMessage voice:Scully]] "Здорово, приятель. Рад тебя снова слышать."),
+			'Text', T(315006940630, --[[ModItemUnitDataCompositeDef Scully Text ConversationRestart ChatMessage voice:Scully]] "Hey, mate. Good to hear from you again."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(724445502375, --[[ModItemUnitDataCompositeDef Scully Text IdleLine ChatMessage voice:Scully]] "Время - деньги, приятель, а мне надо платить алименты. Так что давай ускоримся."),
+			'Text', T(724445502375, --[[ModItemUnitDataCompositeDef Scully Text IdleLine ChatMessage voice:Scully]] "Time is money, mate. And I need it for paying alimony. Let's speed this up."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(460394638505, --[[ModItemUnitDataCompositeDef Scully Text PartingWords ChatMessage voice:Scully]] "Отлично! Мне уже порядком надоело здесь прохлаждаться."),
+			'Text', T(460394638505, --[[ModItemUnitDataCompositeDef Scully Text PartingWords ChatMessage voice:Scully]] "Great! I can definitely use some time away from here."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(491402142223, --[[ModItemUnitDataCompositeDef Scully Text RehireIntro ChatMessage voice:Scully]] "Часики тикают, приятель. Скоро истекает срок контракта. Мы работаем дальше или что?"),
+			'Text', T(491402142223, --[[ModItemUnitDataCompositeDef Scully Text RehireIntro ChatMessage voice:Scully]] "Clock's running, mate. This gig's coming to a close. Are we renewing or what?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(376480401551, --[[ModItemUnitDataCompositeDef Scully Text RehireOutro ChatMessage voice:Scully]] "Отлично, приятель. За дело."),
+			'Text', T(376480401551, --[[ModItemUnitDataCompositeDef Scully Text RehireOutro ChatMessage voice:Scully]] "All right, mate. It's back to business."),
 		}),
 	},
 	Haggling = "low",

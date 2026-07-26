@@ -18,19 +18,19 @@ DefineClass.DrQ = {
 	Portrait = "UI/MercsPortraits/DrQ",
 	BigPortrait = "UI/Mercs/DrQ",
 	IsMercenary = true,
-	Name = T(231173544601, --[[ModItemUnitDataCompositeDef DrQ Name]] "Доктор Кью Хуаонг"),
-	Nick = T(293945362464, --[[ModItemUnitDataCompositeDef DrQ Nick]] "Кью"),
-	AllCapsNick = T(562036496158, --[[ModItemUnitDataCompositeDef DrQ AllCapsNick]] "КЬЮ"),
-	Bio = T(527433658116, --[[ModItemUnitDataCompositeDef DrQ Bio]] "Рассказывают, что однажды, приехав в некую страну на семинар по иглоукалыванию, доктор Кью умудрился не только прочитать там лекцию, но и тем же вечером применить свои навыки ночных операций вкупе с познаниями в боевых искусствах. Пробравшись в расположенный неподалёку лагерь местного наркобарона, он нейтрализовал охранников, стороживших захваченный груз медикаментов, и доставил его в ближайшую больницу. Поговаривают даже, что он отказался брать плату за свои услуги, хотя сам доктор это отрицает."),
+	Name = T(231173544601, --[[ModItemUnitDataCompositeDef DrQ Name]] "Dr. Q. Huaong"),
+	Nick = T(293945362464, --[[ModItemUnitDataCompositeDef DrQ Nick]] "Dr. Q"),
+	AllCapsNick = T(562036496158, --[[ModItemUnitDataCompositeDef DrQ AllCapsNick]] "DR. Q"),
+	Bio = T(527433658116, --[[ModItemUnitDataCompositeDef DrQ Bio]] "While attending a seminar on acupuncture where he served as guest lecturer, Dr. Q had the opportunity to use his skills in night operations and martial arts to infiltrate the compound of a nearby drug lord to liberate a hoard of medical supplies and deliver them to a local hospital. It is rumored he waived his usual fee for such services, but Huaong denies it."),
 	Nationality = "China",
-	Title = T(727721975643, --[[ModItemUnitDataCompositeDef DrQ Title]] "Эксперт по тактическому иглоукалыванию"),
-	Email = T(970559294874, --[[ModItemUnitDataCompositeDef DrQ Email]] "doctor_q@aim.com"),
-	snype_nick = T(893736356942, --[[ModItemUnitDataCompositeDef DrQ snype_nick]] "doctor_q"),
+	Title = T(727721975643, --[[ModItemUnitDataCompositeDef DrQ Title]] "Expert in Aggressive Acupuncture"),
+	Email = T(970559294874, --[[ModItemUnitDataCompositeDef DrQ Email]] "sage_q@aim.com"),
+	snype_nick = T(893736356942, --[[ModItemUnitDataCompositeDef DrQ snype_nick]] "sage_q"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(614053168152, --[[ModItemUnitDataCompositeDef DrQ Text MercChatRefusal Lines ChatMessage voice:DrQ]] "Очень сожалею, но вынужден отказаться. Я участвую в исследовании новых методов лечения. Возможно, нам ещё предначертано встретиться вновь."),
+					'Text', T(614053168152, --[[ModItemUnitDataCompositeDef DrQ Text MercChatRefusal Lines ChatMessage voice:DrQ]] "I must sorrowfully decline. I am participating in the review of a new treatment. Perhaps our paths are still destined to meet somewhere in the future."),
 				}),
 			},
 			'Conditions', {},
@@ -39,7 +39,7 @@ DefineClass.DrQ = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(767241591939, --[[ModItemUnitDataCompositeDef DrQ Text MercChatRefusal Lines ChatMessage voice:DrQ]] "Я не могу принять ваше предложение. Мне кажется, что вы с пренебрежением относитесь к жизням своих солдат."),
+					'Text', T(767241591939, --[[ModItemUnitDataCompositeDef DrQ Text MercChatRefusal Lines ChatMessage voice:DrQ]] "I cannot accept. I believe you are reckless with the lives of your soldiers."),
 				}),
 			},
 			'Conditions', {
@@ -51,7 +51,7 @@ DefineClass.DrQ = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(656350600015, --[[ModItemUnitDataCompositeDef DrQ Text MercChatRefusal Lines ChatMessage voice:DrQ]] "Я не хотел бы ставить вас в неловкое положение, но состояние вашего банковского счёта намекает, что вы явно не успели принять во внимание некоторые финансовые соображения. Я на такое не согласен."),
+					'Text', T(656350600015, --[[ModItemUnitDataCompositeDef DrQ Text MercChatRefusal Lines ChatMessage voice:DrQ]] "I don't wish to embarrass you, but your bank balance tells me there are financial considerations you have not fully taken into account. I cannot accept."),
 				}),
 			},
 			'Conditions', {
@@ -63,7 +63,7 @@ DefineClass.DrQ = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(144557312468, --[[ModItemUnitDataCompositeDef DrQ Text MercChatMitigation Lines ChatMessage voice:DrQ]] "Некоторые из ваших методов вызывают у меня большие сомнения. Несмотря на это, я готов положиться на суждение Виктории Уотерс, которой всегда доверял. Я согласен принять ваши условия."),
+					'Text', T(144557312468, --[[ModItemUnitDataCompositeDef DrQ Text MercChatMitigation Lines ChatMessage voice:DrQ]] "I question some of your decisions. Nevertheless, I will defer to the judgement of Victoria Waters, whom I have learned to trust. I agree to the arrangement."),
 				}),
 			},
 			'Conditions', {
@@ -79,10 +79,10 @@ DefineClass.DrQ = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(275961281267, --[[ModItemUnitDataCompositeDef DrQ Text MercChatBranch Lines ChatMessage voice:DrQ]] "Спешу сообщить, что присутствие в команде Виктории Уотерс, также известной как Вики, принесёт обоюдную пользу и вам, и мне."),
+					'Text', T(275961281267, --[[ModItemUnitDataCompositeDef DrQ Text MercChatBranch Lines ChatMessage voice:DrQ]] "It is my wish to inform you that hiring Victoria Waters, whom people call Vicki, will be most beneficial to our mutual endeavors."),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(882968834068, --[[ModItemUnitDataCompositeDef DrQ Text MercChatBranch Lines ChatMessage voice:DrQ]] "Раз уж мы достигли согласия, я пойду собирать вещи. Спасибо."),
+					'Text', T(882968834068, --[[ModItemUnitDataCompositeDef DrQ Text MercChatBranch Lines ChatMessage voice:DrQ]] "Now that we have reached this agreement, I must prepare to depart. Thank you."),
 				}),
 			},
 			'Conditions', {
@@ -94,37 +94,37 @@ DefineClass.DrQ = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(959106516354, --[[ModItemUnitDataCompositeDef DrQ Text Offline ChatMessage voice:DrQ]] "Это доктор Кью Хуаонг. В данный момент я занят. Я извещу вас, когда вернусь, - или попробуйте ещё раз сами."),
+			'Text', T(959106516354, --[[ModItemUnitDataCompositeDef DrQ Text Offline ChatMessage voice:DrQ]] "This is Dr. Q. Huaong. I am otherwise employed right now. I will notify you of my return or you may try me again later."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(342206637305, --[[ModItemUnitDataCompositeDef DrQ Text GreetingAndOffer ChatMessage voice:DrQ]] "Доктор Кью Хуаонг. Говорите."),
+			'Text', T(342206637305, --[[ModItemUnitDataCompositeDef DrQ Text GreetingAndOffer ChatMessage voice:DrQ]] "This is Dr. Q. Huaong. Speak."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(958782603918, --[[ModItemUnitDataCompositeDef DrQ Text ConversationRestart ChatMessage voice:DrQ]] "Давайте очистим наши сознания от ненужного шума и попытаемся вновь достичь взаимовыгодного соглашения."),
+			'Text', T(958782603918, --[[ModItemUnitDataCompositeDef DrQ Text ConversationRestart ChatMessage voice:DrQ]] "Let us empty our minds from the clutter and attempt to reach a mutually beneficial arrangement again."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(476696721288, --[[ModItemUnitDataCompositeDef DrQ Text IdleLine ChatMessage voice:DrQ]] "Похоже, что торопливость новых технологий повлияла и на меня. Я с нетерпением жду от вас новых слов."),
+			'Text', T(476696721288, --[[ModItemUnitDataCompositeDef DrQ Text IdleLine ChatMessage voice:DrQ]] "I seem to be afflicted by the impatience of technology. I find myself awaiting more words from you."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(835003965086, --[[ModItemUnitDataCompositeDef DrQ Text PartingWords ChatMessage voice:DrQ]] "Такая форма соглашения будет полезна нам обоим. Я согласен на ваши условия."),
+			'Text', T(835003965086, --[[ModItemUnitDataCompositeDef DrQ Text PartingWords ChatMessage voice:DrQ]] "The arrangement is mutually beneficial. I agree to the terms."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(591231386836, --[[ModItemUnitDataCompositeDef DrQ Text RehireIntro ChatMessage voice:DrQ]] "Срок действия нашего взаимного соглашения истекает. Не хотели бы вы обсудить вопрос о его продлении?"),
+			'Text', T(591231386836, --[[ModItemUnitDataCompositeDef DrQ Text RehireIntro ChatMessage voice:DrQ]] "The end of our mutual agreement draws close. Do you wish to discuss an extension?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(614588738362, --[[ModItemUnitDataCompositeDef DrQ Text RehireOutro ChatMessage voice:DrQ]] "Мысль о продлении контракта меня вполне устраивает."),
+			'Text', T(614588738362, --[[ModItemUnitDataCompositeDef DrQ Text RehireOutro ChatMessage voice:DrQ]] "The renewal is agreeable to me."),
 		}),
 	},
 	MedicalDeposit = "none",

@@ -19,19 +19,19 @@ DefineClass.Magic = {
 	Portrait = "UI/MercsPortraits/Magic",
 	BigPortrait = "UI/Mercs/Magic",
 	IsMercenary = true,
-	Name = T(990490681062, --[[ModItemUnitDataCompositeDef Magic Name]] "Эрл Уолкер «Маг»"),
-	Nick = T(597495451908, --[[ModItemUnitDataCompositeDef Magic Nick]] "Маг"),
-	AllCapsNick = T(400907277958, --[[ModItemUnitDataCompositeDef Magic AllCapsNick]] "МАГ"),
-	Bio = T(273999095685, --[[ModItemUnitDataCompositeDef Magic Bio]] "Хоть сам Маг и старается не придавать этому большого значения, мы с гордостью сообщаем, что Эрл Уолкер стал победителем Международного конкурса наёмников сразу в двух номинациях: «самые ловкие пальцы» и «самый элегантный внешний вид». Зачёт, Маг! Сочетание олимпийского атлетизма, юркости, чуткости слуха и ловкости делают из Мага оперативника высшего класса. А в сочетании с исключительной меткостью - и вовсе аса среди наёмников."),
+	Name = T(990490681062, --[[ModItemUnitDataCompositeDef Magic Name]] "Earl \"Magic\" Walker"),
+	Nick = T(597495451908, --[[ModItemUnitDataCompositeDef Magic Nick]] "Magic"),
+	AllCapsNick = T(400907277958, --[[ModItemUnitDataCompositeDef Magic AllCapsNick]] "MAGIC"),
+	Bio = T(273999095685, --[[ModItemUnitDataCompositeDef Magic Bio]] "Although he downplays it, A.I.M. is proud to announce Earl Walker as the winner of both the \"Fastest Fingers\" and \"Best Dressed\" competitions at this year's annual Worldwide Mercenary Awards. Congrats, Magic! Earl combines Olympic-level physical conditioning, stealth, alertness, and adeptness with a lockpick to be the foremost infiltrator among A.I.M.'s members. Take all that and combine it with exceptional marksmanship and you have a merc at the top of his game."),
 	Nationality = "USA",
-	Title = T(392626315903, --[[ModItemUnitDataCompositeDef Magic Title]] "Ловкость рук - и никакого мошенничества"),
-	Email = T(201985029292, --[[ModItemUnitDataCompositeDef Magic Email]] "magic@aim.com"),
-	snype_nick = T(367614979450, --[[ModItemUnitDataCompositeDef Magic snype_nick]] "magic"),
+	Title = T(392626315903, --[[ModItemUnitDataCompositeDef Magic Title]] "The Man with the Magic Plan"),
+	Email = T(201985029292, --[[ModItemUnitDataCompositeDef Magic Email]] "justlikemagic@aim.com"),
+	snype_nick = T(367614979450, --[[ModItemUnitDataCompositeDef Magic snype_nick]] "justlikemagic"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(791488790738, --[[ModItemUnitDataCompositeDef Magic Text MercChatRefusal Lines ChatMessage voice:Magic]] "До тех пор, пока в списке приглашённых остаётся эта цыпочка Сдоба, можешь забыть, что я собирался на твою вечеринку."),
+					'Text', T(791488790738, --[[ModItemUnitDataCompositeDef Magic Text MercChatRefusal Lines ChatMessage voice:Magic]] "As long as that chick Buns is on the guest list, you can forget about me being at the party."),
 				}),
 			},
 			'Conditions', {
@@ -44,7 +44,7 @@ DefineClass.Magic = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(624090922681, --[[ModItemUnitDataCompositeDef Magic Text MercChatRefusal Lines ChatMessage voice:Magic]] "Слышь, друг... Если хочешь посмотреть на Мага в деле, придётся отвалить капусты. Сечёшь?"),
+					'Text', T(624090922681, --[[ModItemUnitDataCompositeDef Magic Text MercChatRefusal Lines ChatMessage voice:Magic]] "Hey, man... You want to watch the Magic show, you got to bring the dough. Ya dig?"),
 				}),
 			},
 			'Conditions', {
@@ -54,7 +54,7 @@ DefineClass.Magic = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(715661622535, --[[ModItemUnitDataCompositeDef Magic Text MercChatRefusal Lines ChatMessage voice:Magic]] "Эта цыпочка Сдоба ломает мне весь кайф. Я пошёл. Может, в другой раз."),
+					'Text', T(715661622535, --[[ModItemUnitDataCompositeDef Magic Text MercChatRefusal Lines ChatMessage voice:Magic]] "That Buns chick messes with my groove. I gotta split. Maybe catch you later."),
 				}),
 			},
 			'Conditions', {
@@ -70,7 +70,7 @@ DefineClass.Magic = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(610720160197, --[[ModItemUnitDataCompositeDef Magic Text MercChatMitigation Lines ChatMessage voice:Magic]] "Ты взял Айсмена - ты взял меня."),
+					'Text', T(610720160197, --[[ModItemUnitDataCompositeDef Magic Text MercChatMitigation Lines ChatMessage voice:Magic]] "Ya signed the Iceman, ya signed me."),
 				}),
 			},
 			'Conditions', {
@@ -84,7 +84,7 @@ DefineClass.Magic = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(274138944570, --[[ModItemUnitDataCompositeDef Magic Text MercChatMitigation Lines ChatMessage voice:Magic]] "Я уж думал сказать, что не могу, потому что собираюсь упорядочивать свою коллекцию пластинок, но вижу, что у тебя в команде есть мой братишка, Блад Гансон. С ним я где угодно готов работать."),
+					'Text', T(274138944570, --[[ModItemUnitDataCompositeDef Magic Text MercChatMitigation Lines ChatMessage voice:Magic]] "I was gonna tell you I can't join because I gotta organize my record collection, but I see here you got Keith \"Blood\" Hanson on your team. That's my man. Blood is one brother I always want to work with, no matter the job."),
 				}),
 			},
 			'Conditions', {
@@ -100,7 +100,7 @@ DefineClass.Magic = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(825397889767, --[[ModItemUnitDataCompositeDef Magic Text MercChatBranch Lines ChatMessage voice:Magic]] "Если хочешь ещё толковых парней - бери Айса. Мужик что надо."),
+					'Text', T(825397889767, --[[ModItemUnitDataCompositeDef Magic Text MercChatBranch Lines ChatMessage voice:Magic]] "If you're looking for another brother, Ice is one cool cat to consider."),
 				}),
 			},
 			'Conditions', {
@@ -112,7 +112,7 @@ DefineClass.Magic = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(450011435940, --[[ModItemUnitDataCompositeDef Magic Text MercChatBranch Lines ChatMessage voice:Magic]] "Слышал, мой братишка Блад тоже работу ищет. Приценись и к нему тоже."),
+					'Text', T(450011435940, --[[ModItemUnitDataCompositeDef Magic Text MercChatBranch Lines ChatMessage voice:Magic]] "I hear my man Blood is looking for work. You should check him out."),
 				}),
 			},
 			'Conditions', {
@@ -124,37 +124,37 @@ DefineClass.Magic = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(370043022550, --[[ModItemUnitDataCompositeDef Magic Text Offline ChatMessage voice:Magic]] "Это Маг. Я сейчас занят. Но не дрейфь - оставь сообщение, и я звякну тебе, когда вернусь."),
+			'Text', T(370043022550, --[[ModItemUnitDataCompositeDef Magic Text Offline ChatMessage voice:Magic]] "You reached Magic. I'm away on business, but be cool and leave a message and I'll hit you up when I get back."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(675309371261, --[[ModItemUnitDataCompositeDef Magic Text GreetingAndOffer ChatMessage voice:Magic]] "Маг. Чем помочь?"),
+			'Text', T(675309371261, --[[ModItemUnitDataCompositeDef Magic Text GreetingAndOffer ChatMessage voice:Magic]] "Magic. What you want?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(217534341976, --[[ModItemUnitDataCompositeDef Magic Text ConversationRestart ChatMessage voice:Magic]] "Здорово. Ну, что на этот раз?"),
+			'Text', T(217534341976, --[[ModItemUnitDataCompositeDef Magic Text ConversationRestart ChatMessage voice:Magic]] "Hey. What you want this time?"),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(514348844008, --[[ModItemUnitDataCompositeDef Magic Text IdleLine ChatMessage voice:Magic]] "Не хочу тебя торопить, мужик, но... я ещё хотел в магазин грампластинок заскочить до закрытия. Сечёшь?"),
+			'Text', T(514348844008, --[[ModItemUnitDataCompositeDef Magic Text IdleLine ChatMessage voice:Magic]] "Don't mean to rush you or nothing but... I gotta hustle down to the record store before they close, ya dig?"),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(199111145437, --[[ModItemUnitDataCompositeDef Magic Text PartingWords ChatMessage voice:Magic]] "Супер. Договорились. До скорого."),
+			'Text', T(199111145437, --[[ModItemUnitDataCompositeDef Magic Text PartingWords ChatMessage voice:Magic]] "Cool. We all good. Be seeing you."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(341035456537, --[[ModItemUnitDataCompositeDef Magic Text RehireIntro ChatMessage voice:Magic]] "Дело есть. Ты собираешься продлевать мой контракт или как?"),
+			'Text', T(341035456537, --[[ModItemUnitDataCompositeDef Magic Text RehireIntro ChatMessage voice:Magic]] "We got business to discuss. You thinking about extending my contract or what?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(435176604344, --[[ModItemUnitDataCompositeDef Magic Text RehireOutro ChatMessage voice:Magic]] "Отлично. Готов зажигать и дальше."),
+			'Text', T(435176604344, --[[ModItemUnitDataCompositeDef Magic Text RehireOutro ChatMessage voice:Magic]] "Solid. Ready to get back in action whenever you are."),
 		}),
 	},
 	StartingSalary = 4900,

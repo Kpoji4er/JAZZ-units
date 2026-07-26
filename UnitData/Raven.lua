@@ -19,19 +19,19 @@ DefineClass.Raven = {
 	Portrait = "UI/MercsPortraits/Raven",
 	BigPortrait = "UI/Mercs/Raven",
 	IsMercenary = true,
-	Name = T(861196503875, --[[ModItemUnitDataCompositeDef Raven Name]] "Шарлен Хиггенс «Сова»"),
-	Nick = T(273069265497, --[[ModItemUnitDataCompositeDef Raven Nick]] "Сова"),
-	AllCapsNick = T(830280514307, --[[ModItemUnitDataCompositeDef Raven AllCapsNick]] "СОВА"),
-	Bio = T(615837234228, --[[ModItemUnitDataCompositeDef Raven Bio]] "Пока её муж Рон с помощниками отбивали попытки сомалийских пиратов взять их лайнер на абордаж, «Сова» использовала прикрытие ночи, одного за другим снимая нападающих чёткими короткими очередями из трофейного автомата. Шарлен - опытный снайпер с железной выдержкой и предпочитает сражаться бок о бок с мужем, но превосходно справится с поставленным заданием и самостоятельно. В команде она всегда старается поддерживать высокие профессиональные стандарты и дух товарищества."),
+	Name = T(861196503875, --[[ModItemUnitDataCompositeDef Raven Name]] "Charlene \"Raven\" Higgens"),
+	Nick = T(273069265497, --[[ModItemUnitDataCompositeDef Raven Nick]] "Raven"),
+	AllCapsNick = T(830280514307, --[[ModItemUnitDataCompositeDef Raven AllCapsNick]] "RAVEN"),
+	Bio = T(615837234228, --[[ModItemUnitDataCompositeDef Raven Bio]] "While husband Ron and others kept Somali pirates attempting to board their cruise ship pinned down, Raven used the cover of night to systematically kill one after another using controlled bursts from a captured automatic rifle. A formidable markswoman with nerves of steel, Raven prefers to work alongside her husband but is an asset to any team that is looking to maintain a high standard of excellence and esprit de corps."),
 	Nationality = "USA",
-	Title = T(374351690992, --[[ModItemUnitDataCompositeDef Raven Title]] "Ужас, летящий на крыльях ночи"),
-	Email = T(215342188748, --[[ModItemUnitDataCompositeDef Raven Email]] "sova@aim.com"),
-	snype_nick = T(838938896346, --[[ModItemUnitDataCompositeDef Raven snype_nick]] "sova"),
+	Title = T(374351690992, --[[ModItemUnitDataCompositeDef Raven Title]] "Never More Badass"),
+	Email = T(215342188748, --[[ModItemUnitDataCompositeDef Raven Email]] "nevermore@aim.com"),
+	snype_nick = T(838938896346, --[[ModItemUnitDataCompositeDef Raven snype_nick]] "nevermore"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(235009774120, --[[ModItemUnitDataCompositeDef Raven Text MercChatRefusal Lines ChatMessage voice:Raven]] "Не думаю, что после гибели Рона я вообще хочу чем-либо заниматься. Извини, но мне нужно побыть с моими собаками и оплакать мужа. Не пиши мне больше."),
+					'Text', T(235009774120, --[[ModItemUnitDataCompositeDef Raven Text MercChatRefusal Lines ChatMessage voice:Raven]] "I don't think I'm up to anything after Ron's death. Sorry, I need time to spend with my dogs and to grieve. Don't contact me again."),
 				}),
 			},
 			'Conditions', {
@@ -44,7 +44,7 @@ DefineClass.Raven = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(821677606255, --[[ModItemUnitDataCompositeDef Raven Text MercChatRefusal Lines ChatMessage voice:Raven]] "Твой банковский счет как-то... недоукомплектован. Я должна быть уверена, что мне заплатят. Я ведь не просто за ради острых ощущений этим занимаюсь, так?"),
+					'Text', T(821677606255, --[[ModItemUnitDataCompositeDef Raven Text MercChatRefusal Lines ChatMessage voice:Raven]] "Your bank statement looks... lacking. I need to be sure I will get paid. I'm not in this just for the thrills, you know."),
 				}),
 			},
 			'Conditions', {
@@ -56,10 +56,10 @@ DefineClass.Raven = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(707170466268, --[[ModItemUnitDataCompositeDef Raven Text MercChatHaggle Lines ChatMessage voice:Raven]] "Я тебя почти не знаю. В общем-то даже совсем не знаю."),
+					'Text', T(707170466268, --[[ModItemUnitDataCompositeDef Raven Text MercChatHaggle Lines ChatMessage voice:Raven]] "I don't know much about you. In fact, I don't know anything about you. "),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(985051500493, --[[ModItemUnitDataCompositeDef Raven Text MercChatHaggle Lines ChatMessage voice:Raven]] "А значит, я вынуждена запросить более высокую ставку. Вдруг ты как командир вообще профнепригоден?"),
+					'Text', T(985051500493, --[[ModItemUnitDataCompositeDef Raven Text MercChatHaggle Lines ChatMessage voice:Raven]] "This means I must charge you a higher fee in case you turn out to be incompetent. "),
 				}),
 			},
 			'Conditions', {
@@ -72,10 +72,10 @@ DefineClass.Raven = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(803743956491, --[[ModItemUnitDataCompositeDef Raven Text MercChatMitigation Lines ChatMessage voice:Raven]] "Если мой муж согласен работать с тобой, я - тоже."),
+					'Text', T(803743956491, --[[ModItemUnitDataCompositeDef Raven Text MercChatMitigation Lines ChatMessage voice:Raven]] "If my husband will work for you, so will I."),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(669225827490, --[[ModItemUnitDataCompositeDef Raven Text MercChatMitigation Lines ChatMessage voice:Raven]] "Договорились."),
+					'Text', T(669225827490, --[[ModItemUnitDataCompositeDef Raven Text MercChatMitigation Lines ChatMessage voice:Raven]] "Let's do it."),
 				}),
 			},
 			'Conditions', {
@@ -105,10 +105,10 @@ DefineClass.Raven = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(222829981265, --[[ModItemUnitDataCompositeDef Raven Text MercChatBranch Lines ChatMessage voice:Raven]] "Не люблю оставлять Рона одного дома. Нет, правда: я когда уезжаю, он по мне скучает даже больше, чем мои собаки."),
+					'Text', T(222829981265, --[[ModItemUnitDataCompositeDef Raven Text MercChatBranch Lines ChatMessage voice:Raven]] "I feel bad about leaving Ron alone at home. Honestly, he mopes around the house more than the dogs when I'm gone."),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(239121158866, --[[ModItemUnitDataCompositeDef Raven Text MercChatBranch Lines ChatMessage voice:Raven]] "Может, напишешь и ему тоже? Он хорош. Не настолько, насколько я, конечно, но тут уж мало кто сравнится."),
+					'Text', T(239121158866, --[[ModItemUnitDataCompositeDef Raven Text MercChatBranch Lines ChatMessage voice:Raven]] "Why don't you give him a call? He's pretty good - not as good as me, but then again few are."),
 				}),
 			},
 			'Conditions', {
@@ -120,37 +120,37 @@ DefineClass.Raven = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(646426109683, --[[ModItemUnitDataCompositeDef Raven Text Offline ChatMessage voice:Raven]] "Привет, это Шарлен Хиггенс. Я сейчас вышла. Может, поговорим в другое время?"),
+			'Text', T(646426109683, --[[ModItemUnitDataCompositeDef Raven Text Offline ChatMessage voice:Raven]] "Hi, this is Charlene Higgens. I'm out and about. How about we postpone this for another time?"),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(190805596706, --[[ModItemUnitDataCompositeDef Raven Text GreetingAndOffer ChatMessage voice:Raven]] "Привет, это Шарлен Хиггенс. Я так понимаю, у тебя для меня интересное задание?"),
+			'Text', T(190805596706, --[[ModItemUnitDataCompositeDef Raven Text GreetingAndOffer ChatMessage voice:Raven]] "Hi, this is Charlene Higgens. I understand you have a mission I could be interested in."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(262640626809, --[[ModItemUnitDataCompositeDef Raven Text ConversationRestart ChatMessage voice:Raven]] "Ладно, попробуем ещё раз."),
+			'Text', T(262640626809, --[[ModItemUnitDataCompositeDef Raven Text ConversationRestart ChatMessage voice:Raven]] "OK. Let's try this again."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(885107977144, --[[ModItemUnitDataCompositeDef Raven Text IdleLine ChatMessage voice:Raven]] "Мне хорошо даются ночные операции, стрельба и вообще невыполнимые задания. Это так, пища для размышлений."),
+			'Text', T(885107977144, --[[ModItemUnitDataCompositeDef Raven Text IdleLine ChatMessage voice:Raven]] "I'm good at night ops stuff and shooting stuff and being a badass in general. Just something to keep in mind while you're pondering."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(523902854972, --[[ModItemUnitDataCompositeDef Raven Text PartingWords ChatMessage voice:Raven]] "Отлично. Жду не дождусь, когда можно будет начать. Осталось только найти, кто посидит с моими собаками."),
+			'Text', T(523902854972, --[[ModItemUnitDataCompositeDef Raven Text PartingWords ChatMessage voice:Raven]] "Great. Can't wait to start. Just need to find a dog sitter."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(473763278790, --[[ModItemUnitDataCompositeDef Raven Text RehireIntro ChatMessage voice:Raven]] "Мой контракт пора продлевать. Я не против, а ты?"),
+			'Text', T(473763278790, --[[ModItemUnitDataCompositeDef Raven Text RehireIntro ChatMessage voice:Raven]] "My contract's about up for renewal. I'm interested, if you are."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(512849572301, --[[ModItemUnitDataCompositeDef Raven Text RehireOutro ChatMessage voice:Raven]] "Отлично. Мне нравится такой вариант."),
+			'Text', T(512849572301, --[[ModItemUnitDataCompositeDef Raven Text RehireOutro ChatMessage voice:Raven]] "Good. I like this arrangement."),
 		}),
 	},
 	StartingSalary = 1850,

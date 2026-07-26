@@ -19,22 +19,22 @@ DefineClass.Mouse = {
 	Portrait = "UI/MercsPortraits/Mouse",
 	BigPortrait = "UI/Mercs/Mouse",
 	IsMercenary = true,
-	Name = T(522606213949, --[[ModItemUnitDataCompositeDef Mouse Name]] "Анита Бахман «Мышь»"),
-	Nick = T(558332461192, --[[ModItemUnitDataCompositeDef Mouse Nick]] "Мышь"),
-	AllCapsNick = T(252782817625, --[[ModItemUnitDataCompositeDef Mouse AllCapsNick]] "МЫШЬ"),
-	Bio = T(491873398820, --[[ModItemUnitDataCompositeDef Mouse Bio]] "Хотя Анита не раскрывает причин, подтолкнувших её вновь вернуться в ряды A.I.M., ходят слухи, что ее отношения с доктором Маргарет (Стеллой) Траммел зашли в тупик. Другие, впрочем, утверждают, что именно Стелла подослала её с секретным заданием вновь наладить связи с коллегами. Как бы там ни было, умение Мыши передвигаться совершенно незаметно делает её ценным членом любой команды."),
+	Name = T(522606213949, --[[ModItemUnitDataCompositeDef Mouse Name]] "Anita \"Mouse\" Backman"),
+	Nick = T(558332461192, --[[ModItemUnitDataCompositeDef Mouse Nick]] "Mouse"),
+	AllCapsNick = T(252782817625, --[[ModItemUnitDataCompositeDef Mouse AllCapsNick]] "MOUSE"),
+	Bio = T(491873398820, --[[ModItemUnitDataCompositeDef Mouse Bio]] "While Anita, who recently re-joined the ranks of A.I.M., will not disclose her motivations, there is speculation that her relationship with Dr. Margaret \"Stella\" Trammel has fractured. Still others believe she was sent by that same woman on a very specific (and very secret) mission that required reestablishing old mercenary contacts. Whatever her reasons, Mouse's abilities to move about undetected are uncanny and would make a valuable addition to any team."),
 	Nationality = "USA",
-	Title = T(660752674735, --[[ModItemUnitDataCompositeDef Mouse Title]] "Мышка серая"),
-	Email = T(752477644941, --[[ModItemUnitDataCompositeDef Mouse Email]] "mouse@aim.com"),
-	snype_nick = T(965473237479, --[[ModItemUnitDataCompositeDef Mouse snype_nick]] "mouse"),
+	Title = T(660752674735, --[[ModItemUnitDataCompositeDef Mouse Title]] "Squeaky Little Thing"),
+	Email = T(752477644941, --[[ModItemUnitDataCompositeDef Mouse Email]] "squeaky@aim.com"),
+	snype_nick = T(965473237479, --[[ModItemUnitDataCompositeDef Mouse snype_nick]] "squeaky"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(891526878797, --[[ModItemUnitDataCompositeDef Mouse Text MercChatRefusal Lines ChatMessage voice:Mouse]] "Не буду я работать вместе с Лиской. От таких, как она, одни неприятности... Рано или поздно кто-нибудь из парней поплатится за её выходки."),
+					'Text', T(891526878797, --[[ModItemUnitDataCompositeDef Mouse Text MercChatRefusal Lines ChatMessage voice:Mouse]] "I can't work with Fox, she's causing all kinds of trouble... It's only a question of time before somebody on the team pays the price for her behavior."),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(682431868600, --[[ModItemUnitDataCompositeDef Mouse Text MercChatRefusal Lines ChatMessage voice:Mouse]] "Не хочу оказаться рядом, когда это произойдёт. Прости."),
+					'Text', T(682431868600, --[[ModItemUnitDataCompositeDef Mouse Text MercChatRefusal Lines ChatMessage voice:Mouse]] "I don't want to be there when that happens. Sorry."),
 				}),
 			},
 			'Conditions', {
@@ -47,7 +47,7 @@ DefineClass.Mouse = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(841418933816, --[[ModItemUnitDataCompositeDef Mouse Text MercChatRefusal Lines ChatMessage voice:Mouse]] "Я не выношу этого клоуна Рыжего. И ты меня не заставишь. Прости, но я пас."),
+					'Text', T(841418933816, --[[ModItemUnitDataCompositeDef Mouse Text MercChatRefusal Lines ChatMessage voice:Mouse]] "I can't stand working with that old buffoon, Red. You will not make me. Sorry, I'm out."),
 				}),
 			},
 			'Conditions', {
@@ -70,7 +70,7 @@ DefineClass.Mouse = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(619207175584, --[[ModItemUnitDataCompositeDef Mouse Text MercChatRefusal Lines ChatMessage voice:Mouse]] "Какого хрена у тебя в команде Анаболик? С этим шовинистом я работать отказываюсь. Меня от таких, как он, тошнит. Найди ему замену - или я валю нахрен с пляжа."),
+					'Text', T(619207175584, --[[ModItemUnitDataCompositeDef Mouse Text MercChatRefusal Lines ChatMessage voice:Mouse]] "I am super pissed Steroid is on the team! No way am I working with that chauvinist pig. I am sick of people like him. Find someone else, I quit."),
 				}),
 			},
 			'Conditions', {
@@ -95,7 +95,7 @@ DefineClass.Mouse = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(180090348249, --[[ModItemUnitDataCompositeDef Mouse Text MercChatHaggle Lines ChatMessage voice:Mouse]] "Фу, да у тебя в отряде одни парни. Парни тупые и не моются. Я, конечно, могу потерпеть, но тогда и денег запрошу больше."),
+					'Text', T(180090348249, --[[ModItemUnitDataCompositeDef Mouse Text MercChatHaggle Lines ChatMessage voice:Mouse]] "Ugh. You only have boys with you. Boys are icky and they smell like poo. I guess I can live with it, but I expect to be paid extra."),
 				}),
 			},
 			'Conditions', {
@@ -111,7 +111,7 @@ DefineClass.Mouse = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(640263685398, --[[ModItemUnitDataCompositeDef Mouse Text MercChatHaggle Lines ChatMessage voice:Mouse]] "Ненавижу работать с Лиской. Она вся такая... ох. Если хочешь, чтобы я с ней и дальше уживалась, предложи мне больше сыра."),
+					'Text', T(640263685398, --[[ModItemUnitDataCompositeDef Mouse Text MercChatHaggle Lines ChatMessage voice:Mouse]] "I hate working with Fox. She is just... ugh. If you expect me to keep working with her, you need to offer me some extra cheese."),
 				}),
 			},
 			'Conditions', {
@@ -126,7 +126,7 @@ DefineClass.Mouse = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(708602087780, --[[ModItemUnitDataCompositeDef Mouse Text MercChatMitigation Lines ChatMessage voice:Mouse]] "Я уж хотела отказаться, но вижу, что у тебя в команде есть девчонки. Не так уж ты и безнадёжен, наверно."),
+					'Text', T(708602087780, --[[ModItemUnitDataCompositeDef Mouse Text MercChatMitigation Lines ChatMessage voice:Mouse]] "I want to say no but at least you have some girls out there. I guess you must not be that bad. "),
 				}),
 			},
 			'Conditions', {
@@ -141,37 +141,37 @@ DefineClass.Mouse = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(882365282152, --[[ModItemUnitDataCompositeDef Mouse Text Offline ChatMessage voice:Mouse]] "Привет! Это Анита Бахман. Я сейчас супер занята. Как насчёт списаться, когда освобожусь?"),
+			'Text', T(882365282152, --[[ModItemUnitDataCompositeDef Mouse Text Offline ChatMessage voice:Mouse]] "Hey! This is Anita Backman. I'm super busy right now. How about I notify you when I'm ready to talk?"),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(194998168832, --[[ModItemUnitDataCompositeDef Mouse Text GreetingAndOffer ChatMessage voice:Mouse]] "Привет, это Мышь. У тебя ко мне задание, да?"),
+			'Text', T(194998168832, --[[ModItemUnitDataCompositeDef Mouse Text GreetingAndOffer ChatMessage voice:Mouse]] "Hi, Mouse here! You want me for a mission, right?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(675625901057, --[[ModItemUnitDataCompositeDef Mouse Text ConversationRestart ChatMessage voice:Mouse]] "Хе. Обычно это я исчезаю без следа. Так о чём мы говорили?"),
+			'Text', T(675625901057, --[[ModItemUnitDataCompositeDef Mouse Text ConversationRestart ChatMessage voice:Mouse]] "Huh, usually I'm the one to disappear. So what were we talking about?"),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(516121446556, --[[ModItemUnitDataCompositeDef Mouse Text IdleLine ChatMessage voice:Mouse]] "Эй! Я, конечно, знаю шутку про «Доктор, меня все игнорируют», но это уже перебор."),
+			'Text', T(516121446556, --[[ModItemUnitDataCompositeDef Mouse Text IdleLine ChatMessage voice:Mouse]] "Hey, I know I'm good at making people ignore me, but this is ridiculous."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(792755268170, --[[ModItemUnitDataCompositeDef Mouse Text PartingWords ChatMessage voice:Mouse]] "Отлично! Теперь осталось известить об этом Стеллу. Чую, будет скандал: она-то до сих пор жалеет, что ушла."),
+			'Text', T(792755268170, --[[ModItemUnitDataCompositeDef Mouse Text PartingWords ChatMessage voice:Mouse]] "Great! Now I have to tell Stella. She will be a nightmare - she still can't get used to retirement."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(752819054890, --[[ModItemUnitDataCompositeDef Mouse Text RehireIntro ChatMessage voice:Mouse]] "Привет. Как насчёт продлить мой контракт?"),
+			'Text', T(752819054890, --[[ModItemUnitDataCompositeDef Mouse Text RehireIntro ChatMessage voice:Mouse]] "Hey. How about you extend my contract? "),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(814767561017, --[[ModItemUnitDataCompositeDef Mouse Text RehireOutro ChatMessage voice:Mouse]] "Отлично! Тогда не буду путаться у тебя под ногами."),
+			'Text', T(814767561017, --[[ModItemUnitDataCompositeDef Mouse Text RehireOutro ChatMessage voice:Mouse]] "Great! I will get out of your hair now. "),
 		}),
 	},
 	StartingSalary = 680,

@@ -19,19 +19,19 @@ DefineClass.Igor = {
 	Portrait = "UI/MercsPortraits/Igor",
 	BigPortrait = "UI/Mercs/Igor",
 	IsMercenary = true,
-	Name = T(951021360874, --[[ModItemUnitDataCompositeDef Igor Name]] "Игорь Долвич"),
-	Nick = T(242446641011, --[[ModItemUnitDataCompositeDef Igor Nick]] "Игорь"),
-	AllCapsNick = T(383779569786, --[[ModItemUnitDataCompositeDef Igor AllCapsNick]] "ИГОРЬ"),
-	Bio = T(401565007653, --[[ModItemUnitDataCompositeDef Igor Bio]] "Хоть Игорь и гордится тем, что он - племянник самого Ивана Долвича, он по праву может похвалиться и собственными достижениями. Молодой, но исключительно талантливый наёмник, он уже завоевал уважение коллег своей выносливостью, отвагой, меткостью и способностью незаметно подкрадываться к противнику. Тем не менее, до своего легендарного дяди ему ещё расти и расти, и Игорь исполнен решимости преумножить славу семьи Долвичей. Крайне перспективный боец!"),
+	Name = T(951021360874, --[[ModItemUnitDataCompositeDef Igor Name]] "Igor Dolvich"),
+	Nick = T(242446641011, --[[ModItemUnitDataCompositeDef Igor Nick]] "Igor"),
+	AllCapsNick = T(383779569786, --[[ModItemUnitDataCompositeDef Igor AllCapsNick]] "IGOR"),
+	Bio = T(401565007653, --[[ModItemUnitDataCompositeDef Igor Bio]] "The proud nephew of Ivan, Igor is an exceptionally talented mercenary in his own right. Although still young, Igor has managed to already garner a reputation at A.I.M. for using toughness, courage, marksmanship and stealth to get the better of his foes. Still a ways off from ever matching his uncle's exploits, Igor is eager to live up to his name. A merc to watch!"),
 	Nationality = "Russia",
-	Title = T(753598137188, --[[ModItemUnitDataCompositeDef Igor Title]] "Наёмник-орденоносец"),
-	Email = T(673794011457, --[[ModItemUnitDataCompositeDef Igor Email]] "super_igor@aim.com"),
-	snype_nick = T(951768641593, --[[ModItemUnitDataCompositeDef Igor snype_nick]] "super_igor"),
+	Title = T(753598137188, --[[ModItemUnitDataCompositeDef Igor Title]] "Most Meritorious Merc"),
+	Email = T(673794011457, --[[ModItemUnitDataCompositeDef Igor Email]] "igorisgreatmerc@aim.com"),
+	snype_nick = T(951768641593, --[[ModItemUnitDataCompositeDef Igor snype_nick]] "igorisgreatmerc"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(336851318657, --[[ModItemUnitDataCompositeDef Igor Text MercChatRefusal Lines ChatMessage voice:Igor]] "Нет! Ты убил дядю Ивана. Он был самый лучший! Если он умер под твоим командованием, значит, ты ужасный командир. Теперь Игорь - последний из Долвичей. Игорь должен выжить."),
+					'Text', T(336851318657, --[[ModItemUnitDataCompositeDef Igor Text MercChatRefusal Lines ChatMessage voice:Igor]] "No! You kill uncle Ivan. Uncle was greatest! If he died working for you, then you are terrible commander. Igor is last Dolvich merc. Igor must stay alive."),
 				}),
 			},
 			'Conditions', {
@@ -44,7 +44,7 @@ DefineClass.Igor = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(387833852326, --[[ModItemUnitDataCompositeDef Igor Text MercChatRefusal Lines ChatMessage voice:Igor]] "Нет. Ты - ужасный командир, и мой дядя мёртв. Я больше не буду на тебя работать."),
+					'Text', T(387833852326, --[[ModItemUnitDataCompositeDef Igor Text MercChatRefusal Lines ChatMessage voice:Igor]] "No! You are terrible commander and uncle is dead. I will not be working with you anymore."),
 				}),
 			},
 			'Conditions', {
@@ -58,7 +58,7 @@ DefineClass.Igor = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(122302977852, --[[ModItemUnitDataCompositeDef Igor Text MercChatRefusal Lines ChatMessage voice:Igor]] "Слишком многие из твоих бойцов возвращаются домой по частям. Я не настолько стремлюсь умереть. Я должен отклонить твоё предложение."),
+					'Text', T(122302977852, --[[ModItemUnitDataCompositeDef Igor Text MercChatRefusal Lines ChatMessage voice:Igor]] "Too many of those under your command return only in bits and pieces. I do not wish for certain death. I must dismiss your request."),
 				}),
 			},
 			'Conditions', {
@@ -72,7 +72,7 @@ DefineClass.Igor = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(449010257088, --[[ModItemUnitDataCompositeDef Igor Text MercChatHaggle Lines ChatMessage voice:Igor]] "Нет! A.I.M. вечно недоплачивает Игрою. Игорь заслуживает надбавки. Например, такой."),
+					'Text', T(449010257088, --[[ModItemUnitDataCompositeDef Igor Text MercChatHaggle Lines ChatMessage voice:Igor]] "No! A.I.M. always try to give Igor low balls! Igor deserves more. This is better number."),
 				}),
 			},
 			'Conditions', {},
@@ -83,7 +83,7 @@ DefineClass.Igor = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(604251052049, --[[ModItemUnitDataCompositeDef Igor Text MercChatHaggle Lines ChatMessage voice:Igor]] "Я уже совершил немало подвигов. Я заслуживаю прибавки."),
+					'Text', T(604251052049, --[[ModItemUnitDataCompositeDef Igor Text MercChatHaggle Lines ChatMessage voice:Igor]] "I already show actions of greatness. I deserve more payment. "),
 				}),
 			},
 			'Conditions', {},
@@ -94,7 +94,7 @@ DefineClass.Igor = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(134926984200, --[[ModItemUnitDataCompositeDef Igor Text MercChatMitigation Lines ChatMessage voice:Igor]] "Я всегда считал честью служить там, где служит мой потрясающий дядя. Я согласен!"),
+					'Text', T(134926984200, --[[ModItemUnitDataCompositeDef Igor Text MercChatMitigation Lines ChatMessage voice:Igor]] "I am always honored to serve wherever my illustrious uncle chooses to serve. I accept!"),
 				}),
 			},
 			'Conditions', {
@@ -108,7 +108,7 @@ DefineClass.Igor = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(424670207295, --[[ModItemUnitDataCompositeDef Igor Text MercChatMitigation Lines ChatMessage voice:Igor]] "Я уже думал сказать, что больше не хочу работать на тебя, но с тобой моя Калинка. Я должен оберегать её. Я останусь - но попрошу надбавки за то, что забочусь о ней."),
+					'Text', T(424670207295, --[[ModItemUnitDataCompositeDef Igor Text MercChatMitigation Lines ChatMessage voice:Igor]] "I was going to tell you I do not want contract, but sweet little Kalinka is still here and she must be protected. I will stay, but I will need more money to help look out for her."),
 				}),
 			},
 			'Conditions', {
@@ -132,7 +132,7 @@ DefineClass.Igor = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(689959628569, --[[ModItemUnitDataCompositeDef Igor Text MercChatBranch Lines ChatMessage voice:Igor]] "Найми и дядю Ивана тоже. Он - самый лучший. Пусть видит, что я не опозорил имя Долвичей. А теперь давай выпьем. Я ушёл за водкой."),
+					'Text', T(689959628569, --[[ModItemUnitDataCompositeDef Igor Text MercChatBranch Lines ChatMessage voice:Igor]] "You must hire Uncle Ivan. He is greatest. He will come and see I am worthy of Dolvich name. But now we must drink. I go get bottle."),
 				}),
 			},
 			'Conditions', {
@@ -144,40 +144,40 @@ DefineClass.Igor = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(100640650018, --[[ModItemUnitDataCompositeDef Igor Text Offline ChatMessage voice:Igor]] "Это Игорь. Игорь - отличный наёмник. Почти все бывшие командиры его хвалят. Напишите позже, если хотите нанять Игоря."),
+			'Text', T(100640650018, --[[ModItemUnitDataCompositeDef Igor Text Offline ChatMessage voice:Igor]] "This is Igor. Igor is a great mercenary. Almost all previous commanders gave Igor praise. Call again to hire Igor please."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(103428746749, --[[ModItemUnitDataCompositeDef Igor Text GreetingAndOffer ChatMessage voice:Igor]] "Это Игорь. Игорь - отличный наёмник. Как и его великий дядя. Что нужно делать?"),
+			'Text', T(103428746749, --[[ModItemUnitDataCompositeDef Igor Text GreetingAndOffer ChatMessage voice:Igor]] "This is Igor. Igor is great mercenary. Like uncle who is also great. What is job?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(513452735443, --[[ModItemUnitDataCompositeDef Igor Text ConversationRestart ChatMessage voice:Igor]] "Нужно было отвлечься, выпить с друзьями? Понимаю. Продолжим разговор?"),
+			'Text', T(513452735443, --[[ModItemUnitDataCompositeDef Igor Text ConversationRestart ChatMessage voice:Igor]] "Had to stop conversation to drink with friends? No worries. We continue."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(710657353028, --[[ModItemUnitDataCompositeDef Igor Text IdleLine ChatMessage voice:Igor]] "Алё? Мне водку пить пора, давай к делу. Игорь спешит."),
+			'Text', T(710657353028, --[[ModItemUnitDataCompositeDef Igor Text IdleLine ChatMessage voice:Igor]] "Are you there? It is vodka time over here so Igor is in hurry."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(332890798261, --[[ModItemUnitDataCompositeDef Igor Text PartingWords ChatMessage voice:Igor]] "Ты не пожалеешь. Игорь - отличный наемник. Много почетных грамот заслужит. Может, даже орден."),
+			'Text', T(332890798261, --[[ModItemUnitDataCompositeDef Igor Text PartingWords ChatMessage voice:Igor]] "You will not regret. Igor is great mercenary. Will receive a lot of commendation. Probably a medal, too."),
 		}),
 		PlaceObj('ChatMessage', {
-			'Text', T(434040400943, --[[ModItemUnitDataCompositeDef Igor Text PartingWords ChatMessage voice:Igor]] "Отлично. Теперь давай выпьем. Я пошёл за водкой."),
+			'Text', T(434040400943, --[[ModItemUnitDataCompositeDef Igor Text PartingWords ChatMessage voice:Igor]] "Great. Now we must drink. I go get bottle."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(863582844498, --[[ModItemUnitDataCompositeDef Igor Text RehireIntro ChatMessage voice:Igor]] "Ты видишь, что Игорь - отличный наёмник. Но его контракт скоро заканчивается. Это нужно исправить."),
+			'Text', T(863582844498, --[[ModItemUnitDataCompositeDef Igor Text RehireIntro ChatMessage voice:Igor]] "You know Igor is great merc. But contract expiring soon. We must fix."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(938302509814, --[[ModItemUnitDataCompositeDef Igor Text RehireOutro ChatMessage voice:Igor]] "Теперь давай выпьем. Русский обычай."),
+			'Text', T(938302509814, --[[ModItemUnitDataCompositeDef Igor Text RehireOutro ChatMessage voice:Igor]] "Now we drink. It is customary. "),
 		}),
 	},
 	MedicalDeposit = "large",

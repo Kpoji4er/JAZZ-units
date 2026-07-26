@@ -19,19 +19,19 @@ DefineClass.Steroid = {
 	Portrait = "UI/MercsPortraits/Steroid",
 	BigPortrait = "UI/Mercs/Steroid",
 	IsMercenary = true,
-	Name = T(191942662733, --[[ModItemUnitDataCompositeDef Steroid Name]] "Бобби Гонтарски «Анаболик»"),
-	Nick = T(547412809082, --[[ModItemUnitDataCompositeDef Steroid Nick]] "Анаболик"),
-	AllCapsNick = T(413371651152, --[[ModItemUnitDataCompositeDef Steroid AllCapsNick]] "АНАБОЛИК"),
-	Bio = T(456387407873, --[[ModItemUnitDataCompositeDef Steroid Bio]] "Тушит ли он пожары в родной Варшаве или гасит карателей Дейдраны в Арулько, любой, кто видит неутомимого Бобби Гонтарски, понимает: у этого человека лучше не вставать на пути. Навыки обращения Анаболика с инструментами и приборами служат неплохим дополнением к его меткости, беспримерной физической силе и несгибаемой воле. Столкнувшись с проблемой, Бобби обыкновенно продолжает бить её до тех пор, пока «проблема» не упадёт замертво."),
+	Name = T(191942662733, --[[ModItemUnitDataCompositeDef Steroid Name]] "Bobby \"Steroid\" Gontarski"),
+	Nick = T(547412809082, --[[ModItemUnitDataCompositeDef Steroid Nick]] "Steroid"),
+	AllCapsNick = T(413371651152, --[[ModItemUnitDataCompositeDef Steroid AllCapsNick]] "STEROID"),
+	Bio = T(456387407873, --[[ModItemUnitDataCompositeDef Steroid Bio]] "From fighting fires in Warsaw to winning firefights in Arulco, Bobby Gontarski uses his considerable strength and endurance to bend every encounter to his will. His skills with tools and gadgets are a nice bonus to his fine marksmanship and indomitable spirit. Steroid confronts every challenge with dogged determination, using his impressive stamina to always make sure his persistence pays off."),
 	Nationality = "Poland",
-	Title = T(545683006311, --[[ModItemUnitDataCompositeDef Steroid Title]] "Достаточно одной таблетки"),
+	Title = T(545683006311, --[[ModItemUnitDataCompositeDef Steroid Title]] "The Performance-enhanced Pole"),
 	Email = T(836836892923, --[[ModItemUnitDataCompositeDef Steroid Email]] "bobby@aim.com"),
 	snype_nick = T(161230893072, --[[ModItemUnitDataCompositeDef Steroid snype_nick]] "bobby"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(494152129582, --[[ModItemUnitDataCompositeDef Steroid Text MercChatRefusal Lines ChatMessage voice:Steroid]] "Ты Ивана нанял? Тогда меня ты НЕ НАЙМЕШЬ. Я с такими, как он, не работаю."),
+					'Text', T(494152129582, --[[ModItemUnitDataCompositeDef Steroid Text MercChatRefusal Lines ChatMessage voice:Steroid]] "You have Ivan on your team? Then you DON'T want ME. I don't work with people like him."),
 				}),
 			},
 			'Conditions', {
@@ -44,7 +44,7 @@ DefineClass.Steroid = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(144466457355, --[[ModItemUnitDataCompositeDef Steroid Text MercChatRefusal Lines ChatMessage voice:Steroid]] "Я с коммунистами вроде Игоря не работаю. Я лучше буду дружиться с немцами."),
+					'Text', T(144466457355, --[[ModItemUnitDataCompositeDef Steroid Text MercChatRefusal Lines ChatMessage voice:Steroid]] "I do not work with Communist like Igor. I sooner work with Germans."),
 				}),
 			},
 			'Conditions', {
@@ -59,7 +59,7 @@ DefineClass.Steroid = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(139476577458, --[[ModItemUnitDataCompositeDef Steroid Text MercChatHaggle Lines ChatMessage voice:Steroid]] "За тебя умерло много людей. Я не страдаю жаждой смерти. Может, ты предложишь больше, а?"),
+					'Text', T(139476577458, --[[ModItemUnitDataCompositeDef Steroid Text MercChatHaggle Lines ChatMessage voice:Steroid]] "Many peoples die for you. I am not a person with death wish. Perhaps you can improve offer, yes?"),
 				}),
 			},
 			'Conditions', {
@@ -74,7 +74,7 @@ DefineClass.Steroid = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(621647051327, --[[ModItemUnitDataCompositeDef Steroid Text MercChatMitigation Lines ChatMessage voice:Steroid]] "Задание не идеальное, но у тебя в команде Гризли. Он хороший солдат и товарищ по качалке."),
+					'Text', T(621647051327, --[[ModItemUnitDataCompositeDef Steroid Text MercChatMitigation Lines ChatMessage voice:Steroid]] "This is not ideal job, but you have Grizzly and he is good fighter and work-out partner. All right. "),
 				}),
 			},
 			'Conditions', {
@@ -90,7 +90,7 @@ DefineClass.Steroid = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(597080364679, --[[ModItemUnitDataCompositeDef Steroid Text MercChatBranch Lines ChatMessage voice:Steroid]] "Я ищу работу, поэтому я говорю: да. Но я не люблю Ивана Долвича. Пожалуйста, держи его за деревьями."),
+					'Text', T(597080364679, --[[ModItemUnitDataCompositeDef Steroid Text MercChatBranch Lines ChatMessage voice:Steroid]] "I need job, so I say yes. But you must understand that I do not like Ivan Dolvich. Please keep many trees between us."),
 				}),
 			},
 			'Conditions', {
@@ -103,7 +103,7 @@ DefineClass.Steroid = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(558558300486, --[[ModItemUnitDataCompositeDef Steroid Text MercChatBranch Lines ChatMessage voice:Steroid]] "Работать в одной команде с Игорем Долвичем - это неприятно. Пожалуйста, не давай ему лезть ко мне со своим пахучим коммунизмом."),
+					'Text', T(558558300486, --[[ModItemUnitDataCompositeDef Steroid Text MercChatBranch Lines ChatMessage voice:Steroid]] "To be forced to work with Igor Dolvich does not make me happy. Please keep him and his stinky communism away from me."),
 				}),
 			},
 			'Conditions', {
@@ -116,37 +116,37 @@ DefineClass.Steroid = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(144300816928, --[[ModItemUnitDataCompositeDef Steroid Text Offline ChatMessage voice:Steroid]] "Роберт Гонтарски сейчас неприступен. Может быть, я свяжусь с вами, а может, и не свяжусь."),
+			'Text', T(144300816928, --[[ModItemUnitDataCompositeDef Steroid Text Offline ChatMessage voice:Steroid]] "Robert Gontarski is, umm, unavoidable right now. Maybe I get in touch with you, maybe not."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(853380302875, --[[ModItemUnitDataCompositeDef Steroid Text GreetingAndOffer ChatMessage voice:Steroid]] "Это Бобби Гонтарски. Ты даёшь мне работу?"),
+			'Text', T(853380302875, --[[ModItemUnitDataCompositeDef Steroid Text GreetingAndOffer ChatMessage voice:Steroid]] "This is Bobby Gontarski. Do you have business?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(369484340930, --[[ModItemUnitDataCompositeDef Steroid Text ConversationRestart ChatMessage voice:Steroid]] "Закончил отжиматься? Я тоже. Давай съедим по протеиновому батончику и обсудим дело."),
+			'Text', T(369484340930, --[[ModItemUnitDataCompositeDef Steroid Text ConversationRestart ChatMessage voice:Steroid]] "Back from your work-out? Me, too. Let us eat protein bars and discuss business."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(799080241348, --[[ModItemUnitDataCompositeDef Steroid Text IdleLine ChatMessage voice:Steroid]] "Ты зачем замолчал? Упражнения делаешь?"),
+			'Text', T(799080241348, --[[ModItemUnitDataCompositeDef Steroid Text IdleLine ChatMessage voice:Steroid]] "Why so quiet? You getting in some reps?"),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(508884817963, --[[ModItemUnitDataCompositeDef Steroid Text PartingWords ChatMessage voice:Steroid]] "Спасибо за работу, гмм. Завидимся."),
+			'Text', T(508884817963, --[[ModItemUnitDataCompositeDef Steroid Text PartingWords ChatMessage voice:Steroid]] "I thank you for, umm, giving me the business. I see you."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(818850924401, --[[ModItemUnitDataCompositeDef Steroid Text RehireIntro ChatMessage voice:Steroid]] "Мой контракт почти выполнился. Хочешь смотреть ещё, что могут эти бицепсы?"),
+			'Text', T(818850924401, --[[ModItemUnitDataCompositeDef Steroid Text RehireIntro ChatMessage voice:Steroid]] "My contract is almost at completion. Do you want to see more of what these biceps can do?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(851247417827, --[[ModItemUnitDataCompositeDef Steroid Text RehireOutro ChatMessage voice:Steroid]] "Очень хорошо. Я буду рад бить для тебя ещё злых врагов."),
+			'Text', T(851247417827, --[[ModItemUnitDataCompositeDef Steroid Text RehireOutro ChatMessage voice:Steroid]] "Very good! I am excited to pummel more bad people for you."),
 		}),
 	},
 	MedicalDeposit = "none",

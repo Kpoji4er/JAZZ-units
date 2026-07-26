@@ -19,19 +19,19 @@ DefineClass.Shadow = {
 	Portrait = "UI/MercsPortraits/Shadow",
 	BigPortrait = "UI/Mercs/Shadow",
 	IsMercenary = true,
-	Name = T(760643490639, --[[ModItemUnitDataCompositeDef Shadow Name]] "Кайл Симмонс «Тень»"),
-	Nick = T(716325832691, --[[ModItemUnitDataCompositeDef Shadow Nick]] "Тень"),
-	AllCapsNick = T(409225247825, --[[ModItemUnitDataCompositeDef Shadow AllCapsNick]] "ТЕНЬ"),
-	Bio = T(501671952366, --[[ModItemUnitDataCompositeDef Shadow Bio]] "Симмонса можно назвать американской копией Стрелки: он в совершенстве умеет незаметно пересечь поле боя, чтобы сделать выстрел с идеальной позиции. Но если Стрелка специализируется на бое в городских условиях, Тень - неразговорчивый одиночка, предпочитающий в качестве поля боя леса и болота. То, с каким мастерством он маскируется, незаметно поджидая жертву, стоит запрашиваемого им гонорара. Кайл недавно прошёл трёхнедельный курс подготовки под названием «Щель и пропасть: искусство маскировки под естественные впадины» и готов к новым заданиям."),
+	Name = T(760643490639, --[[ModItemUnitDataCompositeDef Shadow Name]] "Kyle \"Shadow\" Simmons"),
+	Nick = T(716325832691, --[[ModItemUnitDataCompositeDef Shadow Nick]] "Shadow"),
+	AllCapsNick = T(409225247825, --[[ModItemUnitDataCompositeDef Shadow AllCapsNick]] "SHADOW"),
+	Bio = T(501671952366, --[[ModItemUnitDataCompositeDef Shadow Bio]] "Practically the American mirror image of Scope, A.I.M.'s top sharpshooter, Shadow, excels at moving swiftly across the battlefield to set up for a perfect kill shot. But where Scope is friendly and trained in urban combat, Shadow is a quiet loner who prefers to use the great outdoors as his battlefield. His skill in using stealth and camouflage to hide from his target until the time is right for a lethal strike makes him worth every penny. Kyle has recently finished a three-week training program called 'Cleft and Chasm: The Art of Declivity Impersonation' and is ready for assignment."),
 	Nationality = "USA",
-	Title = T(449003441115, --[[ModItemUnitDataCompositeDef Shadow Title]] "Нельзя убить невидимку"),
-	Email = T(642342715921, --[[ModItemUnitDataCompositeDef Shadow Email]] "ten@aim.com"),
-	snype_nick = T(790007421865, --[[ModItemUnitDataCompositeDef Shadow snype_nick]] "ten'"),
+	Title = T(449003441115, --[[ModItemUnitDataCompositeDef Shadow Title]] "Can't Kill What You Can't See"),
+	Email = T(642342715921, --[[ModItemUnitDataCompositeDef Shadow Email]] "shadow@aim.com"),
+	snype_nick = T(790007421865, --[[ModItemUnitDataCompositeDef Shadow snype_nick]] "shadow"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(773704481235, --[[ModItemUnitDataCompositeDef Shadow Text MercChatRefusal Lines ChatMessage voice:Shadow]] "Я буду занят. Считай, что я навещаю больного друга."),
+					'Text', T(773704481235, --[[ModItemUnitDataCompositeDef Shadow Text MercChatRefusal Lines ChatMessage voice:Shadow]] "I'm not going to be available. Let's just say I'm visiting a sick friend."),
 				}),
 			},
 			'Conditions', {},
@@ -40,7 +40,7 @@ DefineClass.Shadow = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(721179969282, --[[ModItemUnitDataCompositeDef Shadow Text MercChatRefusal Lines ChatMessage voice:Shadow]] "Не люблю нянчиться с чёртовыми салагами. Обязательно кто-нибудь подставится под пулю, придётся всё время следить, чтоб это оказался не я. Короче, ищи кого-нибудь другого."),
+					'Text', T(721179969282, --[[ModItemUnitDataCompositeDef Shadow Text MercChatRefusal Lines ChatMessage voice:Shadow]] "I don't work with rookies. Someone's bound to get hurt and I'll have to work extra hard to make sure it's not me. I am not a damn babysitter, so hire someone else."),
 				}),
 			},
 			'Conditions', {
@@ -54,37 +54,37 @@ DefineClass.Shadow = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(780554763122, --[[ModItemUnitDataCompositeDef Shadow Text Offline ChatMessage voice:Shadow]] "Если вы слушаете данное сообщение, возможно, я недоступен. Оставьте свои координаты, если хотите со мной поговорить."),
+			'Text', T(780554763122, --[[ModItemUnitDataCompositeDef Shadow Text Offline ChatMessage voice:Shadow]] "If you're getting this message, I may or may not be available. Let me know where you can be reached if you want me to return the call."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(921194090361, --[[ModItemUnitDataCompositeDef Shadow Text GreetingAndOffer ChatMessage voice:Shadow]] "Да?"),
+			'Text', T(921194090361, --[[ModItemUnitDataCompositeDef Shadow Text GreetingAndOffer ChatMessage voice:Shadow]] "Yes?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(565187982425, --[[ModItemUnitDataCompositeDef Shadow Text ConversationRestart ChatMessage voice:Shadow]] "Ненавижу терять время на разговоры. Давай уже или договоримся, или ты не будешь меня отвлекать."),
+			'Text', T(565187982425, --[[ModItemUnitDataCompositeDef Shadow Text ConversationRestart ChatMessage voice:Shadow]] "I hate to waste time on calls. Let's get to a contract agreement or agree that you'll stop bothering me."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(280147332060, --[[ModItemUnitDataCompositeDef Shadow Text IdleLine ChatMessage voice:Shadow]] "Давай шустрее. Мне ещё нужно подготовить сюрприз студентам на занятии по городскому камуфляжу."),
+			'Text', T(280147332060, --[[ModItemUnitDataCompositeDef Shadow Text IdleLine ChatMessage voice:Shadow]] "Let's move this along. I got an Urban Camouflage seminar to sneak up on."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(951928325936, --[[ModItemUnitDataCompositeDef Shadow Text PartingWords ChatMessage voice:Shadow]] "Ага, сначала посмотрим, как мы работаем вместе. Если что-нибудь не понравится тебе или мне, то когда срок контракта истечёт, пожмём друг другу руки и разойдёмся в разные стороны."),
+			'Text', T(951928325936, --[[ModItemUnitDataCompositeDef Shadow Text PartingWords ChatMessage voice:Shadow]] "Yeah, okay, we'll see how well we work together. You don't like my style or I don't like yours, we shake hands when the contract's over and call it a wash."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(604777995574, --[[ModItemUnitDataCompositeDef Shadow Text RehireIntro ChatMessage voice:Shadow]] "На случай, если ты забыл, - наш контракт подходит к концу. Я могу пойти тебе навстречу, если ты захочешь его продлить."),
+			'Text', T(604777995574, --[[ModItemUnitDataCompositeDef Shadow Text RehireIntro ChatMessage voice:Shadow]] "Contract's almost up, in case it slipped your mind. I could make myself available if you want to give me an extension."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(307984690371, --[[ModItemUnitDataCompositeDef Shadow Text RehireOutro ChatMessage voice:Shadow]] "Отлично. Я остаюсь."),
+			'Text', T(307984690371, --[[ModItemUnitDataCompositeDef Shadow Text RehireOutro ChatMessage voice:Shadow]] "All right. I'm staying."),
 		}),
 	},
 	DurationDiscount = "none",

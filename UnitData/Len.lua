@@ -19,22 +19,22 @@ DefineClass.Len = {
 	Portrait = "UI/MercsPortraits/Len",
 	BigPortrait = "UI/Mercs/Len",
 	IsMercenary = true,
-	Name = T(856122685331, --[[ModItemUnitDataCompositeDef Len Name]] "Капрал Лен Андерсон"),
-	Nick = T(100823268874, --[[ModItemUnitDataCompositeDef Len Nick]] "Лен"),
-	AllCapsNick = T(765224105732, --[[ModItemUnitDataCompositeDef Len AllCapsNick]] "ЛЕН"),
-	Bio = T(651747616157, --[[ModItemUnitDataCompositeDef Len Bio]] "Записавшись в армию сразу же по окончании школы, капрал Андерсон большую частью своей взрослой жизни не выпускал из рук автомата. Лен отслужил в «зелёных беретах», а получив почётное увольнение со службы, переквалифицировался в солдата удачи, став одним из первых членов A.I.M. Лен располагает превосходными навыками во всех областях солдатской науки и имеет за плечами многие годы опыта борьбы с боевиками и спасения похищенных бизнесменов. Коллеги уважают его как командира и инструктора, а враги боятся как грозу мелких военных диктаторов."),
+	Name = T(856122685331, --[[ModItemUnitDataCompositeDef Len Name]] "Corp. Len Anderson"),
+	Nick = T(100823268874, --[[ModItemUnitDataCompositeDef Len Nick]] "Len"),
+	AllCapsNick = T(765224105732, --[[ModItemUnitDataCompositeDef Len AllCapsNick]] "LEN"),
+	Bio = T(651747616157, --[[ModItemUnitDataCompositeDef Len Bio]] "Recruited out of high school directly into the military, Len has seen combat for most of his adult life. After being honorably discharged from the Green Berets, Len became a soldier of fortune and was one of A.I.M.'s first members. With elite skills in every aspect of soldiering and years of battling warlords and rescuing kidnapped businessmen, Len has earned a reputation as a revered leader and mentor to mercenaries and feared adversary to third world dictators the world over."),
 	Nationality = "USA",
-	Title = T(452293562944, --[[ModItemUnitDataCompositeDef Len Title]] "Настоящий батя"),
-	Email = T(159574405546, --[[ModItemUnitDataCompositeDef Len Email]] "len_anderson@aim.com"),
-	snype_nick = T(152770436506, --[[ModItemUnitDataCompositeDef Len snype_nick]] "len_anderson"),
+	Title = T(452293562944, --[[ModItemUnitDataCompositeDef Len Title]] "The Soldier's Soldier"),
+	Email = T(159574405546, --[[ModItemUnitDataCompositeDef Len Email]] "corporal_anderson@aim.com"),
+	snype_nick = T(152770436506, --[[ModItemUnitDataCompositeDef Len snype_nick]] "corporal_anderson"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(728045541164, --[[ModItemUnitDataCompositeDef Len Text MercChatRefusal Lines ChatMessage voice:Len]] "Я наслышан о вашем стиле командования. Слишком много «двухсотых». Я потому и дожил до своих лет, что научился вовремя говорить «нет». Вот как сейчас."),
+					'Text', T(728045541164, --[[ModItemUnitDataCompositeDef Len Text MercChatRefusal Lines ChatMessage voice:Len]] "I hear stories about your style of command. A lot of soldiers come home in body bags. To survive as many battles as I have, I had to learn when to say no. This is one of those times."),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(334870751923, --[[ModItemUnitDataCompositeDef Len Text MercChatRefusal Lines ChatMessage voice:Len]] "Предложение отклоняется. Всего доброго."),
+					'Text', T(334870751923, --[[ModItemUnitDataCompositeDef Len Text MercChatRefusal Lines ChatMessage voice:Len]] "I decline your offer. Goodbye."),
 				}),
 			},
 			'Conditions', {
@@ -46,10 +46,10 @@ DefineClass.Len = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(779667141211, --[[ModItemUnitDataCompositeDef Len Text MercChatRefusal Lines ChatMessage voice:Len]] "Вы мне не нравитесь. Я достаточно пожил, чтоб самому выбирать, под чьим командованием служить - и у вас я служить не намерен."),
+					'Text', T(779667141211, --[[ModItemUnitDataCompositeDef Len Text MercChatRefusal Lines ChatMessage voice:Len]] "Something about you just does not sit right with me. I have earned the right to pick my commanders and you do not fit the bill."),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(615940175069, --[[ModItemUnitDataCompositeDef Len Text MercChatRefusal Lines ChatMessage voice:Len]] "Предложение отклоняется. Всего доброго."),
+					'Text', T(615940175069, --[[ModItemUnitDataCompositeDef Len Text MercChatRefusal Lines ChatMessage voice:Len]] "I decline your offer. Goodbye."),
 				}),
 			},
 			'Conditions', {},
@@ -58,10 +58,10 @@ DefineClass.Len = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(252206147171, --[[ModItemUnitDataCompositeDef Len Text MercChatRefusal Lines ChatMessage voice:Len]] "Простите, сэр, но командир из вас так себе. Слишком много толковых парней уже не вернулись с ваших заданий. И я не намерен стать следующим."),
+					'Text', T(252206147171, --[[ModItemUnitDataCompositeDef Len Text MercChatRefusal Lines ChatMessage voice:Len]] "I am sorry, Commander, but your leadership is sloppy. Good people lost their lives under your command. I do not want to be next. "),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(483984421915, --[[ModItemUnitDataCompositeDef Len Text MercChatRefusal Lines ChatMessage voice:Len]] "Боюсь, я не могу продлить действие нашего контракта."),
+					'Text', T(483984421915, --[[ModItemUnitDataCompositeDef Len Text MercChatRefusal Lines ChatMessage voice:Len]] "I'm afraid I cannot extend my contract with you."),
 				}),
 			},
 			'Conditions', {
@@ -76,7 +76,7 @@ DefineClass.Len = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(775023517205, --[[ModItemUnitDataCompositeDef Len Text MercChatMitigation Lines ChatMessage voice:Len]] "За то время, что я знаком с доктором Кью, он показал себя отличным солдатом и великолепным медиком. Я был бы очень рад поработать с ним снова."),
+					'Text', T(775023517205, --[[ModItemUnitDataCompositeDef Len Text MercChatMitigation Lines ChatMessage voice:Len]] "In the time I've known Dr. Q., he has proven himself to be an exceptional soldier and a master of medicine. It would be a pleasure to work with him again."),
 				}),
 			},
 			'Conditions', {
@@ -90,7 +90,7 @@ DefineClass.Len = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(226612508863, --[[ModItemUnitDataCompositeDef Len Text MercChatMitigation Lines ChatMessage voice:Len]] "Не могу назвать ваше командование идеальным, но возможность работать с Вики вполне позволяет мне сделать вам некоторые поблажки."),
+					'Text', T(226612508863, --[[ModItemUnitDataCompositeDef Len Text MercChatMitigation Lines ChatMessage voice:Len]] "Not that your leadership isn't without its problems, but working with Vicki does allow me to cut you some slack."),
 				}),
 			},
 			'Conditions', {
@@ -106,7 +106,7 @@ DefineClass.Len = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(130371395685, --[[ModItemUnitDataCompositeDef Len Text MercChatBranch Lines ChatMessage voice:Len]] "Хорошо. Такой вариант меня устраивает. Я также весьма рекомендовал бы нанять Доктора Кью - он отличный солдат и медик. Мне будет приятно вновь работать вместе с ним."),
+					'Text', T(130371395685, --[[ModItemUnitDataCompositeDef Len Text MercChatBranch Lines ChatMessage voice:Len]] "Very well. I agree to these terms. I would highly suggest you hire Dr. Q. - an exceptional soldier and medic. It will be a pleasure working with him again."),
 				}),
 			},
 			'Conditions', {
@@ -118,7 +118,7 @@ DefineClass.Len = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(989283642424, --[[ModItemUnitDataCompositeDef Len Text MercChatBranch Lines ChatMessage voice:Len]] "Хорошо. Такой вариант меня устраивает. Кстати: если вам нужен толковый механик, Вики - идеальный кандидат. После её ремонта даже мой старый «шевроле» мурлычет, как котёнок."),
+					'Text', T(989283642424, --[[ModItemUnitDataCompositeDef Len Text MercChatBranch Lines ChatMessage voice:Len]] "Very well. I agree to these terms. By the way, if you are looking for an excellent mechanic, Vicki is the woman for the job. She even got my old Chevy purring like a kitten."),
 				}),
 			},
 			'Conditions', {
@@ -130,37 +130,37 @@ DefineClass.Len = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(593193742103, --[[ModItemUnitDataCompositeDef Len Text Offline ChatMessage voice:Len]] "Это капрал Лен Андерсон. Я временно недоступен. По возвращении дам вам знать."),
+			'Text', T(593193742103, --[[ModItemUnitDataCompositeDef Len Text Offline ChatMessage voice:Len]] "This is Corporal Len Anderson. I am currently unavailable. When I am present, I will make sure to notify you."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(499964957820, --[[ModItemUnitDataCompositeDef Len Text GreetingAndOffer ChatMessage voice:Len]] "Приветствую. Капрал Лен Андерсон к вашим услугам. Я готов к несению службы. Изложите своё предложение."),
+			'Text', T(499964957820, --[[ModItemUnitDataCompositeDef Len Text GreetingAndOffer ChatMessage voice:Len]] "Good day. Corporal Len Anderson at your service. I am currently available for recruitment. Please state your offer."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(623982343340, --[[ModItemUnitDataCompositeDef Len Text ConversationRestart ChatMessage voice:Len]] "Чёртова техника отказала. На чём мы остановились?"),
+			'Text', T(623982343340, --[[ModItemUnitDataCompositeDef Len Text ConversationRestart ChatMessage voice:Len]] "Damn technology stopped working for a spell. Where were we?"),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(794781501609, --[[ModItemUnitDataCompositeDef Len Text IdleLine ChatMessage voice:Len]] "Я не привык впустую тратить время. Нельзя ли перейти к делу?"),
+			'Text', T(794781501609, --[[ModItemUnitDataCompositeDef Len Text IdleLine ChatMessage voice:Len]] "I am not in the business of abiding time-wasting. Can we move along?"),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(453156990394, --[[ModItemUnitDataCompositeDef Len Text PartingWords ChatMessage voice:Len]] "Отлично. Я начну собирать вещи. Буду на месте в назначенное время."),
+			'Text', T(453156990394, --[[ModItemUnitDataCompositeDef Len Text PartingWords ChatMessage voice:Len]] "Excellent. I will start my preparations and will arrive on the dot."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(531047441945, --[[ModItemUnitDataCompositeDef Len Text RehireIntro ChatMessage voice:Len]] "Командир, если мои услуги требуются вам и дальше, нужно продлить действие контракта. Предлагаю не тянуть с этим."),
+			'Text', T(531047441945, --[[ModItemUnitDataCompositeDef Len Text RehireIntro ChatMessage voice:Len]] "Commander, my contract needs to be extended if my service is to continue. I suggest we get to it."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(822598459526, --[[ModItemUnitDataCompositeDef Len Text RehireOutro ChatMessage voice:Len]] "Прекрасно. Возвращаюсь к своим служебным обязанностям."),
+			'Text', T(822598459526, --[[ModItemUnitDataCompositeDef Len Text RehireOutro ChatMessage voice:Len]] "An excellent outcome. Now, let's get back to the task at hand."),
 		}),
 	},
 	StartingSalary = 2150,

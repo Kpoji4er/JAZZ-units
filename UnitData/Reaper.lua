@@ -19,19 +19,19 @@ DefineClass.Reaper = {
 	Portrait = "UI/MercsPortraits/Reaper",
 	BigPortrait = "UI/Mercs/Reaper",
 	IsMercenary = true,
-	Name = T(418504386182, --[[ModItemUnitDataCompositeDef Reaper Name]] "Карл Шеппардс «Жнец»"),
-	Nick = T(728059446658, --[[ModItemUnitDataCompositeDef Reaper Nick]] "Жнец"),
-	AllCapsNick = T(554704973917, --[[ModItemUnitDataCompositeDef Reaper AllCapsNick]] "ЖНЕЦ"),
-	Bio = T(344912752793, --[[ModItemUnitDataCompositeDef Reaper Bio]] "Как человек, свыкшийся с мыслью, что смерть - неотъемлемая часть жизни (или, по крайней мере, смерть врага - часть твоей жизни), Жнец - идеальный киллер. Навыки бесшумного перемещения и вскрытия замков помогают ему незаметно подкрадываться к цели, а леденящая кровь невозмутимость - с легкостью ее устранять. Шеппардс редко промахивается, но даже если и промахнулся, никогда не теряет голову и вторым выстрелом исправляет ситуацию. В настоящий момент Карл как раз закончил выслеживать парочку особо неуловимых международных террористов и готов к новым заданиям."),
+	Name = T(418504386182, --[[ModItemUnitDataCompositeDef Reaper Name]] "Carl \"Reaper\" Sheppards"),
+	Nick = T(728059446658, --[[ModItemUnitDataCompositeDef Reaper Nick]] "Reaper"),
+	AllCapsNick = T(554704973917, --[[ModItemUnitDataCompositeDef Reaper AllCapsNick]] "REAPER"),
+	Bio = T(344912752793, --[[ModItemUnitDataCompositeDef Reaper Bio]] "A man who has accepted that death is a part of life - or at least that other people's deaths are a part of his life - Reaper is the perfect assassin. His skills at stealthy movement and lock picking make it easy for him to reach his prey and his chillingly calm demeanor makes it even easier for him to eliminate them. He rarely misses and even when he does, he has the steely determination to make sure the next shot does not. Carl just finished an assignment hunting down a few especially slippery international terrorists and is ready for a new assignment."),
 	Nationality = "USA",
-	Title = T(272376216454, --[[ModItemUnitDataCompositeDef Reaper Title]] "Предвестник смерти"),
-	Email = T(426580911623, --[[ModItemUnitDataCompositeDef Reaper Email]] "smert@aim.com"),
-	snype_nick = T(458369100789, --[[ModItemUnitDataCompositeDef Reaper snype_nick]] "smert'"),
+	Title = T(272376216454, --[[ModItemUnitDataCompositeDef Reaper Title]] "Harbinger of Death"),
+	Email = T(426580911623, --[[ModItemUnitDataCompositeDef Reaper Email]] "reaperofsouls@aim.com"),
+	snype_nick = T(458369100789, --[[ModItemUnitDataCompositeDef Reaper snype_nick]] "reaperofsouls"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(151982790988, --[[ModItemUnitDataCompositeDef Reaper Text MercChatRefusal Lines ChatMessage voice:Reaper]] "У меня много потенциальных клиентов. Возможно, даже слишком много. Сперва мне нужно разобраться с предшествующими обязательствами. Но это не означает, что мы ещё не встретимся."),
+					'Text', T(151982790988, --[[ModItemUnitDataCompositeDef Reaper Text MercChatRefusal Lines ChatMessage voice:Reaper]] "There are many who want my services. Perhaps too many. I need to sort out my prior obligations first. We may still work together in the future."),
 				}),
 			},
 			'Conditions', {},
@@ -39,7 +39,7 @@ DefineClass.Reaper = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(261288234184, --[[ModItemUnitDataCompositeDef Reaper Text MercChatRefusal Lines ChatMessage voice:Reaper]] "Мне нужно посетить Тибет, очиститься после предыдущего задания. Напиши мне через пару дней."),
+					'Text', T(261288234184, --[[ModItemUnitDataCompositeDef Reaper Text MercChatRefusal Lines ChatMessage voice:Reaper]] "I'm going to Tibet to cleanse myself after my last mission. You may contact me again in a few days."),
 				}),
 			},
 			'Conditions', {},
@@ -48,7 +48,7 @@ DefineClass.Reaper = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(855430404520, --[[ModItemUnitDataCompositeDef Reaper Text MercChatRefusal Lines ChatMessage voice:Reaper]] "Сейчас меня занимает иной план бытия. Я должен выйти в астрал и очиститься. Возможно, мы ещё встретимся."),
+					'Text', T(855430404520, --[[ModItemUnitDataCompositeDef Reaper Text MercChatRefusal Lines ChatMessage voice:Reaper]] "This plane of existence no longer holds my interest. I must meditate and visit the astral to cleanse myself. Perhaps we will meet again."),
 				}),
 			},
 			'Conditions', {},
@@ -60,7 +60,7 @@ DefineClass.Reaper = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(661300087224, --[[ModItemUnitDataCompositeDef Reaper Text MercChatMitigation Lines ChatMessage voice:Reaper]] "Я совсем не уверен в правильности своего решения. Но Тень Симмонс даёт положительные отзывы, так что я рискну. Моя судьба в твоих руках."),
+					'Text', T(661300087224, --[[ModItemUnitDataCompositeDef Reaper Text MercChatMitigation Lines ChatMessage voice:Reaper]] "I'm less than confident of my decision. But Shadow Simmons speaks well of you, so I'll risk it. You have my soul."),
 				}),
 			},
 			'Conditions', {
@@ -74,7 +74,7 @@ DefineClass.Reaper = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(417125635143, --[[ModItemUnitDataCompositeDef Reaper Text MercChatMitigation Lines ChatMessage voice:Reaper]] "Обычно я соглашаюсь на более заманчивые предложения. Но меня заинтриговал Кит Гансон. Я вижу здесь потенциал для развития. Поэтому я принимаю твои условия."),
+					'Text', T(417125635143, --[[ModItemUnitDataCompositeDef Reaper Text MercChatMitigation Lines ChatMessage voice:Reaper]] "The arrangement could be more attractive. But I'm intrigued by Keith Hanson. I see potential there. On that basis, I'm accepting your offer."),
 				}),
 			},
 			'Conditions', {
@@ -88,37 +88,37 @@ DefineClass.Reaper = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(951172020299, --[[ModItemUnitDataCompositeDef Reaper Text Offline ChatMessage voice:Reaper]] "Это Жнец. Сейчас я на задании. Если вам нужны мои эксклюзивные услуги, свяжитесь со мной, когда я снова буду доступен."),
+			'Text', T(951172020299, --[[ModItemUnitDataCompositeDef Reaper Text Offline ChatMessage voice:Reaper]] "This is Reaper. I am away on assignment. If you have need of my particular skill set, contact me again when I am available."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(666747738581, --[[ModItemUnitDataCompositeDef Reaper Text GreetingAndOffer ChatMessage voice:Reaper]] "Я - Жнец. Я оказываю эксклюзивные услуги. Расскажи, чем я могу быть полезен тебе."),
+			'Text', T(666747738581, --[[ModItemUnitDataCompositeDef Reaper Text GreetingAndOffer ChatMessage voice:Reaper]] "I am Reaper. I have a very specialized set of skills. Tell me how my skills might be of service to you."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(906243182757, --[[ModItemUnitDataCompositeDef Reaper Text ConversationRestart ChatMessage voice:Reaper]] "Даю тебе ещё один шанс. Ты заинтриговал меня - иначе бы я уже давно положил трубку."),
+			'Text', T(906243182757, --[[ModItemUnitDataCompositeDef Reaper Text ConversationRestart ChatMessage voice:Reaper]] "Let us try this again. You have piqued my curiosity, otherwise I would not bother with more than one call. "),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(558310587627, --[[ModItemUnitDataCompositeDef Reaper Text IdleLine ChatMessage voice:Reaper]] "Да. Всегда полезно подумать, прежде, чем говорить. Я предамся созерцанию смерти, пока ты думаешь."),
+			'Text', T(558310587627, --[[ModItemUnitDataCompositeDef Reaper Text IdleLine ChatMessage voice:Reaper]] "Yes. It is wise to think before talking. I will ponder upon Death while you find your words."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(432330723394, --[[ModItemUnitDataCompositeDef Reaper Text PartingWords ChatMessage voice:Reaper]] "Отлично. Значит, решено. Мы заключили договор, подробности которого должны остаться только между нами."),
+			'Text', T(432330723394, --[[ModItemUnitDataCompositeDef Reaper Text PartingWords ChatMessage voice:Reaper]] "Good, then it is agreed. Let our words to each other be our bond and let us never speak of this again."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(510950100711, --[[ModItemUnitDataCompositeDef Reaper Text RehireIntro ChatMessage voice:Reaper]] "Договор со мной вскоре подходит к концу. Я должен знать, желаешь ли ты продлить его действие. Мне остаться или замести все следы?"),
+			'Text', T(510950100711, --[[ModItemUnitDataCompositeDef Reaper Text RehireIntro ChatMessage voice:Reaper]] "My contract's up soon. Let me know if you want to continue our arrangement. Shall I stay or shall I ghost?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(610952982464, --[[ModItemUnitDataCompositeDef Reaper Text RehireOutro ChatMessage voice:Reaper]] "Хорошо. Я продолжу работать на тебя. На прежних условиях: никаких бумаг."),
+			'Text', T(610952982464, --[[ModItemUnitDataCompositeDef Reaper Text RehireOutro ChatMessage voice:Reaper]] "All right. I'll continue our contract. Same conditions apply. No paperwork."),
 		}),
 	},
 	StartingSalary = 3600,

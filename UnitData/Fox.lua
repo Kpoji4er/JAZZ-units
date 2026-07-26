@@ -19,19 +19,19 @@ DefineClass.Fox = {
 	Portrait = "UI/MercsPortraits/Fox",
 	BigPortrait = "UI/Mercs/Fox",
 	IsMercenary = true,
-	Name = T(653970492916, --[[ModItemUnitDataCompositeDef Fox Name]] "Синтия Газмен «Лиска»"),
-	Nick = T(550680559818, --[[ModItemUnitDataCompositeDef Fox Nick]] "Лиска"),
-	AllCapsNick = T(533036246701, --[[ModItemUnitDataCompositeDef Fox AllCapsNick]] "ЛИСКА"),
-	Bio = T(431815979541, --[[ModItemUnitDataCompositeDef Fox Bio]] "Согласившись задержаться в стране, чтобы позировать для рекламирующих новый мирный Арулько брошюр, Синтия с готовностью фотографировалась в бикини на местных пляжах и выступала на местных стрелковых конкурсах, щеголяя навыками стрельбы по-македонски. Её глубокие познания в человеческой анатомии также оказались востребованы: сын президента нанял её, чтобы она давала ему частные уроки. Тем не менее, недавно она сообщила, что вновь открыта к деловым отношениями, - где угодно, когда угодно и с кем угодно."),
+	Name = T(653970492916, --[[ModItemUnitDataCompositeDef Fox Name]] "Cynthia \"Fox\" Guzzman"),
+	Nick = T(550680559818, --[[ModItemUnitDataCompositeDef Fox Nick]] "Fox"),
+	AllCapsNick = T(533036246701, --[[ModItemUnitDataCompositeDef Fox AllCapsNick]] "FOX"),
+	Bio = T(431815979541, --[[ModItemUnitDataCompositeDef Fox Bio]] "Contracted to model for a travel guide advertising the new and peaceful Arulco, Cynthia posed in bikinis on beaches and displayed her ambidextrous pistol shooting abilities at local talent shows. Never one to tolerate a dull moment, she also utilized her flawless knowledge of anatomy to make herself available for private tutoring lessons with the president's son. Recently, she has reported to A.I.M. that she is ready to make herself available to anyone, whenever and wherever."),
 	Nationality = "USA",
-	Title = T(643740690300, --[[ModItemUnitDataCompositeDef Fox Title]] "С пистолетами и наголо"),
-	Email = T(275428567670, --[[ModItemUnitDataCompositeDef Fox Email]] "liska@aim.com"),
-	snype_nick = T(750146314874, --[[ModItemUnitDataCompositeDef Fox snype_nick]] "liska"),
+	Title = T(643740690300, --[[ModItemUnitDataCompositeDef Fox Title]] "The Pin-Up Pistoleer"),
+	Email = T(275428567670, --[[ModItemUnitDataCompositeDef Fox Email]] "foxy1@aim.com"),
+	snype_nick = T(750146314874, --[[ModItemUnitDataCompositeDef Fox snype_nick]] "foxy1"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(968862205775, --[[ModItemUnitDataCompositeDef Fox Text MercChatRefusal Lines ChatMessage voice:Fox]] "Ещё чего! Пока у тебя в команде этот надувной матрас Анаболик, на меня даже не рассчитывай!"),
+					'Text', T(968862205775, --[[ModItemUnitDataCompositeDef Fox Text MercChatRefusal Lines ChatMessage voice:Fox]] "Forget it! As long as you've got that muscle-brained moron, Steroid, working for you, then you can count me out!"),
 				}),
 			},
 			'Conditions', {
@@ -44,7 +44,7 @@ DefineClass.Fox = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(424506783398, --[[ModItemUnitDataCompositeDef Fox Text MercChatRefusal Lines ChatMessage voice:Fox]] "Прости, я тут вспомнила: одна знаменитость пригласила меня в свой личный пляжный домик на закрытые кинопробы. Это мой шанс попасть в Голливуд! Мне не терпится показать все свои достоинства!"),
+					'Text', T(424506783398, --[[ModItemUnitDataCompositeDef Fox Text MercChatRefusal Lines ChatMessage voice:Fox]] "Sorry, I just remembered. I'm meeting a real Hollywood big shot at his beach bungalow in a closed casting call! This could be my big break! I can't wait to show him what I've got!"),
 				}),
 			},
 			'Conditions', {},
@@ -55,7 +55,7 @@ DefineClass.Fox = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(690973322218, --[[ModItemUnitDataCompositeDef Fox Text MercChatHaggle Lines ChatMessage voice:Fox]] "То, что ты нанял в команду этого тупого качка Анаболика, внесло в работу много лишнего стресса. Теперь мне потребуется денежный стимул, чтобы продолжить здесь работать."),
+					'Text', T(690973322218, --[[ModItemUnitDataCompositeDef Fox Text MercChatHaggle Lines ChatMessage voice:Fox]] "You hiring that pumped-up pinhead, Steroid, has added a lot of stress to this job. I'm going to need added incentive to stay in the field."),
 				}),
 			},
 			'Conditions', {
@@ -69,7 +69,7 @@ DefineClass.Fox = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(545857097628, --[[ModItemUnitDataCompositeDef Fox Text MercChatHaggle Lines ChatMessage voice:Fox]] "Этот лапотник Смайли меня достал! Если хочешь, чтоб я осталась в команде, придётся доплатить. Считай это платой за то, что я не отрублю ему его мерзкие грабли."),
+					'Text', T(545857097628, --[[ModItemUnitDataCompositeDef Fox Text MercChatHaggle Lines ChatMessage voice:Fox]] "That little creep, Smiley, is driving me crazy! If you want me to stay on the team, you're going to have to pay me more to give me a reason not to chop off his wandering hands!"),
 				}),
 			},
 			'Conditions', {
@@ -93,7 +93,7 @@ DefineClass.Fox = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(160370239004, --[[ModItemUnitDataCompositeDef Fox Text MercChatMitigation Lines ChatMessage voice:Fox]] "Если Волчок уже с тобой, я согласна! Не терпится показаться ему в новом бикини!"),
+					'Text', T(160370239004, --[[ModItemUnitDataCompositeDef Fox Text MercChatMitigation Lines ChatMessage voice:Fox]] "If Wolfy is already on the payroll, then sign me up! I can't wait to show him my new bathing suit!"),
 				}),
 			},
 			'Conditions', {
@@ -107,7 +107,7 @@ DefineClass.Fox = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(158023635837, --[[ModItemUnitDataCompositeDef Fox Text MercChatMitigation Lines ChatMessage voice:Fox]] "Если в команде есть мой медвежонок Гризли, я тоже в неё хочу!"),
+					'Text', T(158023635837, --[[ModItemUnitDataCompositeDef Fox Text MercChatMitigation Lines ChatMessage voice:Fox]] "Any team that includes my Grizzly bear is the team I want to be on!"),
 				}),
 			},
 			'Conditions', {
@@ -123,7 +123,7 @@ DefineClass.Fox = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(168114906666, --[[ModItemUnitDataCompositeDef Fox Text MercChatBranch Lines ChatMessage voice:Fox]] "О'кей, договорились. Кстати, я тут слышала, Волк тоже свободен. Обожаю работать c ним в паре. Если наймёшь и его - буду тебе о-о-очень благодарна."),
+					'Text', T(168114906666, --[[ModItemUnitDataCompositeDef Fox Text MercChatBranch Lines ChatMessage voice:Fox]] "OK, it's a deal. By the way, I hear Wolf is available and I love working with him. I'd be soooooo appreciative if you hired him too!"),
 				}),
 			},
 			'Conditions', {
@@ -135,7 +135,7 @@ DefineClass.Fox = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(202992877509, --[[ModItemUnitDataCompositeDef Fox Text MercChatBranch Lines ChatMessage voice:Fox]] "О'кей, договорились! Кстати, мысль: я знаю, что Гризли сейчас не занят. Возьми к себе и моего медвежонка тоже - а уж я придумаю, как выразить мою благодарность."),
+					'Text', T(202992877509, --[[ModItemUnitDataCompositeDef Fox Text MercChatBranch Lines ChatMessage voice:Fox]] "OK, it's a deal! Just a suggestion, but I know Grizzly is available to work. I can be sooooo much more flexible to work with when I have my Grizzly bear around!"),
 				}),
 			},
 			'Conditions', {
@@ -147,37 +147,37 @@ DefineClass.Fox = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(372042629873, --[[ModItemUnitDataCompositeDef Fox Text Offline ChatMessage voice:Fox]] "Это Синтия Газмен. Я сейчас связана по рукам и ногам, но регулярно проверяю автоответчик. Так что можете оставить сообщение, и я с вами наверняка встречусь!"),
+			'Text', T(372042629873, --[[ModItemUnitDataCompositeDef Fox Text Offline ChatMessage voice:Fox]] "This is Cynthia Guzman. I'm tied up right now, but I check my box as often as I can, so leave me a message and maybe we can get together some time!"),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(303692254961, --[[ModItemUnitDataCompositeDef Fox Text GreetingAndOffer ChatMessage voice:Fox]] "Лиска слушает. Если хочешь предложить мне задание, я готова работать, не покладая рук. И других частей тела."),
+			'Text', T(303692254961, --[[ModItemUnitDataCompositeDef Fox Text GreetingAndOffer ChatMessage voice:Fox]] "Fox here. If this is about a job, I'm all ears. Well, that's not completely true. I have other parts, too."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(258922001582, --[[ModItemUnitDataCompositeDef Fox Text ConversationRestart ChatMessage voice:Fox]] "А, снова ты? Я знала, что произведу на тебя впечатление."),
+			'Text', T(258922001582, --[[ModItemUnitDataCompositeDef Fox Text ConversationRestart ChatMessage voice:Fox]] "Back again, huh? I knew you wouldn't be able to stay away."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(173758988412, --[[ModItemUnitDataCompositeDef Fox Text IdleLine ChatMessage voice:Fox]] "Ну что так долго? У меня сегодня ещё запись на депиляцию."),
+			'Text', T(173758988412, --[[ModItemUnitDataCompositeDef Fox Text IdleLine ChatMessage voice:Fox]] "Is this going to take long? I have a waxing appointment to go to."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(210052524908, --[[ModItemUnitDataCompositeDef Fox Text PartingWords ChatMessage voice:Fox]] "Отлично! Сейчас упакую солнцезащитный крем и перевязочные пакеты - и скоро буду у тебя."),
+			'Text', T(210052524908, --[[ModItemUnitDataCompositeDef Fox Text PartingWords ChatMessage voice:Fox]] "Great! I just have to pick up some sun tan lotion and a pack of surgical gauze and I'll see you soon."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(972810372163, --[[ModItemUnitDataCompositeDef Fox Text RehireIntro ChatMessage voice:Fox]] "Я девушка занятая, и желающих - хоть отбавляй. Не советую откладывать продление контракта на последний момент."),
+			'Text', T(972810372163, --[[ModItemUnitDataCompositeDef Fox Text RehireIntro ChatMessage voice:Fox]] "I'm a busy girl and there are a lot of people who'd like to get serviced by me. You don't want to wait until the last minute to make a commitment to our future. "),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(760883994778, --[[ModItemUnitDataCompositeDef Fox Text RehireOutro ChatMessage voice:Fox]] "Рада, что я тебе приглянулась. И это я ещё не всё тебе показала."),
+			'Text', T(760883994778, --[[ModItemUnitDataCompositeDef Fox Text RehireOutro ChatMessage voice:Fox]] "I'm glad to know you like what you see. Get ready to see some more."),
 		}),
 	},
 	MedicalDeposit = "large",

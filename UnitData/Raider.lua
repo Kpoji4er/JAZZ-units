@@ -19,19 +19,19 @@ DefineClass.Raider = {
 	Portrait = "UI/MercsPortraits/Raider",
 	BigPortrait = "UI/Mercs/Raider",
 	IsMercenary = true,
-	Name = T(931473807439, --[[ModItemUnitDataCompositeDef Raider Name]] "Рон Хиггенс «Рейдер»"),
-	Nick = T(730316817764, --[[ModItemUnitDataCompositeDef Raider Nick]] "Рейдер"),
-	AllCapsNick = T(627615371784, --[[ModItemUnitDataCompositeDef Raider AllCapsNick]] "РЕЙДЕР"),
-	Bio = T(153322253794, --[[ModItemUnitDataCompositeDef Raider Bio]] "Успешно поучаствовав в освобождении Арулько, Рон вместе со своей супругой Шарлен решил взять отпуск, отправившись в круиз по Красному морю. Правда, на их лайнер напали сомалийские пираты - с весьма прискорбным для последних исходом. Используя свои навыки командира спецназа полиции Лос-Анджелеса, Рон быстро обучил нескольких младших помощников повара, как стрелять из пистолета, после чего отразил все попытки взять их судно на абордаж. По природе хладнокровный и спокойный человек, Рон готов к любым заданиям - особенно вместе с супругой."),
+	Name = T(931473807439, --[[ModItemUnitDataCompositeDef Raider Name]] "Ron \"Raider\" Higgens"),
+	Nick = T(730316817764, --[[ModItemUnitDataCompositeDef Raider Nick]] "Raider"),
+	AllCapsNick = T(627615371784, --[[ModItemUnitDataCompositeDef Raider AllCapsNick]] "RAIDER"),
+	Bio = T(153322253794, --[[ModItemUnitDataCompositeDef Raider Bio]] "After helping to liberate Arulco, Ron and his wife Charlene decided to take some time off and went for a cruise in the Red Sea. Their ship was attacked by Somali pirates, which turned out to be very unfortunate for the pirates. Using skills from his days as a SWAT team leader, Ron quickly instructed a number of young junior assistant pursers how to fire pistols and then proceeded to repel all boarders. Rested and relaxed, he and his wife are ready for assignment."),
 	Nationality = "USA",
-	Title = T(435483333529, --[[ModItemUnitDataCompositeDef Raider Title]] "Коп до мозга костей"),
+	Title = T(435483333529, --[[ModItemUnitDataCompositeDef Raider Title]] "Officer Trust Fall"),
 	Email = T(699223544963, --[[ModItemUnitDataCompositeDef Raider Email]] "ron_higgens@aim.com"),
 	snype_nick = T(477901286663, --[[ModItemUnitDataCompositeDef Raider snype_nick]] "ron_higgens"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(461295796241, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Извини, но ответ: «нет». Ты нанял это ничтожество Хеннеси. А я с ним работать отказываюсь."),
+					'Text', T(461295796241, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Sorry, but the answer's no. You have hired that sleazeball Henessy. I don't want to work with that dirtbag."),
 				}),
 			},
 			'Conditions', {
@@ -45,7 +45,7 @@ DefineClass.Raider = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(500784963638, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Не могу сейчас говорить. Мне нужно оправиться после... Просто нужно оправиться, ясно?! Оставь меня в покое!"),
+					'Text', T(500784963638, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Can't talk right now. I need to grieve after... I just need to grieve, for God's sake! Leave me alone!"),
 				}),
 			},
 			'Conditions', {
@@ -59,7 +59,7 @@ DefineClass.Raider = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+					'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] " I think we can make this work, but I don't know you. I will need some extra assurance in case our working relationship isn't a smooth one."),
 				}),
 			},
 			'Conditions', {
@@ -76,7 +76,7 @@ DefineClass.Raider = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Думаю, мы сможем договориться, но я тебя не знаю. Потребуется дополнительная страховка на случай, если всё пойдёт не по плану."),
+					'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] " I think we can make this work, but I don't know you. I will need some extra assurance in case our working relationship isn't a smooth one."),
 				}),
 			},
 			'Conditions', {
@@ -89,7 +89,7 @@ DefineClass.Raider = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(607540753610, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Давай начистоту: против тебя я ничего не имею. Но этот Хеннеси меня уже достал. Я, конечно, могу и дальше его терпеть, но за отдельную плату."),
+					'Text', T(607540753610, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "Look, I have no issues with you whatsoever, but that sleazeball is really getting on my nerves. I can continue to tolerate him, but it's gonna cost you extra."),
 				}),
 			},
 			'Conditions', {
@@ -105,7 +105,7 @@ DefineClass.Raider = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(784584870498, --[[ModItemUnitDataCompositeDef Raider Text MercChatMitigation Lines ChatMessage voice:Raider]] "Я на такое обычно не соглашаюсь, но мы с Совой - одна команда. Где она - там и я."),
+					'Text', T(784584870498, --[[ModItemUnitDataCompositeDef Raider Text MercChatMitigation Lines ChatMessage voice:Raider]] "Normally, I would have said no, but Raven and I are a team. Where she goes, I'll gladly follow."),
 				}),
 			},
 			'Conditions', {
@@ -121,7 +121,7 @@ DefineClass.Raider = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(346994478220, --[[ModItemUnitDataCompositeDef Raider Text MercChatBranch Lines ChatMessage voice:Raider]] "Рад буду снова работать в команде. Кстати, почему бы тебе не нанять и Сову? Ей вредно подолгу сидеть дома одной. Не ровён час, начнёт со скуки на соседей охотиться."),
+					'Text', T(346994478220, --[[ModItemUnitDataCompositeDef Raider Text MercChatBranch Lines ChatMessage voice:Raider]] "Glad to be a part of a team again. By the way, why not hire Raven, as well? She gets ornery if she's alone in the house for too long. Might hunt the whole country to extinction by the time I'm back."),
 				}),
 			},
 			'Conditions', {
@@ -134,7 +134,7 @@ DefineClass.Raider = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(762507617971, --[[ModItemUnitDataCompositeDef Raider Text MercChatBranch Lines ChatMessage voice:Raider]] "С радостью пойду на дело вместе с Совой. Только имей в виду: это ничтожество Стрелок Хеннеси положил глаз на мою жену. Я это терпеть не намерен. Если хочешь, чтобы в отряде не было разборок, не нанимай эту свинью."),
+					'Text', T(762507617971, --[[ModItemUnitDataCompositeDef Raider Text MercChatBranch Lines ChatMessage voice:Raider]] "It will be good to be working with Raven again. Just a word of caution - Hitman Henessy is a sleazeball who hits on my wife and I will not stand for it. If you want a squad at peace, you better not hire that dirtbag."),
 				}),
 			},
 			'Conditions', {
@@ -155,7 +155,7 @@ DefineClass.Raider = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(969430937663, --[[ModItemUnitDataCompositeDef Raider Text MercChatBranch Lines ChatMessage voice:Raider]] "С радостью буду в команде, где есть Сова."),
+					'Text', T(969430937663, --[[ModItemUnitDataCompositeDef Raider Text MercChatBranch Lines ChatMessage voice:Raider]] "I'm glad to be part of any team Raven's a part of."),
 				}),
 			},
 			'Conditions', {
@@ -169,10 +169,10 @@ DefineClass.Raider = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(293660560234, --[[ModItemUnitDataCompositeDef Raider Text MercChatBranch Lines ChatMessage voice:Raider]] "Спасибо. Неудобно, конечно, будет работать, когда в отряде и Сова, и Стрелок. Надеюсь, мне не придётся слишком часто с ним пересекаться. Но если это ничтожество вздумает к ней подкатывать..."),
+					'Text', T(293660560234, --[[ModItemUnitDataCompositeDef Raider Text MercChatBranch Lines ChatMessage voice:Raider]] "Thanks. It will be weird working with both Hitman and Raven. I hope we can avoid working too closely with him, but if that sleazeball hits on her, I swear... "),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(663569190804, --[[ModItemUnitDataCompositeDef Raider Text MercChatBranch Lines ChatMessage voice:Raider]] "Скажем так: я с радостью буду в команде, где есть Сова."),
+					'Text', T(663569190804, --[[ModItemUnitDataCompositeDef Raider Text MercChatBranch Lines ChatMessage voice:Raider]] "Let's just say I'm glad to be part of any team Raven's a part of."),
 				}),
 			},
 			'Conditions', {
@@ -194,37 +194,37 @@ DefineClass.Raider = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(327572518181, --[[ModItemUnitDataCompositeDef Raider Text Offline ChatMessage voice:Raider]] "Здорово. Это Рон Хиггенс. Скорее всего, я на охоте. Возможно, не на животных. И почти наверняка вместе с Совой. Я был лучшим среди копов. Теперь солдат удачи. Нужны мои услуги - зовите."),
+			'Text', T(327572518181, --[[ModItemUnitDataCompositeDef Raider Text Offline ChatMessage voice:Raider]] "Y'ello. This is Ron Higgens. I am probably out hunting. Or in an undisclosed location. Probably with Raven. Used to be top cop, now I am for hire. Call me if you need me."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(209759364976, --[[ModItemUnitDataCompositeDef Raider Text GreetingAndOffer ChatMessage voice:Raider]] "Здорово. Это Рон. Ты хочешь предложить мне работу? Тогда я слушаю."),
+			'Text', T(209759364976, --[[ModItemUnitDataCompositeDef Raider Text GreetingAndOffer ChatMessage voice:Raider]] "Y'ello. Ron here. Is this about a job? If so, I'm interested."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(809685478401, --[[ModItemUnitDataCompositeDef Raider Text ConversationRestart ChatMessage voice:Raider]] "Срочные дела отвлекли? Ладно, о чём мы там?"),
+			'Text', T(809685478401, --[[ModItemUnitDataCompositeDef Raider Text ConversationRestart ChatMessage voice:Raider]] "Had some urgent matters to take care of? Anyway, where were we?"),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(817195692149, --[[ModItemUnitDataCompositeDef Raider Text IdleLine ChatMessage voice:Raider]] "Не люблю попусту тратить время. Давай уже."),
+			'Text', T(817195692149, --[[ModItemUnitDataCompositeDef Raider Text IdleLine ChatMessage voice:Raider]] "I don't like wasting time. Can we move on?"),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(787993971305, --[[ModItemUnitDataCompositeDef Raider Text PartingWords ChatMessage voice:Raider]] "Рад снова работать в команде. До встречи."),
+			'Text', T(787993971305, --[[ModItemUnitDataCompositeDef Raider Text PartingWords ChatMessage voice:Raider]] "Glad to be a part of a team again. See you soon."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(925115055169, --[[ModItemUnitDataCompositeDef Raider Text RehireIntro ChatMessage voice:Raider]] "Мой контракт пора продлить."),
+			'Text', T(925115055169, --[[ModItemUnitDataCompositeDef Raider Text RehireIntro ChatMessage voice:Raider]] "It's time to renegotiate my contract."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(826231578564, --[[ModItemUnitDataCompositeDef Raider Text RehireOutro ChatMessage voice:Raider]] "Вот и договорились. А теперь за дело."),
+			'Text', T(826231578564, --[[ModItemUnitDataCompositeDef Raider Text RehireOutro ChatMessage voice:Raider]] "Well that's that. Now let's move. "),
 		}),
 	},
 	StartingSalary = 1800,

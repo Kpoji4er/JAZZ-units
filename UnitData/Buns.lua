@@ -19,19 +19,19 @@ DefineClass.Buns = {
 	Portrait = "UI/MercsPortraits/Buns",
 	BigPortrait = "UI/Mercs/Buns",
 	IsMercenary = true,
-	Name = T(956763701762, --[[ModItemUnitDataCompositeDef Buns Name]] "Моника Зондергад «Сдоба»"),
-	Nick = T(730486601047, --[[ModItemUnitDataCompositeDef Buns Nick]] "Сдоба"),
-	AllCapsNick = T(355208859292, --[[ModItemUnitDataCompositeDef Buns AllCapsNick]] "СДОБА"),
-	Bio = T(777309152047, --[[ModItemUnitDataCompositeDef Buns Bio]] "Резюме Моники Зондергад, кажется, специально написано для того, чтобы вызывать у читающих острый приступ синдрома самозванца: стрелок-олимпиец, медицинская сестра, автор видеоуроков по семейной форме обучения, технике искусственного дыхания, стрельбе из автоматического оружия, здоровому образу жизни и борьбе с депрессией посредством последовательного самосовершенствования.\n\nМногие могут спросить себя: разве может жизнь наёмника предложить такой женщине что-но новое? Тем не менее, коллеги по A.I.M. высоко ценят Монику как умелого специалиста и хорошего - пусть и въедливого - учителя."),
+	Name = T(956763701762, --[[ModItemUnitDataCompositeDef Buns Name]] "Monica \"Buns\" Sondergaard"),
+	Nick = T(730486601047, --[[ModItemUnitDataCompositeDef Buns Nick]] "Buns"),
+	AllCapsNick = T(355208859292, --[[ModItemUnitDataCompositeDef Buns AllCapsNick]] "BUNS"),
+	Bio = T(777309152047, --[[ModItemUnitDataCompositeDef Buns Bio]] "A woman whose skills extend far beyond just firearms and medicine, Monica's resumé reads like she's applying for a lifetime achievement award. She recently produced a series of instructional videos called \"Be Better\" where she teaches the viewer the best ways to home school, perform CPR, shoot automatic weapons, maintain cardiovascular health and lift yourself out of depression through rigorous self-improvement. \n\nAlthough many wonder what she could possibly want from the mercenary life, most fellow A.I.M. members appreciate her expertise and thorough - if priggish - tutoring style."),
 	Nationality = "Denmark",
-	Title = T(852578438925, --[[ModItemUnitDataCompositeDef Buns Title]] "Начинаем урок"),
+	Title = T(852578438925, --[[ModItemUnitDataCompositeDef Buns Title]] "Buns Will Teach You"),
 	Email = T(199610516408, --[[ModItemUnitDataCompositeDef Buns Email]] "MonicaSondergaard@aim.com"),
 	snype_nick = T(154054560014, --[[ModItemUnitDataCompositeDef Buns snype_nick]] "MonicaSondergaard"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(226180244539, --[[ModItemUnitDataCompositeDef Buns Text MercChatRefusal Lines ChatMessage voice:Buns]] "У вас в команде Лиска. Очевидно, упаковка вас интересует куда больше, чем товар. Свяжитесь со мной, когда вам потребуется нечто большее, чем смазливая мордашка."),
+					'Text', T(226180244539, --[[ModItemUnitDataCompositeDef Buns Text MercChatRefusal Lines ChatMessage voice:Buns]] "You've got Fox on your team. Obviously, you're more interested in the sizzle than the steak. Call me when you're looking for something more than a pretty face."),
 				}),
 			},
 			'Conditions', {
@@ -44,7 +44,7 @@ DefineClass.Buns = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(236123461893, --[[ModItemUnitDataCompositeDef Buns Text MercChatRefusal Lines ChatMessage voice:Buns]] "У вас в команде человек по прозвищу «Жнец». У него серьёзные проблемы с психикой. Может быть, в другой раз."),
+					'Text', T(236123461893, --[[ModItemUnitDataCompositeDef Buns Text MercChatRefusal Lines ChatMessage voice:Buns]] "You have a man on your team called Reaper. He's a seriously disturbed individual. Some other time, perhaps."),
 				}),
 			},
 			'Conditions', {
@@ -59,7 +59,7 @@ DefineClass.Buns = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(993128152189, --[[ModItemUnitDataCompositeDef Buns Text MercChatHaggle Lines ChatMessage voice:Buns]] "Это первое наше сотрудничество. Будет разумным заручиться дополнительными финансовыми гарантиями."),
+					'Text', T(993128152189, --[[ModItemUnitDataCompositeDef Buns Text MercChatHaggle Lines ChatMessage voice:Buns]] "I have not worked with you before. It is prudent to require some additional financial guarantees when that is the case."),
 				}),
 			},
 			'Conditions', {
@@ -72,7 +72,7 @@ DefineClass.Buns = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(574540805848, --[[ModItemUnitDataCompositeDef Buns Text MercChatHaggle Lines ChatMessage voice:Buns]] "Вы наняли этого ненормального «Жнеца». Это очень, очень больной человек. Если хотите, чтобы я продолжила наше сотрудничество, вам придётся заплатить. Считайте это компенсацией за неблагоприятные условия работы."),
+					'Text', T(574540805848, --[[ModItemUnitDataCompositeDef Buns Text MercChatHaggle Lines ChatMessage voice:Buns]] "You hired that creep Reaper. There is something really, really wrong with him. If you want to keep me on, I will require extra compensation for the risks involved when working with such an individual."),
 				}),
 			},
 			'Conditions', {
@@ -85,7 +85,7 @@ DefineClass.Buns = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(998763690178, --[[ModItemUnitDataCompositeDef Buns Text MercChatHaggle Lines ChatMessage voice:Buns]] "Не знаю, что побудило вас нанять эту бестолковую фотомодель Лиску. Готова поспорить, у неё даже бюст ненастоящий. Да-да. Так или иначе, терпеть её присутствие без доплаты я не намерена."),
+					'Text', T(998763690178, --[[ModItemUnitDataCompositeDef Buns Text MercChatHaggle Lines ChatMessage voice:Buns]] "I don't know what possessed you to hire that useless swimsuit model, Fox. Her head is as empty as her breasts. I'm sure they're fake. Pretty sure. Anyway, I'll need more money if I am to tolerate her presence."),
 				}),
 			},
 			'Conditions', {
@@ -100,7 +100,7 @@ DefineClass.Buns = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(691020141104, --[[ModItemUnitDataCompositeDef Buns Text MercChatMitigation Lines ChatMessage voice:Buns]] "Обычно я не соглашаюсь на такие предложения. Но коль скоро на вас работает Сидней, возможно, вы не совсем бездарь. Я в деле."),
+					'Text', T(691020141104, --[[ModItemUnitDataCompositeDef Buns Text MercChatMitigation Lines ChatMessage voice:Buns]] "This is an offer I would normally refuse, but having Sidney on the team makes me feel like perhaps you know what you are doing. I'm in."),
 				}),
 			},
 			'Conditions', {
@@ -114,37 +114,37 @@ DefineClass.Buns = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(545257109553, --[[ModItemUnitDataCompositeDef Buns Text Offline ChatMessage voice:Buns]] "Это Моника Зондергад. Полагаю, вам рекомендовали меня как образцового, чистоплотного и исполнительного сотрудника. В данный момент я отсутствую. Свяжитесь со мной в другое время."),
+			'Text', T(545257109553, --[[ModItemUnitDataCompositeDef Buns Text Offline ChatMessage voice:Buns]] "This is Monica Sondergaard. You have naturally been drawn to my superior skills and neat and efficient manner. I am currently unavailable. Please contact me at another time. "),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(852499190735, --[[ModItemUnitDataCompositeDef Buns Text GreetingAndOffer ChatMessage voice:Buns]] "Приветствую. Моника Зондергад. Рада знакомству. Полагаю, вам требуются работники, и вы не смогли устоять перед моими образцовыми навыками и общей чистоплотностью."),
+			'Text', T(852499190735, --[[ModItemUnitDataCompositeDef Buns Text GreetingAndOffer ChatMessage voice:Buns]] "Hello. This is Monica Sondergaard. It is a pleasure to meet you. I assume this is about a job and you were drawn to my superior skills and overall neatness."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(698087255368, --[[ModItemUnitDataCompositeDef Buns Text ConversationRestart ChatMessage voice:Buns]] "Невежливо обрывать разговор, но я вас прощаю. Продолжим."),
+			'Text', T(698087255368, --[[ModItemUnitDataCompositeDef Buns Text ConversationRestart ChatMessage voice:Buns]] "It is rude to end conversations abruptly but I will forgive you. Let us proceed."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(180203089731, --[[ModItemUnitDataCompositeDef Buns Text IdleLine ChatMessage voice:Buns]] "Я не терплю тех, кто впустую тратит моё время, но для вас готова сделать исключение. Терпимость - одно из многих моих достоинств. Итак, продолжим."),
+			'Text', T(180203089731, --[[ModItemUnitDataCompositeDef Buns Text IdleLine ChatMessage voice:Buns]] "I do not tolerate time-wasting but I will make an exception. Benevolence is one of my many virtues. Now, let us continue."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(906674942216, --[[ModItemUnitDataCompositeDef Buns Text PartingWords ChatMessage voice:Buns]] "Очень хорошо. Буду ждать начала нашего сотрудничества."),
+			'Text', T(906674942216, --[[ModItemUnitDataCompositeDef Buns Text PartingWords ChatMessage voice:Buns]] "Very well. I look forward to working with you."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(918365695405, --[[ModItemUnitDataCompositeDef Buns Text RehireIntro ChatMessage voice:Buns]] "Добрый день. Наш контракт подходит к концу. Моё отсутствие станет большим ударом для всей команды, так что я готова продлить его действие."),
+			'Text', T(918365695405, --[[ModItemUnitDataCompositeDef Buns Text RehireIntro ChatMessage voice:Buns]] "Hello. My contract is expiring. The team will suffer without my superior skill set so I am willing to continue our arrangement."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(558845485811, --[[ModItemUnitDataCompositeDef Buns Text RehireOutro ChatMessage voice:Buns]] "Отлично. Я рада, что мы смогли прийти к соглашению и продолжить сотрудничество."),
+			'Text', T(558845485811, --[[ModItemUnitDataCompositeDef Buns Text RehireOutro ChatMessage voice:Buns]] "Good. I am pleased we could come to an agreement to continue our contract."),
 		}),
 	},
 	MedicalDeposit = "large",

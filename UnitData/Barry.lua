@@ -19,19 +19,19 @@ DefineClass.Barry = {
 	Portrait = "UI/MercsPortraits/Barry",
 	BigPortrait = "UI/Mercs/Barry",
 	IsMercenary = true,
-	Name = T(919764309920, --[[ModItemUnitDataCompositeDef Barry Name]] "Барри Ангер"),
-	Nick = T(872433137526, --[[ModItemUnitDataCompositeDef Barry Nick]] "Барри"),
-	AllCapsNick = T(420472155832, --[[ModItemUnitDataCompositeDef Barry AllCapsNick]] "БАРРИ"),
-	Bio = T(201477611708, --[[ModItemUnitDataCompositeDef Barry Bio]] "Благочестивый христианин и педант - на первый взгляд Барри Ангеру больше подошла бы карьера не солдата удачи, а электрика. Тем не менее, сам он предпочитает зарабатывать на жизнь, не прокладывая провода в своей родной Венгрии, а закладывая взрывчатку на складах противника (куда сам же и проникает, вскрывая замки)."),
+	Name = T(919764309920, --[[ModItemUnitDataCompositeDef Barry Name]] "Barry Unger"),
+	Nick = T(872433137526, --[[ModItemUnitDataCompositeDef Barry Nick]] "Barry"),
+	AllCapsNick = T(420472155832, --[[ModItemUnitDataCompositeDef Barry AllCapsNick]] "BARRY"),
+	Bio = T(201477611708, --[[ModItemUnitDataCompositeDef Barry Bio]] "A pious man with an immense attention to detail, at first glance Barry seems better suited to the humble life of an electrician than a soldier of fortune. Were it not for Barry's preference for blowing things up for money and picking locks for fun, he could easily lead a happy life installing cable in his homeland of Hungary."),
 	Nationality = "Hungary",
-	Title = T(139748625274, --[[ModItemUnitDataCompositeDef Barry Title]] "Святой покровитель пластида"),
+	Title = T(139748625274, --[[ModItemUnitDataCompositeDef Barry Title]] "Patron Saint of Plastique"),
 	Email = T(314757335274, --[[ModItemUnitDataCompositeDef Barry Email]] "unger.barry@aim.com"),
 	snype_nick = T(435268553018, --[[ModItemUnitDataCompositeDef Barry snype_nick]] "unger.barry"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(674127463811, --[[ModItemUnitDataCompositeDef Barry Text MercChatRefusal Lines ChatMessage voice:Barry]] "Даже с бомбами безопасно работать, а вот с тобой слишком опасно. Начни лучше заботиться о своих солдатах! Пока!"),
+					'Text', T(674127463811, --[[ModItemUnitDataCompositeDef Barry Text MercChatRefusal Lines ChatMessage voice:Barry]] "I love to play with bombs, but working for you seems too dangerous even for me. Take better care of your soldiers! Goodbye."),
 				}),
 			},
 			'Conditions', {
@@ -43,7 +43,7 @@ DefineClass.Barry = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(650809113310, --[[ModItemUnitDataCompositeDef Barry Text MercChatRefusal Lines ChatMessage voice:Barry]] "Предпочитаю долгосрочные контракты. Так надёжнее."),
+					'Text', T(650809113310, --[[ModItemUnitDataCompositeDef Barry Text MercChatRefusal Lines ChatMessage voice:Barry]] "I want to have long contract. More certainty."),
 				}),
 			},
 			'Type', "duration",
@@ -53,7 +53,7 @@ DefineClass.Barry = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(646034666673, --[[ModItemUnitDataCompositeDef Barry Text MercChatHaggle Lines ChatMessage voice:Barry]] "Работать на тебя опасно. Но за дополнительную плату я согласен."),
+					'Text', T(646034666673, --[[ModItemUnitDataCompositeDef Barry Text MercChatHaggle Lines ChatMessage voice:Barry]] "Working for you is dangerous work. I can be persuaded with more money."),
 				}),
 			},
 			'Conditions', {
@@ -66,7 +66,7 @@ DefineClass.Barry = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(115207671188, --[[ModItemUnitDataCompositeDef Barry Text MercChatHaggle Lines ChatMessage voice:Barry]] "Мы раньше не работали вместе. Я тебя не разузнал. Заплати больше - это будет моя страховка."),
+					'Text', T(115207671188, --[[ModItemUnitDataCompositeDef Barry Text MercChatHaggle Lines ChatMessage voice:Barry]] "I have not worked with you. You are unknown to me. I need more money as insurance I stay alive."),
 				}),
 			},
 			'Conditions', {
@@ -79,7 +79,7 @@ DefineClass.Barry = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(456533953431, --[[ModItemUnitDataCompositeDef Barry Text MercChatMitigation Lines ChatMessage voice:Barry]] "Я не до конца уверен, но Рыжий с тобой. Он мой друг, так что ладно, по рукам."),
+					'Text', T(456533953431, --[[ModItemUnitDataCompositeDef Barry Text MercChatMitigation Lines ChatMessage voice:Barry]] "I am not sure about this, but Red has joined you. I like him. So, very well, we have deal."),
 				}),
 			},
 			'Conditions', {
@@ -95,13 +95,13 @@ DefineClass.Barry = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(935578724304, --[[ModItemUnitDataCompositeDef Barry Text MercChatBranch Lines ChatMessage voice:Barry]] "Мы достигли взаимного согласия. Считай меня своим наёмником."),
+					'Text', T(935578724304, --[[ModItemUnitDataCompositeDef Barry Text MercChatBranch Lines ChatMessage voice:Barry]] "We have reached simultaneous agreement. Count me as part of your team. "),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(408115538874, --[[ModItemUnitDataCompositeDef Barry Text MercChatBranch Lines ChatMessage voice:Barry]] "Ещё одно: мой друг Рыжий - просто взрывное устройство. Я буду рад работать вместе с ним. Имей в виду."),
+					'Text', T(408115538874, --[[ModItemUnitDataCompositeDef Barry Text MercChatBranch Lines ChatMessage voice:Barry]] "Something else - my friend Red is some terrific. I would like to work with him. Take in consideration."),
 				}),
 				PlaceObj('ChatMessage', {
-					'Text', T(196551213889, --[[ModItemUnitDataCompositeDef Barry Text MercChatBranch Lines ChatMessage voice:Barry]] "Мы скоро встретимся. Пока."),
+					'Text', T(196551213889, --[[ModItemUnitDataCompositeDef Barry Text MercChatBranch Lines ChatMessage voice:Barry]] "We will meet soon. Goodbye."),
 				}),
 			},
 			'Conditions', {
@@ -113,37 +113,37 @@ DefineClass.Barry = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(816742272286, --[[ModItemUnitDataCompositeDef Barry Text Offline ChatMessage voice:Barry]] "Барри Ангер. Я сейчас не на связи. Но готов работать. Я работаю со взрывчаткой. Пишите, когда сможете."),
+			'Text', T(816742272286, --[[ModItemUnitDataCompositeDef Barry Text Offline ChatMessage voice:Barry]] "Barry Unger here. I am not of availability right now. I am for hire. I work with explosives. Make contact when can."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(255302860986, --[[ModItemUnitDataCompositeDef Barry Text GreetingAndOffer ChatMessage voice:Barry]] "Барри Ангер. Это по поводу работы? Сейчас работы мало, так что я не привередливый."),
+			'Text', T(255302860986, --[[ModItemUnitDataCompositeDef Barry Text GreetingAndOffer ChatMessage voice:Barry]] "This is Barry Unger. This is about job? Work is not plenty at the moment so I cannot be particular."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(490078009951, --[[ModItemUnitDataCompositeDef Barry Text ConversationRestart ChatMessage voice:Barry]] "Мы не достигли согласия. Предлагаю продолжить дальше."),
+			'Text', T(490078009951, --[[ModItemUnitDataCompositeDef Barry Text ConversationRestart ChatMessage voice:Barry]] "Our business agreement has not reached conclusion. Let us resume."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(181178716282, --[[ModItemUnitDataCompositeDef Barry Text IdleLine ChatMessage voice:Barry]] "Машина зависла? Если нет - предлагаю продолжить."),
+			'Text', T(181178716282, --[[ModItemUnitDataCompositeDef Barry Text IdleLine ChatMessage voice:Barry]] "Are you having trouble in machine? If not, let us continue with agreement. "),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(553481989500, --[[ModItemUnitDataCompositeDef Barry Text PartingWords ChatMessage voice:Barry]] "Мы достигли взаимного согласия. Считай меня своим наёмником. Пока."),
+			'Text', T(553481989500, --[[ModItemUnitDataCompositeDef Barry Text PartingWords ChatMessage voice:Barry]] "We have reached simultaneous agreement. Count me as part of your team. Goodbye."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(779078342210, --[[ModItemUnitDataCompositeDef Barry Text RehireIntro ChatMessage voice:Barry]] "Мой контракт подходит к завершению. Предлагаю достигнуть нового согласия."),
+			'Text', T(779078342210, --[[ModItemUnitDataCompositeDef Barry Text RehireIntro ChatMessage voice:Barry]] "My contract is of expiring duration. Let us reach new agreement."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(912455165410, --[[ModItemUnitDataCompositeDef Barry Text RehireOutro ChatMessage voice:Barry]] "Я удовлетворён. Спасибо."),
+			'Text', T(912455165410, --[[ModItemUnitDataCompositeDef Barry Text RehireOutro ChatMessage voice:Barry]] "This gives me pleasure. Thank you."),
 		}),
 	},
 	MedicalDeposit = "none",

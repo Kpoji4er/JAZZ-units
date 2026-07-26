@@ -19,19 +19,19 @@ DefineClass.Ivan = {
 	Portrait = "UI/MercsPortraits/IvanPortrait",
 	BigPortrait = "UI/Mercs/Ivan",
 	IsMercenary = true,
-	Name = T(748830427164, --[[ModItemUnitDataCompositeDef Ivan Name]] "Иван Долвич"),
-	Nick = T(493354712045, --[[ModItemUnitDataCompositeDef Ivan Nick]] "Иван"),
-	AllCapsNick = T(857448797342, --[[ModItemUnitDataCompositeDef Ivan AllCapsNick]] "ИВАН"),
-	Bio = T(631392006133, --[[ModItemUnitDataCompositeDef Ivan Bio]] "После развала Советского Союза Иван, в прошлом майор Советской Армии, решил попытать удачи на рынке капиталистических стран. Хотя разговорный английский по-прежнему дается ему с трудом, время, проведенное в A.I.M., лишь отточило его и без того выдающиеся навыки бойца. Иван настолько прославился своими подвигами, что в Голливуде даже решили снять о нем фильм. Однако проект пришлось отменить, поскольку Иван настаивал, что главную роль будет играть он сам, а все перестрелки в фильме должны вестись с применением боевого оружия."),
+	Name = T(748830427164, --[[ModItemUnitDataCompositeDef Ivan Name]] "Ivan Dolvich"),
+	Nick = T(493354712045, --[[ModItemUnitDataCompositeDef Ivan Nick]] "Ivan"),
+	AllCapsNick = T(857448797342, --[[ModItemUnitDataCompositeDef Ivan AllCapsNick]] "IVAN"),
+	Bio = T(631392006133, --[[ModItemUnitDataCompositeDef Ivan Bio]] "Once a Major in the Red Army, Ivan took his combat skills to the free market after the collapse of the Soviet Union. Although he still struggles to put anything more than the simplest of phrases into English, his enormous martial talents have only grown during his membership with A.I.M. His feats are so legendary, Hollywood tried to make a movie about him, but since he insisted on starring in it and only using live ammunition the project was canceled."),
 	Nationality = "Russia",
-	Title = T(659068379440, --[[ModItemUnitDataCompositeDef Ivan Title]] "Русский медведь"),
-	Email = T(435235065061, --[[ModItemUnitDataCompositeDef Ivan Email]] "иван@aim.com"),
+	Title = T(659068379440, --[[ModItemUnitDataCompositeDef Ivan Title]] "The Russian Juggernaut"),
+	Email = T(435235065061, --[[ModItemUnitDataCompositeDef Ivan Email]] "ivan@aim.com"),
 	snype_nick = T(306981357442, --[[ModItemUnitDataCompositeDef Ivan snype_nick]] "иван"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(801318908726, --[[ModItemUnitDataCompositeDef Ivan Text MercChatRefusal Lines ChatMessage voice:Ivan]] "Игорь погиб, потому что связался с kretinami вроде тебя. Я не пойду. Ты плохой komandir, из-за тебя Игорь погиб."),
+					'Text', T(801318908726, --[[ModItemUnitDataCompositeDef Ivan Text MercChatRefusal Lines ChatMessage voice:Ivan]] "Игорь погиб, потому что связался с кретинами вроде тебя. I will not accept. You are bad commander and let Igor die."),
 				}),
 			},
 			'Conditions', {
@@ -44,7 +44,7 @@ DefineClass.Ivan = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(385900044934, --[[ModItemUnitDataCompositeDef Ivan Text MercChatRefusal Lines ChatMessage voice:Ivan]] "Nyet! От тебя одни problems, а денег нет. Я устал от durakov без денег, за которыми мне потом подтирать."),
+					'Text', T(385900044934, --[[ModItemUnitDataCompositeDef Ivan Text MercChatRefusal Lines ChatMessage voice:Ivan]] "Nyet! Problems, money. Я устал от дураков без денег, за которыми мне потом подтирать."),
 				}),
 			},
 			'Conditions', {
@@ -56,7 +56,7 @@ DefineClass.Ivan = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(405562095128, --[[ModItemUnitDataCompositeDef Ivan Text MercChatMitigation Lines ChatMessage voice:Ivan]] "Дурацкая затея, но я согласен. Все-таки Игорь - rodnya, буду за ним приглядывать. Сколько раз мне из-за Игоря ещё придётся с такими idiotami работать..."),
+					'Text', T(405562095128, --[[ModItemUnitDataCompositeDef Ivan Text MercChatMitigation Lines ChatMessage voice:Ivan]] "This is stupid mission but I will accept. Igor is family and I keep watch on him. Сколько раз мне из-за Игоря еще придется с такими идиотами работать..."),
 				}),
 			},
 			'Conditions', {
@@ -72,7 +72,7 @@ DefineClass.Ivan = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(166369730019, --[[ModItemUnitDataCompositeDef Ivan Text MercChatBranch Lines ChatMessage voice:Ivan]] "Plemyannika моего найми. Он, конечно, govna бесполезного кусок, но так он хоть какое-то время пить не будет."),
+					'Text', T(166369730019, --[[ModItemUnitDataCompositeDef Ivan Text MercChatBranch Lines ChatMessage voice:Ivan]] "You should hire nephew. Он, конечно, говна бесполезного кусок, но так он хоть какое-то время пить не будет."),
 				}),
 			},
 			'Conditions', {
@@ -86,7 +86,7 @@ DefineClass.Ivan = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(152187545209, --[[ModItemUnitDataCompositeDef Ivan Text MercChatBranch Lines ChatMessage voice:Ivan]] "Я слышал, Грунти ищет работу. Грунти - хороший soldat. Найми его."),
+					'Text', T(152187545209, --[[ModItemUnitDataCompositeDef Ivan Text MercChatBranch Lines ChatMessage voice:Ivan]] "Я слышал, Грунти ищет работу. Грунти - хороший солдат. Найми его."),
 				}),
 			},
 			'Conditions', {
@@ -98,37 +98,37 @@ DefineClass.Ivan = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(638867606061, --[[ModItemUnitDataCompositeDef Ivan Text Offline ChatMessage voice:Ivan]] "Это Иван Долвич. Я на задании. Перезвоню позже. Если ты durak, больше не звони."),
+			'Text', T(638867606061, --[[ModItemUnitDataCompositeDef Ivan Text Offline ChatMessage voice:Ivan]] "This is Ivan Dolvich. I am on mission. I will contact later. Если ты дурак, больше не звони."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(618731597504, --[[ModItemUnitDataCompositeDef Ivan Text GreetingAndOffer ChatMessage voice:Ivan]] "Это Иван Долвич. У тебя есть zadaniye? Очередной дебил хочет меня нанять. Надеюсь, хотя бы у этого деньги будут."),
+			'Text', T(618731597504, --[[ModItemUnitDataCompositeDef Ivan Text GreetingAndOffer ChatMessage voice:Ivan]] "This is Ivan Dolvich. You want to go on mission? Очередной дебил хочет меня нанять. Надеюсь, хотя бы у этого деньги будут."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(163444722395, --[[ModItemUnitDataCompositeDef Ivan Text ConversationRestart ChatMessage voice:Ivan]] "Ты куда пропал? Idioty, тратят моё время..."),
+			'Text', T(163444722395, --[[ModItemUnitDataCompositeDef Ivan Text ConversationRestart ChatMessage voice:Ivan]] "Where did you go? Идиоты, тратят мое время..."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(191528611145, --[[ModItemUnitDataCompositeDef Ivan Text IdleLine ChatMessage voice:Ivan]] "Ты здесь, idiotina? Я занят. Не будем тратить время."),
+			'Text', T(191528611145, --[[ModItemUnitDataCompositeDef Ivan Text IdleLine ChatMessage voice:Ivan]] "Ты здесь, идиотина? Ivan is busy. No time for wasting."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(370387628463, --[[ModItemUnitDataCompositeDef Ivan Text PartingWords ChatMessage voice:Ivan]] "Хорошо. Договорились. Я поеду в этот ваш Гран-Шьен."),
+			'Text', T(370387628463, --[[ModItemUnitDataCompositeDef Ivan Text PartingWords ChatMessage voice:Ivan]] "Good. We have agreement. I will go to this Grand Chien place."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(429789494124, --[[ModItemUnitDataCompositeDef Ivan Text RehireIntro ChatMessage voice:Ivan]] "Мой kontrakt скоро закончится. Как насчёт обновить его? Ты что, совсем durak - остаться без Ивана?"),
+			'Text', T(429789494124, --[[ModItemUnitDataCompositeDef Ivan Text RehireIntro ChatMessage voice:Ivan]] "Ivan contract expires soon. Let us renegotiate. Ты что, совсем дурак - остаться без Ивана?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(231732374331, --[[ModItemUnitDataCompositeDef Ivan Text RehireOutro ChatMessage voice:Ivan]] "Хорошо. Этот, похоже, не настолько durak, как все остальные, раз хочет со мной работать."),
+			'Text', T(231732374331, --[[ModItemUnitDataCompositeDef Ivan Text RehireOutro ChatMessage voice:Ivan]] "Good. Этот, похоже, не настолько дурак, как все остальные, раз хочет со мной работать."),
 		}),
 	},
 	StartingSalary = 4500,

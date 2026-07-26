@@ -19,19 +19,19 @@ DefineClass.Red = {
 	Portrait = "UI/MercsPortraits/Red",
 	BigPortrait = "UI/Mercs/Red",
 	IsMercenary = true,
-	Name = T(929255472486, --[[ModItemUnitDataCompositeDef Red Name]] "Эрни Спрагг «Рыжий»"),
-	Nick = T(898873386961, --[[ModItemUnitDataCompositeDef Red Nick]] "Рыжий"),
-	AllCapsNick = T(402554487810, --[[ModItemUnitDataCompositeDef Red AllCapsNick]] "РЫЖИЙ"),
-	Bio = T(519116089912, --[[ModItemUnitDataCompositeDef Red Bio]] "Коллеги любят шутить, что Рыжий продолжил пускать поезда под откос даже после официального окончания Первой мировой, однако Эрни остаётся одним из ведущих экспертов-подрывников в базе A.I.M. и, несмотря на возраст, находится в хорошей форме.\nХотя во время перестрелок он производит впечатление мрачного и даже вспыльчивого типа, дайте ему мину - и он установит (или обезвредит) её одной левой.\nИ не обращайте внимание на его старомодные взгляды на жизнь: во всём, что касается взрывчатых веществ, «Рыжий» уверенно идёт в ногу со временем."),
+	Name = T(929255472486, --[[ModItemUnitDataCompositeDef Red Name]] "Ernie \"Red\" Spragg"),
+	Nick = T(898873386961, --[[ModItemUnitDataCompositeDef Red Nick]] "Red"),
+	AllCapsNick = T(402554487810, --[[ModItemUnitDataCompositeDef Red AllCapsNick]] "RED"),
+	Bio = T(519116089912, --[[ModItemUnitDataCompositeDef Red Bio]] "Other mercs like to joke that Ernie's been blowing up bridges for Scottish Highlander regiments since The Great War, but Ernie remains one of A.I.M.'s foremost explosives experts and effective soldiers despite his age.\nAlthough he can often be dour and sometimes excitable in a firefight, Red makes planting and removing mines look like child's play.\nDon't let his old-fashioned ideas about the world fool you, in the field of high explosives he's as interested in new ideas as anyone else."),
 	Nationality = "Scotland",
-	Title = T(610428368333, --[[ModItemUnitDataCompositeDef Red Title]] "Шотландский торнадо"),
-	Email = T(738518702343, --[[ModItemUnitDataCompositeDef Red Email]] "gorets@aim.com"),
-	snype_nick = T(286093352279, --[[ModItemUnitDataCompositeDef Red snype_nick]] "gorets"),
+	Title = T(610428368333, --[[ModItemUnitDataCompositeDef Red Title]] "The Scottish Tornado"),
+	Email = T(738518702343, --[[ModItemUnitDataCompositeDef Red Email]] "feckoff@aim.com"),
+	snype_nick = T(286093352279, --[[ModItemUnitDataCompositeDef Red snype_nick]] "feckoff"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(204277783053, --[[ModItemUnitDataCompositeDef Red Text MercChatRefusal Lines ChatMessage voice:Red]] "Я мог бы работать на тебя, но есть одна проблемка. Я, видишь ли, хочу ещё пожить. Жизнь у меня, конечно, не сахар, но всё лучше, чем в ящик сыграть. А у тебя там, говорят, люди мрут. Вот мне и не хочется быть следующим."),
+					'Text', T(204277783053, --[[ModItemUnitDataCompositeDef Red Text MercChatRefusal Lines ChatMessage voice:Red]] "There's one teenie problem with me working for ya. I like being alive too much. Not that it's much of a life, but it's supposed to be better than being dead. Ye got a squaddie killed and I feel like I may be next."),
 				}),
 			},
 			'Conditions', {
@@ -43,7 +43,7 @@ DefineClass.Red = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(996587913004, --[[ModItemUnitDataCompositeDef Red Text MercChatRefusal Lines ChatMessage voice:Red]] "Имей в виду: я не хочу тащиться на другой конец света ради какой-то мелочёвки. Составь контракт на подольше - или я на такое не подписываюсь."),
+					'Text', T(996587913004, --[[ModItemUnitDataCompositeDef Red Text MercChatRefusal Lines ChatMessage voice:Red]] "I think you should know I dinnae like travelling half the fucking globe just to do a wee job. I need a longer contract or I'm out."),
 				}),
 			},
 			'Type', "duration",
@@ -51,7 +51,7 @@ DefineClass.Red = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(635542348486, --[[ModItemUnitDataCompositeDef Red Text MercChatRefusal Lines ChatMessage voice:Red]] "Слыхал, у тебя в команде Сдоба. Вот облом. Эта баба думает, что все кругом неправы, а её работа - их поправлять. Пораскинь мозгами и уволь её к чертям - тогда можешь мне ещё раз написать."),
+					'Text', T(635542348486, --[[ModItemUnitDataCompositeDef Red Text MercChatRefusal Lines ChatMessage voice:Red]] "I hear ya got Buns on your team. That's no good. She thinks everyone in the world is wrong and it's her job to correct 'em. Come back after you've come to your senses and fired her and we'll talk."),
 				}),
 			},
 			'Conditions', {
@@ -66,7 +66,7 @@ DefineClass.Red = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(423476528097, --[[ModItemUnitDataCompositeDef Red Text MercChatHaggle Lines ChatMessage voice:Red]] "Я баб с оружием не люблю, а у тебя сплошные бабы. Так что если хочешь, чтоб я согласился, подкинь ещё деньжат. Чтоб мне спокойнее было."),
+					'Text', T(423476528097, --[[ModItemUnitDataCompositeDef Red Text MercChatHaggle Lines ChatMessage voice:Red]] "I dinnae like guns in the hands of women and you seem to be having a lot of those. I will need something extra in the renumeration department to keep my nerves steady if I am to accept."),
 				}),
 			},
 			'Conditions', {
@@ -82,7 +82,7 @@ DefineClass.Red = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(596918996231, --[[ModItemUnitDataCompositeDef Red Text MercChatHaggle Lines ChatMessage voice:Red]] "Если хочешь, чтоб я терпел эту балаболку Фазу, придётся выложить побольше деньжат. У меня от её болтовни уже уши в трубочку сворачиваются - так что считай это расходами на медобслуживание."),
+					'Text', T(596918996231, --[[ModItemUnitDataCompositeDef Red Text MercChatHaggle Lines ChatMessage voice:Red]] "I want some extra cash for puttin' up with the incessant chattering of Livewire. Listening to her all day makes my ears bleed, so you can chalk it up as a medical expense."),
 				}),
 			},
 			'Conditions', {
@@ -104,37 +104,37 @@ DefineClass.Red = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(477851657674, --[[ModItemUnitDataCompositeDef Red Text Offline ChatMessage voice:Red]] "Это Эрни Спрагг, специалист по взрывам. Большим взрывам, маленьким взрывам - любым. Я либо смотрю футбол, либо мне не нравится ваша рожа, и я просто не беру трубку."),
+			'Text', T(477851657674, --[[ModItemUnitDataCompositeDef Red Text Offline ChatMessage voice:Red]] "This is Ernie Spragg. No explosion's too big and no bang is too loud. Either there's curling on the telly, or I don't like your face and don't want to talk to ya."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(442588283020, --[[ModItemUnitDataCompositeDef Red Text GreetingAndOffer ChatMessage voice:Red]] "Это Эрни Спрагг. Что, опять лететь в какую-нибудь жопу мира? Ну почему в нормальную страну никогда не позовут сапёра? Чтоб ты знал, я в своём комбинезоне отлично выгляжу!"),
+			'Text', T(442588283020, --[[ModItemUnitDataCompositeDef Red Text GreetingAndOffer ChatMessage voice:Red]] "This is Ernie Spragg. So you want me to go to another shithole country? Why don't I ever get called to some nice place? I look damn fine in my kilt, I'll have ya know!"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(913839648044, --[[ModItemUnitDataCompositeDef Red Text ConversationRestart ChatMessage voice:Red]] "Ох! Куда ты подевался? Давай уже всё выясним."),
+			'Text', T(913839648044, --[[ModItemUnitDataCompositeDef Red Text ConversationRestart ChatMessage voice:Red]] "Ach! Where did you bugger off to? Let's get this over with."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(468996036878, --[[ModItemUnitDataCompositeDef Red Text IdleLine ChatMessage voice:Red]] "Ты там или ушёл играть в приставку? Ох, уж эти мне дети с их приставками!"),
+			'Text', T(468996036878, --[[ModItemUnitDataCompositeDef Red Text IdleLine ChatMessage voice:Red]] "You still there or did ye start playin' video games? Ach! Ye kids with yer games!"),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(156162799216, --[[ModItemUnitDataCompositeDef Red Text PartingWords ChatMessage voice:Red]] "Ага, договорились. Теперь осталось добыть тысячный солнцезащитный крем, а то я по самую задницу буду в веснушках."),
+			'Text', T(156162799216, --[[ModItemUnitDataCompositeDef Red Text PartingWords ChatMessage voice:Red]] "Aye, that's done. Now I need to get some factor thousand sunscreen or I will be tits up in freckles."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(981721812446, --[[ModItemUnitDataCompositeDef Red Text RehireIntro ChatMessage voice:Red]] "У меня тут контракт истекает. Может, сделаешь что-нибудь на этот счёт?"),
+			'Text', T(981721812446, --[[ModItemUnitDataCompositeDef Red Text RehireIntro ChatMessage voice:Red]] "My contract's expiring and I was wondering if you'd be willing to rectify the situation?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(728306294667, --[[ModItemUnitDataCompositeDef Red Text RehireOutro ChatMessage voice:Red]] "А ты, оказывается, не полное дерьмо. Я, кажется, рад, что мы и дальше сотрудничаем."),
+			'Text', T(728306294667, --[[ModItemUnitDataCompositeDef Red Text RehireOutro ChatMessage voice:Red]] "You are not a total pile of shite. So, I guess I am kind of glad we are still working together. "),
 		}),
 	},
 	MedicalDeposit = "extreme",

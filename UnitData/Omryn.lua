@@ -19,19 +19,19 @@ DefineClass.Omryn = {
 	Portrait = "UI/MercsPortraits/Omryn",
 	BigPortrait = "UI/Mercs/Omryn",
 	IsMercenary = true,
-	Name = T(991660835571, --[[ModItemUnitDataCompositeDef Omryn Name]] "Юрий Омрын"),
-	Nick = T(703536100724, --[[ModItemUnitDataCompositeDef Omryn Nick]] "Омрын"),
-	AllCapsNick = T(586907860855, --[[ModItemUnitDataCompositeDef Omryn AllCapsNick]] "ОМРЫН"),
-	Bio = T(503386258599, --[[ModItemUnitDataCompositeDef Omryn Bio]] "Родившийся в стойбище оленеводов на Дальнем Востоке России, Омрын начал свою карьеру наёмника с того, что помогал M.E.R.C. выслеживать браконьеров в сибирской тайге. Почувствовав вкус к приключениям, молодой чукча уехал из России и вступил во французский Иностранный легион, в конце концов осев в этой стране. Прекрасная меткость, необычайная острота слуха, невозмутимость и знание английского, французского и русского принесли Омрыну расположение начальства и уважение товарищей. Человек по природе неторопливый и не амбициозный, Омрын в конце концов устал от службы и при первой возможности перешёл в A.I.M., сам подбирая задания себе по вкусу."),
+	Name = T(991660835571, --[[ModItemUnitDataCompositeDef Omryn Name]] "Yuri Omryn"),
+	Nick = T(703536100724, --[[ModItemUnitDataCompositeDef Omryn Nick]] "Omryn"),
+	AllCapsNick = T(586907860855, --[[ModItemUnitDataCompositeDef Omryn AllCapsNick]] "OMRYN"),
+	Bio = T(503386258599, --[[ModItemUnitDataCompositeDef Omryn Bio]] "Born and raised among the Chukchi peoples of far eastern Russia, Omryn began mercenary life helping M.E.R.C. track smugglers through the wilds of Siberia. It gave him a taste of adventure, so he left Russia and joined the French Foreign Legion, eventually claiming France as his home. His excellent marksmanship, uncanny perception, stolid manner, and mastery of English, French, and Russian languages earned him respect as well as commendations. Never an ambitious or energetic man, Omryn grew tired of full-time service and took the first opportunity to become an A.I.M. mercenary, working where and when it suited him."),
 	Nationality = "Russia",
-	Title = T(136809018730, --[[ModItemUnitDataCompositeDef Omryn Title]] "Вечно голодный охотник"),
+	Title = T(136809018730, --[[ModItemUnitDataCompositeDef Omryn Title]] "The Very Hungry Hunter"),
 	Email = T(568909169483, --[[ModItemUnitDataCompositeDef Omryn Email]] "yura@aim.com"),
 	snype_nick = T(796275464087, --[[ModItemUnitDataCompositeDef Omryn snype_nick]] "yura"),
 	Haggles = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(455048670549, --[[ModItemUnitDataCompositeDef Omryn Text MercChatHaggle Lines ChatMessage voice:Omryn]] "Плохой знак, главный. Работать будет трудно. Трудная работа - больше кушать, однако."),
+					'Text', T(455048670549, --[[ModItemUnitDataCompositeDef Omryn Text MercChatHaggle Lines ChatMessage voice:Omryn]] "I sense an evil omen, Glavny. This means work will be hard. I will need more rations to be able to do difficult work."),
 				}),
 			},
 			'Conditions', {},
@@ -42,7 +42,7 @@ DefineClass.Omryn = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(885814480955, --[[ModItemUnitDataCompositeDef Omryn Text MercChatHaggle Lines ChatMessage voice:Omryn]] "Мне нравится работать на тебя, главный, но еды даёшь очень мало. Дай больше денег на еду, чтоб я не голодал, и мы договоримся."),
+					'Text', T(885814480955, --[[ModItemUnitDataCompositeDef Omryn Text MercChatHaggle Lines ChatMessage voice:Omryn]] "I like work for you, Glavny, but food is definitely not enough. Give me more money for rations so I do not starve and we will spit on it."),
 				}),
 			},
 			'Conditions', {},
@@ -51,7 +51,7 @@ DefineClass.Omryn = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(956878799729, --[[ModItemUnitDataCompositeDef Omryn Text MercChatHaggle Lines ChatMessage voice:Omryn]] "Много битв, главный, а сна мало. Если не отдохну - голова кружиться будет. Надо больше еды, однако. Больше денег - больше еды. Дай больше денег, и мы договоримся."),
+					'Text', T(956878799729, --[[ModItemUnitDataCompositeDef Omryn Text MercChatHaggle Lines ChatMessage voice:Omryn]] "There is too many battles and too little rest, Glavny, I get dizzy if I do not rest. I will need more food and that needs more money. Give more money and we spit on it."),
 				}),
 			},
 			'Conditions', {
@@ -63,37 +63,37 @@ DefineClass.Omryn = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(902519634531, --[[ModItemUnitDataCompositeDef Omryn Text Offline ChatMessage voice:Omryn]] "Это Омрын. День духов, однако. Работать нельзя. Я скажу, когда день духов закончится."),
+			'Text', T(902519634531, --[[ModItemUnitDataCompositeDef Omryn Text Offline ChatMessage voice:Omryn]] "This is Omryn. Today is holy day and I must not work. When holy days are over I will contact you."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(927832147316, --[[ModItemUnitDataCompositeDef Omryn Text GreetingAndOffer ChatMessage voice:Omryn]] "Я Омрын. Ты - главный? Ты даёшь Омрыну работу? А она несложная?"),
+			'Text', T(927832147316, --[[ModItemUnitDataCompositeDef Omryn Text GreetingAndOffer ChatMessage voice:Omryn]] "I am Omryn. You must be the Glavny. Do you have job? Is it easy? "),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(620358003115, --[[ModItemUnitDataCompositeDef Omryn Text ConversationRestart ChatMessage voice:Omryn]] "Ты уходил спать? Спать - полезно, однако. Вот поговорю с тобой - тоже буду спать."),
+			'Text', T(620358003115, --[[ModItemUnitDataCompositeDef Omryn Text ConversationRestart ChatMessage voice:Omryn]] "Did you go to take nap? Always good to take nap. I will take one as soon as we are done."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(343432743008, --[[ModItemUnitDataCompositeDef Omryn Text IdleLine ChatMessage voice:Omryn]] "Молодец, однако. Тоже перекусить ходишь. Мы с тобой поладим, главный!"),
+			'Text', T(343432743008, --[[ModItemUnitDataCompositeDef Omryn Text IdleLine ChatMessage voice:Omryn]] "Good. You also take time for a quick bite during talks. We will get along well, Glavny!"),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(441195752933, --[[ModItemUnitDataCompositeDef Omryn Text PartingWords ChatMessage voice:Omryn]] "Хорошо. Договорились. Я приду в этот твой Гран-Шьен. Но сперва надо поесть и поспать. Сил набраться, однако!"),
+			'Text', T(441195752933, --[[ModItemUnitDataCompositeDef Omryn Text PartingWords ChatMessage voice:Omryn]] "Good. We spit on it. I will come to this Grand Chien place. But now I must eat and nap so I have strength when I am there."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(280135101598, --[[ModItemUnitDataCompositeDef Omryn Text RehireIntro ChatMessage voice:Omryn]] "Главный, контракт кончается! Омрыну нужны деньги на еду. Давай новый контракт делать!"),
+			'Text', T(280135101598, --[[ModItemUnitDataCompositeDef Omryn Text RehireIntro ChatMessage voice:Omryn]] "Glavny, contract is nearly over. Omryn needs money for food. Let us make new contract."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(763826917260, --[[ModItemUnitDataCompositeDef Omryn Text RehireOutro ChatMessage voice:Omryn]] "Договорились. Теперь можно поесть и поспать, однако."),
+			'Text', T(763826917260, --[[ModItemUnitDataCompositeDef Omryn Text RehireOutro ChatMessage voice:Omryn]] "We will spit on it and then I will eat and nap."),
 		}),
 	},
 	StartingSalary = 650,

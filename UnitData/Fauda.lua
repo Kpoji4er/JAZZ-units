@@ -19,19 +19,19 @@ DefineClass.Fauda = {
 	Portrait = "UI/MercsPortraits/Fauda",
 	BigPortrait = "UI/Mercs/Fauda",
 	IsMercenary = true,
-	Name = T(433525179007, --[[ModItemUnitDataCompositeDef Fauda Name]] "Кеви Аджит «Фауда»"),
-	Nick = T(786968855598, --[[ModItemUnitDataCompositeDef Fauda Nick]] "Фауда"),
-	AllCapsNick = T(560956094378, --[[ModItemUnitDataCompositeDef Fauda AllCapsNick]] "ФАУДА"),
-	Bio = T(847511420495, --[[ModItemUnitDataCompositeDef Fauda Bio]] "Когда Кеви и её брат Зоран сражались в рядах бойцов Пешмерги, их имена были на устах каждого курда. Однако когда Зоран погиб, а сама она еле выжила в засаде, устроенной на них иракскими националистами, Кеви принудительно комиссовали. Не пожелав сдаваться, она вступила в ряды A.I.M. с целью заработать достаточно денег, чтобы однажды снарядить собственную армию, вернуться на родину и отомстить убийцам брата. Товарищи прозвали Кеви «Фауда», так как в бою её вечно бросало в две крайности: безрассудную напористость либо чрезмерную осторожность. При всём том, в одном она постоянна: в своей любви к большим пушкам и гранатам. И те, и другие в её руках неизменно смертоносны."),
+	Name = T(433525179007, --[[ModItemUnitDataCompositeDef Fauda Name]] "Kevi \"Fauda\" Agit"),
+	Nick = T(786968855598, --[[ModItemUnitDataCompositeDef Fauda Nick]] "Fauda"),
+	AllCapsNick = T(560956094378, --[[ModItemUnitDataCompositeDef Fauda AllCapsNick]] "FAUDA"),
+	Bio = T(847511420495, --[[ModItemUnitDataCompositeDef Fauda Bio]] "For several years, Kevi and her brother Zoran were legendary fighters for the Peshmerga. After an ambush by Iraqi Nationalists left Zoran dead and Kevi traumatized, she was forcibly retired from active duty. Not ready to give up the fight, she joined A.I.M. and resolved to earn enough money that she could one day raise her own personal army and return to her homeland to avenge her brother. In combat, Kevi earned the name \"Fauda\" because she alternates between being recklessly aggressive and overly cautious. What never wavers, however, is her stunning ability with big guns and thrown explosives, both of which she wields with deadly effectiveness."),
 	Nationality = "Iraq",
-	Title = T(301899503224, --[[ModItemUnitDataCompositeDef Fauda Title]] "Дервиш динамита"),
+	Title = T(301899503224, --[[ModItemUnitDataCompositeDef Fauda Title]] "Peshmerga Deadly Dervish"),
 	Email = T(990035155352, --[[ModItemUnitDataCompositeDef Fauda Email]] "Fauda@aim.com"),
 	snype_nick = T(910030716918, --[[ModItemUnitDataCompositeDef Fauda snype_nick]] "FaudaAgit"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(608786325446, --[[ModItemUnitDataCompositeDef Fauda Text MercChatRefusal Lines ChatMessage voice:Fauda]] "Разве нищие могут кого-нибудь нанимать? Возвращайся, когда сможешь позволить себе настоящих солдат, - тогда и поговорим."),
+					'Text', T(608786325446, --[[ModItemUnitDataCompositeDef Fauda Text MercChatRefusal Lines ChatMessage voice:Fauda]] "How can you hire anyone if you are a beggar? Come back when you can afford to hire good soldiers, then we will talk."),
 				}),
 			},
 			'Conditions', {
@@ -41,7 +41,7 @@ DefineClass.Fauda = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(431816852528, --[[ModItemUnitDataCompositeDef Fauda Text MercChatRefusal Lines ChatMessage voice:Fauda]] "Как ты собираешься мне платить, если у тебя нет денег? Говорила же: нужно брать трофеи. Не можешь скопить денег на войну - я на тебя не работаю."),
+					'Text', T(431816852528, --[[ModItemUnitDataCompositeDef Fauda Text MercChatRefusal Lines ChatMessage voice:Fauda]] "How can you keep me if you have no money? I told you to take all spoils from battle but you do not listen. If you cannot keep a big war chest, I will not continue to work for you."),
 				}),
 			},
 			'Conditions', {
@@ -54,7 +54,7 @@ DefineClass.Fauda = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(905829914489, --[[ModItemUnitDataCompositeDef Fauda Text MercChatHaggle Lines ChatMessage voice:Fauda]] "На тебя скучно работать. Я пришла, чтобы сражаться и убивать слуг шайтана. А вместо этого я целыми днями сижу в лагере и занимаюсь ерундой. Тьфу на такую работу! Хочешь, чтобы я бездельничала, - плати больше!"),
+					'Text', T(905829914489, --[[ModItemUnitDataCompositeDef Fauda Text MercChatHaggle Lines ChatMessage voice:Fauda]] "Working for you is dull and pointless. I came to fight and kill the agents of Shaitan. Instead, I sit in camp doing empty work. I spit on this. If I am to be doing nothing you will pay me more!"),
 				}),
 			},
 			'Conditions', {
@@ -64,37 +64,37 @@ DefineClass.Fauda = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(510251097592, --[[ModItemUnitDataCompositeDef Fauda Text Offline ChatMessage voice:Fauda]] "Шайтан-машина... Где же эта кнопка? А. Кхм. Говорит Фауда Аджит. Я сейчас не у машины. Я на задании. Перезвоните, когда я буду не на задании. Машина скажет."),
+			'Text', T(510251097592, --[[ModItemUnitDataCompositeDef Fauda Text Offline ChatMessage voice:Fauda]] "This machine is made by Shaitan! Where is button? ...Oh. Ahem. This is Fauda Agit. I am not in machine right now. I am on a job. Contact me again when I am not on a job. Machine will know."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(803966294859, --[[ModItemUnitDataCompositeDef Fauda Text GreetingAndOffer ChatMessage voice:Fauda]] "Приветствую. Я Фауда. У тебя для меня работа?"),
+			'Text', T(803966294859, --[[ModItemUnitDataCompositeDef Fauda Text GreetingAndOffer ChatMessage voice:Fauda]] "Greetings. I am Fauda. Do you have a job for me?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(109033566183, --[[ModItemUnitDataCompositeDef Fauda Text ConversationRestart ChatMessage voice:Fauda]] "Шайтан сделал, чтобы машина нас прервала, но он слаб, а мы сильны. Мы можем говорить дальше."),
+			'Text', T(109033566183, --[[ModItemUnitDataCompositeDef Fauda Text ConversationRestart ChatMessage voice:Fauda]] "Shaitan moves through machine to interrupt us, but he is weak and we are strong. Now we can continue our discussion."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(170860465782, --[[ModItemUnitDataCompositeDef Fauda Text IdleLine ChatMessage voice:Fauda]] "У тебя что, язык отнялся? Говори!"),
+			'Text', T(170860465782, --[[ModItemUnitDataCompositeDef Fauda Text IdleLine ChatMessage voice:Fauda]] "Did Shaitan take your tongue? Speak!"),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(929498218341, --[[ModItemUnitDataCompositeDef Fauda Text PartingWords ChatMessage voice:Fauda]] "Хорошо. Я убью твоих врагов за своего брата, чтобы без стыда взглянуть ему в глаза, когда умру."),
+			'Text', T(929498218341, --[[ModItemUnitDataCompositeDef Fauda Text PartingWords ChatMessage voice:Fauda]] "Good. I will kill your enemies in the name of my brother so I can face him with clear eyes when I die. "),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(647351259105, --[[ModItemUnitDataCompositeDef Fauda Text RehireIntro ChatMessage voice:Fauda]] "Я хочу продолжать наш контракт. Ты согласен?"),
+			'Text', T(647351259105, --[[ModItemUnitDataCompositeDef Fauda Text RehireIntro ChatMessage voice:Fauda]] "I want to continue my contract. Do you agree?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(913491882738, --[[ModItemUnitDataCompositeDef Fauda Text RehireOutro ChatMessage voice:Fauda]] "Хорошо. Хватит об этом. Продолжим заниматься делом."),
+			'Text', T(913491882738, --[[ModItemUnitDataCompositeDef Fauda Text RehireOutro ChatMessage voice:Fauda]] "Good. Enough of this now. Let us return to our work."),
 		}),
 	},
 	StartingSalary = 3250,

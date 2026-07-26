@@ -19,19 +19,19 @@ DefineClass.Thor = {
 	Portrait = "UI/MercsPortraits/Thor",
 	BigPortrait = "UI/Mercs/Thor",
 	IsMercenary = true,
-	Name = T(928760236378, --[[ModItemUnitDataCompositeDef Thor Name]] "Тор Кауфман"),
-	Nick = T(520222526306, --[[ModItemUnitDataCompositeDef Thor Nick]] "Тор"),
-	AllCapsNick = T(981910118838, --[[ModItemUnitDataCompositeDef Thor AllCapsNick]] "ТОР"),
-	Bio = T(696466543743, --[[ModItemUnitDataCompositeDef Thor Bio]] "Тор только что вернулся с двухнедельного выездного семинара по очистке чакр в Нью-Мексико. Теперь, как он сам сообщает, его жизнь обогатилась двумя вещами: рецептом забойного смузи из авокадо и вновь пробудившейся жаждой приключений. Приверженность Кауфмана философии нью-эйдж делает из него одарённого целителя, а опыт медитации сообщает всем его движениям изящество и бесшумность. Немногочисленные недостатки Тора искупаются его буддийской безмятежностью, а в рукопашном бою равных ему почти нет. Тора отличает пытливый ум; нет такого умения, которое он не мог бы освоить прямо на ходу."),
+	Name = T(928760236378, --[[ModItemUnitDataCompositeDef Thor Name]] "Thor Kaufman"),
+	Nick = T(520222526306, --[[ModItemUnitDataCompositeDef Thor Nick]] "Thor"),
+	AllCapsNick = T(981910118838, --[[ModItemUnitDataCompositeDef Thor AllCapsNick]] "THOR"),
+	Bio = T(696466543743, --[[ModItemUnitDataCompositeDef Thor Bio]] "Just returned from a two-week chi-cleansing retreat in New Mexico, Thor reports that he has two things: a groovy recipe for an avocado smoothie and a thirst for adventure. Kaufman's new age lifestyle makes him a natural healer and his balance-focused conditioning allows him to move about with stealth and grace. His Zen-like demeanor makes it easy to overlook his fighting skills, but in hand-to-hand combat there are few that can match him. Thor also possesses an extremely inquisitive intellect, meaning there are few skills he can't pick up while on assignment."),
 	Nationality = "Germany",
-	Title = T(222862793640, --[[ModItemUnitDataCompositeDef Thor Title]] "Позитивное мышление - смертоносная сила"),
-	Email = T(369085666162, --[[ModItemUnitDataCompositeDef Thor Email]] "sila_positiva@aim.com"),
-	snype_nick = T(702556725674, --[[ModItemUnitDataCompositeDef Thor snype_nick]] "sila_positiva"),
+	Title = T(222862793640, --[[ModItemUnitDataCompositeDef Thor Title]] "Positive Thinking as a Deadly Force"),
+	Email = T(369085666162, --[[ModItemUnitDataCompositeDef Thor Email]] "positivepower@aim.com"),
+	snype_nick = T(702556725674, --[[ModItemUnitDataCompositeDef Thor snype_nick]] "positivepower"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(688252716496, --[[ModItemUnitDataCompositeDef Thor Text MercChatRefusal Lines ChatMessage voice:Thor]] "Я сожалею, но сейчас ретроградный Меркурий. Неудачное время для заключения новых договоров. Извини. Поговорим снова, когда звёзды сложатся лучше."),
+					'Text', T(688252716496, --[[ModItemUnitDataCompositeDef Thor Text MercChatRefusal Lines ChatMessage voice:Thor]] "Unfortunately, Mercury is in retrograde right now. This bodes ill for starting new contracts. I am sorry. Let us talk again when the stars are better."),
 				}),
 			},
 			'Conditions', {},
@@ -40,7 +40,7 @@ DefineClass.Thor = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(632860633590, --[[ModItemUnitDataCompositeDef Thor Text MercChatRefusal Lines ChatMessage voice:Thor]] "Должен отказаться. Я не доверяю тем, кто вызывает подозрение. Череда недавних смертей у тебя в команде меня смущает."),
+					'Text', T(632860633590, --[[ModItemUnitDataCompositeDef Thor Text MercChatRefusal Lines ChatMessage voice:Thor]] "I'll have to say no. I need a C.O. who inspires confidence, not caution. The recent deaths in your team make me uneasy."),
 				}),
 			},
 			'Conditions', {
@@ -54,7 +54,7 @@ DefineClass.Thor = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(928026734452, --[[ModItemUnitDataCompositeDef Thor Text MercChatMitigation Lines ChatMessage voice:Thor]] "Айс считает тебя достойным человеком и поэтому работает с тобой. Так что, если он доверяет тебе, то и я всегда доверяю Айсу."),
+					'Text', T(928026734452, --[[ModItemUnitDataCompositeDef Thor Text MercChatMitigation Lines ChatMessage voice:Thor]] "Ice apparently thinks highly enough of you to be on your team. So, I think if you're good enough for him, you're good enough for me as well."),
 				}),
 			},
 			'Conditions', {
@@ -68,7 +68,7 @@ DefineClass.Thor = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(894479586741, --[[ModItemUnitDataCompositeDef Thor Text MercChatMitigation Lines ChatMessage voice:Thor]] "Мне ещё многому нужно научиться у Омрына. Каждая минута, проведённая рядом с ним, делает меня лучше."),
+					'Text', T(894479586741, --[[ModItemUnitDataCompositeDef Thor Text MercChatMitigation Lines ChatMessage voice:Thor]] "I still have more to learn from Omryn. Every moment around his wisdom makes me a better man."),
 				}),
 			},
 			'Conditions', {
@@ -106,7 +106,7 @@ DefineClass.Thor = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(839770835330, --[[ModItemUnitDataCompositeDef Thor Text MercChatBranch Lines ChatMessage voice:Thor]] "Я с радостью поработаю на тебя. Кстати: такими напарниками, как Айс, можно только гордиться. Почему бы тебе не взять в команду и его тоже?"),
+					'Text', T(839770835330, --[[ModItemUnitDataCompositeDef Thor Text MercChatBranch Lines ChatMessage voice:Thor]] "I'm looking forward to working for you. Also, Ice is the kind of man I'm proud to serve with. Why not contact him and hire him for the team?"),
 				}),
 			},
 			'Conditions', {
@@ -118,37 +118,37 @@ DefineClass.Thor = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(681550588538, --[[ModItemUnitDataCompositeDef Thor Text Offline ChatMessage voice:Thor]] "Вы можете оставить сообщение для Тора, Кассандры и Фенруса. Сейчас мы заняты или просто спим. Я отвечу вам, как только появится такая возможность. Спасибо!"),
+			'Text', T(681550588538, --[[ModItemUnitDataCompositeDef Thor Text Offline ChatMessage voice:Thor]] "You've reached Thor, Cassandra, and Fenrus. We may be asleep or busy just now. I'll get back to you when I am able. Thank you!"),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(514082345416, --[[ModItemUnitDataCompositeDef Thor Text GreetingAndOffer ChatMessage voice:Thor]] "Привет, я - Тор Кауфман. Я всегда открыт к новым приключениям. Что ты можешь мне предложить?"),
+			'Text', T(514082345416, --[[ModItemUnitDataCompositeDef Thor Text GreetingAndOffer ChatMessage voice:Thor]] "Hello, I am Thor Kaufman. I am always open for new adventure. What are you proposing?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(310390725970, --[[ModItemUnitDataCompositeDef Thor Text ConversationRestart ChatMessage voice:Thor]] "Рад снова слышать тебя. Я как раз очистил свою прямую кишку и готов обсуждать дела!"),
+			'Text', T(310390725970, --[[ModItemUnitDataCompositeDef Thor Text ConversationRestart ChatMessage voice:Thor]] "I am very glad to hear from you again. I just had a bowel cleanse and am ready to talk business!"),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(331040399865, --[[ModItemUnitDataCompositeDef Thor Text IdleLine ChatMessage voice:Thor]] "Пока мы ждём - хочешь, я составлю твой гороскоп?"),
+			'Text', T(331040399865, --[[ModItemUnitDataCompositeDef Thor Text IdleLine ChatMessage voice:Thor]] "While we wait, do you want me to do your horoscope?"),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(126462930896, --[[ModItemUnitDataCompositeDef Thor Text PartingWords ChatMessage voice:Thor]] "Буду рад работать с тобой."),
+			'Text', T(126462930896, --[[ModItemUnitDataCompositeDef Thor Text PartingWords ChatMessage voice:Thor]] "I'm looking forward to working for you."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(815366988804, --[[ModItemUnitDataCompositeDef Thor Text RehireIntro ChatMessage voice:Thor]] "Скоро истекает срок моего контракта, не хочешь ли продлить его?"),
+			'Text', T(815366988804, --[[ModItemUnitDataCompositeDef Thor Text RehireIntro ChatMessage voice:Thor]] "When my contract expires a short time from now, will you want to keep me on as part of the operation?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(419099663092, --[[ModItemUnitDataCompositeDef Thor Text RehireOutro ChatMessage voice:Thor]] "Твоя аура излучает уверенность и положительную энергию! Я с удовольствием остаюсь."),
+			'Text', T(419099663092, --[[ModItemUnitDataCompositeDef Thor Text RehireOutro ChatMessage voice:Thor]] "Your aura exudes positivity and confidence! I'll be glad to stay."),
 		}),
 	},
 	MedicalDeposit = "none",
