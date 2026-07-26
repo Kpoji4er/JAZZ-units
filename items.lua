@@ -58352,9 +58352,8 @@ return {
 			Behaviors = {
 				PlaceObj('CustomAI', {
 					'EndTurnPolicies', {
-						PlaceObj('AIPolicyCustomSeekCover', {
-							'ScalePerDistance', true,
-							'ForceCheckLastEnemyPos', true,
+						PlaceObj('AIPolicyTakeCover', {
+							'visibility_mode', "team",
 						}),
 					},
 					'TakeCoverChance', 100,
@@ -58389,9 +58388,8 @@ return {
 			},
 			FallbackAction = "overwatch",
 			OptLocPolicies = {
-				PlaceObj('AIPolicyCustomSeekCover', {
-					'ScalePerDistance', true,
-					'ForceCheckLastEnemyPos', true,
+				PlaceObj('AIPolicyTakeCover', {
+					'visibility_mode', "team",
 				}),
 			},
 			group = "System",
