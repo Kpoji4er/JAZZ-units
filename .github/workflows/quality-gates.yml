@@ -1,0 +1,17 @@
+name: Quality gates
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  suite-package:
+    uses: Kpoji4er/JAZZ/.github/workflows/suite-package-gate.yml@main
+    with:
+      package: jazz-units
+      directory: jazz-units
