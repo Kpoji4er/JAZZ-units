@@ -187,5 +187,5 @@ local nicknames = {
 }
 
 
-local names = CollectEnemyNames(first_names, last_names,nicknames)
-AddEliteEnemyNames("Mercenary",names)
+local names = CollectEnemyNames(first_names, last_names, nicknames)
+AddEliteEnemyNames("Mercenary", names)
