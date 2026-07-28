@@ -38,6 +38,7 @@ return PlaceObj('ModDef', {
 		"UnitData/ThugSniper_Stronger_Elite.lua",
 		"Code/AIKeywords.lua",
 		"UnitData/JAZZ_Legion_AssaultT1_Roughneck.lua",
+		"UnitData/JAZZ_Legion_Recruit.lua",
 		"UnitData/JAZZ_Legion_AssaultT1_Crusher.lua",
 		"UnitData/JAZZ_Legion_AssaultT1_Grenadier.lua",
 		"UnitData/JAZZ_Legion_AssaultT2_Pillager.lua",
@@ -6631,6 +6632,11 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
 			'Id', "JAZZ_Legion_AssaultT1_Roughneck",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "JAZZ_Legion_Recruit",
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
