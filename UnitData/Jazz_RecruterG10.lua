@@ -4,7 +4,6 @@ DefineClass.Jazz_RecruterG10 = {
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
 
-	__copy_group = "SiegfriedSuperSoldiers",
 	object_class = "UnitData",
 	Health = 96,
 	Agility = 95,

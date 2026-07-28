@@ -19,7 +19,7 @@ DefineClass.Grunty = {
 	Portrait = "UI/MercsPortraits/Grunty",
 	BigPortrait = "UI/Mercs/Grunty",
 	IsMercenary = true,
-	Name = T(509794901102, --[[ModItemUnitDataCompositeDef Grunty Name]] "Helmut \"Grunty\" Grunther"),
+	Name = T(509794901102, --[[ModItemUnitDataCompositeDef Grunty Name]] 'Helmut "Grunty" Grunther'),
 	Nick = T(844792410600, --[[ModItemUnitDataCompositeDef Grunty Nick]] "Grunty"),
 	AllCapsNick = T(878015981670, --[[ModItemUnitDataCompositeDef Grunty AllCapsNick]] "GRUNTY"),
 	Bio = T(805883834301, --[[ModItemUnitDataCompositeDef Grunty Bio]] "A mercenary rapidly approaching his prime, Grunty has become one of A.I.M.'s most popular members. A solid soldier at a reasonable price, Helmut's congeniality and positive attitude make him a joy to work with. A versatile merc that is also skilled with heavy weapons, there are few tactical situations for which he is unprepared."),
@@ -73,7 +73,7 @@ DefineClass.Grunty = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(844233838316, --[[ModItemUnitDataCompositeDef Grunty Text MercChatMitigation Lines ChatMessage voice:Grunty]] "I have a certain attraction to \"Buns\" Sondergaard. I think it is the endearing way she cocks her head to the side just before she blows a hole in an enemy's gut. Since she's with you, I am with you, too."),
+					'Text', T(844233838316, --[[ModItemUnitDataCompositeDef Grunty Text MercChatMitigation Lines ChatMessage voice:Grunty]] 'I have a certain attraction to "Buns" Sondergaard. I think it is the endearing way she cocks her head to the side just before she blows a hole in an enemy\'s gut. Since she\'s with you, I am with you, too.'),
 				}),
 			},
 			'Conditions', {
@@ -129,7 +129,7 @@ DefineClass.Grunty = {
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(758234830840, --[[ModItemUnitDataCompositeDef Grunty Text ConversationRestart ChatMessage voice:Grunty]] "Mother always says \"Connections are easier to break than bones.\" It appears ours broke. Shall we restart our negotiations?"),
+			'Text', T(758234830840, --[[ModItemUnitDataCompositeDef Grunty Text ConversationRestart ChatMessage voice:Grunty]] 'Mother always says "Connections are easier to break than bones." It appears ours broke. Shall we restart our negotiations?'),
 		}),
 	},
 	IdleLine = {

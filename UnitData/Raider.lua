@@ -19,7 +19,7 @@ DefineClass.Raider = {
 	Portrait = "UI/MercsPortraits/Raider",
 	BigPortrait = "UI/Mercs/Raider",
 	IsMercenary = true,
-	Name = T(931473807439, --[[ModItemUnitDataCompositeDef Raider Name]] "Ron \"Raider\" Higgens"),
+	Name = T(931473807439, --[[ModItemUnitDataCompositeDef Raider Name]] 'Ron "Raider" Higgens'),
 	Nick = T(730316817764, --[[ModItemUnitDataCompositeDef Raider Nick]] "Raider"),
 	AllCapsNick = T(627615371784, --[[ModItemUnitDataCompositeDef Raider AllCapsNick]] "RAIDER"),
 	Bio = T(153322253794, --[[ModItemUnitDataCompositeDef Raider Bio]] "After helping to liberate Arulco, Ron and his wife Charlene decided to take some time off and went for a cruise in the Red Sea. Their ship was attacked by Somali pirates, which turned out to be very unfortunate for the pirates. Using skills from his days as a SWAT team leader, Ron quickly instructed a number of young junior assistant pursers how to fire pistols and then proceeded to repel all boarders. Rested and relaxed, he and his wife are ready for assignment."),
@@ -59,7 +59,7 @@ DefineClass.Raider = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] " I think we can make this work, but I don't know you. I will need some extra assurance in case our working relationship isn't a smooth one."),
+					'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] " I think we can make this work, but I don't know you. I will need some extra assurance in case our working relationship isn't a smooth one."),
 				}),
 			},
 			'Conditions', {

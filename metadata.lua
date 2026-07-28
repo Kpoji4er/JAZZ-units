@@ -6,7 +6,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 9,
-	'version', 2247,
+	'version', 2248,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -211,8 +211,8 @@ return PlaceObj('ModDef', {
 	},
 	'default_options', {},
 	'has_data', true,
-	'saved', 1777668515,
-	'code_hash', -6495555260113203212,
+	'saved', 1785257919,
+	'code_hash', -1978921569515512441,
 	'affected_resources', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
@@ -7371,7 +7371,7 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "EnemySquads",
-			'Id', "LegionGlobalAI_Garrison",
+			'Id', "LegionGlobalAI_Recon",
 			'ClassDisplayName', "Enemy Squads",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -7381,12 +7381,12 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "EnemySquads",
-			'Id', "LegionGlobalAI_Recon",
+			'Id', "LegionGlobalAI_Convoy",
 			'ClassDisplayName', "Enemy Squads",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "EnemySquads",
-			'Id', "LegionGlobalAI_Convoy",
+			'Id', "LegionGlobalAI_Garrison",
 			'ClassDisplayName', "Enemy Squads",
 		}),
 		PlaceObj('ModResourcePreset', {

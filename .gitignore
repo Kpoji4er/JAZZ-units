@@ -1,1 +1,4 @@
 *.psd
+# Local JA3 style references for portrait generation (not shipped)
+MercPortraits/References/
+
