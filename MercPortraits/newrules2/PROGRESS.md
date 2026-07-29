@@ -407,3 +407,9 @@ Force regen all x5 (missing from vote archive). RemBG BiRefNet. Ship promoted: *
 ## Mike regen 2026-07-30
 
 Force regen all x5 (user: remake Mike better). RemBG BiRefNet. Ship: **appearance_backstory_bio** (same vote slot, improved).
+
+UI busts recropped tight headshot (frac=0.20) via bust_crop_tight.py — face fills frame like vanilla.
+
+UI busts recrop v2 frac=0.15 + trim-to-face fill.
+
+UI busts recrop v3 frac=0.28 (Ice/Blood middle ground; no face-only trim).

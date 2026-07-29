@@ -23,7 +23,7 @@ Variants (filename suffix): `appearance` | `appearance_backstory` | `appearance_
 5. SETTING: hot African climate (Arulco) — heat-appropriate kit; no winter/arctic gear unless sheet says so.
 6. PROPORTIONS: ~7.5–8 heads; legs ≈ half height; NO short legs / dwarf. Endomorph = wider, not shorter legs.
 7. Interesting pose; Big framing head-to-boots.
-8. Portrait: bust crop from Big via `_postprocess.py <Id> <variant> <raw>`.
+8. Portrait: UI headshot via `bust_crop_tight` (head_frac≈**0.28**, Ice/Blood) — full head + shoulders; NOT waist-up, NOT extreme face crop. Skill: `frame-jazz-merc-ui-portrait`.
 9. Excess fabric folds → **GPT GenerateImage denoise** 2–3 passes (refs: noisy Big + `OK_clean_folds_Laura_pants.png`; keep sharp). **Not** OpenCV bilateral. Regen if still bad.
 10. `force_regen` overwrites that merc's variant files.
 

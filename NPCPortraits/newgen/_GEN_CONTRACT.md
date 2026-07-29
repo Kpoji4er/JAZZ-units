@@ -8,8 +8,9 @@
 ## Pipeline
 1. GenerateImage 1:1 opaque on `#504633`
 2. `reference_image_paths`: **existing** `NPCPortraits/<Id>_Big.png` first (style+identity lock), plus optional `MercPortraits/References/` for proportions
-3. Save to `_raw/` → rembg birefnet-general → resize 2000 → `newgen/<Id>_Big.png`
-4. Sequential QA vs old NPC Big + Highball quality bar proportions → regen rejects once
+3. SETTING in prompt: hot African climate (Arulco) — heat-appropriate clothes; no winter gear unless style-ref shows it
+4. Save to `_raw/` → rembg birefnet-general → resize 2000 → `newgen/<Id>_Big.png`
+5. Sequential QA vs old NPC Big + Highball quality bar proportions → regen rejects once
 
 ## Role by Id prefix (NOT AIM mercenaries)
 | Prefix | Role |
