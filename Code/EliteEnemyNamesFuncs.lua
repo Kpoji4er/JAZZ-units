@@ -1,17 +1,36 @@
 -- Shared format for first+last elite names. Nested T(first)/T(last) keep language switching.
 local EliteNameComboFormatId = 890000000001650
 
+-- Dedup by localization id / structure, never by translated text (language-dependent pool size → MP desync).
+local function name_key(v)
+	if v == nil then
+		return nil
+	end
+	if type(v) == "number" then
+		return "T" .. v
+	end
+	if type(v) == "table" then
+		local id = v[1]
+		if type(id) == "number" then
+			if v.first ~= nil or v.last ~= nil then
+				local fk = name_key(v.first)
+				local lk = name_key(v.last)
+				if fk and lk then
+					return fk .. "|" .. lk
+				end
+			end
+			return "T" .. id
+		end
+	end
+	local s = tostring(v)
+	if s == "" then
+		return nil
+	end
+	return "S:" .. s
+end
+
 function BuildNameCombos(first_names, last_names)
 	local out, seen = {}, {}
-
-	local function text_key(v)
-		local s = _InternalTranslate(v) or ""
-		s = s:gsub("^%s+", ""):gsub("%s+$", "")
-		if s == "" then
-			return nil
-		end
-		return s:lower()
-	end
 
 	local function add_name(name_t, key)
 		if not key or seen[key] then
@@ -22,16 +41,16 @@ function BuildNameCombos(first_names, last_names)
 	end
 
 	for _, fn in ipairs(first_names or {}) do
-		add_name(fn, text_key(fn))
+		add_name(fn, name_key(fn))
 	end
 
 	for _, fn in ipairs(first_names or {}) do
-		local fk = text_key(fn)
+		local fk = name_key(fn)
 		if fk then
 			for _, ln in ipairs(last_names or {}) do
-				local lk = text_key(ln)
+				local lk = name_key(ln)
 				if lk then
-					add_name(T{ EliteNameComboFormatId, "<first> <last>", first = fn, last = ln }, fk .. " " .. lk)
+					add_name(T{ EliteNameComboFormatId, "<first> <last>", first = fn, last = ln }, fk .. "|" .. lk)
 				end
 			end
 		end
@@ -45,10 +64,8 @@ function CollectEnemyNames(first_names, last_names, nicknames)
 
 	if nicknames then
 		for _, name in ipairs(nicknames) do
-			local s = _InternalTranslate(name) or ""
-			s = s:gsub("^%s+", ""):gsub("%s+$", "")
-			local key = s:lower()
-			if key ~= "" and not seen[key] then
+			local key = name_key(name)
+			if key and not seen[key] then
 				seen[key] = true
 				names[#names + 1] = name
 			end

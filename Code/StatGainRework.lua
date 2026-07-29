@@ -25,7 +25,7 @@ end
 
 function GetModifiedThreshold(stat, penalty, bonus)
     local successChance = 1000 - stat - penalty + bonus
-    return round((1000 - successChance * 2.0), 1)
+    return round(1000 - successChance * 2, 1)
 end
 
 
@@ -93,9 +93,10 @@ function RollForStatGaining(unit, stat, failChance)
       end
       CombatLog("debug", "Wisdom Bonus: " .. bonusForWisdom)
 
-      local roll = InteractionRand((1000 + bonusForWisdom))
+      local roll = InteractionRand((1000 + bonusForWisdom), "StatGaining")
       if threshold <= roll then
-        GainStat(unit, stat)
+        local modId = string.format("StatGain-%s-%s-%d-%d", stat, unit.session_id, GameTime(), InteractionRand(nil, "StatGain"))
+        GainStat(unit, stat, 1, modId)
         unit.statGainingPoints = unit.statGainingPoints - 1
         success_text = "(success) "
       end
