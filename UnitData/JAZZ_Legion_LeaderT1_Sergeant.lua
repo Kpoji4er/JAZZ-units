@@ -39,7 +39,9 @@ DefineClass.JAZZ_Legion_LeaderT1_Sergeant = {
 	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "Overwatch",
 	MaxAttacks = 10,
-	PickCustomArchetype = function (self, proto_context)  end,
+	PickCustomArchetype = function (self, proto_context)
+		return JazzAI_PickCombatStance(self, proto_context)
+	end,
 	CustomEquipGear = function (self, items)  end,
 	MaxHitPoints = 80,
 	StartingPerks = {

@@ -34,40 +34,9 @@ DefineClass.JAZZ_Legion_AssaultT1_Grenadier = {
 	CanManEmplacements = false,
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)
-		local archetype = self.archetype
-		
-		local panicroll = self:Random(100)
-		local panicshance = 0
-		
-		local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-		local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-		
-		local wounds = 0
-		local wounded = self:GetStatusEffect("Wounded")
-		local bleeding = self:GetStatusEffect("Bleeding")
-		if wounded then
-			wounds = wounded.stacks 
-		end
-		if bleeding then
-			wounds = wounds + bleeding.stacks 
-		end
-		panicroll = panicroll - 10*wounds
-									
-		if wounds > 1 then
-			local panicshance = 100-health_perc
-		end
-		
-		if will_perc < 40 then
-			local panicshance = Max(panicshance,100-will_perc)
-		end
-		
-		if panicroll < panicshance then
-		PlayVoiceResponse(self, "AIArchetypeScared")
-		archetype = "Deserter"
-		end
-		
-		return archetype
+		return JazzAI_PickCombatStance(self, proto_context)
 	end,
+
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 		self:TryEquip(items, "Handheld B", "PipeBomb")

@@ -32,41 +32,15 @@ DefineClass.JAZZ_Legion_FlankerT4_Ranger = {
 		"Control",
 		"RunAndGun",
 	},
-	archetype = "Legion_Assaulter",
+	archetype = "Legion_Flanker",
 	role = "Recon",
-	RepositionArchetype = "Legion_Assaulter",
+	RepositionArchetype = "Legion_Flanker",
 	AlwaysUseOpeningAttack = true,
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)
-		local enemy, dist = GetNearestEnemy(self)
-		local archetype = self.archetype
-		local weapon_class = "Firearm"
-		local roll = self:Random(100)
-		local chance = 70
-		
-		if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "AssaultRifle" and roll < chance then
-			archetype = "Legion_Assaulter"
-			weapon_class = "AssaultRifle"
-			PlayVoiceResponse(self, "AIArchetypeAngry")
-		end
-		
-		if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
-			archetype = "Legion_Assaulter"
-			weapon_class = "SubmachineGun"
-			PlayVoiceResponse(self, "AIArchetypeAngry")
-		end
-		
-		if not self:GetActiveWeapons(weapon_class) then
-			AIPlayCombatAction("ChangeWeapon", self, 0)
-		end
-		
-		local stealth_stance = self:GetStanceToStealth()
-		if self:CanStealth(stealth_stance) then
-		 self:Hide()
-		end	
-		
-		return archetype
+		return JazzAI_PickCombatStance(self, proto_context)
 	end,
+
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "SniperRifle")
 		self:TryEquip(items, "Handheld B", "Firearm")

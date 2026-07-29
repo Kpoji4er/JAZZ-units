@@ -34,25 +34,9 @@ DefineClass.JAZZ_Legion_FrontT1_Bonemaker = {
 	CanManEmplacements = false,
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)
-		local archetype = self.archetype
-		
-		local panicroll = self:Random(100)
-		local panicshance = 0
-		
-		for _, ally in ipairs(self.team.units) do
-			if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) then
-				archetype = "Medic"
-			end
-		end
-		
-		local bleeding = self:GetStatusEffect("Bleeding")
-		if bleeding then
-			archetype = "Medic"
-		end
-		
-		
-		return archetype
+		return JazzAI_PickCombatStance(self, proto_context, { allow_medic = true })
 	end,
+
 	CustomEquipGear = function (self, items)  end,
 	MaxHitPoints = 80,
 	StartingPerks = {

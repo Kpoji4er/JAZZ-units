@@ -33,30 +33,9 @@ DefineClass.JAZZ_Legion_FrontT3_Sniper = {
 	OpeningAttackType = "PinDown",
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)
-		local enemy, dist = GetNearestEnemy(self)
-		local archetype = self.archetype
-		local weapon_class = "Firearm"
-		local roll = self:Random(100)
-		
-		
-		if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver"  then
-			archetype = "Legion_Assaulter"
-			weapon_class = "Revolver"
-			PlayVoiceResponse(self, "AIArchetypeAngry")
-		end
-		
-		if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol"  then
-			archetype = "Legion_Assaulter"
-			weapon_class = "Pistol"
-			PlayVoiceResponse(self, "AIArchetypeAngry")
-		end
-		
-		if not self:GetActiveWeapons(weapon_class) then
-			AIPlayCombatAction("ChangeWeapon", self, 0)
-		end
-		
-		return archetype
+		return JazzAI_PickCombatStance(self, proto_context)
 	end,
+
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 		self:TryEquip(items, "Handheld B", "Firearm")

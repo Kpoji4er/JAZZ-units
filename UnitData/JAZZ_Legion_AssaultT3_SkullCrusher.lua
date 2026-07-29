@@ -36,22 +36,9 @@ DefineClass.JAZZ_Legion_AssaultT3_SkullCrusher = {
 	RepositionArchetype = "Legion_Assaulter",
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)
-		local enemy, dist = GetNearestEnemy(self)
-		local archetype = self.archetype
-		local weapon_class = "Firearm"
-		
-		if enemy and dist < 10*const.SlabSizeX then
-			--archetype = "Brute"
-			weapon_class = "Melee"
-			PlayVoiceResponse(self, "AIArchetypeAngry")
-		end
-		
-		if not self:GetActiveWeapons(weapon_class) then
-			AIPlayCombatAction("ChangeWeapon", self, 0)
-		end
-		
-		return archetype
+		return JazzAI_PickCombatStance(self, proto_context)
 	end,
+
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 		self:TryEquip(items, "Handheld B", "MeleeWeapon")

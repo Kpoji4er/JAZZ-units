@@ -38,22 +38,9 @@ DefineClass.RebelHeavy_Mortar_Immortal = {
 	CanManEmplacements = false,
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)
-		local enemy, dist = GetNearestEnemy(self)
-		local archetype = self.archetype
-		local weapon_class = "Mortar"
-		
-		if GameState.Underground or enemy and dist < 15*const.SlabSizeX then
-			archetype = "Skirmisher"
-			weapon_class = "Revolver"
-			PlayVoiceResponse(self, "AIArchetypeScared")
-		end
-		
-		if not self:GetActiveWeapons(weapon_class) then
-			AIPlayCombatAction("ChangeWeapon", self, 0)
-		end
-		
-		return archetype
+		return JazzAI_PickCombatStance(self, proto_context)
 	end,
+
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "HeavyWeapon")
 		self:TryEquip(items, "Handheld B", "Firearm")

@@ -1,0 +1,16 @@
+﻿Demolitions|demo charges, detonator, wire cutters, blasting caps — NO firearms
+Doctor|field medic IFAK, shears, gauze, simple red cross — NO stethoscope-doctor look, NO firearms
+Mechanic|tools, multitool, wrench pouch, tech kit — NO firearms
+Commander|radio, binoculars pouch, map case, leadership kit — NO firearms, NO rank chevrons
+Scout|binoculars, compact pack, soft kit — NO firearms
+Sniper|spotting scope pouch, ghillie accents optional, rangefinder — NO firearms in frame
+Autorifleman|ammo pouches empty/closed, webbing — NO firearms in frame
+HeavyWeapons|heavy load pouches, straps — NO firearms/launchers in frame
+Thrower|grenade pouches (demo/throwables), bandolier — NO firearms
+Melee|baton/knife sheath OK if small, gloves — NO firearms
+AllRounder|PMC plate carrier, mixed pouches — NO firearms
+Support|negotiator soft kit, satchel — NO firearms
+Stealth|dark muted kit, compact pouches — NO firearms
+Marksmen|same as Sniper kit without gun
+Leader|same as Commander
+ExplosiveExpert|same as Demolitions

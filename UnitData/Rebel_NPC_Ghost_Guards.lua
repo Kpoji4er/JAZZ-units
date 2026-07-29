@@ -38,28 +38,9 @@ DefineClass.Rebel_NPC_Ghost_Guards = {
 	AlwaysUseOpeningAttack = true,
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)
-		local enemy, dist = GetNearestEnemy(self)
-		local archetype = self.archetype
-		local weapon_class = "Firearm"
-		local roll = self:Random(100)
-		
-		if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "Firearm"  then
-			archetype = "Legion_Assault"
-			weapon_class = "MeleeWeapon"
-			PlayVoiceResponse(self, "AIArchetypeAngry")
-		end
-		
-		if not self:GetActiveWeapons(weapon_class) then
-			AIPlayCombatAction("ChangeWeapon", self, 0)
-		end
-		
-		local stealth_stance = self:GetStanceToStealth()
-		if self:CanStealth(stealth_stance) then
-		 self:Hide()
-		end	
-		
-		return archetype
+		return JazzAI_PickCombatStance(self, proto_context)
 	end,
+
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "SniperRifle")
 		self:TryEquip(items, "Handheld B", "MeleeWeapon")

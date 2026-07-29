@@ -8221,6 +8221,426 @@ return {
 						weight = 10000,
 					}),
 				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Colby",
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "JAZZ_Colby50",
+						weight = 50000,
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "JAZZ_Colby35",
+						weight = 35000,
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "JAZZ_Colby25",
+						weight = 25000,
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "JAZZ_Colby20",
+						weight = 20000,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Rothman",
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "JAZZ_Rothman50",
+						weight = 50000,
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "JAZZ_Rothman35",
+						weight = 35000,
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "JAZZ_Rothman25",
+						weight = 25000,
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "JAZZ_Rothman20",
+						weight = 20000,
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Blade",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Blade50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Blade35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Blade25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Blade20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Ira",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Ira50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Ira35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Ira25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Ira20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Dimitri",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Dimitri50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Dimitri35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Dimitri25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Dimitri20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Madman",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Madman50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Madman35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Madman25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Madman20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Conrad",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Conrad50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Conrad35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Conrad25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Conrad20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Mike",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Mike50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Mike35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Mike25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Mike20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Grom",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Grom50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Grom35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Grom25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Grom20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Quinten",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Quinten50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Quinten35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Quinten25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Quinten20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Vicious",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Vicious50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Vicious35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Vicious25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Vicious20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Biff",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Biff50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Biff35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Biff25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Biff20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Nervous",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Nervous50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Nervous35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Nervous25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Nervous20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Flo",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Flo50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Flo35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Flo25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Flo20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Cougar",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Cougar50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Cougar35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Cougar25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Cougar20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Miguel",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Miguel50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Miguel35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Miguel25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Miguel20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Gamos",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Gamos50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Gamos35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Gamos25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Gamos20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Dynamo",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Dynamo50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Dynamo35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Dynamo25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Dynamo20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Gaston",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Gaston50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Gaston35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Gaston25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Gaston20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Horg",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Horg50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Horg35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Horg25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Horg20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Manuel",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Manuel50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Manuel35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Manuel25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Manuel20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Monk",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Monk50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Monk35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Monk25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Monk20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Allik",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Allik50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Allik35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Allik25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Allik20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Henning",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Henning50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Henning35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Henning25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Henning20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Static",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Static50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Static35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Static25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Static20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Highball",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Highball50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Highball35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Highball25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Highball20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Bull",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Bull50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Bull35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Bull25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Bull20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Cord",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Cord50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Cord35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Cord25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Cord20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Hobbit",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Hobbit50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Hobbit35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Hobbit25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Hobbit20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Ricochet",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Ricochet50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Ricochet35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Ricochet25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Ricochet20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Meat",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Meat50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Meat35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Meat25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Meat20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Carlos",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Carlos50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Carlos35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Carlos25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Carlos20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Devin",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Devin50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Devin35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Devin25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Devin20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Shank",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Shank50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Shank35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Shank25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Shank20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Vince",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Vince50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Vince35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Vince25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Vince20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Hitman",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Hitman50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Hitman35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Hitman25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Hitman20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Biggens",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Biggens50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Biggens35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Biggens25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Biggens20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Kulba",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Kulba50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Kulba35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Kulba25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Kulba20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Vilde",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Vilde50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Vilde35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Vilde25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Vilde20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Grace",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Grace50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Grace35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Grace25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Grace20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Steiger",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Steiger50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Steiger35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Steiger25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Steiger20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Lucky",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Lucky50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Lucky35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Lucky25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Lucky20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Laura",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Laura50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Laura35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Laura25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Laura20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "Loot_JAZZ_Eskimo",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Eskimo50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Eskimo35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Eskimo25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Eskimo20", weight = 20000 }),
+				}),
 				}),
 			PlaceObj('ModItemFolder', {
 				'name', "MercPresets",
@@ -15597,6 +16017,1678 @@ return {
 						item = "JazzArmor_FlakM69",
 						negate = true,
 					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Colby50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "ShapedCharge", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "C4", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherVest" }),
+					PlaceObj('LootEntryInventoryItem', { item = "MP5A4", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_9x19_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Remote" }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Colby35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "ShapedCharge", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "C4", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherVest" }),
+					PlaceObj('LootEntryInventoryItem', { item = "MPL", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_9x19_FMJ", stack_max = 40, stack_min = 40 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Colby25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "C4", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_PoliceVest" }),
+					PlaceObj('LootEntryInventoryItem', { item = "UZI", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_9x19_FMJ", stack_max = 30, stack_min = 30 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Colby20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_PoliceVest" }),
+					PlaceObj('LootEntryInventoryItem', { item = "UZI", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_9x19_FMJ", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Rothman50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_Uniform" }),
+					PlaceObj('LootEntryInventoryItem', { item = "FNFAL", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_Match", stack_max = 40, stack_min = 40 }),
+					PlaceObj('LootEntryInventoryItem', { item = "ShapedCharge", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Rothman35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Rothman25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 40, stack_min = 40 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Rothman20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Quinten50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_PoliceVest" }),
+					PlaceObj('LootEntryInventoryItem', { item = "HiPower", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 48, stack_min = 48 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 50, stack_min = 50 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "CombatStim", stack_max = 2, stack_min = 2 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Quinten35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "HiPower", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 36, stack_min = 36 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 30, stack_min = 30 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Quinten25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Colt1911", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_45ACP_FMJ", stack_max = 24, stack_min = 24 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Quinten20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Colt1911", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_45ACP_FMJ", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Vicious50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "CombatStim", stack_max = 2, stack_min = 2 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Vicious35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Vicious25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Vicious20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Biff50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_PoliceVest" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Biff35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Biff25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Colt38Special", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Biff20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Colt38Special", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Nervous50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "UZI", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 80, stack_min = 80 }),
+					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Nervous35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "MP5A4", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 60, stack_min = 60 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Nervous25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "MPL", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 40, stack_min = 40 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Nervous20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "UZI", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 40, stack_min = 40 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Flo50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Flo35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Flo25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherPants" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_Poor", stack_max = 12, stack_min = 12 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Flo20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_Poor", stack_max = 8, stack_min = 8 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Cougar50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
+					PlaceObj('LootEntryInventoryItem', { item = "MP5SD", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Cougar35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
+					PlaceObj('LootEntryInventoryItem', { item = "MP5SD", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 40, stack_min = 40 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Cougar25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "MP5K", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 40, stack_min = 40 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Cougar20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "MPL", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 30, stack_min = 30 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Miguel50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_Uniform" }),
+					PlaceObj('LootEntryInventoryItem', { item = "HiPower", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 32, stack_min = 32 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Miguel35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Colt1911", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_45ACP_FMJ", stack_max = 28, stack_min = 28 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Miguel25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "P210", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 40, stack_min = 40 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Miguel20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 24, stack_min = 24 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Gamos50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "SKS", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 30, stack_min = 30 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Machete", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Gamos35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "SKS", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Machete", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Gamos25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Machete_Sharpened", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Gamos20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Machete", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Dynamo50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Crowbar", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 15, stack_min = 15 }),
+					PlaceObj('LootEntryInventoryItem', { item = "CombatStim", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Dynamo35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Crowbar", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 10, stack_min = 10 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Dynamo25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherPants" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Crowbar", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 5, stack_min = 5 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Dynamo20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Crowbar", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Gaston50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
+					PlaceObj('LootEntryInventoryItem', { item = "DragunovSVD", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_Match", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_CombatScope_2x" }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Gaston35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Springfield", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_3006_Match", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Gaston25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Mini14", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 40, stack_min = 40 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Gaston20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Mini14", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 30, stack_min = 30 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Horg50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_FlakM1955" }),
+					PlaceObj('LootEntryInventoryItem', { item = "M79", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_40mmFragGrenade", stack_max = 8, stack_min = 8 }),
+					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 60, stack_min = 60 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Horg35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_FlakM1955" }),
+					PlaceObj('LootEntryInventoryItem', { item = "M79", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_40mmFragGrenade", stack_max = 5, stack_min = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 40, stack_min = 40 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Horg25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 40, stack_min = 40 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FragGrenade", stack_max = 2, stack_min = 2 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Horg20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 30, stack_min = 30 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Manuel50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "SKS", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 30, stack_min = 30 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Manuel35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "SKS", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Manuel25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherPants" }),
+					PlaceObj('LootEntryInventoryItem', { item = "SKS", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Manuel20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherPants" }),
+					PlaceObj('LootEntryInventoryItem', { item = "SKS", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 10, stack_min = 10 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Monk50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_SovietAssaultArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "VSS", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x39_AP", stack_max = 30, stack_min = 30 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Monk35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_SovietAssaultArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "VSS", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x39_AP", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Monk25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
+					PlaceObj('LootEntryInventoryItem', { item = "AK74", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_545_AP", stack_max = 40, stack_min = 40 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Monk20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
+					PlaceObj('LootEntryInventoryItem', { item = "AK74", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_545_AP", stack_max = 30, stack_min = 30 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Allik50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Sig550", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 10, stack_min = 10 }),
+					PlaceObj('LootEntryInventoryItem', { item = "ShapedCharge", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Allik35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Sig550", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 40, stack_min = 40 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 5, stack_min = 5 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Allik25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Mini14", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 40, stack_min = 40 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Allik20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Mini14", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 30, stack_min = 30 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Henning50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_Uniform" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Sig550", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 80, stack_min = 80 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Henning35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_Uniform" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Sig550", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Henning25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 60, stack_min = 60 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Henning20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 40, stack_min = 40 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Static50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Wirecutter", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "MicroUZI", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 32, stack_min = 32 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Static35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Scorpion", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x25_FMJ", stack_max = 30, stack_min = 30 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 15, stack_min = 15 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Static25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 24, stack_min = 24 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Static20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_UniformPants" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_Poor", stack_max = 16, stack_min = 16 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Highball50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherVest" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 30, stack_min = 30 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "CombatStim", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "SWModel19", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_357_FMJ", stack_max = 18, stack_min = 18 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Highball35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_UniformPants" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Colt38Special", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Highball25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 15, stack_min = 15 }),
+					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Highball20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
+					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 6, stack_min = 6 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Bull50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherVest" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "M2Carbine", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_FMJ", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Bull35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Winchester1894", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_FMJ", stack_max = 16, stack_min = 16 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Bull25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Winchester1894", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_P", stack_max = 12, stack_min = 12 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Bull20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Cord50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Wirecutter", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "TT33", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x25_FMJ", stack_max = 24, stack_min = 24 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 15, stack_min = 15 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Cord35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 10, stack_min = 10 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Cord25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Cord20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Hobbit50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
+					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
+					PlaceObj('LootEntryInventoryItem', { item = "M2Carbine", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_FMJ", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Hobbit35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
+					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Winchester1894", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_FMJ", stack_max = 16, stack_min = 16 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Hobbit25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
+					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Hobbit20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
+					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Ricochet50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_CamoBalaclava" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 3, stack_min = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Machete", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Ricochet35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Machete", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Ricochet25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Ricochet20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 2, stack_min = 2 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Meat50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Machete", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Meat35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Machete", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Meat25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Meat20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Carlos50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_CamoBalaclava" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 3, stack_min = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Scorpion", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x25_FMJ", stack_max = 24, stack_min = 24 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Carlos35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "MicroUZI", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 24, stack_min = 24 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Carlos25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Carlos20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Devin50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "C4", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Remote" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Wirecutter", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Devin35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Wirecutter", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Devin25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Devin20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Shank50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_UniformPants" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 3, stack_min = 3 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Shank35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 2, stack_min = 2 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Shank25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Shank20",
+					loot = "all",
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Vince50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_PoliceVest" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 30, stack_min = 30 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "HiPower", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 32, stack_min = 32 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Vince35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherVest" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Colt1911", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_45ACP_FMJ", stack_max = 24, stack_min = 24 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Vince25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 15, stack_min = 15 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Vince20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
+					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Hitman50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_CamoBalaclava" }),
+					PlaceObj('LootEntryInventoryItem', { item = "DragunovSVD", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x54_Match", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Hitman35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "PSG1", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_Match", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Hitman25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "M24Sniper", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_FMJ", stack_max = 16, stack_min = 16 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Hitman20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "SKS", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 16, stack_min = 16 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Biggens50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_UniformPants" }),
+					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Wirecutter", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "M1Garand", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_3006_FMJ", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Biggens35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
+					PlaceObj('LootEntryInventoryItem', { item = "M2Carbine", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_FMJ", stack_max = 16, stack_min = 16 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Biggens25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Winchester1894", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_P", stack_max = 12, stack_min = 12 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Biggens20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Kulba50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_UniformPants" }),
+					PlaceObj('LootEntryInventoryItem', { item = "M60", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_FMJ", stack_max = 100, stack_min = 100 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 5, stack_min = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Wirecutter", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Kulba35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "RPK", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 80, stack_min = 80 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 3, stack_min = 3 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Kulba25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "M2Carbine", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_FMJ", stack_max = 40, stack_min = 40 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Kulba20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Winchester1894", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_P", stack_max = 30, stack_min = 30 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Vilde50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
+					PlaceObj('LootEntryInventoryItem', { item = "RPK", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 80, stack_min = 80 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Vilde35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "M60", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_FMJ", stack_max = 80, stack_min = 80 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Vilde25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "M2Carbine", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_FMJ", stack_max = 40, stack_min = 40 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Vilde20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 40, stack_min = 40 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Grace50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 3, stack_min = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Machete", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 2, stack_min = 2 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Grace35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 3, stack_min = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "MicroUZI", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 16, stack_min = 16 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Grace25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 3, stack_min = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 12, stack_min = 12 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Grace20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 8, stack_min = 8 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Steiger50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_PoliceVest" }),
+					PlaceObj('LootEntryInventoryItem', { item = "G3A3", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_Match", stack_max = 40, stack_min = 40 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Steiger35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "FNFAL", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_FMJ", stack_max = 32, stack_min = 32 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Steiger25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "M14SAW", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_FMJ", stack_max = 24, stack_min = 24 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Steiger20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "M1Garand", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_3006_FMJ", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Lucky50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "FAMAS", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Lucky35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "M2Carbine", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_FMJ", stack_max = 40, stack_min = 40 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Lucky25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 32, stack_min = 32 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Lucky20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Winchester1894", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_P", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Laura50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherVest" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 25, stack_min = 25 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
+					PlaceObj('LootEntryInventoryItem', { item = "MicroUZI", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 24, stack_min = 24 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Laura35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 15, stack_min = 15 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Laura25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Laura20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 6, stack_min = 6 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Colt38Special", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 8, stack_min = 8 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Eskimo50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_UniformPants" }),
+					PlaceObj('LootEntryInventoryItem', { item = "M24Sniper", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_Match", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Eskimo35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "SKS", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Eskimo25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "M1Garand", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_3006_FMJ", stack_max = 16, stack_min = 16 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Eskimo20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "Winchester1894", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_P", stack_max = 12, stack_min = 12 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Blade50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "CombatStim", stack_max = 2, stack_min = 2 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Blade35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Blade25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Blade20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Ira50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Colt1911", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_45ACP_FMJ", stack_max = 28, stack_min = 28 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Ira35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "HiPower", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 48, stack_min = 48 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Ira25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "P210", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Ira20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "P210", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 60, stack_min = 60 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Dimitri50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 3, stack_min = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FragGrenade", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Dimitri35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Dimitri25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 2, stack_min = 2 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Dimitri20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Madman50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Crowbar", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "CombatStim", stack_max = 3, stack_min = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Madman35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Crowbar", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 15, stack_min = 15 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Madman25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Crowbar", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 10, stack_min = 10 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Madman20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Crowbar", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Conrad50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_Uniform" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Springfield", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_3006_Match", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 20, stack_min = 20 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Conrad35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_Uniform" }),
+					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 60, stack_min = 60 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Conrad25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "FNFAL", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_FMJ", stack_max = 40, stack_min = 40 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Conrad20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 60, stack_min = 60 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Mike50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_PASGT" }),
+					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_EPR", stack_max = 40, stack_min = 40 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 1, stack_min = 1 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Mike35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_PoliceVest" }),
+					PlaceObj('LootEntryInventoryItem', { item = "Galil", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 60, stack_min = 60 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Mike25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_PoliceVest" }),
+					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 60, stack_min = 60 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Mike20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
+					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 30, stack_min = 30 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Grom50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_SovietAssaultArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "RPG7", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Warhead_Frag", stack_max = 3, stack_min = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FragGrenade", stack_max = 2, stack_min = 2 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Grom35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_SovietAssaultArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "RPG7", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Warhead_Frag", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 60, stack_min = 60 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Grom25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_TireArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 90, stack_min = 90 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FragGrenade", stack_max = 2, stack_min = 2 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Grom20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_TireArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 60, stack_min = 60 }),
 				}),
 				}),
 			PlaceObj('ModItemFolder', {
@@ -38373,6 +40465,524 @@ return {
 						'EndTurnPolicies', {
 							PlaceObj('AIPolicyDealDamage', nil),
 							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 10,
+								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
+							PlaceObj('AIPolicyFlanking', {
+								'Weight', 200,
+								'AllyPlannedPosition', true,
+							}),
+						},
+						'TakeCoverChance', 50,
+					}),
+					PlaceObj('StandardAI', {
+						'Weight', 500,
+						'Label', "Flanker AI",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Flank",
+						},
+						'Score', function (self, unit, proto_context, debug_data)
+							unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
+							local dest, score = AIScoreReachableVoxels(unit.ai_context, self.EndTurnPolicies, 0)
+							return MulDivRound(score, self.Weight, 100)
+						end,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 1,
+								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyFlanking', {
+								'Weight', 1000,
+							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
+							PlaceObj('AIPolicyLosToEnemy', nil),
+							PlaceObj('AIPolicyWeaponRange', {
+								'RangeMin', 0,
+								'RangeMax', 40,
+							}),
+						},
+						'TakeCoverChance', 50,
+					}),
+					PlaceObj('StandardAI', {
+						'BiasId', "MeleeAttack",
+						'Weight', 500,
+						'RequiredKeywords', {
+							"Nova",
+						},
+						'Score', function (self, unit, proto_context, debug_data)
+							unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
+							local dest, score = AIScoreReachableVoxels(unit.ai_context, self.EndTurnPolicies, 0)
+							return MulDivRound(score, self.Weight, 100)
+						end,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+								'Required', true,
+							}),
+							PlaceObj('AIPolicyWeaponRange', {
+								'RequiredKeywords', {
+									"Melee",
+								},
+								'Weight', 200,
+								'RangeMin', 0,
+								'RangeMax', 15,
+							}),
+							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
+						},
+						'TakeCoverChance', 50,
+					}),
+					PlaceObj('PositioningAI', {
+						'BiasId', "MeleeAttack",
+						'Weight', 500,
+						'Label', "Melee AI",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Melee",
+						},
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+								'Required', true,
+							}),
+							PlaceObj('AIPolicyWeaponRange', {
+								'RequiredKeywords', {
+									"Melee",
+								},
+								'Weight', 200,
+								'RangeMin', 0,
+								'RangeMax', 15,
+							}),
+							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
+						},
+						'TakeCoverChance', 0,
+						'VoiceResponse', "TacticalPressing",
+					}),
+					PlaceObj('PositioningAI', {
+						'BiasId', "MeleeAttack",
+						'Weight', 500,
+						'Label', "Pillager AI",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Soldier",
+						},
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyWeaponRange', {
+								'Weight', 200,
+								'RangeMin', 50,
+								'RangeMax', 70,
+							}),
+							PlaceObj('AIPolicyTakeCover', {
+								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
+						},
+						'TakeCoverChance', 0,
+						'VoiceResponse', "TacticalPressing",
+					}),
+					PlaceObj('PositioningAI', {
+						'BiasId', "Flanking",
+						'Weight', 500,
+						'Label', "Flanker AI POS",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Flank",
+						},
+						'Score', function (self, unit, proto_context, debug_data)
+							unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
+							local dest, score = AIScoreReachableVoxels(unit.ai_context, self.EndTurnPolicies, 0)
+							return MulDivRound(score, self.Weight, 100)
+						end,
+						'OptLocWeight', 200,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 1,
+								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyFlanking', {
+								'Weight', 1000,
+							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
+							PlaceObj('AIPolicyLosToEnemy', nil),
+							PlaceObj('AIPolicyWeaponRange', {
+								'RangeMin', 0,
+								'RangeMax', 40,
+							}),
+						},
+						'TakeCoverChance', 0,
+						'VoiceResponse', "AIFlanking",
+					}),
+					PlaceObj('PositioningAI', {
+						'Weight', 500,
+						'Label', "Pillager AI POS",
+						'Fallback', false,
+						'RequiredKeywords', {
+							"Nova",
+						},
+						'Score', function (self, unit, proto_context, debug_data)
+							unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
+							local dest, score = AIScoreReachableVoxels(unit.ai_context, self.EndTurnPolicies, 0)
+							return MulDivRound(score, self.Weight, 100)
+						end,
+						'OptLocWeight', 200,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', {
+								'Weight', 300,
+							}),
+							PlaceObj('AIPolicyWeaponRange', {
+								'Weight', 200,
+								'RangeMin', 50,
+								'RangeMax', 70,
+							}),
+							PlaceObj('AIPolicyTakeCover', nil),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
+						},
+						'TakeCoverChance', 0,
+						'VoiceResponse', "AIFlanking",
+					}),
+				},
+				Comment = "Keywords: Flank — primary flanker role (ROLE-001)",
+				OptLocPolicies = {
+					PlaceObj('AIPolicyWeaponRange', {
+						'RequiredKeywords', {
+							"CQB",
+						},
+						'RangeMin', 5,
+						'RangeMax', 20,
+					}),
+					PlaceObj('AIPolicyWeaponRange', {
+						'RequiredKeywords', {
+							"Soldier",
+						},
+						'Weight', 300,
+						'RangeMin', 60,
+						'RangeMax', 70,
+					}),
+					PlaceObj('AIPolicyWeaponRange', {
+						'RequiredKeywords', {
+							"Explosives",
+						},
+						'Weight', 50,
+						'RangeBase', "Absolute",
+						'RangeMin', 12,
+						'RangeMax', 21,
+					}),
+					PlaceObj('AIPolicyWeaponRange', {
+						'RequiredKeywords', {
+							"Melee",
+						},
+						'Weight', 300,
+						'RangeBase', "Melee",
+						'RangeMin', 12,
+						'RangeMax', 21,
+					}),
+					PlaceObj('AIPolicyLosToEnemy', nil),
+					PlaceObj('AIPolicyIndoorsOutdoors', {
+						'Weight', 10,
+					}),
+					PlaceObj('AIPolicyProximity', {
+						'ScoreMode', "closer_better",
+						'Weight', 10,
+						'AllyPlannedPosition', true,
+						'TargetUnits', "allies",
+						'TargetDist', "average",
+						'MinScore', 50,
+					}),
+					PlaceObj('AIPolicyProximity', {
+						'ScoreMode', "closer_better",
+						'RequiredKeywords', {
+							"Soldier",
+						},
+						'Weight', 30,
+						'AllyPlannedPosition', true,
+						'TargetUnits', "allies",
+						'TargetDist', "average",
+						'MinScore', 50,
+					}),
+					PlaceObj('AIPolicyProximity', {
+						'ScoreMode', "closer_better",
+						'RequiredKeywords', {
+							"Leader",
+						},
+						'Weight', 25,
+						'AllyPlannedPosition', true,
+						'TargetUnits', "allies",
+						'TargetDist', "average",
+						'MinScore', 50,
+					}),
+					PlaceObj('AIPolicyAvoidDeathZones', {
+						'TargetDist', 20,
+						'Penalty', 40,
+					}),
+					PlaceObj('AIPolicyTakeCover', {
+						'Weight', 15,
+						'visibility_mode', "team",
+					}),
+				},
+				OptLocSearchRadius = 80,
+				PrefStance = "Crouch",
+				SignatureActions = {
+					PlaceObj('AIActionMobileShot', {
+						'BiasId', "RunAndGun",
+						'Weight', 200,
+						'Priority', true,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "RunAndGun",
+								'Effect', "disable",
+								'Period', 3,
+							}),
+							PlaceObj('AIBiasModification', {
+								'BiasId', "RunAndGun",
+								'Value', -50,
+								'Period', 0,
+								'ApplyTo', "Team",
+							}),
+						},
+						'NotificationText', "",
+						'RequiredKeywords', {
+							"Control",
+						},
+						'action_id', "RunAndGun",
+					}),
+					PlaceObj('AIActionMobileShot', {
+						'BiasId', "MobileShot",
+						'Weight', 200,
+						'Priority', true,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "MobileShot",
+								'Effect', "disable",
+								'Period', 3,
+							}),
+							PlaceObj('AIBiasModification', {
+								'BiasId', "MobileShot",
+								'Value', -50,
+								'Period', 0,
+								'ApplyTo', "Team",
+							}),
+						},
+						'NotificationText', "",
+						'RequiredKeywords', {
+							"Control",
+						},
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'BiasId', "AssaultGrenadeThrow",
+						'Weight', 300,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "AssaultGrenadeThrow",
+								'Effect', "disable",
+							}),
+							PlaceObj('AIBiasModification', {
+								'BiasId', "AssaultGrenadeThrow",
+								'Value', -50,
+								'Period', 0,
+								'ApplyTo', "Team",
+							}),
+						},
+						'team_score', -100,
+						'min_score', 100,
+						'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'BiasId', "FragGrenade",
+						'Weight', 500,
+						'RequiredKeywords', {
+							"Explosives",
+						},
+						'team_score', -100,
+						'min_score', 100,
+						'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'Weight', 500,
+						'RequiredKeywords', {
+							"Explosives",
+						},
+						'team_score', -100,
+						'min_score', 100,
+						'AllowedAoeTypes', set( "fire", "none", "teargas", "toxicgas" ),
+						'TargetLastAttackPos', true,
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'BiasId', "StunGrenade",
+						'Weight', 300,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "StunGrenade",
+								'Effect', "disable",
+							}),
+						},
+						'min_score', 100,
+						'MinDist', 3000,
+						'AllowedAoeTypes', set( "fire", "none", "smoke", "teargas", "toxicgas" ),
+					}),
+					PlaceObj('AIActionThrowGrenade', {
+						'BiasId', "SmokeGrenade",
+						'Weight', 300,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "SmokeGrenade",
+								'Effect', "disable",
+							}),
+						},
+						'enemy_score', -100,
+						'team_score', 100,
+						'self_score_mod', 1000,
+						'MinDist', 3000,
+						'AllowedAoeTypes', set( "smoke" ),
+					}),
+					PlaceObj('AIConeAttack', {
+						'BiasId', "OverwatchAssault",
+						'Weight', 50,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "OverwatchAssault",
+								'Value', -50,
+								'ApplyTo', "Team",
+							}),
+							PlaceObj('AIBiasModification', {
+								'BiasId', "OverwatchAssault",
+								'Effect', "disable",
+								'Value', -50,
+								'Period', 2,
+							}),
+						},
+						'RequiredKeywords', {
+							"Soldier",
+						},
+						'team_score', 0,
+						'min_score', 300,
+						'action_id', "Overwatch",
+					}),
+					PlaceObj('AIConeAttack', {
+						'BiasId', "OverwatchAssault",
+						'Weight', 50,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "OverwatchAssault",
+								'Value', -50,
+								'ApplyTo', "Team",
+							}),
+							PlaceObj('AIBiasModification', {
+								'BiasId', "OverwatchAssault",
+								'Effect', "disable",
+								'Value', -50,
+								'Period', 2,
+							}),
+						},
+						'RequiredKeywords', {
+							"Control",
+						},
+						'team_score', 0,
+						'min_score', 300,
+						'action_id', "Overwatch",
+					}),
+					PlaceObj('AIActionBasicAttack', nil),
+					PlaceObj('AIActionThrowFlare', {
+						'BiasId', "ThrowFlare",
+						'Weight', 350,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "ThrowFlare",
+								'Effect', "disable",
+							}),
+						},
+						'team_score', -10,
+						'self_score_mod', 0,
+						'min_score', 0,
+						'MinDist', 1000,
+					}),
+					PlaceObj('AIActionThrowFlare', {
+						'BiasId', "ThrowFlare",
+						'Weight', 350,
+						'OnActivationBiases', {
+							PlaceObj('AIBiasModification', {
+								'BiasId', "ThrowFlare",
+								'Effect', "disable",
+							}),
+						},
+						'team_score', -10,
+						'self_score_mod', 0,
+						'min_score', 0,
+						'MinDist', 1000,
+					}),
+					PlaceObj('AIActionShootLandmine', {
+						'min_score', 100,
+					}),
+					PlaceObj('AIActionCharge', {
+						'RequiredKeywords', {
+							"Melee",
+						},
+					}),
+					PlaceObj('AIActionCancelShot', {
+						'Weight', 200,
+						'RequiredKeywords', {
+							"Control",
+						},
+						'Aiming', "Maximum",
+					}),
+				},
+				TargetChangePolicy = "restart",
+				TargetScoreRandomization = 10,
+				TargetingPolicies = {
+					PlaceObj('AITargetingEnemyHealth', {
+						'Health', 50,
+					}),
+					PlaceObj('AITargetingEnemyWeapon', {
+						'EnemyWeapon', "Sniper",
+					}),
+				},
+				group = "Legion",
+				id = "Legion_Flanker",
+			}),
+			PlaceObj('ModItemAIArchetype', {
+				BaseAttackTargeting = set( "Arms", "Legs", "Torso" ),
+				BaseMovementWeight = 10,
+				Behaviors = {
+					PlaceObj('StandardAI', {
+						'Weight', 10,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyDealDamage', nil),
+							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyAvoidDeathZones', {
 								'TargetDist', 3,
 								'Penalty', 30,
@@ -39143,6 +41753,62 @@ return {
 				},
 				group = "Legion",
 				id = "Legion_Machinegunner",
+			}),
+			PlaceObj('ModItemAIArchetype', {
+				BaseAttackTargeting = set( "Arms", "Legs", "Torso" ),
+				BaseMovementWeight = 20,
+				Behaviors = {
+					PlaceObj('StandardAI', {
+						'Weight', 100,
+						'Comment', "JAZZ-AI-REG-001: isolated run to ally cluster",
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyProximity', {
+								'ScoreMode', "closer_better",
+								'Weight', 1000,
+								'AllyPlannedPosition', true,
+								'TargetUnits', "allies",
+								'TargetDist', "average",
+								'MinScore', 0,
+							}),
+							PlaceObj('AIPolicyTakeCover', {
+								'Weight', 20,
+								'visibility_mode', "team",
+							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 1,
+								'Penalty', 20,
+							}),
+							PlaceObj('AIPolicyLosToEnemy', {
+								'Weight', 50,
+								'Invert', true,
+							}),
+						},
+						'TakeCoverChance', 30,
+					}),
+				},
+				Comment = "JAZZ-AI-REG-001 isolated Legion regroup (not Deserter)",
+				OptLocPolicies = {
+					PlaceObj('AIPolicyProximity', {
+						'ScoreMode', "closer_better",
+						'Weight', 1000,
+						'AllyPlannedPosition', true,
+						'TargetUnits', "allies",
+						'TargetDist', "average",
+						'MinScore', 0,
+					}),
+					PlaceObj('AIPolicyTakeCover', {
+						'Weight', 15,
+						'visibility_mode', "team",
+					}),
+					PlaceObj('AIPolicyAvoidDeathZones', {
+						'TargetDist', 1,
+						'Penalty', 20,
+					}),
+				},
+				OptLocSearchRadius = 100,
+				PrefStance = "Standing",
+				group = "Legion",
+				id = "Legion_Regroup",
 			}),
 			}),
 		PlaceObj('ModItemEnemyRole', {
@@ -41850,9 +44516,9 @@ return {
 					"RunAndGun",
 					"CQB",
 				},
-				'archetype', "Legion_Assaulter",
+				'archetype', "Legion_Flanker",
 				'role', "Recon",
-				'RepositionArchetype', "Legion_Assaulter",
+				'RepositionArchetype', "Legion_Flanker",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
@@ -42157,9 +44823,9 @@ return {
 					"RunAndGun",
 					"CQB",
 				},
-				'archetype', "Legion_Assaulter",
+				'archetype', "Legion_Flanker",
 				'role', "Recon",
-				'RepositionArchetype', "Legion_Assaulter",
+				'RepositionArchetype', "Legion_Flanker",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
@@ -42375,9 +45041,9 @@ return {
 					"Control",
 					"RunAndGun",
 				},
-				'archetype', "Legion_Assaulter",
+				'archetype', "Legion_Flanker",
 				'role', "Recon",
-				'RepositionArchetype', "Legion_Assaulter",
+				'RepositionArchetype', "Legion_Flanker",
 				'AlwaysUseOpeningAttack', true,
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
@@ -70790,6 +73456,6256 @@ return {
 				}),
 				}),
 			}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Colby",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Colby",
+					'object_class', "UnitData",
+					'Health', 96,
+					'Agility', 72,
+					'Dexterity', 95,
+					'Strength', 70,
+					'Wisdom', 97,
+					'Will', 80,
+					'Leadership', 40,
+					'Marksmanship', 78,
+					'Mechanical', 99,
+					'Explosives', 88,
+					'Medical', 20,
+					'Portrait', "Mod/Dv3mFVN/MercPortraits/Colby.png",
+					'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Colby_Big.png",
+					'IsMercenary', true,
+					'Name', T(890000000001702, --[[ModItemUnitDataCompositeDef Jazz_Colby Name]] "[WIP] Тревор Колби"),
+					'Nick', T(890000000001703, --[[ModItemUnitDataCompositeDef Jazz_Colby Nick]] "Колби"),
+					'AllCapsNick', T(890000000001704, --[[ModItemUnitDataCompositeDef Jazz_Colby AllCapsNick]] "КОЛБИ"),
+					'Bio', T(890000000001705, --[[ModItemUnitDataCompositeDef Jazz_Colby Bio]] "work in progress"),
+					'Nationality', "Canada",
+					'Title', T(890000000001706, --[[ModItemUnitDataCompositeDef Jazz_Colby Title]] "Ловушечник"),
+					'Email', T(890000000001707, --[[ModItemUnitDataCompositeDef Jazz_Colby Email]] "Colby@aim.com"),
+					'snype_nick', T(890000000001708, --[[ModItemUnitDataCompositeDef Jazz_Colby snype_nick]] "tripwire"),
+					'Refusals', {
+						PlaceObj('MercChatRefusal', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000001709, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatRefusal Lines ChatMessage voice:Jazz_Colby]] "Нет. Пока Фидель на контракте — я пас. Не хочу делить периметр с психом."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('UnitHireStatus', {
+									Status = "Hired",
+									TargetUnit = "Fidel",
+								}),
+							},
+							'chanceToRoll', 100,
+						}),
+						PlaceObj('MercChatRefusal', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000001710, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatRefusal Lines ChatMessage voice:Jazz_Colby]] "Слишком много трупов на вашем счету. Наймите кого-то другого."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('MercChatConditionDeathToll', {
+									PresetValue = "1",
+								}),
+							},
+							'chanceToRoll', 40,
+						}),
+						PlaceObj('MercChatRefusal', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000001711, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatRefusal Lines ChatMessage voice:Jazz_Colby]] "Кошелёк тонкий. Перезвоните, когда будет бюджет на нормальную зарядку."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('MercChatConditionMoney', {}),
+							},
+							'chanceToRoll', 25,
+						}),
+					},
+					'Haggles', {
+						PlaceObj('MercChatHaggle', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000001712, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatHaggle Lines ChatMessage voice:Jazz_Colby]] "Американцы в отряде… Ладно, но надбавка за нервы."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('CheckExpression', {
+									Expression = function (self, obj)
+										return table.count(gv_UnitData, function(k, ud)
+											return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and ud.Nationality == "USA"
+										end) >= 1
+									end,
+								}),
+							},
+							'chanceToRoll', 100,
+						}),
+					},
+					'HaggleRehire', {},
+					'Mitigations', {
+						PlaceObj('MercChatMitigation', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000001713, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatMitigation Lines ChatMessage voice:Jazz_Colby]] "Тор уже с вами? Тогда ок. С ним я работаю."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('UnitHireStatus', {
+									Status = "Hired",
+									TargetUnit = "Thor",
+								}),
+							},
+							'chanceToRoll', 100,
+						}),
+					},
+					'ExtraPartingWords', {
+						PlaceObj('MercChatBranch', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000001714, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatBranch Lines ChatMessage voice:Jazz_Colby]] "Если нужен ещё один спокойный спец — берите Тора."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('UnitHireStatus', {
+									Status = "Hired",
+									TargetUnit = "Thor",
+									Negate = true,
+								}),
+							},
+						}),
+					},
+					'Offline', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001715, --[[ModItemUnitDataCompositeDef Jazz_Colby Text Offline ChatMessage voice:Jazz_Colby]] "Колби. Меня нет. Оставьте сообщение — перезвоню, если не взорвусь."),
+						}),
+					},
+					'GreetingAndOffer', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001716, --[[ModItemUnitDataCompositeDef Jazz_Colby Text GreetingAndOffer ChatMessage voice:Jazz_Colby]] "Колби на линии. Что взрываем?"),
+						}),
+					},
+					'ConversationRestart', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001717, --[[ModItemUnitDataCompositeDef Jazz_Colby Text ConversationRestart ChatMessage voice:Jazz_Colby]] "Вернёмся к делу."),
+						}),
+					},
+					'IdleLine', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001718, --[[ModItemUnitDataCompositeDef Jazz_Colby Text IdleLine ChatMessage voice:Jazz_Colby]] "Время тикает."),
+						}),
+					},
+					'PartingWords', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001719, --[[ModItemUnitDataCompositeDef Jazz_Colby Text PartingWords ChatMessage voice:Jazz_Colby]] "Беру зарядку и выхожу."),
+						}),
+					},
+					'RehireIntro', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001720, --[[ModItemUnitDataCompositeDef Jazz_Colby Text RehireIntro ChatMessage voice:Jazz_Colby]] "Контракт заканчивается. Продлеваем?"),
+						}),
+					},
+					'RehireOutro', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001721, --[[ModItemUnitDataCompositeDef Jazz_Colby Text RehireOutro ChatMessage voice:Jazz_Colby]] "Остаюсь."),
+						}),
+					},
+					'MedicalDeposit', "large",
+					'StartingSalary', 2800,
+					'SalaryIncrease', 200,
+					'SalaryLv1', 1200,
+					'SalaryMaxLv', 7000,
+					'StartingLevel', 5,
+					'CustomEquipGear', function (self, items)
+						self:TryEquip(items, "Handheld A", "Firearm")
+						self:TryEquip(items, "Handheld B", "Firearm")
+					end,
+					'MaxHitPoints', 96,
+					'Likes', {
+						"Thor",
+					},
+					'Dislikes', {
+						"Fidel",
+					},
+					'StartingPerks', {
+						"Jazz_Perk_Colby",
+						"MrFixit",
+						"Throwing",
+						"BreachAndClear",
+						"HitTheDeck",
+						"DesignerExplosives",
+					},
+					'AppearancesList', {
+						PlaceObj('AppearanceWeight', {
+							'Preset', "Colby",
+						}),
+					},
+					'Equipment', {
+						"Loot_JAZZ_Colby",
+					},
+					'Tier', "Elite",
+					'Specialization', "ExplosiveExpert",
+					'pollyvoice', "Matthew",
+					'gender', "Male",
+					'VoiceResponseId', "Jazz_Colby",
+					'FallbackMissingVR', "Ice",
+					'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					AimAttack = TConcat({
+						T(890000000001722, --[[ModItemVoiceResponse Jazz_Colby AimAttack VoiceResponse AimAttack - When aiming and there is a decent chance of hitting voice:Jazz_Colby]] "На мушке.")
+					}),
+					AmmoLow = TConcat({
+						T(890000000001723, --[[ModItemVoiceResponse Jazz_Colby AmmoLow VoiceResponse AmmoLow - Played when there is less than 25% of clip size or a full reload cannot be made voice:Jazz_Colby]] "Патроны!")
+					}),
+					CombatStartPlayer = TConcat({
+						T(890000000001724, --[[ModItemVoiceResponse Jazz_Colby CombatStartPlayer VoiceResponse CombatStartPlayer - When player initiates combat with shot. voice:Jazz_Colby]] "В бой.")
+					}),
+					DeathBuddy1 = TConcat({
+						T(890000000001725, --[[ModItemVoiceResponse Jazz_Colby DeathBuddy1 VoiceResponse DeathBuddy1 - Played on the death of Thor. voice:Jazz_Colby]] "Тор!..")
+					}),
+					DeathGeneral = TConcat({
+						T(890000000001726, --[[ModItemVoiceResponse Jazz_Colby DeathGeneral VoiceResponse DeathGeneral - Played when a character that is neither liked or disliked dies voice:Jazz_Colby]] "Чёрт...")
+					}),
+					Downed = TConcat({
+						T(890000000001727, --[[ModItemVoiceResponse Jazz_Colby Downed VoiceResponse Downed - Unit has been downed voice:Jazz_Colby]] "Меня подбили!")
+					}),
+					Idle = TConcat({
+						T(890000000001728, --[[ModItemVoiceResponse Jazz_Colby Idle VoiceResponse Idle - Idle line voice:Jazz_Colby]] "Жду.")
+					}),
+					LevelUp = TConcat({
+						T(890000000001729, --[[ModItemVoiceResponse Jazz_Colby LevelUp VoiceResponse LevelUp - Played when the merc levels up voice:Jazz_Colby]] "Ещё лучше.")
+					}),
+					MockDislike1 = TConcat({
+						T(890000000001730, --[[ModItemVoiceResponse Jazz_Colby MockDislike1 VoiceResponse MockDislike1 - Played on a high chance miss by Fidel. voice:Jazz_Colby]] "Как обычно, Фидель.")
+					}),
+					OpponentKilled = TConcat({
+						T(890000000001731, --[[ModItemVoiceResponse Jazz_Colby OpponentKilled VoiceResponse OpponentKilled - Played on a kill voice:Jazz_Colby]] "Готово.")
+					}),
+					Selection = TConcat({
+						T(890000000001732, --[[ModItemVoiceResponse Jazz_Colby Selection VoiceResponse Selection - when selected or autoselected voice:Jazz_Colby]] "Колби!")
+					}),
+					group = "MercenariesOld",
+					id = "Jazz_Colby",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Blade",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Blade",
+					'object_class', "UnitData",
+					'Health', 88,
+					'Agility', 90,
+					'Dexterity', 85,
+					'Strength', 80,
+					'Wisdom', 53,
+					'Will', 55,
+					'Leadership', 20,
+					'Marksmanship', 50,
+					'Mechanical', 0,
+					'Explosives', 5,
+					'Medical', 5,
+					'Portrait', "Mod/Dv3mFVN/MercPortraits/Blade.png",
+					'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Blade_Big.png",
+					'IsMercenary', true,
+					'Name', T(890000000001802, --[[ModItemUnitDataCompositeDef Jazz_Blade Name]] "[WIP] Билл «Бритва» Ламонт"),
+					'Nick', T(890000000001803, --[[ModItemUnitDataCompositeDef Jazz_Blade Nick]] "Бритва"),
+					'AllCapsNick', T(890000000001804, --[[ModItemUnitDataCompositeDef Jazz_Blade AllCapsNick]] "БРИТВА"),
+					'Bio', T(890000000001805, --[[ModItemUnitDataCompositeDef Jazz_Blade Bio]] "work in progress"),
+					'Nationality', "USA",
+					'Title', T(890000000001806, --[[ModItemUnitDataCompositeDef Jazz_Blade Title]] "Нож не кончается"),
+					'Email', T(890000000001807, --[[ModItemUnitDataCompositeDef Jazz_Blade Email]] "Blade@merc.com"),
+					'snype_nick', T(890000000001808, --[[ModItemUnitDataCompositeDef Jazz_Blade snype_nick]] "sharpstuff"),
+					'Refusals', {
+						PlaceObj('MercChatRefusal', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000001809, --[[ModItemUnitDataCompositeDef Jazz_Blade Text MercChatRefusal Lines ChatMessage voice:Jazz_Blade]] "Слишком много наших полегло. Даже мне это не по вкусу."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('MercChatConditionDeathToll', {
+									PresetValue = "1",
+								}),
+							},
+							'chanceToRoll', 40,
+						}),
+						PlaceObj('MercChatRefusal', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000001810, --[[ModItemUnitDataCompositeDef Jazz_Blade Text MercChatRefusal Lines ChatMessage voice:Jazz_Blade]] "За такие копейки я лучше дома ножи точить буду."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('MercChatConditionMoney', {}),
+							},
+							'chanceToRoll', 25,
+						}),
+					},
+					'Haggles', {
+						PlaceObj('MercChatHaggle', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000001811, --[[ModItemUnitDataCompositeDef Jazz_Blade Text MercChatHaggle Lines ChatMessage voice:Jazz_Blade]] "У тебя тут одни местные. Скучно и опасно — доплати."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('CheckExpression', {
+									Expression = function (self, obj)
+										return table.count(gv_UnitData, function(k, ud)
+											return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (not ud.Nationality or ud.Nationality == "" or ud.Nationality == "Arulco")
+										end) >= 2
+									end,
+								}),
+							},
+							'chanceToRoll', 100,
+						}),
+					},
+					'HaggleRehire', {},
+					'Mitigations', {
+						PlaceObj('MercChatMitigation', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000001812, --[[ModItemUnitDataCompositeDef Jazz_Blade Text MercChatMitigation Lines ChatMessage voice:Jazz_Blade]] "О, Нервный/Фидель уже здесь? Тогда не откажусь, будет весело."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('CheckExpression', {
+									Expression = function (self, obj)
+										return table.count(gv_UnitData, function(k, ud)
+											return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Jazz_Nervous" or k == "Fidel")
+										end) >= 1
+									end,
+								}),
+							},
+							'chanceToRoll', 100,
+						}),
+					},
+					'ExtraPartingWords', {
+						PlaceObj('MercChatBranch', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000001813, --[[ModItemUnitDataCompositeDef Jazz_Blade Text MercChatBranch Lines ChatMessage voice:Jazz_Blade]] "Хочешь ещё психа в команду — зови Фиделя."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('UnitHireStatus', {
+									Status = "Hired",
+									TargetUnit = "Fidel",
+									Negate = true,
+								}),
+							},
+						}),
+					},
+					'Offline', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001814, --[[ModItemUnitDataCompositeDef Jazz_Blade Text Offline ChatMessage voice:Jazz_Blade]] "Бритва занят — режет. Оставь сообщение, если жить надоело."),
+						}),
+					},
+					'GreetingAndOffer', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001815, --[[ModItemUnitDataCompositeDef Jazz_Blade Text GreetingAndOffer ChatMessage voice:Jazz_Blade]] "Чо надо? Резать будем?"),
+						}),
+					},
+					'ConversationRestart', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001816, --[[ModItemUnitDataCompositeDef Jazz_Blade Text ConversationRestart ChatMessage voice:Jazz_Blade]] "Связь прервалась. Ну, продолжай, а то нож стынет."),
+						}),
+					},
+					'IdleLine', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001817, --[[ModItemUnitDataCompositeDef Jazz_Blade Text IdleLine ChatMessage voice:Jazz_Blade]] "Ножницы тупые — ножи нет. Двигай давай."),
+						}),
+					},
+					'PartingWords', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001818, --[[ModItemUnitDataCompositeDef Jazz_Blade Text PartingWords ChatMessage voice:Jazz_Blade]] "Я уже в пути, хе-хе. Кто-то там не доживёт до утра."),
+						}),
+					},
+					'RehireIntro', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001819, --[[ModItemUnitDataCompositeDef Jazz_Blade Text RehireIntro ChatMessage voice:Jazz_Blade]] "Контракт горит. Продлеваем или мне точить нож на кого-то другого?"),
+						}),
+					},
+					'RehireOutro', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001820, --[[ModItemUnitDataCompositeDef Jazz_Blade Text RehireOutro ChatMessage voice:Jazz_Blade]] "Остаюсь. Ещё не всех порезал."),
+						}),
+					},
+					'MedicalDeposit', "standard",
+					'StartingSalary', 900,
+					'SalaryIncrease', 200,
+					'SalaryLv1', 400,
+					'SalaryMaxLv', 2500,
+					'StartingLevel', 4,
+					'CustomEquipGear', function (self, items)
+						self:TryEquip(items, "Handheld A", "Melee")
+						self:TryEquip(items, "Handheld B", "Melee")
+					end,
+					'MaxHitPoints', 88,
+					'Likes', {
+						"Jazz_Nervous",
+						"Fidel",
+					},
+					'Dislikes', {
+						"Jazz_Biff",
+						"Jazz_Flo",
+					},
+					'StartingPerks', {
+						"Jazz_Perk_Blade",
+						"Psycho",
+						"MeleeTraining",
+						"CQCTraining",
+						"Berserker",
+						"Hotblood",
+					},
+					'AppearancesList', {
+						PlaceObj('AppearanceWeight', {
+							'Preset', "Blade",
+						}),
+					},
+					'Equipment', {
+						"Loot_JAZZ_Blade",
+					},
+					'Tier', "Veteran",
+					'Specialization', "Melee",
+					'pollyvoice', "Matthew",
+					'gender', "Male",
+					'VoiceResponseId', "Jazz_Blade",
+					'FallbackMissingVR', "Ice",
+					'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					AimAttack = TConcat({
+						T(890000000001822, --[[ModItemVoiceResponse Jazz_Blade AimAttack VoiceResponse AimAttack voice:Jazz_Blade]] "Ближе... ближе..."),
+						T(890000000001823, --[[ModItemVoiceResponse Jazz_Blade AimAttack VoiceResponse AimAttack voice:Jazz_Blade]] "Порежу на ленточки.")
+					}),
+					AmmoLow = TConcat({
+						T(890000000001829, --[[ModItemVoiceResponse Jazz_Blade AmmoLow VoiceResponse AmmoLow voice:Jazz_Blade]] "Нож не кончается — но патроны да.")
+					}),
+					CombatStartPlayer = TConcat({
+						T(890000000001827, --[[ModItemVoiceResponse Jazz_Blade CombatStartPlayer VoiceResponse CombatStartPlayer voice:Jazz_Blade]] "О, наконец-то!")
+					}),
+					DeathGeneral = TConcat({
+						T(890000000001825, --[[ModItemVoiceResponse Jazz_Blade DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Blade]] "Не тот нож взял...")
+					}),
+					Downed = TConcat({
+						T(890000000001826, --[[ModItemVoiceResponse Jazz_Blade Downed VoiceResponse Downed voice:Jazz_Blade]] "Зацепили, гады!")
+					}),
+					Idle = TConcat({
+						T(890000000001830, --[[ModItemVoiceResponse Jazz_Blade Idle VoiceResponse Idle voice:Jazz_Blade]] "Ну где веселье?")
+					}),
+					LevelUp = TConcat({
+						T(890000000001828, --[[ModItemVoiceResponse Jazz_Blade LevelUp VoiceResponse LevelUp voice:Jazz_Blade]] "Острее не бывает.")
+					}),
+					MockDislike1 = TConcat({
+						T(890000000001831, --[[ModItemVoiceResponse Jazz_Blade MockDislike1 VoiceResponse MockDislike1 - Played on Biff/Flo mock voice:Jazz_Blade]] "Опять этот зануда рядом.")
+					}),
+					OpponentKilled = TConcat({
+						T(890000000001824, --[[ModItemVoiceResponse Jazz_Blade OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Blade]] "Чисто прошёл.")
+					}),
+					PraisesBuddy1 = TConcat({
+						T(890000000001832, --[[ModItemVoiceResponse Jazz_Blade PraisesBuddy1 VoiceResponse PraisesBuddy1 - Played when Nervous/Fidel present voice:Jazz_Blade]] "Хорошая компания подобралась.")
+					}),
+					Selection = TConcat({
+						T(890000000001821, --[[ModItemVoiceResponse Jazz_Blade Selection VoiceResponse Selection voice:Jazz_Blade]] "Бритва на связи.")
+					}),
+					group = "MercenariesOld",
+					id = "Jazz_Blade",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Ira",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Ira",
+					'object_class', "UnitData",
+					'Health', 65,
+					'Agility', 60,
+					'Dexterity', 55,
+					'Strength', 50,
+					'Wisdom', 70,
+					'Will', 70,
+					'Leadership', 14,
+					'Marksmanship', 55,
+					'Mechanical', 20,
+					'Explosives', 10,
+					'Medical', 40,
+					'Portrait', "Mod/Dv3mFVN/MercPortraits/Ira.png",
+					'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Ira_Big.png",
+					'IsMercenary', true,
+					'Name', T(890000000001902, --[[ModItemUnitDataCompositeDef Jazz_Ira Name]] "[WIP] Айра Смит"),
+					'Nick', T(890000000001903, --[[ModItemUnitDataCompositeDef Jazz_Ira Nick]] "Айра"),
+					'AllCapsNick', T(890000000001904, --[[ModItemUnitDataCompositeDef Jazz_Ira AllCapsNick]] "АЙРА"),
+					'Bio', T(890000000001905, --[[ModItemUnitDataCompositeDef Jazz_Ira Bio]] "work in progress"),
+					'Nationality', "USA",
+					'Title', T(890000000001906, --[[ModItemUnitDataCompositeDef Jazz_Ira Title]] "Царица ополчения"),
+					'Email', T(890000000001907, --[[ModItemUnitDataCompositeDef Jazz_Ira Email]] "Ira@arulco.reb"),
+					'snype_nick', T(890000000001908, --[[ModItemUnitDataCompositeDef Jazz_Ira snype_nick]] "givegun"),
+					'Refusals', {
+						PlaceObj('MercChatRefusal', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000001909, --[[ModItemUnitDataCompositeDef Jazz_Ira Text MercChatRefusal Lines ChatMessage voice:Jazz_Ira]] "Пока Злобный у вас — я в отряд не пойду. Он моих людей пугает."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('UnitHireStatus', {
+									Status = "Hired",
+									TargetUnit = "Jazz_Vicious",
+								}),
+							},
+							'chanceToRoll', 100,
+						}),
+					},
+					'Haggles', {},
+					'HaggleRehire', {},
+					'Mitigations', {
+						PlaceObj('MercChatMitigation', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000001910, --[[ModItemUnitDataCompositeDef Jazz_Ira Text MercChatMitigation Lines ChatMessage voice:Jazz_Ira]] "Раз кто-то из наших уже с вами — значит, вам можно доверять. Согласна."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('CheckExpression', {
+									Expression = function (self, obj)
+										return table.count(gv_UnitData, function(k, ud)
+											return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Jazz_Miguel" or k == "Jazz_Carlos" or k == "Jazz_Dimitri")
+										end) >= 1
+									end,
+								}),
+							},
+							'chanceToRoll', 100,
+						}),
+					},
+					'ExtraPartingWords', {
+						PlaceObj('MercChatBranch', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000001911, --[[ModItemUnitDataCompositeDef Jazz_Ira Text MercChatBranch Lines ChatMessage voice:Jazz_Ira]] "Найдёте Мигеля, Карлоса или Димитрия — берите не думая, это наши лучшие люди."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('CheckExpression', {
+									Expression = function (self, obj)
+										return table.count(gv_UnitData, function(k, ud)
+											return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Jazz_Miguel" or k == "Jazz_Carlos" or k == "Jazz_Dimitri")
+										end) < 1
+									end,
+								}),
+							},
+						}),
+					},
+					'Offline', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001912, --[[ModItemUnitDataCompositeDef Jazz_Ira Text Offline ChatMessage voice:Jazz_Ira]] "Айра. Если это про пулемёт для ребят — говорите после сигнала."),
+						}),
+					},
+					'GreetingAndOffer', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001913, --[[ModItemUnitDataCompositeDef Jazz_Ira Text GreetingAndOffer ChatMessage voice:Jazz_Ira]] "Ну? Пулемёта дашь или опять только советы?"),
+						}),
+					},
+					'ConversationRestart', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001914, --[[ModItemUnitDataCompositeDef Jazz_Ira Text ConversationRestart ChatMessage voice:Jazz_Ira]] "Связь прервалась. Ополчение ждать не будет — давай к делу."),
+						}),
+					},
+					'IdleLine', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001915, --[[ModItemUnitDataCompositeDef Jazz_Ira Text IdleLine ChatMessage voice:Jazz_Ira]] "Война идёт — не мешкай, у меня люди на позициях."),
+						}),
+					},
+					'PartingWords', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001916, --[[ModItemUnitDataCompositeDef Jazz_Ira Text PartingWords ChatMessage voice:Jazz_Ira]] "Беру своих ребят и иду. Только скажи, где стрелять."),
+						}),
+					},
+					'RehireIntro', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001917, --[[ModItemUnitDataCompositeDef Jazz_Ira Text RehireIntro ChatMessage voice:Jazz_Ira]] "Контракт заканчивается. Сектор ещё не спокоен — продлеваем?"),
+						}),
+					},
+					'RehireOutro', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000001918, --[[ModItemUnitDataCompositeDef Jazz_Ira Text RehireOutro ChatMessage voice:Jazz_Ira]] "Остаюсь. Мои люди меня одну не отпустят."),
+						}),
+					},
+					'MedicalDeposit', "none",
+					'StartingSalary', 400,
+					'SalaryIncrease', 200,
+					'SalaryLv1', 200,
+					'SalaryMaxLv', 1500,
+					'StartingLevel', 2,
+					'CustomEquipGear', function (self, items)
+						self:TryEquip(items, "Handheld A", "Firearm")
+						self:TryEquip(items, "Handheld B", "Firearm")
+					end,
+					'MaxHitPoints', 65,
+					'Likes', {
+						"Jazz_Miguel",
+						"Jazz_Carlos",
+						"Jazz_Dimitri",
+					},
+					'Dislikes', {
+						"Jazz_Vicious",
+					},
+					'StartingPerks', {
+						"Jazz_Perk_Ira",
+						"Teacher",
+						"ShoulderToShoulder",
+						"MinFreeMove",
+					},
+					'AppearancesList', {
+						PlaceObj('AppearanceWeight', {
+							'Preset', "Ira",
+						}),
+					},
+					'Equipment', {
+						"Loot_JAZZ_Ira",
+					},
+					'Tier', "Regular",
+					'Specialization', "Leader",
+					'pollyvoice', "Matthew",
+					'gender', "Female",
+					'VoiceResponseId', "Jazz_Ira",
+					'FallbackMissingVR', "Ice",
+					'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					AimAttack = TConcat({
+						T(890000000001920, --[[ModItemVoiceResponse Jazz_Ira AimAttack VoiceResponse AimAttack voice:Jazz_Ira]] "За Арулько!"),
+						T(890000000001921, --[[ModItemVoiceResponse Jazz_Ira AimAttack VoiceResponse AimAttack voice:Jazz_Ira]] "Держим позицию.")
+					}),
+					AmmoLow = TConcat({
+						T(890000000001927, --[[ModItemVoiceResponse Jazz_Ira AmmoLow VoiceResponse AmmoLow voice:Jazz_Ira]] "Патроны на исходе!")
+					}),
+					CombatStartDetected = TConcat({
+						T(890000000001925, --[[ModItemVoiceResponse Jazz_Ira CombatStartDetected VoiceResponse CombatStartDetected voice:Jazz_Ira]] "К оружию!")
+					}),
+					DeathGeneral = TConcat({
+						T(890000000001923, --[[ModItemVoiceResponse Jazz_Ira DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Ira]] "Простите, ребята...")
+					}),
+					Downed = TConcat({
+						T(890000000001924, --[[ModItemVoiceResponse Jazz_Ira Downed VoiceResponse Downed voice:Jazz_Ira]] "Меня ранили — прикройте!")
+					}),
+					Idle = TConcat({
+						T(890000000001928, --[[ModItemVoiceResponse Jazz_Ira Idle VoiceResponse Idle voice:Jazz_Ira]] "Жду сигнала.")
+					}),
+					LevelUp = TConcat({
+						T(890000000001926, --[[ModItemVoiceResponse Jazz_Ira LevelUp VoiceResponse LevelUp voice:Jazz_Ira]] "Учусь на ходу.")
+					}),
+					MockDislike1 = TConcat({
+						T(890000000001929, --[[ModItemVoiceResponse Jazz_Ira MockDislike1 VoiceResponse MockDislike1 - Played on Vicious mock voice:Jazz_Ira]] "Хоть бы Злобного тут не было.")
+					}),
+					OpponentKilled = TConcat({
+						T(890000000001922, --[[ModItemVoiceResponse Jazz_Ira OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Ira]] "Один меньше.")
+					}),
+					PraisesBuddy1 = TConcat({
+						T(890000000001930, --[[ModItemVoiceResponse Jazz_Ira PraisesBuddy1 VoiceResponse PraisesBuddy1 - Played when Miguel/Carlos/Dimitri present voice:Jazz_Ira]] "Рада драться рядом со своими.")
+					}),
+					Selection = TConcat({
+						T(890000000001919, --[[ModItemVoiceResponse Jazz_Ira Selection VoiceResponse Selection voice:Jazz_Ira]] "Айра здесь.")
+					}),
+					group = "MercenariesOld",
+					id = "Jazz_Ira",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Dimitri",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Dimitri",
+					'object_class', "UnitData",
+					'Health', 70,
+					'Agility', 50,
+					'Dexterity', 65,
+					'Strength', 70,
+					'Wisdom', 56,
+					'Will', 60,
+					'Leadership', 30,
+					'Marksmanship', 60,
+					'Mechanical', 71,
+					'Explosives', 40,
+					'Medical', 15,
+					'Portrait', "Mod/Dv3mFVN/MercPortraits/Dimitri.png",
+					'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Dimitri_Big.png",
+					'IsMercenary', true,
+					'Name', T(890000000002002, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Name]] "[WIP] Димитрий Газзо"),
+					'Nick', T(890000000002003, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Nick]] "Димитрий"),
+					'AllCapsNick', T(890000000002004, --[[ModItemUnitDataCompositeDef Jazz_Dimitri AllCapsNick]] "ДИМИТРИЙ"),
+					'Bio', T(890000000002005, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Bio]] "work in progress"),
+					'Nationality', "Russia",
+					'Title', T(890000000002006, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Title]] "Я забыл опять"),
+					'Email', T(890000000002007, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Email]] "Dima@arulco.reb"),
+					'snype_nick', T(890000000002008, --[[ModItemUnitDataCompositeDef Jazz_Dimitri snype_nick]] "forgotagain"),
+					'Refusals', {
+						PlaceObj('MercChatRefusal', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000002009, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Text MercChatRefusal Lines ChatMessage voice:Jazz_Dimitri]] "Пока Ротман у вас — извини, нет. Он на местных смотрит свысока."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('UnitHireStatus', {
+									Status = "Hired",
+									TargetUnit = "Jazz_Rothman",
+								}),
+							},
+							'chanceToRoll', 100,
+						}),
+					},
+					'Haggles', {},
+					'HaggleRehire', {},
+					'Mitigations', {
+						PlaceObj('MercChatMitigation', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000002010, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Text MercChatMitigation Lines ChatMessage voice:Jazz_Dimitri]] "О, Мигель или Карлос уже здесь? Тогда я спокоен, иду."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('CheckExpression', {
+									Expression = function (self, obj)
+										return table.count(gv_UnitData, function(k, ud)
+											return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Jazz_Miguel" or k == "Jazz_Carlos")
+										end) >= 1
+									end,
+								}),
+							},
+							'chanceToRoll', 100,
+						}),
+					},
+					'ExtraPartingWords', {
+						PlaceObj('MercChatBranch', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000002011, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Text MercChatBranch Lines ChatMessage voice:Jazz_Dimitri]] "Если найдёте Мигеля или Карлоса — берите. С ними я работаю лучше."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('CheckExpression', {
+									Expression = function (self, obj)
+										return table.count(gv_UnitData, function(k, ud)
+											return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Jazz_Miguel" or k == "Jazz_Carlos")
+										end) < 1
+									end,
+								}),
+							},
+						}),
+					},
+					'Offline', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002012, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Text Offline ChatMessage voice:Jazz_Dimitri]] "Дима... э-э... перезвоните. Я забыл, зачем мне телефон."),
+						}),
+					},
+					'GreetingAndOffer', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002013, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Text GreetingAndOffer ChatMessage voice:Jazz_Dimitri]] "А? Это я. Димитрий. Кажется. Работа есть?"),
+						}),
+					},
+					'ConversationRestart', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002014, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Text ConversationRestart ChatMessage voice:Jazz_Dimitri]] "Стоп, о чём мы говорили? А, точно — вернёмся к делу."),
+						}),
+					},
+					'IdleLine', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002015, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Text IdleLine ChatMessage voice:Jazz_Dimitri]] "Стой... куда я шёл? А, точно, помогать тебе."),
+						}),
+					},
+					'PartingWords', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002016, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Text PartingWords ChatMessage voice:Jazz_Dimitri]] "Так, ножи с собой... вроде все. Иду."),
+						}),
+					},
+					'RehireIntro', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002017, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Text RehireIntro ChatMessage voice:Jazz_Dimitri]] "Контракт заканчивается. Продлеваем, или я опять забуду, где мои ножи?"),
+						}),
+					},
+					'RehireOutro', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002018, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Text RehireOutro ChatMessage voice:Jazz_Dimitri]] "Остаюсь. Ножи точить веселее, когда есть цель."),
+						}),
+					},
+					'MedicalDeposit', "standard",
+					'StartingSalary', 500,
+					'SalaryIncrease', 200,
+					'SalaryLv1', 250,
+					'SalaryMaxLv', 1800,
+					'StartingLevel', 3,
+					'CustomEquipGear', function (self, items)
+						self:TryEquip(items, "Handheld A", "Melee")
+						self:TryEquip(items, "Handheld B", "Melee")
+					end,
+					'MaxHitPoints', 70,
+					'Likes', {
+						"Jazz_Miguel",
+						"Jazz_Carlos",
+					},
+					'Dislikes', {
+						"Jazz_Rothman",
+					},
+					'StartingPerks', {
+						"Jazz_Perk_Dimitri",
+						"Throwing",
+						"MrFixit",
+						"CQCTraining",
+					},
+					'AppearancesList', {
+						PlaceObj('AppearanceWeight', {
+							'Preset', "Dimitri",
+						}),
+					},
+					'Equipment', {
+						"Loot_JAZZ_Dimitri",
+					},
+					'Tier', "Regular",
+					'Specialization', "ExplosiveExpert",
+					'pollyvoice', "Matthew",
+					'gender', "Male",
+					'VoiceResponseId', "Jazz_Dimitri",
+					'FallbackMissingVR', "Ice",
+					'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					AimAttack = TConcat({
+						T(890000000002020, --[[ModItemVoiceResponse Jazz_Dimitri AimAttack VoiceResponse AimAttack voice:Jazz_Dimitri]] "Куда я его дел... а, вот!"),
+						T(890000000002021, --[[ModItemVoiceResponse Jazz_Dimitri AimAttack VoiceResponse AimAttack voice:Jazz_Dimitri]] "Летит!")
+					}),
+					CombatStartDetected = TConcat({
+						T(890000000002025, --[[ModItemVoiceResponse Jazz_Dimitri CombatStartDetected VoiceResponse CombatStartDetected voice:Jazz_Dimitri]] "О! Бой! Погодите, я готов?")
+					}),
+					DeathGeneral = TConcat({
+						T(890000000002023, --[[ModItemVoiceResponse Jazz_Dimitri DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Dimitri]] "Забыл пригнуться...")
+					}),
+					Downed = TConcat({
+						T(890000000002024, --[[ModItemVoiceResponse Jazz_Dimitri Downed VoiceResponse Downed voice:Jazz_Dimitri]] "Меня зацепило! Кто меня подстрелил?")
+					}),
+					Idle = TConcat({
+						T(890000000002028, --[[ModItemVoiceResponse Jazz_Dimitri Idle VoiceResponse Idle voice:Jazz_Dimitri]] "А что я должен делать?")
+					}),
+					LevelUp = TConcat({
+						T(890000000002026, --[[ModItemVoiceResponse Jazz_Dimitri LevelUp VoiceResponse LevelUp voice:Jazz_Dimitri]] "Кажется, я что-то запомнил на этот раз.")
+					}),
+					MockDislike1 = TConcat({
+						T(890000000002029, --[[ModItemVoiceResponse Jazz_Dimitri MockDislike1 VoiceResponse MockDislike1 - Played on Rothman mock voice:Jazz_Dimitri]] "Опять этот Ротман бы поворчал.")
+					}),
+					NoAmmo = TConcat({
+						T(890000000002027, --[[ModItemVoiceResponse Jazz_Dimitri NoAmmo VoiceResponse NoAmmo voice:Jazz_Dimitri]] "Ножи кончились!")
+					}),
+					OpponentKilled = TConcat({
+						T(890000000002022, --[[ModItemVoiceResponse Jazz_Dimitri OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Dimitri]] "Попал! Даже сам не ожидал.")
+					}),
+					PraisesBuddy1 = TConcat({
+						T(890000000002030, --[[ModItemVoiceResponse Jazz_Dimitri PraisesBuddy1 VoiceResponse PraisesBuddy1 - Played when Miguel/Carlos present voice:Jazz_Dimitri]] "Хорошо, что свои рядом.")
+					}),
+					Selection = TConcat({
+						T(890000000002019, --[[ModItemVoiceResponse Jazz_Dimitri Selection VoiceResponse Selection voice:Jazz_Dimitri]] "Димитрий! Э-э, да, я тут.")
+					}),
+					group = "MercenariesOld",
+					id = "Jazz_Dimitri",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Madman",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Madman",
+					'object_class', "UnitData",
+					'Health', 92,
+					'Agility', 90,
+					'Dexterity', 88,
+					'Strength', 91,
+					'Wisdom', 56,
+					'Will', 50,
+					'Leadership', 15,
+					'Marksmanship', 70,
+					'Mechanical', 68,
+					'Explosives', 20,
+					'Medical', 10,
+					'Portrait', "Mod/Dv3mFVN/MercPortraits/Madman.png",
+					'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Madman_Big.png",
+					'IsMercenary', true,
+					'Name', T(890000000002102, --[[ModItemUnitDataCompositeDef Jazz_Madman Name]] "[WIP] Кевин «Бешеный» Камерон"),
+					'Nick', T(890000000002103, --[[ModItemUnitDataCompositeDef Jazz_Madman Nick]] "Бешеный"),
+					'AllCapsNick', T(890000000002104, --[[ModItemUnitDataCompositeDef Jazz_Madman AllCapsNick]] "БЕШЕНЫЙ"),
+					'Bio', T(890000000002105, --[[ModItemUnitDataCompositeDef Jazz_Madman Bio]] "work in progress"),
+					'Nationality', "USA",
+					'Title', T(890000000002106, --[[ModItemUnitDataCompositeDef Jazz_Madman Title]] "Ржавый бампер"),
+					'Email', T(890000000002107, --[[ModItemUnitDataCompositeDef Jazz_Madman Email]] "Madman@merc.com"),
+					'snype_nick', T(890000000002108, --[[ModItemUnitDataCompositeDef Jazz_Madman snype_nick]] "bumper"),
+					'Refusals', {},
+					'Haggles', {},
+					'HaggleRehire', {},
+					'Mitigations', {
+						PlaceObj('MercChatMitigation', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000002109, --[[ModItemUnitDataCompositeDef Jazz_Madman Text MercChatMitigation Lines ChatMessage voice:Jazz_Madman]] "О, Лиска с вами? Ну тогда я точно остаюсь, хе-хе."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('UnitHireStatus', {
+									Status = "Hired",
+									TargetUnit = "Fox",
+								}),
+							},
+							'chanceToRoll', 100,
+						}),
+					},
+					'ExtraPartingWords', {
+						PlaceObj('MercChatBranch', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000002110, --[[ModItemUnitDataCompositeDef Jazz_Madman Text MercChatBranch Lines ChatMessage voice:Jazz_Madman]] "Если увидите Лиску — скажите, что Бешеный спрашивал."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('UnitHireStatus', {
+									Status = "Hired",
+									TargetUnit = "Fox",
+									Negate = true,
+								}),
+							},
+						}),
+					},
+					'Offline', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002111, --[[ModItemUnitDataCompositeDef Jazz_Madman Text Offline ChatMessage voice:Jazz_Madman]] "Бешеный не берёт трубку — он ею бьёт. Перезвони, если не боишься."),
+						}),
+					},
+					'GreetingAndOffer', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002112, --[[ModItemUnitDataCompositeDef Jazz_Madman Text GreetingAndOffer ChatMessage voice:Jazz_Madman]] "Да я лучше бампером всех перемочу! Ну, есть дело или как?"),
+						}),
+					},
+					'ConversationRestart', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002113, --[[ModItemUnitDataCompositeDef Jazz_Madman Text ConversationRestart ChatMessage voice:Jazz_Madman]] "Ты пропал, а я тут заскучал. Продолжай давай."),
+						}),
+					},
+					'IdleLine', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002114, --[[ModItemUnitDataCompositeDef Jazz_Madman Text IdleLine ChatMessage voice:Jazz_Madman]] "Ну где драка? Мне бы уже кого-то стукнуть."),
+						}),
+					},
+					'PartingWords', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002115, --[[ModItemUnitDataCompositeDef Jazz_Madman Text PartingWords ChatMessage voice:Jazz_Madman]] "Ха! Поехали крушить. Бесплатно, лишь бы весело было."),
+						}),
+					},
+					'RehireIntro', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002116, --[[ModItemUnitDataCompositeDef Jazz_Madman Text RehireIntro ChatMessage voice:Jazz_Madman]] "Контракт заканчивается, но я всё равно бесплатный — продлеваем?"),
+						}),
+					},
+					'RehireOutro', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002117, --[[ModItemUnitDataCompositeDef Jazz_Madman Text RehireOutro ChatMessage voice:Jazz_Madman]] "Остаюсь. Тут ещё есть что чинить и кого бить."),
+						}),
+					},
+					'MedicalDeposit', "none",
+					'StartingSalary', 0,
+					'SalaryIncrease', 200,
+					'SalaryLv1', 0,
+					'SalaryMaxLv', 500,
+					'StartingLevel', 4,
+					'CustomEquipGear', function (self, items)
+						self:TryEquip(items, "Handheld A", "Melee")
+						self:TryEquip(items, "Handheld B", "Melee")
+					end,
+					'MaxHitPoints', 92,
+					'Likes', {
+						"Fox",
+					},
+					'Dislikes', {},
+					'StartingPerks', {
+						"Jazz_Perk_Madman",
+						"Psycho",
+						"MrFixit",
+						"MeleeTraining",
+						"CQCTraining",
+						"Ironclad",
+					},
+					'AppearancesList', {
+						PlaceObj('AppearanceWeight', {
+							'Preset', "Madman",
+						}),
+					},
+					'Equipment', {
+						"Loot_JAZZ_Madman",
+					},
+					'Tier', "Veteran",
+					'Specialization', "Mechanic",
+					'pollyvoice', "Matthew",
+					'gender', "Male",
+					'VoiceResponseId', "Jazz_Madman",
+					'FallbackMissingVR', "Ice",
+					'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					AimAttack = TConcat({
+						T(890000000002119, --[[ModItemVoiceResponse Jazz_Madman AimAttack VoiceResponse AimAttack voice:Jazz_Madman]] "А ну иди сюда!"),
+						T(890000000002120, --[[ModItemVoiceResponse Jazz_Madman AimAttack VoiceResponse AimAttack voice:Jazz_Madman]] "Бампером по башке!")
+					}),
+					CombatStartPlayer = TConcat({
+						T(890000000002124, --[[ModItemVoiceResponse Jazz_Madman CombatStartPlayer VoiceResponse CombatStartPlayer voice:Jazz_Madman]] "ДА! Наконец-то!")
+					}),
+					DeathGeneral = TConcat({
+						T(890000000002122, --[[ModItemVoiceResponse Jazz_Madman DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Madman]] "Не так я хотел кончить...")
+					}),
+					Downed = TConcat({
+						T(890000000002123, --[[ModItemVoiceResponse Jazz_Madman Downed VoiceResponse Downed voice:Jazz_Madman]] "Меня приложило! Ха, но норм!")
+					}),
+					Idle = TConcat({
+						T(890000000002127, --[[ModItemVoiceResponse Jazz_Madman Idle VoiceResponse Idle voice:Jazz_Madman]] "Скучно! Дай мне что-нибудь сломать.")
+					}),
+					LevelUp = TConcat({
+						T(890000000002125, --[[ModItemVoiceResponse Jazz_Madman LevelUp VoiceResponse LevelUp voice:Jazz_Madman]] "Ещё крепче стал!")
+					}),
+					NoAmmo = TConcat({
+						T(890000000002126, --[[ModItemVoiceResponse Jazz_Madman NoAmmo VoiceResponse NoAmmo voice:Jazz_Madman]] "Патроны? Кому они нужны!")
+					}),
+					OpponentKilled = TConcat({
+						T(890000000002121, --[[ModItemVoiceResponse Jazz_Madman OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Madman]] "Красота!")
+					}),
+					PraisesBuddy1 = TConcat({
+						T(890000000002128, --[[ModItemVoiceResponse Jazz_Madman PraisesBuddy1 VoiceResponse PraisesBuddy1 - Played when Fox present voice:Jazz_Madman]] "Лиска рядом — день удался.")
+					}),
+					Selection = TConcat({
+						T(890000000002118, --[[ModItemVoiceResponse Jazz_Madman Selection VoiceResponse Selection voice:Jazz_Madman]] "Бешеный готов крушить!")
+					}),
+					group = "MercenariesOld",
+					id = "Jazz_Madman",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Conrad",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Conrad",
+					'object_class', "UnitData",
+					'Health', 80,
+					'Agility', 69,
+					'Dexterity', 78,
+					'Strength', 78,
+					'Wisdom', 80,
+					'Will', 75,
+					'Leadership', 51,
+					'Marksmanship', 95,
+					'Mechanical', 55,
+					'Explosives', 68,
+					'Medical', 40,
+					'Portrait', "Mod/Dv3mFVN/MercPortraits/Conrad.png",
+					'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Conrad_Big.png",
+					'IsMercenary', true,
+					'Name', T(890000000002202, --[[ModItemUnitDataCompositeDef Jazz_Conrad Name]] "[WIP] Лейтенант Конрад Джиллет"),
+					'Nick', T(890000000002203, --[[ModItemUnitDataCompositeDef Jazz_Conrad Nick]] "Конрад"),
+					'AllCapsNick', T(890000000002204, --[[ModItemUnitDataCompositeDef Jazz_Conrad AllCapsNick]] "КОНРАД"),
+					'Bio', T(890000000002205, --[[ModItemUnitDataCompositeDef Jazz_Conrad Bio]] "work in progress"),
+					'Nationality', "Germany",
+					'Title', T(890000000002206, --[[ModItemUnitDataCompositeDef Jazz_Conrad Title]] "Дорогой лейтенант"),
+					'Email', T(890000000002207, --[[ModItemUnitDataCompositeDef Jazz_Conrad Email]] "Conrad@merc.com"),
+					'snype_nick', T(890000000002208, --[[ModItemUnitDataCompositeDef Jazz_Conrad snype_nick]] "ltgillett"),
+					'Refusals', {
+						PlaceObj('MercChatRefusal', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000002209, --[[ModItemUnitDataCompositeDef Jazz_Conrad Text MercChatRefusal Lines ChatMessage voice:Jazz_Conrad]] "Пока пьяный Ларри в отряде — я не подписываюсь. Это не армия, а балаган."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('UnitHireStatus', {
+									Status = "Hired",
+									TargetUnit = "Larry",
+								}),
+							},
+							'chanceToRoll', 100,
+						}),
+					},
+					'Haggles', {
+						PlaceObj('MercChatHaggle', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000002210, --[[ModItemUnitDataCompositeDef Jazz_Conrad Text MercChatHaggle Lines ChatMessage voice:Jazz_Conrad]] "Моя ставка не обсуждается — разве что в большую сторону."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('MercChatConditionMoney', {}),
+							},
+							'chanceToRoll', 100,
+						}),
+						PlaceObj('MercChatHaggle', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000002211, --[[ModItemUnitDataCompositeDef Jazz_Conrad Text MercChatHaggle Lines ChatMessage voice:Jazz_Conrad]] "Отряд полон американцев. Ясно, доплата за акцент, который приходится терпеть."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('CheckExpression', {
+									Expression = function (self, obj)
+										return table.count(gv_UnitData, function(k, ud)
+											return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and ud.Nationality == "USA"
+										end) >= 1
+									end,
+								}),
+							},
+							'chanceToRoll', 100,
+						}),
+					},
+					'HaggleRehire', {},
+					'Mitigations', {
+						PlaceObj('MercChatMitigation', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000002212, --[[ModItemUnitDataCompositeDef Jazz_Conrad Text MercChatMitigation Lines ChatMessage voice:Jazz_Conrad]] "Игги или Ротман уже здесь? Тогда условия меня устраивают."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('CheckExpression', {
+									Expression = function (self, obj)
+										return table.count(gv_UnitData, function(k, ud)
+											return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Jazz_Iggy" or k == "Jazz_Rothman")
+										end) >= 1
+									end,
+								}),
+							},
+							'chanceToRoll', 100,
+						}),
+					},
+					'ExtraPartingWords', {
+						PlaceObj('MercChatBranch', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000002213, --[[ModItemUnitDataCompositeDef Jazz_Conrad Text MercChatBranch Lines ChatMessage voice:Jazz_Conrad]] "Наймите ещё Игги — с толковым напарником дисциплина держится сама."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('UnitHireStatus', {
+									Status = "Hired",
+									TargetUnit = "Jazz_Iggy",
+									Negate = true,
+								}),
+							},
+						}),
+					},
+					'Offline', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002214, --[[ModItemUnitDataCompositeDef Jazz_Conrad Text Offline ChatMessage voice:Jazz_Conrad]] "Лейтенант Джиллет. Оставьте сообщение — отвечу, если условия того стоят."),
+						}),
+					},
+					'GreetingAndOffer', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002215, --[[ModItemUnitDataCompositeDef Jazz_Conrad Text GreetingAndOffer ChatMessage voice:Jazz_Conrad]] "Джиллет слушает. Излагайте условия — и не жадничайте."),
+						}),
+					},
+					'ConversationRestart', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002216, --[[ModItemUnitDataCompositeDef Jazz_Conrad Text ConversationRestart ChatMessage voice:Jazz_Conrad]] "Связь прервалась. Продолжим — время дорого, как и я."),
+						}),
+					},
+					'IdleLine', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002217, --[[ModItemUnitDataCompositeDef Jazz_Conrad Text IdleLine ChatMessage voice:Jazz_Conrad]] "Время — деньги. Моё особенно."),
+						}),
+					},
+					'PartingWords', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002218, --[[ModItemUnitDataCompositeDef Jazz_Conrad Text PartingWords ChatMessage voice:Jazz_Conrad]] "Контракт принят. Постройте людей — начинаем с дисциплины."),
+						}),
+					},
+					'RehireIntro', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002219, --[[ModItemUnitDataCompositeDef Jazz_Conrad Text RehireIntro ChatMessage voice:Jazz_Conrad]] "Контракт заканчивается. У меня есть и другие предложения — решайте."),
+						}),
+					},
+					'RehireOutro', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002220, --[[ModItemUnitDataCompositeDef Jazz_Conrad Text RehireOutro ChatMessage voice:Jazz_Conrad]] "Остаюсь. Ваша дисциплина меня почти впечатлила."),
+						}),
+					},
+					'MedicalDeposit', "large",
+					'StartingSalary', 3300,
+					'SalaryIncrease', 200,
+					'SalaryLv1', 2000,
+					'SalaryMaxLv', 8000,
+					'StartingLevel', 5,
+					'CustomEquipGear', function (self, items)
+						self:TryEquip(items, "Handheld A", "Firearm")
+						self:TryEquip(items, "Handheld B", "Firearm")
+					end,
+					'MaxHitPoints', 80,
+					'Likes', {
+						"Jazz_Iggy",
+						"Jazz_Rothman",
+					},
+					'Dislikes', {
+						"Larry",
+					},
+					'StartingPerks', {
+						"Jazz_Perk_Conrad",
+						"Teacher",
+						"TakeAim",
+						"SteadyBreathing",
+						"ShoulderToShoulder",
+					},
+					'AppearancesList', {
+						PlaceObj('AppearanceWeight', {
+							'Preset', "Conrad",
+						}),
+					},
+					'Equipment', {
+						"Loot_JAZZ_Conrad",
+					},
+					'Tier', "Elite",
+					'Specialization', "Leader",
+					'pollyvoice', "Matthew",
+					'gender', "Male",
+					'VoiceResponseId', "Jazz_Conrad",
+					'FallbackMissingVR', "Ice",
+					'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					AimAttack = TConcat({
+						T(890000000002222, --[[ModItemVoiceResponse Jazz_Conrad AimAttack VoiceResponse AimAttack voice:Jazz_Conrad]] "Цель захвачена."),
+						T(890000000002223, --[[ModItemVoiceResponse Jazz_Conrad AimAttack VoiceResponse AimAttack voice:Jazz_Conrad]] "Точность прежде всего.")
+					}),
+					AmmoLow = TConcat({
+						T(890000000002229, --[[ModItemVoiceResponse Jazz_Conrad AmmoLow VoiceResponse AmmoLow voice:Jazz_Conrad]] "Боезапас на исходе.")
+					}),
+					CombatStartDetected = TConcat({
+						T(890000000002227, --[[ModItemVoiceResponse Jazz_Conrad CombatStartDetected VoiceResponse CombatStartDetected voice:Jazz_Conrad]] "Внимание, противник обнаружен.")
+					}),
+					DeathGeneral = TConcat({
+						T(890000000002225, --[[ModItemVoiceResponse Jazz_Conrad DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Conrad]] "Недостойный конец...")
+					}),
+					Downed = TConcat({
+						T(890000000002226, --[[ModItemVoiceResponse Jazz_Conrad Downed VoiceResponse Downed voice:Jazz_Conrad]] "Ранен. Требую медицинской помощи.")
+					}),
+					Idle = TConcat({
+						T(890000000002230, --[[ModItemVoiceResponse Jazz_Conrad Idle VoiceResponse Idle voice:Jazz_Conrad]] "Жду распоряжений.")
+					}),
+					LevelUp = TConcat({
+						T(890000000002228, --[[ModItemVoiceResponse Jazz_Conrad LevelUp VoiceResponse LevelUp voice:Jazz_Conrad]] "Дисциплина приносит плоды.")
+					}),
+					MockDislike1 = TConcat({
+						T(890000000002231, --[[ModItemVoiceResponse Jazz_Conrad MockDislike1 VoiceResponse MockDislike1 - Played on Larry mock voice:Jazz_Conrad]] "Хоть бы Ларри протрезвел когда-нибудь.")
+					}),
+					OpponentKilled = TConcat({
+						T(890000000002224, --[[ModItemVoiceResponse Jazz_Conrad OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Conrad]] "Учебная цель поражена.")
+					}),
+					PraisesBuddy1 = TConcat({
+						T(890000000002232, --[[ModItemVoiceResponse Jazz_Conrad PraisesBuddy1 VoiceResponse PraisesBuddy1 - Played when Iggy/Rothman present voice:Jazz_Conrad]] "С надёжным напарником и служба легче.")
+					}),
+					Selection = TConcat({
+						T(890000000002221, --[[ModItemVoiceResponse Jazz_Conrad Selection VoiceResponse Selection voice:Jazz_Conrad]] "Лейтенант Джиллет, к вашим услугам.")
+					}),
+					group = "MercenariesOld",
+					id = "Jazz_Conrad",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Mike",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Mike",
+					'object_class', "UnitData",
+					'Health', 90,
+					'Agility', 85,
+					'Dexterity', 85,
+					'Strength', 85,
+					'Wisdom', 80,
+					'Will', 85,
+					'Leadership', 50,
+					'Marksmanship', 90,
+					'Mechanical', 40,
+					'Explosives', 40,
+					'Medical', 40,
+					'Portrait', "Mod/Dv3mFVN/MercPortraits/Mike.png",
+					'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Mike_Big.png",
+					'IsMercenary', true,
+					'Name', T(890000000002302, --[[ModItemUnitDataCompositeDef Jazz_Mike Name]] "[WIP] Майк"),
+					'Nick', T(890000000002303, --[[ModItemUnitDataCompositeDef Jazz_Mike Nick]] "Майк"),
+					'AllCapsNick', T(890000000002304, --[[ModItemUnitDataCompositeDef Jazz_Mike AllCapsNick]] "МАЙК"),
+					'Bio', T(890000000002305, --[[ModItemUnitDataCompositeDef Jazz_Mike Bio]] "work in progress"),
+					'Nationality', "USA",
+					'Title', T(890000000002306, --[[ModItemUnitDataCompositeDef Jazz_Mike Title]] "Старый друг"),
+					'Email', T(890000000002307, --[[ModItemUnitDataCompositeDef Jazz_Mike Email]] "Mike@aim.com"),
+					'snype_nick', T(890000000002308, --[[ModItemUnitDataCompositeDef Jazz_Mike snype_nick]] "oldfriend"),
+					'Refusals', {},
+					'Haggles', {},
+					'HaggleRehire', {},
+					'Mitigations', {
+						PlaceObj('MercChatMitigation', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000002309, --[[ModItemUnitDataCompositeDef Jazz_Mike Text MercChatMitigation Lines ChatMessage voice:Jazz_Mike]] "Стероид уже в отряде? Тогда ладно, с ним сработаемся."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('UnitHireStatus', {
+									Status = "Hired",
+									TargetUnit = "Steroid",
+								}),
+							},
+							'chanceToRoll', 100,
+						}),
+					},
+					'ExtraPartingWords', {
+						PlaceObj('MercChatBranch', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000002310, --[[ModItemUnitDataCompositeDef Jazz_Mike Text MercChatBranch Lines ChatMessage voice:Jazz_Mike]] "Если нужен ещё один надёжный ствол — зовите Стероида."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('UnitHireStatus', {
+									Status = "Hired",
+									TargetUnit = "Steroid",
+									Negate = true,
+								}),
+							},
+						}),
+					},
+					'Offline', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002311, --[[ModItemUnitDataCompositeDef Jazz_Mike Text Offline ChatMessage voice:Jazz_Mike]] "Майк. Перезвоните — если срочно, я перезвоню первым."),
+						}),
+					},
+					'GreetingAndOffer', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002312, --[[ModItemUnitDataCompositeDef Jazz_Mike Text GreetingAndOffer ChatMessage voice:Jazz_Mike]] "Старый друг на линии. Ну, что у тебя за дело?"),
+						}),
+					},
+					'ConversationRestart', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002313, --[[ModItemUnitDataCompositeDef Jazz_Mike Text ConversationRestart ChatMessage voice:Jazz_Mike]] "Пропала связь. Ладно, продолжаем — я никуда не спешу."),
+						}),
+					},
+					'IdleLine', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002314, --[[ModItemUnitDataCompositeDef Jazz_Mike Text IdleLine ChatMessage voice:Jazz_Mike]] "Говори. Я слушаю, но недолго."),
+						}),
+					},
+					'PartingWords', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002315, --[[ModItemUnitDataCompositeDef Jazz_Mike Text PartingWords ChatMessage voice:Jazz_Mike]] "Как в старые добрые. Я в деле."),
+						}),
+					},
+					'RehireIntro', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002316, --[[ModItemUnitDataCompositeDef Jazz_Mike Text RehireIntro ChatMessage voice:Jazz_Mike]] "Контракт заканчивается. Обычно я ухожу тихо — но спрошу: продлеваем?"),
+						}),
+					},
+					'RehireOutro', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002317, --[[ModItemUnitDataCompositeDef Jazz_Mike Text RehireOutro ChatMessage voice:Jazz_Mike]] "Остаюсь. Одному веселее, но и тут ничего."),
+						}),
+					},
+					'MedicalDeposit', "large",
+					'StartingSalary', 4000,
+					'SalaryIncrease', 200,
+					'SalaryLv1', 2000,
+					'SalaryMaxLv', 9000,
+					'StartingLevel', 6,
+					'CustomEquipGear', function (self, items)
+						self:TryEquip(items, "Handheld A", "Firearm")
+						self:TryEquip(items, "Handheld B", "Firearm")
+					end,
+					'MaxHitPoints', 90,
+					'Likes', {
+						"Steroid",
+					},
+					'Dislikes', {},
+					'StartingPerks', {
+						"Jazz_Perk_Mike",
+						"Loner",
+						"NightOps",
+						"AutoWeapons",
+						"TakeAim",
+						"Counterfire",
+					},
+					'AppearancesList', {
+						PlaceObj('AppearanceWeight', {
+							'Preset', "Mike",
+						}),
+					},
+					'Equipment', {
+						"Loot_JAZZ_Mike",
+					},
+					'Tier', "Elite",
+					'Specialization', "AllRounder",
+					'pollyvoice', "Matthew",
+					'gender', "Male",
+					'VoiceResponseId', "Jazz_Mike",
+					'FallbackMissingVR', "Ice",
+					'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					AimAttack = TConcat({
+						T(890000000002319, --[[ModItemVoiceResponse Jazz_Mike AimAttack VoiceResponse AimAttack voice:Jazz_Mike]] "Вижу цель."),
+						T(890000000002320, --[[ModItemVoiceResponse Jazz_Mike AimAttack VoiceResponse AimAttack voice:Jazz_Mike]] "Работаю спокойно.")
+					}),
+					AmmoLow = TConcat({
+						T(890000000002326, --[[ModItemVoiceResponse Jazz_Mike AmmoLow VoiceResponse AmmoLow voice:Jazz_Mike]] "Патроны на исходе.")
+					}),
+					CombatStartDetected = TConcat({
+						T(890000000002324, --[[ModItemVoiceResponse Jazz_Mike CombatStartDetected VoiceResponse CombatStartDetected voice:Jazz_Mike]] "Вижу их первым.")
+					}),
+					DeathGeneral = TConcat({
+						T(890000000002322, --[[ModItemVoiceResponse Jazz_Mike DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Mike]] "Не в этот раз...")
+					}),
+					Downed = TConcat({
+						T(890000000002323, --[[ModItemVoiceResponse Jazz_Mike Downed VoiceResponse Downed voice:Jazz_Mike]] "Подбили — но я держусь.")
+					}),
+					Idle = TConcat({
+						T(890000000002327, --[[ModItemVoiceResponse Jazz_Mike Idle VoiceResponse Idle voice:Jazz_Mike]] "Жду сигнала — один, как обычно.")
+					}),
+					LevelUp = TConcat({
+						T(890000000002325, --[[ModItemVoiceResponse Jazz_Mike LevelUp VoiceResponse LevelUp voice:Jazz_Mike]] "Опыт не пропьёшь.")
+					}),
+					OpponentKilled = TConcat({
+						T(890000000002321, --[[ModItemVoiceResponse Jazz_Mike OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Mike]] "Чисто.")
+					}),
+					PraisesBuddy1 = TConcat({
+						T(890000000002328, --[[ModItemVoiceResponse Jazz_Mike PraisesBuddy1 VoiceResponse PraisesBuddy1 - Played when Steroid present voice:Jazz_Mike]] "Хорошо, что Стероид рядом.")
+					}),
+					Selection = TConcat({
+						T(890000000002318, --[[ModItemVoiceResponse Jazz_Mike Selection VoiceResponse Selection voice:Jazz_Mike]] "Майк на месте.")
+					}),
+					group = "MercenariesOld",
+					id = "Jazz_Mike",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Grom",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Grom",
+					'object_class', "UnitData",
+					'Health', 85,
+					'Agility', 75,
+					'Dexterity', 75,
+					'Strength', 85,
+					'Wisdom', 70,
+					'Will', 80,
+					'Leadership', 45,
+					'Marksmanship', 75,
+					'Mechanical', 67,
+					'Explosives', 47,
+					'Medical', 25,
+					'Portrait', "Mod/Dv3mFVN/MercPortraits/Grom.png",
+					'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Grom_Big.png",
+					'IsMercenary', true,
+					'Name', T(890000000002402, --[[ModItemUnitDataCompositeDef Jazz_Grom Name]] "[WIP] Майор Сергей «Гром» Громов"),
+					'Nick', T(890000000002403, --[[ModItemUnitDataCompositeDef Jazz_Grom Nick]] "Гром"),
+					'AllCapsNick', T(890000000002404, --[[ModItemUnitDataCompositeDef Jazz_Grom AllCapsNick]] "ГРОМ"),
+					'Bio', T(890000000002405, --[[ModItemUnitDataCompositeDef Jazz_Grom Bio]] "work in progress"),
+					'Nationality', "Russia",
+					'Title', T(890000000002406, --[[ModItemUnitDataCompositeDef Jazz_Grom Title]] "Афганец"),
+					'Email', T(890000000002407, --[[ModItemUnitDataCompositeDef Jazz_Grom Email]] "Grom@vvs.ru"),
+					'snype_nick', T(890000000002408, --[[ModItemUnitDataCompositeDef Jazz_Grom snype_nick]] "gromov"),
+					'Refusals', {
+						PlaceObj('MercChatRefusal', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000002409, --[[ModItemUnitDataCompositeDef Jazz_Grom Text MercChatRefusal Lines ChatMessage voice:Jazz_Grom]] "Пока Скоуп у вас — нет. Он вечно критикует чужую наводку, а я его слышать не хочу."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('UnitHireStatus', {
+									Status = "Hired",
+									TargetUnit = "Scope",
+								}),
+							},
+							'chanceToRoll', 100,
+						}),
+					},
+					'Haggles', {},
+					'HaggleRehire', {},
+					'Mitigations', {
+						PlaceObj('MercChatMitigation', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000002410, --[[ModItemUnitDataCompositeDef Jazz_Grom Text MercChatMitigation Lines ChatMessage voice:Jazz_Grom]] "Иван, Игорь или Игги уже здесь? Тогда своих не бросаю."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('CheckExpression', {
+									Expression = function (self, obj)
+										return table.count(gv_UnitData, function(k, ud)
+											return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Ivan" or k == "Igor" or k == "Jazz_Iggy")
+										end) >= 1
+									end,
+								}),
+							},
+							'chanceToRoll', 100,
+						}),
+					},
+					'ExtraPartingWords', {
+						PlaceObj('MercChatBranch', {
+							'Lines', {
+								PlaceObj('ChatMessage', {
+									'Text', T(890000000002411, --[[ModItemUnitDataCompositeDef Jazz_Grom Text MercChatBranch Lines ChatMessage voice:Jazz_Grom]] "Найдёте Ивана или Игоря — берите без раздумий, проверенные бойцы."),
+								}),
+							},
+							'Conditions', {
+								PlaceObj('CheckExpression', {
+									Expression = function (self, obj)
+										return table.count(gv_UnitData, function(k, ud)
+											return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Ivan" or k == "Igor")
+										end) < 1
+									end,
+								}),
+							},
+						}),
+					},
+					'Offline', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002412, --[[ModItemUnitDataCompositeDef Jazz_Grom Text Offline ChatMessage voice:Jazz_Grom]] "Громов. Связь позже — сейчас занят проверкой боекомплекта."),
+						}),
+					},
+					'GreetingAndOffer', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002413, --[[ModItemUnitDataCompositeDef Jazz_Grom Text GreetingAndOffer ChatMessage voice:Jazz_Grom]] "Майор Громов. Аэродром ваш — значит, и я ваш."),
+						}),
+					},
+					'ConversationRestart', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002414, --[[ModItemUnitDataCompositeDef Jazz_Grom Text ConversationRestart ChatMessage voice:Jazz_Grom]] "Связь прервалась. Продолжайте, товарищ."),
+						}),
+					},
+					'IdleLine', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002415, --[[ModItemUnitDataCompositeDef Jazz_Grom Text IdleLine ChatMessage voice:Jazz_Grom]] "Жду приказа. Гранатомёт заряжен."),
+						}),
+					},
+					'PartingWords', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002416, --[[ModItemUnitDataCompositeDef Jazz_Grom Text PartingWords ChatMessage voice:Jazz_Grom]] "Гранатомёт с собой. Идём."),
+						}),
+					},
+					'RehireIntro', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002417, --[[ModItemUnitDataCompositeDef Jazz_Grom Text RehireIntro ChatMessage voice:Jazz_Grom]] "Контракт заканчивается. Я всё равно бесплатный — продолжаем службу?"),
+						}),
+					},
+					'RehireOutro', {
+						PlaceObj('ChatMessage', {
+							'Text', T(890000000002418, --[[ModItemUnitDataCompositeDef Jazz_Grom Text RehireOutro ChatMessage voice:Jazz_Grom]] "Остаюсь. Служба есть служба."),
+						}),
+					},
+					'MedicalDeposit', "none",
+					'StartingSalary', 0,
+					'SalaryIncrease', 200,
+					'SalaryLv1', 0,
+					'SalaryMaxLv', 0,
+					'StartingLevel', 5,
+					'CustomEquipGear', function (self, items)
+						self:TryEquip(items, "Handheld A", "Firearm")
+						self:TryEquip(items, "Handheld B", "Firearm")
+					end,
+					'MaxHitPoints', 85,
+					'Likes', {
+						"Ivan",
+						"Igor",
+						"Jazz_Iggy",
+					},
+					'Dislikes', {
+						"Scope",
+					},
+					'StartingPerks', {
+						"Jazz_Perk_Grom",
+						"HeavyWeaponsTraining",
+						"Throwing",
+						"Hardened",
+					},
+					'AppearancesList', {
+						PlaceObj('AppearanceWeight', {
+							'Preset', "Grom",
+						}),
+					},
+					'Equipment', {
+						"Loot_JAZZ_Grom",
+					},
+					'Tier', "Veteran",
+					'Specialization', "HeavyWeapons",
+					'pollyvoice', "Matthew",
+					'gender', "Male",
+					'VoiceResponseId', "Jazz_Grom",
+					'FallbackMissingVR', "Ice",
+					'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					AimAttack = TConcat({
+						T(890000000002420, --[[ModItemVoiceResponse Jazz_Grom AimAttack VoiceResponse AimAttack voice:Jazz_Grom]] "Огонь по цели!"),
+						T(890000000002421, --[[ModItemVoiceResponse Jazz_Grom AimAttack VoiceResponse AimAttack voice:Jazz_Grom]] "Гранатомёт готов.")
+					}),
+					AmmoLow = TConcat({
+						T(890000000002427, --[[ModItemVoiceResponse Jazz_Grom AmmoLow VoiceResponse AmmoLow voice:Jazz_Grom]] "Заряды на исходе!")
+					}),
+					CombatStartDetected = TConcat({
+						T(890000000002425, --[[ModItemVoiceResponse Jazz_Grom CombatStartDetected VoiceResponse CombatStartDetected voice:Jazz_Grom]] "Противник на подходе, к бою!")
+					}),
+					DeathGeneral = TConcat({
+						T(890000000002423, --[[ModItemVoiceResponse Jazz_Grom DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Grom]] "Держитесь, ребята...")
+					}),
+					Downed = TConcat({
+						T(890000000002424, --[[ModItemVoiceResponse Jazz_Grom Downed VoiceResponse Downed voice:Jazz_Grom]] "Ранен, но держу оружие.")
+					}),
+					Idle = TConcat({
+						T(890000000002428, --[[ModItemVoiceResponse Jazz_Grom Idle VoiceResponse Idle voice:Jazz_Grom]] "Жду приказа, майор наготове.")
+					}),
+					LevelUp = TConcat({
+						T(890000000002426, --[[ModItemVoiceResponse Jazz_Grom LevelUp VoiceResponse LevelUp voice:Jazz_Grom]] "Опыт Афгана не забывается.")
+					}),
+					MockDislike1 = TConcat({
+						T(890000000002429, --[[ModItemVoiceResponse Jazz_Grom MockDislike1 VoiceResponse MockDislike1 - Played on Scope mock voice:Jazz_Grom]] "Скоуп бы тут что-то поправил, наверное.")
+					}),
+					OpponentKilled = TConcat({
+						T(890000000002422, --[[ModItemVoiceResponse Jazz_Grom OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Grom]] "Цель уничтожена.")
+					}),
+					PraisesBuddy1 = TConcat({
+						T(890000000002430, --[[ModItemVoiceResponse Jazz_Grom PraisesBuddy1 VoiceResponse PraisesBuddy1 - Played when Ivan/Igor/Iggy present voice:Jazz_Grom]] "Хорошо служить со своими.")
+					}),
+					Selection = TConcat({
+						T(890000000002419, --[[ModItemVoiceResponse Jazz_Grom Selection VoiceResponse Selection voice:Jazz_Grom]] "Майор Громов на позиции.")
+					}),
+					group = "MercenariesOld",
+					id = "Jazz_Grom",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Rothman",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Rothman",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 97,
+				'Agility', 80,
+				'Dexterity', 78,
+				'Strength', 85,
+				'Wisdom', 75,
+				'Will', 70,
+				'Leadership', 59,
+				'Marksmanship', 80,
+				'Mechanical', 40,
+				'Explosives', 66,
+				'Medical', 30,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Rothman.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Rothman_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000002502, --[[ModItemUnitDataCompositeDef Jazz_Rothman Name]] "[WIP] Стефан Ротман"),
+				'Nick', T(890000000002503, --[[ModItemUnitDataCompositeDef Jazz_Rothman Nick]] "Ротман"),
+				'AllCapsNick', T(890000000002504, --[[ModItemUnitDataCompositeDef Jazz_Rothman AllCapsNick]] "РОТМАН"),
+				'Bio', T(890000000002505, --[[ModItemUnitDataCompositeDef Jazz_Rothman Bio]] "work in progress"),
+				'Nationality', "SouthAfrica",
+				'Title', T(890000000002506, --[[ModItemUnitDataCompositeDef Jazz_Rothman Title]] "Шахтёрский безопасник"),
+				'Email', T(890000000002507, --[[ModItemUnitDataCompositeDef Jazz_Rothman Email]] "Rothman@aim.com"),
+				'snype_nick', T(890000000002508, --[[ModItemUnitDataCompositeDef Jazz_Rothman snype_nick]] "mineboss"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002509, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text MercChatRefusal Lines ChatMessage voice:Jazz_Rothman]] "Пока Статик, Гвоздь или обдолбанный Ларри у вас — я не подписываюсь. Не тот уровень дисциплины."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Jazz_Static" or k == "Nails" or k == "Larry")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002510, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text MercChatRefusal Lines ChatMessage voice:Jazz_Rothman]] "Слишком много трупов на вашем счету для нормального контракта."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionDeathToll', {
+				PresetValue = "1",
+				}),
+				},
+				'chanceToRoll', 40,
+				}),
+				},
+				'Haggles', {
+				PlaceObj('MercChatHaggle', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002511, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text MercChatHaggle Lines ChatMessage voice:Jazz_Rothman]] "Отряд из одних американцев... Ладно, но с доплатой."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and ud.Nationality == "USA"
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'HaggleRehire', {},
+				'Mitigations', {},
+				'ExtraPartingWords', {},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002512, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text Offline ChatMessage voice:Jazz_Rothman]] "Ротман. Занят на объекте. Перезвоните."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002513, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text GreetingAndOffer ChatMessage voice:Jazz_Rothman]] "Ротман слушает. Контракт по делу?"),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002514, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text ConversationRestart ChatMessage voice:Jazz_Rothman]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002515, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text IdleLine ChatMessage voice:Jazz_Rothman]] "Время — деньги, а у меня их и так немного."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002516, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text PartingWords ChatMessage voice:Jazz_Rothman]] "Договорились. Беру людей и выхожу."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002517, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text RehireIntro ChatMessage voice:Jazz_Rothman]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002518, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text RehireOutro ChatMessage voice:Jazz_Rothman]] "Остаюсь. Работа ещё не закончена."),
+				}),
+				},
+				'MedicalDeposit', "standard",
+				'StartingSalary', 2200,
+				'SalaryIncrease', 200,
+				'SalaryLv1', 900,
+				'SalaryMaxLv', 5500,
+				'StartingLevel', 4,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 97,
+				'Likes', {},
+				'Dislikes', {
+				"Jazz_Static",
+				"Nails",
+				"Larry",
+				},
+				'StartingPerks', {
+				"Jazz_Perk_Rothman",
+				"Teacher",
+				"ShoulderToShoulder",
+				"DesignerExplosives",
+				"HoldPosition",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Rothman",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Rothman",
+				},
+				'Tier', "Veteran",
+				'Specialization', "Leader",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Rothman",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Rothman",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Quinten",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Quinten",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 99,
+				'Agility', 99,
+				'Dexterity', 80,
+				'Strength', 80,
+				'Wisdom', 91,
+				'Will', 85,
+				'Leadership', 20,
+				'Marksmanship', 61,
+				'Mechanical', 10,
+				'Explosives', 10,
+				'Medical', 88,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Quinten.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Quinten_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000002602, --[[ModItemUnitDataCompositeDef Jazz_Quinten Name]] "[WIP] Доктор Дэниел «Дэнни» Квинтен"),
+				'Nick', T(890000000002603, --[[ModItemUnitDataCompositeDef Jazz_Quinten Nick]] "Дэнни"),
+				'AllCapsNick', T(890000000002604, --[[ModItemUnitDataCompositeDef Jazz_Quinten AllCapsNick]] "ДЭННИ"),
+				'Bio', T(890000000002605, --[[ModItemUnitDataCompositeDef Jazz_Quinten Bio]] "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000002606, --[[ModItemUnitDataCompositeDef Jazz_Quinten Title]] "Машина, не человек"),
+				'Email', T(890000000002607, --[[ModItemUnitDataCompositeDef Jazz_Quinten Email]] "Quinten@aim.com"),
+				'snype_nick', T(890000000002608, --[[ModItemUnitDataCompositeDef Jazz_Quinten snype_nick]] "parkourmd"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002609, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text MercChatRefusal Lines ChatMessage voice:Jazz_Quinten]] "Пока Стероид, Мясо или Бифф в отряде — нет. Слишком безответственно для моей практики."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Steroid" or k == "Jazz_Biff")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002610, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text MercChatRefusal Lines ChatMessage voice:Jazz_Quinten]] "Слишком много раненых и погибших на вашем счету. Я предпочитаю пациентов, которые выживают."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionDeathToll', {
+				PresetValue = "1",
+				}),
+				},
+				'chanceToRoll', 40,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002611, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text MercChatRefusal Lines ChatMessage voice:Jazz_Quinten]] "Мой гонорар не обсуждается по дешёвке."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionMoney', {}),
+				},
+				'chanceToRoll', 25,
+				}),
+				},
+				'Haggles', {},
+				'HaggleRehire', {},
+				'Mitigations', {},
+				'ExtraPartingWords', {},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002612, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text Offline ChatMessage voice:Jazz_Quinten]] "Доктор Квинтен недоступен. Оставьте сообщение."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002613, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text GreetingAndOffer ChatMessage voice:Jazz_Quinten]] "Квинтен на связи. Сколько бежать и кого латать?"),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002614, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text ConversationRestart ChatMessage voice:Jazz_Quinten]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002615, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text IdleLine ChatMessage voice:Jazz_Quinten]] "Пульс ровный. У тебя — не проверял."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002616, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text PartingWords ChatMessage voice:Jazz_Quinten]] "Аптечка собрана, обе руки заряжены. Выхожу."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002617, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text RehireIntro ChatMessage voice:Jazz_Quinten]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002618, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text RehireOutro ChatMessage voice:Jazz_Quinten]] "Остаюсь. Кому-то же надо следить, чтобы вы не поубивали друг друга."),
+				}),
+				},
+				'MedicalDeposit', "large",
+				'StartingSalary', 3000,
+				'SalaryIncrease', 200,
+				'SalaryLv1', 1500,
+				'SalaryMaxLv', 7500,
+				'StartingLevel', 5,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 99,
+				'Likes', {},
+				'Dislikes', {
+				"Steroid",
+				"Jazz_Biff",
+				},
+				'StartingPerks', {
+				"Jazz_Perk_Quinten",
+				"Loner",
+				"Ambidextrous",
+				"Savior",
+				"StressManagement",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Quinten",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Quinten",
+				},
+				'Tier', "Elite",
+				'Specialization', "Doctor",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Quinten",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Quinten",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Vicious",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Vicious",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 88,
+				'Agility', 90,
+				'Dexterity', 85,
+				'Strength', 85,
+				'Wisdom', 55,
+				'Will', 40,
+				'Leadership', 25,
+				'Marksmanship', 82,
+				'Mechanical', 10,
+				'Explosives', 15,
+				'Medical', 10,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Vicious.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Vicious_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000002702, --[[ModItemUnitDataCompositeDef Jazz_Vicious Name]] "[WIP] Жан-Пьер «Злобный» Вио"),
+				'Nick', T(890000000002703, --[[ModItemUnitDataCompositeDef Jazz_Vicious Nick]] "Злобный"),
+				'AllCapsNick', T(890000000002704, --[[ModItemUnitDataCompositeDef Jazz_Vicious AllCapsNick]] "ЗЛОБНЫЙ"),
+				'Bio', T(890000000002705, --[[ModItemUnitDataCompositeDef Jazz_Vicious Bio]] "work in progress"),
+				'Nationality', "France",
+				'Title', T(890000000002706, --[[ModItemUnitDataCompositeDef Jazz_Vicious Title]] "Мачо"),
+				'Email', T(890000000002707, --[[ModItemUnitDataCompositeDef Jazz_Vicious Email]] "Vicious@aim.com"),
+				'snype_nick', T(890000000002708, --[[ModItemUnitDataCompositeDef Jazz_Vicious snype_nick]] "mademoiselles"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002710, --[[ModItemUnitDataCompositeDef Jazz_Vicious Text MercChatRefusal Lines ChatMessage voice:Jazz_Vicious]] "Мой шарм стоит дороже, чем ты предлагаешь."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionMoney', {}),
+				},
+				'chanceToRoll', 25,
+				}),
+				},
+				'Haggles', {
+				PlaceObj('MercChatHaggle', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002709, --[[ModItemUnitDataCompositeDef Jazz_Vicious Text MercChatHaggle Lines ChatMessage voice:Jazz_Vicious]] "Отряд полон англичан... Ладно, но за такие муки полагается надбавка."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and ud.Nationality == "UK"
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'HaggleRehire', {},
+				'Mitigations', {
+				PlaceObj('MercChatMitigation', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002711, --[[ModItemUnitDataCompositeDef Jazz_Vicious Text MercChatMitigation Lines ChatMessage voice:Jazz_Vicious]] "О, Лиска или Паук уже здесь? Тогда я определённо в деле."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Fox" or k == "Jazz_Spider")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'ExtraPartingWords', {
+				PlaceObj('MercChatBranch', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002712, --[[ModItemUnitDataCompositeDef Jazz_Vicious Text MercChatBranch Lines ChatMessage voice:Jazz_Vicious]] "Если ищете ещё одну прекрасную даму в отряд — зовите Лиску."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Fox",
+				Negate = true,
+				}),
+				},
+				}),
+				},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002713, --[[ModItemUnitDataCompositeDef Jazz_Vicious Text Offline ChatMessage voice:Jazz_Vicious]] "Злобный занят дамами. Пишите — если повезёт, отвечу."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002714, --[[ModItemUnitDataCompositeDef Jazz_Vicious Text GreetingAndOffer ChatMessage voice:Jazz_Vicious]] "Oui? Жан-Пьер слушает. Дело срочное?"),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002715, --[[ModItemUnitDataCompositeDef Jazz_Vicious Text ConversationRestart ChatMessage voice:Jazz_Vicious]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002716, --[[ModItemUnitDataCompositeDef Jazz_Vicious Text IdleLine ChatMessage voice:Jazz_Vicious]] "Ну же, командирша. Время не ждёт."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002717, --[[ModItemUnitDataCompositeDef Jazz_Vicious Text PartingWords ChatMessage voice:Jazz_Vicious]] "Я уже еду — и, конечно, красиво."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002718, --[[ModItemUnitDataCompositeDef Jazz_Vicious Text RehireIntro ChatMessage voice:Jazz_Vicious]] "Контракт заканчивается. Продлеваем, chérie?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002719, --[[ModItemUnitDataCompositeDef Jazz_Vicious Text RehireOutro ChatMessage voice:Jazz_Vicious]] "Остаюсь. Здесь веселее, чем дома."),
+				}),
+				},
+				'MedicalDeposit', "standard",
+				'StartingSalary', 1800,
+				'SalaryIncrease', 200,
+				'SalaryLv1', 700,
+				'SalaryMaxLv', 4500,
+				'StartingLevel', 4,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Melee")
+				self:TryEquip(items, "Handheld B", "Melee")
+				end,
+				'MaxHitPoints', 88,
+				'Likes', {
+				"Fox",
+				"Jazz_Spider",
+				},
+				'Dislikes', {},
+				'StartingPerks', {
+				"Jazz_Perk_Vicious",
+				"MeleeTraining",
+				"CQCTraining",
+				"Hotblood",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Vicious",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Vicious",
+				},
+				'Tier', "Veteran",
+				'Specialization', "Melee",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Vicious",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Vicious",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Biff",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Biff",
+					'object_class', "UnitData",
+				'Affiliation', "MERC",
+				'Health', 70,
+				'Agility', 65,
+				'Dexterity', 60,
+				'Strength', 41,
+				'Wisdom', 58,
+				'Will', 35,
+				'Leadership', 13,
+				'Marksmanship', 57,
+				'Mechanical', 20,
+				'Explosives', 15,
+				'Medical', 25,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Biff.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Biff_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000002802, --[[ModItemUnitDataCompositeDef Jazz_Biff Name]] "[WIP] Бифф Апскотт"),
+				'Nick', T(890000000002803, --[[ModItemUnitDataCompositeDef Jazz_Biff Nick]] "Бифф"),
+				'AllCapsNick', T(890000000002804, --[[ModItemUnitDataCompositeDef Jazz_Biff AllCapsNick]] "БИФФ"),
+				'Bio', T(890000000002805, --[[ModItemUnitDataCompositeDef Jazz_Biff Bio]] "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000002806, --[[ModItemUnitDataCompositeDef Jazz_Biff Title]] "Ссыкло MERC"),
+				'Email', T(890000000002807, --[[ModItemUnitDataCompositeDef Jazz_Biff Email]] "Biff@merc.com"),
+				'snype_nick', T(890000000002808, --[[ModItemUnitDataCompositeDef Jazz_Biff snype_nick]] "biff"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002809, --[[ModItemUnitDataCompositeDef Jazz_Biff Text MercChatRefusal Lines ChatMessage voice:Jazz_Biff]] "Пока обдолбанный Ларри в отряде — нет, увольте. Мне и так страшно."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Larry",
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002810, --[[ModItemUnitDataCompositeDef Jazz_Biff Text MercChatRefusal Lines ChatMessage voice:Jazz_Biff]] "Извините, но за такие деньги рисковать шкурой не готов."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionMoney', {}),
+				},
+				'chanceToRoll', 25,
+				}),
+				},
+				'Haggles', {},
+				'HaggleRehire', {},
+				'Mitigations', {
+				PlaceObj('MercChatMitigation', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002811, --[[ModItemUnitDataCompositeDef Jazz_Biff Text MercChatMitigation Lines ChatMessage voice:Jazz_Biff]] "О, Фло или трезвый Ларри уже здесь? Тогда... наверное, не так страшно."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Jazz_Flo" or k == "Larry_Clean")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'ExtraPartingWords', {
+				PlaceObj('MercChatBranch', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002812, --[[ModItemUnitDataCompositeDef Jazz_Biff Text MercChatBranch Lines ChatMessage voice:Jazz_Biff]] "Если найдёте Фло — берите, вместе нам как-то спокойнее."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Jazz_Flo",
+				Negate = true,
+				}),
+				},
+				}),
+				},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002813, --[[ModItemUnitDataCompositeDef Jazz_Biff Text Offline ChatMessage voice:Jazz_Biff]] "Бифф... э-э... перезвоните, пожалуйста?"),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002814, --[[ModItemUnitDataCompositeDef Jazz_Biff Text GreetingAndOffer ChatMessage voice:Jazz_Biff]] "Э... Бифф на связи. Вы серьёзно насчёт боевого задания?"),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002815, --[[ModItemUnitDataCompositeDef Jazz_Biff Text ConversationRestart ChatMessage voice:Jazz_Biff]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002816, --[[ModItemUnitDataCompositeDef Jazz_Biff Text IdleLine ChatMessage voice:Jazz_Biff]] "Можно... без стрельбы обойтись?"),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002817, --[[ModItemUnitDataCompositeDef Jazz_Biff Text PartingWords ChatMessage voice:Jazz_Biff]] "Ладно... я попробую. Только пусть кто-нибудь прикроет."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002818, --[[ModItemUnitDataCompositeDef Jazz_Biff Text RehireIntro ChatMessage voice:Jazz_Biff]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002819, --[[ModItemUnitDataCompositeDef Jazz_Biff Text RehireOutro ChatMessage voice:Jazz_Biff]] "Остаюсь. Наверное."),
+				}),
+				},
+				'MedicalDeposit', "standard",
+				'StartingSalary', 600,
+				'SalaryIncrease', 200,
+				'SalaryLv1', 300,
+				'SalaryMaxLv', 2000,
+				'StartingLevel', 2,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 70,
+				'Likes', {
+				"Jazz_Flo",
+				"Larry_Clean",
+				},
+				'Dislikes', {
+				"Larry",
+				},
+				'StartingPerks', {
+				"Jazz_Perk_Biff",
+				"Negotiator",
+				"ShoulderToShoulder",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Biff",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Biff",
+				},
+				'Tier', "Regular",
+				'Specialization', "Leader",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Biff",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Biff",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Nervous",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Nervous",
+					'object_class', "UnitData",
+				'Affiliation', "MERC",
+				'Health', 65,
+				'Agility', 70,
+				'Dexterity', 60,
+				'Strength', 60,
+				'Wisdom', 58,
+				'Will', 30,
+				'Leadership', 15,
+				'Marksmanship', 48,
+				'Mechanical', 20,
+				'Explosives', 31,
+				'Medical', 10,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Nervous.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Nervous_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000002902, --[[ModItemUnitDataCompositeDef Jazz_Nervous Name]] "[WIP] Фрэнки «Нервный» Гордон"),
+				'Nick', T(890000000002903, --[[ModItemUnitDataCompositeDef Jazz_Nervous Nick]] "Нервный"),
+				'AllCapsNick', T(890000000002904, --[[ModItemUnitDataCompositeDef Jazz_Nervous AllCapsNick]] "НЕРВНЫЙ"),
+				'Bio', T(890000000002905, --[[ModItemUnitDataCompositeDef Jazz_Nervous Bio]] "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000002906, --[[ModItemUnitDataCompositeDef Jazz_Nervous Title]] "Суперочередь"),
+				'Email', T(890000000002907, --[[ModItemUnitDataCompositeDef Jazz_Nervous Email]] "Nervous@merc.com"),
+				'snype_nick', T(890000000002908, --[[ModItemUnitDataCompositeDef Jazz_Nervous snype_nick]] "twitchy"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002909, --[[ModItemUnitDataCompositeDef Jazz_Nervous Text MercChatRefusal Lines ChatMessage voice:Jazz_Nervous]] "Пока трусливый Бифф в отряде — нет! Он меня ещё больше нервирует!"),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Jazz_Biff",
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002910, --[[ModItemUnitDataCompositeDef Jazz_Nervous Text MercChatRefusal Lines ChatMessage voice:Jazz_Nervous]] "Слишком много наших полегло! Я и так на нервах!"),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionDeathToll', {
+				PresetValue = "1",
+				}),
+				},
+				'chanceToRoll', 40,
+				}),
+				},
+				'Haggles', {},
+				'HaggleRehire', {},
+				'Mitigations', {
+				PlaceObj('MercChatMitigation', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002911, --[[ModItemUnitDataCompositeDef Jazz_Nervous Text MercChatMitigation Lines ChatMessage voice:Jazz_Nervous]] "О, Бритва уже тут? Тогда ладно, веселее будет!"),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Jazz_Blade",
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'ExtraPartingWords', {},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002912, --[[ModItemUnitDataCompositeDef Jazz_Nervous Text Offline ChatMessage voice:Jazz_Nervous]] "Нервный... занят... пиши, перезвоню, может."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002913, --[[ModItemUnitDataCompositeDef Jazz_Nervous Text GreetingAndOffer ChatMessage voice:Jazz_Nervous]] "Ч-чё надо? Стрелять будем?!"),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002914, --[[ModItemUnitDataCompositeDef Jazz_Nervous Text ConversationRestart ChatMessage voice:Jazz_Nervous]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002915, --[[ModItemUnitDataCompositeDef Jazz_Nervous Text IdleLine ChatMessage voice:Jazz_Nervous]] "Где враги, где враги, где враги..."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002916, --[[ModItemUnitDataCompositeDef Jazz_Nervous Text PartingWords ChatMessage voice:Jazz_Nervous]] "Уже бегу, уже бегу! Патроны есть, всё нормально!"),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002917, --[[ModItemUnitDataCompositeDef Jazz_Nervous Text RehireIntro ChatMessage voice:Jazz_Nervous]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000002918, --[[ModItemUnitDataCompositeDef Jazz_Nervous Text RehireOutro ChatMessage voice:Jazz_Nervous]] "Остаюсь! Ещё патроны не кончились!"),
+				}),
+				},
+				'MedicalDeposit', "standard",
+				'StartingSalary', 700,
+				'SalaryIncrease', 200,
+				'SalaryLv1', 350,
+				'SalaryMaxLv', 2200,
+				'StartingLevel', 3,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 65,
+				'Likes', {
+				"Jazz_Blade",
+				},
+				'Dislikes', {
+				"Jazz_Biff",
+				},
+				'StartingPerks', {
+				"Jazz_Perk_Nervous",
+				"Psycho",
+				"AutoWeapons",
+				"Flanker",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Nervous",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Nervous",
+				},
+				'Tier', "Regular",
+				'Specialization', "Autoriflemen",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Nervous",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Nervous",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Flo",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Flo",
+					'object_class', "UnitData",
+				'Affiliation', "MERC",
+				'Health', 48,
+				'Agility', 45,
+				'Dexterity', 60,
+				'Strength', 40,
+				'Wisdom', 82,
+				'Will', 40,
+				'Leadership', 40,
+				'Marksmanship', 38,
+				'Mechanical', 15,
+				'Explosives', 5,
+				'Medical', 20,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Flo.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Flo_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000003002, --[[ModItemUnitDataCompositeDef Jazz_Flo Name]] "[WIP] Флоренс «Фло» Габриель"),
+				'Nick', T(890000000003003, --[[ModItemUnitDataCompositeDef Jazz_Flo Nick]] "Фло"),
+				'AllCapsNick', T(890000000003004, --[[ModItemUnitDataCompositeDef Jazz_Flo AllCapsNick]] "ФЛО"),
+				'Bio', T(890000000003005, --[[ModItemUnitDataCompositeDef Jazz_Flo Bio]] "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000003006, --[[ModItemUnitDataCompositeDef Jazz_Flo Title]] "Безголовая курица"),
+				'Email', T(890000000003007, --[[ModItemUnitDataCompositeDef Jazz_Flo Email]] "Flo@merc.com"),
+				'snype_nick', T(890000000003008, --[[ModItemUnitDataCompositeDef Jazz_Flo snype_nick]] "bargain"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003009, --[[ModItemUnitDataCompositeDef Jazz_Flo Text MercChatRefusal Lines ChatMessage voice:Jazz_Flo]] "Слишком много смертей. Мне и своей жизни хватит, чтобы бояться."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionDeathToll', {
+				PresetValue = "1",
+				}),
+				},
+				'chanceToRoll', 40,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003010, --[[ModItemUnitDataCompositeDef Jazz_Flo Text MercChatRefusal Lines ChatMessage voice:Jazz_Flo]] "Извините, но за такие копейки я лучше дома посижу."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionMoney', {}),
+				},
+				'chanceToRoll', 25,
+				}),
+				},
+				'Haggles', {},
+				'HaggleRehire', {},
+				'Mitigations', {
+				PlaceObj('MercChatMitigation', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003011, --[[ModItemUnitDataCompositeDef Jazz_Flo Text MercChatMitigation Lines ChatMessage voice:Jazz_Flo]] "О, Бифф или Рысь уже здесь? Тогда... немного спокойнее."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Jazz_Biff" or k == "Jazz_Lynx")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'ExtraPartingWords', {
+				PlaceObj('MercChatBranch', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003012, --[[ModItemUnitDataCompositeDef Jazz_Flo Text MercChatBranch Lines ChatMessage voice:Jazz_Flo]] "Возьмите ещё Биффа — вдвоём нам не так страшно."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Jazz_Biff",
+				Negate = true,
+				}),
+				},
+				}),
+				},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003013, --[[ModItemUnitDataCompositeDef Jazz_Flo Text Offline ChatMessage voice:Jazz_Flo]] "Фло не может подойти! Пишите, перезвоню, если жива буду."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003014, --[[ModItemUnitDataCompositeDef Jazz_Flo Text GreetingAndOffer ChatMessage voice:Jazz_Flo]] "Ой! Фло слушает... Это же не боевое задание, да?"),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003015, --[[ModItemUnitDataCompositeDef Jazz_Flo Text ConversationRestart ChatMessage voice:Jazz_Flo]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003016, --[[ModItemUnitDataCompositeDef Jazz_Flo Text IdleLine ChatMessage voice:Jazz_Flo]] "Можно я постою сзади, пожалуйста?"),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003017, --[[ModItemUnitDataCompositeDef Jazz_Flo Text PartingWords ChatMessage voice:Jazz_Flo]] "Ладно, только без стрельбы... наверное."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003018, --[[ModItemUnitDataCompositeDef Jazz_Flo Text RehireIntro ChatMessage voice:Jazz_Flo]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003019, --[[ModItemUnitDataCompositeDef Jazz_Flo Text RehireOutro ChatMessage voice:Jazz_Flo]] "Остаюсь. Скидки у местных торговцев того стоят."),
+				}),
+				},
+				'MedicalDeposit', "standard",
+				'StartingSalary', 500,
+				'SalaryIncrease', 200,
+				'SalaryLv1', 200,
+				'SalaryMaxLv', 1800,
+				'StartingLevel', 2,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				end,
+				'MaxHitPoints', 48,
+				'Likes', {
+				"Jazz_Biff",
+				"Jazz_Lynx",
+				},
+				'Dislikes', {},
+				'StartingPerks', {
+				"Jazz_Perk_Flo",
+				"Negotiator",
+				"Scoundrel",
+				"CancelShotPerk",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Flo",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Flo",
+				},
+				'Tier', "Regular",
+				'Specialization', "Negotiator",
+				'pollyvoice', "Amy",
+				'gender', "Female",
+				'VoiceResponseId', "Jazz_Flo",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Flo",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Cougar",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Cougar",
+					'object_class', "UnitData",
+				'Affiliation', "MERC",
+				'Health', 85,
+				'Agility', 88,
+				'Dexterity', 80,
+				'Strength', 80,
+				'Wisdom', 70,
+				'Will', 70,
+				'Leadership', 30,
+				'Marksmanship', 93,
+				'Mechanical', 58,
+				'Explosives', 45,
+				'Medical', 33,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Cougar.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Cougar_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000003102, --[[ModItemUnitDataCompositeDef Jazz_Cougar Name]] "[WIP] Джим «Пума» Уоллесс"),
+				'Nick', T(890000000003103, --[[ModItemUnitDataCompositeDef Jazz_Cougar Nick]] "Пума"),
+				'AllCapsNick', T(890000000003104, --[[ModItemUnitDataCompositeDef Jazz_Cougar AllCapsNick]] "ПУМА"),
+				'Bio', T(890000000003105, --[[ModItemUnitDataCompositeDef Jazz_Cougar Bio]] "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000003106, --[[ModItemUnitDataCompositeDef Jazz_Cougar Title]] "Тихий автоматчик"),
+				'Email', T(890000000003107, --[[ModItemUnitDataCompositeDef Jazz_Cougar Email]] "Cougar@merc.com"),
+				'snype_nick', T(890000000003108, --[[ModItemUnitDataCompositeDef Jazz_Cougar snype_nick]] "puma"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003109, --[[ModItemUnitDataCompositeDef Jazz_Cougar Text MercChatRefusal Lines ChatMessage voice:Jazz_Cougar]] "Слишком много шума вокруг вашего отряда в последнее время. Мне такое не по пути."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionDeathToll', {
+				PresetValue = "1",
+				}),
+				},
+				'chanceToRoll', 40,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003110, --[[ModItemUnitDataCompositeDef Jazz_Cougar Text MercChatRefusal Lines ChatMessage voice:Jazz_Cougar]] "За такую сумму я лучше отсижусь в тени."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionMoney', {}),
+				},
+				'chanceToRoll', 25,
+				}),
+				},
+				'Haggles', {},
+				'HaggleRehire', {},
+				'Mitigations', {
+				PlaceObj('MercChatMitigation', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003111, --[[ModItemUnitDataCompositeDef Jazz_Cougar Text MercChatMitigation Lines ChatMessage voice:Jazz_Cougar]] "Вульф или Лен уже здесь? Тогда я спокоен, иду."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Wolf" or k == "Len")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'ExtraPartingWords', {
+				PlaceObj('MercChatBranch', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003112, --[[ModItemUnitDataCompositeDef Jazz_Cougar Text MercChatBranch Lines ChatMessage voice:Jazz_Cougar]] "Наймите ещё Лена — с ним работать тихо и надёжно."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Len",
+				Negate = true,
+				}),
+				},
+				}),
+				},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003113, --[[ModItemUnitDataCompositeDef Jazz_Cougar Text Offline ChatMessage voice:Jazz_Cougar]] "Пума вне зоны действия. Пишите."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003114, --[[ModItemUnitDataCompositeDef Jazz_Cougar Text GreetingAndOffer ChatMessage voice:Jazz_Cougar]] "Пума. Говори тихо, если можешь."),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003115, --[[ModItemUnitDataCompositeDef Jazz_Cougar Text ConversationRestart ChatMessage voice:Jazz_Cougar]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003116, --[[ModItemUnitDataCompositeDef Jazz_Cougar Text IdleLine ChatMessage voice:Jazz_Cougar]] "..."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003117, --[[ModItemUnitDataCompositeDef Jazz_Cougar Text PartingWords ChatMessage voice:Jazz_Cougar]] "Уже в тени. Иду."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003118, --[[ModItemUnitDataCompositeDef Jazz_Cougar Text RehireIntro ChatMessage voice:Jazz_Cougar]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003119, --[[ModItemUnitDataCompositeDef Jazz_Cougar Text RehireOutro ChatMessage voice:Jazz_Cougar]] "Остаюсь. Тихо, но остаюсь."),
+				}),
+				},
+				'MedicalDeposit', "standard",
+				'StartingSalary', 1600,
+				'SalaryIncrease', 200,
+				'SalaryLv1', 700,
+				'SalaryMaxLv', 4000,
+				'StartingLevel', 4,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 85,
+				'Likes', {
+				"Wolf",
+				"Len",
+				},
+				'Dislikes', {},
+				'StartingPerks', {
+				"Jazz_Perk_Cougar",
+				"Stealthy",
+				"AutoWeapons",
+				"Flanker",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Cougar",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Cougar",
+				},
+				'Tier', "Veteran",
+				'Specialization', "Stealth",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Cougar",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Cougar",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Miguel",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Miguel",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 80,
+				'Agility', 75,
+				'Dexterity', 70,
+				'Strength', 75,
+				'Wisdom', 80,
+				'Will', 80,
+				'Leadership', 98,
+				'Marksmanship', 70,
+				'Mechanical', 30,
+				'Explosives', 30,
+				'Medical', 35,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Miguel.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Miguel_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000003202, --[[ModItemUnitDataCompositeDef Jazz_Miguel Name]] "[WIP] Мигель Кордона"),
+				'Nick', T(890000000003203, --[[ModItemUnitDataCompositeDef Jazz_Miguel Nick]] "Мигель"),
+				'AllCapsNick', T(890000000003204, --[[ModItemUnitDataCompositeDef Jazz_Miguel AllCapsNick]] "МИГЕЛЬ"),
+				'Bio', T(890000000003205, --[[ModItemUnitDataCompositeDef Jazz_Miguel Bio]] "work in progress"),
+				'Nationality', "Arulco",
+				'Title', T(890000000003206, --[[ModItemUnitDataCompositeDef Jazz_Miguel Title]] "Команданте"),
+				'Email', T(890000000003207, --[[ModItemUnitDataCompositeDef Jazz_Miguel Email]] "Miguel@arulco.reb"),
+				'snype_nick', T(890000000003208, --[[ModItemUnitDataCompositeDef Jazz_Miguel snype_nick]] "comandante"),
+				'Refusals', {},
+				'Haggles', {
+				PlaceObj('MercChatHaggle', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003209, --[[ModItemUnitDataCompositeDef Jazz_Miguel Text MercChatHaggle Lines ChatMessage voice:Jazz_Miguel]] "Отряд полон немцев... Ладно, но с доплатой — старые счёты не забываются."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and ud.Nationality == "Germany"
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'HaggleRehire', {},
+				'Mitigations', {
+				PlaceObj('MercChatMitigation', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003210, --[[ModItemUnitDataCompositeDef Jazz_Miguel Text MercChatMitigation Lines ChatMessage voice:Jazz_Miguel]] "Карлос, Айра или Тень уже с вами? Тогда я вам доверяю."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Jazz_Ira" or k == "Shadow")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'ExtraPartingWords', {
+				PlaceObj('MercChatBranch', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003211, --[[ModItemUnitDataCompositeDef Jazz_Miguel Text MercChatBranch Lines ChatMessage voice:Jazz_Miguel]] "Найдёте Карлоса или Айру — берите без раздумий, это наши лучшие люди."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Jazz_Ira",
+				Negate = true,
+				}),
+				},
+				}),
+				},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003212, --[[ModItemUnitDataCompositeDef Jazz_Miguel Text Offline ChatMessage voice:Jazz_Miguel]] "Мигель. Оставьте сообщение для дела свободы Арулько."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003213, --[[ModItemUnitDataCompositeDef Jazz_Miguel Text GreetingAndOffer ChatMessage voice:Jazz_Miguel]] "Говорит Мигель. Слушаю."),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003214, --[[ModItemUnitDataCompositeDef Jazz_Miguel Text ConversationRestart ChatMessage voice:Jazz_Miguel]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003215, --[[ModItemUnitDataCompositeDef Jazz_Miguel Text IdleLine ChatMessage voice:Jazz_Miguel]] "Арулько ждёт. Не задерживайся."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003216, --[[ModItemUnitDataCompositeDef Jazz_Miguel Text PartingWords ChatMessage voice:Jazz_Miguel]] "Встаём в строй. Пора действовать."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003217, --[[ModItemUnitDataCompositeDef Jazz_Miguel Text RehireIntro ChatMessage voice:Jazz_Miguel]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003218, --[[ModItemUnitDataCompositeDef Jazz_Miguel Text RehireOutro ChatMessage voice:Jazz_Miguel]] "Остаюсь. Освобождение ещё не закончено."),
+				}),
+				},
+				'MedicalDeposit', "standard",
+				'StartingSalary', 800,
+				'SalaryIncrease', 200,
+				'SalaryLv1', 400,
+				'SalaryMaxLv', 3000,
+				'StartingLevel', 4,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				end,
+				'MaxHitPoints', 80,
+				'Likes', {
+				"Jazz_Ira",
+				"Shadow",
+				},
+				'Dislikes', {},
+				'StartingPerks', {
+				"Jazz_Perk_Miguel",
+				"Teacher",
+				"LeadFromTheFront",
+				"NightOps",
+				"MeleeTraining",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Miguel",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Miguel",
+				},
+				'Tier', "Veteran",
+				'Specialization', "Leader",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Miguel",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Miguel",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Gamos",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Gamos",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 65,
+				'Agility', 70,
+				'Dexterity', 65,
+				'Strength', 65,
+				'Wisdom', 35,
+				'Will', 55,
+				'Leadership', 20,
+				'Marksmanship', 78,
+				'Mechanical', 15,
+				'Explosives', 10,
+				'Medical', 15,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Gamos.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Gamos_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000003302, --[[ModItemUnitDataCompositeDef Jazz_Gamos Name]] "[WIP] Гамос"),
+				'Nick', T(890000000003303, --[[ModItemUnitDataCompositeDef Jazz_Gamos Nick]] "Гамос"),
+				'AllCapsNick', T(890000000003304, --[[ModItemUnitDataCompositeDef Jazz_Gamos AllCapsNick]] "ГАМОС"),
+				'Bio', T(890000000003305, --[[ModItemUnitDataCompositeDef Jazz_Gamos Bio]] "work in progress"),
+				'Nationality', "Arulco",
+				'Title', T(890000000003306, --[[ModItemUnitDataCompositeDef Jazz_Gamos Title]] "Я много путешествовать"),
+				'Email', T(890000000003307, --[[ModItemUnitDataCompositeDef Jazz_Gamos Email]] "Gamos@arulco.reb"),
+				'snype_nick', T(890000000003308, --[[ModItemUnitDataCompositeDef Jazz_Gamos snype_nick]] "travelmuch"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003309, --[[ModItemUnitDataCompositeDef Jazz_Gamos Text MercChatRefusal Lines ChatMessage voice:Jazz_Gamos]] "Много люди умирать с вами. Гамос не хотеть так."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionDeathToll', {
+				PresetValue = "1",
+				}),
+				},
+				'chanceToRoll', 40,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003310, --[[ModItemUnitDataCompositeDef Jazz_Gamos Text MercChatRefusal Lines ChatMessage voice:Jazz_Gamos]] "Мало денег. Гамос семью кормить надо."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionMoney', {}),
+				},
+				'chanceToRoll', 25,
+				}),
+				},
+				'Haggles', {},
+				'HaggleRehire', {},
+				'Mitigations', {},
+				'ExtraPartingWords', {},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003311, --[[ModItemUnitDataCompositeDef Jazz_Gamos Text Offline ChatMessage voice:Jazz_Gamos]] "Гамос много путешествовать — сейчас нет тут. Потом."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003312, --[[ModItemUnitDataCompositeDef Jazz_Gamos Text GreetingAndOffer ChatMessage voice:Jazz_Gamos]] "Гамос тут. Куда идти надо?"),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003313, --[[ModItemUnitDataCompositeDef Jazz_Gamos Text ConversationRestart ChatMessage voice:Jazz_Gamos]] "Связь пропадать. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003314, --[[ModItemUnitDataCompositeDef Jazz_Gamos Text IdleLine ChatMessage voice:Jazz_Gamos]] "Идём? Гамос знать дорогу."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003315, --[[ModItemUnitDataCompositeDef Jazz_Gamos Text PartingWords ChatMessage voice:Jazz_Gamos]] "Хорошо, Гамос идёт. Джунгли не страшны."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003316, --[[ModItemUnitDataCompositeDef Jazz_Gamos Text RehireIntro ChatMessage voice:Jazz_Gamos]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003317, --[[ModItemUnitDataCompositeDef Jazz_Gamos Text RehireOutro ChatMessage voice:Jazz_Gamos]] "Гамос остаётся. Есть ещё тропы показать."),
+				}),
+				},
+				'MedicalDeposit', "none",
+				'StartingSalary', 250,
+				'SalaryIncrease', 200,
+				'SalaryLv1', 100,
+				'SalaryMaxLv', 1000,
+				'StartingLevel', 3,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				end,
+				'MaxHitPoints', 65,
+				'Likes', {},
+				'Dislikes', {},
+				'StartingPerks', {
+				"Jazz_Perk_Gamos",
+				"Stealthy",
+				"Flanker",
+				"TrueGrit",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Gamos",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Gamos",
+				},
+				'Tier', "Regular",
+				'Specialization', "Stealth",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Gamos",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Gamos",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Dynamo",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Dynamo",
+					'object_class', "UnitData",
+				'Affiliation', "MERC",
+				'Health', 60,
+				'Agility', 60,
+				'Dexterity', 55,
+				'Strength', 65,
+				'Wisdom', 78,
+				'Will', 45,
+				'Leadership', 20,
+				'Marksmanship', 68,
+				'Mechanical', 67,
+				'Explosives', 20,
+				'Medical', 15,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Dynamo.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Dynamo_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000003402, --[[ModItemUnitDataCompositeDef Jazz_Dynamo Name]] "[WIP] Грег «Динамо» Дункан"),
+				'Nick', T(890000000003403, --[[ModItemUnitDataCompositeDef Jazz_Dynamo Nick]] "Динамо"),
+				'AllCapsNick', T(890000000003404, --[[ModItemUnitDataCompositeDef Jazz_Dynamo AllCapsNick]] "ДИНАМО"),
+				'Bio', T(890000000003405, --[[ModItemUnitDataCompositeDef Jazz_Dynamo Bio]] "work in progress"),
+				'Nationality', "Hungary",
+				'Title', T(890000000003406, --[[ModItemUnitDataCompositeDef Jazz_Dynamo Title]] "Зек-механик"),
+				'Email', T(890000000003407, --[[ModItemUnitDataCompositeDef Jazz_Dynamo Email]] "Dynamo@merc.com"),
+				'snype_nick', T(890000000003408, --[[ModItemUnitDataCompositeDef Jazz_Dynamo snype_nick]] "dynamo"),
+				'Refusals', {},
+				'Haggles', {},
+				'HaggleRehire', {},
+				'Mitigations', {
+				PlaceObj('MercChatMitigation', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003409, --[[ModItemUnitDataCompositeDef Jazz_Dynamo Text MercChatMitigation Lines ChatMessage voice:Jazz_Dynamo]] "Кровь уже здесь? Тогда ладно, повеселимся."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Blood",
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'ExtraPartingWords', {},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003410, --[[ModItemUnitDataCompositeDef Jazz_Dynamo Text Offline ChatMessage voice:Jazz_Dynamo]] "Динамо вне зоны — наверно чинит что-то. Пиши."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003411, --[[ModItemUnitDataCompositeDef Jazz_Dynamo Text GreetingAndOffer ChatMessage voice:Jazz_Dynamo]] "Динамо. Чо надо?"),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003412, --[[ModItemUnitDataCompositeDef Jazz_Dynamo Text ConversationRestart ChatMessage voice:Jazz_Dynamo]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003413, --[[ModItemUnitDataCompositeDef Jazz_Dynamo Text IdleLine ChatMessage voice:Jazz_Dynamo]] "Давай уже, время не резиновое."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003414, --[[ModItemUnitDataCompositeDef Jazz_Dynamo Text PartingWords ChatMessage voice:Jazz_Dynamo]] "За идею пойду — или за полтинник. Разницы нет."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003415, --[[ModItemUnitDataCompositeDef Jazz_Dynamo Text RehireIntro ChatMessage voice:Jazz_Dynamo]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003416, --[[ModItemUnitDataCompositeDef Jazz_Dynamo Text RehireOutro ChatMessage voice:Jazz_Dynamo]] "Остаюсь. Тут ещё есть что чинить и кого пугать."),
+				}),
+				},
+				'MedicalDeposit', "none",
+				'StartingSalary', 50,
+				'SalaryIncrease', 200,
+				'SalaryLv1', 0,
+				'SalaryMaxLv', 800,
+				'StartingLevel', 3,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Melee")
+				self:TryEquip(items, "Handheld B", "Melee")
+				end,
+				'MaxHitPoints', 60,
+				'Likes', {
+				"Blood",
+				},
+				'Dislikes', {},
+				'StartingPerks', {
+				"Jazz_Perk_Dynamo",
+				"MrFixit",
+				"Psycho",
+				"OptimalPerformance",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Dynamo",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Dynamo",
+				},
+				'Tier', "Regular",
+				'Specialization', "Mechanic",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Dynamo",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Dynamo",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Gaston",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Gaston",
+					'object_class', "UnitData",
+				'Affiliation', "MERC",
+				'Health', 85,
+				'Agility', 80,
+				'Dexterity', 85,
+				'Strength', 75,
+				'Wisdom', 70,
+				'Will', 70,
+				'Leadership', 40,
+				'Marksmanship', 94,
+				'Mechanical', 25,
+				'Explosives', 20,
+				'Medical', 20,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Gaston.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Gaston_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000003502, --[[ModItemUnitDataCompositeDef Jazz_Gaston Name]] "[WIP] Гастон Кавалье"),
+				'Nick', T(890000000003503, --[[ModItemUnitDataCompositeDef Jazz_Gaston Nick]] "Гастон"),
+				'AllCapsNick', T(890000000003504, --[[ModItemUnitDataCompositeDef Jazz_Gaston AllCapsNick]] "ГАСТОН"),
+				'Bio', T(890000000003505, --[[ModItemUnitDataCompositeDef Jazz_Gaston Bio]] "work in progress"),
+				'Nationality', "France",
+				'Title', T(890000000003506, --[[ModItemUnitDataCompositeDef Jazz_Gaston Title]] "Дамский снайпер"),
+				'Email', T(890000000003507, --[[ModItemUnitDataCompositeDef Jazz_Gaston Email]] "Gaston@merc.com"),
+				'snype_nick', T(890000000003508, --[[ModItemUnitDataCompositeDef Jazz_Gaston snype_nick]] "cavalier"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003509, --[[ModItemUnitDataCompositeDef Jazz_Gaston Text MercChatRefusal Lines ChatMessage voice:Jazz_Gaston]] "Пока Злобный или Бифф в отряде — нет. Один отбивает моих дам, другой портит настроение."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Jazz_Vicious" or k == "Jazz_Biff")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003510, --[[ModItemUnitDataCompositeDef Jazz_Gaston Text MercChatRefusal Lines ChatMessage voice:Jazz_Gaston]] "Слишком много потерь для моего вкуса."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionDeathToll', {
+				PresetValue = "1",
+				}),
+				},
+				'chanceToRoll', 40,
+				}),
+				},
+				'Haggles', {},
+				'HaggleRehire', {},
+				'Mitigations', {
+				PlaceObj('MercChatMitigation', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003511, --[[ModItemUnitDataCompositeDef Jazz_Gaston Text MercChatMitigation Lines ChatMessage voice:Jazz_Gaston]] "О, Тоска, Банс или Лиска уже здесь? Тогда я определённо в деле."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Jazz_Buzz" or k == "Buns" or k == "Fox")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'ExtraPartingWords', {
+				PlaceObj('MercChatBranch', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003512, --[[ModItemUnitDataCompositeDef Jazz_Gaston Text MercChatBranch Lines ChatMessage voice:Jazz_Gaston]] "Если ищете ещё одну прекрасную даму — зовите Тоску."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Jazz_Buzz",
+				Negate = true,
+				}),
+				},
+				}),
+				},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003513, --[[ModItemUnitDataCompositeDef Jazz_Gaston Text Offline ChatMessage voice:Jazz_Gaston]] "Гастон у дамы. Пишите, отвечу, когда освобожусь."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003514, --[[ModItemUnitDataCompositeDef Jazz_Gaston Text GreetingAndOffer ChatMessage voice:Jazz_Gaston]] "Gaston à l'appareil. Слушаю ваше предложение."),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003515, --[[ModItemUnitDataCompositeDef Jazz_Gaston Text ConversationRestart ChatMessage voice:Jazz_Gaston]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003516, --[[ModItemUnitDataCompositeDef Jazz_Gaston Text IdleLine ChatMessage voice:Jazz_Gaston]] "Ну же, время дорого — как и мой шарм."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003517, --[[ModItemUnitDataCompositeDef Jazz_Gaston Text PartingWords ChatMessage voice:Jazz_Gaston]] "Pour vous — всегда готов. Беру винтовку."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003518, --[[ModItemUnitDataCompositeDef Jazz_Gaston Text RehireIntro ChatMessage voice:Jazz_Gaston]] "Контракт заканчивается. Продлеваем, mon ami?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003519, --[[ModItemUnitDataCompositeDef Jazz_Gaston Text RehireOutro ChatMessage voice:Jazz_Gaston]] "Остаюсь. Крыши здесь превосходные."),
+				}),
+				},
+				'MedicalDeposit', "standard",
+				'StartingSalary', 2500,
+				'SalaryIncrease', 200,
+				'SalaryLv1', 1000,
+				'SalaryMaxLv', 6000,
+				'StartingLevel', 5,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				end,
+				'MaxHitPoints', 85,
+				'Likes', {
+				"Jazz_Buzz",
+				"Buns",
+				"Fox",
+				},
+				'Dislikes', {
+				"Jazz_Vicious",
+				"Jazz_Biff",
+				},
+				'StartingPerks', {
+				"Jazz_Perk_Gaston",
+				"TakeAim",
+				"Deadeye",
+				"NightOps",
+				"SteadyBreathing",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Gaston",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Gaston",
+				},
+				'Tier', "Elite",
+				'Specialization', "Marksmen",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Gaston",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Gaston",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Horg",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Horg",
+					'object_class', "UnitData",
+				'Affiliation', "MERC",
+				'Health', 98,
+				'Agility', 78,
+				'Dexterity', 75,
+				'Strength', 94,
+				'Wisdom', 77,
+				'Will', 60,
+				'Leadership', 35,
+				'Marksmanship', 89,
+				'Mechanical', 74,
+				'Explosives', 50,
+				'Medical', 20,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Horg.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Horg_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000003602, --[[ModItemUnitDataCompositeDef Jazz_Horg Name]] "[WIP] Лейтенант Хорг «Сигара»"),
+				'Nick', T(890000000003603, --[[ModItemUnitDataCompositeDef Jazz_Horg Nick]] "Сигара"),
+				'AllCapsNick', T(890000000003604, --[[ModItemUnitDataCompositeDef Jazz_Horg AllCapsNick]] "СИГАРА"),
+				'Bio', T(890000000003605, --[[ModItemUnitDataCompositeDef Jazz_Horg Bio]] "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000003606, --[[ModItemUnitDataCompositeDef Jazz_Horg Title]] "Сигара"),
+				'Email', T(890000000003607, --[[ModItemUnitDataCompositeDef Jazz_Horg Email]] "Horg@merc.com"),
+				'snype_nick', T(890000000003608, --[[ModItemUnitDataCompositeDef Jazz_Horg snype_nick]] "cigar"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003609, --[[ModItemUnitDataCompositeDef Jazz_Horg Text MercChatRefusal Lines ChatMessage voice:Jazz_Horg]] "Пока Колби в отряде — нет. Не выношу этого типа."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Jazz_Colby",
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003610, --[[ModItemUnitDataCompositeDef Jazz_Horg Text MercChatRefusal Lines ChatMessage voice:Jazz_Horg]] "Слишком много наших полегло. Мне это не нравится."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionDeathToll', {
+				PresetValue = "1",
+				}),
+				},
+				'chanceToRoll', 40,
+				}),
+				},
+				'Haggles', {},
+				'HaggleRehire', {},
+				'Mitigations', {
+				PlaceObj('MercChatMitigation', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003611, --[[ModItemUnitDataCompositeDef Jazz_Horg Text MercChatMitigation Lines ChatMessage voice:Jazz_Horg]] "Бык, Гас или Бифф уже здесь? Тогда я точно в деле."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Jazz_Bull" or k == "Gus" or k == "Jazz_Biff")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'ExtraPartingWords', {
+				PlaceObj('MercChatBranch', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003612, --[[ModItemUnitDataCompositeDef Jazz_Horg Text MercChatBranch Lines ChatMessage voice:Jazz_Horg]] "Возьмите ещё Гаса — с ним и потяжелее груз не проблема."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Gus",
+				Negate = true,
+				}),
+				},
+				}),
+				},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003613, --[[ModItemUnitDataCompositeDef Jazz_Horg Text Offline ChatMessage voice:Jazz_Horg]] "Сигара курит — не мешать. Пиши, отвечу позже."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003614, --[[ModItemUnitDataCompositeDef Jazz_Horg Text GreetingAndOffer ChatMessage voice:Jazz_Horg]] "Хорг. Говори, что надо."),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003615, --[[ModItemUnitDataCompositeDef Jazz_Horg Text ConversationRestart ChatMessage voice:Jazz_Horg]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003616, --[[ModItemUnitDataCompositeDef Jazz_Horg Text IdleLine ChatMessage voice:Jazz_Horg]] "Ну? Сигара сама себя не докурит."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003617, --[[ModItemUnitDataCompositeDef Jazz_Horg Text PartingWords ChatMessage voice:Jazz_Horg]] "Беру тяжёлое и еду."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003618, --[[ModItemUnitDataCompositeDef Jazz_Horg Text RehireIntro ChatMessage voice:Jazz_Horg]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003619, --[[ModItemUnitDataCompositeDef Jazz_Horg Text RehireOutro ChatMessage voice:Jazz_Horg]] "Остаюсь. Ещё есть, что взрывать."),
+				}),
+				},
+				'MedicalDeposit', "standard",
+				'StartingSalary', 2700,
+				'SalaryIncrease', 200,
+				'SalaryLv1', 1100,
+				'SalaryMaxLv', 6500,
+				'StartingLevel', 4,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 98,
+				'Likes', {
+				"Jazz_Bull",
+				"Gus",
+				"Jazz_Biff",
+				},
+				'Dislikes', {
+				"Jazz_Colby",
+				},
+				'StartingPerks', {
+				"Jazz_Perk_Horg",
+				"HeavyWeaponsTraining",
+				"Hardened",
+				"ShoulderToShoulder",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Horg",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Horg",
+				},
+				'Tier', "Veteran",
+				'Specialization', "HeavyWeapons",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Horg",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Horg",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Manuel",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Manuel",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 72,
+				'Agility', 80,
+				'Dexterity', 91,
+				'Strength', 70,
+				'Wisdom', 65,
+				'Will', 60,
+				'Leadership', 30,
+				'Marksmanship', 70,
+				'Mechanical', 30,
+				'Explosives', 25,
+				'Medical', 25,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Manuel.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Manuel_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000003702, --[[ModItemUnitDataCompositeDef Jazz_Manuel Name]] "[WIP] Мануэль"),
+				'Nick', T(890000000003703, --[[ModItemUnitDataCompositeDef Jazz_Manuel Nick]] "Мануэль"),
+				'AllCapsNick', T(890000000003704, --[[ModItemUnitDataCompositeDef Jazz_Manuel AllCapsNick]] "МАНУЭЛЬ"),
+				'Bio', T(890000000003705, --[[ModItemUnitDataCompositeDef Jazz_Manuel Bio]] "work in progress"),
+				'Nationality', "Arulco",
+				'Title', T(890000000003706, --[[ModItemUnitDataCompositeDef Jazz_Manuel Title]] "Муж Фатимы"),
+				'Email', T(890000000003707, --[[ModItemUnitDataCompositeDef Jazz_Manuel Email]] "Manuel@arulco.reb"),
+				'snype_nick', T(890000000003708, --[[ModItemUnitDataCompositeDef Jazz_Manuel snype_nick]] "manuel"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003709, --[[ModItemUnitDataCompositeDef Jazz_Manuel Text MercChatRefusal Lines ChatMessage voice:Jazz_Manuel]] "Слишком много смертей. Мануэль уже видел, чем это кончается."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionDeathToll', {
+				PresetValue = "1",
+				}),
+				},
+				'chanceToRoll', 40,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003710, --[[ModItemUnitDataCompositeDef Jazz_Manuel Text MercChatRefusal Lines ChatMessage voice:Jazz_Manuel]] "Мало денег. У Мануэля семья — Фатима и Пако."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionMoney', {}),
+				},
+				'chanceToRoll', 25,
+				}),
+				},
+				'Haggles', {},
+				'HaggleRehire', {},
+				'Mitigations', {
+				PlaceObj('MercChatMitigation', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003711, --[[ModItemUnitDataCompositeDef Jazz_Manuel Text MercChatMitigation Lines ChatMessage voice:Jazz_Manuel]] "Мигель уже здесь? Тогда ладно — он мне ещё должен объяснение."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Jazz_Miguel",
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'ExtraPartingWords', {
+				PlaceObj('MercChatBranch', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003712, --[[ModItemUnitDataCompositeDef Jazz_Manuel Text MercChatBranch Lines ChatMessage voice:Jazz_Manuel]] "Если встретите Мигеля — скажите, Мануэль его не забыл."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Jazz_Miguel",
+				Negate = true,
+				}),
+				},
+				}),
+				},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003713, --[[ModItemUnitDataCompositeDef Jazz_Manuel Text Offline ChatMessage voice:Jazz_Manuel]] "Мануэль... сейчас нет связи. Позже."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003714, --[[ModItemUnitDataCompositeDef Jazz_Manuel Text GreetingAndOffer ChatMessage voice:Jazz_Manuel]] "Это Мануэль. Слушаю."),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003715, --[[ModItemUnitDataCompositeDef Jazz_Manuel Text ConversationRestart ChatMessage voice:Jazz_Manuel]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003716, --[[ModItemUnitDataCompositeDef Jazz_Manuel Text IdleLine ChatMessage voice:Jazz_Manuel]] "Тише. Мануэль слушает лес."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003717, --[[ModItemUnitDataCompositeDef Jazz_Manuel Text PartingWords ChatMessage voice:Jazz_Manuel]] "Иду с вами. Фатима поймёт."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003718, --[[ModItemUnitDataCompositeDef Jazz_Manuel Text RehireIntro ChatMessage voice:Jazz_Manuel]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003719, --[[ModItemUnitDataCompositeDef Jazz_Manuel Text RehireOutro ChatMessage voice:Jazz_Manuel]] "Остаюсь. Лес подождёт."),
+				}),
+				},
+				'MedicalDeposit', "standard",
+				'StartingSalary', 600,
+				'SalaryIncrease', 200,
+				'SalaryLv1', 300,
+				'SalaryMaxLv', 2000,
+				'StartingLevel', 3,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				end,
+				'MaxHitPoints', 72,
+				'Likes', {
+				"Jazz_Miguel",
+				},
+				'Dislikes', {},
+				'StartingPerks', {
+				"Jazz_Perk_Manuel",
+				"Stealthy",
+				"Loner",
+				"Flanker",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Manuel",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Manuel",
+				},
+				'Tier', "Regular",
+				'Specialization', "Stealth",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Manuel",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Manuel",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Monk",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Monk",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 88,
+				'Agility', 85,
+				'Dexterity', 80,
+				'Strength', 80,
+				'Wisdom', 70,
+				'Will', 75,
+				'Leadership', 25,
+				'Marksmanship', 94,
+				'Mechanical', 25,
+				'Explosives', 25,
+				'Medical', 20,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Monk.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Monk_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000003802, --[[ModItemUnitDataCompositeDef Jazz_Monk Name]] "[WIP] Виктор «Монк» Колесников"),
+				'Nick', T(890000000003803, --[[ModItemUnitDataCompositeDef Jazz_Monk Nick]] "Монк"),
+				'AllCapsNick', T(890000000003804, --[[ModItemUnitDataCompositeDef Jazz_Monk AllCapsNick]] "МОНК"),
+				'Bio', T(890000000003805, --[[ModItemUnitDataCompositeDef Jazz_Monk Bio]] "work in progress"),
+				'Nationality', "Russia",
+				'Title', T(890000000003806, --[[ModItemUnitDataCompositeDef Jazz_Monk Title]] "Чеченский след"),
+				'Email', T(890000000003807, --[[ModItemUnitDataCompositeDef Jazz_Monk Email]] "Monk@aim.com"),
+				'snype_nick', T(890000000003808, --[[ModItemUnitDataCompositeDef Jazz_Monk snype_nick]] "monk"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003809, --[[ModItemUnitDataCompositeDef Jazz_Monk Text MercChatRefusal Lines ChatMessage voice:Jazz_Monk]] "Пока Иван или Конрад в отряде — нет. Не хочу иметь с ними дела."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Ivan" or k == "Jazz_Conrad")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003810, --[[ModItemUnitDataCompositeDef Jazz_Monk Text MercChatRefusal Lines ChatMessage voice:Jazz_Monk]] "Слишком много смертей. Хватит с меня войны."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionDeathToll', {
+				PresetValue = "1",
+				}),
+				},
+				'chanceToRoll', 40,
+				}),
+				},
+				'Haggles', {},
+				'HaggleRehire', {},
+				'Mitigations', {
+				PlaceObj('MercChatMitigation', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003811, --[[ModItemUnitDataCompositeDef Jazz_Monk Text MercChatMitigation Lines ChatMessage voice:Jazz_Monk]] "Лора уже здесь? Тогда, пожалуй, соглашусь."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Jazz_Laura",
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'ExtraPartingWords', {
+				PlaceObj('MercChatBranch', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003812, --[[ModItemUnitDataCompositeDef Jazz_Monk Text MercChatBranch Lines ChatMessage voice:Jazz_Monk]] "Если найдёте Лору — она надёжнее большинства."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Jazz_Laura",
+				Negate = true,
+				}),
+				},
+				}),
+				},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003813, --[[ModItemUnitDataCompositeDef Jazz_Monk Text Offline ChatMessage voice:Jazz_Monk]] "Монк не в сети."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003814, --[[ModItemUnitDataCompositeDef Jazz_Monk Text GreetingAndOffer ChatMessage voice:Jazz_Monk]] "Монк на связи."),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003815, --[[ModItemUnitDataCompositeDef Jazz_Monk Text ConversationRestart ChatMessage voice:Jazz_Monk]] "Связь прервалась. Продолжим."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003816, --[[ModItemUnitDataCompositeDef Jazz_Monk Text IdleLine ChatMessage voice:Jazz_Monk]] "..."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003817, --[[ModItemUnitDataCompositeDef Jazz_Monk Text PartingWords ChatMessage voice:Jazz_Monk]] "Хорошо. Иду один, как всегда."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003818, --[[ModItemUnitDataCompositeDef Jazz_Monk Text RehireIntro ChatMessage voice:Jazz_Monk]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003819, --[[ModItemUnitDataCompositeDef Jazz_Monk Text RehireOutro ChatMessage voice:Jazz_Monk]] "Остаюсь."),
+				}),
+				},
+				'MedicalDeposit', "standard",
+				'StartingSalary', 2400,
+				'SalaryIncrease', 200,
+				'SalaryLv1', 1000,
+				'SalaryMaxLv', 5500,
+				'StartingLevel', 4,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				end,
+				'MaxHitPoints', 88,
+				'Likes', {
+				"Jazz_Laura",
+				},
+				'Dislikes', {
+				"Ivan",
+				"Jazz_Conrad",
+				},
+				'StartingPerks', {
+				"Jazz_Perk_Monk",
+				"Stealthy",
+				"Loner",
+				"NightOps",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Monk",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Monk",
+				},
+				'Tier', "Veteran",
+				'Specialization', "Stealth",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Monk",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Monk",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Allik",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Allik",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 88,
+				'Agility', 85,
+				'Dexterity', 85,
+				'Strength', 80,
+				'Wisdom', 85,
+				'Will', 80,
+				'Leadership', 50,
+				'Marksmanship', 78,
+				'Mechanical', 76,
+				'Explosives', 43,
+				'Medical', 30,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Allik.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Allik_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000003902, --[[ModItemUnitDataCompositeDef Jazz_Allik Name]] "[WIP] Янно «Знаток» Аллик"),
+				'Nick', T(890000000003903, --[[ModItemUnitDataCompositeDef Jazz_Allik Nick]] "Знаток"),
+				'AllCapsNick', T(890000000003904, --[[ModItemUnitDataCompositeDef Jazz_Allik AllCapsNick]] "ЗНАТОК"),
+				'Bio', T(890000000003905, --[[ModItemUnitDataCompositeDef Jazz_Allik Bio]] "work in progress"),
+				'Nationality', "Estonia",
+				'Title', T(890000000003906, --[[ModItemUnitDataCompositeDef Jazz_Allik Title]] "Эстонец"),
+				'Email', T(890000000003907, --[[ModItemUnitDataCompositeDef Jazz_Allik Email]] "Allik@aim.com"),
+				'snype_nick', T(890000000003908, --[[ModItemUnitDataCompositeDef Jazz_Allik snype_nick]] "znatok"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003909, --[[ModItemUnitDataCompositeDef Jazz_Allik Text MercChatRefusal Lines ChatMessage voice:Jazz_Allik]] "Пока Сидни или Доктор Кью в отряде — нет. С ними не сработаемся."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Sidney" or k == "DrQ")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003910, --[[ModItemUnitDataCompositeDef Jazz_Allik Text MercChatRefusal Lines ChatMessage voice:Jazz_Allik]] "Слишком много потерь — даже оптимизм имеет предел."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionDeathToll', {
+				PresetValue = "1",
+				}),
+				},
+				'chanceToRoll', 40,
+				}),
+				},
+				'Haggles', {},
+				'HaggleRehire', {},
+				'Mitigations', {
+				PlaceObj('MercChatMitigation', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003911, --[[ModItemUnitDataCompositeDef Jazz_Allik Text MercChatMitigation Lines ChatMessage voice:Jazz_Allik]] "Вильде или Грейс уже здесь? Тогда я определённо в деле."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Jazz_Vilde" or k == "Jazz_Grace")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'ExtraPartingWords', {
+				PlaceObj('MercChatBranch', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003912, --[[ModItemUnitDataCompositeDef Jazz_Allik Text MercChatBranch Lines ChatMessage voice:Jazz_Allik]] "Возьмите ещё Вильде — вместе мы вдвое эффективнее."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Jazz_Vilde",
+				Negate = true,
+				}),
+				},
+				}),
+				},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003913, --[[ModItemUnitDataCompositeDef Jazz_Allik Text Offline ChatMessage voice:Jazz_Allik]] "Знаток занят делом. Позже."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003914, --[[ModItemUnitDataCompositeDef Jazz_Allik Text GreetingAndOffer ChatMessage voice:Jazz_Allik]] "Аллик слушает. Что за задача?"),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003915, --[[ModItemUnitDataCompositeDef Jazz_Allik Text ConversationRestart ChatMessage voice:Jazz_Allik]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003916, --[[ModItemUnitDataCompositeDef Jazz_Allik Text IdleLine ChatMessage voice:Jazz_Allik]] "Готов к работе, только скажите."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003917, --[[ModItemUnitDataCompositeDef Jazz_Allik Text PartingWords ChatMessage voice:Jazz_Allik]] "Выхожу. Будет интересно."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003918, --[[ModItemUnitDataCompositeDef Jazz_Allik Text RehireIntro ChatMessage voice:Jazz_Allik]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000003919, --[[ModItemUnitDataCompositeDef Jazz_Allik Text RehireOutro ChatMessage voice:Jazz_Allik]] "Остаюсь. Тут ещё многому можно научиться."),
+				}),
+				},
+				'MedicalDeposit', "standard",
+				'StartingSalary', 2600,
+				'SalaryIncrease', 200,
+				'SalaryLv1', 1100,
+				'SalaryMaxLv', 6000,
+				'StartingLevel', 5,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				end,
+				'MaxHitPoints', 88,
+				'Likes', {
+				"Jazz_Vilde",
+				"Jazz_Grace",
+				},
+				'Dislikes', {
+				"Sidney",
+				"DrQ",
+				},
+				'StartingPerks', {
+				"Jazz_Perk_Allik",
+				"MrFixit",
+				"DesignerExplosives",
+				"TrueGrit",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Allik",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Allik",
+				},
+				'Tier', "Elite",
+				'Specialization', "AllRounder",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Allik",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Allik",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Henning",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Henning",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 78,
+				'Agility', 70,
+				'Dexterity', 75,
+				'Strength', 75,
+				'Wisdom', 96,
+				'Will', 85,
+				'Leadership', 76,
+				'Marksmanship', 92,
+				'Mechanical', 35,
+				'Explosives', 35,
+				'Medical', 35,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Henning.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Henning_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004002, --[[ModItemUnitDataCompositeDef Jazz_Henning Name]] "[WIP] Хеннинг фон Браниц"),
+				'Nick', T(890000000004003, --[[ModItemUnitDataCompositeDef Jazz_Henning Nick]] "Хеннинг"),
+				'AllCapsNick', T(890000000004004, --[[ModItemUnitDataCompositeDef Jazz_Henning AllCapsNick]] "ХЕННИНГ"),
+				'Bio', T(890000000004005, --[[ModItemUnitDataCompositeDef Jazz_Henning Bio]] "work in progress"),
+				'Nationality', "Germany",
+				'Title', T(890000000004006, --[[ModItemUnitDataCompositeDef Jazz_Henning Title]] "Барон-гасс"),
+				'Email', T(890000000004007, --[[ModItemUnitDataCompositeDef Jazz_Henning Email]] "Henning@aim.com"),
+				'snype_nick', T(890000000004008, --[[ModItemUnitDataCompositeDef Jazz_Henning snype_nick]] "vonbranitz"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004009, --[[ModItemUnitDataCompositeDef Jazz_Henning Text MercChatRefusal Lines ChatMessage voice:Jazz_Henning]] "Пока Тор в отряде — нет. Не нахожу с ним общего языка."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Thor" or k == "Jazz_Ricochet")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004010, --[[ModItemUnitDataCompositeDef Jazz_Henning Text MercChatRefusal Lines ChatMessage voice:Jazz_Henning]] "Слишком много потерь для моих стандартов командования."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionDeathToll', {
+				PresetValue = "1",
+				}),
+				},
+				'chanceToRoll', 40,
+				}),
+				},
+				'Haggles', {},
+				'HaggleRehire', {},
+				'Mitigations', {
+				PlaceObj('MercChatMitigation', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004011, --[[ModItemUnitDataCompositeDef Jazz_Henning Text MercChatMitigation Lines ChatMessage voice:Jazz_Henning]] "Штайгер или Лора уже здесь? Тогда я готов присоединиться."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Jazz_Steiger" or k == "Jazz_Laura")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'ExtraPartingWords', {
+				PlaceObj('MercChatBranch', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004012, --[[ModItemUnitDataCompositeDef Jazz_Henning Text MercChatBranch Lines ChatMessage voice:Jazz_Henning]] "Найдёте Штайгера — берите. Дисциплинированный солдат."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Jazz_Steiger",
+				Negate = true,
+				}),
+				},
+				}),
+				},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004013, --[[ModItemUnitDataCompositeDef Jazz_Henning Text Offline ChatMessage voice:Jazz_Henning]] "Фон Браниц отсутствует. Позже."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004014, --[[ModItemUnitDataCompositeDef Jazz_Henning Text GreetingAndOffer ChatMessage voice:Jazz_Henning]] "Хеннинг слушает. Излагайте."),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004015, --[[ModItemUnitDataCompositeDef Jazz_Henning Text ConversationRestart ChatMessage voice:Jazz_Henning]] "Связь прервалась. Продолжайте, пожалуйста."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004016, --[[ModItemUnitDataCompositeDef Jazz_Henning Text IdleLine ChatMessage voice:Jazz_Henning]] "Жду распоряжений."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004017, --[[ModItemUnitDataCompositeDef Jazz_Henning Text PartingWords ChatMessage voice:Jazz_Henning]] "Принято. Я в вашем распоряжении."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004018, --[[ModItemUnitDataCompositeDef Jazz_Henning Text RehireIntro ChatMessage voice:Jazz_Henning]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004019, --[[ModItemUnitDataCompositeDef Jazz_Henning Text RehireOutro ChatMessage voice:Jazz_Henning]] "Остаюсь. Здесь ещё есть кем командовать."),
+				}),
+				},
+				'MedicalDeposit', "large",
+				'StartingSalary', 5000,
+				'SalaryIncrease', 200,
+				'SalaryLv1', 2500,
+				'SalaryMaxLv', 10000,
+				'StartingLevel', 5,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				end,
+				'MaxHitPoints', 78,
+				'Likes', {
+				"Jazz_Steiger",
+				"Jazz_Laura",
+				},
+				'Dislikes', {
+				"Thor",
+				"Jazz_Ricochet",
+				},
+				'StartingPerks', {
+				"Jazz_Perk_Henning",
+				"AutoWeapons",
+				"HeavyWeaponsTraining",
+				"LeadFromTheFront",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Henning",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Henning",
+				},
+				'Tier', "Elite",
+				'Specialization', "Leader",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Henning",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Henning",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Static",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Static",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 70,
+				'Agility', 75,
+				'Dexterity', 95,
+				'Strength', 59,
+				'Wisdom', 60,
+				'Will', 50,
+				'Leadership', 20,
+				'Marksmanship', 55,
+				'Mechanical', 99,
+				'Explosives', 20,
+				'Medical', 15,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Static.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Static_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004102, --[[ModItemUnitDataCompositeDef Jazz_Static Name]] "[WIP] Кирк «Статик» Стивенсон"),
+				'Nick', T(890000000004103, --[[ModItemUnitDataCompositeDef Jazz_Static Nick]] "Статик"),
+				'AllCapsNick', T(890000000004104, --[[ModItemUnitDataCompositeDef Jazz_Static AllCapsNick]] "СТАТИК"),
+				'Bio', T(890000000004105, --[[ModItemUnitDataCompositeDef Jazz_Static Bio]] "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000004106, --[[ModItemUnitDataCompositeDef Jazz_Static Title]] "Хиппи-механик"),
+				'Email', T(890000000004107, --[[ModItemUnitDataCompositeDef Jazz_Static Email]] "Static@aim.com"),
+				'snype_nick', T(890000000004108, --[[ModItemUnitDataCompositeDef Jazz_Static snype_nick]] "static"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004109, --[[ModItemUnitDataCompositeDef Jazz_Static Text MercChatRefusal Lines ChatMessage voice:Jazz_Static]] "Пока Ротман, Блэйд или трезвый Ларри у вас в отряде — я пас. Не моя вибрация."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Jazz_Rothman" or k == "Jazz_Blade" or k == "Larry_Clean")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004110, --[[ModItemUnitDataCompositeDef Jazz_Static Text MercChatRefusal Lines ChatMessage voice:Jazz_Static]] "Слишком много трупов вокруг вас. Не моя карма."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionDeathToll', {
+				PresetValue = "1",
+				}),
+				},
+				'chanceToRoll', 40,
+				}),
+				},
+				'Haggles', {
+				PlaceObj('MercChatBranch', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004111, --[[ModItemUnitDataCompositeDef Jazz_Static Text MercChatBranch Lines ChatMessage voice:Jazz_Static]] "Отряд из одних швейцарцев? Ладно, но накинь сверху."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				local squad = obj and obj.Squad
+				if not squad then return false end
+				local units = GetSquadUnits and GetSquadUnits(squad) or {}
+				if #units == 0 then return false end
+				for _, u in ipairs(units) do
+				local ud = gv_UnitData[u]
+				if not ud or ud.Nationality ~= "Switzerland" then return false end
+				end
+				return true
+				end,
+				}),
+				},
+				}),
+				},
+				'HaggleRehire', {},
+				'Mitigations', {
+				PlaceObj('MercChatMitigation', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004112, --[[ModItemUnitDataCompositeDef Jazz_Static Text MercChatMitigation Lines ChatMessage voice:Jazz_Static]] "О, Паук (или обдолбанный Ларри) уже здесь? Тогда я точно в деле."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Jazz_Spider" or k == "Larry")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'ExtraPartingWords', {
+				PlaceObj('MercChatBranch', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004113, --[[ModItemUnitDataCompositeDef Jazz_Static Text MercChatBranch Lines ChatMessage voice:Jazz_Static]] "Если нужен ещё один спец по железу — зовите Паука."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Jazz_Spider",
+				Negate = true,
+				}),
+				},
+				}),
+				},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004114, --[[ModItemUnitDataCompositeDef Jazz_Static Text Offline ChatMessage voice:Jazz_Static]] "Статик в отключке. Позвоните позже."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004115, --[[ModItemUnitDataCompositeDef Jazz_Static Text GreetingAndOffer ChatMessage voice:Jazz_Static]] "Йо, Статик на проводе. Что чинить?"),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004116, --[[ModItemUnitDataCompositeDef Jazz_Static Text ConversationRestart ChatMessage voice:Jazz_Static]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004117, --[[ModItemUnitDataCompositeDef Jazz_Static Text IdleLine ChatMessage voice:Jazz_Static]] "Мир... и гайки, чувак."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004118, --[[ModItemUnitDataCompositeDef Jazz_Static Text PartingWords ChatMessage voice:Jazz_Static]] "Окей, собираю чемодан с инструментами."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004119, --[[ModItemUnitDataCompositeDef Jazz_Static Text RehireIntro ChatMessage voice:Jazz_Static]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004120, --[[ModItemUnitDataCompositeDef Jazz_Static Text RehireOutro ChatMessage voice:Jazz_Static]] "Остаюсь. Тут ещё есть что чинить."),
+				}),
+				},
+				'MedicalDeposit', "standard",
+				'StartingSalary', 1400,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 600,
+				'SalaryMaxLv', 3500,
+				'StartingLevel', 4,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 70,
+				'Likes', {
+				"Jazz_Spider",
+				"Larry",
+				},
+				'Dislikes', {
+				"Jazz_Rothman",
+				"Jazz_Blade",
+				"Larry_Clean",
+				},
+				'StartingPerks', {
+				"Jazz_Perk_Static",
+				"MrFixit",
+				"JackOfAllTrades",
+				"Scoundrel",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Static",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Static",
+				},
+				'Tier', "Veteran",
+				'Specialization', "Mechanic",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Static",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Static",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Highball",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Highball",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 55,
+				'Agility', 50,
+				'Dexterity', 55,
+				'Strength', 55,
+				'Wisdom', 87,
+				'Will', 40,
+				'Leadership', 20,
+				'Marksmanship', 84,
+				'Mechanical', 10,
+				'Explosives', 10,
+				'Medical', 84,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Highball.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Highball_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004202, --[[ModItemUnitDataCompositeDef Jazz_Highball Name]] "[WIP] Клиффорд «Скала» Хайбол"),
+				'Nick', T(890000000004203, --[[ModItemUnitDataCompositeDef Jazz_Highball Nick]] "Скала"),
+				'AllCapsNick', T(890000000004204, --[[ModItemUnitDataCompositeDef Jazz_Highball AllCapsNick]] "СКАЛА"),
+				'Bio', T(890000000004205, --[[ModItemUnitDataCompositeDef Jazz_Highball Bio]] "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000004206, --[[ModItemUnitDataCompositeDef Jazz_Highball Title]] "Старый алкаш"),
+				'Email', T(890000000004207, --[[ModItemUnitDataCompositeDef Jazz_Highball Email]] "Highball@aim.com"),
+				'snype_nick', T(890000000004208, --[[ModItemUnitDataCompositeDef Jazz_Highball snype_nick]] "highball"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004209, --[[ModItemUnitDataCompositeDef Jazz_Highball Text MercChatRefusal Lines ChatMessage voice:Jazz_Highball]] "На такие деньги даже фляжку не наполнишь."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionMoney', {}),
+				},
+				'chanceToRoll', 25,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004210, --[[ModItemUnitDataCompositeDef Jazz_Highball Text MercChatRefusal Lines ChatMessage voice:Jazz_Highball]] "Слишком много крови для старого доктора."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionDeathToll', {
+				PresetValue = "1",
+				}),
+				},
+				'chanceToRoll', 40,
+				}),
+				},
+				'Haggles', {},
+				'HaggleRehire', {},
+				'Mitigations', {},
+				'ExtraPartingWords', {},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004211, --[[ModItemUnitDataCompositeDef Jazz_Highball Text Offline ChatMessage voice:Jazz_Highball]] "Хайбол... икает... позже перезвонит."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004212, --[[ModItemUnitDataCompositeDef Jazz_Highball Text GreetingAndOffer ChatMessage voice:Jazz_Highball]] "Скала на линии. Ик. Что там у вас?"),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004213, --[[ModItemUnitDataCompositeDef Jazz_Highball Text ConversationRestart ChatMessage voice:Jazz_Highball]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004214, --[[ModItemUnitDataCompositeDef Jazz_Highball Text IdleLine ChatMessage voice:Jazz_Highball]] "Ещё по одной — и я весь ваш."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004215, --[[ModItemUnitDataCompositeDef Jazz_Highball Text PartingWords ChatMessage voice:Jazz_Highball]] "Ладно... фляжку с собой, и иду."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004216, --[[ModItemUnitDataCompositeDef Jazz_Highball Text RehireIntro ChatMessage voice:Jazz_Highball]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004217, --[[ModItemUnitDataCompositeDef Jazz_Highball Text RehireOutro ChatMessage voice:Jazz_Highball]] "Остаюсь. Тут веселее, чем дома."),
+				}),
+				},
+				'MedicalDeposit', "standard",
+				'StartingSalary', 900,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 400,
+				'SalaryMaxLv', 2500,
+				'StartingLevel', 3,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				end,
+				'MaxHitPoints', 55,
+				'Likes', {},
+				'Dislikes', {},
+				'StartingPerks', {
+				"Jazz_Perk_Highball",
+				"Savior",
+				"OldDog",
+				"JackOfAllTrades",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Highball",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Highball",
+				},
+				'Tier', "Regular",
+				'Specialization', "Doctor",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Highball",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Highball",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Bull",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Bull",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 96,
+				'Agility', 50,
+				'Dexterity', 50,
+				'Strength', 98,
+				'Wisdom', 64,
+				'Will', 45,
+				'Leadership', 15,
+				'Marksmanship', 72,
+				'Mechanical', 5,
+				'Explosives', 5,
+				'Medical', 5,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Bull.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Bull_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004302, --[[ModItemUnitDataCompositeDef Jazz_Bull Name]] "[WIP] Джон «Бык» Питерс"),
+				'Nick', T(890000000004303, --[[ModItemUnitDataCompositeDef Jazz_Bull Nick]] "Бык"),
+				'AllCapsNick', T(890000000004304, --[[ModItemUnitDataCompositeDef Jazz_Bull AllCapsNick]] "БЫК"),
+				'Bio', T(890000000004305, --[[ModItemUnitDataCompositeDef Jazz_Bull Bio]] "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000004306, --[[ModItemUnitDataCompositeDef Jazz_Bull Title]] "Дешёвый танк"),
+				'Email', T(890000000004307, --[[ModItemUnitDataCompositeDef Jazz_Bull Email]] "Bull@aim.com"),
+				'snype_nick', T(890000000004308, --[[ModItemUnitDataCompositeDef Jazz_Bull snype_nick]] "bull"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004309, --[[ModItemUnitDataCompositeDef Jazz_Bull Text MercChatRefusal Lines ChatMessage voice:Jazz_Bull]] "Пока Бифф в отряде — я пас. Он мне не нравится."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Jazz_Biff",
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004310, --[[ModItemUnitDataCompositeDef Jazz_Bull Text MercChatRefusal Lines ChatMessage voice:Jazz_Bull]] "Мало. Бык дёшево, но не бесплатно."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionMoney', {}),
+				},
+				'chanceToRoll', 25,
+				}),
+				},
+				'Haggles', {},
+				'HaggleRehire', {},
+				'Mitigations', {
+				PlaceObj('MercChatMitigation', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004311, --[[ModItemUnitDataCompositeDef Jazz_Bull Text MercChatMitigation Lines ChatMessage voice:Jazz_Bull]] "О, Нейлс уже тут? Тогда порядок."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Nails",
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'ExtraPartingWords', {
+				PlaceObj('MercChatBranch', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004312, --[[ModItemUnitDataCompositeDef Jazz_Bull Text MercChatBranch Lines ChatMessage voice:Jazz_Bull]] "Если нужен ещё крепкий парень — берите Нейлса."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Nails",
+				Negate = true,
+				}),
+				},
+				}),
+				},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004313, --[[ModItemUnitDataCompositeDef Jazz_Bull Text Offline ChatMessage voice:Jazz_Bull]] "Бык спит. Не будить."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004314, --[[ModItemUnitDataCompositeDef Jazz_Bull Text GreetingAndOffer ChatMessage voice:Jazz_Bull]] "Бык! Чо, бить будем?"),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004315, --[[ModItemUnitDataCompositeDef Jazz_Bull Text ConversationRestart ChatMessage voice:Jazz_Bull]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004316, --[[ModItemUnitDataCompositeDef Jazz_Bull Text IdleLine ChatMessage voice:Jazz_Bull]] "Где враги? Хочу бить."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004317, --[[ModItemUnitDataCompositeDef Jazz_Bull Text PartingWords ChatMessage voice:Jazz_Bull]] "Угх. Иду бить."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004318, --[[ModItemUnitDataCompositeDef Jazz_Bull Text RehireIntro ChatMessage voice:Jazz_Bull]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004319, --[[ModItemUnitDataCompositeDef Jazz_Bull Text RehireOutro ChatMessage voice:Jazz_Bull]] "Остаюсь. Тут есть кого бить."),
+				}),
+				},
+				'MedicalDeposit', "standard",
+				'StartingSalary', 400,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 200,
+				'SalaryMaxLv', 1500,
+				'StartingLevel', 2,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Melee")
+				end,
+				'MaxHitPoints', 96,
+				'Likes', {
+				"Nails",
+				},
+				'Dislikes', {
+				"Jazz_Biff",
+				},
+				'StartingPerks', {
+				"Jazz_Perk_Bull",
+				"MeleeTraining",
+				"CQCTraining",
+				"TrueGrit",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Bull",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Bull",
+				},
+				'Tier', "Regular",
+				'Specialization', "Melee",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Bull",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Bull",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Cord",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Cord",
+					'object_class', "UnitData",
+				'Affiliation', "MERC",
+				'Health', 65,
+				'Agility', 60,
+				'Dexterity', 89,
+				'Strength', 60,
+				'Wisdom', 49,
+				'Will', 40,
+				'Leadership', 15,
+				'Marksmanship', 44,
+				'Mechanical', 82,
+				'Explosives', 15,
+				'Medical', 10,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Cord.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Cord_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004402, --[[ModItemUnitDataCompositeDef Jazz_Cord Name]] "[WIP] Даг «Кардан» Милтон"),
+				'Nick', T(890000000004403, --[[ModItemUnitDataCompositeDef Jazz_Cord Nick]] "Кардан"),
+				'AllCapsNick', T(890000000004404, --[[ModItemUnitDataCompositeDef Jazz_Cord AllCapsNick]] "КАРДАН"),
+				'Bio', T(890000000004405, --[[ModItemUnitDataCompositeDef Jazz_Cord Bio]] "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000004406, --[[ModItemUnitDataCompositeDef Jazz_Cord Title]] "Забывчивый механик"),
+				'Email', T(890000000004407, --[[ModItemUnitDataCompositeDef Jazz_Cord Email]] "Cord@merc.com"),
+				'snype_nick', T(890000000004408, --[[ModItemUnitDataCompositeDef Jazz_Cord snype_nick]] "cardan"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004409, --[[ModItemUnitDataCompositeDef Jazz_Cord Text MercChatRefusal Lines ChatMessage voice:Jazz_Cord]] "Пока Иван или Игорь в отряде — я пас."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Ivan" or k == "Igor")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004410, --[[ModItemUnitDataCompositeDef Jazz_Cord Text MercChatRefusal Lines ChatMessage voice:Jazz_Cord]] "Маловато будет."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionMoney', {}),
+				},
+				'chanceToRoll', 25,
+				}),
+				},
+				'Haggles', {
+				PlaceObj('MercChatBranch', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004411, --[[ModItemUnitDataCompositeDef Jazz_Cord Text MercChatBranch Lines ChatMessage voice:Jazz_Cord]] "Отряд полон русских... ладно, но с доплатой."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				local squad = obj and obj.Squad
+				if not squad then return false end
+				local units = GetSquadUnits and GetSquadUnits(squad) or {}
+				if #units == 0 then return false end
+				for _, u in ipairs(units) do
+				local ud = gv_UnitData[u]
+				if not ud or ud.Nationality ~= "Russia" then return false end
+				end
+				return true
+				end,
+				}),
+				},
+				}),
+				},
+				'HaggleRehire', {},
+				'Mitigations', {},
+				'ExtraPartingWords', {},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004412, --[[ModItemUnitDataCompositeDef Jazz_Cord Text Offline ChatMessage voice:Jazz_Cord]] "Кардан... куда я дел телефон... перезвоните."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004413, --[[ModItemUnitDataCompositeDef Jazz_Cord Text GreetingAndOffer ChatMessage voice:Jazz_Cord]] "А? Кардан слушает. Что чинить?"),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004414, --[[ModItemUnitDataCompositeDef Jazz_Cord Text ConversationRestart ChatMessage voice:Jazz_Cord]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004415, --[[ModItemUnitDataCompositeDef Jazz_Cord Text IdleLine ChatMessage voice:Jazz_Cord]] "Что мы вообще делали?"),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004416, --[[ModItemUnitDataCompositeDef Jazz_Cord Text PartingWords ChatMessage voice:Jazz_Cord]] "Кажется, я согласился. Иду."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004417, --[[ModItemUnitDataCompositeDef Jazz_Cord Text RehireIntro ChatMessage voice:Jazz_Cord]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004418, --[[ModItemUnitDataCompositeDef Jazz_Cord Text RehireOutro ChatMessage voice:Jazz_Cord]] "Остаюсь. Кажется."),
+				}),
+				},
+				'MedicalDeposit', "standard",
+				'StartingSalary', 550,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 250,
+				'SalaryMaxLv', 1800,
+				'StartingLevel', 3,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				end,
+				'MaxHitPoints', 65,
+				'Likes', {
+				"Vicki",
+				},
+				'Dislikes', {
+				"Ivan",
+				"Igor",
+				},
+				'StartingPerks', {
+				"Jazz_Perk_Cord",
+				"MrFixit",
+				"JackOfAllTrades",
+				"Scoundrel",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Cord",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Cord",
+				},
+				'Tier', "Regular",
+				'Specialization', "Mechanic",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Cord",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Cord",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Hobbit",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Hobbit",
+					'object_class', "UnitData",
+				'Affiliation', "MERC",
+				'Health', 65,
+				'Agility', 44,
+				'Dexterity', 60,
+				'Strength', 55,
+				'Wisdom', 94,
+				'Will', 50,
+				'Leadership', 25,
+				'Marksmanship', 44,
+				'Mechanical', 0,
+				'Explosives', 56,
+				'Medical', 15,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Hobbit.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Hobbit_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004502, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Name]] "[WIP] Тим «Хоббит» Хиллман"),
+				'Nick', T(890000000004503, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Nick]] "Хоббит"),
+				'AllCapsNick', T(890000000004504, --[[ModItemUnitDataCompositeDef Jazz_Hobbit AllCapsNick]] "ХОББИТ"),
+				'Bio', T(890000000004505, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Bio]] "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000004506, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Title]] "Несу вас"),
+				'Email', T(890000000004507, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Email]] "Hobbit@merc.com"),
+				'snype_nick', T(890000000004508, --[[ModItemUnitDataCompositeDef Jazz_Hobbit snype_nick]] "frodo"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004509, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Text MercChatRefusal Lines ChatMessage voice:Jazz_Hobbit]] "Маловато. Такими темпами всё плохо кончится."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionMoney', {}),
+				},
+				'chanceToRoll', 25,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004510, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Text MercChatRefusal Lines ChatMessage voice:Jazz_Hobbit]] "Слишком много смертей — я предупреждал."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionDeathToll', {
+				PresetValue = "1",
+				}),
+				},
+				'chanceToRoll', 40,
+				}),
+				},
+				'Haggles', {},
+				'HaggleRehire', {},
+				'Mitigations', {},
+				'ExtraPartingWords', {},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004511, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Text Offline ChatMessage voice:Jazz_Hobbit]] "Хоббит недоступен. Наверное, к лучшему."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004512, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Text GreetingAndOffer ChatMessage voice:Jazz_Hobbit]] "Хоббит на связи. Я не Фродо, если что."),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004513, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Text ConversationRestart ChatMessage voice:Jazz_Hobbit]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004514, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Text IdleLine ChatMessage voice:Jazz_Hobbit]] "Жарко. Всё равно ничем хорошим не кончится."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004515, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Text PartingWords ChatMessage voice:Jazz_Hobbit]] "Ладно, могу и понести вас, если что."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004516, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Text RehireIntro ChatMessage voice:Jazz_Hobbit]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004517, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Text RehireOutro ChatMessage voice:Jazz_Hobbit]] "Остаюсь. Всё равно хуже уже не будет."),
+				}),
+				},
+				'MedicalDeposit', "standard",
+				'StartingSalary', 700,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 300,
+				'SalaryMaxLv', 2200,
+				'StartingLevel', 3,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				end,
+				'MaxHitPoints', 65,
+				'Likes', {},
+				'Dislikes', {},
+				'StartingPerks', {
+				"Jazz_Perk_Hobbit",
+				"Pessimist",
+				"DesignerExplosives",
+				"BreachAndClear",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Hobbit",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Hobbit",
+				},
+				'Tier', "Regular",
+				'Specialization', "ExplosiveExpert",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Hobbit",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Hobbit",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Ricochet",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Ricochet",
+					'object_class', "UnitData",
+				'Affiliation', "MERC",
+				'Health', 70,
+				'Agility', 60,
+				'Dexterity', 70,
+				'Strength', 75,
+				'Wisdom', 55,
+				'Will', 45,
+				'Leadership', 15,
+				'Marksmanship', 88,
+				'Mechanical', 15,
+				'Explosives', 15,
+				'Medical', 10,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Ricochet.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Ricochet_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004602, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Name]] "[WIP] Тим «Рикошет» Саттонн"),
+				'Nick', T(890000000004603, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Nick]] "Рикошет"),
+				'AllCapsNick', T(890000000004604, --[[ModItemUnitDataCompositeDef Jazz_Ricochet AllCapsNick]] "РИКОШЕТ"),
+				'Bio', T(890000000004605, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Bio]] "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000004606, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Title]] "Ближник"),
+				'Email', T(890000000004607, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Email]] "Ricochet@merc.com"),
+				'snype_nick', T(890000000004608, --[[ModItemUnitDataCompositeDef Jazz_Ricochet snype_nick]] "ricochet"),
+				'Refusals', {
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004609, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Text MercChatRefusal Lines ChatMessage voice:Jazz_Ricochet]] "Пока Сидни или Вики в отряде — я пас."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				return table.count(gv_UnitData, function(k, ud)
+				return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and (k == "Sidney" or k == "Vicki")
+				end) >= 1
+				end,
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				PlaceObj('MercChatRefusal', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004610, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Text MercChatRefusal Lines ChatMessage voice:Jazz_Ricochet]] "Маловато для моих ножей."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('MercChatConditionMoney', {}),
+				},
+				'chanceToRoll', 25,
+				}),
+				},
+				'Haggles', {
+				PlaceObj('MercChatBranch', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004611, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Text MercChatBranch Lines ChatMessage voice:Jazz_Ricochet]] "Отряд полон британцев... ладно, но с доплатой."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('CheckExpression', {
+				Expression = function (self, obj)
+				local squad = obj and obj.Squad
+				if not squad then return false end
+				local units = GetSquadUnits and GetSquadUnits(squad) or {}
+				if #units == 0 then return false end
+				for _, u in ipairs(units) do
+				local ud = gv_UnitData[u]
+				if not ud or ud.Nationality ~= "Britain" then return false end
+				end
+				return true
+				end,
+				}),
+				},
+				}),
+				},
+				'HaggleRehire', {},
+				'Mitigations', {
+				PlaceObj('MercChatMitigation', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004612, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Text MercChatMitigation Lines ChatMessage voice:Jazz_Ricochet]] "О, Злобный уже здесь? Тогда я в деле."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Jazz_Vicious",
+				}),
+				},
+				'chanceToRoll', 100,
+				}),
+				},
+				'ExtraPartingWords', {
+				PlaceObj('MercChatBranch', {
+				'Lines', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004613, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Text MercChatBranch Lines ChatMessage voice:Jazz_Ricochet]] "Если нужен ещё один клинок — зовите Злобного."),
+				}),
+				},
+				'Conditions', {
+				PlaceObj('UnitHireStatus', {
+				Status = "Hired",
+				TargetUnit = "Jazz_Vicious",
+				Negate = true,
+				}),
+				},
+				}),
+				},
+				'Offline', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004614, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Text Offline ChatMessage voice:Jazz_Ricochet]] "Рикошет вне игры."),
+				}),
+				},
+				'GreetingAndOffer', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004615, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Text GreetingAndOffer ChatMessage voice:Jazz_Ricochet]] "Рикошет слушает. Кого метать?"),
+				}),
+				},
+				'ConversationRestart', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004616, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Text ConversationRestart ChatMessage voice:Jazz_Ricochet]] "Связь прервалась. Вернёмся к делу."),
+				}),
+				},
+				'IdleLine', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004617, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Text IdleLine ChatMessage voice:Jazz_Ricochet]] "Жду цель."),
+				}),
+				},
+				'PartingWords', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004618, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Text PartingWords ChatMessage voice:Jazz_Ricochet]] "Ножи наточены. Иду."),
+				}),
+				},
+				'RehireIntro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004619, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Text RehireIntro ChatMessage voice:Jazz_Ricochet]] "Контракт заканчивается. Продлеваем?"),
+				}),
+				},
+				'RehireOutro', {
+				PlaceObj('ChatMessage', {
+				'Text', T(890000000004620, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Text RehireOutro ChatMessage voice:Jazz_Ricochet]] "Остаюсь."),
+				}),
+				},
+				'MedicalDeposit', "standard",
+				'StartingSalary', 800,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 350,
+				'SalaryMaxLv', 2400,
+				'StartingLevel', 3,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Melee")
+				end,
+				'MaxHitPoints', 70,
+				'Likes', {
+				"Jazz_Vicious",
+				},
+				'Dislikes', {
+				"Sidney",
+				"Vicki",
+				},
+				'StartingPerks', {
+				"Jazz_Perk_Ricochet",
+				"Loner",
+				"Throwing",
+				"MeleeTraining",
+				},
+				'AppearancesList', {
+				PlaceObj('AppearanceWeight', {
+				'Preset', "Ricochet",
+				}),
+				},
+				'Equipment', {
+				"Loot_JAZZ_Ricochet",
+				},
+				'Tier', "Regular",
+				'Specialization', "Melee",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Ricochet",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Ricochet",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Meat",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Meat",
+					'object_class', "UnitData",
+				'Affiliation', "MERC",
+				'Health', 90,
+				'Agility', 54,
+				'Dexterity', 68,
+				'Strength', 98,
+				'Wisdom', 29,
+				'Will', 50,
+				'Leadership', 10,
+				'Marksmanship', 55,
+				'Mechanical', 59,
+				'Explosives', 64,
+				'Medical', 5,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Meat.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Meat_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004603, "[WIP] Тортон «Мясо» Джонс"),
+				'Nick', T(890000000004604, "Мясо"),
+				'AllCapsNick', T(890000000004605, "МЯСО"),
+				'Bio', T(890000000004606, "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000004607, "Гора"),
+				'Email', T(890000000004608, "Meat@merc.com"),
+				'snype_nick', T(890000000004609, "meat"),
+				'Offline', { PlaceObj('ChatMessage', { 'Text', T(890000000004610, "Meat offline.") }) },
+				'GreetingAndOffer', { PlaceObj('ChatMessage', { 'Text', T(890000000004611, "Meat here.") }) },
+				'ConversationRestart', { PlaceObj('ChatMessage', { 'Text', T(890000000004612, "Continue.") }) },
+				'IdleLine', { PlaceObj('ChatMessage', { 'Text', T(890000000004613, "Waiting.") }) },
+				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004614, "Hired.") }) },
+				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004615, "Contract ending?") }) },
+				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004616, "Staying.") }) },
+				'MedicalDeposit', "standard",
+				'StartingSalary', 750,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 300,
+				'SalaryMaxLv', 2200,
+				'StartingLevel', 3,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 90,
+				'StartingPerks', {
+				"Jazz_Perk_Meat",
+				"DesignerExplosives",
+				"MeleeTraining",
+				"TrueGrit",
+				},
+				'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "Meat" }) },
+				'Equipment', { "Loot_JAZZ_Meat" },
+				'Tier', "Regular",
+				'Specialization', "ExplosiveExpert",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Meat",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Meat",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Carlos",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Carlos",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 70,
+				'Agility', 91,
+				'Dexterity', 61,
+				'Strength', 65,
+				'Wisdom', 55,
+				'Will', 40,
+				'Leadership', 30,
+				'Marksmanship', 67,
+				'Mechanical', 20,
+				'Explosives', 25,
+				'Medical', 20,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Carlos.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Carlos_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004619, "[WIP] Карлос Дасуза"),
+				'Nick', T(890000000004620, "Карлос"),
+				'AllCapsNick', T(890000000004621, "КАРЛОС"),
+				'Bio', T(890000000004622, "work in progress"),
+				'Nationality', "Arulco",
+				'Title', T(890000000004623, "Пессимист"),
+				'Email', T(890000000004624, "Carlos@arulco.reb"),
+				'snype_nick', T(890000000004625, "carlos"),
+				'Offline', { PlaceObj('ChatMessage', { 'Text', T(890000000004626, "Carlos offline.") }) },
+				'GreetingAndOffer', { PlaceObj('ChatMessage', { 'Text', T(890000000004627, "Carlos here.") }) },
+				'ConversationRestart', { PlaceObj('ChatMessage', { 'Text', T(890000000004628, "Continue.") }) },
+				'IdleLine', { PlaceObj('ChatMessage', { 'Text', T(890000000004629, "Waiting.") }) },
+				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004630, "Hired.") }) },
+				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004631, "Contract ending?") }) },
+				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004632, "Staying.") }) },
+				'MedicalDeposit', "standard",
+				'StartingSalary', 450,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 200,
+				'SalaryMaxLv', 1500,
+				'StartingLevel', 3,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 70,
+				'StartingPerks', {
+				"Jazz_Perk_Carlos",
+				"Pessimist",
+				"Stealthy",
+				"Throwing",
+				},
+				'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "Carlos" }) },
+				'Equipment', { "Loot_JAZZ_Carlos" },
+				'Tier', "Regular",
+				'Specialization', "Stealth",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Carlos",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Carlos",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Devin",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Devin",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 68,
+				'Agility', 70,
+				'Dexterity', 88,
+				'Strength', 65,
+				'Wisdom', 70,
+				'Will', 65,
+				'Leadership', 20,
+				'Marksmanship', 60,
+				'Mechanical', 40,
+				'Explosives', 96,
+				'Medical', 15,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Devin.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Devin_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004635, "[WIP] Девин Коннелл"),
+				'Nick', T(890000000004636, "Девин"),
+				'AllCapsNick', T(890000000004637, "ДЕВИН"),
+				'Bio', T(890000000004638, "work in progress"),
+				'Nationality', "Ireland",
+				'Title', T(890000000004639, "IRA"),
+				'Email', T(890000000004640, "Devin@arulco.local"),
+				'snype_nick', T(890000000004641, "ira"),
+				'Offline', { PlaceObj('ChatMessage', { 'Text', T(890000000004642, "Devin offline.") }) },
+				'GreetingAndOffer', { PlaceObj('ChatMessage', { 'Text', T(890000000004643, "Devin here.") }) },
+				'ConversationRestart', { PlaceObj('ChatMessage', { 'Text', T(890000000004644, "Continue.") }) },
+				'IdleLine', { PlaceObj('ChatMessage', { 'Text', T(890000000004645, "Waiting.") }) },
+				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004646, "Hired.") }) },
+				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004647, "Contract ending?") }) },
+				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004648, "Staying.") }) },
+				'MedicalDeposit', "standard",
+				'StartingSalary', 2000,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 800,
+				'SalaryMaxLv', 5000,
+				'StartingLevel', 4,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 68,
+				'StartingPerks', {
+				"Jazz_Perk_Devin",
+				"Loner",
+				"DesignerExplosives",
+				"BreachAndClear",
+				},
+				'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "Devin" }) },
+				'Equipment', { "Loot_JAZZ_Devin" },
+				'Tier', "Veteran",
+				'Specialization', "ExplosiveExpert",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Devin",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Devin",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Shank",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Shank",
+					'object_class', "UnitData",
+				'Affiliation', "MERC",
+				'Health', 35,
+				'Agility', 35,
+				'Dexterity', 40,
+				'Strength', 30,
+				'Wisdom', 80,
+				'Will', 35,
+				'Leadership', 10,
+				'Marksmanship', 40,
+				'Mechanical', 10,
+				'Explosives', 20,
+				'Medical', 10,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Shank.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Shank_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004651, "[WIP] Брием «Шенк» Друз"),
+				'Nick', T(890000000004652, "Шенк"),
+				'AllCapsNick', T(890000000004653, "ШЕНК"),
+				'Bio', T(890000000004654, "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000004655, "Манчкин"),
+				'Email', T(890000000004656, "Shank@merc.com"),
+				'snype_nick', T(890000000004657, "shank"),
+				'Offline', { PlaceObj('ChatMessage', { 'Text', T(890000000004658, "Shank offline.") }) },
+				'GreetingAndOffer', { PlaceObj('ChatMessage', { 'Text', T(890000000004659, "Shank here.") }) },
+				'ConversationRestart', { PlaceObj('ChatMessage', { 'Text', T(890000000004660, "Continue.") }) },
+				'IdleLine', { PlaceObj('ChatMessage', { 'Text', T(890000000004661, "Waiting.") }) },
+				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004662, "Hired.") }) },
+				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004663, "Contract ending?") }) },
+				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004664, "Staying.") }) },
+				'MedicalDeposit', "none",
+				'StartingSalary', 50,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 20,
+				'SalaryMaxLv', 400,
+				'StartingLevel', 1,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 35,
+				'StartingPerks', {
+				"Jazz_Perk_Shank",
+				"Optimist",
+				"Throwing",
+				"MeleeTraining",
+				},
+				'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "Shank" }) },
+				'Equipment', { "Loot_JAZZ_Shank" },
+				'Tier', "Regular",
+				'Specialization', "Melee",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Shank",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Shank",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Vince",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Vince",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 94,
+				'Agility', 49,
+				'Dexterity', 92,
+				'Strength', 60,
+				'Wisdom', 94,
+				'Will', 70,
+				'Leadership', 33,
+				'Marksmanship', 35,
+				'Mechanical', 20,
+				'Explosives', 10,
+				'Medical', 94,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Vince.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Vince_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004667, "[WIP] Доктор Винсент «Винс»"),
+				'Nick', T(890000000004668, "Винс"),
+				'AllCapsNick', T(890000000004669, "ВИНС"),
+				'Bio', T(890000000004670, "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000004671, "Ментор"),
+				'Email', T(890000000004672, "Vince@arulco.med"),
+				'snype_nick', T(890000000004673, "vince"),
+				'Offline', { PlaceObj('ChatMessage', { 'Text', T(890000000004674, "Vince offline.") }) },
+				'GreetingAndOffer', { PlaceObj('ChatMessage', { 'Text', T(890000000004675, "Vince here.") }) },
+				'ConversationRestart', { PlaceObj('ChatMessage', { 'Text', T(890000000004676, "Continue.") }) },
+				'IdleLine', { PlaceObj('ChatMessage', { 'Text', T(890000000004677, "Waiting.") }) },
+				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004678, "Hired.") }) },
+				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004679, "Contract ending?") }) },
+				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004680, "Staying.") }) },
+				'MedicalDeposit', "standard",
+				'StartingSalary', 1200,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 500,
+				'SalaryMaxLv', 4000,
+				'StartingLevel', 4,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 94,
+				'StartingPerks', {
+				"Jazz_Perk_Vince",
+				"Claustrophobic",
+				"Ambidextrous",
+				"Teacher",
+				},
+				'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "Vince" }) },
+				'Equipment', { "Loot_JAZZ_Vince" },
+				'Tier', "Veteran",
+				'Specialization', "Doctor",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Vince",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Vince",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Hitman",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Hitman",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 78,
+				'Agility', 75,
+				'Dexterity', 80,
+				'Strength', 75,
+				'Wisdom', 59,
+				'Will', 55,
+				'Leadership', 20,
+				'Marksmanship', 93,
+				'Mechanical', 20,
+				'Explosives', 20,
+				'Medical', 10,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Hitman.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Hitman_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004683, "[WIP] Ричард «Убийца» Рутвен"),
+				'Nick', T(890000000004684, "Убийца"),
+				'AllCapsNick', T(890000000004685, "УБИЙЦА"),
+				'Bio', T(890000000004686, "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000004687, "Разыскиваемый"),
+				'Email', T(890000000004688, "Hitman@dark.net"),
+				'snype_nick', T(890000000004689, "ruthven"),
+				'Offline', { PlaceObj('ChatMessage', { 'Text', T(890000000004690, "Hitman offline.") }) },
+				'GreetingAndOffer', { PlaceObj('ChatMessage', { 'Text', T(890000000004691, "Hitman here.") }) },
+				'ConversationRestart', { PlaceObj('ChatMessage', { 'Text', T(890000000004692, "Continue.") }) },
+				'IdleLine', { PlaceObj('ChatMessage', { 'Text', T(890000000004693, "Waiting.") }) },
+				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004694, "Hired.") }) },
+				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004695, "Contract ending?") }) },
+				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004696, "Staying.") }) },
+				'MedicalDeposit', "none",
+				'StartingSalary', 0,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 0,
+				'SalaryMaxLv', 3000,
+				'StartingLevel', 4,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 78,
+				'StartingPerks', {
+				"Jazz_Perk_Hitman",
+				"TakeAim",
+				"SteadyBreathing",
+				"DedicatedCamper",
+				},
+				'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "Hitman" }) },
+				'Equipment', { "Loot_JAZZ_Hitman" },
+				'Tier', "Veteran",
+				'Specialization', "Marksmen",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Hitman",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Hitman",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Biggens",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Biggens",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 60,
+				'Agility', 55,
+				'Dexterity', 55,
+				'Strength', 55,
+				'Wisdom', 70,
+				'Will', 50,
+				'Leadership', 40,
+				'Marksmanship', 71,
+				'Mechanical', 40,
+				'Explosives', 92,
+				'Medical', 20,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Biggens.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Biggens_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004699, "[WIP] Полковник Фредерик Биггенс"),
+				'Nick', T(890000000004700, "Биггенс"),
+				'AllCapsNick', T(890000000004701, "БИГГЕНС"),
+				'Bio', T(890000000004702, "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000004703, "Усталый дед"),
+				'Email', T(890000000004704, "Biggens@ub.mil"),
+				'snype_nick', T(890000000004705, "biggens"),
+				'Offline', { PlaceObj('ChatMessage', { 'Text', T(890000000004706, "Biggens offline.") }) },
+				'GreetingAndOffer', { PlaceObj('ChatMessage', { 'Text', T(890000000004707, "Biggens here.") }) },
+				'ConversationRestart', { PlaceObj('ChatMessage', { 'Text', T(890000000004708, "Continue.") }) },
+				'IdleLine', { PlaceObj('ChatMessage', { 'Text', T(890000000004709, "Waiting.") }) },
+				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004710, "Hired.") }) },
+				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004711, "Contract ending?") }) },
+				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004712, "Staying.") }) },
+				'MedicalDeposit', "standard",
+				'StartingSalary', 900,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 400,
+				'SalaryMaxLv', 2500,
+				'StartingLevel', 3,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 60,
+				'StartingPerks', {
+				"Jazz_Perk_Biggens",
+				"Optimist",
+				"DesignerExplosives",
+				"NightOps",
+				},
+				'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "Biggens" }) },
+				'Equipment', { "Loot_JAZZ_Biggens" },
+				'Tier', "Regular",
+				'Specialization', "ExplosiveExpert",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Biggens",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Biggens",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Kulba",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Kulba",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 58,
+				'Agility', 55,
+				'Dexterity', 55,
+				'Strength', 60,
+				'Wisdom', 70,
+				'Will', 60,
+				'Leadership', 35,
+				'Marksmanship', 95,
+				'Mechanical', 88,
+				'Explosives', 20,
+				'Medical', 25,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Kulba.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Kulba_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004715, "[WIP] Джон Кульба"),
+				'Nick', T(890000000004716, "Кульба"),
+				'AllCapsNick', T(890000000004717, "КУЛЬБА"),
+				'Bio', T(890000000004718, "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000004719, "Патриот-дед"),
+				'Email', T(890000000004720, "Kulba@ub.mil"),
+				'snype_nick', T(890000000004721, "kulba"),
+				'Offline', { PlaceObj('ChatMessage', { 'Text', T(890000000004722, "Kulba offline.") }) },
+				'GreetingAndOffer', { PlaceObj('ChatMessage', { 'Text', T(890000000004723, "Kulba here.") }) },
+				'ConversationRestart', { PlaceObj('ChatMessage', { 'Text', T(890000000004724, "Continue.") }) },
+				'IdleLine', { PlaceObj('ChatMessage', { 'Text', T(890000000004725, "Waiting.") }) },
+				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004726, "Hired.") }) },
+				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004727, "Contract ending?") }) },
+				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004728, "Staying.") }) },
+				'MedicalDeposit', "standard",
+				'StartingSalary', 800,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 350,
+				'SalaryMaxLv', 2200,
+				'StartingLevel', 3,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 58,
+				'StartingPerks', {
+				"Jazz_Perk_Kulba",
+				"AutoWeapons",
+				"MrFixit",
+				"OldDog",
+				},
+				'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "Kulba" }) },
+				'Equipment', { "Loot_JAZZ_Kulba" },
+				'Tier', "Regular",
+				'Specialization', "Autoriflemen",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Kulba",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Kulba",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Vilde",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Vilde",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 80,
+				'Agility', 80,
+				'Dexterity', 75,
+				'Strength', 75,
+				'Wisdom', 70,
+				'Will', 60,
+				'Leadership', 67,
+				'Marksmanship', 74,
+				'Mechanical', 30,
+				'Explosives', 30,
+				'Medical', 25,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Vilde.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Vilde_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004731, "[WIP] Леннарт «Зануда» Вильде"),
+				'Nick', T(890000000004732, "Зануда"),
+				'AllCapsNick', T(890000000004733, "ЗАНУДА"),
+				'Bio', T(890000000004734, "work in progress"),
+				'Nationality', "Estonia",
+				'Title', T(890000000004735, "Тоже эстонец"),
+				'Email', T(890000000004736, "Vilde@aim.com"),
+				'snype_nick', T(890000000004737, "vilde"),
+				'Offline', { PlaceObj('ChatMessage', { 'Text', T(890000000004738, "Vilde offline.") }) },
+				'GreetingAndOffer', { PlaceObj('ChatMessage', { 'Text', T(890000000004739, "Vilde here.") }) },
+				'ConversationRestart', { PlaceObj('ChatMessage', { 'Text', T(890000000004740, "Continue.") }) },
+				'IdleLine', { PlaceObj('ChatMessage', { 'Text', T(890000000004741, "Waiting.") }) },
+				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004742, "Hired.") }) },
+				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004743, "Contract ending?") }) },
+				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004744, "Staying.") }) },
+				'MedicalDeposit', "standard",
+				'StartingSalary', 1800,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 700,
+				'SalaryMaxLv', 4500,
+				'StartingLevel', 4,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 80,
+				'StartingPerks', {
+				"Jazz_Perk_Vilde",
+				"AutoWeapons",
+				"NightOps",
+				"LeadFromTheFront",
+				},
+				'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "Vilde" }) },
+				'Equipment', { "Loot_JAZZ_Vilde" },
+				'Tier', "Veteran",
+				'Specialization', "Autoriflemen",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Vilde",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Vilde",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Grace",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Grace",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 70,
+				'Agility', 75,
+				'Dexterity', 77,
+				'Strength', 67,
+				'Wisdom', 65,
+				'Will', 45,
+				'Leadership', 62,
+				'Marksmanship', 69,
+				'Mechanical', 20,
+				'Explosives', 20,
+				'Medical', 25,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Grace.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Grace_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004747, "[WIP] Грациелла «Грейс» Джирелли"),
+				'Nick', T(890000000004748, "Грейс"),
+				'AllCapsNick', T(890000000004749, "ГРЕЙС"),
+				'Bio', T(890000000004750, "work in progress"),
+				'Nationality', "USA",
+				'Title', T(890000000004751, "Итальянка"),
+				'Email', T(890000000004752, "Grace@aim.com"),
+				'snype_nick', T(890000000004753, "grace"),
+				'Offline', { PlaceObj('ChatMessage', { 'Text', T(890000000004754, "Grace offline.") }) },
+				'GreetingAndOffer', { PlaceObj('ChatMessage', { 'Text', T(890000000004755, "Grace here.") }) },
+				'ConversationRestart', { PlaceObj('ChatMessage', { 'Text', T(890000000004756, "Continue.") }) },
+				'IdleLine', { PlaceObj('ChatMessage', { 'Text', T(890000000004757, "Waiting.") }) },
+				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004758, "Hired.") }) },
+				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004759, "Contract ending?") }) },
+				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004760, "Staying.") }) },
+				'MedicalDeposit', "standard",
+				'StartingSalary', 1600,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 600,
+				'SalaryMaxLv', 4000,
+				'StartingLevel', 3,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 70,
+				'StartingPerks', {
+				"Jazz_Perk_Grace",
+				"Throwing",
+				"Pessimist",
+				"FirstThrow",
+				},
+				'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "Grace" }) },
+				'Equipment', { "Loot_JAZZ_Grace" },
+				'Tier', "Regular",
+				'Specialization', "Melee",
+				'pollyvoice', "Amy",
+				'gender', "Female",
+				'VoiceResponseId', "Jazz_Grace",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Grace",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Steiger",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Steiger",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 80,
+				'Agility', 75,
+				'Dexterity', 75,
+				'Strength', 69,
+				'Wisdom', 90,
+				'Will', 70,
+				'Leadership', 69,
+				'Marksmanship', 94,
+				'Mechanical', 35,
+				'Explosives', 35,
+				'Medical', 30,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Steiger.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Steiger_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004763, "[WIP] Рудольф Штайгер"),
+				'Nick', T(890000000004764, "Штайгер"),
+				'AllCapsNick', T(890000000004765, "ШТАЙГЕР"),
+				'Bio', T(890000000004766, "work in progress"),
+				'Nationality', "Germany",
+				'Title', T(890000000004767, "Дорогой немец"),
+				'Email', T(890000000004768, "Steiger@aim.com"),
+				'snype_nick', T(890000000004769, "steiger"),
+				'Offline', { PlaceObj('ChatMessage', { 'Text', T(890000000004770, "Steiger offline.") }) },
+				'GreetingAndOffer', { PlaceObj('ChatMessage', { 'Text', T(890000000004771, "Steiger here.") }) },
+				'ConversationRestart', { PlaceObj('ChatMessage', { 'Text', T(890000000004772, "Continue.") }) },
+				'IdleLine', { PlaceObj('ChatMessage', { 'Text', T(890000000004773, "Waiting.") }) },
+				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004774, "Hired.") }) },
+				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004775, "Contract ending?") }) },
+				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004776, "Staying.") }) },
+				'MedicalDeposit', "large",
+				'StartingSalary', 5500,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 2500,
+				'SalaryMaxLv', 11000,
+				'StartingLevel', 5,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 80,
+				'StartingPerks', {
+				"Jazz_Perk_Steiger",
+				"NightOps",
+				"Teacher",
+				"LeadFromTheFront",
+				},
+				'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "Steiger" }) },
+				'Equipment', { "Loot_JAZZ_Steiger" },
+				'Tier', "Elite",
+				'Specialization', "Leader",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Steiger",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Steiger",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Lucky",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Lucky",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 78,
+				'Agility', 75,
+				'Dexterity', 75,
+				'Strength', 75,
+				'Wisdom', 70,
+				'Will', 55,
+				'Leadership', 58,
+				'Marksmanship', 88,
+				'Mechanical', 30,
+				'Explosives', 25,
+				'Medical', 25,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Lucky.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Lucky_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004779, "[WIP] Люк «Лаки» Фабр"),
+				'Nick', T(890000000004780, "Лаки"),
+				'AllCapsNick', T(890000000004781, "ЛАКИ"),
+				'Bio', T(890000000004782, "work in progress"),
+				'Nationality', "France",
+				'Title', T(890000000004783, "Бельгиец"),
+				'Email', T(890000000004784, "Lucky@aim.com"),
+				'snype_nick', T(890000000004785, "lucky"),
+				'Offline', { PlaceObj('ChatMessage', { 'Text', T(890000000004786, "Lucky offline.") }) },
+				'GreetingAndOffer', { PlaceObj('ChatMessage', { 'Text', T(890000000004787, "Lucky here.") }) },
+				'ConversationRestart', { PlaceObj('ChatMessage', { 'Text', T(890000000004788, "Continue.") }) },
+				'IdleLine', { PlaceObj('ChatMessage', { 'Text', T(890000000004789, "Waiting.") }) },
+				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004790, "Hired.") }) },
+				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004791, "Contract ending?") }) },
+				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004792, "Staying.") }) },
+				'MedicalDeposit', "standard",
+				'StartingSalary', 1900,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 700,
+				'SalaryMaxLv', 4500,
+				'StartingLevel', 4,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 78,
+				'StartingPerks', {
+				"Jazz_Perk_Lucky",
+				"AutoWeapons",
+				"MartialArts",
+				"Hotblood",
+				},
+				'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "Lucky" }) },
+				'Equipment', { "Loot_JAZZ_Lucky" },
+				'Tier', "Veteran",
+				'Specialization', "Autoriflemen",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Lucky",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Lucky",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Laura",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Laura",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 75,
+				'Agility', 67,
+				'Dexterity', 75,
+				'Strength', 70,
+				'Wisdom', 70,
+				'Will', 55,
+				'Leadership', 30,
+				'Marksmanship', 82,
+				'Mechanical', 20,
+				'Explosives', 52,
+				'Medical', 57,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Laura.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Laura_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004795, "[WIP] Доктор Лора Колин"),
+				'Nick', T(890000000004796, "Лора"),
+				'AllCapsNick', T(890000000004797, "ЛОРА"),
+				'Bio', T(890000000004798, "work in progress"),
+				'Nationality', "Romania",
+				'Title', T(890000000004799, "Цыганский врач"),
+				'Email', T(890000000004800, "Laura@aim.com"),
+				'snype_nick', T(890000000004801, "laura"),
+				'Offline', { PlaceObj('ChatMessage', { 'Text', T(890000000004802, "Laura offline.") }) },
+				'GreetingAndOffer', { PlaceObj('ChatMessage', { 'Text', T(890000000004803, "Laura here.") }) },
+				'ConversationRestart', { PlaceObj('ChatMessage', { 'Text', T(890000000004804, "Continue.") }) },
+				'IdleLine', { PlaceObj('ChatMessage', { 'Text', T(890000000004805, "Waiting.") }) },
+				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004806, "Hired.") }) },
+				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004807, "Contract ending?") }) },
+				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004808, "Staying.") }) },
+				'MedicalDeposit', "standard",
+				'StartingSalary', 1700,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 600,
+				'SalaryMaxLv', 4200,
+				'StartingLevel', 3,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 75,
+				'StartingPerks', {
+				"Jazz_Perk_Laura",
+				"Stealthy",
+				"DesignerExplosives",
+				"TrueGrit",
+				},
+				'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "Laura" }) },
+				'Equipment', { "Loot_JAZZ_Laura" },
+				'Tier', "Regular",
+				'Specialization', "Doctor",
+				'pollyvoice', "Amy",
+				'gender', "Female",
+				'VoiceResponseId', "Jazz_Laura",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Laura",
+				}),
+				}),
+			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Eskimo",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Eskimo",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 97,
+				'Agility', 68,
+				'Dexterity', 70,
+				'Strength', 70,
+				'Wisdom', 55,
+				'Will', 60,
+				'Leadership', 25,
+				'Marksmanship', 95,
+				'Mechanical', 10,
+				'Explosives', 10,
+				'Medical', 15,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Eskimo.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Eskimo_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004811, "[WIP] Эмиль «Эскимо» Кимос"),
+				'Nick', T(890000000004812, "Эскимо"),
+				'AllCapsNick', T(890000000004813, "ЭСКИМО"),
+				'Bio', T(890000000004814, "work in progress"),
+				'Nationality', "Arulco",
+				'Title', T(890000000004815, "Пленный снайпер"),
+				'Email', T(890000000004816, "Eskimo@arulco.reb"),
+				'snype_nick', T(890000000004817, "eskimo"),
+				'Offline', { PlaceObj('ChatMessage', { 'Text', T(890000000004818, "Eskimo offline.") }) },
+				'GreetingAndOffer', { PlaceObj('ChatMessage', { 'Text', T(890000000004819, "Eskimo here.") }) },
+				'ConversationRestart', { PlaceObj('ChatMessage', { 'Text', T(890000000004820, "Continue.") }) },
+				'IdleLine', { PlaceObj('ChatMessage', { 'Text', T(890000000004821, "Waiting.") }) },
+				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004822, "Hired.") }) },
+				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004823, "Contract ending?") }) },
+				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004824, "Staying.") }) },
+				'MedicalDeposit', "none",
+				'StartingSalary', 400,
+				'SalaryIncrease', 150,
+				'SalaryLv1', 150,
+				'SalaryMaxLv', 1500,
+				'StartingLevel', 3,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 97,
+				'StartingPerks', {
+				"Jazz_Perk_Eskimo",
+				"Stealthy",
+				"SteadyBreathing",
+				"TrueGrit",
+				},
+				'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "Eskimo" }) },
+				'Equipment', { "Loot_JAZZ_Eskimo" },
+				'Tier', "Regular",
+				'Specialization', "Marksmen",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Eskimo",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					group = "MercenariesOld",
+					id = "Jazz_Eskimo",
+				}),
+				}),
 		PlaceObj('ModItemFolder', {
 			'name', "NewMercs",
 		}, {

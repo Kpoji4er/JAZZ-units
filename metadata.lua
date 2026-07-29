@@ -37,6 +37,7 @@ return PlaceObj('ModDef', {
 		"UnitData/ThugSniper_Stronger.lua",
 		"UnitData/ThugSniper_Stronger_Elite.lua",
 		"Code/AIKeywords.lua",
+		"Code/AICombatStance.lua",
 		"UnitData/JAZZ_Legion_AssaultT1_Roughneck.lua",
 		"UnitData/JAZZ_Legion_Recruit.lua",
 		"UnitData/JAZZ_Legion_AssaultT1_Crusher.lua",
@@ -151,6 +152,50 @@ return PlaceObj('ModDef', {
 		"UnitData/Jazz_Lynx.lua",
 		"UnitData/Jazz_Buzz.lua",
 		"UnitData/Jazz_Spider.lua",
+		"UnitData/Jazz_Colby.lua",
+		"UnitData/Jazz_Blade.lua",
+		"UnitData/Jazz_Ira.lua",
+		"UnitData/Jazz_Dimitri.lua",
+		"UnitData/Jazz_Madman.lua",
+		"UnitData/Jazz_Conrad.lua",
+		"UnitData/Jazz_Mike.lua",
+		"UnitData/Jazz_Grom.lua",
+		"UnitData/Jazz_Rothman.lua",
+		"UnitData/Jazz_Quinten.lua",
+		"UnitData/Jazz_Vicious.lua",
+		"UnitData/Jazz_Biff.lua",
+		"UnitData/Jazz_Nervous.lua",
+		"UnitData/Jazz_Flo.lua",
+		"UnitData/Jazz_Cougar.lua",
+		"UnitData/Jazz_Miguel.lua",
+		"UnitData/Jazz_Gamos.lua",
+		"UnitData/Jazz_Dynamo.lua",
+		"UnitData/Jazz_Gaston.lua",
+		"UnitData/Jazz_Horg.lua",
+		"UnitData/Jazz_Manuel.lua",
+		"UnitData/Jazz_Monk.lua",
+		"UnitData/Jazz_Allik.lua",
+		"UnitData/Jazz_Henning.lua",
+		"UnitData/Jazz_Static.lua",
+		"UnitData/Jazz_Highball.lua",
+		"UnitData/Jazz_Bull.lua",
+		"UnitData/Jazz_Cord.lua",
+		"UnitData/Jazz_Hobbit.lua",
+		"UnitData/Jazz_Ricochet.lua",
+		"UnitData/Jazz_Meat.lua",
+		"UnitData/Jazz_Carlos.lua",
+		"UnitData/Jazz_Devin.lua",
+		"UnitData/Jazz_Shank.lua",
+		"UnitData/Jazz_Vince.lua",
+		"UnitData/Jazz_Hitman.lua",
+		"UnitData/Jazz_Biggens.lua",
+		"UnitData/Jazz_Kulba.lua",
+		"UnitData/Jazz_Vilde.lua",
+		"UnitData/Jazz_Grace.lua",
+		"UnitData/Jazz_Steiger.lua",
+		"UnitData/Jazz_Lucky.lua",
+		"UnitData/Jazz_Laura.lua",
+		"UnitData/Jazz_Eskimo.lua",
 		"UnitData/JAZZ_Ivanov.lua",
 		"UnitData/JAZZ_Merc_Spouke.lua",
 		"UnitData/Smiley.lua",
@@ -2061,6 +2106,46 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Colby",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Blade",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Ira",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Dimitri",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Madman",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Conrad",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Mike",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Grom",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
 			'Id', "Steroid50",
 			'ClassDisplayName', "LootDef",
 		}),
@@ -2917,6 +3002,166 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
 			'Id', "JAZZ_Spider10",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Colby50",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Colby35",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Colby25",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Colby20",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Blade50",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Blade35",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Blade25",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Blade20",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Ira50",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Ira35",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Ira25",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Ira20",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Dimitri50",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Dimitri35",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Dimitri25",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Dimitri20",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Madman50",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Madman35",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Madman25",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Madman20",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Conrad50",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Conrad35",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Conrad25",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Conrad20",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Mike50",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Mike35",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Mike25",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Mike20",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Grom50",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Grom35",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Grom25",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Grom20",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -6616,12 +6861,22 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
+			'Id', "Legion_Flanker",
+			'ClassDisplayName', "AIArchetype",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AIArchetype",
 			'Id', "Legion_Frontliner",
 			'ClassDisplayName', "AIArchetype",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
 			'Id', "Legion_Machinegunner",
+			'ClassDisplayName', "AIArchetype",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AIArchetype",
+			'Id', "Legion_Regroup",
 			'ClassDisplayName', "AIArchetype",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -7062,6 +7317,11 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "AIArchetype",
 			'Id', "Rebels_Assaulter",
+			'ClassDisplayName', "AIArchetype",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AIArchetype",
+			'Id', "Rebels_Flanker",
 			'ClassDisplayName', "AIArchetype",
 		}),
 		PlaceObj('ModResourcePreset', {
@@ -8331,6 +8591,1503 @@ return PlaceObj('ModDef', {
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Colby",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Colby",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Blade",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Blade",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Ira",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Ira",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Dimitri",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Dimitri",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Madman",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Madman",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Conrad",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Conrad",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Mike",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Mike",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Grom",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Grom",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Rothman",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Rothman",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Rothman",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Quinten",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Quinten",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Quinten",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Quinten",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Vicious",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Vicious",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Vicious",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Vicious",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Biff",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Biff",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Biff",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Biff",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Nervous",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Nervous",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Nervous",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Nervous",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Flo",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Flo",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Flo",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Flo",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Cougar",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Cougar",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Cougar",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Cougar",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Miguel",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Miguel",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Miguel",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Miguel",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Gamos",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Gamos",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Gamos",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Gamos",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Dynamo",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Dynamo",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Dynamo",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Dynamo",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Gaston",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Gaston",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Gaston",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Gaston",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Horg",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Horg",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Horg",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Horg",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Manuel",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Manuel",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Manuel",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Manuel",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Monk",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Monk",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Monk",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Monk",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Allik",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Allik",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Allik",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Allik",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Henning",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Henning",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Henning",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Henning",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Static",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Static",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Static",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Static",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Highball",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Highball",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Highball",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Highball",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Bull",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Bull",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Bull",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Bull",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Cord",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Cord",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Cord",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Cord",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Hobbit",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Hobbit",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Hobbit",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Hobbit",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Ricochet",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Ricochet",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Ricochet",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Ricochet",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Meat",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Meat",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Meat",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Meat",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Carlos",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Carlos",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Carlos",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Carlos",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Devin",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Devin",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Devin",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Devin",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Shank",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Shank",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Shank",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Shank",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Vince",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Vince",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Vince",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Vince",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Hitman",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Hitman",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Hitman",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Hitman",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Biggens",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Biggens",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Biggens",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Biggens",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Kulba",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Kulba",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Kulba",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Kulba",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Vilde",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Vilde",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Vilde",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Vilde",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Grace",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Grace",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Grace",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Grace",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Steiger",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Steiger",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Steiger",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Steiger",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Lucky",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Lucky",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Lucky",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Lucky",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Laura",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Laura",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Laura",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Laura",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
+			'Id', "Jazz_Eskimo",
+			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "VoiceResponse",
+			'Id', "Jazz_Eskimo",
+			'ClassDisplayName', "Unit voice responses",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Eskimo",
+			'ClassDisplayName', "Unit appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "Loot_JAZZ_Eskimo",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Quinten50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Quinten35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Quinten25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Quinten20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Vicious50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Vicious35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Vicious25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Vicious20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Biff50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Biff35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Biff25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Biff20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Nervous50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Nervous35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Nervous25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Nervous20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Flo50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Flo35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Flo25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Flo20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Cougar50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Cougar35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Cougar25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Cougar20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Miguel50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Miguel35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Miguel25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Miguel20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Gamos50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Gamos35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Gamos25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Gamos20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Dynamo50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Dynamo35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Dynamo25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Dynamo20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Gaston50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Gaston35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Gaston25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Gaston20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Horg50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Horg35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Horg25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Horg20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Manuel50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Manuel35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Manuel25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Manuel20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Monk50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Monk35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Monk25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Monk20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Allik50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Allik35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Allik25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Allik20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Henning50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Henning35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Henning25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Henning20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Static50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Static35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Static25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Static20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Highball50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Highball35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Highball25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Highball20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Bull50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Bull35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Bull25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Bull20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Cord50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Cord35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Cord25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Cord20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Hobbit50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Hobbit35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Hobbit25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Hobbit20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Ricochet50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Ricochet35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Ricochet25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Ricochet20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Meat50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Meat35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Meat25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Meat20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Carlos50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Carlos35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Carlos25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Carlos20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Devin50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Devin35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Devin25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Devin20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Shank50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Shank35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Shank25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Shank20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Vince50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Vince35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Vince25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Vince20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Hitman50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Hitman35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Hitman25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Hitman20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Biggens50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Biggens35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Biggens25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Biggens20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Kulba50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Kulba35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Kulba25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Kulba20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Vilde50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Vilde35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Vilde25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Vilde20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Grace50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Grace35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Grace25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Grace20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Steiger50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Steiger35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Steiger25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Steiger20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Lucky50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Lucky35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Lucky25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Lucky20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Laura50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Laura35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Laura25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Laura20",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Eskimo50",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Eskimo35",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Eskimo25",
+			'ClassDisplayName', "Loot definition",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "JAZZ_Eskimo20",
+			'ClassDisplayName', "Loot definition",
+		}),
+
+
+		PlaceObj('ModResourcePreset', {
+			'Class', "UnitDataCompositeDef",
 			'Id', "JAZZ_Ivanov",
 			'ClassDisplayName', "Unit",
 		}),
@@ -8592,6 +10349,46 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "AppearancePreset",
 			'Id', "JAZZ_Spouke",
+			'ClassDisplayName', "Appearance preset",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Colby",
+			'ClassDisplayName', "Appearance preset",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Blade",
+			'ClassDisplayName', "Appearance preset",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Ira",
+			'ClassDisplayName', "Appearance preset",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Dimitri",
+			'ClassDisplayName', "Appearance preset",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Madman",
+			'ClassDisplayName', "Appearance preset",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Conrad",
+			'ClassDisplayName', "Appearance preset",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Mike",
+			'ClassDisplayName', "Appearance preset",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Grom",
 			'ClassDisplayName', "Appearance preset",
 		}),
 		PlaceObj('ModResourcePreset', {

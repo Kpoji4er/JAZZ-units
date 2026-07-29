@@ -30,18 +30,16 @@ DefineClass.JAZZ_Legion_FlankerT3_Recon = {
 		"RunAndGun",
 		"CQB",
 	},
-	archetype = "Legion_Assaulter",
+	archetype = "Legion_Flanker",
 	role = "Recon",
-	RepositionArchetype = "Legion_Assaulter",
+	RepositionArchetype = "Legion_Flanker",
 	AlwaysUseOpeningAttack = true,
 	OpeningAttackType = "Overwatch",
 	MaxAttacks = 10,
 	PickCustomArchetype = function (self, proto_context)
-		local stealth_stance = self:GetStanceToStealth()
-		if self:CanStealth(stealth_stance) then
-		 self:Hide()
-		end
+		return JazzAI_PickCombatStance(self, proto_context)
 	end,
+
 	CustomEquipGear = function (self, items)  end,
 	MaxHitPoints = 50,
 	StartingPerks = {
