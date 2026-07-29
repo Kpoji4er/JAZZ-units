@@ -73658,13 +73658,13 @@ return {
 							T(890000000001798, --[[ModItemVoiceResponse Jazz_Colby ActivityFinished VoiceResponse ActivityFinished voice:Jazz_Colby]] "Задание выполнено! Хочу что-нибудь сделать.")
 						}),
 						AimAttack = TConcat({
-							T(890000000001742, --[[ModItemVoiceResponse Jazz_Colby AimAttack VoiceResponse AimAttack voice:Jazz_Colby]] "На мушке."),
-							T(890000000001743, --[[ModItemVoiceResponse Jazz_Colby AimAttack VoiceResponse AimAttack voice:Jazz_Colby]] "Сейчас будет жарко."),
+							T(890000000001742, --[[ModItemVoiceResponse Jazz_Colby AimAttack VoiceResponse AimAttack voice:Jazz_Colby]] "Держу на мушке."),
+							T(890000000001743, --[[ModItemVoiceResponse Jazz_Colby AimAttack VoiceResponse AimAttack voice:Jazz_Colby]] "Сейчас жарко будет, е-мое."),
 							T(890000000001744, --[[ModItemVoiceResponse Jazz_Colby AimAttack VoiceResponse AimAttack voice:Jazz_Colby]] "Держись, падла.")
 						}),
 						AimAttackStealth = TConcat({
-							T(890000000001745, --[[ModItemVoiceResponse Jazz_Colby AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Colby]] "Тихий выстрел…"),
-							T(890000000001746, --[[ModItemVoiceResponse Jazz_Colby AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Colby]] "Сниму тихо.")
+							T(890000000001745, --[[ModItemVoiceResponse Jazz_Colby AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Colby]] "Тихо сниму…"),
+							T(890000000001746, --[[ModItemVoiceResponse Jazz_Colby AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Colby]] "Без шума уберу.")
 						}),
 						AimAttack_Low = TConcat({
 							T(890000000001747, --[[ModItemVoiceResponse Jazz_Colby AimAttack_Low VoiceResponse AimAttack_Low voice:Jazz_Colby]] "Никаких проблем, только вряд ли я туда попаду отсюда!")
@@ -73673,17 +73673,17 @@ return {
 							T(890000000001748, --[[ModItemVoiceResponse Jazz_Colby AimAttack_LowStealth VoiceResponse AimAttack_LowStealth voice:Jazz_Colby]] "Это полная задница.")
 						}),
 						AmmoLow = TConcat({
-							T(890000000001759, --[[ModItemVoiceResponse Jazz_Colby AmmoLow VoiceResponse AmmoLow voice:Jazz_Colby]] "Патроны на исходе!")
+							T(890000000001759, --[[ModItemVoiceResponse Jazz_Colby AmmoLow VoiceResponse AmmoLow voice:Jazz_Colby]] "Патроны на исходе, е-мое!")
 						}),
 						AnimalFound = TConcat({
 							T(890000000002513, --[[ModItemVoiceResponse Jazz_Colby AnimalFound VoiceResponse AnimalFound voice:Jazz_Colby]] "Дикая кошка!")
 						}),
 						Autofire = TConcat({
-							T(890000000002515, --[[ModItemVoiceResponse Jazz_Colby Autofire VoiceResponse Autofire voice:Jazz_Colby]] "Очередь!")
+							T(890000000002515, --[[ModItemVoiceResponse Jazz_Colby Autofire VoiceResponse Autofire voice:Jazz_Colby]] "Очередь, е-мое!")
 						}),
 						BecomeHidden = TConcat({
-							T(890000000001785, --[[ModItemVoiceResponse Jazz_Colby BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Colby]] "Прячусь."),
-							T(890000000001786, --[[ModItemVoiceResponse Jazz_Colby BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Colby]] "Меня не видно.")
+							T(890000000001785, --[[ModItemVoiceResponse Jazz_Colby BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Colby]] "Прячусь…"),
+							T(890000000001786, --[[ModItemVoiceResponse Jazz_Colby BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Colby]] "Меня не видно, е-мое.")
 						}),
 						Climbing = TConcat({
 							T(890000000002520, --[[ModItemVoiceResponse Jazz_Colby Climbing VoiceResponse Climbing voice:Jazz_Colby]] "(лезет)")
@@ -73700,33 +73700,33 @@ return {
 						CombatMovement = TConcat({
 							T(890000000001733, --[[ModItemVoiceResponse Jazz_Colby CombatMovement VoiceResponse CombatMovement voice:Jazz_Colby]] "Иду."),
 							T(890000000001734, --[[ModItemVoiceResponse Jazz_Colby CombatMovement VoiceResponse CombatMovement voice:Jazz_Colby]] "Перемещаюсь."),
-							T(890000000001735, --[[ModItemVoiceResponse Jazz_Colby CombatMovement VoiceResponse CombatMovement voice:Jazz_Colby]] "Есть контакт с маршрутом.")
+							T(890000000001735, --[[ModItemVoiceResponse Jazz_Colby CombatMovement VoiceResponse CombatMovement voice:Jazz_Colby]] "Двигаюсь.")
 						}),
 						CombatMovementStealth = TConcat({
 							T(890000000001736, --[[ModItemVoiceResponse Jazz_Colby CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Colby]] "Крадусь."),
 							T(890000000001737, --[[ModItemVoiceResponse Jazz_Colby CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Colby]] "Тихо иду."),
-							T(890000000001738, --[[ModItemVoiceResponse Jazz_Colby CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Colby]] "Без шума.")
+							T(890000000001738, --[[ModItemVoiceResponse Jazz_Colby CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Colby]] "Без шума, е-мое.")
 						}),
 						CombatStartDetected = TConcat({
-							T(890000000001773, --[[ModItemVoiceResponse Jazz_Colby CombatStartDetected VoiceResponse CombatStartDetected voice:Jazz_Colby]] "Бьют! Меня заметили!")
+							T(890000000001773, --[[ModItemVoiceResponse Jazz_Colby CombatStartDetected VoiceResponse CombatStartDetected voice:Jazz_Colby]] "Меня заметили, е-мое!")
 						}),
 						CombatStartPlayer = TConcat({
-							T(890000000001772, --[[ModItemVoiceResponse Jazz_Colby CombatStartPlayer VoiceResponse CombatStartPlayer voice:Jazz_Colby]] "В бой!")
+							T(890000000001772, --[[ModItemVoiceResponse Jazz_Colby CombatStartPlayer VoiceResponse CombatStartPlayer voice:Jazz_Colby]] "Готов к выполнению задания, е-мое.")
 						}),
 						CombatTaskCompleted = TConcat({
-							T(890000000002517, --[[ModItemVoiceResponse Jazz_Colby CombatTaskCompleted VoiceResponse CombatTaskCompleted voice:Jazz_Colby]] "Сработало!")
+							T(890000000002517, --[[ModItemVoiceResponse Jazz_Colby CombatTaskCompleted VoiceResponse CombatTaskCompleted voice:Jazz_Colby]] "Да… мое чутье меня не обмануло, е-мое.")
 						}),
 						CombatTaskFailed = TConcat({
-							T(890000000002518, --[[ModItemVoiceResponse Jazz_Colby CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Colby]] "Лажа вышла.")
+							T(890000000002518, --[[ModItemVoiceResponse Jazz_Colby CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Colby]] "Гмм… мне так кажется, что это полная лажа, е-мое.")
 						}),
 						CombatTaskGiven = TConcat({
-							T(890000000002516, --[[ModItemVoiceResponse Jazz_Colby CombatTaskGiven VoiceResponse CombatTaskGiven voice:Jazz_Colby]] "Есть ideйка…")
+							T(890000000002516, --[[ModItemVoiceResponse Jazz_Colby CombatTaskGiven VoiceResponse CombatTaskGiven voice:Jazz_Colby]] "Есть идейка, е-мое…")
 						}),
 						DeathBuddy1 = TConcat({
 							T(890000000001778, --[[ModItemVoiceResponse Jazz_Colby DeathBuddy1 VoiceResponse DeathBuddy1 voice:Jazz_Colby]] "Ну, е-мое, Тор… Спи спокойно, коротышка.")
 						}),
 						DeathGeneral = TConcat({
-							T(890000000001777, --[[ModItemVoiceResponse Jazz_Colby DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Colby]] "Чёрт…")
+							T(890000000001777, --[[ModItemVoiceResponse Jazz_Colby DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Colby]] "Чёрт, е-мое…")
 						}),
 						DoorLocked = TConcat({
 							T(890000000001789, --[[ModItemVoiceResponse Jazz_Colby DoorLocked VoiceResponse DoorLocked voice:Jazz_Colby]] "Дверь закрыта.")
@@ -73742,11 +73742,11 @@ return {
 						}),
 						GroupOrder = TConcat({
 							T(890000000001739, --[[ModItemVoiceResponse Jazz_Colby GroupOrder VoiceResponse GroupOrder voice:Jazz_Colby]] "С вами."),
-							T(890000000001740, --[[ModItemVoiceResponse Jazz_Colby GroupOrder VoiceResponse GroupOrder voice:Jazz_Colby]] "Держимся вместе."),
-							T(890000000001741, --[[ModItemVoiceResponse Jazz_Colby GroupOrder VoiceResponse GroupOrder voice:Jazz_Colby]] "За мной не надо — я с группой.")
+							T(890000000001740, --[[ModItemVoiceResponse Jazz_Colby GroupOrder VoiceResponse GroupOrder voice:Jazz_Colby]] "Я тоже, е-мое."),
+							T(890000000001741, --[[ModItemVoiceResponse Jazz_Colby GroupOrder VoiceResponse GroupOrder voice:Jazz_Colby]] "С вами, пацаны.")
 						}),
 						HealReceived = TConcat({
-							T(890000000002506, --[[ModItemVoiceResponse Jazz_Colby HealReceived VoiceResponse HealReceived voice:Jazz_Colby]] "Спасибо, уже лучше.")
+							T(890000000002506, --[[ModItemVoiceResponse Jazz_Colby HealReceived VoiceResponse HealReceived voice:Jazz_Colby]] "Спасибо, уже лучше, е-мое.")
 						}),
 						HeavilyWoundedSelection = TConcat({
 							T(890000000001771, --[[ModItemVoiceResponse Jazz_Colby HeavilyWoundedSelection VoiceResponse HeavilyWoundedSelection voice:Jazz_Colby]] "Херово чего-то мне…")
@@ -73755,7 +73755,7 @@ return {
 							T(890000000001796, --[[ModItemVoiceResponse Jazz_Colby HeavyBreathing VoiceResponse HeavyBreathing voice:Jazz_Colby]] "(пыхтит)")
 						}),
 						Idle = TConcat({
-							T(890000000001782, --[[ModItemVoiceResponse Jazz_Colby Idle VoiceResponse Idle voice:Jazz_Colby]] "Жду."),
+							T(890000000001782, --[[ModItemVoiceResponse Jazz_Colby Idle VoiceResponse Idle voice:Jazz_Colby]] "Жду, пацаны."),
 							T(890000000001783, --[[ModItemVoiceResponse Jazz_Colby Idle VoiceResponse Idle voice:Jazz_Colby]] "Американцы. Лохи вялые."),
 							T(890000000001784, --[[ModItemVoiceResponse Jazz_Colby Idle VoiceResponse Idle voice:Jazz_Colby]] "(смех)")
 						}),
@@ -73801,23 +73801,23 @@ return {
 						}),
 						OpponentKilled = TConcat({
 							T(890000000001753, --[[ModItemVoiceResponse Jazz_Colby OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Colby]] "Попал, попал, е-мое!"),
-							T(890000000001754, --[[ModItemVoiceResponse Jazz_Colby OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Colby]] "Готово."),
-							T(890000000001755, --[[ModItemVoiceResponse Jazz_Colby OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Colby]] "Ещё один."),
-							T(890000000001756, --[[ModItemVoiceResponse Jazz_Colby OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Colby]] "Красиво."),
-							T(890000000001757, --[[ModItemVoiceResponse Jazz_Colby OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Colby]] "Вот тебе!")
+							T(890000000001754, --[[ModItemVoiceResponse Jazz_Colby OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Colby]] "Готово, е-мое."),
+							T(890000000001755, --[[ModItemVoiceResponse Jazz_Colby OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Colby]] "Ещё один, падла."),
+							T(890000000001756, --[[ModItemVoiceResponse Jazz_Colby OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Colby]] "Вот тебе в задницу, е-мое!"),
+							T(890000000001757, --[[ModItemVoiceResponse Jazz_Colby OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Colby]] "Попал!")
 						}),
 						Order = TConcat({
 							T(890000000001728, --[[ModItemVoiceResponse Jazz_Colby Order VoiceResponse Order voice:Jazz_Colby]] "Есть."),
 							T(890000000001729, --[[ModItemVoiceResponse Jazz_Colby Order VoiceResponse Order voice:Jazz_Colby]] "Понял."),
 							T(890000000001730, --[[ModItemVoiceResponse Jazz_Colby Order VoiceResponse Order voice:Jazz_Colby]] "Сделаю."),
-							T(890000000001731, --[[ModItemVoiceResponse Jazz_Colby Order VoiceResponse Order voice:Jazz_Colby]] "Иду."),
-							T(890000000001732, --[[ModItemVoiceResponse Jazz_Colby Order VoiceResponse Order voice:Jazz_Colby]] "Ок.")
+							T(890000000001731, --[[ModItemVoiceResponse Jazz_Colby Order VoiceResponse Order voice:Jazz_Colby]] "Иду, е-мое."),
+							T(890000000001732, --[[ModItemVoiceResponse Jazz_Colby Order VoiceResponse Order voice:Jazz_Colby]] "Лады.")
 						}),
 						Overwatch = TConcat({
-							T(890000000002507, --[[ModItemVoiceResponse Jazz_Colby Overwatch VoiceResponse Overwatch voice:Jazz_Colby]] "Сектор под присмотром.")
+							T(890000000002507, --[[ModItemVoiceResponse Jazz_Colby Overwatch VoiceResponse Overwatch voice:Jazz_Colby]] "Можете не сомневаться, эти недалеко ушли.")
 						}),
 						OverwatchSelection = TConcat({
-							T(890000000002509, --[[ModItemVoiceResponse Jazz_Colby OverwatchSelection VoiceResponse OverwatchSelection voice:Jazz_Colby]] "На овервотче.")
+							T(890000000002509, --[[ModItemVoiceResponse Jazz_Colby OverwatchSelection VoiceResponse OverwatchSelection voice:Jazz_Colby]] "Сектор под присмотром.")
 						}),
 						Pain = TConcat({
 							T(890000000001763, --[[ModItemVoiceResponse Jazz_Colby Pain VoiceResponse Pain voice:Jazz_Colby]] "(боль)"),
@@ -73837,8 +73837,8 @@ return {
 						}),
 						SelectionStealth = TConcat({
 							T(890000000001725, --[[ModItemVoiceResponse Jazz_Colby SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Colby]] "Тихо…"),
-							T(890000000001726, --[[ModItemVoiceResponse Jazz_Colby SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Colby]] "Шёпотом."),
-							T(890000000001727, --[[ModItemVoiceResponse Jazz_Colby SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Colby]] "На низком.")
+							T(890000000001726, --[[ModItemVoiceResponse Jazz_Colby SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Colby]] "Тише, пацан…"),
+							T(890000000001727, --[[ModItemVoiceResponse Jazz_Colby SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Colby]] "На цыпочках.")
 						}),
 						SeriouslyWounded = TConcat({
 							T(890000000001768, --[[ModItemVoiceResponse Jazz_Colby SeriouslyWounded VoiceResponse SeriouslyWounded voice:Jazz_Colby]] "Ну е-мое, перевязать бы меня…")
@@ -73850,13 +73850,13 @@ return {
 							T(890000000001770, --[[ModItemVoiceResponse Jazz_Colby SurroundedPain VoiceResponse SurroundedPain voice:Jazz_Colby]] "Бьют как, херы!")
 						}),
 						TakeCover = TConcat({
-							T(890000000002511, --[[ModItemVoiceResponse Jazz_Colby TakeCover VoiceResponse TakeCover voice:Jazz_Colby]] "В укрытие!")
+							T(890000000002511, --[[ModItemVoiceResponse Jazz_Colby TakeCover VoiceResponse TakeCover voice:Jazz_Colby]] "Воздух, е-мое!")
 						}),
 						ThreatSelection = TConcat({
-							T(890000000002508, --[[ModItemVoiceResponse Jazz_Colby ThreatSelection VoiceResponse ThreatSelection voice:Jazz_Colby]] "Опасность рядом!")
+							T(890000000002508, --[[ModItemVoiceResponse Jazz_Colby ThreatSelection VoiceResponse ThreatSelection voice:Jazz_Colby]] "Все-таки дело здесь нечисто, е-мое.")
 						}),
 						ThrowGrenade = TConcat({
-							T(890000000002514, --[[ModItemVoiceResponse Jazz_Colby ThrowGrenade VoiceResponse ThrowGrenade voice:Jazz_Colby]] "Лови подарок!")
+							T(890000000002514, --[[ModItemVoiceResponse Jazz_Colby ThrowGrenade VoiceResponse ThrowGrenade voice:Jazz_Colby]] "Лови, падла!")
 						}),
 						Tired = TConcat({
 							T(890000000001794, --[[ModItemVoiceResponse Jazz_Colby Tired VoiceResponse Tired voice:Jazz_Colby]] "Спать надо, спать.")
