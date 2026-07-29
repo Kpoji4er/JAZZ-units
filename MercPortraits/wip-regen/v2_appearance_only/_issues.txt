@@ -1,2 +1,0 @@
-Mike_Big: holstered_pistol_visible
-Shank: empty APPEARANCE in PROMPTS

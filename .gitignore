@@ -8,3 +8,9 @@ MercPortraits/**/_neural/
 NPCPortraits/**/_raw/
 NPCPortraits/**/_neural/
 
+
+# Legacy portrait WIP batches (ship + newrules2 only)
+MercPortraits/wip-regen/
+MercPortraits/wip-regen-v4/
+MercPortraits/_wip/
+MercPortraits/newrules2/_denoise_log.txt
