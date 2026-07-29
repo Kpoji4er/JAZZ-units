@@ -1,0 +1,527 @@
+{
+  "variants": [
+    "appearance",
+    "appearance_backstory",
+    "appearance_backstory_bio",
+    "bio",
+    "bio_backstory"
+  ],
+  "mercs": [
+    {
+      "sheetName": "Руди \"Рысь\" Робертс",
+      "slug": "lynx",
+      "id": "Lynx",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\lynx.ja2-face.gif",
+      "priority": "высокий",
+      "appearance": "мужчина, белый, 35 лет,, мезоморф средне развит физически.",
+      "backstory": "Снайпер. Мрачный, депрессивный, черно шутит. дал бы куртку-бомбер, если честно.",
+      "bio": "Руди Робертс является одним из лучших снайперов A.I.M. Желая преумножить свои и без того многочисленные навыки, 'Рысь' закончил курсы по основам электроники, механики, операциям в ночное время суток и оказанию первой медицинской помощи в полевых условиях. Робертс просит, чтобы его не отправляли на задание вместе с 'Тоской' Гарно.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\lynx.png"
+    },
+    {
+      "sheetName": "Луиза \"Тоска\" Гарно",
+      "slug": "tosca",
+      "id": "Buzz",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\tosca.ja2-face.gif",
+      "priority": "высокий",
+      "appearance": "Женщина, белая, 30 лет, мезоморф, жилистая, выносливая, но не андрогин. Физически тренирована, но запустила себя",
+      "backstory": "Ухоженная женщина, но не для мужиков, а для себя. Ярая мужененавистница, невротик, психопатка. в поле одета максимально удобно. разгрузка",
+      "bio": "За прошлый год в жизни Луизы много изменилось. Она крупно поссорилась с 'Рысью' Робертсом. С тех пор они терпеть друг друга не могут. Ее скандальная книга 'Под прикрытием, под Рысью' была отвергнута всеми издательствами. Все это привело ее в расстроенные чувства, поэтому она решила сублимировать свой гнев, работая с оружием. Недавно Луиза получила статус специалиста по тяжелым и автоматическим видам вооружения.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\tosca.png"
+    },
+    {
+      "sheetName": "Тревор Колби",
+      "slug": "colby",
+      "id": "Colby",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\colby.ja2-face.gif",
+      "priority": "высокий",
+      "appearance": "Мужчина, белый, 28 лет, мезоморф, в хорошей физической форме.",
+      "backstory": "Хитрый взгляд с прищуром. По карманам рассовано куча всяких штук,которыми можно убить - карандаш, блокнот, мультиметр. Этакий творческий беспорядок, известный только хозяину",
+      "bio": "Умник и изобретатель из Австралии - Тревор Колби может превратить безобидный тостер в смертельное оружие. Хорошо знаком со взрывчаткой и взломом замков. Этот шутник обожает устраивать ловушки и смотреть, как они срабатывают. Несмотря на небогатый опыт, Колби быстро обучается.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\colby.png"
+    },
+    {
+      "sheetName": "Доктор Донна \"Паук\" Хьюстон",
+      "slug": "spider",
+      "id": "Spider",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\spider.ja2-face.gif",
+      "priority": "высокий",
+      "appearance": "Женщина, белая, 35 лет, мезоморф, в плохой физической форме",
+      "backstory": "Матерая тетка, заведует отделение травматологии в американской глубинке. Вообще красивая, но слегка заплыла. одета удобно, тепло. медицину несет в нескольких небольших аптечках  - две на поясе, наверное, и в руке рюкзак с остальной медициной",
+      "bio": "Получив знания военного полевого врача, доктор Хьюстон не знает себе равных в оказании медицинской помощи в любых условиях. В самую темную ночь или под сильнейшим тропическим ливнем раненые могут рассчитывать на ее быструю, бесшумную и эффективную помощь. 'Паук' получила свое прозвище благодаря старшему брату, который любил ее пугать.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\spider.png"
+    },
+    {
+      "sheetName": "Билл \"Бритва\" Ламонт",
+      "slug": "blade",
+      "id": "Blade",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\blade.ja2-face.gif",
+      "priority": "высокий",
+      "appearance": "Мужчина, белый, 28 лет, мезоморф, в отличной физической форме, с развитой мускулатурой",
+      "backstory": "Психопат, маньяк, убийца, носит кучу ножиков.",
+      "bio": "Билла могли бы прозвать 'Мясником', не будь он так хирургически точен в обращении с ножом. Предпочитает работать с холодным, а не с огнестрельным оружием (много шума и слишком просто!). Его гордость - способность вырезать на жертве весь алфавит (или хотя бы все гласные) раньше, чем она умрет от кровопотери.  К имени Билла иногда добавляют 'сертифицированный'. И действительно, его без преувеличения можно назвать сертифицированным специалистом... в области убийств.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\blade.png"
+    },
+    {
+      "sheetName": "Айра Смит",
+      "slug": "ira",
+      "id": "Ira",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\ira.ja2-face.gif",
+      "priority": "Высокий",
+      "appearance": "Женщина, белая, 25 лет, эктоморф, слабо физически развита.",
+      "backstory": "Худощавая девчонка в замызганной хаки футболке, изображающей форму. на рукаве повязка с карсным крестом, через плечо сумка холщовая с медициной",
+      "bio": "Сотрудник гуманитарной миссии, проникшаяся политикой Дейдраны в отношении народа Арулько, и завербовавшаяся в повстанцы.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\ira.png"
+    },
+    {
+      "sheetName": "Димитрий Газзо",
+      "slug": "dimitri",
+      "id": "Dimitri",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\dimitri.ja2-face.gif",
+      "priority": "Высокий",
+      "appearance": "Мужчина, греческий тип, 35, мезоморф, в хорошей фиизческой форме, с развитой мускулаторой",
+      "backstory": "Тоже в замызганной футболке, изображающей форму. на поясе нож, или даже мачете.",
+      "bio": "Житель Арулько, повстанец, охранник. Охраняет любою дверь ты хочешь.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\dimitri.png"
+    },
+    {
+      "sheetName": "Кевин \"Бешеный\" Камерон",
+      "slug": "madman",
+      "id": "Madman",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\madman.ja2-face.gif",
+      "priority": "высокий",
+      "appearance": "Мужчина, белый, 22 года, мезоморф, отличная физическая форма, с развитой мускулатурой",
+      "backstory": "В рваной растянутой футболке, джинсах не по размеру, здоровенных стоптанных ботах. в руке может быть арматурина или разводной ключ",
+      "bio": "Житель Арулько, отброс, псих. Работает на игрока \"за идею\". Можно хоть ржавым бампером всех мочить.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\madman.png"
+    },
+    {
+      "sheetName": "Майк",
+      "slug": "mike",
+      "id": "Mike",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\mike.ja2-face.gif",
+      "priority": "Высокий",
+      "appearance": "Мужчина, белый, 40-45 лет, мезоморф, отличная физическая форма с развитой мускулаторой",
+      "backstory": "Черно-серая невзрачная форма, разгрузка, подсумки, кобура на бедре",
+      "bio": "Майк внезапно покинул переговоры об увеличении гонораров, узнав о том, что многие работодатели жаловались на его завышенные требования. Мы не знаем, где он сейчас, на самом деле, мы почти ничего не знаем о нем. Последнее письмо, полученное от него, было с маркой какой-то маленькой страны, название которой мы забыли; в письме были угрозы, о которых мы  не хотим вспоминать.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\mike.png"
+    },
+    {
+      "sheetName": "Майор Сергей \"Гром\" Громов",
+      "slug": "grom",
+      "id": "Grom",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\grom.ja2-face.gif",
+      "priority": "Высокий",
+      "appearance": "Мужчина, белый, 45 лет, мезоморф, хорошая физическая форма.",
+      "backstory": "\"полувоенная\" рубашка, суконные брюки, на поясе кобура с макаровым",
+      "bio": "Майор Советской армии, афганец, сослуживец Ивана Долвича. Умеет пилотировать вертолет и стрелять из всякого такого тяжелого и реактивного.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\grom.png"
+    },
+    {
+      "sheetName": "Кирк \"Статик\" Стивенсон\"",
+      "slug": "static",
+      "id": "Static",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\static.ja2-face.gif",
+      "priority": "низкий",
+      "appearance": "Мужчина, белый, 38-40 лет, мезоморф, плохая физическая форма, не тренирован.",
+      "backstory": "Хиппарь, наркоман. Огромная бесформменая куртка со всякими висюльками, в которой куча всего",
+      "bio": "Кажется, что годы не властны над 'Статиком'. Его образ жизни и спокойная натура позволяют ему лучше всего проявлять себя в ночных операциях. Кирк зарекомендовал себя как хороший механик и специалист по электронике. Его внешность обманчива - хоть Кирк и смахивает на хиппи, мысли о мире и любви редко его посещают. Как и 'Паук', его хорошая знакомая, 'Статик' до смерти боится насекомых.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\static.png"
+    },
+    {
+      "sheetName": "Клиффорд \"Скала\" Хайбол",
+      "slug": "highball",
+      "id": "Highball",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\highball.ja2-face.gif",
+      "priority": "низкий",
+      "appearance": "Мужчина, белый, 38-40 лет, мезофорф, плозая физическая форма, алкоголик.",
+      "backstory": "Алкоголик. Референсить наверное с Доктора Хауса.",
+      "bio": "Здоровье Клиффорда значительно улучшилось после того, как он бросил пить и перешел на вегетарианскую диету. Это отличная новость для будущих нанимателей, так как сложно найти человека, который одновременно был бы и доктором и снайпером. Док. Клиффорд также превратил работу со взрывчаткой из хобби в серьезный навык.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\highball.png"
+    },
+    {
+      "sheetName": "Джон \"Бык\" Питерс",
+      "slug": "bull",
+      "id": "Bull",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\bull.ja2-face.gif",
+      "priority": "низкий",
+      "appearance": "Мужчина, белый, 35-38 лет, крупный, эндоморф, выраженная мускулатура, но малоподвижный.",
+      "backstory": "Крупный, крепкий, здоровый, лысый, чуть заплывший",
+      "bio": "Крепок и немногословен. Джон Питерc предпочитает, чтобы его действия говорили сами за себя. Несмотря на то, что 'Бык' служил в Военной Полиции армии США, он не привык соблюдать субординацию и легко раздражается. Вероятно, он провел на гауптвахте столько же времени, сколько и в ее охране. Бык - грубый мужик для грубой работы. На данный момент у 'Быка' самый мощный удар из всех наших наемников.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\bull.png"
+    },
+    {
+      "sheetName": "Даг \"Кардан\" Милтон",
+      "slug": "cord",
+      "id": "Cord",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\cord.ja2-face.gif",
+      "priority": "низкий",
+      "appearance": "Мужчина, белый, 35-38 лет, хилый, эктоморф.",
+      "backstory": "Лицо, не обезображенное интеллектом. Как Тревор, только неряшливый, в рванье, в дранье, в масле",
+      "bio": "Даг Милтон родился и вырос в Кентукки. В четвертом классе его выгнали из школы и он стал работать на автозаправке своего отца. Там он стал отличным механиком. После того, как сестра сменила его на работе, он начал шататься по стране и, в конце концов, решил стать наемником. Хобби: Стрельба по белкам и коллекционирование дорожных знаков.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\cord.png"
+    },
+    {
+      "sheetName": "Тим \"Хоббит\" Хиллман",
+      "slug": "hobbit",
+      "id": "Hobbit",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\hobbit.ja2-face.gif",
+      "priority": "низкий",
+      "appearance": "мужчина, белый, 27 лет, эндоморф, физически развит плохо, пухлый",
+      "backstory": "Неряшливый, в грязной одежде, толстый, нечесаный.",
+      "bio": "Тим отлично разбирается во взрывчатке и быстро всему учится. Следует помнить, однако, что у саперов не может быть ошибок. Хиллман наверняка мог бы остаться в Гарварде и заниматься своим дипломом по электромагнитным полям, если бы не ужасная депрессия, вероятно, вызванная электромагнитным излучением. Из-за своей аллергии Тим предпочитает работать в странах с холодным климатом.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\hobbit.png"
+    },
+    {
+      "sheetName": "Тим \"Рикошет\" Саттонн",
+      "slug": "ricochet",
+      "id": "Ricochet",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\ricochet.ja2-face.gif",
+      "priority": "низкий",
+      "appearance": "Мужчина, белый, эктоморф, 28 лет, средне развит физически, не развита мускулатура",
+      "backstory": "Панк - татухи, ирокезы, кожаные брейсы и чокеры, кожанка, цепи.",
+      "bio": "Некоторым людям просто не везет с внешностью. Тим Саттон - один из них. Его редко нанимали из-за ужасной стрижки и татуировки на шее. Тем не менее его резюме впечатляет: восточные единоборства, проведение операций в ночное время суток, снайперская и медицинская подготовка.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\ricochet.png"
+    },
+    {
+      "sheetName": "Тортон \"Мясо\" Джонс",
+      "slug": "meat",
+      "id": "Meat",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\meat.ja2-face.gif",
+      "priority": "низкий",
+      "appearance": "Мужчина, белый, 45 лет, эндоморф, крупная мускулатура, но очень сильно заплыл салом",
+      "backstory": "очень тупой. ОЧЕНЬ ТУПОЙ. и огромный.",
+      "bio": "Кроме необъятных размеров, Тортон известен тем, что был первым охранником, уволенным из тюрьмы штата Алабама за жестокое отношение к заключенным. Подробностей этого дела мы так и не знаем - побоялись спросить.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\meat.png"
+    },
+    {
+      "sheetName": "Карлос Дасуза",
+      "slug": "carlos",
+      "id": "Carlos",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\carlos.ja2-face.gif",
+      "priority": "низкий",
+      "appearance": "Мужчина, латинос, 40 лет, мезоморф, средняя физическая форма",
+      "backstory": "кислая рожа. Форменная хаки футболка чистенькая и не мятая. подтяжечки вместо ремня. ремень со старыми брезентовыми подсумками, как у СА в Афгане.",
+      "bio": "Житель Арулько, повстанец, правая рука Мигеля. Постоянно всем недоволен, настроен пессиместично и не без оснований",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\carlos.png"
+    },
+    {
+      "sheetName": "Девин Коннелл",
+      "slug": "devin",
+      "id": "Devin",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\devin.ja2-face.gif",
+      "priority": "низкий",
+      "appearance": "Мужчина, белый (ирландец), 45 лет, мезоморф, плохая физическая форма.",
+      "backstory": "Рыжий, длинные волосы не ухожены, клетчатая рубашка, брюки, подтяжки. на плече большой рюкзак",
+      "bio": "Ирландец, страствующий торговец взрывчаткой. Сам взрывать тоже любит и умеет.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\devin.png"
+    },
+    {
+      "sheetName": "Брием \"Шенк\" Друз",
+      "slug": "shank",
+      "id": "Shank",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\shank.ja2-face.gif",
+      "priority": "низкий",
+      "appearance": "",
+      "backstory": "темная майка или толстовка с длинными рукавами, изможденное лицо, синяки под глазами",
+      "bio": "Богатенький мальчик, наркоша, по доносу родителей попал в тюрьму. Ненавидит родителей и Дейдрану",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\shank.png"
+    },
+    {
+      "sheetName": "Доктор Винсент \"Винс\" Воймонт(?)",
+      "slug": "vince",
+      "id": "Vince",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\vince.ja2-face.gif",
+      "priority": "низкий",
+      "appearance": "Мужчина, белый, 30 лет, мезоморф, не тренирован физически.",
+      "backstory": "аккуратист - рубашечка, брючки, пиджачок, все выглажено, из под рубашки пузико видно",
+      "bio": "Житель Арулько, Врач-хирург в местной больнице. Решил помогать наемникам напрямую.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\vince.png"
+    },
+    {
+      "sheetName": "Ричард \"Убийца\" Рутвен",
+      "slug": "hitman",
+      "id": "Hitman",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\hitman.ja2-face.gif",
+      "priority": "низкий",
+      "appearance": "Мужчина, белый, 35-38 лет, мезоморф, средняя физическая форма.",
+      "backstory": "Одет максимально неприметно. Толстовка или куртка с капюшоном, без ярких принтов, обычного сине-серо-коричневого городского цвета.",
+      "bio": "Международный преступник, убийца, киллер, снайпер. Разыскивается ИНТЕРПОЛОМ, скрывается от охотников за головами в Арулько.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\hitman.png"
+    },
+    {
+      "sheetName": "Полковник Фредерик Биггенс",
+      "slug": "biggens",
+      "id": "Biggens",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\biggens.ja2-face.jpg",
+      "priority": "низкий",
+      "appearance": "Мужчина, белый, 60 лет, мезоморф, плохая физическая форма",
+      "backstory": "рубашка, брюки, подтяжки, берет.",
+      "bio": "Бывший полковник какой-то армии. Опытный сапер, взрывать умеет и любит. Ворчливый дед.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\biggens.png"
+    },
+    {
+      "sheetName": "Джон Кульба",
+      "slug": "kulba",
+      "id": "Kulba",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\kulba.ja2-face.jpg",
+      "priority": "низкий",
+      "appearance": "Мужчина, белый, 65 лет, мезоморф, плозая физическая форма (пузан)",
+      "backstory": "рубашка, брюки, подтяжки. в руках можно М16 нарисовать. референсить с мема про американцев, отбивающих лутинг.",
+      "bio": "Американец, ветеран какой-то войны. Был знаком игроку, когда заблудился в Арулько вместе с женой. После смерти жены взял все свои абсолютно гражданские винтовки и поехал в АИМ приносить справедливость",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\kulba.png"
+    },
+    {
+      "sheetName": "Леннарт \"Зануда\" Вильде",
+      "slug": "vilde",
+      "id": "Vilde",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\vilde.ja2-face.gif",
+      "priority": "низкий",
+      "appearance": "Мужчина, белый, 28 лет, мезоморф, хорошая физическая форма",
+      "backstory": "Милитари - разгрузка, подсумки, варбелт, кобура на бедре.",
+      "bio": "Леннарт Вильде - настоящий лидер, он заражает своей уверенностью остальных. Шутник, у которого довольно странное чувство юмора. Он из Эстонии, как и Янно Аллик, и у него тоже мать-немка. Тяжелое детство в Сибири закалило его. Его сильные стороны - ночные операции и стрельба из автоматического оружия.С радостью отправится туда, куда и Янно Аллик. Оба стали наемниками после вывода советских войск из Восточной Германии.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\vilde.png"
+    },
+    {
+      "sheetName": "Грациелла \"Грейс\" Джирелли",
+      "slug": "grace",
+      "id": "Grace",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\grace.ja2-face.gif",
+      "priority": "низкий",
+      "appearance": "Женщина, белая (итальянка) 25 лет, мезоморф, плохая физическая форма",
+      "backstory": "Джинсы, куртка, под которой прячет ножики.",
+      "bio": "У Грейс итальянские и венгерские корни. Она выросла в Нью-Джерси. Уже в раннем детстве она предпочитала играть не с куклами, а с братьями- хулиганами. Как настоящая итальянка, она обожает спагетти и лапшу всех видов. Еще в детстве она научилась бросать ножи лучше братьев, и этим сводила с ума свою мать.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\grace.png"
+    },
+    {
+      "sheetName": "Рудольф Штайгер",
+      "slug": "steiger",
+      "id": "Steiger",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\steiger.ja2-face.gif",
+      "priority": "низкий",
+      "appearance": "Мужчина, белый (немец), 45 лет, мезоморф, хорошая физическая форма",
+      "backstory": "Милитари - разгрузка, подсумки, варбелт, кобура на бедре.",
+      "bio": "У этого бывшего бойца GSG-9 есть только одна слабость... доктор Лора Колин, с которой он познакомился на курсах в Любеке. Он - настоящий профи. Его сильная сторона - ночные операции. Кроме того, он с трех километров бьет пулей белку в глаз. У него есть способности инструктора. Его манеры оставляют желать лучшего. Хорошо работает вместе с Хеннингом фон Браницем, но Дуг Милтон действует на него, как красная тряпка на быка.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\steiger.png"
+    },
+    {
+      "sheetName": "Люк \"Лаки\" Фабр",
+      "slug": "lucky",
+      "id": "Lucky",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\lucky.ja2-face.gif",
+      "priority": "низкий",
+      "appearance": "Мужчина, белый, 30 лет, мезоморф, хорошая физическая форма",
+      "backstory": "Милитари - разгрузка, подсумки, варбелт, кобура на бедре.",
+      "bio": "Люк Фабр родом из Бельгии. Прозвище не подходит ему, так как его постоянно преследуют неудачи. Он рос без отца, у него было трудное детство. Когда он узнал, что кто-то пристает к его маленькой сестре, он пришел в ярость и сломал шею обидчику. Оказалось, что его жертва - важная персона, и Люку пришлось уйти в подполье и стать наемником.Этот качок - ходячее оружие. Он опасен и в рукопашной, но дайте ему автомат, и он непобедим!",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\lucky.png"
+    },
+    {
+      "sheetName": "Доктор Лора Колин",
+      "slug": "laura",
+      "id": "Laura",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\laura.ja2-face.gif",
+      "priority": "низкий",
+      "appearance": "Женщина, белая, эктоморф, плохая физическая форма",
+      "backstory": "плащ, сумка через плечо с медициной, карго штанцы. на груди висюлька с клыком.",
+      "bio": "Лора Колин родилась в Румынии. Ее родители-диссиденты бежали в Германию, опасаясь ареста. От них она унаследовала нелюбовь к диктаторам. Училась на медика, и попала в A.I.M. по совету Рудольфа Штайгера. Страстная наемница! Ее сильные стороны - выслеживание противника и стрельба из автоматического оружия. Ненавидит работать со Луизой Гарно.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\laura.png"
+    },
+    {
+      "sheetName": "Эмиль \"Эскимо\" Кимос",
+      "slug": "eskimo",
+      "id": "Eskimo",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\eskimo.ja2-face.gif",
+      "priority": "низкий",
+      "appearance": "Мужчина, житель крайнего севера, 40 лет. Хорошая физическая форма, эктоморф",
+      "backstory": "Форменная хаки футболка слегка пошарпана. На плече на ремне какая-нибудь винтовка стволом вверх.",
+      "bio": "Повстанец, Снайпер, разведчик. Был пойман армией Арулько и слегка попытан.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\eskimo.png"
+    },
+    {
+      "sheetName": "Стефан Ротман",
+      "slug": "rothman",
+      "id": "Rothman",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\rothman.ja2-face.gif",
+      "priority": "средний",
+      "appearance": "мужчина, белый, 35 лет, мезоморф, хорошая физическая форма",
+      "backstory": "милитари - бронежилет, разгрузка, подсумки, кобура на бедре.",
+      "bio": "Пусть голубые глаза и глуповатое выражение лица Ротмана не вводят вас в заблуждение - этот симпатяга справится с любым заданием. В прошлом он, как специалист по охранным системам, охранял самые большие запасы драгоценных камней в мире от воров, повстанцев и конкурирующих фирм. Говорят, что в Южной Америке опять стало неспокойно после того, как он оттуда уехал. Стефан зарекомендовал себя как отличный командир отряда, особенно во время ночных операций.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\rothman.png"
+    },
+    {
+      "sheetName": "Доктор Дэниел \"Дэнни\" Квинтен",
+      "slug": "quinten",
+      "id": "Quinten",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\quinten.ja2-face.gif",
+      "priority": "средний",
+      "appearance": "Мужчина, белый, 38 лет, мезоморф, отличная физическая форма, машина а не человек.",
+      "backstory": "Рубашка поло, поверх еще рубашка, скрывающая тело, открывает вид на сильные предплечья со вздувшимися венами. Референс - Дин Винчестер. в руке - \"спортивная\" сумка с медициной.",
+      "bio": "Доктор Дэниел Квинтен за свою жизнь был альпинистом, парашютистом и полевым врачом. Во время операции 'Буря в пустыне' он отличился тем, что прыгал с вертолета, чтобы прооперировать бойцов, которые лежали посреди минного поля. Более того, он не покидал раненых до тех пор, пока они не приходили в сознание. Доктор отлично владеет обеими руками и ведет жизнь одинокого волка.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\quinten.png"
+    },
+    {
+      "sheetName": "Фрэнки \"Нервный\" Гордон",
+      "slug": "nervous",
+      "id": "Nervous",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\nervous.ja2-face.gif",
+      "priority": "Средний",
+      "appearance": "Мужчина, белый, 32 года, эктоморф, плохая физческая форма",
+      "backstory": "Реднек - джинсы, джинсовая рубашка, в руках какой-ниубдь небольшой автомат типа УЗИ, задранный стволом вврех, палец обязательно на спуске. во второй руке огромный нож.",
+      "bio": "Убийства - специализация Фрэнки. В этом деле его больше интересует процесс, а не результат. Хотя он и не снайпер, но отлично владеет автоматическим оружием. То же самое можно сказать и о его умении обращаться с холодным оружием. Сейчас Фрэнки работает над улучшением своих навыков общения с людьми.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\nervous.png"
+    },
+    {
+      "sheetName": "Флоренс \"Фло\" Габриель",
+      "slug": "flo",
+      "id": "Flo",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\flo.ja2-face.gif",
+      "priority": "средний",
+      "appearance": "Женщина, белая, 28 лет, эктоморф, плохая физическая форма",
+      "backstory": "Светлая блузка и брючки. на войну не собиралась",
+      "bio": "Дочь винодела. Большую часть детства Флоренс провела в провинции Коньяк во Франции. После переезда в Питтсбург, США, стала работать бухгалтером в одной из компаний, торгующих оружием. Там она получила обширные знания по огнестрельному оружию. Сообразительна, но несколько неуверенна в себе, поэтому ей недоплачивают. В свободное от работы время помогает неграмотным учиться читать.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\flo.png"
+    },
+    {
+      "sheetName": "Джим \"Пума\" Уоллесс",
+      "slug": "cougar",
+      "id": "Cougar",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\cougar.ja2-face.gif",
+      "priority": "средний",
+      "appearance": "Мужчина, белый, 38 лет, мезоморф, отличная физическая форма с развитой мускулатурой",
+      "backstory": "милитари - броник, разгрузка, автомат, подсумки.",
+      "bio": "Один из немногих кадетов, которые получили оценку 'отлично' на всех выпускных экзаменах. Следует учесть, правда, что экзаменационная программа была составлена его отцом. Отлично владеет всем спектром военных навыков, особенно хорошо управляется с автоматическим оружием. Джим настоящий профессионал, возможно, лучший наемник в M.E.R.C. Хотя у Джима всегда есть свое мнение, он достаточно дисциплинирован, чтобы оставить его при себе.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\cougar.png"
+    },
+    {
+      "sheetName": "Мигель Кордона",
+      "slug": "miguel",
+      "id": "Miguel",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\miguel.ja2-face.gif",
+      "priority": "средний",
+      "appearance": "Мужчина, латинос, 45 лет в хорошей фиизческой форме",
+      "backstory": "Форменная хаки футболка, поверх куртка защитного цвета. Берет. можно выдать АКМ",
+      "bio": "Лидер сопротивления, чрезвычайно харизматичный мужик. Двумя словами может заставить повстанца вылезти из окопа и пойти умирать за Мигеля. Поэтому повстанцев у него негусто.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\miguel.png"
+    },
+    {
+      "sheetName": "Грег \"Динамо\" Дункан",
+      "slug": "dynamo",
+      "id": "Dynamo",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\dynamo.ja2-face.gif",
+      "priority": "средний",
+      "appearance": "Мужчина, черный, 45 лет. Мезоморф, в плохой физической форме, сильно избит. Левый глаз можно сделать блеклым - выбит",
+      "backstory": "Референсить с Брюса Уиллиса из Крепкого орешка.",
+      "bio": "Житель Арулько. Сидел в тюрьме по политической статье, жену и сына расстреляли солдаты армии Арулько. ненавидит Королеву.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\dynamo.png"
+    },
+    {
+      "sheetName": "Лейтенант Конрад Джиллет",
+      "slug": "conrad",
+      "id": "Conrad",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\conrad.ja2-face.gif",
+      "priority": "средний",
+      "appearance": "Мужчина, белый, 38 лет, Мезоморф, неплохо развит физически, но слегка заплыл в кабинете",
+      "backstory": "Военная форма, поверх армейский бронежилет.",
+      "bio": "лейтенант армии Арулько. Встречен игроком как раз в день окончания его контракта, что позволяет перевербовать его без стрельбы. Высокомерен и заносчив, но сам чрезывайно умелый и опытный, так что это больше требовательность, чем высокомерие.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\conrad.png"
+    },
+    {
+      "sheetName": "Гастон Кавалье",
+      "slug": "gaston",
+      "id": "Gaston",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\gaston.ja2-face.jpg",
+      "priority": "средний",
+      "appearance": "Мужчина, белый, 35 лет, мезоморф, отличная физическая форма",
+      "backstory": "милитари - бронежилет, разгрузка, подсумки, кобура на бедре.",
+      "bio": "Как бывший спецназовец Корпуса морской пехоты Франции (FMC), Гастон сыграл выдающуюся роль во многих недавних операциях НАТО и ООН по всему этому враждебному миру. Уверенный в себе, зарекомендовавший себя в полевых условиях профессиональный снайпер, Кавальер пополнил наш список - это всего лишь еще один шаг в постоянных усилиях M.E.R.C. по удовлетворению ваших потребностей в наемничестве. Гастон лучше всего работает ранним утром. Он также весьма искусен в стрельбе  с возвышенной точки обзора.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\gaston.png"
+    },
+    {
+      "sheetName": "Лейтенант Хорг \"Сигара\"",
+      "slug": "horg",
+      "id": "Horg",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\horg.ja2-face.jpg",
+      "priority": "средний",
+      "appearance": "Мужчина, белый, 40 лет, эндоморф, в отличной физической форме, подсушен.",
+      "backstory": "милитари - бронежилет, разгрузка, подсумки, кобура на бедре.",
+      "bio": "Мощный, как танк, лейтенант Хорг специализируется на их уничтожении. Чрезвычайно искусный в обращении с тяжелым вооружением, Стоги последние два года работал независимым наемником в Конго. Он, вероятно, один из самых крутых специалистов в своем бизнесе, и M.E.R.C. гордится тем, что он выбрал нас в качестве своего первого агентства, пусть и на временной испытательной основе.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\horg.png"
+    },
+    {
+      "sheetName": "Мануэль.",
+      "slug": "manuel",
+      "id": "Manuel",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\manuel.ja2-face.gif",
+      "priority": "средний",
+      "appearance": "Мужчина, латинос, 40 лет, эктоморф в хорошей физической форме",
+      "backstory": "Грязная замызганная одежда защитного цвета.",
+      "bio": "Житель Арулько. Служил в Армии Арулько под прикрытием. Повстанец. Под угрозой раскрытия бежал в другую страну, где бродил по лесу, пока не был встречен игроком.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\manuel.png"
+    },
+    {
+      "sheetName": "Виктор \"Монк\" Колесников",
+      "slug": "monk",
+      "id": "Monk",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\monk.ja2-face.gif",
+      "priority": "средний",
+      "appearance": "Мужчина, белый (в маскировочной краске) 40 лет, в мезоморв в отличной физической форме",
+      "backstory": "милитари - бронежилет, разгрузка, подсумки, кобура на бедре. Все в камуфляжной раскраске",
+      "bio": "Виктор Колесников родом из России; его действительно можно назвать \"Крепким орешком\". Специалист по автоматическому оружию. Любит работать один и не тратит слов понапрасну, поэтому товарищи прозвали его \"Monk\". Подходящее прозвище для молчаливого профи. Кроме того, он еще и специалист по маскировке. Не выносит своего земляка Ивана. Был в Чечне, и поэтому разборчив в отношении клиентов.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\monk.png"
+    },
+    {
+      "sheetName": "Янно \"Знаток\" Аллик",
+      "slug": "allik",
+      "id": "Allik",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\allik.ja2-face.gif",
+      "priority": "средний",
+      "appearance": "Мужчина, белый, 28 лет, эндоморф, в отличной физической форме, подсушен",
+      "backstory": "милитари - бронежилет, разгрузка, подсумки, кобура на бедре. Можно дать в руки или на плечо за спину трубу гранатомета, типа Мухи",
+      "bio": "Янно родился в Эстонии, мать - немка. Долгое время служил в Советской армии. Любит готовить для друзей и наслаждаться жизнью. Но главное увлечение этого человека-медведя - это тяжелое оружие. Кроме того, замки не являются для него ни проблемой, ни препятствием.Предпочитает работать с Вильде, земляком-эстонцем, с которым он познакомился, когда служил в Восточной Германии.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\allik.png"
+    },
+    {
+      "sheetName": "Хеннинг фон Браниц",
+      "slug": "henning",
+      "id": "Henning",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\henning.ja2-face.gif",
+      "priority": "средний",
+      "appearance": "Мужчина, белый(немец), 45 лет, мезоморф, в хорошей физической форме",
+      "backstory": "милитари - бронежилет, разгрузка, подсумки, кобура на бедре. Сам одет в черную рубашку и брюки. На голове берет.",
+      "bio": "Фон Браниц происходит из старинной прусской семьи. Настоящий профессионал. Служил в армии ГДР. После объединения Германии, Хеннинг стал наемником и сделал блестящую карьеру. В начале своей карьеры он был военным советником на Кубе, а теперь его список \"командировок\" длиной в метр. Дайте ему автомат или тяжелое оружие, и он не подведет. Хеннинг не любит \"нью-эйдж\", и поэтому его тошнит от Тора.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\henning.png"
+    },
+    {
+      "sheetName": "Жан-Пьер \"Злобный\" Вио",
+      "slug": "vicious",
+      "id": "Vicious",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\vicious.ja2-face.gif",
+      "priority": "средний.",
+      "appearance": "Мужчина, белый, 28 лет, мезоморф, в отличной физической форме, с развитой мускулатурой",
+      "backstory": "куртка бомбер. на поясе в ножнах огромный нож. перчатки без пальцев.",
+      "bio": "С ножами он обращается лучше, чем с людьми. Боевой опыт приобрел, работая вышибалой в ночном клубе. Уличные драки являются одной из его сильных сторон. Кажется, что 'Злобного' вполне удовлетворяет работа в A.I.M., где он довел свои боевые навыки до полного совершенства.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\vicious.png"
+    },
+    {
+      "sheetName": "Гамос",
+      "slug": "gamos",
+      "id": "Gamos",
+      "face": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz\\docs\\design\\mercs-ja12\\gamos.ja2-face.gif",
+      "priority": "средний.",
+      "appearance": "Мужчина, островной тип ( типа филлиппинец) 27 лет, мезоморф, средне развит физически.",
+      "backstory": "Запыленная джинсовая одежда, светлая футболка.",
+      "bio": "Гамос получил боевое крещение в Метавире, и пришел на практику в A.I.M. благодаря блестящим рекомендациям нашего клиента, Джека Ричардса. Срок этой практики недавно истек. К сожалению, Гамос не сумел скопить денег на тот микроавтобус, который он так хотел купить. Поэтому он украл другой микроавтобус в одном из пригородов Парижа. На самом деле это был грузовичок с мороженым. В последний раз его видели едущим в направлении Стамбула.",
+      "face_png": "C:\\Users\\SsAnd\\AppData\\Roaming\\Jagged Alliance 3\\Mods\\jazz-units\\MercPortraits\\newrules2\\_faces\\gamos.png"
+    }
+  ],
+  "skipped": [
+    [
+      "Игорь \"Игги\" Палкин",
+      "no portrait_id / skipped"
+    ],
+    [
+      "Бифф Апскотт",
+      "no face biff"
+    ]
+  ]
+}

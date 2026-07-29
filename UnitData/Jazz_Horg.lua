@@ -5,6 +5,7 @@ DefineClass.Jazz_Horg = {
 
 
 	object_class = "UnitData",
+	Affiliation = "MERC",
 	Health = 98,
 	Agility = 78,
 	Dexterity = 75,

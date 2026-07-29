@@ -73477,10 +73477,10 @@ return {
 					'Portrait', "Mod/Dv3mFVN/MercPortraits/Colby.png",
 					'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Colby_Big.png",
 					'IsMercenary', true,
-					'Name', T(890000000001702, --[[ModItemUnitDataCompositeDef Jazz_Colby Name]] "[WIP] Тревор Колби"),
+					'Name', T(890000000001702, --[[ModItemUnitDataCompositeDef Jazz_Colby Name]] "Тревор Колби"),
 					'Nick', T(890000000001703, --[[ModItemUnitDataCompositeDef Jazz_Colby Nick]] "Колби"),
 					'AllCapsNick', T(890000000001704, --[[ModItemUnitDataCompositeDef Jazz_Colby AllCapsNick]] "КОЛБИ"),
-					'Bio', T(890000000001705, --[[ModItemUnitDataCompositeDef Jazz_Colby Bio]] "work in progress"),
+					'Bio', T(890000000001705, --[[ModItemUnitDataCompositeDef Jazz_Colby Bio]] "Боевой подрывник и ловушечник AIM. Жёсткие физикалы (кроме силы и подвижности), 99 механики, 88 взрывчатки. Дружит с Тором, не ладит с Фиделем; не любит американцев в отряде."),
 					'Nationality', "Canada",
 					'Title', T(890000000001706, --[[ModItemUnitDataCompositeDef Jazz_Colby Title]] "Ловушечник"),
 					'Email', T(890000000001707, --[[ModItemUnitDataCompositeDef Jazz_Colby Email]] "Colby@aim.com"),
@@ -73489,7 +73489,7 @@ return {
 						PlaceObj('MercChatRefusal', {
 							'Lines', {
 								PlaceObj('ChatMessage', {
-									'Text', T(890000000001709, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatRefusal Lines ChatMessage voice:Jazz_Colby]] "Нет. Пока Фидель на контракте — я пас. Не хочу делить периметр с психом."),
+									'Text', T(890000000001709, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatRefusal Lines ChatMessage voice:Jazz_Colby]] "Извини, пацан, но я лучше буду работать в саду у мамани, чем вместе с этим падлой Фиделем."),
 								}),
 							},
 							'Conditions', {
@@ -73503,7 +73503,7 @@ return {
 						PlaceObj('MercChatRefusal', {
 							'Lines', {
 								PlaceObj('ChatMessage', {
-									'Text', T(890000000001710, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatRefusal Lines ChatMessage voice:Jazz_Colby]] "Слишком много трупов на вашем счету. Наймите кого-то другого."),
+									'Text', T(890000000001710, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatRefusal Lines ChatMessage voice:Jazz_Colby]] "Угу, может, ещё и гроб заказать? Извини, подвинься!"),
 								}),
 							},
 							'Conditions', {
@@ -73516,7 +73516,7 @@ return {
 						PlaceObj('MercChatRefusal', {
 							'Lines', {
 								PlaceObj('ChatMessage', {
-									'Text', T(890000000001711, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatRefusal Lines ChatMessage voice:Jazz_Colby]] "Кошелёк тонкий. Перезвоните, когда будет бюджет на нормальную зарядку."),
+									'Text', T(890000000001711, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatRefusal Lines ChatMessage voice:Jazz_Colby]] "Без проблем, позвоните мне, когда разбогатеете. Просто сейчас я вам не по карману."),
 								}),
 							},
 							'Conditions', {
@@ -73549,7 +73549,7 @@ return {
 						PlaceObj('MercChatMitigation', {
 							'Lines', {
 								PlaceObj('ChatMessage', {
-									'Text', T(890000000001713, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatMitigation Lines ChatMessage voice:Jazz_Colby]] "Тор уже с вами? Тогда ок. С ним я работаю."),
+									'Text', T(890000000001713, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatMitigation Lines ChatMessage voice:Jazz_Colby]] "Я немного сомневаюсь по поводу дельца, тёмное оно… Но раз Тор с вами — я согласен."),
 								}),
 							},
 							'Conditions', {
@@ -73579,37 +73579,37 @@ return {
 					},
 					'Offline', {
 						PlaceObj('ChatMessage', {
-							'Text', T(890000000001715, --[[ModItemUnitDataCompositeDef Jazz_Colby Text Offline ChatMessage voice:Jazz_Colby]] "Колби. Меня нет. Оставьте сообщение — перезвоню, если не взорвусь."),
+							'Text', T(890000000001715, --[[ModItemUnitDataCompositeDef Jazz_Colby Text Offline ChatMessage voice:Jazz_Colby]] "Как дела? Тревор и Шейла не могут подойти к телефону. Они пошли на пляж. Оставьте сообщение."),
 						}),
 					},
 					'GreetingAndOffer', {
 						PlaceObj('ChatMessage', {
-							'Text', T(890000000001716, --[[ModItemUnitDataCompositeDef Jazz_Colby Text GreetingAndOffer ChatMessage voice:Jazz_Colby]] "Колби на линии. Что взрываем?"),
+							'Text', T(890000000001716, --[[ModItemUnitDataCompositeDef Jazz_Colby Text GreetingAndOffer ChatMessage voice:Jazz_Colby]] "Говорит Тревор Колби. Как дела?"),
 						}),
 					},
 					'ConversationRestart', {
 						PlaceObj('ChatMessage', {
-							'Text', T(890000000001717, --[[ModItemUnitDataCompositeDef Jazz_Colby Text ConversationRestart ChatMessage voice:Jazz_Colby]] "Вернёмся к делу."),
+							'Text', T(890000000001717, --[[ModItemUnitDataCompositeDef Jazz_Colby Text ConversationRestart ChatMessage voice:Jazz_Colby]] "Я сказал, что…"),
 						}),
 					},
 					'IdleLine', {
 						PlaceObj('ChatMessage', {
-							'Text', T(890000000001718, --[[ModItemUnitDataCompositeDef Jazz_Colby Text IdleLine ChatMessage voice:Jazz_Colby]] "Время тикает."),
+							'Text', T(890000000001718, --[[ModItemUnitDataCompositeDef Jazz_Colby Text IdleLine ChatMessage voice:Jazz_Colby]] "Если вам нужен механик, лучше меня вы не найдёте. Ну я так думаю."),
 						}),
 					},
 					'PartingWords', {
 						PlaceObj('ChatMessage', {
-							'Text', T(890000000001719, --[[ModItemUnitDataCompositeDef Jazz_Colby Text PartingWords ChatMessage voice:Jazz_Colby]] "Беру зарядку и выхожу."),
+							'Text', T(890000000001719, --[[ModItemUnitDataCompositeDef Jazz_Colby Text PartingWords ChatMessage voice:Jazz_Colby]] "Думаю, я попробую — во мне можете быть уверены."),
 						}),
 					},
 					'RehireIntro', {
 						PlaceObj('ChatMessage', {
-							'Text', T(890000000001720, --[[ModItemUnitDataCompositeDef Jazz_Colby Text RehireIntro ChatMessage voice:Jazz_Colby]] "Контракт заканчивается. Продлеваем?"),
+							'Text', T(890000000001720, --[[ModItemUnitDataCompositeDef Jazz_Colby Text RehireIntro ChatMessage voice:Jazz_Colby]] "Спросить хотел: мы ещё на один срок подписываемся или нет? Я не прочь ещё врага покрошить."),
 						}),
 					},
 					'RehireOutro', {
 						PlaceObj('ChatMessage', {
-							'Text', T(890000000001721, --[[ModItemUnitDataCompositeDef Jazz_Colby Text RehireOutro ChatMessage voice:Jazz_Colby]] "Остаюсь."),
+							'Text', T(890000000001721, --[[ModItemUnitDataCompositeDef Jazz_Colby Text RehireOutro ChatMessage voice:Jazz_Colby]] "Принимаю. Как вы со мной, так и я с вами. Всё по-честному."),
 						}),
 					},
 					'MedicalDeposit', "large",
@@ -73653,43 +73653,230 @@ return {
 					'FallbackMissingVR', "Ice",
 					'DaysUntilOnline', 0,
 				}),
-				PlaceObj('ModItemVoiceResponse', {
-					AimAttack = TConcat({
-						T(890000000001722, --[[ModItemVoiceResponse Jazz_Colby AimAttack VoiceResponse AimAttack - When aiming and there is a decent chance of hitting voice:Jazz_Colby]] "На мушке.")
+									PlaceObj('ModItemVoiceResponse', {
+						ActivityFinished = TConcat({
+							T(890000000001798, --[[ModItemVoiceResponse Jazz_Colby ActivityFinished VoiceResponse ActivityFinished voice:Jazz_Colby]] "Задание выполнено! Хочу что-нибудь сделать.")
+						}),
+						AimAttack = TConcat({
+							T(890000000001742, --[[ModItemVoiceResponse Jazz_Colby AimAttack VoiceResponse AimAttack voice:Jazz_Colby]] "На мушке."),
+							T(890000000001743, --[[ModItemVoiceResponse Jazz_Colby AimAttack VoiceResponse AimAttack voice:Jazz_Colby]] "Сейчас будет жарко."),
+							T(890000000001744, --[[ModItemVoiceResponse Jazz_Colby AimAttack VoiceResponse AimAttack voice:Jazz_Colby]] "Держись, падла.")
+						}),
+						AimAttackStealth = TConcat({
+							T(890000000001745, --[[ModItemVoiceResponse Jazz_Colby AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Colby]] "Тихий выстрел…"),
+							T(890000000001746, --[[ModItemVoiceResponse Jazz_Colby AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Colby]] "Сниму тихо.")
+						}),
+						AimAttack_Low = TConcat({
+							T(890000000001747, --[[ModItemVoiceResponse Jazz_Colby AimAttack_Low VoiceResponse AimAttack_Low voice:Jazz_Colby]] "Никаких проблем, только вряд ли я туда попаду отсюда!")
+						}),
+						AimAttack_LowStealth = TConcat({
+							T(890000000001748, --[[ModItemVoiceResponse Jazz_Colby AimAttack_LowStealth VoiceResponse AimAttack_LowStealth voice:Jazz_Colby]] "Это полная задница.")
+						}),
+						AmmoLow = TConcat({
+							T(890000000001759, --[[ModItemVoiceResponse Jazz_Colby AmmoLow VoiceResponse AmmoLow voice:Jazz_Colby]] "Патроны на исходе!")
+						}),
+						AnimalFound = TConcat({
+							T(890000000002513, --[[ModItemVoiceResponse Jazz_Colby AnimalFound VoiceResponse AnimalFound voice:Jazz_Colby]] "Дикая кошка!")
+						}),
+						Autofire = TConcat({
+							T(890000000002515, --[[ModItemVoiceResponse Jazz_Colby Autofire VoiceResponse Autofire voice:Jazz_Colby]] "Очередь!")
+						}),
+						BecomeHidden = TConcat({
+							T(890000000001785, --[[ModItemVoiceResponse Jazz_Colby BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Colby]] "Прячусь."),
+							T(890000000001786, --[[ModItemVoiceResponse Jazz_Colby BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Colby]] "Меня не видно.")
+						}),
+						Climbing = TConcat({
+							T(890000000002520, --[[ModItemVoiceResponse Jazz_Colby Climbing VoiceResponse Climbing voice:Jazz_Colby]] "(лезет)")
+						}),
+						CombatEndEnemiesRemain = TConcat({
+							T(890000000001775, --[[ModItemVoiceResponse Jazz_Colby CombatEndEnemiesRemain VoiceResponse CombatEndEnemiesRemain voice:Jazz_Colby]] "Там эти кругом… Поостерегись, пацан.")
+						}),
+						CombatEndEnemiesRetreated = TConcat({
+							T(890000000001776, --[[ModItemVoiceResponse Jazz_Colby CombatEndEnemiesRetreated VoiceResponse CombatEndEnemiesRetreated voice:Jazz_Colby]] "Эти хрены убрались восвояси.")
+						}),
+						CombatEndNoEnemies = TConcat({
+							T(890000000001774, --[[ModItemVoiceResponse Jazz_Colby CombatEndNoEnemies VoiceResponse CombatEndNoEnemies voice:Jazz_Colby]] "Е-мое! Все, врагов больше нет!")
+						}),
+						CombatMovement = TConcat({
+							T(890000000001733, --[[ModItemVoiceResponse Jazz_Colby CombatMovement VoiceResponse CombatMovement voice:Jazz_Colby]] "Иду."),
+							T(890000000001734, --[[ModItemVoiceResponse Jazz_Colby CombatMovement VoiceResponse CombatMovement voice:Jazz_Colby]] "Перемещаюсь."),
+							T(890000000001735, --[[ModItemVoiceResponse Jazz_Colby CombatMovement VoiceResponse CombatMovement voice:Jazz_Colby]] "Есть контакт с маршрутом.")
+						}),
+						CombatMovementStealth = TConcat({
+							T(890000000001736, --[[ModItemVoiceResponse Jazz_Colby CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Colby]] "Крадусь."),
+							T(890000000001737, --[[ModItemVoiceResponse Jazz_Colby CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Colby]] "Тихо иду."),
+							T(890000000001738, --[[ModItemVoiceResponse Jazz_Colby CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Colby]] "Без шума.")
+						}),
+						CombatStartDetected = TConcat({
+							T(890000000001773, --[[ModItemVoiceResponse Jazz_Colby CombatStartDetected VoiceResponse CombatStartDetected voice:Jazz_Colby]] "Бьют! Меня заметили!")
+						}),
+						CombatStartPlayer = TConcat({
+							T(890000000001772, --[[ModItemVoiceResponse Jazz_Colby CombatStartPlayer VoiceResponse CombatStartPlayer voice:Jazz_Colby]] "В бой!")
+						}),
+						CombatTaskCompleted = TConcat({
+							T(890000000002517, --[[ModItemVoiceResponse Jazz_Colby CombatTaskCompleted VoiceResponse CombatTaskCompleted voice:Jazz_Colby]] "Сработало!")
+						}),
+						CombatTaskFailed = TConcat({
+							T(890000000002518, --[[ModItemVoiceResponse Jazz_Colby CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Colby]] "Лажа вышла.")
+						}),
+						CombatTaskGiven = TConcat({
+							T(890000000002516, --[[ModItemVoiceResponse Jazz_Colby CombatTaskGiven VoiceResponse CombatTaskGiven voice:Jazz_Colby]] "Есть ideйка…")
+						}),
+						DeathBuddy1 = TConcat({
+							T(890000000001778, --[[ModItemVoiceResponse Jazz_Colby DeathBuddy1 VoiceResponse DeathBuddy1 voice:Jazz_Colby]] "Ну, е-мое, Тор… Спи спокойно, коротышка.")
+						}),
+						DeathGeneral = TConcat({
+							T(890000000001777, --[[ModItemVoiceResponse Jazz_Colby DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Colby]] "Чёрт…")
+						}),
+						DoorLocked = TConcat({
+							T(890000000001789, --[[ModItemVoiceResponse Jazz_Colby DoorLocked VoiceResponse DoorLocked voice:Jazz_Colby]] "Дверь закрыта.")
+						}),
+						Downed = TConcat({
+							T(890000000001769, --[[ModItemVoiceResponse Jazz_Colby Downed VoiceResponse Downed voice:Jazz_Colby]] "Меня… подбили…")
+						}),
+						Exhausted = TConcat({
+							T(890000000001795, --[[ModItemVoiceResponse Jazz_Colby Exhausted VoiceResponse Exhausted voice:Jazz_Colby]] "Посплю-ка я…")
+						}),
+						GasAreaSelection = TConcat({
+							T(890000000002510, --[[ModItemVoiceResponse Jazz_Colby GasAreaSelection VoiceResponse GasAreaSelection voice:Jazz_Colby]] "(кашляет)")
+						}),
+						GroupOrder = TConcat({
+							T(890000000001739, --[[ModItemVoiceResponse Jazz_Colby GroupOrder VoiceResponse GroupOrder voice:Jazz_Colby]] "С вами."),
+							T(890000000001740, --[[ModItemVoiceResponse Jazz_Colby GroupOrder VoiceResponse GroupOrder voice:Jazz_Colby]] "Держимся вместе."),
+							T(890000000001741, --[[ModItemVoiceResponse Jazz_Colby GroupOrder VoiceResponse GroupOrder voice:Jazz_Colby]] "За мной не надо — я с группой.")
+						}),
+						HealReceived = TConcat({
+							T(890000000002506, --[[ModItemVoiceResponse Jazz_Colby HealReceived VoiceResponse HealReceived voice:Jazz_Colby]] "Спасибо, уже лучше.")
+						}),
+						HeavilyWoundedSelection = TConcat({
+							T(890000000001771, --[[ModItemVoiceResponse Jazz_Colby HeavilyWoundedSelection VoiceResponse HeavilyWoundedSelection voice:Jazz_Colby]] "Херово чего-то мне…")
+						}),
+						HeavyBreathing = TConcat({
+							T(890000000001796, --[[ModItemVoiceResponse Jazz_Colby HeavyBreathing VoiceResponse HeavyBreathing voice:Jazz_Colby]] "(пыхтит)")
+						}),
+						Idle = TConcat({
+							T(890000000001782, --[[ModItemVoiceResponse Jazz_Colby Idle VoiceResponse Idle voice:Jazz_Colby]] "Жду."),
+							T(890000000001783, --[[ModItemVoiceResponse Jazz_Colby Idle VoiceResponse Idle voice:Jazz_Colby]] "Американцы. Лохи вялые."),
+							T(890000000001784, --[[ModItemVoiceResponse Jazz_Colby Idle VoiceResponse Idle voice:Jazz_Colby]] "(смех)")
+						}),
+						InteractableFound = TConcat({
+							T(890000000001793, --[[ModItemVoiceResponse Jazz_Colby InteractableFound VoiceResponse InteractableFound voice:Jazz_Colby]] "Интересно…")
+						}),
+						ItemDeteriorates = TConcat({
+							T(890000000001762, --[[ModItemVoiceResponse Jazz_Colby ItemDeteriorates VoiceResponse ItemDeteriorates voice:Jazz_Colby]] "Снаряжение, е-мое! Да это кусок дерьма!")
+						}),
+						Jumping = TConcat({
+							T(890000000002521, --[[ModItemVoiceResponse Jazz_Colby Jumping VoiceResponse Jumping voice:Jazz_Colby]] "(прыжок)")
+						}),
+						LevelUp = TConcat({
+							T(890000000001781, --[[ModItemVoiceResponse Jazz_Colby LevelUp VoiceResponse LevelUp voice:Jazz_Colby]] "Оп-па! Не зря я упирался!")
+						}),
+						LootFound = TConcat({
+							T(890000000001790, --[[ModItemVoiceResponse Jazz_Colby LootFound VoiceResponse LootFound voice:Jazz_Colby]] "Это ещё что?"),
+							T(890000000001791, --[[ModItemVoiceResponse Jazz_Colby LootFound VoiceResponse LootFound voice:Jazz_Colby]] "Это что за..?")
+						}),
+						ManyEnemiesSelection = TConcat({
+							T(890000000001752, --[[ModItemVoiceResponse Jazz_Colby ManyEnemiesSelection VoiceResponse ManyEnemiesSelection voice:Jazz_Colby]] "Задница!")
+						}),
+						MineNearbySelection = TConcat({
+							T(890000000001787, --[[ModItemVoiceResponse Jazz_Colby MineNearbySelection VoiceResponse MineNearbySelection voice:Jazz_Colby]] "Эй, пацаны… здесь не ходите."),
+							T(890000000001788, --[[ModItemVoiceResponse Jazz_Colby MineNearbySelection VoiceResponse MineNearbySelection voice:Jazz_Colby]] "Эгеге… похоже здесь опасность!")
+						}),
+						MissedByKillShot = TConcat({
+							T(890000000002512, --[[ModItemVoiceResponse Jazz_Colby MissedByKillShot VoiceResponse MissedByKillShot voice:Jazz_Colby]] "Меня могли за просто так…")
+						}),
+						MockDislike1 = TConcat({
+							T(890000000001779, --[[ModItemVoiceResponse Jazz_Colby MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Colby]] "Фидель, е-мое, такая тупая задница.")
+						}),
+						NoAmmo = TConcat({
+							T(890000000001758, --[[ModItemVoiceResponse Jazz_Colby NoAmmo VoiceResponse NoAmmo voice:Jazz_Colby]] "Еклмн, патроны кончились.")
+						}),
+						NotNow = TConcat({
+							T(890000000001799, --[[ModItemVoiceResponse Jazz_Colby NotNow VoiceResponse NotNow voice:Jazz_Colby]] "Я тебе не игрушечный солдатик. Не буду делать!")
+						}),
+						OpponentFound = TConcat({
+							T(890000000001749, --[[ModItemVoiceResponse Jazz_Colby OpponentFound VoiceResponse OpponentFound voice:Jazz_Colby]] "Вижу их!"),
+							T(890000000001750, --[[ModItemVoiceResponse Jazz_Colby OpponentFound VoiceResponse OpponentFound voice:Jazz_Colby]] "Вон они. Я их вижу!"),
+							T(890000000001751, --[[ModItemVoiceResponse Jazz_Colby OpponentFound VoiceResponse OpponentFound voice:Jazz_Colby]] "Враги!")
+						}),
+						OpponentKilled = TConcat({
+							T(890000000001753, --[[ModItemVoiceResponse Jazz_Colby OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Colby]] "Попал, попал, е-мое!"),
+							T(890000000001754, --[[ModItemVoiceResponse Jazz_Colby OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Colby]] "Готово."),
+							T(890000000001755, --[[ModItemVoiceResponse Jazz_Colby OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Colby]] "Ещё один."),
+							T(890000000001756, --[[ModItemVoiceResponse Jazz_Colby OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Colby]] "Красиво."),
+							T(890000000001757, --[[ModItemVoiceResponse Jazz_Colby OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Colby]] "Вот тебе!")
+						}),
+						Order = TConcat({
+							T(890000000001728, --[[ModItemVoiceResponse Jazz_Colby Order VoiceResponse Order voice:Jazz_Colby]] "Есть."),
+							T(890000000001729, --[[ModItemVoiceResponse Jazz_Colby Order VoiceResponse Order voice:Jazz_Colby]] "Понял."),
+							T(890000000001730, --[[ModItemVoiceResponse Jazz_Colby Order VoiceResponse Order voice:Jazz_Colby]] "Сделаю."),
+							T(890000000001731, --[[ModItemVoiceResponse Jazz_Colby Order VoiceResponse Order voice:Jazz_Colby]] "Иду."),
+							T(890000000001732, --[[ModItemVoiceResponse Jazz_Colby Order VoiceResponse Order voice:Jazz_Colby]] "Ок.")
+						}),
+						Overwatch = TConcat({
+							T(890000000002507, --[[ModItemVoiceResponse Jazz_Colby Overwatch VoiceResponse Overwatch voice:Jazz_Colby]] "Сектор под присмотром.")
+						}),
+						OverwatchSelection = TConcat({
+							T(890000000002509, --[[ModItemVoiceResponse Jazz_Colby OverwatchSelection VoiceResponse OverwatchSelection voice:Jazz_Colby]] "На овервотче.")
+						}),
+						Pain = TConcat({
+							T(890000000001763, --[[ModItemVoiceResponse Jazz_Colby Pain VoiceResponse Pain voice:Jazz_Colby]] "(боль)"),
+							T(890000000001764, --[[ModItemVoiceResponse Jazz_Colby Pain VoiceResponse Pain voice:Jazz_Colby]] "(боль)"),
+							T(890000000001765, --[[ModItemVoiceResponse Jazz_Colby Pain VoiceResponse Pain voice:Jazz_Colby]] "(боль)")
+						}),
+						PraisesBuddy1 = TConcat({
+							T(890000000001780, --[[ModItemVoiceResponse Jazz_Colby PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Colby]] "Ну не е-ли-мое-ли? Я же говорил, Тор пацан что надо!")
+						}),
+						SectorArrived = TConcat({
+							T(890000000001797, --[[ModItemVoiceResponse Jazz_Colby SectorArrived VoiceResponse SectorArrived voice:Jazz_Colby]] "Эй, пацан, конец пути.")
+						}),
+						Selection = TConcat({
+							T(890000000001722, --[[ModItemVoiceResponse Jazz_Colby Selection VoiceResponse Selection voice:Jazz_Colby]] "Колби!"),
+							T(890000000001723, --[[ModItemVoiceResponse Jazz_Colby Selection VoiceResponse Selection voice:Jazz_Colby]] "Да?"),
+							T(890000000001724, --[[ModItemVoiceResponse Jazz_Colby Selection VoiceResponse Selection voice:Jazz_Colby]] "Слушаю.")
+						}),
+						SelectionStealth = TConcat({
+							T(890000000001725, --[[ModItemVoiceResponse Jazz_Colby SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Colby]] "Тихо…"),
+							T(890000000001726, --[[ModItemVoiceResponse Jazz_Colby SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Colby]] "Шёпотом."),
+							T(890000000001727, --[[ModItemVoiceResponse Jazz_Colby SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Colby]] "На низком.")
+						}),
+						SeriouslyWounded = TConcat({
+							T(890000000001768, --[[ModItemVoiceResponse Jazz_Colby SeriouslyWounded VoiceResponse SeriouslyWounded voice:Jazz_Colby]] "Ну е-мое, перевязать бы меня…")
+						}),
+						Startled = TConcat({
+							T(890000000002519, --[[ModItemVoiceResponse Jazz_Colby Startled VoiceResponse Startled voice:Jazz_Colby]] "Лучше бы мне это просто послышалось.")
+						}),
+						SurroundedPain = TConcat({
+							T(890000000001770, --[[ModItemVoiceResponse Jazz_Colby SurroundedPain VoiceResponse SurroundedPain voice:Jazz_Colby]] "Бьют как, херы!")
+						}),
+						TakeCover = TConcat({
+							T(890000000002511, --[[ModItemVoiceResponse Jazz_Colby TakeCover VoiceResponse TakeCover voice:Jazz_Colby]] "В укрытие!")
+						}),
+						ThreatSelection = TConcat({
+							T(890000000002508, --[[ModItemVoiceResponse Jazz_Colby ThreatSelection VoiceResponse ThreatSelection voice:Jazz_Colby]] "Опасность рядом!")
+						}),
+						ThrowGrenade = TConcat({
+							T(890000000002514, --[[ModItemVoiceResponse Jazz_Colby ThrowGrenade VoiceResponse ThrowGrenade voice:Jazz_Colby]] "Лови подарок!")
+						}),
+						Tired = TConcat({
+							T(890000000001794, --[[ModItemVoiceResponse Jazz_Colby Tired VoiceResponse Tired voice:Jazz_Colby]] "Спать надо, спать.")
+						}),
+						ValuableItemFound = TConcat({
+							T(890000000001792, --[[ModItemVoiceResponse Jazz_Colby ValuableItemFound VoiceResponse ValuableItemFound voice:Jazz_Colby]] "Е-мое! Отлично!")
+						}),
+						WeaponBroken = TConcat({
+							T(890000000001761, --[[ModItemVoiceResponse Jazz_Colby WeaponBroken VoiceResponse WeaponBroken voice:Jazz_Colby]] "Еклмн… Надо подождать, и эта штука заработает.")
+						}),
+						WeaponJammed = TConcat({
+							T(890000000001760, --[[ModItemVoiceResponse Jazz_Colby WeaponJammed VoiceResponse WeaponJammed voice:Jazz_Colby]] "Ничего, ничего… только моя пушка заклинила!")
+						}),
+						Wounded = TConcat({
+							T(890000000001766, --[[ModItemVoiceResponse Jazz_Colby Wounded VoiceResponse Wounded voice:Jazz_Colby]] "В меня попали… е-мое…"),
+							T(890000000001767, --[[ModItemVoiceResponse Jazz_Colby Wounded VoiceResponse Wounded voice:Jazz_Colby]] "Досталось мне, падла.")
+						}),
+						group = "MercenariesOld",
+						id = "Jazz_Colby",
 					}),
-					AmmoLow = TConcat({
-						T(890000000001723, --[[ModItemVoiceResponse Jazz_Colby AmmoLow VoiceResponse AmmoLow - Played when there is less than 25% of clip size or a full reload cannot be made voice:Jazz_Colby]] "Патроны!")
-					}),
-					CombatStartPlayer = TConcat({
-						T(890000000001724, --[[ModItemVoiceResponse Jazz_Colby CombatStartPlayer VoiceResponse CombatStartPlayer - When player initiates combat with shot. voice:Jazz_Colby]] "В бой.")
-					}),
-					DeathBuddy1 = TConcat({
-						T(890000000001725, --[[ModItemVoiceResponse Jazz_Colby DeathBuddy1 VoiceResponse DeathBuddy1 - Played on the death of Thor. voice:Jazz_Colby]] "Тор!..")
-					}),
-					DeathGeneral = TConcat({
-						T(890000000001726, --[[ModItemVoiceResponse Jazz_Colby DeathGeneral VoiceResponse DeathGeneral - Played when a character that is neither liked or disliked dies voice:Jazz_Colby]] "Чёрт...")
-					}),
-					Downed = TConcat({
-						T(890000000001727, --[[ModItemVoiceResponse Jazz_Colby Downed VoiceResponse Downed - Unit has been downed voice:Jazz_Colby]] "Меня подбили!")
-					}),
-					Idle = TConcat({
-						T(890000000001728, --[[ModItemVoiceResponse Jazz_Colby Idle VoiceResponse Idle - Idle line voice:Jazz_Colby]] "Жду.")
-					}),
-					LevelUp = TConcat({
-						T(890000000001729, --[[ModItemVoiceResponse Jazz_Colby LevelUp VoiceResponse LevelUp - Played when the merc levels up voice:Jazz_Colby]] "Ещё лучше.")
-					}),
-					MockDislike1 = TConcat({
-						T(890000000001730, --[[ModItemVoiceResponse Jazz_Colby MockDislike1 VoiceResponse MockDislike1 - Played on a high chance miss by Fidel. voice:Jazz_Colby]] "Как обычно, Фидель.")
-					}),
-					OpponentKilled = TConcat({
-						T(890000000001731, --[[ModItemVoiceResponse Jazz_Colby OpponentKilled VoiceResponse OpponentKilled - Played on a kill voice:Jazz_Colby]] "Готово.")
-					}),
-					Selection = TConcat({
-						T(890000000001732, --[[ModItemVoiceResponse Jazz_Colby Selection VoiceResponse Selection - when selected or autoselected voice:Jazz_Colby]] "Колби!")
-					}),
-					group = "MercenariesOld",
-					id = "Jazz_Colby",
-				}),
 				}),
 			PlaceObj('ModItemFolder', {
 				'name', "Jazz_Blade",
@@ -74722,6 +74909,7 @@ return {
 					'Group', "MercenariesOld",
 					'Id', "Jazz_Mike",
 					'object_class', "UnitData",
+					'Affiliation', "AIM",
 					'Health', 90,
 					'Agility', 85,
 					'Dexterity', 85,
@@ -90589,6 +90777,122 @@ return {
 			}),
 			group = "Mercs",
 			id = "Lynx",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "EquipmentSteroid_Top",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(42, 36, 22, 255),
+				'EditableColor2', RGBA(28, 24, 14, 255),
+				'EditableColor3', RGBA(48, 40, 22, 255),
+			}),
+			Chest = "Faction_Acc_Heavy_02",
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(25, 16, 7, 255),
+				'EditableColor2', RGBA(31, 18, 2, 255),
+				'EditableColor3', RGBA(120, 110, 90, 255),
+			}),
+			Hair = "EquipmentSteroid_Hair",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(40, 28, 18, 255),
+				'EditableColor2', RGBA(20, 12, 8, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat = "",
+			Hat2 = "",
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Head = "Head_Steroid",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hip = "Faction_Acc_Stormer",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(25, 16, 7, 255),
+				'EditableColor2', RGBA(31, 18, 2, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Pants = "EquipmentSteroid_Bottom",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(48, 40, 22, 255),
+				'EditableColor2', RGBA(36, 30, 16, 255),
+				'EditableColor3', RGBA(28, 24, 14, 255),
+			}),
+			Shirt = "",
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			group = "Mercs",
+			id = "Horg",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "EquipmentIce_Top",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(18, 18, 18, 255),
+				'EditableColor2', RGBA(28, 28, 28, 255),
+				'EditableColor3', RGBA(12, 12, 12, 255),
+			}),
+			Chest = "Faction_Acc_Heavy_02",
+			ChestColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(12, 12, 12, 255),
+				'EditableColor2', RGBA(20, 20, 20, 255),
+				'EditableColor3', RGBA(80, 80, 80, 255),
+			}),
+			Hair = "EquipmentIce_Hair",
+			HairColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(35, 22, 12, 255),
+				'EditableColor2', RGBA(20, 12, 8, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hat = "",
+			Hat2 = "",
+			HatColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Head = "Head_Ice",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hip = "Faction_Acc_Stormer",
+			HipColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(12, 12, 12, 255),
+				'EditableColor2', RGBA(20, 20, 20, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Pants = "EquipmentIce_Bottom",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(18, 18, 18, 255),
+				'EditableColor2', RGBA(28, 28, 28, 255),
+				'EditableColor3', RGBA(12, 12, 12, 255),
+			}),
+			Shirt = "",
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+				'EditableColor1', RGBA(0, 0, 0, 255),
+				'EditableColor2', RGBA(0, 0, 0, 255),
+				'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			group = "Mercs",
+			id = "Mike",
 		}),
 		PlaceObj('ModItemAppearancePreset', {
 			ArmorColor = PlaceObj('ColorizationPropSet', {

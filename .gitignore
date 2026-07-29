@@ -2,3 +2,9 @@
 # Local JA3 style references for portrait generation (not shipped)
 MercPortraits/References/
 
+# Gen intermediates (opaque raw + rembg neural) — keep finals only
+MercPortraits/**/_raw/
+MercPortraits/**/_neural/
+NPCPortraits/**/_raw/
+NPCPortraits/**/_neural/
+

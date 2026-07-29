@@ -1,0 +1,291 @@
+{
+  "winners": {
+    "Allik": {
+      "n": 3,
+      "variant": "appearance_backstory_bio",
+      "file": "Allik_Big_3.png",
+      "promoted": true
+    },
+    "Biggens": {
+      "n": 1,
+      "variant": "appearance",
+      "file": "Biggens_Big_1.png",
+      "promoted": true
+    },
+    "Blade": {
+      "n": 3,
+      "variant": "appearance_backstory_bio",
+      "file": "Blade_Big_3.png",
+      "promoted": true
+    },
+    "Bull": {
+      "n": 1,
+      "variant": "appearance",
+      "file": "Bull_Big_1.png",
+      "promoted": true
+    },
+    "Buzz": {
+      "n": 4,
+      "variant": "bio",
+      "file": "Buzz_Big_4.png",
+      "promoted": true
+    },
+    "Carlos": {
+      "n": 4,
+      "variant": "bio",
+      "file": "Carlos_Big_4.png",
+      "promoted": true
+    },
+    "Colby": {
+      "n": 5,
+      "variant": "bio_backstory",
+      "file": "Colby_Big_5.png",
+      "promoted": true
+    },
+    "Conrad": {
+      "n": 3,
+      "variant": "appearance_backstory_bio",
+      "file": "Conrad_Big_3.png",
+      "promoted": true
+    },
+    "Cord": {
+      "n": 4,
+      "variant": "bio",
+      "file": "Cord_Big_4.png",
+      "promoted": true
+    },
+    "Cougar": {
+      "n": 2,
+      "variant": "appearance_backstory",
+      "file": "Cougar_Big_2.png",
+      "promoted": true
+    },
+    "Devin": {
+      "n": 5,
+      "variant": "bio_backstory",
+      "file": "Devin_Big_5.png",
+      "promoted": true
+    },
+    "Dimitri": {
+      "n": 2,
+      "variant": "appearance_backstory",
+      "file": "Dimitri_Big_2.png",
+      "promoted": true
+    },
+    "Dynamo": {
+      "n": 3,
+      "variant": "appearance_backstory_bio",
+      "file": "Dynamo_Big_3.png",
+      "promoted": true
+    },
+    "Flo": {
+      "n": 1,
+      "variant": "appearance",
+      "file": "Flo_Big_1.png",
+      "promoted": true
+    },
+    "Gaston": {
+      "n": 5,
+      "variant": "bio_backstory",
+      "file": "Gaston_Big_5.png",
+      "promoted": true
+    },
+    "Grace": {
+      "n": 3,
+      "variant": "appearance_backstory_bio",
+      "file": "Grace_Big_3.png",
+      "promoted": true
+    },
+    "Grom": {
+      "n": 5,
+      "variant": "bio_backstory",
+      "file": "Grom_Big_5.png",
+      "promoted": true
+    },
+    "Henning": {
+      "n": 1,
+      "variant": "appearance",
+      "file": "Henning_Big_1.png",
+      "promoted": true
+    },
+    "Highball": {
+      "n": 5,
+      "variant": "bio_backstory",
+      "file": "Highball_Big_5.png",
+      "promoted": true
+    },
+    "Hitman": {
+      "n": 2,
+      "variant": "appearance_backstory",
+      "file": "Hitman_Big_2.png",
+      "promoted": true
+    },
+    "Hobbit": {
+      "n": 5,
+      "variant": "bio_backstory",
+      "file": "Hobbit_Big_5.png",
+      "promoted": true
+    },
+    "Ira": {
+      "n": 4,
+      "variant": "bio",
+      "file": "Ira_Big_4.png",
+      "promoted": true
+    },
+    "Kulba": {
+      "n": 3,
+      "variant": "appearance_backstory_bio",
+      "file": "Kulba_Big_3.png",
+      "promoted": true
+    },
+    "Laura": {
+      "n": 2,
+      "variant": "appearance_backstory",
+      "file": "Laura_Big_2.png",
+      "promoted": true
+    },
+    "Lucky": {
+      "n": 2,
+      "variant": "appearance_backstory",
+      "file": "Lucky_Big_2.png",
+      "promoted": true
+    },
+    "Lynx": {
+      "n": 4,
+      "variant": "bio",
+      "file": "Lynx_Big_4.png",
+      "promoted": true
+    },
+    "Madman": {
+      "n": 4,
+      "variant": "bio",
+      "file": "Madman_Big_4.png",
+      "promoted": true
+    },
+    "Manuel": {
+      "n": 4,
+      "variant": "bio",
+      "file": "Manuel_Big_4.png",
+      "promoted": true
+    },
+    "Meat": {
+      "n": 4,
+      "variant": "bio",
+      "file": "Meat_Big_4.png",
+      "promoted": true
+    },
+    "Miguel": {
+      "n": 5,
+      "variant": "bio_backstory",
+      "file": "Miguel_Big_5.png",
+      "promoted": true
+    },
+    "Mike": {
+      "n": 3,
+      "variant": "appearance_backstory_bio",
+      "file": "Mike_Big_3.png",
+      "promoted": true
+    },
+    "Monk": {
+      "n": 5,
+      "variant": "bio_backstory",
+      "file": "Monk_Big_5.png",
+      "promoted": true
+    },
+    "Nervous": {
+      "n": 1,
+      "variant": "appearance",
+      "file": "Nervous_Big_1.png",
+      "promoted": true
+    },
+    "Quinten": {
+      "n": 2,
+      "variant": "appearance_backstory",
+      "file": "Quinten_Big_2.png",
+      "promoted": true
+    },
+    "Ricochet": {
+      "n": 5,
+      "variant": "bio_backstory",
+      "file": "Ricochet_Big_5.png",
+      "promoted": true
+    },
+    "Rothman": {
+      "n": 5,
+      "variant": "bio_backstory",
+      "file": "Rothman_Big_5.png",
+      "promoted": true
+    },
+    "Shank": {
+      "n": 5,
+      "variant": "bio_backstory",
+      "file": "Shank_Big_5.png",
+      "promoted": true
+    },
+    "Spider": {
+      "n": 5,
+      "variant": "bio_backstory",
+      "file": "Spider_Big_5.png",
+      "promoted": true
+    },
+    "Static": {
+      "n": 3,
+      "variant": "appearance_backstory_bio",
+      "file": "Static_Big_3.png",
+      "promoted": true
+    },
+    "Steiger": {
+      "n": 3,
+      "variant": "appearance_backstory_bio",
+      "file": "Steiger_Big_3.png",
+      "promoted": true
+    },
+    "Vicious": {
+      "n": 4,
+      "variant": "bio",
+      "file": "Vicious_Big_4.png",
+      "promoted": true
+    },
+    "Vilde": {
+      "n": 5,
+      "variant": "bio_backstory",
+      "file": "Vilde_Big_5.png",
+      "promoted": true
+    },
+    "Vince": {
+      "n": 4,
+      "variant": "bio",
+      "file": "Vince_Big_4.png",
+      "promoted": true
+    }
+  },
+  "ties_pending": {
+    "Eskimo": [
+      {
+        "n": 1,
+        "variant": "appearance",
+        "file": "Eskimo_Big_1.png"
+      },
+      {
+        "n": 4,
+        "variant": "bio",
+        "file": "Eskimo_Big_4.png"
+      }
+    ],
+    "Gamos": [
+      {
+        "n": 3,
+        "variant": "appearance_backstory_bio",
+        "file": "Gamos_Big_3.png"
+      },
+      {
+        "n": 4,
+        "variant": "bio",
+        "file": "Gamos_Big_4.png"
+      }
+    ]
+  },
+  "missing": [
+    "Horg"
+  ]
+}

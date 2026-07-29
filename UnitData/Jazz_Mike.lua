@@ -5,6 +5,7 @@ DefineClass.Jazz_Mike = {
 
 
 	object_class = "UnitData",
+	Affiliation = "AIM",
 	Health = 90,
 	Agility = 85,
 	Dexterity = 85,

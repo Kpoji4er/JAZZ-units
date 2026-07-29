@@ -19,10 +19,10 @@ DefineClass.Jazz_Colby = {
 	Portrait = "Mod/Dv3mFVN/MercPortraits/Colby.png",
 	BigPortrait = "Mod/Dv3mFVN/MercPortraits/Colby_Big.png",
 	IsMercenary = true,
-	Name = T(890000000001702, --[[ModItemUnitDataCompositeDef Jazz_Colby Name]] "[WIP] Тревор Колби"),
+	Name = T(890000000001702, --[[ModItemUnitDataCompositeDef Jazz_Colby Name]] "Тревор Колби"),
 	Nick = T(890000000001703, --[[ModItemUnitDataCompositeDef Jazz_Colby Nick]] "Колби"),
 	AllCapsNick = T(890000000001704, --[[ModItemUnitDataCompositeDef Jazz_Colby AllCapsNick]] "КОЛБИ"),
-	Bio = T(890000000001705, --[[ModItemUnitDataCompositeDef Jazz_Colby Bio]] "work in progress"),
+	Bio = T(890000000001705, --[[ModItemUnitDataCompositeDef Jazz_Colby Bio]] "Боевой подрывник и ловушечник AIM. Жёсткие физикалы (кроме силы и подвижности), 99 механики, 88 взрывчатки. Дружит с Тором, не ладит с Фиделем; не любит американцев в отряде."),
 	Nationality = "Canada",
 	Title = T(890000000001706, --[[ModItemUnitDataCompositeDef Jazz_Colby Title]] "Ловушечник"),
 	Email = T(890000000001707, --[[ModItemUnitDataCompositeDef Jazz_Colby Email]] "Colby@aim.com"),
@@ -31,7 +31,7 @@ DefineClass.Jazz_Colby = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000001709, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatRefusal Lines ChatMessage voice:Jazz_Colby]] "Нет. Пока Фидель на контракте — я пас. Не хочу делить периметр с психом."),
+					'Text', T(890000000001709, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatRefusal Lines ChatMessage voice:Jazz_Colby]] "Извини, пацан, но я лучше буду работать в саду у мамани, чем вместе с этим падлой Фиделем."),
 				}),
 			},
 			'Conditions', {
@@ -45,7 +45,7 @@ DefineClass.Jazz_Colby = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000001710, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatRefusal Lines ChatMessage voice:Jazz_Colby]] "Слишком много трупов на вашем счету. Наймите кого-то другого."),
+					'Text', T(890000000001710, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatRefusal Lines ChatMessage voice:Jazz_Colby]] "Угу, может, ещё и гроб заказать? Извини, подвинься!"),
 				}),
 			},
 			'Conditions', {
@@ -58,7 +58,7 @@ DefineClass.Jazz_Colby = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000001711, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatRefusal Lines ChatMessage voice:Jazz_Colby]] "Кошелёк тонкий. Перезвоните, когда будет бюджет на нормальную зарядку."),
+					'Text', T(890000000001711, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatRefusal Lines ChatMessage voice:Jazz_Colby]] "Без проблем, позвоните мне, когда разбогатеете. Просто сейчас я вам не по карману."),
 				}),
 			},
 			'Conditions', {
@@ -91,7 +91,7 @@ DefineClass.Jazz_Colby = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000001713, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatMitigation Lines ChatMessage voice:Jazz_Colby]] "Тор уже с вами? Тогда ок. С ним я работаю."),
+					'Text', T(890000000001713, --[[ModItemUnitDataCompositeDef Jazz_Colby Text MercChatMitigation Lines ChatMessage voice:Jazz_Colby]] "Я немного сомневаюсь по поводу дельца, тёмное оно… Но раз Тор с вами — я согласен."),
 				}),
 			},
 			'Conditions', {
@@ -121,37 +121,37 @@ DefineClass.Jazz_Colby = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000001715, --[[ModItemUnitDataCompositeDef Jazz_Colby Text Offline ChatMessage voice:Jazz_Colby]] "Колби. Меня нет. Оставьте сообщение — перезвоню, если не взорвусь."),
+			'Text', T(890000000001715, --[[ModItemUnitDataCompositeDef Jazz_Colby Text Offline ChatMessage voice:Jazz_Colby]] "Как дела? Тревор и Шейла не могут подойти к телефону. Они пошли на пляж. Оставьте сообщение."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000001716, --[[ModItemUnitDataCompositeDef Jazz_Colby Text GreetingAndOffer ChatMessage voice:Jazz_Colby]] "Колби на линии. Что взрываем?"),
+			'Text', T(890000000001716, --[[ModItemUnitDataCompositeDef Jazz_Colby Text GreetingAndOffer ChatMessage voice:Jazz_Colby]] "Говорит Тревор Колби. Как дела?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000001717, --[[ModItemUnitDataCompositeDef Jazz_Colby Text ConversationRestart ChatMessage voice:Jazz_Colby]] "Вернёмся к делу."),
+			'Text', T(890000000001717, --[[ModItemUnitDataCompositeDef Jazz_Colby Text ConversationRestart ChatMessage voice:Jazz_Colby]] "Я сказал, что…"),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000001718, --[[ModItemUnitDataCompositeDef Jazz_Colby Text IdleLine ChatMessage voice:Jazz_Colby]] "Время тикает."),
+			'Text', T(890000000001718, --[[ModItemUnitDataCompositeDef Jazz_Colby Text IdleLine ChatMessage voice:Jazz_Colby]] "Если вам нужен механик, лучше меня вы не найдёте. Ну я так думаю."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000001719, --[[ModItemUnitDataCompositeDef Jazz_Colby Text PartingWords ChatMessage voice:Jazz_Colby]] "Беру зарядку и выхожу."),
+			'Text', T(890000000001719, --[[ModItemUnitDataCompositeDef Jazz_Colby Text PartingWords ChatMessage voice:Jazz_Colby]] "Думаю, я попробую — во мне можете быть уверены."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000001720, --[[ModItemUnitDataCompositeDef Jazz_Colby Text RehireIntro ChatMessage voice:Jazz_Colby]] "Контракт заканчивается. Продлеваем?"),
+			'Text', T(890000000001720, --[[ModItemUnitDataCompositeDef Jazz_Colby Text RehireIntro ChatMessage voice:Jazz_Colby]] "Спросить хотел: мы ещё на один срок подписываемся или нет? Я не прочь ещё врага покрошить."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000001721, --[[ModItemUnitDataCompositeDef Jazz_Colby Text RehireOutro ChatMessage voice:Jazz_Colby]] "Остаюсь."),
+			'Text', T(890000000001721, --[[ModItemUnitDataCompositeDef Jazz_Colby Text RehireOutro ChatMessage voice:Jazz_Colby]] "Принимаю. Как вы со мной, так и я с вами. Всё по-честному."),
 		}),
 	},
 	MedicalDeposit = "large",
