@@ -126,7 +126,7 @@ DefineClass.Jazz_Biff = {
 			'Text', T(890000000002819, --[[ModItemUnitDataCompositeDef Jazz_Biff Text RehireOutro ChatMessage voice:Jazz_Biff]] "Остаюсь. Наверное."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 600,
 	SalaryIncrease = 200,
 	SalaryLv1 = 300,

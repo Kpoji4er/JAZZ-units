@@ -110,7 +110,7 @@ DefineClass.Jazz_Nervous = {
 			'Text', T(890000000002918, --[[ModItemUnitDataCompositeDef Jazz_Nervous Text RehireOutro ChatMessage voice:Jazz_Nervous]] "Остаюсь! Ещё патроны не кончились!"),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 700,
 	SalaryIncrease = 200,
 	SalaryLv1 = 350,

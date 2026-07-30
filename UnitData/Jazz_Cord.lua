@@ -119,7 +119,7 @@ DefineClass.Jazz_Cord = {
 			'Text', T(890000000004418, --[[ModItemUnitDataCompositeDef Jazz_Cord Text RehireOutro ChatMessage voice:Jazz_Cord]] "Остаюсь. Кажется."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 550,
 	SalaryIncrease = 150,
 	SalaryLv1 = 250,

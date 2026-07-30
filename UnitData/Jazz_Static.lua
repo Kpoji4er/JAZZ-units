@@ -154,7 +154,7 @@ DefineClass.Jazz_Static = {
 			'Text', T(890000000004120, --[[ModItemUnitDataCompositeDef Jazz_Static Text RehireOutro ChatMessage voice:Jazz_Static]] "Остаюсь. Тут ещё есть что чинить."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 1400,
 	SalaryIncrease = 150,
 	SalaryLv1 = 600,

@@ -149,7 +149,7 @@ DefineClass.Jazz_Ricochet = {
 			'Text', T(890000000004620, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Text RehireOutro ChatMessage voice:Jazz_Ricochet]] "Остаюсь."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 800,
 	SalaryIncrease = 150,
 	SalaryLv1 = 350,

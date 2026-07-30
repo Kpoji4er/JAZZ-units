@@ -96,3 +96,32 @@ function AddEliteEnemyNames(Group, EnemyNames)
 
 	print(string.format("[AddEliteEnemyNames] создано %d имён для %s (префикс %s)", #EnemyNames, Group, prefix))
 end
+
+-- unit.Name is saved via TToLuaCode, which asserts not THasArgs(T).
+-- EliteEnemyName presets keep localizable T / T{first,last}; bake only when copying onto UnitData.
+local function MakeSaveableUnitName(name)
+	if name and THasArgs(name) then
+		return Untranslated(_InternalTranslate(name))
+	end
+	return name
+end
+
+function SanitizeEliteUnitNamesForSave()
+	for _, ud in sorted_pairs(gv_UnitData or empty_table) do
+		if ud and ud.Name and THasArgs(ud.Name) then
+			ud.Name = MakeSaveableUnitName(ud.Name)
+		end
+	end
+end
+
+local OrigGenerateEliteUnitName = GenerateEliteUnitName
+function GenerateEliteUnitName(unit)
+	OrigGenerateEliteUnitName(unit)
+	if unit then
+		unit.Name = MakeSaveableUnitName(unit.Name)
+	end
+end
+
+function OnMsg.GatherSessionData()
+	SanitizeEliteUnitNamesForSave()
+end

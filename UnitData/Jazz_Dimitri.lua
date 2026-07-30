@@ -117,7 +117,7 @@ DefineClass.Jazz_Dimitri = {
 			'Text', T(890000000002018, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Text RehireOutro ChatMessage voice:Jazz_Dimitri]] "Остаюсь. Ножи точить веселее, когда есть цель."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 500,
 	SalaryIncrease = 200,
 	SalaryLv1 = 250,

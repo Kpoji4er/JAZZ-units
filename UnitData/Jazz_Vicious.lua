@@ -130,7 +130,7 @@ DefineClass.Jazz_Vicious = {
 			'Text', T(890000000002719, --[[ModItemUnitDataCompositeDef Jazz_Vicious Text RehireOutro ChatMessage voice:Jazz_Vicious]] "Остаюсь. Здесь веселее, чем дома."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 1800,
 	SalaryIncrease = 200,
 	SalaryLv1 = 700,

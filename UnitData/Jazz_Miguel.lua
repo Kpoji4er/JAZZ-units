@@ -118,7 +118,7 @@ DefineClass.Jazz_Miguel = {
 			'Text', T(890000000003218, --[[ModItemUnitDataCompositeDef Jazz_Miguel Text RehireOutro ChatMessage voice:Jazz_Miguel]] "Остаюсь. Освобождение ещё не закончено."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 800,
 	SalaryIncrease = 200,
 	SalaryLv1 = 400,

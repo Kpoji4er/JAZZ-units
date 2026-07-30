@@ -122,7 +122,7 @@ DefineClass.Jazz_Manuel = {
 			'Text', T(890000000003719, --[[ModItemUnitDataCompositeDef Jazz_Manuel Text RehireOutro ChatMessage voice:Jazz_Manuel]] "Остаюсь. Лес подождёт."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 600,
 	SalaryIncrease = 200,
 	SalaryLv1 = 300,

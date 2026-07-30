@@ -92,7 +92,7 @@ DefineClass.Jazz_Hobbit = {
 			'Text', T(890000000004517, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Text RehireOutro ChatMessage voice:Jazz_Hobbit]] "Остаюсь. Всё равно хуже уже не будет."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 700,
 	SalaryIncrease = 150,
 	SalaryLv1 = 300,

@@ -123,7 +123,7 @@ DefineClass.Jazz_Bull = {
 			'Text', T(890000000004319, --[[ModItemUnitDataCompositeDef Jazz_Bull Text RehireOutro ChatMessage voice:Jazz_Bull]] "Остаюсь. Тут есть кого бить."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 400,
 	SalaryIncrease = 150,
 	SalaryLv1 = 200,

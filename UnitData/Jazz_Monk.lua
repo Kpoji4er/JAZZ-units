@@ -128,7 +128,7 @@ DefineClass.Jazz_Monk = {
 			'Text', T(890000000003819, --[[ModItemUnitDataCompositeDef Jazz_Monk Text RehireOutro ChatMessage voice:Jazz_Monk]] "Остаюсь."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 2400,
 	SalaryIncrease = 200,
 	SalaryLv1 = 1000,

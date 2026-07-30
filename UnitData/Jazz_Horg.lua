@@ -129,7 +129,7 @@ DefineClass.Jazz_Horg = {
 			'Text', T(890000000003619, --[[ModItemUnitDataCompositeDef Jazz_Horg Text RehireOutro ChatMessage voice:Jazz_Horg]] "Остаюсь. Ещё есть, что взрывать."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 2700,
 	SalaryIncrease = 200,
 	SalaryLv1 = 1100,

@@ -125,7 +125,7 @@ DefineClass.Jazz_Cougar = {
 			'Text', T(890000000003119, --[[ModItemUnitDataCompositeDef Jazz_Cougar Text RehireOutro ChatMessage voice:Jazz_Cougar]] "Остаюсь. Тихо, но остаюсь."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 1600,
 	SalaryIncrease = 200,
 	SalaryLv1 = 700,

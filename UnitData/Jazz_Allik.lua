@@ -131,7 +131,7 @@ DefineClass.Jazz_Allik = {
 			'Text', T(890000000003919, --[[ModItemUnitDataCompositeDef Jazz_Allik Text RehireOutro ChatMessage voice:Jazz_Allik]] "Остаюсь. Тут ещё многому можно научиться."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 2600,
 	SalaryIncrease = 200,
 	SalaryLv1 = 1100,

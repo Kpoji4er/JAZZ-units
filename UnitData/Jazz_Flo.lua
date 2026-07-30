@@ -125,7 +125,7 @@ DefineClass.Jazz_Flo = {
 			'Text', T(890000000003019, --[[ModItemUnitDataCompositeDef Jazz_Flo Text RehireOutro ChatMessage voice:Jazz_Flo]] "Остаюсь. Скидки у местных торговцев того стоят."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 500,
 	SalaryIncrease = 200,
 	SalaryLv1 = 200,

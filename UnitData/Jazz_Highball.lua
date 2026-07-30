@@ -92,7 +92,7 @@ DefineClass.Jazz_Highball = {
 			'Text', T(890000000004217, --[[ModItemUnitDataCompositeDef Jazz_Highball Text RehireOutro ChatMessage voice:Jazz_Highball]] "Остаюсь. Тут веселее, чем дома."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 900,
 	SalaryIncrease = 150,
 	SalaryLv1 = 400,

@@ -143,7 +143,7 @@ DefineClass.Jazz_Blade = {
 			'Text', T(890000000001820, --[[ModItemUnitDataCompositeDef Jazz_Blade Text RehireOutro ChatMessage voice:Jazz_Blade]] "Остаюсь. Ещё не всех порезал."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 900,
 	SalaryIncrease = 200,
 	SalaryLv1 = 400,

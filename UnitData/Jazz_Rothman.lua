@@ -116,7 +116,7 @@ DefineClass.Jazz_Rothman = {
 			'Text', T(890000000002518, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text RehireOutro ChatMessage voice:Jazz_Rothman]] "Остаюсь. Работа ещё не закончена."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 2200,
 	SalaryIncrease = 200,
 	SalaryLv1 = 900,

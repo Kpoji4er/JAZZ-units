@@ -131,7 +131,7 @@ DefineClass.Jazz_Gaston = {
 			'Text', T(890000000003519, --[[ModItemUnitDataCompositeDef Jazz_Gaston Text RehireOutro ChatMessage voice:Jazz_Gaston]] "Остаюсь. Крыши здесь превосходные."),
 		}),
 	},
-	MedicalDeposit = "standard",
+	MedicalDeposit = "small",
 	StartingSalary = 2500,
 	SalaryIncrease = 200,
 	SalaryLv1 = 1000,

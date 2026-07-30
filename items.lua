@@ -21788,7 +21788,7 @@ return {
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_AA12_cqb_m1_LegionT1_Shotgun",
+						id = "JAZZ_GenW_AA12_cqb_m1_Crusher_12g",
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
@@ -21798,13 +21798,13 @@ return {
 							weapon = "AA12",
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Crusher_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_AA12_cqb_m2_LegionT1_Shotgun",
+						id = "JAZZ_GenW_AA12_cqb_m2_Army_12g",
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
@@ -21815,7 +21815,7 @@ return {
 							weapon = "AA12",
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Army_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -22714,7 +22714,7 @@ return {
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_Auto5_cqb_m1_LegionT1_Shotgun",
+						id = "JAZZ_GenW_Auto5_cqb_m1_Crusher_12g",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
 							item = "Auto5",
@@ -22722,13 +22722,13 @@ return {
 							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Crusher_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_Auto5_cqb_m2_LegionT1_Shotgun",
+						id = "JAZZ_GenW_Auto5_cqb_m2_Army_12g",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
 							item = "Auto5",
@@ -22736,13 +22736,13 @@ return {
 							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Army_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_Auto5_m0_LegionT1_Shotgun",
+						id = "JAZZ_GenW_Auto5_m0_Crusher_12g",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
 							item = "Auto5",
@@ -22750,7 +22750,7 @@ return {
 							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Crusher_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -22881,7 +22881,6 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ReflexSight",
 								"MagLarge",
 							},
 							weapon = "Bereta92",
@@ -23518,11 +23517,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_ColtAnaconda_assault_m1_44cal_revolver_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"ReflexSight",
-							},
-							weapon = "ColtAnaconda",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "ColtAnaconda",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "44cal_revolver_ammo",
@@ -23706,7 +23704,6 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ReflexSight",
 								"MagLarge",
 							},
 							weapon = "DesertEagle",
@@ -23748,7 +23745,7 @@ return {
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_DoubleBarrelShotgun_cqb_m1_LegionT1_Shotgun",
+						id = "JAZZ_GenW_DoubleBarrelShotgun_cqb_m1_Crusher_12g",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
 							item = "DoubleBarrelShotgun",
@@ -23756,13 +23753,13 @@ return {
 							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Crusher_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_DoubleBarrelShotgun_cqb_m2_LegionT1_Shotgun",
+						id = "JAZZ_GenW_DoubleBarrelShotgun_cqb_m2_Army_12g",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
 							item = "DoubleBarrelShotgun",
@@ -23770,13 +23767,13 @@ return {
 							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Army_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_DoubleBarrelShotgun_m0_LegionT1_Shotgun",
+						id = "JAZZ_GenW_DoubleBarrelShotgun_m0_Crusher_12g",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
 							item = "DoubleBarrelShotgun",
@@ -23784,7 +23781,7 @@ return {
 							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Crusher_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -24756,7 +24753,6 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ReflexSight",
 								"MagLarge",
 							},
 							weapon = "Glock17",
@@ -24816,7 +24812,6 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ReflexSight",
 								"MagLarge_17_33",
 							},
 							weapon = "Glock18",
@@ -24832,7 +24827,6 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ReflexSight",
 								"MagLarge_17_33",
 								"LaserDot",
 							},
@@ -24865,7 +24859,6 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ReflexSight",
 								"LaserDot",
 								"MagLarge_17_33",
 							},
@@ -24882,7 +24875,6 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ReflexSight",
 								"ImprovisedSuppressor",
 								"MagLarge_17_33",
 							},
@@ -24899,7 +24891,6 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ReflexSight",
 								"ImprovisedSuppressor",
 								"MagLarge_17_33",
 								"LaserDot",
@@ -25186,7 +25177,7 @@ return {
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_Ithaca_cqb_m1_LegionT1_Shotgun",
+						id = "JAZZ_GenW_Ithaca_cqb_m1_Crusher_12g",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
 							item = "Ithaca",
@@ -25194,13 +25185,13 @@ return {
 							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Crusher_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_Ithaca_cqb_m2_LegionT1_Shotgun",
+						id = "JAZZ_GenW_Ithaca_cqb_m2_Army_12g",
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
@@ -25209,7 +25200,7 @@ return {
 							weapon = "Ithaca",
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Army_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -25542,7 +25533,7 @@ return {
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_M1897_cqb_m1_LegionT1_Shotgun",
+						id = "JAZZ_GenW_M1897_cqb_m1_Crusher_12g",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
 							item = "M1897",
@@ -25550,13 +25541,13 @@ return {
 							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Crusher_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_M1897_cqb_m2_LegionT1_Shotgun",
+						id = "JAZZ_GenW_M1897_cqb_m2_Army_12g",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
 							item = "M1897",
@@ -25564,13 +25555,13 @@ return {
 							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Army_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_M1897_m0_LegionT1_Shotgun",
+						id = "JAZZ_GenW_M1897_m0_Crusher_12g",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
 							item = "M1897",
@@ -25578,7 +25569,7 @@ return {
 							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Crusher_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -26081,7 +26072,7 @@ return {
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_M41Shotgun_cqb_m1_LegionT1_Shotgun",
+						id = "JAZZ_GenW_M41Shotgun_cqb_m1_Crusher_12g",
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
@@ -26090,13 +26081,13 @@ return {
 							weapon = "M41Shotgun",
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Crusher_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_M41Shotgun_cqb_m2_LegionT1_Shotgun",
+						id = "JAZZ_GenW_M41Shotgun_cqb_m2_Army_12g",
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
@@ -26106,7 +26097,7 @@ return {
 							weapon = "M41Shotgun",
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Army_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -26407,7 +26398,6 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"Bipod",
-								"ReflexSight",
 							},
 							weapon = "M60E3",
 						}),
@@ -27683,7 +27673,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ReflexSight",
+								"JAZZ_Reflex_Aimpoint5000",
 								"MagNormal",
 							},
 							weapon = "MP5SD",
@@ -27699,7 +27689,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ReflexSight",
+								"JAZZ_Reflex_Aimpoint5000",
 								"SuppressorIntegrated",
 							},
 							weapon = "MP5SD",
@@ -27745,7 +27735,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ReflexSight",
+								"JAZZ_Reflex_Aimpoint5000",
 							},
 							weapon = "MP5SD",
 						}),
@@ -27760,7 +27750,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ReflexSight",
+								"JAZZ_Reflex_Aimpoint5000",
 								"SuppressorIntegrated",
 							},
 							weapon = "MP5SD",
@@ -27776,7 +27766,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ReflexSight",
+								"JAZZ_Reflex_Aimpoint5000",
 								"SuppressorIntegrated",
 							},
 							weapon = "MP5SD",
@@ -27792,7 +27782,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ReflexSight",
+								"JAZZ_Reflex_Aimpoint5000",
 								"SuppressorIntegrated",
 							},
 							weapon = "MP5SD",
@@ -29543,7 +29533,7 @@ return {
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_R870_cqb_m1_LegionT1_Shotgun",
+						id = "JAZZ_GenW_R870_cqb_m1_Crusher_12g",
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
@@ -29552,13 +29542,13 @@ return {
 							weapon = "R870",
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Crusher_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_R870_cqb_m2_LegionT1_Shotgun",
+						id = "JAZZ_GenW_R870_cqb_m2_Army_12g",
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
@@ -29568,7 +29558,7 @@ return {
 							weapon = "R870",
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Army_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -29658,7 +29648,6 @@ return {
 							upgrades = {
 								"Bipod",
 								"MagLarge_30_45",
-								"ReflexSight",
 							},
 							weapon = "RPK74",
 						}),
@@ -29707,7 +29696,6 @@ return {
 							upgrades = {
 								"Bipod",
 								"MagLarge_30_40",
-								"ReflexSight",
 							},
 							weapon = "RPK",
 						}),
@@ -29788,7 +29776,7 @@ return {
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_SPAS12_cqb_m1_LegionT1_Shotgun",
+						id = "JAZZ_GenW_SPAS12_cqb_m1_Crusher_12g",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
 							item = "SPAS12",
@@ -29796,13 +29784,13 @@ return {
 							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Crusher_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_SPAS12_cqb_m2_LegionT1_Shotgun",
+						id = "JAZZ_GenW_SPAS12_cqb_m2_Army_12g",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
 							item = "SPAS12",
@@ -29810,7 +29798,7 @@ return {
 							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Army_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -31215,7 +31203,7 @@ return {
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_Striker_cqb_m1_LegionT1_Shotgun",
+						id = "JAZZ_GenW_Striker_cqb_m1_Crusher_12g",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
 							item = "Striker",
@@ -31223,13 +31211,13 @@ return {
 							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Crusher_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_Striker_cqb_m2_LegionT1_Shotgun",
+						id = "JAZZ_GenW_Striker_cqb_m2_Army_12g",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
 							item = "Striker",
@@ -31237,7 +31225,7 @@ return {
 							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Army_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -31736,7 +31724,7 @@ return {
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_USAS12_cqb_m1_LegionT1_Shotgun",
+						id = "JAZZ_GenW_USAS12_cqb_m1_Crusher_12g",
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
@@ -31745,13 +31733,13 @@ return {
 							weapon = "USAS12",
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Crusher_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
-						id = "JAZZ_GenW_USAS12_cqb_m2_LegionT1_Shotgun",
+						id = "JAZZ_GenW_USAS12_cqb_m2_Army_12g",
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
@@ -31761,7 +31749,7 @@ return {
 							weapon = "USAS12",
 						}),
 						PlaceObj('LootEntryLootDef', {
-							loot_def = "LegionT1_Shotgun",
+							loot_def = "Army_12g",
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -32580,7 +32568,7 @@ return {
 						}),
 					}),
 --[[ JAZZ-UNITS-003-GENERATED-END ]]
-																				PlaceObj('ModItemLootDef', {
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Roughneck_Inventory",
@@ -32752,8 +32740,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Crusher_Inventory",
@@ -32842,8 +32830,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Grenadier_Inventory",
@@ -32935,8 +32923,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pillager_Inventory",
@@ -33108,8 +33096,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pyro_Inventory",
@@ -33192,8 +33180,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Shocktrooper_Inventory",
@@ -33383,8 +33371,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "SkullCrusher_Inventory",
@@ -33523,8 +33511,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Punisher_Inventory",
@@ -33614,8 +33602,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Headsman_Inventory",
@@ -33760,8 +33748,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Marauder_Inventory",
@@ -33901,8 +33889,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Rifleman_Inventory",
@@ -33991,8 +33979,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Bonemaker_Inventory",
@@ -34075,8 +34063,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Raider_Inventory",
@@ -34258,8 +34246,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Marksman_Inventory",
@@ -34382,8 +34370,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Ambusher_Inventory",
@@ -34521,8 +34509,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Veteran_Inventory",
@@ -34653,8 +34641,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Sniper_Inventory",
@@ -34769,8 +34757,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Mercenary_Inventory",
@@ -34856,8 +34844,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercenarySniper_Inventory",
@@ -34961,8 +34949,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Warden_Inventory",
@@ -35096,8 +35084,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Scout_Inventory",
@@ -35286,8 +35274,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Skirmisher_Inventory",
@@ -35425,8 +35413,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Recon_Inventory",
@@ -35615,8 +35603,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pathfinder_Inventory",
@@ -35794,8 +35782,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Ranger_Inventory",
@@ -35984,8 +35972,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Gunner_Inventory",
@@ -36074,8 +36062,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "GMPG_Inventory",
@@ -36153,8 +36141,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "AssaultGunner_Inventory",
@@ -36243,8 +36231,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "VeteranGunner_Inventory",
@@ -36322,8 +36310,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercGunner_Inventory",
@@ -36401,8 +36389,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Sergeant_Inventory",
@@ -36540,8 +36528,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Lieutenant_Inventory",
@@ -36676,8 +36664,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Captain_Inventory",
@@ -36815,8 +36803,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercenaryCaptain_Inventory",
@@ -36951,8 +36939,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Rocketeer_Inventory",
@@ -37044,8 +37032,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "HeavyGrenadier_Inventory",
@@ -37137,8 +37125,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Mortarman_Inventory",
@@ -37230,12 +37218,12 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
-					}),),),),
+					}),
 					}),
 				PlaceObj('ModItemFolder', {
 					'name', "UnitsWeapon",
 				}, {
-																				PlaceObj('ModItemLootDef', {
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Roughneck_Firearm",
@@ -38647,8 +38635,13 @@ return {
 							loot_def = "JAZZ_GenW_Sig550Custom_cqb_m2_556_ar_ammo_ap",
 							weight = 102000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_MAC1950_m0_9x19_pistol_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Crusher_Firearm",
@@ -38666,7 +38659,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_DoubleBarrelShotgun_m0_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_DoubleBarrelShotgun_m0_Crusher_12g",
 							weight = 101000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -38683,7 +38676,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_M1897_m0_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_M1897_m0_Crusher_12g",
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -38700,7 +38693,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_Auto5_m0_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_Auto5_m0_Crusher_12g",
 							weight = 103000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -38717,7 +38710,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_DoubleBarrelShotgun_cqb_m1_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_DoubleBarrelShotgun_cqb_m1_Crusher_12g",
 							weight = 1400,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -38734,7 +38727,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_M1897_cqb_m1_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_M1897_cqb_m1_Crusher_12g",
 							weight = 1400,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -38751,7 +38744,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_Auto5_cqb_m1_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_Auto5_cqb_m1_Crusher_12g",
 							weight = 1400,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -38768,7 +38761,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_Ithaca_cqb_m1_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_Ithaca_cqb_m1_Crusher_12g",
 							weight = 101000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -38785,7 +38778,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_R870_cqb_m1_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_R870_cqb_m1_Crusher_12g",
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -38802,7 +38795,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_Striker_cqb_m1_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_Striker_cqb_m1_Crusher_12g",
 							weight = 103000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -38819,7 +38812,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_SPAS12_cqb_m1_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_SPAS12_cqb_m1_Crusher_12g",
 							weight = 104000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -38830,7 +38823,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_M41Shotgun_cqb_m1_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_M41Shotgun_cqb_m1_Crusher_12g",
 							weight = 101000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -38841,7 +38834,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_USAS12_cqb_m1_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_USAS12_cqb_m1_Crusher_12g",
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -38852,11 +38845,16 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_AA12_cqb_m1_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_AA12_cqb_m1_Crusher_12g",
 							weight = 103000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_DoubleBarrelShotgun_m0_Crusher_12g",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Grenadier_Firearm",
@@ -40246,8 +40244,13 @@ return {
 							loot_def = "JAZZ_GenW_P90_assault_m1_556_ar_ammo_ap",
 							weight = 102000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_MAC1950_m0_9x19_pistol_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pillager_Firearm",
@@ -40884,8 +40887,13 @@ return {
 							loot_def = "JAZZ_GenW_Sig550Custom_cqb_m2_556_ar_ammo_ap",
 							weight = 102000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Scorpion_cqb_m1_9x18_smg_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pyro_Firearm",
@@ -41754,8 +41762,13 @@ return {
 							loot_def = "JAZZ_GenW_AS_Val_cqb_m1_9x39_ammo_ap",
 							weight = 103000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Scorpion_m0_9x18_smg_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Shocktrooper_Firearm",
@@ -42884,8 +42897,13 @@ return {
 							loot_def = "JAZZ_GenW_Sig550Custom_assault_m3_556_ar_ammo_ap",
 							weight = 102000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Scorpion_assault_m1_9x18_smg_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "SkullCrusher_Firearm",
@@ -43056,7 +43074,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_DoubleBarrelShotgun_cqb_m1_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_DoubleBarrelShotgun_cqb_m1_Crusher_12g",
 							weight = 101000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -43073,7 +43091,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_M1897_cqb_m1_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_M1897_cqb_m1_Crusher_12g",
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -43090,7 +43108,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_Auto5_cqb_m1_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_Auto5_cqb_m1_Crusher_12g",
 							weight = 103000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -43532,7 +43550,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_DoubleBarrelShotgun_cqb_m2_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_DoubleBarrelShotgun_cqb_m2_Army_12g",
 							weight = 1400,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -43549,7 +43567,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_M1897_cqb_m2_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_M1897_cqb_m2_Army_12g",
 							weight = 1400,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -43566,7 +43584,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_Auto5_cqb_m2_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_Auto5_cqb_m2_Army_12g",
 							weight = 1400,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -43583,7 +43601,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_Ithaca_cqb_m2_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_Ithaca_cqb_m2_Army_12g",
 							weight = 101000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -43600,7 +43618,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_R870_cqb_m2_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_R870_cqb_m2_Army_12g",
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -43617,7 +43635,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_Striker_cqb_m2_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_Striker_cqb_m2_Army_12g",
 							weight = 103000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -43634,7 +43652,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_SPAS12_cqb_m2_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_SPAS12_cqb_m2_Army_12g",
 							weight = 104000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -43678,7 +43696,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_M41Shotgun_cqb_m2_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_M41Shotgun_cqb_m2_Army_12g",
 							weight = 101000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -43689,7 +43707,7 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_USAS12_cqb_m2_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_USAS12_cqb_m2_Army_12g",
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -43700,11 +43718,16 @@ return {
 									QuestId = "JAZZ_LegionTier",
 								}),
 							},
-							loot_def = "JAZZ_GenW_AA12_cqb_m2_LegionT1_Shotgun",
+							loot_def = "JAZZ_GenW_AA12_cqb_m2_Army_12g",
 							weight = 103000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Scorpion_cqb_m1_9x18_smg_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Punisher_Firearm",
@@ -44239,8 +44262,13 @@ return {
 							loot_def = "JAZZ_GenW_Sig550Custom_assault_m3_556_ar_ammo_ap",
 							weight = 102000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Winchester1894_assault_m2_44cal_revolver_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Headsman_Firearm",
@@ -44775,8 +44803,13 @@ return {
 							loot_def = "JAZZ_GenW_Sig550Custom_merc_m4_556_ar_ammo_ap",
 							weight = 102000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Winchester1894_assault_m3_44cal_revolver_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Marauder_Firearm",
@@ -46188,8 +46221,13 @@ return {
 							loot_def = "JAZZ_GenW_Sig550Custom_cqb_m2_556_ar_ammo_ap",
 							weight = 102000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_MAC1950_m0_9x19_pistol_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Rifleman_Firearm",
@@ -46809,8 +46847,13 @@ return {
 							loot_def = "JAZZ_GenW_PSG1_rifle_m2_762x51_sniper_ammo",
 							weight = 103000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_SKS_m0_762x39_ar_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Bonemaker_Firearm",
@@ -48454,8 +48497,13 @@ return {
 							loot_def = "JAZZ_GenW_AS_Val_assault_m1_9x39_ammo_ap",
 							weight = 103000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_MAC1950_m0_9x19_pistol_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Raider_Firearm",
@@ -49584,8 +49632,13 @@ return {
 							loot_def = "JAZZ_GenW_Sig550Custom_assault_m3_556_ar_ammo_ap",
 							weight = 102000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Scorpion_assault_m1_9x18_smg_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Marksman_Firearm",
@@ -50205,8 +50258,13 @@ return {
 							loot_def = "JAZZ_GenW_PSG1_sniper_m2_762x51_sniper_ammo",
 							weight = 103000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_SKS_rifle_m1_762x39_ar_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Ambusher_Firearm",
@@ -50826,8 +50884,13 @@ return {
 							loot_def = "JAZZ_GenW_PSG1_sniper_m2_762x51_sniper_ammo",
 							weight = 103000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_SKS_rifle_m1_762x39_ar_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Veteran_Firearm",
@@ -51362,8 +51425,13 @@ return {
 							loot_def = "JAZZ_GenW_Sig550Custom_assault_m3_556_ar_ammo_ap",
 							weight = 102000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Winchester1894_assault_m2_44cal_revolver_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Sniper_Firearm",
@@ -51643,8 +51711,13 @@ return {
 							loot_def = "JAZZ_GenW_PSG1_sniper_m3_762x51_sniper_ammo",
 							weight = 103000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Mosin_sniper_m2_762x54_sniper_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Mercenary_Firearm",
@@ -52179,8 +52252,13 @@ return {
 							loot_def = "JAZZ_GenW_Sig550Custom_merc_m4_556_ar_ammo_ap",
 							weight = 102000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Winchester1894_assault_m3_44cal_revolver_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercenarySniper_Firearm",
@@ -52460,8 +52538,13 @@ return {
 							loot_def = "JAZZ_GenW_PSG1_sniper_m3_762x51_sniper_ammo",
 							weight = 103000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Mosin_sniper_m3_762x54_sniper_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Warden_Firearm",
@@ -53284,8 +53367,13 @@ return {
 							loot_def = "JAZZ_GenW_PSG1_flanker_m1_762x51_sniper_ammo",
 							weight = 103000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Winchester1894_m0_44cal_revolver_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Scout_Firearm",
@@ -53922,8 +54010,13 @@ return {
 							loot_def = "JAZZ_GenW_Sig550Custom_flanker_m3_556_ar_ammo_ap",
 							weight = 102000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Scorpion_flanker_m1_9x18_smg_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Skirmisher_Firearm",
@@ -54792,8 +54885,13 @@ return {
 							loot_def = "JAZZ_GenW_AS_Val_flanker_m2_9x39_ammo_ap",
 							weight = 103000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Scorpion_flanker_m1_9x18_smg_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Recon_Firearm",
@@ -55662,8 +55760,13 @@ return {
 							loot_def = "JAZZ_GenW_AS_Val_flanker_m3_9x39_ammo_ap",
 							weight = 103000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Scorpion_flanker_m2_9x18_smg_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pathfinder_Firearm",
@@ -56532,8 +56635,13 @@ return {
 							loot_def = "JAZZ_GenW_AS_Val_flanker_m3_9x39_ammo_ap",
 							weight = 103000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Scorpion_flanker_m2_9x18_smg_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Ranger_Firearm",
@@ -57402,8 +57510,13 @@ return {
 							loot_def = "JAZZ_GenW_AS_Val_merc_m4_9x39_ammo_ap",
 							weight = 103000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Scorpion_flanker_m3_9x18_smg_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Gunner_Firearm",
@@ -57746,8 +57859,13 @@ return {
 							loot_def = "JAZZ_GenW_M60E4_mg_m2_762x51_ar_ammo_ap",
 							weight = 101000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_MAC2429_m0_75mm_mg_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "GMPG_Firearm",
@@ -58090,8 +58208,13 @@ return {
 							loot_def = "JAZZ_GenW_M60E4_mg_m3_762x51_ar_ammo_ap",
 							weight = 101000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_MAC2429_mg_m1_75mm_mg_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "AssaultGunner_Firearm",
@@ -58270,8 +58393,13 @@ return {
 							loot_def = "JAZZ_GenW_HK23e_mg_m3_556_ar_ammo_ap",
 							weight = 102000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_MAC2429_mg_m1_75mm_mg_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "VeteranGunner_Firearm",
@@ -58614,8 +58742,13 @@ return {
 							loot_def = "JAZZ_GenW_M60E4_mg_m3_762x51_ar_ammo_ap",
 							weight = 101000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_MAC2429_mg_m2_75mm_mg_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercGunner_Firearm",
@@ -58958,8 +59091,13 @@ return {
 							loot_def = "JAZZ_GenW_M60E4_merc_m4_762x51_ar_ammo_ap",
 							weight = 101000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_MAC2429_mg_m3_75mm_mg_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Sergeant_Firearm",
@@ -60371,8 +60509,13 @@ return {
 							loot_def = "JAZZ_GenW_Sig550Custom_assault_m1_556_ar_ammo_ap",
 							weight = 102000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_MAC1950_m0_9x19_pistol_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Lieutenant_Firearm",
@@ -61518,8 +61661,13 @@ return {
 							loot_def = "JAZZ_GenW_Sig550Custom_assault_m3_556_ar_ammo_ap",
 							weight = 102000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Scorpion_assault_m1_9x18_smg_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Captain_Firearm",
@@ -62342,8 +62490,13 @@ return {
 							loot_def = "JAZZ_GenW_PSG1_sniper_m2_762x51_sniper_ammo",
 							weight = 103000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Winchester1894_rifle_m2_44cal_revolver_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercenaryCaptain_Firearm",
@@ -62878,7 +63031,12 @@ return {
 							loot_def = "JAZZ_GenW_Sig550Custom_merc_m4_556_ar_ammo_ap",
 							weight = 102000,
 						}),
-					}),),),),
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_Winchester1894_assault_m3_44cal_revolver_ammo",
+							weight = 1000,
+						}),
+					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
 						id = "Rocketeer_Launcher",
@@ -62886,7 +63044,7 @@ return {
 							loot_def = "RPG",
 						}),
 					}),
-																				PlaceObj('ModItemLootDef', {
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Rocketeer_Firearm",
@@ -64276,7 +64434,12 @@ return {
 							loot_def = "JAZZ_GenW_P90_cqb_m1_556_ar_ammo",
 							weight = 102000,
 						}),
-					}),),),),
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_MAC1950_m0_9x19_pistol_ammo",
+							weight = 1000,
+						}),
+					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
 						id = "HeavyGrenadier_Launcher",
@@ -64287,7 +64450,7 @@ return {
 							loot_def = "LegionGL",
 						}),
 					}),
-																				PlaceObj('ModItemLootDef', {
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "HeavyGrenadier_Firearm",
@@ -65677,8 +65840,13 @@ return {
 							loot_def = "JAZZ_GenW_P90_cqb_m1_556_ar_ammo_ap",
 							weight = 102000,
 						}),
-					}),),),),
-																				PlaceObj('ModItemLootDef', {
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_MAC1950_m0_9x19_pistol_ammo",
+							weight = 1000,
+						}),
+					}),
+																																			PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Mortarman_Firearm",
@@ -67068,7 +67236,12 @@ return {
 							loot_def = "JAZZ_GenW_P90_cqb_m1_556_ar_ammo_ap",
 							weight = 102000,
 						}),
-					}),),),),
+						PlaceObj('LootEntryLootDef', {
+							comment = "JAZZ-UNITS-004 unconditional fallback",
+							loot_def = "JAZZ_GenW_MAC1950_m0_9x19_pistol_ammo",
+							weight = 1000,
+						}),
+					}),
 					PlaceObj('ModItemLootDef', {
 						group = "Default",
 						id = "Mortarman_Launcher",
@@ -116709,7 +116882,7 @@ return {
 							'Text', T(890000000001820, --[[ModItemUnitDataCompositeDef Jazz_Blade Text RehireOutro ChatMessage voice:Jazz_Blade]] "Остаюсь. Ещё не всех порезал."),
 						}),
 					},
-					'MedicalDeposit', "standard",
+					'MedicalDeposit', "small",
 					'StartingSalary', 900,
 					'SalaryIncrease', 200,
 					'SalaryLv1', 400,
@@ -117109,7 +117282,7 @@ return {
 							'Text', T(890000000002018, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Text RehireOutro ChatMessage voice:Jazz_Dimitri]] "Остаюсь. Ножи точить веселее, когда есть цель."),
 						}),
 					},
-					'MedicalDeposit', "standard",
+					'MedicalDeposit', "small",
 					'StartingSalary', 500,
 					'SalaryIncrease', 200,
 					'SalaryLv1', 250,
@@ -118081,7 +118254,7 @@ return {
 				'Text', T(890000000002518, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text RehireOutro ChatMessage voice:Jazz_Rothman]] "Остаюсь. Работа ещё не закончена."),
 				}),
 				},
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 2200,
 				'SalaryIncrease', 200,
 				'SalaryLv1', 900,
@@ -118415,7 +118588,7 @@ return {
 				'Text', T(890000000002719, --[[ModItemUnitDataCompositeDef Jazz_Vicious Text RehireOutro ChatMessage voice:Jazz_Vicious]] "Остаюсь. Здесь веселее, чем дома."),
 				}),
 				},
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 1800,
 				'SalaryIncrease', 200,
 				'SalaryLv1', 700,
@@ -118587,7 +118760,7 @@ return {
 				'Text', T(890000000002819, --[[ModItemUnitDataCompositeDef Jazz_Biff Text RehireOutro ChatMessage voice:Jazz_Biff]] "Остаюсь. Наверное."),
 				}),
 				},
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 600,
 				'SalaryIncrease', 200,
 				'SalaryLv1', 300,
@@ -118744,7 +118917,7 @@ return {
 				'Text', T(890000000002918, --[[ModItemUnitDataCompositeDef Jazz_Nervous Text RehireOutro ChatMessage voice:Jazz_Nervous]] "Остаюсь! Ещё патроны не кончились!"),
 				}),
 				},
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 700,
 				'SalaryIncrease', 200,
 				'SalaryLv1', 350,
@@ -118916,7 +119089,7 @@ return {
 				'Text', T(890000000003019, --[[ModItemUnitDataCompositeDef Jazz_Flo Text RehireOutro ChatMessage voice:Jazz_Flo]] "Остаюсь. Скидки у местных торговцев того стоят."),
 				}),
 				},
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 500,
 				'SalaryIncrease', 200,
 				'SalaryLv1', 200,
@@ -119086,7 +119259,7 @@ return {
 				'Text', T(890000000003119, --[[ModItemUnitDataCompositeDef Jazz_Cougar Text RehireOutro ChatMessage voice:Jazz_Cougar]] "Остаюсь. Тихо, но остаюсь."),
 				}),
 				},
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 1600,
 				'SalaryIncrease', 200,
 				'SalaryLv1', 700,
@@ -119250,7 +119423,7 @@ return {
 				'Text', T(890000000003218, --[[ModItemUnitDataCompositeDef Jazz_Miguel Text RehireOutro ChatMessage voice:Jazz_Miguel]] "Остаюсь. Освобождение ещё не закончено."),
 				}),
 				},
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 800,
 				'SalaryIncrease', 200,
 				'SalaryLv1', 400,
@@ -119688,7 +119861,7 @@ return {
 				'Text', T(890000000003519, --[[ModItemUnitDataCompositeDef Jazz_Gaston Text RehireOutro ChatMessage voice:Jazz_Gaston]] "Остаюсь. Крыши здесь превосходные."),
 				}),
 				},
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 2500,
 				'SalaryIncrease', 200,
 				'SalaryLv1', 1000,
@@ -119866,7 +120039,7 @@ return {
 				'Text', T(890000000003619, --[[ModItemUnitDataCompositeDef Jazz_Horg Text RehireOutro ChatMessage voice:Jazz_Horg]] "Остаюсь. Ещё есть, что взрывать."),
 				}),
 				},
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 2700,
 				'SalaryIncrease', 200,
 				'SalaryLv1', 1100,
@@ -120037,7 +120210,7 @@ return {
 				'Text', T(890000000003719, --[[ModItemUnitDataCompositeDef Jazz_Manuel Text RehireOutro ChatMessage voice:Jazz_Manuel]] "Остаюсь. Лес подождёт."),
 				}),
 				},
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 600,
 				'SalaryIncrease', 200,
 				'SalaryLv1', 300,
@@ -120209,7 +120382,7 @@ return {
 				'Text', T(890000000003819, --[[ModItemUnitDataCompositeDef Jazz_Monk Text RehireOutro ChatMessage voice:Jazz_Monk]] "Остаюсь."),
 				}),
 				},
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 2400,
 				'SalaryIncrease', 200,
 				'SalaryLv1', 1000,
@@ -120387,7 +120560,7 @@ return {
 				'Text', T(890000000003919, --[[ModItemUnitDataCompositeDef Jazz_Allik Text RehireOutro ChatMessage voice:Jazz_Allik]] "Остаюсь. Тут ещё многому можно научиться."),
 				}),
 				},
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 2600,
 				'SalaryIncrease', 200,
 				'SalaryLv1', 1100,
@@ -120768,7 +120941,7 @@ return {
 				'Text', T(890000000004120, --[[ModItemUnitDataCompositeDef Jazz_Static Text RehireOutro ChatMessage voice:Jazz_Static]] "Остаюсь. Тут ещё есть что чинить."),
 				}),
 				},
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 1400,
 				'SalaryIncrease', 150,
 				'SalaryLv1', 600,
@@ -120910,7 +121083,7 @@ return {
 				'Text', T(890000000004217, --[[ModItemUnitDataCompositeDef Jazz_Highball Text RehireOutro ChatMessage voice:Jazz_Highball]] "Остаюсь. Тут веселее, чем дома."),
 				}),
 				},
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 900,
 				'SalaryIncrease', 150,
 				'SalaryLv1', 400,
@@ -121075,7 +121248,7 @@ return {
 				'Text', T(890000000004319, --[[ModItemUnitDataCompositeDef Jazz_Bull Text RehireOutro ChatMessage voice:Jazz_Bull]] "Остаюсь. Тут есть кого бить."),
 				}),
 				},
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 400,
 				'SalaryIncrease', 150,
 				'SalaryLv1', 200,
@@ -121240,7 +121413,7 @@ return {
 				'Text', T(890000000004418, --[[ModItemUnitDataCompositeDef Jazz_Cord Text RehireOutro ChatMessage voice:Jazz_Cord]] "Остаюсь. Кажется."),
 				}),
 				},
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 550,
 				'SalaryIncrease', 150,
 				'SalaryLv1', 250,
@@ -121379,7 +121552,7 @@ return {
 				'Text', T(890000000004517, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Text RehireOutro ChatMessage voice:Jazz_Hobbit]] "Остаюсь. Всё равно хуже уже не будет."),
 				}),
 				},
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 700,
 				'SalaryIncrease', 150,
 				'SalaryLv1', 300,
@@ -121570,7 +121743,7 @@ return {
 				'Text', T(890000000004620, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Text RehireOutro ChatMessage voice:Jazz_Ricochet]] "Остаюсь."),
 				}),
 				},
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 800,
 				'SalaryIncrease', 150,
 				'SalaryLv1', 350,
@@ -121651,7 +121824,7 @@ return {
 				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004614, "Hired.") }) },
 				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004615, "Contract ending?") }) },
 				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004616, "Staying.") }) },
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 750,
 				'SalaryIncrease', 150,
 				'SalaryLv1', 300,
@@ -121720,7 +121893,7 @@ return {
 				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004630, "Hired.") }) },
 				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004631, "Contract ending?") }) },
 				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004632, "Staying.") }) },
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 450,
 				'SalaryIncrease', 150,
 				'SalaryLv1', 200,
@@ -121789,7 +121962,7 @@ return {
 				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004646, "Hired.") }) },
 				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004647, "Contract ending?") }) },
 				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004648, "Staying.") }) },
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 2000,
 				'SalaryIncrease', 150,
 				'SalaryLv1', 800,
@@ -121927,7 +122100,7 @@ return {
 				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004678, "Hired.") }) },
 				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004679, "Contract ending?") }) },
 				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004680, "Staying.") }) },
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 1200,
 				'SalaryIncrease', 150,
 				'SalaryLv1', 500,
@@ -122065,7 +122238,7 @@ return {
 				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004710, "Hired.") }) },
 				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004711, "Contract ending?") }) },
 				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004712, "Staying.") }) },
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 900,
 				'SalaryIncrease', 150,
 				'SalaryLv1', 400,
@@ -122134,7 +122307,7 @@ return {
 				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004726, "Hired.") }) },
 				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004727, "Contract ending?") }) },
 				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004728, "Staying.") }) },
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 800,
 				'SalaryIncrease', 150,
 				'SalaryLv1', 350,
@@ -122203,7 +122376,7 @@ return {
 				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004742, "Hired.") }) },
 				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004743, "Contract ending?") }) },
 				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004744, "Staying.") }) },
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 1800,
 				'SalaryIncrease', 150,
 				'SalaryLv1', 700,
@@ -122272,7 +122445,7 @@ return {
 				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004758, "Hired.") }) },
 				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004759, "Contract ending?") }) },
 				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004760, "Staying.") }) },
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 1600,
 				'SalaryIncrease', 150,
 				'SalaryLv1', 600,
@@ -122410,7 +122583,7 @@ return {
 				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004790, "Hired.") }) },
 				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004791, "Contract ending?") }) },
 				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004792, "Staying.") }) },
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 1900,
 				'SalaryIncrease', 150,
 				'SalaryLv1', 700,
@@ -122479,7 +122652,7 @@ return {
 				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004806, "Hired.") }) },
 				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004807, "Contract ending?") }) },
 				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004808, "Staying.") }) },
-				'MedicalDeposit', "standard",
+				'MedicalDeposit', "small",
 				'StartingSalary', 1700,
 				'SalaryIncrease', 150,
 				'SalaryLv1', 600,
