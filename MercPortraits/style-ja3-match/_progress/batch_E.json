@@ -1,0 +1,12 @@
+[
+  {"id": "Rothman", "gens": [1, 2, 3, 4, 5], "accepted_gen": 2, "notes": "g2: #504633 + ship maroon/vest/shells/cross kit + hip pose + fair Raven/Grizzly skin. REJECT g4/g5 bar-interior background leak."},
+  {"id": "Shank", "gens": [1, 2, 3, 4, 5], "accepted_gen": 4, "notes": "g4: hoodie hands-in-pocket + lean blonde identity; cleaner fair MD skin; less scar spam than g1; full-length legs."},
+  {"id": "Spider", "gens": [1, 2, 3, 4, 5], "accepted_gen": 2, "notes": "g2: dark wavy hair + fur parka + MED pouches/backpack match ship. REJECT g4/g5 blonde bun identity drift."},
+  {"id": "Static", "gens": [1, 2, 3, 4, 5], "accepted_gen": 4, "notes": "g4: purple jacket/peace tee/wires+multimeter/sneakers locked; flat #504633; fair Grizzly grade; few large folds."},
+  {"id": "Steiger", "gens": [1, 2, 3, 4, 5], "accepted_gen": 4, "notes": "g4: auburn hair+beard (fixed vs g1 salt-pepper) + olive chest-rig; cleaner folds; holstered OK; fair Grizzly skin."},
+  {"id": "Vicious", "gens": [1, 2, 3, 4, 5], "accepted_gen": 4, "notes": "g4: leather vest + knife-down kit; cooler fair MD skin vs g1 deep tan; #504633; full-length legs."},
+  {"id": "Vilde", "gens": [1, 2, 3, 4, 5], "accepted_gen": 2, "notes": "g2: shorts+chest-rig scout kit; cleaner fair Raven midtones than muddier g4; holstered OK; full-length legs."},
+  {"id": "Vince", "gens": [1, 2, 3, 4, 5], "accepted_gen": 2, "notes": "g2: lab coat+olive shirt ship kit without invented stethoscope (g4 added one). Fair MD skin; holstered OK."},
+  {"id": "Allik", "gens": [1, 2, 3, 4, 5], "accepted_gen": 3, "notes": "g3: maroon/vest/shells ship kit + cooler fair Grizzly/Raven skin vs warm g1. REJECT g4 Highball/medic identity swap."},
+  {"id": "Biggens", "gens": [1, 2, 3, 4, 5], "accepted_gen": 4, "notes": "g4: beret+handlebar mustache+brown shirt ship lock; fair mature Gus grade; hand on holstered pistol; #504633."}
+]

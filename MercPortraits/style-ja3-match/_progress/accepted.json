@@ -1,0 +1,186 @@
+﻿{
+    "Allik":  {
+                  "accepted_gen":  5,
+                  "file":  "Allik_Big_g5.png"
+              },
+    "Biggens":  {
+                    "accepted_gen":  5,
+                    "file":  "Biggens_Big_g5.png"
+                },
+    "Blade":  {
+                  "accepted_gen":  3,
+                  "file":  "Blade_Big_g3.png"
+              },
+    "Bull":  {
+                 "accepted_gen":  4,
+                 "file":  "Bull_Big_g4.png"
+             },
+    "Buzz":  {
+                 "accepted_gen":  2,
+                 "file":  "Buzz_Big_g2.png"
+             },
+    "Carlos":  {
+                   "accepted_gen":  2,
+                   "file":  "Carlos_Big_g2.png"
+               },
+    "Colby":  {
+                  "accepted_gen":  3,
+                  "file":  "Colby_Big_g3.png"
+              },
+    "Conrad":  {
+                   "accepted_gen":  3,
+                   "file":  "Conrad_Big_g3.png"
+               },
+    "Cord":  {
+                 "accepted_gen":  2,
+                 "file":  "Cord_Big_g2.png"
+             },
+    "Cougar":  {
+                   "accepted_gen":  2,
+                   "file":  "Cougar_Big_g2.png"
+               },
+    "Devin":  {
+                  "accepted_gen":  2,
+                  "file":  "Devin_Big_g2.png"
+              },
+    "Dimitri":  {
+                    "accepted_gen":  4,
+                    "file":  "Dimitri_Big_g4.png"
+                },
+    "Dynamo":  {
+                   "accepted_gen":  2,
+                   "file":  "Dynamo_Big_g2.png"
+               },
+    "Eskimo":  {
+                   "accepted_gen":  2,
+                   "file":  "Eskimo_Big_g2.png"
+               },
+    "Flo":  {
+                "accepted_gen":  2,
+                "file":  "Flo_Big_g2.png"
+            },
+    "Gamos":  {
+                  "accepted_gen":  3,
+                  "file":  "Gamos_Big_g3.png"
+              },
+    "Gaston":  {
+                   "accepted_gen":  2,
+                   "file":  "Gaston_Big_g2.png"
+               },
+    "Grace":  {
+                  "accepted_gen":  2,
+                  "file":  "Grace_Big_g2.png"
+              },
+    "Grom":  {
+                 "accepted_gen":  3,
+                 "file":  "Grom_Big_g3.png"
+             },
+    "Henning":  {
+                    "accepted_gen":  2,
+                    "file":  "Henning_Big_g2.png"
+                },
+    "Highball":  {
+                     "accepted_gen":  2,
+                     "file":  "Highball_Big_g2.png"
+                 },
+    "Hitman":  {
+                   "accepted_gen":  2,
+                   "file":  "Hitman_Big_g2.png"
+               },
+    "Hobbit":  {
+                   "accepted_gen":  2,
+                   "file":  "Hobbit_Big_g2.png"
+               },
+    "Horg":  {
+                 "accepted_gen":  2,
+                 "file":  "Horg_Big_g2.png"
+             },
+    "Ira":  {
+                "accepted_gen":  2,
+                "file":  "Ira_Big_g2.png"
+            },
+    "Kulba":  {
+                  "accepted_gen":  2,
+                  "file":  "Kulba_Big_g2.png"
+              },
+    "Laura":  {
+                  "accepted_gen":  2,
+                  "file":  "Laura_Big_g2.png"
+              },
+    "Lucky":  {
+                  "accepted_gen":  3,
+                  "file":  "Lucky_Big_g3.png"
+              },
+    "Lynx":  {
+                 "accepted_gen":  2,
+                 "file":  "Lynx_Big_g2.png"
+             },
+    "Madman":  {
+                   "accepted_gen":  5,
+                   "file":  "Madman_Big_g5.png"
+               },
+    "Manuel":  {
+                   "accepted_gen":  2,
+                   "file":  "Manuel_Big_g2.png"
+               },
+    "Meat":  {
+                 "accepted_gen":  3,
+                 "file":  "Meat_Big_g3.png"
+             },
+    "Miguel":  {
+                   "accepted_gen":  2,
+                   "file":  "Miguel_Big_g2.png"
+               },
+    "Mike":  {
+                 "accepted_gen":  3,
+                 "file":  "Mike_Big_g3.png"
+             },
+    "Monk":  {
+                 "accepted_gen":  2,
+                 "file":  "Monk_Big_g2.png"
+             },
+    "Nervous":  {
+                    "accepted_gen":  2,
+                    "file":  "Nervous_Big_g2.png"
+                },
+    "Quinten":  {
+                    "accepted_gen":  3,
+                    "file":  "Quinten_Big_g3.png"
+                },
+    "Ricochet":  {
+                     "accepted_gen":  2,
+                     "file":  "Ricochet_Big_g2.png"
+                 },
+    "Rothman":  {
+                    "accepted_gen":  5,
+                    "file":  "Rothman_Big_g5.png"
+                },
+    "Shank":  {
+                  "accepted_gen":  5,
+                  "file":  "Shank_Big_g5.png"
+              },
+    "Spider":  {
+                   "accepted_gen":  5,
+                   "file":  "Spider_Big_g5.png"
+               },
+    "Static":  {
+                   "accepted_gen":  5,
+                   "file":  "Static_Big_g5.png"
+               },
+    "Steiger":  {
+                    "accepted_gen":  5,
+                    "file":  "Steiger_Big_g5.png"
+                },
+    "Vicious":  {
+                    "accepted_gen":  5,
+                    "file":  "Vicious_Big_g5.png"
+                },
+    "Vilde":  {
+                  "accepted_gen":  5,
+                  "file":  "Vilde_Big_g5.png"
+              },
+    "Vince":  {
+                  "accepted_gen":  5,
+                  "file":  "Vince_Big_g5.png"
+              }
+}

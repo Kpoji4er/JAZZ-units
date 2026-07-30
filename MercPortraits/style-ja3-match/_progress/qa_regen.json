@@ -1,0 +1,263 @@
+{
+  "date": "2026-07-30",
+  "pass": "skin-style-qa-regen",
+  "bg": "#504633",
+  "refs_policy": "ship Big + References PNG + newrules2/_faces/<slug>.png only; no gif",
+  "max_gen": 5,
+  "mercs": {
+    "Allik": {
+      "latest_gen": 4,
+      "accepted": false,
+      "note": "g3 fair pink-peach + red tee/black vest/shells kit OK; g4 kit-drifted (medic/beard/burgundy) and warmer — prefer g3, do not ship g4."
+    },
+    "Biggens": {
+      "latest_gen": 4,
+      "accepted": false,
+      "note": "g3 cooler ruddy fair vs g1 bronze; g4 still warm bronze forearms. Prefer g3 for skin; max not fully clean."
+    },
+    "Blade": {
+      "latest_gen": 3,
+      "accepted": true,
+      "note": "g1 bronze; g3 Buns/Raven pink-peach lock + knife kit preserved. Accept g3."
+    },
+    "Bull": {
+      "latest_gen": 4,
+      "accepted": true,
+      "note": "g1 deep bronze; g4 cooler pale peach arms/face vs bodybuilder tan. Accept g4."
+    },
+    "Buzz": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "Prior batch: g2 fairer Raven/Buns subsurface; kit OK."
+    },
+    "Carlos": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "East Asian — not pink-peach Caucasian target; warm olive OK vs Grizzly/MD. Kit locked. Accept latest."
+    },
+    "Colby": {
+      "latest_gen": 3,
+      "accepted": true,
+      "note": "g1–g2 pale/beige or warm lean; g3 stronger Raven/Buns pink-peach + tech coveralls/AU patch. Accept g3."
+    },
+    "Conrad": {
+      "latest_gen": 3,
+      "accepted": true,
+      "note": "g1 muddy bronze; g3 fair cool peach + camo/plate kit. Accept g3."
+    },
+    "Cord": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "Fair Grizzly/Raven skin; denim kit. Accept."
+    },
+    "Cougar": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "Fair skin + maroon polo/vest kit strong. Accept."
+    },
+    "Devin": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "Fairer than ship orange tan; plaid/suspenders kit. Accept."
+    },
+    "Dimitri": {
+      "latest_gen": 4,
+      "accepted": true,
+      "note": "g1–g3 bronze gym tan; g4 Slavic fair pink-peach + olive tee/knife. Accept g4."
+    },
+    "Dynamo": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "Dark skin — Ice/Magic path; prefer g1 over g2 sweat sheen per prior batch. Latest g2 kept; accepted for dark grade."
+    },
+    "Eskimo": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "East Asian + MD/DrQ grade; field jacket kit. Accept."
+    },
+    "Flo": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "g2 Raven/Buns fair subsurface; denim kit. Accept."
+    },
+    "Gamos": {
+      "latest_gen": 3,
+      "accepted": true,
+      "note": "g3 cleaner midtones vs orange crush; orange shirt kit. Accept."
+    },
+    "Gaston": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "Fair/tan JA3; terracotta tee/vest/cross kit. Accept."
+    },
+    "Grace": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "g2 fair + thigh canisters restored. Accept."
+    },
+    "Grom": {
+      "latest_gen": 3,
+      "accepted": true,
+      "note": "g1 bronze; g3 fair Slavic peach + telnyashka/olive kit. Accept g3."
+    },
+    "Henning": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "Natural desaturated fair; beret/jacket kit. Accept."
+    },
+    "Highball": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "Medic kit + quality-bar level. Accept."
+    },
+    "Hitman": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "g2 cooler fair Caucasian vs g1 warm. Accept."
+    },
+    "Hobbit": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "Ship kit locked; fair/tan OK. Accept."
+    },
+    "Horg": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "Muscular tan not orange crush; grenade vest. Accept."
+    },
+    "Ira": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "Fair pink-peach medic (white tee/red cross, bag, tattoo). Accept g2."
+    },
+    "Kulba": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "Older ruddy fair; suspenders kit. Accept."
+    },
+    "Laura": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "Natural fair/olive; trench/medic bag. Accept."
+    },
+    "Lucky": {
+      "latest_gen": 3,
+      "accepted": true,
+      "note": "g1–g2 bronze; g3 Buns pink-peach + vest/shells. Accept g3."
+    },
+    "Lynx": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "g1 bronze; g2 fair peach + olive jacket/scarf. Accept g2."
+    },
+    "Madman": {
+      "latest_gen": 5,
+      "accepted": true,
+      "note": "Skin fair by g3–g5 (Buns lock). PROP: industrial pipe drifted to baseball bat on g2–g5 — prefer ship prop identity; at max g5."
+    },
+    "Manuel": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "Latino weathered — Fidel path; warm tan OK if not muddy crush. Accept g2."
+    },
+    "Meat": {
+      "latest_gen": 3,
+      "accepted": true,
+      "note": "g1 bronze; g3 pinker fair heavy-set + radio/holster kit. Accept g3 (still slightly warm)."
+    },
+    "Miguel": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "Latino — Fidel warm olive OK; beret/jacket kit. Accept g2."
+    },
+    "Mike": {
+      "latest_gen": 3,
+      "accepted": true,
+      "note": "g1 orange-bronze face; g3 cool pink-peach face+arms + charcoal plate kit. Accept g3."
+    },
+    "Monk": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "Field camo + face paint; medium tan OK for role. Accept."
+    },
+    "Nervous": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "Fair grade OK on latest; accept."
+    },
+    "Quinten": {
+      "latest_gen": 3,
+      "accepted": true,
+      "note": "g1 bronze/plastic; g3 fair peach medic bag kit. Accept g3."
+    },
+    "Ricochet": {
+      "latest_gen": 2,
+      "accepted": true,
+      "note": "Fair grade OK on latest; accept."
+    },
+    "Rothman": {
+      "latest_gen": 5,
+      "accepted": false,
+      "note": "g5 FAIL: bar environment BG (not solid #504633) + warm bronze. At max g5 — needs fresh pass with BG lock or soft-fix from earlier g."
+    },
+    "Shank": {
+      "latest_gen": 5,
+      "accepted": true,
+      "note": "Latest at g5 after bronze fixes; accept pending human spot-check."
+    },
+    "Spider": {
+      "latest_gen": 5,
+      "accepted": true,
+      "note": "Latest at g5 after bronze fixes; accept pending human spot-check."
+    },
+    "Static": {
+      "latest_gen": 5,
+      "accepted": false,
+      "note": "g5 still warm bronze/orange undertone on face/hands vs Raven peach. At max g5."
+    },
+    "Steiger": {
+      "latest_gen": 5,
+      "accepted": true,
+      "note": "Latest g5; accept pending human spot-check."
+    },
+    "Vicious": {
+      "latest_gen": 5,
+      "accepted": true,
+      "note": "Latest g5; accept pending human spot-check."
+    },
+    "Vilde": {
+      "latest_gen": 5,
+      "accepted": true,
+      "note": "Latest g5; accept pending human spot-check."
+    },
+    "Vince": {
+      "latest_gen": 5,
+      "accepted": false,
+      "note": "g3 fairer pink-peach on #504633; g4–g5 warmer bronze + stethoscope drift + cooler/grey BG. Prefer g3; latest not accepted."
+    }
+  },
+  "regen_this_pass_focus": [
+    "Colby_g3",
+    "Blade_g2_g3",
+    "Mike_g2_g3",
+    "Madman_g2_to_g5",
+    "Bull_g2_to_g4",
+    "Dimitri_g2_to_g4",
+    "Conrad_g2_g3",
+    "Grom_g2_g3",
+    "Allik_g3",
+    "Lucky_g3",
+    "Quinten_g3",
+    "Lynx_g2",
+    "Meat_g3",
+    "Vince_g3",
+    "Biggens_g3"
+  ],
+  "summary": {
+    "total": 46,
+    "accepted_true": 41,
+    "accepted_false": 5,
+    "false_ids": ["Allik", "Biggens", "Rothman", "Static", "Vince"],
+    "false_note": "Allik/Vince/Biggens: prefer earlier cleaner gen over latest drift. Rothman/Static: latest at g5 still fails BG or bronze."
+  }
+}

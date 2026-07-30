@@ -1,0 +1,82 @@
+{
+  "batch": "C",
+  "date": "2026-07-30",
+  "goal": "Regenerate FULL-BODY Big so STYLE/SKIN/COLOR GRADE/EXPOSURE match vanilla JA3 refs; keep same person+kit from ship portrait",
+  "output_dir": "MercPortraits/style-ja3-match/",
+  "mercs": {
+    "Gaston": {
+      "accepted": "g1",
+      "file": "Gaston_Big_g1.png",
+      "gens": ["g1"],
+      "skin_refs": ["Grizzly", "MD", "Raven"],
+      "notes": "Fair/tan JA3 skin; kit locked (terracotta tee, vest+shells, gold cross, khaki cargos, thigh holster)."
+    },
+    "Grace": {
+      "accepted": "g2",
+      "file": "Grace_Big_g2.png",
+      "gens": ["g1", "g2"],
+      "skin_refs": ["Raven", "Buns", "MD"],
+      "notes": "g1 kit drifted to knives; g2 restores ship thigh canisters + fair JA3 skin."
+    },
+    "Henning": {
+      "accepted": "g1",
+      "file": "Henning_Big_g1.png",
+      "gens": ["g1"],
+      "skin_refs": ["MD", "Grizzly", "Raven"],
+      "notes": "Beret+charcoal field jacket kit locked; natural desaturated skin."
+    },
+    "Highball": {
+      "accepted": "g1",
+      "file": "Highball_Big_g1.png",
+      "gens": ["g1"],
+      "skin_refs": ["MD", "Grizzly", "Highball_ideal"],
+      "notes": "Medic kit+cane+stethoscope; quality-bar level OK."
+    },
+    "Hitman": {
+      "accepted": "g2",
+      "file": "Hitman_Big_g2.png",
+      "gens": ["g1", "g2"],
+      "skin_refs": ["MD", "Raven", "Grizzly"],
+      "notes": "g1 skin too warm/tan; g2 cooler fair Caucasian matching MD/Raven."
+    },
+    "Hobbit": {
+      "accepted": "g1",
+      "file": "Hobbit_Big_g1.png",
+      "gens": ["g1"],
+      "skin_refs": ["Grizzly", "MD", "Raven"],
+      "notes": "Ship kit kept (blue fur parka, dynamite rig, muddy cargos, goggles)."
+    },
+    "Horg": {
+      "accepted": "g1",
+      "file": "Horg_Big_g1.png",
+      "gens": ["g1"],
+      "skin_refs": ["Grizzly", "Magic", "Steroid"],
+      "notes": "Muscular tanned but not orange crush; grenade vest+cigar+holstered pistol."
+    },
+    "Kulba": {
+      "accepted": "g1",
+      "file": "Kulba_Big_g1.png",
+      "gens": ["g1"],
+      "skin_refs": ["Grizzly", "MD", "Gus"],
+      "notes": "Older ruddy fair skin; suspenders+work shirt kit locked."
+    },
+    "Laura": {
+      "accepted": "g1",
+      "file": "Laura_Big_g1.png",
+      "gens": ["g1"],
+      "skin_refs": ["Raven", "Buns", "Grizzly"],
+      "notes": "Leather trench+crop+medic bag kit locked; natural fair/olive skin."
+    }
+  },
+  "accepted_summary": {
+    "Gaston": "g1",
+    "Grace": "g2",
+    "Henning": "g1",
+    "Highball": "g1",
+    "Hitman": "g2",
+    "Hobbit": "g1",
+    "Horg": "g1",
+    "Kulba": "g1",
+    "Laura": "g1"
+  }
+}

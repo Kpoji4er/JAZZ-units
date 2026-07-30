@@ -1,0 +1,85 @@
+{
+  "batch": "D",
+  "date": "2026-07-30",
+  "scope": "Big only — style JA3 match regen",
+  "mercs": ["Lucky", "Lynx", "Manuel", "Meat", "Miguel", "Monk", "Nervous", "Quinten", "Ricochet"],
+  "output_dir": "MercPortraits/style-ja3-match",
+  "rules": {
+    "bg": "#504633",
+    "identity_first": "MercPortraits/<Id>_Big.png",
+    "style_refs_fair": ["Raven", "Buns", "MD", "Grizzly"],
+    "style_refs_dark": ["Ice", "Magic", "Blood"],
+    "quality_bar": "_quality_bar/Highball_ideal_Big.png",
+    "max_gens": 5,
+    "keep_all_gens": true
+  },
+  "results": {
+    "Lucky": {
+      "gens": [1, 2],
+      "accepted": 2,
+      "file": "Lucky_Big_g2.png",
+      "notes": "g1 OK kit; g2 better thinning hairline + JA3 fair skin. Accepted g2."
+    },
+    "Lynx": {
+      "gens": [1, 2],
+      "accepted": 2,
+      "file": "Lynx_Big_g2.png",
+      "notes": "g1 weathered solid; g2 cleaner skin/scarf/jacket. Accepted g2."
+    },
+    "Manuel": {
+      "gens": [1, 2],
+      "accepted": 2,
+      "file": "Manuel_Big_g2.png",
+      "notes": "g1 OK; g2 stronger weathered Latino olive + left-knee tear. Accepted g2."
+    },
+    "Meat": {
+      "gens": [1, 2, 3],
+      "accepted": 3,
+      "file": "Meat_Big_g3.png",
+      "notes": "g1/g2 holster drifted to right hip; g3 restored LEFT-hip holster + radio left shoulder, full-length endomorph legs. Accepted g3."
+    },
+    "Miguel": {
+      "gens": [1, 2],
+      "accepted": 2,
+      "file": "Miguel_Big_g2.png",
+      "notes": "g1 OK beret/star; g2 warmer olive skin pass. Accepted g2."
+    },
+    "Monk": {
+      "gens": [1, 2],
+      "accepted": 2,
+      "file": "Monk_Big_g2.png",
+      "notes": "g1 OK camo kit; g2 cleaner paint + skin. Accepted g2."
+    },
+    "Nervous": {
+      "gens": [1, 2],
+      "accepted": 2,
+      "file": "Nervous_Big_g2.png",
+      "notes": "g1 facial-hair drift; g2 flat-top + sideburns/mustache/goatee closer to ship+JA2 face, chest rig/knee pads. Accepted g2."
+    },
+    "Quinten": {
+      "gens": [1, 2],
+      "accepted": 2,
+      "file": "Quinten_Big_g2.png",
+      "notes": "g1 OK medic shorts+duffel; g2 cleaner fair skin + medical cross bag. Accepted g2."
+    },
+    "Ricochet": {
+      "gens": [1, 2],
+      "accepted": 2,
+      "file": "Ricochet_Big_g2.png",
+      "notes": "g1 OK mohawk/tattoos/spikes; g2 cleaner fair skin between ink. Accepted g2."
+    }
+  },
+  "accepted_summary": [
+    { "id": "Lucky", "gen": 2, "path": "Lucky_Big_g2.png" },
+    { "id": "Lynx", "gen": 2, "path": "Lynx_Big_g2.png" },
+    { "id": "Manuel", "gen": 2, "path": "Manuel_Big_g2.png" },
+    { "id": "Meat", "gen": 3, "path": "Meat_Big_g3.png" },
+    { "id": "Miguel", "gen": 2, "path": "Miguel_Big_g2.png" },
+    { "id": "Monk", "gen": 2, "path": "Monk_Big_g2.png" },
+    { "id": "Nervous", "gen": 2, "path": "Nervous_Big_g2.png" },
+    { "id": "Quinten", "gen": 2, "path": "Quinten_Big_g2.png" },
+    { "id": "Ricochet", "gen": 2, "path": "Ricochet_Big_g2.png" }
+  ],
+  "status": "complete",
+  "cut": "pending (opaque #504633 raw kept in _raw/ and style-ja3-match/)"
+}
