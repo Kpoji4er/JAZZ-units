@@ -346,6 +346,7 @@ function JazzAI_PickCombatStance(unit, proto_context, opts)
 	if opts.allow_medic or family == "Medic" then
 		-- F10: bleeding on self or allies triggers Medic immediately
 		if JazzAI_TryMedicSwitch(unit) then
+			JazzAI_ApplyMedicOptLocCap()
 			return "Medic"
 		end
 	end
@@ -421,4 +422,43 @@ function JazzAI_PickCombatStance(unit, proto_context, opts)
 	end
 
 	return archetype
+end
+
+-- MED-001: OptLoc ≤45 for Medic archetypes.
+-- Runtime enforce so Mod Editor autosave of items.lua cannot restore OptLoc 80.
+local JazzAI_MedicOptLocMax = 45
+local JazzAI_MedicOptLocIds = {
+	Medic = true,
+	Medic_Low = true,
+}
+
+function JazzAI_ApplyMedicOptLocCap()
+	local root = Presets and Presets.AIArchetype
+	if not root then
+		return
+	end
+	for _, group in pairs(root) do
+		if type(group) == "table" then
+			for id, preset in pairs(group) do
+				local pid = id
+				if type(preset) == "table" then
+					pid = preset.id or preset.Id or id
+				end
+				if JazzAI_MedicOptLocIds[pid] and type(preset) == "table" then
+					local r = preset.OptLocSearchRadius
+					if type(r) == "number" and r > JazzAI_MedicOptLocMax then
+						preset.OptLocSearchRadius = JazzAI_MedicOptLocMax
+					end
+				end
+			end
+		end
+	end
+end
+
+function OnMsg.ModsReloaded()
+	JazzAI_ApplyMedicOptLocCap()
+end
+
+function OnMsg.DataLoaded()
+	JazzAI_ApplyMedicOptLocCap()
 end

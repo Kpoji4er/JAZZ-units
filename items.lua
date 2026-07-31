@@ -104880,7 +104880,7 @@ return {
 					'Weight', 5,
 				}),
 			},
-			OptLocSearchRadius = 80,
+			OptLocSearchRadius = 45,
 			PrefStance = "Crouch",
 			SignatureActions = {
 				PlaceObj('AIActionThrowFlare', {
@@ -105006,7 +105006,7 @@ return {
 				PlaceObj('AIPolicyTakeCover', nil),
 				PlaceObj('AIPolicyLosToEnemy', nil),
 			},
-			OptLocSearchRadius = 80,
+			OptLocSearchRadius = 45,
 			PrefStance = "Crouch",
 			SignatureActions = {
 				PlaceObj('AIActionThrowFlare', {
