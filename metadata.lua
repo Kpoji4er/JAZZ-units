@@ -2,7 +2,7 @@ return PlaceObj('ModDef', {
 	'title', "JAZZ Units",
 	'description', "Мод для работы основного JAZZ модаВ",
 	'image', "Mod/Dv3mFVN/Images/JAZZLOGO.jpg",
-	'last_changes', "- COMPAT-005: LegionJAZZSquadT1_Early — true T1-only early squad for NoMaps day-1 weight class\n- Flanker OptLocSearchRadius 80→55 (Legion_Flanker / Rebels_Flanker) for AI Precalc cost\n- Workshop AIM mercs + Benny/Simon: UnitData/VR/voices/portraits; JA12 voice expand; Spider v1 portraits; drop DesignerExplosives from JA12 mercs\n- JA2 merc voice remaps + VR stubs shipped; Spouke done_manual untouched\n- Colby voices: JA2 Trevor archive only; fill gaps by duplicating related lines (drop neural)\n- Fix TireArmor Scrap/Kevlar plate packs (was Steel3) for early Middle Legion armor\n- Legion frontliner GL chance + M72 LAW pool; Veteran/Mercenary HeavyWeapon equip; Rocketeer LAW mix\n- Paid hire for Madman/Grom/Hitman (fix StartingSalary=0 div0 on AIM)\n- Ship style-ja3-match s1 merc portraits (48) + _all_mercs_better finals\n- Highball STYLE LEVEL QA bar; fix non-square resize squish\n- Packaging: expand .gitignore + metadata ignore_files for Steam upload",
+	'last_changes', "- Fix GenW MAS36 loot class (Mas36→MAS36); ship Carol toolbox + Jerry 40mmTB InventoryItem companions\n- COMPAT-005: LegionJAZZSquadT1_Early — true T1-only early squad for NoMaps day-1 weight class\n- Flanker OptLocSearchRadius 80→55 (Legion_Flanker / Rebels_Flanker) for AI Precalc cost\n- Workshop AIM mercs + Benny/Simon: UnitData/VR/voices/portraits; JA12 voice expand; Spider v1 portraits; drop DesignerExplosives from JA12 mercs\n- JA2 merc voice remaps + VR stubs shipped; Spouke done_manual untouched\n- Colby voices: JA2 Trevor archive only; fill gaps by duplicating related lines (drop neural)\n- Fix TireArmor Scrap/Kevlar plate packs (was Steel3) for early Middle Legion armor\n- Legion frontliner GL chance + M72 LAW pool; Veteran/Mercenary HeavyWeapon equip; Rocketeer LAW mix\n- Paid hire for Madman/Grom/Hitman (fix StartingSalary=0 div0 on AIM)\n- Ship style-ja3-match s1 merc portraits (48) + _all_mercs_better finals\n- Highball STYLE LEVEL QA bar; fix non-square resize squish\n- Packaging: expand .gitignore + metadata ignore_files for Steam upload",
 	'ignore_files', {
 		-- VCS / IDE / agent (tracked in git, not for Steam pack)
 		"*.git/*",
@@ -44,7 +44,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 18,
-	'version', 2258,
+	'version', 2259,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -242,10 +242,12 @@ return PlaceObj('ModDef', {
 		"UnitData/Merc_MildredPatterson.lua",
 		"Code/WorkshopMercs/Merc_JerrySinclair_Voices.lua",
 		"UnitData/Merc_JerrySinclair.lua",
+		"InventoryItem/Merc_JerrySinclair_40mmTB.lua",
 		"Code/WorkshopMercs/Merc_HectorSanchez_Voices.lua",
 		"UnitData/Merc_HectorSanchez.lua",
 		"Code/WorkshopMercs/Merc_CarolThompson_Voices.lua",
 		"UnitData/Merc_CarolThompson.lua",
+		"InventoryItem/Merc_CarolThompson_Item.lua",
 		"Code/WorkshopMercs/Merc_AnnieDubois_Voices.lua",
 		"UnitData/Merc_AnnieDubois.lua",
 		"UnitData/JAZZ_Ivanov.lua",
@@ -9477,6 +9479,11 @@ return PlaceObj('ModDef', {
 			'ClassDisplayName', "Unit",
 		}),
 		PlaceObj('ModResourcePreset', {
+			'Class', "InventoryItemCompositeDef",
+			'Id', "Merc_CarolThompson_Item",
+			'ClassDisplayName', "Inventory item",
+		}),
+		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",
 			'Id', "Merc_HectorSanchez",
 			'ClassDisplayName', "Unit",
@@ -9485,6 +9492,11 @@ return PlaceObj('ModDef', {
 			'Class', "UnitDataCompositeDef",
 			'Id', "Merc_JerrySinclair",
 			'ClassDisplayName', "Unit",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "InventoryItemCompositeDef",
+			'Id', "Merc_JerrySinclair_40mmTB",
+			'ClassDisplayName', "Inventory item",
 		}),
 		PlaceObj('ModResourcePreset', {
 			'Class', "UnitDataCompositeDef",

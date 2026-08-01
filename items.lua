@@ -28226,7 +28226,7 @@ return {
 						id = "JAZZ_GenW_Mas36_m0_75mm_rifle_ammo",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
-							item = "Mas36",
+							item = "MAS36",
 							stack_max = 1,
 							stack_min = 1,
 						}),
@@ -28240,7 +28240,7 @@ return {
 						id = "JAZZ_GenW_Mas36_rifle_m1_75mm_rifle_ammo",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
-							item = "Mas36",
+							item = "MAS36",
 							stack_max = 1,
 							stack_min = 1,
 						}),
@@ -28254,7 +28254,7 @@ return {
 						id = "JAZZ_GenW_Mas36_rifle_m2_75mm_rifle_ammo",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
-							item = "Mas36",
+							item = "MAS36",
 							stack_max = 1,
 							stack_min = 1,
 						}),
