@@ -109,7 +109,7 @@ DefineClass.Jazz_Grom = {
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000002417, --[[ModItemUnitDataCompositeDef Jazz_Grom Text RehireIntro ChatMessage voice:Jazz_Grom]] "Контракт заканчивается. Я всё равно бесплатный — продолжаем службу?"),
+			'Text', T(890000000002417, --[[ModItemUnitDataCompositeDef Jazz_Grom Text RehireIntro ChatMessage voice:Jazz_Grom]] "Контракт заканчивается. Продлеваем службу, или мне искать другой аэродром?"),
 		}),
 	},
 	RehireOutro = {
@@ -118,10 +118,10 @@ DefineClass.Jazz_Grom = {
 		}),
 	},
 	MedicalDeposit = "none",
-	StartingSalary = 0,
+	StartingSalary = 2500,
 	SalaryIncrease = 200,
-	SalaryLv1 = 0,
-	SalaryMaxLv = 0,
+	SalaryLv1 = 1000,
+	SalaryMaxLv = 6000,
 	StartingLevel = 5,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")

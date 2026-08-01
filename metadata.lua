@@ -2,11 +2,11 @@ return PlaceObj('ModDef', {
 	'title', "JAZZ Units",
 	'description', "Мод для работы основного JAZZ модаВ",
 	'image', "Mod/Dv3mFVN/Images/JAZZLOGO.jpg",
-	'last_changes', "- Ship style-ja3-match s1 merc portraits (48) + _all_mercs_better finals\n- Highball STYLE LEVEL QA bar; fix non-square resize squish",
+	'last_changes', "- Paid hire for Madman/Grom/Hitman (fix StartingSalary=0 div0 on AIM)\n- Ship style-ja3-match s1 merc portraits (48) + _all_mercs_better finals\n- Highball STYLE LEVEL QA bar; fix non-square resize squish",
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 18,
-	'version', 2249,
+	'version', 2250,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {

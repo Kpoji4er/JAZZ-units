@@ -117447,12 +117447,12 @@ return {
 					},
 					'PartingWords', {
 						PlaceObj('ChatMessage', {
-							'Text', T(890000000002115, --[[ModItemUnitDataCompositeDef Jazz_Madman Text PartingWords ChatMessage voice:Jazz_Madman]] "Ха! Поехали крушить. Бесплатно, лишь бы весело было."),
+							'Text', T(890000000002115, --[[ModItemUnitDataCompositeDef Jazz_Madman Text PartingWords ChatMessage voice:Jazz_Madman]] "Ха! Поехали крушить. Дёшево и сердито — лишь бы весело было."),
 						}),
 					},
 					'RehireIntro', {
 						PlaceObj('ChatMessage', {
-							'Text', T(890000000002116, --[[ModItemUnitDataCompositeDef Jazz_Madman Text RehireIntro ChatMessage voice:Jazz_Madman]] "Контракт заканчивается, но я всё равно бесплатный — продлеваем?"),
+							'Text', T(890000000002116, --[[ModItemUnitDataCompositeDef Jazz_Madman Text RehireIntro ChatMessage voice:Jazz_Madman]] "Контракт заканчивается — продлеваем, или сам пойду кого-нибудь чинить?"),
 						}),
 					},
 					'RehireOutro', {
@@ -117461,10 +117461,10 @@ return {
 						}),
 					},
 					'MedicalDeposit', "none",
-					'StartingSalary', 0,
+					'StartingSalary', 900,
 					'SalaryIncrease', 200,
-					'SalaryLv1', 0,
-					'SalaryMaxLv', 500,
+					'SalaryLv1', 400,
+					'SalaryMaxLv', 2500,
 					'StartingLevel', 4,
 					'CustomEquipGear', function (self, items)
 						self:TryEquip(items, "Handheld A", "Melee")
@@ -118047,7 +118047,7 @@ return {
 					},
 					'RehireIntro', {
 						PlaceObj('ChatMessage', {
-							'Text', T(890000000002417, --[[ModItemUnitDataCompositeDef Jazz_Grom Text RehireIntro ChatMessage voice:Jazz_Grom]] "Контракт заканчивается. Я всё равно бесплатный — продолжаем службу?"),
+							'Text', T(890000000002417, --[[ModItemUnitDataCompositeDef Jazz_Grom Text RehireIntro ChatMessage voice:Jazz_Grom]] "Контракт заканчивается. Продлеваем службу, или мне искать другой аэродром?"),
 						}),
 					},
 					'RehireOutro', {
@@ -118056,10 +118056,10 @@ return {
 						}),
 					},
 					'MedicalDeposit', "none",
-					'StartingSalary', 0,
+					'StartingSalary', 2500,
 					'SalaryIncrease', 200,
-					'SalaryLv1', 0,
-					'SalaryMaxLv', 0,
+					'SalaryLv1', 1000,
+					'SalaryMaxLv', 6000,
 					'StartingLevel', 5,
 					'CustomEquipGear', function (self, items)
 						self:TryEquip(items, "Handheld A", "Firearm")
@@ -122170,9 +122170,9 @@ return {
 				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004695, "Contract ending?") }) },
 				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004696, "Staying.") }) },
 				'MedicalDeposit', "none",
-				'StartingSalary', 0,
+				'StartingSalary', 1500,
 				'SalaryIncrease', 150,
-				'SalaryLv1', 0,
+				'SalaryLv1', 600,
 				'SalaryMaxLv', 3000,
 				'StartingLevel', 4,
 				'CustomEquipGear', function (self, items)
