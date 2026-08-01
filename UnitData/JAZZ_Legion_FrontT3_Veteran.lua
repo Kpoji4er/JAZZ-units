@@ -40,6 +40,7 @@ DefineClass.JAZZ_Legion_FrontT3_Veteran = {
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 		self:TryEquip(items, "Handheld B", "GrenadeLauncher")
+		self:TryEquip(items, "Handheld B", "HeavyWeapon")
 		self:TryEquip(items, "Handheld B", "MeleeWeapon")
 	end,
 	MaxHitPoints = 50,

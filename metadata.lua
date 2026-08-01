@@ -2,7 +2,7 @@ return PlaceObj('ModDef', {
 	'title', "JAZZ Units",
 	'description', "Мод для работы основного JAZZ модаВ",
 	'image', "Mod/Dv3mFVN/Images/JAZZLOGO.jpg",
-	'last_changes', "- Paid hire for Madman/Grom/Hitman (fix StartingSalary=0 div0 on AIM)\n- Ship style-ja3-match s1 merc portraits (48) + _all_mercs_better finals\n- Highball STYLE LEVEL QA bar; fix non-square resize squish\n- Packaging: expand .gitignore + metadata ignore_files for Steam upload",
+	'last_changes', "- Legion frontliner GL chance + M72 LAW pool; Veteran/Mercenary HeavyWeapon equip; Rocketeer LAW mix\n- Paid hire for Madman/Grom/Hitman (fix StartingSalary=0 div0 on AIM)\n- Ship style-ja3-match s1 merc portraits (48) + _all_mercs_better finals\n- Highball STYLE LEVEL QA bar; fix non-square resize squish\n- Packaging: expand .gitignore + metadata ignore_files for Steam upload",
 	'ignore_files', {
 		-- VCS / IDE / agent (tracked in git, not for Steam pack)
 		"*.git/*",
@@ -44,7 +44,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 18,
-	'version', 2251,
+	'version', 2252,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -1940,6 +1940,11 @@ return PlaceObj('ModDef', {
 		PlaceObj('ModResourcePreset', {
 			'Class', "LootDef",
 			'Id', "RPG",
+			'ClassDisplayName', "LootDef",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "LootDef",
+			'Id', "M72LAW",
 			'ClassDisplayName', "LootDef",
 		}),
 		PlaceObj('ModResourcePreset', {

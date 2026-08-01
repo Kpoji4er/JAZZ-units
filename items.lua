@@ -7235,6 +7235,11 @@ return {
 						weight = 15000,
 					}),
 					PlaceObj('LootEntryLootDef', {
+						comment = "Disposable M72 LAW",
+						loot_def = "M72LAW",
+						weight = 15000,
+					}),
+					PlaceObj('LootEntryLootDef', {
 						comment = "T3",
 						game_conditions = {
 							PlaceObj('QuestIsVariableNum', {
@@ -7302,6 +7307,18 @@ return {
 					}),
 					PlaceObj('LootEntryLootDef', {
 						loot_def = "RPG7Ammo",
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "Disposable LAW; embedded Warhead_Frag",
+					comment = "T2-1",
+					group = "Default",
+					id = "M72LAW",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', {
+						item = "M72LAW",
+						stack_max = 1,
+						stack_min = 1,
 					}),
 				}),
 				}),
@@ -21792,8 +21809,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot_aa12",
-								"MagLarge",
+								"JAZZ_LaserDot_aa12",
+								"JAZZ_MagLarge_25_AA12",
 							},
 							weapon = "AA12",
 						}),
@@ -21809,8 +21826,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot_aa12",
-								"MagLarge",
+								"JAZZ_LaserDot_aa12",
+								"JAZZ_MagLarge_25_AA12",
 							},
 							weapon = "AA12",
 						}),
@@ -21825,7 +21842,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "AA52",
 						}),
@@ -21840,7 +21857,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "AA52",
 						}),
@@ -21855,7 +21872,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "AA52",
 						}),
@@ -21870,7 +21887,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_30_40",
 							},
 							weapon = "AK47",
 						}),
@@ -21885,8 +21902,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
-								"Suppressor",
+								"JAZZ_MagLarge_30_40",
+								"JAZZ_Suppressor",
 							},
 							weapon = "AK47",
 						}),
@@ -21901,8 +21918,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
-								"Suppressor",
+								"JAZZ_MagLarge_30_40",
+								"JAZZ_Suppressor",
 							},
 							weapon = "AK47",
 						}),
@@ -21918,7 +21935,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Cobra",
-								"MagLarge_30_45",
+								"JAZZ_MagLarge_30_45",
 							},
 							weapon = "AK74",
 						}),
@@ -21934,8 +21951,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Cobra",
-								"MagLarge_30_45",
-								"Compensator",
+								"JAZZ_MagLarge_30_45",
+								"JAZZ_Compensator",
 							},
 							weapon = "AK74",
 						}),
@@ -21951,8 +21968,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Cobra",
-								"MagLarge_30_45",
-								"Compensator",
+								"JAZZ_MagLarge_30_45",
+								"JAZZ_Compensator",
 							},
 							weapon = "AK74",
 						}),
@@ -21967,9 +21984,9 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"JAZZ_Reflex_PKAS",
-								"MagLarge_30_40",
-								"LaserDot",
+								"JAZZ_Reflex_Aimpoint5000",
+								"JAZZ_MagLarge_30_40",
+								"JAZZ_LaserDot",
 							},
 							weapon = "AKM",
 						}),
@@ -21984,10 +22001,10 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"JAZZ_Reflex_PKAS",
-								"MagLarge_30_40",
-								"LaserDot",
-								"Suppressor",
+								"JAZZ_Reflex_Aimpoint5000",
+								"JAZZ_MagLarge_30_40",
+								"JAZZ_LaserDot",
+								"JAZZ_Suppressor",
 							},
 							weapon = "AKM",
 						}),
@@ -22002,10 +22019,10 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"JAZZ_Reflex_PKAS",
-								"MagLarge_30_40",
-								"LaserDot",
-								"Suppressor",
+								"JAZZ_Reflex_Aimpoint5000",
+								"JAZZ_MagLarge_30_40",
+								"JAZZ_LaserDot",
+								"JAZZ_Suppressor",
 							},
 							weapon = "AKM",
 						}),
@@ -22020,7 +22037,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_30_45",
+								"JAZZ_MagLarge_30_45",
 							},
 							weapon = "AKSU",
 						}),
@@ -22035,8 +22052,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_30_45",
-								"LaserDot",
+								"JAZZ_MagLarge_30_45",
+								"JAZZ_LaserDot",
 							},
 							weapon = "AKSU",
 						}),
@@ -22051,9 +22068,9 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_30_45",
-								"LaserDot",
-								"ImprovisedSuppressor",
+								"JAZZ_MagLarge_30_45",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "AKSU",
 						}),
@@ -22068,8 +22085,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagLarge_30_45",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_30_45",
 							},
 							weapon = "AKSU",
 						}),
@@ -22084,8 +22101,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ImprovisedSuppressor",
-								"MagLarge_30_45",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_MagLarge_30_45",
 							},
 							weapon = "AKSU",
 						}),
@@ -22100,9 +22117,9 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ImprovisedSuppressor",
-								"MagLarge_30_45",
-								"LaserDot",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_MagLarge_30_45",
+								"JAZZ_LaserDot",
 							},
 							weapon = "AKSU",
 						}),
@@ -22117,9 +22134,9 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_30_45",
-								"LaserDot",
-								"ImprovisedSuppressor",
+								"JAZZ_MagLarge_30_45",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "AKSU",
 						}),
@@ -22160,11 +22177,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_APS_assault_m1_9x18_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "APS",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "APS",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x18_smg_ammo_ap",
@@ -22189,11 +22205,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_APS_cqb_m1_9x18_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "APS",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "APS",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x18_smg_ammo_ap",
@@ -22220,7 +22235,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ImprovisedSuppressor",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "APS",
 						}),
@@ -22235,7 +22250,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ImprovisedSuppressor",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "APS",
 						}),
@@ -22294,7 +22309,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"Compensator",
+								"JAZZ_Compensator",
 							},
 							weapon = "AR10DMR",
 						}),
@@ -22310,7 +22325,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"Compensator",
+								"JAZZ_Compensator",
 							},
 							weapon = "AR10DMR",
 						}),
@@ -22356,7 +22371,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge_10_20",
+								"JAZZ_MagLarge_10_20_VAL",
 							},
 							weapon = "AS_Val",
 						}),
@@ -22372,9 +22387,9 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge_10_20",
-								"LaserDot",
-								"SuppressorIntegrated",
+								"JAZZ_MagLarge_10_20_VAL",
+								"JAZZ_LaserDot",
+								"JAZZ_SuppressorIntegrated",
 							},
 							weapon = "AS_Val",
 						}),
@@ -22389,8 +22404,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagLarge_10_20",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_10_20_VAL",
 							},
 							weapon = "AS_Val",
 						}),
@@ -22406,7 +22421,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"SuppressorIntegrated",
+								"JAZZ_SuppressorIntegrated",
 							},
 							weapon = "AS_Val",
 						}),
@@ -22422,8 +22437,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"SuppressorIntegrated",
-								"MagLarge_10_20",
+								"JAZZ_SuppressorIntegrated",
+								"JAZZ_MagLarge_10_20_VAL",
 							},
 							weapon = "AS_Val",
 						}),
@@ -22439,9 +22454,9 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"SuppressorIntegrated",
-								"MagLarge_10_20",
-								"LaserDot",
+								"JAZZ_SuppressorIntegrated",
+								"JAZZ_MagLarge_10_20_VAL",
+								"JAZZ_LaserDot",
 							},
 							weapon = "AS_Val",
 						}),
@@ -22457,9 +22472,9 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge_10_20",
-								"LaserDot",
-								"SuppressorIntegrated",
+								"JAZZ_MagLarge_10_20_VAL",
+								"JAZZ_LaserDot",
+								"JAZZ_SuppressorIntegrated",
 							},
 							weapon = "AS_Val",
 						}),
@@ -22490,8 +22505,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge_30_42",
-								"LaserDot",
+								"JAZZ_MagLarge_30_42",
+								"JAZZ_LaserDot",
 							},
 							weapon = "AUG",
 						}),
@@ -22507,9 +22522,9 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge_30_42",
-								"LaserDot",
-								"Suppressor",
+								"JAZZ_MagLarge_30_42",
+								"JAZZ_LaserDot",
+								"JAZZ_Suppressor",
 							},
 							weapon = "AUG",
 						}),
@@ -22525,9 +22540,9 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge_30_42",
-								"LaserDot",
-								"Suppressor",
+								"JAZZ_MagLarge_30_42",
+								"JAZZ_LaserDot",
+								"JAZZ_Suppressor",
 							},
 							weapon = "AUG",
 						}),
@@ -22540,11 +22555,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_Agram2000_assault_m1_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "Agram2000",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Agram2000",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -22569,11 +22583,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_Agram2000_cqb_m1_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "Agram2000",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Agram2000",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -22600,7 +22613,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"PistolSuppressor",
+								"JAZZ_PistolSuppressor",
 							},
 							weapon = "Agram2000",
 						}),
@@ -22615,7 +22628,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"PistolSuppressor",
+								"JAZZ_PistolSuppressor",
 							},
 							weapon = "Agram2000",
 						}),
@@ -22703,7 +22716,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Scope_6x",
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "ArcticWarfare",
 						}),
@@ -22774,7 +22787,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "BAR",
 						}),
@@ -22789,7 +22802,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "BAR",
 						}),
@@ -22804,7 +22817,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "BAR",
 						}),
@@ -22820,7 +22833,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"Suppressor",
+								"JAZZ_Suppressor",
 							},
 							weapon = "BarretM82",
 						}),
@@ -22866,7 +22879,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Scope_6x",
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "BarretM82",
 						}),
@@ -22881,7 +22894,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_18_20",
 							},
 							weapon = "Bereta92",
 						}),
@@ -22896,8 +22909,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagLarge",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_18_20",
 							},
 							weapon = "Bereta92",
 						}),
@@ -22940,7 +22953,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_25_PISTOL_9",
 							},
 							weapon = "Beretta93r",
 						}),
@@ -22955,7 +22968,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_25_PISTOL_9",
 							},
 							weapon = "Beretta93r",
 						}),
@@ -22970,7 +22983,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_25_PISTOL_9",
 							},
 							weapon = "Beretta93r",
 						}),
@@ -22985,7 +22998,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_25_PISTOL_9",
 							},
 							weapon = "Beretta93r",
 						}),
@@ -23000,8 +23013,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ImprovisedSuppressor",
-								"MagLarge",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_MagLarge_25_PISTOL_9",
 							},
 							weapon = "Beretta93r",
 						}),
@@ -23016,8 +23029,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ImprovisedSuppressor",
-								"MagLarge",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_MagLarge_25_PISTOL_9",
 							},
 							weapon = "Beretta93r",
 						}),
@@ -23058,11 +23071,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_BerettaM12_assault_m1_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "BerettaM12",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "BerettaM12",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -23087,11 +23099,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_BerettaM12_cqb_m1_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "BerettaM12",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "BerettaM12",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -23118,7 +23129,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ImprovisedSuppressor",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "BerettaM12",
 						}),
@@ -23133,7 +23144,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ImprovisedSuppressor",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "BerettaM12",
 						}),
@@ -23177,7 +23188,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagNormal",
+								"JAZZ_MagLarge_50_AR15",
 							},
 							weapon = "CAR15",
 						}),
@@ -23193,6 +23204,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
+								"JAZZ_MagLarge_50_AR15",
 							},
 							weapon = "CAR15",
 						}),
@@ -23208,7 +23220,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"Suppressor",
+								"JAZZ_MagLarge_50_AR15",
+								"JAZZ_Suppressor",
 							},
 							weapon = "CAR15",
 						}),
@@ -23223,7 +23236,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagNormal",
+								"JAZZ_MagLarge_50_AR15",
 							},
 							weapon = "CAR15",
 						}),
@@ -23239,7 +23252,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"Suppressor",
+								"JAZZ_Suppressor",
+								"JAZZ_MagLarge_50_AR15",
 							},
 							weapon = "CAR15",
 						}),
@@ -23255,7 +23269,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"Suppressor",
+								"JAZZ_Suppressor",
+								"JAZZ_MagLarge_50_AR15",
 							},
 							weapon = "CAR15",
 						}),
@@ -23271,7 +23286,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"Suppressor",
+								"JAZZ_MagLarge_50_AR15",
+								"JAZZ_Suppressor",
 							},
 							weapon = "CAR15",
 						}),
@@ -23316,7 +23332,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_13_PISTOL_52",
 							},
 							weapon = "CZ52",
 						}),
@@ -23331,8 +23347,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagLarge",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_13_PISTOL_52",
 							},
 							weapon = "CZ52",
 						}),
@@ -23375,7 +23391,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_25_PISTOL_9",
 							},
 							weapon = "CZ75",
 						}),
@@ -23390,7 +23406,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_25_PISTOL_9",
 							},
 							weapon = "CZ75",
 						}),
@@ -23431,11 +23447,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_Colt1911_assault_m1_45cal_pistol_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "Colt1911",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Colt1911",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "45cal_pistol_ammo",
@@ -23446,11 +23461,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_Colt1911_cqb_m1_45cal_pistol_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "Colt1911",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Colt1911",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "45cal_pistol_ammo",
@@ -23659,7 +23673,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "DP27",
 						}),
@@ -23674,7 +23688,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "DP27",
 						}),
@@ -23689,7 +23703,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "DP27",
 						}),
@@ -23704,7 +23718,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_13_PISTOL_DE",
 							},
 							weapon = "DesertEagle",
 						}),
@@ -23719,8 +23733,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagLarge",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_13_PISTOL_DE",
 							},
 							weapon = "DesertEagle",
 						}),
@@ -23837,7 +23851,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Scope_6x",
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "DragunovSVD",
 						}),
@@ -23853,7 +23867,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "FAMAS",
 						}),
@@ -23869,8 +23883,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
-								"Suppressor",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "FAMAS",
 						}),
@@ -23886,8 +23900,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
-								"Suppressor",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "FAMAS",
 						}),
@@ -24086,7 +24100,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagNormal",
+								"JAZZ_Bipod",
 							},
 							weapon = "FNMAG",
 						}),
@@ -24099,10 +24113,11 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_FNMAG_mg_m2_762x51_ar_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryInventoryItem', {
-							item = "FNMAG",
-							stack_max = 1,
-							stack_min = 1,
+						PlaceObj('LootEntryUpgradedWeapon', {
+							upgrades = {
+								"JAZZ_Bipod",
+							},
+							weapon = "FNMAG",
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "762x51_ar_ammo_ap",
@@ -24115,6 +24130,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Bipod",
 								"JAZZ_Reflex_Aimpoint5000",
 							},
 							weapon = "FNMAG",
@@ -24130,8 +24146,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
-								"MagNormal",
+								"JAZZ_Bipod",
 							},
 							weapon = "FNMinimi",
 						}),
@@ -24146,7 +24161,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "FNMinimi",
 						}),
@@ -24161,7 +24176,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 								"JAZZ_Reflex_Aimpoint5000",
 							},
 							weapon = "FNMinimi",
@@ -24217,10 +24232,11 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_FRF2_sniper_m3_75mm_rifle_ammo",
 						loot = "all",
-						PlaceObj('LootEntryInventoryItem', {
-							item = "FRF2",
-							stack_max = 1,
-							stack_min = 1,
+						PlaceObj('LootEntryUpgradedWeapon', {
+							upgrades = {
+								"JAZZ_Bipod",
+							},
+							weapon = "FRF2",
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "75mm_rifle_ammo",
@@ -24247,7 +24263,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "FiveSeven",
 						}),
@@ -24262,7 +24278,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "FiveSeven",
 						}),
@@ -24277,7 +24293,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "FiveSeven",
 						}),
@@ -24293,7 +24309,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "G36",
 						}),
@@ -24309,8 +24325,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
-								"LaserDot",
-								"Suppressor",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "G36",
 						}),
@@ -24326,8 +24342,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
-								"LaserDot",
-								"Suppressor",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "G36",
 						}),
@@ -24343,7 +24359,6 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
-								"MagNormal",
 							},
 							weapon = "G36c",
 						}),
@@ -24359,7 +24374,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "G36c",
 						}),
@@ -24375,8 +24390,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
-								"LaserDot",
-								"ImprovisedSuppressor",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "G36c",
 						}),
@@ -24391,8 +24406,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagNormal",
+								"JAZZ_LaserDot",
 							},
 							weapon = "G36c",
 						}),
@@ -24408,7 +24422,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
-								"ImprovisedSuppressor",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "G36c",
 						}),
@@ -24424,8 +24438,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
-								"ImprovisedSuppressor",
-								"LaserDot",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_LaserDot",
 							},
 							weapon = "G36c",
 						}),
@@ -24441,8 +24455,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
-								"LaserDot",
-								"ImprovisedSuppressor",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "G36c",
 						}),
@@ -24593,7 +24607,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Scope_6x",
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "G3SniperV1",
 						}),
@@ -24753,7 +24767,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_25_PISTOL_9",
 							},
 							weapon = "Glock17",
 						}),
@@ -24768,8 +24782,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagLarge",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_25_PISTOL_9",
 							},
 							weapon = "Glock17",
 						}),
@@ -24812,7 +24826,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_17_33",
+								"JAZZ_MagLarge_17_33",
 							},
 							weapon = "Glock18",
 						}),
@@ -24827,8 +24841,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_17_33",
-								"LaserDot",
+								"JAZZ_MagLarge_17_33",
+								"JAZZ_LaserDot",
 							},
 							weapon = "Glock18",
 						}),
@@ -24843,8 +24857,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagLarge_17_33",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_17_33",
 							},
 							weapon = "Glock18",
 						}),
@@ -24859,8 +24873,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagLarge_17_33",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_17_33",
 							},
 							weapon = "Glock18",
 						}),
@@ -24875,8 +24889,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ImprovisedSuppressor",
-								"MagLarge_17_33",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_MagLarge_17_33",
 							},
 							weapon = "Glock18",
 						}),
@@ -24891,9 +24905,9 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ImprovisedSuppressor",
-								"MagLarge_17_33",
-								"LaserDot",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_MagLarge_17_33",
+								"JAZZ_LaserDot",
 							},
 							weapon = "Glock18",
 						}),
@@ -24979,8 +24993,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
-								"Compensator",
+								"JAZZ_LaserDot",
+								"JAZZ_Compensator",
 							},
 							weapon = "HK21",
 						}),
@@ -24995,7 +25009,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "HK21",
 						}),
@@ -25010,7 +25024,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 								"JAZZ_Reflex_Aimpoint5000",
 							},
 							weapon = "HK21",
@@ -25027,7 +25041,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "HK23e",
 						}),
@@ -25042,7 +25056,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "HK23e",
 						}),
@@ -25057,7 +25071,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 								"JAZZ_Reflex_Aimpoint5000",
 							},
 							weapon = "HK23e",
@@ -25074,7 +25088,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "HK33",
 						}),
@@ -25090,8 +25104,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
-								"Suppressor",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "HK33",
 						}),
@@ -25107,8 +25121,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
-								"Suppressor",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "HK33",
 						}),
@@ -25123,7 +25137,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagNormalFine",
+								"JAZZ_MagLarge_25_PISTOL_9",
 							},
 							weapon = "HiPower",
 						}),
@@ -25138,7 +25152,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagNormalFine",
+								"JAZZ_MagLarge_25_PISTOL_9",
 							},
 							weapon = "HiPower",
 						}),
@@ -25211,7 +25225,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Pistol",
-								"MagLarge_7_10",
+								"JAZZ_MagLarge_7_10",
 							},
 							weapon = "Kimber",
 						}),
@@ -25226,8 +25240,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagLarge_7_10",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_7_10",
 							},
 							weapon = "Kimber",
 						}),
@@ -25296,11 +25310,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_Luger_assault_m1_9x19_pistol_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "Luger",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Luger",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_pistol_ammo_ap",
@@ -25311,11 +25324,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_Luger_cqb_m1_9x19_pistol_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "Luger",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Luger",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_pistol_ammo_ap",
@@ -25387,7 +25399,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
+								"JAZZ_MagLarge_50_AR15",
+								"JAZZ_LaserDot",
 							},
 							weapon = "M16A1",
 						}),
@@ -25403,7 +25416,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
+								"JAZZ_MagLarge_50_AR15",
+								"JAZZ_LaserDot",
 							},
 							weapon = "M16A1",
 						}),
@@ -25419,7 +25433,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
+								"JAZZ_MagLarge_50_AR15",
+								"JAZZ_LaserDot",
 							},
 							weapon = "M16A1",
 						}),
@@ -25435,8 +25450,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge",
-								"LaserDot",
+								"JAZZ_MagLarge_50_AR15",
+								"JAZZ_LaserDot",
 							},
 							weapon = "M16A2",
 						}),
@@ -25452,9 +25467,9 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge",
-								"LaserDot",
-								"Suppressor",
+								"JAZZ_MagLarge_50_AR15",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "M16A2",
 						}),
@@ -25470,9 +25485,9 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge",
-								"LaserDot",
-								"Suppressor",
+								"JAZZ_MagLarge_50_AR15",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "M16A2",
 						}),
@@ -25488,7 +25503,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
+								"JAZZ_MagLarge_50_AR15",
+								"JAZZ_LaserDot",
 							},
 							weapon = "M16A4",
 						}),
@@ -25504,8 +25520,9 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
-								"ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_AR15",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "M16A4",
 						}),
@@ -25521,8 +25538,9 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
-								"ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_AR15",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "M16A4",
 						}),
@@ -25580,7 +25598,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"ImprovisedSuppressor",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "M1A",
 						}),
@@ -25789,7 +25807,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Scope_6x",
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "M24Sniper",
 						}),
@@ -25802,11 +25820,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_M2Carbine_assault_m1_30cal_carbine_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "M2Carbine",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "M2Carbine",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "30cal_carbine_ammo",
@@ -25846,11 +25863,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_M2Carbine_cqb_m1_30cal_carbine_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "M2Carbine",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "M2Carbine",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "30cal_carbine_ammo",
@@ -26076,7 +26092,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "M41Shotgun",
 						}),
@@ -26092,7 +26108,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "M41Shotgun",
 						}),
@@ -26105,11 +26121,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_M45_assault_m1_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "M45",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "M45",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -26134,11 +26149,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_M45_cqb_m1_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "M45",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "M45",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -26222,7 +26236,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagNormal",
+								"JAZZ_MagLarge_50_AR15",
 							},
 							weapon = "M4A1",
 						}),
@@ -26238,7 +26252,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
+								"JAZZ_MagLarge_50_AR15",
+								"JAZZ_LaserDot",
 							},
 							weapon = "M4A1",
 						}),
@@ -26254,8 +26269,9 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
-								"ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_AR15",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "M4A1",
 						}),
@@ -26270,8 +26286,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagNormal",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_50_AR15",
 							},
 							weapon = "M4A1",
 						}),
@@ -26287,7 +26303,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"ImprovisedSuppressor",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_AR15",
 							},
 							weapon = "M4A1",
 						}),
@@ -26303,8 +26320,9 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"ImprovisedSuppressor",
-								"LaserDot",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_AR15",
+								"JAZZ_LaserDot",
 							},
 							weapon = "M4A1",
 						}),
@@ -26320,8 +26338,9 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
-								"ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_AR15",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "M4A1",
 						}),
@@ -26366,8 +26385,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
-								"MagNormal",
+								"JAZZ_Bipod",
 							},
 							weapon = "M60E3",
 						}),
@@ -26382,7 +26400,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "M60E3",
 						}),
@@ -26397,7 +26415,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "M60E3",
 						}),
@@ -26413,7 +26431,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "M60E4",
 						}),
@@ -26428,7 +26446,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "M60E4",
 						}),
@@ -26443,7 +26461,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 								"JAZZ_Reflex_Aimpoint5000",
 							},
 							weapon = "M60E4",
@@ -26459,8 +26477,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
-								"MagNormal",
+								"JAZZ_Bipod",
 							},
 							weapon = "M60",
 						}),
@@ -26475,7 +26492,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "M60",
 						}),
@@ -26490,7 +26507,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "M60",
 						}),
@@ -26559,11 +26576,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MAC10_assault_m1_45cal_smg_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "MAC10",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MAC10",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "45cal_smg_ammo",
@@ -26588,11 +26604,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MAC10_cqb_m1_45cal_smg_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "MAC10",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MAC10",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "45cal_smg_ammo",
@@ -26619,7 +26634,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"PistolSuppressor",
+								"JAZZ_PistolSuppressor",
 							},
 							weapon = "MAC10",
 						}),
@@ -26634,7 +26649,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"PistolSuppressor",
+								"JAZZ_PistolSuppressor",
 							},
 							weapon = "MAC10",
 						}),
@@ -26663,7 +26678,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_13_PISTOL_52",
 							},
 							weapon = "MAC1950",
 						}),
@@ -26678,8 +26693,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagLarge",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_13_PISTOL_52",
 							},
 							weapon = "MAC1950",
 						}),
@@ -26736,8 +26751,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
-								"MagNormal",
+								"JAZZ_Bipod",
 							},
 							weapon = "MAC2429",
 						}),
@@ -26752,7 +26766,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "MAC2429",
 						}),
@@ -26767,7 +26781,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "MAC2429",
 						}),
@@ -26808,11 +26822,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MAT49_assault_m1_9x19_smg_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "MAT49",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MAT49",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo",
@@ -26823,11 +26836,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MAT49_assault_m1_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "MAT49",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MAT49",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -26852,11 +26864,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MAT49_cqb_m1_9x19_smg_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "MAT49",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MAT49",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo",
@@ -26867,11 +26878,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MAT49_cqb_m1_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "MAT49",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MAT49",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -27010,7 +27020,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod_MG42",
+								"JAZZ_Bipod",
 							},
 							weapon = "MG42",
 						}),
@@ -27025,7 +27035,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod_MG42",
+								"JAZZ_Bipod",
 							},
 							weapon = "MG42",
 						}),
@@ -27040,7 +27050,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod_MG42",
+								"JAZZ_Bipod",
 							},
 							weapon = "MG42",
 						}),
@@ -27055,7 +27065,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_50_MP40",
 							},
 							weapon = "MP40",
 						}),
@@ -27070,7 +27080,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_50_MP40",
 							},
 							weapon = "MP40",
 						}),
@@ -27085,7 +27095,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_50_MP40",
 							},
 							weapon = "MP40",
 						}),
@@ -27100,7 +27110,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_50_MP40",
 							},
 							weapon = "MP40",
 						}),
@@ -27115,7 +27125,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_50_MP40",
 							},
 							weapon = "MP40",
 						}),
@@ -27130,7 +27140,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_50_MP40",
 							},
 							weapon = "MP40",
 						}),
@@ -27159,7 +27169,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_50_MP40",
 							},
 							weapon = "MP40",
 						}),
@@ -27174,7 +27184,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_50_MP40",
 							},
 							weapon = "MP40",
 						}),
@@ -27189,7 +27199,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_50_MP40",
 							},
 							weapon = "MP40",
 						}),
@@ -27204,7 +27214,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_50_MP40",
 							},
 							weapon = "MP40",
 						}),
@@ -27247,7 +27257,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagNormal",
+								"JAZZ_MagLarge_25_PISTOL_9",
 							},
 							weapon = "MP446VIKING",
 						}),
@@ -27262,8 +27272,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagNormal",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_25_PISTOL_9",
 							},
 							weapon = "MP446VIKING",
 						}),
@@ -27307,7 +27317,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagNormal",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5A2",
 						}),
@@ -27323,6 +27333,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5A2",
 						}),
@@ -27337,7 +27348,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagNormal",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5A2",
 						}),
@@ -27353,6 +27364,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5A2",
 						}),
@@ -27368,7 +27380,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"PistolSuppressor",
+								"JAZZ_PistolSuppressor",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5A2",
 						}),
@@ -27384,7 +27397,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"PistolSuppressor",
+								"JAZZ_PistolSuppressor",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5A2",
 						}),
@@ -27428,7 +27442,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagNormal",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5A4",
 						}),
@@ -27444,6 +27458,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5A4",
 						}),
@@ -27458,7 +27473,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagNormal",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5A4",
 						}),
@@ -27474,6 +27489,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5A4",
 						}),
@@ -27489,7 +27505,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"PistolSuppressor",
+								"JAZZ_PistolSuppressor",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5A4",
 						}),
@@ -27505,7 +27522,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"PistolSuppressor",
+								"JAZZ_PistolSuppressor",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5A4",
 						}),
@@ -27549,7 +27567,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagNormal",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5K",
 						}),
@@ -27565,7 +27583,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
+								"JAZZ_MagLarge_50_MP5",
+								"JAZZ_LaserDot",
 							},
 							weapon = "MP5K",
 						}),
@@ -27580,8 +27599,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagNormal",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5K",
 						}),
@@ -27597,7 +27616,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5K",
 						}),
@@ -27613,7 +27633,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"PistolSuppressor",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5K",
 						}),
@@ -27629,8 +27650,9 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"PistolSuppressor",
-								"LaserDot",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_MP5",
+								"JAZZ_LaserDot",
 							},
 							weapon = "MP5K",
 						}),
@@ -27674,7 +27696,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagNormal",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5SD",
 						}),
@@ -27690,7 +27712,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"SuppressorIntegrated",
+								"JAZZ_MagLarge_50_MP5",
+								"JAZZ_SuppressorIntegrated",
 							},
 							weapon = "MP5SD",
 						}),
@@ -27705,7 +27728,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagNormal",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5SD",
 						}),
@@ -27720,7 +27743,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagNormal",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5SD",
 						}),
@@ -27736,6 +27759,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5SD",
 						}),
@@ -27751,7 +27775,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"SuppressorIntegrated",
+								"JAZZ_SuppressorIntegrated",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5SD",
 						}),
@@ -27767,7 +27792,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"SuppressorIntegrated",
+								"JAZZ_SuppressorIntegrated",
+								"JAZZ_MagLarge_50_MP5",
 							},
 							weapon = "MP5SD",
 						}),
@@ -27783,7 +27809,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"SuppressorIntegrated",
+								"JAZZ_MagLarge_50_MP5",
+								"JAZZ_SuppressorIntegrated",
 							},
 							weapon = "MP5SD",
 						}),
@@ -27814,7 +27841,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"PistolSuppressor",
+								"JAZZ_PistolSuppressor",
 							},
 							weapon = "MP7",
 						}),
@@ -27873,7 +27900,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"PistolSuppressor",
+								"JAZZ_PistolSuppressor",
 							},
 							weapon = "MP7",
 						}),
@@ -27889,7 +27916,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"PistolSuppressor",
+								"JAZZ_PistolSuppressor",
 							},
 							weapon = "MP7",
 						}),
@@ -27905,7 +27932,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"PistolSuppressor",
+								"JAZZ_PistolSuppressor",
 							},
 							weapon = "MP7",
 						}),
@@ -27918,11 +27945,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MPL_assault_m1_9x19_smg_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "MPL",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MPL",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo",
@@ -27933,11 +27959,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MPL_assault_m1_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "MPL",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MPL",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -27962,11 +27987,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MPL_cqb_m1_9x19_smg_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "MPL",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MPL",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo",
@@ -27977,11 +28001,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MPL_cqb_m1_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "MPL",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MPL",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -28146,11 +28169,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_Makarov_assault_m1_9x18_pistol_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "Makarov",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Makarov",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x18_pistol_ammo_ap",
@@ -28161,11 +28183,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_Makarov_cqb_m1_9x18_pistol_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "Makarov",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Makarov",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x18_pistol_ammo_ap",
@@ -28248,8 +28269,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"JAZZ_Reflex_Pistol",
-								"MagLarge_20_30",
+								"JAZZ_Reflex_Closed",
+								"JAZZ_MagLarge_20_30_UZI",
 							},
 							weapon = "MicroUZI",
 						}),
@@ -28264,9 +28285,9 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"JAZZ_Reflex_Pistol",
-								"MagLarge_20_30",
-								"LaserDot",
+								"JAZZ_Reflex_Closed",
+								"JAZZ_MagLarge_20_30_UZI",
+								"JAZZ_LaserDot",
 							},
 							weapon = "MicroUZI",
 						}),
@@ -28281,8 +28302,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagLarge_20_30",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_20_30_UZI",
 							},
 							weapon = "MicroUZI",
 						}),
@@ -28297,9 +28318,9 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"JAZZ_Reflex_Pistol",
-								"LaserDot",
-								"MagLarge_20_30",
+								"JAZZ_Reflex_Closed",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_20_30_UZI",
 							},
 							weapon = "MicroUZI",
 						}),
@@ -28314,9 +28335,9 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"JAZZ_Reflex_Pistol",
-								"PistolSuppressor",
-								"MagLarge_20_30",
+								"JAZZ_Reflex_Closed",
+								"JAZZ_PistolSuppressor",
+								"JAZZ_MagLarge_20_30_UZI",
 							},
 							weapon = "MicroUZI",
 						}),
@@ -28331,10 +28352,10 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"JAZZ_Reflex_Pistol",
-								"PistolSuppressor",
-								"MagLarge_20_30",
-								"LaserDot",
+								"JAZZ_Reflex_Closed",
+								"JAZZ_PistolSuppressor",
+								"JAZZ_MagLarge_20_30_UZI",
+								"JAZZ_LaserDot",
 							},
 							weapon = "MicroUZI",
 						}),
@@ -28378,7 +28399,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge_20_30",
+								"JAZZ_MagLarge_20_30_MINI14",
 							},
 							weapon = "Mini14",
 						}),
@@ -28394,7 +28415,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge_20_30",
+								"JAZZ_MagLarge_20_30_MINI14",
 							},
 							weapon = "Mini14",
 						}),
@@ -28410,7 +28431,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge_20_30",
+								"JAZZ_MagLarge_20_30_MINI14",
 							},
 							weapon = "Mini14",
 						}),
@@ -28425,7 +28446,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_20_30",
+								"JAZZ_MagLarge_20_30_MINI14",
 							},
 							weapon = "Mini14",
 						}),
@@ -28441,7 +28462,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge_20_30",
+								"JAZZ_MagLarge_20_30_MINI14",
 							},
 							weapon = "Mini14",
 						}),
@@ -28457,7 +28478,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge_20_30",
+								"JAZZ_MagLarge_20_30_MINI14",
 							},
 							weapon = "Mini14",
 						}),
@@ -28473,7 +28494,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge_20_30",
+								"JAZZ_MagLarge_20_30_MINI14",
 							},
 							weapon = "Mini14",
 						}),
@@ -28602,7 +28623,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "P210",
 						}),
@@ -28646,7 +28667,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Pistol",
-								"MagLarge_8_10",
+								"JAZZ_MagLarge_8_10",
 							},
 							weapon = "P220",
 						}),
@@ -28661,8 +28682,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagLarge_8_10",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_8_10",
 							},
 							weapon = "P220",
 						}),
@@ -28678,8 +28699,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Pistol",
-								"LaserDot",
-								"MagLarge_8_10",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_8_10",
 							},
 							weapon = "P220",
 						}),
@@ -28695,7 +28716,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Pistol",
-								"MagLarge_18_20",
+								"JAZZ_MagLarge_18_20",
 							},
 							weapon = "P226",
 						}),
@@ -28710,8 +28731,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagLarge_18_20",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_18_20",
 							},
 							weapon = "P226",
 						}),
@@ -28726,8 +28747,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagLarge_18_20",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_18_20",
 							},
 							weapon = "P226",
 						}),
@@ -28743,8 +28764,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Pistol",
-								"LaserDot",
-								"MagLarge_18_20",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_18_20",
 							},
 							weapon = "P226",
 						}),
@@ -28759,7 +28780,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_13_PISTOL_52",
 							},
 							weapon = "P38",
 						}),
@@ -28774,7 +28795,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_13_PISTOL_52",
 							},
 							weapon = "P38",
 						}),
@@ -28815,11 +28836,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_P90_assault_m1_556_ar_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "P90",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "P90",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "556_ar_ammo_ap",
@@ -28832,8 +28852,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"PistolSuppressor",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "P90",
 						}),
@@ -28848,8 +28868,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagNormal",
+								"JAZZ_LaserDot",
 							},
 							weapon = "P90",
 						}),
@@ -28864,8 +28883,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagNormal",
+								"JAZZ_LaserDot",
 							},
 							weapon = "P90",
 						}),
@@ -28880,7 +28898,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "P90",
 						}),
@@ -28895,7 +28913,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"PistolSuppressor",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "P90",
 						}),
@@ -28910,8 +28928,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"PistolSuppressor",
-								"LaserDot",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_LaserDot",
 							},
 							weapon = "P90",
 						}),
@@ -28926,8 +28944,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"PistolSuppressor",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "P90",
 						}),
@@ -28942,8 +28960,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
-								"MagNormal",
+								"JAZZ_Bipod",
 							},
 							weapon = "PKM",
 						}),
@@ -28958,7 +28975,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "PKM",
 						}),
@@ -28973,7 +28990,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 								"JAZZ_Reflex_Aimpoint5000",
 							},
 							weapon = "PKM",
@@ -28989,7 +29006,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"JAZZ_Reflex_PKAS",
+								"JAZZ_Reflex_Cobra",
 							},
 							weapon = "PP19Bizon",
 						}),
@@ -29004,7 +29021,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"JAZZ_Reflex_PKAS",
+								"JAZZ_Reflex_Cobra",
 							},
 							weapon = "PP19Bizon",
 						}),
@@ -29033,7 +29050,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"JAZZ_Reflex_PKAS",
+								"JAZZ_Reflex_Cobra",
 							},
 							weapon = "PP19Bizon",
 						}),
@@ -29048,7 +29065,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"JAZZ_Reflex_PKAS",
+								"JAZZ_Reflex_Cobra",
 							},
 							weapon = "PP19Bizon",
 						}),
@@ -29063,7 +29080,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"JAZZ_Reflex_PKAS",
+								"JAZZ_Reflex_Cobra",
 							},
 							weapon = "PP19Bizon",
 						}),
@@ -29286,11 +29303,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_PPSH_assault_m1_762x25_smg_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "PPSH",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "PPSH",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "762x25_smg_ammo",
@@ -29301,11 +29317,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_PPSH_assault_m1_762x25_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "PPSH",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "PPSH",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "762x25_smg_ammo_ap",
@@ -29330,11 +29345,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_PPSH_cqb_m1_762x25_smg_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "PPSH",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "PPSH",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "762x25_smg_ammo",
@@ -29345,11 +29359,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_PPSH_cqb_m1_762x25_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "PPSH",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "PPSH",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "762x25_smg_ammo_ap",
@@ -29362,7 +29375,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagDrum_35-71",
+								"JAZZ_MagDrum_35_71",
 							},
 							weapon = "PPSH",
 						}),
@@ -29476,7 +29489,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"ImprovisedSuppressor",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "PSG1",
 						}),
@@ -29522,7 +29535,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Scope_6x",
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "PSG1",
 						}),
@@ -29537,7 +29550,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "R870",
 						}),
@@ -29553,7 +29566,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "R870",
 						}),
@@ -29568,8 +29581,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"FoldBipod",
-								"MagNormal",
+								"JAZZ_Bipod",
 							},
 							weapon = "RPD",
 						}),
@@ -29584,7 +29596,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"FoldBipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "RPD",
 						}),
@@ -29599,7 +29611,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"FoldBipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "RPD",
 						}),
@@ -29614,8 +29626,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
-								"MagLarge_30_45",
+								"JAZZ_Bipod",
+								"JAZZ_MagLarge_30_45",
 							},
 							weapon = "RPK74",
 						}),
@@ -29630,8 +29642,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
-								"MagLarge_30_45",
+								"JAZZ_Bipod",
+								"JAZZ_MagLarge_30_45",
 							},
 							weapon = "RPK74",
 						}),
@@ -29646,8 +29658,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
-								"MagLarge_30_45",
+								"JAZZ_Bipod",
+								"JAZZ_MagLarge_30_45",
 							},
 							weapon = "RPK74",
 						}),
@@ -29662,8 +29674,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
-								"MagLarge_30_40",
+								"JAZZ_Bipod",
+								"JAZZ_MagLarge_30_40",
 							},
 							weapon = "RPK",
 						}),
@@ -29678,8 +29690,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
-								"MagLarge_30_40",
+								"JAZZ_Bipod",
+								"JAZZ_MagLarge_30_40",
 							},
 							weapon = "RPK",
 						}),
@@ -29694,8 +29706,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
-								"MagLarge_30_40",
+								"JAZZ_Bipod",
+								"JAZZ_MagLarge_30_40",
 							},
 							weapon = "RPK",
 						}),
@@ -29977,7 +29989,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"Bipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "SVU",
 						}),
@@ -30006,7 +30018,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "SWModel10",
 						}),
@@ -30049,7 +30061,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "SWModel19",
 						}),
@@ -30092,7 +30104,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "SWModel29",
 						}),
@@ -30121,7 +30133,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_13_PISTOL_52",
 							},
 							weapon = "SWModel52",
 						}),
@@ -30136,8 +30148,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagLarge",
+								"JAZZ_MagLarge_13_PISTOL_52",
 							},
 							weapon = "SWModel52",
 						}),
@@ -30166,7 +30177,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_25_PISTOL_9",
 							},
 							weapon = "SWModel5906",
 						}),
@@ -30181,8 +30192,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagLarge",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_25_PISTOL_9",
 							},
 							weapon = "SWModel5906",
 						}),
@@ -30223,11 +30234,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_Scorpion_assault_m1_9x18_smg_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "Scorpion",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Scorpion",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x18_smg_ammo",
@@ -30238,11 +30248,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_Scorpion_assault_m1_9x18_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "Scorpion",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Scorpion",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x18_smg_ammo_ap",
@@ -30267,11 +30276,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_Scorpion_cqb_m1_9x18_smg_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "Scorpion",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Scorpion",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x18_smg_ammo",
@@ -30282,11 +30290,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_Scorpion_cqb_m1_9x18_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "Scorpion",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Scorpion",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x18_smg_ammo_ap",
@@ -30412,7 +30419,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge",
+								"JAZZ_MagLarge_50_SIG",
 							},
 							weapon = "Sig550Custom",
 						}),
@@ -30428,9 +30435,9 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge",
-								"LaserDot",
-								"ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_SIG",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Sig550Custom",
 						}),
@@ -30446,8 +30453,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"LaserDot",
-								"MagLarge",
+								"JAZZ_LaserDot",
+								"JAZZ_MagLarge_50_SIG",
 							},
 							weapon = "Sig550Custom",
 						}),
@@ -30463,9 +30470,9 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"ImprovisedSuppressor",
-								"MagLarge",
-								"LaserDot",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_SIG",
+								"JAZZ_LaserDot",
 							},
 							weapon = "Sig550Custom",
 						}),
@@ -30481,9 +30488,9 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge",
-								"LaserDot",
-								"ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_SIG",
+								"JAZZ_LaserDot",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Sig550Custom",
 						}),
@@ -30499,7 +30506,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge",
+								"JAZZ_MagLarge_50_SIG",
 							},
 							weapon = "Sig550",
 						}),
@@ -30515,8 +30522,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge",
-								"ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_SIG",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Sig550",
 						}),
@@ -30532,7 +30539,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge",
+								"JAZZ_MagLarge_50_SIG",
 							},
 							weapon = "Sig550",
 						}),
@@ -30548,8 +30555,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"ImprovisedSuppressor",
-								"MagLarge",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_SIG",
 							},
 							weapon = "Sig550",
 						}),
@@ -30565,8 +30572,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge",
-								"ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_SIG",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Sig550",
 						}),
@@ -30582,7 +30589,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge",
+								"JAZZ_MagLarge_50_SIG",
 							},
 							weapon = "Sig552SWAT",
 						}),
@@ -30598,8 +30605,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge",
-								"ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_SIG",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Sig552SWAT",
 						}),
@@ -30614,7 +30621,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_50_SIG",
 							},
 							weapon = "Sig552SWAT",
 						}),
@@ -30630,7 +30637,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"ImprovisedSuppressor",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Sig552SWAT",
 						}),
@@ -30646,8 +30653,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"ImprovisedSuppressor",
-								"MagLarge",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_SIG",
 							},
 							weapon = "Sig552SWAT",
 						}),
@@ -30663,8 +30670,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"ImprovisedSuppressor",
-								"MagLarge",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_SIG",
 							},
 							weapon = "Sig552SWAT",
 						}),
@@ -30680,8 +30687,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge",
-								"ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_SIG",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Sig552SWAT",
 						}),
@@ -30712,7 +30719,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge",
+								"JAZZ_MagLarge_50_SIG",
 							},
 							weapon = "Sig552",
 						}),
@@ -30728,8 +30735,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge",
-								"ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_SIG",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Sig552",
 						}),
@@ -30744,7 +30751,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_50_SIG",
 							},
 							weapon = "Sig552",
 						}),
@@ -30760,7 +30767,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"ImprovisedSuppressor",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Sig552",
 						}),
@@ -30776,8 +30783,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"ImprovisedSuppressor",
-								"MagLarge",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_SIG",
 							},
 							weapon = "Sig552",
 						}),
@@ -30793,8 +30800,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"ImprovisedSuppressor",
-								"MagLarge",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_SIG",
 							},
 							weapon = "Sig552",
 						}),
@@ -30810,8 +30817,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge",
-								"ImprovisedSuppressor",
+								"JAZZ_MagLarge_50_SIG",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Sig552",
 						}),
@@ -30839,11 +30846,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_SpectreM4_assault_m1_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "SpectreM4",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "SpectreM4",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -30868,11 +30874,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_SpectreM4_cqb_m1_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "SpectreM4",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "SpectreM4",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -31233,11 +31238,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_TMP_assault_m1_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "TMP",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "TMP",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -31262,11 +31266,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_TMP_cqb_m1_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "TMP",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "TMP",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -31293,7 +31296,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"PistolSuppressor",
+								"JAZZ_PistolSuppressor",
 							},
 							weapon = "TMP",
 						}),
@@ -31308,7 +31311,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"PistolSuppressor",
+								"JAZZ_PistolSuppressor",
 							},
 							weapon = "TMP",
 						}),
@@ -31349,11 +31352,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_TT33_assault_m1_762x25_pistol_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "TT33",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "TT33",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "762x25_pistol_ammo_ap",
@@ -31364,11 +31366,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_TT33_cqb_m1_762x25_pistol_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "TT33",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "TT33",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "762x25_pistol_ammo_ap",
@@ -31407,11 +31408,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_Thompson_assault_m1_45cal_smg_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "Thompson",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Thompson",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "45cal_smg_ammo",
@@ -31436,11 +31436,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_Thompson_cqb_m1_45cal_smg_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"MagNormal",
-							},
-							weapon = "Thompson",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Thompson",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "45cal_smg_ammo",
@@ -31453,7 +31452,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagDrum_30-50",
+								"JAZZ_MagDrum_30_50_THOMPSON",
 							},
 							weapon = "Thompson",
 						}),
@@ -31524,7 +31523,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_30_40",
+								"JAZZ_MagLarge_30_40",
 							},
 							weapon = "Type56",
 						}),
@@ -31539,8 +31538,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_30_40",
-								"ImprovisedSuppressor",
+								"JAZZ_MagLarge_30_40",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Type56",
 						}),
@@ -31555,8 +31554,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_30_40",
-								"ImprovisedSuppressor",
+								"JAZZ_MagLarge_30_40",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Type56",
 						}),
@@ -31571,8 +31570,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"FoldBipod",
-								"MagNormal",
+								"JAZZ_Bipod",
 							},
 							weapon = "U100",
 						}),
@@ -31587,7 +31585,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"FoldBipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "U100",
 						}),
@@ -31602,7 +31600,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"FoldBipod",
+								"JAZZ_Bipod",
 							},
 							weapon = "U100",
 						}),
@@ -31618,7 +31616,6 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
-								"MagNormal",
 							},
 							weapon = "UMP45",
 						}),
@@ -31634,7 +31631,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "UMP45",
 						}),
@@ -31649,8 +31646,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagNormal",
+								"JAZZ_LaserDot",
 							},
 							weapon = "UMP45",
 						}),
@@ -31666,7 +31662,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
-								"LaserDot",
+								"JAZZ_LaserDot",
 							},
 							weapon = "UMP45",
 						}),
@@ -31682,7 +31678,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
-								"ImprovisedSuppressor",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "UMP45",
 						}),
@@ -31698,8 +31694,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
-								"ImprovisedSuppressor",
-								"LaserDot",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_LaserDot",
 							},
 							weapon = "UMP45",
 						}),
@@ -31728,7 +31724,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_25_USAS",
 							},
 							weapon = "USAS12",
 						}),
@@ -31744,7 +31740,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge",
+								"JAZZ_MagLarge_25_USAS",
 							},
 							weapon = "USAS12",
 						}),
@@ -31760,7 +31756,6 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Pistol",
-								"MagNormal",
 							},
 							weapon = "USP45",
 						}),
@@ -31775,8 +31770,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"LaserDot",
-								"MagNormal",
+								"JAZZ_LaserDot",
 							},
 							weapon = "USP45",
 						}),
@@ -31806,7 +31800,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
-								"MagNormal",
+								"JAZZ_MagLarge_20_30_UZI",
 							},
 							weapon = "UZI",
 						}),
@@ -31822,6 +31816,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
+								"JAZZ_MagLarge_20_30_UZI",
 							},
 							weapon = "UZI",
 						}),
@@ -31836,7 +31831,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagNormal",
+								"JAZZ_MagLarge_20_30_UZI",
 							},
 							weapon = "UZI",
 						}),
@@ -31852,7 +31847,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
-								"MagDrum_30-50",
+								"JAZZ_MagLarge_20_30_UZI",
 							},
 							weapon = "UZI",
 						}),
@@ -31868,7 +31863,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
-								"PistolSuppressor",
+								"JAZZ_PistolSuppressor",
+								"JAZZ_MagLarge_20_30_UZI",
 							},
 							weapon = "UZI",
 						}),
@@ -31884,7 +31880,8 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Closed",
-								"PistolSuppressor",
+								"JAZZ_PistolSuppressor",
+								"JAZZ_MagLarge_20_30_UZI",
 							},
 							weapon = "UZI",
 						}),
@@ -31928,7 +31925,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge_10_20",
+								"JAZZ_MagLarge_10_20_VAL",
 							},
 							weapon = "VSS",
 						}),
@@ -31944,7 +31941,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge_10_20",
+								"JAZZ_MagLarge_10_20_VAL",
 							},
 							weapon = "VSS",
 						}),
@@ -31960,7 +31957,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge_10_20",
+								"JAZZ_MagLarge_10_20_VAL",
 							},
 							weapon = "VSS",
 						}),
@@ -31975,7 +31972,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_10_20",
+								"JAZZ_MagLarge_10_20_VAL",
 							},
 							weapon = "VSS",
 						}),
@@ -31991,7 +31988,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge_10_20",
+								"JAZZ_MagLarge_10_20_VAL",
 							},
 							weapon = "VSS",
 						}),
@@ -32007,7 +32004,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge_10_20",
+								"JAZZ_MagLarge_10_20_VAL",
 							},
 							weapon = "VSS",
 						}),
@@ -32023,7 +32020,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"MagLarge_10_20",
+								"JAZZ_MagLarge_10_20_VAL",
 							},
 							weapon = "VSS",
 						}),
@@ -32068,7 +32065,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_25_PISTOL_9",
 							},
 							weapon = "VectorCP1",
 						}),
@@ -32083,7 +32080,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge",
+								"JAZZ_MagLarge_25_PISTOL_9",
 							},
 							weapon = "VectorCP1",
 						}),
@@ -32199,7 +32196,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"ImprovisedSuppressor",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Winchester1894",
 						}),
@@ -32229,7 +32226,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"ImprovisedSuppressor",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Winchester1894",
 						}),
@@ -32245,7 +32242,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"ImprovisedSuppressor",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Winchester1894",
 						}),
@@ -32261,7 +32258,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"ImprovisedSuppressor",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Winchester1894",
 						}),
@@ -32291,7 +32288,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
-								"ImprovisedSuppressor",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Winchester1894",
 						}),
@@ -32392,7 +32389,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_30_40",
+								"JAZZ_MagLarge_30_40",
 							},
 							weapon = "ZastavaM92",
 						}),
@@ -32407,7 +32404,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_30_40",
+								"JAZZ_MagLarge_30_40",
 							},
 							weapon = "ZastavaM92",
 						}),
@@ -32422,8 +32419,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_30_40",
-								"ImprovisedSuppressor",
+								"JAZZ_MagLarge_30_40",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "ZastavaM92",
 						}),
@@ -32438,7 +32435,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_30_40",
+								"JAZZ_MagLarge_30_40",
 							},
 							weapon = "ZastavaM92",
 						}),
@@ -32453,8 +32450,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ImprovisedSuppressor",
-								"MagLarge_30_40",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_MagLarge_30_40",
 							},
 							weapon = "ZastavaM92",
 						}),
@@ -32469,8 +32466,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"ImprovisedSuppressor",
-								"MagLarge_30_40",
+								"JAZZ_ImprovisedSuppressor",
+								"JAZZ_MagLarge_30_40",
 							},
 							weapon = "ZastavaM92",
 						}),
@@ -32485,8 +32482,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_30_40",
-								"ImprovisedSuppressor",
+								"JAZZ_MagLarge_30_40",
+								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "ZastavaM92",
 						}),
@@ -32529,7 +32526,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_30_40",
+								"JAZZ_MagLarge_30_40",
 							},
 							weapon = "Zastava_M70",
 						}),
@@ -32544,7 +32541,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_30_40",
+								"JAZZ_MagLarge_30_40",
 							},
 							weapon = "Zastava_M70",
 						}),
@@ -32559,7 +32556,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"MagLarge_30_40",
+								"JAZZ_MagLarge_30_40",
 							},
 							weapon = "Zastava_M70",
 						}),
@@ -32568,7 +32565,7 @@ return {
 						}),
 					}),
 --[[ JAZZ-UNITS-003-GENERATED-END ]]
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Roughneck_Inventory",
@@ -32741,7 +32738,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Crusher_Inventory",
@@ -32831,7 +32828,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Grenadier_Inventory",
@@ -32924,7 +32921,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pillager_Inventory",
@@ -33097,7 +33094,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pyro_Inventory",
@@ -33181,7 +33178,7 @@ return {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Shocktrooper_Inventory",
@@ -33372,7 +33369,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "SkullCrusher_Inventory",
@@ -33512,7 +33509,7 @@ return {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Punisher_Inventory",
@@ -33603,7 +33600,7 @@ return {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Headsman_Inventory",
@@ -33749,7 +33746,7 @@ return {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Marauder_Inventory",
@@ -33890,7 +33887,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Rifleman_Inventory",
@@ -33980,7 +33977,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Bonemaker_Inventory",
@@ -34064,7 +34061,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Raider_Inventory",
@@ -34247,7 +34244,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Marksman_Inventory",
@@ -34371,7 +34368,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Ambusher_Inventory",
@@ -34510,7 +34507,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Veteran_Inventory",
@@ -34578,6 +34575,9 @@ return {
 							stack_min = 3,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionGL_5pc",
+						}),
+						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -34642,7 +34642,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Sniper_Inventory",
@@ -34758,7 +34758,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Mercenary_Inventory",
@@ -34826,6 +34826,9 @@ return {
 							stack_min = 4,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							loot_def = "LegionGL_5pc",
+						}),
+						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -34845,7 +34848,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercenarySniper_Inventory",
@@ -34950,7 +34953,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Warden_Inventory",
@@ -35085,7 +35088,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Scout_Inventory",
@@ -35275,7 +35278,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Skirmisher_Inventory",
@@ -35414,7 +35417,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Recon_Inventory",
@@ -35604,7 +35607,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pathfinder_Inventory",
@@ -35783,7 +35786,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Ranger_Inventory",
@@ -35973,7 +35976,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Gunner_Inventory",
@@ -36063,7 +36066,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "GMPG_Inventory",
@@ -36142,7 +36145,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "AssaultGunner_Inventory",
@@ -36232,7 +36235,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "VeteranGunner_Inventory",
@@ -36311,7 +36314,7 @@ return {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercGunner_Inventory",
@@ -36390,7 +36393,7 @@ return {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Sergeant_Inventory",
@@ -36529,7 +36532,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Lieutenant_Inventory",
@@ -36665,7 +36668,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Captain_Inventory",
@@ -36804,7 +36807,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercenaryCaptain_Inventory",
@@ -36940,7 +36943,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Rocketeer_Inventory",
@@ -37033,7 +37036,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "HeavyGrenadier_Inventory",
@@ -37126,7 +37129,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Mortarman_Inventory",
@@ -37223,7 +37226,7 @@ return {
 				PlaceObj('ModItemFolder', {
 					'name', "UnitsWeapon",
 				}, {
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Roughneck_Firearm",
@@ -38641,7 +38644,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Crusher_Firearm",
@@ -38854,7 +38857,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Grenadier_Firearm",
@@ -40250,7 +40253,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pillager_Firearm",
@@ -40893,7 +40896,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pyro_Firearm",
@@ -41768,7 +41771,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Shocktrooper_Firearm",
@@ -42903,7 +42906,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "SkullCrusher_Firearm",
@@ -43727,7 +43730,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Punisher_Firearm",
@@ -44268,7 +44271,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Headsman_Firearm",
@@ -44809,7 +44812,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Marauder_Firearm",
@@ -46227,7 +46230,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Rifleman_Firearm",
@@ -46853,7 +46856,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Bonemaker_Firearm",
@@ -48503,7 +48506,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Raider_Firearm",
@@ -49638,7 +49641,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Marksman_Firearm",
@@ -50264,7 +50267,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Ambusher_Firearm",
@@ -50890,7 +50893,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Veteran_Firearm",
@@ -51431,7 +51434,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Sniper_Firearm",
@@ -51717,7 +51720,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Mercenary_Firearm",
@@ -52258,7 +52261,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercenarySniper_Firearm",
@@ -52544,7 +52547,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Warden_Firearm",
@@ -53373,7 +53376,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Scout_Firearm",
@@ -54016,7 +54019,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Skirmisher_Firearm",
@@ -54891,7 +54894,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Recon_Firearm",
@@ -55766,7 +55769,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pathfinder_Firearm",
@@ -56641,7 +56644,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Ranger_Firearm",
@@ -57516,7 +57519,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Gunner_Firearm",
@@ -57865,7 +57868,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "GMPG_Firearm",
@@ -58214,7 +58217,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "AssaultGunner_Firearm",
@@ -58399,7 +58402,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "VeteranGunner_Firearm",
@@ -58748,7 +58751,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercGunner_Firearm",
@@ -59097,7 +59100,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Sergeant_Firearm",
@@ -60515,7 +60518,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Lieutenant_Firearm",
@@ -61667,7 +61670,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Captain_Firearm",
@@ -62496,7 +62499,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercenaryCaptain_Firearm",
@@ -63042,9 +63045,15 @@ return {
 						id = "Rocketeer_Launcher",
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "RPG",
+							weight = 70000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "Disposable M72 LAW",
+							loot_def = "M72LAW",
+							weight = 30000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Rocketeer_Firearm",
@@ -64450,7 +64459,7 @@ return {
 							loot_def = "LegionGL",
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "HeavyGrenadier_Firearm",
@@ -65846,7 +65855,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																			PlaceObj('ModItemLootDef', {
+																																								PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Mortarman_Firearm",
@@ -86766,6 +86775,7 @@ return {
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
 					self:TryEquip(items, "Handheld B", "GrenadeLauncher")
+					self:TryEquip(items, "Handheld B", "HeavyWeapon")
 					self:TryEquip(items, "Handheld B", "MeleeWeapon")
 				end,
 				'MaxHitPoints', 50,
@@ -87005,6 +87015,7 @@ return {
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
 					self:TryEquip(items, "Handheld B", "GrenadeLauncher")
+					self:TryEquip(items, "Handheld B", "HeavyWeapon")
 					self:TryEquip(items, "Handheld B", "MeleeWeapon")
 				end,
 				'MaxHitPoints', 50,
