@@ -2,7 +2,7 @@ return PlaceObj('ModDef', {
 	'title', "JAZZ Units",
 	'description', "Мод для работы основного JAZZ модаВ",
 	'image', "Mod/Dv3mFVN/Images/JAZZLOGO.jpg",
-	'last_changes', "- Workshop AIM mercs + Benny/Simon: UnitData/VR/voices/portraits; JA12 voice expand; Spider v1 portraits; drop DesignerExplosives from JA12 mercs\n- JA2 merc voice remaps + VR stubs shipped; Spouke done_manual untouched\n- Colby voices: JA2 Trevor archive only; fill gaps by duplicating related lines (drop neural)\n- Fix TireArmor Scrap/Kevlar plate packs (was Steel3) for early Middle Legion armor\n- Legion frontliner GL chance + M72 LAW pool; Veteran/Mercenary HeavyWeapon equip; Rocketeer LAW mix\n- Paid hire for Madman/Grom/Hitman (fix StartingSalary=0 div0 on AIM)\n- Ship style-ja3-match s1 merc portraits (48) + _all_mercs_better finals\n- Highball STYLE LEVEL QA bar; fix non-square resize squish\n- Packaging: expand .gitignore + metadata ignore_files for Steam upload",
+	'last_changes', "- Flanker OptLocSearchRadius 80→55 (Legion_Flanker / Rebels_Flanker) for AI Precalc cost\n- Workshop AIM mercs + Benny/Simon: UnitData/VR/voices/portraits; JA12 voice expand; Spider v1 portraits; drop DesignerExplosives from JA12 mercs\n- JA2 merc voice remaps + VR stubs shipped; Spouke done_manual untouched\n- Colby voices: JA2 Trevor archive only; fill gaps by duplicating related lines (drop neural)\n- Fix TireArmor Scrap/Kevlar plate packs (was Steel3) for early Middle Legion armor\n- Legion frontliner GL chance + M72 LAW pool; Veteran/Mercenary HeavyWeapon equip; Rocketeer LAW mix\n- Paid hire for Madman/Grom/Hitman (fix StartingSalary=0 div0 on AIM)\n- Ship style-ja3-match s1 merc portraits (48) + _all_mercs_better finals\n- Highball STYLE LEVEL QA bar; fix non-square resize squish\n- Packaging: expand .gitignore + metadata ignore_files for Steam upload",
 	'ignore_files', {
 		-- VCS / IDE / agent (tracked in git, not for Steam pack)
 		"*.git/*",
@@ -44,7 +44,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 18,
-	'version', 2256,
+	'version', 2257,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {

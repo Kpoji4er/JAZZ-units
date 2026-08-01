@@ -83623,7 +83623,7 @@ return {
 						'visibility_mode', "team",
 					}),
 				},
-				OptLocSearchRadius = 80,
+				OptLocSearchRadius = 55,
 				PrefStance = "Crouch",
 				SignatureActions = {
 					PlaceObj('AIActionMobileShot', {
@@ -93283,7 +93283,7 @@ PlaceObj('ModItemAIArchetype', {
 						'visibility_mode', "team",
 					}),
 				},
-				OptLocSearchRadius = 80,
+				OptLocSearchRadius = 55,
 				PrefStance = "Crouch",
 				SignatureActions = {
 					PlaceObj('AIActionMobileShot', {
