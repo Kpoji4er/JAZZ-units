@@ -19653,7 +19653,7 @@ return {
 								item = "JazzArmor_TireArmor",
 							}),
 							PlaceObj('LootEntryInventoryItem', {
-								item = "JazzArmorPlates_Steel3",
+								item = "JazzArmorPlates_Scrap",
 							}),
 						}),
 						PlaceObj('ModItemLootDef', {
@@ -19664,7 +19664,7 @@ return {
 								item = "JazzArmor_TireArmor",
 							}),
 							PlaceObj('LootEntryInventoryItem', {
-								item = "JazzArmorPlates_Steel3",
+								item = "JazzArmorPlates_Kevlar",
 							}),
 						}),
 						PlaceObj('ModItemLootDef', {
