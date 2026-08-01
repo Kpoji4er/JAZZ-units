@@ -3,15 +3,14 @@
 ## Ship (игра)
 `MercPortraits/<Id>.png` (300) + `<Id>_Big.png` (2000) — пути UnitData `Portrait` / `BigPortrait`.
 
-## Рабочие слои
+## Локальные рабочие слои (не в git)
 | Путь | Назначение |
 | --- | --- |
 | `References/` | Style-рефы JA3 (локально, в `.gitignore`) |
-| `_quality_bar/` | STYLE LEVEL (Highball гама/пропорции, не kit) + folds OK/REJECT |
-| `newrules2/<Id>/` | 5 sheet-вариантов (`_appearance` … `_bio_backstory`) |
-| `newrules2/_faces/` | Face identity PNG |
-| `newrules2/_VOTE_WINNERS.json` | Карта победителей голосования |
+| `style-ja3-match/` | WIP-генерация / голосование — только локально |
+| `newrules2/` | Legacy sheet-варианты — только локально |
+| `_quality_bar/` | STYLE LEVEL (Highball гама/пропорции) + folds OK/REJECT |
 
-`_raw/` / `_neural/` — промежуточные, в `.gitignore`.
+`_raw/` / `_neural/` / `*.zip` — промежуточные, в `.gitignore`.
 
-Не класть сюда legacy `wip-regen` / `_wip`.
+В репозитории держать только ship PNG + `_quality_bar/`. Не коммитить regen-батчи.

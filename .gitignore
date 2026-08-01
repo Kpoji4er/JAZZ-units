@@ -8,12 +8,10 @@ MercPortraits/**/_neural/
 NPCPortraits/**/_raw/
 NPCPortraits/**/_neural/
 
-
-# Legacy portrait WIP batches (ship + newrules2 only)
+# Portrait WIP / regen batches (not shipped — ship is MercPortraits/*.png only)
+MercPortraits/**/*.zip
+MercPortraits/style-ja3-match/
+MercPortraits/newrules2/
 MercPortraits/wip-regen/
 MercPortraits/wip-regen-v4/
 MercPortraits/_wip/
-MercPortraits/newrules2/_denoise_log.txt
-
-# style-ja3-match opaque duplicates of root gens
-MercPortraits/style-ja3-match/_raw/
