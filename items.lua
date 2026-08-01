@@ -99948,6 +99948,86 @@ PlaceObj('ModItemAIArchetype', {
 					id = "LegionJAZZSquadT1",
 				}),
 				PlaceObj('ModItemEnemySquads', {
+					Comment = "JAZZ-COMPAT-005: true T1-only early squad for NoMaps day-1 / gear major I",
+					Units = {
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
+								}),
+							},
+							'UnitCountMin', 1,
+							'UnitCountMax', 1,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+									'spawnWeight', 50,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+									'spawnWeight', 35,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+									'spawnWeight', 25,
+								}),
+							},
+							'UnitCountMin', 4,
+							'UnitCountMax', 6,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+									'spawnWeight', 50,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT1_Marauder",
+									'spawnWeight', 35,
+								}),
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
+									'spawnWeight', 25,
+								}),
+							},
+							'UnitCountMin', 3,
+							'UnitCountMax', 5,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_FlankerT1_Warden",
+								}),
+							},
+							'UnitCountMin', 1,
+							'UnitCountMax', 2,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+								}),
+							},
+							'UnitCountMin', 1,
+							'UnitCountMax', 2,
+						}),
+						PlaceObj('EnemySquadUnit', {
+							'weightedList', {
+								PlaceObj('UnitTypeListWithWeights', {
+									'unitType', "JAZZ_Legion_HeavyT1_Rocketeer",
+								}),
+							},
+							'UnitCountMin', 0,
+							'UnitCountMax', 1,
+						}),
+					},
+					comment = "JAZZ-COMPAT-005 true T1-only early (NoMaps gear major I)",
+					group = "Ernie",
+					id = "LegionJAZZSquadT1_Early",
+				}),
+				PlaceObj('ModItemEnemySquads', {
 					BombardOrdnance = "_40mmFragGrenade",
 					Units = {
 						PlaceObj('EnemySquadUnit', {
