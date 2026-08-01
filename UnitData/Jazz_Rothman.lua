@@ -19,19 +19,19 @@ DefineClass.Jazz_Rothman = {
 	Portrait = "Mod/Dv3mFVN/MercPortraits/Rothman.png",
 	BigPortrait = "Mod/Dv3mFVN/MercPortraits/Rothman_Big.png",
 	IsMercenary = true,
-	Name = T(890000000002502, --[[ModItemUnitDataCompositeDef Jazz_Rothman Name]] "[WIP] Стефан Ротман"),
-	Nick = T(890000000002503, --[[ModItemUnitDataCompositeDef Jazz_Rothman Nick]] "Ротман"),
-	AllCapsNick = T(890000000002504, --[[ModItemUnitDataCompositeDef Jazz_Rothman AllCapsNick]] "РОТМАН"),
-	Bio = T(890000000002505, --[[ModItemUnitDataCompositeDef Jazz_Rothman Bio]] "work in progress"),
+	Name = T(890000000002433, --[[ModItemUnitDataCompositeDef Jazz_Rothman Name]] "Стефан Ротман"),
+	Nick = T(890000000002434, --[[ModItemUnitDataCompositeDef Jazz_Rothman Nick]] "Ротман"),
+	AllCapsNick = T(890000000002435, --[[ModItemUnitDataCompositeDef Jazz_Rothman AllCapsNick]] "РОТМАН"),
+	Bio = T(890000000002436, --[[ModItemUnitDataCompositeDef Jazz_Rothman Bio]] "Бывший начальник службы безопасности алмазных рудников ЮАР — умеет и охранять шахту, и подрывать её, если понадобится. Дружит с Лавой; не любит Статика и Гвоздя, презирает вечно обдолбанного Ларри; недолюбливает американцев."),
 	Nationality = "SouthAfrica",
-	Title = T(890000000002506, --[[ModItemUnitDataCompositeDef Jazz_Rothman Title]] "Шахтёрский безопасник"),
-	Email = T(890000000002507, --[[ModItemUnitDataCompositeDef Jazz_Rothman Email]] "Rothman@aim.com"),
-	snype_nick = T(890000000002508, --[[ModItemUnitDataCompositeDef Jazz_Rothman snype_nick]] "mineboss"),
+	Title = T(890000000002437, --[[ModItemUnitDataCompositeDef Jazz_Rothman Title]] "Шахтёрский безопасник"),
+	Email = T(890000000002438, --[[ModItemUnitDataCompositeDef Jazz_Rothman Email]] "Rothman@aim.com"),
+	snype_nick = T(890000000002439, --[[ModItemUnitDataCompositeDef Jazz_Rothman snype_nick]] "mineboss"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000002509, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text MercChatRefusal Lines ChatMessage voice:Jazz_Rothman]] "Пока Статик, Гвоздь или обдолбанный Ларри у вас — я не подписываюсь. Не тот уровень дисциплины."),
+					'Text', T(890000000002440, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text MercChatRefusal Lines ChatMessage voice:Jazz_Rothman]] "Пока Статик, Гвоздь или обдолбанный Ларри у вас — я не подписываюсь. Не тот уровень дисциплины."),
 				}),
 			},
 			'Conditions', {
@@ -48,7 +48,7 @@ DefineClass.Jazz_Rothman = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000002510, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text MercChatRefusal Lines ChatMessage voice:Jazz_Rothman]] "Слишком много трупов на вашем счету для нормального контракта."),
+					'Text', T(890000000002441, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text MercChatRefusal Lines ChatMessage voice:Jazz_Rothman]] "Слишком много трупов на вашем счету для нормального контракта."),
 				}),
 			},
 			'Conditions', {
@@ -63,7 +63,7 @@ DefineClass.Jazz_Rothman = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000002511, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text MercChatHaggle Lines ChatMessage voice:Jazz_Rothman]] "Отряд из одних американцев... Ладно, но с доплатой."),
+					'Text', T(890000000002442, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text MercChatHaggle Lines ChatMessage voice:Jazz_Rothman]] "Отряд из одних американцев... Ладно, но с доплатой."),
 				}),
 			},
 			'Conditions', {
@@ -83,37 +83,37 @@ DefineClass.Jazz_Rothman = {
 	ExtraPartingWords = {},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000002512, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text Offline ChatMessage voice:Jazz_Rothman]] "Ротман. Занят на объекте. Перезвоните."),
+			'Text', T(890000000002444, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text Offline ChatMessage voice:Jazz_Rothman]] "Ротман. Занят на объекте. Перезвоните."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000002513, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text GreetingAndOffer ChatMessage voice:Jazz_Rothman]] "Ротман слушает. Контракт по делу?"),
+			'Text', T(890000000002445, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text GreetingAndOffer ChatMessage voice:Jazz_Rothman]] "Ротман слушает. Контракт по делу?"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000002514, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text ConversationRestart ChatMessage voice:Jazz_Rothman]] "Связь прервалась. Вернёмся к делу."),
+			'Text', T(890000000002446, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text ConversationRestart ChatMessage voice:Jazz_Rothman]] "Связь прервалась. Вернёмся к делу."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000002515, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text IdleLine ChatMessage voice:Jazz_Rothman]] "Время — деньги, а у меня их и так немного."),
+			'Text', T(890000000002447, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text IdleLine ChatMessage voice:Jazz_Rothman]] "Время — деньги, а у меня их и так немного."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000002516, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text PartingWords ChatMessage voice:Jazz_Rothman]] "Договорились. Беру людей и выхожу."),
+			'Text', T(890000000002448, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text PartingWords ChatMessage voice:Jazz_Rothman]] "Договорились. Беру людей и выхожу."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000002517, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text RehireIntro ChatMessage voice:Jazz_Rothman]] "Контракт заканчивается. Продлеваем?"),
+			'Text', T(890000000002449, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text RehireIntro ChatMessage voice:Jazz_Rothman]] "Контракт заканчивается. Продлеваем?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000002518, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text RehireOutro ChatMessage voice:Jazz_Rothman]] "Остаюсь. Работа ещё не закончена."),
+			'Text', T(890000000002450, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text RehireOutro ChatMessage voice:Jazz_Rothman]] "Остаюсь. Работа ещё не закончена."),
 		}),
 	},
 	MedicalDeposit = "small",

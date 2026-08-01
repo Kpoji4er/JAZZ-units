@@ -2,11 +2,11 @@ return PlaceObj('ModDef', {
 	'title', "JAZZ Units",
 	'description', "Мод для работы основного JAZZ модаВ",
 	'image', "Mod/Dv3mFVN/Images/JAZZLOGO.jpg",
-	'last_changes', "- Medic/Medic_Low OptLoc 45 + runtime clamp (MED-001, editor-safe)\n- Supports AI PERF-001 large-fight DestLos scale",
+	'last_changes', "- Medic/Medic_Low OptLoc 45 + runtime clamp (MED-001, editor-safe)\n- Supports AI PERF-001 large-fight DestLos scale\n- Fix duplicated localization IDs for Rothman/Meat/Carlos/Hobbit and Raider whitespace vs vanilla.",
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 17,
-	'version', 2248,
+	'version', 2249,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {

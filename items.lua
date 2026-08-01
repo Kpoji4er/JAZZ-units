@@ -118157,19 +118157,19 @@ return {
 				'Portrait', "Mod/Dv3mFVN/MercPortraits/Rothman.png",
 				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Rothman_Big.png",
 				'IsMercenary', true,
-				'Name', T(890000000002502, --[[ModItemUnitDataCompositeDef Jazz_Rothman Name]] "[WIP] Стефан Ротман"),
-				'Nick', T(890000000002503, --[[ModItemUnitDataCompositeDef Jazz_Rothman Nick]] "Ротман"),
-				'AllCapsNick', T(890000000002504, --[[ModItemUnitDataCompositeDef Jazz_Rothman AllCapsNick]] "РОТМАН"),
-				'Bio', T(890000000002505, --[[ModItemUnitDataCompositeDef Jazz_Rothman Bio]] "work in progress"),
+				'Name', T(890000000002433, --[[ModItemUnitDataCompositeDef Jazz_Rothman Name]] "Стефан Ротман"),
+				'Nick', T(890000000002434, --[[ModItemUnitDataCompositeDef Jazz_Rothman Nick]] "Ротман"),
+				'AllCapsNick', T(890000000002435, --[[ModItemUnitDataCompositeDef Jazz_Rothman AllCapsNick]] "РОТМАН"),
+				'Bio', T(890000000002436, --[[ModItemUnitDataCompositeDef Jazz_Rothman Bio]] "Бывший начальник службы безопасности алмазных рудников ЮАР — умеет и охранять шахту, и подрывать её, если понадобится. Дружит с Лавой; не любит Статика и Гвоздя, презирает вечно обдолбанного Ларри; недолюбливает американцев."),
 				'Nationality', "SouthAfrica",
-				'Title', T(890000000002506, --[[ModItemUnitDataCompositeDef Jazz_Rothman Title]] "Шахтёрский безопасник"),
-				'Email', T(890000000002507, --[[ModItemUnitDataCompositeDef Jazz_Rothman Email]] "Rothman@aim.com"),
-				'snype_nick', T(890000000002508, --[[ModItemUnitDataCompositeDef Jazz_Rothman snype_nick]] "mineboss"),
+				'Title', T(890000000002437, --[[ModItemUnitDataCompositeDef Jazz_Rothman Title]] "Шахтёрский безопасник"),
+				'Email', T(890000000002438, --[[ModItemUnitDataCompositeDef Jazz_Rothman Email]] "Rothman@aim.com"),
+				'snype_nick', T(890000000002439, --[[ModItemUnitDataCompositeDef Jazz_Rothman snype_nick]] "mineboss"),
 				'Refusals', {
 				PlaceObj('MercChatRefusal', {
 				'Lines', {
 				PlaceObj('ChatMessage', {
-				'Text', T(890000000002509, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text MercChatRefusal Lines ChatMessage voice:Jazz_Rothman]] "Пока Статик, Гвоздь или обдолбанный Ларри у вас — я не подписываюсь. Не тот уровень дисциплины."),
+				'Text', T(890000000002440, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text MercChatRefusal Lines ChatMessage voice:Jazz_Rothman]] "Пока Статик, Гвоздь или обдолбанный Ларри у вас — я не подписываюсь. Не тот уровень дисциплины."),
 				}),
 				},
 				'Conditions', {
@@ -118186,7 +118186,7 @@ return {
 				PlaceObj('MercChatRefusal', {
 				'Lines', {
 				PlaceObj('ChatMessage', {
-				'Text', T(890000000002510, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text MercChatRefusal Lines ChatMessage voice:Jazz_Rothman]] "Слишком много трупов на вашем счету для нормального контракта."),
+				'Text', T(890000000002441, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text MercChatRefusal Lines ChatMessage voice:Jazz_Rothman]] "Слишком много трупов на вашем счету для нормального контракта."),
 				}),
 				},
 				'Conditions', {
@@ -118201,7 +118201,7 @@ return {
 				PlaceObj('MercChatHaggle', {
 				'Lines', {
 				PlaceObj('ChatMessage', {
-				'Text', T(890000000002511, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text MercChatHaggle Lines ChatMessage voice:Jazz_Rothman]] "Отряд из одних американцев... Ладно, но с доплатой."),
+				'Text', T(890000000002442, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text MercChatHaggle Lines ChatMessage voice:Jazz_Rothman]] "Отряд из одних американцев... Ладно, но с доплатой."),
 				}),
 				},
 				'Conditions', {
@@ -118221,37 +118221,37 @@ return {
 				'ExtraPartingWords', {},
 				'Offline', {
 				PlaceObj('ChatMessage', {
-				'Text', T(890000000002512, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text Offline ChatMessage voice:Jazz_Rothman]] "Ротман. Занят на объекте. Перезвоните."),
+				'Text', T(890000000002444, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text Offline ChatMessage voice:Jazz_Rothman]] "Ротман. Занят на объекте. Перезвоните."),
 				}),
 				},
 				'GreetingAndOffer', {
 				PlaceObj('ChatMessage', {
-				'Text', T(890000000002513, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text GreetingAndOffer ChatMessage voice:Jazz_Rothman]] "Ротман слушает. Контракт по делу?"),
+				'Text', T(890000000002445, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text GreetingAndOffer ChatMessage voice:Jazz_Rothman]] "Ротман слушает. Контракт по делу?"),
 				}),
 				},
 				'ConversationRestart', {
 				PlaceObj('ChatMessage', {
-				'Text', T(890000000002514, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text ConversationRestart ChatMessage voice:Jazz_Rothman]] "Связь прервалась. Вернёмся к делу."),
+				'Text', T(890000000002446, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text ConversationRestart ChatMessage voice:Jazz_Rothman]] "Связь прервалась. Вернёмся к делу."),
 				}),
 				},
 				'IdleLine', {
 				PlaceObj('ChatMessage', {
-				'Text', T(890000000002515, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text IdleLine ChatMessage voice:Jazz_Rothman]] "Время — деньги, а у меня их и так немного."),
+				'Text', T(890000000002447, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text IdleLine ChatMessage voice:Jazz_Rothman]] "Время — деньги, а у меня их и так немного."),
 				}),
 				},
 				'PartingWords', {
 				PlaceObj('ChatMessage', {
-				'Text', T(890000000002516, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text PartingWords ChatMessage voice:Jazz_Rothman]] "Договорились. Беру людей и выхожу."),
+				'Text', T(890000000002448, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text PartingWords ChatMessage voice:Jazz_Rothman]] "Договорились. Беру людей и выхожу."),
 				}),
 				},
 				'RehireIntro', {
 				PlaceObj('ChatMessage', {
-				'Text', T(890000000002517, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text RehireIntro ChatMessage voice:Jazz_Rothman]] "Контракт заканчивается. Продлеваем?"),
+				'Text', T(890000000002449, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text RehireIntro ChatMessage voice:Jazz_Rothman]] "Контракт заканчивается. Продлеваем?"),
 				}),
 				},
 				'RehireOutro', {
 				PlaceObj('ChatMessage', {
-				'Text', T(890000000002518, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text RehireOutro ChatMessage voice:Jazz_Rothman]] "Остаюсь. Работа ещё не закончена."),
+				'Text', T(890000000002450, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text RehireOutro ChatMessage voice:Jazz_Rothman]] "Остаюсь. Работа ещё не закончена."),
 				}),
 				},
 				'MedicalDeposit', "small",
@@ -121809,21 +121809,21 @@ return {
 				'Portrait', "Mod/Dv3mFVN/MercPortraits/Meat.png",
 				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Meat_Big.png",
 				'IsMercenary', true,
-				'Name', T(890000000004603, "[WIP] Тортон «Мясо» Джонс"),
-				'Nick', T(890000000004604, "Мясо"),
-				'AllCapsNick', T(890000000004605, "МЯСО"),
-				'Bio', T(890000000004606, "work in progress"),
+				'Name', T(890000000006202, "[WIP] Тортон «Мясо» Джонс"),
+				'Nick', T(890000000006203, "Мясо"),
+				'AllCapsNick', T(890000000006204, "МЯСО"),
+				'Bio', T(890000000006205, "work in progress"),
 				'Nationality', "USA",
-				'Title', T(890000000004607, "Гора"),
-				'Email', T(890000000004608, "Meat@merc.com"),
-				'snype_nick', T(890000000004609, "meat"),
-				'Offline', { PlaceObj('ChatMessage', { 'Text', T(890000000004610, "Meat offline.") }) },
-				'GreetingAndOffer', { PlaceObj('ChatMessage', { 'Text', T(890000000004611, "Meat here.") }) },
-				'ConversationRestart', { PlaceObj('ChatMessage', { 'Text', T(890000000004612, "Continue.") }) },
-				'IdleLine', { PlaceObj('ChatMessage', { 'Text', T(890000000004613, "Waiting.") }) },
-				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004614, "Hired.") }) },
-				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004615, "Contract ending?") }) },
-				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004616, "Staying.") }) },
+				'Title', T(890000000006206, "Гора"),
+				'Email', T(890000000006207, "Meat@merc.com"),
+				'snype_nick', T(890000000006208, "meat"),
+				'Offline', { PlaceObj('ChatMessage', { 'Text', T(890000000006209, "Meat offline.") }) },
+				'GreetingAndOffer', { PlaceObj('ChatMessage', { 'Text', T(890000000006210, "Meat here.") }) },
+				'ConversationRestart', { PlaceObj('ChatMessage', { 'Text', T(890000000006211, "Continue.") }) },
+				'IdleLine', { PlaceObj('ChatMessage', { 'Text', T(890000000006212, "Waiting.") }) },
+				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000006213, "Hired.") }) },
+				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000006214, "Contract ending?") }) },
+				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000006215, "Staying.") }) },
 				'MedicalDeposit', "small",
 				'StartingSalary', 750,
 				'SalaryIncrease', 150,
@@ -121878,8 +121878,8 @@ return {
 				'Portrait', "Mod/Dv3mFVN/MercPortraits/Carlos.png",
 				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Carlos_Big.png",
 				'IsMercenary', true,
-				'Name', T(890000000004619, "[WIP] Карлос Дасуза"),
-				'Nick', T(890000000004620, "Карлос"),
+				'Name', T(890000000006216, "[WIP] Карлос Дасуза"),
+				'Nick', T(890000000006217, "Карлос"),
 				'AllCapsNick', T(890000000004621, "КАРЛОС"),
 				'Bio', T(890000000004622, "work in progress"),
 				'Nationality', "Arulco",
@@ -126620,7 +126620,7 @@ return {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] " I think we can make this work, but I don't know you. I will need some extra assurance in case our working relationship isn't a smooth one."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "I think we can make this work, but I don't know you. I will need some extra assurance in case our working relationship isn't a smooth one."),
 							}),
 						},
 						'Conditions', {
@@ -126637,7 +126637,7 @@ return {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] " I think we can make this work, but I don't know you. I will need some extra assurance in case our working relationship isn't a smooth one."),
+								'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "I think we can make this work, but I don't know you. I will need some extra assurance in case our working relationship isn't a smooth one."),
 							}),
 						},
 						'Conditions', {
@@ -126730,7 +126730,7 @@ return {
 					PlaceObj('MercChatBranch', {
 						'Lines', {
 							PlaceObj('ChatMessage', {
-								'Text', T(293660560234, --[[ModItemUnitDataCompositeDef Raider Text MercChatBranch Lines ChatMessage voice:Raider]] "Thanks. It will be weird working with both Hitman and Raven. I hope we can avoid working too closely with him, but if that sleazeball hits on her, I swear... "),
+								'Text', T(293660560234, --[[ModItemUnitDataCompositeDef Raider Text MercChatBranch Lines ChatMessage voice:Raider]] "Thanks. It will be weird working with both Hitman and Raven. I hope we can avoid working too closely with him, but if that sleazeball hits on her, I swear..."),
 							}),
 							PlaceObj('ChatMessage', {
 								'Text', T(663569190804, --[[ModItemUnitDataCompositeDef Raider Text MercChatBranch Lines ChatMessage voice:Raider]] "Let's just say I'm glad to be part of any team Raven's a part of."),
