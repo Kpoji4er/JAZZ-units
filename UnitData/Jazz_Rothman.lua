@@ -137,7 +137,6 @@ DefineClass.Jazz_Rothman = {
 		"Jazz_Perk_Rothman",
 		"Teacher",
 		"ShoulderToShoulder",
-		"DesignerExplosives",
 		"HoldPosition",
 	},
 	AppearancesList = {

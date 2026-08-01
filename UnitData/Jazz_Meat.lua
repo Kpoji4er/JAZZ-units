@@ -47,7 +47,6 @@ DefineClass.Jazz_Meat = {
 	MaxHitPoints = 90,
 	StartingPerks = {
 	"Jazz_Perk_Meat",
-	"DesignerExplosives",
 	"MeleeTraining",
 	"TrueGrit",
 	},

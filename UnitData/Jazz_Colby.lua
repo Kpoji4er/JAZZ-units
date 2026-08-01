@@ -177,7 +177,6 @@ DefineClass.Jazz_Colby = {
 		"Throwing",
 		"BreachAndClear",
 		"HitTheDeck",
-		"DesignerExplosives",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

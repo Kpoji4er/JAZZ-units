@@ -107,7 +107,6 @@ DefineClass.Jazz_Hobbit = {
 	StartingPerks = {
 		"Jazz_Perk_Hobbit",
 		"Pessimist",
-		"DesignerExplosives",
 		"BreachAndClear",
 	},
 	AppearancesList = {

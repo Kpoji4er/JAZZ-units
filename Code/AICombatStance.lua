@@ -327,6 +327,53 @@ function JazzAI_NeedsRegroup(unit)
 	return local_count <= local_max and far_count >= cluster_min
 end
 
+function JazzAI_ArchetypeExists(id)
+	if not id or id == "" then
+		return false
+	end
+	local table_ai = rawget(_G, "AIArchetypes")
+	if type(table_ai) == "table" and table_ai[id] then
+		return true
+	end
+	local root = Presets and Presets.AIArchetype
+	if not root then
+		return false
+	end
+	for _, group in pairs(root) do
+		if type(group) == "table" then
+			local preset = group[id]
+			if preset then
+				return true
+			end
+			for pid, p in pairs(group) do
+				if type(p) == "table" and (p.id == id or p.Id == id or pid == id) then
+					return true
+				end
+			end
+		end
+	end
+	return false
+end
+
+--- Prefer requested id; if missing, fall back Assaulter → Frontliner → base unit.archetype.
+function JazzAI_ResolveKnownArchetype(id, prefix, fallback)
+	if JazzAI_ArchetypeExists(id) then
+		return id
+	end
+	prefix = prefix or "Legion_"
+	local candidates = {
+		prefix .. "Assaulter",
+		prefix .. "Frontliner",
+		fallback,
+	}
+	for _, cand in ipairs(candidates) do
+		if cand and cand ~= id and JazzAI_ArchetypeExists(cand) then
+			return cand
+		end
+	end
+	return id
+end
+
 --- Main entry for UnitData.PickCustomArchetype.
 --- opts.allow_medic = true for Bonemaker-style units.
 function JazzAI_PickCombatStance(unit, proto_context, opts)
@@ -421,7 +468,11 @@ function JazzAI_PickCombatStance(unit, proto_context, opts)
 		return "Deserter"
 	end
 
-	return archetype
+	-- Missing faction preset (e.g. historical Rebels_Flanker gap) → known Assaulter/Frontliner.
+	if archetype == "Medic" or archetype == "Deserter" or archetype == "Melee" or archetype == "Legion_Regroup" then
+		return archetype
+	end
+	return JazzAI_ResolveKnownArchetype(archetype, prefix, unit.archetype)
 end
 
 -- MED-001: OptLoc ≤45 for Medic archetypes.

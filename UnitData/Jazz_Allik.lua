@@ -152,7 +152,6 @@ DefineClass.Jazz_Allik = {
 	StartingPerks = {
 		"Jazz_Perk_Allik",
 		"MrFixit",
-		"DesignerExplosives",
 		"TrueGrit",
 	},
 	AppearancesList = {

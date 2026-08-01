@@ -48,7 +48,6 @@ DefineClass.Jazz_Laura = {
 	StartingPerks = {
 	"Jazz_Perk_Laura",
 	"Stealthy",
-	"DesignerExplosives",
 	"TrueGrit",
 	},
 	AppearancesList = { PlaceObj('AppearanceWeight', { 'Preset', "Laura" }) },

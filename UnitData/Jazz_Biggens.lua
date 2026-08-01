@@ -48,7 +48,6 @@ DefineClass.Jazz_Biggens = {
 	StartingPerks = {
 	"Jazz_Perk_Biggens",
 	"Optimist",
-	"DesignerExplosives",
 	"NightOps",
 	},
 	AppearancesList = { PlaceObj('AppearanceWeight', { 'Preset', "Biggens" }) },

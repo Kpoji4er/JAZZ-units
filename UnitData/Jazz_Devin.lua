@@ -48,7 +48,6 @@ DefineClass.Jazz_Devin = {
 	StartingPerks = {
 	"Jazz_Perk_Devin",
 	"Loner",
-	"DesignerExplosives",
 	"BreachAndClear",
 	},
 	AppearancesList = { PlaceObj('AppearanceWeight', { 'Preset', "Devin" }) },
