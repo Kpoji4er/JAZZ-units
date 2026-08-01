@@ -44,7 +44,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 18,
-	'version', 2253,
+	'version', 2254,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
