@@ -7,7 +7,7 @@
 | Путь | Назначение |
 | --- | --- |
 | `References/` | Style-рефы JA3 (локально, в `.gitignore`) |
-| `_quality_bar/` | Эталон качества + folds OK/REJECT |
+| `_quality_bar/` | STYLE LEVEL (Highball гама/пропорции, не kit) + folds OK/REJECT |
 | `newrules2/<Id>/` | 5 sheet-вариантов (`_appearance` … `_bio_backstory`) |
 | `newrules2/_faces/` | Face identity PNG |
 | `newrules2/_VOTE_WINNERS.json` | Карта победителей голосования |
