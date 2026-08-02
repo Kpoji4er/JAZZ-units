@@ -74,7 +74,6 @@ DefineClass.Jazz_Nervous = {
 			'chanceToRoll', 100,
 		}),
 	},
-	ExtraPartingWords = {},
 	Offline = {
 		PlaceObj('ChatMessage', {
 			'Text', T(890000000002912, --[[ModItemUnitDataCompositeDef Jazz_Nervous Text Offline ChatMessage voice:Jazz_Nervous]] "Нервный... занят... пиши, перезвоню, может."),

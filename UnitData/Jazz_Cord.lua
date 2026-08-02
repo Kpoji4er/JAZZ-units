@@ -83,7 +83,6 @@ DefineClass.Jazz_Cord = {
 	},
 	HaggleRehire = {},
 	Mitigations = {},
-	ExtraPartingWords = {},
 	Offline = {
 		PlaceObj('ChatMessage', {
 			'Text', T(890000000004412, --[[ModItemUnitDataCompositeDef Jazz_Cord Text Offline ChatMessage voice:Jazz_Cord]] "Кардан... куда я дел телефон... перезвоните."),

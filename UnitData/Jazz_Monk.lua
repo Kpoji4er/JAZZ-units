@@ -31,7 +31,7 @@ DefineClass.Jazz_Monk = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000003809, --[[ModItemUnitDataCompositeDef Jazz_Monk Text MercChatRefusal Lines ChatMessage voice:Jazz_Monk]] "Пока Иван или Конрад в отряде — нет. Не хочу иметь с ними дела."),
+					'Text', T(890000000003809, --[[ModItemUnitDataCompositeDef Jazz_Monk Text MercChatRefusal Lines ChatMessage voice:Jazz_Monk]] "Я слышал, вы наняли Ивана... Да чтобы я с ним работал? Нет. Ищите кого-нибудь другого..."),
 				}),
 			},
 			'Conditions', {
@@ -48,7 +48,7 @@ DefineClass.Jazz_Monk = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000003810, --[[ModItemUnitDataCompositeDef Jazz_Monk Text MercChatRefusal Lines ChatMessage voice:Jazz_Monk]] "Слишком много смертей. Хватит с меня войны."),
+					'Text', T(890000000003810, --[[ModItemUnitDataCompositeDef Jazz_Monk Text MercChatRefusal Lines ChatMessage voice:Jazz_Monk]] "Слишком уж смертность у тебя высокая... Это неправильно."),
 				}),
 			},
 			'Conditions', {
@@ -65,7 +65,7 @@ DefineClass.Jazz_Monk = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000003811, --[[ModItemUnitDataCompositeDef Jazz_Monk Text MercChatMitigation Lines ChatMessage voice:Jazz_Monk]] "Лора уже здесь? Тогда, пожалуй, соглашусь."),
+					'Text', T(890000000003811, --[[ModItemUnitDataCompositeDef Jazz_Monk Text MercChatMitigation Lines ChatMessage voice:Jazz_Monk]] "Эта операция не очень хорошая, но если в команде доктор Лора... то Виктор тоже в команде."),
 				}),
 			},
 			'Conditions', {
@@ -81,7 +81,7 @@ DefineClass.Jazz_Monk = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000003812, --[[ModItemUnitDataCompositeDef Jazz_Monk Text MercChatBranch Lines ChatMessage voice:Jazz_Monk]] "Если найдёте Лору — она надёжнее большинства."),
+					'Text', T(890000000003812, --[[ModItemUnitDataCompositeDef Jazz_Monk Text MercChatBranch Lines ChatMessage voice:Jazz_Monk]] "Доктор Лора - сильная женщина. Сильная... и симпатичная."),
 				}),
 			},
 			'Conditions', {
@@ -95,22 +95,22 @@ DefineClass.Jazz_Monk = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000003813, --[[ModItemUnitDataCompositeDef Jazz_Monk Text Offline ChatMessage voice:Jazz_Monk]] "Монк не в сети."),
+			'Text', T(890000000003813, --[[ModItemUnitDataCompositeDef Jazz_Monk Text Offline ChatMessage voice:Jazz_Monk]] "Это Виктор Колесников. Оставьте сообщение на автоответчике. Я свяжусь с вами."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000003814, --[[ModItemUnitDataCompositeDef Jazz_Monk Text GreetingAndOffer ChatMessage voice:Jazz_Monk]] "Монк на связи."),
+			'Text', T(890000000003814, --[[ModItemUnitDataCompositeDef Jazz_Monk Text GreetingAndOffer ChatMessage voice:Jazz_Monk]] "Виктор Колесников."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000003815, --[[ModItemUnitDataCompositeDef Jazz_Monk Text ConversationRestart ChatMessage voice:Jazz_Monk]] "Связь прервалась. Продолжим."),
+			'Text', T(890000000003815, --[[ModItemUnitDataCompositeDef Jazz_Monk Text ConversationRestart ChatMessage voice:Jazz_Monk]] "Еще раз."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000003816, --[[ModItemUnitDataCompositeDef Jazz_Monk Text IdleLine ChatMessage voice:Jazz_Monk]] "..."),
+			'Text', T(890000000003816, --[[ModItemUnitDataCompositeDef Jazz_Monk Text IdleLine ChatMessage voice:Jazz_Monk]] "Я наемник от Бога."),
 		}),
 	},
 	PartingWords = {
@@ -120,12 +120,12 @@ DefineClass.Jazz_Monk = {
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000003818, --[[ModItemUnitDataCompositeDef Jazz_Monk Text RehireIntro ChatMessage voice:Jazz_Monk]] "Контракт заканчивается. Продлеваем?"),
+			'Text', T(890000000003818, --[[ModItemUnitDataCompositeDef Jazz_Monk Text RehireIntro ChatMessage voice:Jazz_Monk]] "Контракт скоро заканчивается... Виктор тебе еще нужен?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000003819, --[[ModItemUnitDataCompositeDef Jazz_Monk Text RehireOutro ChatMessage voice:Jazz_Monk]] "Остаюсь."),
+			'Text', T(890000000003819, --[[ModItemUnitDataCompositeDef Jazz_Monk Text RehireOutro ChatMessage voice:Jazz_Monk]] "Хорошо... Очень хорошо."),
 		}),
 	},
 	MedicalDeposit = "small",

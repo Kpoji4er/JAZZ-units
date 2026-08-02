@@ -56,7 +56,6 @@ DefineClass.Jazz_Hobbit = {
 	Haggles = {},
 	HaggleRehire = {},
 	Mitigations = {},
-	ExtraPartingWords = {},
 	Offline = {
 		PlaceObj('ChatMessage', {
 			'Text', T(890000000004511, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Text Offline ChatMessage voice:Jazz_Hobbit]] "Хоббит недоступен. Наверное, к лучшему."),

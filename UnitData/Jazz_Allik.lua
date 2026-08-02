@@ -31,7 +31,7 @@ DefineClass.Jazz_Allik = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000003909, --[[ModItemUnitDataCompositeDef Jazz_Allik Text MercChatRefusal Lines ChatMessage voice:Jazz_Allik]] "Пока Сидни или Доктор Кью в отряде — нет. С ними не сработаемся."),
+					'Text', T(890000000003909, --[[ModItemUnitDataCompositeDef Jazz_Allik Text MercChatRefusal Lines ChatMessage voice:Jazz_Allik]] "Лучше поищи другого наемника. Такого, которому понравится работать со свиньей-англичанином!"),
 				}),
 			},
 			'Conditions', {
@@ -48,7 +48,7 @@ DefineClass.Jazz_Allik = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000003910, --[[ModItemUnitDataCompositeDef Jazz_Allik Text MercChatRefusal Lines ChatMessage voice:Jazz_Allik]] "Слишком много потерь — даже оптимизм имеет предел."),
+					'Text', T(890000000003910, --[[ModItemUnitDataCompositeDef Jazz_Allik Text MercChatRefusal Lines ChatMessage voice:Jazz_Allik]] "Я наемник, потому что я так решил, но это еще не значит, что я люблю смерть."),
 				}),
 			},
 			'Conditions', {
@@ -65,7 +65,7 @@ DefineClass.Jazz_Allik = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000003911, --[[ModItemUnitDataCompositeDef Jazz_Allik Text MercChatMitigation Lines ChatMessage voice:Jazz_Allik]] "Вильде или Грейс уже здесь? Тогда я определённо в деле."),
+					'Text', T(890000000003911, --[[ModItemUnitDataCompositeDef Jazz_Allik Text MercChatMitigation Lines ChatMessage voice:Jazz_Allik]] "У меня тревожные предчувствия, но если с вами Грейс Джирелли... Я согласен."),
 				}),
 			},
 			'Conditions', {
@@ -84,7 +84,7 @@ DefineClass.Jazz_Allik = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000003912, --[[ModItemUnitDataCompositeDef Jazz_Allik Text MercChatBranch Lines ChatMessage voice:Jazz_Allik]] "Возьмите ещё Вильде — вместе мы вдвое эффективнее."),
+					'Text', T(890000000003912, --[[ModItemUnitDataCompositeDef Jazz_Allik Text MercChatBranch Lines ChatMessage voice:Jazz_Allik]] "Она мне нравится. Обычно американки такие... Ну... Но только не Грейс. В ней чувствуется итальянская кровь, а итальянцы знают толк в хорошей еде."),
 				}),
 			},
 			'Conditions', {
@@ -98,22 +98,22 @@ DefineClass.Jazz_Allik = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000003913, --[[ModItemUnitDataCompositeDef Jazz_Allik Text Offline ChatMessage voice:Jazz_Allik]] "Знаток занят делом. Позже."),
+			'Text', T(890000000003913, --[[ModItemUnitDataCompositeDef Jazz_Allik Text Offline ChatMessage voice:Jazz_Allik]] "Янно Аллик на связи. Если у вас есть для меня важные новости, пожалуйста, говорите."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000003914, --[[ModItemUnitDataCompositeDef Jazz_Allik Text GreetingAndOffer ChatMessage voice:Jazz_Allik]] "Аллик слушает. Что за задача?"),
+			'Text', T(890000000003914, --[[ModItemUnitDataCompositeDef Jazz_Allik Text GreetingAndOffer ChatMessage voice:Jazz_Allik]] "Привет..."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000003915, --[[ModItemUnitDataCompositeDef Jazz_Allik Text ConversationRestart ChatMessage voice:Jazz_Allik]] "Связь прервалась. Вернёмся к делу."),
+			'Text', T(890000000003915, --[[ModItemUnitDataCompositeDef Jazz_Allik Text ConversationRestart ChatMessage voice:Jazz_Allik]] "Я сказал..."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000003916, --[[ModItemUnitDataCompositeDef Jazz_Allik Text IdleLine ChatMessage voice:Jazz_Allik]] "Готов к работе, только скажите."),
+			'Text', T(890000000003916, --[[ModItemUnitDataCompositeDef Jazz_Allik Text IdleLine ChatMessage voice:Jazz_Allik]] "Я бы не отказался сейчас от сочного бифштекса с картофелем и подливкой. Ха!"),
 		}),
 	},
 	PartingWords = {
@@ -123,12 +123,12 @@ DefineClass.Jazz_Allik = {
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000003918, --[[ModItemUnitDataCompositeDef Jazz_Allik Text RehireIntro ChatMessage voice:Jazz_Allik]] "Контракт заканчивается. Продлеваем?"),
+			'Text', T(890000000003918, --[[ModItemUnitDataCompositeDef Jazz_Allik Text RehireIntro ChatMessage voice:Jazz_Allik]] "Я бы не отказался поработать на вас еще, если это входит в ваши планы."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000003919, --[[ModItemUnitDataCompositeDef Jazz_Allik Text RehireOutro ChatMessage voice:Jazz_Allik]] "Остаюсь. Тут ещё многому можно научиться."),
+			'Text', T(890000000003919, --[[ModItemUnitDataCompositeDef Jazz_Allik Text RehireOutro ChatMessage voice:Jazz_Allik]] "Gut. Должно быть, вам понравились мои успехи."),
 		}),
 	},
 	MedicalDeposit = "small",

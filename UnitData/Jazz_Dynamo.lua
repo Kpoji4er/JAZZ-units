@@ -46,7 +46,6 @@ DefineClass.Jazz_Dynamo = {
 			'chanceToRoll', 100,
 		}),
 	},
-	ExtraPartingWords = {},
 	Offline = {
 		PlaceObj('ChatMessage', {
 			'Text', T(890000000003410, --[[ModItemUnitDataCompositeDef Jazz_Dynamo Text Offline ChatMessage voice:Jazz_Dynamo]] "Динамо вне зоны — наверно чинит что-то. Пиши."),

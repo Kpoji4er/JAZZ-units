@@ -82,7 +82,7 @@ DefineClass.Jazz_Horg = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000003612, --[[ModItemUnitDataCompositeDef Jazz_Horg Text MercChatBranch Lines ChatMessage voice:Jazz_Horg]] "Возьмите ещё Гаса — с ним и потяжелее груз не проблема."),
+					'Text', T(890000000003612, --[[ModItemUnitDataCompositeDef Jazz_Horg Text MercChatBranch Lines ChatMessage voice:Jazz_Horg]] "Этот парень может любого вояку за пояс заткнуть."),
 				}),
 			},
 			'Conditions', {
@@ -96,22 +96,22 @@ DefineClass.Jazz_Horg = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000003613, --[[ModItemUnitDataCompositeDef Jazz_Horg Text Offline ChatMessage voice:Jazz_Horg]] "Сигара курит — не мешать. Пиши, отвечу позже."),
+			'Text', T(890000000003613, --[[ModItemUnitDataCompositeDef Jazz_Horg Text Offline ChatMessage voice:Jazz_Horg]] "Ага... так! Есть только один способ выбраться, и мы пойдем все вместе."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000003614, --[[ModItemUnitDataCompositeDef Jazz_Horg Text GreetingAndOffer ChatMessage voice:Jazz_Horg]] "Хорг. Говори, что надо."),
+			'Text', T(890000000003614, --[[ModItemUnitDataCompositeDef Jazz_Horg Text GreetingAndOffer ChatMessage voice:Jazz_Horg]] "А я-то думал, что все в жизни повидал. Наверно, взрывчатка - не его специальность."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000003615, --[[ModItemUnitDataCompositeDef Jazz_Horg Text ConversationRestart ChatMessage voice:Jazz_Horg]] "Связь прервалась. Вернёмся к делу."),
+			'Text', T(890000000003615, --[[ModItemUnitDataCompositeDef Jazz_Horg Text ConversationRestart ChatMessage voice:Jazz_Horg]] "Я никогда не был в Арулько, Мануэль, но постараюсь сделать все, чтобы ты туда вернулся."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000003616, --[[ModItemUnitDataCompositeDef Jazz_Horg Text IdleLine ChatMessage voice:Jazz_Horg]] "Ну? Сигара сама себя не докурит."),
+			'Text', T(890000000003616, --[[ModItemUnitDataCompositeDef Jazz_Horg Text IdleLine ChatMessage voice:Jazz_Horg]] "Огорчает лишь то, что Рауль унес все, что у него было."),
 		}),
 	},
 	PartingWords = {
@@ -121,12 +121,12 @@ DefineClass.Jazz_Horg = {
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000003618, --[[ModItemUnitDataCompositeDef Jazz_Horg Text RehireIntro ChatMessage voice:Jazz_Horg]] "Контракт заканчивается. Продлеваем?"),
+			'Text', T(890000000003618, --[[ModItemUnitDataCompositeDef Jazz_Horg Text RehireIntro ChatMessage voice:Jazz_Horg]] "Похоже, пройти удалось не всем! Увы..."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000003619, --[[ModItemUnitDataCompositeDef Jazz_Horg Text RehireOutro ChatMessage voice:Jazz_Horg]] "Остаюсь. Ещё есть, что взрывать."),
+			'Text', T(890000000003619, --[[ModItemUnitDataCompositeDef Jazz_Horg Text RehireOutro ChatMessage voice:Jazz_Horg]] "Мы наделали много шума, но мне это нравится. У них есть время подумать о том, что их ждет."),
 		}),
 	},
 	MedicalDeposit = "small",

@@ -31,7 +31,7 @@ DefineClass.Jazz_Henning = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000004009, --[[ModItemUnitDataCompositeDef Jazz_Henning Text MercChatRefusal Lines ChatMessage voice:Jazz_Henning]] "Пока Тор в отряде — нет. Не нахожу с ним общего языка."),
+					'Text', T(890000000004009, --[[ModItemUnitDataCompositeDef Jazz_Henning Text MercChatRefusal Lines ChatMessage voice:Jazz_Henning]] "Тор тоже с тобой? В таком случае я отклоняю твое предложение. Ты скоро узнаешь, почему. Желаю удачи... Она тебе понадобится."),
 				}),
 			},
 			'Conditions', {
@@ -48,7 +48,7 @@ DefineClass.Jazz_Henning = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000004010, --[[ModItemUnitDataCompositeDef Jazz_Henning Text MercChatRefusal Lines ChatMessage voice:Jazz_Henning]] "Слишком много потерь для моих стандартов командования."),
+					'Text', T(890000000004010, --[[ModItemUnitDataCompositeDef Jazz_Henning Text MercChatRefusal Lines ChatMessage voice:Jazz_Henning]] "Ты теряешь слишком много хороших людей. Мне это неинтересно."),
 				}),
 			},
 			'Conditions', {
@@ -65,7 +65,7 @@ DefineClass.Jazz_Henning = {
 		PlaceObj('MercChatMitigation', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000004011, --[[ModItemUnitDataCompositeDef Jazz_Henning Text MercChatMitigation Lines ChatMessage voice:Jazz_Henning]] "Штайгер или Лора уже здесь? Тогда я готов присоединиться."),
+					'Text', T(890000000004011, --[[ModItemUnitDataCompositeDef Jazz_Henning Text MercChatMitigation Lines ChatMessage voice:Jazz_Henning]] "Возможно, я совершаю ошибку, но я не упущу шанса оказаться в одном отряде с Фиделем."),
 				}),
 			},
 			'Conditions', {
@@ -84,7 +84,7 @@ DefineClass.Jazz_Henning = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(890000000004012, --[[ModItemUnitDataCompositeDef Jazz_Henning Text MercChatBranch Lines ChatMessage voice:Jazz_Henning]] "Найдёте Штайгера — берите. Дисциплинированный солдат."),
+					'Text', T(890000000004012, --[[ModItemUnitDataCompositeDef Jazz_Henning Text MercChatBranch Lines ChatMessage voice:Jazz_Henning]] "Фидель - это сокровище! Ты ВИДЕЛ?"),
 				}),
 			},
 			'Conditions', {
@@ -98,22 +98,22 @@ DefineClass.Jazz_Henning = {
 	},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000004013, --[[ModItemUnitDataCompositeDef Jazz_Henning Text Offline ChatMessage voice:Jazz_Henning]] "Фон Браниц отсутствует. Позже."),
+			'Text', T(890000000004013, --[[ModItemUnitDataCompositeDef Jazz_Henning Text Offline ChatMessage voice:Jazz_Henning]] "Это Хеннинг фон Браниц. В настоящий момент я не могу ответить на ваш звонок. Пожалуйста, оставьте сообщение после сигнала."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000004014, --[[ModItemUnitDataCompositeDef Jazz_Henning Text GreetingAndOffer ChatMessage voice:Jazz_Henning]] "Хеннинг слушает. Излагайте."),
+			'Text', T(890000000004014, --[[ModItemUnitDataCompositeDef Jazz_Henning Text GreetingAndOffer ChatMessage voice:Jazz_Henning]] "Алло!"),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000004015, --[[ModItemUnitDataCompositeDef Jazz_Henning Text ConversationRestart ChatMessage voice:Jazz_Henning]] "Связь прервалась. Продолжайте, пожалуйста."),
+			'Text', T(890000000004015, --[[ModItemUnitDataCompositeDef Jazz_Henning Text ConversationRestart ChatMessage voice:Jazz_Henning]] "Я сказал..."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000004016, --[[ModItemUnitDataCompositeDef Jazz_Henning Text IdleLine ChatMessage voice:Jazz_Henning]] "Жду распоряжений."),
+			'Text', T(890000000004016, --[[ModItemUnitDataCompositeDef Jazz_Henning Text IdleLine ChatMessage voice:Jazz_Henning]] "У меня мало времени..."),
 		}),
 	},
 	PartingWords = {
@@ -123,12 +123,12 @@ DefineClass.Jazz_Henning = {
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000004018, --[[ModItemUnitDataCompositeDef Jazz_Henning Text RehireIntro ChatMessage voice:Jazz_Henning]] "Контракт заканчивается. Продлеваем?"),
+			'Text', T(890000000004018, --[[ModItemUnitDataCompositeDef Jazz_Henning Text RehireIntro ChatMessage voice:Jazz_Henning]] "Я предлагаю продлить мой контракт. Что ты об этом думаешь?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000004019, --[[ModItemUnitDataCompositeDef Jazz_Henning Text RehireOutro ChatMessage voice:Jazz_Henning]] "Остаюсь. Здесь ещё есть кем командовать."),
+			'Text', T(890000000004019, --[[ModItemUnitDataCompositeDef Jazz_Henning Text RehireOutro ChatMessage voice:Jazz_Henning]] "Согласен!"),
 		}),
 	},
 	MedicalDeposit = "large",

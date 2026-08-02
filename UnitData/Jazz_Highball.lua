@@ -56,40 +56,39 @@ DefineClass.Jazz_Highball = {
 	Haggles = {},
 	HaggleRehire = {},
 	Mitigations = {},
-	ExtraPartingWords = {},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000004211, --[[ModItemUnitDataCompositeDef Jazz_Highball Text Offline ChatMessage voice:Jazz_Highball]] "Хайбол... икает... позже перезвонит."),
+			'Text', T(890000000004211, --[[ModItemUnitDataCompositeDef Jazz_Highball Text Offline ChatMessage voice:Jazz_Highball]] "Это доктор Клиффорд Хайбол, спасибо за звонок. Сейчас я не могу с вами разговаривать — оставьте своё имя и номер."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000004212, --[[ModItemUnitDataCompositeDef Jazz_Highball Text GreetingAndOffer ChatMessage voice:Jazz_Highball]] "Скала на линии. Ик. Что там у вас?"),
+			'Text', T(890000000004212, --[[ModItemUnitDataCompositeDef Jazz_Highball Text GreetingAndOffer ChatMessage voice:Jazz_Highball]] "Доктор Клиффорд Хайбол."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000004213, --[[ModItemUnitDataCompositeDef Jazz_Highball Text ConversationRestart ChatMessage voice:Jazz_Highball]] "Связь прервалась. Вернёмся к делу."),
+			'Text', T(890000000004213, --[[ModItemUnitDataCompositeDef Jazz_Highball Text ConversationRestart ChatMessage voice:Jazz_Highball]] "Пожалуйста, внимание — я сказал."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000004214, --[[ModItemUnitDataCompositeDef Jazz_Highball Text IdleLine ChatMessage voice:Jazz_Highball]] "Ещё по одной — и я весь ваш."),
+			'Text', T(890000000004214, --[[ModItemUnitDataCompositeDef Jazz_Highball Text IdleLine ChatMessage voice:Jazz_Highball]] "Немногие бойцы способны причинять или облегчать боль так, как я могу."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000004215, --[[ModItemUnitDataCompositeDef Jazz_Highball Text PartingWords ChatMessage voice:Jazz_Highball]] "Ладно... фляжку с собой, и иду."),
+			'Text', T(890000000004215, --[[ModItemUnitDataCompositeDef Jazz_Highball Text PartingWords ChatMessage voice:Jazz_Highball]] "В следующий раз мы будем разговаривать уже в Арулько."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000004216, --[[ModItemUnitDataCompositeDef Jazz_Highball Text RehireIntro ChatMessage voice:Jazz_Highball]] "Контракт заканчивается. Продлеваем?"),
+			'Text', T(890000000004216, --[[ModItemUnitDataCompositeDef Jazz_Highball Text RehireIntro ChatMessage voice:Jazz_Highball]] "Мой контракт почти закончен. Следует ли мне понимать вашу незаинтересованность как свидетельство того, что продления не будет?"),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000004217, --[[ModItemUnitDataCompositeDef Jazz_Highball Text RehireOutro ChatMessage voice:Jazz_Highball]] "Остаюсь. Тут веселее, чем дома."),
+			'Text', T(890000000004217, --[[ModItemUnitDataCompositeDef Jazz_Highball Text RehireOutro ChatMessage voice:Jazz_Highball]] "Отлично! Это место начинает мне нравиться!"),
 		}),
 	},
 	MedicalDeposit = "small",

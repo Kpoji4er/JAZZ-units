@@ -73,40 +73,39 @@ DefineClass.Jazz_Quinten = {
 	Haggles = {},
 	HaggleRehire = {},
 	Mitigations = {},
-	ExtraPartingWords = {},
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000002612, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text Offline ChatMessage voice:Jazz_Quinten]] "Доктор Квинтен недоступен. Оставьте сообщение."),
+			'Text', T(890000000002612, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text Offline ChatMessage voice:Jazz_Quinten]] "Это доктор Дэниел Квинтен. Пожалуйста, оставьте сообщение. Если нужна срочная медицинская помощь — звоните ещё."),
 		}),
 	},
 	GreetingAndOffer = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000002613, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text GreetingAndOffer ChatMessage voice:Jazz_Quinten]] "Квинтен на связи. Сколько бежать и кого латать?"),
+			'Text', T(890000000002613, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text GreetingAndOffer ChatMessage voice:Jazz_Quinten]] "Да, это доктор Квинтен."),
 		}),
 	},
 	ConversationRestart = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000002614, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text ConversationRestart ChatMessage voice:Jazz_Quinten]] "Связь прервалась. Вернёмся к делу."),
+			'Text', T(890000000002614, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text ConversationRestart ChatMessage voice:Jazz_Quinten]] "Пожалуйста, обратите внимание, я сказал..."),
 		}),
 	},
 	IdleLine = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000002615, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text IdleLine ChatMessage voice:Jazz_Quinten]] "Пульс ровный. У тебя — не проверял."),
+			'Text', T(890000000002615, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text IdleLine ChatMessage voice:Jazz_Quinten]] "Как вы, наверно, знаете, моя специальность — оказание медицинской помощи в полевых условиях."),
 		}),
 	},
 	PartingWords = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000002616, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text PartingWords ChatMessage voice:Jazz_Quinten]] "Аптечка собрана, обе руки заряжены. Выхожу."),
+			'Text', T(890000000002616, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text PartingWords ChatMessage voice:Jazz_Quinten]] "Я буду очень рад подписать этот контракт. Спасибо."),
 		}),
 	},
 	RehireIntro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000002617, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text RehireIntro ChatMessage voice:Jazz_Quinten]] "Контракт заканчивается. Продлеваем?"),
+			'Text', T(890000000002617, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text RehireIntro ChatMessage voice:Jazz_Quinten]] "Ты собираешься продлевать мой контракт? Сообщи поскорее, если хочешь, чтобы я к тому моменту был свободен."),
 		}),
 	},
 	RehireOutro = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000002618, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text RehireOutro ChatMessage voice:Jazz_Quinten]] "Остаюсь. Кому-то же надо следить, чтобы вы не поубивали друг друга."),
+			'Text', T(890000000002618, --[[ModItemUnitDataCompositeDef Jazz_Quinten Text RehireOutro ChatMessage voice:Jazz_Quinten]] "Это вполне приемлемо. Спасибо."),
 		}),
 	},
 	MedicalDeposit = "large",

@@ -56,7 +56,6 @@ DefineClass.Jazz_Gamos = {
 	Haggles = {},
 	HaggleRehire = {},
 	Mitigations = {},
-	ExtraPartingWords = {},
 	Offline = {
 		PlaceObj('ChatMessage', {
 			'Text', T(890000000003311, --[[ModItemUnitDataCompositeDef Jazz_Gamos Text Offline ChatMessage voice:Jazz_Gamos]] "Гамос много путешествовать — сейчас нет тут. Потом."),
