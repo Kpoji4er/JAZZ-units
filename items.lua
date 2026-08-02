@@ -8864,6 +8864,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Meds",
 						stack_max = 20,
@@ -8906,6 +8908,8 @@ return {
 						stack_max = 40,
 						stack_min = 30,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 4, drop_chance = 80 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						generate_chance = 50,
 						item = "JazzArmor_LeatherVest",
@@ -8940,6 +8944,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						generate_chance = 50,
 						item = "JazzArmor_LeatherVest",
@@ -8969,6 +8975,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Meds",
 						stack_max = 20,
@@ -9003,6 +9011,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 2,
@@ -9040,6 +9050,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 2,
@@ -9078,6 +9090,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 2,
@@ -9737,6 +9751,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JazzArmor_FlakM69",
@@ -9769,6 +9785,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JazzArmor_FlakM69",
@@ -9801,6 +9819,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 1,
@@ -9827,6 +9847,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 1,
@@ -10781,6 +10803,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Meds",
 						stack_max = 40,
@@ -10826,6 +10850,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Meds",
 						stack_max = 15,
@@ -10870,6 +10896,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Meds",
 						stack_max = 80,
@@ -10915,6 +10943,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Meds",
 						stack_max = 40,
@@ -13289,6 +13319,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_Uniform",
 						stack_max = 1,
@@ -13334,6 +13366,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_Uniform",
 						stack_max = 1,
@@ -13655,6 +13689,9 @@ return {
 						item = "Medkit",
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_SurgicalKit", drop_chance = 40 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JazzArmor_RBA",
@@ -13728,6 +13765,8 @@ return {
 						item = "Medkit",
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "M79",
 						stack_min = 1,
@@ -13792,6 +13831,8 @@ return {
 						item = "Medkit",
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "FragGrenade",
 						stack_max = 2,
@@ -13839,6 +13880,8 @@ return {
 						item = "Medkit",
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "FragGrenade",
 						stack_max = 2,
@@ -14094,6 +14137,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 1,
@@ -14143,6 +14188,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 1,
@@ -14175,6 +14222,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "SmokeGrenade",
 						stack_max = 2,
@@ -14242,6 +14291,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "SmokeGrenade",
 						stack_max = 2,
@@ -14291,6 +14342,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "SmokeGrenade",
 						stack_max = 2,
@@ -15671,6 +15724,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife_Sharpened",
 						stack_max = 1,
@@ -15923,6 +15978,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JazzArmor_FlakM69",
@@ -15955,6 +16012,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JazzArmor_FlakM69",
@@ -15987,6 +16046,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 1,
@@ -16013,6 +16074,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 1,
@@ -16094,6 +16157,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_Match", stack_max = 40, stack_min = 40 }),
 					PlaceObj('LootEntryInventoryItem', { item = "ShapedCharge", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16131,6 +16196,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 48, stack_min = 48 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 50, stack_min = 50 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "CombatStim", stack_max = 2, stack_min = 2 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -16143,6 +16210,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 36, stack_min = 36 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 30, stack_min = 30 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16153,6 +16222,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "Colt1911", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_45ACP_FMJ", stack_max = 24, stack_min = 24 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 4, drop_chance = 80 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16163,6 +16233,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "Colt1911", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_45ACP_FMJ", stack_max = 20, stack_min = 20 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 4, drop_chance = 80 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16210,6 +16281,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16284,6 +16357,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16357,6 +16432,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "HiPower", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 32, stack_min = 32 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -16662,6 +16739,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "Sig550", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 80, stack_min = 80 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 20, stack_min = 20 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -16673,6 +16752,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "Sig550", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 60, stack_min = 60 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 4, drop_chance = 80 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16743,6 +16823,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherVest" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 30, stack_min = 30 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "CombatStim", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SWModel19", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_357_FMJ", stack_max = 18, stack_min = 18 }),
@@ -16755,6 +16837,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_UniformPants" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 20, stack_min = 20 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Colt38Special", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
 				}),
@@ -16764,6 +16848,7 @@ return {
 					id = "JAZZ_Highball25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 15, stack_min = 15 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 4, drop_chance = 80 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
 				}),
@@ -16773,6 +16858,7 @@ return {
 					id = "JAZZ_Highball20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 4, drop_chance = 80 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 6, stack_min = 6 }),
 				}),
@@ -17073,6 +17159,9 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_PoliceVest" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 30, stack_min = 30 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_SurgicalKit", drop_chance = 40 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "HiPower", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 32, stack_min = 32 }),
@@ -17085,6 +17174,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherVest" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 20, stack_min = 20 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Colt1911", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_45ACP_FMJ", stack_max = 24, stack_min = 24 }),
 				}),
@@ -17095,6 +17186,8 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 15, stack_min = 15 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
 				}),
@@ -17104,6 +17197,7 @@ return {
 					id = "JAZZ_Vince20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 4, drop_chance = 80 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
 				}),
@@ -17366,6 +17460,9 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherVest" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 25, stack_min = 25 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_SurgicalKit", drop_chance = 40 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
@@ -17379,6 +17476,8 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 15, stack_min = 15 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
@@ -17390,6 +17489,8 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
 				}),
@@ -17399,6 +17500,7 @@ return {
 					id = "JAZZ_Laura20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 6, stack_min = 6 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 4, drop_chance = 80 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Colt38Special", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 8, stack_min = 8 }),
 				}),
@@ -17445,6 +17547,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "CombatStim", stack_max = 2, stack_min = 2 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -17456,6 +17560,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17484,6 +17590,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "Colt1911", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_45ACP_FMJ", stack_max = 28, stack_min = 28 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 20, stack_min = 20 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
 				}),
@@ -17496,6 +17604,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "HiPower", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 48, stack_min = 48 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17506,6 +17616,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "P210", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 60, stack_min = 60 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 4, drop_chance = 80 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17598,6 +17709,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "Springfield", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_3006_Match", stack_max = 20, stack_min = 20 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 20, stack_min = 20 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -17636,6 +17749,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_EPR", stack_max = 40, stack_min = 40 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 1, stack_min = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -17728,6 +17843,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Meds",
 						stack_max = 20,
@@ -34041,6 +34158,8 @@ return {
 							stack_max = 1,
 							stack_min = 1,
 						}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
@@ -73585,6 +73704,21 @@ return {
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
+						Comment = "MED-001: vanilla MedsDrop + bandages for containers/medic tables",
+						group = "Default",
+						id = "MedsDrop",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "Meds",
+							stack_max = 4,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JAZZ_Bandage",
+							stack_max = 3,
+							stack_min = 1,
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
 						Comment = "enemy army",
 						group = "Enemy - Army",
 						id = "ArmyMedic",
@@ -73594,6 +73728,8 @@ return {
 							stack_max = 1,
 							stack_min = 1,
 						}),
+						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "ArmyArmor_PASGT_Light",
 						}),
@@ -73617,6 +73753,8 @@ return {
 							stack_max = 1,
 							stack_min = 1,
 						}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "ArmyArmorElite_IBA_Light",
 						}),
@@ -76621,6 +76759,9 @@ return {
 							stack_max = 1,
 							stack_min = 1,
 						}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_SurgicalKit", drop_chance = 40 }),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "AdonisArmor_GuardianMedium",
 						}),
@@ -80295,6 +80436,7 @@ return {
 						stack_max = 20,
 						stack_min = 8,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 4, drop_chance = 80 }),
 					PlaceObj('LootEntryInventoryItem', {
 						guaranteed = true,
 						item = "TreasureIdol",
@@ -80336,6 +80478,9 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_SurgicalKit" }),
 					PlaceObj('LootEntryInventoryItem', {
 						guaranteed = true,
 						item = "SkillMag_Medical",
@@ -124583,7 +124728,185 @@ PlaceObj('ModItemAIArchetype', {
 				'FallbackMissingVR', "Ice",
 				'DaysUntilOnline', 0,
 				}),
-				PlaceObj('ModItemVoiceResponse', {
+												PlaceObj('ModItemVoiceResponse', {
+					Selection = TConcat({
+						T(890000000009195, --[[ModItemVoiceResponse Jazz_Monk Selection VoiceResponse Selection voice:Jazz_Monk]] "На связи."),
+						T(890000000009675, --[[ModItemVoiceResponse Jazz_Monk Selection VoiceResponse Selection voice:Jazz_Monk]] "На связи."),
+						T(890000000009676, --[[ModItemVoiceResponse Jazz_Monk Selection VoiceResponse Selection voice:Jazz_Monk]] "На связи.")
+					}),
+					SelectionStealth = TConcat({
+						T(890000000009677, --[[ModItemVoiceResponse Jazz_Monk SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Monk]] "Тихо."),
+						T(890000000009678, --[[ModItemVoiceResponse Jazz_Monk SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Monk]] "Тихо."),
+						T(890000000009679, --[[ModItemVoiceResponse Jazz_Monk SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Monk]] "Тихо.")
+					}),
+					Order = TConcat({
+						T(890000000009680, --[[ModItemVoiceResponse Jazz_Monk Order VoiceResponse Order voice:Jazz_Monk]] "Есть."),
+						T(890000000009681, --[[ModItemVoiceResponse Jazz_Monk Order VoiceResponse Order voice:Jazz_Monk]] "Есть."),
+						T(890000000009682, --[[ModItemVoiceResponse Jazz_Monk Order VoiceResponse Order voice:Jazz_Monk]] "Есть.")
+					}),
+					CombatMovement = TConcat({
+						T(890000000009683, --[[ModItemVoiceResponse Jazz_Monk CombatMovement VoiceResponse CombatMovement voice:Jazz_Monk]] "Двигаюсь."),
+						T(890000000009684, --[[ModItemVoiceResponse Jazz_Monk CombatMovement VoiceResponse CombatMovement voice:Jazz_Monk]] "Двигаюсь."),
+						T(890000000009685, --[[ModItemVoiceResponse Jazz_Monk CombatMovement VoiceResponse CombatMovement voice:Jazz_Monk]] "Двигаюсь.")
+					}),
+					CombatMovementStealth = TConcat({
+						T(890000000009686, --[[ModItemVoiceResponse Jazz_Monk CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Monk]] "Крадусь."),
+						T(890000000009687, --[[ModItemVoiceResponse Jazz_Monk CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Monk]] "Крадусь."),
+						T(890000000009688, --[[ModItemVoiceResponse Jazz_Monk CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Monk]] "Крадусь.")
+					}),
+					GroupOrder = TConcat({
+						T(890000000009689, --[[ModItemVoiceResponse Jazz_Monk GroupOrder VoiceResponse GroupOrder voice:Jazz_Monk]] "С вами."),
+						T(890000000009690, --[[ModItemVoiceResponse Jazz_Monk GroupOrder VoiceResponse GroupOrder voice:Jazz_Monk]] "С вами."),
+						T(890000000009691, --[[ModItemVoiceResponse Jazz_Monk GroupOrder VoiceResponse GroupOrder voice:Jazz_Monk]] "С вами.")
+					}),
+					AimAttack = TConcat({
+						T(890000000009196, --[[ModItemVoiceResponse Jazz_Monk AimAttack VoiceResponse AimAttack voice:Jazz_Monk]] "Есть цель!"),
+						T(890000000009197, --[[ModItemVoiceResponse Jazz_Monk AimAttack VoiceResponse AimAttack voice:Jazz_Monk]] "В бой!"),
+						T(890000000009692, --[[ModItemVoiceResponse Jazz_Monk AimAttack VoiceResponse AimAttack voice:Jazz_Monk]] "Есть цель!")
+					}),
+					AimAttackStealth = TConcat({
+						T(890000000009693, --[[ModItemVoiceResponse Jazz_Monk AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Monk]] "Тихо сниму."),
+						T(890000000009694, --[[ModItemVoiceResponse Jazz_Monk AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Monk]] "Тихо сниму.")
+					}),
+					AimAttack_Low = TConcat({
+						T(890000000009695, --[[ModItemVoiceResponse Jazz_Monk AimAttack_Low VoiceResponse AimAttack_Low voice:Jazz_Monk]] "Сложный выстрел.")
+					}),
+					AimAttack_LowStealth = TConcat({
+						T(890000000009696, --[[ModItemVoiceResponse Jazz_Monk AimAttack_LowStealth VoiceResponse AimAttack_LowStealth voice:Jazz_Monk]] "Плохой угол.")
+					}),
+					OpponentFound = TConcat({
+						T(890000000009697, --[[ModItemVoiceResponse Jazz_Monk OpponentFound VoiceResponse OpponentFound voice:Jazz_Monk]] "Вижу их!"),
+						T(890000000009698, --[[ModItemVoiceResponse Jazz_Monk OpponentFound VoiceResponse OpponentFound voice:Jazz_Monk]] "Вижу их!")
+					}),
+					ManyEnemiesSelection = TConcat({
+						T(890000000009699, --[[ModItemVoiceResponse Jazz_Monk ManyEnemiesSelection VoiceResponse ManyEnemiesSelection voice:Jazz_Monk]] "Их много!")
+					}),
+					OpponentKilled = TConcat({
+						T(890000000009198, --[[ModItemVoiceResponse Jazz_Monk OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Monk]] "Готов."),
+						T(890000000009700, --[[ModItemVoiceResponse Jazz_Monk OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Monk]] "Готов.")
+					}),
+					NoAmmo = TConcat({
+						T(890000000009701, --[[ModItemVoiceResponse Jazz_Monk NoAmmo VoiceResponse NoAmmo voice:Jazz_Monk]] "Патроны кончились.")
+					}),
+					AmmoLow = TConcat({
+						T(890000000009201, --[[ModItemVoiceResponse Jazz_Monk AmmoLow VoiceResponse AmmoLow voice:Jazz_Monk]] "Патроны!")
+					}),
+					WeaponJammed = TConcat({
+						T(890000000009702, --[[ModItemVoiceResponse Jazz_Monk WeaponJammed VoiceResponse WeaponJammed voice:Jazz_Monk]] "Клин!")
+					}),
+					Pain = TConcat({
+						T(890000000009703, --[[ModItemVoiceResponse Jazz_Monk Pain VoiceResponse Pain voice:Jazz_Monk]] "Аргх!"),
+						T(890000000009704, --[[ModItemVoiceResponse Jazz_Monk Pain VoiceResponse Pain voice:Jazz_Monk]] "Аргх!")
+					}),
+					Wounded = TConcat({
+						T(890000000009705, --[[ModItemVoiceResponse Jazz_Monk Wounded VoiceResponse Wounded voice:Jazz_Monk]] "Ранен!")
+					}),
+					Downed = TConcat({
+						T(890000000009200, --[[ModItemVoiceResponse Jazz_Monk Downed VoiceResponse Downed voice:Jazz_Monk]] "Ранен!")
+					}),
+					HeavilyWoundedSelection = TConcat({
+						T(890000000009706, --[[ModItemVoiceResponse Jazz_Monk HeavilyWoundedSelection VoiceResponse HeavilyWoundedSelection voice:Jazz_Monk]] "Плохо…")
+					}),
+					CombatStartPlayer = TConcat({
+						T(890000000009707, --[[ModItemVoiceResponse Jazz_Monk CombatStartPlayer VoiceResponse CombatStartPlayer voice:Jazz_Monk]] "К бою!")
+					}),
+					CombatStartDetected = TConcat({
+						T(890000000009202, --[[ModItemVoiceResponse Jazz_Monk CombatStartDetected VoiceResponse CombatStartDetected voice:Jazz_Monk]] "Контакт!")
+					}),
+					CombatEndNoEnemies = TConcat({
+						T(890000000009708, --[[ModItemVoiceResponse Jazz_Monk CombatEndNoEnemies VoiceResponse CombatEndNoEnemies voice:Jazz_Monk]] "Чисто.")
+					}),
+					CombatEndEnemiesRemain = TConcat({
+						T(890000000009709, --[[ModItemVoiceResponse Jazz_Monk CombatEndEnemiesRemain VoiceResponse CombatEndEnemiesRemain voice:Jazz_Monk]] "Ещё остались.")
+					}),
+					DeathGeneral = TConcat({
+						T(890000000009199, --[[ModItemVoiceResponse Jazz_Monk DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Monk]] "Конец...")
+					}),
+					Idle = TConcat({
+						T(890000000009203, --[[ModItemVoiceResponse Jazz_Monk Idle VoiceResponse Idle voice:Jazz_Monk]] "Жду."),
+						T(890000000009710, --[[ModItemVoiceResponse Jazz_Monk Idle VoiceResponse Idle voice:Jazz_Monk]] "Жду."),
+						T(890000000009711, --[[ModItemVoiceResponse Jazz_Monk Idle VoiceResponse Idle voice:Jazz_Monk]] "Жду.")
+					}),
+					BecomeHidden = TConcat({
+						T(890000000009712, --[[ModItemVoiceResponse Jazz_Monk BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Monk]] "Прячусь."),
+						T(890000000009713, --[[ModItemVoiceResponse Jazz_Monk BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Monk]] "Прячусь.")
+					}),
+					LevelUp = TConcat({
+						T(890000000009204, --[[ModItemVoiceResponse Jazz_Monk LevelUp VoiceResponse LevelUp voice:Jazz_Monk]] "Учусь.")
+					}),
+					LootFound = TConcat({
+						T(890000000009714, --[[ModItemVoiceResponse Jazz_Monk LootFound VoiceResponse LootFound voice:Jazz_Monk]] "Интересно…"),
+						T(890000000009715, --[[ModItemVoiceResponse Jazz_Monk LootFound VoiceResponse LootFound voice:Jazz_Monk]] "Интересно…")
+					}),
+					DoorLocked = TConcat({
+						T(890000000009716, --[[ModItemVoiceResponse Jazz_Monk DoorLocked VoiceResponse DoorLocked voice:Jazz_Monk]] "Закрыто.")
+					}),
+					Exhausted = TConcat({
+						T(890000000009717, --[[ModItemVoiceResponse Jazz_Monk Exhausted VoiceResponse Exhausted voice:Jazz_Monk]] "Устал…")
+					}),
+					HeavyBreathing = TConcat({
+						T(890000000009718, --[[ModItemVoiceResponse Jazz_Monk HeavyBreathing VoiceResponse HeavyBreathing voice:Jazz_Monk]] "(пыхтит)")
+					}),
+					HealReceived = TConcat({
+						T(890000000009719, --[[ModItemVoiceResponse Jazz_Monk HealReceived VoiceResponse HealReceived voice:Jazz_Monk]] "Спасибо.")
+					}),
+					NotNow = TConcat({
+						T(890000000009720, --[[ModItemVoiceResponse Jazz_Monk NotNow VoiceResponse NotNow voice:Jazz_Monk]] "Не сейчас.")
+					}),
+					ActivityFinished = TConcat({
+						T(890000000009721, --[[ModItemVoiceResponse Jazz_Monk ActivityFinished VoiceResponse ActivityFinished voice:Jazz_Monk]] "Готово.")
+					}),
+					TakeCover = TConcat({
+						T(890000000009722, --[[ModItemVoiceResponse Jazz_Monk TakeCover VoiceResponse TakeCover voice:Jazz_Monk]] "В укрытие!")
+					}),
+					ThrowGrenade = TConcat({
+						T(890000000009723, --[[ModItemVoiceResponse Jazz_Monk ThrowGrenade VoiceResponse ThrowGrenade voice:Jazz_Monk]] "Граната!")
+					}),
+					Autofire = TConcat({
+						T(890000000009724, --[[ModItemVoiceResponse Jazz_Monk Autofire VoiceResponse Autofire voice:Jazz_Monk]] "Очередь!")
+					}),
+					Climbing = TConcat({
+						T(890000000009725, --[[ModItemVoiceResponse Jazz_Monk Climbing VoiceResponse Climbing voice:Jazz_Monk]] "(лезет)")
+					}),
+					Jumping = TConcat({
+						T(890000000009726, --[[ModItemVoiceResponse Jazz_Monk Jumping VoiceResponse Jumping voice:Jazz_Monk]] "(прыжок)")
+					}),
+					Startled = TConcat({
+						T(890000000009727, --[[ModItemVoiceResponse Jazz_Monk Startled VoiceResponse Startled voice:Jazz_Monk]] "Что?!")
+					}),
+					ThreatSelection = TConcat({
+						T(890000000009728, --[[ModItemVoiceResponse Jazz_Monk ThreatSelection VoiceResponse ThreatSelection voice:Jazz_Monk]] "Опасно!")
+					}),
+					Overwatch = TConcat({
+						T(890000000009729, --[[ModItemVoiceResponse Jazz_Monk Overwatch VoiceResponse Overwatch voice:Jazz_Monk]] "Держу сектор.")
+					}),
+					OverwatchSelection = TConcat({
+						T(890000000009730, --[[ModItemVoiceResponse Jazz_Monk OverwatchSelection VoiceResponse OverwatchSelection voice:Jazz_Monk]] "Наготове.")
+					}),
+					GasAreaSelection = TConcat({
+						T(890000000009731, --[[ModItemVoiceResponse Jazz_Monk GasAreaSelection VoiceResponse GasAreaSelection voice:Jazz_Monk]] "(кашляет)")
+					}),
+					MissedByKillShot = TConcat({
+						T(890000000009732, --[[ModItemVoiceResponse Jazz_Monk MissedByKillShot VoiceResponse MissedByKillShot voice:Jazz_Monk]] "Почти…")
+					}),
+					AnimalFound = TConcat({
+						T(890000000009733, --[[ModItemVoiceResponse Jazz_Monk AnimalFound VoiceResponse AnimalFound voice:Jazz_Monk]] "Зверь!")
+					}),
+					CombatTaskGiven = TConcat({
+						T(890000000009734, --[[ModItemVoiceResponse Jazz_Monk CombatTaskGiven VoiceResponse CombatTaskGiven voice:Jazz_Monk]] "Есть идея.")
+					}),
+					CombatTaskCompleted = TConcat({
+						T(890000000009735, --[[ModItemVoiceResponse Jazz_Monk CombatTaskCompleted VoiceResponse CombatTaskCompleted voice:Jazz_Monk]] "Сделано.")
+					}),
+					CombatTaskFailed = TConcat({
+						T(890000000009736, --[[ModItemVoiceResponse Jazz_Monk CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Monk]] "Не вышло.")
+					}),
+					MockDislike1 = TConcat({
+						T(890000000009205, --[[ModItemVoiceResponse Jazz_Monk MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Monk]] "Только не это.")
+					}),
+					PraisesBuddy1 = TConcat({
+						T(890000000009206, --[[ModItemVoiceResponse Jazz_Monk PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Monk]] "Отличная работа.")
+					}),
 					group = "MercenariesOld",
 					id = "Jazz_Monk",
 				}),
@@ -124762,7 +125085,185 @@ PlaceObj('ModItemAIArchetype', {
 				'FallbackMissingVR', "Ice",
 				'DaysUntilOnline', 0,
 				}),
-				PlaceObj('ModItemVoiceResponse', {
+												PlaceObj('ModItemVoiceResponse', {
+					Selection = TConcat({
+						T(890000000009207, --[[ModItemVoiceResponse Jazz_Allik Selection VoiceResponse Selection voice:Jazz_Allik]] "На связи."),
+						T(890000000009303, --[[ModItemVoiceResponse Jazz_Allik Selection VoiceResponse Selection voice:Jazz_Allik]] "На связи."),
+						T(890000000009304, --[[ModItemVoiceResponse Jazz_Allik Selection VoiceResponse Selection voice:Jazz_Allik]] "На связи.")
+					}),
+					SelectionStealth = TConcat({
+						T(890000000009305, --[[ModItemVoiceResponse Jazz_Allik SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Allik]] "Тихо."),
+						T(890000000009306, --[[ModItemVoiceResponse Jazz_Allik SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Allik]] "Тихо."),
+						T(890000000009307, --[[ModItemVoiceResponse Jazz_Allik SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Allik]] "Тихо.")
+					}),
+					Order = TConcat({
+						T(890000000009308, --[[ModItemVoiceResponse Jazz_Allik Order VoiceResponse Order voice:Jazz_Allik]] "Есть."),
+						T(890000000009309, --[[ModItemVoiceResponse Jazz_Allik Order VoiceResponse Order voice:Jazz_Allik]] "Есть."),
+						T(890000000009310, --[[ModItemVoiceResponse Jazz_Allik Order VoiceResponse Order voice:Jazz_Allik]] "Есть.")
+					}),
+					CombatMovement = TConcat({
+						T(890000000009311, --[[ModItemVoiceResponse Jazz_Allik CombatMovement VoiceResponse CombatMovement voice:Jazz_Allik]] "Двигаюсь."),
+						T(890000000009312, --[[ModItemVoiceResponse Jazz_Allik CombatMovement VoiceResponse CombatMovement voice:Jazz_Allik]] "Двигаюсь."),
+						T(890000000009313, --[[ModItemVoiceResponse Jazz_Allik CombatMovement VoiceResponse CombatMovement voice:Jazz_Allik]] "Двигаюсь.")
+					}),
+					CombatMovementStealth = TConcat({
+						T(890000000009314, --[[ModItemVoiceResponse Jazz_Allik CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Allik]] "Крадусь."),
+						T(890000000009315, --[[ModItemVoiceResponse Jazz_Allik CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Allik]] "Крадусь."),
+						T(890000000009316, --[[ModItemVoiceResponse Jazz_Allik CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Allik]] "Крадусь.")
+					}),
+					GroupOrder = TConcat({
+						T(890000000009317, --[[ModItemVoiceResponse Jazz_Allik GroupOrder VoiceResponse GroupOrder voice:Jazz_Allik]] "С вами."),
+						T(890000000009318, --[[ModItemVoiceResponse Jazz_Allik GroupOrder VoiceResponse GroupOrder voice:Jazz_Allik]] "С вами."),
+						T(890000000009319, --[[ModItemVoiceResponse Jazz_Allik GroupOrder VoiceResponse GroupOrder voice:Jazz_Allik]] "С вами.")
+					}),
+					AimAttack = TConcat({
+						T(890000000009208, --[[ModItemVoiceResponse Jazz_Allik AimAttack VoiceResponse AimAttack voice:Jazz_Allik]] "Есть цель!"),
+						T(890000000009209, --[[ModItemVoiceResponse Jazz_Allik AimAttack VoiceResponse AimAttack voice:Jazz_Allik]] "В бой!"),
+						T(890000000009320, --[[ModItemVoiceResponse Jazz_Allik AimAttack VoiceResponse AimAttack voice:Jazz_Allik]] "Есть цель!")
+					}),
+					AimAttackStealth = TConcat({
+						T(890000000009321, --[[ModItemVoiceResponse Jazz_Allik AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Allik]] "Тихо сниму."),
+						T(890000000009322, --[[ModItemVoiceResponse Jazz_Allik AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Allik]] "Тихо сниму.")
+					}),
+					AimAttack_Low = TConcat({
+						T(890000000009323, --[[ModItemVoiceResponse Jazz_Allik AimAttack_Low VoiceResponse AimAttack_Low voice:Jazz_Allik]] "Сложный выстрел.")
+					}),
+					AimAttack_LowStealth = TConcat({
+						T(890000000009324, --[[ModItemVoiceResponse Jazz_Allik AimAttack_LowStealth VoiceResponse AimAttack_LowStealth voice:Jazz_Allik]] "Плохой угол.")
+					}),
+					OpponentFound = TConcat({
+						T(890000000009325, --[[ModItemVoiceResponse Jazz_Allik OpponentFound VoiceResponse OpponentFound voice:Jazz_Allik]] "Вижу их!"),
+						T(890000000009326, --[[ModItemVoiceResponse Jazz_Allik OpponentFound VoiceResponse OpponentFound voice:Jazz_Allik]] "Вижу их!")
+					}),
+					ManyEnemiesSelection = TConcat({
+						T(890000000009327, --[[ModItemVoiceResponse Jazz_Allik ManyEnemiesSelection VoiceResponse ManyEnemiesSelection voice:Jazz_Allik]] "Их много!")
+					}),
+					OpponentKilled = TConcat({
+						T(890000000009210, --[[ModItemVoiceResponse Jazz_Allik OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Allik]] "Готов."),
+						T(890000000009328, --[[ModItemVoiceResponse Jazz_Allik OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Allik]] "Готов.")
+					}),
+					NoAmmo = TConcat({
+						T(890000000009329, --[[ModItemVoiceResponse Jazz_Allik NoAmmo VoiceResponse NoAmmo voice:Jazz_Allik]] "Патроны кончились.")
+					}),
+					AmmoLow = TConcat({
+						T(890000000009213, --[[ModItemVoiceResponse Jazz_Allik AmmoLow VoiceResponse AmmoLow voice:Jazz_Allik]] "Патроны!")
+					}),
+					WeaponJammed = TConcat({
+						T(890000000009330, --[[ModItemVoiceResponse Jazz_Allik WeaponJammed VoiceResponse WeaponJammed voice:Jazz_Allik]] "Клин!")
+					}),
+					Pain = TConcat({
+						T(890000000009331, --[[ModItemVoiceResponse Jazz_Allik Pain VoiceResponse Pain voice:Jazz_Allik]] "Аргх!"),
+						T(890000000009332, --[[ModItemVoiceResponse Jazz_Allik Pain VoiceResponse Pain voice:Jazz_Allik]] "Аргх!")
+					}),
+					Wounded = TConcat({
+						T(890000000009333, --[[ModItemVoiceResponse Jazz_Allik Wounded VoiceResponse Wounded voice:Jazz_Allik]] "Ранен!")
+					}),
+					Downed = TConcat({
+						T(890000000009212, --[[ModItemVoiceResponse Jazz_Allik Downed VoiceResponse Downed voice:Jazz_Allik]] "Ранен!")
+					}),
+					HeavilyWoundedSelection = TConcat({
+						T(890000000009334, --[[ModItemVoiceResponse Jazz_Allik HeavilyWoundedSelection VoiceResponse HeavilyWoundedSelection voice:Jazz_Allik]] "Плохо…")
+					}),
+					CombatStartPlayer = TConcat({
+						T(890000000009335, --[[ModItemVoiceResponse Jazz_Allik CombatStartPlayer VoiceResponse CombatStartPlayer voice:Jazz_Allik]] "К бою!")
+					}),
+					CombatStartDetected = TConcat({
+						T(890000000009214, --[[ModItemVoiceResponse Jazz_Allik CombatStartDetected VoiceResponse CombatStartDetected voice:Jazz_Allik]] "Контакт!")
+					}),
+					CombatEndNoEnemies = TConcat({
+						T(890000000009336, --[[ModItemVoiceResponse Jazz_Allik CombatEndNoEnemies VoiceResponse CombatEndNoEnemies voice:Jazz_Allik]] "Чисто.")
+					}),
+					CombatEndEnemiesRemain = TConcat({
+						T(890000000009337, --[[ModItemVoiceResponse Jazz_Allik CombatEndEnemiesRemain VoiceResponse CombatEndEnemiesRemain voice:Jazz_Allik]] "Ещё остались.")
+					}),
+					DeathGeneral = TConcat({
+						T(890000000009211, --[[ModItemVoiceResponse Jazz_Allik DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Allik]] "Конец...")
+					}),
+					Idle = TConcat({
+						T(890000000009215, --[[ModItemVoiceResponse Jazz_Allik Idle VoiceResponse Idle voice:Jazz_Allik]] "Жду."),
+						T(890000000009338, --[[ModItemVoiceResponse Jazz_Allik Idle VoiceResponse Idle voice:Jazz_Allik]] "Жду."),
+						T(890000000009339, --[[ModItemVoiceResponse Jazz_Allik Idle VoiceResponse Idle voice:Jazz_Allik]] "Жду.")
+					}),
+					BecomeHidden = TConcat({
+						T(890000000009340, --[[ModItemVoiceResponse Jazz_Allik BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Allik]] "Прячусь."),
+						T(890000000009341, --[[ModItemVoiceResponse Jazz_Allik BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Allik]] "Прячусь.")
+					}),
+					LevelUp = TConcat({
+						T(890000000009216, --[[ModItemVoiceResponse Jazz_Allik LevelUp VoiceResponse LevelUp voice:Jazz_Allik]] "Учусь.")
+					}),
+					LootFound = TConcat({
+						T(890000000009342, --[[ModItemVoiceResponse Jazz_Allik LootFound VoiceResponse LootFound voice:Jazz_Allik]] "Интересно…"),
+						T(890000000009343, --[[ModItemVoiceResponse Jazz_Allik LootFound VoiceResponse LootFound voice:Jazz_Allik]] "Интересно…")
+					}),
+					DoorLocked = TConcat({
+						T(890000000009344, --[[ModItemVoiceResponse Jazz_Allik DoorLocked VoiceResponse DoorLocked voice:Jazz_Allik]] "Закрыто.")
+					}),
+					Exhausted = TConcat({
+						T(890000000009345, --[[ModItemVoiceResponse Jazz_Allik Exhausted VoiceResponse Exhausted voice:Jazz_Allik]] "Устал…")
+					}),
+					HeavyBreathing = TConcat({
+						T(890000000009346, --[[ModItemVoiceResponse Jazz_Allik HeavyBreathing VoiceResponse HeavyBreathing voice:Jazz_Allik]] "(пыхтит)")
+					}),
+					HealReceived = TConcat({
+						T(890000000009347, --[[ModItemVoiceResponse Jazz_Allik HealReceived VoiceResponse HealReceived voice:Jazz_Allik]] "Спасибо.")
+					}),
+					NotNow = TConcat({
+						T(890000000009348, --[[ModItemVoiceResponse Jazz_Allik NotNow VoiceResponse NotNow voice:Jazz_Allik]] "Не сейчас.")
+					}),
+					ActivityFinished = TConcat({
+						T(890000000009349, --[[ModItemVoiceResponse Jazz_Allik ActivityFinished VoiceResponse ActivityFinished voice:Jazz_Allik]] "Готово.")
+					}),
+					TakeCover = TConcat({
+						T(890000000009350, --[[ModItemVoiceResponse Jazz_Allik TakeCover VoiceResponse TakeCover voice:Jazz_Allik]] "В укрытие!")
+					}),
+					ThrowGrenade = TConcat({
+						T(890000000009351, --[[ModItemVoiceResponse Jazz_Allik ThrowGrenade VoiceResponse ThrowGrenade voice:Jazz_Allik]] "Граната!")
+					}),
+					Autofire = TConcat({
+						T(890000000009352, --[[ModItemVoiceResponse Jazz_Allik Autofire VoiceResponse Autofire voice:Jazz_Allik]] "Очередь!")
+					}),
+					Climbing = TConcat({
+						T(890000000009353, --[[ModItemVoiceResponse Jazz_Allik Climbing VoiceResponse Climbing voice:Jazz_Allik]] "(лезет)")
+					}),
+					Jumping = TConcat({
+						T(890000000009354, --[[ModItemVoiceResponse Jazz_Allik Jumping VoiceResponse Jumping voice:Jazz_Allik]] "(прыжок)")
+					}),
+					Startled = TConcat({
+						T(890000000009355, --[[ModItemVoiceResponse Jazz_Allik Startled VoiceResponse Startled voice:Jazz_Allik]] "Что?!")
+					}),
+					ThreatSelection = TConcat({
+						T(890000000009356, --[[ModItemVoiceResponse Jazz_Allik ThreatSelection VoiceResponse ThreatSelection voice:Jazz_Allik]] "Опасно!")
+					}),
+					Overwatch = TConcat({
+						T(890000000009357, --[[ModItemVoiceResponse Jazz_Allik Overwatch VoiceResponse Overwatch voice:Jazz_Allik]] "Держу сектор.")
+					}),
+					OverwatchSelection = TConcat({
+						T(890000000009358, --[[ModItemVoiceResponse Jazz_Allik OverwatchSelection VoiceResponse OverwatchSelection voice:Jazz_Allik]] "Наготове.")
+					}),
+					GasAreaSelection = TConcat({
+						T(890000000009359, --[[ModItemVoiceResponse Jazz_Allik GasAreaSelection VoiceResponse GasAreaSelection voice:Jazz_Allik]] "(кашляет)")
+					}),
+					MissedByKillShot = TConcat({
+						T(890000000009360, --[[ModItemVoiceResponse Jazz_Allik MissedByKillShot VoiceResponse MissedByKillShot voice:Jazz_Allik]] "Почти…")
+					}),
+					AnimalFound = TConcat({
+						T(890000000009361, --[[ModItemVoiceResponse Jazz_Allik AnimalFound VoiceResponse AnimalFound voice:Jazz_Allik]] "Зверь!")
+					}),
+					CombatTaskGiven = TConcat({
+						T(890000000009362, --[[ModItemVoiceResponse Jazz_Allik CombatTaskGiven VoiceResponse CombatTaskGiven voice:Jazz_Allik]] "Есть идея.")
+					}),
+					CombatTaskCompleted = TConcat({
+						T(890000000009363, --[[ModItemVoiceResponse Jazz_Allik CombatTaskCompleted VoiceResponse CombatTaskCompleted voice:Jazz_Allik]] "Сделано.")
+					}),
+					CombatTaskFailed = TConcat({
+						T(890000000009364, --[[ModItemVoiceResponse Jazz_Allik CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Allik]] "Не вышло.")
+					}),
+					MockDislike1 = TConcat({
+						T(890000000009217, --[[ModItemVoiceResponse Jazz_Allik MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Allik]] "Только не это.")
+					}),
+					PraisesBuddy1 = TConcat({
+						T(890000000009218, --[[ModItemVoiceResponse Jazz_Allik PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Allik]] "Отличная работа.")
+					}),
 					group = "MercenariesOld",
 					id = "Jazz_Allik",
 				}),
@@ -124941,7 +125442,185 @@ PlaceObj('ModItemAIArchetype', {
 				'FallbackMissingVR', "Ice",
 				'DaysUntilOnline', 0,
 				}),
-				PlaceObj('ModItemVoiceResponse', {
+												PlaceObj('ModItemVoiceResponse', {
+					Selection = TConcat({
+						T(890000000009219, --[[ModItemVoiceResponse Jazz_Henning Selection VoiceResponse Selection voice:Jazz_Henning]] "На связи."),
+						T(890000000009489, --[[ModItemVoiceResponse Jazz_Henning Selection VoiceResponse Selection voice:Jazz_Henning]] "На связи."),
+						T(890000000009490, --[[ModItemVoiceResponse Jazz_Henning Selection VoiceResponse Selection voice:Jazz_Henning]] "На связи.")
+					}),
+					SelectionStealth = TConcat({
+						T(890000000009491, --[[ModItemVoiceResponse Jazz_Henning SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Henning]] "Тихо."),
+						T(890000000009492, --[[ModItemVoiceResponse Jazz_Henning SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Henning]] "Тихо."),
+						T(890000000009493, --[[ModItemVoiceResponse Jazz_Henning SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Henning]] "Тихо.")
+					}),
+					Order = TConcat({
+						T(890000000009494, --[[ModItemVoiceResponse Jazz_Henning Order VoiceResponse Order voice:Jazz_Henning]] "Есть."),
+						T(890000000009495, --[[ModItemVoiceResponse Jazz_Henning Order VoiceResponse Order voice:Jazz_Henning]] "Есть."),
+						T(890000000009496, --[[ModItemVoiceResponse Jazz_Henning Order VoiceResponse Order voice:Jazz_Henning]] "Есть.")
+					}),
+					CombatMovement = TConcat({
+						T(890000000009497, --[[ModItemVoiceResponse Jazz_Henning CombatMovement VoiceResponse CombatMovement voice:Jazz_Henning]] "Двигаюсь."),
+						T(890000000009498, --[[ModItemVoiceResponse Jazz_Henning CombatMovement VoiceResponse CombatMovement voice:Jazz_Henning]] "Двигаюсь."),
+						T(890000000009499, --[[ModItemVoiceResponse Jazz_Henning CombatMovement VoiceResponse CombatMovement voice:Jazz_Henning]] "Двигаюсь.")
+					}),
+					CombatMovementStealth = TConcat({
+						T(890000000009500, --[[ModItemVoiceResponse Jazz_Henning CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Henning]] "Крадусь."),
+						T(890000000009501, --[[ModItemVoiceResponse Jazz_Henning CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Henning]] "Крадусь."),
+						T(890000000009502, --[[ModItemVoiceResponse Jazz_Henning CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Henning]] "Крадусь.")
+					}),
+					GroupOrder = TConcat({
+						T(890000000009503, --[[ModItemVoiceResponse Jazz_Henning GroupOrder VoiceResponse GroupOrder voice:Jazz_Henning]] "С вами."),
+						T(890000000009504, --[[ModItemVoiceResponse Jazz_Henning GroupOrder VoiceResponse GroupOrder voice:Jazz_Henning]] "С вами."),
+						T(890000000009505, --[[ModItemVoiceResponse Jazz_Henning GroupOrder VoiceResponse GroupOrder voice:Jazz_Henning]] "С вами.")
+					}),
+					AimAttack = TConcat({
+						T(890000000009220, --[[ModItemVoiceResponse Jazz_Henning AimAttack VoiceResponse AimAttack voice:Jazz_Henning]] "Есть цель!"),
+						T(890000000009221, --[[ModItemVoiceResponse Jazz_Henning AimAttack VoiceResponse AimAttack voice:Jazz_Henning]] "В бой!"),
+						T(890000000009506, --[[ModItemVoiceResponse Jazz_Henning AimAttack VoiceResponse AimAttack voice:Jazz_Henning]] "Есть цель!")
+					}),
+					AimAttackStealth = TConcat({
+						T(890000000009507, --[[ModItemVoiceResponse Jazz_Henning AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Henning]] "Тихо сниму."),
+						T(890000000009508, --[[ModItemVoiceResponse Jazz_Henning AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Henning]] "Тихо сниму.")
+					}),
+					AimAttack_Low = TConcat({
+						T(890000000009509, --[[ModItemVoiceResponse Jazz_Henning AimAttack_Low VoiceResponse AimAttack_Low voice:Jazz_Henning]] "Сложный выстрел.")
+					}),
+					AimAttack_LowStealth = TConcat({
+						T(890000000009510, --[[ModItemVoiceResponse Jazz_Henning AimAttack_LowStealth VoiceResponse AimAttack_LowStealth voice:Jazz_Henning]] "Плохой угол.")
+					}),
+					OpponentFound = TConcat({
+						T(890000000009511, --[[ModItemVoiceResponse Jazz_Henning OpponentFound VoiceResponse OpponentFound voice:Jazz_Henning]] "Вижу их!"),
+						T(890000000009512, --[[ModItemVoiceResponse Jazz_Henning OpponentFound VoiceResponse OpponentFound voice:Jazz_Henning]] "Вижу их!")
+					}),
+					ManyEnemiesSelection = TConcat({
+						T(890000000009513, --[[ModItemVoiceResponse Jazz_Henning ManyEnemiesSelection VoiceResponse ManyEnemiesSelection voice:Jazz_Henning]] "Их много!")
+					}),
+					OpponentKilled = TConcat({
+						T(890000000009222, --[[ModItemVoiceResponse Jazz_Henning OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Henning]] "Готов."),
+						T(890000000009514, --[[ModItemVoiceResponse Jazz_Henning OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Henning]] "Готов.")
+					}),
+					NoAmmo = TConcat({
+						T(890000000009515, --[[ModItemVoiceResponse Jazz_Henning NoAmmo VoiceResponse NoAmmo voice:Jazz_Henning]] "Патроны кончились.")
+					}),
+					AmmoLow = TConcat({
+						T(890000000009225, --[[ModItemVoiceResponse Jazz_Henning AmmoLow VoiceResponse AmmoLow voice:Jazz_Henning]] "Патроны!")
+					}),
+					WeaponJammed = TConcat({
+						T(890000000009516, --[[ModItemVoiceResponse Jazz_Henning WeaponJammed VoiceResponse WeaponJammed voice:Jazz_Henning]] "Клин!")
+					}),
+					Pain = TConcat({
+						T(890000000009517, --[[ModItemVoiceResponse Jazz_Henning Pain VoiceResponse Pain voice:Jazz_Henning]] "Аргх!"),
+						T(890000000009518, --[[ModItemVoiceResponse Jazz_Henning Pain VoiceResponse Pain voice:Jazz_Henning]] "Аргх!")
+					}),
+					Wounded = TConcat({
+						T(890000000009519, --[[ModItemVoiceResponse Jazz_Henning Wounded VoiceResponse Wounded voice:Jazz_Henning]] "Ранен!")
+					}),
+					Downed = TConcat({
+						T(890000000009224, --[[ModItemVoiceResponse Jazz_Henning Downed VoiceResponse Downed voice:Jazz_Henning]] "Ранен!")
+					}),
+					HeavilyWoundedSelection = TConcat({
+						T(890000000009520, --[[ModItemVoiceResponse Jazz_Henning HeavilyWoundedSelection VoiceResponse HeavilyWoundedSelection voice:Jazz_Henning]] "Плохо…")
+					}),
+					CombatStartPlayer = TConcat({
+						T(890000000009521, --[[ModItemVoiceResponse Jazz_Henning CombatStartPlayer VoiceResponse CombatStartPlayer voice:Jazz_Henning]] "К бою!")
+					}),
+					CombatStartDetected = TConcat({
+						T(890000000009226, --[[ModItemVoiceResponse Jazz_Henning CombatStartDetected VoiceResponse CombatStartDetected voice:Jazz_Henning]] "Контакт!")
+					}),
+					CombatEndNoEnemies = TConcat({
+						T(890000000009522, --[[ModItemVoiceResponse Jazz_Henning CombatEndNoEnemies VoiceResponse CombatEndNoEnemies voice:Jazz_Henning]] "Чисто.")
+					}),
+					CombatEndEnemiesRemain = TConcat({
+						T(890000000009523, --[[ModItemVoiceResponse Jazz_Henning CombatEndEnemiesRemain VoiceResponse CombatEndEnemiesRemain voice:Jazz_Henning]] "Ещё остались.")
+					}),
+					DeathGeneral = TConcat({
+						T(890000000009223, --[[ModItemVoiceResponse Jazz_Henning DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Henning]] "Конец...")
+					}),
+					Idle = TConcat({
+						T(890000000009227, --[[ModItemVoiceResponse Jazz_Henning Idle VoiceResponse Idle voice:Jazz_Henning]] "Жду."),
+						T(890000000009524, --[[ModItemVoiceResponse Jazz_Henning Idle VoiceResponse Idle voice:Jazz_Henning]] "Жду."),
+						T(890000000009525, --[[ModItemVoiceResponse Jazz_Henning Idle VoiceResponse Idle voice:Jazz_Henning]] "Жду.")
+					}),
+					BecomeHidden = TConcat({
+						T(890000000009526, --[[ModItemVoiceResponse Jazz_Henning BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Henning]] "Прячусь."),
+						T(890000000009527, --[[ModItemVoiceResponse Jazz_Henning BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Henning]] "Прячусь.")
+					}),
+					LevelUp = TConcat({
+						T(890000000009228, --[[ModItemVoiceResponse Jazz_Henning LevelUp VoiceResponse LevelUp voice:Jazz_Henning]] "Учусь.")
+					}),
+					LootFound = TConcat({
+						T(890000000009528, --[[ModItemVoiceResponse Jazz_Henning LootFound VoiceResponse LootFound voice:Jazz_Henning]] "Интересно…"),
+						T(890000000009529, --[[ModItemVoiceResponse Jazz_Henning LootFound VoiceResponse LootFound voice:Jazz_Henning]] "Интересно…")
+					}),
+					DoorLocked = TConcat({
+						T(890000000009530, --[[ModItemVoiceResponse Jazz_Henning DoorLocked VoiceResponse DoorLocked voice:Jazz_Henning]] "Закрыто.")
+					}),
+					Exhausted = TConcat({
+						T(890000000009531, --[[ModItemVoiceResponse Jazz_Henning Exhausted VoiceResponse Exhausted voice:Jazz_Henning]] "Устал…")
+					}),
+					HeavyBreathing = TConcat({
+						T(890000000009532, --[[ModItemVoiceResponse Jazz_Henning HeavyBreathing VoiceResponse HeavyBreathing voice:Jazz_Henning]] "(пыхтит)")
+					}),
+					HealReceived = TConcat({
+						T(890000000009533, --[[ModItemVoiceResponse Jazz_Henning HealReceived VoiceResponse HealReceived voice:Jazz_Henning]] "Спасибо.")
+					}),
+					NotNow = TConcat({
+						T(890000000009534, --[[ModItemVoiceResponse Jazz_Henning NotNow VoiceResponse NotNow voice:Jazz_Henning]] "Не сейчас.")
+					}),
+					ActivityFinished = TConcat({
+						T(890000000009535, --[[ModItemVoiceResponse Jazz_Henning ActivityFinished VoiceResponse ActivityFinished voice:Jazz_Henning]] "Готово.")
+					}),
+					TakeCover = TConcat({
+						T(890000000009536, --[[ModItemVoiceResponse Jazz_Henning TakeCover VoiceResponse TakeCover voice:Jazz_Henning]] "В укрытие!")
+					}),
+					ThrowGrenade = TConcat({
+						T(890000000009537, --[[ModItemVoiceResponse Jazz_Henning ThrowGrenade VoiceResponse ThrowGrenade voice:Jazz_Henning]] "Граната!")
+					}),
+					Autofire = TConcat({
+						T(890000000009538, --[[ModItemVoiceResponse Jazz_Henning Autofire VoiceResponse Autofire voice:Jazz_Henning]] "Очередь!")
+					}),
+					Climbing = TConcat({
+						T(890000000009539, --[[ModItemVoiceResponse Jazz_Henning Climbing VoiceResponse Climbing voice:Jazz_Henning]] "(лезет)")
+					}),
+					Jumping = TConcat({
+						T(890000000009540, --[[ModItemVoiceResponse Jazz_Henning Jumping VoiceResponse Jumping voice:Jazz_Henning]] "(прыжок)")
+					}),
+					Startled = TConcat({
+						T(890000000009541, --[[ModItemVoiceResponse Jazz_Henning Startled VoiceResponse Startled voice:Jazz_Henning]] "Что?!")
+					}),
+					ThreatSelection = TConcat({
+						T(890000000009542, --[[ModItemVoiceResponse Jazz_Henning ThreatSelection VoiceResponse ThreatSelection voice:Jazz_Henning]] "Опасно!")
+					}),
+					Overwatch = TConcat({
+						T(890000000009543, --[[ModItemVoiceResponse Jazz_Henning Overwatch VoiceResponse Overwatch voice:Jazz_Henning]] "Держу сектор.")
+					}),
+					OverwatchSelection = TConcat({
+						T(890000000009544, --[[ModItemVoiceResponse Jazz_Henning OverwatchSelection VoiceResponse OverwatchSelection voice:Jazz_Henning]] "Наготове.")
+					}),
+					GasAreaSelection = TConcat({
+						T(890000000009545, --[[ModItemVoiceResponse Jazz_Henning GasAreaSelection VoiceResponse GasAreaSelection voice:Jazz_Henning]] "(кашляет)")
+					}),
+					MissedByKillShot = TConcat({
+						T(890000000009546, --[[ModItemVoiceResponse Jazz_Henning MissedByKillShot VoiceResponse MissedByKillShot voice:Jazz_Henning]] "Почти…")
+					}),
+					AnimalFound = TConcat({
+						T(890000000009547, --[[ModItemVoiceResponse Jazz_Henning AnimalFound VoiceResponse AnimalFound voice:Jazz_Henning]] "Зверь!")
+					}),
+					CombatTaskGiven = TConcat({
+						T(890000000009548, --[[ModItemVoiceResponse Jazz_Henning CombatTaskGiven VoiceResponse CombatTaskGiven voice:Jazz_Henning]] "Есть идея.")
+					}),
+					CombatTaskCompleted = TConcat({
+						T(890000000009549, --[[ModItemVoiceResponse Jazz_Henning CombatTaskCompleted VoiceResponse CombatTaskCompleted voice:Jazz_Henning]] "Сделано.")
+					}),
+					CombatTaskFailed = TConcat({
+						T(890000000009550, --[[ModItemVoiceResponse Jazz_Henning CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Henning]] "Не вышло.")
+					}),
+					MockDislike1 = TConcat({
+						T(890000000009229, --[[ModItemVoiceResponse Jazz_Henning MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Henning]] "Только не это.")
+					}),
+					PraisesBuddy1 = TConcat({
+						T(890000000009230, --[[ModItemVoiceResponse Jazz_Henning PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Henning]] "Отличная работа.")
+					}),
 					group = "MercenariesOld",
 					id = "Jazz_Henning",
 				}),
@@ -128563,7 +129242,185 @@ PlaceObj('ModItemAIArchetype', {
 				'FallbackMissingVR', "Ice",
 				'DaysUntilOnline', 0,
 				}),
-				PlaceObj('ModItemVoiceResponse', {
+												PlaceObj('ModItemVoiceResponse', {
+					Selection = TConcat({
+						T(890000000009231, --[[ModItemVoiceResponse Jazz_Biggens Selection VoiceResponse Selection voice:Jazz_Biggens]] "На связи."),
+						T(890000000009365, --[[ModItemVoiceResponse Jazz_Biggens Selection VoiceResponse Selection voice:Jazz_Biggens]] "На связи."),
+						T(890000000009366, --[[ModItemVoiceResponse Jazz_Biggens Selection VoiceResponse Selection voice:Jazz_Biggens]] "На связи.")
+					}),
+					SelectionStealth = TConcat({
+						T(890000000009367, --[[ModItemVoiceResponse Jazz_Biggens SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Biggens]] "Тихо."),
+						T(890000000009368, --[[ModItemVoiceResponse Jazz_Biggens SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Biggens]] "Тихо."),
+						T(890000000009369, --[[ModItemVoiceResponse Jazz_Biggens SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Biggens]] "Тихо.")
+					}),
+					Order = TConcat({
+						T(890000000009370, --[[ModItemVoiceResponse Jazz_Biggens Order VoiceResponse Order voice:Jazz_Biggens]] "Есть."),
+						T(890000000009371, --[[ModItemVoiceResponse Jazz_Biggens Order VoiceResponse Order voice:Jazz_Biggens]] "Есть."),
+						T(890000000009372, --[[ModItemVoiceResponse Jazz_Biggens Order VoiceResponse Order voice:Jazz_Biggens]] "Есть.")
+					}),
+					CombatMovement = TConcat({
+						T(890000000009373, --[[ModItemVoiceResponse Jazz_Biggens CombatMovement VoiceResponse CombatMovement voice:Jazz_Biggens]] "Двигаюсь."),
+						T(890000000009374, --[[ModItemVoiceResponse Jazz_Biggens CombatMovement VoiceResponse CombatMovement voice:Jazz_Biggens]] "Двигаюсь."),
+						T(890000000009375, --[[ModItemVoiceResponse Jazz_Biggens CombatMovement VoiceResponse CombatMovement voice:Jazz_Biggens]] "Двигаюсь.")
+					}),
+					CombatMovementStealth = TConcat({
+						T(890000000009376, --[[ModItemVoiceResponse Jazz_Biggens CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Biggens]] "Крадусь."),
+						T(890000000009377, --[[ModItemVoiceResponse Jazz_Biggens CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Biggens]] "Крадусь."),
+						T(890000000009378, --[[ModItemVoiceResponse Jazz_Biggens CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Biggens]] "Крадусь.")
+					}),
+					GroupOrder = TConcat({
+						T(890000000009379, --[[ModItemVoiceResponse Jazz_Biggens GroupOrder VoiceResponse GroupOrder voice:Jazz_Biggens]] "С вами."),
+						T(890000000009380, --[[ModItemVoiceResponse Jazz_Biggens GroupOrder VoiceResponse GroupOrder voice:Jazz_Biggens]] "С вами."),
+						T(890000000009381, --[[ModItemVoiceResponse Jazz_Biggens GroupOrder VoiceResponse GroupOrder voice:Jazz_Biggens]] "С вами.")
+					}),
+					AimAttack = TConcat({
+						T(890000000009232, --[[ModItemVoiceResponse Jazz_Biggens AimAttack VoiceResponse AimAttack voice:Jazz_Biggens]] "Есть цель!"),
+						T(890000000009233, --[[ModItemVoiceResponse Jazz_Biggens AimAttack VoiceResponse AimAttack voice:Jazz_Biggens]] "В бой!"),
+						T(890000000009382, --[[ModItemVoiceResponse Jazz_Biggens AimAttack VoiceResponse AimAttack voice:Jazz_Biggens]] "Есть цель!")
+					}),
+					AimAttackStealth = TConcat({
+						T(890000000009383, --[[ModItemVoiceResponse Jazz_Biggens AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Biggens]] "Тихо сниму."),
+						T(890000000009384, --[[ModItemVoiceResponse Jazz_Biggens AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Biggens]] "Тихо сниму.")
+					}),
+					AimAttack_Low = TConcat({
+						T(890000000009385, --[[ModItemVoiceResponse Jazz_Biggens AimAttack_Low VoiceResponse AimAttack_Low voice:Jazz_Biggens]] "Сложный выстрел.")
+					}),
+					AimAttack_LowStealth = TConcat({
+						T(890000000009386, --[[ModItemVoiceResponse Jazz_Biggens AimAttack_LowStealth VoiceResponse AimAttack_LowStealth voice:Jazz_Biggens]] "Плохой угол.")
+					}),
+					OpponentFound = TConcat({
+						T(890000000009387, --[[ModItemVoiceResponse Jazz_Biggens OpponentFound VoiceResponse OpponentFound voice:Jazz_Biggens]] "Вижу их!"),
+						T(890000000009388, --[[ModItemVoiceResponse Jazz_Biggens OpponentFound VoiceResponse OpponentFound voice:Jazz_Biggens]] "Вижу их!")
+					}),
+					ManyEnemiesSelection = TConcat({
+						T(890000000009389, --[[ModItemVoiceResponse Jazz_Biggens ManyEnemiesSelection VoiceResponse ManyEnemiesSelection voice:Jazz_Biggens]] "Их много!")
+					}),
+					OpponentKilled = TConcat({
+						T(890000000009234, --[[ModItemVoiceResponse Jazz_Biggens OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Biggens]] "Готов."),
+						T(890000000009390, --[[ModItemVoiceResponse Jazz_Biggens OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Biggens]] "Готов.")
+					}),
+					NoAmmo = TConcat({
+						T(890000000009391, --[[ModItemVoiceResponse Jazz_Biggens NoAmmo VoiceResponse NoAmmo voice:Jazz_Biggens]] "Патроны кончились.")
+					}),
+					AmmoLow = TConcat({
+						T(890000000009237, --[[ModItemVoiceResponse Jazz_Biggens AmmoLow VoiceResponse AmmoLow voice:Jazz_Biggens]] "Патроны!")
+					}),
+					WeaponJammed = TConcat({
+						T(890000000009392, --[[ModItemVoiceResponse Jazz_Biggens WeaponJammed VoiceResponse WeaponJammed voice:Jazz_Biggens]] "Клин!")
+					}),
+					Pain = TConcat({
+						T(890000000009393, --[[ModItemVoiceResponse Jazz_Biggens Pain VoiceResponse Pain voice:Jazz_Biggens]] "Аргх!"),
+						T(890000000009394, --[[ModItemVoiceResponse Jazz_Biggens Pain VoiceResponse Pain voice:Jazz_Biggens]] "Аргх!")
+					}),
+					Wounded = TConcat({
+						T(890000000009395, --[[ModItemVoiceResponse Jazz_Biggens Wounded VoiceResponse Wounded voice:Jazz_Biggens]] "Ранен!")
+					}),
+					Downed = TConcat({
+						T(890000000009236, --[[ModItemVoiceResponse Jazz_Biggens Downed VoiceResponse Downed voice:Jazz_Biggens]] "Ранен!")
+					}),
+					HeavilyWoundedSelection = TConcat({
+						T(890000000009396, --[[ModItemVoiceResponse Jazz_Biggens HeavilyWoundedSelection VoiceResponse HeavilyWoundedSelection voice:Jazz_Biggens]] "Плохо…")
+					}),
+					CombatStartPlayer = TConcat({
+						T(890000000009397, --[[ModItemVoiceResponse Jazz_Biggens CombatStartPlayer VoiceResponse CombatStartPlayer voice:Jazz_Biggens]] "К бою!")
+					}),
+					CombatStartDetected = TConcat({
+						T(890000000009238, --[[ModItemVoiceResponse Jazz_Biggens CombatStartDetected VoiceResponse CombatStartDetected voice:Jazz_Biggens]] "Контакт!")
+					}),
+					CombatEndNoEnemies = TConcat({
+						T(890000000009398, --[[ModItemVoiceResponse Jazz_Biggens CombatEndNoEnemies VoiceResponse CombatEndNoEnemies voice:Jazz_Biggens]] "Чисто.")
+					}),
+					CombatEndEnemiesRemain = TConcat({
+						T(890000000009399, --[[ModItemVoiceResponse Jazz_Biggens CombatEndEnemiesRemain VoiceResponse CombatEndEnemiesRemain voice:Jazz_Biggens]] "Ещё остались.")
+					}),
+					DeathGeneral = TConcat({
+						T(890000000009235, --[[ModItemVoiceResponse Jazz_Biggens DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Biggens]] "Конец...")
+					}),
+					Idle = TConcat({
+						T(890000000009239, --[[ModItemVoiceResponse Jazz_Biggens Idle VoiceResponse Idle voice:Jazz_Biggens]] "Жду."),
+						T(890000000009400, --[[ModItemVoiceResponse Jazz_Biggens Idle VoiceResponse Idle voice:Jazz_Biggens]] "Жду."),
+						T(890000000009401, --[[ModItemVoiceResponse Jazz_Biggens Idle VoiceResponse Idle voice:Jazz_Biggens]] "Жду.")
+					}),
+					BecomeHidden = TConcat({
+						T(890000000009402, --[[ModItemVoiceResponse Jazz_Biggens BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Biggens]] "Прячусь."),
+						T(890000000009403, --[[ModItemVoiceResponse Jazz_Biggens BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Biggens]] "Прячусь.")
+					}),
+					LevelUp = TConcat({
+						T(890000000009240, --[[ModItemVoiceResponse Jazz_Biggens LevelUp VoiceResponse LevelUp voice:Jazz_Biggens]] "Учусь.")
+					}),
+					LootFound = TConcat({
+						T(890000000009404, --[[ModItemVoiceResponse Jazz_Biggens LootFound VoiceResponse LootFound voice:Jazz_Biggens]] "Интересно…"),
+						T(890000000009405, --[[ModItemVoiceResponse Jazz_Biggens LootFound VoiceResponse LootFound voice:Jazz_Biggens]] "Интересно…")
+					}),
+					DoorLocked = TConcat({
+						T(890000000009406, --[[ModItemVoiceResponse Jazz_Biggens DoorLocked VoiceResponse DoorLocked voice:Jazz_Biggens]] "Закрыто.")
+					}),
+					Exhausted = TConcat({
+						T(890000000009407, --[[ModItemVoiceResponse Jazz_Biggens Exhausted VoiceResponse Exhausted voice:Jazz_Biggens]] "Устал…")
+					}),
+					HeavyBreathing = TConcat({
+						T(890000000009408, --[[ModItemVoiceResponse Jazz_Biggens HeavyBreathing VoiceResponse HeavyBreathing voice:Jazz_Biggens]] "(пыхтит)")
+					}),
+					HealReceived = TConcat({
+						T(890000000009409, --[[ModItemVoiceResponse Jazz_Biggens HealReceived VoiceResponse HealReceived voice:Jazz_Biggens]] "Спасибо.")
+					}),
+					NotNow = TConcat({
+						T(890000000009410, --[[ModItemVoiceResponse Jazz_Biggens NotNow VoiceResponse NotNow voice:Jazz_Biggens]] "Не сейчас.")
+					}),
+					ActivityFinished = TConcat({
+						T(890000000009411, --[[ModItemVoiceResponse Jazz_Biggens ActivityFinished VoiceResponse ActivityFinished voice:Jazz_Biggens]] "Готово.")
+					}),
+					TakeCover = TConcat({
+						T(890000000009412, --[[ModItemVoiceResponse Jazz_Biggens TakeCover VoiceResponse TakeCover voice:Jazz_Biggens]] "В укрытие!")
+					}),
+					ThrowGrenade = TConcat({
+						T(890000000009413, --[[ModItemVoiceResponse Jazz_Biggens ThrowGrenade VoiceResponse ThrowGrenade voice:Jazz_Biggens]] "Граната!")
+					}),
+					Autofire = TConcat({
+						T(890000000009414, --[[ModItemVoiceResponse Jazz_Biggens Autofire VoiceResponse Autofire voice:Jazz_Biggens]] "Очередь!")
+					}),
+					Climbing = TConcat({
+						T(890000000009415, --[[ModItemVoiceResponse Jazz_Biggens Climbing VoiceResponse Climbing voice:Jazz_Biggens]] "(лезет)")
+					}),
+					Jumping = TConcat({
+						T(890000000009416, --[[ModItemVoiceResponse Jazz_Biggens Jumping VoiceResponse Jumping voice:Jazz_Biggens]] "(прыжок)")
+					}),
+					Startled = TConcat({
+						T(890000000009417, --[[ModItemVoiceResponse Jazz_Biggens Startled VoiceResponse Startled voice:Jazz_Biggens]] "Что?!")
+					}),
+					ThreatSelection = TConcat({
+						T(890000000009418, --[[ModItemVoiceResponse Jazz_Biggens ThreatSelection VoiceResponse ThreatSelection voice:Jazz_Biggens]] "Опасно!")
+					}),
+					Overwatch = TConcat({
+						T(890000000009419, --[[ModItemVoiceResponse Jazz_Biggens Overwatch VoiceResponse Overwatch voice:Jazz_Biggens]] "Держу сектор.")
+					}),
+					OverwatchSelection = TConcat({
+						T(890000000009420, --[[ModItemVoiceResponse Jazz_Biggens OverwatchSelection VoiceResponse OverwatchSelection voice:Jazz_Biggens]] "Наготове.")
+					}),
+					GasAreaSelection = TConcat({
+						T(890000000009421, --[[ModItemVoiceResponse Jazz_Biggens GasAreaSelection VoiceResponse GasAreaSelection voice:Jazz_Biggens]] "(кашляет)")
+					}),
+					MissedByKillShot = TConcat({
+						T(890000000009422, --[[ModItemVoiceResponse Jazz_Biggens MissedByKillShot VoiceResponse MissedByKillShot voice:Jazz_Biggens]] "Почти…")
+					}),
+					AnimalFound = TConcat({
+						T(890000000009423, --[[ModItemVoiceResponse Jazz_Biggens AnimalFound VoiceResponse AnimalFound voice:Jazz_Biggens]] "Зверь!")
+					}),
+					CombatTaskGiven = TConcat({
+						T(890000000009424, --[[ModItemVoiceResponse Jazz_Biggens CombatTaskGiven VoiceResponse CombatTaskGiven voice:Jazz_Biggens]] "Есть идея.")
+					}),
+					CombatTaskCompleted = TConcat({
+						T(890000000009425, --[[ModItemVoiceResponse Jazz_Biggens CombatTaskCompleted VoiceResponse CombatTaskCompleted voice:Jazz_Biggens]] "Сделано.")
+					}),
+					CombatTaskFailed = TConcat({
+						T(890000000009426, --[[ModItemVoiceResponse Jazz_Biggens CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Biggens]] "Не вышло.")
+					}),
+					MockDislike1 = TConcat({
+						T(890000000009241, --[[ModItemVoiceResponse Jazz_Biggens MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Biggens]] "Только не это.")
+					}),
+					PraisesBuddy1 = TConcat({
+						T(890000000009242, --[[ModItemVoiceResponse Jazz_Biggens PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Biggens]] "Отличная работа.")
+					}),
 					group = "MercenariesOld",
 					id = "Jazz_Biggens",
 				}),
@@ -128879,7 +129736,185 @@ PlaceObj('ModItemAIArchetype', {
 				'FallbackMissingVR', "Ice",
 				'DaysUntilOnline', 0,
 				}),
-				PlaceObj('ModItemVoiceResponse', {
+												PlaceObj('ModItemVoiceResponse', {
+					Selection = TConcat({
+						T(890000000009243, --[[ModItemVoiceResponse Jazz_Vilde Selection VoiceResponse Selection voice:Jazz_Vilde]] "На связи."),
+						T(890000000009799, --[[ModItemVoiceResponse Jazz_Vilde Selection VoiceResponse Selection voice:Jazz_Vilde]] "На связи."),
+						T(890000000009800, --[[ModItemVoiceResponse Jazz_Vilde Selection VoiceResponse Selection voice:Jazz_Vilde]] "На связи.")
+					}),
+					SelectionStealth = TConcat({
+						T(890000000009801, --[[ModItemVoiceResponse Jazz_Vilde SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Vilde]] "Тихо."),
+						T(890000000009802, --[[ModItemVoiceResponse Jazz_Vilde SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Vilde]] "Тихо."),
+						T(890000000009803, --[[ModItemVoiceResponse Jazz_Vilde SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Vilde]] "Тихо.")
+					}),
+					Order = TConcat({
+						T(890000000009804, --[[ModItemVoiceResponse Jazz_Vilde Order VoiceResponse Order voice:Jazz_Vilde]] "Есть."),
+						T(890000000009805, --[[ModItemVoiceResponse Jazz_Vilde Order VoiceResponse Order voice:Jazz_Vilde]] "Есть."),
+						T(890000000009806, --[[ModItemVoiceResponse Jazz_Vilde Order VoiceResponse Order voice:Jazz_Vilde]] "Есть.")
+					}),
+					CombatMovement = TConcat({
+						T(890000000009807, --[[ModItemVoiceResponse Jazz_Vilde CombatMovement VoiceResponse CombatMovement voice:Jazz_Vilde]] "Двигаюсь."),
+						T(890000000009808, --[[ModItemVoiceResponse Jazz_Vilde CombatMovement VoiceResponse CombatMovement voice:Jazz_Vilde]] "Двигаюсь."),
+						T(890000000009809, --[[ModItemVoiceResponse Jazz_Vilde CombatMovement VoiceResponse CombatMovement voice:Jazz_Vilde]] "Двигаюсь.")
+					}),
+					CombatMovementStealth = TConcat({
+						T(890000000009810, --[[ModItemVoiceResponse Jazz_Vilde CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Vilde]] "Крадусь."),
+						T(890000000009811, --[[ModItemVoiceResponse Jazz_Vilde CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Vilde]] "Крадусь."),
+						T(890000000009812, --[[ModItemVoiceResponse Jazz_Vilde CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Vilde]] "Крадусь.")
+					}),
+					GroupOrder = TConcat({
+						T(890000000009813, --[[ModItemVoiceResponse Jazz_Vilde GroupOrder VoiceResponse GroupOrder voice:Jazz_Vilde]] "С вами."),
+						T(890000000009814, --[[ModItemVoiceResponse Jazz_Vilde GroupOrder VoiceResponse GroupOrder voice:Jazz_Vilde]] "С вами."),
+						T(890000000009815, --[[ModItemVoiceResponse Jazz_Vilde GroupOrder VoiceResponse GroupOrder voice:Jazz_Vilde]] "С вами.")
+					}),
+					AimAttack = TConcat({
+						T(890000000009244, --[[ModItemVoiceResponse Jazz_Vilde AimAttack VoiceResponse AimAttack voice:Jazz_Vilde]] "Есть цель!"),
+						T(890000000009245, --[[ModItemVoiceResponse Jazz_Vilde AimAttack VoiceResponse AimAttack voice:Jazz_Vilde]] "В бой!"),
+						T(890000000009816, --[[ModItemVoiceResponse Jazz_Vilde AimAttack VoiceResponse AimAttack voice:Jazz_Vilde]] "Есть цель!")
+					}),
+					AimAttackStealth = TConcat({
+						T(890000000009817, --[[ModItemVoiceResponse Jazz_Vilde AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Vilde]] "Тихо сниму."),
+						T(890000000009818, --[[ModItemVoiceResponse Jazz_Vilde AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Vilde]] "Тихо сниму.")
+					}),
+					AimAttack_Low = TConcat({
+						T(890000000009819, --[[ModItemVoiceResponse Jazz_Vilde AimAttack_Low VoiceResponse AimAttack_Low voice:Jazz_Vilde]] "Сложный выстрел.")
+					}),
+					AimAttack_LowStealth = TConcat({
+						T(890000000009820, --[[ModItemVoiceResponse Jazz_Vilde AimAttack_LowStealth VoiceResponse AimAttack_LowStealth voice:Jazz_Vilde]] "Плохой угол.")
+					}),
+					OpponentFound = TConcat({
+						T(890000000009821, --[[ModItemVoiceResponse Jazz_Vilde OpponentFound VoiceResponse OpponentFound voice:Jazz_Vilde]] "Вижу их!"),
+						T(890000000009822, --[[ModItemVoiceResponse Jazz_Vilde OpponentFound VoiceResponse OpponentFound voice:Jazz_Vilde]] "Вижу их!")
+					}),
+					ManyEnemiesSelection = TConcat({
+						T(890000000009823, --[[ModItemVoiceResponse Jazz_Vilde ManyEnemiesSelection VoiceResponse ManyEnemiesSelection voice:Jazz_Vilde]] "Их много!")
+					}),
+					OpponentKilled = TConcat({
+						T(890000000009246, --[[ModItemVoiceResponse Jazz_Vilde OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Vilde]] "Готов."),
+						T(890000000009824, --[[ModItemVoiceResponse Jazz_Vilde OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Vilde]] "Готов.")
+					}),
+					NoAmmo = TConcat({
+						T(890000000009825, --[[ModItemVoiceResponse Jazz_Vilde NoAmmo VoiceResponse NoAmmo voice:Jazz_Vilde]] "Патроны кончились.")
+					}),
+					AmmoLow = TConcat({
+						T(890000000009249, --[[ModItemVoiceResponse Jazz_Vilde AmmoLow VoiceResponse AmmoLow voice:Jazz_Vilde]] "Патроны!")
+					}),
+					WeaponJammed = TConcat({
+						T(890000000009826, --[[ModItemVoiceResponse Jazz_Vilde WeaponJammed VoiceResponse WeaponJammed voice:Jazz_Vilde]] "Клин!")
+					}),
+					Pain = TConcat({
+						T(890000000009827, --[[ModItemVoiceResponse Jazz_Vilde Pain VoiceResponse Pain voice:Jazz_Vilde]] "Аргх!"),
+						T(890000000009828, --[[ModItemVoiceResponse Jazz_Vilde Pain VoiceResponse Pain voice:Jazz_Vilde]] "Аргх!")
+					}),
+					Wounded = TConcat({
+						T(890000000009829, --[[ModItemVoiceResponse Jazz_Vilde Wounded VoiceResponse Wounded voice:Jazz_Vilde]] "Ранен!")
+					}),
+					Downed = TConcat({
+						T(890000000009248, --[[ModItemVoiceResponse Jazz_Vilde Downed VoiceResponse Downed voice:Jazz_Vilde]] "Ранен!")
+					}),
+					HeavilyWoundedSelection = TConcat({
+						T(890000000009830, --[[ModItemVoiceResponse Jazz_Vilde HeavilyWoundedSelection VoiceResponse HeavilyWoundedSelection voice:Jazz_Vilde]] "Плохо…")
+					}),
+					CombatStartPlayer = TConcat({
+						T(890000000009831, --[[ModItemVoiceResponse Jazz_Vilde CombatStartPlayer VoiceResponse CombatStartPlayer voice:Jazz_Vilde]] "К бою!")
+					}),
+					CombatStartDetected = TConcat({
+						T(890000000009250, --[[ModItemVoiceResponse Jazz_Vilde CombatStartDetected VoiceResponse CombatStartDetected voice:Jazz_Vilde]] "Контакт!")
+					}),
+					CombatEndNoEnemies = TConcat({
+						T(890000000009832, --[[ModItemVoiceResponse Jazz_Vilde CombatEndNoEnemies VoiceResponse CombatEndNoEnemies voice:Jazz_Vilde]] "Чисто.")
+					}),
+					CombatEndEnemiesRemain = TConcat({
+						T(890000000009833, --[[ModItemVoiceResponse Jazz_Vilde CombatEndEnemiesRemain VoiceResponse CombatEndEnemiesRemain voice:Jazz_Vilde]] "Ещё остались.")
+					}),
+					DeathGeneral = TConcat({
+						T(890000000009247, --[[ModItemVoiceResponse Jazz_Vilde DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Vilde]] "Конец...")
+					}),
+					Idle = TConcat({
+						T(890000000009251, --[[ModItemVoiceResponse Jazz_Vilde Idle VoiceResponse Idle voice:Jazz_Vilde]] "Жду."),
+						T(890000000009834, --[[ModItemVoiceResponse Jazz_Vilde Idle VoiceResponse Idle voice:Jazz_Vilde]] "Жду."),
+						T(890000000009835, --[[ModItemVoiceResponse Jazz_Vilde Idle VoiceResponse Idle voice:Jazz_Vilde]] "Жду.")
+					}),
+					BecomeHidden = TConcat({
+						T(890000000009836, --[[ModItemVoiceResponse Jazz_Vilde BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Vilde]] "Прячусь."),
+						T(890000000009837, --[[ModItemVoiceResponse Jazz_Vilde BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Vilde]] "Прячусь.")
+					}),
+					LevelUp = TConcat({
+						T(890000000009252, --[[ModItemVoiceResponse Jazz_Vilde LevelUp VoiceResponse LevelUp voice:Jazz_Vilde]] "Учусь.")
+					}),
+					LootFound = TConcat({
+						T(890000000009838, --[[ModItemVoiceResponse Jazz_Vilde LootFound VoiceResponse LootFound voice:Jazz_Vilde]] "Интересно…"),
+						T(890000000009839, --[[ModItemVoiceResponse Jazz_Vilde LootFound VoiceResponse LootFound voice:Jazz_Vilde]] "Интересно…")
+					}),
+					DoorLocked = TConcat({
+						T(890000000009840, --[[ModItemVoiceResponse Jazz_Vilde DoorLocked VoiceResponse DoorLocked voice:Jazz_Vilde]] "Закрыто.")
+					}),
+					Exhausted = TConcat({
+						T(890000000009841, --[[ModItemVoiceResponse Jazz_Vilde Exhausted VoiceResponse Exhausted voice:Jazz_Vilde]] "Устал…")
+					}),
+					HeavyBreathing = TConcat({
+						T(890000000009842, --[[ModItemVoiceResponse Jazz_Vilde HeavyBreathing VoiceResponse HeavyBreathing voice:Jazz_Vilde]] "(пыхтит)")
+					}),
+					HealReceived = TConcat({
+						T(890000000009843, --[[ModItemVoiceResponse Jazz_Vilde HealReceived VoiceResponse HealReceived voice:Jazz_Vilde]] "Спасибо.")
+					}),
+					NotNow = TConcat({
+						T(890000000009844, --[[ModItemVoiceResponse Jazz_Vilde NotNow VoiceResponse NotNow voice:Jazz_Vilde]] "Не сейчас.")
+					}),
+					ActivityFinished = TConcat({
+						T(890000000009845, --[[ModItemVoiceResponse Jazz_Vilde ActivityFinished VoiceResponse ActivityFinished voice:Jazz_Vilde]] "Готово.")
+					}),
+					TakeCover = TConcat({
+						T(890000000009846, --[[ModItemVoiceResponse Jazz_Vilde TakeCover VoiceResponse TakeCover voice:Jazz_Vilde]] "В укрытие!")
+					}),
+					ThrowGrenade = TConcat({
+						T(890000000009847, --[[ModItemVoiceResponse Jazz_Vilde ThrowGrenade VoiceResponse ThrowGrenade voice:Jazz_Vilde]] "Граната!")
+					}),
+					Autofire = TConcat({
+						T(890000000009848, --[[ModItemVoiceResponse Jazz_Vilde Autofire VoiceResponse Autofire voice:Jazz_Vilde]] "Очередь!")
+					}),
+					Climbing = TConcat({
+						T(890000000009849, --[[ModItemVoiceResponse Jazz_Vilde Climbing VoiceResponse Climbing voice:Jazz_Vilde]] "(лезет)")
+					}),
+					Jumping = TConcat({
+						T(890000000009850, --[[ModItemVoiceResponse Jazz_Vilde Jumping VoiceResponse Jumping voice:Jazz_Vilde]] "(прыжок)")
+					}),
+					Startled = TConcat({
+						T(890000000009851, --[[ModItemVoiceResponse Jazz_Vilde Startled VoiceResponse Startled voice:Jazz_Vilde]] "Что?!")
+					}),
+					ThreatSelection = TConcat({
+						T(890000000009852, --[[ModItemVoiceResponse Jazz_Vilde ThreatSelection VoiceResponse ThreatSelection voice:Jazz_Vilde]] "Опасно!")
+					}),
+					Overwatch = TConcat({
+						T(890000000009853, --[[ModItemVoiceResponse Jazz_Vilde Overwatch VoiceResponse Overwatch voice:Jazz_Vilde]] "Держу сектор.")
+					}),
+					OverwatchSelection = TConcat({
+						T(890000000009854, --[[ModItemVoiceResponse Jazz_Vilde OverwatchSelection VoiceResponse OverwatchSelection voice:Jazz_Vilde]] "Наготове.")
+					}),
+					GasAreaSelection = TConcat({
+						T(890000000009855, --[[ModItemVoiceResponse Jazz_Vilde GasAreaSelection VoiceResponse GasAreaSelection voice:Jazz_Vilde]] "(кашляет)")
+					}),
+					MissedByKillShot = TConcat({
+						T(890000000009856, --[[ModItemVoiceResponse Jazz_Vilde MissedByKillShot VoiceResponse MissedByKillShot voice:Jazz_Vilde]] "Почти…")
+					}),
+					AnimalFound = TConcat({
+						T(890000000009857, --[[ModItemVoiceResponse Jazz_Vilde AnimalFound VoiceResponse AnimalFound voice:Jazz_Vilde]] "Зверь!")
+					}),
+					CombatTaskGiven = TConcat({
+						T(890000000009858, --[[ModItemVoiceResponse Jazz_Vilde CombatTaskGiven VoiceResponse CombatTaskGiven voice:Jazz_Vilde]] "Есть идея.")
+					}),
+					CombatTaskCompleted = TConcat({
+						T(890000000009859, --[[ModItemVoiceResponse Jazz_Vilde CombatTaskCompleted VoiceResponse CombatTaskCompleted voice:Jazz_Vilde]] "Сделано.")
+					}),
+					CombatTaskFailed = TConcat({
+						T(890000000009860, --[[ModItemVoiceResponse Jazz_Vilde CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Vilde]] "Не вышло.")
+					}),
+					MockDislike1 = TConcat({
+						T(890000000009253, --[[ModItemVoiceResponse Jazz_Vilde MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Vilde]] "Только не это.")
+					}),
+					PraisesBuddy1 = TConcat({
+						T(890000000009254, --[[ModItemVoiceResponse Jazz_Vilde PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Vilde]] "Отличная работа.")
+					}),
 					group = "MercenariesOld",
 					id = "Jazz_Vilde",
 				}),
@@ -128948,7 +129983,185 @@ PlaceObj('ModItemAIArchetype', {
 				'FallbackMissingVR', "Ice",
 				'DaysUntilOnline', 0,
 				}),
-				PlaceObj('ModItemVoiceResponse', {
+												PlaceObj('ModItemVoiceResponse', {
+					Selection = TConcat({
+						T(890000000009255, --[[ModItemVoiceResponse Jazz_Grace Selection VoiceResponse Selection voice:Jazz_Grace]] "На связи."),
+						T(890000000009427, --[[ModItemVoiceResponse Jazz_Grace Selection VoiceResponse Selection voice:Jazz_Grace]] "На связи."),
+						T(890000000009428, --[[ModItemVoiceResponse Jazz_Grace Selection VoiceResponse Selection voice:Jazz_Grace]] "На связи.")
+					}),
+					SelectionStealth = TConcat({
+						T(890000000009429, --[[ModItemVoiceResponse Jazz_Grace SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Grace]] "Тихо."),
+						T(890000000009430, --[[ModItemVoiceResponse Jazz_Grace SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Grace]] "Тихо."),
+						T(890000000009431, --[[ModItemVoiceResponse Jazz_Grace SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Grace]] "Тихо.")
+					}),
+					Order = TConcat({
+						T(890000000009432, --[[ModItemVoiceResponse Jazz_Grace Order VoiceResponse Order voice:Jazz_Grace]] "Есть."),
+						T(890000000009433, --[[ModItemVoiceResponse Jazz_Grace Order VoiceResponse Order voice:Jazz_Grace]] "Есть."),
+						T(890000000009434, --[[ModItemVoiceResponse Jazz_Grace Order VoiceResponse Order voice:Jazz_Grace]] "Есть.")
+					}),
+					CombatMovement = TConcat({
+						T(890000000009435, --[[ModItemVoiceResponse Jazz_Grace CombatMovement VoiceResponse CombatMovement voice:Jazz_Grace]] "Двигаюсь."),
+						T(890000000009436, --[[ModItemVoiceResponse Jazz_Grace CombatMovement VoiceResponse CombatMovement voice:Jazz_Grace]] "Двигаюсь."),
+						T(890000000009437, --[[ModItemVoiceResponse Jazz_Grace CombatMovement VoiceResponse CombatMovement voice:Jazz_Grace]] "Двигаюсь.")
+					}),
+					CombatMovementStealth = TConcat({
+						T(890000000009438, --[[ModItemVoiceResponse Jazz_Grace CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Grace]] "Крадусь."),
+						T(890000000009439, --[[ModItemVoiceResponse Jazz_Grace CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Grace]] "Крадусь."),
+						T(890000000009440, --[[ModItemVoiceResponse Jazz_Grace CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Grace]] "Крадусь.")
+					}),
+					GroupOrder = TConcat({
+						T(890000000009441, --[[ModItemVoiceResponse Jazz_Grace GroupOrder VoiceResponse GroupOrder voice:Jazz_Grace]] "С вами."),
+						T(890000000009442, --[[ModItemVoiceResponse Jazz_Grace GroupOrder VoiceResponse GroupOrder voice:Jazz_Grace]] "С вами."),
+						T(890000000009443, --[[ModItemVoiceResponse Jazz_Grace GroupOrder VoiceResponse GroupOrder voice:Jazz_Grace]] "С вами.")
+					}),
+					AimAttack = TConcat({
+						T(890000000009256, --[[ModItemVoiceResponse Jazz_Grace AimAttack VoiceResponse AimAttack voice:Jazz_Grace]] "Есть цель!"),
+						T(890000000009257, --[[ModItemVoiceResponse Jazz_Grace AimAttack VoiceResponse AimAttack voice:Jazz_Grace]] "В бой!"),
+						T(890000000009444, --[[ModItemVoiceResponse Jazz_Grace AimAttack VoiceResponse AimAttack voice:Jazz_Grace]] "Есть цель!")
+					}),
+					AimAttackStealth = TConcat({
+						T(890000000009445, --[[ModItemVoiceResponse Jazz_Grace AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Grace]] "Тихо сниму."),
+						T(890000000009446, --[[ModItemVoiceResponse Jazz_Grace AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Grace]] "Тихо сниму.")
+					}),
+					AimAttack_Low = TConcat({
+						T(890000000009447, --[[ModItemVoiceResponse Jazz_Grace AimAttack_Low VoiceResponse AimAttack_Low voice:Jazz_Grace]] "Сложный выстрел.")
+					}),
+					AimAttack_LowStealth = TConcat({
+						T(890000000009448, --[[ModItemVoiceResponse Jazz_Grace AimAttack_LowStealth VoiceResponse AimAttack_LowStealth voice:Jazz_Grace]] "Плохой угол.")
+					}),
+					OpponentFound = TConcat({
+						T(890000000009449, --[[ModItemVoiceResponse Jazz_Grace OpponentFound VoiceResponse OpponentFound voice:Jazz_Grace]] "Вижу их!"),
+						T(890000000009450, --[[ModItemVoiceResponse Jazz_Grace OpponentFound VoiceResponse OpponentFound voice:Jazz_Grace]] "Вижу их!")
+					}),
+					ManyEnemiesSelection = TConcat({
+						T(890000000009451, --[[ModItemVoiceResponse Jazz_Grace ManyEnemiesSelection VoiceResponse ManyEnemiesSelection voice:Jazz_Grace]] "Их много!")
+					}),
+					OpponentKilled = TConcat({
+						T(890000000009258, --[[ModItemVoiceResponse Jazz_Grace OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Grace]] "Готов."),
+						T(890000000009452, --[[ModItemVoiceResponse Jazz_Grace OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Grace]] "Готов.")
+					}),
+					NoAmmo = TConcat({
+						T(890000000009453, --[[ModItemVoiceResponse Jazz_Grace NoAmmo VoiceResponse NoAmmo voice:Jazz_Grace]] "Патроны кончились.")
+					}),
+					AmmoLow = TConcat({
+						T(890000000009261, --[[ModItemVoiceResponse Jazz_Grace AmmoLow VoiceResponse AmmoLow voice:Jazz_Grace]] "Патроны!")
+					}),
+					WeaponJammed = TConcat({
+						T(890000000009454, --[[ModItemVoiceResponse Jazz_Grace WeaponJammed VoiceResponse WeaponJammed voice:Jazz_Grace]] "Клин!")
+					}),
+					Pain = TConcat({
+						T(890000000009455, --[[ModItemVoiceResponse Jazz_Grace Pain VoiceResponse Pain voice:Jazz_Grace]] "Аргх!"),
+						T(890000000009456, --[[ModItemVoiceResponse Jazz_Grace Pain VoiceResponse Pain voice:Jazz_Grace]] "Аргх!")
+					}),
+					Wounded = TConcat({
+						T(890000000009457, --[[ModItemVoiceResponse Jazz_Grace Wounded VoiceResponse Wounded voice:Jazz_Grace]] "Ранен!")
+					}),
+					Downed = TConcat({
+						T(890000000009260, --[[ModItemVoiceResponse Jazz_Grace Downed VoiceResponse Downed voice:Jazz_Grace]] "Ранен!")
+					}),
+					HeavilyWoundedSelection = TConcat({
+						T(890000000009458, --[[ModItemVoiceResponse Jazz_Grace HeavilyWoundedSelection VoiceResponse HeavilyWoundedSelection voice:Jazz_Grace]] "Плохо…")
+					}),
+					CombatStartPlayer = TConcat({
+						T(890000000009459, --[[ModItemVoiceResponse Jazz_Grace CombatStartPlayer VoiceResponse CombatStartPlayer voice:Jazz_Grace]] "К бою!")
+					}),
+					CombatStartDetected = TConcat({
+						T(890000000009262, --[[ModItemVoiceResponse Jazz_Grace CombatStartDetected VoiceResponse CombatStartDetected voice:Jazz_Grace]] "Контакт!")
+					}),
+					CombatEndNoEnemies = TConcat({
+						T(890000000009460, --[[ModItemVoiceResponse Jazz_Grace CombatEndNoEnemies VoiceResponse CombatEndNoEnemies voice:Jazz_Grace]] "Чисто.")
+					}),
+					CombatEndEnemiesRemain = TConcat({
+						T(890000000009461, --[[ModItemVoiceResponse Jazz_Grace CombatEndEnemiesRemain VoiceResponse CombatEndEnemiesRemain voice:Jazz_Grace]] "Ещё остались.")
+					}),
+					DeathGeneral = TConcat({
+						T(890000000009259, --[[ModItemVoiceResponse Jazz_Grace DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Grace]] "Конец...")
+					}),
+					Idle = TConcat({
+						T(890000000009263, --[[ModItemVoiceResponse Jazz_Grace Idle VoiceResponse Idle voice:Jazz_Grace]] "Жду."),
+						T(890000000009462, --[[ModItemVoiceResponse Jazz_Grace Idle VoiceResponse Idle voice:Jazz_Grace]] "Жду."),
+						T(890000000009463, --[[ModItemVoiceResponse Jazz_Grace Idle VoiceResponse Idle voice:Jazz_Grace]] "Жду.")
+					}),
+					BecomeHidden = TConcat({
+						T(890000000009464, --[[ModItemVoiceResponse Jazz_Grace BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Grace]] "Прячусь."),
+						T(890000000009465, --[[ModItemVoiceResponse Jazz_Grace BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Grace]] "Прячусь.")
+					}),
+					LevelUp = TConcat({
+						T(890000000009264, --[[ModItemVoiceResponse Jazz_Grace LevelUp VoiceResponse LevelUp voice:Jazz_Grace]] "Учусь.")
+					}),
+					LootFound = TConcat({
+						T(890000000009466, --[[ModItemVoiceResponse Jazz_Grace LootFound VoiceResponse LootFound voice:Jazz_Grace]] "Интересно…"),
+						T(890000000009467, --[[ModItemVoiceResponse Jazz_Grace LootFound VoiceResponse LootFound voice:Jazz_Grace]] "Интересно…")
+					}),
+					DoorLocked = TConcat({
+						T(890000000009468, --[[ModItemVoiceResponse Jazz_Grace DoorLocked VoiceResponse DoorLocked voice:Jazz_Grace]] "Закрыто.")
+					}),
+					Exhausted = TConcat({
+						T(890000000009469, --[[ModItemVoiceResponse Jazz_Grace Exhausted VoiceResponse Exhausted voice:Jazz_Grace]] "Устал…")
+					}),
+					HeavyBreathing = TConcat({
+						T(890000000009470, --[[ModItemVoiceResponse Jazz_Grace HeavyBreathing VoiceResponse HeavyBreathing voice:Jazz_Grace]] "(пыхтит)")
+					}),
+					HealReceived = TConcat({
+						T(890000000009471, --[[ModItemVoiceResponse Jazz_Grace HealReceived VoiceResponse HealReceived voice:Jazz_Grace]] "Спасибо.")
+					}),
+					NotNow = TConcat({
+						T(890000000009472, --[[ModItemVoiceResponse Jazz_Grace NotNow VoiceResponse NotNow voice:Jazz_Grace]] "Не сейчас.")
+					}),
+					ActivityFinished = TConcat({
+						T(890000000009473, --[[ModItemVoiceResponse Jazz_Grace ActivityFinished VoiceResponse ActivityFinished voice:Jazz_Grace]] "Готово.")
+					}),
+					TakeCover = TConcat({
+						T(890000000009474, --[[ModItemVoiceResponse Jazz_Grace TakeCover VoiceResponse TakeCover voice:Jazz_Grace]] "В укрытие!")
+					}),
+					ThrowGrenade = TConcat({
+						T(890000000009475, --[[ModItemVoiceResponse Jazz_Grace ThrowGrenade VoiceResponse ThrowGrenade voice:Jazz_Grace]] "Граната!")
+					}),
+					Autofire = TConcat({
+						T(890000000009476, --[[ModItemVoiceResponse Jazz_Grace Autofire VoiceResponse Autofire voice:Jazz_Grace]] "Очередь!")
+					}),
+					Climbing = TConcat({
+						T(890000000009477, --[[ModItemVoiceResponse Jazz_Grace Climbing VoiceResponse Climbing voice:Jazz_Grace]] "(лезет)")
+					}),
+					Jumping = TConcat({
+						T(890000000009478, --[[ModItemVoiceResponse Jazz_Grace Jumping VoiceResponse Jumping voice:Jazz_Grace]] "(прыжок)")
+					}),
+					Startled = TConcat({
+						T(890000000009479, --[[ModItemVoiceResponse Jazz_Grace Startled VoiceResponse Startled voice:Jazz_Grace]] "Что?!")
+					}),
+					ThreatSelection = TConcat({
+						T(890000000009480, --[[ModItemVoiceResponse Jazz_Grace ThreatSelection VoiceResponse ThreatSelection voice:Jazz_Grace]] "Опасно!")
+					}),
+					Overwatch = TConcat({
+						T(890000000009481, --[[ModItemVoiceResponse Jazz_Grace Overwatch VoiceResponse Overwatch voice:Jazz_Grace]] "Держу сектор.")
+					}),
+					OverwatchSelection = TConcat({
+						T(890000000009482, --[[ModItemVoiceResponse Jazz_Grace OverwatchSelection VoiceResponse OverwatchSelection voice:Jazz_Grace]] "Наготове.")
+					}),
+					GasAreaSelection = TConcat({
+						T(890000000009483, --[[ModItemVoiceResponse Jazz_Grace GasAreaSelection VoiceResponse GasAreaSelection voice:Jazz_Grace]] "(кашляет)")
+					}),
+					MissedByKillShot = TConcat({
+						T(890000000009484, --[[ModItemVoiceResponse Jazz_Grace MissedByKillShot VoiceResponse MissedByKillShot voice:Jazz_Grace]] "Почти…")
+					}),
+					AnimalFound = TConcat({
+						T(890000000009485, --[[ModItemVoiceResponse Jazz_Grace AnimalFound VoiceResponse AnimalFound voice:Jazz_Grace]] "Зверь!")
+					}),
+					CombatTaskGiven = TConcat({
+						T(890000000009486, --[[ModItemVoiceResponse Jazz_Grace CombatTaskGiven VoiceResponse CombatTaskGiven voice:Jazz_Grace]] "Есть идея.")
+					}),
+					CombatTaskCompleted = TConcat({
+						T(890000000009487, --[[ModItemVoiceResponse Jazz_Grace CombatTaskCompleted VoiceResponse CombatTaskCompleted voice:Jazz_Grace]] "Сделано.")
+					}),
+					CombatTaskFailed = TConcat({
+						T(890000000009488, --[[ModItemVoiceResponse Jazz_Grace CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Grace]] "Не вышло.")
+					}),
+					MockDislike1 = TConcat({
+						T(890000000009265, --[[ModItemVoiceResponse Jazz_Grace MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Grace]] "Только не это.")
+					}),
+					PraisesBuddy1 = TConcat({
+						T(890000000009266, --[[ModItemVoiceResponse Jazz_Grace PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Grace]] "Отличная работа.")
+					}),
 					group = "MercenariesOld",
 					id = "Jazz_Grace",
 				}),
@@ -129017,7 +130230,185 @@ PlaceObj('ModItemAIArchetype', {
 				'FallbackMissingVR', "Ice",
 				'DaysUntilOnline', 0,
 				}),
-				PlaceObj('ModItemVoiceResponse', {
+												PlaceObj('ModItemVoiceResponse', {
+					Selection = TConcat({
+						T(890000000009267, --[[ModItemVoiceResponse Jazz_Steiger Selection VoiceResponse Selection voice:Jazz_Steiger]] "На связи."),
+						T(890000000009737, --[[ModItemVoiceResponse Jazz_Steiger Selection VoiceResponse Selection voice:Jazz_Steiger]] "На связи."),
+						T(890000000009738, --[[ModItemVoiceResponse Jazz_Steiger Selection VoiceResponse Selection voice:Jazz_Steiger]] "На связи.")
+					}),
+					SelectionStealth = TConcat({
+						T(890000000009739, --[[ModItemVoiceResponse Jazz_Steiger SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Steiger]] "Тихо."),
+						T(890000000009740, --[[ModItemVoiceResponse Jazz_Steiger SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Steiger]] "Тихо."),
+						T(890000000009741, --[[ModItemVoiceResponse Jazz_Steiger SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Steiger]] "Тихо.")
+					}),
+					Order = TConcat({
+						T(890000000009742, --[[ModItemVoiceResponse Jazz_Steiger Order VoiceResponse Order voice:Jazz_Steiger]] "Есть."),
+						T(890000000009743, --[[ModItemVoiceResponse Jazz_Steiger Order VoiceResponse Order voice:Jazz_Steiger]] "Есть."),
+						T(890000000009744, --[[ModItemVoiceResponse Jazz_Steiger Order VoiceResponse Order voice:Jazz_Steiger]] "Есть.")
+					}),
+					CombatMovement = TConcat({
+						T(890000000009745, --[[ModItemVoiceResponse Jazz_Steiger CombatMovement VoiceResponse CombatMovement voice:Jazz_Steiger]] "Двигаюсь."),
+						T(890000000009746, --[[ModItemVoiceResponse Jazz_Steiger CombatMovement VoiceResponse CombatMovement voice:Jazz_Steiger]] "Двигаюсь."),
+						T(890000000009747, --[[ModItemVoiceResponse Jazz_Steiger CombatMovement VoiceResponse CombatMovement voice:Jazz_Steiger]] "Двигаюсь.")
+					}),
+					CombatMovementStealth = TConcat({
+						T(890000000009748, --[[ModItemVoiceResponse Jazz_Steiger CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Steiger]] "Крадусь."),
+						T(890000000009749, --[[ModItemVoiceResponse Jazz_Steiger CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Steiger]] "Крадусь."),
+						T(890000000009750, --[[ModItemVoiceResponse Jazz_Steiger CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Steiger]] "Крадусь.")
+					}),
+					GroupOrder = TConcat({
+						T(890000000009751, --[[ModItemVoiceResponse Jazz_Steiger GroupOrder VoiceResponse GroupOrder voice:Jazz_Steiger]] "С вами."),
+						T(890000000009752, --[[ModItemVoiceResponse Jazz_Steiger GroupOrder VoiceResponse GroupOrder voice:Jazz_Steiger]] "С вами."),
+						T(890000000009753, --[[ModItemVoiceResponse Jazz_Steiger GroupOrder VoiceResponse GroupOrder voice:Jazz_Steiger]] "С вами.")
+					}),
+					AimAttack = TConcat({
+						T(890000000009268, --[[ModItemVoiceResponse Jazz_Steiger AimAttack VoiceResponse AimAttack voice:Jazz_Steiger]] "Есть цель!"),
+						T(890000000009269, --[[ModItemVoiceResponse Jazz_Steiger AimAttack VoiceResponse AimAttack voice:Jazz_Steiger]] "В бой!"),
+						T(890000000009754, --[[ModItemVoiceResponse Jazz_Steiger AimAttack VoiceResponse AimAttack voice:Jazz_Steiger]] "Есть цель!")
+					}),
+					AimAttackStealth = TConcat({
+						T(890000000009755, --[[ModItemVoiceResponse Jazz_Steiger AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Steiger]] "Тихо сниму."),
+						T(890000000009756, --[[ModItemVoiceResponse Jazz_Steiger AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Steiger]] "Тихо сниму.")
+					}),
+					AimAttack_Low = TConcat({
+						T(890000000009757, --[[ModItemVoiceResponse Jazz_Steiger AimAttack_Low VoiceResponse AimAttack_Low voice:Jazz_Steiger]] "Сложный выстрел.")
+					}),
+					AimAttack_LowStealth = TConcat({
+						T(890000000009758, --[[ModItemVoiceResponse Jazz_Steiger AimAttack_LowStealth VoiceResponse AimAttack_LowStealth voice:Jazz_Steiger]] "Плохой угол.")
+					}),
+					OpponentFound = TConcat({
+						T(890000000009759, --[[ModItemVoiceResponse Jazz_Steiger OpponentFound VoiceResponse OpponentFound voice:Jazz_Steiger]] "Вижу их!"),
+						T(890000000009760, --[[ModItemVoiceResponse Jazz_Steiger OpponentFound VoiceResponse OpponentFound voice:Jazz_Steiger]] "Вижу их!")
+					}),
+					ManyEnemiesSelection = TConcat({
+						T(890000000009761, --[[ModItemVoiceResponse Jazz_Steiger ManyEnemiesSelection VoiceResponse ManyEnemiesSelection voice:Jazz_Steiger]] "Их много!")
+					}),
+					OpponentKilled = TConcat({
+						T(890000000009270, --[[ModItemVoiceResponse Jazz_Steiger OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Steiger]] "Готов."),
+						T(890000000009762, --[[ModItemVoiceResponse Jazz_Steiger OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Steiger]] "Готов.")
+					}),
+					NoAmmo = TConcat({
+						T(890000000009763, --[[ModItemVoiceResponse Jazz_Steiger NoAmmo VoiceResponse NoAmmo voice:Jazz_Steiger]] "Патроны кончились.")
+					}),
+					AmmoLow = TConcat({
+						T(890000000009273, --[[ModItemVoiceResponse Jazz_Steiger AmmoLow VoiceResponse AmmoLow voice:Jazz_Steiger]] "Патроны!")
+					}),
+					WeaponJammed = TConcat({
+						T(890000000009764, --[[ModItemVoiceResponse Jazz_Steiger WeaponJammed VoiceResponse WeaponJammed voice:Jazz_Steiger]] "Клин!")
+					}),
+					Pain = TConcat({
+						T(890000000009765, --[[ModItemVoiceResponse Jazz_Steiger Pain VoiceResponse Pain voice:Jazz_Steiger]] "Аргх!"),
+						T(890000000009766, --[[ModItemVoiceResponse Jazz_Steiger Pain VoiceResponse Pain voice:Jazz_Steiger]] "Аргх!")
+					}),
+					Wounded = TConcat({
+						T(890000000009767, --[[ModItemVoiceResponse Jazz_Steiger Wounded VoiceResponse Wounded voice:Jazz_Steiger]] "Ранен!")
+					}),
+					Downed = TConcat({
+						T(890000000009272, --[[ModItemVoiceResponse Jazz_Steiger Downed VoiceResponse Downed voice:Jazz_Steiger]] "Ранен!")
+					}),
+					HeavilyWoundedSelection = TConcat({
+						T(890000000009768, --[[ModItemVoiceResponse Jazz_Steiger HeavilyWoundedSelection VoiceResponse HeavilyWoundedSelection voice:Jazz_Steiger]] "Плохо…")
+					}),
+					CombatStartPlayer = TConcat({
+						T(890000000009769, --[[ModItemVoiceResponse Jazz_Steiger CombatStartPlayer VoiceResponse CombatStartPlayer voice:Jazz_Steiger]] "К бою!")
+					}),
+					CombatStartDetected = TConcat({
+						T(890000000009274, --[[ModItemVoiceResponse Jazz_Steiger CombatStartDetected VoiceResponse CombatStartDetected voice:Jazz_Steiger]] "Контакт!")
+					}),
+					CombatEndNoEnemies = TConcat({
+						T(890000000009770, --[[ModItemVoiceResponse Jazz_Steiger CombatEndNoEnemies VoiceResponse CombatEndNoEnemies voice:Jazz_Steiger]] "Чисто.")
+					}),
+					CombatEndEnemiesRemain = TConcat({
+						T(890000000009771, --[[ModItemVoiceResponse Jazz_Steiger CombatEndEnemiesRemain VoiceResponse CombatEndEnemiesRemain voice:Jazz_Steiger]] "Ещё остались.")
+					}),
+					DeathGeneral = TConcat({
+						T(890000000009271, --[[ModItemVoiceResponse Jazz_Steiger DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Steiger]] "Конец...")
+					}),
+					Idle = TConcat({
+						T(890000000009275, --[[ModItemVoiceResponse Jazz_Steiger Idle VoiceResponse Idle voice:Jazz_Steiger]] "Жду."),
+						T(890000000009772, --[[ModItemVoiceResponse Jazz_Steiger Idle VoiceResponse Idle voice:Jazz_Steiger]] "Жду."),
+						T(890000000009773, --[[ModItemVoiceResponse Jazz_Steiger Idle VoiceResponse Idle voice:Jazz_Steiger]] "Жду.")
+					}),
+					BecomeHidden = TConcat({
+						T(890000000009774, --[[ModItemVoiceResponse Jazz_Steiger BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Steiger]] "Прячусь."),
+						T(890000000009775, --[[ModItemVoiceResponse Jazz_Steiger BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Steiger]] "Прячусь.")
+					}),
+					LevelUp = TConcat({
+						T(890000000009276, --[[ModItemVoiceResponse Jazz_Steiger LevelUp VoiceResponse LevelUp voice:Jazz_Steiger]] "Учусь.")
+					}),
+					LootFound = TConcat({
+						T(890000000009776, --[[ModItemVoiceResponse Jazz_Steiger LootFound VoiceResponse LootFound voice:Jazz_Steiger]] "Интересно…"),
+						T(890000000009777, --[[ModItemVoiceResponse Jazz_Steiger LootFound VoiceResponse LootFound voice:Jazz_Steiger]] "Интересно…")
+					}),
+					DoorLocked = TConcat({
+						T(890000000009778, --[[ModItemVoiceResponse Jazz_Steiger DoorLocked VoiceResponse DoorLocked voice:Jazz_Steiger]] "Закрыто.")
+					}),
+					Exhausted = TConcat({
+						T(890000000009779, --[[ModItemVoiceResponse Jazz_Steiger Exhausted VoiceResponse Exhausted voice:Jazz_Steiger]] "Устал…")
+					}),
+					HeavyBreathing = TConcat({
+						T(890000000009780, --[[ModItemVoiceResponse Jazz_Steiger HeavyBreathing VoiceResponse HeavyBreathing voice:Jazz_Steiger]] "(пыхтит)")
+					}),
+					HealReceived = TConcat({
+						T(890000000009781, --[[ModItemVoiceResponse Jazz_Steiger HealReceived VoiceResponse HealReceived voice:Jazz_Steiger]] "Спасибо.")
+					}),
+					NotNow = TConcat({
+						T(890000000009782, --[[ModItemVoiceResponse Jazz_Steiger NotNow VoiceResponse NotNow voice:Jazz_Steiger]] "Не сейчас.")
+					}),
+					ActivityFinished = TConcat({
+						T(890000000009783, --[[ModItemVoiceResponse Jazz_Steiger ActivityFinished VoiceResponse ActivityFinished voice:Jazz_Steiger]] "Готово.")
+					}),
+					TakeCover = TConcat({
+						T(890000000009784, --[[ModItemVoiceResponse Jazz_Steiger TakeCover VoiceResponse TakeCover voice:Jazz_Steiger]] "В укрытие!")
+					}),
+					ThrowGrenade = TConcat({
+						T(890000000009785, --[[ModItemVoiceResponse Jazz_Steiger ThrowGrenade VoiceResponse ThrowGrenade voice:Jazz_Steiger]] "Граната!")
+					}),
+					Autofire = TConcat({
+						T(890000000009786, --[[ModItemVoiceResponse Jazz_Steiger Autofire VoiceResponse Autofire voice:Jazz_Steiger]] "Очередь!")
+					}),
+					Climbing = TConcat({
+						T(890000000009787, --[[ModItemVoiceResponse Jazz_Steiger Climbing VoiceResponse Climbing voice:Jazz_Steiger]] "(лезет)")
+					}),
+					Jumping = TConcat({
+						T(890000000009788, --[[ModItemVoiceResponse Jazz_Steiger Jumping VoiceResponse Jumping voice:Jazz_Steiger]] "(прыжок)")
+					}),
+					Startled = TConcat({
+						T(890000000009789, --[[ModItemVoiceResponse Jazz_Steiger Startled VoiceResponse Startled voice:Jazz_Steiger]] "Что?!")
+					}),
+					ThreatSelection = TConcat({
+						T(890000000009790, --[[ModItemVoiceResponse Jazz_Steiger ThreatSelection VoiceResponse ThreatSelection voice:Jazz_Steiger]] "Опасно!")
+					}),
+					Overwatch = TConcat({
+						T(890000000009791, --[[ModItemVoiceResponse Jazz_Steiger Overwatch VoiceResponse Overwatch voice:Jazz_Steiger]] "Держу сектор.")
+					}),
+					OverwatchSelection = TConcat({
+						T(890000000009792, --[[ModItemVoiceResponse Jazz_Steiger OverwatchSelection VoiceResponse OverwatchSelection voice:Jazz_Steiger]] "Наготове.")
+					}),
+					GasAreaSelection = TConcat({
+						T(890000000009793, --[[ModItemVoiceResponse Jazz_Steiger GasAreaSelection VoiceResponse GasAreaSelection voice:Jazz_Steiger]] "(кашляет)")
+					}),
+					MissedByKillShot = TConcat({
+						T(890000000009794, --[[ModItemVoiceResponse Jazz_Steiger MissedByKillShot VoiceResponse MissedByKillShot voice:Jazz_Steiger]] "Почти…")
+					}),
+					AnimalFound = TConcat({
+						T(890000000009795, --[[ModItemVoiceResponse Jazz_Steiger AnimalFound VoiceResponse AnimalFound voice:Jazz_Steiger]] "Зверь!")
+					}),
+					CombatTaskGiven = TConcat({
+						T(890000000009796, --[[ModItemVoiceResponse Jazz_Steiger CombatTaskGiven VoiceResponse CombatTaskGiven voice:Jazz_Steiger]] "Есть идея.")
+					}),
+					CombatTaskCompleted = TConcat({
+						T(890000000009797, --[[ModItemVoiceResponse Jazz_Steiger CombatTaskCompleted VoiceResponse CombatTaskCompleted voice:Jazz_Steiger]] "Сделано.")
+					}),
+					CombatTaskFailed = TConcat({
+						T(890000000009798, --[[ModItemVoiceResponse Jazz_Steiger CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Steiger]] "Не вышло.")
+					}),
+					MockDislike1 = TConcat({
+						T(890000000009277, --[[ModItemVoiceResponse Jazz_Steiger MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Steiger]] "Только не это.")
+					}),
+					PraisesBuddy1 = TConcat({
+						T(890000000009278, --[[ModItemVoiceResponse Jazz_Steiger PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Steiger]] "Отличная работа.")
+					}),
 					group = "MercenariesOld",
 					id = "Jazz_Steiger",
 				}),
@@ -129086,7 +130477,185 @@ PlaceObj('ModItemAIArchetype', {
 				'FallbackMissingVR', "Ice",
 				'DaysUntilOnline', 0,
 				}),
-				PlaceObj('ModItemVoiceResponse', {
+												PlaceObj('ModItemVoiceResponse', {
+					Selection = TConcat({
+						T(890000000009279, --[[ModItemVoiceResponse Jazz_Lucky Selection VoiceResponse Selection voice:Jazz_Lucky]] "На связи."),
+						T(890000000009613, --[[ModItemVoiceResponse Jazz_Lucky Selection VoiceResponse Selection voice:Jazz_Lucky]] "На связи."),
+						T(890000000009614, --[[ModItemVoiceResponse Jazz_Lucky Selection VoiceResponse Selection voice:Jazz_Lucky]] "На связи.")
+					}),
+					SelectionStealth = TConcat({
+						T(890000000009615, --[[ModItemVoiceResponse Jazz_Lucky SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Lucky]] "Тихо."),
+						T(890000000009616, --[[ModItemVoiceResponse Jazz_Lucky SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Lucky]] "Тихо."),
+						T(890000000009617, --[[ModItemVoiceResponse Jazz_Lucky SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Lucky]] "Тихо.")
+					}),
+					Order = TConcat({
+						T(890000000009618, --[[ModItemVoiceResponse Jazz_Lucky Order VoiceResponse Order voice:Jazz_Lucky]] "Есть."),
+						T(890000000009619, --[[ModItemVoiceResponse Jazz_Lucky Order VoiceResponse Order voice:Jazz_Lucky]] "Есть."),
+						T(890000000009620, --[[ModItemVoiceResponse Jazz_Lucky Order VoiceResponse Order voice:Jazz_Lucky]] "Есть.")
+					}),
+					CombatMovement = TConcat({
+						T(890000000009621, --[[ModItemVoiceResponse Jazz_Lucky CombatMovement VoiceResponse CombatMovement voice:Jazz_Lucky]] "Двигаюсь."),
+						T(890000000009622, --[[ModItemVoiceResponse Jazz_Lucky CombatMovement VoiceResponse CombatMovement voice:Jazz_Lucky]] "Двигаюсь."),
+						T(890000000009623, --[[ModItemVoiceResponse Jazz_Lucky CombatMovement VoiceResponse CombatMovement voice:Jazz_Lucky]] "Двигаюсь.")
+					}),
+					CombatMovementStealth = TConcat({
+						T(890000000009624, --[[ModItemVoiceResponse Jazz_Lucky CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Lucky]] "Крадусь."),
+						T(890000000009625, --[[ModItemVoiceResponse Jazz_Lucky CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Lucky]] "Крадусь."),
+						T(890000000009626, --[[ModItemVoiceResponse Jazz_Lucky CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Lucky]] "Крадусь.")
+					}),
+					GroupOrder = TConcat({
+						T(890000000009627, --[[ModItemVoiceResponse Jazz_Lucky GroupOrder VoiceResponse GroupOrder voice:Jazz_Lucky]] "С вами."),
+						T(890000000009628, --[[ModItemVoiceResponse Jazz_Lucky GroupOrder VoiceResponse GroupOrder voice:Jazz_Lucky]] "С вами."),
+						T(890000000009629, --[[ModItemVoiceResponse Jazz_Lucky GroupOrder VoiceResponse GroupOrder voice:Jazz_Lucky]] "С вами.")
+					}),
+					AimAttack = TConcat({
+						T(890000000009280, --[[ModItemVoiceResponse Jazz_Lucky AimAttack VoiceResponse AimAttack voice:Jazz_Lucky]] "Есть цель!"),
+						T(890000000009281, --[[ModItemVoiceResponse Jazz_Lucky AimAttack VoiceResponse AimAttack voice:Jazz_Lucky]] "В бой!"),
+						T(890000000009630, --[[ModItemVoiceResponse Jazz_Lucky AimAttack VoiceResponse AimAttack voice:Jazz_Lucky]] "Есть цель!")
+					}),
+					AimAttackStealth = TConcat({
+						T(890000000009631, --[[ModItemVoiceResponse Jazz_Lucky AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Lucky]] "Тихо сниму."),
+						T(890000000009632, --[[ModItemVoiceResponse Jazz_Lucky AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Lucky]] "Тихо сниму.")
+					}),
+					AimAttack_Low = TConcat({
+						T(890000000009633, --[[ModItemVoiceResponse Jazz_Lucky AimAttack_Low VoiceResponse AimAttack_Low voice:Jazz_Lucky]] "Сложный выстрел.")
+					}),
+					AimAttack_LowStealth = TConcat({
+						T(890000000009634, --[[ModItemVoiceResponse Jazz_Lucky AimAttack_LowStealth VoiceResponse AimAttack_LowStealth voice:Jazz_Lucky]] "Плохой угол.")
+					}),
+					OpponentFound = TConcat({
+						T(890000000009635, --[[ModItemVoiceResponse Jazz_Lucky OpponentFound VoiceResponse OpponentFound voice:Jazz_Lucky]] "Вижу их!"),
+						T(890000000009636, --[[ModItemVoiceResponse Jazz_Lucky OpponentFound VoiceResponse OpponentFound voice:Jazz_Lucky]] "Вижу их!")
+					}),
+					ManyEnemiesSelection = TConcat({
+						T(890000000009637, --[[ModItemVoiceResponse Jazz_Lucky ManyEnemiesSelection VoiceResponse ManyEnemiesSelection voice:Jazz_Lucky]] "Их много!")
+					}),
+					OpponentKilled = TConcat({
+						T(890000000009282, --[[ModItemVoiceResponse Jazz_Lucky OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Lucky]] "Готов."),
+						T(890000000009638, --[[ModItemVoiceResponse Jazz_Lucky OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Lucky]] "Готов.")
+					}),
+					NoAmmo = TConcat({
+						T(890000000009639, --[[ModItemVoiceResponse Jazz_Lucky NoAmmo VoiceResponse NoAmmo voice:Jazz_Lucky]] "Патроны кончились.")
+					}),
+					AmmoLow = TConcat({
+						T(890000000009285, --[[ModItemVoiceResponse Jazz_Lucky AmmoLow VoiceResponse AmmoLow voice:Jazz_Lucky]] "Патроны!")
+					}),
+					WeaponJammed = TConcat({
+						T(890000000009640, --[[ModItemVoiceResponse Jazz_Lucky WeaponJammed VoiceResponse WeaponJammed voice:Jazz_Lucky]] "Клин!")
+					}),
+					Pain = TConcat({
+						T(890000000009641, --[[ModItemVoiceResponse Jazz_Lucky Pain VoiceResponse Pain voice:Jazz_Lucky]] "Аргх!"),
+						T(890000000009642, --[[ModItemVoiceResponse Jazz_Lucky Pain VoiceResponse Pain voice:Jazz_Lucky]] "Аргх!")
+					}),
+					Wounded = TConcat({
+						T(890000000009643, --[[ModItemVoiceResponse Jazz_Lucky Wounded VoiceResponse Wounded voice:Jazz_Lucky]] "Ранен!")
+					}),
+					Downed = TConcat({
+						T(890000000009284, --[[ModItemVoiceResponse Jazz_Lucky Downed VoiceResponse Downed voice:Jazz_Lucky]] "Ранен!")
+					}),
+					HeavilyWoundedSelection = TConcat({
+						T(890000000009644, --[[ModItemVoiceResponse Jazz_Lucky HeavilyWoundedSelection VoiceResponse HeavilyWoundedSelection voice:Jazz_Lucky]] "Плохо…")
+					}),
+					CombatStartPlayer = TConcat({
+						T(890000000009645, --[[ModItemVoiceResponse Jazz_Lucky CombatStartPlayer VoiceResponse CombatStartPlayer voice:Jazz_Lucky]] "К бою!")
+					}),
+					CombatStartDetected = TConcat({
+						T(890000000009286, --[[ModItemVoiceResponse Jazz_Lucky CombatStartDetected VoiceResponse CombatStartDetected voice:Jazz_Lucky]] "Контакт!")
+					}),
+					CombatEndNoEnemies = TConcat({
+						T(890000000009646, --[[ModItemVoiceResponse Jazz_Lucky CombatEndNoEnemies VoiceResponse CombatEndNoEnemies voice:Jazz_Lucky]] "Чисто.")
+					}),
+					CombatEndEnemiesRemain = TConcat({
+						T(890000000009647, --[[ModItemVoiceResponse Jazz_Lucky CombatEndEnemiesRemain VoiceResponse CombatEndEnemiesRemain voice:Jazz_Lucky]] "Ещё остались.")
+					}),
+					DeathGeneral = TConcat({
+						T(890000000009283, --[[ModItemVoiceResponse Jazz_Lucky DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Lucky]] "Конец...")
+					}),
+					Idle = TConcat({
+						T(890000000009287, --[[ModItemVoiceResponse Jazz_Lucky Idle VoiceResponse Idle voice:Jazz_Lucky]] "Жду."),
+						T(890000000009648, --[[ModItemVoiceResponse Jazz_Lucky Idle VoiceResponse Idle voice:Jazz_Lucky]] "Жду."),
+						T(890000000009649, --[[ModItemVoiceResponse Jazz_Lucky Idle VoiceResponse Idle voice:Jazz_Lucky]] "Жду.")
+					}),
+					BecomeHidden = TConcat({
+						T(890000000009650, --[[ModItemVoiceResponse Jazz_Lucky BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Lucky]] "Прячусь."),
+						T(890000000009651, --[[ModItemVoiceResponse Jazz_Lucky BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Lucky]] "Прячусь.")
+					}),
+					LevelUp = TConcat({
+						T(890000000009288, --[[ModItemVoiceResponse Jazz_Lucky LevelUp VoiceResponse LevelUp voice:Jazz_Lucky]] "Учусь.")
+					}),
+					LootFound = TConcat({
+						T(890000000009652, --[[ModItemVoiceResponse Jazz_Lucky LootFound VoiceResponse LootFound voice:Jazz_Lucky]] "Интересно…"),
+						T(890000000009653, --[[ModItemVoiceResponse Jazz_Lucky LootFound VoiceResponse LootFound voice:Jazz_Lucky]] "Интересно…")
+					}),
+					DoorLocked = TConcat({
+						T(890000000009654, --[[ModItemVoiceResponse Jazz_Lucky DoorLocked VoiceResponse DoorLocked voice:Jazz_Lucky]] "Закрыто.")
+					}),
+					Exhausted = TConcat({
+						T(890000000009655, --[[ModItemVoiceResponse Jazz_Lucky Exhausted VoiceResponse Exhausted voice:Jazz_Lucky]] "Устал…")
+					}),
+					HeavyBreathing = TConcat({
+						T(890000000009656, --[[ModItemVoiceResponse Jazz_Lucky HeavyBreathing VoiceResponse HeavyBreathing voice:Jazz_Lucky]] "(пыхтит)")
+					}),
+					HealReceived = TConcat({
+						T(890000000009657, --[[ModItemVoiceResponse Jazz_Lucky HealReceived VoiceResponse HealReceived voice:Jazz_Lucky]] "Спасибо.")
+					}),
+					NotNow = TConcat({
+						T(890000000009658, --[[ModItemVoiceResponse Jazz_Lucky NotNow VoiceResponse NotNow voice:Jazz_Lucky]] "Не сейчас.")
+					}),
+					ActivityFinished = TConcat({
+						T(890000000009659, --[[ModItemVoiceResponse Jazz_Lucky ActivityFinished VoiceResponse ActivityFinished voice:Jazz_Lucky]] "Готово.")
+					}),
+					TakeCover = TConcat({
+						T(890000000009660, --[[ModItemVoiceResponse Jazz_Lucky TakeCover VoiceResponse TakeCover voice:Jazz_Lucky]] "В укрытие!")
+					}),
+					ThrowGrenade = TConcat({
+						T(890000000009661, --[[ModItemVoiceResponse Jazz_Lucky ThrowGrenade VoiceResponse ThrowGrenade voice:Jazz_Lucky]] "Граната!")
+					}),
+					Autofire = TConcat({
+						T(890000000009662, --[[ModItemVoiceResponse Jazz_Lucky Autofire VoiceResponse Autofire voice:Jazz_Lucky]] "Очередь!")
+					}),
+					Climbing = TConcat({
+						T(890000000009663, --[[ModItemVoiceResponse Jazz_Lucky Climbing VoiceResponse Climbing voice:Jazz_Lucky]] "(лезет)")
+					}),
+					Jumping = TConcat({
+						T(890000000009664, --[[ModItemVoiceResponse Jazz_Lucky Jumping VoiceResponse Jumping voice:Jazz_Lucky]] "(прыжок)")
+					}),
+					Startled = TConcat({
+						T(890000000009665, --[[ModItemVoiceResponse Jazz_Lucky Startled VoiceResponse Startled voice:Jazz_Lucky]] "Что?!")
+					}),
+					ThreatSelection = TConcat({
+						T(890000000009666, --[[ModItemVoiceResponse Jazz_Lucky ThreatSelection VoiceResponse ThreatSelection voice:Jazz_Lucky]] "Опасно!")
+					}),
+					Overwatch = TConcat({
+						T(890000000009667, --[[ModItemVoiceResponse Jazz_Lucky Overwatch VoiceResponse Overwatch voice:Jazz_Lucky]] "Держу сектор.")
+					}),
+					OverwatchSelection = TConcat({
+						T(890000000009668, --[[ModItemVoiceResponse Jazz_Lucky OverwatchSelection VoiceResponse OverwatchSelection voice:Jazz_Lucky]] "Наготове.")
+					}),
+					GasAreaSelection = TConcat({
+						T(890000000009669, --[[ModItemVoiceResponse Jazz_Lucky GasAreaSelection VoiceResponse GasAreaSelection voice:Jazz_Lucky]] "(кашляет)")
+					}),
+					MissedByKillShot = TConcat({
+						T(890000000009670, --[[ModItemVoiceResponse Jazz_Lucky MissedByKillShot VoiceResponse MissedByKillShot voice:Jazz_Lucky]] "Почти…")
+					}),
+					AnimalFound = TConcat({
+						T(890000000009671, --[[ModItemVoiceResponse Jazz_Lucky AnimalFound VoiceResponse AnimalFound voice:Jazz_Lucky]] "Зверь!")
+					}),
+					CombatTaskGiven = TConcat({
+						T(890000000009672, --[[ModItemVoiceResponse Jazz_Lucky CombatTaskGiven VoiceResponse CombatTaskGiven voice:Jazz_Lucky]] "Есть идея.")
+					}),
+					CombatTaskCompleted = TConcat({
+						T(890000000009673, --[[ModItemVoiceResponse Jazz_Lucky CombatTaskCompleted VoiceResponse CombatTaskCompleted voice:Jazz_Lucky]] "Сделано.")
+					}),
+					CombatTaskFailed = TConcat({
+						T(890000000009674, --[[ModItemVoiceResponse Jazz_Lucky CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Lucky]] "Не вышло.")
+					}),
+					MockDislike1 = TConcat({
+						T(890000000009289, --[[ModItemVoiceResponse Jazz_Lucky MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Lucky]] "Только не это.")
+					}),
+					PraisesBuddy1 = TConcat({
+						T(890000000009290, --[[ModItemVoiceResponse Jazz_Lucky PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Lucky]] "Отличная работа.")
+					}),
 					group = "MercenariesOld",
 					id = "Jazz_Lucky",
 				}),
@@ -129155,7 +130724,185 @@ PlaceObj('ModItemAIArchetype', {
 				'FallbackMissingVR', "Ice",
 				'DaysUntilOnline', 0,
 				}),
-				PlaceObj('ModItemVoiceResponse', {
+												PlaceObj('ModItemVoiceResponse', {
+					Selection = TConcat({
+						T(890000000009291, --[[ModItemVoiceResponse Jazz_Laura Selection VoiceResponse Selection voice:Jazz_Laura]] "На связи."),
+						T(890000000009551, --[[ModItemVoiceResponse Jazz_Laura Selection VoiceResponse Selection voice:Jazz_Laura]] "На связи."),
+						T(890000000009552, --[[ModItemVoiceResponse Jazz_Laura Selection VoiceResponse Selection voice:Jazz_Laura]] "На связи.")
+					}),
+					SelectionStealth = TConcat({
+						T(890000000009553, --[[ModItemVoiceResponse Jazz_Laura SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Laura]] "Тихо."),
+						T(890000000009554, --[[ModItemVoiceResponse Jazz_Laura SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Laura]] "Тихо."),
+						T(890000000009555, --[[ModItemVoiceResponse Jazz_Laura SelectionStealth VoiceResponse SelectionStealth voice:Jazz_Laura]] "Тихо.")
+					}),
+					Order = TConcat({
+						T(890000000009556, --[[ModItemVoiceResponse Jazz_Laura Order VoiceResponse Order voice:Jazz_Laura]] "Есть."),
+						T(890000000009557, --[[ModItemVoiceResponse Jazz_Laura Order VoiceResponse Order voice:Jazz_Laura]] "Есть."),
+						T(890000000009558, --[[ModItemVoiceResponse Jazz_Laura Order VoiceResponse Order voice:Jazz_Laura]] "Есть.")
+					}),
+					CombatMovement = TConcat({
+						T(890000000009559, --[[ModItemVoiceResponse Jazz_Laura CombatMovement VoiceResponse CombatMovement voice:Jazz_Laura]] "Двигаюсь."),
+						T(890000000009560, --[[ModItemVoiceResponse Jazz_Laura CombatMovement VoiceResponse CombatMovement voice:Jazz_Laura]] "Двигаюсь."),
+						T(890000000009561, --[[ModItemVoiceResponse Jazz_Laura CombatMovement VoiceResponse CombatMovement voice:Jazz_Laura]] "Двигаюсь.")
+					}),
+					CombatMovementStealth = TConcat({
+						T(890000000009562, --[[ModItemVoiceResponse Jazz_Laura CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Laura]] "Крадусь."),
+						T(890000000009563, --[[ModItemVoiceResponse Jazz_Laura CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Laura]] "Крадусь."),
+						T(890000000009564, --[[ModItemVoiceResponse Jazz_Laura CombatMovementStealth VoiceResponse CombatMovementStealth voice:Jazz_Laura]] "Крадусь.")
+					}),
+					GroupOrder = TConcat({
+						T(890000000009565, --[[ModItemVoiceResponse Jazz_Laura GroupOrder VoiceResponse GroupOrder voice:Jazz_Laura]] "С вами."),
+						T(890000000009566, --[[ModItemVoiceResponse Jazz_Laura GroupOrder VoiceResponse GroupOrder voice:Jazz_Laura]] "С вами."),
+						T(890000000009567, --[[ModItemVoiceResponse Jazz_Laura GroupOrder VoiceResponse GroupOrder voice:Jazz_Laura]] "С вами.")
+					}),
+					AimAttack = TConcat({
+						T(890000000009292, --[[ModItemVoiceResponse Jazz_Laura AimAttack VoiceResponse AimAttack voice:Jazz_Laura]] "Есть цель!"),
+						T(890000000009293, --[[ModItemVoiceResponse Jazz_Laura AimAttack VoiceResponse AimAttack voice:Jazz_Laura]] "В бой!"),
+						T(890000000009568, --[[ModItemVoiceResponse Jazz_Laura AimAttack VoiceResponse AimAttack voice:Jazz_Laura]] "Есть цель!")
+					}),
+					AimAttackStealth = TConcat({
+						T(890000000009569, --[[ModItemVoiceResponse Jazz_Laura AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Laura]] "Тихо сниму."),
+						T(890000000009570, --[[ModItemVoiceResponse Jazz_Laura AimAttackStealth VoiceResponse AimAttackStealth voice:Jazz_Laura]] "Тихо сниму.")
+					}),
+					AimAttack_Low = TConcat({
+						T(890000000009571, --[[ModItemVoiceResponse Jazz_Laura AimAttack_Low VoiceResponse AimAttack_Low voice:Jazz_Laura]] "Сложный выстрел.")
+					}),
+					AimAttack_LowStealth = TConcat({
+						T(890000000009572, --[[ModItemVoiceResponse Jazz_Laura AimAttack_LowStealth VoiceResponse AimAttack_LowStealth voice:Jazz_Laura]] "Плохой угол.")
+					}),
+					OpponentFound = TConcat({
+						T(890000000009573, --[[ModItemVoiceResponse Jazz_Laura OpponentFound VoiceResponse OpponentFound voice:Jazz_Laura]] "Вижу их!"),
+						T(890000000009574, --[[ModItemVoiceResponse Jazz_Laura OpponentFound VoiceResponse OpponentFound voice:Jazz_Laura]] "Вижу их!")
+					}),
+					ManyEnemiesSelection = TConcat({
+						T(890000000009575, --[[ModItemVoiceResponse Jazz_Laura ManyEnemiesSelection VoiceResponse ManyEnemiesSelection voice:Jazz_Laura]] "Их много!")
+					}),
+					OpponentKilled = TConcat({
+						T(890000000009294, --[[ModItemVoiceResponse Jazz_Laura OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Laura]] "Готов."),
+						T(890000000009576, --[[ModItemVoiceResponse Jazz_Laura OpponentKilled VoiceResponse OpponentKilled voice:Jazz_Laura]] "Готов.")
+					}),
+					NoAmmo = TConcat({
+						T(890000000009577, --[[ModItemVoiceResponse Jazz_Laura NoAmmo VoiceResponse NoAmmo voice:Jazz_Laura]] "Патроны кончились.")
+					}),
+					AmmoLow = TConcat({
+						T(890000000009297, --[[ModItemVoiceResponse Jazz_Laura AmmoLow VoiceResponse AmmoLow voice:Jazz_Laura]] "Патроны!")
+					}),
+					WeaponJammed = TConcat({
+						T(890000000009578, --[[ModItemVoiceResponse Jazz_Laura WeaponJammed VoiceResponse WeaponJammed voice:Jazz_Laura]] "Клин!")
+					}),
+					Pain = TConcat({
+						T(890000000009579, --[[ModItemVoiceResponse Jazz_Laura Pain VoiceResponse Pain voice:Jazz_Laura]] "Аргх!"),
+						T(890000000009580, --[[ModItemVoiceResponse Jazz_Laura Pain VoiceResponse Pain voice:Jazz_Laura]] "Аргх!")
+					}),
+					Wounded = TConcat({
+						T(890000000009581, --[[ModItemVoiceResponse Jazz_Laura Wounded VoiceResponse Wounded voice:Jazz_Laura]] "Ранен!")
+					}),
+					Downed = TConcat({
+						T(890000000009296, --[[ModItemVoiceResponse Jazz_Laura Downed VoiceResponse Downed voice:Jazz_Laura]] "Ранен!")
+					}),
+					HeavilyWoundedSelection = TConcat({
+						T(890000000009582, --[[ModItemVoiceResponse Jazz_Laura HeavilyWoundedSelection VoiceResponse HeavilyWoundedSelection voice:Jazz_Laura]] "Плохо…")
+					}),
+					CombatStartPlayer = TConcat({
+						T(890000000009583, --[[ModItemVoiceResponse Jazz_Laura CombatStartPlayer VoiceResponse CombatStartPlayer voice:Jazz_Laura]] "К бою!")
+					}),
+					CombatStartDetected = TConcat({
+						T(890000000009298, --[[ModItemVoiceResponse Jazz_Laura CombatStartDetected VoiceResponse CombatStartDetected voice:Jazz_Laura]] "Контакт!")
+					}),
+					CombatEndNoEnemies = TConcat({
+						T(890000000009584, --[[ModItemVoiceResponse Jazz_Laura CombatEndNoEnemies VoiceResponse CombatEndNoEnemies voice:Jazz_Laura]] "Чисто.")
+					}),
+					CombatEndEnemiesRemain = TConcat({
+						T(890000000009585, --[[ModItemVoiceResponse Jazz_Laura CombatEndEnemiesRemain VoiceResponse CombatEndEnemiesRemain voice:Jazz_Laura]] "Ещё остались.")
+					}),
+					DeathGeneral = TConcat({
+						T(890000000009295, --[[ModItemVoiceResponse Jazz_Laura DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Laura]] "Конец...")
+					}),
+					Idle = TConcat({
+						T(890000000009299, --[[ModItemVoiceResponse Jazz_Laura Idle VoiceResponse Idle voice:Jazz_Laura]] "Жду."),
+						T(890000000009586, --[[ModItemVoiceResponse Jazz_Laura Idle VoiceResponse Idle voice:Jazz_Laura]] "Жду."),
+						T(890000000009587, --[[ModItemVoiceResponse Jazz_Laura Idle VoiceResponse Idle voice:Jazz_Laura]] "Жду.")
+					}),
+					BecomeHidden = TConcat({
+						T(890000000009588, --[[ModItemVoiceResponse Jazz_Laura BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Laura]] "Прячусь."),
+						T(890000000009589, --[[ModItemVoiceResponse Jazz_Laura BecomeHidden VoiceResponse BecomeHidden voice:Jazz_Laura]] "Прячусь.")
+					}),
+					LevelUp = TConcat({
+						T(890000000009300, --[[ModItemVoiceResponse Jazz_Laura LevelUp VoiceResponse LevelUp voice:Jazz_Laura]] "Учусь.")
+					}),
+					LootFound = TConcat({
+						T(890000000009590, --[[ModItemVoiceResponse Jazz_Laura LootFound VoiceResponse LootFound voice:Jazz_Laura]] "Интересно…"),
+						T(890000000009591, --[[ModItemVoiceResponse Jazz_Laura LootFound VoiceResponse LootFound voice:Jazz_Laura]] "Интересно…")
+					}),
+					DoorLocked = TConcat({
+						T(890000000009592, --[[ModItemVoiceResponse Jazz_Laura DoorLocked VoiceResponse DoorLocked voice:Jazz_Laura]] "Закрыто.")
+					}),
+					Exhausted = TConcat({
+						T(890000000009593, --[[ModItemVoiceResponse Jazz_Laura Exhausted VoiceResponse Exhausted voice:Jazz_Laura]] "Устал…")
+					}),
+					HeavyBreathing = TConcat({
+						T(890000000009594, --[[ModItemVoiceResponse Jazz_Laura HeavyBreathing VoiceResponse HeavyBreathing voice:Jazz_Laura]] "(пыхтит)")
+					}),
+					HealReceived = TConcat({
+						T(890000000009595, --[[ModItemVoiceResponse Jazz_Laura HealReceived VoiceResponse HealReceived voice:Jazz_Laura]] "Спасибо.")
+					}),
+					NotNow = TConcat({
+						T(890000000009596, --[[ModItemVoiceResponse Jazz_Laura NotNow VoiceResponse NotNow voice:Jazz_Laura]] "Не сейчас.")
+					}),
+					ActivityFinished = TConcat({
+						T(890000000009597, --[[ModItemVoiceResponse Jazz_Laura ActivityFinished VoiceResponse ActivityFinished voice:Jazz_Laura]] "Готово.")
+					}),
+					TakeCover = TConcat({
+						T(890000000009598, --[[ModItemVoiceResponse Jazz_Laura TakeCover VoiceResponse TakeCover voice:Jazz_Laura]] "В укрытие!")
+					}),
+					ThrowGrenade = TConcat({
+						T(890000000009599, --[[ModItemVoiceResponse Jazz_Laura ThrowGrenade VoiceResponse ThrowGrenade voice:Jazz_Laura]] "Граната!")
+					}),
+					Autofire = TConcat({
+						T(890000000009600, --[[ModItemVoiceResponse Jazz_Laura Autofire VoiceResponse Autofire voice:Jazz_Laura]] "Очередь!")
+					}),
+					Climbing = TConcat({
+						T(890000000009601, --[[ModItemVoiceResponse Jazz_Laura Climbing VoiceResponse Climbing voice:Jazz_Laura]] "(лезет)")
+					}),
+					Jumping = TConcat({
+						T(890000000009602, --[[ModItemVoiceResponse Jazz_Laura Jumping VoiceResponse Jumping voice:Jazz_Laura]] "(прыжок)")
+					}),
+					Startled = TConcat({
+						T(890000000009603, --[[ModItemVoiceResponse Jazz_Laura Startled VoiceResponse Startled voice:Jazz_Laura]] "Что?!")
+					}),
+					ThreatSelection = TConcat({
+						T(890000000009604, --[[ModItemVoiceResponse Jazz_Laura ThreatSelection VoiceResponse ThreatSelection voice:Jazz_Laura]] "Опасно!")
+					}),
+					Overwatch = TConcat({
+						T(890000000009605, --[[ModItemVoiceResponse Jazz_Laura Overwatch VoiceResponse Overwatch voice:Jazz_Laura]] "Держу сектор.")
+					}),
+					OverwatchSelection = TConcat({
+						T(890000000009606, --[[ModItemVoiceResponse Jazz_Laura OverwatchSelection VoiceResponse OverwatchSelection voice:Jazz_Laura]] "Наготове.")
+					}),
+					GasAreaSelection = TConcat({
+						T(890000000009607, --[[ModItemVoiceResponse Jazz_Laura GasAreaSelection VoiceResponse GasAreaSelection voice:Jazz_Laura]] "(кашляет)")
+					}),
+					MissedByKillShot = TConcat({
+						T(890000000009608, --[[ModItemVoiceResponse Jazz_Laura MissedByKillShot VoiceResponse MissedByKillShot voice:Jazz_Laura]] "Почти…")
+					}),
+					AnimalFound = TConcat({
+						T(890000000009609, --[[ModItemVoiceResponse Jazz_Laura AnimalFound VoiceResponse AnimalFound voice:Jazz_Laura]] "Зверь!")
+					}),
+					CombatTaskGiven = TConcat({
+						T(890000000009610, --[[ModItemVoiceResponse Jazz_Laura CombatTaskGiven VoiceResponse CombatTaskGiven voice:Jazz_Laura]] "Есть идея.")
+					}),
+					CombatTaskCompleted = TConcat({
+						T(890000000009611, --[[ModItemVoiceResponse Jazz_Laura CombatTaskCompleted VoiceResponse CombatTaskCompleted voice:Jazz_Laura]] "Сделано.")
+					}),
+					CombatTaskFailed = TConcat({
+						T(890000000009612, --[[ModItemVoiceResponse Jazz_Laura CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Laura]] "Не вышло.")
+					}),
+					MockDislike1 = TConcat({
+						T(890000000009301, --[[ModItemVoiceResponse Jazz_Laura MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Laura]] "Только не это.")
+					}),
+					PraisesBuddy1 = TConcat({
+						T(890000000009302, --[[ModItemVoiceResponse Jazz_Laura PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Laura]] "Отличная работа.")
+					}),
 					group = "MercenariesOld",
 					id = "Jazz_Laura",
 				}),
@@ -132135,6 +133882,8 @@ PlaceObj('ModItemLootDef', {
 		stack_max = 1,
 		stack_min = 1,
 	}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
 	PlaceObj('LootEntryLootDef', {
 		loot_def = "Merc_MildredPatterson_SkillMag",
 	}),
@@ -132149,6 +133898,8 @@ PlaceObj('ModItemLootDef', {
 		stack_max = 1,
 		stack_min = 1,
 	}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
 	PlaceObj('LootEntryLootDef', {
 		loot_def = "Merc_MildredPatterson_SkillMag",
 	}),
@@ -132163,6 +133914,9 @@ PlaceObj('ModItemLootDef', {
 		stack_max = 1,
 		stack_min = 1,
 	}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_SurgicalKit", drop_chance = 40 }),
 	PlaceObj('LootEntryLootDef', {
 		loot_def = "Merc_MildredPatterson_SkillMag",
 	}),
