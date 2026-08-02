@@ -18683,30 +18683,11 @@ return {
 					group = "IMP",
 					id = "IMP_equipment_basic",
 					loot = "all",
-					PlaceObj('LootEntryLootDef', {
-						loot_def = "Army_Pistol",
-					}),
+					-- JAZZ-IMP-001: campaign-init placeholder only; hire rebuilds via JazzApplyImpStartingGear.
 					PlaceObj('LootEntryInventoryItem', {
-						item = "Knife",
-						stack_max = 1,
+						item = "JAZZ_Bandage",
 						stack_min = 1,
-					}),
-					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
 						stack_max = 1,
-						stack_min = 1,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
-					PlaceObj('LootEntryInventoryItem', {
-						item = "Meds",
-						stack_max = 20,
-						stack_min = 10,
-					}),
-					PlaceObj('LootEntryInventoryItem', {
-						item = "JazzArmor_ZylonLight",
-						stack_max = 1,
-						stack_min = 1,
 					}),
 				}),
 				}),
