@@ -1,3 +1,0 @@
--- Voice audio for Merc_AnnieDubois is served by root ModItemTranslatedVoices
--- (translatedVoicesFolder = "Mod/Dv3mFVN/voices"), same pattern as Jazz_Colby.
--- Do NOT register g_VoiceVariations here — that bypasses the mount and breaks playback.
