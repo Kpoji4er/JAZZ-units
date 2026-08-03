@@ -2,7 +2,7 @@ return PlaceObj('ModDef', {
 	'title', "JAZZ Units",
 	'description', "Мод для работы основного JAZZ модаВ",
 	'image', "Mod/Dv3mFVN/Images/JAZZLOGO.jpg",
-	'last_changes', "- UNITS-005 AME: no Legion war-paint heads; IMP pool 01..03 (VR male/female_01)\n- UNITS-005 AME: 60 UnitData/portraits/voices/appearances (1 blue accent) - JA12 hire chat: remesh silent MERK/RPC + UB proxy; Quinten/Highball STT texts; WIP chat pour\n- IMP-001: IMP_equipment_basic campaign placeholder (hire rebuilds dynamic gear) [new game recommended]\n- Remove six Steam Workshop AIM mercs (UnitData/loot/voices/portraits) [new game]\n- Biggens: Mechanical 50; drop duplicate Time detonator on Biggens50/Hobbit50\n- MED-001 equipment kits: Bandage/Morphine (±IFAK) on combat + merc loadouts; MedsDrop containers keep bandages\n- Remesh JA12 merc voices from ja2mercs (incl. Grom); MED-001 bandage/morphine loot entries\n- Fix GenW MAS36 loot class (Mas36→MAS36); ship Carol toolbox + Jerry 40mmTB InventoryItem companions\n- COMPAT-005: LegionJAZZSquadT1_Early — true T1-only early squad for NoMaps day-1 weight class\n- Flanker OptLocSearchRadius 80→55 (Legion_Flanker / Rebels_Flanker) for AI Precalc cost\n- Workshop AIM mercs + Benny/Simon: UnitData/VR/voices/portraits; JA12 voice expand; Spider v1 portraits; drop DesignerExplosives from JA12 mercs\n- JA2 merc voice remaps + VR stubs shipped; Spouke done_manual untouched\n- Colby voices: JA2 Trevor archive only; fill gaps by duplicating related lines (drop neural)\n- Fix TireArmor Scrap/Kevlar plate packs (was Steel3) for early Middle Legion armor\n- Legion frontliner GL chance + M72 LAW pool; Veteran/Mercenary HeavyWeapon equip; Rocketeer LAW mix\n- Paid hire for Madman/Grom/Hitman (fix StartingSalary=0 div0 on AIM)\n- Ship style-ja3-match s1 merc portraits (48) + _all_mercs_better finals\n- Highball STYLE LEVEL QA bar; fix non-square resize squish\n- Packaging: expand .gitignore + metadata ignore_files for Steam upload",
+	'last_changes', "- UNITS-002 JA12: 41 AppearancePreset mixes (faction/NPC body + heads); Benny→Benny not Lynx [discord]\n- UNITS-005 AME: no Legion war-paint heads; IMP pool 01..03 (VR male/female_01)\n- UNITS-005 AME: 60 UnitData/portraits/voices/appearances (1 blue accent) - JA12 hire chat: remesh silent MERK/RPC + UB proxy; Quinten/Highball STT texts; WIP chat pour\n- IMP-001: IMP_equipment_basic campaign placeholder (hire rebuilds dynamic gear) [new game recommended]\n- Remove six Steam Workshop AIM mercs (UnitData/loot/voices/portraits) [new game]\n- Biggens: Mechanical 50; drop duplicate Time detonator on Biggens50/Hobbit50\n- MED-001 equipment kits: Bandage/Morphine (±IFAK) on combat + merc loadouts; MedsDrop containers keep bandages\n- Remesh JA12 merc voices from ja2mercs (incl. Grom); MED-001 bandage/morphine loot entries\n- Fix GenW MAS36 loot class (Mas36→MAS36); ship Carol toolbox + Jerry 40mmTB InventoryItem companions\n- COMPAT-005: LegionJAZZSquadT1_Early — true T1-only early squad for NoMaps day-1 weight class\n- Flanker OptLocSearchRadius 80→55 (Legion_Flanker / Rebels_Flanker) for AI Precalc cost\n- Workshop AIM mercs + Benny/Simon: UnitData/VR/voices/portraits; JA12 voice expand; Spider v1 portraits; drop DesignerExplosives from JA12 mercs\n- JA2 merc voice remaps + VR stubs shipped; Spouke done_manual untouched\n- Colby voices: JA2 Trevor archive only; fill gaps by duplicating related lines (drop neural)\n- Fix TireArmor Scrap/Kevlar plate packs (was Steel3) for early Middle Legion armor\n- Legion frontliner GL chance + M72 LAW pool; Veteran/Mercenary HeavyWeapon equip; Rocketeer LAW mix\n- Paid hire for Madman/Grom/Hitman (fix StartingSalary=0 div0 on AIM)\n- Ship style-ja3-match s1 merc portraits (48) + _all_mercs_better finals\n- Highball STYLE LEVEL QA bar; fix non-square resize squish\n- Packaging: expand .gitignore + metadata ignore_files for Steam upload",
 	'ignore_files', {
 		-- VCS / IDE / agent (tracked in git, not for Steam pack)
 		"*.git/*",
@@ -44,7 +44,7 @@ return PlaceObj('ModDef', {
 	'id', "Dv3mFVN",
 	'author', "Doctor_Leevsy",
 	'version_minor', 19,
-	'version', 2267,
+	'version', 2268,
 	'lua_revision', 233360,
 	'saved_with_revision', 366685,
 	'code', {
@@ -11326,6 +11326,213 @@ return PlaceObj('ModDef', {
 			'Id', "Barry_Savana",
 			'ClassDisplayName', "Appearance preset",
 		}),
+										-- JAZZ-UNITS-002-JA12-APP-META-BEGIN
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Allik",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Benny",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Biggens",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Blade",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Bull",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Carlos",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Colby",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Conrad",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Cord",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Cougar",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Devin",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Dimitri",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Dynamo",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Eskimo",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Flo",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Gamos",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Gaston",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Grace",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Grom",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Henning",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Highball",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Hobbit",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Ira",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Kulba",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Laura",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Lucky",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Madman",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Manuel",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Meat",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Miguel",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Monk",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Nervous",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Quinten",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Ricochet",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Rothman",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Shank",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Static",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Steiger",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Vicious",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Vilde",
+			'ClassDisplayName', "Appearance",
+		}),
+		PlaceObj('ModResourcePreset', {
+			'Class', "AppearancePreset",
+			'Id', "Vince",
+			'ClassDisplayName', "Appearance",
+		}),
+				-- JAZZ-UNITS-002-JA12-APP-META-END
 		-- JAZZ-UNITS-005-AME-APP-META-BEGIN
 		PlaceObj('ModResourcePreset', {
 			'Class', "AppearancePreset",
