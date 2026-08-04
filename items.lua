@@ -3406,7 +3406,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"LaserDot",
+							"JAZZ_LaserDot",
 						},
 						weapon = "Bereta92",
 					}),
@@ -3511,7 +3511,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"LaserDot",
+							"JAZZ_LaserDot",
 						},
 						weapon = "Glock17",
 					}),
@@ -3547,7 +3547,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"LaserDot",
+							"JAZZ_LaserDot",
 						},
 						weapon = "P220",
 					}),
@@ -3600,7 +3600,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"BarrelShort_Pistol",
+							"JAZZ_BarrelShort_Pistol",
 						},
 						weapon = "Colt38Special",
 					}),
@@ -3631,7 +3631,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"BarrelShort",
+							"JAZZ_BarrelShort",
 						},
 						weapon = "ColtPeacemaker",
 					}),
@@ -3722,7 +3722,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"BarrelShort",
+							"JAZZ_BarrelShort",
 						},
 						weapon = "ColtAnaconda",
 					}),
@@ -3753,7 +3753,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"ScopeCOG",
+							"JAZZ_CombatScope_ACOG",
 						},
 						weapon = "ColtAnaconda",
 					}),
@@ -3818,8 +3818,8 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"LaserDot",
-							"Compensator",
+							"JAZZ_LaserDot",
+							"JAZZ_Compensator",
 						},
 						weapon = "MicroUZI",
 					}),
@@ -3880,7 +3880,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"LaserDot",
+							"JAZZ_LaserDot",
 						},
 						weapon = "MP5K",
 					}),
@@ -3960,7 +3960,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"LaserDot",
+							"JAZZ_LaserDot",
 						},
 						weapon = "Glock18",
 					}),
@@ -4211,7 +4211,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"PistolSuppressor",
+							"JAZZ_PistolSuppressor",
 						},
 						weapon = "Agram2000",
 					}),
@@ -4269,7 +4269,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"PistolSuppressor",
+							"JAZZ_PistolSuppressor",
 						},
 						weapon = "UZI",
 					}),
@@ -4285,7 +4285,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"StockNormal",
+							"JAZZ_StockNormal",
 						},
 						weapon = "UZI",
 					}),
@@ -4301,7 +4301,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"StockNormal",
+							"JAZZ_StockNormal",
 							"JAZZ_Reflex_Open",
 							"MagDrum_30-50",
 						},
@@ -4559,7 +4559,7 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"StockNormal",
+							"JAZZ_StockNormal",
 						},
 						weapon = "M2Carbine",
 					}),
@@ -4590,9 +4590,9 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"StockNormal",
-							"Autofire",
-							"MagNormal",
+							"JAZZ_StockNormal",
+							"JAZZ_Autofire",
+							"JAZZ_MagNormal",
 						},
 						weapon = "M2Carbine",
 					}),
@@ -4608,7 +4608,7 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"StockLightUnFolded",
+							"JAZZ_StockLightUnFolded",
 						},
 						weapon = "M2Carbine",
 					}),
@@ -4624,9 +4624,9 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"StockNormal",
-							"Autofire",
-							"MagNormal",
+							"JAZZ_StockNormal",
+							"JAZZ_Autofire",
+							"JAZZ_MagNormal",
 						},
 						weapon = "M2Carbine",
 					}),
@@ -4730,7 +4730,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"MagNormal",
+							"JAZZ_MagNormal",
 						},
 						weapon = "CAR15",
 					}),
@@ -4746,7 +4746,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"Suppressor",
+							"JAZZ_Suppressor",
 						},
 						weapon = "CAR15",
 					}),
@@ -4763,7 +4763,7 @@ return {
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
 							"JAZZ_Reflex_Aimpoint5000",
-							"MagNormal",
+							"JAZZ_MagNormal",
 						},
 						weapon = "CAR15",
 					}),
@@ -4812,7 +4812,7 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"MagLarge_30_45",
+							"JAZZ_MagLarge_30_45",
 						},
 						weapon = "AKSU",
 					}),
@@ -4870,7 +4870,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"Suppressor",
+							"JAZZ_Suppressor",
 						},
 						weapon = "M4A1",
 					}),
@@ -5316,8 +5316,8 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"StockLightUnFolded",
-							"Suppressor",
+							"JAZZ_StockLightUnFolded",
+							"JAZZ_Suppressor",
 						},
 						weapon = "AKM",
 					}),
@@ -5335,7 +5335,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"StockLightUnFolded",
+							"JAZZ_StockLightUnFolded",
 						},
 						weapon = "AKM",
 					}),
@@ -5351,7 +5351,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"Compensator",
+							"JAZZ_Compensator",
 						},
 						weapon = "AKM",
 					}),
@@ -5367,7 +5367,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"MagLarge_30_40",
+							"JAZZ_MagLarge_30_40",
 						},
 						weapon = "AKM",
 					}),
@@ -5383,7 +5383,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"Compensator",
+							"JAZZ_Compensator",
 							"JAZZ_Reflex_Cobra",
 						},
 						weapon = "AKM",
@@ -5400,7 +5400,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"Compensator",
+							"JAZZ_Compensator",
 							"JAZZ_Scope_PSO",
 						},
 						weapon = "AKM",
@@ -5417,8 +5417,8 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"MagLarge_30_40",
-							"StockLightUnFolded",
+							"JAZZ_MagLarge_30_40",
+							"JAZZ_StockLightUnFolded",
 							"JAZZ_Reflex_Cobra",
 						},
 						weapon = "AKM",
@@ -5510,7 +5510,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"MagLarge_30_45",
+							"JAZZ_MagLarge_30_45",
 						},
 						weapon = "AK74",
 					}),
@@ -5651,7 +5651,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"BarrelLong",
+							"JAZZ_BarrelLong",
 						},
 						weapon = "G36",
 					}),
@@ -5682,7 +5682,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"BarrelLong",
+							"JAZZ_BarrelLong",
 						},
 						weapon = "G36",
 					}),
@@ -5713,7 +5713,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"BarrelLong",
+							"JAZZ_BarrelLong",
 						},
 						weapon = "G36",
 					}),
@@ -5888,7 +5888,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"StockLight",
+							"JAZZ_StockLight",
 						},
 						weapon = "FNFAL",
 					}),
@@ -5925,7 +5925,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"Compensator",
+							"JAZZ_Compensator",
 						},
 						weapon = "FNFAL",
 					}),
@@ -5941,7 +5941,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"VerticalGrip",
+							"JAZZ_VerticalGrip",
 						},
 						weapon = "FNFAL",
 					}),
@@ -5957,7 +5957,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"VerticalGrip",
+							"JAZZ_VerticalGrip",
 							"JAZZ_CombatScope_2x",
 						},
 						weapon = "FNFAL",
@@ -5974,7 +5974,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"VerticalGrip",
+							"JAZZ_VerticalGrip",
 							"JAZZ_CombatScope_2x",
 						},
 						weapon = "FNFAL",
@@ -6004,7 +6004,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"StockLight",
+							"JAZZ_StockLight",
 						},
 						weapon = "Galil",
 					}),
@@ -6020,7 +6020,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"Compensator",
+							"JAZZ_Compensator",
 						},
 						weapon = "Galil",
 					}),
@@ -6036,7 +6036,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"Bipod_Galil",
+							"JAZZ_Bipod_Galil",
 							"JAZZ_CombatScope_2x",
 						},
 						weapon = "Galil",
@@ -6053,7 +6053,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"Bipod_Galil",
+							"JAZZ_Bipod_Galil",
 							"JAZZ_CombatScope_2x",
 						},
 						weapon = "Galil",
@@ -6386,7 +6386,7 @@ return {
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
 							"JAZZ_Scope_Scout",
-							"Suppressor",
+							"JAZZ_Suppressor",
 						},
 						weapon = "M21",
 					}),
@@ -6739,7 +6739,7 @@ return {
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
 							"JAZZ_Scope_Scout",
-							"Suppressor",
+							"JAZZ_Suppressor",
 						},
 						weapon = "M24Sniper",
 					}),
@@ -6885,7 +6885,7 @@ return {
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
 							"MagBelt_100-200",
-							"Bipod",
+							"JAZZ_Bipod",
 						},
 						weapon = "FNMinimi",
 					}),
@@ -7110,7 +7110,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"Auto5_Long_NMag",
+							"JAZZ_Auto5_Long_NMag",
 						},
 						weapon = "Auto5",
 					}),
@@ -9050,7 +9050,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"PistolSuppressor",
+							"JAZZ_PistolSuppressor",
 						},
 						weapon = "MicroUZI",
 					}),
@@ -9089,7 +9089,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"PistolSuppressor",
+							"JAZZ_PistolSuppressor",
 						},
 						weapon = "Bereta92",
 					}),
@@ -10819,7 +10819,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"PistolSuppressor",
+							"JAZZ_PistolSuppressor",
 						},
 						weapon = "BerettaM12",
 					}),
@@ -11765,7 +11765,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"PistolSuppressor",
+							"JAZZ_PistolSuppressor",
 						},
 						weapon = "Glock18",
 					}),
@@ -11869,7 +11869,7 @@ return {
 						condition = "Difficulty VeryHard",
 						negate = true,
 						upgrades = {
-							"BarrelShort",
+							"JAZZ_BarrelShort",
 						},
 						weapon = "ColtAnaconda",
 					}),
@@ -11931,13 +11931,13 @@ return {
 						condition = "Difficulty VeryHard",
 						negate = true,
 						upgrades = {
-							"Barrel50BMG_DesertEagle",
+							"JAZZ_Barrel50BMG_DesertEagle",
 						},
 						weapon = "DesertEagle",
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"Barrel50BMG_DesertEagle",
+							"JAZZ_Barrel50BMG_DesertEagle",
 						},
 						weapon = "DesertEagle",
 					}),
@@ -12064,7 +12064,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"LaserDot",
+							"JAZZ_LaserDot",
 						},
 						weapon = "USP45",
 					}),
@@ -12267,9 +12267,9 @@ return {
 						condition = "Difficulty VeryHard",
 						negate = true,
 						upgrades = {
-							"BarrelHeavy",
-							"Bipod",
-							"MagLarge_20_30",
+							"JAZZ_BarrelHeavy",
+							"JAZZ_Bipod",
+							"JAZZ_MagLarge_20_30",
 						},
 						weapon = "FNFAL",
 					}),
@@ -12421,7 +12421,7 @@ return {
 						condition = "Difficulty VeryHard",
 						negate = true,
 						upgrades = {
-							"StockLightUnFolded",
+							"JAZZ_StockLightUnFolded",
 						},
 						weapon = "AKM",
 					}),
@@ -12535,7 +12535,7 @@ return {
 						condition = "Difficulty VeryHard",
 						negate = true,
 						upgrades = {
-							"GP25",
+							"JAZZ_GP25",
 						},
 						weapon = "AKM",
 					}),
@@ -12591,8 +12591,8 @@ return {
 						negate = true,
 						upgrades = {
 							"JAZZ_Reflex_PKAS",
-							"Compensator",
-							"StockLightUnFolded",
+							"JAZZ_Compensator",
+							"JAZZ_StockLightUnFolded",
 						},
 						weapon = "AK74",
 					}),
@@ -12628,8 +12628,8 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"Compensator",
-							"MagNormalFine",
+							"JAZZ_Compensator",
+							"JAZZ_MagNormalFine",
 						},
 						weapon = "HiPower",
 					}),
@@ -12637,8 +12637,8 @@ return {
 						condition = "Difficulty VeryHard",
 						negate = true,
 						upgrades = {
-							"Compensator",
-							"MagNormalFine",
+							"JAZZ_Compensator",
+							"JAZZ_MagNormalFine",
 						},
 						weapon = "HiPower",
 					}),
@@ -12687,7 +12687,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"Compensator",
+							"JAZZ_Compensator",
 						},
 						weapon = "Glock18",
 					}),
@@ -12695,7 +12695,7 @@ return {
 						condition = "Difficulty VeryHard",
 						negate = true,
 						upgrades = {
-							"Compensator",
+							"JAZZ_Compensator",
 						},
 						weapon = "Glock18",
 					}),
@@ -12890,7 +12890,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"StockLightFolded",
+							"JAZZ_StockLightFolded",
 						},
 						weapon = "BerettaM12",
 					}),
@@ -12962,7 +12962,7 @@ return {
 						condition = "Difficulty VeryHard",
 						negate = true,
 						upgrades = {
-							"BarrelShortShotgun_Benelli",
+							"JAZZ_BarrelShortShotgun_Benelli",
 						},
 						weapon = "M41Shotgun",
 					}),
@@ -13065,7 +13065,7 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"Flashlight",
+							"JAZZ_Flashlight",
 						},
 						weapon = "Bereta92",
 					}),
@@ -13194,7 +13194,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"LaserDot",
+							"JAZZ_LaserDot",
 						},
 						weapon = "P220",
 					}),
@@ -13304,7 +13304,7 @@ return {
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
 							"JAZZ_Scope_6x",
-							"BarrelLong",
+							"JAZZ_BarrelLong",
 						},
 						weapon = "Winchester1894",
 					}),
@@ -13370,7 +13370,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"BarrelShortShotgun",
+							"JAZZ_BarrelShortShotgun",
 						},
 						weapon = "DoubleBarrelShotgun",
 					}),
@@ -13519,8 +13519,8 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"StockNo",
-							"BarrelShortShotgun",
+							"JAZZ_StockNo",
+							"JAZZ_BarrelShortShotgun",
 						},
 						weapon = "Ithaca",
 					}),
@@ -14272,7 +14272,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 1, stack_max = 1 }),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"PistolSuppressor",
+							"JAZZ_PistolSuppressor",
 						},
 						weapon = "MAC10",
 					}),
@@ -15080,7 +15080,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"PistolSuppressor",
+							"JAZZ_PistolSuppressor",
 						},
 						weapon = "P210",
 					}),
@@ -15117,8 +15117,8 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"PistolSuppressor",
-							"FlashlightDot",
+							"JAZZ_PistolSuppressor",
+							"JAZZ_FlashlightDot",
 						},
 						weapon = "FiveSeven",
 					}),
@@ -15203,7 +15203,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"PistolSuppressor",
+							"JAZZ_PistolSuppressor",
 						},
 						weapon = "USP45",
 					}),
@@ -15254,7 +15254,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 1, stack_max = 1 }),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"PistolSuppressor",
+							"JAZZ_PistolSuppressor",
 						},
 						weapon = "Bereta92",
 					}),
@@ -15291,14 +15291,14 @@ return {
 						condition = "Difficulty VeryHard",
 						negate = true,
 						upgrades = {
-							"SuppressorImproved",
+							"JAZZ_SuppressorImproved",
 						},
 						weapon = "M4A1",
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						condition = "Difficulty VeryHard",
 						upgrades = {
-							"SuppressorImproved",
+							"JAZZ_SuppressorImproved",
 						},
 						weapon = "CAR15",
 					}),
@@ -15564,7 +15564,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"GP25",
+							"JAZZ_GP25",
 						},
 						weapon = "AK47",
 					}),
@@ -15755,7 +15755,7 @@ return {
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
 							"JAZZ_Reflex_Aimpoint5000",
-							"Flashlight",
+							"JAZZ_Flashlight",
 						},
 						weapon = "CAR15",
 					}),
@@ -16239,7 +16239,7 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"VerticalGrip",
+							"JAZZ_VerticalGrip",
 							"JAZZ_Reflex_Aimpoint5000",
 						},
 						weapon = "FAMAS",
@@ -16353,7 +16353,7 @@ return {
 						condition = "Difficulty VeryHard",
 						negate = true,
 						upgrades = {
-							"BarrelShortRunNGun",
+							"JAZZ_BarrelShortRunNGun",
 							"JAZZ_Reflex_Aimpoint5000",
 						},
 						weapon = "HK33",
@@ -18911,7 +18911,7 @@ return {
 				PlaceObj('LootEntryUpgradedWeapon', {
 					Condition = 90,
 					upgrades = {
-						"Flashlight",
+						"JAZZ_Flashlight",
 						"JAZZ_CombatScope_3x",
 					},
 					weapon = "CAR15",
@@ -19048,7 +19048,7 @@ return {
 				PlaceObj('LootEntryUpgradedWeapon', {
 					guaranteed = true,
 					upgrades = {
-						"MagLarge_30_40",
+						"JAZZ_MagLarge_30_40",
 					},
 					weapon = "RPK",
 				}),
@@ -19067,8 +19067,8 @@ return {
 				PlaceObj('LootEntryUpgradedWeapon', {
 					guaranteed = true,
 					upgrades = {
-						"PistolSuppressor",
-						"Flashlight",
+						"JAZZ_PistolSuppressor",
+						"JAZZ_Flashlight",
 					},
 					weapon = "MP5A4",
 				}),
@@ -19087,8 +19087,8 @@ return {
 				PlaceObj('LootEntryUpgradedWeapon', {
 					guaranteed = true,
 					upgrades = {
-						"Auto5_Short_NMag",
-						"FullChoke",
+						"JAZZ_Auto5_Short_NMag",
+						"JAZZ_FullChoke",
 					},
 					weapon = "Auto5",
 				}),
@@ -19111,8 +19111,8 @@ return {
 				PlaceObj('LootEntryUpgradedWeapon', {
 					guaranteed = true,
 					upgrades = {
-						"ReflexSight",
-						"Flashlight",
+						"JAZZ_Reflex_Closed",
+						"JAZZ_Flashlight",
 					},
 					weapon = "Glock17",
 				}),
@@ -19882,7 +19882,7 @@ return {
 				PlaceObj('LootEntryUpgradedWeapon', {
 					Condition = 75,
 					upgrades = {
-						"BarrelLongImproved",
+						"JAZZ_BarrelLongImproved",
 					},
 					weapon = "HiPower",
 					weight = 700000,
@@ -19890,7 +19890,7 @@ return {
 				PlaceObj('LootEntryUpgradedWeapon', {
 					Condition = 75,
 					upgrades = {
-						"BarrelShortImproved",
+						"JAZZ_BarrelShortImproved",
 					},
 					weapon = "HiPower",
 					weight = 700000,
@@ -19905,7 +19905,7 @@ return {
 				PlaceObj('LootEntryUpgradedWeapon', {
 					Condition = 75,
 					upgrades = {
-						"BarrelLongShotgun",
+						"JAZZ_BarrelLongShotgun",
 					},
 					weapon = "DoubleBarrelShotgun",
 					weight = 1000000,
@@ -19913,7 +19913,7 @@ return {
 				PlaceObj('LootEntryUpgradedWeapon', {
 					Condition = 75,
 					upgrades = {
-						"BarrelShortShotgun",
+						"JAZZ_BarrelShortShotgun",
 					},
 					weapon = "DoubleBarrelShotgun",
 					weight = 1000000,
@@ -19927,7 +19927,7 @@ return {
 				}),
 				PlaceObj('LootEntryUpgradedWeapon', {
 					upgrades = {
-						"MagLarge",
+						"JAZZ_MagLarge",
 					},
 					weapon = "MP40",
 					weight = 700000,
@@ -19963,14 +19963,14 @@ return {
 				}),
 				PlaceObj('LootEntryUpgradedWeapon', {
 					upgrades = {
-						"BarrelShort",
+						"JAZZ_BarrelShort",
 					},
 					weapon = "ColtAnaconda",
 					weight = 1000000,
 				}),
 				PlaceObj('LootEntryUpgradedWeapon', {
 					upgrades = {
-						"BarrelShort",
+						"JAZZ_BarrelShort",
 					},
 					weapon = "ColtPeacemaker",
 					weight = 1000000,
@@ -19981,7 +19981,7 @@ return {
 				}),
 				PlaceObj('LootEntryUpgradedWeapon', {
 					upgrades = {
-						"LaserDot",
+						"JAZZ_LaserDot",
 					},
 					weapon = "AKM",
 					weight = 1000000,
@@ -20313,7 +20313,7 @@ return {
 				PlaceObj('LootEntryUpgradedWeapon', {
 					Condition = 59,
 					upgrades = {
-						"GP25",
+						"JAZZ_GP25",
 					},
 					weapon = "AKM",
 				}),
@@ -20407,9 +20407,9 @@ return {
 				}),
 				PlaceObj('LootEntryUpgradedWeapon', {
 					upgrades = {
-						"LaserDot",
+						"JAZZ_LaserDot",
 						"JAZZ_NightScope_NSPU",
-						"Compensator",
+						"JAZZ_Compensator",
 					},
 					weapon = "AKM",
 				}),
@@ -73514,7 +73514,7 @@ return {
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
 										"MagBelt_100-200",
-										"Bipod",
+										"JAZZ_Bipod",
 									},
 									weapon = "FNMinimi",
 								}),
@@ -73765,7 +73765,7 @@ return {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
-										"StockLight",
+										"JAZZ_StockLight",
 									},
 									weapon = "DragunovSVD",
 								}),
@@ -73796,7 +73796,7 @@ return {
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
 										"JAZZ_Scope_12x",
-										"StockLight",
+										"JAZZ_StockLight",
 									},
 									weapon = "DragunovSVD",
 								}),
@@ -73827,7 +73827,7 @@ return {
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
 										"JAZZ_NightScope_NSPU",
-										"StockLight",
+										"JAZZ_StockLight",
 									},
 									weapon = "DragunovSVD",
 								}),
@@ -73902,7 +73902,7 @@ return {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
-										"Compensator",
+										"JAZZ_Compensator",
 									},
 									weapon = "FAMAS",
 								}),
@@ -73943,7 +73943,7 @@ return {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
-										"MagNormal",
+										"JAZZ_MagNormal",
 									},
 									weapon = "CAR15",
 								}),
@@ -73958,7 +73958,7 @@ return {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
-										"MagNormal",
+										"JAZZ_MagNormal",
 										"JAZZ_Reflex_Aimpoint5000",
 									},
 									weapon = "CAR15",
@@ -73974,7 +73974,7 @@ return {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
-										"MagNormal",
+										"JAZZ_MagNormal",
 										"JAZZ_Reflex_M68",
 									},
 									weapon = "CAR15",
@@ -73990,7 +73990,7 @@ return {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
-										"MagNormal",
+										"JAZZ_MagNormal",
 										"JAZZ_CombatScope_3x",
 									},
 									weapon = "CAR15",
@@ -74006,7 +74006,7 @@ return {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
-										"VerticalGrip",
+										"JAZZ_VerticalGrip",
 									},
 									weapon = "FAMAS",
 								}),
@@ -74021,7 +74021,7 @@ return {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
-										"VerticalGrip",
+										"JAZZ_VerticalGrip",
 										"JAZZ_Reflex_Aimpoint5000",
 									},
 									weapon = "FAMAS",
@@ -74038,7 +74038,7 @@ return {
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
 										"JAZZ_CombatScope_2x",
-										"Bipod",
+										"JAZZ_Bipod",
 									},
 									weapon = "FAMAS",
 								}),
@@ -74054,7 +74054,7 @@ return {
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
 										"JAZZ_CombatScope_ACOG",
-										"Bipod",
+										"JAZZ_Bipod",
 									},
 									weapon = "FAMAS",
 								}),
@@ -74439,7 +74439,7 @@ return {
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
 										"JAZZ_Reflex_Open",
-										"BarrelShortShotgun_Benelli",
+										"JAZZ_BarrelShortShotgun_Benelli",
 									},
 									weapon = "M41Shotgun",
 								}),
@@ -75919,7 +75919,7 @@ return {
 								drop_chance_mod = 0,
 								upgrades = {
 									"JAZZ_Reflex_Pistol",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "MicroUZI",
 							}),
@@ -75932,9 +75932,9 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
-									"Compensator",
+									"JAZZ_Compensator",
 									"JAZZ_Reflex_Eotech",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "MicroUZI",
 							}),
@@ -75947,9 +75947,9 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
-									"Compensator",
+									"JAZZ_Compensator",
 									"JAZZ_Reflex_Eotech",
-									"FlashlightDot",
+									"JAZZ_FlashlightDot",
 								},
 								weapon = "MicroUZI",
 							}),
@@ -75962,7 +75962,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
-									"Compensator",
+									"JAZZ_Compensator",
 									"JAZZ_Reflex_Eotech",
 								},
 								weapon = "UZI",
@@ -75990,7 +75990,7 @@ return {
 								drop_chance_mod = 0,
 								upgrades = {
 									"JAZZ_CombatScope_2x",
-									"StockLightUnFolded",
+									"JAZZ_StockLightUnFolded",
 								},
 								weapon = "MP5A4",
 							}),
@@ -76003,7 +76003,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "MP5K",
 							}),
@@ -76016,7 +76016,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
-									"Flashlight",
+									"JAZZ_Flashlight",
 									"JAZZ_CombatScope_2x",
 								},
 								weapon = "UMP45",
@@ -76030,9 +76030,9 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
-									"FlashlightDot",
+									"JAZZ_FlashlightDot",
 									"JAZZ_Reflex_Eotech",
-									"PistolSuppressor",
+									"JAZZ_PistolSuppressor",
 								},
 								weapon = "UMP45",
 							}),
@@ -76045,7 +76045,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
-									"Flashlight",
+									"JAZZ_Flashlight",
 								},
 								weapon = "P90",
 							}),
@@ -76058,7 +76058,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "P90",
 							}),
@@ -76071,10 +76071,10 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
-									"VerticalGrip",
-									"Compensator",
+									"JAZZ_VerticalGrip",
+									"JAZZ_Compensator",
 									"JAZZ_Reflex_Eotech",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "G36",
 							}),
@@ -76087,7 +76087,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
-									"Suppressor",
+									"JAZZ_Suppressor",
 									"JAZZ_Reflex_Eotech",
 								},
 								weapon = "Sig552",
@@ -76101,7 +76101,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
-									"Suppressor",
+									"JAZZ_Suppressor",
 									"JAZZ_Reflex_Eotech",
 								},
 								weapon = "Sig552SWAT",
@@ -76115,9 +76115,9 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
-									"AUGScope_Default",
-									"AUGCompensator_03",
-									"LaserDot",
+									"JAZZ_AUGScope_Default",
+									"JAZZ_AUGCompensator_01",
+									"JAZZ_LaserDot",
 								},
 								weapon = "AUG",
 							}),
@@ -76131,7 +76131,7 @@ return {
 								drop_chance_mod = 0,
 								upgrades = {
 									"JAZZ_Reflex_M68",
-									"Compensator",
+									"JAZZ_Compensator",
 								},
 								weapon = "G3A3",
 							}),
@@ -76145,8 +76145,8 @@ return {
 								drop_chance_mod = 0,
 								upgrades = {
 									"JAZZ_Reflex_M68",
-									"VerticalGrip",
-									"LaserDot",
+									"JAZZ_VerticalGrip",
+									"JAZZ_LaserDot",
 								},
 								weapon = "M16A4",
 							}),
@@ -76159,11 +76159,11 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
-									"StockLightFolded",
-									"VerticalGrip",
+									"JAZZ_StockLightFolded",
+									"JAZZ_VerticalGrip",
 									"JAZZ_Reflex_Eotech",
-									"LaserDot",
-									"SuppressorImproved",
+									"JAZZ_LaserDot",
+									"JAZZ_SuppressorImproved",
 								},
 								weapon = "M4A1",
 							}),
@@ -76177,7 +76177,7 @@ return {
 								drop_chance_mod = 0,
 								upgrades = {
 									"JAZZ_Reflex_Eotech",
-									"FlashlightDot",
+									"JAZZ_FlashlightDot",
 								},
 								weapon = "G36c",
 							}),
@@ -76196,7 +76196,7 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "FiveSeven",
 							}),
@@ -76211,7 +76211,7 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "P220",
 							}),
@@ -76226,7 +76226,7 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "USP45",
 							}),
@@ -76241,7 +76241,7 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"MagLarge_18_20",
+									"JAZZ_MagLarge_18_20",
 								},
 								weapon = "P226",
 							}),
@@ -76287,7 +76287,7 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"LaserDot_PSG_M1",
+									"JAZZ_LaserDot_PSG_M1",
 								},
 								weapon = "PSG1",
 							}),
@@ -76303,8 +76303,8 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Scope_PSG",
-									"Bipod",
-									"LaserDot_PSG_M1",
+									"JAZZ_Bipod",
+									"JAZZ_LaserDot_PSG_M1",
 								},
 								weapon = "PSG1",
 							}),
@@ -76319,8 +76319,8 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"Bipod",
-									"StockLight",
+									"JAZZ_Bipod",
+									"JAZZ_StockLight",
 								},
 								weapon = "M24Sniper",
 							}),
@@ -76336,8 +76336,8 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Scope_12x",
-									"Bipod",
-									"StockLight",
+									"JAZZ_Bipod",
+									"JAZZ_StockLight",
 								},
 								weapon = "M24Sniper",
 							}),
@@ -76387,7 +76387,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Reflex_Eotech",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "M41Shotgun",
 							}),
@@ -76402,9 +76402,9 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"BarrelShortShotgun_Benelli",
+									"JAZZ_BarrelShortShotgun_Benelli",
 									"JAZZ_Reflex_Eotech",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "M41Shotgun",
 							}),
@@ -76420,8 +76420,8 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_CombatScope_2x",
-									"BarrelShortShotgun_Benelli",
-									"LaserDot",
+									"JAZZ_BarrelShortShotgun_Benelli",
+									"JAZZ_LaserDot",
 								},
 								weapon = "M41Shotgun",
 							}),
@@ -76472,7 +76472,7 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"LaserDot_aa12",
+									"JAZZ_LaserDot_aa12",
 								},
 								weapon = "AA12",
 							}),
@@ -76488,7 +76488,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Reflex_Closed",
-									"LaserDot_aa12",
+									"JAZZ_LaserDot_aa12",
 								},
 								weapon = "AA12",
 							}),
@@ -76504,8 +76504,8 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Reflex_Eotech",
-									"BarrelLongShotgun",
-									"LaserDot_aa12",
+									"JAZZ_BarrelLongShotgun",
+									"JAZZ_LaserDot_aa12",
 								},
 								weapon = "AA12",
 							}),
@@ -76521,8 +76521,8 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_CombatScope_2x",
-									"BarrelLongShotgun",
-									"LaserDot_aa12",
+									"JAZZ_BarrelLongShotgun",
+									"JAZZ_LaserDot_aa12",
 								},
 								weapon = "AA12",
 							}),
@@ -76557,7 +76557,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Reflex_Eotech",
-									"BarrelShort",
+									"JAZZ_BarrelShort",
 									"MagBelt_100-200",
 								},
 								weapon = "FNMinimi",
@@ -76574,7 +76574,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Reflex_Eotech",
-									"StockHeavy",
+									"JAZZ_StockHeavy",
 									"MagBelt_100-200",
 								},
 								weapon = "FNMinimi",
@@ -76591,7 +76591,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_CombatScope_2x",
-									"BarrelLong",
+									"JAZZ_BarrelLong",
 								},
 								weapon = "FNMinimi",
 							}),
@@ -76607,7 +76607,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_CombatScope_ACOG",
-									"BarrelLong",
+									"JAZZ_BarrelLong",
 								},
 								weapon = "FNMinimi",
 							}),
@@ -76623,8 +76623,8 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_CombatScope_ACOG",
-									"BarrelLong",
-									"StockHeavy",
+									"JAZZ_BarrelLong",
+									"JAZZ_StockHeavy",
 								},
 								weapon = "FNMinimi",
 							}),
@@ -76640,7 +76640,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Scope_6x",
-									"BarrelLongImproved",
+									"JAZZ_BarrelLongImproved",
 								},
 								weapon = "FNMinimi",
 							}),
@@ -76655,7 +76655,7 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "HK21",
 							}),
@@ -76672,7 +76672,7 @@ return {
 								upgrades = {
 									"JAZZ_Reflex_Closed",
 									"MagBelt_40-100",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "HK21",
 							}),
@@ -76689,7 +76689,7 @@ return {
 								upgrades = {
 									"JAZZ_Reflex_Eotech",
 									"MagBelt_40-100",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "HK21",
 							}),
@@ -76705,7 +76705,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_CombatScope_ACOG",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "HK21",
 							}),
@@ -76720,7 +76720,7 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "HK23e",
 							}),
@@ -76736,7 +76736,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Reflex_M68",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "HK23e",
 							}),
@@ -76752,7 +76752,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Reflex_Eotech",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "HK23e",
 							}),
@@ -76768,7 +76768,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_CombatScope_ACOG",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "HK23e",
 							}),
@@ -76818,7 +76818,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Reflex_M68",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "UMP45",
 							}),
@@ -76875,7 +76875,7 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "P90",
 							}),
@@ -76894,7 +76894,7 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "HK33",
 							}),
@@ -76910,7 +76910,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Reflex_M68",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "HK33",
 							}),
@@ -76926,8 +76926,8 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Reflex_Open",
-									"LaserDot",
-									"BarrelShortRunNGun",
+									"JAZZ_LaserDot",
+									"JAZZ_BarrelShortRunNGun",
 								},
 								weapon = "HK33",
 							}),
@@ -76943,7 +76943,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Scope_DA15_6x",
-									"BarrelLong",
+									"JAZZ_BarrelLong",
 								},
 								weapon = "HK33",
 							}),
@@ -76959,7 +76959,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Reflex_PKAS",
-									"MagLarge_30_40",
+									"JAZZ_MagLarge_30_40",
 								},
 								weapon = "AKM",
 							}),
@@ -76975,7 +76975,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Reflex_Eotech",
-									"MagLarge_30_40",
+									"JAZZ_MagLarge_30_40",
 								},
 								weapon = "AKM",
 							}),
@@ -76991,7 +76991,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_CombatScope_ACOG",
-									"MagLarge_30_40",
+									"JAZZ_MagLarge_30_40",
 								},
 								weapon = "AKM",
 							}),
@@ -77006,7 +77006,7 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "M4A1",
 							}),
@@ -77022,7 +77022,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Reflex_M68",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "M4A1",
 							}),
@@ -77037,7 +77037,7 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"LaserDot",
+									"JAZZ_LaserDot",
 									"JAZZ_Reflex_Eotech",
 								},
 								weapon = "M4A1",
@@ -77054,7 +77054,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_CombatScope_ACOG",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "M4A1",
 							}),
@@ -77069,7 +77069,7 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "G36c",
 							}),
@@ -77085,7 +77085,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Reflex_Open",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "G36c",
 							}),
@@ -77100,8 +77100,8 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"LaserDot",
-									"Jazz_G36Sight",
+									"JAZZ_LaserDot",
+									"JAZZ_G36Sight",
 								},
 								weapon = "G36",
 							}),
@@ -77116,9 +77116,9 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"Jazz_G36Scope",
-									"LaserDot",
-									"BarrelLong",
+									"JAZZ_G36Scope",
+									"JAZZ_LaserDot",
+									"JAZZ_BarrelLong",
 								},
 								weapon = "G36",
 							}),
@@ -77133,7 +77133,7 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "AUG",
 							}),
@@ -77149,7 +77149,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Reflex_Eotech",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "M16A4",
 							}),
@@ -77165,7 +77165,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_CombatScope_ACOG",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "M16A4",
 							}),
@@ -77223,7 +77223,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_CombatScope_2x",
-									"StockHeavy",
+									"JAZZ_StockHeavy",
 								},
 								weapon = "Sig550",
 							}),
@@ -77239,7 +77239,7 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
 									"JAZZ_Reflex_Eotech",
-									"LaserDot",
+									"JAZZ_LaserDot",
 								},
 								weapon = "Sig550Custom",
 							}),
@@ -77254,8 +77254,8 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"VerticalGrip",
-									"LaserDot",
+									"JAZZ_VerticalGrip",
+									"JAZZ_LaserDot",
 									"JAZZ_Reflex_Eotech",
 								},
 								weapon = "Sig550Custom",
@@ -77271,11 +77271,11 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"VerticalGrip",
-									"LaserDot",
+									"JAZZ_VerticalGrip",
+									"JAZZ_LaserDot",
 									"JAZZ_CombatScope_ACOG",
-									"StockHeavy",
-									"SigErgoHandGrip",
+									"JAZZ_StockHeavy",
+									"JAZZ_SigErgoHandGrip",
 								},
 								weapon = "Sig550Custom",
 							}),
@@ -78781,8 +78781,8 @@ return {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
-									"MagLarge_30_40",
-									"StockLightUnFolded",
+									"JAZZ_MagLarge_30_40",
+									"JAZZ_StockLightUnFolded",
 								},
 								weapon = "AKM",
 							}),
@@ -78819,9 +78819,9 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"StockNormal",
-									"Autofire",
-									"MagNormal",
+									"JAZZ_StockNormal",
+									"JAZZ_Autofire",
+									"JAZZ_MagNormal",
 								},
 								weapon = "M2Carbine",
 							}),
@@ -78836,7 +78836,7 @@ return {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
-									"StockLightUnFolded",
+									"JAZZ_StockLightUnFolded",
 								},
 								weapon = "M2Carbine",
 							}),
@@ -79855,7 +79855,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"BarrelLong",
+								"JAZZ_BarrelLong",
 							},
 							weapon = "G36",
 						}),
@@ -80984,8 +80984,8 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"UVDot",
-							"ImprovedIronsight",
+							"JAZZ_UVDot",
+							"JAZZ_ImprovedIronsight",
 						},
 						weapon = "DesertEagle",
 					}),
@@ -81257,8 +81257,8 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"BarrelLong",
-							"ReflexSight",
+							"JAZZ_BarrelLong",
+							"JAZZ_Reflex_Closed",
 						},
 						weapon = "Bereta92",
 					}),
@@ -81413,10 +81413,10 @@ return {
 					PlaceObj('LootEntryUpgradedWeapon', {
 						guaranteed = true,
 						upgrades = {
-							"VerticalGrip",
-							"LaserDot",
+							"JAZZ_VerticalGrip",
+							"JAZZ_LaserDot",
 							"JAZZ_CombatScope_ACOG",
-							"Suppressor",
+							"JAZZ_Suppressor",
 						},
 						weapon = "M4A1",
 					}),
@@ -151262,7 +151262,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Head = "Head_Fidel",
+			Head = "Head_Chimurenga",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -151325,7 +151325,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Head = "Head_Fauda",
+			Head = "Head_Chimurenga",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -151386,7 +151386,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(10, 9, 9, 255),
 			'EditableColor3', RGBA(10, 9, 9, 255),
 			}),
-			Head = "Head_Magic",
+			Head = "Head_Pierre",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -151404,7 +151404,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(20, 19, 19, 255),
 			'EditableColor3', RGBA(6, 6, 6, 255),
 			}),
-			Shirt = "Faction_Gloves_01",
+			Shirt = "",
 			ShirtColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(32, 31, 31, 255),
 			'EditableColor2', RGBA(48, 46, 46, 255),
@@ -151448,7 +151448,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor3', RGBA(34, 38, 44, 255),
 			}),
 			HatSpot = "Origin",
-			Head = "Head_Blood",
+			Head = "Head_Jackhammer",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -151466,7 +151466,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(20, 19, 19, 255),
 			'EditableColor3', RGBA(6, 6, 6, 255),
 			}),
-			Shirt = "Faction_Gloves_01",
+			Shirt = "",
 			ShirtColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(32, 31, 31, 255),
 			'EditableColor2', RGBA(48, 46, 46, 255),
@@ -151571,7 +151571,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(19, 15, 13, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Head = "Head_Flay",
+			Head = "Head_M_IMP_01",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -151650,7 +151650,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(20, 19, 19, 255),
 			'EditableColor3', RGBA(6, 6, 6, 255),
 			}),
-			Shirt = "Faction_Gloves_01",
+			Shirt = "",
 			ShirtColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(38, 37, 37, 255),
 			'EditableColor2', RGBA(50, 48, 48, 255),
@@ -151694,7 +151694,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(26, 25, 25, 255),
 			'EditableColor3', RGBA(34, 38, 44, 255),
 			}),
-			Head = "Head_Lami",
+			Head = "Head_Pierre",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -151743,7 +151743,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Hat = "NPCCostumeMale_Hat_01",
+			Hat = "NPCCostumeFemale_Hat_01",
 			Hat2Color = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -151835,7 +151835,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(20, 19, 19, 255),
 			'EditableColor3', RGBA(7, 7, 7, 255),
 			}),
-			Shirt = "Faction_Gloves_01",
+			Shirt = "",
 			ShirtColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(22, 23, 24, 255),
 			'EditableColor2', RGBA(37, 38, 40, 255),
@@ -151997,7 +151997,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(20, 14, 6, 255),
 			'EditableColor3', RGBA(93, 177, 58, 255),
 			}),
-			Head = "Head_Fidel",
+			Head = "Faction_Rebels_M_HeadMedic",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -152057,7 +152057,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(34, 38, 44, 255),
 			'EditableColor3', RGBA(34, 38, 44, 255),
 			}),
-			Head = "Head_Fauda",
+			Head = "Head_Chimurenga",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -152104,7 +152104,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Hat = "NPCCostumeMale_Hat_01",
+			Hat = "NPCCostumeFemale_Hat_01",
 			Hat2Color = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -152171,7 +152171,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
 			HatSpot = "Origin",
-			Head = "Head_Blood",
+			Head = "Head_Pierre",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -152221,7 +152221,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
 			HatSpot = "Origin",
-			Head = "Head_Omryn",
+			Head = "Head_Chimurenga",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -152272,7 +152272,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
 			HatSpot = "Origin",
-			Head = "Head_Flay",
+			Head = "Head_Jackhammer",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -152299,7 +152299,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Body = "Faction_Legion_Top_02",
+			Body = "Faction_Militia_Top_02",
 			BodyColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(6, 2, 1, 255),
 			'EditableColor2', RGBA(34, 38, 44, 255),
@@ -152361,7 +152361,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Body = "Faction_Legion_Top_02",
+			Body = "Faction_Militia_Top_03",
 			BodyColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(8, 3, 1, 255),
 			'EditableColor2', RGBA(34, 38, 44, 255),
@@ -152390,7 +152390,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Head = "Head_Lami",
+			Head = "Head_M_IMP_01",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -152423,7 +152423,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Body = "Faction_Legion_Top_02",
+			Body = "Faction_Rebels_Top_Comander",
 			BodyColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(10, 4, 2, 255),
 			'EditableColor2', RGBA(34, 38, 44, 255),
@@ -152485,7 +152485,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Body = "Faction_Legion_Top_03",
+			Body = "Faction_GrandChien_Top_03",
 			BodyColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(12, 5, 2, 255),
 			'EditableColor2', RGBA(28, 58, 120, 255),
@@ -152547,7 +152547,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Body = "Faction_Legion_Top_03",
+			Body = "Faction_Militia_Top_02",
 			BodyColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(14, 5, 3, 255),
 			'EditableColor2', RGBA(55, 100, 175, 255),
@@ -152609,7 +152609,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Body = "Faction_Legion_Top_03",
+			Body = "Faction_Adonis_Top_01",
 			BodyColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(16, 5, 5, 255),
 			'EditableColor2', RGBA(40, 70, 130, 255),
@@ -152671,7 +152671,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Body = "Faction_Legion_Top_07",
+			Body = "Faction_Militia_Top_02",
 			BodyColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(17, 6, 3, 255),
 			'EditableColor2', RGBA(9, 10, 13, 255),
@@ -152700,7 +152700,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Head = "Head_Fidel",
+			Head = "Faction_Rebels_M_HeadMedic",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -152733,7 +152733,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Body = "Faction_Legion_Top_07",
+			Body = "Faction_Militia_Top_03",
 			BodyColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(18, 7, 4, 255),
 			'EditableColor2', RGBA(9, 10, 13, 255),
@@ -152762,7 +152762,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Head = "Head_Fauda",
+			Head = "Head_Chimurenga",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -152795,7 +152795,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Body = "Faction_Legion_Top_07",
+			Body = "Faction_Rebels_Top_Comander",
 			BodyColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(19, 8, 4, 255),
 			'EditableColor2', RGBA(9, 10, 13, 255),
@@ -152824,7 +152824,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Head = "Head_Magic",
+			Head = "Head_Pierre",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -152885,7 +152885,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(34, 38, 44, 255),
 			'EditableColor3', RGBA(34, 38, 44, 255),
 			}),
-			Head = "Head_Blood",
+			Head = "Head_Jackhammer",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -152917,7 +152917,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Body = "Faction_Legion_Top_04",
+			Body = "Faction_GrandChien_Top_03",
 			BodyColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(6, 2, 1, 255),
 			'EditableColor2', RGBA(34, 38, 44, 255),
@@ -152945,7 +152945,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(34, 38, 44, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Head = "Head_Omryn",
+			Head = "Head_Pierre",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -153040,7 +153040,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Body = "Faction_Legion_Top_04",
+			Body = "Faction_Militia_Top_03",
 			BodyColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(10, 4, 2, 255),
 			'EditableColor2', RGBA(34, 38, 44, 255),
@@ -153101,7 +153101,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Body = "Faction_Legion_Top_04",
+			Body = "Faction_Adonis_Top_01",
 			BodyColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(12, 5, 2, 255),
 			'EditableColor2', RGBA(34, 38, 44, 255),
@@ -153129,7 +153129,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(27, 49, 34, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Head = "Head_Lami",
+			Head = "Head_M_IMP_01",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -153162,7 +153162,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Body = "Faction_Legion_Top_08",
+			Body = "Faction_Militia_Top_02",
 			BodyColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(14, 5, 3, 255),
 			'EditableColor2', RGBA(41, 41, 68, 255),
@@ -153224,7 +153224,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Body = "Faction_Legion_Top_08",
+			Body = "Faction_Militia_Top_03",
 			BodyColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(16, 5, 5, 255),
 			'EditableColor2', RGBA(35, 43, 53, 255),
@@ -153286,7 +153286,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Body = "Faction_Legion_Top_08",
+			Body = "Faction_Rebels_Top_Comander",
 			BodyColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(17, 6, 3, 255),
 			'EditableColor2', RGBA(27, 26, 35, 255),
@@ -153348,7 +153348,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Body = "Faction_Legion_Top_01",
+			Body = "Faction_GrandChien_Top_03",
 			BodyColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(18, 7, 4, 255),
 			'EditableColor2', RGBA(49, 89, 163, 255),
@@ -153436,7 +153436,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(34, 38, 44, 255),
 			}),
-			Head = "Head_Fidel",
+			Head = "Faction_Rebels_M_HeadMedic",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -153497,7 +153497,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(10, 9, 9, 255),
 			'EditableColor3', RGBA(34, 38, 44, 255),
 			}),
-			Head = "Head_Fauda",
+			Head = "Head_Chimurenga",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -153558,7 +153558,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(10, 9, 9, 255),
 			'EditableColor3', RGBA(10, 9, 9, 255),
 			}),
-			Head = "Head_Magic",
+			Head = "Head_Pierre",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -153576,7 +153576,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(20, 19, 19, 255),
 			'EditableColor3', RGBA(6, 6, 6, 255),
 			}),
-			Shirt = "Faction_Gloves_01",
+			Shirt = "",
 			ShirtColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(10, 9, 9, 255),
 			'EditableColor2', RGBA(11, 10, 10, 255),
@@ -153620,7 +153620,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
 			HatSpot = "Origin",
-			Head = "Head_Blood",
+			Head = "Head_Jackhammer",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -153638,7 +153638,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(20, 19, 19, 255),
 			'EditableColor3', RGBA(6, 6, 6, 255),
 			}),
-			Shirt = "Faction_Gloves_01",
+			Shirt = "",
 			ShirtColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(34, 38, 44, 255),
 			'EditableColor2', RGBA(34, 38, 44, 255),
@@ -153729,7 +153729,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Hat = "FactionMale_Hat_07",
+			Hat = "NPCCostumeFemale_Hat_01",
 			Hat2Color = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -153831,7 +153831,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Body = "Faction_GrandChien_Top_05",
+			Body = "Faction_Rebels_Top_Comander",
 			BodyColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(16, 5, 5, 255),
 			'EditableColor2', RGBA(22, 23, 24, 255),
@@ -153859,7 +153859,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Head = "Head_Lami",
+			Head = "Head_Jackhammer",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -153877,7 +153877,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(20, 19, 19, 255),
 			'EditableColor3', RGBA(15, 14, 14, 255),
 			}),
-			Shirt = "Faction_Gloves_01",
+			Shirt = "",
 			ShirtColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(38, 37, 37, 255),
 			'EditableColor2', RGBA(50, 48, 48, 255),
@@ -153998,7 +153998,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(20, 19, 19, 255),
 			'EditableColor3', RGBA(7, 7, 7, 255),
 			}),
-			Shirt = "Faction_Gloves_01",
+			Shirt = "",
 			ShirtColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(22, 23, 24, 255),
 			'EditableColor2', RGBA(37, 38, 40, 255),
@@ -154029,7 +154029,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Hat = "FactionMale_Hat_07",
+			Hat = "NPCCostumeFemale_Hat_01",
 			Hat2Color = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -154088,7 +154088,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Hat = "FactionMale_Hat_07",
+			Hat = "NPCCostumeFemale_Hat_01",
 			Hat2Color = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -154160,7 +154160,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
 			HatSpot = "Origin",
-			Head = "Head_Fidel",
+			Head = "Head_M_IMP_01",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -154208,7 +154208,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Hat = "NPCCostumeMale_Hat_01",
+			Hat = "NPCCostumeFemale_Hat_01",
 			Hat2Color = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -154342,7 +154342,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
 			HatSpot = "Origin",
-			Head = "Head_Blood",
+			Head = "Faction_Rebels_M_HeadMedic",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -154403,7 +154403,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
 			HatSpot = "Origin",
-			Head = "Head_Omryn",
+			Head = "Head_Jackhammer",
 			HeadColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -154452,7 +154452,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Hat = "NPCCostumeMale_Hat_01",
+			Hat = "NPCCostumeFemale_Hat_01",
 			Hat2Color = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -154543,7 +154543,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(26, 23, 23, 255),
 			'EditableColor3', RGBA(13, 11, 11, 255),
 			}),
-			Shirt = "Faction_Gloves_01",
+			Shirt = "",
 			ShirtColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(17, 16, 16, 255),
 			'EditableColor2', RGBA(17, 16, 16, 255),
@@ -154667,7 +154667,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableRoughness2', 35,
 			'EditableColor3', RGBA(13, 11, 11, 255),
 			}),
-			Shirt = "Faction_Gloves_01",
+			Shirt = "",
 			ShirtColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(17, 16, 16, 255),
 			'EditableColor2', RGBA(17, 16, 16, 255),
@@ -154728,7 +154728,7 @@ PlaceObj('ModItemAIArchetype', {
 			'EditableColor2', RGBA(26, 23, 23, 255),
 			'EditableColor3', RGBA(13, 11, 11, 255),
 			}),
-			Shirt = "Faction_Gloves_01",
+			Shirt = "",
 			ShirtColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(17, 16, 16, 255),
 			'EditableColor2', RGBA(17, 16, 16, 255),
