@@ -408,18 +408,12 @@ function JazzAI_PickCombatStance(unit, proto_context, opts)
 
 	-- CMD aura influence on non-leaders
 	local directive = JazzAI_GetTeamDirective and JazzAI_GetTeamDirective(unit)
-	if directive == "LowVisHold" and family == "Line" then
-		-- keep Frontliner / base (Hold bias via policies elsewhere)
-	elseif directive == "Push" and family == "Scout" then
-		-- nudge toward Assaulter
-	elseif directive == "Envelop" and family == "Pusher" then
-		-- nudge toward Flanker after base assign below
-	end
 
 	local enemy, dist = GetNearestEnemy(unit)
 
-	-- F4 + F9: melee secondary
-	if enemy and not JazzAI_NeverMelee(unit) and JazzAI_FindAltMeleeWeapon(unit) then
+	-- F4 + F9: melee secondary (skip under FallBack / TakeCover / GoHidden — stay under cover / stealth)
+	if directive ~= "FallBack" and directive ~= "TakeCover" and directive ~= "GoHidden"
+		and enemy and not JazzAI_NeverMelee(unit) and JazzAI_FindAltMeleeWeapon(unit) then
 		if JazzAI_CanReachMeleeAndAttackOnce(unit, enemy) then
 			if JazzAI_EnsureWeaponClass(unit, "MeleeWeapon") then
 				if PlayVoiceResponse and prev ~= "Melee" then
@@ -430,8 +424,13 @@ function JazzAI_PickCombatStance(unit, proto_context, opts)
 		end
 	end
 
+	-- Cover / building / stealth hold: Scout/Pusher/Recruit/Line → Frontliner
+	if directive == "FallBack" or directive == "TakeCover" or directive == "OccupyBuildings" or directive == "GoHidden" then
+		if family == "Scout" or family == "Pusher" or family == "Recruit" or family == "Line" then
+			archetype = prefix .. "Frontliner"
+		end
 	-- F2 role stance
-	if family == "Scout" then
+	elseif family == "Scout" then
 		archetype = prefix .. "Flanker"
 		if JazzAI_NeedPush(unit, enemy, dist) or directive == "Push" or (unit.ai_context and unit.ai_context.jazz_flare_push) then
 			archetype = prefix .. "Assaulter"
@@ -443,7 +442,7 @@ function JazzAI_PickCombatStance(unit, proto_context, opts)
 		end
 	elseif family == "Line" then
 		-- CQB sidearm → temporary Assaulter if alt has CQB firearm
-		if enemy and dist and JazzAI_NeedPush(unit, enemy, dist) then
+		if enemy and dist and JazzAI_NeedPush(unit, enemy, dist) and directive ~= "LowVisHold" then
 			local cqb = JazzAI_FindAltCQBFirearm(unit)
 			if cqb then
 				if not unit:GetActiveWeapons(cqb.class) then
@@ -455,7 +454,7 @@ function JazzAI_PickCombatStance(unit, proto_context, opts)
 	elseif family == "Recruit" then
 		archetype = prefix .. "Assaulter"
 	end
-	-- MG / Heavy keep base archetype
+	-- MG / Heavy keep base archetype; FocusFire / LowVisHold / HoldLine use family defaults
 
 	if archetype ~= prev and PlayVoiceResponse then
 		PlayVoiceResponse(unit, "AIArchetypeAngry")
