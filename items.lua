@@ -146827,7 +146827,7 @@ PlaceObj('ModItemAIArchetype', {
 				'StartingPerks', {
 				'Throwing',
 				},
-				'Specialization', "ExplosiveExpert",
+				'Specialization', "HeavyWeapons",
 				'MaxHitPoints', 80,
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -147092,7 +147092,7 @@ PlaceObj('ModItemAIArchetype', {
 				'Throwing',
 				'HeavyWeaponsTraining',
 				},
-				'Specialization', "ExplosiveExpert",
+				'Specialization', "HeavyWeapons",
 				'MaxHitPoints', 78,
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -147828,7 +147828,7 @@ PlaceObj('ModItemAIArchetype', {
 				'Throwing',
 				'HeavyWeaponsTraining',
 				},
-				'Specialization', "ExplosiveExpert",
+				'Specialization', "HeavyWeapons",
 				'MaxHitPoints', 78,
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -148041,7 +148041,7 @@ PlaceObj('ModItemAIArchetype', {
 				'StartingPerks', {
 				'Throwing',
 				},
-				'Specialization', "ExplosiveExpert",
+				'Specialization', "HeavyWeapons",
 				'MaxHitPoints', 80,
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -148674,7 +148674,7 @@ PlaceObj('ModItemAIArchetype', {
 				'MedicalDeposit', "none",
 				'StartingSalary', 157,
 				'StartingLevel', 1,
-				'Specialization', "AllRounder",
+				'Specialization', "Mechanic",
 				'MaxHitPoints', 76,
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -148725,7 +148725,7 @@ PlaceObj('ModItemAIArchetype', {
 				'MedicalDeposit', "none",
 				'StartingSalary', 200,
 				'StartingLevel', 1,
-				'Specialization', "AllRounder",
+				'Specialization', "Mechanic",
 				'MaxHitPoints', 78,
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {

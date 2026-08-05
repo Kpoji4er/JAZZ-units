@@ -37,7 +37,7 @@ DefineClass.JAZZ_AME_29 = {
 	"Throwing",
 	"HeavyWeaponsTraining",
 	},
-	Specialization = "ExplosiveExpert",
+	Specialization = "HeavyWeapons",
 	MaxHitPoints = 78,
 	AppearancesList = { PlaceObj('AppearanceWeight', { 'Preset', "JAZZ_AME_29" }) },
 	Equipment = { "Loot_JAZZ_AME_29" },
