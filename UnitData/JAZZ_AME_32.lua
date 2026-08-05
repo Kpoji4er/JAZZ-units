@@ -39,7 +39,7 @@ DefineClass.JAZZ_AME_32 = {
 	AppearancesList = { PlaceObj('AppearanceWeight', { 'Preset', "JAZZ_AME_32" }) },
 	Equipment = { "Loot_JAZZ_AME_32" },
 	gender = "Female",
-	VoiceResponseId = "Jazz_AME_Female",
-	FallbackMissingVR = "AnneLeMitrailleur",
+	VoiceResponseId = "IMP_female_01",
+	FallbackMissingVR = "IMP_female_01",
 	DaysUntilOnline = 0,
 }

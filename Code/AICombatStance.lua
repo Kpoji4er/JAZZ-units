@@ -275,9 +275,26 @@ function JazzAI_RollPanicDeserter(unit)
 	return panicroll < chance
 end
 
+local function JazzAI_UnitNeedsMedicCare(unit)
+	if not unit or unit:IsDead() then
+		return false
+	end
+	-- All Jazz bleed tiers (vanilla only checked "Bleeding").
+	if type(rawget(_G, "JazzHasAnyBleed")) == "function" and JazzHasAnyBleed(unit) then
+		return true
+	end
+	if unit:HasStatusEffect("Bleeding")
+		or unit:HasStatusEffect("BleedingMedium")
+		or unit:HasStatusEffect("BleedingHeavy")
+	then
+		return true
+	end
+	-- F10 / JAZZ-AI-MED-001 early heal threshold 85%
+	return unit.HitPoints < MulDivRound(unit.MaxHitPoints, 85, 100)
+end
+
 function JazzAI_TryMedicSwitch(unit)
-	local bleeding = unit:GetStatusEffect("Bleeding")
-	if bleeding then
+	if JazzAI_UnitNeedsMedicCare(unit) then
 		return true
 	end
 	local team = unit.team
@@ -285,17 +302,29 @@ function JazzAI_TryMedicSwitch(unit)
 		return false
 	end
 	for _, ally in ipairs(team.units) do
-		if not ally:IsDead() then
-			if ally:GetStatusEffect("Bleeding") then
-				return true
-			end
-			-- F10 early heal threshold 85%
-			if ally.HitPoints < MulDivRound(ally.MaxHitPoints, 85, 100) then
-				return true
-			end
+		if ally ~= unit and JazzAI_UnitNeedsMedicCare(ally) then
+			return true
 		end
 	end
 	return false
+end
+
+-- Medic archetype Behavior Score helpers (items.lua Score closures).
+-- When self/ally needs care, combat behaviors must score 0 so Healer wins
+-- exclusively — otherwise Standard/SeekEnemy (~Weight 100) beat Healer (200)
+-- often enough to Priority-MobileShot toward the enemy before Bandage.
+function JazzAI_MedicHealBehaviorScore(self, unit)
+	if unit and JazzAI_TryMedicSwitch(unit) then
+		return self.Weight or 1000
+	end
+	return 0
+end
+
+function JazzAI_MedicCombatBehaviorScore(self, unit)
+	if unit and JazzAI_TryMedicSwitch(unit) then
+		return 0
+	end
+	return self.Weight or 100
 end
 
 --- JAZZ-AI-REG-001: isolated pocket vs distant ally crowd.

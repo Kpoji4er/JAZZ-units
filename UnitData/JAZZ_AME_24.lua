@@ -41,7 +41,7 @@ DefineClass.JAZZ_AME_24 = {
 	AppearancesList = { PlaceObj('AppearanceWeight', { 'Preset', "JAZZ_AME_24" }) },
 	Equipment = { "Loot_JAZZ_AME_24" },
 	gender = "Male",
-	VoiceResponseId = "Jazz_AME_Male_Low",
-	FallbackMissingVR = "LegionRaider",
+	VoiceResponseId = "IMP_male_01",
+	FallbackMissingVR = "IMP_male_01",
 	DaysUntilOnline = 0,
 }
