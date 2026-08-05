@@ -31,7 +31,7 @@ DefineClass.JAZZ_AME_41 = {
 	GreetingAndOffer = { PlaceObj('ChatMessage', { 'Text', T(890000000005505, "Работа есть — слушаю.") }) },
 	PartingWords = { PlaceObj('ChatMessage', { 'Text', T(890000000005506, "Контракт принят.") }) },
 	MedicalDeposit = "none",
-	StartingSalary = 520,
+	StartingSalary = 143,
 	StartingLevel = 1,
 	StartingPerks = {
 	"HeavyWeaponsTraining",
