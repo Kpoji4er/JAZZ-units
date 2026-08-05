@@ -99930,7 +99930,7 @@ PlaceObj('ModItemAIArchetype', {
 					id = "LegionRustIni",
 				}),
 				PlaceObj('ModItemEnemySquads', {
-					BombardOrdnance = "_40mmFragGrenade",
+					BombardOrdnance = "JAZZ_AMMO_40mmFragGrenade",
 					Units = {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -100221,7 +100221,7 @@ PlaceObj('ModItemAIArchetype', {
 					id = "LegionJAZZSquadT1_Early",
 				}),
 				PlaceObj('ModItemEnemySquads', {
-					BombardOrdnance = "_40mmFragGrenade",
+					BombardOrdnance = "JAZZ_AMMO_40mmFragGrenade",
 					Units = {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -100419,7 +100419,7 @@ PlaceObj('ModItemAIArchetype', {
 					id = "LegionJAZZSquadT1_Ernie",
 				}),
 				PlaceObj('ModItemEnemySquads', {
-					BombardOrdnance = "_40mmFragGrenade",
+					BombardOrdnance = "JAZZ_AMMO_40mmFragGrenade",
 					Units = {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -100616,7 +100616,7 @@ PlaceObj('ModItemAIArchetype', {
 					id = "LegionJAZZSquadT2",
 				}),
 				PlaceObj('ModItemEnemySquads', {
-					BombardOrdnance = "_40mmFragGrenade",
+					BombardOrdnance = "JAZZ_AMMO_40mmFragGrenade",
 					Units = {
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
