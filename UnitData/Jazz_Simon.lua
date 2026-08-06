@@ -19,7 +19,7 @@ DefineClass.Jazz_Simon = {
 	Portrait = "Mod/Dv3mFVN/MercPortraits/Simon.png",
 	BigPortrait = "Mod/Dv3mFVN/MercPortraits/Simon_Big.png",
 	IsMercenary = true,
-	Name = T(890000000006650, --[[ModItemUnitDataCompositeDef Jazz_Simon Name]] "[WIP] Саймон Гарандье"),
+	Name = T(890000000006650, --[[ModItemUnitDataCompositeDef Jazz_Simon Name]] "Саймон Грандье"),
 	Nick = T(890000000006651, --[[ModItemUnitDataCompositeDef Jazz_Simon Nick]] "Саймон"),
 	AllCapsNick = T(890000000006652, --[[ModItemUnitDataCompositeDef Jazz_Simon AllCapsNick]] "САЙМОН"),
 	Bio = T(890000000006653, --[[ModItemUnitDataCompositeDef Jazz_Simon Bio]] "work in progress"),
@@ -29,7 +29,7 @@ DefineClass.Jazz_Simon = {
 	snype_nick = T(890000000006656, --[[ModItemUnitDataCompositeDef Jazz_Simon snype_nick]] "simon"),
 	Offline = {
 		PlaceObj('ChatMessage', {
-			'Text', T(890000000006657, --[[ModItemUnitDataCompositeDef Jazz_Simon Text Offline ChatMessage voice:Jazz_Simon]] "Гарандье недоступен."),
+			'Text', T(890000000006657, --[[ModItemUnitDataCompositeDef Jazz_Simon Text Offline ChatMessage voice:Jazz_Simon]] "Грандье недоступен."),
 		}),
 	},
 	GreetingAndOffer = {

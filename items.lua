@@ -119696,7 +119696,7 @@ PlaceObj('ModItemAIArchetype', {
 					'Portrait', "Mod/Dv3mFVN/MercPortraits/Simon.png",
 					'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Simon_Big.png",
 					'IsMercenary', true,
-					'Name', T(890000000006650, --[[ModItemUnitDataCompositeDef Jazz_Simon Name]] "[WIP] Саймон Гарандье"),
+					'Name', T(890000000006650, --[[ModItemUnitDataCompositeDef Jazz_Simon Name]] "Саймон Грандье"),
 					'Nick', T(890000000006651, --[[ModItemUnitDataCompositeDef Jazz_Simon Nick]] "Саймон"),
 					'AllCapsNick', T(890000000006652, --[[ModItemUnitDataCompositeDef Jazz_Simon AllCapsNick]] "САЙМОН"),
 					'Bio', T(890000000006653, --[[ModItemUnitDataCompositeDef Jazz_Simon Bio]] "work in progress"),
@@ -119706,7 +119706,7 @@ PlaceObj('ModItemAIArchetype', {
 					'snype_nick', T(890000000006656, --[[ModItemUnitDataCompositeDef Jazz_Simon snype_nick]] "simon"),
 					'Offline', {
 						PlaceObj('ChatMessage', {
-							'Text', T(890000000006657, --[[ModItemUnitDataCompositeDef Jazz_Simon Text Offline ChatMessage voice:Jazz_Simon]] "Гарандье недоступен."),
+							'Text', T(890000000006657, --[[ModItemUnitDataCompositeDef Jazz_Simon Text Offline ChatMessage voice:Jazz_Simon]] "Грандье недоступен."),
 						}),
 					},
 					'GreetingAndOffer', {
@@ -121331,7 +121331,7 @@ PlaceObj('ModItemAIArchetype', {
 						T(890000000007061, --[[ModItemVoiceResponse Jazz_Biff CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Biff]] "Не вышло.")
 					}),
 					MockDislike1 = TConcat({
-						T(890000000006490, --[[ModItemVoiceResponse Jazz_Biff MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Biff]] "Нечего меня за нос водить. Ларри взялся за старое. Наркоман, а мне с ним работат")
+						T(890000000006490, --[[ModItemVoiceResponse Jazz_Biff MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Biff]] "Нечего меня за нос водить. Ларри взялся за старое. Наркоман, а мне с ним работать?")
 					}),
 					PraisesBuddy1 = TConcat({
 						T(890000000006491, --[[ModItemVoiceResponse Jazz_Biff PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Biff]] "Вот это да, Ларри! Я же говорил, что у тебя получится.")
@@ -121666,7 +121666,7 @@ PlaceObj('ModItemAIArchetype', {
 						T(890000000008612, --[[ModItemVoiceResponse Jazz_Nervous CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Nervous]] "Не вышло.")
 					}),
 					MockDislike1 = TConcat({
-						T(890000000006334, --[[ModItemVoiceResponse Jazz_Nervous MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Nervous]] "А-а-а, наш маленький сладенький Бифи хочет свою сладенькую бутылочку? Ой,  не мо")
+						T(890000000006334, --[[ModItemVoiceResponse Jazz_Nervous MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Nervous]] "А-а-а, наш маленький сладенький Бифи хочет свою сладенькую бутылочку? Ой, не могу, ну что за котеночек! Дать бы ему по заднице.")
 					}),
 					PraisesBuddy1 = TConcat({
 						T(890000000006335, --[[ModItemVoiceResponse Jazz_Nervous PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Nervous]] "Точно, Бритва! Ты мой идеал!")
@@ -121914,7 +121914,7 @@ PlaceObj('ModItemAIArchetype', {
 						T(890000000007712, --[[ModItemVoiceResponse Jazz_Flo Wounded VoiceResponse Wounded voice:Jazz_Flo]] "Ранен!")
 					}),
 					Downed = TConcat({
-						T(890000000006341, --[[ModItemVoiceResponse Jazz_Flo Downed VoiceResponse Downed voice:Jazz_Flo]] "На мгновение мне показалось, что я - среди ангелов. Теперь я вижу, что  по-прежн")
+						T(890000000006341, --[[ModItemVoiceResponse Jazz_Flo Downed VoiceResponse Downed voice:Jazz_Flo]] "На мгновение мне показалось, что я - среди ангелов. Теперь я вижу, что по-прежнему пребываю в преисподней. Мои страдания безграничны!")
 					}),
 					HeavilyWoundedSelection = TConcat({
 						T(890000000007713, --[[ModItemVoiceResponse Jazz_Flo HeavilyWoundedSelection VoiceResponse HeavilyWoundedSelection voice:Jazz_Flo]] "Плохо…")
@@ -122017,7 +122017,7 @@ PlaceObj('ModItemAIArchetype', {
 						T(890000000006346, --[[ModItemVoiceResponse Jazz_Flo MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Flo]] "Эта Лава, она просто не женщина. Она - живое оскорбление всему женскому полу!")
 					}),
 					PraisesBuddy1 = TConcat({
-						T(890000000006347, --[[ModItemVoiceResponse Jazz_Flo PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Flo]] "Потрясающе, Биф! Ну разве удивительно, что ты мне нравишься... я хочу  сказать,")
+						T(890000000006347, --[[ModItemVoiceResponse Jazz_Flo PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Flo]] "Потрясающе, Биф! Ну разве удивительно, что ты мне нравишься... я хочу сказать, что мне так нравится с тобой работать!")
 					}),
 					group = "MercenariesOld",
 					id = "Jazz_Flo",
@@ -123240,7 +123240,7 @@ PlaceObj('ModItemAIArchetype', {
 						T(890000000007592, --[[ModItemVoiceResponse Jazz_Dynamo CombatEndEnemiesRemain VoiceResponse CombatEndEnemiesRemain voice:Jazz_Dynamo]] "Ещё остались.")
 					}),
 					DeathGeneral = TConcat({
-						T(890000000006520, --[[ModItemVoiceResponse Jazz_Dynamo DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Dynamo]] "Плохи мои дела... Не думаю, что теперь сумогу отомстить. Передайте моей  жене: м")
+						T(890000000006520, --[[ModItemVoiceResponse Jazz_Dynamo DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Dynamo]] "Плохи мои дела... Не думаю, что теперь смогу отомстить. Передайте моей жене: мне жаль, что так вышло с нашим сыном. Умоляю, чтобы она меня простила.")
 					}),
 					Idle = TConcat({
 						T(890000000006524, --[[ModItemVoiceResponse Jazz_Dynamo Idle VoiceResponse Idle voice:Jazz_Dynamo]] "Закончил. Я готов."),
@@ -125657,7 +125657,7 @@ PlaceObj('ModItemAIArchetype', {
 				}),
 												PlaceObj('ModItemVoiceResponse', {
 					Selection = TConcat({
-						T(890000000006372, --[[ModItemVoiceResponse Jazz_Static Selection VoiceResponse Selection voice:Jazz_Static]] "Говорит Кирк Стивенсон. Известный по кличке Статик. Раньше я говорил только клич"),
+						T(890000000006372, --[[ModItemVoiceResponse Jazz_Static Selection VoiceResponse Selection voice:Jazz_Static]] "Говорит Кирк Стивенсон. Известный по кличке Статик. Раньше я говорил только кличку, и все думали, что у меня плохой видеотелефон."),
 						T(890000000008861, --[[ModItemVoiceResponse Jazz_Static Selection VoiceResponse Selection voice:Jazz_Static]] "На связи."),
 						T(890000000008862, --[[ModItemVoiceResponse Jazz_Static Selection VoiceResponse Selection voice:Jazz_Static]] "На связи.")
 					}),
@@ -125829,10 +125829,10 @@ PlaceObj('ModItemAIArchetype', {
 						T(890000000008922, --[[ModItemVoiceResponse Jazz_Static CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Static]] "Не вышло.")
 					}),
 					MockDislike1 = TConcat({
-						T(890000000006382, --[[ModItemVoiceResponse Jazz_Static MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Static]] "Ларри стал какой-то не такой. Совсем не наш чувак. Когда-то он был крутым пацано")
+						T(890000000006382, --[[ModItemVoiceResponse Jazz_Static MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Static]] "Ларри стал какой-то не такой. Совсем не наш чувак. Когда-то он был крутым пацаном, а сейчас... Чмо какое-то.")
 					}),
 					PraisesBuddy1 = TConcat({
-						T(890000000006383, --[[ModItemVoiceResponse Jazz_Static PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Static]] "Ларри свойский чувак. Вот вроде, не думает головой, и вдруг, раз, и у него получ")
+						T(890000000006383, --[[ModItemVoiceResponse Jazz_Static PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Static]] "Ларри свойский чувак. Вот вроде, не думает головой, и вдруг, раз, и у него получается.")
 					}),
 					group = "MercenariesOld",
 					id = "Jazz_Static",
@@ -126732,7 +126732,7 @@ PlaceObj('ModItemAIArchetype', {
 						T(890000000007340, --[[ModItemVoiceResponse Jazz_Cord Wounded VoiceResponse Wounded voice:Jazz_Cord]] "Ранен!")
 					}),
 					Downed = TConcat({
-						T(890000000006557, --[[ModItemVoiceResponse Jazz_Cord Downed VoiceResponse Downed voice:Jazz_Cord]] "Я в порядке, потому что, типа, удары по голове до меня не доходят. В  смысле, до")
+						T(890000000006557, --[[ModItemVoiceResponse Jazz_Cord Downed VoiceResponse Downed voice:Jazz_Cord]] "Я в порядке, потому что, типа, удары по голове до меня не доходят. В смысле, до вреда не доводят.")
 					}),
 					HeavilyWoundedSelection = TConcat({
 						T(890000000007341, --[[ModItemVoiceResponse Jazz_Cord HeavilyWoundedSelection VoiceResponse HeavilyWoundedSelection voice:Jazz_Cord]] "Плохо…")
@@ -126750,7 +126750,7 @@ PlaceObj('ModItemAIArchetype', {
 						T(890000000007344, --[[ModItemVoiceResponse Jazz_Cord CombatEndEnemiesRemain VoiceResponse CombatEndEnemiesRemain voice:Jazz_Cord]] "Ещё остались.")
 					}),
 					DeathGeneral = TConcat({
-						T(890000000006556, --[[ModItemVoiceResponse Jazz_Cord DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Cord]] "Оуууу... Ох, господи, мне так последний раз было, когда я попробовал  починить п")
+						T(890000000006556, --[[ModItemVoiceResponse Jazz_Cord DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Cord]] "Оуууу... Ох, господи, мне так последний раз было, когда я попробовал починить папашин шредер, знаешь.")
 					}),
 					Idle = TConcat({
 						T(890000000006560, --[[ModItemVoiceResponse Jazz_Cord Idle VoiceResponse Idle voice:Jazz_Cord]] "Закончил."),
@@ -126832,7 +126832,7 @@ PlaceObj('ModItemAIArchetype', {
 						T(890000000007371, --[[ModItemVoiceResponse Jazz_Cord CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Cord]] "Не вышло.")
 					}),
 					MockDislike1 = TConcat({
-						T(890000000006562, --[[ModItemVoiceResponse Jazz_Cord MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Cord]] "Если я раз поймаю этого комуняку Ивана - не в форме, я хочу сказать, - он у мен")
+						T(890000000006562, --[[ModItemVoiceResponse Jazz_Cord MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Cord]] "Если я раз поймаю этого комуняку Ивана - не в форме, я хочу сказать, - он у меня весь будет красный с синим, русский, твою мать!")
 					}),
 					PraisesBuddy1 = TConcat({
 						T(890000000006563, --[[ModItemVoiceResponse Jazz_Cord PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Cord]] "Вики такая девка, знаешь? В смысле... и с тормозами она классно  справляется.")
@@ -127062,7 +127062,7 @@ PlaceObj('ModItemAIArchetype', {
 						T(890000000008088, --[[ModItemVoiceResponse Jazz_Hobbit CombatEndEnemiesRemain VoiceResponse CombatEndEnemiesRemain voice:Jazz_Hobbit]] "Ещё остались.")
 					}),
 					DeathGeneral = TConcat({
-						T(890000000006568, --[[ModItemVoiceResponse Jazz_Hobbit DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Hobbit]] "Похоже, я умираю... Я вижу яркий свет... о, боже, скажи мне, что это просто спец")
+						T(890000000006568, --[[ModItemVoiceResponse Jazz_Hobbit DeathGeneral VoiceResponse DeathGeneral voice:Jazz_Hobbit]] "Похоже, я умираю... Я вижу яркий свет... о, боже, скажи мне, что это просто спецэффекты.")
 					}),
 					Idle = TConcat({
 						T(890000000006572, --[[ModItemVoiceResponse Jazz_Hobbit Idle VoiceResponse Idle voice:Jazz_Hobbit]] "Что-нибудь еще?"),
@@ -128012,7 +128012,7 @@ PlaceObj('ModItemAIArchetype', {
 						T(890000000007247, --[[ModItemVoiceResponse Jazz_Carlos CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Carlos]] "Не вышло.")
 					}),
 					MockDislike1 = TConcat({
-						T(890000000006430, --[[ModItemVoiceResponse Jazz_Carlos MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Carlos]] "Я не доверяю Игги. Он был враг, стал друг. Что он будет завтра?  Нельзя быть уве")
+						T(890000000006430, --[[ModItemVoiceResponse Jazz_Carlos MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Carlos]] "Я не доверяю Игги. Он был враг, стал друг. Что он будет завтра? Нельзя быть уверенным.")
 					}),
 					PraisesBuddy1 = TConcat({
 						T(890000000006431, --[[ModItemVoiceResponse Jazz_Carlos PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Carlos]] "Я уважаю Мигеля. Он самый лучший.")
@@ -128259,7 +128259,7 @@ PlaceObj('ModItemAIArchetype', {
 						T(890000000007495, --[[ModItemVoiceResponse Jazz_Devin CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Devin]] "Не вышло.")
 					}),
 					MockDislike1 = TConcat({
-						T(890000000006598, --[[ModItemVoiceResponse Jazz_Devin MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Devin]] "Эй, слушай и запоминай. Сдоба - пижонка, каких свет не видывал, и я не обещаю, ч")
+						T(890000000006598, --[[ModItemVoiceResponse Jazz_Devin MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Devin]] "Эй, слушай и запоминай. Сдоба - пижонка, каких свет не видывал, и я не обещаю, что сумею удержать свою винтовку, пока она так лачивается. Нервишки не в порядке, понимаешь?")
 					}),
 					PraisesBuddy1 = TConcat({
 						T(890000000006599, --[[ModItemVoiceResponse Jazz_Devin PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Devin]] "Ред - он такой!")
@@ -129000,7 +129000,7 @@ PlaceObj('ModItemAIArchetype', {
 						T(890000000008053, --[[ModItemVoiceResponse Jazz_Hitman CombatTaskFailed VoiceResponse CombatTaskFailed voice:Jazz_Hitman]] "Не вышло.")
 					}),
 					MockDislike1 = TConcat({
-						T(890000000006454, --[[ModItemVoiceResponse Jazz_Hitman MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Hitman]] "С этой Фло таким как я невозможно работать. Она не идет мне на встречу. Я готов")
+						T(890000000006454, --[[ModItemVoiceResponse Jazz_Hitman MockDislike1 VoiceResponse MockDislike1 voice:Jazz_Hitman]] "С этой Фло таким как я невозможно работать. Она не идет мне на встречу. Я готов ее просто пристрелить.")
 					}),
 					PraisesBuddy1 = TConcat({
 						T(890000000006455, --[[ModItemVoiceResponse Jazz_Hitman PraisesBuddy1 VoiceResponse PraisesBuddy1 voice:Jazz_Hitman]] "Маг! Так держать!")
