@@ -275,6 +275,59 @@ function JazzAI_RollPanicDeserter(unit)
 	return panicroll < chance
 end
 
+local function JazzAI_UnitHasBleeding(unit)
+	if not unit or unit:IsDead() then
+		return false
+	end
+	local has_any = rawget(_G, "JazzHasAnyBleed")
+	if type(has_any) == "function" and has_any(unit) then
+		return true
+	end
+	return unit:HasStatusEffect("Bleeding")
+		or unit:HasStatusEffect("BleedingMedium")
+		or unit:HasStatusEffect("BleedingHeavy")
+end
+
+local function JazzAI_TeamHasBleeding(unit)
+	if JazzAI_UnitHasBleeding(unit) then
+		return true
+	end
+	for _, ally in ipairs(unit.team and unit.team.units or empty_table) do
+		if ally ~= unit and JazzAI_UnitHasBleeding(ally) then
+			return true
+		end
+	end
+	return false
+end
+
+local function JazzAI_HasUsableBleedMedicine(unit)
+	local get_bandage = rawget(_G, "JazzGetBandageItem")
+	if type(get_bandage) == "function" and get_bandage(unit) then
+		return true
+	end
+	local get_kit = rawget(_G, "JazzGetEquippedKitMedicine")
+	if type(get_kit) == "function" then
+		return get_kit(unit) and true or false
+	end
+	-- Load-order fallback; normal combat runs after jazz has installed the helpers.
+	local found = false
+	unit:ForEachItem(function(item)
+		if found then
+			return
+		end
+		local class_id = item.class
+		local amount = IsKindOf(item, "InventoryStack") and (item.Amount or 0) or (item.Condition or 0)
+		local required = class_id == "Medkit" and 50 or class_id == "FirstAidKit" and 30 or 0
+		if amount > 0 and (
+			class_id == "JAZZ_Bandage"
+			or (class_id == "FirstAidKit" or class_id == "Medkit") and (unit.Medical or 0) >= required
+		) then
+			found = true
+		end
+	end)
+	return found
+end
+
 local function JazzAI_UnitNeedsMedicCare(unit)
 	if not unit or unit:IsDead() then
 		return false
@@ -416,15 +469,20 @@ function JazzAI_PickCombatStance(unit, proto_context, opts)
 		if JazzAI_WriteOfficerAura then
 			JazzAI_WriteOfficerAura(unit)
 		end
-		return archetype
 	end
 
-	if opts.allow_medic or family == "Medic" then
+	local dedicated_medic = opts.allow_medic or family == "Medic"
+	local carrying_bleed_medicine = JazzAI_HasUsableBleedMedicine(unit)
+		and JazzAI_TeamHasBleeding(unit)
+	if dedicated_medic or carrying_bleed_medicine then
 		-- F10: bleeding on self or allies triggers Medic immediately
-		if JazzAI_TryMedicSwitch(unit) then
+		if (dedicated_medic and JazzAI_TryMedicSwitch(unit)) or carrying_bleed_medicine then
 			JazzAI_ApplyMedicOptLocCap()
 			return "Medic"
 		end
+	end
+	if family == "Leader" then
+		return archetype
 	end
 
 	-- REG-001: isolated Legion runs to distant ally cluster (before role push/flank)
