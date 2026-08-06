@@ -94701,9 +94701,9 @@ PlaceObj('ModItemAIArchetype', {
 				'VoiceResponseId', "RebelSoldier",
 			}),
 			PlaceObj('ModItemUnitDataCompositeDef', {
-				'Group', "Legion",
+				'Group', "Rebels",
 				'Id', "Rebel_NPC_Ghost",
-				'comment', 'Дьяло "Призрак" Канджура - НПЦ-Снайпер',
+				'comment', 'Дьяло "Призрак" Канджура - именной НПЦ-командир повстанцев (captain aura)',
 				'object_class', "UnitData",
 				'Health', 100,
 				'Agility', 98,
@@ -94720,8 +94720,8 @@ PlaceObj('ModItemAIArchetype', {
 				'BigPortrait', "Mod/Dv3mFVN/NPCPortraits/Rebels_Ghost_Big.png",
 				'Name', T(890000000000342, --[[ModItemUnitDataCompositeDef Rebel_NPC_Ghost Name]] "Призрак"),
 				'Randomization', true,
-				'eliteCategory', "Foreigners",
-				'Affiliation', "Legion",
+				'eliteCategory', "Rebels",
+				'Affiliation', "Rebel",
 				'StartingLevel', 8,
 				'immortal', true,
 				'villain', true,
@@ -94735,31 +94735,12 @@ PlaceObj('ModItemAIArchetype', {
 				},
 				'archetype', "Rebels_Frontliner",
 				'role', "Commander",
-				'RepositionArchetype', "Legion_Assaulter",
+				'RepositionArchetype', "Rebels_Assaulter",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "SniperRifle"
-					local roll = 100
-					
-					if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "AssaultRifle"  then
-						weapon_class = "AssaultRifle"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local stealth_stance = self:GetStanceToStealth()
-					if self:CanStealth(stealth_stance) then
-					 self:Hide()
-					end	
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "SniperRifle")
