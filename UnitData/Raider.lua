@@ -59,7 +59,7 @@ DefineClass.Raider = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] "I think we can make this work, but I don't know you. I will need some extra assurance in case our working relationship isn't a smooth one."),
+					'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatRefusal Lines ChatMessage voice:Raider]] " I think we can make this work, but I don't know you. I will need some extra assurance in case our working relationship isn't a smooth one."),
 				}),
 			},
 			'Conditions', {
@@ -76,7 +76,7 @@ DefineClass.Raider = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] "I think we can make this work, but I don't know you. I will need some extra assurance in case our working relationship isn't a smooth one."),
+					'Text', T(152229577577, --[[ModItemUnitDataCompositeDef Raider Text MercChatHaggle Lines ChatMessage voice:Raider]] " I think we can make this work, but I don't know you. I will need some extra assurance in case our working relationship isn't a smooth one."),
 				}),
 			},
 			'Conditions', {
@@ -169,7 +169,7 @@ DefineClass.Raider = {
 		PlaceObj('MercChatBranch', {
 			'Lines', {
 				PlaceObj('ChatMessage', {
-					'Text', T(293660560234, --[[ModItemUnitDataCompositeDef Raider Text MercChatBranch Lines ChatMessage voice:Raider]] "Thanks. It will be weird working with both Hitman and Raven. I hope we can avoid working too closely with him, but if that sleazeball hits on her, I swear..."),
+					'Text', T(293660560234, --[[ModItemUnitDataCompositeDef Raider Text MercChatBranch Lines ChatMessage voice:Raider]] "Thanks. It will be weird working with both Hitman and Raven. I hope we can avoid working too closely with him, but if that sleazeball hits on her, I swear... "),
 				}),
 				PlaceObj('ChatMessage', {
 					'Text', T(663569190804, --[[ModItemUnitDataCompositeDef Raider Text MercChatBranch Lines ChatMessage voice:Raider]] "Let's just say I'm glad to be part of any team Raven's a part of."),
