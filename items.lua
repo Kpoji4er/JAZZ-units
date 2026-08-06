@@ -143271,7 +143271,7 @@ PlaceObj('ModItemAIArchetype', {
 						if target == attacker and IsKindOf(attack_target, "Unit") and action.id == self.class then
 							for _, unit in ipairs(g_Units) do
 								if unit ~= attack_target and unit.team:IsAllySide(attack_target.team) and DivRound(unit:GetDist(attack_target), const.SlabSizeX) <= self:ResolveValue("fearAoE") then
-									if not RollSkillCheck(target, "Wisdom",50) then
+									if not RollSkillCheck(unit, "Wisdom", 50) then
 									unit:AddStatusEffect("Panicked","Inspired") else
 									unit:AddStatusEffect("Berserk")
 							    	unit.ActionPoints = unit:GetMaxActionPoints()
