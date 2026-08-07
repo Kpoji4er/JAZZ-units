@@ -22505,14 +22505,12 @@ return {
 					--[[ JAZZ-UNITS-003-GENERATED-BEGIN ]]
 					-- Shared pools owned by JAZZ-UNITS-003 generator
 					PlaceObj('ModItemLootDef', {
-						Comment = "JAZZ-UNITS-003",
+						Comment = "JAZZ-UNITS-003 night lights (spawn always; AI night-only)",
 						group = "Enemy - Legion",
 						id = "JAZZ_Gen_NightEquipment",
+						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
 							game_conditions = {
-								PlaceObj('IsTimeOfDay', {
-									TimeOfDay = "Night",
-								}),
 								PlaceObj('QuestIsVariableNum', {
 									Amount = 11,
 									Prop = "JAZZ_Legion_Tier",
@@ -22529,13 +22527,9 @@ return {
 							item = "GlowStick",
 							stack_max = 6,
 							stack_min = 3,
-							weight = 3000,
 						}),
 						PlaceObj('LootEntryInventoryItem', {
 							game_conditions = {
-								PlaceObj('IsTimeOfDay', {
-									TimeOfDay = "Night",
-								}),
 								PlaceObj('QuestIsVariableNum', {
 									Amount = 11,
 									Prop = "JAZZ_Legion_Tier",
@@ -22552,13 +22546,9 @@ return {
 							item = "FlareStick",
 							stack_max = 6,
 							stack_min = 3,
-							weight = 10000,
 						}),
 						PlaceObj('LootEntryInventoryItem', {
 							game_conditions = {
-								PlaceObj('IsTimeOfDay', {
-									TimeOfDay = "Night",
-								}),
 								PlaceObj('QuestIsVariableNum', {
 									Amount = 21,
 									Prop = "JAZZ_Legion_Tier",
@@ -22575,13 +22565,9 @@ return {
 							item = "GlowStick",
 							stack_max = 8,
 							stack_min = 4,
-							weight = 3000,
 						}),
 						PlaceObj('LootEntryInventoryItem', {
 							game_conditions = {
-								PlaceObj('IsTimeOfDay', {
-									TimeOfDay = "Night",
-								}),
 								PlaceObj('QuestIsVariableNum', {
 									Amount = 21,
 									Prop = "JAZZ_Legion_Tier",
@@ -22598,13 +22584,9 @@ return {
 							item = "FlareStick",
 							stack_max = 8,
 							stack_min = 4,
-							weight = 10000,
 						}),
 						PlaceObj('LootEntryInventoryItem', {
 							game_conditions = {
-								PlaceObj('IsTimeOfDay', {
-									TimeOfDay = "Night",
-								}),
 								PlaceObj('QuestIsVariableNum', {
 									Amount = 31,
 									Prop = "JAZZ_Legion_Tier",
@@ -22615,13 +22597,9 @@ return {
 							item = "GlowStick",
 							stack_max = 10,
 							stack_min = 5,
-							weight = 3000,
 						}),
 						PlaceObj('LootEntryInventoryItem', {
 							game_conditions = {
-								PlaceObj('IsTimeOfDay', {
-									TimeOfDay = "Night",
-								}),
 								PlaceObj('QuestIsVariableNum', {
 									Amount = 31,
 									Prop = "JAZZ_Legion_Tier",
@@ -22632,10 +22610,6 @@ return {
 							item = "FlareStick",
 							stack_max = 10,
 							stack_min = 5,
-							weight = 10000,
-						}),
-						PlaceObj('LootEntryNoLoot', {
-							weight = 5000,
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -22709,67 +22683,48 @@ return {
 						Comment = "JAZZ-UNITS-003 unit_price pocket",
 						group = "Enemy - Legion",
 						id = "JAZZ_Gen_Valuables_Low",
+						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
-							generate_chance = 35,
+							generate_chance = 30,
 							item = "TinyDiamonds",
 							stack_max = 1,
 							stack_min = 1,
-							weight = 10000,
-						}),
-						PlaceObj('LootEntryNoLoot', {
-							weight = 96500,
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 unit_price pocket",
 						group = "Enemy - Legion",
 						id = "JAZZ_Gen_Valuables_Mid",
+						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
-							generate_chance = 45,
+							generate_chance = 30,
 							item = "TinyDiamonds",
 							stack_max = 3,
-							stack_min = 1,
-							weight = 10000,
-						}),
-						PlaceObj('LootEntryNoLoot', {
-							weight = 95500,
+							stack_min = 2,
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 unit_price pocket",
 						group = "Enemy - Legion",
 						id = "JAZZ_Gen_Valuables_High",
+						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
-							generate_chance = 55,
+							generate_chance = 30,
 							item = "TinyDiamonds",
-							stack_max = 7,
-							stack_min = 3,
-							weight = 10000,
-						}),
-						PlaceObj('LootEntryNoLoot', {
-							weight = 94500,
+							stack_max = 6,
+							stack_min = 4,
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 unit_price pocket",
 						group = "Enemy - Legion",
 						id = "JAZZ_Gen_Valuables_Elite",
+						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
-							generate_chance = 65,
+							generate_chance = 30,
 							item = "TinyDiamonds",
 							stack_max = 10,
-							stack_min = 4,
-							weight = 10000,
-						}),
-						PlaceObj('LootEntryInventoryItem', {
-							generate_chance = 13,
-							item = "BigDiamond",
-							stack_max = 1,
-							stack_min = 1,
-							weight = 2000,
-						}),
-						PlaceObj('LootEntryNoLoot', {
-							weight = 93500,
+							stack_min = 6,
 						}),
 					}),
 					-- Weapon+ammo combo defs
@@ -31401,6 +31356,7 @@ return {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_SIG",
+								"JAZZ_LaserDot",
 								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Sig550",
@@ -31417,6 +31373,7 @@ return {
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
+								"JAZZ_LaserDot",
 								"JAZZ_MagLarge_50_SIG",
 							},
 							weapon = "Sig550",
@@ -31435,6 +31392,7 @@ return {
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_ImprovisedSuppressor",
 								"JAZZ_MagLarge_50_SIG",
+								"JAZZ_LaserDot",
 							},
 							weapon = "Sig550",
 						}),
@@ -31451,6 +31409,7 @@ return {
 							upgrades = {
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_SIG",
+								"JAZZ_LaserDot",
 								"JAZZ_ImprovisedSuppressor",
 							},
 							weapon = "Sig550",
@@ -33393,7 +33352,7 @@ return {
 						}),
 					}),
 --[[ JAZZ-UNITS-003-GENERATED-END ]]
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Roughneck_Inventory",
@@ -33553,8 +33512,11 @@ return {
 							generate_chance = 3,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Low",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoLightArmor",
@@ -33566,7 +33528,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Crusher_Inventory",
@@ -33643,8 +33605,11 @@ return {
 							generate_chance = 3,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Low",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -33656,7 +33621,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Grenadier_Inventory",
@@ -33736,8 +33701,11 @@ return {
 							generate_chance = 3,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Mid",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 2,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -33749,7 +33717,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pillager_Inventory",
@@ -33909,8 +33877,11 @@ return {
 							generate_chance = 5,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Mid",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 2,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoLightArmor",
@@ -33922,7 +33893,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pyro_Inventory",
@@ -33993,8 +33964,11 @@ return {
 							generate_chance = 5,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Mid",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 4,
+							stack_min = 2,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoHeavyArmor",
@@ -34006,7 +33980,7 @@ return {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Shocktrooper_Inventory",
@@ -34184,8 +34158,11 @@ return {
 							generate_chance = 5,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Mid",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 2,
+							stack_min = 2,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -34197,7 +34174,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "SkullCrusher_Inventory",
@@ -34324,8 +34301,11 @@ return {
 							generate_chance = 8,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_High",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 5,
+							stack_min = 3,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoHeavyArmor",
@@ -34337,7 +34317,7 @@ return {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Punisher_Inventory",
@@ -34415,8 +34395,11 @@ return {
 							generate_chance = 8,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_High",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 5,
+							stack_min = 3,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoHeavyArmor",
@@ -34428,7 +34411,7 @@ return {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Headsman_Inventory",
@@ -34561,8 +34544,11 @@ return {
 							generate_chance = 12,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Elite",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 8,
+							stack_min = 6,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoHeavyArmor",
@@ -34574,7 +34560,7 @@ return {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Marauder_Inventory",
@@ -34702,8 +34688,11 @@ return {
 							generate_chance = 3,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Low",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -34715,7 +34704,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Rifleman_Inventory",
@@ -34792,8 +34781,11 @@ return {
 							generate_chance = 3,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Low",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -34805,7 +34797,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Bonemaker_Inventory",
@@ -34876,8 +34868,11 @@ return {
 							generate_chance = 4,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Mid",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 2,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -34889,7 +34884,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Raider_Inventory",
@@ -35059,8 +35054,11 @@ return {
 							generate_chance = 5,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Mid",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 2,
+							stack_min = 2,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -35072,7 +35070,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Marksman_Inventory",
@@ -35183,8 +35181,11 @@ return {
 							generate_chance = 5,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Mid",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 2,
+							stack_min = 2,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -35196,7 +35197,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Ambusher_Inventory",
@@ -35322,8 +35323,11 @@ return {
 							generate_chance = 5,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Mid",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 2,
+							stack_min = 2,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoLightArmor",
@@ -35335,7 +35339,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Veteran_Inventory",
@@ -35457,8 +35461,11 @@ return {
 							generate_chance = 8,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_High",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 5,
+							stack_min = 3,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -35470,7 +35477,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Sniper_Inventory",
@@ -35573,8 +35580,11 @@ return {
 							generate_chance = 8,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_High",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 7,
+							stack_min = 4,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoLightArmor",
@@ -35586,7 +35596,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Mercenary_Inventory",
@@ -35663,8 +35673,11 @@ return {
 							generate_chance = 12,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Elite",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 8,
+							stack_min = 6,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -35676,7 +35689,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercenarySniper_Inventory",
@@ -35768,8 +35781,11 @@ return {
 							generate_chance = 12,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Elite",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 11,
+							stack_min = 7,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -35781,7 +35797,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Warden_Inventory",
@@ -35903,8 +35919,11 @@ return {
 							generate_chance = 5,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Low",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoLightArmor",
@@ -35916,7 +35935,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Scout_Inventory",
@@ -36093,8 +36112,11 @@ return {
 							generate_chance = 7,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Mid",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 2,
+							stack_min = 2,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoLightArmor",
@@ -36106,7 +36128,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Skirmisher_Inventory",
@@ -36232,8 +36254,11 @@ return {
 							generate_chance = 7,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Mid",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 2,
+							stack_min = 2,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoLightArmor",
@@ -36245,7 +36270,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Recon_Inventory",
@@ -36422,8 +36447,11 @@ return {
 							generate_chance = 10,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_High",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 5,
+							stack_min = 3,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoLightArmor",
@@ -36435,7 +36463,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pathfinder_Inventory",
@@ -36601,8 +36629,11 @@ return {
 							generate_chance = 10,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_High",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 5,
+							stack_min = 3,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoLightArmor",
@@ -36614,7 +36645,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Ranger_Inventory",
@@ -36791,8 +36822,11 @@ return {
 							generate_chance = 14,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Elite",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 8,
+							stack_min = 6,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoLightArmor",
@@ -36804,7 +36838,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Gunner_Inventory",
@@ -36881,8 +36915,11 @@ return {
 							generate_chance = 3,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Mid",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 2,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -36894,7 +36931,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "GMPG_Inventory",
@@ -36960,8 +36997,11 @@ return {
 							generate_chance = 5,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Mid",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 4,
+							stack_min = 2,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -36973,7 +37013,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "AssaultGunner_Inventory",
@@ -37106,8 +37146,11 @@ return {
 							generate_chance = 5,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Mid",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 4,
+							stack_min = 2,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -37119,7 +37162,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "VeteranGunner_Inventory",
@@ -37185,8 +37228,11 @@ return {
 							generate_chance = 8,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_High",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 7,
+							stack_min = 4,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoHeavyArmor",
@@ -37198,7 +37244,7 @@ return {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercGunner_Inventory",
@@ -37264,8 +37310,11 @@ return {
 							generate_chance = 12,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Elite",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 11,
+							stack_min = 7,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoHeavyArmor",
@@ -37277,7 +37326,7 @@ return {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Sergeant_Inventory",
@@ -37403,8 +37452,11 @@ return {
 							generate_chance = 5,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Mid",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 2,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -37416,7 +37468,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Lieutenant_Inventory",
@@ -37539,8 +37591,11 @@ return {
 							generate_chance = 7,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Mid",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 4,
+							stack_min = 2,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -37552,7 +37607,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Captain_Inventory",
@@ -37678,8 +37733,11 @@ return {
 							generate_chance = 10,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_High",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 6,
+							stack_min = 4,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -37691,7 +37749,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercenaryCaptain_Inventory",
@@ -37814,8 +37872,11 @@ return {
 							generate_chance = 14,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Elite",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 10,
+							stack_min = 6,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -37827,7 +37888,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Rocketeer_Inventory",
@@ -37907,8 +37968,11 @@ return {
 							generate_chance = 3,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Mid",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 2,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -37920,7 +37984,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "HeavyGrenadier_Inventory",
@@ -38000,8 +38064,11 @@ return {
 							generate_chance = 5,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_Mid",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 4,
+							stack_min = 2,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -38013,7 +38080,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Mortarman_Inventory",
@@ -38093,8 +38160,11 @@ return {
 							generate_chance = 8,
 							loot_def = "JAZZ_Gen_MiscGear",
 						}),
-						PlaceObj('LootEntryLootDef', {
-							loot_def = "JAZZ_Gen_Valuables_High",
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "TinyDiamonds",
+							stack_max = 7,
+							stack_min = 4,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionTorsoMiddleArmor",
@@ -38110,7 +38180,7 @@ return {
 				PlaceObj('ModItemFolder', {
 					'name', "UnitsWeapon",
 				}, {
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Roughneck_Firearm",
@@ -39528,7 +39598,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Crusher_Firearm",
@@ -39741,7 +39811,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Grenadier_Firearm",
@@ -41137,7 +41207,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pillager_Firearm",
@@ -41780,7 +41850,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pyro_Firearm",
@@ -42655,7 +42725,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Shocktrooper_Firearm",
@@ -43790,7 +43860,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "SkullCrusher_Firearm",
@@ -44614,7 +44684,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Punisher_Firearm",
@@ -45155,7 +45225,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Headsman_Firearm",
@@ -45696,7 +45766,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Marauder_Firearm",
@@ -47114,7 +47184,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Rifleman_Firearm",
@@ -47740,7 +47810,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Bonemaker_Firearm",
@@ -49390,7 +49460,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Raider_Firearm",
@@ -50525,7 +50595,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Marksman_Firearm",
@@ -51151,7 +51221,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Ambusher_Firearm",
@@ -51777,7 +51847,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Veteran_Firearm",
@@ -52318,7 +52388,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Sniper_Firearm",
@@ -52604,7 +52674,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Mercenary_Firearm",
@@ -53145,7 +53215,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercenarySniper_Firearm",
@@ -53431,7 +53501,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Warden_Firearm",
@@ -54260,7 +54330,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Scout_Firearm",
@@ -54903,7 +54973,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Skirmisher_Firearm",
@@ -55236,7 +55306,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Recon_Firearm",
@@ -56111,7 +56181,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pathfinder_Firearm",
@@ -56986,7 +57056,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Ranger_Firearm",
@@ -57861,7 +57931,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Gunner_Firearm",
@@ -58210,7 +58280,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "GMPG_Firearm",
@@ -58559,7 +58629,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "AssaultGunner_Firearm",
@@ -58744,7 +58814,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "VeteranGunner_Firearm",
@@ -59093,7 +59163,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercGunner_Firearm",
@@ -59442,7 +59512,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Sergeant_Firearm",
@@ -59865,7 +59935,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Lieutenant_Firearm",
@@ -61017,7 +61087,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Captain_Firearm",
@@ -61846,7 +61916,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercenaryCaptain_Firearm",
@@ -62400,7 +62470,7 @@ return {
 							weight = 30000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Rocketeer_Firearm",
@@ -63806,7 +63876,7 @@ return {
 							loot_def = "LegionGL",
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "HeavyGrenadier_Firearm",
@@ -65202,7 +65272,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																						PlaceObj('ModItemLootDef', {
+																																																																																PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Mortarman_Firearm",
