@@ -86,7 +86,7 @@ DefineClass.Jazz_Simon = {
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {
-			'Preset', "Shadow",
+			'Preset', "Simon",
 		}),
 	},
 	Equipment = {
