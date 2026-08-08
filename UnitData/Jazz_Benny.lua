@@ -79,6 +79,7 @@ DefineClass.Jazz_Benny = {
 	},
 	Dislikes = {},
 	StartingPerks = {
+		"Jazz_Perk_Benny",
 		"Stealthy",
 		"MrFixit",
 		"Throwing",

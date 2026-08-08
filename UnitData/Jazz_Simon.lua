@@ -79,6 +79,7 @@ DefineClass.Jazz_Simon = {
 	},
 	Dislikes = {},
 	StartingPerks = {
+		"Jazz_Perk_Simon",
 		"Stealthy",
 		"SteadyBreathing",
 		"Deadeye",

@@ -119730,6 +119730,7 @@ PlaceObj('ModItemAIArchetype', {
 						"Jazz_Lynx",
 					},
 					'StartingPerks', {
+						"Jazz_Perk_Benny",
 						"Stealthy",
 						"MrFixit",
 						"Throwing",
@@ -120015,6 +120016,7 @@ PlaceObj('ModItemAIArchetype', {
 						"Reaper",
 					},
 					'StartingPerks', {
+						"Jazz_Perk_Simon",
 						"Stealthy",
 						"SteadyBreathing",
 						"Deadeye",
