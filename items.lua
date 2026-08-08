@@ -146069,7 +146069,7 @@ PlaceObj('ModItemAIArchetype', {
 				'MedicalDeposit', "none",
 				'StartingSalary', 127,
 				'StartingLevel', 1,
-								'StartingPerks', {
+				'StartingPerks', {
 				'AutoWeapons',
 				'CQCTraining',
 				'Psycho',
@@ -146496,7 +146496,7 @@ PlaceObj('ModItemAIArchetype', {
 				'MedicalDeposit', "none",
 				'StartingSalary', 139,
 				'StartingLevel', 1,
-								'StartingPerks', {
+				'StartingPerks', {
 				'Throwing',
 				'Scoundrel',
 				},
@@ -146974,7 +146974,7 @@ PlaceObj('ModItemAIArchetype', {
 				'MedicalDeposit', "none",
 				'StartingSalary', 243,
 				'StartingLevel', 1,
-								'StartingPerks', {
+				'StartingPerks', {
 				'NightOps',
 				'Stealthy',
 				},
