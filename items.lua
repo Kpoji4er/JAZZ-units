@@ -144077,6 +144077,9 @@ PlaceObj('ModItemAIArchetype', {
 				'MedicalDeposit', "none",
 				'StartingSalary', 7,
 				'StartingLevel', 1,
+				'StartingPerks', {
+				'Negotiator',
+				},
 				'Specialization', "AllRounder",
 				'MaxHitPoints', 86,
 				'AppearancesList', {
@@ -144179,6 +144182,9 @@ PlaceObj('ModItemAIArchetype', {
 				'MedicalDeposit', "none",
 				'StartingSalary', 21,
 				'StartingLevel', 1,
+				'StartingPerks', {
+				'Negotiator',
+				},
 				'Specialization', "AllRounder",
 				'MaxHitPoints', 88,
 				'AppearancesList', {
@@ -144332,6 +144338,9 @@ PlaceObj('ModItemAIArchetype', {
 				'MedicalDeposit', "none",
 				'StartingSalary', 39,
 				'StartingLevel', 1,
+				'StartingPerks', {
+				'Loner',
+				},
 				'Specialization', "AllRounder",
 				'MaxHitPoints', 80,
 				'AppearancesList', {
@@ -144587,6 +144596,9 @@ PlaceObj('ModItemAIArchetype', {
 				'MedicalDeposit', "none",
 				'StartingSalary', 23,
 				'StartingLevel', 1,
+				'StartingPerks', {
+				'Psycho',
+				},
 				'Specialization', "AllRounder",
 				'MaxHitPoints', 78,
 				'AppearancesList', {
@@ -144740,6 +144752,9 @@ PlaceObj('ModItemAIArchetype', {
 				'MedicalDeposit', "none",
 				'StartingSalary', 41,
 				'StartingLevel', 1,
+				'StartingPerks', {
+				'Scoundrel',
+				},
 				'Specialization', "AllRounder",
 				'MaxHitPoints', 82,
 				'AppearancesList', {
@@ -145097,6 +145112,9 @@ PlaceObj('ModItemAIArchetype', {
 				'MedicalDeposit', "none",
 				'StartingSalary', 81,
 				'StartingLevel', 1,
+				'StartingPerks', {
+				'Pessimist',
+				},
 				'Specialization', "Marksmen",
 				'MaxHitPoints', 78,
 				'AppearancesList', {
@@ -145681,6 +145699,9 @@ PlaceObj('ModItemAIArchetype', {
 				'MedicalDeposit', "none",
 				'StartingSalary', 57,
 				'StartingLevel', 1,
+				'StartingPerks', {
+				'Stealthy',
+				},
 				'Specialization', "AllRounder",
 				'MaxHitPoints', 72,
 				'AppearancesList', {
@@ -145994,6 +146015,9 @@ PlaceObj('ModItemAIArchetype', {
 				'MedicalDeposit', "none",
 				'StartingSalary', 72,
 				'StartingLevel', 1,
+				'StartingPerks', {
+				'Optimist',
+				},
 				'Specialization', "Marksmen",
 				'MaxHitPoints', 82,
 				'AppearancesList', {
@@ -146045,9 +146069,10 @@ PlaceObj('ModItemAIArchetype', {
 				'MedicalDeposit', "none",
 				'StartingSalary', 127,
 				'StartingLevel', 1,
-				'StartingPerks', {
+								'StartingPerks', {
 				'AutoWeapons',
 				'CQCTraining',
+				'Psycho',
 				},
 				'Specialization', "Autoriflemen",
 				'MaxHitPoints', 84,
@@ -146471,8 +146496,9 @@ PlaceObj('ModItemAIArchetype', {
 				'MedicalDeposit', "none",
 				'StartingSalary', 139,
 				'StartingLevel', 1,
-				'StartingPerks', {
+								'StartingPerks', {
 				'Throwing',
+				'Scoundrel',
 				},
 				'Specialization', "HeavyWeapons",
 				'MaxHitPoints', 80,
@@ -146630,6 +146656,9 @@ PlaceObj('ModItemAIArchetype', {
 				'MedicalDeposit', "none",
 				'StartingSalary', 214,
 				'StartingLevel', 1,
+				'StartingPerks', {
+				'Optimist',
+				},
 				'Specialization', "Doctor",
 				'MaxHitPoints', 68,
 				'AppearancesList', {
@@ -146945,8 +146974,9 @@ PlaceObj('ModItemAIArchetype', {
 				'MedicalDeposit', "none",
 				'StartingSalary', 243,
 				'StartingLevel', 1,
-				'StartingPerks', {
+								'StartingPerks', {
 				'NightOps',
+				'Stealthy',
 				},
 				'Specialization', "Marksmen",
 				'MaxHitPoints', 52,

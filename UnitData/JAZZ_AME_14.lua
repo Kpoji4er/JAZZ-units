@@ -33,7 +33,9 @@ DefineClass.JAZZ_AME_14 = {
 	MedicalDeposit = "none",
 	StartingSalary = 41,
 	StartingLevel = 1,
-	StartingPerks = {},
+		StartingPerks = {
+	"Scoundrel",
+	},,
 	Specialization = "AllRounder",
 	MaxHitPoints = 82,
 	AppearancesList = { PlaceObj('AppearanceWeight', { 'Preset', "JAZZ_AME_14" }) },
