@@ -45,6 +45,9 @@ DefineClass.Jazz_Carlos = {
 	self:TryEquip(items, "Handheld B", "Firearm")
 	end,
 	MaxHitPoints = 70,
+	Dislikes = {
+		"Jazz_Iggy",
+	},
 	StartingPerks = {
 	"Jazz_Perk_Carlos",
 	"Pessimist",

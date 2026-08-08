@@ -8348,6 +8348,15 @@ return {
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
 					group = "Mercs",
+					id = "Loot_JAZZ_Iggy",
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Iggy50", weight = 50000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Iggy35", weight = 35000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Iggy25", weight = 25000 }),
+					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Iggy20", weight = 20000 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
 					id = "Loot_JAZZ_Quinten",
 					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Quinten50", weight = 50000 }),
 					PlaceObj('LootEntryLootDef', { loot_def = "JAZZ_Quinten35", weight = 35000 }),
@@ -18667,6 +18676,60 @@ return {
 					Comment = "merc",
 					group = "Mercs",
 					id = "JAZZ_Grom20",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_TireArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 60, stack_min = 60 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Iggy50",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_SovietAssaultArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "RPG7", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Warhead_Frag", stack_max = 3, stack_min = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FragGrenade", stack_max = 2, stack_min = 2 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Iggy35",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_SovietAssaultArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "RPG7", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Warhead_Frag", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 60, stack_min = 60 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Iggy25",
+					loot = "all",
+					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_TireArmor" }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 90, stack_min = 90 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FragGrenade", stack_max = 2, stack_min = 2 }),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "merc",
+					group = "Mercs",
+					id = "JAZZ_Iggy20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_TireArmor" }),
 					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
@@ -119465,6 +119528,128 @@ PlaceObj('ModItemAIArchetype', {
 				}),
 				}),
 			PlaceObj('ModItemFolder', {
+				'name', "Jazz_Iggy",
+			}, {
+				PlaceObj('ModItemUnitDataCompositeDef', {
+					'Group', "MercenariesOld",
+					'Id', "Jazz_Iggy",
+					'object_class', "UnitData",
+				'Affiliation', "AIM",
+				'Health', 88,
+				'Agility', 81,
+				'Dexterity', 79,
+				'Strength', 85,
+				'Wisdom', 71,
+				'Will', 72,
+				'Leadership', 15,
+				'Marksmanship', 87,
+				'Mechanical', 42,
+				'Explosives', 21,
+				'Medical', 33,
+				'Portrait', "Mod/Dv3mFVN/MercPortraits/Iggy.png",
+				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Iggy_Big.png",
+				'IsMercenary', true,
+				'Name', T(890000000004827, "Игмус «Игги» Палков"),
+				'Nick', T(890000000004828, "Игги"),
+				'AllCapsNick', T(890000000004829, "ИГГИ"),
+				'Bio', T(890000000004830, "Русский наёмник, которого королева Дейдранна наняла в армию под командованием Майка ($2000/день). После убийства Майка и осознания режима Дейдранны дезертировал с совестью; позже сидит в баре и нанимается за $1950/день. Гордость и мораль сильные; мечтает о «Великой России». Эксперт тяжёлого оружия. Дружит с Иваном; Конрад его ценит; ненавидит Фиделя."),
+				'Nationality', "Russia",
+				'Title', T(890000000004831, "Тяжеловес из Сан-Моны"),
+				'Email', T(890000000004832, "Iggy@palkov.ru"),
+				'snype_nick', T(890000000004833, "iggy"),
+				'Refusals', {
+					PlaceObj('MercChatRefusal', {
+						'Lines', { PlaceObj('ChatMessage', { 'Text', T(890000000004834, --[[voice:Jazz_Iggy]] "Пока Фидель у вас — нет. С ним я не служу.") }) },
+						'Conditions', { PlaceObj('UnitHireStatus', { Status = "Hired", TargetUnit = "Fidel" }) },
+						'chanceToRoll', 100,
+					}),
+				},
+				'Mitigations', {
+					PlaceObj('MercChatMitigation', {
+						'Lines', { PlaceObj('ChatMessage', { 'Text', T(890000000004835, --[[voice:Jazz_Iggy]] "Иван уже здесь? Тогда своих не бросаю.") }) },
+						'Conditions', {
+							PlaceObj('CheckExpression', {
+								Expression = function (self, obj)
+									return table.count(gv_UnitData, function(k, ud)
+										return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and k == "Ivan"
+									end) >= 1
+								end,
+							}),
+						},
+						'chanceToRoll', 100,
+					}),
+				},
+				'ExtraPartingWords', {
+					PlaceObj('MercChatBranch', {
+						'Lines', { PlaceObj('ChatMessage', { 'Text', T(890000000004836, --[[voice:Jazz_Iggy]] "Возьмите Ивана, если найдёте — свой человек.") }) },
+						'Conditions', {
+							PlaceObj('CheckExpression', {
+								Expression = function (self, obj)
+									return table.count(gv_UnitData, function(k, ud)
+										return IsKindOf(ud, "UnitData") and ud.HireStatus == "Hired" and k == "Ivan"
+									end) < 1
+								end,
+							}),
+						},
+					}),
+				},
+				'Offline', { PlaceObj('ChatMessage', { 'Text', T(890000000004837, --[[voice:Jazz_Iggy]] "Палков. Позже — сейчас не у бара.") }) },
+				'GreetingAndOffer', { PlaceObj('ChatMessage', { 'Text', T(890000000004838, --[[voice:Jazz_Iggy]] "Игги. Служил у Дейдранны — больше нет. Тысяча девятьсот пятьдесят в день, и я ваш.") }) },
+				'ConversationRestart', { PlaceObj('ChatMessage', { 'Text', T(890000000004839, --[[voice:Jazz_Iggy]] "Связь пропала. Говорите.") }) },
+				'IdleLine', { PlaceObj('ChatMessage', { 'Text', T(890000000004840, --[[voice:Jazz_Iggy]] "Почему люди не могут быть как я? А?") }) },
+				'PartingWords', { PlaceObj('ChatMessage', { 'Text', T(890000000004841, --[[voice:Jazz_Iggy]] "Тяжёлое оружие со мной. Идём.") }) },
+				'RehireIntro', { PlaceObj('ChatMessage', { 'Text', T(890000000004842, --[[voice:Jazz_Iggy]] "Контракт кончается. Продлеваем — те же тысяча девятьсот пятьдесят?") }) },
+				'RehireOutro', { PlaceObj('ChatMessage', { 'Text', T(890000000004843, --[[voice:Jazz_Iggy]] "Остаюсь. Совесть уже чище, чем при королеве.") }) },
+				'MedicalDeposit', "small",
+				'StartingSalary', 1950,
+				'SalaryIncrease', 200,
+				'SalaryLv1', 1950,
+				'SalaryMaxLv', 4500,
+				'StartingLevel', 5,
+				'CustomEquipGear', function (self, items)
+				self:TryEquip(items, "Handheld A", "Firearm")
+				self:TryEquip(items, "Handheld B", "Firearm")
+				end,
+				'MaxHitPoints', 88,
+				'Likes', { "Ivan" },
+				'Dislikes', { "Fidel" },
+				'StartingPerks', {
+				"Jazz_Perk_Iggy",
+				"HeavyWeaponsTraining",
+				"Throwing",
+				"Hardened",
+				},
+				'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "Iggy" }) },
+				'Equipment', { "Loot_JAZZ_Iggy" },
+				'Tier', "Veteran",
+				'Specialization', "HeavyWeapons",
+				'pollyvoice', "Matthew",
+				'gender', "Male",
+				'VoiceResponseId', "Jazz_Iggy",
+				'FallbackMissingVR', "Ice",
+				'DaysUntilOnline', 0,
+				}),
+				PlaceObj('ModItemVoiceResponse', {
+					Selection = TConcat({ T(890000000004844, --[[voice:Jazz_Iggy]] "Игги на месте.") }),
+					AimAttack = TConcat({
+						T(890000000004845, --[[voice:Jazz_Iggy]] "Огонь!"),
+						T(890000000004846, --[[voice:Jazz_Iggy]] "Тяжёлое готово."),
+					}),
+					OpponentKilled = TConcat({ T(890000000004847, --[[voice:Jazz_Iggy]] "Этот я выиграл!") }),
+					DeathGeneral = TConcat({ T(890000000004848, --[[voice:Jazz_Iggy]] "Верните пепел Матушке России…") }),
+					Downed = TConcat({ T(890000000004849, --[[voice:Jazz_Iggy]] "Ранило… ещё держусь.") }),
+					CombatStartDetected = TConcat({ T(890000000004850, --[[voice:Jazz_Iggy]] "Предатели в секторе!") }),
+					LevelUp = TConcat({ T(890000000004851, --[[voice:Jazz_Iggy]] "Опыт растёт.") }),
+					AmmoLow = TConcat({ T(890000000004852, --[[voice:Jazz_Iggy]] "Боекомплект на исходе!") }),
+					Idle = TConcat({ T(890000000004853, --[[voice:Jazz_Iggy]] "Внутри я тёплый и пушистый.") }),
+					MockDislike1 = TConcat({ T(890000000004854, --[[voice:Jazz_Iggy]] "Хорошо, что Фиделя тут нет.") }),
+					PraisesBuddy1 = TConcat({ T(890000000004855, --[[voice:Jazz_Iggy]] "Со своими — проще.") }),
+					group = "MercenariesOld",
+					id = "Jazz_Iggy",
+				}),
+				}),
+
+			PlaceObj('ModItemFolder', {
 				'name', "Jazz_Benny",
 			}, {
 				PlaceObj('ModItemUnitDataCompositeDef', {
@@ -127908,6 +128093,9 @@ PlaceObj('ModItemAIArchetype', {
 				self:TryEquip(items, "Handheld B", "Firearm")
 				end,
 				'MaxHitPoints', 70,
+				'Dislikes', {
+				"Jazz_Iggy",
+				},
 				'StartingPerks', {
 				"Jazz_Perk_Carlos",
 				"Pessimist",
@@ -148415,6 +148603,70 @@ PlaceObj('ModItemAIArchetype', {
 			}),
 			group = "JAZZ_JA12",
 			id = "Grom",
+		}),
+		PlaceObj('ModItemAppearancePreset', {
+			ArmorColor = PlaceObj('ColorizationPropSet', {
+			'EditableColor1', RGBA(0, 0, 0, 255),
+			'EditableColor2', RGBA(0, 0, 0, 255),
+			'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Body = "EquipmentIgor_Top",
+			BodyColor = PlaceObj('ColorizationPropSet', {
+			'EditableColor1', RGBA(0, 0, 0, 255),
+			'EditableColor2', RGBA(0, 0, 0, 255),
+			'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			ChestColor = PlaceObj('ColorizationPropSet', {
+			'EditableColor1', RGBA(0, 0, 0, 255),
+			'EditableColor2', RGBA(0, 0, 0, 255),
+			'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Hair = "EquipmentHitman_Hair",
+			HairColor = PlaceObj('ColorizationPropSet', {
+			'EditableColor1', RGBA(26, 23, 23, 255),
+			'EditableRoughness1', 29,
+			'EditableColor2', RGBA(51, 47, 45, 255),
+			'EditableRoughness2', 33,
+			'EditableMetallic2', -128,
+			'EditableColor3', RGBA(33, 31, 30, 255),
+			'EditableRoughness3', 36,
+			'EditableMetallic3', 127,
+			}),
+			HairParam3 = 32,
+			Hat2Color = PlaceObj('ColorizationPropSet', {
+			'EditableColor1', RGBA(0, 0, 0, 255),
+			'EditableColor2', RGBA(0, 0, 0, 255),
+			'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HatColor = PlaceObj('ColorizationPropSet', {
+			'EditableColor1', RGBA(0, 0, 0, 255),
+			'EditableColor2', RGBA(0, 0, 0, 255),
+			'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Head = "Head_Hitman",
+			HeadColor = PlaceObj('ColorizationPropSet', {
+			'EditableColor1', RGBA(0, 0, 0, 255),
+			'EditableColor2', RGBA(0, 0, 0, 255),
+			'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			HipColor = PlaceObj('ColorizationPropSet', {
+			'EditableColor1', RGBA(0, 0, 0, 255),
+			'EditableColor2', RGBA(0, 0, 0, 255),
+			'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			Pants = "EquipmentIgor_Bottom",
+			PantsColor = PlaceObj('ColorizationPropSet', {
+			'EditableColor1', RGBA(0, 0, 0, 255),
+			'EditableColor2', RGBA(0, 0, 0, 255),
+			'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			ShirtColor = PlaceObj('ColorizationPropSet', {
+			'EditableColor1', RGBA(0, 0, 0, 255),
+			'EditableColor2', RGBA(0, 0, 0, 255),
+			'EditableColor3', RGBA(0, 0, 0, 255),
+			}),
+			group = "JAZZ_JA12",
+			id = "Iggy",
 		}),
 		PlaceObj('ModItemAppearancePreset', {
 			ArmorColor = PlaceObj('ColorizationPropSet', {
