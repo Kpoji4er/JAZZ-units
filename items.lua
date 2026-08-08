@@ -18799,6 +18799,7 @@ return {
 					Comment = "merc",
 					group = "Mercs",
 					id = "Smiley",
+			Affiliation = "MERC",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', {
 						Condition = 90,
@@ -18830,6 +18831,7 @@ return {
 					Comment = "merc",
 					group = "Mercs",
 					id = "Larry",
+			Affiliation = "MERC",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', {
 						item = "HiPower",
@@ -117416,6 +117418,7 @@ PlaceObj('ModItemAIArchetype', {
 					}),
 					group = "MercenariesOld",
 					id = "Jazz_Blade",
+			Affiliation = "MERC",
 				}),
 				}),
 			PlaceObj('ModItemFolder', {
@@ -118422,6 +118425,7 @@ PlaceObj('ModItemAIArchetype', {
 					}),
 					group = "MercenariesOld",
 					id = "Jazz_Madman",
+			Affiliation = "MERC",
 				}),
 				}),
 			PlaceObj('ModItemFolder', {
@@ -118792,6 +118796,7 @@ PlaceObj('ModItemAIArchetype', {
 					}),
 					group = "MercenariesOld",
 					id = "Jazz_Conrad",
+			Affiliation = "MERC",
 				}),
 				}),
 			PlaceObj('ModItemFolder', {
@@ -121408,6 +121413,7 @@ PlaceObj('ModItemAIArchetype', {
 					}),
 					group = "MercenariesOld",
 					id = "Jazz_Biff",
+			Affiliation = "MERC",
 				}),
 				}),
 			PlaceObj('ModItemFolder', {
@@ -121743,6 +121749,7 @@ PlaceObj('ModItemAIArchetype', {
 					}),
 					group = "MercenariesOld",
 					id = "Jazz_Nervous",
+			Affiliation = "MERC",
 				}),
 				}),
 			PlaceObj('ModItemFolder', {
@@ -122091,6 +122098,7 @@ PlaceObj('ModItemAIArchetype', {
 					}),
 					group = "MercenariesOld",
 					id = "Jazz_Flo",
+			Affiliation = "MERC",
 				}),
 				}),
 			PlaceObj('ModItemFolder', {
@@ -122440,6 +122448,7 @@ PlaceObj('ModItemAIArchetype', {
 					}),
 					group = "MercenariesOld",
 					id = "Jazz_Cougar",
+			Affiliation = "MERC",
 				}),
 				}),
 			PlaceObj('ModItemFolder', {
@@ -123399,6 +123408,7 @@ PlaceObj('ModItemAIArchetype', {
 					}),
 					group = "MercenariesOld",
 					id = "Jazz_Dynamo",
+			Affiliation = "MERC",
 				}),
 				}),
 			PlaceObj('ModItemFolder', {
@@ -123758,6 +123768,7 @@ PlaceObj('ModItemAIArchetype', {
 					}),
 					group = "MercenariesOld",
 					id = "Jazz_Gaston",
+			Affiliation = "MERC",
 				}),
 				}),
 			PlaceObj('ModItemFolder', {
@@ -124113,6 +124124,7 @@ PlaceObj('ModItemAIArchetype', {
 					}),
 					group = "MercenariesOld",
 					id = "Jazz_Horg",
+			Affiliation = "MERC",
 				}),
 				}),
 			PlaceObj('ModItemFolder', {
@@ -126909,6 +126921,7 @@ PlaceObj('ModItemAIArchetype', {
 					}),
 					group = "MercenariesOld",
 					id = "Jazz_Cord",
+			Affiliation = "MERC",
 				}),
 				}),
 			PlaceObj('ModItemFolder', {
@@ -127221,6 +127234,7 @@ PlaceObj('ModItemAIArchetype', {
 					}),
 					group = "MercenariesOld",
 					id = "Jazz_Hobbit",
+			Affiliation = "MERC",
 				}),
 				}),
 			PlaceObj('ModItemFolder', {
@@ -127595,6 +127609,7 @@ PlaceObj('ModItemAIArchetype', {
 					}),
 					group = "MercenariesOld",
 					id = "Jazz_Ricochet",
+			Affiliation = "MERC",
 				}),
 				}),
 			PlaceObj('ModItemFolder', {
@@ -127842,6 +127857,7 @@ PlaceObj('ModItemAIArchetype', {
 					}),
 					group = "MercenariesOld",
 					id = "Jazz_Meat",
+			Affiliation = "MERC",
 				}),
 				}),
 			PlaceObj('ModItemFolder', {
@@ -128583,6 +128599,7 @@ PlaceObj('ModItemAIArchetype', {
 					}),
 					group = "MercenariesOld",
 					id = "Jazz_Shank",
+			Affiliation = "MERC",
 				}),
 				}),
 			PlaceObj('ModItemFolder', {

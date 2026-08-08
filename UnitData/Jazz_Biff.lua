@@ -1,5 +1,6 @@
 UndefineClass('Jazz_Biff')
 DefineClass.Jazz_Biff = {
+	Affiliation = "MERC",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 

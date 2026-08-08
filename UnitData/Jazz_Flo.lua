@@ -1,5 +1,6 @@
 UndefineClass('Jazz_Flo')
 DefineClass.Jazz_Flo = {
+	Affiliation = "MERC",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
