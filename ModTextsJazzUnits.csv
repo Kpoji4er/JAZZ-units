@@ -145,7 +145,7 @@ ID,Text,Translation,VoiceActor,Context
 629563996275,Heavy Legion Outpost Defenders,,,ModItemEnemySquads LegionExtraDefenders_Marksmen_Hard displayName
 442187410309,Тяжелый Отряд Легиона,,,ModItemEnemySquads LegionHeavyTroops_Gunners displayName
 954364632652,Гарнизон Легиона,,,ModItemEnemySquads FortressDefenders displayName
-323511335269,Гарнизон Ло Блё,,,ModItemEnemySquads LegionFortressDefenders displayName
+323511335269,Гарнизон Ло Блё,,,ModItemEnemySquads FortressDefenders_NoMaps displayName
 676216529798,Штурмовики Легиона,,,ModItemEnemySquads LegionDefenders_Shooters_Easy displayName
 114586522565,Штурмовики Легиона,,,ModItemEnemySquads LegionDefenders_Shooters_Easy_Ernie displayName
 701157196231,Армейский Спецназ,,,ModItemEnemySquads ArmySpecOps displayName

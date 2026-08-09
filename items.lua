@@ -96805,6 +96805,138 @@ PlaceObj('ModItemAIArchetype', {
 				id = "JAZZ_Legion_SentrySquad_AroundVilla",
 			}),
 			PlaceObj('ModItemEnemySquads', {
+				Comment = "Villa siege Ernie column Normal base 30; Easy/Hard +-10 later; not ClearTheWay-clearable",
+				Units = {
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+								'spawnWeight', 40,
+							}),
+						},
+						'UnitCountMin', 6,
+						'UnitCountMax', 6,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Marauder",
+								'spawnWeight', 40,
+							}),
+						},
+						'UnitCountMin', 6,
+						'UnitCountMax', 6,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+								'spawnWeight', 50,
+							}),
+						},
+						'UnitCountMin', 3,
+						'UnitCountMax', 3,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
+							}),
+						},
+						'UnitCountMin', 5,
+						'UnitCountMax', 5,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+								'spawnWeight', 40,
+							}),
+						},
+						'UnitCountMin', 3,
+						'UnitCountMax', 3,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 2,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_HeavyT3_Mortarman",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_HeavyT1_Rocketeer",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Veteran",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT3_Punisher",
+								'spawnWeight', 40,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+				},
+				comment = "-- Villa siege Ernie column base 30",
+				displayName = T(623794979175, --[[ModItemEnemySquads JAZZ_Legion_VillaAttackers_Ernie displayName]] "Осадный отряд"),
+				group = "Default",
+				id = "JAZZ_Legion_VillaAttackers_Ernie",
+			}),
+
+			PlaceObj('ModItemEnemySquads', {
 				Comment = "1700 (9)",
 				Units = {
 					PlaceObj('EnemySquadUnit', {
