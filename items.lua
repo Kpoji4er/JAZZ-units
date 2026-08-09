@@ -99148,8 +99148,8 @@ PlaceObj('ModItemAIArchetype', {
 									'spawnWeight', 10,
 								}),
 							},
-							'UnitCountMin', 2,
-							'UnitCountMax', 2,
+							'UnitCountMin', 1,
+							'UnitCountMax', 1,
 						}),
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -99165,15 +99165,9 @@ PlaceObj('ModItemAIArchetype', {
 								PlaceObj('UnitTypeListWithWeights', {
 									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								}),
-								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
-								}),
-								PlaceObj('UnitTypeListWithWeights', {
-									'unitType', "JAZZ_Legion_AssaultT2_Pyro",
-								}),
 							},
-							'UnitCountMin', 4,
-							'UnitCountMax', 4,
+							'UnitCountMin', 2,
+							'UnitCountMax', 2,
 						}),
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -99181,8 +99175,8 @@ PlaceObj('ModItemAIArchetype', {
 									'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								}),
 							},
-							'UnitCountMin', 3,
-							'UnitCountMax', 3,
+							'UnitCountMin', 2,
+							'UnitCountMax', 2,
 						}),
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -99208,8 +99202,8 @@ PlaceObj('ModItemAIArchetype', {
 									'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								}),
 							},
-							'UnitCountMin', 6,
-							'UnitCountMax', 6,
+							'UnitCountMin', 4,
+							'UnitCountMax', 4,
 						}),
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -99227,8 +99221,8 @@ PlaceObj('ModItemAIArchetype', {
 									'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								}),
 							},
-							'UnitCountMin', 4,
-							'UnitCountMax', 4,
+							'UnitCountMin', 3,
+							'UnitCountMax', 3,
 						}),
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -99260,8 +99254,8 @@ PlaceObj('ModItemAIArchetype', {
 									'unitType', "JAZZ_Legion_FrontT2_Raider",
 								}),
 							},
-							'UnitCountMin', 5,
-							'UnitCountMax', 5,
+							'UnitCountMin', 3,
+							'UnitCountMax', 3,
 						}),
 						PlaceObj('EnemySquadUnit', {
 							'weightedList', {
@@ -99279,7 +99273,7 @@ PlaceObj('ModItemAIArchetype', {
 							'UnitCountMax', 1,
 						}),
 					},
-					comment = "-- Стартовый отряд на смотровой площадке",
+					comment = "-- Стартовый отряд на смотровой площадке (~30; Ernie M4 soft nerf)",
 					group = "Ernie",
 					id = "LegionOutlook_Easy",
 				}),
