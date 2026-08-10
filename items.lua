@@ -8683,9 +8683,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "SWModel29",
 					}),
@@ -8719,6 +8716,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_Sunglasses",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -8730,9 +8728,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Ithaca",
 					}),
@@ -8764,6 +8759,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_Sunglasses",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -8775,9 +8771,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "MPL",
@@ -8815,6 +8808,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_Sunglasses",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -8826,9 +8820,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "M1897",
 					}),
@@ -8883,17 +8874,15 @@ return {
 						stack_min = 16,
 					}),
 					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
-					PlaceObj('LootEntryInventoryItem', {
 						item = "Meds",
 						stack_max = 20,
 						stack_min = 15,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 15, stack_max = 15 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_min = 10, stack_max = 10 }),
+
+
 					PlaceObj('LootEntryInventoryItem', {
 						generate_chance = 50,
 						item = "JazzArmor_LeatherVest",
@@ -8931,8 +8920,11 @@ return {
 						stack_max = 40,
 						stack_min = 30,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 					PlaceObj('LootEntryInventoryItem', {
 						generate_chance = 50,
 						item = "JazzArmor_LeatherVest",
@@ -8962,13 +8954,11 @@ return {
 						stack_max = 40,
 						stack_min = 30,
 					}),
-					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 					PlaceObj('LootEntryInventoryItem', {
 						generate_chance = 50,
 						item = "JazzArmor_LeatherVest",
@@ -8994,17 +8984,15 @@ return {
 						stack_min = 68,
 					}),
 					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
-					PlaceObj('LootEntryInventoryItem', {
 						item = "Meds",
 						stack_max = 20,
 						stack_min = 15,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 					PlaceObj('LootEntryInventoryItem', {
 						generate_chance = 50,
 						item = "JazzArmor_LeatherVest",
@@ -9030,13 +9018,6 @@ return {
 						stack_min = 60,
 					}),
 					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
-					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 2,
 						stack_min = 2,
@@ -9051,6 +9032,8 @@ return {
 						item = "JazzArmor_NVG1",
 						negate = true,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_min = 10, stack_max = 10 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -9069,13 +9052,6 @@ return {
 						stack_min = 100,
 					}),
 					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
-					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 2,
 						stack_min = 2,
@@ -9090,6 +9066,8 @@ return {
 						item = "JazzArmor_NVG1",
 						negate = true,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 3, stack_max = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -9109,13 +9087,6 @@ return {
 						stack_min = 90,
 					}),
 					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
-					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 2,
 						stack_min = 2,
@@ -9130,6 +9101,7 @@ return {
 						item = "JazzArmor_NVG1",
 						negate = true,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 2 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -9139,9 +9111,6 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "AVT40",
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_762x54_APIT",
@@ -9161,6 +9130,7 @@ return {
 						generate_chance = 10,
 						item = "JazzArmor_SovietHelm",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -9170,9 +9140,6 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Stoeger",
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "GutHookKnife",
 					}),
@@ -9195,6 +9162,7 @@ return {
 						generate_chance = 10,
 						item = "JazzArmor_SovietHelm",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -9213,9 +9181,6 @@ return {
 						stack_max = 140,
 						stack_min = 140,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "GutHookKnife",
 					}),
@@ -9237,9 +9202,6 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "DoubleBarrelShotgun",
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "GutHookKnife",
 					}),
@@ -9269,9 +9231,6 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "CustomPDA",
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Webley",
 						stack_max = 1,
@@ -9296,6 +9255,8 @@ return {
 						generate_chance = 50,
 						item = "JazzArmor_UniformCap",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_min = 10, stack_max = 10 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -9305,9 +9266,6 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "CustomPDA",
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Scorpion",
 						stack_max = 1,
@@ -9332,6 +9290,8 @@ return {
 						generate_chance = 50,
 						item = "JazzArmor_UniformCap",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -9341,9 +9301,6 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "CustomPDA",
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "MAC1950",
 						stack_max = 1,
@@ -9368,6 +9325,7 @@ return {
 						generate_chance = 50,
 						item = "JazzArmor_UniformCap",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -9377,9 +9335,6 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "CustomPDA",
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "MAT49",
 						stack_max = 1,
@@ -9406,6 +9361,7 @@ return {
 						generate_chance = 50,
 						item = "JazzArmor_UniformCap",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -9415,9 +9371,6 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "CustomPDA",
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Sterling",
 						stack_max = 1,
@@ -9444,6 +9397,7 @@ return {
 						generate_chance = 50,
 						item = "JazzArmor_UniformCap",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -9464,8 +9418,6 @@ return {
 						stack_max = 30,
 						stack_min = 30,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1, drop_chance = 65 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1, drop_chance = 25 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JAZZ_AMMO_762x54_FMJ",
@@ -9488,6 +9440,7 @@ return {
 						item = "JazzArmor_FlakM1955",
 						negate = true,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -9499,8 +9452,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1, drop_chance = 65 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1, drop_chance = 25 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						condition = "Difficulty VeryHard",
@@ -9547,8 +9498,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1, drop_chance = 65 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1, drop_chance = 25 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_762x25_FMJ",
@@ -9587,8 +9536,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1, drop_chance = 65 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1, drop_chance = 25 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_762x54_FMJ",
@@ -9627,9 +9574,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_9x18_FMJ",
@@ -9650,6 +9594,7 @@ return {
 						item = "JazzArmor_Uniform",
 						negate = true,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -9661,9 +9606,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_9x19_JHP",
@@ -9684,6 +9626,7 @@ return {
 						item = "JazzArmor_Uniform",
 						negate = true,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -9697,9 +9640,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						condition = "Difficulty VeryHard",
@@ -9743,9 +9683,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JAZZ_AMMO_9x18_FMJ",
 						stack_max = 24,
@@ -9775,9 +9712,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_9x18_FMJ",
@@ -9819,13 +9753,11 @@ return {
 						stack_max = 50,
 						stack_min = 50,
 					}),
-					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 15, stack_max = 15 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Reanimationsset", stack_min = 15, stack_max = 15 }),
+
+
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JazzArmor_FlakM69",
@@ -9853,13 +9785,11 @@ return {
 						stack_max = 30,
 						stack_min = 30,
 					}),
-					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_min = 10, stack_max = 10 }),
+
+
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JazzArmor_FlakM69",
@@ -9887,13 +9817,11 @@ return {
 						stack_max = 30,
 						stack_min = 30,
 					}),
-					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 1,
@@ -9915,13 +9843,11 @@ return {
 						stack_max = 30,
 						stack_min = 30,
 					}),
-					PlaceObj('LootEntryInventoryItem', {
-						item = "Medkit",
-						stack_max = 3,
-						stack_min = 3,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 1,
@@ -9954,9 +9880,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_50AE_JHP",
@@ -10003,6 +9926,7 @@ return {
 						generate_chance = 50,
 						item = "JazzArmor_M1Helm",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -10014,9 +9938,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_50AE_JHP",
@@ -10072,9 +9993,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_50AE_FMJ",
@@ -10120,9 +10038,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_50AE_FMJ",
@@ -10170,9 +10085,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_50AE_FMJ",
@@ -10217,9 +10129,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_762x25_FMJ",
@@ -10239,6 +10148,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_LeatherVest",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -10250,9 +10160,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JAZZ_AMMO_9x19_FMJ",
 						stack_max = 30,
@@ -10276,6 +10183,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_LeatherVest",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -10287,9 +10195,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JAZZ_AMMO_45ACP_FMJ",
 						stack_max = 18,
@@ -10324,9 +10229,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_762x25_FMJ",
@@ -10352,9 +10254,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_9x19_FMJ",
@@ -10382,9 +10281,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						condition = "Difficulty VeryHard",
@@ -10415,6 +10311,7 @@ return {
 						generate_chance = 30,
 						item = "JazzArmor_LeatherPants",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -10426,9 +10323,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_9x19_FMJ",
@@ -10475,9 +10369,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						condition = "Difficulty VeryHard",
@@ -10524,9 +10415,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_9x19_FMJ",
@@ -10566,9 +10454,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JAZZ_AMMO_9x19_FMJ",
 						stack_max = 8,
@@ -10608,9 +10493,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "SWModel5906",
 						stack_max = 1,
@@ -10662,6 +10544,7 @@ return {
 						item = "JazzArmor_TwaronHelmHeavy",
 						negate = true,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -10684,9 +10567,6 @@ return {
 						stack_max = 60,
 						stack_min = 60,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "Glock17",
@@ -10740,6 +10620,7 @@ return {
 						item = "JazzArmor_ProTecHelm",
 						negate = true,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -10759,9 +10640,6 @@ return {
 						stack_max = 40,
 						stack_min = 40,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_556_Army",
@@ -10838,9 +10716,6 @@ return {
 						stack_max = 90,
 						stack_min = 90,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife_Sharpened",
 						stack_max = 1,
@@ -10929,17 +10804,15 @@ return {
 						stack_min = 1,
 					}),
 					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
-					PlaceObj('LootEntryInventoryItem', {
 						item = "Meds",
 						stack_max = 40,
 						stack_min = 40,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 15, stack_max = 15 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_min = 10, stack_max = 10 }),
+
+
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -10976,17 +10849,15 @@ return {
 						stack_min = 1,
 					}),
 					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
-					PlaceObj('LootEntryInventoryItem', {
 						item = "Meds",
 						stack_max = 15,
 						stack_min = 15,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -11022,17 +10893,15 @@ return {
 						stack_min = 1,
 					}),
 					PlaceObj('LootEntryInventoryItem', {
-						item = "Medkit",
-						stack_max = 3,
-						stack_min = 3,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
-					PlaceObj('LootEntryInventoryItem', {
 						item = "Meds",
 						stack_max = 80,
 						stack_min = 80,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -11069,17 +10938,15 @@ return {
 						stack_min = 1,
 					}),
 					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
-					PlaceObj('LootEntryInventoryItem', {
 						item = "Meds",
 						stack_max = 40,
 						stack_min = 40,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -11097,9 +10964,6 @@ return {
 						stack_max = 30,
 						stack_min = 30,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_9x19_FMJ",
@@ -11162,6 +11026,9 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -11173,9 +11040,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_12gauge_Buckshot",
@@ -11249,6 +11113,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -11260,9 +11125,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_556_Army",
@@ -11330,6 +11192,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -11341,9 +11204,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_9x19_AP",
@@ -11396,6 +11256,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -11407,9 +11268,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_45ACP_FMJ",
@@ -11479,6 +11337,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -11497,9 +11356,6 @@ return {
 						stack_max = 120,
 						stack_min = 120,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "SWModel29",
 						stack_max = 1,
@@ -11528,6 +11384,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -11543,9 +11400,6 @@ return {
 						stack_max = 90,
 						stack_min = 60,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "HE_Grenade",
@@ -11582,9 +11436,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_357_JHP",
@@ -11629,9 +11480,6 @@ return {
 						stack_max = 30,
 						stack_min = 30,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "FragGrenade",
 						stack_max = 1,
@@ -11670,9 +11518,6 @@ return {
 						stack_max = 28,
 						stack_min = 28,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "FragGrenade",
 						stack_max = 1,
@@ -11707,9 +11552,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "EndlessKnives",
 						stack_max = 1,
@@ -11728,6 +11570,9 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_min = 10, stack_max = 10 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -11739,9 +11584,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_9x19_FMJ",
@@ -11766,6 +11608,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 3, stack_max = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -11783,9 +11627,6 @@ return {
 						stack_max = 34,
 						stack_min = 34,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "SmokeGrenade",
 						stack_max = 2,
@@ -11809,6 +11650,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 2 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -11823,9 +11665,6 @@ return {
 						stack_max = 3,
 						stack_min = 3,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JAZZ_AMMO_40mmFlashbangGrenade",
 						stack_max = 3,
@@ -11856,6 +11695,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -11871,9 +11711,6 @@ return {
 						stack_max = 40,
 						stack_min = 40,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						condition = "Difficulty VeryHard",
 						negate = true,
@@ -11910,9 +11747,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_38special_FMJ",
@@ -11955,9 +11789,6 @@ return {
 						stack_max = 24,
 						stack_min = 24,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JazzArmor_GuardianLight",
@@ -11983,9 +11814,6 @@ return {
 						stack_max = 6,
 						stack_min = 6,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Webley",
 						stack_max = 1,
@@ -12014,9 +11842,6 @@ return {
 						item = "Mini14",
 						negate = true,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						condition = "Difficulty VeryHard",
@@ -12041,6 +11866,9 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -12050,9 +11878,6 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "CZ75",
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JAZZ_AMMO_9x19_Match",
 						stack_max = 30,
@@ -12065,6 +11890,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 2 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -12084,15 +11910,13 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_45ACP_JHP",
 						stack_max = 60,
 						stack_min = 60,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -12104,9 +11928,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_357_FMJ",
@@ -12120,6 +11941,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -12131,9 +11953,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JAZZ_AMMO_9x19_FMJ",
 						stack_max = 60,
@@ -12146,6 +11965,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -12157,9 +11977,6 @@ return {
 						item = "DP27",
 						negate = true,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						condition = "Difficulty VeryHard",
@@ -12181,6 +11998,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -12192,9 +12011,6 @@ return {
 						item = "UMP45",
 						negate = true,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "M3GreaseGun",
@@ -12227,6 +12043,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -12246,9 +12063,6 @@ return {
 						stack_max = 40,
 						stack_min = 40,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Glock17",
 						stack_max = 1,
@@ -12266,6 +12080,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -12290,9 +12105,6 @@ return {
 						stack_max = 60,
 						stack_min = 60,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Glock17",
 						stack_max = 1,
@@ -12327,9 +12139,6 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Korth",
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_357_FMJ",
@@ -12375,9 +12184,6 @@ return {
 						stack_max = 60,
 						stack_min = 60,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						guaranteed = true,
@@ -12410,6 +12216,7 @@ return {
 						stack_max = 24,
 						stack_min = 24,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -12423,9 +12230,6 @@ return {
 						stack_max = 60,
 						stack_min = 60,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						condition = "Difficulty VeryHard",
 						negate = true,
@@ -12470,6 +12274,7 @@ return {
 						stack_max = 24,
 						stack_min = 24,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -12483,9 +12288,6 @@ return {
 						stack_max = 60,
 						stack_min = 60,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						condition = "Difficulty VeryHard",
 						negate = true,
@@ -12537,9 +12339,6 @@ return {
 						stack_max = 60,
 						stack_min = 60,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						condition = "Difficulty VeryHard",
 						negate = true,
@@ -12592,9 +12391,6 @@ return {
 						stack_max = 120,
 						stack_min = 120,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						condition = "Difficulty VeryHard",
 						negate = true,
@@ -12656,9 +12452,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_9x19_FMJ",
@@ -12688,6 +12481,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -12713,9 +12507,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_9x19_FMJ",
@@ -12745,6 +12536,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -12756,9 +12548,6 @@ return {
 						stack_max = 2,
 						stack_min = 2,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_38special_JHP",
@@ -12823,9 +12612,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_45ACP_FMJ",
@@ -12861,9 +12647,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_762x25_FMJ",
@@ -12909,9 +12692,6 @@ return {
 						stack_max = 90,
 						stack_min = 90,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "SmokeGrenade",
 						stack_max = 2,
@@ -12961,6 +12741,7 @@ return {
 						generate_chance = 50,
 						item = "JazzArmor_ESS",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -12982,9 +12763,6 @@ return {
 						stack_max = 12,
 						stack_min = 12,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						condition = "Difficulty VeryHard",
@@ -13048,6 +12826,7 @@ return {
 						generate_chance = 50,
 						item = "JazzArmor_ESS",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -13063,9 +12842,6 @@ return {
 						stack_max = 6,
 						stack_min = 6,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_12gauge_Slug",
@@ -13147,9 +12923,6 @@ return {
 						stack_max = 100,
 						stack_min = 100,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Colt38Special",
 						stack_max = 1,
@@ -13213,9 +12986,6 @@ return {
 						stack_max = 60,
 						stack_min = 60,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "ConcussiveGrenade",
 						stack_max = 2,
@@ -13262,9 +13032,6 @@ return {
 						stack_max = 64,
 						stack_min = 64,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "TexRevolver",
 						stack_max = 1,
@@ -13285,6 +13052,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -13297,9 +13065,6 @@ return {
 						stack_max = 64,
 						stack_min = 64,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "TexRevolver",
 						stack_max = 1,
@@ -13339,9 +13104,6 @@ return {
 						stack_max = 64,
 						stack_min = 64,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "TexRevolver",
 						stack_max = 1,
@@ -13389,9 +13151,6 @@ return {
 						stack_max = 20,
 						stack_min = 20,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "FragGrenade",
 						stack_max = 2,
@@ -13417,6 +13176,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -13432,9 +13192,6 @@ return {
 						stack_max = 24,
 						stack_min = 24,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 1,
@@ -13465,6 +13222,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -13484,9 +13242,6 @@ return {
 						stack_max = 42,
 						stack_min = 42,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						weapon = "R870",
 					}),
@@ -13539,9 +13294,6 @@ return {
 						stack_max = 24,
 						stack_min = 24,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_12gauge_Saltshot",
@@ -13589,18 +13341,16 @@ return {
 						stack_max = 100,
 						stack_min = 100,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 15, stack_max = 15 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Reanimationsset", stack_min = 15, stack_max = 15 }),
+
+
 					PlaceObj('LootEntryInventoryItem', {
 						item = "HerbalMedicine",
 						stack_max = 5,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', {
-						item = "Medkit",
-						stack_max = 3,
-						stack_min = 3,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_Uniform",
 						stack_max = 1,
@@ -13636,18 +13386,16 @@ return {
 						stack_max = 60,
 						stack_min = 60,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 15, stack_max = 15 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_min = 10, stack_max = 10 }),
+
+
 					PlaceObj('LootEntryInventoryItem', {
 						item = "HerbalMedicine",
 						stack_max = 5,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_Uniform",
 						stack_max = 1,
@@ -13683,9 +13431,6 @@ return {
 						stack_max = 68,
 						stack_min = 68,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JAZZ_AMMO_45ACP_FMJ",
 						stack_max = 14,
@@ -13736,6 +13481,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -13746,9 +13492,6 @@ return {
 						Double = true,
 						item = "Webley",
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_45ACP_FMJ",
@@ -13790,9 +13533,6 @@ return {
 						stack_max = 60,
 						stack_min = 60,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "ProximityTNT",
 						stack_max = 2,
@@ -13831,9 +13571,6 @@ return {
 						stack_max = 56,
 						stack_min = 56,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_SwatPads",
 						stack_max = 1,
@@ -13846,6 +13583,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -13863,9 +13601,6 @@ return {
 						stack_max = 14,
 						stack_min = 14,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						weapon = "ZastavaM76",
 					}),
@@ -13904,9 +13639,6 @@ return {
 						stack_max = 14,
 						stack_min = 14,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						weapon = "FRF2",
 					}),
@@ -13945,9 +13677,6 @@ return {
 						stack_max = 14,
 						stack_min = 14,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						weapon = "G3SniperV1",
 					}),
@@ -13986,13 +13715,11 @@ return {
 						stack_max = 40,
 						stack_min = 40,
 					}),
-					PlaceObj('LootEntryInventoryItem', {
-						item = "Medkit",
-						stack_min = 1, stack_max = 1,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_SurgicalKit", stack_min = 1, stack_max = 1, drop_chance = 40 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_min = 10, stack_max = 10 }),
+
+
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JazzArmor_RBA",
@@ -14063,12 +13790,6 @@ return {
 						stack_min = 2,
 					}),
 					PlaceObj('LootEntryInventoryItem', {
-						item = "Medkit",
-						stack_min = 1, stack_max = 1,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
-					PlaceObj('LootEntryInventoryItem', {
 						item = "M79",
 						stack_min = 1,
 					}),
@@ -14100,6 +13821,8 @@ return {
 						item = "JazzArmor_FlakM1955",
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -14129,12 +13852,6 @@ return {
 						stack_min = 28,
 					}),
 					PlaceObj('LootEntryInventoryItem', {
-						item = "Medkit",
-						stack_min = 1, stack_max = 1,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
-					PlaceObj('LootEntryInventoryItem', {
 						item = "FragGrenade",
 						stack_max = 2,
 						stack_min = 2,
@@ -14162,6 +13879,7 @@ return {
 						item = "JazzArmor_FlakM1955",
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 2 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -14178,12 +13896,6 @@ return {
 						stack_min = 60,
 					}),
 					PlaceObj('LootEntryInventoryItem', {
-						item = "Medkit",
-						stack_min = 1, stack_max = 1,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
-					PlaceObj('LootEntryInventoryItem', {
 						item = "FragGrenade",
 						stack_max = 2,
 						stack_min = 2,
@@ -14211,6 +13923,7 @@ return {
 						item = "JazzArmor_FlakM1955",
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -14226,9 +13939,6 @@ return {
 						stack_max = 30,
 						stack_min = 30,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Lockpick",
 						stack_max = 1,
@@ -14264,6 +13974,7 @@ return {
 						item = "JazzArmorPlates_Titan3",
 						negate = true,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -14276,9 +13987,6 @@ return {
 						stack_max = 90,
 						stack_min = 90,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
 							"JAZZ_PistolSuppressor",
@@ -14315,6 +14023,7 @@ return {
 						item = "JazzArmorPlates_Titan3",
 						negate = true,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -14327,9 +14036,6 @@ return {
 						stack_max = 60,
 						stack_min = 60,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						weapon = "CAR15",
 					}),
@@ -14358,6 +14064,7 @@ return {
 						item = "JazzArmorPlates_Titan3",
 						negate = true,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -14373,9 +14080,6 @@ return {
 						stack_max = 30,
 						stack_min = 30,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Lockpick",
 						stack_max = 1,
@@ -14446,13 +14150,6 @@ return {
 						stack_min = 1,
 					}),
 					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
-					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 1,
 						stack_min = 1,
@@ -14462,6 +14159,8 @@ return {
 						stack_max = 2,
 						stack_min = 2,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -14497,13 +14196,6 @@ return {
 						stack_min = 1,
 					}),
 					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
-					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 1,
 						stack_min = 1,
@@ -14513,6 +14205,7 @@ return {
 						stack_max = 2,
 						stack_min = 2,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -14530,13 +14223,6 @@ return {
 						stack_max = 24,
 						stack_min = 24,
 					}),
-					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "SmokeGrenade",
 						stack_max = 2,
@@ -14574,6 +14260,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -14600,13 +14287,6 @@ return {
 						stack_min = 60,
 					}),
 					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
-					PlaceObj('LootEntryInventoryItem', {
 						item = "SmokeGrenade",
 						stack_max = 2,
 						stack_min = 2,
@@ -14633,6 +14313,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -14651,13 +14332,6 @@ return {
 						stack_min = 60,
 					}),
 					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
-					PlaceObj('LootEntryInventoryItem', {
 						item = "SmokeGrenade",
 						stack_max = 2,
 						stack_min = 2,
@@ -14684,6 +14358,7 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -14695,9 +14370,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_9x19_JHP",
@@ -14732,6 +14404,8 @@ return {
 						stack_max = 3,
 						stack_min = 3,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 4, stack_max = 4 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -14743,9 +14417,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_9x19_AP",
@@ -14780,6 +14451,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmorPlates_Steel3",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -14791,9 +14463,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_792_FMJ",
@@ -14833,6 +14502,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmorPlates_Steel3",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -14851,9 +14521,6 @@ return {
 						stack_max = 30,
 						stack_min = 30,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Webley",
 						stack_max = 1,
@@ -14887,6 +14554,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmorPlates_Steel3",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -14898,9 +14566,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JAZZ_AMMO_45ACP_FMJ",
 						stack_max = 18,
@@ -14933,6 +14598,7 @@ return {
 						generate_chance = 10,
 						item = "JazzArmor_NVG2",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -14944,9 +14610,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_556_Army",
@@ -14970,6 +14633,7 @@ return {
 						generate_chance = 10,
 						item = "JazzArmor_NVG2",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -14981,9 +14645,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_762x54_FMJ",
@@ -15018,9 +14679,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_762x51_FMJ",
@@ -15055,9 +14713,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_9x19_FMJ",
@@ -15098,9 +14753,6 @@ return {
 						stack_max = 8,
 						stack_min = 8,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_ZylonHelm",
 						stack_max = 1,
@@ -15136,9 +14788,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_57_Subsonic",
@@ -15162,6 +14811,7 @@ return {
 						generate_chance = 75,
 						item = "JazzArmor_NVG2",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -15173,9 +14823,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 1,
@@ -15204,6 +14851,7 @@ return {
 						generate_chance = 75,
 						item = "JazzArmor_NVG2",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -15222,9 +14870,6 @@ return {
 						stack_max = 48,
 						stack_min = 48,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife_Sharpened",
 						stack_max = 1,
@@ -15247,6 +14892,7 @@ return {
 						generate_chance = 75,
 						item = "JazzArmor_NVG2",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -15258,9 +14904,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
 							"JAZZ_PistolSuppressor",
@@ -15290,6 +14933,7 @@ return {
 						generate_chance = 75,
 						item = "JazzArmor_NVG2",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -15317,9 +14961,6 @@ return {
 						stack_max = 90,
 						stack_min = 90,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "SmokeGrenade",
 						stack_max = 2,
@@ -15352,6 +14993,7 @@ return {
 						generate_chance = 75,
 						item = "JazzArmor_NVG2",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -15363,8 +15005,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1, drop_chance = 65 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1, drop_chance = 25 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_762x51_Army",
@@ -15392,6 +15032,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmorPlates_Ceramics3",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -15403,8 +15044,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1, drop_chance = 65 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1, drop_chance = 25 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_762x51_Match",
@@ -15434,6 +15073,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmorPlates_Ceramics3",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -15445,8 +15085,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1, drop_chance = 65 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1, drop_chance = 25 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_762x51_Tracer",
@@ -15493,8 +15131,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1, drop_chance = 65 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1, drop_chance = 25 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						item = "JAZZ_AMMO_9x19_FMJ",
@@ -15539,9 +15175,6 @@ return {
 						stack_max = 120,
 						stack_min = 120,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JazzArmor_6B13",
@@ -15565,6 +15198,7 @@ return {
 						stack_max = 2,
 						stack_min = 2,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -15583,9 +15217,6 @@ return {
 						stack_max = 90,
 						stack_min = 90,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JAZZ_AMMO_40mmFragGrenade",
 						stack_max = 3,
@@ -15609,6 +15240,7 @@ return {
 						generate_chance = 50,
 						item = "JazzArmor_SwatPads",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -15620,9 +15252,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JAZZ_AMMO_9x19_FMJ",
 						stack_max = 90,
@@ -15668,9 +15297,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JAZZ_AMMO_762x39_Tracer",
@@ -15718,9 +15344,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JAZZ_AMMO_762x39_US",
@@ -15775,9 +15398,6 @@ return {
 						stack_max = 60,
 						stack_min = 60,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						weapon = "Colt1911",
 					}),
@@ -15802,6 +15422,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_M1Helm",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 3, stack_max = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -15814,9 +15436,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						guaranteed = true,
@@ -15850,6 +15469,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_M1Helm",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -15865,9 +15485,6 @@ return {
 						stack_max = 60,
 						stack_min = 60,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						weapon = "Colt1911",
 					}),
@@ -15888,6 +15505,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_M1Helm",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -15900,9 +15518,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Double = true,
 						guaranteed = true,
@@ -15936,6 +15551,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_M1Helm",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -15947,9 +15563,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "R870",
 					}),
@@ -15969,6 +15582,8 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -15980,9 +15595,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Bereta92",
 					}),
@@ -16002,6 +15614,7 @@ return {
 						stack_max = 2,
 						stack_min = 2,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16013,9 +15626,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "MPL",
@@ -16036,6 +15646,7 @@ return {
 						stack_max = 2,
 						stack_min = 2,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16047,9 +15658,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "Agram2000",
@@ -16069,6 +15677,7 @@ return {
 						stack_max = 2,
 						stack_min = 2,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16080,9 +15689,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_SwatPads",
 					}),
@@ -16113,6 +15719,8 @@ return {
 						},
 						weapon = "Mini14",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 3, stack_max = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16127,13 +15735,6 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_SwatPads",
 					}),
-					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife_Sharpened",
 						stack_max = 1,
@@ -16151,6 +15752,7 @@ return {
 						},
 						weapon = "Springfield",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16162,9 +15764,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_SwatPads",
 					}),
@@ -16190,6 +15789,7 @@ return {
 						},
 						weapon = "Mini14",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16201,9 +15801,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmor_SwatPads",
 					}),
@@ -16221,6 +15818,7 @@ return {
 					PlaceObj('LootEntryUpgradedWeapon', {
 						weapon = "SKS",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16234,9 +15832,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JazzArmor_GuardianLegs",
@@ -16259,6 +15854,7 @@ return {
 						stack_max = 120,
 						stack_min = 120,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16272,9 +15868,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JazzArmor_GuardianLegs",
@@ -16299,6 +15892,7 @@ return {
 						stack_max = 120,
 						stack_min = 120,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16312,9 +15906,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JazzArmor_GuardianLegs",
@@ -16346,9 +15937,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JazzArmor_GuardianLegs",
@@ -16399,13 +15987,11 @@ return {
 						stack_max = 50,
 						stack_min = 50,
 					}),
-					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 15, stack_max = 15 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Reanimationsset", stack_min = 15, stack_max = 15 }),
+
+
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JazzArmor_FlakM69",
@@ -16433,13 +16019,11 @@ return {
 						stack_max = 30,
 						stack_min = 30,
 					}),
-					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_min = 10, stack_max = 10 }),
+
+
 					PlaceObj('LootEntryInventoryItem', {
 						condition = "Difficulty VeryHard",
 						item = "JazzArmor_FlakM69",
@@ -16467,13 +16051,11 @@ return {
 						stack_max = 30,
 						stack_min = 30,
 					}),
-					PlaceObj('LootEntryInventoryItem', {
-						item = "FirstAidKit",
-						stack_max = 5,
-						stack_min = 5,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 1,
@@ -16495,13 +16077,11 @@ return {
 						stack_max = 30,
 						stack_min = 30,
 					}),
-					PlaceObj('LootEntryInventoryItem', {
-						item = "Medkit",
-						stack_max = 3,
-						stack_min = 3,
-					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Knife",
 						stack_max = 1,
@@ -16530,9 +16110,6 @@ return {
 					id = "JAZZ_Colby50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "ShapedCharge", stack_max = 2, stack_min = 2 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "C4", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 2, stack_min = 2 }),
@@ -16540,6 +16117,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "MP5A4", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_9x19_FMJ", stack_max = 60, stack_min = 60 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Remote" }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16547,9 +16125,6 @@ return {
 					id = "JAZZ_Colby35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "ShapedCharge", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "C4", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 1, stack_min = 1 }),
@@ -16557,6 +16132,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "MPL", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_9x19_FMJ", stack_max = 40, stack_min = 40 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16564,9 +16140,6 @@ return {
 					id = "JAZZ_Colby25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "C4", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_PoliceVest" }),
 					PlaceObj('LootEntryInventoryItem', { item = "UZI", stack_max = 1, stack_min = 1 }),
@@ -16578,9 +16151,6 @@ return {
 					id = "JAZZ_Colby20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_PoliceVest" }),
 					PlaceObj('LootEntryInventoryItem', { item = "UZI", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_9x19_FMJ", stack_max = 20, stack_min = 20 }),
@@ -16594,9 +16164,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "FNFAL", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_Match", stack_max = 40, stack_min = 40 }),
 					PlaceObj('LootEntryInventoryItem', { item = "ShapedCharge", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16604,12 +16173,10 @@ return {
 					id = "JAZZ_Rothman35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 60, stack_min = 60 }),
 					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16617,11 +16184,9 @@ return {
 					id = "JAZZ_Rothman25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 40, stack_min = 40 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16629,9 +16194,7 @@ return {
 					id = "JAZZ_Rothman20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16642,9 +16205,11 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "HiPower", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 48, stack_min = 48 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 50, stack_min = 50 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 15, stack_max = 15 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Reanimationsset", stack_min = 15, stack_max = 15 }),
+
+
 					PlaceObj('LootEntryInventoryItem', { item = "CombatStim", stack_max = 2, stack_min = 2 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -16656,9 +16221,11 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "HiPower", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 36, stack_min = 36 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 30, stack_min = 30 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_min = 10, stack_max = 10 }),
+
+
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16669,7 +16236,11 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "Colt1911", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_45ACP_FMJ", stack_max = 24, stack_min = 24 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 20, stack_min = 20 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10, drop_chance = 80 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16680,7 +16251,11 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "Colt1911", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_45ACP_FMJ", stack_max = 20, stack_min = 20 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10, drop_chance = 80 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16688,13 +16263,11 @@ return {
 					id = "JAZZ_Vicious50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "CombatStim", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16702,11 +16275,9 @@ return {
 					id = "JAZZ_Vicious35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16714,9 +16285,6 @@ return {
 					id = "JAZZ_Vicious25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 1, stack_min = 1 }),
 				}),
@@ -16726,9 +16294,6 @@ return {
 					id = "JAZZ_Vicious20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -16739,9 +16304,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_PoliceVest" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16749,11 +16312,9 @@ return {
 					id = "JAZZ_Biff35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16761,11 +16322,9 @@ return {
 					id = "JAZZ_Biff25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Colt38Special", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16773,9 +16332,6 @@ return {
 					id = "JAZZ_Biff20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Colt38Special", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
 				}),
@@ -16785,12 +16341,10 @@ return {
 					id = "JAZZ_Nervous50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "UZI", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 80, stack_min = 80 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16798,11 +16352,9 @@ return {
 					id = "JAZZ_Nervous35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "MP5A4", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16810,9 +16362,6 @@ return {
 					id = "JAZZ_Nervous25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "MPL", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 40, stack_min = 40 }),
 				}),
@@ -16822,9 +16371,6 @@ return {
 					id = "JAZZ_Nervous20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "UZI", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 40, stack_min = 40 }),
 				}),
@@ -16836,9 +16382,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16846,11 +16390,9 @@ return {
 					id = "JAZZ_Flo35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16858,9 +16400,6 @@ return {
 					id = "JAZZ_Flo25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherPants" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_Poor", stack_max = 12, stack_min = 12 }),
 				}),
@@ -16870,9 +16409,6 @@ return {
 					id = "JAZZ_Flo20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_Poor", stack_max = 8, stack_min = 8 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -16881,12 +16417,12 @@ return {
 					id = "JAZZ_Cougar50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "MP5SD", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 60, stack_min = 60 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16894,11 +16430,9 @@ return {
 					id = "JAZZ_Cougar35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "MP5SD", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 40, stack_min = 40 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16906,11 +16440,9 @@ return {
 					id = "JAZZ_Cougar25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "MP5K", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 40, stack_min = 40 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16918,11 +16450,9 @@ return {
 					id = "JAZZ_Cougar20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "MPL", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 30, stack_min = 30 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16932,10 +16462,12 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_Uniform" }),
 					PlaceObj('LootEntryInventoryItem', { item = "HiPower", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 32, stack_min = 32 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 3, stack_max = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16943,11 +16475,9 @@ return {
 					id = "JAZZ_Miguel35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Colt1911", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_45ACP_FMJ", stack_max = 28, stack_min = 28 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16955,11 +16485,9 @@ return {
 					id = "JAZZ_Miguel25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "P210", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 40, stack_min = 40 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16967,11 +16495,9 @@ return {
 					id = "JAZZ_Miguel20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 24, stack_min = 24 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16979,13 +16505,11 @@ return {
 					id = "JAZZ_Gamos50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SKS", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 30, stack_min = 30 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Machete", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -16993,12 +16517,10 @@ return {
 					id = "JAZZ_Gamos35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SKS", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 20, stack_min = 20 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Machete", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17006,9 +16528,6 @@ return {
 					id = "JAZZ_Gamos25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Machete_Sharpened", stack_max = 1, stack_min = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -17017,9 +16536,6 @@ return {
 					id = "JAZZ_Gamos20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Machete", stack_max = 1, stack_min = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -17028,13 +16544,11 @@ return {
 					id = "JAZZ_Dynamo50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Crowbar", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 15, stack_min = 15 }),
 					PlaceObj('LootEntryInventoryItem', { item = "CombatStim", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17042,12 +16556,10 @@ return {
 					id = "JAZZ_Dynamo35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Crowbar", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 10, stack_min = 10 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17055,9 +16567,6 @@ return {
 					id = "JAZZ_Dynamo25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherPants" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Crowbar", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 5, stack_min = 5 }),
 				}),
@@ -17067,9 +16576,6 @@ return {
 					id = "JAZZ_Dynamo20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Crowbar", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -17078,12 +16584,10 @@ return {
 					id = "JAZZ_Gaston50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "DragunovSVD", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_Match", stack_max = 20, stack_min = 20 }),
 					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_CombatScope_2x" }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17091,11 +16595,9 @@ return {
 					id = "JAZZ_Gaston35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Springfield", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_3006_Match", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17103,9 +16605,6 @@ return {
 					id = "JAZZ_Gaston25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Mini14", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 40, stack_min = 40 }),
 				}),
@@ -17115,9 +16614,6 @@ return {
 					id = "JAZZ_Gaston20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Mini14", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 30, stack_min = 30 }),
 				}),
@@ -17127,13 +16623,12 @@ return {
 					id = "JAZZ_Horg50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_FlakM1955" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "M79", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_40mmFragGrenade", stack_max = 8, stack_min = 8 }),
 					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17141,13 +16636,11 @@ return {
 					id = "JAZZ_Horg35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_FlakM1955" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "M79", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_40mmFragGrenade", stack_max = 5, stack_min = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 40, stack_min = 40 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17155,9 +16648,6 @@ return {
 					id = "JAZZ_Horg25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 40, stack_min = 40 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FragGrenade", stack_max = 2, stack_min = 2 }),
@@ -17168,9 +16658,6 @@ return {
 					id = "JAZZ_Horg20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 30, stack_min = 30 }),
 				}),
@@ -17180,12 +16667,10 @@ return {
 					id = "JAZZ_Manuel50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SKS", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 30, stack_min = 30 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17193,11 +16678,9 @@ return {
 					id = "JAZZ_Manuel35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SKS", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17205,11 +16688,9 @@ return {
 					id = "JAZZ_Manuel25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherPants" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SKS", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17217,9 +16698,6 @@ return {
 					id = "JAZZ_Manuel20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherPants" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SKS", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 10, stack_min = 10 }),
 				}),
@@ -17229,12 +16707,11 @@ return {
 					id = "JAZZ_Monk50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_SovietAssaultArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "VSS", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x39_AP", stack_max = 30, stack_min = 30 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17242,11 +16719,9 @@ return {
 					id = "JAZZ_Monk35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_SovietAssaultArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "VSS", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x39_AP", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17254,9 +16729,6 @@ return {
 					id = "JAZZ_Monk25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "AK74", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_545_AP", stack_max = 40, stack_min = 40 }),
 				}),
@@ -17266,9 +16738,6 @@ return {
 					id = "JAZZ_Monk20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "AK74", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_545_AP", stack_max = 30, stack_min = 30 }),
 				}),
@@ -17278,14 +16747,12 @@ return {
 					id = "JAZZ_Allik50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Sig550", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 60, stack_min = 60 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 10, stack_min = 10 }),
 					PlaceObj('LootEntryInventoryItem', { item = "ShapedCharge", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 2 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17293,12 +16760,10 @@ return {
 					id = "JAZZ_Allik35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Sig550", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 40, stack_min = 40 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 5, stack_min = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17306,11 +16771,9 @@ return {
 					id = "JAZZ_Allik25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Mini14", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 40, stack_min = 40 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17318,11 +16781,9 @@ return {
 					id = "JAZZ_Allik20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Mini14", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 30, stack_min = 30 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17332,10 +16793,11 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_Uniform" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Sig550", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 80, stack_min = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 3, stack_max = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17346,7 +16808,9 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "Sig550", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 60, stack_min = 60 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10, drop_chance = 80 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
+
+
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17354,11 +16818,9 @@ return {
 					id = "JAZZ_Henning25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17366,11 +16828,9 @@ return {
 					id = "JAZZ_Henning20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 40, stack_min = 40 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17378,14 +16838,12 @@ return {
 					id = "JAZZ_Static50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Wirecutter", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "MicroUZI", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 32, stack_min = 32 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17393,13 +16851,11 @@ return {
 					id = "JAZZ_Static35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Scorpion", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x25_FMJ", stack_max = 30, stack_min = 30 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 15, stack_min = 15 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17407,9 +16863,6 @@ return {
 					id = "JAZZ_Static25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 24, stack_min = 24 }),
@@ -17420,9 +16873,6 @@ return {
 					id = "JAZZ_Static20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_UniformPants" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_Poor", stack_max = 16, stack_min = 16 }),
@@ -17434,9 +16884,11 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherVest" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 30, stack_min = 30 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 15, stack_max = 15 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Reanimationsset", stack_min = 15, stack_max = 15 }),
+
+
 					PlaceObj('LootEntryInventoryItem', { item = "CombatStim", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SWModel19", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_357_FMJ", stack_max = 18, stack_min = 18 }),
@@ -17448,9 +16900,11 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_UniformPants" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 20, stack_min = 20 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_min = 10, stack_max = 10 }),
+
+
 					PlaceObj('LootEntryInventoryItem', { item = "Colt38Special", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
 				}),
@@ -17460,7 +16914,11 @@ return {
 					id = "JAZZ_Highball25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 15, stack_min = 15 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10, drop_chance = 80 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
 				}),
@@ -17470,7 +16928,11 @@ return {
 					id = "JAZZ_Highball20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10, drop_chance = 80 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 6, stack_min = 6 }),
 				}),
@@ -17480,12 +16942,10 @@ return {
 					id = "JAZZ_Bull50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherVest" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "M2Carbine", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_FMJ", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17493,9 +16953,6 @@ return {
 					id = "JAZZ_Bull35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Winchester1894", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_FMJ", stack_max = 16, stack_min = 16 }),
@@ -17506,9 +16963,6 @@ return {
 					id = "JAZZ_Bull25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Winchester1894", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_P", stack_max = 12, stack_min = 12 }),
 				}),
@@ -17518,9 +16972,6 @@ return {
 					id = "JAZZ_Bull20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17528,14 +16979,12 @@ return {
 					id = "JAZZ_Cord50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Wirecutter", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "TT33", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x25_FMJ", stack_max = 24, stack_min = 24 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 15, stack_min = 15 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17543,12 +16992,10 @@ return {
 					id = "JAZZ_Cord35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 10, stack_min = 10 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17556,9 +17003,6 @@ return {
 					id = "JAZZ_Cord25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
 				}),
@@ -17568,9 +17012,6 @@ return {
 					id = "JAZZ_Cord20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17578,14 +17019,12 @@ return {
 					id = "JAZZ_Hobbit50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
 					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "M2Carbine", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_FMJ", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17593,13 +17032,11 @@ return {
 					id = "JAZZ_Hobbit35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Winchester1894", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_FMJ", stack_max = 16, stack_min = 16 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17607,9 +17044,6 @@ return {
 					id = "JAZZ_Hobbit25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
@@ -17620,9 +17054,6 @@ return {
 					id = "JAZZ_Hobbit20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 1, stack_min = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -17631,12 +17062,10 @@ return {
 					id = "JAZZ_Ricochet50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_CamoBalaclava" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 3, stack_min = 3 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Machete", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17644,11 +17073,9 @@ return {
 					id = "JAZZ_Ricochet35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 2, stack_min = 2 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Machete", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17656,9 +17083,6 @@ return {
 					id = "JAZZ_Ricochet25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 2, stack_min = 2 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -17667,9 +17091,6 @@ return {
 					id = "JAZZ_Ricochet20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 2, stack_min = 2 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17677,13 +17098,11 @@ return {
 					id = "JAZZ_Meat50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Machete", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17691,9 +17110,6 @@ return {
 					id = "JAZZ_Meat35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 2, stack_min = 2 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Machete", stack_max = 1, stack_min = 1 }),
@@ -17704,9 +17120,6 @@ return {
 					id = "JAZZ_Meat25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
 				}),
@@ -17716,9 +17129,6 @@ return {
 					id = "JAZZ_Meat20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17726,12 +17136,10 @@ return {
 					id = "JAZZ_Carlos50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_CamoBalaclava" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 3, stack_min = 3 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Scorpion", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x25_FMJ", stack_max = 24, stack_min = 24 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17739,11 +17147,9 @@ return {
 					id = "JAZZ_Carlos35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 2, stack_min = 2 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "MicroUZI", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 24, stack_min = 24 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17751,9 +17157,6 @@ return {
 					id = "JAZZ_Carlos25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 2, stack_min = 2 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
 				}),
@@ -17763,9 +17166,6 @@ return {
 					id = "JAZZ_Carlos20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17773,14 +17173,12 @@ return {
 					id = "JAZZ_Devin50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "C4", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Remote" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Wirecutter", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17788,12 +17186,10 @@ return {
 					id = "JAZZ_Devin35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 2, stack_min = 2 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Wirecutter", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17801,9 +17197,6 @@ return {
 					id = "JAZZ_Devin25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
 				}),
@@ -17813,9 +17206,6 @@ return {
 					id = "JAZZ_Devin20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -17824,10 +17214,8 @@ return {
 					id = "JAZZ_Shank50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_UniformPants" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 3, stack_min = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17835,9 +17223,7 @@ return {
 					id = "JAZZ_Shank35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 2, stack_min = 2 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17845,9 +17231,6 @@ return {
 					id = "JAZZ_Shank25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17862,11 +17245,12 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_PoliceVest" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 30, stack_min = 30 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
 					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_SurgicalKit", drop_chance = 40 }),
-					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_max = 3, stack_min = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 15, stack_max = 15 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Reanimationsset", stack_min = 15, stack_max = 15 }),
+
+
 					PlaceObj('LootEntryInventoryItem', { item = "HiPower", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 32, stack_min = 32 }),
 				}),
@@ -17877,9 +17261,11 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherVest" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 20, stack_min = 20 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_min = 10, stack_max = 10 }),
+
+
 					PlaceObj('LootEntryInventoryItem', { item = "Colt1911", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_45ACP_FMJ", stack_max = 24, stack_min = 24 }),
 				}),
@@ -17889,9 +17275,11 @@ return {
 					id = "JAZZ_Vince25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 15, stack_min = 15 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
 				}),
@@ -17901,7 +17289,11 @@ return {
 					id = "JAZZ_Vince20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10, drop_chance = 80 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
 				}),
@@ -17911,11 +17303,9 @@ return {
 					id = "JAZZ_Hitman50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_CamoBalaclava" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "DragunovSVD", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x54_Match", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17923,10 +17313,8 @@ return {
 					id = "JAZZ_Hitman35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "PSG1", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_Match", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17934,9 +17322,6 @@ return {
 					id = "JAZZ_Hitman25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "M24Sniper", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_FMJ", stack_max = 16, stack_min = 16 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -17945,9 +17330,6 @@ return {
 					id = "JAZZ_Hitman20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "SKS", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 16, stack_min = 16 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -17956,14 +17338,12 @@ return {
 					id = "JAZZ_Biggens50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_UniformPants" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Wirecutter", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "M1Garand", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_3006_FMJ", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17971,12 +17351,10 @@ return {
 					id = "JAZZ_Biggens35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
 					PlaceObj('LootEntryInventoryItem', { item = "M2Carbine", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_FMJ", stack_max = 16, stack_min = 16 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -17984,9 +17362,6 @@ return {
 					id = "JAZZ_Biggens25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Winchester1894", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_P", stack_max = 12, stack_min = 12 }),
@@ -17997,9 +17372,6 @@ return {
 					id = "JAZZ_Biggens20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
 				}),
@@ -18009,13 +17381,11 @@ return {
 					id = "JAZZ_Kulba50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_UniformPants" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "M60", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_FMJ", stack_max = 100, stack_min = 100 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 5, stack_min = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Wirecutter", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18023,11 +17393,9 @@ return {
 					id = "JAZZ_Kulba35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "RPK", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 80, stack_min = 80 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 3, stack_min = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18035,10 +17403,8 @@ return {
 					id = "JAZZ_Kulba25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "M2Carbine", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_FMJ", stack_max = 40, stack_min = 40 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18046,9 +17412,6 @@ return {
 					id = "JAZZ_Kulba20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Winchester1894", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_P", stack_max = 30, stack_min = 30 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -18057,11 +17420,10 @@ return {
 					id = "JAZZ_Vilde50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "RPK", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 80, stack_min = 80 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18069,10 +17431,8 @@ return {
 					id = "JAZZ_Vilde35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "M60", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_FMJ", stack_max = 80, stack_min = 80 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18080,10 +17440,8 @@ return {
 					id = "JAZZ_Vilde25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "M2Carbine", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_FMJ", stack_max = 40, stack_min = 40 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18091,9 +17449,6 @@ return {
 					id = "JAZZ_Vilde20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 40, stack_min = 40 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -18102,13 +17457,11 @@ return {
 					id = "JAZZ_Grace50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 3, stack_min = 3 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Machete", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18116,12 +17469,10 @@ return {
 					id = "JAZZ_Grace35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 2, stack_min = 2 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 3, stack_min = 3 }),
 					PlaceObj('LootEntryInventoryItem', { item = "MicroUZI", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 16, stack_min = 16 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18129,11 +17480,9 @@ return {
 					id = "JAZZ_Grace25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 3, stack_min = 3 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 12, stack_min = 12 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18141,9 +17490,6 @@ return {
 					id = "JAZZ_Grace20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 2, stack_min = 2 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 8, stack_min = 8 }),
 				}),
@@ -18153,11 +17499,9 @@ return {
 					id = "JAZZ_Steiger50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_PoliceVest" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "G3A3", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_Match", stack_max = 40, stack_min = 40 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 2 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18165,10 +17509,8 @@ return {
 					id = "JAZZ_Steiger35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "FNFAL", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_FMJ", stack_max = 32, stack_min = 32 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18176,10 +17518,8 @@ return {
 					id = "JAZZ_Steiger25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "M14SAW", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_FMJ", stack_max = 24, stack_min = 24 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18187,10 +17527,8 @@ return {
 					id = "JAZZ_Steiger20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "M1Garand", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_3006_FMJ", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18198,12 +17536,11 @@ return {
 					id = "JAZZ_Lucky50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FAMAS", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 60, stack_min = 60 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18211,11 +17548,9 @@ return {
 					id = "JAZZ_Lucky35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "M2Carbine", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_FMJ", stack_max = 40, stack_min = 40 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18223,10 +17558,8 @@ return {
 					id = "JAZZ_Lucky25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 32, stack_min = 32 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18234,9 +17567,6 @@ return {
 					id = "JAZZ_Lucky20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Winchester1894", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_P", stack_max = 20, stack_min = 20 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -18246,11 +17576,12 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherVest" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 25, stack_min = 25 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 3 }),
 					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_SurgicalKit", drop_chance = 40 }),
-					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_max = 3, stack_min = 3 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 15, stack_max = 15 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_min = 10, stack_max = 10 }),
+
+
 					PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Combination_Detonator_Time" }),
 					PlaceObj('LootEntryInventoryItem', { item = "MicroUZI", stack_max = 1, stack_min = 1 }),
@@ -18262,9 +17593,11 @@ return {
 					id = "JAZZ_Laura35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 15, stack_min = 15 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 					PlaceObj('LootEntryInventoryItem', { item = "TNT", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Makarov", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x18_FMJ", stack_max = 16, stack_min = 16 }),
@@ -18275,9 +17608,11 @@ return {
 					id = "JAZZ_Laura25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 					PlaceObj('LootEntryInventoryItem', { item = "SWModel10", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 12, stack_min = 12 }),
 				}),
@@ -18287,7 +17622,11 @@ return {
 					id = "JAZZ_Laura20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 6, stack_min = 6 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10, drop_chance = 80 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 					PlaceObj('LootEntryInventoryItem', { item = "Colt38Special", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_38special_FMJ", stack_max = 8, stack_min = 8 }),
 				}),
@@ -18297,11 +17636,9 @@ return {
 					id = "JAZZ_Eskimo50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_UniformPants" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "M24Sniper", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_Match", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18309,10 +17646,8 @@ return {
 					id = "JAZZ_Eskimo35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "SKS", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18320,9 +17655,6 @@ return {
 					id = "JAZZ_Eskimo25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "M1Garand", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_3006_FMJ", stack_max = 16, stack_min = 16 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -18331,9 +17663,6 @@ return {
 					id = "JAZZ_Eskimo20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "Winchester1894", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_30_P", stack_max = 12, stack_min = 12 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -18345,10 +17674,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 2, stack_min = 2 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "CombatStim", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18358,9 +17685,6 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 1, stack_min = 1 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18368,9 +17692,6 @@ return {
 					id = "JAZZ_Blade25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 1, stack_min = 1 }),
@@ -18381,9 +17702,6 @@ return {
 					id = "JAZZ_Blade20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBlk" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -18394,10 +17712,11 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Colt1911", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_45ACP_FMJ", stack_max = 28, stack_min = 28 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 4, stack_max = 4 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -18408,9 +17727,7 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
 					PlaceObj('LootEntryInventoryItem', { item = "HiPower", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 48, stack_min = 48 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18421,7 +17738,9 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "P210", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 60, stack_min = 60 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 10, stack_min = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10, drop_chance = 80 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
+
+
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18429,11 +17748,9 @@ return {
 					id = "JAZZ_Ira20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "P210", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_9x19_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18441,12 +17758,10 @@ return {
 					id = "JAZZ_Dimitri50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 3, stack_min = 3 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FragGrenade", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18454,11 +17769,9 @@ return {
 					id = "JAZZ_Dimitri35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Sharpened", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18466,9 +17779,6 @@ return {
 					id = "JAZZ_Dimitri25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 2, stack_min = 2 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -18477,9 +17787,6 @@ return {
 					id = "JAZZ_Dimitri20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Knife_Balanced", stack_max = 1, stack_min = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -18488,13 +17795,11 @@ return {
 					id = "JAZZ_Madman50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Crowbar", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "CombatStim", stack_max = 3, stack_min = 3 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18502,12 +17807,10 @@ return {
 					id = "JAZZ_Madman35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Crowbar", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Lockpick", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 15, stack_min = 15 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18515,9 +17818,6 @@ return {
 					id = "JAZZ_Madman25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Crowbar", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Parts", stack_max = 10, stack_min = 10 }),
 				}),
@@ -18527,9 +17827,6 @@ return {
 					id = "JAZZ_Madman20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Crowbar", stack_max = 1, stack_min = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
@@ -18540,10 +17837,11 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_Uniform" }),
 					PlaceObj('LootEntryInventoryItem', { item = "Springfield", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_3006_Match", stack_max = 20, stack_min = 20 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Meds", stack_max = 20, stack_min = 20 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 4, stack_max = 4 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+
+
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18551,11 +17849,9 @@ return {
 					id = "JAZZ_Conrad35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_Uniform" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18563,11 +17859,9 @@ return {
 					id = "JAZZ_Conrad25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FNFAL", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x51_FMJ", stack_max = 40, stack_min = 40 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18575,11 +17869,9 @@ return {
 					id = "JAZZ_Conrad20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18589,10 +17881,9 @@ return {
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_PASGT" }),
 					PlaceObj('LootEntryInventoryItem', { item = "M16A1", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_EPR", stack_max = 40, stack_min = 40 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_max = 5, stack_min = 5 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 70 }),
 					PlaceObj('LootEntryInventoryItem', { item = "SmokeGrenade", stack_max = 1, stack_min = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 4, stack_max = 4 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18600,11 +17891,9 @@ return {
 					id = "JAZZ_Mike35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_PoliceVest" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Galil", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_556_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18612,11 +17901,9 @@ return {
 					id = "JAZZ_Mike25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_PoliceVest" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18624,11 +17911,9 @@ return {
 					id = "JAZZ_Mike20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_LeatherJacketBrn" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 30, stack_min = 30 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18636,14 +17921,13 @@ return {
 					id = "JAZZ_Grom50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_SovietAssaultArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "RPG7", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Warhead_Frag", stack_max = 3, stack_min = 3 }),
 					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 60, stack_min = 60 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FragGrenade", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18651,13 +17935,11 @@ return {
 					id = "JAZZ_Grom35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_SovietAssaultArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "RPG7", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Warhead_Frag", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18665,12 +17947,10 @@ return {
 					id = "JAZZ_Grom25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_TireArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 90, stack_min = 90 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FragGrenade", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18678,9 +17958,6 @@ return {
 					id = "JAZZ_Grom20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_TireArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 60, stack_min = 60 }),
 				}),
@@ -18690,14 +17967,14 @@ return {
 					id = "JAZZ_Iggy50",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_SovietAssaultArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "RPG7", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Warhead_Frag", stack_max = 3, stack_min = 3 }),
 					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 60, stack_min = 60 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FragGrenade", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18705,13 +17982,11 @@ return {
 					id = "JAZZ_Iggy35",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_SovietAssaultArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "RPG7", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { item = "Warhead_Frag", stack_max = 2, stack_min = 2 }),
 					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18719,12 +17994,10 @@ return {
 					id = "JAZZ_Iggy25",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_TireArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 90, stack_min = 90 }),
 					PlaceObj('LootEntryInventoryItem', { item = "FragGrenade", stack_max = 2, stack_min = 2 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18732,11 +18005,9 @@ return {
 					id = "JAZZ_Iggy20",
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', { item = "JazzArmor_TireArmor" }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', { item = "AK47", stack_max = 1, stack_min = 1 }),
 					PlaceObj('LootEntryInventoryItem', { Double = true, item = "JAZZ_AMMO_762x39_FMJ", stack_max = 60, stack_min = 60 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				}),
 			PlaceObj('ModItemFolder', {
@@ -18765,9 +18036,7 @@ return {
 					PlaceObj('LootEntryLootDef', {
 						loot_def = "TheMajor",
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "enemy legion boss",
@@ -18783,8 +18052,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1, drop_chance = 65 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1, drop_chance = 25 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JazzArmorPlates_Titan5",
 						stack_max = 1,
@@ -18816,6 +18083,7 @@ return {
 						stack_max = 20,
 						stack_min = 10,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 				}),
 				}),
 			PlaceObj('ModItemFolder', {
@@ -18832,9 +18100,6 @@ return {
 						stack_max = 30,
 						stack_min = 30,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						Condition = 90,
 						item = "Winchester1894",
@@ -18857,6 +18122,9 @@ return {
 						stack_max = 7,
 						stack_min = 3,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_min = 10, stack_max = 10 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18870,9 +18138,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JAZZ_AMMO_9x19_FMJ",
 						stack_max = 90,
@@ -18889,6 +18154,8 @@ return {
 						stack_max = 60,
 						stack_min = 60,
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 6, stack_max = 6 }),
+					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "merc",
@@ -18901,9 +18168,6 @@ return {
 						stack_max = 1,
 						stack_min = 1,
 					}),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
-					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 2, drop_chance = 80 }),
-					PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 					PlaceObj('LootEntryInventoryItem', {
 						item = "JAZZ_AMMO_9x19_FMJ",
 						stack_max = 45,
@@ -18917,6 +18181,8 @@ return {
 					PlaceObj('LootEntryInventoryItem', {
 						item = "Ted",
 					}),
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 10, stack_max = 10 }),
+					PlaceObj('LootEntryInventoryItem', { item = "Medkit", stack_min = 10, stack_max = 10 }),
 				}),
 				PlaceObj('ModItemLootDef', {
 					Comment = "reward",
@@ -20528,8 +19794,6 @@ return {
 							stack_max = 1,
 							stack_min = 1,
 						}),
-						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1, drop_chance = 65 }),
-						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1, drop_chance = 25 }),
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('PlayerIsInSectors', {
@@ -20595,6 +19859,7 @@ return {
 							stack_max = 5,
 							stack_min = 5,
 						}),
+						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 2 }),
 					}),
 					PlaceObj('ModItemLootDef', {
 						Comment = "enemy adonis",
@@ -33790,6 +33055,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Pillager_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
+
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -33966,6 +33233,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Pyro_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
+
 						PlaceObj('LootEntryInventoryItem', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -34053,6 +33322,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Shocktrooper_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
+
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -34247,6 +33518,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "SkullCrusher_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { generate_chance = 30, item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+
 						PlaceObj('LootEntryInventoryItem', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -34390,6 +33663,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Punisher_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { generate_chance = 30, item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -34921,11 +34196,20 @@ return {
 							stack_max = 2,
 							stack_min = 1,
 						}),
+												PlaceObj('LootEntryInventoryItem', {
+							item = "FirstAidKit",
+							stack_max = 5,
+							stack_min = 5,
+						}),
 						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 5,
 							item = "Medkit",
 							stack_max = 1,
 							stack_min = 1,
 						}),
+						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 10 }),
+						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 0, stack_max = 3 }),
+
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
@@ -34957,6 +34241,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Raider_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
+
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -35143,6 +34429,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Marksman_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
+
 						PlaceObj('LootEntryInventoryItem', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -35270,6 +34558,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Ambusher_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
+
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -35412,6 +34702,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Veteran_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { generate_chance = 30, item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -35550,6 +34842,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Sniper_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { generate_chance = 30, item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -36008,6 +35302,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Scout_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
+
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -36201,6 +35497,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Skirmisher_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
+
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -36343,6 +35641,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Recon_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { generate_chance = 30, item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -36536,6 +35836,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Pathfinder_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { generate_chance = 30, item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+
 						PlaceObj('LootEntryInventoryItem', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -37004,6 +36306,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "GMPG_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
+
 						PlaceObj('LootEntryInventoryItem', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -37086,6 +36390,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "AssaultGunner_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
+
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -37235,6 +36541,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "VeteranGunner_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { generate_chance = 30, item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+
 						PlaceObj('LootEntryInventoryItem', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -37541,6 +36849,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Lieutenant_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
+
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -37680,6 +36990,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Captain_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { generate_chance = 30, item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -38057,6 +37369,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "HeavyGrenadier_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
+
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "HeavyGrenadier_Launcher",
 						}),
@@ -38153,6 +37467,8 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Mortarman_Firearm",
 						}),
+						PlaceObj('LootEntryInventoryItem', { generate_chance = 30, item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
+
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Mortarman_Launcher",
 						}),
@@ -66743,8 +66059,6 @@ return {
 							stack_max = 1,
 							stack_min = 1,
 						}),
-						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1, drop_chance = 65 }),
-						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1, drop_chance = 25 }),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Drop_MortarShell_HE",
 						}),
@@ -151534,6 +150848,7 @@ displayName]] "Legion Garrison"),
 			id = "Loot_JAZZ_AME_01",
 			loot = "all",
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 02",
@@ -151543,6 +150858,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "DoubleBarrelShotgun" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_12gauge_Buckshot", stack_min = 6, stack_max = 6 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 03",
@@ -151552,6 +150868,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "SWModel10" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_38special_FMJ", stack_min = 12, stack_max = 12 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 2 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 04",
@@ -151559,6 +150876,7 @@ displayName]] "Legion Garrison"),
 			id = "Loot_JAZZ_AME_04",
 			loot = "all",
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 05",
@@ -151566,6 +150884,7 @@ displayName]] "Legion Garrison"),
 			id = "Loot_JAZZ_AME_05",
 			loot = "all",
 
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 06",
@@ -151575,6 +150894,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "Winchester1894" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_44CAL_FMJ", stack_min = 14, stack_max = 14 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 07",
@@ -151582,6 +150902,7 @@ displayName]] "Legion Garrison"),
 			id = "Loot_JAZZ_AME_07",
 			loot = "all",
 
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 08",
@@ -151591,6 +150912,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "DoubleBarrelShotgun" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_12gauge_Buckshot", stack_min = 8, stack_max = 8 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 09",
@@ -151600,6 +150922,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "DoubleBarrelShotgun" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_12gauge_Buckshot", stack_min = 6, stack_max = 6 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 10",
@@ -151607,6 +150930,7 @@ displayName]] "Legion Garrison"),
 			id = "Loot_JAZZ_AME_10",
 			loot = "all",
 
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 11",
@@ -151614,6 +150938,7 @@ displayName]] "Legion Garrison"),
 			id = "Loot_JAZZ_AME_11",
 			loot = "all",
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 12",
@@ -151621,6 +150946,7 @@ displayName]] "Legion Garrison"),
 			id = "Loot_JAZZ_AME_12",
 			loot = "all",
 		PlaceObj('LootEntryInventoryItem', { item = "Machete" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 13",
@@ -151630,6 +150956,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "Colt38Special" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_38special_FMJ", stack_min = 12, stack_max = 12 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 14",
@@ -151637,6 +150964,7 @@ displayName]] "Legion Garrison"),
 			id = "Loot_JAZZ_AME_14",
 			loot = "all",
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 15",
@@ -151644,6 +150972,7 @@ displayName]] "Legion Garrison"),
 			id = "Loot_JAZZ_AME_15",
 			loot = "all",
 
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 2 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 16",
@@ -151651,6 +150980,7 @@ displayName]] "Legion Garrison"),
 			id = "Loot_JAZZ_AME_16",
 			loot = "all",
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 17",
@@ -151660,6 +150990,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "DoubleBarrelShotgun" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_12gauge_Buckshot", stack_min = 4, stack_max = 4 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 18",
@@ -151667,6 +150998,7 @@ displayName]] "Legion Garrison"),
 			id = "Loot_JAZZ_AME_18",
 			loot = "all",
 
+					PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 19",
@@ -151676,6 +151008,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "ColtM1917" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_45ACP_FMJ", stack_min = 12, stack_max = 12 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 20",
@@ -151685,6 +151018,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "SWModel10" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_38special_FMJ", stack_min = 6, stack_max = 6 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 21",
@@ -151694,6 +151028,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "Winchester1894" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_44CAL_FMJ", stack_min = 40, stack_max = 40 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 22",
@@ -151703,6 +151038,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "STG44" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_792x33_FMJ", stack_min = 60, stack_max = 60 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 23",
@@ -151712,7 +151048,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "MAC2429" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_75French_FMJ", stack_min = 60, stack_max = 60 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 24",
@@ -151723,7 +151059,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_45ACP_FMJ", stack_min = 24, stack_max = 24 }),
 		PlaceObj('LootEntryInventoryItem', { item = "FragGrenade", stack_min = 2, stack_max = 2 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 25",
@@ -151733,7 +151069,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "Winchester1894" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_44CAL_FMJ", stack_min = 28, stack_max = 28 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 26",
@@ -151743,6 +151079,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "STG44" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_792x33_FMJ", stack_min = 60, stack_max = 60 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 27",
@@ -151752,6 +151089,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "M3GreaseGun" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_45ACP_FMJ", stack_min = 60, stack_max = 60 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 28",
@@ -151761,7 +151099,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "BAR" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_30_FMJ", stack_min = 60, stack_max = 60 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 29",
@@ -151772,7 +151110,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_762x25_FMJ", stack_min = 70, stack_max = 70 }),
 		PlaceObj('LootEntryInventoryItem', { item = "FragGrenade", stack_min = 2, stack_max = 2 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 30",
@@ -151782,6 +151120,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "M1897" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_12gauge_Buckshot", stack_min = 20, stack_max = 20 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 31",
@@ -151791,6 +151130,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "STG44" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_792x33_FMJ", stack_min = 60, stack_max = 60 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 32",
@@ -151800,7 +151140,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "PPSH" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_762x25_FMJ", stack_min = 70, stack_max = 70 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 33",
@@ -151810,6 +151150,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "Auto5" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_12gauge_Buckshot", stack_min = 20, stack_max = 20 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 34",
@@ -151819,7 +151160,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "MAC2429" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_75French_FMJ", stack_min = 60, stack_max = 60 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 35",
@@ -151829,6 +151170,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "Winchester1894" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_44CAL_FMJ", stack_min = 28, stack_max = 28 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 36",
@@ -151839,6 +151181,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_792x33_FMJ", stack_min = 60, stack_max = 60 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
 		PlaceObj('LootEntryInventoryItem', { item = "Wirecutter" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 37",
@@ -151858,6 +151201,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "Winchester1894" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_44CAL_FMJ", stack_min = 28, stack_max = 28 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 39",
@@ -151868,7 +151212,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_45ACP_FMJ", stack_min = 60, stack_max = 60 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
 		PlaceObj('LootEntryInventoryItem', { item = "FragGrenade" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 40",
@@ -151878,7 +151222,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "Mini14" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_556_FMJ", stack_min = 40, stack_max = 40 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 41",
@@ -151888,7 +151232,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "BAR" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_30_FMJ", stack_min = 80, stack_max = 80 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 42",
@@ -151898,7 +151242,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "STG44" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_792x33_FMJ", stack_min = 40, stack_max = 40 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 43",
@@ -151909,7 +151253,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_12gauge_Buckshot", stack_min = 16, stack_max = 16 }),
 		PlaceObj('LootEntryInventoryItem', { item = "FragGrenade", stack_min = 2, stack_max = 2 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 44",
@@ -151930,7 +151274,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_792x33_FMJ", stack_min = 40, stack_max = 40 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
 		PlaceObj('LootEntryInventoryItem', { item = "Wirecutter" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 46",
@@ -151940,7 +151284,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "MAC2429" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_75French_FMJ", stack_min = 80, stack_max = 80 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 47",
@@ -151952,7 +151296,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "FragGrenade", stack_min = 2, stack_max = 2 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Molotov" }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 48",
@@ -151962,7 +151306,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "Mini14" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_556_FMJ", stack_min = 40, stack_max = 40 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 49",
@@ -151971,10 +151315,10 @@ displayName]] "Legion Garrison"),
 			loot = "all",
 		PlaceObj('LootEntryInventoryItem', { item = "HiPower" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_9x19_FMJ", stack_min = 24, stack_max = 24 }),
-		PlaceObj('LootEntryInventoryItem', { item = "Medkit" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 6, stack_max = 6 }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 2, stack_max = 2 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 30, stack_max = 30 }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 10, stack_max = 10 }),
+		PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 50",
@@ -151982,9 +151326,10 @@ displayName]] "Legion Garrison"),
 			id = "Loot_JAZZ_AME_50",
 			loot = "all",
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "Medkit" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 8, stack_max = 8 }),
 		PlaceObj('LootEntryInventoryItem', { item = "CombatStim", stack_min = 2, stack_max = 2 }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 30, stack_max = 30 }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 10, stack_max = 10 }),
+		PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 51",
@@ -151993,9 +151338,10 @@ displayName]] "Legion Garrison"),
 			loot = "all",
 		PlaceObj('LootEntryInventoryItem', { item = "HiPower" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_9x19_FMJ", stack_min = 24, stack_max = 24 }),
-		PlaceObj('LootEntryInventoryItem', { item = "Medkit" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 6, stack_max = 6 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 30, stack_max = 30 }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 10, stack_max = 10 }),
+		PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 52",
@@ -152005,7 +151351,8 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "STG44" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_792x33_FMJ", stack_min = 30, stack_max = 30 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 2 }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 6, stack_max = 6 }),
+		PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 53",
@@ -152015,7 +151362,8 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "STG44" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_792x33_FMJ", stack_min = 40, stack_max = 40 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 2 }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 5, stack_max = 5 }),
+		PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 54",
@@ -152025,7 +151373,8 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "STG44" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_792x33_FMJ", stack_min = 30, stack_max = 30 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 3, stack_max = 3 }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 7, stack_max = 7 }),
+		PlaceObj('LootEntryInventoryItem', { item = "FirstAidKit", stack_min = 5, stack_max = 5 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 55",
@@ -152035,6 +151384,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "Gewehr98" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_792_FMJ", stack_min = 20, stack_max = 20 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 56",
@@ -152044,6 +151394,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "SKS" }),
 		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_AMMO_762x39_FMJ", stack_min = 30, stack_max = 30 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 57",
@@ -152056,6 +151407,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "PipeBomb", stack_min = 2, stack_max = 2 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Detonator" }),
 		PlaceObj('LootEntryInventoryItem', { item = "Wirecutter" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 58",
@@ -152067,6 +151419,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "ShapedCharge", stack_min = 2, stack_max = 2 }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
 		PlaceObj('LootEntryInventoryItem', { item = "Wirecutter" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 2, stack_max = 2 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 59",
@@ -152076,6 +151429,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "Wirecutter" }),
 		PlaceObj('LootEntryInventoryItem', { item = "Crowbar" }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemLootDef', {
 			Comment = "AME merc 60",
@@ -152085,7 +151439,7 @@ displayName]] "Legion Garrison"),
 		PlaceObj('LootEntryInventoryItem', { item = "Wirecutter" }),
 		PlaceObj('LootEntryInventoryItem', { item = "Lockpick" }),
 		PlaceObj('LootEntryInventoryItem', { item = "Knife" }),
-		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage" }),
+		PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 1 }),
 		}),
 		PlaceObj('ModItemFolder', {
 			'name', "JAZZ_AME_01",
