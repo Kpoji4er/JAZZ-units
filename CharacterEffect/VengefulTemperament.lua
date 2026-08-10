@@ -9,15 +9,17 @@ DefineClass.VengefulTemperament = {
 		PlaceObj('UnitReaction', {
 			Event = "OnUnitAttack",
 			Handler = function (self, target, attacker, action, attack_target, results, attack_args)
+				-- Signature CombatAction id must match perk class (EnumUIActions + this gate).
 				if target == attacker and IsKindOf(attack_target, "Unit") and action.id == self.class then
+					local aoe = self:ResolveValue("fearAoE")
 					for _, unit in ipairs(g_Units) do
-						if unit ~= attack_target and unit.team:IsAllySide(attack_target.team) and DivRound(unit:GetDist(attack_target), const.SlabSizeX) <= self:ResolveValue("fearAoE") then
+						if unit ~= attack_target and unit.team:IsAllySide(attack_target.team) and DivRound(unit:GetDist(attack_target), const.SlabSizeX) <= aoe then
 							if not RollSkillCheck(unit, "Wisdom", 50) then
-							unit:AddStatusEffect("Panicked","Inspired") else
-							unit:AddStatusEffect("Berserk")
-					    	unit.ActionPoints = unit:GetMaxActionPoints()
+								unit:AddStatusEffect("Panicked")
+							else
+								unit:AddStatusEffect("Berserk")
 							end
-							attacker:AddStatusEffect("VengeanceTarget")
+							unit.ActionPoints = unit:GetMaxActionPoints()
 						end
 					end
 				end
@@ -29,4 +31,3 @@ DefineClass.VengefulTemperament = {
 	Icon = "UI/Icons/Perks/VengefulTemperament",
 	Tier = "Personal",
 }
-
