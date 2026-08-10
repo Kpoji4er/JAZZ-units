@@ -96825,6 +96825,105 @@ PlaceObj('ModItemAIArchetype', {
 				group = "Special",
 				id = "FortressDefenders_NoMaps",
 			}),
+			PlaceObj('ModItemEnemySquads', {
+				Comment = "NoMaps Ernie_CounterAttack punitive (I7->I5); base 20; no mortar",
+				Units = {
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 2,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+							}),
+						},
+						'UnitCountMin', 5,
+						'UnitCountMax', 5,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+						},
+						'UnitCountMin', 3,
+						'UnitCountMax', 3,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 2,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 2,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_HeavyT1_Rocketeer",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Veteran",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
+							}),
+						},
+						'UnitCountMin', 2,
+						'UnitCountMax', 2,
+					}),
+				},
+				comment = "-- NoMaps ErnieCounterAttack ~20; no Mortarman (maps keeps 30+mortar)",
+				displayName = T(890000000012601, --[[ModItemEnemySquads ErnieCounterAttack_NoMaps displayName]] "Штурмовики Легиона"),
+				group = "Special",
+				id = "ErnieCounterAttack_NoMaps",
+			}),
 			}),
 		PlaceObj('ModItemFolder', {
 			'name', "Deprecated",
@@ -98009,7 +98108,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -98023,7 +98122,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -98037,7 +98136,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -98126,7 +98225,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_FlankerT1_Warden",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -98134,7 +98233,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -98142,7 +98241,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -98156,7 +98255,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_FlankerT1_Warden",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -98164,7 +98263,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -98172,7 +98271,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -98186,7 +98285,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_FlankerT1_Warden",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -98194,7 +98293,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -98202,7 +98301,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -98216,7 +98315,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_FrontT2_Raider",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -98225,7 +98324,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -98234,7 +98333,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -98243,7 +98342,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 20,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -98257,7 +98356,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_FrontT2_Raider",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -98266,7 +98365,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -98275,7 +98374,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -98284,7 +98383,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 20,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -98298,7 +98397,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_FrontT2_Raider",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -98307,7 +98406,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -98316,7 +98415,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -98325,7 +98424,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 20,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -98339,7 +98438,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -98347,7 +98446,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -98356,7 +98455,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -98365,7 +98464,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -98374,7 +98473,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -98388,7 +98487,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -98396,7 +98495,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -98405,7 +98504,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -98414,7 +98513,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -98423,7 +98522,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -98437,7 +98536,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -98445,7 +98544,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -98454,7 +98553,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -98463,7 +98562,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -98472,7 +98571,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -98486,7 +98585,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -98494,7 +98593,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -98503,7 +98602,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -98512,7 +98611,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -98526,7 +98625,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -98534,7 +98633,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -98543,7 +98642,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -98552,7 +98651,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -98566,7 +98665,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -98574,7 +98673,7 @@ PlaceObj('ModItemAIArchetype', {
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -98583,7 +98682,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -98592,7 +98691,7 @@ PlaceObj('ModItemAIArchetype', {
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99072,14 +99171,205 @@ displayName]] "Legion Garrison"),
 							}),
 							PlaceObj('UnitTypeListWithWeights', {
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
-								'spawnWeight', 40,
 							}),
 						},
-						'UnitCountMin', 6,
-						'UnitCountMax', 9,
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
 					}),
-				},
-					comment = "-- UNITS-007 Extra Mixed 6-9 random specialties",
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Scout",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Scout",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Scout",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Scout",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Scout",
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Scout",
+							}),
+						},
+						'UnitCountMin', 0,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Scout",
+							}),
+						},
+						'UnitCountMin', 0,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Scout",
+							}),
+						},
+						'UnitCountMin', 0,
+						'UnitCountMax', 1,
+					}),
+					},
+					comment = "-- UNITS-007 Extra Mixed 6-9; per-unit specialty roll (not one type×N)",
 					displayName = T(890000000012516, --[[ModItemEnemySquads LegionExtra_Ernie_Mixed displayName]] "Усиление: смешанное"),
 					group = "Ernie",
 					id = "LegionExtra_Ernie_Mixed",
@@ -99251,7 +99541,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99265,7 +99555,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99279,7 +99569,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99293,7 +99583,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99307,7 +99597,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99321,7 +99611,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99335,7 +99625,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT3_Captain",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99349,7 +99639,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99363,7 +99653,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99377,7 +99667,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99391,7 +99681,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99399,7 +99689,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99408,7 +99698,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99417,7 +99707,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99431,7 +99721,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99439,7 +99729,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99448,7 +99738,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99457,7 +99747,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99471,7 +99761,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99479,7 +99769,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99488,7 +99778,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99497,7 +99787,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99511,7 +99801,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Raider",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99520,7 +99810,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99529,7 +99819,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99538,7 +99828,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 20,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99552,7 +99842,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Raider",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99561,7 +99851,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99570,7 +99860,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99579,7 +99869,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 20,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99593,7 +99883,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Raider",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99602,7 +99892,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99611,7 +99901,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99620,7 +99910,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 20,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99634,7 +99924,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99642,7 +99932,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99651,7 +99941,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99665,7 +99955,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99673,7 +99963,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99682,7 +99972,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99696,7 +99986,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99704,7 +99994,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99713,7 +100003,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99727,7 +100017,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99735,7 +100025,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99744,7 +100034,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99758,7 +100048,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99766,7 +100056,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99775,7 +100065,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99789,7 +100079,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99797,7 +100087,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99806,7 +100096,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99820,7 +100110,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99828,7 +100118,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99837,7 +100127,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99846,7 +100136,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99855,7 +100145,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99869,7 +100159,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99877,7 +100167,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99886,7 +100176,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99895,7 +100185,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99904,7 +100194,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -99918,7 +100208,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99926,7 +100216,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99935,7 +100225,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99944,7 +100234,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99953,7 +100243,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -99967,7 +100257,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99975,7 +100265,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99984,7 +100274,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -99998,7 +100288,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100006,7 +100296,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100015,7 +100305,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100029,7 +100319,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100037,7 +100327,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100046,7 +100336,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100060,7 +100350,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100068,7 +100358,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100082,7 +100372,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100090,7 +100380,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100104,7 +100394,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100112,7 +100402,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100126,7 +100416,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT3_Veteran",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100135,7 +100425,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100144,7 +100434,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100153,7 +100443,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100162,7 +100452,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100176,7 +100466,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT3_Veteran",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100185,7 +100475,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100194,7 +100484,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100203,7 +100493,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100212,7 +100502,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100234,7 +100524,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100248,7 +100538,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100262,7 +100552,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100276,7 +100566,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100290,7 +100580,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100304,7 +100594,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100318,7 +100608,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT3_Captain",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100332,7 +100622,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT3_Captain",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100346,7 +100636,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT3_Captain",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100360,7 +100650,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100374,7 +100664,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100388,7 +100678,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100402,7 +100692,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100410,7 +100700,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100419,7 +100709,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100428,7 +100718,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100442,7 +100732,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100450,7 +100740,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100459,7 +100749,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100468,7 +100758,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100482,7 +100772,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100490,7 +100780,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100499,7 +100789,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100508,7 +100798,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100522,7 +100812,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Raider",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100531,7 +100821,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100540,7 +100830,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100549,7 +100839,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 20,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100563,7 +100853,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Raider",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100572,7 +100862,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100581,7 +100871,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100590,7 +100880,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 20,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100604,7 +100894,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Raider",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100613,7 +100903,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100622,7 +100912,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100631,7 +100921,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 20,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100645,7 +100935,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100653,7 +100943,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100662,7 +100952,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100676,7 +100966,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100684,7 +100974,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100693,7 +100983,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100707,7 +100997,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100715,7 +101005,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100724,7 +101014,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100738,7 +101028,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100746,7 +101036,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100755,7 +101045,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100769,7 +101059,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100777,7 +101067,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100786,7 +101076,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100800,7 +101090,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100808,7 +101098,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100817,7 +101107,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100831,7 +101121,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100839,7 +101129,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100848,7 +101138,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100857,7 +101147,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100866,7 +101156,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100880,7 +101170,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100888,7 +101178,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100897,7 +101187,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100906,7 +101196,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100915,7 +101205,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -100929,7 +101219,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100937,7 +101227,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100946,7 +101236,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100955,7 +101245,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100964,7 +101254,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -100978,7 +101268,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100986,7 +101276,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -100995,7 +101285,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101009,7 +101299,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101017,7 +101307,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101026,7 +101316,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101040,7 +101330,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101048,7 +101338,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101057,7 +101347,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101071,7 +101361,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101079,7 +101369,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101093,7 +101383,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101101,7 +101391,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101115,7 +101405,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101123,7 +101413,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101137,7 +101427,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT3_Veteran",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101146,7 +101436,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101155,7 +101445,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101164,7 +101454,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101173,7 +101463,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101187,7 +101477,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT3_Veteran",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101196,7 +101486,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101205,7 +101495,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101214,7 +101504,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101223,7 +101513,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101237,7 +101527,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT3_Veteran",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101246,7 +101536,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101255,7 +101545,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101264,7 +101554,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101273,7 +101563,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101295,7 +101585,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101309,7 +101599,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101323,7 +101613,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101337,7 +101627,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101351,7 +101641,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101365,7 +101655,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101379,7 +101669,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT3_Captain",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101393,7 +101683,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101407,7 +101697,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101421,7 +101711,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101435,7 +101725,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101443,7 +101733,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101452,7 +101742,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101461,7 +101751,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101475,7 +101765,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101483,7 +101773,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101492,7 +101782,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101501,7 +101791,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101515,7 +101805,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101523,7 +101813,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101532,7 +101822,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101541,7 +101831,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101555,7 +101845,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Raider",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101564,7 +101854,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101573,7 +101863,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101582,7 +101872,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 20,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101596,7 +101886,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Raider",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101605,7 +101895,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101614,7 +101904,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101623,7 +101913,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 20,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101637,7 +101927,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Raider",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101646,7 +101936,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101655,7 +101945,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101664,7 +101954,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 20,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101678,7 +101968,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101686,7 +101976,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101695,7 +101985,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101709,7 +101999,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101717,7 +102007,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101726,7 +102016,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101740,7 +102030,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101748,7 +102038,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101757,7 +102047,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101771,7 +102061,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101779,7 +102069,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101788,7 +102078,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101802,7 +102092,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101810,7 +102100,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101819,7 +102109,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101833,7 +102123,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101841,7 +102131,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101850,7 +102140,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101864,7 +102154,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101872,7 +102162,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101881,7 +102171,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101890,7 +102180,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101899,7 +102189,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -101913,7 +102203,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101921,7 +102211,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101930,7 +102220,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101939,7 +102229,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101948,7 +102238,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -101962,7 +102252,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101970,7 +102260,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101979,7 +102269,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101988,7 +102278,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -101997,7 +102287,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102011,7 +102301,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102019,7 +102309,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102028,7 +102318,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102042,7 +102332,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102050,7 +102340,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102059,7 +102349,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102073,7 +102363,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102081,7 +102371,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102090,7 +102380,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102104,7 +102394,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102112,7 +102402,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102126,7 +102416,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102134,7 +102424,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102148,7 +102438,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102156,7 +102446,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102170,7 +102460,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT3_Veteran",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102179,7 +102469,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102188,7 +102478,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102197,7 +102487,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102206,7 +102496,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102220,7 +102510,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT3_Veteran",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102229,7 +102519,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102238,7 +102528,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102247,7 +102537,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102256,7 +102546,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102278,7 +102568,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102292,7 +102582,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102306,7 +102596,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102320,7 +102610,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102334,7 +102624,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102348,7 +102638,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102362,7 +102652,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT3_Captain",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102376,7 +102666,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102390,7 +102680,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102404,7 +102694,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102418,7 +102708,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102427,7 +102717,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 60,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102436,7 +102726,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102450,7 +102740,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102459,7 +102749,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 60,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102468,7 +102758,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102482,7 +102772,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102491,7 +102781,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 60,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102500,7 +102790,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102514,7 +102804,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102522,7 +102812,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102531,7 +102821,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102540,7 +102830,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102554,7 +102844,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102562,7 +102852,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102571,7 +102861,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102580,7 +102870,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102594,7 +102884,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102602,7 +102892,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102611,7 +102901,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102620,7 +102910,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102634,7 +102924,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102642,7 +102932,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102651,7 +102941,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102660,7 +102950,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102674,7 +102964,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102682,7 +102972,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102691,7 +102981,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102700,7 +102990,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102714,7 +103004,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102722,7 +103012,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102731,7 +103021,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102740,7 +103030,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102754,7 +103044,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102762,7 +103052,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102771,7 +103061,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102785,7 +103075,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102793,7 +103083,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102802,7 +103092,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102816,7 +103106,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102824,7 +103114,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102833,7 +103123,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102847,7 +103137,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102855,7 +103145,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102864,7 +103154,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102873,7 +103163,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 12,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102887,7 +103177,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102895,7 +103185,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102904,7 +103194,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102913,7 +103203,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 12,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -102927,7 +103217,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102935,7 +103225,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102944,7 +103234,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102953,7 +103243,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 12,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -102967,7 +103257,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102975,7 +103265,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102984,7 +103274,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -102998,7 +103288,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103006,7 +103296,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103015,7 +103305,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103029,7 +103319,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103037,7 +103327,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103046,7 +103336,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103060,7 +103350,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103068,7 +103358,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103082,7 +103372,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103090,7 +103380,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103104,7 +103394,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103112,7 +103402,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103134,7 +103424,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103148,7 +103438,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103162,7 +103452,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103176,7 +103466,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103190,7 +103480,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103204,7 +103494,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103218,7 +103508,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT3_Captain",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103232,7 +103522,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103246,7 +103536,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103260,7 +103550,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103274,7 +103564,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103283,7 +103573,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 60,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103292,7 +103582,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103306,7 +103596,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103315,7 +103605,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 60,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103324,7 +103614,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103338,7 +103628,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103347,7 +103637,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 60,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103356,7 +103646,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103370,7 +103660,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103378,7 +103668,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103386,7 +103676,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Raider",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103395,7 +103685,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103409,7 +103699,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103417,7 +103707,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103425,7 +103715,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Raider",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103434,7 +103724,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103448,7 +103738,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103456,7 +103746,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103464,7 +103754,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Raider",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103473,7 +103763,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103487,7 +103777,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT1_Warden",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103495,7 +103785,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103503,7 +103793,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103517,7 +103807,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT1_Warden",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103525,7 +103815,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103533,7 +103823,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103547,7 +103837,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT1_Warden",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103555,7 +103845,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103563,7 +103853,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103577,7 +103867,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103585,7 +103875,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103594,7 +103884,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103608,7 +103898,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103616,7 +103906,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103625,7 +103915,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103639,7 +103929,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103647,7 +103937,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103656,7 +103946,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103670,7 +103960,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103678,7 +103968,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103687,7 +103977,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103696,7 +103986,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103710,7 +104000,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103718,7 +104008,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103727,7 +104017,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103736,7 +104026,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103750,7 +104040,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103758,7 +104048,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103767,7 +104057,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103776,7 +104066,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103790,7 +104080,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103798,7 +104088,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103807,7 +104097,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103821,7 +104111,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103829,7 +104119,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103838,7 +104128,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103852,7 +104142,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103860,7 +104150,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103869,7 +104159,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103883,7 +104173,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103891,7 +104181,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103905,7 +104195,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103913,7 +104203,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103927,7 +104217,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103935,7 +104225,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103957,7 +104247,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -103971,7 +104261,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -103985,7 +104275,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -103999,7 +104289,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104013,7 +104303,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104027,7 +104317,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104041,7 +104331,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT3_Captain",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104055,7 +104345,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104069,7 +104359,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104083,7 +104373,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104097,7 +104387,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104106,7 +104396,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 60,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104115,7 +104405,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104129,7 +104419,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104138,7 +104428,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 60,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104147,7 +104437,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104161,7 +104451,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104170,7 +104460,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 60,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104179,7 +104469,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104193,7 +104483,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104201,7 +104491,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104210,7 +104500,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104219,7 +104509,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104233,7 +104523,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104241,7 +104531,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104250,7 +104540,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104259,7 +104549,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104273,7 +104563,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104281,7 +104571,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104290,7 +104580,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104299,7 +104589,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104313,7 +104603,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT1_Warden",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104321,7 +104611,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104329,7 +104619,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104343,7 +104633,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT1_Warden",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104351,7 +104641,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104359,7 +104649,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104373,7 +104663,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT1_Warden",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104381,7 +104671,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104389,7 +104679,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104403,7 +104693,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104411,7 +104701,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104420,7 +104710,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104434,7 +104724,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104442,7 +104732,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104451,7 +104741,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104465,7 +104755,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104473,7 +104763,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104482,7 +104772,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104496,7 +104786,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104504,7 +104794,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104513,7 +104803,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104522,7 +104812,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104536,7 +104826,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104544,7 +104834,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104553,7 +104843,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104562,7 +104852,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104576,7 +104866,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104584,7 +104874,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104593,7 +104883,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104602,7 +104892,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104616,7 +104906,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104624,7 +104914,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104633,7 +104923,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104647,7 +104937,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104655,7 +104945,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104664,7 +104954,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104678,7 +104968,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104686,7 +104976,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104695,7 +104985,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104709,7 +104999,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104717,7 +105007,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104731,7 +105021,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104739,7 +105029,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104753,7 +105043,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104761,7 +105051,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104783,7 +105073,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104797,7 +105087,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104811,7 +105101,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104825,7 +105115,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104839,7 +105129,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104853,7 +105143,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104867,7 +105157,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT3_Captain",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104881,7 +105171,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104895,7 +105185,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104909,7 +105199,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104923,7 +105213,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104932,7 +105222,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 60,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104941,7 +105231,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -104955,7 +105245,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104964,7 +105254,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 60,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104973,7 +105263,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -104987,7 +105277,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -104996,7 +105286,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 60,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105005,7 +105295,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105019,7 +105309,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105027,7 +105317,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105036,7 +105326,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105045,7 +105335,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105059,7 +105349,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105067,7 +105357,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105076,7 +105366,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105085,7 +105375,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105099,7 +105389,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105107,7 +105397,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105116,7 +105406,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 50,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105125,7 +105415,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 25,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105139,7 +105429,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105147,7 +105437,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105156,7 +105446,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105165,7 +105455,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105179,7 +105469,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105187,7 +105477,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105196,7 +105486,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105205,7 +105495,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105219,7 +105509,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105227,7 +105517,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105236,7 +105526,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105245,7 +105535,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105259,7 +105549,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105267,7 +105557,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105276,7 +105566,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105290,7 +105580,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105298,7 +105588,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105307,7 +105597,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105321,7 +105611,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105329,7 +105619,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105338,7 +105628,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105352,7 +105642,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105360,7 +105650,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105369,7 +105659,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105378,7 +105668,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105392,7 +105682,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105400,7 +105690,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105409,7 +105699,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105418,7 +105708,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105432,7 +105722,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105440,7 +105730,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105449,7 +105739,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105458,7 +105748,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105472,7 +105762,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105480,7 +105770,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105489,7 +105779,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105503,7 +105793,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105511,7 +105801,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105520,7 +105810,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105534,7 +105824,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105542,7 +105832,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105551,7 +105841,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105565,7 +105855,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105573,7 +105863,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105587,7 +105877,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105595,7 +105885,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105609,7 +105899,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105617,7 +105907,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105639,7 +105929,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105653,7 +105943,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105667,7 +105957,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT1_Sergeant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105681,7 +105971,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105695,7 +105985,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105709,7 +105999,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT2_Lieutenant",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105723,7 +106013,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_LeaderT3_Captain",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105737,7 +106027,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105751,7 +106041,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105765,7 +106055,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Bonemaker",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105779,7 +106069,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105788,7 +106078,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 60,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105797,7 +106087,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105811,7 +106101,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105820,7 +106110,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 60,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105829,7 +106119,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105843,7 +106133,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105852,7 +106142,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 60,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105861,7 +106151,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105875,7 +106165,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105883,7 +106173,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105891,7 +106181,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Raider",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105900,7 +106190,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -105914,7 +106204,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105922,7 +106212,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105930,7 +106220,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Raider",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105939,7 +106229,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -105953,7 +106243,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Marauder",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105961,7 +106251,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT1_Rifleman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105969,7 +106259,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Raider",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105978,7 +106268,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 30,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -105992,7 +106282,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT1_Warden",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -106000,7 +106290,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -106008,7 +106298,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -106022,7 +106312,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT1_Warden",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -106030,7 +106320,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -106038,7 +106328,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -106052,7 +106342,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT1_Warden",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -106060,7 +106350,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Scout",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -106068,7 +106358,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -106082,7 +106372,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -106090,7 +106380,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -106099,7 +106389,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -106113,7 +106403,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -106121,7 +106411,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -106130,7 +106420,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -106144,7 +106434,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Marksman",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -106152,7 +106442,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -106161,7 +106451,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -106175,7 +106465,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -106183,7 +106473,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -106192,7 +106482,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -106201,7 +106491,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -106215,7 +106505,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -106223,7 +106513,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -106232,7 +106522,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -106241,7 +106531,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -106255,7 +106545,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -106263,7 +106553,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -106272,7 +106562,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -106281,7 +106571,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -106295,7 +106585,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -106303,7 +106593,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -106312,7 +106602,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -106326,7 +106616,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -106334,7 +106624,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -106343,7 +106633,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -106357,7 +106647,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -106365,7 +106655,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -106374,7 +106664,7 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -106388,7 +106678,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -106396,7 +106686,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Normal",
+										Difficulty = "Normal",
 									}),
 								},
 							}),
@@ -106410,7 +106700,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -106418,7 +106708,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "Hard",
+										Difficulty = "Hard",
 									}),
 								},
 							}),
@@ -106432,7 +106722,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -106440,7 +106730,7 @@ displayName]] "Legion Garrison"),
 								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
 								'conditions', {
 									PlaceObj('CheckDifficulty', {
-										'Difficulty', "VeryHard",
+										Difficulty = "VeryHard",
 									}),
 								},
 							}),
@@ -150559,12 +150849,12 @@ displayName]] "Legion Garrison"),
 			ActionType = "Ranged Attack",
 			AimType = "mobile",
 			CostBasedOnWeapon = true,
-			Description = T(954601292221, --[[ModItemCombatAction VengefulTemperament1 Description]] "<em>Once per turn</em>.\nMove to a new location and then shoot the closest enemy."),
-			DisplayName = T(749486825928, --[[ModItemCombatAction VengefulTemperament1 DisplayName]] 'Ураган "Норма"'),
+			Description = T(954601292221, --[[ModItemCombatAction VengefulTemperament Description]] "<em>Once per turn</em>.\nMove to a new location and then shoot the closest enemy."),
+			DisplayName = T(749486825928, --[[ModItemCombatAction VengefulTemperament DisplayName]] 'Ураган "Норма"'),
 			FiringModeMember = "Attack",
 			GetActionDamage = function (self, unit, target, args)
-				local rangedAttack = unit:GetDefaultAttackAction("ranged")
-				return rangedAttack:GetActionDamage(unit, target, args)
+				-- Rollover: volleys × bullets (via Jazz_GetMobileActionDamage); not vanilla base/volleys.
+				return Jazz_GetMobileActionDamage(self, unit, args)
 			end,
 			GetActionDescription = function (self, units)
 				local description = self.Description
@@ -150615,7 +150905,7 @@ displayName]] "Legion Garrison"),
 				return CombatActionGenericAttackGetUIState(self, units, args)
 			end,
 			Icon = "UI/Icons/Perks/VengefulTemperament",
-			IdDefault = "VengefulTemperament1default",
+			IdDefault = "VengefulTemperamentdefault",
 			IsAimableAttack = false,
 			KeybindingSortId = "2371",
 			MultiSelectBehavior = "first",
@@ -150641,7 +150931,7 @@ displayName]] "Legion Garrison"),
 				CombatActionAttackStart(self, units, args, "IModeCombatMovingAttack")
 			end,
 			group = "SignatureAbilities",
-			id = "VengefulTemperament1",
+			id = "VengefulTemperament",
 		}),
 		PlaceObj('ModItemCharacterEffectCompositeDef', {
 			'Group', "Perk-Personal",
@@ -150699,15 +150989,17 @@ displayName]] "Legion Garrison"),
 				PlaceObj('UnitReaction', {
 					Event = "OnUnitAttack",
 					Handler = function (self, target, attacker, action, attack_target, results, attack_args)
+						-- Signature CombatAction id must match perk class (EnumUIActions + this gate).
 						if target == attacker and IsKindOf(attack_target, "Unit") and action.id == self.class then
+							local aoe = self:ResolveValue("fearAoE")
 							for _, unit in ipairs(g_Units) do
-								if unit ~= attack_target and unit.team:IsAllySide(attack_target.team) and DivRound(unit:GetDist(attack_target), const.SlabSizeX) <= self:ResolveValue("fearAoE") then
+								if unit ~= attack_target and unit.team:IsAllySide(attack_target.team) and DivRound(unit:GetDist(attack_target), const.SlabSizeX) <= aoe then
 									if not RollSkillCheck(unit, "Wisdom", 50) then
-									unit:AddStatusEffect("Panicked","Inspired") else
-									unit:AddStatusEffect("Berserk")
-							    	unit.ActionPoints = unit:GetMaxActionPoints()
+										unit:AddStatusEffect("Panicked")
+									else
+										unit:AddStatusEffect("Berserk")
 									end
-									attacker:AddStatusEffect("VengeanceTarget")
+									unit.ActionPoints = unit:GetMaxActionPoints()
 								end
 							end
 						end
