@@ -150866,96 +150866,76 @@ displayName]] "Legion Garrison"),
 	PlaceObj('ModItemFolder', {
 		'name', "Perks",
 	}, {
+		
 		PlaceObj('ModItemCombatAction', {
-			ActionCamera = true,
-			ActionType = "Ranged Attack",
-			AimType = "mobile",
-			CostBasedOnWeapon = true,
-			Description = T(954601292221, --[[ModItemCombatAction VengefulTemperament Description]] "<em>Once per turn</em>.\nMove to a new location and then shoot the closest enemy."),
+			ActionPoints = 0,
+			ActionType = "Other",
+			ActivePauseBehavior = "instant",
+			ConfigurableKeybind = false,
+			Description = T(954601292221, --[[ModItemCombatAction VengefulTemperament Description]] "Активная способность. Враги в радиусе <fearAoE> клеток впадают в <em>панику</em> или <em>бешенство</em> (проверка Wisdom)."),
 			DisplayName = T(749486825928, --[[ModItemCombatAction VengefulTemperament DisplayName]] 'Ураган "Норма"'),
-			FiringModeMember = "Attack",
-			GetActionDamage = function (self, unit, target, args)
-				-- Rollover: volleys × bullets (via Jazz_GetMobileActionDamage); not vanilla base/volleys.
-				return Jazz_GetMobileActionDamage(self, unit, args)
+			GetAPCost = function (self, unit, args)
+				return self.ActionPoints or 0
 			end,
 			GetActionDescription = function (self, units)
-				local description = self.Description
-				local unit = units and units[1]
-				if not unit then
-					return self:GetActionDisplayName()
-				end
-				
-				local damage, base, bonus = self:GetActionDamage(unit)
-				return T{description, damage = damage, basedamage = base, bonusdamage = bonus}
+				return GetSignatureActionDescription(self)
 			end,
-			GetActionResults = function (self, unit, args)
-				return GetMobileShotResults(self, unit, args)
-			end,
-			GetAimParams = function (self, unit, weapon)
-				if self.AimType == "cone" then
-					return weapon:GetAreaAttackParams(self.id, unit)
-				elseif self.AimType == "mobile" then
-					local shots = self:ResolveValue("mobile_num_shots") or 5
-					local move_ap = self:ResolveValue("mobile_move_ap")
-					assert(move_ap)
-					return { num_shots = shots, move_ap = move_ap * const.Scale.AP}
-				elseif self.AimType == "parabola aoe" or self.AimType == "line aoe" then	
-					return weapon.AreaOfEffect
-				end
-				
-				return 0
-			end,
-			GetAnyTarget = function (self, units)
-				return self:GetTargets(units)[1]
-			end,
-			GetAttackWeapons = function (self, unit, args)
-				if args and args.weapon then return args.weapon end
-				local weapon = unit:GetActiveWeapons("Firearm")
-				return weapon -- make sure to return only 1 weapon, the attack doesn't use 2
-			end,
-			GetTargets = function (self, units)
-				local unit = units[1]
-				if unit then	
-					return GetEnemies(unit)
-				end
-				return {}
+			GetActionDisplayName = function (self, units)
+				return GetSignatureActionDisplayName(self)
 			end,
 			GetUIState = function (self, units, args)
 				if not g_Combat then
 					return "disabled", AttackDisableReasons.CombatOnly
 				end
-				return CombatActionGenericAttackGetUIState(self, units, args)
+				local unit = units and units[1]
+				if not unit then
+					return "hidden"
+				end
+				local recharge = unit:GetSignatureRecharge(self.id)
+				if recharge then
+					if recharge.on_kill then
+						return "disabled", AttackDisableReasons.SignatureRechargeOnKill
+					end
+					return "disabled", AttackDisableReasons.SignatureRecharge
+				end
+				local cost = self:GetAPCost(unit, args)
+				if cost < 0 then
+					return "hidden"
+				end
+				if not unit:UIHasAP(cost) then
+					return "disabled"
+				end
+				return "enabled"
 			end,
 			Icon = "UI/Icons/Perks/VengefulTemperament",
 			IdDefault = "VengefulTemperamentdefault",
 			IsAimableAttack = false,
+			KeybindingFromAction = "actionRedirectSignatureAbility",
 			KeybindingSortId = "2371",
 			MultiSelectBehavior = "first",
 			Parameters = {
 				PlaceObj('PresetParamNumber', {
-					'Name', "mobile_move_ap",
-					'Value', 10,
-					'Tag', "<mobile_move_ap>",
-				}),
-				PlaceObj('PresetParamNumber', {
-					'Name', "cooldown",
-					'Tag', "<cooldown>",
+					'Name', "fearAoE",
+					'Value', 5,
+					'Tag', "<fearAoE>",
 				}),
 			},
 			RequireState = "any",
-			RequireWeapon = true,
+			RequireWeapon = false,
 			Run = function (self, unit, ap, ...)
-				unit:SetActionCommand("RunAndGun", self.id, ap, ...)
+				unit:SetActionCommand("VengefulTemperament", self.id, ap, ...)
 			end,
 			ShowIn = "SignatureAbilities",
 			SortKey = 2,
 			UIBegin = function (self, units, args)
-				CombatActionAttackStart(self, units, args, "IModeCombatMovingAttack")
+				local unit = units[1]
+				local ap = self:GetAPCost(unit, args)
+				NetStartCombatAction(self.id, unit, ap, args)
 			end,
 			group = "SignatureAbilities",
 			id = "VengefulTemperament",
 		}),
-				PlaceObj('ModItemCharacterEffectCompositeDef', {
+		PlaceObj('ModItemCharacterEffectCompositeDef', {
 			'Group', "Perk-Personal",
 			'Id', "VengefulTemperament",
 			'Parameters', {
@@ -150966,30 +150946,9 @@ displayName]] "Legion Garrison"),
 				}),
 			},
 			'object_class', "Perk",
-			'unit_reactions', {
-				PlaceObj('UnitReaction', {
-					Event = "OnUnitAttack",
-					Handler = function (self, target, attacker, action, attack_target, results, attack_args)
-						-- Signature CombatAction id must match perk class (EnumUIActions + this gate).
-						if target == attacker and IsKindOf(attack_target, "Unit") and action.id == self.class then
-							local aoe = self:ResolveValue("fearAoE")
-							for _, unit in ipairs(g_Units) do
-								if unit ~= attack_target and unit.team:IsAllySide(attack_target.team) and DivRound(unit:GetDist(attack_target), const.SlabSizeX) <= aoe then
-									if not RollSkillCheck(unit, "Wisdom", 50) then
-										unit:AddStatusEffect("Panicked")
-									else
-										unit:AddStatusEffect("Berserk")
-									end
-									unit.ActionPoints = unit:GetMaxActionPoints()
-								end
-							end
-						end
-					end,
-					param_bindings = false,
-				}),
-			},
+			'unit_reactions', {},
 			'DisplayName', T(780344747381, --[[ModItemCharacterEffectCompositeDef VengefulTemperament DisplayName]] "Тяжелый характер"),
-			'Description', T(695881945070, --[[ModItemCharacterEffectCompositeDef VengefulTemperament Description]] 'Враги, находящиеся в радиусе 5 клеток впадают в панику или бешенство при виде Надвигающегося Урагана "Норма". Зависит от уровня мудрости противника.'),
+			'Description', T(695881945070, --[[ModItemCharacterEffectCompositeDef VengefulTemperament Description]] 'Активная способность «Ураган Норма»: враги в радиусе 5 клеток впадают в панику или бешенство. Зависит от уровня мудрости противника.'),
 			'Icon', "UI/Icons/Perks/VengefulTemperament",
 			'Tier', "Personal",
 		}),
