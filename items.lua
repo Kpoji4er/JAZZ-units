@@ -27274,11 +27274,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MP40_assault_m1_9x19_smg_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"JAZZ_MagLarge_50_MP40",
-							},
-							weapon = "MP40",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MP40",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo",
@@ -27289,11 +27288,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MP40_assault_m1_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"JAZZ_MagLarge_50_MP40",
-							},
-							weapon = "MP40",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MP40",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -27304,11 +27302,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MP40_assault_m2_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"JAZZ_MagLarge_50_MP40",
-							},
-							weapon = "MP40",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MP40",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -27319,11 +27316,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MP40_cqb_m1_9x19_smg_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"JAZZ_MagLarge_50_MP40",
-							},
-							weapon = "MP40",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MP40",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo",
@@ -27334,11 +27330,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MP40_cqb_m1_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"JAZZ_MagLarge_50_MP40",
-							},
-							weapon = "MP40",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MP40",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -27349,11 +27344,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MP40_cqb_m2_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"JAZZ_MagLarge_50_MP40",
-							},
-							weapon = "MP40",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MP40",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -27378,11 +27372,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MP40_flanker_m2_9x19_smg_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"JAZZ_MagLarge_50_MP40",
-							},
-							weapon = "MP40",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MP40",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo",
@@ -27393,11 +27386,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MP40_flanker_m2_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"JAZZ_MagLarge_50_MP40",
-							},
-							weapon = "MP40",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MP40",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
@@ -27408,11 +27400,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MP40_flanker_m3_9x19_smg_ammo",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"JAZZ_MagLarge_50_MP40",
-							},
-							weapon = "MP40",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MP40",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo",
@@ -27423,11 +27414,10 @@ return {
 						group = "Enemy - Legion",
 						id = "JAZZ_GenW_MP40_flanker_m3_9x19_smg_ammo_ap",
 						loot = "all",
-						PlaceObj('LootEntryUpgradedWeapon', {
-							upgrades = {
-								"JAZZ_MagLarge_50_MP40",
-							},
-							weapon = "MP40",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "MP40",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "9x19_smg_ammo_ap",
