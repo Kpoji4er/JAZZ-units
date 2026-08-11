@@ -81964,6 +81964,7 @@ return {
 						'Weight', 10,
 					}),
 					PlaceObj('AIPolicyProximity', {
+						'ScoreMode', "closer_better",
 						'Weight', 10,
 						'AllyPlannedPosition', true,
 						'TargetUnits', "allies",
@@ -81971,6 +81972,7 @@ return {
 						'MinScore', 50,
 					}),
 					PlaceObj('AIPolicyProximity', {
+						'ScoreMode', "closer_better",
 						'RequiredKeywords', {
 							"Soldier",
 						},
@@ -81981,6 +81983,7 @@ return {
 						'MinScore', 50,
 					}),
 					PlaceObj('AIPolicyProximity', {
+						'ScoreMode', "closer_better",
 						'RequiredKeywords', {
 							"Leader",
 						},
@@ -82965,6 +82968,7 @@ return {
 						'Weight', 5,
 					}),
 					PlaceObj('AIPolicyProximity', {
+						'ScoreMode', "closer_better",
 						'Weight', 5,
 						'AllyPlannedPosition', true,
 						'TargetUnits', "allies",
@@ -82972,6 +82976,7 @@ return {
 						'MinScore', 50,
 					}),
 					PlaceObj('AIPolicyProximity', {
+						'ScoreMode', "closer_better",
 						'RequiredKeywords', {
 							"Soldier",
 						},
@@ -82982,6 +82987,7 @@ return {
 						'MinScore', 50,
 					}),
 					PlaceObj('AIPolicyProximity', {
+						'ScoreMode', "closer_better",
 						'RequiredKeywords', {
 							"Leader",
 						},
@@ -83251,6 +83257,14 @@ return {
 					PlaceObj('StandardAI', {
 						'Weight', 10,
 						'EndTurnPolicies', {
+						PlaceObj('AIPolicyProximity', {
+							'ScoreMode', "closer_better",
+							'Weight', 100,
+							'AllyPlannedPosition', true,
+							'TargetUnits', "allies",
+							'TargetDist', "average",
+							'MinScore', 0,
+						}),
 							PlaceObj('AIPolicyDealDamage', nil),
 							PlaceObj('AIPolicyTakeCover', {
 								'Weight', 10,
@@ -83324,17 +83338,19 @@ return {
 						'Weight', 5,
 					}),
 					PlaceObj('AIPolicyProximity', {
-						'Weight', 25,
+						'ScoreMode', "closer_better",
+						'Weight', 80,
 						'AllyPlannedPosition', true,
 						'TargetUnits', "allies",
 						'TargetDist', "average",
 						'MinScore', 50,
 					}),
 					PlaceObj('AIPolicyProximity', {
+						'ScoreMode', "closer_better",
 						'RequiredKeywords', {
 							"Leader",
 						},
-						'Weight', 25,
+						'Weight', 80,
 						'AllyPlannedPosition', true,
 						'TargetUnits', "allies",
 						'TargetDist', "average",
@@ -91612,6 +91628,7 @@ return {
 						'Weight', 10,
 					}),
 					PlaceObj('AIPolicyProximity', {
+						'ScoreMode', "closer_better",
 						'Weight', 10,
 						'AllyPlannedPosition', true,
 						'TargetUnits', "allies",
@@ -91619,6 +91636,7 @@ return {
 						'MinScore', 50,
 					}),
 					PlaceObj('AIPolicyProximity', {
+						'ScoreMode', "closer_better",
 						'RequiredKeywords', {
 							"Soldier",
 						},
@@ -91629,6 +91647,7 @@ return {
 						'MinScore', 50,
 					}),
 					PlaceObj('AIPolicyProximity', {
+						'ScoreMode', "closer_better",
 						'RequiredKeywords', {
 							"Leader",
 						},
@@ -92613,6 +92632,7 @@ PlaceObj('ModItemAIArchetype', {
 						'Weight', 5,
 					}),
 					PlaceObj('AIPolicyProximity', {
+						'ScoreMode', "closer_better",
 						'Weight', 5,
 						'AllyPlannedPosition', true,
 						'TargetUnits', "allies",
@@ -92620,6 +92640,7 @@ PlaceObj('ModItemAIArchetype', {
 						'MinScore', 50,
 					}),
 					PlaceObj('AIPolicyProximity', {
+						'ScoreMode', "closer_better",
 						'RequiredKeywords', {
 							"Soldier",
 						},
@@ -92630,6 +92651,7 @@ PlaceObj('ModItemAIArchetype', {
 						'MinScore', 50,
 					}),
 					PlaceObj('AIPolicyProximity', {
+						'ScoreMode', "closer_better",
 						'RequiredKeywords', {
 							"Leader",
 						},
@@ -92899,6 +92921,14 @@ PlaceObj('ModItemAIArchetype', {
 					PlaceObj('StandardAI', {
 						'Weight', 10,
 						'EndTurnPolicies', {
+						PlaceObj('AIPolicyProximity', {
+							'ScoreMode', "closer_better",
+							'Weight', 100,
+							'AllyPlannedPosition', true,
+							'TargetUnits', "allies",
+							'TargetDist', "average",
+							'MinScore', 0,
+						}),
 							PlaceObj('AIPolicyDealDamage', nil),
 							PlaceObj('AIPolicyTakeCover', {
 								'Weight', 10,
@@ -92970,17 +93000,19 @@ PlaceObj('ModItemAIArchetype', {
 						'Weight', 5,
 					}),
 					PlaceObj('AIPolicyProximity', {
-						'Weight', 25,
+						'ScoreMode', "closer_better",
+						'Weight', 80,
 						'AllyPlannedPosition', true,
 						'TargetUnits', "allies",
 						'TargetDist', "average",
 						'MinScore', 50,
 					}),
 					PlaceObj('AIPolicyProximity', {
+						'ScoreMode', "closer_better",
 						'RequiredKeywords', {
 							"Leader",
 						},
-						'Weight', 25,
+						'Weight', 80,
 						'AllyPlannedPosition', true,
 						'TargetUnits', "allies",
 						'TargetDist', "average",
