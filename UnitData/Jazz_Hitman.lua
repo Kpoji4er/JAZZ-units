@@ -51,7 +51,7 @@ DefineClass.Jazz_Hitman = {
 	"SteadyBreathing",
 	"DedicatedCamper",
 	},
-	AppearancesList = { PlaceObj('AppearanceWeight', { 'Preset', "Hitman" }) },
+	AppearancesList = { PlaceObj('AppearanceWeight', { 'Preset', "Jazz_Hitman" }) },
 	Equipment = { "Loot_JAZZ_Hitman" },
 	Tier = "Veteran",
 	Specialization = "Marksmen",
