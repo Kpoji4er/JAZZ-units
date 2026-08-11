@@ -75,6 +75,307 @@ function JazzAI_HasKeyword(unit, keyword)
 	return false
 end
 
+function JazzAI_GetActiveFirearm(unit)
+	if not IsValid(unit) or not unit.GetActiveWeapons then
+		return false
+	end
+	local w = unit:GetActiveWeapons("Firearm")
+	if IsKindOf(w, "Firearm") then
+		return w
+	end
+	w = unit:GetActiveWeapons()
+	if IsKindOf(w, "Firearm") then
+		return w
+	end
+	return false
+end
+
+function JazzAI_UnitOpticMagnification(unit)
+	local wep = JazzAI_GetActiveFirearm(unit)
+	if not wep or type(JAZZ_CTHGetOpticProfile) ~= "function" then
+		return 1
+	end
+	local optic = JAZZ_CTHGetOpticProfile(wep, 3)
+	return (optic and optic.magnification) or 1
+end
+
+--- Dedicated sniper role (keyword / class), not dynamic fill-in.
+function JazzAI_UnitIsDedicatedSniper(unit)
+	if not IsValid(unit) or unit:IsDead() then
+		return false
+	end
+	if JazzAI_HasKeyword(unit, "Sniper") or JazzAI_HasKeyword(unit, "Marksman") then
+		return true
+	end
+	local class = JazzAI_UnitClassName(unit)
+	return type(class) == "string" and (class:find("Sniper", 1, true) or class:find("Marksman", 1, true))
+end
+
+function JazzAI_UnitIsDedicatedMG(unit)
+	if not IsValid(unit) or unit:IsDead() then
+		return false
+	end
+	if JazzAI_InferRoleFamily(unit) == "MG" then
+		return true
+	end
+	local wep = JazzAI_GetActiveFirearm(unit)
+	return IsKindOf(wep, "MachineGun")
+end
+
+--- Optics / bolt / sniper rifle — can stand in when team has no dedicated sniper.
+function JazzAI_UnitSemiSniperScore(unit)
+	if not IsValid(unit) or unit:IsDead() then
+		return 0
+	end
+	if JazzAI_UnitIsDedicatedSniper(unit) then
+		return 0
+	end
+	local family = JazzAI_InferRoleFamily(unit)
+	if family == "MG" or family == "Heavy" or family == "Leader" or family == "Medic" then
+		return 0
+	end
+	local wep = JazzAI_GetActiveFirearm(unit)
+	if not wep then
+		return 0
+	end
+	local score = 0
+	if IsKindOf(wep, "SniperRifle") then
+		score = score + 100
+	end
+	if wep.IsPerRoundReload and wep:IsPerRoundReload() then
+		score = score + 60
+	end
+	local mag = JazzAI_UnitOpticMagnification(unit)
+	if mag >= 4 then
+		score = score + 50 + MulDivRound(mag, 5, 1)
+	elseif mag >= 2 then
+		score = score + 25 + MulDivRound(mag, 5, 1)
+	end
+	return score
+end
+
+function JazzAI_UnitPseudoMGScore(unit)
+	if not IsValid(unit) or unit:IsDead() then
+		return 0
+	end
+	if JazzAI_UnitIsDedicatedMG(unit) then
+		return 0
+	end
+	local family = JazzAI_InferRoleFamily(unit)
+	if family == "Heavy" or family == "Leader" or family == "Medic" or family == "MG" then
+		return 0
+	end
+	local wep = JazzAI_GetActiveFirearm(unit)
+	if not wep then
+		return 0
+	end
+	if IsKindOf(wep, "MachineGun") then
+		return 0
+	end
+	local score = 0
+	if IsKindOf(wep, "SubmachineGun") then
+		score = 80
+	elseif IsKindOf(wep, "AssaultRifle") then
+		score = 70
+	elseif family == "Pusher" or family == "Recruit" then
+		score = 40
+	else
+		return 0
+	end
+	-- Prefer mid/long over pure CQB pistols.
+	score = score + Min(20, wep.WeaponRange or 0)
+	return score
+end
+
+function JazzAI_TeamHasDedicatedSniper(team)
+	if not team or not team.units then
+		return false
+	end
+	for _, ally in ipairs(team.units) do
+		if JazzAI_UnitIsDedicatedSniper(ally) then
+			return true
+		end
+	end
+	return false
+end
+
+function JazzAI_TeamHasDedicatedMG(team)
+	if not team or not team.units then
+		return false
+	end
+	for _, ally in ipairs(team.units) do
+		if JazzAI_UnitIsDedicatedMG(ally) then
+			return true
+		end
+	end
+	return false
+end
+
+--- Candidates for aura-assigned fill-in roles (in officer radius, not the officer).
+function JazzAI_AuraRoleCandidates(team, source, radius)
+	local list = {}
+	if not team or not team.units or not IsValid(source) then
+		return list
+	end
+	for _, ally in ipairs(team.units) do
+		if ally ~= source and not ally:IsDead() then
+			local in_aura = false
+			if JazzAI_IsInOfficerAura then
+				in_aura = JazzAI_IsInOfficerAura(ally, source, radius)
+			elseif (radius or 0) >= 1000 then
+				in_aura = true
+			else
+				in_aura = DivRound(ally:GetDist(source), const.SlabSizeX) <= (radius or 0)
+			end
+			if in_aura then
+				list[#list + 1] = ally
+			end
+		end
+	end
+	return list
+end
+
+--- Best fill-in when no dedicated sniper — picked by officer aura among influenced allies.
+function JazzAI_PickTeamSemiSniper(team, source, radius)
+	if JazzAI_TeamHasDedicatedSniper(team) then
+		return false
+	end
+	local candidates = (source and radius) and JazzAI_AuraRoleCandidates(team, source, radius)
+		or ((team and team.units) or empty_table)
+	local best, best_score = false, 0
+	for _, ally in ipairs(candidates) do
+		if ally ~= source then
+			local s = JazzAI_UnitSemiSniperScore(ally)
+			if s > best_score then
+				best, best_score = ally, s
+			end
+		end
+	end
+	return best_score > 0 and best or false
+end
+
+--- Best fill-in when no dedicated MG — aura-assigned OW-heavy Machinegunner.
+function JazzAI_PickTeamPseudoMG(team, source, radius)
+	if JazzAI_TeamHasDedicatedMG(team) then
+		return false
+	end
+	local candidates = (source and radius) and JazzAI_AuraRoleCandidates(team, source, radius)
+		or ((team and team.units) or empty_table)
+	local best, best_score = false, 0
+	for _, ally in ipairs(candidates) do
+		if ally ~= source then
+			local s = JazzAI_UnitPseudoMGScore(ally)
+			if s > best_score then
+				best, best_score = ally, s
+			end
+		end
+	end
+	return best_score > 0 and best or false
+end
+
+--- Assault / Push candidate score (Scout/Pusher/Recruit with CQB-capable firearm).
+function JazzAI_UnitPusherScore(unit)
+	if not IsValid(unit) or unit:IsDead() then
+		return 0
+	end
+	if JazzAI_UnitIsDedicatedSniper(unit) or JazzAI_UnitIsDedicatedMG(unit) then
+		return 0
+	end
+	local family = JazzAI_InferRoleFamily(unit)
+	if family == "Heavy" or family == "Leader" or family == "Medic" or family == "MG" then
+		return 0
+	end
+	local wep = JazzAI_GetActiveFirearm(unit)
+	if not wep then
+		return 0
+	end
+	if IsKindOf(wep, "SniperRifle") or IsKindOf(wep, "MachineGun") then
+		return 0
+	end
+	local score = 0
+	if family == "Pusher" then
+		score = 100
+	elseif family == "Scout" then
+		score = 80
+	elseif family == "Recruit" then
+		score = 60
+	elseif family == "Line" then
+		score = 35
+	else
+		return 0
+	end
+	if IsKindOf(wep, "SubmachineGun") or IsKindOf(wep, "Shotgun") then
+		score = score + 25
+	elseif IsKindOf(wep, "AssaultRifle") then
+		score = score + 15
+	end
+	-- Closer-range weapons prefer push.
+	local wr = wep.WeaponRange or 20
+	if wr <= 14 then
+		score = score + 10
+	end
+	return score
+end
+
+--- Aura-assigned pusher (who executes «Давить» / Assaulter).
+function JazzAI_PickTeamPusher(team, source, radius, exclude)
+	exclude = exclude or empty_table
+	local candidates = (source and radius) and JazzAI_AuraRoleCandidates(team, source, radius)
+		or ((team and team.units) or empty_table)
+	local best, best_score = false, 0
+	for _, ally in ipairs(candidates) do
+		if ally ~= source and not exclude[ally] then
+			local s = JazzAI_UnitPusherScore(ally)
+			if s > best_score then
+				best, best_score = ally, s
+			end
+		end
+	end
+	return best_score > 0 and best or false
+end
+
+function JazzAI_GetTeamAuraRoleEntry(unit)
+	if not unit or not unit.team then
+		return false
+	end
+	local team = unit.team
+	local entry = (rawget(_G, "JazzAI_TeamDirectives") or empty_table)[team.side or team.handle or tostring(team)]
+	if not entry or not entry.source or entry.source:IsDead() then
+		return false
+	end
+	if JazzAI_IsInOfficerAura and not JazzAI_IsInOfficerAura(unit, entry.source, entry.radius) then
+		return false
+	end
+	return entry
+end
+
+--- True if officer aura assigned this unit as semi-sniper fill-in.
+function JazzAI_UnitIsDynamicSemiSniper(unit)
+	if not IsValid(unit) then
+		return false
+	end
+	local entry = JazzAI_GetTeamAuraRoleEntry(unit)
+	return entry and entry.semi_sniper == unit
+end
+
+--- True if officer aura assigned this unit as pseudo-MG fill-in.
+function JazzAI_UnitIsDynamicPseudoMG(unit)
+	if not IsValid(unit) then
+		return false
+	end
+	local entry = JazzAI_GetTeamAuraRoleEntry(unit)
+	return entry and entry.pseudo_mg == unit
+end
+
+--- True if officer aura assigned this unit to push / assault.
+function JazzAI_UnitIsDynamicPusher(unit)
+	if not IsValid(unit) then
+		return false
+	end
+	local entry = JazzAI_GetTeamAuraRoleEntry(unit)
+	return entry and entry.pusher == unit
+end
+
 function JazzAI_NeverMelee(unit)
 	local family = JazzAI_InferRoleFamily(unit)
 	if family == "MG" or family == "Heavy" or family == "Leader" then
@@ -499,7 +800,14 @@ function JazzAI_PickCombatStance(unit, proto_context, opts)
 	local enemy, dist = GetNearestEnemy(unit)
 
 	-- F4 + F9: melee secondary (skip under FallBack / TakeCover / GoHidden — stay under cover / stealth)
+	-- Sniper/Marksman / dynamic semi-sniper never dive to melee from aura pressure.
+	local is_sniper = JazzAI_HasKeyword(unit, "Sniper") or JazzAI_HasKeyword(unit, "Marksman")
+		or JazzAI_UnitIsDynamicSemiSniper(unit)
+	local is_pseudo_mg = JazzAI_UnitIsDynamicPseudoMG(unit)
+	local is_pusher = JazzAI_UnitIsDynamicPusher(unit)
+		or family == "Pusher"
 	if directive ~= "FallBack" and directive ~= "TakeCover" and directive ~= "GoHidden"
+		and not is_sniper
 		and enemy and not JazzAI_NeverMelee(unit) and JazzAI_FindAltMeleeWeapon(unit) then
 		if JazzAI_CanReachMeleeAndAttackOnce(unit, enemy) then
 			if JazzAI_EnsureWeaponClass(unit, "MeleeWeapon") then
@@ -511,15 +819,21 @@ function JazzAI_PickCombatStance(unit, proto_context, opts)
 		end
 	end
 
-	-- Cover / building / stealth hold: Scout/Pusher/Recruit/Line → Frontliner
-	if directive == "FallBack" or directive == "TakeCover" or directive == "OccupyBuildings" or directive == "GoHidden" then
+	-- Cover / building / heights / stealth hold: Scout/Pusher/Recruit/Line → Frontliner
+	-- Sniper/Marksman / semi-sniper keep base (long-range / optics) — do not collapse into Frontliner.
+	local cover_hold = directive == "FallBack" or directive == "TakeCover"
+		or directive == "OccupyBuildings" or directive == "OccupyHeights" or directive == "GoHidden"
+	if cover_hold and not is_sniper and not is_pseudo_mg then
 		if family == "Scout" or family == "Pusher" or family == "Recruit" or family == "Line" then
 			archetype = prefix .. "Frontliner"
 		end
-	-- F2 role stance
+	-- F2 role stance — Push only for aura-assigned pusher (or dedicated Pusher family).
 	elseif family == "Scout" then
 		archetype = prefix .. "Flanker"
-		if JazzAI_NeedPush(unit, enemy, dist) or directive == "Push" or (unit.ai_context and unit.ai_context.jazz_flare_push) then
+		local want_push = not (directive == "FallBack")
+			and (directive == "Push" or JazzAI_NeedPush(unit, enemy, dist)
+				or (unit.ai_context and unit.ai_context.jazz_flare_push))
+		if want_push and is_pusher then
 			archetype = prefix .. "Assaulter"
 		end
 	elseif family == "Pusher" then
@@ -527,11 +841,13 @@ function JazzAI_PickCombatStance(unit, proto_context, opts)
 		if JazzAI_NeedFlank(unit, enemy, dist) or directive == "Envelop" then
 			archetype = prefix .. "Flanker"
 		end
-	elseif family == "Line" then
-		-- CQB sidearm → temporary Assaulter if alt has CQB firearm
-		if enemy and dist and JazzAI_NeedPush(unit, enemy, dist) and directive ~= "LowVisHold" then
+	elseif family == "Line" and not is_sniper then
+		-- Aura pusher on Line, or CQB sidearm under NeedPush.
+		if is_pusher and (directive == "Push" or JazzAI_NeedPush(unit, enemy, dist)) then
+			archetype = prefix .. "Assaulter"
+		elseif enemy and dist and JazzAI_NeedPush(unit, enemy, dist) and directive ~= "LowVisHold" and directive ~= "FallBack" then
 			local cqb = JazzAI_FindAltCQBFirearm(unit)
-			if cqb then
+			if cqb and is_pusher then
 				if not unit:GetActiveWeapons(cqb.class) then
 					AIPlayCombatAction("ChangeWeapon", unit, 0)
 				end
@@ -541,7 +857,24 @@ function JazzAI_PickCombatStance(unit, proto_context, opts)
 	elseif family == "Recruit" then
 		archetype = prefix .. "Assaulter"
 	end
-	-- MG / Heavy keep base archetype; FocusFire / LowVisHold / HoldLine use family defaults
+
+	-- Dynamic fill-ins when the squad lacks dedicated roles / commander Push assign.
+	if is_sniper and not JazzAI_UnitIsDedicatedSniper(unit) then
+		if family == "Scout" or family == "Pusher" or family == "Recruit" or family == "Line" then
+			archetype = prefix .. "Frontliner"
+		end
+	end
+	if is_pseudo_mg then
+		local mg_id = prefix .. "Machinegunner"
+		if JazzAI_ArchetypeExists(mg_id) then
+			archetype = mg_id
+		end
+	end
+	if is_pusher and not is_sniper and not is_pseudo_mg
+		and (directive == "Push" or (unit.ai_context and unit.ai_context.jazz_flare_push)) then
+		archetype = prefix .. "Assaulter"
+	end
+	-- MG / Heavy / Sniper keep base archetype; FocusFire / LowVisHold / HoldLine use family defaults
 
 	if archetype ~= prev and PlayVoiceResponse then
 		PlayVoiceResponse(unit, "AIArchetypeAngry")
