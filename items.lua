@@ -153513,7 +153513,7 @@ displayName]] "Legion Garrison"),
 				end
 				return "enabled"
 			end,
-			Icon = "UI/Icons/Perks/VengefulTemperament",
+			Icon = "Mod/e6L4ECj/Perks/SignatureAbilities/VengefulTemperament.png",
 			IdDefault = "VengefulTemperamentdefault",
 			IsAimableAttack = false,
 			KeybindingFromAction = "actionRedirectSignatureAbility",
