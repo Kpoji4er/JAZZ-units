@@ -22219,6 +22219,21 @@ return {
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
+						id = "JAZZ_GenW_AK74_carbine_fold_545_ar_ammo_ap",
+						loot = "all",
+						PlaceObj('LootEntryUpgradedWeapon', {
+							upgrades = {
+								"JAZZ_StockLightFolded",
+							},
+							weapon = "AK74",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "545_ar_ammo_ap",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "JAZZ-UNITS-003 weapon+ammo",
+						group = "Enemy - Legion",
 						id = "JAZZ_GenW_AK74_merc_m4_545_ar_ammo_ap",
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
@@ -22261,6 +22276,21 @@ return {
 								"JAZZ_MagLarge_30_40",
 								"JAZZ_LaserDot",
 								"JAZZ_Suppressor",
+							},
+							weapon = "AKM",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "762x39_ar_ammo_ap",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "JAZZ-UNITS-003 weapon+ammo",
+						group = "Enemy - Legion",
+						id = "JAZZ_GenW_AKM_carbine_fold_762x39_ar_ammo_ap",
+						loot = "all",
+						PlaceObj('LootEntryUpgradedWeapon', {
+							upgrades = {
+								"JAZZ_StockLightFolded",
 							},
 							weapon = "AKM",
 						}),
@@ -24562,6 +24592,21 @@ return {
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
+						id = "JAZZ_GenW_G36_carbine_fold_556_ar_ammo_ap",
+						loot = "all",
+						PlaceObj('LootEntryUpgradedWeapon', {
+							upgrades = {
+								"JAZZ_StockFolded",
+							},
+							weapon = "G36",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "556_ar_ammo_ap",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "JAZZ-UNITS-003 weapon+ammo",
+						group = "Enemy - Legion",
 						id = "JAZZ_GenW_G36_merc_m4_556_ar_ammo_ap",
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
@@ -26092,6 +26137,68 @@ return {
 							item = "M2Carbine",
 							stack_max = 1,
 							stack_min = 1,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "30cal_carbine_ammo",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "JAZZ-UNITS-003 weapon+ammo",
+						group = "Enemy - Legion",
+						id = "JAZZ_GenW_M2Carbine_early_m1_30cal_carbine_ammo",
+						loot = "all",
+						PlaceObj('LootEntryUpgradedWeapon', {
+							upgrades = {
+								"JAZZ_StockNormal",
+							},
+							weapon = "M2Carbine",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "30cal_carbine_ammo",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "JAZZ-UNITS-003 weapon+ammo",
+						group = "Enemy - Legion",
+						id = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+						loot = "all",
+						PlaceObj('LootEntryUpgradedWeapon', {
+							upgrades = {
+								"JAZZ_StockNo",
+							},
+							weapon = "M2Carbine",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "30cal_carbine_ammo",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "JAZZ-UNITS-003 weapon+ammo",
+						group = "Enemy - Legion",
+						id = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+						loot = "all",
+						PlaceObj('LootEntryUpgradedWeapon', {
+							upgrades = {
+								"JAZZ_StockLightUnFolded",
+							},
+							weapon = "M2Carbine",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "30cal_carbine_ammo",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "JAZZ-UNITS-003 weapon+ammo",
+						group = "Enemy - Legion",
+						id = "JAZZ_GenW_M2Carbine_early_m2_30cal_carbine_ammo",
+						loot = "all",
+						PlaceObj('LootEntryUpgradedWeapon', {
+							upgrades = {
+								"JAZZ_StockNormal",
+								"JAZZ_Autofire",
+								"JAZZ_MagNormal",
+							},
+							weapon = "M2Carbine",
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "30cal_carbine_ammo",
@@ -30601,6 +30708,21 @@ return {
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
+						id = "JAZZ_GenW_Sig550Custom_carbine_fold_556_ar_ammo_ap",
+						loot = "all",
+						PlaceObj('LootEntryUpgradedWeapon', {
+							upgrades = {
+								"JAZZ_StockLightFolded",
+							},
+							weapon = "Sig550Custom",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "556_ar_ammo_ap",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "JAZZ-UNITS-003 weapon+ammo",
+						group = "Enemy - Legion",
 						id = "JAZZ_GenW_Sig550Custom_cqb_m2_556_ar_ammo_ap",
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
@@ -30678,6 +30800,21 @@ return {
 								"JAZZ_MagLarge_50_SIG",
 								"JAZZ_LaserDot",
 								"JAZZ_ImprovisedSuppressor",
+							},
+							weapon = "Sig550",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "556_ar_ammo_ap",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "JAZZ-UNITS-003 weapon+ammo",
+						group = "Enemy - Legion",
+						id = "JAZZ_GenW_Sig550_carbine_fold_556_ar_ammo_ap",
+						loot = "all",
+						PlaceObj('LootEntryUpgradedWeapon', {
+							upgrades = {
+								"JAZZ_StockLightFolded",
 							},
 							weapon = "Sig550",
 						}),
@@ -32659,6 +32796,21 @@ return {
 					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 weapon+ammo",
 						group = "Enemy - Legion",
+						id = "JAZZ_GenW_Zastava_M70_carbine_fold_762x39_ar_ammo_ap",
+						loot = "all",
+						PlaceObj('LootEntryUpgradedWeapon', {
+							upgrades = {
+								"JAZZ_StockLightFolded",
+							},
+							weapon = "Zastava_M70",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "762x39_ar_ammo_ap",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "JAZZ-UNITS-003 weapon+ammo",
+						group = "Enemy - Legion",
 						id = "JAZZ_GenW_Zastava_M70_merc_m4_762x39_ar_ammo_ap",
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
@@ -32672,7 +32824,7 @@ return {
 						}),
 					}),
 --[[ JAZZ-UNITS-003-GENERATED-END ]]
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Roughneck_Inventory",
@@ -32848,7 +33000,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Crusher_Inventory",
@@ -32941,7 +33093,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Grenadier_Inventory",
@@ -33037,7 +33189,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pillager_Inventory",
@@ -33045,8 +33197,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Pillager_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
-
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -33192,6 +33342,11 @@ return {
 							stack_max = 1,
 							stack_min = 1,
 						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JAZZ_Bandage",
+							stack_max = 2,
+							stack_min = 1,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
@@ -33215,7 +33370,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pyro_Inventory",
@@ -33223,63 +33378,15 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Pyro_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
-
-						PlaceObj('LootEntryInventoryItem', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 11,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 19,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							generate_chance = 20,
-							item = "FragGrenade",
-							stack_max = 2,
-							stack_min = 1,
-						}),
-						PlaceObj('LootEntryInventoryItem', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 21,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							generate_chance = 35,
-							item = "FragGrenade",
-							stack_max = 2,
-							stack_min = 1,
-						}),
-						PlaceObj('LootEntryInventoryItem', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 31,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							generate_chance = 45,
-							item = "FragGrenade",
-							stack_max = 2,
-							stack_min = 1,
-						}),
 						PlaceObj('LootEntryInventoryItem', {
 							item = "Molotov",
 							stack_max = 3,
 							stack_min = 3,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JAZZ_Bandage",
+							stack_max = 2,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
@@ -33304,7 +33411,7 @@ return {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Shocktrooper_Inventory",
@@ -33312,8 +33419,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Shocktrooper_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
-
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -33432,6 +33537,11 @@ return {
 							generate_chance = 40,
 							item = "ConcussiveGrenade",
 						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JAZZ_Bandage",
+							stack_max = 2,
+							stack_min = 1,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
@@ -33500,7 +33610,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "SkullCrusher_Inventory",
@@ -33508,8 +33618,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "SkullCrusher_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { generate_chance = 30, item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
-
 						PlaceObj('LootEntryInventoryItem', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -33622,6 +33730,12 @@ return {
 							generate_chance = 40,
 							item = "SmokeGrenade",
 						}),
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "JAZZ_Morphine",
+							stack_max = 1,
+							stack_min = 1,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
@@ -33645,7 +33759,7 @@ return {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Punisher_Inventory",
@@ -33653,8 +33767,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Punisher_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { generate_chance = 30, item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
-
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -33718,6 +33830,12 @@ return {
 							generate_chance = 50,
 							item = "ConcussiveGrenade",
 						}),
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "JAZZ_Morphine",
+							stack_max = 1,
+							stack_min = 1,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
@@ -33741,7 +33859,7 @@ return {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Headsman_Inventory",
@@ -33890,7 +34008,7 @@ return {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Marauder_Inventory",
@@ -34034,7 +34152,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Rifleman_Inventory",
@@ -34127,7 +34245,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Bonemaker_Inventory",
@@ -34186,7 +34304,7 @@ return {
 							stack_max = 2,
 							stack_min = 1,
 						}),
-												PlaceObj('LootEntryInventoryItem', {
+						PlaceObj('LootEntryInventoryItem', {
 							item = "FirstAidKit",
 							stack_max = 5,
 							stack_min = 5,
@@ -34197,9 +34315,16 @@ return {
 							stack_max = 1,
 							stack_min = 1,
 						}),
-						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 10 }),
-						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 0, stack_max = 3 }),
-
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JAZZ_Bandage",
+							stack_max = 10,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JAZZ_Morphine",
+							stack_max = 3,
+							stack_min = 0,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
@@ -34223,7 +34348,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Raider_Inventory",
@@ -34231,8 +34356,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Raider_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
-
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -34343,6 +34466,11 @@ return {
 							stack_max = 4,
 							stack_min = 3,
 						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JAZZ_Bandage",
+							stack_max = 2,
+							stack_min = 1,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
@@ -34411,7 +34539,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Marksman_Inventory",
@@ -34419,8 +34547,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Marksman_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
-
 						PlaceObj('LootEntryInventoryItem', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -34469,6 +34595,11 @@ return {
 							},
 							generate_chance = 25,
 							item = "FragGrenade",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JAZZ_Bandage",
 							stack_max = 2,
 							stack_min = 1,
 						}),
@@ -34540,7 +34671,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Ambusher_Inventory",
@@ -34548,8 +34679,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Ambusher_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
-
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -34615,6 +34744,11 @@ return {
 						PlaceObj('LootEntryInventoryItem', {
 							generate_chance = 35,
 							item = "SmokeGrenade",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JAZZ_Bandage",
+							stack_max = 2,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
@@ -34684,7 +34818,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Veteran_Inventory",
@@ -34692,8 +34826,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Veteran_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { generate_chance = 30, item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
-
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -34752,6 +34884,12 @@ return {
 							item = "FragGrenade",
 							stack_max = 4,
 							stack_min = 3,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "JAZZ_Morphine",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "LegionGL_5pc",
@@ -34824,7 +34962,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Sniper_Inventory",
@@ -34832,8 +34970,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Sniper_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { generate_chance = 30, item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
-
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -34875,6 +35011,12 @@ return {
 							generate_chance = 10,
 							item = "FragGrenade",
 							stack_max = 2,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "JAZZ_Morphine",
+							stack_max = 1,
 							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -34945,7 +35087,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Mercenary_Inventory",
@@ -35038,7 +35180,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercenarySniper_Inventory",
@@ -35146,7 +35288,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Warden_Inventory",
@@ -35284,7 +35426,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Scout_Inventory",
@@ -35292,8 +35434,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Scout_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
-
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -35411,6 +35551,11 @@ return {
 							generate_chance = 40,
 							item = "SmokeGrenade",
 						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JAZZ_Bandage",
+							stack_max = 2,
+							stack_min = 1,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
@@ -35479,7 +35624,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Skirmisher_Inventory",
@@ -35487,8 +35632,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Skirmisher_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
-
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -35555,6 +35698,11 @@ return {
 							generate_chance = 35,
 							item = "SmokeGrenade",
 						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JAZZ_Bandage",
+							stack_max = 2,
+							stack_min = 1,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
@@ -35623,7 +35771,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Recon_Inventory",
@@ -35631,8 +35779,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Recon_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { generate_chance = 30, item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
-
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -35750,6 +35896,12 @@ return {
 							generate_chance = 45,
 							item = "SmokeGrenade",
 						}),
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "JAZZ_Morphine",
+							stack_max = 1,
+							stack_min = 1,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
@@ -35818,7 +35970,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pathfinder_Inventory",
@@ -35826,8 +35978,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Pathfinder_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { generate_chance = 30, item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
-
 						PlaceObj('LootEntryInventoryItem', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -35934,6 +36084,12 @@ return {
 							generate_chance = 50,
 							item = "SmokeGrenade",
 						}),
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "JAZZ_Morphine",
+							stack_max = 1,
+							stack_min = 1,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
@@ -36002,7 +36158,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Ranger_Inventory",
@@ -36195,7 +36351,7 @@ return {
 							loot_def = "LegionHelmetsLightArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Gunner_Inventory",
@@ -36288,7 +36444,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "GMPG_Inventory",
@@ -36296,8 +36452,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "GMPG_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
-
 						PlaceObj('LootEntryInventoryItem', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -36349,6 +36503,11 @@ return {
 							stack_max = 2,
 							stack_min = 1,
 						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JAZZ_Bandage",
+							stack_max = 2,
+							stack_min = 1,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
@@ -36372,7 +36531,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "AssaultGunner_Inventory",
@@ -36380,8 +36539,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "AssaultGunner_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
-
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -36500,6 +36657,11 @@ return {
 							stack_max = 1,
 							stack_min = 1,
 						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JAZZ_Bandage",
+							stack_max = 2,
+							stack_min = 1,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
@@ -36523,7 +36685,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "VeteranGunner_Inventory",
@@ -36531,8 +36693,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "VeteranGunner_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { generate_chance = 30, item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
-
 						PlaceObj('LootEntryInventoryItem', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -36584,6 +36744,12 @@ return {
 							stack_max = 2,
 							stack_min = 1,
 						}),
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "JAZZ_Morphine",
+							stack_max = 1,
+							stack_min = 1,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
@@ -36607,7 +36773,7 @@ return {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercGunner_Inventory",
@@ -36689,7 +36855,7 @@ return {
 							loot_def = "LegionHelmetsHeavyArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Sergeant_Inventory",
@@ -36831,7 +36997,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Lieutenant_Inventory",
@@ -36839,8 +37005,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Lieutenant_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
-
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -36903,6 +37067,11 @@ return {
 						PlaceObj('LootEntryInventoryItem', {
 							generate_chance = 50,
 							item = "SmokeGrenade",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JAZZ_Bandage",
+							stack_max = 2,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
@@ -36972,7 +37141,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Captain_Inventory",
@@ -36980,8 +37149,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Captain_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { generate_chance = 30, item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
-
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -37047,6 +37214,12 @@ return {
 						PlaceObj('LootEntryInventoryItem', {
 							generate_chance = 45,
 							item = "SmokeGrenade",
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "JAZZ_Morphine",
+							stack_max = 1,
+							stack_min = 1,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
@@ -37116,7 +37289,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercenaryCaptain_Inventory",
@@ -37255,7 +37428,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Rocketeer_Inventory",
@@ -37351,7 +37524,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "HeavyGrenadier_Inventory",
@@ -37359,8 +37532,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "HeavyGrenadier_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Bandage", stack_min = 1, stack_max = 2 }),
-
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "HeavyGrenadier_Launcher",
 						}),
@@ -37426,6 +37597,11 @@ return {
 							stack_max = 2,
 							stack_min = 1,
 						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "JAZZ_Bandage",
+							stack_max = 2,
+							stack_min = 1,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
@@ -37449,7 +37625,7 @@ return {
 							loot_def = "LegionHelmetsMiddleArmor",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Mortarman_Inventory",
@@ -37457,8 +37633,6 @@ return {
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Mortarman_Firearm",
 						}),
-						PlaceObj('LootEntryInventoryItem', { generate_chance = 30, item = "JAZZ_Morphine", stack_min = 1, stack_max = 1 }),
-
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Mortarman_Launcher",
 						}),
@@ -37524,6 +37698,12 @@ return {
 							stack_max = 2,
 							stack_min = 1,
 						}),
+						PlaceObj('LootEntryInventoryItem', {
+							generate_chance = 30,
+							item = "JAZZ_Morphine",
+							stack_max = 1,
+							stack_min = 1,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
@@ -37551,7 +37731,7 @@ return {
 				PlaceObj('ModItemFolder', {
 					'name', "UnitsWeapon",
 				}, {
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Roughneck_Firearm",
@@ -38964,12 +39144,41 @@ return {
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_MAC1950_m0_9x19_pistol_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Crusher_Firearm",
@@ -39182,7 +39391,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Grenadier_Firearm",
@@ -40573,12 +40782,41 @@ return {
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_MAC1950_m0_9x19_pistol_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pillager_Firearm",
@@ -41216,12 +41454,41 @@ return {
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_Scorpion_cqb_m1_9x18_smg_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pyro_Firearm",
@@ -42091,12 +42358,160 @@ return {
 							weight = 103000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m2_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Zastava_M70_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AKM_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK74_carbine_fold_545_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_G36_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550Custom_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_Scorpion_m0_9x18_smg_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Shocktrooper_Firearm",
@@ -43226,12 +43641,160 @@ return {
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m2_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Zastava_M70_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AKM_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK74_carbine_fold_545_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_G36_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550Custom_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_Scorpion_assault_m1_9x18_smg_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "SkullCrusher_Firearm",
@@ -44050,12 +44613,41 @@ return {
 							weight = 103000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_Scorpion_cqb_m1_9x18_smg_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Punisher_Firearm",
@@ -44591,12 +45183,148 @@ return {
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m2_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Zastava_M70_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AKM_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK74_carbine_fold_545_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_G36_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550Custom_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_Winchester1894_assault_m2_44cal_revolver_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Headsman_Firearm",
@@ -45132,12 +45860,148 @@ return {
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m2_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Zastava_M70_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AKM_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK74_carbine_fold_545_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_G36_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550Custom_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_Winchester1894_assault_m3_44cal_revolver_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Marauder_Firearm",
@@ -46550,12 +47414,41 @@ return {
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_MAC1950_m0_9x19_pistol_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Rifleman_Firearm",
@@ -47181,7 +48074,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Bonemaker_Firearm",
@@ -48826,12 +49719,160 @@ return {
 							weight = 103000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m2_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Zastava_M70_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AKM_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK74_carbine_fold_545_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_G36_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550Custom_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_MAC1950_m0_9x19_pistol_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Raider_Firearm",
@@ -49961,12 +51002,160 @@ return {
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m2_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Zastava_M70_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AKM_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK74_carbine_fold_545_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_G36_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550Custom_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_Scorpion_assault_m1_9x18_smg_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Marksman_Firearm",
@@ -50592,7 +51781,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Ambusher_Firearm",
@@ -51218,7 +52407,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Veteran_Firearm",
@@ -51754,12 +52943,148 @@ return {
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m2_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Zastava_M70_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AKM_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK74_carbine_fold_545_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_G36_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550Custom_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_Winchester1894_assault_m2_44cal_revolver_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Sniper_Firearm",
@@ -52045,7 +53370,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Mercenary_Firearm",
@@ -52581,12 +53906,148 @@ return {
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m2_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Zastava_M70_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AKM_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK74_carbine_fold_545_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_G36_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550Custom_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_Winchester1894_assault_m3_44cal_revolver_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercenarySniper_Firearm",
@@ -52872,7 +54333,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Warden_Firearm",
@@ -53696,12 +55157,148 @@ return {
 							weight = 103000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m2_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Zastava_M70_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AKM_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK74_carbine_fold_545_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_G36_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550Custom_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_Winchester1894_m0_44cal_revolver_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Scout_Firearm",
@@ -54339,12 +55936,41 @@ return {
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_Scorpion_flanker_m1_9x18_smg_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Skirmisher_Firearm",
@@ -54677,7 +56303,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Recon_Firearm",
@@ -55547,12 +57173,160 @@ return {
 							weight = 103000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m2_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Zastava_M70_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AKM_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK74_carbine_fold_545_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_G36_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550Custom_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_Scorpion_flanker_m2_9x18_smg_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Pathfinder_Firearm",
@@ -56422,12 +58196,160 @@ return {
 							weight = 103000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m2_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Zastava_M70_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AKM_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK74_carbine_fold_545_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_G36_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550Custom_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_Scorpion_flanker_m2_9x18_smg_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Ranger_Firearm",
@@ -57297,12 +59219,160 @@ return {
 							weight = 103000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m2_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Zastava_M70_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AKM_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK74_carbine_fold_545_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_G36_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550Custom_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_Scorpion_flanker_m3_9x18_smg_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Gunner_Firearm",
@@ -57651,7 +59721,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "GMPG_Firearm",
@@ -58000,7 +60070,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "AssaultGunner_Firearm",
@@ -58185,7 +60255,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "VeteranGunner_Firearm",
@@ -58534,7 +60604,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercGunner_Firearm",
@@ -58883,7 +60953,7 @@ return {
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Sergeant_Firearm",
@@ -59301,12 +61371,41 @@ return {
 							weight = 101000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_MAT49_m0_9x19_smg_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Lieutenant_Firearm",
@@ -60453,12 +62552,160 @@ return {
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m2_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Zastava_M70_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AKM_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK74_carbine_fold_545_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_G36_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550Custom_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_Scorpion_assault_m1_9x18_smg_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Captain_Firearm",
@@ -61282,12 +63529,148 @@ return {
 							weight = 103000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m2_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Zastava_M70_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AKM_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK74_carbine_fold_545_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_G36_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550Custom_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_Winchester1894_rifle_m2_44cal_revolver_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "MercenaryCaptain_Firearm",
@@ -61823,6 +64206,142 @@ return {
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m2_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Zastava_M70_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AKM_carbine_fold_762x39_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK74_carbine_fold_545_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 25,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_G36_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Sig550Custom_carbine_fold_556_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_Winchester1894_assault_m3_44cal_revolver_ammo",
 							weight = 1000,
@@ -61841,7 +64360,7 @@ return {
 							weight = 30000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Rocketeer_Firearm",
@@ -63232,6 +65751,35 @@ return {
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_MAC1950_m0_9x19_pistol_ammo",
 							weight = 1000,
@@ -63247,7 +65795,7 @@ return {
 							loot_def = "LegionGL",
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "HeavyGrenadier_Firearm",
@@ -64638,12 +67186,41 @@ return {
 							weight = 102000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
 							loot_def = "JAZZ_GenW_MAC1950_m0_9x19_pistol_ammo",
 							weight = 1000,
 						}),
 					}),
-																																																																																PlaceObj('ModItemLootDef', {
+																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
 						group = "Default",
 						id = "Mortarman_Firearm",
@@ -66032,6 +68609,35 @@ return {
 							},
 							loot_def = "JAZZ_GenW_P90_cqb_m1_556_ar_ammo_ap",
 							weight = 102000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1_smg_30cal_carbine_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 12,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_M2Carbine_early_m1a1_30cal_carbine_ammo",
+							weight = 8000,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
