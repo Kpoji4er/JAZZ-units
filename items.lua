@@ -149347,924 +149347,924 @@ displayName]] "Legion Garrison"),
 		}, {
 			PlaceObj('ModItemVoiceResponse', {
 				ActivityFinished = {
-					T(890000000000046, --[[ModItemVoiceResponse Raven 1]] "Есть. Слушаю дальнейшие распоряжения."),
+					T(131683064153, --[[ModItemVoiceResponse Raven 1]] "Есть. Слушаю дальнейшие распоряжения."),
 				},
 				ActivityStarted = {
-					T(890000000001306, --[[ModItemVoiceResponse Raven 1]] "Задание получено. Приступаю к исполнению."),
+					T(938122996365, --[[ModItemVoiceResponse Raven 1]] "Задание получено. Приступаю к исполнению."),
 				},
 				AimAttack = {
-					T(890000000000944, --[[ModItemVoiceResponse Raven 1]] "На мушке."),
-					T(890000000000741, --[[ModItemVoiceResponse Raven 2]] "На прицеле."),
-					T(890000000001085, --[[ModItemVoiceResponse Raven 3]] "Готова стрелять."),
+					T(711888598914, --[[ModItemVoiceResponse Raven 1]] "На мушке."),
+					T(577807318322, --[[ModItemVoiceResponse Raven 2]] "На прицеле."),
+					T(807812716840, --[[ModItemVoiceResponse Raven 3]] "Готова стрелять."),
 				},
 				AimAttackStealth = {
-					T(890000000000999, --[[ModItemVoiceResponse Raven 1]] "И опомниться не успеет."),
-					T(890000000000581, --[[ModItemVoiceResponse Raven 2]] "Готова вести скрытый огонь."),
-					T(890000000000580, --[[ModItemVoiceResponse Raven 3]] "Надеюсь, они любят сюрпризы."),
+					T(753817278280, --[[ModItemVoiceResponse Raven 1]] "И опомниться не успеет."),
+					T(470004832444, --[[ModItemVoiceResponse Raven 2]] "Готова вести скрытый огонь."),
+					T(469480041072, --[[ModItemVoiceResponse Raven 3]] "Надеюсь, они любят сюрпризы."),
 				},
 				AimAttack_Low = {
-					T(890000000001219, --[[ModItemVoiceResponse Raven 1]] "Отсюда я промахнулась бы и в самый удачный день!"),
+					T(874927817890, --[[ModItemVoiceResponse Raven 1]] "Отсюда я промахнулась бы и в самый удачный день!"),
 				},
 				AimAttack_LowStealth = {
-					T(890000000000985, --[[ModItemVoiceResponse Raven 1]] "Этот выстрел раскроет мою позицию."),
+					T(738356452082, --[[ModItemVoiceResponse Raven 1]] "Этот выстрел раскроет мою позицию."),
 				},
 				AmmoLow = {
-					T(890000000000603, --[[ModItemVoiceResponse Raven 1]] "Имей в виду: свинец кончается."),
+					T(487333638075, --[[ModItemVoiceResponse Raven 1]] "Имей в виду: свинец кончается."),
 				},
 				AnimalFound = {
-					T(890000000000313, --[[ModItemVoiceResponse Raven 1]] "Ой, какая прелесть! Может, не надо в зверюшку стрелять?"),
+					T(297143679981, --[[ModItemVoiceResponse Raven 1]] "Ой, какая прелесть! Может, не надо в зверюшку стрелять?"),
 				},
 				Autofire = {
-					T(890000000000541, --[[ModItemVoiceResponse Raven 1]] "Стреляю."),
+					T(446932082971, --[[ModItemVoiceResponse Raven 1]] "Стреляю."),
 				},
 				BecomeHidden = {
-					T(890000000000323, --[[ModItemVoiceResponse Raven 1]] "Прячусь."),
-					T(890000000001027, --[[ModItemVoiceResponse Raven 2]] "Вот бы сейчас все одновременно отвернулись..."),
+					T(311474735821, --[[ModItemVoiceResponse Raven 1]] "Прячусь."),
+					T(778031391677, --[[ModItemVoiceResponse Raven 2]] "Вот бы сейчас все одновременно отвернулись..."),
 				},
 				BusySatView = {
-					T(890000000000450, --[[ModItemVoiceResponse Raven 1]] "Я не закончила."),
+					T(387162590707, --[[ModItemVoiceResponse Raven 1]] "Я не закончила."),
 				},
 				Climbing = {
-					T(890000000001134, --[[ModItemVoiceResponse Raven 1]] "(climbing)"),
-					T(890000000000448, --[[ModItemVoiceResponse Raven 2]] "(climbing_2)"),
+					T(840524096904, --[[ModItemVoiceResponse Raven 1]] "(climbing)"),
+					T(384621759085, --[[ModItemVoiceResponse Raven 2]] "(climbing_2)"),
 				},
 				CombatEndEnemiesRemain = {
-					T(890000000000939, --[[ModItemVoiceResponse Raven 1]] "Мы ещё не со всеми разобрались! Не отвлекаться!"),
+					T(708984344233, --[[ModItemVoiceResponse Raven 1]] "Мы ещё не со всеми разобрались! Не отвлекаться!"),
 				},
 				CombatEndEnemiesRetreated = {
-					T(890000000000735, --[[ModItemVoiceResponse Raven 1]] "Похоже, мы здесь одни. Думаю, противник отошёл перекусить."),
+					T(573925258925, --[[ModItemVoiceResponse Raven 1]] "Похоже, мы здесь одни. Думаю, противник отошёл перекусить."),
 				},
 				CombatEndNoEnemies = {
-					T(890000000000155, --[[ModItemVoiceResponse Raven 1]] "Противники нейтрализованы. Сектор чист."),
-					T(890000000000768, --[[ModItemVoiceResponse Raven 2]] "Можно выносить трупы. Сектор наш."),
+					T(210636513382, --[[ModItemVoiceResponse Raven 1]] "Противники нейтрализованы. Сектор чист."),
+					T(589561815913, --[[ModItemVoiceResponse Raven 2]] "Можно выносить трупы. Сектор наш."),
 				},
 				CombatMovement = {
-					T(890000000000201, --[[ModItemVoiceResponse Raven 1]] "Иду."),
-					T(890000000000857, --[[ModItemVoiceResponse Raven 2]] "Принято."),
-					T(890000000000042, --[[ModItemVoiceResponse Raven 3]] "Занимаю позицию."),
-					T(890000000001141, --[[ModItemVoiceResponse Raven 4]] "Поняла."),
-					T(890000000001309, --[[ModItemVoiceResponse Raven 5]] "Выдвигаюсь."),
-					T(890000000000556, --[[ModItemVoiceResponse Raven 6]] "Сделаю."),
+					T(247898865318, --[[ModItemVoiceResponse Raven 1]] "Иду."),
+					T(653588347155, --[[ModItemVoiceResponse Raven 2]] "Принято."),
+					T(125700676311, --[[ModItemVoiceResponse Raven 3]] "Занимаю позицию."),
+					T(844654423441, --[[ModItemVoiceResponse Raven 4]] "Поняла."),
+					T(941784428136, --[[ModItemVoiceResponse Raven 5]] "Выдвигаюсь."),
+					T(461553528421, --[[ModItemVoiceResponse Raven 6]] "Сделаю."),
 				},
 				CombatMovementStealth = {
-					T(890000000001261, --[[ModItemVoiceResponse Raven 1]] "Иду в ночи."),
-					T(890000000000668, --[[ModItemVoiceResponse Raven 2]] "Пробираюсь незамеченной."),
-					T(890000000000999, --[[ModItemVoiceResponse Raven 3]] "И опомниться не успеет."),
+					T(905667247801, --[[ModItemVoiceResponse Raven 1]] "Иду в ночи."),
+					T(529681881007, --[[ModItemVoiceResponse Raven 2]] "Пробираюсь незамеченной."),
+					T(753817278280, --[[ModItemVoiceResponse Raven 3]] "И опомниться не успеет."),
 				},
 				CombatStartDetected = {
-					T(890000000001143, --[[ModItemVoiceResponse Raven 1]] "Нас заметили! Работаем."),
+					T(844986300930, --[[ModItemVoiceResponse Raven 1]] "Нас заметили! Работаем."),
 				},
 				CombatStartPlayer = {
-					T(890000000000486, --[[ModItemVoiceResponse Raven 1]] "Люблю прилив адреналина."),
+					T(418066272495, --[[ModItemVoiceResponse Raven 1]] "Люблю прилив адреналина."),
 				},
 				CombatTaskCompleted = {
-					T(890000000000118, --[[ModItemVoiceResponse Raven 1]] "Грамотная работа по целям."),
+					T(188807110263, --[[ModItemVoiceResponse Raven 1]] "Грамотная работа по целям."),
 				},
 				CombatTaskFailed = {
-					T(890000000001313, --[[ModItemVoiceResponse Raven 1]] "Мда, сборы псу под хвост. Как насчёт в следующий раз действовать КОМАНДОЙ?"),
+					T(946056399148, --[[ModItemVoiceResponse Raven 1]] "Мда, сборы псу под хвост. Как насчёт в следующий раз действовать КОМАНДОЙ?"),
 				},
 				CombatTaskGiven = {
-					T(890000000001008, --[[ModItemVoiceResponse Raven 1]] "У меня предложение: провести для команды занятие по выбору целей."),
+					T(761405448803, --[[ModItemVoiceResponse Raven 1]] "У меня предложение: провести для команды занятие по выбору целей."),
 				},
 				Comment = "Standard American accent. Professional. Confident. Witty. Age: Adult, mature.",
 				ContractExpired = {
-					T(890000000000002, --[[ModItemVoiceResponse Raven 1]] "Раз сверхурочных мне не платят, возвращаюсь домой, играть со своими собаками."),
+					T(102923643333, --[[ModItemVoiceResponse Raven 1]] "Раз сверхурочных мне не платят, возвращаюсь домой, играть со своими собаками."),
 				},
 				DeathBuddy1 = {
-					T(890000000000878, --[[ModItemVoiceResponse Raven 1]] "Рон, милый, мы оба знали, что однажды это случится. Я рада, что ты - первый, потому что... я бы не хотела оставить тебя одного. Покойся с миром, любимый."),
+					T(672094801699, --[[ModItemVoiceResponse Raven 1]] "Рон, милый, мы оба знали, что однажды это случится. Я рада, что ты - первый, потому что... я бы не хотела оставить тебя одного. Покойся с миром, любимый."),
 				},
 				DeathBuddy2 = {
-					T(890000000000954, --[[ModItemVoiceResponse Raven 1]] "Мне больно потерять тебя, Донна. А ведь я тебя почти не знала. Я обещаю: мы тебя не забудем."),
+					T(716146974559, --[[ModItemVoiceResponse Raven 1]] "Мне больно потерять тебя, Донна. А ведь я тебя почти не знала. Я обещаю: мы тебя не забудем."),
 				},
 				DeathGeneral = {
-					T(890000000000560, --[[ModItemVoiceResponse Raven 1]] "Всегда печально, когда такое происходит, но мы знали, на что идём."),
+					T(463402146184, --[[ModItemVoiceResponse Raven 1]] "Всегда печально, когда такое происходит, но мы знали, на что идём."),
 				},
 				DoorLocked = {
-					T(890000000000355, --[[ModItemVoiceResponse Raven 1]] "Заперто. Проклятье. Есть у кого-нибудь таран?"),
+					T(329709288775, --[[ModItemVoiceResponse Raven 1]] "Заперто. Проклятье. Есть у кого-нибудь таран?"),
 				},
 				Downed = {
-					T(890000000000530, --[[ModItemVoiceResponse Raven 1]] "Рон... милый... прости, что покидаю тебя первой..."),
+					T(436670459009, --[[ModItemVoiceResponse Raven 1]] "Рон... милый... прости, что покидаю тебя первой..."),
 				},
 				Exhausted = {
-					T(890000000000716, --[[ModItemVoiceResponse Raven 1]] "Я валюсь с ног. Пора посмотреть, что там за кино сегодня Оле Лукойе принёс."),
+					T(555908573249, --[[ModItemVoiceResponse Raven 1]] "Я валюсь с ног. Пора посмотреть, что там за кино сегодня Оле Лукойе принёс."),
 				},
 				FriendlyFireBuddy1 = {
-					T(890000000000103, --[[ModItemVoiceResponse Raven 1]] "Ты что, Рон? Забыл, чему я тебя учила?"),
+					T(182114417611, --[[ModItemVoiceResponse Raven 1]] "Ты что, Рон? Забыл, чему я тебя учила?"),
 				},
 				FriendlyFireBuddy2 = TConcat({
 					T(826948509327, --[[ModItemVoiceResponse Raven FriendlyFireBuddy2 VoiceResponse FriendlyFireBuddy2 - Played on friendly fire by the unit hit if the hitting unit is Liked - Jazz_Spider. voice:Raven]] "Отставить стрельбу! Доктор Хьюстон, оружие к осмотру! Запомни, не вижу- не стреляю!")
 				}),
 				FriendlyFireGeneral = {
-					T(890000000000373, --[[ModItemVoiceResponse Raven 1]] "Кто там про предохранитель забыл?"),
+					T(339262529072, --[[ModItemVoiceResponse Raven 1]] "Кто там про предохранитель забыл?"),
 				},
 				GasAreaSelection = {
-					T(890000000000981, --[[ModItemVoiceResponse Raven 1]] "(кашляет)"),
+					T(735443523786, --[[ModItemVoiceResponse Raven 1]] "(кашляет)"),
 				},
 				GroupOrder = {
-					T(890000000000072, --[[ModItemVoiceResponse Raven 1]] "Вперёд."),
-					T(890000000000378, --[[ModItemVoiceResponse Raven 2]] "Идём!"),
-					T(890000000000818, --[[ModItemVoiceResponse Raven 3]] "Пошли! Пошли! Пошли!"),
-					T(890000000001141, --[[ModItemVoiceResponse Raven 4]] "Поняла."),
-					T(890000000001309, --[[ModItemVoiceResponse Raven 5]] "Выдвигаюсь."),
+					T(152538707940, --[[ModItemVoiceResponse Raven 1]] "Вперёд."),
+					T(342805753850, --[[ModItemVoiceResponse Raven 2]] "Идём!"),
+					T(628267938877, --[[ModItemVoiceResponse Raven 3]] "Пошли! Пошли! Пошли!"),
+					T(844654423441, --[[ModItemVoiceResponse Raven 4]] "Поняла."),
+					T(941784428136, --[[ModItemVoiceResponse Raven 5]] "Выдвигаюсь."),
 				},
 				HealReceived = {
-					T(890000000000114, --[[ModItemVoiceResponse Raven 1]] "То, что доктор прописал."),
+					T(186585673696, --[[ModItemVoiceResponse Raven 1]] "То, что доктор прописал."),
 				},
 				HeavilyWoundedSelection = {
-					T(890000000000619, --[[ModItemVoiceResponse Raven 1]] "О, идея. Сыграем в игру «Вытащи Сову из-под огня»?"),
+					T(494763050417, --[[ModItemVoiceResponse Raven 1]] "О, идея. Сыграем в игру «Вытащи Сову из-под огня»?"),
 				},
 				HeavyBreathing = {
-					T(890000000000104, --[[ModItemVoiceResponse Raven 1]] "(heavy breath)"),
-					T(890000000000115, --[[ModItemVoiceResponse Raven 2]] "(heavy breath_2)"),
+					T(182329290428, --[[ModItemVoiceResponse Raven 1]] "(heavy breath)"),
+					T(186986777152, --[[ModItemVoiceResponse Raven 2]] "(heavy breath_2)"),
 				},
 				Idle = {
-					T(890000000000969, --[[ModItemVoiceResponse Raven 1]] "Скучно. Может, сыграем во что-нибудь?"),
+					T(727351304822, --[[ModItemVoiceResponse Raven 1]] "Скучно. Может, сыграем во что-нибудь?"),
 				},
 				InteractableFound = {
-					T(890000000001377, --[[ModItemVoiceResponse Raven 1]] "Это интересно."),
-					T(890000000000965, --[[ModItemVoiceResponse Raven 2]] "Кажется, я тут что-то нашла."),
+					T(997164085999, --[[ModItemVoiceResponse Raven 1]] "Это интересно."),
+					T(726410667168, --[[ModItemVoiceResponse Raven 2]] "Кажется, я тут что-то нашла."),
 				},
 				InterestingSector = {
-					T(890000000000612, --[[ModItemVoiceResponse Raven 1]] "Любопытный сектор. Имело бы смысл осмотреть."),
+					T(492091460971, --[[ModItemVoiceResponse Raven 1]] "Любопытный сектор. Имело бы смысл осмотреть."),
 				},
 				ItemDeteriorates = {
-					T(890000000000640, --[[ModItemVoiceResponse Raven 1]] "Пора показать снарягу оружейнику. Так несчастные случаи и происходят."),
+					T(508512659783, --[[ModItemVoiceResponse Raven 1]] "Пора показать снарягу оружейнику. Так несчастные случаи и происходят."),
 				},
 				ItemInPoorConditionEquipped = {
-					T(890000000001145, --[[ModItemVoiceResponse Raven 1]] "Да нас из муниципального бюджета лучше снабжали."),
+					T(845662724526, --[[ModItemVoiceResponse Raven 1]] "Да нас из муниципального бюджета лучше снабжали."),
 				},
 				Jumping = {
-					T(890000000000211, --[[ModItemVoiceResponse Raven 1]] "(jumping over something)"),
-					T(890000000000604, --[[ModItemVoiceResponse Raven 2]] "(jumping over something_2)"),
+					T(252004724247, --[[ModItemVoiceResponse Raven 1]] "(jumping over something)"),
+					T(490390369107, --[[ModItemVoiceResponse Raven 2]] "(jumping over something_2)"),
 				},
 				KillFriendlyFireBuddy1 = {
-					T(890000000000767, --[[ModItemVoiceResponse Raven 1]] "Милый! Нет! Прости меня. Я... нет... нет... Что я наделала?"),
+					T(589526427075, --[[ModItemVoiceResponse Raven 1]] "Милый! Нет! Прости меня. Я... нет... нет... Что я наделала?"),
 				},
 				KillFriendlyFireBuddy2 = TConcat({
 					T(373496630515, --[[ModItemVoiceResponse Raven KillFriendlyFireBuddy2 VoiceResponse KillFriendlyFireBuddy2 - Played when a unit kills an ally with friendly fire and the dying unit is Liked - Jazz_Spider. voice:Raven]] "Зачем, зачем я стреляла? Это ужасно. Бедная моя Донна. Она даже не успела... ничего не успела!")
 				}),
 				KillFriendlyFireGeneral = {
-					T(890000000001114, --[[ModItemVoiceResponse Raven 1]] "Я думала, со мной такого никогда не произойдёт."),
+					T(826159840941, --[[ModItemVoiceResponse Raven 1]] "Я думала, со мной такого никогда не произойдёт."),
 				},
 				LevelUp = {
-					T(890000000001330, --[[ModItemVoiceResponse Raven 1]] "Жуть, правда? Мне прямо самой от собственных успехов страшно."),
+					T(963159556300, --[[ModItemVoiceResponse Raven 1]] "Жуть, правда? Мне прямо самой от собственных успехов страшно."),
 				},
 				LootFound = {
-					T(890000000000150, --[[ModItemVoiceResponse Raven 1]] "Что это такое?"),
-					T(890000000001312, --[[ModItemVoiceResponse Raven 2]] "Полезай ко мне в карман."),
-					T(890000000001180, --[[ModItemVoiceResponse Raven 3]] "Что это? Мусор?"),
+					T(205841999473, --[[ModItemVoiceResponse Raven 1]] "Что это такое?"),
+					T(945594606136, --[[ModItemVoiceResponse Raven 2]] "Полезай ко мне в карман."),
+					T(862778082508, --[[ModItemVoiceResponse Raven 3]] "Что это? Мусор?"),
 				},
 				LootOpened = {
-					T(890000000001018, --[[ModItemVoiceResponse Raven 1]] "А чего-нибудь убойного тут не завалялось?"),
+					T(768300276185, --[[ModItemVoiceResponse Raven 1]] "А чего-нибудь убойного тут не завалялось?"),
 				},
 				LowChanceShot = {
-					T(890000000001305, --[[ModItemVoiceResponse Raven 1]] "Ха... Оказывается, я и в самом деле круче, чем думала."),
+					T(937334651597, --[[ModItemVoiceResponse Raven 1]] "Ха... Оказывается, я и в самом деле круче, чем думала."),
 				},
 				ManyEnemiesSelection = {
-					T(890000000001146, --[[ModItemVoiceResponse Raven 1]] "Здесь полно преступников. Пора заняться любимым делом."),
+					T(846814221782, --[[ModItemVoiceResponse Raven 1]] "Здесь полно преступников. Пора заняться любимым делом."),
 				},
 				MeleeEnemiesClosing = {
-					T(890000000000618, --[[ModItemVoiceResponse Raven 1]] "Преступник сокращает дистанцию!"),
+					T(494630249981, --[[ModItemVoiceResponse Raven 1]] "Преступник сокращает дистанцию!"),
 				},
 				MineFound = {
-					T(890000000000457, --[[ModItemVoiceResponse Raven 1]] "Судя по адской машинке, нас здесь явно ждали."),
+					T(396458216025, --[[ModItemVoiceResponse Raven 1]] "Судя по адской машинке, нас здесь явно ждали."),
 				},
 				MineNearbySelection = {
-					T(890000000000353, --[[ModItemVoiceResponse Raven 1]] "Какая-то ловушка. Кто у нас дежурный взрывотехник?"),
+					T(328450649063, --[[ModItemVoiceResponse Raven 1]] "Какая-то ловушка. Кто у нас дежурный взрывотехник?"),
 				},
 				MissHighChance = {
-					T(890000000001301, --[[ModItemVoiceResponse Raven 1]] "Какого... Ладно. Со всеми бывает."),
+					T(933640579681, --[[ModItemVoiceResponse Raven 1]] "Какого... Ладно. Со всеми бывает."),
 				},
 				MissedByKillShot = {
-					T(890000000000199, --[[ModItemVoiceResponse Raven 1]] "Ха. Спорим, ЭТОТ выстрел тебе хотелось бы переиграть!"),
+					T(247571474700, --[[ModItemVoiceResponse Raven 1]] "Ха. Спорим, ЭТОТ выстрел тебе хотелось бы переиграть!"),
 				},
 				MockGeneral = {
-					T(890000000000161, --[[ModItemVoiceResponse Raven 1]] "Я могла бы сказать: «Пятёрка за усердие», но это была бы неправда, так ведь?"),
+					T(218276475645, --[[ModItemVoiceResponse Raven 1]] "Я могла бы сказать: «Пятёрка за усердие», но это была бы неправда, так ведь?"),
 				},
 				MockLike1 = {
-					T(890000000001157, --[[ModItemVoiceResponse Raven 1]] "Всё в порядке, милый! Я на подхвате!"),
+					T(849434818597, --[[ModItemVoiceResponse Raven 1]] "Всё в порядке, милый! Я на подхвате!"),
 				},
 				MockLike2 = TConcat({
 					T(994600876666, --[[ModItemVoiceResponse Raven MockLike2 VoiceResponse MockLike2 - Played on a high chance miss by Jazz_Spider. voice:Raven]] "Мы еще потренируемся с тобой, Донна! Будешь мухам крылья отстреливать!")
 				}),
 				MultiOpponentKilled = {
-					T(890000000000117, --[[ModItemVoiceResponse Raven 1]] "Цели поражены. Подтверждаю попадание."),
+					T(187799716180, --[[ModItemVoiceResponse Raven 1]] "Цели поражены. Подтверждаю попадание."),
 				},
 				NoAmmo = {
-					T(890000000001361, --[[ModItemVoiceResponse Raven 1]] "Пора бы свинца подвезти!"),
+					T(986259151210, --[[ModItemVoiceResponse Raven 1]] "Пора бы свинца подвезти!"),
 				},
 				NotNow = {
-					T(890000000001074, --[[ModItemVoiceResponse Raven 1]] "Не сейчас! Видишь: я развлекаюсь!"),
+					T(800749226377, --[[ModItemVoiceResponse Raven 1]] "Не сейчас! Видишь: я развлекаюсь!"),
 				},
 				OpponentFound = {
-					T(890000000000673, --[[ModItemVoiceResponse Raven 1]] "Цель."),
-					T(890000000001356, --[[ModItemVoiceResponse Raven 2]] "Вижу цель."),
-					T(890000000000447, --[[ModItemVoiceResponse Raven 3]] "Обнаружен противник."),
+					T(535054697247, --[[ModItemVoiceResponse Raven 1]] "Цель."),
+					T(980982979644, --[[ModItemVoiceResponse Raven 2]] "Вижу цель."),
+					T(383552045885, --[[ModItemVoiceResponse Raven 3]] "Обнаружен противник."),
 				},
 				OpponentKilled = {
-					T(890000000001258, --[[ModItemVoiceResponse Raven 1]] "Проблема решена."),
-					T(890000000000318, --[[ModItemVoiceResponse Raven 2]] "Есть. Уже не встанет."),
-					T(890000000000222, --[[ModItemVoiceResponse Raven 3]] "Бац! Минус ещё один."),
-					T(890000000001244, --[[ModItemVoiceResponse Raven 4]] "Это моя работа."),
-					T(890000000000169, --[[ModItemVoiceResponse Raven 5]] "Преступник обезврежен. Запиши ещё одного на мой счёт."),
+					T(902006803756, --[[ModItemVoiceResponse Raven 1]] "Проблема решена."),
+					T(303760260152, --[[ModItemVoiceResponse Raven 2]] "Есть. Уже не встанет."),
+					T(257524343930, --[[ModItemVoiceResponse Raven 3]] "Бац! Минус ещё один."),
+					T(887765906324, --[[ModItemVoiceResponse Raven 4]] "Это моя работа."),
+					T(226096495387, --[[ModItemVoiceResponse Raven 5]] "Преступник обезврежен. Запиши ещё одного на мой счёт."),
 				},
 				OpponentKilledAnimal = {
-					T(890000000000583, --[[ModItemVoiceResponse Raven 1]] "Этой стране нужен отдел по контролю за животными... а не одна только я."),
+					T(473498278763, --[[ModItemVoiceResponse Raven 1]] "Этой стране нужен отдел по контролю за животными... а не одна только я."),
 				},
 				OpponentKilledHeadshot = {
-					T(890000000000872, --[[ModItemVoiceResponse Raven 1]] "Рон мог бы у меня поучиться. Как на стрельбах положила."),
-					T(890000000001367, --[[ModItemVoiceResponse Raven 2]] "Это моя работа. И я делаю её чертовски хорошо."),
+					T(663920741675, --[[ModItemVoiceResponse Raven 1]] "Рон мог бы у меня поучиться. Как на стрельбах положила."),
+					T(990987637648, --[[ModItemVoiceResponse Raven 2]] "Это моя работа. И я делаю её чертовски хорошо."),
 				},
 				OpponentKilledStealth = {
-					T(890000000000891, --[[ModItemVoiceResponse Raven 1]] "Преступник обезврежен. Продолжаю скрытое наблюдение."),
+					T(684348332618, --[[ModItemVoiceResponse Raven 1]] "Преступник обезврежен. Продолжаю скрытое наблюдение."),
 				},
 				Order = {
-					T(890000000000030, --[[ModItemVoiceResponse Raven 1]] "Принято."),
-					T(890000000001141, --[[ModItemVoiceResponse Raven 2]] "Поняла."),
-					T(890000000001309, --[[ModItemVoiceResponse Raven 3]] "Выдвигаюсь."),
-					T(890000000000556, --[[ModItemVoiceResponse Raven 4]] "Сделаю."),
-					T(890000000000000, --[[ModItemVoiceResponse Raven 5]] "Иду."),
+					T(117389638068, --[[ModItemVoiceResponse Raven 1]] "Принято."),
+					T(844654423441, --[[ModItemVoiceResponse Raven 2]] "Поняла."),
+					T(941784428136, --[[ModItemVoiceResponse Raven 3]] "Выдвигаюсь."),
+					T(461553528421, --[[ModItemVoiceResponse Raven 4]] "Сделаю."),
+					T(100076440608, --[[ModItemVoiceResponse Raven 5]] "Иду."),
 				},
 				Outnumbered = {
-					T(890000000001375, --[[ModItemVoiceResponse Raven 1]] "Ого, да я пользуюсь популярностью!"),
+					T(996943081300, --[[ModItemVoiceResponse Raven 1]] "Ого, да я пользуюсь популярностью!"),
 				},
 				Overwatch = {
-					T(890000000001026, --[[ModItemVoiceResponse Raven 1]] "Держу позицию!"),
-					T(890000000000366, --[[ModItemVoiceResponse Raven 2]] "Кто высунется - убью."),
+					T(777881724783, --[[ModItemVoiceResponse Raven 1]] "Держу позицию!"),
+					T(333358130572, --[[ModItemVoiceResponse Raven 2]] "Кто высунется - убью."),
 				},
 				OverwatchSelection = {
-					T(890000000000356, --[[ModItemVoiceResponse Raven 1]] "Ого, да я пользуюсь популярностью!"),
+					T(331055273042, --[[ModItemVoiceResponse Raven 1]] "Ого, да я пользуюсь популярностью!"),
 				},
 				Pain = {
-					T(890000000000234, --[[ModItemVoiceResponse Raven 1]] "Р-р-р!"),
-					T(890000000000908, --[[ModItemVoiceResponse Raven 2]] "Ох-х."),
-					T(890000000001335, --[[ModItemVoiceResponse Raven 3]] "Ай!"),
-					T(890000000000686, --[[ModItemVoiceResponse Raven 4]] "Оу."),
-					T(890000000000236, --[[ModItemVoiceResponse Raven 5]] "Ох."),
+					T(266774996286, --[[ModItemVoiceResponse Raven 1]] "Р-р-р!"),
+					T(696256137928, --[[ModItemVoiceResponse Raven 2]] "Ох-х."),
+					T(966418310767, --[[ModItemVoiceResponse Raven 3]] "Ай!"),
+					T(543511840765, --[[ModItemVoiceResponse Raven 4]] "Оу."),
+					T(268264633023, --[[ModItemVoiceResponse Raven 5]] "Ох."),
 				},
 				PinDown = {
-					T(890000000001103, --[[ModItemVoiceResponse Raven 1]] "Никуда от меня не денется."),
-					T(890000000001221, --[[ModItemVoiceResponse Raven 2]] "Сиди смирно."),
+					T(820265594929, --[[ModItemVoiceResponse Raven 1]] "Никуда от меня не денется."),
+					T(875619868782, --[[ModItemVoiceResponse Raven 2]] "Сиди смирно."),
 				},
 				PraisesBuddy1 = {
-					T(890000000000034, --[[ModItemVoiceResponse Raven 1]] "Никто не сумеет лучше, чем Рейдер."),
+					T(118840383635, --[[ModItemVoiceResponse Raven 1]] "Никто не сумеет лучше, чем Рейдер."),
 				},
 				PraisesBuddy2 = TConcat({
 					T(796542264805, --[[ModItemVoiceResponse Raven PraisesBuddy2 VoiceResponse PraisesBuddy2 - Played on a successful kill by Jazz_Spider. voice:Raven]] "Зверь, а не девчонка!")
 				}),
 				PraisesFemale = {
-					T(890000000000299, --[[ModItemVoiceResponse Raven 1]] "Да! Девчонки не мажут!"),
+					T(291148031445, --[[ModItemVoiceResponse Raven 1]] "Да! Девчонки не мажут!"),
 				},
 				PraisesMale = {
-					T(890000000000451, --[[ModItemVoiceResponse Raven 1]] "Ха, а недурно."),
+					T(387660641167, --[[ModItemVoiceResponse Raven 1]] "Ха, а недурно."),
 				},
 				SectorArrived = {
-					T(890000000000885, --[[ModItemVoiceResponse Raven 1]] "Прибыла в новый сектор. Жду распоряжений."),
+					T(675384739438, --[[ModItemVoiceResponse Raven 1]] "Прибыла в новый сектор. Жду распоряжений."),
 				},
 				Selection = {
-					T(890000000000214, --[[ModItemVoiceResponse Raven 1]] "Шарлен Хиггенс."),
-					T(890000000000472, --[[ModItemVoiceResponse Raven 2]] "Готова."),
-					T(890000000000770, --[[ModItemVoiceResponse Raven 3]] "Сова слушает."),
+					T(253979576482, --[[ModItemVoiceResponse Raven 1]] "Шарлен Хиггенс."),
+					T(404667898774, --[[ModItemVoiceResponse Raven 2]] "Готова."),
+					T(594047189525, --[[ModItemVoiceResponse Raven 3]] "Сова слушает."),
 				},
 				SelectionStealth = {
-					T(890000000000999, --[[ModItemVoiceResponse Raven 1]] "И опомниться не успеет."),
-					T(890000000000323, --[[ModItemVoiceResponse Raven 2]] "Прячусь."),
-					T(890000000000668, --[[ModItemVoiceResponse Raven 3]] "Пробираюсь незамеченной."),
+					T(753817278280, --[[ModItemVoiceResponse Raven 1]] "И опомниться не успеет."),
+					T(311474735821, --[[ModItemVoiceResponse Raven 2]] "Прячусь."),
+					T(529681881007, --[[ModItemVoiceResponse Raven 3]] "Пробираюсь незамеченной."),
 				},
 				SeriouslyWounded = {
-					T(890000000000229, --[[ModItemVoiceResponse Raven 1]] "Аптечку... обезбол... хоть что-нибудь!"),
-					T(890000000000210, --[[ModItemVoiceResponse Raven 2]] "Не могу сражаться в таком состоянии. Меня надо подлатать."),
-					T(890000000001213, --[[ModItemVoiceResponse Raven 3]] "Твою ж... ОХ! Что-то мне совсем хреново."),
+					T(261686321931, --[[ModItemVoiceResponse Raven 1]] "Аптечку... обезбол... хоть что-нибудь!"),
+					T(251725839007, --[[ModItemVoiceResponse Raven 2]] "Не могу сражаться в таком состоянии. Меня надо подлатать."),
+					T(871882550505, --[[ModItemVoiceResponse Raven 3]] "Твою ж... ОХ! Что-то мне совсем хреново."),
 				},
 				Startled = {
-					T(890000000000240, --[[ModItemVoiceResponse Raven 1]] "А?"),
-					T(890000000000324, --[[ModItemVoiceResponse Raven 2]] "Что за..."),
+					T(271008889738, --[[ModItemVoiceResponse Raven 1]] "А?"),
+					T(311653772282, --[[ModItemVoiceResponse Raven 2]] "Что за..."),
 				},
 				SurroundedPain = {
-					T(890000000001203, --[[ModItemVoiceResponse Raven 1]] "Где же эта чёртова кавалерия?"),
+					T(866102730058, --[[ModItemVoiceResponse Raven 1]] "Где же эта чёртова кавалерия?"),
 				},
 				TacticalCareful = {
-					T(890000000000890, --[[ModItemVoiceResponse Raven 1]] "Мы не железные."),
+					T(683096610977, --[[ModItemVoiceResponse Raven 1]] "Мы не железные."),
 				},
 				TacticalFocus = {
-					T(890000000000170, --[[ModItemVoiceResponse Raven 1]] "Следите за дыханием, когда целитесь."),
+					T(227987584426, --[[ModItemVoiceResponse Raven 1]] "Следите за дыханием, когда целитесь."),
 				},
 				TacticalKilling = {
-					T(890000000000384, --[[ModItemVoiceResponse Raven 1]] "Мы теперь все крутые."),
+					T(345485763150, --[[ModItemVoiceResponse Raven 1]] "Мы теперь все крутые."),
 				},
 				TacticalPressing = {
-					T(890000000000548, --[[ModItemVoiceResponse Raven 1]] "Так их."),
+					T(453854798717, --[[ModItemVoiceResponse Raven 1]] "Так их."),
 				},
 				TakeCover = {
-					T(890000000000856, --[[ModItemVoiceResponse Raven 1]] "Затаиваюсь."),
+					T(652956113536, --[[ModItemVoiceResponse Raven 1]] "Затаиваюсь."),
 				},
 				ThreatSelection = {
-					T(890000000000932, --[[ModItemVoiceResponse Raven 1]] "Я люблю рискованную игру, но это уже слишком."),
+					T(705218942517, --[[ModItemVoiceResponse Raven 1]] "Я люблю рискованную игру, но это уже слишком."),
 				},
 				ThrowGrenade = {
-					T(890000000000144, --[[ModItemVoiceResponse Raven 1]] "Берегись!"),
+					T(204467204901, --[[ModItemVoiceResponse Raven 1]] "Берегись!"),
 				},
 				Tired = {
-					T(890000000001271, --[[ModItemVoiceResponse Raven 1]] "Я пошла пообщаться с подушкой. От меня будет куда больше пользы, если я чуток посплю."),
+					T(916944139789, --[[ModItemVoiceResponse Raven 1]] "Я пошла пообщаться с подушкой. От меня будет куда больше пользы, если я чуток посплю."),
 				},
 				Travelling = {
-					T(890000000000143, --[[ModItemVoiceResponse Raven 1]] "Обожаю путешествия. "),
+					T(204326475066, --[[ModItemVoiceResponse Raven 1]] "Обожаю путешествия. "),
 				},
 				ValuableItemFound = {
-					T(890000000000289, --[[ModItemVoiceResponse Raven 1]] "Похоже, мы нашли их заначку."),
+					T(285418084954, --[[ModItemVoiceResponse Raven 1]] "Похоже, мы нашли их заначку."),
 				},
 				WeaponBroken = {
-					T(890000000000849, --[[ModItemVoiceResponse Raven 1]] "Из-за этого металлолома я упустила верный выстрел!"),
+					T(647653533675, --[[ModItemVoiceResponse Raven 1]] "Из-за этого металлолома я упустила верный выстрел!"),
 				},
 				WeaponJammed = {
-					T(890000000001001, --[[ModItemVoiceResponse Raven 1]] "Оружие вышло из строя!"),
+					T(757236108684, --[[ModItemVoiceResponse Raven 1]] "Оружие вышло из строя!"),
 				},
 				Wounded = {
-					T(890000000000445, --[[ModItemVoiceResponse Raven 1]] "Плохо дело."),
-					T(890000000000159, --[[ModItemVoiceResponse Raven 2]] "Ох!"),
-					T(890000000000987, --[[ModItemVoiceResponse Raven 3]] "Я тебе покажу!"),
+					T(379310931668, --[[ModItemVoiceResponse Raven 1]] "Плохо дело."),
+					T(216298207128, --[[ModItemVoiceResponse Raven 2]] "Ох!"),
+					T(740660092221, --[[ModItemVoiceResponse Raven 3]] "Я тебе покажу!"),
 				},
 				group = "MercenariesOld",
 				id = "Raven",
 			}),
 			PlaceObj('ModItemVoiceResponse', {
 				ActivityFinished = {
-					T(890000000000796, --[[ModItemVoiceResponse Thor 1]] "Я закончил задание. Если понадоблюсь - я медитирую."),
+					T(618672773000, --[[ModItemVoiceResponse Thor 1]] "Я закончил задание. Если понадоблюсь - я медитирую."),
 				},
 				ActivityStarted = {
-					T(890000000001264, --[[ModItemVoiceResponse Thor 1]] "У этого задания хорошая энергетика. Я с радостью сделаю его."),
+					T(909465803491, --[[ModItemVoiceResponse Thor 1]] "У этого задания хорошая энергетика. Я с радостью сделаю его."),
 				},
 				AimAttack = {
-					T(890000000000558, --[[ModItemVoiceResponse Thor 1]] "Мой разум сосредоточен... моё тело расслаблено..."),
-					T(890000000000833, --[[ModItemVoiceResponse Thor 2]] "Я и моё оружие - одна сущность."),
-					T(890000000000099, --[[ModItemVoiceResponse Thor 3]] "Будь пулей."),
+					T(463062659661, --[[ModItemVoiceResponse Thor 1]] "Мой разум сосредоточен... моё тело расслаблено..."),
+					T(639822905532, --[[ModItemVoiceResponse Thor 2]] "Я и моё оружие - одна сущность."),
+					T(178088102054, --[[ModItemVoiceResponse Thor 3]] "Будь пулей."),
 				},
 				AimAttackStealth = {
-					T(890000000000272, --[[ModItemVoiceResponse Thor 1]] "Если уж убивать, то без лишнего шума."),
-					T(890000000000844, --[[ModItemVoiceResponse Thor 2]] "Залог успеха - мысленно представлять желаемый результат."),
-					T(890000000000404, --[[ModItemVoiceResponse Thor 3]] "Я буду как ветер."),
+					T(283948738541, --[[ModItemVoiceResponse Thor 1]] "Если уж убивать, то без лишнего шума."),
+					T(643569506533, --[[ModItemVoiceResponse Thor 2]] "Залог успеха - мысленно представлять желаемый результат."),
+					T(355094374279, --[[ModItemVoiceResponse Thor 3]] "Я буду как ветер."),
 				},
 				AimAttack_Low = {
-					T(890000000000394, --[[ModItemVoiceResponse Thor 1]] "Заранее извиняюсь. И у позитива есть свои пределы."),
+					T(348521369380, --[[ModItemVoiceResponse Thor 1]] "Заранее извиняюсь. И у позитива есть свои пределы."),
 				},
 				AimAttack_LowStealth = {
-					T(890000000000287, --[[ModItemVoiceResponse Thor 1]] "Твой оптимизм похвален, но не факт, что уместен."),
+					T(285222508891, --[[ModItemVoiceResponse Thor 1]] "Твой оптимизм похвален, но не факт, что уместен."),
 				},
 				AmmoLow = {
-					T(890000000001002, --[[ModItemVoiceResponse Thor 1]] "Ach du liebe zeit! Я остался почти без патронов!"),
+					T(758315197691, --[[ModItemVoiceResponse Thor 1]] "Ach du liebe zeit! Я остался почти без патронов!"),
 				},
 				AnimalFound = {
-					T(890000000000901, --[[ModItemVoiceResponse Thor 1]] "Видите? Неуёмная тяга человечества к мясу вынудила природу восстать против нас!"),
+					T(691065293999, --[[ModItemVoiceResponse Thor 1]] "Видите? Неуёмная тяга человечества к мясу вынудила природу восстать против нас!"),
 				},
 				BandageDownedUnit = {
-					T(890000000000731, --[[ModItemVoiceResponse Thor 1]] "Немного женьшеня и ягеля - и снова будешь бодрячком!"),
+					T(568777001312, --[[ModItemVoiceResponse Thor 1]] "Немного женьшеня и ягеля - и снова будешь бодрячком!"),
 				},
 				BecomeHidden = {
-					T(890000000001281, --[[ModItemVoiceResponse Thor 1]] "Я впитываю неподвижность этого мира."),
-					T(890000000000561, --[[ModItemVoiceResponse Thor 2]] "Кто успокаивает свои мысли, и сам становится тише."),
-					T(890000000000404, --[[ModItemVoiceResponse Thor 3]] "Я буду как ветер."),
+					T(919835201725, --[[ModItemVoiceResponse Thor 1]] "Я впитываю неподвижность этого мира."),
+					T(463581498371, --[[ModItemVoiceResponse Thor 2]] "Кто успокаивает свои мысли, и сам становится тише."),
+					T(355094374279, --[[ModItemVoiceResponse Thor 3]] "Я буду как ветер."),
 				},
 				BusySatView = {
-					T(890000000000242, --[[ModItemVoiceResponse Thor 1]] "Мне необходимо отвлечься на медитацию. Это задание потребовало слишком сильного сосредоточения."),
+					T(272433360270, --[[ModItemVoiceResponse Thor 1]] "Мне необходимо отвлечься на медитацию. Это задание потребовало слишком сильного сосредоточения."),
 				},
 				Climbing = {
-					T(890000000001156, --[[ModItemVoiceResponse Thor 1]] "(climbing)"),
-					T(890000000000823, --[[ModItemVoiceResponse Thor 2]] "(climbing_2)"),
+					T(848754213849, --[[ModItemVoiceResponse Thor 1]] "(climbing)"),
+					T(631074053756, --[[ModItemVoiceResponse Thor 2]] "(climbing_2)"),
 				},
 				CombatEndEnemiesRemain = {
-					T(890000000000322, --[[ModItemVoiceResponse Thor 1]] "Мы должны быть бдительны. Враг где-то рядом."),
+					T(311440074290, --[[ModItemVoiceResponse Thor 1]] "Мы должны быть бдительны. Враг где-то рядом."),
 				},
 				CombatEndEnemiesRetreated = {
-					T(890000000001300, --[[ModItemVoiceResponse Thor 1]] "Враг покинул сектор. Теперь сектор наш."),
+					T(933304209157, --[[ModItemVoiceResponse Thor 1]] "Враг покинул сектор. Теперь сектор наш."),
 				},
 				CombatEndNoEnemies = {
-					T(890000000001033, --[[ModItemVoiceResponse Thor 1]] "Ja, sehr gut! Враг в секторе побеждён."),
+					T(783783854533, --[[ModItemVoiceResponse Thor 1]] "Ja, sehr gut! Враг в секторе побеждён."),
 				},
 				CombatMovement = {
-					T(890000000000675, --[[ModItemVoiceResponse Thor 1]] "Отличная идея!"),
-					T(890000000000851, --[[ModItemVoiceResponse Thor 2]] "Твоя уверенность в себе вселяет в меня уверенность."),
-					T(890000000000433, --[[ModItemVoiceResponse Thor 3]] "С радостью."),
-					T(890000000001319, --[[ModItemVoiceResponse Thor 4]] "Да!"),
-					T(890000000000127, --[[ModItemVoiceResponse Thor 5]] "Чудно!"),
-					T(890000000000666, --[[ModItemVoiceResponse Thor 6]] "Уже иду."),
+					T(536220246908, --[[ModItemVoiceResponse Thor 1]] "Отличная идея!"),
+					T(649995186616, --[[ModItemVoiceResponse Thor 2]] "Твоя уверенность в себе вселяет в меня уверенность."),
+					T(368519919626, --[[ModItemVoiceResponse Thor 3]] "С радостью."),
+					T(952631426114, --[[ModItemVoiceResponse Thor 4]] "Да!"),
+					T(193075117702, --[[ModItemVoiceResponse Thor 5]] "Чудно!"),
+					T(528104783195, --[[ModItemVoiceResponse Thor 6]] "Уже иду."),
 				},
 				CombatMovementStealth = {
-					T(890000000000175, --[[ModItemVoiceResponse Thor 1]] "Я предпочитаю ходить босиком."),
-					T(890000000000561, --[[ModItemVoiceResponse Thor 2]] "Кто успокаивает свои мысли, и сам становится тише."),
-					T(890000000000225, --[[ModItemVoiceResponse Thor 3]] "Двигаясь тихо, я слышу, как бьётся сердце природы."),
+					T(233142554090, --[[ModItemVoiceResponse Thor 1]] "Я предпочитаю ходить босиком."),
+					T(463581498371, --[[ModItemVoiceResponse Thor 2]] "Кто успокаивает свои мысли, и сам становится тише."),
+					T(258841251348, --[[ModItemVoiceResponse Thor 3]] "Двигаясь тихо, я слышу, как бьётся сердце природы."),
 				},
 				CombatStartDetected = {
-					T(890000000001307, --[[ModItemVoiceResponse Thor 1]] "Scheisse! Меня заметили."),
+					T(940164466934, --[[ModItemVoiceResponse Thor 1]] "Scheisse! Меня заметили."),
 				},
 				CombatStartPlayer = {
-					T(890000000000630, --[[ModItemVoiceResponse Thor 1]] "Лавина начинается с падения одного камешка."),
+					T(504140496873, --[[ModItemVoiceResponse Thor 1]] "Лавина начинается с падения одного камешка."),
 				},
 				CombatTaskCompleted = {
-					T(890000000000797, --[[ModItemVoiceResponse Thor 1]] "Мы поставили галочку. Я прямо чувствую, как стресс отступает."),
+					T(619938557099, --[[ModItemVoiceResponse Thor 1]] "Мы поставили галочку. Я прямо чувствую, как стресс отступает."),
 				},
 				CombatTaskFailed = {
-					T(890000000000636, --[[ModItemVoiceResponse Thor 1]] "Мы не смогли поставить галочку, но это не должно понижать нашу самооценку."),
+					T(505725041180, --[[ModItemVoiceResponse Thor 1]] "Мы не смогли поставить галочку, но это не должно понижать нашу самооценку."),
 				},
 				CombatTaskGiven = {
-					T(890000000001102, --[[ModItemVoiceResponse Thor 1]] "У меня есть план, как помочь нам раскрыть наш потенциал. Вот, смотрите."),
+					T(819902945306, --[[ModItemVoiceResponse Thor 1]] "У меня есть план, как помочь нам раскрыть наш потенциал. Вот, смотрите."),
 				},
 				ContractExpired = {
-					T(890000000000307, --[[ModItemVoiceResponse Thor 1]] "Срок моего контракта истёк. Я возвращаюсь домой, чтобы побыть с бывшей женой и моим ребёнком. Auf Wiedersehen."),
+					T(296171630683, --[[ModItemVoiceResponse Thor 1]] "Срок моего контракта истёк. Я возвращаюсь домой, чтобы побыть с бывшей женой и моим ребёнком. Auf Wiedersehen."),
 				},
 				DeathBuddy1 = {
-					T(890000000000552, --[[ModItemVoiceResponse Thor 1]] "Телесно Айс больше не здесь, но его аура поможет нам всем стать лучше."),
+					T(455436980095, --[[ModItemVoiceResponse Thor 1]] "Телесно Айс больше не здесь, но его аура поможет нам всем стать лучше."),
 				},
 				DeathBuddy2 = TConcat({
 					T(183777024912, --[[ModItemVoiceResponse Thor DeathBuddy2 VoiceResponse DeathBuddy2 - Played on the death of Jazz_Spider. voice:Thor]] "Вы были талантливейшим доктором, фройляйн Паук. Ваша грация под шквальным огнем, ваши быстрые пальцы, ваше душевное тепло... Мне остается только надеяться, что когда-нибудь я смогу сравниться с вами. Храни вас господь. ")
 				}),
 				DeathGeneral = {
-					T(890000000000712, --[[ModItemVoiceResponse Thor 1]] "Пусть твой дух воссоединится со вселенной, а сущность переродится в ином теле."),
+					T(553568609293, --[[ModItemVoiceResponse Thor 1]] "Пусть твой дух воссоединится со вселенной, а сущность переродится в ином теле."),
 				},
 				DeathLearnToLike1 = {
-					T(890000000000879, --[[ModItemVoiceResponse Thor 1]] "Мудрость Омрына больше не наставляет нас. Но я продолжу жить так, как он учил нас."),
+					T(673986672064, --[[ModItemVoiceResponse Thor 1]] "Мудрость Омрына больше не наставляет нас. Но я продолжу жить так, как он учил нас."),
 				},
 				DoorLocked = {
-					T(890000000000772, --[[ModItemVoiceResponse Thor 1]] "Заперто."),
+					T(595551291015, --[[ModItemVoiceResponse Thor 1]] "Заперто."),
 				},
 				Downed = {
-					T(890000000000288, --[[ModItemVoiceResponse Thor 1]] "Смерть - это не конец. Меня ждёт ещё одно перерождение."),
+					T(285377954938, --[[ModItemVoiceResponse Thor 1]] "Смерть - это не конец. Меня ждёт ещё одно перерождение."),
 				},
 				Exhausted = {
-					T(890000000000339, --[[ModItemVoiceResponse Thor 1]] "Я не могу идти дальше. Мне нужно сбалансировать чакры."),
+					T(321287177371, --[[ModItemVoiceResponse Thor 1]] "Я не могу идти дальше. Мне нужно сбалансировать чакры."),
 				},
 				FriendlyFireBuddy1 = {
-					T(890000000000697, --[[ModItemVoiceResponse Thor 1]] "Айс, ты не забыл об утренней медитации? Похоже, что твой разум ещё немного затуманен."),
+					T(549106936211, --[[ModItemVoiceResponse Thor 1]] "Айс, ты не забыл об утренней медитации? Похоже, что твой разум ещё немного затуманен."),
 				},
 				FriendlyFireBuddy2 = TConcat({
 					T(942541541319, --[[ModItemVoiceResponse Thor FriendlyFireBuddy2 VoiceResponse FriendlyFireBuddy2 - Played on friendly fire by the unit hit if the hitting unit is Liked - Jazz_Spider. voice:Thor]] "Фройляйн Паук, на вас удивительным образом невозможно сердиться. Но все же, будьте аккуратнее с оружием.")
 				}),
 				FriendlyFireGeneral = {
-					T(890000000000564, --[[ModItemVoiceResponse Thor 1]] "Уверен, это моя плохая карма заставила тебя попасть в меня. Я не держу на тебя зла."),
+					T(464842305131, --[[ModItemVoiceResponse Thor 1]] "Уверен, это моя плохая карма заставила тебя попасть в меня. Я не держу на тебя зла."),
 				},
 				FriendlyFireLearnToLike1 = {
-					T(890000000000036, --[[ModItemVoiceResponse Thor 1]] "О мудрый Омрын, за что?"),
+					T(120688533752, --[[ModItemVoiceResponse Thor 1]] "О мудрый Омрын, за что?"),
 				},
 				GasAreaSelection = {
-					T(890000000000138, --[[ModItemVoiceResponse Thor 1]] "(кашляет)"),
+					T(195887262216, --[[ModItemVoiceResponse Thor 1]] "(кашляет)"),
 				},
 				GroupOrder = {
-					T(890000000000707, --[[ModItemVoiceResponse Thor 1]] "Мы идём к цели!"),
-					T(890000000000584, --[[ModItemVoiceResponse Thor 2]] "Все сделайте глубокий вдох... и выдох."),
-					T(890000000000173, --[[ModItemVoiceResponse Thor 3]] "Да!"),
-					T(890000000000127, --[[ModItemVoiceResponse Thor 4]] "Чудно!"),
-					T(890000000000629, --[[ModItemVoiceResponse Thor 5]] "Любое путешествие начинается с первого шага."),
+					T(552328031564, --[[ModItemVoiceResponse Thor 1]] "Мы идём к цели!"),
+					T(476814248345, --[[ModItemVoiceResponse Thor 2]] "Все сделайте глубокий вдох... и выдох."),
+					T(229678381560, --[[ModItemVoiceResponse Thor 3]] "Да!"),
+					T(193075117702, --[[ModItemVoiceResponse Thor 4]] "Чудно!"),
+					T(503925022031, --[[ModItemVoiceResponse Thor 5]] "Любое путешествие начинается с первого шага."),
 				},
 				HealReceived = {
-					T(890000000000702, --[[ModItemVoiceResponse Thor 1]] "Благодарю тебя! Мой дух очистился. А у тебя такая красивая аура!"),
+					T(550035719445, --[[ModItemVoiceResponse Thor 1]] "Благодарю тебя! Мой дух очистился. А у тебя такая красивая аура!"),
 				},
 				HealReceivedSatView = {
-					T(890000000000231, --[[ModItemVoiceResponse Thor 1]] "Моё тело исцеляется, потому что здоров мой дух."),
+					T(263567731433, --[[ModItemVoiceResponse Thor 1]] "Моё тело исцеляется, потому что здоров мой дух."),
 				},
 				HeavilyWoundedSelection = {
-					T(890000000000001, --[[ModItemVoiceResponse Thor 1]] "Я чувствую, как теряю прану."),
+					T(102732211926, --[[ModItemVoiceResponse Thor 1]] "Я чувствую, как теряю прану."),
 				},
 				HeavyBreathing = {
-					T(890000000000300, --[[ModItemVoiceResponse Thor 1]] "(heavy breath)"),
-					T(890000000000312, --[[ModItemVoiceResponse Thor 2]] "(heavy breath_2)"),
+					T(291847115034, --[[ModItemVoiceResponse Thor 1]] "(heavy breath)"),
+					T(296802146000, --[[ModItemVoiceResponse Thor 2]] "(heavy breath_2)"),
 				},
 				Idle = {
-					T(890000000000069, --[[ModItemVoiceResponse Thor 1]] "Ом... мани... падме... хум..."),
+					T(151981230042, --[[ModItemVoiceResponse Thor 1]] "Ом... мани... падме... хум..."),
 				},
 				InteractableFound = {
-					T(890000000001201, --[[ModItemVoiceResponse Thor 1]] "Чем одарила нас природа?"),
-					T(890000000000496, --[[ModItemVoiceResponse Thor 2]] "Полюбопытствуем."),
+					T(865329690008, --[[ModItemVoiceResponse Thor 1]] "Чем одарила нас природа?"),
+					T(426360360589, --[[ModItemVoiceResponse Thor 2]] "Полюбопытствуем."),
 				},
 				InterestingSector = {
-					T(890000000000235, --[[ModItemVoiceResponse Thor 1]] "У этого места необычная энергетика. Нам стоит здесь помедитировать."),
+					T(267239232967, --[[ModItemVoiceResponse Thor 1]] "У этого места необычная энергетика. Нам стоит здесь помедитировать."),
 				},
 				ItemDeteriorates = {
-					T(890000000000291, --[[ModItemVoiceResponse Thor 1]] "Как и всё живое, мои вещи нуждаются в отдыхе и восстановлении."),
+					T(286985993783, --[[ModItemVoiceResponse Thor 1]] "Как и всё живое, мои вещи нуждаются в отдыхе и восстановлении."),
 				},
 				ItemInPoorConditionEquipped = {
-					T(890000000001091, --[[ModItemVoiceResponse Thor 1]] "У этой вещи грязная аура. Её нужно чистить. Долго."),
+					T(810487895893, --[[ModItemVoiceResponse Thor 1]] "У этой вещи грязная аура. Её нужно чистить. Долго."),
 				},
 				Jumping = {
-					T(890000000001332, --[[ModItemVoiceResponse Thor 1]] "(jumping over something)"),
-					T(890000000000302, --[[ModItemVoiceResponse Thor 2]] "(jumping over something_2)"),
+					T(963682812482, --[[ModItemVoiceResponse Thor 1]] "(jumping over something)"),
+					T(293492456033, --[[ModItemVoiceResponse Thor 2]] "(jumping over something_2)"),
 				},
 				KillFriendlyFireBuddy1 = {
-					T(890000000000874, --[[ModItemVoiceResponse Thor 1]] "Как это могло произойти? О, жестокая шутка вселенной: я убил собственного друга! Так не должно быть."),
+					T(667138800689, --[[ModItemVoiceResponse Thor 1]] "Как это могло произойти? О, жестокая шутка вселенной: я убил собственного друга! Так не должно быть."),
 				},
 				KillFriendlyFireBuddy2 = TConcat({
 					T(888762070322, --[[ModItemVoiceResponse Thor KillFriendlyFireBuddy2 VoiceResponse KillFriendlyFireBuddy2 - Played when a unit kills an ally with friendly fire and the dying unit is Liked - Jazz_Spider. voice:Thor]] 'Ужасно. Говорится "врач, исцелися сам", а не "убей другого врача". Надеюсь, там, где сейчас фройляйн Хьюстон, у нее нет таких проблем.')
 				}),
 				KillFriendlyFireGeneral = {
-					T(890000000001029, --[[ModItemVoiceResponse Thor 1]] "Плакали мои шансы на благоприятное перерождение. Прости, друг, что ненамеренно отнял твою жизнь. Меня ждёт кармическое возмездие."),
+					T(779636455659, --[[ModItemVoiceResponse Thor 1]] "Плакали мои шансы на благоприятное перерождение. Прости, друг, что ненамеренно отнял твою жизнь. Меня ждёт кармическое возмездие."),
 				},
 				KillFriendlyFireLearnToLike1 = {
-					T(890000000000321, --[[ModItemVoiceResponse Thor 1]] "Прости меня, о мудрый Омрын. Я пытался следовать твоему учению о полном расслаблении. Возможно, я расслабился слишком полно."),
+					T(307319830195, --[[ModItemVoiceResponse Thor 1]] "Прости меня, о мудрый Омрын. Я пытался следовать твоему учению о полном расслаблении. Возможно, я расслабился слишком полно."),
 				},
 				LearnToLike1 = {
-					T(890000000000934, --[[ModItemVoiceResponse Thor 1]] "Омрын так мудр! Всегда мечтал обрести духовного учителя, который научит меня тайнам бытия."),
+					T(706359308105, --[[ModItemVoiceResponse Thor 1]] "Омрын так мудр! Всегда мечтал обрести духовного учителя, который научит меня тайнам бытия."),
 				},
 				LevelUp = {
-					T(890000000000989, --[[ModItemVoiceResponse Thor 1]] "Я сформировал мысленный образ нового меня и готов раскрыть свой потенциал."),
+					T(745475021917, --[[ModItemVoiceResponse Thor 1]] "Я сформировал мысленный образ нового меня и готов раскрыть свой потенциал."),
 				},
 				LootFound = {
-					T(890000000000408, --[[ModItemVoiceResponse Thor 1]] "Этот мир всегда готов одарить нас."),
-					T(890000000000654, --[[ModItemVoiceResponse Thor 2]] "Следует пользоваться тем, что посылает нам мир."),
-					T(890000000000371, --[[ModItemVoiceResponse Thor 3]] "Я что-то вижу."),
+					T(358561771158, --[[ModItemVoiceResponse Thor 1]] "Этот мир всегда готов одарить нас."),
+					T(526087861785, --[[ModItemVoiceResponse Thor 2]] "Следует пользоваться тем, что посылает нам мир."),
+					T(337251195622, --[[ModItemVoiceResponse Thor 3]] "Я что-то вижу."),
 				},
 				LootOpened = {
-					T(890000000001334, --[[ModItemVoiceResponse Thor 1]] "Думайте о благосостоянии, и благосостояние придёт к вам."),
+					T(965985682236, --[[ModItemVoiceResponse Thor 1]] "Думайте о благосостоянии, и благосостояние придёт к вам."),
 				},
 				LowChanceShot = {
-					T(890000000000032, --[[ModItemVoiceResponse Thor 1]] "Это бесполезно! Мои энергии не в гармонии друг с другом!"),
+					T(118419244020, --[[ModItemVoiceResponse Thor 1]] "Это бесполезно! Мои энергии не в гармонии друг с другом!"),
 				},
 				ManyEnemiesSelection = {
-					T(890000000000071, --[[ModItemVoiceResponse Thor 1]] "Я чувствую враждебность. Это волны негативной энергии от приближающихся врагов."),
+					T(152362465452, --[[ModItemVoiceResponse Thor 1]] "Я чувствую враждебность. Это волны негативной энергии от приближающихся врагов."),
 				},
 				MeleeEnemiesClosing = {
-					T(890000000000183, --[[ModItemVoiceResponse Thor 1]] "Враг хочет понизить мою самооценку."),
+					T(241435550477, --[[ModItemVoiceResponse Thor 1]] "Враг хочет понизить мою самооценку."),
 				},
 				MineFound = {
-					T(890000000000132, --[[ModItemVoiceResponse Thor 1]] "Я чувствую дурную энергетику. Не трогайте эту вещь."),
+					T(195318708991, --[[ModItemVoiceResponse Thor 1]] "Я чувствую дурную энергетику. Не трогайте эту вещь."),
 				},
 				MineNearbySelection = {
-					T(890000000000742, --[[ModItemVoiceResponse Thor 1]] "Эта ловушка источает дурную энергетику."),
+					T(578112536138, --[[ModItemVoiceResponse Thor 1]] "Эта ловушка источает дурную энергетику."),
 				},
 				MissHighChance = {
-					T(890000000000855, --[[ModItemVoiceResponse Thor 1]] "Scheisse! Прошу прощения. Мои чакры не сбалансированы."),
+					T(652047934508, --[[ModItemVoiceResponse Thor 1]] "Scheisse! Прошу прощения. Мои чакры не сбалансированы."),
 				},
 				MissedByKillShot = {
-					T(890000000000887, --[[ModItemVoiceResponse Thor 1]] "Mein Gott! Эта пуля едва не оборвала моё земное странствие!"),
+					T(677313288651, --[[ModItemVoiceResponse Thor 1]] "Mein Gott! Эта пуля едва не оборвала моё земное странствие!"),
 				},
 				MockGeneral = {
-					T(890000000000733, --[[ModItemVoiceResponse Thor 1]] "Не нужно бояться успеха!"),
+					T(570824444454, --[[ModItemVoiceResponse Thor 1]] "Не нужно бояться успеха!"),
 				},
 				MockLearnToLike1 = {
-					T(890000000001137, --[[ModItemVoiceResponse Thor 1]] "Учитесь у мудрого Омрына. Даже промахиваясь, он не напрягается."),
+					T(843142317210, --[[ModItemVoiceResponse Thor 1]] "Учитесь у мудрого Омрына. Даже промахиваясь, он не напрягается."),
 				},
 				MockLike1 = {
-					T(890000000000677, --[[ModItemVoiceResponse Thor 1]] "Вспомни мою дыхательную гимнастику, Айс!"),
+					T(536454715031, --[[ModItemVoiceResponse Thor 1]] "Вспомни мою дыхательную гимнастику, Айс!"),
 				},
 				MockLike2 = TConcat({
 					T(889064631541, --[[ModItemVoiceResponse Thor MockLike2 VoiceResponse MockLike2 - Played on a high chance miss by Jazz_Spider. voice:Thor]] "Может, вам стоит уделить больше внимания стрелковой подготовке, фройляйн Паук. По правде говоря, нам обоим стоит.")
 				}),
 				NoAmmo = {
-					T(890000000000762, --[[ModItemVoiceResponse Thor 1]] "У меня закончились патроны, но руки и мой неисчерпаемый запас положительной энергии по-прежнему при мне!"),
+					T(587082403678, --[[ModItemVoiceResponse Thor 1]] "У меня закончились патроны, но руки и мой неисчерпаемый запас положительной энергии по-прежнему при мне!"),
 				},
 				NotNow = {
-					T(890000000001133, --[[ModItemVoiceResponse Thor 1]] "У нас ещё будет время познакомиться с новыми людьми, когда закончим убивать старых."),
+					T(839772290911, --[[ModItemVoiceResponse Thor 1]] "У нас ещё будет время познакомиться с новыми людьми, когда закончим убивать старых."),
 				},
 				OpponentFound = {
-					T(890000000000468, --[[ModItemVoiceResponse Thor 1]] "Контакт!"),
-					T(890000000000346, --[[ModItemVoiceResponse Thor 2]] "Я ощущаю злую ауру."),
-					T(890000000001007, --[[ModItemVoiceResponse Thor 3]] "Вижу противника."),
+					T(403029339503, --[[ModItemVoiceResponse Thor 1]] "Контакт!"),
+					T(326721051529, --[[ModItemVoiceResponse Thor 2]] "Я ощущаю злую ауру."),
+					T(759642943694, --[[ModItemVoiceResponse Thor 3]] "Вижу противника."),
 				},
 				OpponentKilled = {
-					T(890000000000873, --[[ModItemVoiceResponse Thor 1]] "Успех!"),
-					T(890000000000428, --[[ModItemVoiceResponse Thor 2]] "Позитивный настрой - залог победы!"),
-					T(890000000000565, --[[ModItemVoiceResponse Thor 3]] "Я жив и полон осознанности. Они - нет."),
-					T(890000000000814, --[[ModItemVoiceResponse Thor 4]] "Враг уничтожен!"),
-					T(890000000000813, --[[ModItemVoiceResponse Thor 5]] "Капут!"),
+					T(666841355225, --[[ModItemVoiceResponse Thor 1]] "Успех!"),
+					T(364912415572, --[[ModItemVoiceResponse Thor 2]] "Позитивный настрой - залог победы!"),
+					T(466384182618, --[[ModItemVoiceResponse Thor 3]] "Я жив и полон осознанности. Они - нет."),
+					T(625242224530, --[[ModItemVoiceResponse Thor 4]] "Враг уничтожен!"),
+					T(625159976023, --[[ModItemVoiceResponse Thor 5]] "Капут!"),
 				},
 				OpponentKilledAnimal = {
-					T(890000000001028, --[[ModItemVoiceResponse Thor 1]] "Мясо. Ну и гадость. Как люди это едят?"),
+					T(778070654506, --[[ModItemVoiceResponse Thor 1]] "Мясо. Ну и гадость. Как люди это едят?"),
 				},
 				OpponentKilledHeadshot = {
-					T(890000000000202, --[[ModItemVoiceResponse Thor 1]] "Такого позитивного результата даже я себе не представлял!"),
+					T(248049739798, --[[ModItemVoiceResponse Thor 1]] "Такого позитивного результата даже я себе не представлял!"),
 				},
 				OpponentKilledStealth = {
-					T(890000000001019, --[[ModItemVoiceResponse Thor 1]] "Это даже лучше, чем я в себя закладывал."),
-					T(890000000000223, --[[ModItemVoiceResponse Thor 2]] "Враг устранён беззвучно."),
-					T(890000000000067, --[[ModItemVoiceResponse Thor 3]] "Если никто не видит, как человек умирает, умирает ли он на самом деле?"),
+					T(768908028208, --[[ModItemVoiceResponse Thor 1]] "Это даже лучше, чем я в себя закладывал."),
+					T(258365979913, --[[ModItemVoiceResponse Thor 2]] "Враг устранён беззвучно."),
+					T(148602557435, --[[ModItemVoiceResponse Thor 3]] "Если никто не видит, как человек умирает, умирает ли он на самом деле?"),
 				},
 				Order = {
-					T(890000000001376, --[[ModItemVoiceResponse Thor 1]] "Твоя целеустремлённость - пример для нас!"),
-					T(890000000001319, --[[ModItemVoiceResponse Thor 2]] "Да!"),
-					T(890000000000127, --[[ModItemVoiceResponse Thor 3]] "Чудно!"),
-					T(890000000000666, --[[ModItemVoiceResponse Thor 4]] "Уже иду."),
-					T(890000000000629, --[[ModItemVoiceResponse Thor 5]] "Любое путешествие начинается с первого шага."),
+					T(996956301376, --[[ModItemVoiceResponse Thor 1]] "Твоя целеустремлённость - пример для нас!"),
+					T(952631426114, --[[ModItemVoiceResponse Thor 2]] "Да!"),
+					T(193075117702, --[[ModItemVoiceResponse Thor 3]] "Чудно!"),
+					T(528104783195, --[[ModItemVoiceResponse Thor 4]] "Уже иду."),
+					T(503925022031, --[[ModItemVoiceResponse Thor 5]] "Любое путешествие начинается с первого шага."),
 				},
 				Outnumbered = {
-					T(890000000000120, --[[ModItemVoiceResponse Thor 1]] "Враг пытается побить наше духовное превосходство численным!"),
+					T(191414171100, --[[ModItemVoiceResponse Thor 1]] "Враг пытается побить наше духовное превосходство численным!"),
 				},
 				Overwatch = {
-					T(890000000000459, --[[ModItemVoiceResponse Thor 1]] "Я очищу это поле бое от негативной энергетики."),
+					T(398217943753, --[[ModItemVoiceResponse Thor 1]] "Я очищу это поле бое от негативной энергетики."),
 				},
 				OverwatchSelection = {
-					T(890000000000679, --[[ModItemVoiceResponse Thor 1]] "Меня накрывает волна чужой негативной энергии!"),
+					T(538210168372, --[[ModItemVoiceResponse Thor 1]] "Меня накрывает волна чужой негативной энергии!"),
 				},
 				Pain = {
-					T(890000000001172, --[[ModItemVoiceResponse Thor 1]] "Р-р-р!"),
-					T(890000000000273, --[[ModItemVoiceResponse Thor 2]] "Ох-х."),
-					T(890000000000359, --[[ModItemVoiceResponse Thor 3]] "Ай!"),
-					T(890000000001000, --[[ModItemVoiceResponse Thor 4]] "Оу."),
-					T(890000000000651, --[[ModItemVoiceResponse Thor 5]] "Ох."),
-					T(890000000000358, --[[ModItemVoiceResponse Thor 6]] "pain6"),
-					T(890000000000655, --[[ModItemVoiceResponse Thor 7]] "pain7"),
+					T(859561435419, --[[ModItemVoiceResponse Thor 1]] "Р-р-р!"),
+					T(283960384548, --[[ModItemVoiceResponse Thor 2]] "Ох-х."),
+					T(332949384389, --[[ModItemVoiceResponse Thor 3]] "Ай!"),
+					T(756762380586, --[[ModItemVoiceResponse Thor 4]] "Оу."),
+					T(522815048965, --[[ModItemVoiceResponse Thor 5]] "Ох."),
+					T(332374627946, --[[ModItemVoiceResponse Thor 6]] "pain6"),
+					T(526488471143, --[[ModItemVoiceResponse Thor 7]] "pain7"),
 				},
 				PersonalPerkSubtitled = {
-					T(890000000000820, --[[ModItemVoiceResponse Thor 1]] "Я изготовил целительное снадобье из даров матери-природы."),
+					T(630404719096, --[[ModItemVoiceResponse Thor 1]] "Я изготовил целительное снадобье из даров матери-природы."),
 				},
 				PraisesBuddy1 = {
-					T(890000000001090, --[[ModItemVoiceResponse Thor 1]] "Аура Айса вдохновляет всех, кто её видит."),
+					T(810351099152, --[[ModItemVoiceResponse Thor 1]] "Аура Айса вдохновляет всех, кто её видит."),
 				},
 				PraisesBuddy2 = TConcat({
 					T(635898925775, --[[ModItemVoiceResponse Thor PraisesBuddy2 VoiceResponse PraisesBuddy2 - Played on a successful kill by Jazz_Spider. voice:Thor]] "Я только уверяюсь в своем расположении к фройляин Паук. Она такая женщина, такая женщина!")
 				}),
 				PraisesFemale = {
-					T(890000000001071, --[[ModItemVoiceResponse Thor 1]] "Ты молодец! Продолжай верить в себя!"),
+					T(799411917031, --[[ModItemVoiceResponse Thor 1]] "Ты молодец! Продолжай верить в себя!"),
 				},
 				PraisesLearnToLike1 = {
-					T(890000000000374, --[[ModItemVoiceResponse Thor 1]] "Хороший выстрел, о мудрый Омрын."),
+					T(339645639984, --[[ModItemVoiceResponse Thor 1]] "Хороший выстрел, о мудрый Омрын."),
 				},
 				PraisesMale = {
-					T(890000000000317, --[[ModItemVoiceResponse Thor 1]] "Превосходно! Давай, похлопай себе! Ты этого достоин!"),
+					T(303489612125, --[[ModItemVoiceResponse Thor 1]] "Превосходно! Давай, похлопай себе! Ты этого достоин!"),
 				},
 				SectorArrived = {
-					T(890000000001320, --[[ModItemVoiceResponse Thor 1]] "Прибыл на место и готов к самосовершенствованию."),
+					T(954870720409, --[[ModItemVoiceResponse Thor 1]] "Прибыл на место и готов к самосовершенствованию."),
 				},
 				Selection = {
-					T(890000000000886, --[[ModItemVoiceResponse Thor 1]] "Hallo!"),
-					T(890000000000778, --[[ModItemVoiceResponse Thor 2]] "Ja?"),
-					T(890000000000174, --[[ModItemVoiceResponse Thor 3]] "Это я, Тор."),
+					T(675650958234, --[[ModItemVoiceResponse Thor 1]] "Hallo!"),
+					T(601536200950, --[[ModItemVoiceResponse Thor 2]] "Ja?"),
+					T(230822768579, --[[ModItemVoiceResponse Thor 3]] "Это я, Тор."),
 				},
 				SelectionStealth = {
-					T(890000000001281, --[[ModItemVoiceResponse Thor 1]] "Я впитываю неподвижность этого мира."),
-					T(890000000000561, --[[ModItemVoiceResponse Thor 2]] "Кто успокаивает свои мысли, и сам становится тише."),
-					T(890000000000844, --[[ModItemVoiceResponse Thor 3]] "Залог успеха - мысленно представлять желаемый результат."),
-					T(890000000000404, --[[ModItemVoiceResponse Thor 4]] "Я буду как ветер."),
+					T(919835201725, --[[ModItemVoiceResponse Thor 1]] "Я впитываю неподвижность этого мира."),
+					T(463581498371, --[[ModItemVoiceResponse Thor 2]] "Кто успокаивает свои мысли, и сам становится тише."),
+					T(643569506533, --[[ModItemVoiceResponse Thor 3]] "Залог успеха - мысленно представлять желаемый результат."),
+					T(355094374279, --[[ModItemVoiceResponse Thor 4]] "Я буду как ветер."),
 				},
 				SeriouslyWounded = {
-					T(890000000001006, --[[ModItemVoiceResponse Thor 1]] "Похоже, на меня сейчас наедет колесо сансары."),
+					T(759466379237, --[[ModItemVoiceResponse Thor 1]] "Похоже, на меня сейчас наедет колесо сансары."),
 				},
 				Startled = {
-					T(890000000000294, --[[ModItemVoiceResponse Thor 1]] "А?"),
-					T(890000000000290, --[[ModItemVoiceResponse Thor 2]] "Что за..."),
+					T(288998446867, --[[ModItemVoiceResponse Thor 1]] "А?"),
+					T(285602197580, --[[ModItemVoiceResponse Thor 2]] "Что за..."),
 				},
 				SurroundedPain = {
-					T(890000000000956, --[[ModItemVoiceResponse Thor 1]] "Не хочу излучать негативные вибрации, но по-моему мы окружены."),
+					T(720802724799, --[[ModItemVoiceResponse Thor 1]] "Не хочу излучать негативные вибрации, но по-моему мы окружены."),
 				},
 				TacticalCareful = {
-					T(890000000001160, --[[ModItemVoiceResponse Thor 1]] "Ну-ка, все - сделайте вдох и сбалансируйте свои чакры."),
+					T(851752643602, --[[ModItemVoiceResponse Thor 1]] "Ну-ка, все - сделайте вдох и сбалансируйте свои чакры."),
 				},
 				TacticalFocus = {
-					T(890000000000350, --[[ModItemVoiceResponse Thor 1]] "Не зацикливайтесь на сомнениях! Думайте об успехе!"),
+					T(327302996470, --[[ModItemVoiceResponse Thor 1]] "Не зацикливайтесь на сомнениях! Думайте об успехе!"),
 				},
 				TacticalKilling = {
-					T(890000000001070, --[[ModItemVoiceResponse Thor 1]] "Наверно, у них была очень плохая карма."),
-					T(890000000000950, --[[ModItemVoiceResponse Thor 2]] "Не удивительно, что нас преследует успех. Гороскоп это предсказывал."),
+					T(798263767944, --[[ModItemVoiceResponse Thor 1]] "Наверно, у них была очень плохая карма."),
+					T(714756412690, --[[ModItemVoiceResponse Thor 2]] "Не удивительно, что нас преследует успех. Гороскоп это предсказывал."),
 				},
 				TacticalLastEnemy = {
-					T(890000000000933, --[[ModItemVoiceResponse Thor 1]] "Остался последний враг. Надеюсь, он уже смирился с тем, что его ждёт."),
+					T(705682312713, --[[ModItemVoiceResponse Thor 1]] "Остался последний враг. Надеюсь, он уже смирился с тем, что его ждёт."),
 				},
 				TacticalLoss = {
-					T(890000000000788, --[[ModItemVoiceResponse Thor 1]] "Пусть их жертва вдохновит вас стать лучше!"),
+					T(612330663668, --[[ModItemVoiceResponse Thor 1]] "Пусть их жертва вдохновит вас стать лучше!"),
 				},
 				TacticalPressing = {
-					T(890000000000540, --[[ModItemVoiceResponse Thor 1]] "Осторожнее: не накапливайте дурную карму!"),
+					T(443215096288, --[[ModItemVoiceResponse Thor 1]] "Осторожнее: не накапливайте дурную карму!"),
 				},
 				TacticalReposition = {
-					T(890000000001064, --[[ModItemVoiceResponse Thor 1]] "Сосредоточьтесь. Дышите. Почувствуйте, как негативная энергия покидает ваше тело."),
+					T(791708706703, --[[ModItemVoiceResponse Thor 1]] "Сосредоточьтесь. Дышите. Почувствуйте, как негативная энергия покидает ваше тело."),
 				},
 				TacticalRevenge = {
-					T(890000000000695, --[[ModItemVoiceResponse Thor 1]] "Надо проверить, не ретроградный ли Меркурий. Где моя карта звёздного неба?"),
+					T(546204071303, --[[ModItemVoiceResponse Thor 1]] "Надо проверить, не ретроградный ли Меркурий. Где моя карта звёздного неба?"),
 				},
 				TacticalTaunt = {
-					T(890000000000083, --[[ModItemVoiceResponse Thor 1]] "Привет вам, враги! Советую спасаться бегством - у нас подавляющее преимущество в позитивном настрое!"),
+					T(161897348780, --[[ModItemVoiceResponse Thor 1]] "Привет вам, враги! Советую спасаться бегством - у нас подавляющее преимущество в позитивном настрое!"),
 				},
 				TakeCover = {
-					T(890000000000226, --[[ModItemVoiceResponse Thor 1]] "Постараюсь не впустить в себя отрицательные вибрации."),
+					T(259617532469, --[[ModItemVoiceResponse Thor 1]] "Постараюсь не впустить в себя отрицательные вибрации."),
 				},
 				ThreatSelection = {
-					T(890000000001269, --[[ModItemVoiceResponse Thor 1]] "Гороскоп предупреждал, что я окажусь в такой ситуации."),
+					T(916211117637, --[[ModItemVoiceResponse Thor 1]] "Гороскоп предупреждал, что я окажусь в такой ситуации."),
 				},
 				Tired = {
-					T(890000000001368, --[[ModItemVoiceResponse Thor 1]] "У меня упадок энергии. Я должен помедитировать."),
+					T(991223627075, --[[ModItemVoiceResponse Thor 1]] "У меня упадок энергии. Я должен помедитировать."),
 				},
 				TrainingReceived = {
-					T(890000000000728, --[[ModItemVoiceResponse Thor 1]] "Ах... просветление."),
+					T(566171292768, --[[ModItemVoiceResponse Thor 1]] "Ах... просветление."),
 				},
 				Travelling = {
-					T(890000000000572, --[[ModItemVoiceResponse Thor 1]] "Путешествие удалось. Я ощущаю единение с природой."),
+					T(467136826677, --[[ModItemVoiceResponse Thor 1]] "Путешествие удалось. Я ощущаю единение с природой."),
 				},
 				ValuableItemFound = {
-					T(890000000000142, --[[ModItemVoiceResponse Thor 1]] "Я не страшусь удачи, и потому она нашла меня."),
+					T(203556446718, --[[ModItemVoiceResponse Thor 1]] "Я не страшусь удачи, и потому она нашла меня."),
 				},
 				WeaponBroken = {
-					T(890000000000102, --[[ModItemVoiceResponse Thor 1]] "Моё оружие плохо себя чувствует."),
+					T(181972612393, --[[ModItemVoiceResponse Thor 1]] "Моё оружие плохо себя чувствует."),
 				},
 				WeaponJammed = {
-					T(890000000001075, --[[ModItemVoiceResponse Thor 1]] "Gott im Himmel, моё оружие неисправно."),
+					T(800918238698, --[[ModItemVoiceResponse Thor 1]] "Gott im Himmel, моё оружие неисправно."),
 				},
 				Wounded = {
-					T(890000000000729, --[[ModItemVoiceResponse Thor 1]] "Боль - это временно."),
-					T(890000000000734, --[[ModItemVoiceResponse Thor 2]] "Чужая негативная энергия больно ранит!"),
-					T(890000000000248, --[[ModItemVoiceResponse Thor 3]] "Ох-х... прямо по чакрам!"),
+					T(567595014117, --[[ModItemVoiceResponse Thor 1]] "Боль - это временно."),
+					T(573203964233, --[[ModItemVoiceResponse Thor 2]] "Чужая негативная энергия больно ранит!"),
+					T(275477790408, --[[ModItemVoiceResponse Thor 3]] "Ох-х... прямо по чакрам!"),
 				},
 				group = "MercenariesOld",
 				id = "Thor",
 			}),
 			PlaceObj('ModItemVoiceResponse', {
 				ActivityFinished = {
-					T(890000000001273, --[[ModItemVoiceResponse Vicki 1]] "Я всё сделать."),
+					T(917545842774, --[[ModItemVoiceResponse Vicki 1]] "Я всё сделать."),
 				},
 				ActivityStarted = {
-					T(890000000000336, --[[ModItemVoiceResponse Vicki 1]] "Приступим."),
+					T(319372683896, --[[ModItemVoiceResponse Vicki 1]] "Приступим."),
 				},
 				AimAttack = {
-					T(890000000001175, --[[ModItemVoiceResponse Vicki 1]] "Это быть просто."),
-					T(890000000001259, --[[ModItemVoiceResponse Vicki 2]] "Пора убивать."),
-					T(890000000000777, --[[ModItemVoiceResponse Vicki 3]] "Я плавно спускать курок."),
+					T(860296431945, --[[ModItemVoiceResponse Vicki 1]] "Это быть просто."),
+					T(904050159369, --[[ModItemVoiceResponse Vicki 2]] "Пора убивать."),
+					T(601090111034, --[[ModItemVoiceResponse Vicki 3]] "Я плавно спускать курок."),
 				},
 				AimAttackStealth = {
-					T(890000000000730, --[[ModItemVoiceResponse Vicki 1]] "Ya mon. Тихо-тихо."),
-					T(890000000000193, --[[ModItemVoiceResponse Vicki 2]] "Они ничего не увидеть."),
-					T(890000000000906, --[[ModItemVoiceResponse Vicki 3]] "Без лишнего шума."),
+					T(568148975578, --[[ModItemVoiceResponse Vicki 1]] "Ya mon. Тихо-тихо."),
+					T(245256387639, --[[ModItemVoiceResponse Vicki 2]] "Они ничего не увидеть."),
+					T(695559602723, --[[ModItemVoiceResponse Vicki 3]] "Без лишнего шума."),
 				},
 				AimAttack_Low = {
-					T(890000000000724, --[[ModItemVoiceResponse Vicki 1]] "Даже если духи меня направлять!"),
+					T(563235146921, --[[ModItemVoiceResponse Vicki 1]] "Даже если духи меня направлять!"),
 				},
 				AimAttack_LowStealth = {
-					T(890000000000617, --[[ModItemVoiceResponse Vicki 1]] "Даже если я стоять прямо в упор."),
+					T(494107495598, --[[ModItemVoiceResponse Vicki 1]] "Даже если я стоять прямо в упор."),
 				},
 				AmmoLow = {
-					T(890000000000758, --[[ModItemVoiceResponse Vicki 1]] "Пушка скоро пустеет."),
+					T(583927980907, --[[ModItemVoiceResponse Vicki 1]] "Пушка скоро пустеет."),
 				},
 				AnimalFound = {
-					T(890000000000483, --[[ModItemVoiceResponse Vicki 1]] "Там какой-то зверь."),
+					T(415091734031, --[[ModItemVoiceResponse Vicki 1]] "Там какой-то зверь."),
 				},
 				Autofire = {
-					T(890000000000429, --[[ModItemVoiceResponse Vicki 1]] "Мне не жалко!"),
+					T(365356501599, --[[ModItemVoiceResponse Vicki 1]] "Мне не жалко!"),
 				},
 				BecomeHidden = {
-					T(890000000000003, --[[ModItemVoiceResponse Vicki 1]] "Крадусь тихо."),
-					T(890000000000906, --[[ModItemVoiceResponse Vicki 2]] "Без лишнего шума."),
+					T(105282043754, --[[ModItemVoiceResponse Vicki 1]] "Крадусь тихо."),
+					T(695559602723, --[[ModItemVoiceResponse Vicki 2]] "Без лишнего шума."),
 				},
 				BusySatView = {
-					T(890000000000338, --[[ModItemVoiceResponse Vicki 1]] "Ещё не готово."),
+					T(319866576382, --[[ModItemVoiceResponse Vicki 1]] "Ещё не готово."),
 				},
 				Claustrophobic = {
-					T(890000000000435, --[[ModItemVoiceResponse Vicki 1]] "Такое место! Я вся сжиматься, страшно очень... Мне здесь не нравится, совсем."),
+					T(371513475544, --[[ModItemVoiceResponse Vicki 1]] "Такое место! Я вся сжиматься, страшно очень... Мне здесь не нравится, совсем."),
 				},
 				Climbing = {
-					T(890000000000549, --[[ModItemVoiceResponse Vicki 1]] "(climbing)"),
-					T(890000000000431, --[[ModItemVoiceResponse Vicki 2]] "(climbing_2)"),
+					T(454757483843, --[[ModItemVoiceResponse Vicki 1]] "(climbing)"),
+					T(367548829447, --[[ModItemVoiceResponse Vicki 2]] "(climbing_2)"),
 				},
 				CombatEndEnemiesRemain = {
-					T(890000000000992, --[[ModItemVoiceResponse Vicki 1]] "Я бы очень не надеялась. Мы все равно не одни пока."),
+					T(748918593561, --[[ModItemVoiceResponse Vicki 1]] "Я бы очень не надеялась. Мы все равно не одни пока."),
 				},
 				CombatEndEnemiesRetreated = {
-					T(890000000000779, --[[ModItemVoiceResponse Vicki 1]] "Они бежать от страха!"),
+					T(603542313178, --[[ModItemVoiceResponse Vicki 1]] "Они бежать от страха!"),
 				},
 				CombatEndNoEnemies = {
-					T(890000000001078, --[[ModItemVoiceResponse Vicki 1]] "Ya mon! Последний был!"),
+					T(802082922959, --[[ModItemVoiceResponse Vicki 1]] "Ya mon! Последний был!"),
 				},
 				CombatMovement = {
-					T(890000000001365, --[[ModItemVoiceResponse Vicki 1]] "Ya mon."),
-					T(890000000000988, --[[ModItemVoiceResponse Vicki 2]] "Иду работать."),
-					T(890000000000006, --[[ModItemVoiceResponse Vicki 3]] "Хожу."),
-					T(890000000001031, --[[ModItemVoiceResponse Vicki 4]] "Вперёд."),
-					T(890000000000748, --[[ModItemVoiceResponse Vicki 5]] "Я гулять."),
+					T(989634282538, --[[ModItemVoiceResponse Vicki 1]] "Ya mon."),
+					T(744350424241, --[[ModItemVoiceResponse Vicki 2]] "Иду работать."),
+					T(105927135081, --[[ModItemVoiceResponse Vicki 3]] "Хожу."),
+					T(781039780736, --[[ModItemVoiceResponse Vicki 4]] "Вперёд."),
+					T(581036882789, --[[ModItemVoiceResponse Vicki 5]] "Я гулять."),
 				},
 				CombatMovementStealth = {
-					T(890000000000379, --[[ModItemVoiceResponse Vicki 1]] "Я молча."),
-					T(890000000000900, --[[ModItemVoiceResponse Vicki 2]] "Ш-ш-ш..."),
-					T(890000000001349, --[[ModItemVoiceResponse Vicki 3]] "Я тихо."),
+					T(343554808532, --[[ModItemVoiceResponse Vicki 1]] "Я молча."),
+					T(688060994277, --[[ModItemVoiceResponse Vicki 2]] "Ш-ш-ш..."),
+					T(975555338759, --[[ModItemVoiceResponse Vicki 3]] "Я тихо."),
 				},
 				CombatStartDetected = {
-					T(890000000000093, --[[ModItemVoiceResponse Vicki 1]] "Они нас видеть!"),
+					T(172979322092, --[[ModItemVoiceResponse Vicki 1]] "Они нас видеть!"),
 				},
 				CombatStartPlayer = {
-					T(890000000000158, --[[ModItemVoiceResponse Vicki 1]] "О-хо! Пора убивать."),
+					T(213195516569, --[[ModItemVoiceResponse Vicki 1]] "О-хо! Пора убивать."),
 				},
 				CombatTaskCompleted = {
-					T(890000000000367, --[[ModItemVoiceResponse Vicki 1]] "Респект! Халтура готова!"),
+					T(334241593109, --[[ModItemVoiceResponse Vicki 1]] "Респект! Халтура готова!"),
 				},
 				CombatTaskFailed = {
-					T(890000000000028, --[[ModItemVoiceResponse Vicki 1]] "Не любить бросать халтуру не готовой. Буду плохо спать."),
+					T(115236674463, --[[ModItemVoiceResponse Vicki 1]] "Не любить бросать халтуру не готовой. Буду плохо спать."),
 				},
 				CombatTaskGiven = {
-					T(890000000000834, --[[ModItemVoiceResponse Vicki 1]] "Нам есть халтура. Чтобы не скучать."),
+					T(639854462351, --[[ModItemVoiceResponse Vicki 1]] "Нам есть халтура. Чтобы не скучать."),
 				},
 				Comment = "Jamaican accent. Mechanic. Determined. Competent. Age: Adult, mature.",
 				ContractExpired = {
-					T(890000000001327, --[[ModItemVoiceResponse Vicki 1]] "Контракт заканчиваться, правда. Хочешь меня - я буду в мастерской."),
+					T(961723683392, --[[ModItemVoiceResponse Vicki 1]] "Контракт заканчиваться, правда. Хочешь меня - я буду в мастерской."),
 				},
 				DeathBuddy1 = {
-					T(890000000000425, --[[ModItemVoiceResponse Vicki 1]] "Паук, ты была такая... Жалко тебя потерять, сестричка. Так жалко..."),
+					T(362189435612, --[[ModItemVoiceResponse Vicki 1]] "Паук, ты была такая... Жалко тебя потерять, сестричка. Так жалко..."),
 				},
 				DeathGeneral = {
-					T(890000000000840, --[[ModItemVoiceResponse Vicki 1]] "Пусть тебя направят духи, друг."),
+					T(641538346159, --[[ModItemVoiceResponse Vicki 1]] "Пусть тебя направят духи, друг."),
 				},
 				DeathLearnToDislike1 = {
-					T(890000000000787, --[[ModItemVoiceResponse Vicki 1]] "Он быть глупый козёл, но он быть только мальчик. Детям умирать неправильно."),
+					T(611831818551, --[[ModItemVoiceResponse Vicki 1]] "Он быть глупый козёл, но он быть только мальчик. Детям умирать неправильно."),
 				},
 				DoorLocked = {
-					T(890000000000056, --[[ModItemVoiceResponse Vicki 1]] "Заперто. Это недолго."),
+					T(138350648013, --[[ModItemVoiceResponse Vicki 1]] "Заперто. Это недолго."),
 				},
 				Downed = {
-					T(890000000000899, --[[ModItemVoiceResponse Vicki 1]] "Такое даже я не починить."),
-					T(890000000000493, --[[ModItemVoiceResponse Vicki 2]] "Скажи Джеймсу... не лапать мои... mi тачки."),
+					T(686408593572, --[[ModItemVoiceResponse Vicki 1]] "Такое даже я не починить."),
+					T(423846615548, --[[ModItemVoiceResponse Vicki 2]] "Скажи Джеймсу... не лапать мои... mi тачки."),
 				},
 				Exhausted = {
-					T(890000000000049, --[[ModItemVoiceResponse Vicki 1]] "Надо спать. Бак совсем пустой."),
+					T(135056393694, --[[ModItemVoiceResponse Vicki 1]] "Надо спать. Бак совсем пустой."),
 				},
 				FriendlyFireBuddy1 = TConcat({
 					T(763366416906, --[[ModItemVoiceResponse Vicki FriendlyFireBuddy1 VoiceResponse FriendlyFireBuddy1 - Played on friendly fire by the unit hit if the hitting unit is Liked - Jazz_Spider. voice:Vicki]] "Сеструха, я тя люблю и все такое, но убери свою пушку с моей спины!")
 				}),
 				FriendlyFireGeneral = {
-					T(890000000000247, --[[ModItemVoiceResponse Vicki 1]] "Ты нарываться."),
+					T(274629405649, --[[ModItemVoiceResponse Vicki 1]] "Ты нарываться."),
 				},
 				FriendlyFireLearnToDislike1 = {
-					T(890000000000121, --[[ModItemVoiceResponse Vicki 1]] "Этот мальчик думать только о девочках. Больше вообще не думать."),
+					T(191502064244, --[[ModItemVoiceResponse Vicki 1]] "Этот мальчик думать только о девочках. Больше вообще не думать."),
 				},
 				GasAreaSelection = {
-					T(890000000001053, --[[ModItemVoiceResponse Vicki 1]] "(кашляет)"),
+					T(790479867187, --[[ModItemVoiceResponse Vicki 1]] "(кашляет)"),
 				},
 				GroupOrder = {
-					T(890000000000703, --[[ModItemVoiceResponse Vicki 1]] "Мы гулять."),
-					T(890000000000736, --[[ModItemVoiceResponse Vicki 2]] "За мной."),
-					T(890000000000369, --[[ModItemVoiceResponse Vicki 3]] "Ya mon."),
-					T(890000000001031, --[[ModItemVoiceResponse Vicki 4]] "Вперёд."),
-					T(890000000000902, --[[ModItemVoiceResponse Vicki 5]] "Хожу."),
+					T(550470930101, --[[ModItemVoiceResponse Vicki 1]] "Мы гулять."),
+					T(574224204136, --[[ModItemVoiceResponse Vicki 2]] "За мной."),
+					T(336590450752, --[[ModItemVoiceResponse Vicki 3]] "Ya mon."),
+					T(781039780736, --[[ModItemVoiceResponse Vicki 4]] "Вперёд."),
+					T(691423125493, --[[ModItemVoiceResponse Vicki 5]] "Хожу."),
 				},
 				HealReceived = {
-					T(890000000000487, --[[ModItemVoiceResponse Vicki 1]] "Как новая."),
+					T(420236253274, --[[ModItemVoiceResponse Vicki 1]] "Как новая."),
 				},
 				HeavilyWoundedSelection = {
-					T(890000000001351, --[[ModItemVoiceResponse Vicki 1]] "Мне как-то плохо."),
+					T(977305205304, --[[ModItemVoiceResponse Vicki 1]] "Мне как-то плохо."),
 				},
 				HeavyBreathing = {
-					T(890000000001220, --[[ModItemVoiceResponse Vicki 1]] "(heavy breath)"),
-					T(890000000001084, --[[ModItemVoiceResponse Vicki 2]] "(heavy breath_2)"),
+					T(875309914196, --[[ModItemVoiceResponse Vicki 1]] "(heavy breath)"),
+					T(807139324003, --[[ModItemVoiceResponse Vicki 2]] "(heavy breath_2)"),
 				},
 				Idle = {
-					T(890000000000751, --[[ModItemVoiceResponse Vicki 1]] "Скучно. Хочу что-нибудь поделать."),
+					T(583172918387, --[[ModItemVoiceResponse Vicki 1]] "Скучно. Хочу что-нибудь поделать."),
 				},
 				InteractableFound = {
-					T(890000000000698, --[[ModItemVoiceResponse Vicki 1]] "Ой. Надо посмотреть."),
-					T(890000000000271, --[[ModItemVoiceResponse Vicki 2]] "Это стоит проверить."),
+					T(549200596685, --[[ModItemVoiceResponse Vicki 1]] "Ой. Надо посмотреть."),
+					T(283593640775, --[[ModItemVoiceResponse Vicki 2]] "Это стоит проверить."),
 				},
 				InterestingSector = {
-					T(890000000000188, --[[ModItemVoiceResponse Vicki 1]] "В этом секторе быть что-то интересное."),
+					T(244207860762, --[[ModItemVoiceResponse Vicki 1]] "В этом секторе быть что-то интересное."),
 				},
 				ItemDeteriorates = {
-					T(890000000001212, --[[ModItemVoiceResponse Vicki 1]] "Снаряжение надо ремонтировать."),
+					T(870608957557, --[[ModItemVoiceResponse Vicki 1]] "Снаряжение надо ремонтировать."),
 				},
 				ItemInPoorConditionEquipped = {
-					T(890000000000251, --[[ModItemVoiceResponse Vicki 1]] "Чур, без меня не чинить, да?"),
+					T(277486901740, --[[ModItemVoiceResponse Vicki 1]] "Чур, без меня не чинить, да?"),
 				},
 				Jumping = {
-					T(890000000001274, --[[ModItemVoiceResponse Vicki 1]] "(jumping over something)"),
-					T(890000000000672, --[[ModItemVoiceResponse Vicki 2]] "(jumping over something_2)"),
+					T(917980613347, --[[ModItemVoiceResponse Vicki 1]] "(jumping over something)"),
+					T(534089573511, --[[ModItemVoiceResponse Vicki 2]] "(jumping over something_2)"),
 				},
 				KillFriendlyFireBuddy1 = TConcat({
 					T(844199942341, --[[ModItemVoiceResponse Vicki KillFriendlyFireBuddy1 VoiceResponse KillFriendlyFireBuddy1 - Played when a unit kills an ally with friendly fire and the dying unit is Liked - Jazz_Spider. voice:Vicki]] "Подруга, как жеж это... Я... Ты... Тя... О, Матерь Божья, как стыдно очень!")
 				}),
 				KillFriendlyFireGeneral = {
-					T(890000000001250, --[[ModItemVoiceResponse Vicki 1]] "Плохой день. Я быть слишком смертоносная."),
+					T(893127367874, --[[ModItemVoiceResponse Vicki 1]] "Плохой день. Я быть слишком смертоносная."),
 				},
 				KillFriendlyFireLearnToDislike1 = {
-					T(890000000000852, --[[ModItemVoiceResponse Vicki 1]] "Что ж. Я не специально, но думать, сёстры быть только рады."),
+					T(650367989495, --[[ModItemVoiceResponse Vicki 1]] "Что ж. Я не специально, но думать, сёстры быть только рады."),
 				},
 				LearnToDislike1 = {
-					T(890000000001022, --[[ModItemVoiceResponse Vicki 1]] "Мне не нравится Смайли. Он вечно глазеть на девушек. Точно нехорошее думать."),
+					T(773778742124, --[[ModItemVoiceResponse Vicki 1]] "Мне не нравится Смайли. Он вечно глазеть на девушек. Точно нехорошее думать."),
 				},
 				LevelUp = {
-					T(890000000000401, --[[ModItemVoiceResponse Vicki 1]] "Хорошо! Я становлюсь всё лучше!"),
+					T(353367638832, --[[ModItemVoiceResponse Vicki 1]] "Хорошо! Я становлюсь всё лучше!"),
 				},
 				LockedItemMove = {
-					T(890000000001304, --[[ModItemVoiceResponse Vicki 1]] "Не тронь мои инструменты."),
+					T(936324954041, --[[ModItemVoiceResponse Vicki 1]] "Не тронь мои инструменты."),
 				},
 				LootFound = {
-					T(890000000001021, --[[ModItemVoiceResponse Vicki 1]] "Смотри сюда свои глаза."),
-					T(890000000001202, --[[ModItemVoiceResponse Vicki 2]] "Это интересно."),
-					T(890000000001342, --[[ModItemVoiceResponse Vicki 3]] "Здесь что-то есть, правда."),
+					T(770739535232, --[[ModItemVoiceResponse Vicki 1]] "Смотри сюда свои глаза."),
+					T(865521243755, --[[ModItemVoiceResponse Vicki 2]] "Это интересно."),
+					T(971509644042, --[[ModItemVoiceResponse Vicki 3]] "Здесь что-то есть, правда."),
 				},
 				LootOpened = {
-					T(890000000000357, --[[ModItemVoiceResponse Vicki 1]] "Я надейся, тут есть хорошие вещи."),
+					T(331124232570, --[[ModItemVoiceResponse Vicki 1]] "Я надейся, тут есть хорошие вещи."),
 				},
 				LowChanceShot = {
-					T(890000000000045, --[[ModItemVoiceResponse Vicki 1]] "Ya mon! Головой думать надо!"),
+					T(128566458631, --[[ModItemVoiceResponse Vicki 1]] "Ya mon! Головой думать надо!"),
 				},
 				ManyEnemiesSelection = {
-					T(890000000000674, --[[ModItemVoiceResponse Vicki 1]] "Грубияны окружать меня!"),
+					T(535749925624, --[[ModItemVoiceResponse Vicki 1]] "Грубияны окружать меня!"),
 				},
 				MineDisarmed = {
-					T(890000000000793, --[[ModItemVoiceResponse Vicki 1]] "Теперь не бабахать."),
+					T(615946925382, --[[ModItemVoiceResponse Vicki 1]] "Теперь не бабахать."),
 				},
 				MineFound = {
-					T(890000000001272, --[[ModItemVoiceResponse Vicki 1]] "Берегись бабаха!"),
+					T(917447088752, --[[ModItemVoiceResponse Vicki 1]] "Берегись бабаха!"),
 				},
 				MineNearbySelection = {
-					T(890000000000790, --[[ModItemVoiceResponse Vicki 1]] "Плохое дело. Я не хотеть туда ходить."),
+					T(615774905947, --[[ModItemVoiceResponse Vicki 1]] "Плохое дело. Я не хотеть туда ходить."),
 				},
 				MissHighChance = {
-					T(890000000000337, --[[ModItemVoiceResponse Vicki 1]] "Как я промазать?"),
+					T(319450865976, --[[ModItemVoiceResponse Vicki 1]] "Как я промазать?"),
 				},
 				MissedByKillShot = {
-					T(890000000000948, --[[ModItemVoiceResponse Vicki 1]] "Меня защищать духи!"),
+					T(713906697674, --[[ModItemVoiceResponse Vicki 1]] "Меня защищать духи!"),
 				},
 				MockGeneral = {
-					T(890000000000817, --[[ModItemVoiceResponse Vicki 1]] "У тебя быть всё под контролем, правда."),
+					T(625821422565, --[[ModItemVoiceResponse Vicki 1]] "У тебя быть всё под контролем, правда."),
 				},
 				MockLearnToDislike1 = TConcat({
 					T(872009026452, --[[ModItemVoiceResponse Vicki MockLearnToDislike1 VoiceResponse MockLearnToDislike1 - Played on a high chance miss by Smiley. voice:Vicki]] "Stop looking at us girls and you may just hit something.")
@@ -150273,504 +150273,504 @@ displayName]] "Legion Garrison"),
 					T(619763824975, --[[ModItemVoiceResponse Vicki MockLike1 VoiceResponse MockLike1 - Played on a high chance miss by Jazz_Spider. voice:Vicki]] "Не парься, сестра, я тя и в пушках и в движках прикрою! ")
 				}),
 				NoAmmo = {
-					T(890000000000835, --[[ModItemVoiceResponse Vicki 1]] "В пушке быть пусто."),
+					T(639861807206, --[[ModItemVoiceResponse Vicki 1]] "В пушке быть пусто."),
 				},
 				NotNow = {
-					T(890000000000128, --[[ModItemVoiceResponse Vicki 1]] "Не сейчас."),
+					T(193417861302, --[[ModItemVoiceResponse Vicki 1]] "Не сейчас."),
 				},
 				OpponentFound = {
-					T(890000000000806, --[[ModItemVoiceResponse Vicki 1]] "Тс-с! Враги!"),
-					T(890000000000077, --[[ModItemVoiceResponse Vicki 2]] "Опять эти ублюдки!"),
-					T(890000000001167, --[[ModItemVoiceResponse Vicki 3]] "Я видеть ублюдков."),
+					T(621547282985, --[[ModItemVoiceResponse Vicki 1]] "Тс-с! Враги!"),
+					T(156449293871, --[[ModItemVoiceResponse Vicki 2]] "Опять эти ублюдки!"),
+					T(857984215880, --[[ModItemVoiceResponse Vicki 3]] "Я видеть ублюдков."),
 				},
 				OpponentKilled = {
-					T(890000000000063, --[[ModItemVoiceResponse Vicki 1]] "Этот точно быть убитый."),
-					T(890000000000088, --[[ModItemVoiceResponse Vicki 2]] "Пока-пока."),
-					T(890000000001132, --[[ModItemVoiceResponse Vicki 3]] "Ублюдок всё."),
-					T(890000000001174, --[[ModItemVoiceResponse Vicki 4]] "Ты их ставить - я валить."),
-					T(890000000000536, --[[ModItemVoiceResponse Vicki 5]] "Одного грубияна стать меньше."),
+					T(144631168580, --[[ModItemVoiceResponse Vicki 1]] "Этот точно быть убитый."),
+					T(164885783183, --[[ModItemVoiceResponse Vicki 2]] "Пока-пока."),
+					T(839733610656, --[[ModItemVoiceResponse Vicki 3]] "Ублюдок всё."),
+					T(860245897450, --[[ModItemVoiceResponse Vicki 4]] "Ты их ставить - я валить."),
+					T(441070340116, --[[ModItemVoiceResponse Vicki 5]] "Одного грубияна стать меньше."),
 				},
 				OpponentKilledAnimal = {
-					T(890000000000122, --[[ModItemVoiceResponse Vicki 1]] "Эта зверь больше не беспокоить."),
+					T(191552006518, --[[ModItemVoiceResponse Vicki 1]] "Эта зверь больше не беспокоить."),
 				},
 				OpponentKilledHeadshot = {
-					T(890000000000434, --[[ModItemVoiceResponse Vicki 1]] "Точная стрельба!"),
-					T(890000000001355, --[[ModItemVoiceResponse Vicki 2]] "Кто пробовать лучше? А?"),
+					T(371015821950, --[[ModItemVoiceResponse Vicki 1]] "Точная стрельба!"),
+					T(980755066341, --[[ModItemVoiceResponse Vicki 2]] "Кто пробовать лучше? А?"),
 				},
 				OpponentKilledStealth = {
-					T(890000000001218, --[[ModItemVoiceResponse Vicki 1]] "Меня не видеть."),
-					T(890000000001331, --[[ModItemVoiceResponse Vicki 2]] "Я убивать тихо."),
+					T(874716759078, --[[ModItemVoiceResponse Vicki 1]] "Меня не видеть."),
+					T(963171414466, --[[ModItemVoiceResponse Vicki 2]] "Я убивать тихо."),
 				},
 				Order = {
-					T(890000000001031, --[[ModItemVoiceResponse Vicki 1]] "Вперёд."),
-					T(890000000000439, --[[ModItemVoiceResponse Vicki 2]] "Я слушать приказ."),
-					T(890000000000748, --[[ModItemVoiceResponse Vicki 3]] "Я гулять."),
-					T(890000000000821, --[[ModItemVoiceResponse Vicki 4]] "Ya mon."),
-					T(890000000000902, --[[ModItemVoiceResponse Vicki 5]] "Хожу."),
+					T(781039780736, --[[ModItemVoiceResponse Vicki 1]] "Вперёд."),
+					T(373797711312, --[[ModItemVoiceResponse Vicki 2]] "Я слушать приказ."),
+					T(581036882789, --[[ModItemVoiceResponse Vicki 3]] "Я гулять."),
+					T(630840274742, --[[ModItemVoiceResponse Vicki 4]] "Ya mon."),
+					T(691423125493, --[[ModItemVoiceResponse Vicki 5]] "Хожу."),
 				},
 				Outnumbered = {
-					T(890000000000613, --[[ModItemVoiceResponse Vicki 1]] "Кто звать этих грубиянов?"),
+					T(492300479566, --[[ModItemVoiceResponse Vicki 1]] "Кто звать этих грубиянов?"),
 				},
 				Overwatch = {
-					T(890000000000424, --[[ModItemVoiceResponse Vicki 1]] "Я смотреть в оба."),
+					T(361654974396, --[[ModItemVoiceResponse Vicki 1]] "Я смотреть в оба."),
 				},
 				OverwatchSelection = {
-					T(890000000001270, --[[ModItemVoiceResponse Vicki 1]] "Грубияны класть на меня глаз!"),
+					T(916381268574, --[[ModItemVoiceResponse Vicki 1]] "Грубияны класть на меня глаз!"),
 				},
 				Pain = {
-					T(890000000001108, --[[ModItemVoiceResponse Vicki 1]] "Р-р-р!"),
-					T(890000000000176, --[[ModItemVoiceResponse Vicki 2]] "Ох-х."),
-					T(890000000000577, --[[ModItemVoiceResponse Vicki 3]] "Ай!"),
-					T(890000000000304, --[[ModItemVoiceResponse Vicki 4]] "Оу."),
-					T(890000000000474, --[[ModItemVoiceResponse Vicki 5]] "Ох."),
-					T(890000000000430, --[[ModItemVoiceResponse Vicki 6]] "Pain6"),
-					T(890000000001105, --[[ModItemVoiceResponse Vicki 7]] "Pain7"),
+					T(822401091969, --[[ModItemVoiceResponse Vicki 1]] "Р-р-р!"),
+					T(233555718529, --[[ModItemVoiceResponse Vicki 2]] "Ох-х."),
+					T(469107237345, --[[ModItemVoiceResponse Vicki 3]] "Ай!"),
+					T(295339589748, --[[ModItemVoiceResponse Vicki 4]] "Оу."),
+					T(407140317714, --[[ModItemVoiceResponse Vicki 5]] "Ох."),
+					T(366138676126, --[[ModItemVoiceResponse Vicki 6]] "Pain6"),
+					T(820712969627, --[[ModItemVoiceResponse Vicki 7]] "Pain7"),
 				},
 				PinDown = {
-					T(890000000000024, --[[ModItemVoiceResponse Vicki 1]] "Не стесняйся. Высунь голову!"),
+					T(111936750099, --[[ModItemVoiceResponse Vicki 1]] "Не стесняйся. Высунь голову!"),
 				},
 				PraisesBuddy1 = TConcat({
 					T(390899348731, --[[ModItemVoiceResponse Vicki PraisesBuddy1 VoiceResponse PraisesBuddy1 - Played on a successful kill by Jazz_Spider. voice:Vicki]] "Паук... Горжусь я ей. Способная деваха! ")
 				}),
 				PraisesFemale = {
-					T(890000000001371, --[[ModItemVoiceResponse Vicki 1]] "Хорошо!"),
+					T(993283891351, --[[ModItemVoiceResponse Vicki 1]] "Хорошо!"),
 				},
 				PraisesLearnToDislike1 = {
-					T(890000000001326, --[[ModItemVoiceResponse Vicki 1]] "Ты стать бы ещё лучше, не смотри ты девушкам под юбки."),
+					T(960441619489, --[[ModItemVoiceResponse Vicki 1]] "Ты стать бы ещё лучше, не смотри ты девушкам под юбки."),
 				},
 				PraisesMale = {
-					T(890000000000298, --[[ModItemVoiceResponse Vicki 1]] "Неплохо для мужика."),
+					T(290681132647, --[[ModItemVoiceResponse Vicki 1]] "Неплохо для мужика."),
 				},
 				SectorArrived = {
-					T(890000000000392, --[[ModItemVoiceResponse Vicki 1]] "Я прийти. Что дальше?"),
+					T(347410768338, --[[ModItemVoiceResponse Vicki 1]] "Я прийти. Что дальше?"),
 				},
 				Selection = {
-					T(890000000001093, --[[ModItemVoiceResponse Vicki 1]] "Да?"),
-					T(890000000001119, --[[ModItemVoiceResponse Vicki 2]] "Я слушать."),
-					T(890000000001107, --[[ModItemVoiceResponse Vicki 3]] "Где?"),
+					T(811846779903, --[[ModItemVoiceResponse Vicki 1]] "Да?"),
+					T(829388315960, --[[ModItemVoiceResponse Vicki 2]] "Я слушать."),
+					T(822227356760, --[[ModItemVoiceResponse Vicki 3]] "Где?"),
 				},
 				SelectionStealth = {
-					T(890000000000730, --[[ModItemVoiceResponse Vicki 1]] "Ya mon. Тихо-тихо."),
-					T(890000000000906, --[[ModItemVoiceResponse Vicki 2]] "Без лишнего шума."),
-					T(890000000000379, --[[ModItemVoiceResponse Vicki 3]] "Я молча."),
-					T(890000000000900, --[[ModItemVoiceResponse Vicki 4]] "Ш-ш-ш..."),
-					T(890000000001349, --[[ModItemVoiceResponse Vicki 5]] "Я тихо."),
+					T(568148975578, --[[ModItemVoiceResponse Vicki 1]] "Ya mon. Тихо-тихо."),
+					T(695559602723, --[[ModItemVoiceResponse Vicki 2]] "Без лишнего шума."),
+					T(343554808532, --[[ModItemVoiceResponse Vicki 3]] "Я молча."),
+					T(688060994277, --[[ModItemVoiceResponse Vicki 4]] "Ш-ш-ш..."),
+					T(975555338759, --[[ModItemVoiceResponse Vicki 5]] "Я тихо."),
 				},
 				SeriouslyWounded = {
-					T(890000000000293, --[[ModItemVoiceResponse Vicki 1]] "Во мне быть много вмятин. Мне надо помочь."),
-					T(890000000001131, --[[ModItemVoiceResponse Vicki 2]] "Господи Сусе! Кажется, я этого не выжить, правда!"),
-					T(890000000000953, --[[ModItemVoiceResponse Vicki 3]] "Ещё такая рана - и я умирать, правда!"),
+					T(288825391025, --[[ModItemVoiceResponse Vicki 1]] "Во мне быть много вмятин. Мне надо помочь."),
+					T(839301389386, --[[ModItemVoiceResponse Vicki 2]] "Господи Сусе! Кажется, я этого не выжить, правда!"),
+					T(715502417196, --[[ModItemVoiceResponse Vicki 3]] "Ещё такая рана - и я умирать, правда!"),
 				},
 				Startled = {
-					T(890000000001366, --[[ModItemVoiceResponse Vicki 1]] "А?"),
-					T(890000000000983, --[[ModItemVoiceResponse Vicki 2]] "Что за..."),
+					T(989888040933, --[[ModItemVoiceResponse Vicki 1]] "А?"),
+					T(735885937759, --[[ModItemVoiceResponse Vicki 2]] "Что за..."),
 				},
 				SurroundedPain = {
-					T(890000000000923, --[[ModItemVoiceResponse Vicki 1]] "Ох. У меня быть проблема."),
-					T(890000000000168, --[[ModItemVoiceResponse Vicki 2]] "Они меня окружать!"),
+					T(697531697974, --[[ModItemVoiceResponse Vicki 1]] "Ох. У меня быть проблема."),
+					T(226078075901, --[[ModItemVoiceResponse Vicki 2]] "Они меня окружать!"),
 				},
 				TacticalFocus = {
-					T(890000000000449, --[[ModItemVoiceResponse Vicki 1]] "Это стыдно. Нужно попадать! Сейчас!"),
+					T(385377532653, --[[ModItemVoiceResponse Vicki 1]] "Это стыдно. Нужно попадать! Сейчас!"),
 				},
 				TacticalKilling = {
-					T(890000000000819, --[[ModItemVoiceResponse Vicki 1]] "Роскошность!"),
+					T(629188222726, --[[ModItemVoiceResponse Vicki 1]] "Роскошность!"),
 				},
 				TacticalPressing = {
-					T(890000000000031, --[[ModItemVoiceResponse Vicki 1]] "Да! Мы их измотать, правда!"),
+					T(117755589547, --[[ModItemVoiceResponse Vicki 1]] "Да! Мы их измотать, правда!"),
 				},
 				TakeCover = {
-					T(890000000001176, --[[ModItemVoiceResponse Vicki 1]] "Я лежать!"),
+					T(860845375531, --[[ModItemVoiceResponse Vicki 1]] "Я лежать!"),
 				},
 				ThreatSelection = {
-					T(890000000001082, --[[ModItemVoiceResponse Vicki 1]] "Мне плохо тут быть!"),
+					T(806615134965, --[[ModItemVoiceResponse Vicki 1]] "Мне плохо тут быть!"),
 				},
 				ThrowGrenade = {
-					T(890000000000308, --[[ModItemVoiceResponse Vicki 1]] "Я бросать ананас!"),
+					T(296189149948, --[[ModItemVoiceResponse Vicki 1]] "Я бросать ананас!"),
 				},
 				Tired = {
-					T(890000000000831, --[[ModItemVoiceResponse Vicki 1]] "Мне спать нужно."),
+					T(637123530518, --[[ModItemVoiceResponse Vicki 1]] "Мне спать нужно."),
 				},
 				Travelling = {
-					T(890000000000592, --[[ModItemVoiceResponse Vicki 1]] "Врагов здесь не быть. Надо дальше."),
+					T(477712081000, --[[ModItemVoiceResponse Vicki 1]] "Врагов здесь не быть. Надо дальше."),
 				},
 				ValuableItemFound = {
-					T(890000000000542, --[[ModItemVoiceResponse Vicki 1]] "Я менять это на много карбюраторов!"),
-					T(890000000001126, --[[ModItemVoiceResponse Vicki 2]] "Ох... Такой подарок должен быть в обёртке!"),
+					T(447761117846, --[[ModItemVoiceResponse Vicki 1]] "Я менять это на много карбюраторов!"),
+					T(833717101300, --[[ModItemVoiceResponse Vicki 2]] "Ох... Такой подарок должен быть в обёртке!"),
 				},
 				WeaponBroken = {
-					T(890000000000432, --[[ModItemVoiceResponse Vicki 1]] "Эту штуку пора отправлять в мастерскую!"),
+					T(368117462568, --[[ModItemVoiceResponse Vicki 1]] "Эту штуку пора отправлять в мастерскую!"),
 				},
 				WeaponJammed = {
-					T(890000000000535, --[[ModItemVoiceResponse Vicki 1]] "Что? Ты меня подставлять?"),
+					T(440011612278, --[[ModItemVoiceResponse Vicki 1]] "Что? Ты меня подставлять?"),
 				},
 				Wounded = {
-					T(890000000000051, --[[ModItemVoiceResponse Vicki 1]] "Ох, только не опять!"),
-					T(890000000000303, --[[ModItemVoiceResponse Vicki 2]] "Во мне рана!"),
-					T(890000000000696, --[[ModItemVoiceResponse Vicki 3]] "Это ерунда, правда! Меня синяками не покроешь!"),
+					T(136380207450, --[[ModItemVoiceResponse Vicki 1]] "Ох, только не опять!"),
+					T(295103513285, --[[ModItemVoiceResponse Vicki 2]] "Во мне рана!"),
+					T(548770804711, --[[ModItemVoiceResponse Vicki 3]] "Это ерунда, правда! Меня синяками не покроешь!"),
 				},
 				group = "MercenariesOld",
 				id = "Vicki",
 			}),
 			PlaceObj('ModItemVoiceResponse', {
 				ActivityFinished = {
-					T(890000000000140, --[[ModItemVoiceResponse Wolf 1]] "Я всё сделал. Что дальше?"),
+					T(199262599409, --[[ModItemVoiceResponse Wolf 1]] "Я всё сделал. Что дальше?"),
 				},
 				ActivityStarted = {
-					T(890000000000888, --[[ModItemVoiceResponse Wolf 1]] "О'кей. Начнём."),
+					T(677674496739, --[[ModItemVoiceResponse Wolf 1]] "О'кей. Начнём."),
 				},
 				AimAttack = {
-					T(890000000000179, --[[ModItemVoiceResponse Wolf 1]] "А теперь внимание."),
-					T(890000000001068, --[[ModItemVoiceResponse Wolf 2]] "Сейчас эта красава упадёт."),
-					T(890000000001211, --[[ModItemVoiceResponse Wolf 3]] "Сейчас Волк сделает «ам!»."),
+					T(236203299389, --[[ModItemVoiceResponse Wolf 1]] "А теперь внимание."),
+					T(796939834008, --[[ModItemVoiceResponse Wolf 2]] "Сейчас эта красава упадёт."),
+					T(869897823244, --[[ModItemVoiceResponse Wolf 3]] "Сейчас Волк сделает «ам!»."),
 				},
 				AimAttackStealth = {
-					T(890000000000832, --[[ModItemVoiceResponse Wolf 1]] "А теперь - сюрприз, крошка."),
-					T(890000000000178, --[[ModItemVoiceResponse Wolf 2]] "Смотрите и учитесь. Показываю в стиле коммандос."),
+					T(638573815982, --[[ModItemVoiceResponse Wolf 1]] "А теперь - сюрприз, крошка."),
+					T(235943355501, --[[ModItemVoiceResponse Wolf 2]] "Смотрите и учитесь. Показываю в стиле коммандос."),
 				},
 				AimAttack_Low = {
-					T(890000000000351, --[[ModItemVoiceResponse Wolf 1]] "Шансы ни к чёрту."),
+					T(327506112223, --[[ModItemVoiceResponse Wolf 1]] "Шансы ни к чёрту."),
 				},
 				AimAttack_LowStealth = {
-					T(890000000000506, --[[ModItemVoiceResponse Wolf 1]] "Если промахнусь - это будет залёт!"),
-					T(890000000000476, --[[ModItemVoiceResponse Wolf 2]] "Фигня приказ! Я так себя демаскирую!"),
+					T(427723916708, --[[ModItemVoiceResponse Wolf 1]] "Если промахнусь - это будет залёт!"),
+					T(411726992925, --[[ModItemVoiceResponse Wolf 2]] "Фигня приказ! Я так себя демаскирую!"),
 				},
 				AmmoLow = {
-					T(890000000000903, --[[ModItemVoiceResponse Wolf 1]] "Патронов в обрез, шеф. Подкинь ещё."),
+					T(691515011797, --[[ModItemVoiceResponse Wolf 1]] "Патронов в обрез, шеф. Подкинь ещё."),
 				},
 				AnimalFound = {
-					T(890000000000372, --[[ModItemVoiceResponse Wolf 1]] "Шеф, там какая-то дичь."),
+					T(339016700707, --[[ModItemVoiceResponse Wolf 1]] "Шеф, там какая-то дичь."),
 				},
 				Autofire = {
-					T(890000000001069, --[[ModItemVoiceResponse Wolf 1]] "Вали их!"),
+					T(797541582914, --[[ModItemVoiceResponse Wolf 1]] "Вали их!"),
 				},
 				BandageDownedUnit = {
-					T(890000000000335, --[[ModItemVoiceResponse Wolf 1]] "Вот так. Ясно? Продолжай прижимать здесь."),
+					T(318502377234, --[[ModItemVoiceResponse Wolf 1]] "Вот так. Ясно? Продолжай прижимать здесь."),
 				},
 				BecomeHidden = {
-					T(890000000000593, --[[ModItemVoiceResponse Wolf 1]] "Фокус. Теперь меня не видно, да?"),
-					T(890000000000178, --[[ModItemVoiceResponse Wolf 2]] "Смотрите и учитесь. Показываю в стиле коммандос."),
+					T(479450722614, --[[ModItemVoiceResponse Wolf 1]] "Фокус. Теперь меня не видно, да?"),
+					T(235943355501, --[[ModItemVoiceResponse Wolf 2]] "Смотрите и учитесь. Показываю в стиле коммандос."),
 				},
 				BusySatView = {
-					T(890000000000871, --[[ModItemVoiceResponse Wolf 1]] "В процессе."),
+					T(663481536105, --[[ModItemVoiceResponse Wolf 1]] "В процессе."),
 				},
 				Climbing = {
-					T(890000000000858, --[[ModItemVoiceResponse Wolf 1]] "(climbing)"),
-					T(890000000001140, --[[ModItemVoiceResponse Wolf 2]] "(climbing_2)"),
-					T(890000000000830, --[[ModItemVoiceResponse Wolf 3]] "(climbing_3)"),
+					T(654637411785, --[[ModItemVoiceResponse Wolf 1]] "(climbing)"),
+					T(844269525939, --[[ModItemVoiceResponse Wolf 2]] "(climbing_2)"),
+					T(636996380095, --[[ModItemVoiceResponse Wolf 3]] "(climbing_3)"),
 				},
 				CombatEndEnemiesRemain = {
-					T(890000000001233, --[[ModItemVoiceResponse Wolf 1]] "Будьте готовы. Они ждут момента, когда мы расслабимся."),
+					T(878939538097, --[[ModItemVoiceResponse Wolf 1]] "Будьте готовы. Они ждут момента, когда мы расслабимся."),
 				},
 				CombatEndEnemiesRetreated = {
-					T(890000000001249, --[[ModItemVoiceResponse Wolf 1]] "Похоже, они отступили. Сектор безопасен."),
+					T(892448492026, --[[ModItemVoiceResponse Wolf 1]] "Похоже, они отступили. Сектор безопасен."),
 				},
 				CombatEndNoEnemies = {
-					T(890000000000241, --[[ModItemVoiceResponse Wolf 1]] "Осталось уведомить их родственников."),
+					T(272164567216, --[[ModItemVoiceResponse Wolf 1]] "Осталось уведомить их родственников."),
 				},
 				CombatMovement = {
-					T(890000000001083, --[[ModItemVoiceResponse Wolf 1]] "Бегом, бегом, бегом!"),
-					T(890000000000884, --[[ModItemVoiceResponse Wolf 2]] "Смотрите и учитесь."),
-					T(890000000000996, --[[ModItemVoiceResponse Wolf 3]] "Танцуем!"),
-					T(890000000001039, --[[ModItemVoiceResponse Wolf 4]] "Будет сделано."),
-					T(890000000000334, --[[ModItemVoiceResponse Wolf 5]] "Это можно."),
-					T(890000000000163, --[[ModItemVoiceResponse Wolf 6]] "Без проблем."),
+					T(806860010381, --[[ModItemVoiceResponse Wolf 1]] "Бегом, бегом, бегом!"),
+					T(674715493767, --[[ModItemVoiceResponse Wolf 2]] "Смотрите и учитесь."),
+					T(750705482381, --[[ModItemVoiceResponse Wolf 3]] "Танцуем!"),
+					T(785779643663, --[[ModItemVoiceResponse Wolf 4]] "Будет сделано."),
+					T(317999974840, --[[ModItemVoiceResponse Wolf 5]] "Это можно."),
+					T(220861073049, --[[ModItemVoiceResponse Wolf 6]] "Без проблем."),
 				},
 				CombatMovementStealth = {
-					T(890000000000690, --[[ModItemVoiceResponse Wolf 1]] "Волк вышел на охоту."),
-					T(890000000000808, --[[ModItemVoiceResponse Wolf 2]] "Готовлюсь подловить добычу."),
-					T(890000000000246, --[[ModItemVoiceResponse Wolf 3]] "Работаю спокойно и без шума."),
+					T(544404662770, --[[ModItemVoiceResponse Wolf 1]] "Волк вышел на охоту."),
+					T(621834881278, --[[ModItemVoiceResponse Wolf 2]] "Готовлюсь подловить добычу."),
+					T(274240057906, --[[ModItemVoiceResponse Wolf 3]] "Работаю спокойно и без шума."),
 				},
 				CombatStartDetected = {
-					T(890000000001364, --[[ModItemVoiceResponse Wolf 1]] "Похоже, кто-то их предупредил!"),
+					T(988181110649, --[[ModItemVoiceResponse Wolf 1]] "Похоже, кто-то их предупредил!"),
 				},
 				CombatStartPlayer = {
-					T(890000000001268, --[[ModItemVoiceResponse Wolf 1]] "Пора браться за работу."),
+					T(915135599484, --[[ModItemVoiceResponse Wolf 1]] "Пора браться за работу."),
 				},
 				CombatTaskCompleted = {
-					T(890000000000940, --[[ModItemVoiceResponse Wolf 1]] "Мы решили эту задачку, шеф."),
+					T(710403617126, --[[ModItemVoiceResponse Wolf 1]] "Мы решили эту задачку, шеф."),
 				},
 				CombatTaskFailed = {
-					T(890000000000984, --[[ModItemVoiceResponse Wolf 1]] "Похоже, задачки команде пока не по зубам. Ну, мы это поправим."),
+					T(736908020747, --[[ModItemVoiceResponse Wolf 1]] "Похоже, задачки команде пока не по зубам. Ну, мы это поправим."),
 				},
 				CombatTaskGiven = {
-					T(890000000000627, --[[ModItemVoiceResponse Wolf 1]] "Шеф, я тут задачку придумал. Даёшь добро?"),
+					T(499511597743, --[[ModItemVoiceResponse Wolf 1]] "Шеф, я тут задачку придумал. Даёшь добро?"),
 				},
 				Comment = "Standard American accent. Manly. Confident. Instructor. Age: Adult, mature.",
 				ContractExpired = {
-					T(890000000000865, --[[ModItemVoiceResponse Wolf 1]] "Похоже, наш контракт истёк. С тобой очень приятно работать. Ну, теперь ты знаешь, что я умею. Если понадоблюсь, позови."),
+					T(656691643392, --[[ModItemVoiceResponse Wolf 1]] "Похоже, наш контракт истёк. С тобой очень приятно работать. Ну, теперь ты знаешь, что я умею. Если понадоблюсь, позови."),
 				},
 				DeathBuddy1 = {
-					T(890000000000095, --[[ModItemVoiceResponse Wolf 1]] "О нет. Лиска, малыш, только не ты. Я хотел с тобой... чтобы мы... прошвырнулись как-нибудь в Вегас."),
+					T(173129435212, --[[ModItemVoiceResponse Wolf 1]] "О нет. Лиска, малыш, только не ты. Я хотел с тобой... чтобы мы... прошвырнулись как-нибудь в Вегас."),
 				},
 				DeathBuddy2 = TConcat({
 					T(698036404720, --[[ModItemVoiceResponse Wolf DeathBuddy2 VoiceResponse DeathBuddy2 - Played on the death of Jazz_Lynx. voice:Wolf]] "Рыси мне будет не хватать. Он мою задницу всегда прикрывал, когда приходилось тяжело.")
 				}),
 				DeathGeneral = {
-					T(890000000000368, --[[ModItemVoiceResponse Wolf 1]] "Пусть это будет для всех уроком. Слушайте, что я вам говорю, и тогда у вас будет шанс."),
+					T(334996145978, --[[ModItemVoiceResponse Wolf 1]] "Пусть это будет для всех уроком. Слушайте, что я вам говорю, и тогда у вас будет шанс."),
 				},
 				DoorLocked = {
-					T(890000000000682, --[[ModItemVoiceResponse Wolf 1]] "Заперто. Может, вскрыть?"),
+					T(539894222918, --[[ModItemVoiceResponse Wolf 1]] "Заперто. Может, вскрыть?"),
 				},
 				Downed = {
-					T(890000000001020, --[[ModItemVoiceResponse Wolf 1]] "Темнеет в глазах, шеф. Кажется, я не выкарабкаюсь."),
+					T(769162767485, --[[ModItemVoiceResponse Wolf 1]] "Темнеет в глазах, шеф. Кажется, я не выкарабкаюсь."),
 				},
 				Exhausted = {
-					T(890000000000600, --[[ModItemVoiceResponse Wolf 1]] "Знаешь, если не спать - невозможно сосредоточиться. Я вздремну минут пять."),
+					T(483418570836, --[[ModItemVoiceResponse Wolf 1]] "Знаешь, если не спать - невозможно сосредоточиться. Я вздремну минут пять."),
 				},
 				FriendlyFireBuddy1 = {
-					T(890000000000683, --[[ModItemVoiceResponse Wolf 1]] "Лиска, малыш, ты что, со мной заигрываешь?"),
+					T(540727543550, --[[ModItemVoiceResponse Wolf 1]] "Лиска, малыш, ты что, со мной заигрываешь?"),
 				},
 				FriendlyFireBuddy2 = TConcat({
 					T(188581782749, --[[ModItemVoiceResponse Wolf FriendlyFireBuddy2 VoiceResponse FriendlyFireBuddy2 - Played on friendly fire by the unit hit if the hitting unit is Liked - Jazz_Lynx. voice:Wolf]] "Черт. Руди же не мог сделать этого случайно. Это такой намек, чтоб я укрытие занял, точно.")
 				}),
 				FriendlyFireGeneral = {
-					T(890000000000769, --[[ModItemVoiceResponse Wolf 1]] "Видать, пора повторить курс начальной стрелковой."),
+					T(590967630348, --[[ModItemVoiceResponse Wolf 1]] "Видать, пора повторить курс начальной стрелковой."),
 				},
 				GasAreaSelection = {
-					T(890000000000876, --[[ModItemVoiceResponse Wolf 1]] "(кашляет)"),
+					T(670487169271, --[[ModItemVoiceResponse Wolf 1]] "(кашляет)"),
 				},
 				GroupOrder = {
-					T(890000000000167, --[[ModItemVoiceResponse Wolf 1]] "Слышу, шеф."),
-					T(890000000000070, --[[ModItemVoiceResponse Wolf 2]] "Потопали."),
-					T(890000000000645, --[[ModItemVoiceResponse Wolf 3]] "Сделаем, шеф."),
-					T(890000000000334, --[[ModItemVoiceResponse Wolf 4]] "Это можно."),
-					T(890000000000163, --[[ModItemVoiceResponse Wolf 5]] "Без проблем."),
+					T(225228388151, --[[ModItemVoiceResponse Wolf 1]] "Слышу, шеф."),
+					T(152110877592, --[[ModItemVoiceResponse Wolf 2]] "Потопали."),
+					T(517382606631, --[[ModItemVoiceResponse Wolf 3]] "Сделаем, шеф."),
+					T(317999974840, --[[ModItemVoiceResponse Wolf 4]] "Это можно."),
+					T(220861073049, --[[ModItemVoiceResponse Wolf 5]] "Без проблем."),
 				},
 				HealReceived = {
-					T(890000000000907, --[[ModItemVoiceResponse Wolf 1]] "Сойдёт. Мне пора обратно в бой."),
+					T(695795043805, --[[ModItemVoiceResponse Wolf 1]] "Сойдёт. Мне пора обратно в бой."),
 				},
 				HealReceivedSatView = {
-					T(890000000000585, --[[ModItemVoiceResponse Wolf 1]] "Мне уже лучше, шеф."),
+					T(477058607910, --[[ModItemVoiceResponse Wolf 1]] "Мне уже лучше, шеф."),
 				},
 				HeavilyWoundedSelection = {
-					T(890000000000783, --[[ModItemVoiceResponse Wolf 1]] "Мне как-то кисло."),
-					T(890000000000039, --[[ModItemVoiceResponse Wolf 2]] "Теряю кровь литрами."),
+					T(609769641594, --[[ModItemVoiceResponse Wolf 1]] "Мне как-то кисло."),
+					T(121583917548, --[[ModItemVoiceResponse Wolf 2]] "Теряю кровь литрами."),
 				},
 				HeavyBreathing = {
-					T(890000000000216, --[[ModItemVoiceResponse Wolf 1]] "(heavy breath)"),
-					T(890000000001178, --[[ModItemVoiceResponse Wolf 2]] "(heavy breath_2)"),
+					T(254708818339, --[[ModItemVoiceResponse Wolf 1]] "(heavy breath)"),
+					T(861612939341, --[[ModItemVoiceResponse Wolf 2]] "(heavy breath_2)"),
 				},
 				Idle = {
-					T(890000000000126, --[[ModItemVoiceResponse Wolf 1]] "Люблю иногда отдохнуть как следует."),
+					T(192729935448, --[[ModItemVoiceResponse Wolf 1]] "Люблю иногда отдохнуть как следует."),
 				},
 				InteractableFound = {
-					T(890000000000162, --[[ModItemVoiceResponse Wolf 1]] "Это стоит осмотреть."),
-					T(890000000000752, --[[ModItemVoiceResponse Wolf 2]] "На это стоит посмотреть вблизи."),
+					T(220148359899, --[[ModItemVoiceResponse Wolf 1]] "Это стоит осмотреть."),
+					T(583355294524, --[[ModItemVoiceResponse Wolf 2]] "На это стоит посмотреть вблизи."),
 				},
 				InterestingSector = {
-					T(890000000001322, --[[ModItemVoiceResponse Wolf 1]] "Ладно, прочешем местность. Если тут что-нибудь есть, мы это найдём."),
+					T(957518195151, --[[ModItemVoiceResponse Wolf 1]] "Ладно, прочешем местность. Если тут что-нибудь есть, мы это найдём."),
 				},
 				ItemDeteriorates = {
-					T(890000000000340, --[[ModItemVoiceResponse Wolf 1]] "Снаряжение изнашивается. Надо бы не забыть подлатать."),
+					T(323251802648, --[[ModItemVoiceResponse Wolf 1]] "Снаряжение изнашивается. Надо бы не забыть подлатать."),
 				},
 				ItemInPoorConditionEquipped = {
-					T(890000000001063, --[[ModItemVoiceResponse Wolf 1]] "Ты прикалываешься? Это вообще что? Дай хоть наждачкой пройдусь!"),
+					T(791384591257, --[[ModItemVoiceResponse Wolf 1]] "Ты прикалываешься? Это вообще что? Дай хоть наждачкой пройдусь!"),
 				},
 				Jumping = {
-					T(890000000000096, --[[ModItemVoiceResponse Wolf 1]] "(jumping over something)"),
-					T(890000000000706, --[[ModItemVoiceResponse Wolf 2]] "(jumping over something_2)"),
+					T(175338629902, --[[ModItemVoiceResponse Wolf 1]] "(jumping over something)"),
+					T(551997646852, --[[ModItemVoiceResponse Wolf 2]] "(jumping over something_2)"),
 				},
 				KillFriendlyFireBuddy1 = {
-					T(890000000000473, --[[ModItemVoiceResponse Wolf 1]] "Нет! Лиска, малыш, я не нарочно. Ну куда меня понесло?"),
+					T(406488612859, --[[ModItemVoiceResponse Wolf 1]] "Нет! Лиска, малыш, я не нарочно. Ну куда меня понесло?"),
 				},
 				KillFriendlyFireBuddy2 = TConcat({
 					T(299656832368, --[[ModItemVoiceResponse Wolf KillFriendlyFireBuddy2 VoiceResponse KillFriendlyFireBuddy2 - Played when a unit kills an ally with friendly fire and the dying unit is Liked - Jazz_Lynx. voice:Wolf]] "Да как так-то... Рысь, ты был такой молодой, такой сильный... Сколько женщин было у тебя впереди!")
 				}),
 				KillFriendlyFireGeneral = {
-					T(890000000000667, --[[ModItemVoiceResponse Wolf 1]] "Надо было так и оставаться тренером по пейнтболу."),
+					T(529500038430, --[[ModItemVoiceResponse Wolf 1]] "Надо было так и оставаться тренером по пейнтболу."),
 				},
 				LevelUp = {
-					T(890000000000691, --[[ModItemVoiceResponse Wolf 1]] "Чем дольше живёшь - тем труднее тебя убить. Я всегда так говорю."),
+					T(545128601527, --[[ModItemVoiceResponse Wolf 1]] "Чем дольше живёшь - тем труднее тебя убить. Я всегда так говорю."),
 				},
 				LootFound = {
-					T(890000000000221, --[[ModItemVoiceResponse Wolf 1]] "Там что-то есть."),
-					T(890000000000089, --[[ModItemVoiceResponse Wolf 2]] "Что это может быть?"),
-					T(890000000000249, --[[ModItemVoiceResponse Wolf 3]] "Поищем снаряжение."),
+					T(256342419251, --[[ModItemVoiceResponse Wolf 1]] "Там что-то есть."),
+					T(165729272985, --[[ModItemVoiceResponse Wolf 2]] "Что это может быть?"),
+					T(276394518029, --[[ModItemVoiceResponse Wolf 3]] "Поищем снаряжение."),
 				},
 				LootOpened = {
-					T(890000000000218, --[[ModItemVoiceResponse Wolf 1]] "Надеюсь, там будет новая пушка. Но и протеиновый батончик сойдёт."),
+					T(255991569321, --[[ModItemVoiceResponse Wolf 1]] "Надеюсь, там будет новая пушка. Но и протеиновый батончик сойдёт."),
 				},
 				LowChanceShot = {
-					T(890000000000626, --[[ModItemVoiceResponse Wolf 1]] "Зашибись! Вот что здоровый образ жизни делает!"),
+					T(499162515717, --[[ModItemVoiceResponse Wolf 1]] "Зашибись! Вот что здоровый образ жизни делает!"),
 				},
 				ManyEnemiesSelection = {
-					T(890000000000652, --[[ModItemVoiceResponse Wolf 1]] "Враги, шеф. Сказать по правде - очень много врагов."),
+					T(525307874223, --[[ModItemVoiceResponse Wolf 1]] "Враги, шеф. Сказать по правде - очень много врагов."),
 				},
 				MeleeEnemiesClosing = {
-					T(890000000000213, --[[ModItemVoiceResponse Wolf 1]] "Враг дышит мне в спину."),
+					T(252679931567, --[[ModItemVoiceResponse Wolf 1]] "Враг дышит мне в спину."),
 				},
 				MineDisarmed = {
-					T(890000000000786, --[[ModItemVoiceResponse Wolf 1]] "Салаги хоть ходить спокойно смогут."),
+					T(611744449028, --[[ModItemVoiceResponse Wolf 1]] "Салаги хоть ходить спокойно смогут."),
 				},
 				MineFound = {
-					T(890000000000495, --[[ModItemVoiceResponse Wolf 1]] "Берегитесь! Здесь могут быть ещё. Ходим след в след!"),
+					T(424603484642, --[[ModItemVoiceResponse Wolf 1]] "Берегитесь! Здесь могут быть ещё. Ходим след в след!"),
 				},
 				MineNearbySelection = {
-					T(890000000000065, --[[ModItemVoiceResponse Wolf 1]] "Эта штука может рвануть. Я бы попытался разминировать - но результат не гарантирую."),
+					T(146566902805, --[[ModItemVoiceResponse Wolf 1]] "Эта штука может рвануть. Я бы попытался разминировать - но результат не гарантирую."),
 				},
 				MissHighChance = {
-					T(890000000001096, --[[ModItemVoiceResponse Wolf 1]] "А вот так НЕ ДЕЛАЙТЕ. И не заставляйте меня повторять."),
+					T(815338021300, --[[ModItemVoiceResponse Wolf 1]] "А вот так НЕ ДЕЛАЙТЕ. И не заставляйте меня повторять."),
 				},
 				MissedByKillShot = {
-					T(890000000001025, --[[ModItemVoiceResponse Wolf 1]] "Чуть башку мне не снесло!"),
+					T(777506095973, --[[ModItemVoiceResponse Wolf 1]] "Чуть башку мне не снесло!"),
 				},
 				MockGeneral = {
-					T(890000000000816, --[[ModItemVoiceResponse Wolf 1]] "Да не дави ты так на спусковой крючок. И про дыхание не забывай."),
+					T(625551226492, --[[ModItemVoiceResponse Wolf 1]] "Да не дави ты так на спусковой крючок. И про дыхание не забывай."),
 				},
 				MockLike1 = {
-					T(890000000000017, --[[ModItemVoiceResponse Wolf 1]] "Ничего, малыш. В другой раз всё получится!"),
+					T(110119583895, --[[ModItemVoiceResponse Wolf 1]] "Ничего, малыш. В другой раз всё получится!"),
 				},
 				MockLike2 = TConcat({
 					T(261881212602, --[[ModItemVoiceResponse Wolf MockLike2 VoiceResponse MockLike2 - Played on a high chance miss by Jazz_Lynx. voice:Wolf]] "Ну дела, Рысь промазал! Теперь я точно видел все!")
 				}),
 				NoAmmo = {
-					T(890000000000016, --[[ModItemVoiceResponse Wolf 1]] "Пули! Пули не помешают!"),
+					T(109958081893, --[[ModItemVoiceResponse Wolf 1]] "Пули! Пули не помешают!"),
 				},
 				NotNow = {
-					T(890000000000955, --[[ModItemVoiceResponse Wolf 1]] "Не сейчас, шеф. Не до того."),
+					T(717459080879, --[[ModItemVoiceResponse Wolf 1]] "Не сейчас, шеф. Не до того."),
 				},
 				OpponentFound = {
-					T(890000000000616, --[[ModItemVoiceResponse Wolf 1]] "Вижу клоуна."),
-					T(890000000001245, --[[ModItemVoiceResponse Wolf 2]] "Всем внимание, мы не одни."),
+					T(493615824787, --[[ModItemVoiceResponse Wolf 1]] "Вижу клоуна."),
+					T(887809557861, --[[ModItemVoiceResponse Wolf 2]] "Всем внимание, мы не одни."),
 				},
 				OpponentKilled = {
-					T(890000000001239, --[[ModItemVoiceResponse Wolf 1]] "Ещё одна зарубка."),
-					T(890000000000717, --[[ModItemVoiceResponse Wolf 2]] "Плюс один мне."),
-					T(890000000001207, --[[ModItemVoiceResponse Wolf 3]] "Цель поражена, шеф!"),
-					T(890000000000615, --[[ModItemVoiceResponse Wolf 4]] "В клочья!"),
-					T(890000000000048, --[[ModItemVoiceResponse Wolf 5]] "Одним врагом меньше."),
+					T(880662313512, --[[ModItemVoiceResponse Wolf 1]] "Ещё одна зарубка."),
+					T(556040216609, --[[ModItemVoiceResponse Wolf 2]] "Плюс один мне."),
+					T(867325907155, --[[ModItemVoiceResponse Wolf 3]] "Цель поражена, шеф!"),
+					T(493327262582, --[[ModItemVoiceResponse Wolf 4]] "В клочья!"),
+					T(134144226816, --[[ModItemVoiceResponse Wolf 5]] "Одним врагом меньше."),
 				},
 				OpponentKilledAnimal = {
-					T(890000000000646, --[[ModItemVoiceResponse Wolf 1]] "Пришлось усыпить зверя."),
+					T(518636816712, --[[ModItemVoiceResponse Wolf 1]] "Пришлось усыпить зверя."),
 				},
 				OpponentKilledHeadshot = {
-					T(890000000000082, --[[ModItemVoiceResponse Wolf 1]] "Учитесь, леди и джентльмены."),
-					T(890000000001032, --[[ModItemVoiceResponse Wolf 2]] "Образцово-показательно. Всем бы так."),
+					T(161621849445, --[[ModItemVoiceResponse Wolf 1]] "Учитесь, леди и джентльмены."),
+					T(781801972781, --[[ModItemVoiceResponse Wolf 2]] "Образцово-показательно. Всем бы так."),
 				},
 				OpponentKilledMelee = {
-					T(890000000000383, --[[ModItemVoiceResponse Wolf 1]] "Дразнишь Волка - познакомишься с его клыками!"),
+					T(345104317066, --[[ModItemVoiceResponse Wolf 1]] "Дразнишь Волка - познакомишься с его клыками!"),
 				},
 				OpponentKilledStealth = {
-					T(890000000001354, --[[ModItemVoiceResponse Wolf 1]] "Вот как работают коммандос. Все запомнили?"),
-					T(890000000001163, --[[ModItemVoiceResponse Wolf 2]] "Незаметно, тихо, чисто."),
+					T(980547961507, --[[ModItemVoiceResponse Wolf 1]] "Вот как работают коммандос. Все запомнили?"),
+					T(855528249117, --[[ModItemVoiceResponse Wolf 2]] "Незаметно, тихо, чисто."),
 				},
 				Order = {
-					T(890000000001138, --[[ModItemVoiceResponse Wolf 1]] "Не проблема, шеф."),
-					T(890000000001039, --[[ModItemVoiceResponse Wolf 2]] "Будет сделано."),
-					T(890000000000334, --[[ModItemVoiceResponse Wolf 3]] "Это можно."),
-					T(890000000000163, --[[ModItemVoiceResponse Wolf 4]] "Без проблем."),
-					T(890000000000929, --[[ModItemVoiceResponse Wolf 5]] "Вас понял, шеф."),
+					T(843760997764, --[[ModItemVoiceResponse Wolf 1]] "Не проблема, шеф."),
+					T(785779643663, --[[ModItemVoiceResponse Wolf 2]] "Будет сделано."),
+					T(317999974840, --[[ModItemVoiceResponse Wolf 3]] "Это можно."),
+					T(220861073049, --[[ModItemVoiceResponse Wolf 4]] "Без проблем."),
+					T(701988083271, --[[ModItemVoiceResponse Wolf 5]] "Вас понял, шеф."),
 				},
 				Outnumbered = {
-					T(890000000000463, --[[ModItemVoiceResponse Wolf 1]] "Шеф, их больше."),
+					T(400237287617, --[[ModItemVoiceResponse Wolf 1]] "Шеф, их больше."),
 				},
 				Overwatch = {
-					T(890000000001127, --[[ModItemVoiceResponse Wolf 1]] "Присмотрю за волчатами."),
+					T(835778396061, --[[ModItemVoiceResponse Wolf 1]] "Присмотрю за волчатами."),
 				},
 				OverwatchSelection = {
-					T(890000000000931, --[[ModItemVoiceResponse Wolf 1]] "Чёрт! Враги меня зацелили."),
+					T(704441026261, --[[ModItemVoiceResponse Wolf 1]] "Чёрт! Враги меня зацелили."),
 				},
 				Pain = {
-					T(890000000000947, --[[ModItemVoiceResponse Wolf 1]] "Pain1"),
-					T(890000000001081, --[[ModItemVoiceResponse Wolf 2]] "Pain2"),
-					T(890000000000403, --[[ModItemVoiceResponse Wolf 3]] "Pain3"),
-					T(890000000001333, --[[ModItemVoiceResponse Wolf 4]] "Pain4"),
-					T(890000000000726, --[[ModItemVoiceResponse Wolf 5]] "Pain5"),
-					T(890000000000266, --[[ModItemVoiceResponse Wolf 6]] "Pain6"),
+					T(713887591584, --[[ModItemVoiceResponse Wolf 1]] "Pain1"),
+					T(805117225345, --[[ModItemVoiceResponse Wolf 2]] "Pain2"),
+					T(354061853339, --[[ModItemVoiceResponse Wolf 3]] "Pain3"),
+					T(964544413082, --[[ModItemVoiceResponse Wolf 4]] "Pain4"),
+					T(564962234492, --[[ModItemVoiceResponse Wolf 5]] "Pain5"),
+					T(280802174721, --[[ModItemVoiceResponse Wolf 6]] "Pain6"),
 				},
 				PinDown = {
-					T(890000000000774, --[[ModItemVoiceResponse Wolf 1]] "Видали? А попробует рыпнуться - пуля в лоб."),
+					T(597931624755, --[[ModItemVoiceResponse Wolf 1]] "Видали? А попробует рыпнуться - пуля в лоб."),
 				},
 				PraisesBuddy1 = {
-					T(890000000001057, --[[ModItemVoiceResponse Wolf 1]] "Шикарная девчонка, Лиска. И пушки у неё - зашибись."),
+					T(790824546414, --[[ModItemVoiceResponse Wolf 1]] "Шикарная девчонка, Лиска. И пушки у неё - зашибись."),
 				},
 				PraisesBuddy2 = TConcat({
 					T(176578784013, --[[ModItemVoiceResponse Wolf PraisesBuddy2 VoiceResponse PraisesBuddy2 - Played on a successful kill by Jazz_Lynx. voice:Wolf]] "Вот вам и Рысь, вашу мамашу!")
 				}),
 				PraisesFemale = {
-					T(890000000000370, --[[ModItemVoiceResponse Wolf 1]] "Ага, ты запомнила урок? Молодец!"),
+					T(337158033234, --[[ModItemVoiceResponse Wolf 1]] "Ага, ты запомнила урок? Молодец!"),
 				},
 				PraisesMale = {
-					T(890000000000464, --[[ModItemVoiceResponse Wolf 1]] "Недурно! Может, ещё сделаю из тебя бойца!"),
+					T(400714280503, --[[ModItemVoiceResponse Wolf 1]] "Недурно! Может, ещё сделаю из тебя бойца!"),
 				},
 				SectorArrived = {
-					T(890000000000963, --[[ModItemVoiceResponse Wolf 1]] "Я на месте, шеф. Каков будет план?"),
+					T(725427460695, --[[ModItemVoiceResponse Wolf 1]] "Я на месте, шеф. Каков будет план?"),
 				},
 				Selection = {
-					T(890000000000256, --[[ModItemVoiceResponse Wolf 1]] "Волк."),
-					T(890000000001370, --[[ModItemVoiceResponse Wolf 2]] "Йоу."),
-					T(890000000000301, --[[ModItemVoiceResponse Wolf 3]] "Какой будет план, шеф?"),
+					T(278892294782, --[[ModItemVoiceResponse Wolf 1]] "Волк."),
+					T(992397919450, --[[ModItemVoiceResponse Wolf 2]] "Йоу."),
+					T(293449158590, --[[ModItemVoiceResponse Wolf 3]] "Какой будет план, шеф?"),
 				},
 				SelectionStealth = {
-					T(890000000000690, --[[ModItemVoiceResponse Wolf 1]] "Волк вышел на охоту."),
-					T(890000000000246, --[[ModItemVoiceResponse Wolf 2]] "Работаю спокойно и без шума."),
-					T(890000000000178, --[[ModItemVoiceResponse Wolf 3]] "Смотрите и учитесь. Показываю в стиле коммандос."),
+					T(544404662770, --[[ModItemVoiceResponse Wolf 1]] "Волк вышел на охоту."),
+					T(274240057906, --[[ModItemVoiceResponse Wolf 2]] "Работаю спокойно и без шума."),
+					T(235943355501, --[[ModItemVoiceResponse Wolf 3]] "Смотрите и учитесь. Показываю в стиле коммандос."),
 				},
 				SeriouslyWounded = {
-					T(890000000000209, --[[ModItemVoiceResponse Wolf 1]] "Шеф, меня неслабо помяло. Передохнуть бы."),
-					T(890000000001362, --[[ModItemVoiceResponse Wolf 2]] "На мне живого места не осталось. Похоже, я не выкарабкаюсь."),
-					T(890000000001106, --[[ModItemVoiceResponse Wolf 3]] "Шеф, я так долго не смогу. Мне б врача."),
+					T(251402676717, --[[ModItemVoiceResponse Wolf 1]] "Шеф, меня неслабо помяло. Передохнуть бы."),
+					T(986294175383, --[[ModItemVoiceResponse Wolf 2]] "На мне живого места не осталось. Похоже, я не выкарабкаюсь."),
+					T(821089211108, --[[ModItemVoiceResponse Wolf 3]] "Шеф, я так долго не смогу. Мне б врача."),
 				},
 				Startled = {
-					T(890000000001360, --[[ModItemVoiceResponse Wolf 1]] "А?"),
-					T(890000000000455, --[[ModItemVoiceResponse Wolf 2]] "Что за..."),
+					T(983835913291, --[[ModItemVoiceResponse Wolf 1]] "А?"),
+					T(395176313272, --[[ModItemVoiceResponse Wolf 2]] "Что за..."),
 				},
 				SurroundedPain = {
-					T(890000000001205, --[[ModItemVoiceResponse Wolf 1]] "Шеф, мне бы здесь помощь не помешала!"),
-					T(890000000000647, --[[ModItemVoiceResponse Wolf 2]] "Дело плохо!"),
+					T(866948660074, --[[ModItemVoiceResponse Wolf 1]] "Шеф, мне бы здесь помощь не помешала!"),
+					T(519537880970, --[[ModItemVoiceResponse Wolf 2]] "Дело плохо!"),
 				},
 				TacticalCareful = {
-					T(890000000000060, --[[ModItemVoiceResponse Wolf 1]] "Все в укрытие! Зря не высовываться!"),
+					T(142009751417, --[[ModItemVoiceResponse Wolf 1]] "Все в укрытие! Зря не высовываться!"),
 				},
 				TacticalFocus = {
-					T(890000000001024, --[[ModItemVoiceResponse Wolf 1]] "Спокойно! Высматривайте цели!"),
+					T(775000837886, --[[ModItemVoiceResponse Wolf 1]] "Спокойно! Высматривайте цели!"),
 				},
 				TacticalKilling = {
-					T(890000000000643, --[[ModItemVoiceResponse Wolf 1]] "Аыыыыы!"),
+					T(510000362080, --[[ModItemVoiceResponse Wolf 1]] "Аыыыыы!"),
 				},
 				TacticalLastEnemy = {
-					T(890000000001095, --[[ModItemVoiceResponse Wolf 1]] "Остался последний, шеф."),
+					T(813811328429, --[[ModItemVoiceResponse Wolf 1]] "Остался последний, шеф."),
 				},
 				TacticalLoss = {
-					T(890000000000997, --[[ModItemVoiceResponse Wolf 1]] "Шеф, у нас потери. Может, отступим?"),
+					T(751978259977, --[[ModItemVoiceResponse Wolf 1]] "Шеф, у нас потери. Может, отступим?"),
 				},
 				TacticalPressing = {
-					T(890000000000864, --[[ModItemVoiceResponse Wolf 1]] "Чую, пора выть."),
+					T(655276118575, --[[ModItemVoiceResponse Wolf 1]] "Чую, пора выть."),
 				},
 				TacticalReposition = {
-					T(890000000000904, --[[ModItemVoiceResponse Wolf 1]] "Вот так. Не нарывайтесь. Пусть сами на нас выйдут."),
+					T(694016969532, --[[ModItemVoiceResponse Wolf 1]] "Вот так. Не нарывайтесь. Пусть сами на нас выйдут."),
 				},
 				TacticalRevenge = {
-					T(890000000000995, --[[ModItemVoiceResponse Wolf 1]] "Спокойствие! Действуем по плану - или все тут поляжем."),
+					T(749467011304, --[[ModItemVoiceResponse Wolf 1]] "Спокойствие! Действуем по плану - или все тут поляжем."),
 				},
 				TakeCover = {
-					T(890000000000345, --[[ModItemVoiceResponse Wolf 1]] "Залёг в нору."),
+					T(326410213843, --[[ModItemVoiceResponse Wolf 1]] "Залёг в нору."),
 				},
 				ThreatSelection = {
-					T(890000000000669, --[[ModItemVoiceResponse Wolf 1]] "Хреновое место, шеф."),
+					T(533090508219, --[[ModItemVoiceResponse Wolf 1]] "Хреновое место, шеф."),
 				},
 				Tired = {
-					T(890000000001030, --[[ModItemVoiceResponse Wolf 1]] "Тело устало! Сейчас самое время поспать."),
+					T(780578275102, --[[ModItemVoiceResponse Wolf 1]] "Тело устало! Сейчас самое время поспать."),
 				},
 				TrainingReceived = {
-					T(890000000001097, --[[ModItemVoiceResponse Wolf 1]] "Тренировки - это всегда полезно!"),
+					T(816115920283, --[[ModItemVoiceResponse Wolf 1]] "Тренировки - это всегда полезно!"),
 				},
 				Travelling = {
-					T(890000000000946, --[[ModItemVoiceResponse Wolf 1]] "Здесь ничего не происходит, шеф. Двигаемся дальше."),
+					T(713727509126, --[[ModItemVoiceResponse Wolf 1]] "Здесь ничего не происходит, шеф. Двигаемся дальше."),
 				},
 				ValuableItemFound = {
-					T(890000000000477, --[[ModItemVoiceResponse Wolf 1]] "Иди к папочке!"),
+					T(413515084179, --[[ModItemVoiceResponse Wolf 1]] "Иди к папочке!"),
 				},
 				WeaponBroken = {
-					T(890000000000116, --[[ModItemVoiceResponse Wolf 1]] "Эта пушка кончилась! Дайте другую!"),
+					T(187188167254, --[[ModItemVoiceResponse Wolf 1]] "Эта пушка кончилась! Дайте другую!"),
 				},
 				WeaponJammed = {
-					T(890000000000485, --[[ModItemVoiceResponse Wolf 1]] "Чёртова осечка!"),
+					T(415399657084, --[[ModItemVoiceResponse Wolf 1]] "Чёртова осечка!"),
 				},
 				Wounded = {
-					T(890000000000520, --[[ModItemVoiceResponse Wolf 1]] "Я под огнём!"),
-					T(890000000000543, --[[ModItemVoiceResponse Wolf 2]] "Чёрт, больно!"),
-					T(890000000001263, --[[ModItemVoiceResponse Wolf 3]] "Да, это вам не пейнтбол!"),
+					T(436112397819, --[[ModItemVoiceResponse Wolf 1]] "Я под огнём!"),
+					T(449092364257, --[[ModItemVoiceResponse Wolf 2]] "Чёрт, больно!"),
+					T(908924725779, --[[ModItemVoiceResponse Wolf 3]] "Да, это вам не пейнтбол!"),
 				},
 				group = "MercenariesOld",
 				id = "Wolf",
