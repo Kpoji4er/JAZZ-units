@@ -84597,6 +84597,21 @@ return {
 						'Weight', 10,
 						'visibility_mode', "team",
 					}),
+					PlaceObj('AIPolicyAllyRoleAnchor', {
+						'Weight', 35,
+						'Mode', "screen",
+						'AnchorKeyword', "Sniper",
+					}),
+					PlaceObj('AIPolicyAllyRoleAnchor', {
+						'Weight', 25,
+						'Mode', "retinue",
+						'AnchorKeyword', "Leader",
+					}),
+					PlaceObj('AIPolicyAvoidPeekVoxel', {
+						'Weight', 40,
+						'Penalty', 80,
+						'Radius', 1,
+					}),
 				},
 				OptLocSearchRadius = 80,
 				PrefStance = "Crouch",
@@ -85619,6 +85634,21 @@ return {
 					PlaceObj('AIPolicyTakeCover', {
 						'Weight', 40,
 					}),
+					PlaceObj('AIPolicyAllyRoleAnchor', {
+						'Weight', 35,
+						'Mode', "screen",
+						'AnchorKeyword', "Sniper",
+					}),
+					PlaceObj('AIPolicyAllyRoleAnchor', {
+						'Weight', 25,
+						'Mode', "retinue",
+						'AnchorKeyword', "Leader",
+					}),
+					PlaceObj('AIPolicyAvoidPeekVoxel', {
+						'Weight', 40,
+						'Penalty', 80,
+						'Radius', 1,
+					}),
 				},
 				OptLocSearchRadius = 80,
 				PrefStance = "Crouch",
@@ -86215,51 +86245,7 @@ return {
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					
-					if enemy and dist < 10*const.SlabSizeX then
-						--archetype = "Brute"
-						weapon_class = "Melee"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
-					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						local panicshance = 100-health_perc
-					end
-					
-					if will_perc < 40 then
-						local panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -86350,50 +86336,7 @@ return {
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 8,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					
-					if enemy and dist < 10*const.SlabSizeX then
-						weapon_class = "Melee"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
-					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						local panicshance = 100-health_perc
-					end
-					
-					if will_perc < 40 then
-						local panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -86481,59 +86424,7 @@ return {
 				'CanManEmplacements', false,
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					local roll = self:Random(100)
-					local chance = 50
-					
-					if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Revolver"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Pistol"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
-					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						local panicshance = 100-health_perc
-					end
-					
-					if will_perc < 40 then
-						local panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Shotgun")
@@ -86619,39 +86510,7 @@ return {
 				'CanManEmplacements', false,
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local archetype = self.archetype
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
-					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						local panicshance = 100-health_perc
-					end
-					
-					if will_perc < 40 then
-						local panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -86734,51 +86593,7 @@ return {
 				'PinnedDownChance', 100,
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					
-					if enemy and dist < 8*const.SlabSizeX then
-						--archetype = "Brute"
-						weapon_class = "Melee"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
-					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						local panicshance = 100-health_perc
-					end
-					
-					if will_perc < 40 then
-						local panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -86867,51 +86682,7 @@ return {
 				'CanManEmplacements', false,
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					
-					if enemy and dist < 10*const.SlabSizeX then
-						--archetype = "Brute"
-						weapon_class = "Melee"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
-					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						local panicshance = 100-health_perc
-					end
-					
-					if will_perc < 40 then
-						local panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -87001,39 +86772,7 @@ return {
 				'CanManEmplacements', false,
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local archetype = self.archetype
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
-					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						local panicshance = 100-health_perc
-					end
-					
-					if will_perc < 40 then
-						local panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 60,
@@ -87121,21 +86860,7 @@ return {
 				'RepositionArchetype', "Legion_Assaulter",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					
-					if enemy and dist < 10*const.SlabSizeX then
-						--archetype = "Brute"
-						weapon_class = "Melee"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -87223,21 +86948,7 @@ return {
 				'RepositionArchetype', "Legion_Assaulter",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					
-					if enemy and dist < 10*const.SlabSizeX then
-						--archetype = "Brute"
-						weapon_class = "Melee"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 100,
@@ -87329,21 +87040,7 @@ return {
 				'RepositionArchetype', "Legion_Assaulter",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					
-					if enemy and dist < 10*const.SlabSizeX then
-						--archetype = "Brute"
-						weapon_class = "Melee"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -87434,41 +87131,7 @@ return {
 				'PinnedDownChance', 40,
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local archetype = self.archetype
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
-					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						panicshance = 100-health_perc
-					end
-					
-					if will_perc < 40 then
-						panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
-					
-					print(panicroll..'against'..panicshance)
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -87558,65 +87221,7 @@ return {
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					local roll = self:Random(100)
-					local chance = 50
-					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Revolver"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Pistol"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "SubmachineGun"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
-					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						local panicshance = 100-health_perc
-					end
-					
-					if will_perc < 40 then
-						local panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -87705,24 +87310,7 @@ return {
 				'CanManEmplacements', false,
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local archetype = self.archetype
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					for _, ally in ipairs(self.team.units) do
-						if not ally:IsDead() and ally.HitPoints < MulDivRound(ally.MaxHitPoints, 70, 100) then
-							archetype = "Medic"
-						end
-					end
-					
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if bleeding then
-						archetype = "Medic"
-					end
-					
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context, { allow_medic = true })
 				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 80,
@@ -87804,41 +87392,7 @@ return {
 				'role', "Soldier",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local archetype = self.archetype
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
-					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						local panicshance = 100-health_perc
-					end
-					
-					if will_perc < 40 then
-						local panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
-					
-					--print(panicroll..'against'..panicshance)
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -87936,66 +87490,7 @@ return {
 				'role', "Soldier",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					local roll = self:Random(100)
-					local chance = 50
-					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Revolver"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Pistol"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "SubmachineGun"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
-					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						local panicshance = 100-health_perc
-					end
-					
-					if will_perc < 40 then
-						local panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -88091,59 +87586,7 @@ return {
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 5,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					local roll = self:Random(100)
-					
-					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver"  then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Revolver"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol"  then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Pistol"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
-					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						local panicshance = 100-health_perc
-					end
-					
-					if will_perc < 40 then
-						local panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -88232,39 +87675,7 @@ return {
 				'role', "Soldier",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local function PrimaryNonGL(self)
-					  return self:GetActiveWeapons("AssaultRifle")
-					      or self:GetActiveWeapons("Rifle")
-					      or self:GetActiveWeapons("Carbine")
-					      or self:GetActiveWeapons("BattleRifle")
-					      or self:GetActiveWeapons("SubmachineGun")
-					      or self:GetActiveWeapons("Shotgun")
-					end
-					
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					local roll = self:Random(100)
-					local chance = 50
-					
-					local weapon_class = "Firearm"
-					if enemy and dist < 40*const.SlabSizeX and dist > 15*const.SlabSizeX and roll < chance then
-					  weapon_class = "GrenadeLauncher"
-					else
-					  weapon_class = (PrimaryNonGL(self) and PrimaryNonGL(self).weapon_class) or "AssaultRifle"
-					end
-					
-					if enemy and dist < 10*const.SlabSizeX then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Melee"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-					  AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -88364,29 +87775,7 @@ return {
 				'OpeningAttackType', "PinDown",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					local roll = self:Random(100)
-					
-					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver"  then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Revolver"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol"  then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Pistol"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -88472,39 +87861,7 @@ return {
 				'role', "Soldier",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local function PrimaryNonGL(self)
-					  return self:GetActiveWeapons("AssaultRifle")
-					      or self:GetActiveWeapons("Rifle")
-					      or self:GetActiveWeapons("Carbine")
-					      or self:GetActiveWeapons("BattleRifle")
-					      or self:GetActiveWeapons("SubmachineGun")
-					      or self:GetActiveWeapons("Shotgun")
-					end
-					
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					local roll = self:Random(100)
-					local chance = 50
-					
-					local weapon_class = "Firearm"
-					if enemy and dist < 40*const.SlabSizeX and dist > 15*const.SlabSizeX and roll < chance then
-					  weapon_class = "GrenadeLauncher"
-					else
-					  weapon_class = (PrimaryNonGL(self) and PrimaryNonGL(self).weapon_class) or "AssaultRifle"
-					end
-					
-					if enemy and dist < 10*const.SlabSizeX then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Melee"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-					  AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -88615,35 +87972,7 @@ return {
 				'OpeningAttackType', "PinDown",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					local roll = self:Random(100)
-					local chance = 50
-					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Revolver"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Pistol"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "SubmachineGun"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -88730,77 +88059,14 @@ return {
 					"Control",
 					"Marksman",
 				},
-				'archetype', "Legion_Frontliner",
+				'archetype', "Legion_Flanker",
 				'role', "Recon",
-				'RepositionArchetype', "Legion_Frontliner",
+				'RepositionArchetype', "Legion_Flanker",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					local roll = self:Random(100)
-					local chance = 50
-					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Revolver"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Pistol"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "SubmachineGun"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local stealth_stance = self:GetStanceToStealth()
-					if self:CanStealth(stealth_stance) then
-					 self:Hide()
-					end	
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
-					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						local panicshance = 100-health_perc
-					end
-					
-					if will_perc < 40 then
-						local panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -88887,70 +88153,7 @@ return {
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					local roll = self:Random(100)
-					local chance = 50
-					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Revolver"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Pistol"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "SubmachineGun"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local stealth_stance = self:GetStanceToStealth()
-					if self:CanStealth(stealth_stance) then
-					 self:Hide()
-					end	
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
-					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						local panicshance = 100-health_perc
-					end
-					
-					if will_perc < 40 then
-						local panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -89032,77 +88235,14 @@ return {
 					"RunAndGun",
 					"Marksman",
 				},
-				'archetype', "Legion_Frontliner",
+				'archetype', "Legion_Flanker",
 				'role', "Recon",
-				'RepositionArchetype', "Legion_Frontliner",
+				'RepositionArchetype', "Legion_Flanker",
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					local roll = self:Random(100)
-					local chance = 50
-					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Revolver"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Pistol"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "SubmachineGun"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local stealth_stance = self:GetStanceToStealth()
-					if self:CanStealth(stealth_stance) then
-					 self:Hide()
-					end	
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
-					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						local panicshance = 100-health_perc
-					end
-					
-					if will_perc < 40 then
-						local panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -89194,10 +88334,7 @@ return {
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local stealth_stance = self:GetStanceToStealth()
-					if self:CanStealth(stealth_stance) then
-					 self:Hide()
-					end
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
@@ -89285,46 +88422,13 @@ return {
 					"Sniper",
 					"Control",
 				},
-				'archetype', "Legion_Frontliner",
+				'archetype', "Legion_Flanker",
 				'role', "Recon",
-				'RepositionArchetype', "Legion_Frontliner",
+				'RepositionArchetype', "Legion_Flanker",
 				'AlwaysUseOpeningAttack', true,
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					local roll = self:Random(100)
-					local chance = 50
-					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Revolver"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 8*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Pistol"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 10*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "SubmachineGun"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local stealth_stance = self:GetStanceToStealth()
-					if self:CanStealth(stealth_stance) then
-					 self:Hide()
-					end	
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -89411,34 +88515,7 @@ return {
 				'AlwaysUseOpeningAttack', true,
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					local roll = self:Random(100)
-					local chance = 70
-					
-					if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "AssaultRifle" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "AssaultRifle"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "SubmachineGun" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "SubmachineGun"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local stealth_stance = self:GetStanceToStealth()
-					if self:CanStealth(stealth_stance) then
-					 self:Hide()
-					end	
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "SniperRifle")
@@ -89531,51 +88608,7 @@ return {
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 1,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					
-					if enemy and dist < 10*const.SlabSizeX then
-						--archetype = "Brute"
-						weapon_class = "Melee"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
-					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						local panicshance = 100-health_perc
-					end
-					
-					if will_perc < 40 then
-						local panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -89655,59 +88688,7 @@ return {
 				'role', "Heavy",
 				'MaxAttacks', 1,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					local roll = self:Random(100)
-					local chance = 50
-					
-					if enemy and dist < 6*const.SlabSizeX and weapon_class ~= "Revolver" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Revolver"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if enemy and dist < 6*const.SlabSizeX and weapon_class ~= "Pistol" and roll < chance then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Pistol"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
-					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						local panicshance = 100-health_perc
-					end
-					
-					if will_perc < 40 then
-						local panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -89793,51 +88774,7 @@ return {
 				'role', "Heavy",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					
-					if enemy and dist < 10*const.SlabSizeX then
-						--archetype = "Brute"
-						weapon_class = "Melee"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local panicroll = self:Random(100)
-					local panicshance = 0
-					
-					local health_perc = MulDivRound(self.HitPoints, 100, self.MaxHitPoints)
-					local will_perc = MulDivRound(self.WillPoints, 100, self.MaxWillPoints)
-					
-					local wounds = 0
-					local wounded = self:GetStatusEffect("Wounded")
-					local bleeding = self:GetStatusEffect("Bleeding")
-					if wounded then
-						wounds = wounded.stacks 
-					end
-					if bleeding then
-						wounds = wounds + bleeding.stacks 
-					end
-					panicroll = panicroll - 10*wounds
-												
-					if wounds > 1 then
-						local panicshance = 100-health_perc
-					end
-					
-					if will_perc < 40 then
-						local panicshance = Max(panicshance,100-will_perc)
-					end
-					
-					if panicroll < panicshance then
-					PlayVoiceResponse(self, "AIArchetypeScared")
-					archetype = "Deserter"
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -89933,7 +88870,9 @@ return {
 				'archetype', "Legion_Machinegunner",
 				'role', "Heavy",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					return JazzAI_PickCombatStance(self, proto_context)
+				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
 					self:TryEquip(items, "Handheld B", "Firearm")
@@ -90035,7 +88974,9 @@ return {
 				'archetype', "Legion_Machinegunner",
 				'role', "Heavy",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					return JazzAI_PickCombatStance(self, proto_context)
+				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
 					self:TryEquip(items, "Handheld B", "Firearm")
@@ -90148,7 +89089,9 @@ return {
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					return JazzAI_PickCombatStance(self, proto_context)
+				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 80,
 				'StartingPerks', {
@@ -90244,7 +89187,9 @@ return {
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					return JazzAI_PickCombatStance(self, proto_context)
+				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 80,
 				'StartingPerks', {
@@ -90352,7 +89297,9 @@ return {
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					return JazzAI_PickCombatStance(self, proto_context)
+				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 50,
 				'StartingPerks', {
@@ -90444,7 +89391,9 @@ return {
 				'AlwaysUseOpeningAttack', true,
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
-				'PickCustomArchetype', function (self, proto_context)  end,
+				'PickCustomArchetype', function (self, proto_context)
+					return JazzAI_PickCombatStance(self, proto_context)
+				end,
 				'CustomEquipGear', function (self, items)  end,
 				'MaxHitPoints', 80,
 				'StartingPerks', {
@@ -90539,39 +89488,7 @@ return {
 				'CanManEmplacements', false,
 				'MaxAttacks', 1,
 				'PickCustomArchetype', function (self, proto_context)
-					local function PrimaryNonGL(self)
-					  return self:GetActiveWeapons("AssaultRifle")
-					      or self:GetActiveWeapons("Rifle")
-					      or self:GetActiveWeapons("Carbine")
-					      or self:GetActiveWeapons("BattleRifle")
-					      or self:GetActiveWeapons("SubmachineGun")
-					      or self:GetActiveWeapons("Shotgun")
-					end
-					
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					local roll = self:Random(100)
-					local chance = 50
-					
-					local weapon_class = "Firearm"
-					if enemy and dist < 40*const.SlabSizeX and dist > 15*const.SlabSizeX and roll < chance then
-					  weapon_class = "GrenadeLauncher"
-					else
-					  weapon_class = (PrimaryNonGL(self) and PrimaryNonGL(self).weapon_class) or "AssaultRifle"
-					end
-					
-					if enemy and dist < 10*const.SlabSizeX then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Melee"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-					  AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "HeavyWeapon")
@@ -90640,39 +89557,7 @@ return {
 				'CanManEmplacements', false,
 				'MaxAttacks', 1,
 				'PickCustomArchetype', function (self, proto_context)
-					local function PrimaryNonGL(self)
-					  return self:GetActiveWeapons("AssaultRifle")
-					      or self:GetActiveWeapons("Rifle")
-					      or self:GetActiveWeapons("Carbine")
-					      or self:GetActiveWeapons("BattleRifle")
-					      or self:GetActiveWeapons("SubmachineGun")
-					      or self:GetActiveWeapons("Shotgun")
-					end
-					
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					local roll = self:Random(100)
-					local chance = 50
-					
-					local weapon_class = "Firearm"
-					if enemy and dist < 40*const.SlabSizeX and dist > 15*const.SlabSizeX and roll < chance then
-					  weapon_class = "GrenadeLauncher"
-					else
-					  weapon_class = (PrimaryNonGL(self) and PrimaryNonGL(self).weapon_class) or "AssaultRifle"
-					end
-					
-					if enemy and dist < 10*const.SlabSizeX then
-						archetype = "Legion_Assaulter"
-						weapon_class = "Melee"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-					  AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "HeavyWeapon")
@@ -90759,21 +89644,7 @@ return {
 				'CanManEmplacements', false,
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Mortar"
-					
-					if GameState.Underground or enemy and dist < 15*const.SlabSizeX then
-						archetype = "Skirmisher"
-						weapon_class = "Revolver"
-						PlayVoiceResponse(self, "AIArchetypeScared")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "HeavyWeapon")
@@ -94261,6 +93132,21 @@ return {
 						'Weight', 10,
 						'visibility_mode', "team",
 					}),
+					PlaceObj('AIPolicyAllyRoleAnchor', {
+						'Weight', 35,
+						'Mode', "screen",
+						'AnchorKeyword', "Sniper",
+					}),
+					PlaceObj('AIPolicyAllyRoleAnchor', {
+						'Weight', 25,
+						'Mode', "retinue",
+						'AnchorKeyword', "Leader",
+					}),
+					PlaceObj('AIPolicyAvoidPeekVoxel', {
+						'Weight', 40,
+						'Penalty', 80,
+						'Radius', 1,
+					}),
 				},
 				OptLocSearchRadius = 80,
 				PrefStance = "Crouch",
@@ -95283,6 +94169,21 @@ PlaceObj('ModItemAIArchetype', {
 					PlaceObj('AIPolicyTakeCover', {
 						'Weight', 40,
 					}),
+					PlaceObj('AIPolicyAllyRoleAnchor', {
+						'Weight', 35,
+						'Mode', "screen",
+						'AnchorKeyword', "Sniper",
+					}),
+					PlaceObj('AIPolicyAllyRoleAnchor', {
+						'Weight', 25,
+						'Mode', "retinue",
+						'AnchorKeyword', "Leader",
+					}),
+					PlaceObj('AIPolicyAvoidPeekVoxel', {
+						'Weight', 40,
+						'Penalty', 80,
+						'Radius', 1,
+					}),
 				},
 				OptLocSearchRadius = 80,
 				PrefStance = "Crouch",
@@ -95944,26 +94845,7 @@ PlaceObj('ModItemAIArchetype', {
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					
-					if enemy and dist < 10*const.SlabSizeX then
-						archetype = "Melee"
-						weapon_class = "Melee"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local stealth_stance = self:GetStanceToStealth()
-					if self:CanStealth(stealth_stance) then
-					 self:Hide()
-					end	
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -96054,26 +94936,7 @@ PlaceObj('ModItemAIArchetype', {
 				'OpeningAttackType', "Overwatch",
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					
-					if enemy and dist < 10*const.SlabSizeX then
-						archetype = "Melee"
-						weapon_class = "Melee"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local stealth_stance = self:GetStanceToStealth()
-					if self:CanStealth(stealth_stance) then
-					 self:Hide()
-					end	
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "Firearm")
@@ -96265,27 +95128,7 @@ PlaceObj('ModItemAIArchetype', {
 				'AlwaysUseOpeningAttack', true,
 				'MaxAttacks', 10,
 				'PickCustomArchetype', function (self, proto_context)
-					local enemy, dist = GetNearestEnemy(self)
-					local archetype = self.archetype
-					local weapon_class = "Firearm"
-					local roll = self:Random(100)
-					
-					if enemy and dist < 16*const.SlabSizeX and weapon_class ~= "Firearm"  then
-						archetype = "Legion_Assault"
-						weapon_class = "MeleeWeapon"
-						PlayVoiceResponse(self, "AIArchetypeAngry")
-					end
-					
-					if not self:GetActiveWeapons(weapon_class) then
-						AIPlayCombatAction("ChangeWeapon", self, 0)
-					end
-					
-					local stealth_stance = self:GetStanceToStealth()
-					if self:CanStealth(stealth_stance) then
-					 self:Hide()
-					end	
-					
-					return archetype
+					return JazzAI_PickCombatStance(self, proto_context)
 				end,
 				'CustomEquipGear', function (self, items)
 					self:TryEquip(items, "Handheld A", "SniperRifle")
@@ -96374,26 +95217,7 @@ PlaceObj('ModItemAIArchetype', {
 			'OpeningAttackType', "Overwatch",
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				
-				if enemy and dist < 10*const.SlabSizeX then
-					archetype = "Melee"
-					weapon_class = "Melee"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				local stealth_stance = self:GetStanceToStealth()
-				if self:CanStealth(stealth_stance) then
-				 self:Hide()
-				end	
-				
-				return archetype
+				return JazzAI_PickCombatStance(self, proto_context)
 			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
@@ -96484,26 +95308,7 @@ PlaceObj('ModItemAIArchetype', {
 			'OpeningAttackType', "Overwatch",
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				
-				if enemy and dist < 10*const.SlabSizeX then
-					archetype = "Melee"
-					weapon_class = "Melee"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				local stealth_stance = self:GetStanceToStealth()
-				if self:CanStealth(stealth_stance) then
-				 self:Hide()
-				end	
-				
-				return archetype
+				return JazzAI_PickCombatStance(self, proto_context)
 			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
@@ -96595,26 +95400,7 @@ PlaceObj('ModItemAIArchetype', {
 			'OpeningAttackType', "Overwatch",
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				
-				if enemy and dist < 10*const.SlabSizeX then
-					archetype = "Melee"
-					weapon_class = "Melee"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				local stealth_stance = self:GetStanceToStealth()
-				if self:CanStealth(stealth_stance) then
-				 self:Hide()
-				end	
-				
-				return archetype
+				return JazzAI_PickCombatStance(self, proto_context)
 			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
@@ -96706,26 +95492,7 @@ PlaceObj('ModItemAIArchetype', {
 			'OpeningAttackType', "Overwatch",
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				
-				if enemy and dist < 10*const.SlabSizeX then
-					archetype = "Melee"
-					weapon_class = "Melee"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				local stealth_stance = self:GetStanceToStealth()
-				if self:CanStealth(stealth_stance) then
-				 self:Hide()
-				end	
-				
-				return archetype
+				return JazzAI_PickCombatStance(self, proto_context)
 			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
@@ -96806,32 +95573,13 @@ PlaceObj('ModItemAIArchetype', {
 				"RunAndGun",
 				"CQB",
 			},
-			'archetype', "Rebels_Assaulter",
+			'archetype', "Rebels_Flanker",
 			'role', "Recon",
 			'CanManEmplacements', false,
 			'OpeningAttackType', "Overwatch",
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				
-				if enemy and dist < 10*const.SlabSizeX then
-					archetype = "Melee"
-					weapon_class = "Melee"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				local stealth_stance = self:GetStanceToStealth()
-				if self:CanStealth(stealth_stance) then
-				 self:Hide()
-				end	
-				
-				return archetype
+				return JazzAI_PickCombatStance(self, proto_context)
 			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
@@ -96919,26 +95667,7 @@ PlaceObj('ModItemAIArchetype', {
 			'RepositionArchetype', "Legion_Assaulter",
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				
-				if enemy and dist < 10*const.SlabSizeX then
-					archetype = "Melee"
-					weapon_class = "Melee"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				local stealth_stance = self:GetStanceToStealth()
-				if self:CanStealth(stealth_stance) then
-				 self:Hide()
-				end	
-				
-				return archetype
+				return JazzAI_PickCombatStance(self, proto_context)
 			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
@@ -97015,26 +95744,7 @@ PlaceObj('ModItemAIArchetype', {
 			'CanManEmplacements', false,
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				
-				if enemy and dist < 10*const.SlabSizeX then
-					archetype = "Melee"
-					weapon_class = "Melee"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				local stealth_stance = self:GetStanceToStealth()
-				if self:CanStealth(stealth_stance) then
-				 self:Hide()
-				end	
-				
-				return archetype
+				return JazzAI_PickCombatStance(self, proto_context)
 			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
@@ -97109,26 +95819,7 @@ PlaceObj('ModItemAIArchetype', {
 			'role', "Soldier",
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				
-				if enemy and dist < 10*const.SlabSizeX then
-					archetype = "Melee"
-					weapon_class = "Melee"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				local stealth_stance = self:GetStanceToStealth()
-				if self:CanStealth(stealth_stance) then
-				 self:Hide()
-				end	
-				
-				return archetype
+				return JazzAI_PickCombatStance(self, proto_context)
 			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
@@ -97207,26 +95898,7 @@ PlaceObj('ModItemAIArchetype', {
 			'OpeningAttackType', "PinDown",
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				
-				if enemy and dist < 10*const.SlabSizeX then
-					archetype = "Melee"
-					weapon_class = "Melee"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				local stealth_stance = self:GetStanceToStealth()
-				if self:CanStealth(stealth_stance) then
-				 self:Hide()
-				end	
-				
-				return archetype
+				return JazzAI_PickCombatStance(self, proto_context)
 			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
@@ -97308,21 +95980,7 @@ PlaceObj('ModItemAIArchetype', {
 			'OpeningAttackType', "PinDown",
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				
-				if enemy and dist < 10*const.SlabSizeX then
-					archetype = "Melee"
-					weapon_class = "Melee"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				return archetype
+				return JazzAI_PickCombatStance(self, proto_context)
 			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
@@ -97400,26 +96058,7 @@ PlaceObj('ModItemAIArchetype', {
 			'CanManEmplacements', false,
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				
-				if enemy and dist < 10*const.SlabSizeX then
-					archetype = "Melee"
-					weapon_class = "Melee"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				local stealth_stance = self:GetStanceToStealth()
-				if self:CanStealth(stealth_stance) then
-				 self:Hide()
-				end	
-				
-				return archetype
+				return JazzAI_PickCombatStance(self, proto_context)
 			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "Firearm")
@@ -97503,39 +96142,7 @@ PlaceObj('ModItemAIArchetype', {
 			'CanManEmplacements', false,
 			'MaxAttacks', 1,
 			'PickCustomArchetype', function (self, proto_context)
-				local function PrimaryNonGL(self)
-				  return self:GetActiveWeapons("AssaultRifle")
-				      or self:GetActiveWeapons("Rifle")
-				      or self:GetActiveWeapons("Carbine")
-				      or self:GetActiveWeapons("BattleRifle")
-				      or self:GetActiveWeapons("SubmachineGun")
-				      or self:GetActiveWeapons("Shotgun")
-				end
-				
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				local roll = self:Random(100)
-				local chance = 50
-				
-				local weapon_class = "Firearm"
-				if enemy and dist < 40*const.SlabSizeX and dist > 15*const.SlabSizeX and roll < chance then
-				  weapon_class = "GrenadeLauncher"
-				else
-				  weapon_class = (PrimaryNonGL(self) and PrimaryNonGL(self).weapon_class) or "AssaultRifle"
-				end
-				
-				if enemy and dist < 10*const.SlabSizeX then
-					archetype = "Legion_Assaulter"
-					weapon_class = "Melee"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-				  AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				return archetype
+				return JazzAI_PickCombatStance(self, proto_context)
 			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "HeavyWeapon")
@@ -97606,39 +96213,7 @@ PlaceObj('ModItemAIArchetype', {
 			'CanManEmplacements', false,
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
-				local function PrimaryNonGL(self)
-				  return self:GetActiveWeapons("AssaultRifle")
-				      or self:GetActiveWeapons("Rifle")
-				      or self:GetActiveWeapons("Carbine")
-				      or self:GetActiveWeapons("BattleRifle")
-				      or self:GetActiveWeapons("SubmachineGun")
-				      or self:GetActiveWeapons("Shotgun")
-				end
-				
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				local roll = self:Random(100)
-				local chance = 50
-				
-				local weapon_class = "Firearm"
-				if enemy and dist < 40*const.SlabSizeX and dist > 15*const.SlabSizeX and roll < chance then
-				  weapon_class = "GrenadeLauncher"
-				else
-				  weapon_class = (PrimaryNonGL(self) and PrimaryNonGL(self).weapon_class) or "AssaultRifle"
-				end
-				
-				if enemy and dist < 10*const.SlabSizeX then
-					archetype = "Legion_Assaulter"
-					weapon_class = "Melee"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-				  AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				return archetype
+				return JazzAI_PickCombatStance(self, proto_context)
 			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "HeavyWeapon")
@@ -97709,39 +96284,7 @@ PlaceObj('ModItemAIArchetype', {
 			'CanManEmplacements', false,
 			'MaxAttacks', 1,
 			'PickCustomArchetype', function (self, proto_context)
-				local function PrimaryNonGL(self)
-				  return self:GetActiveWeapons("AssaultRifle")
-				      or self:GetActiveWeapons("Rifle")
-				      or self:GetActiveWeapons("Carbine")
-				      or self:GetActiveWeapons("BattleRifle")
-				      or self:GetActiveWeapons("SubmachineGun")
-				      or self:GetActiveWeapons("Shotgun")
-				end
-				
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Firearm"
-				local roll = self:Random(100)
-				local chance = 50
-				
-				local weapon_class = "Firearm"
-				if enemy and dist < 40*const.SlabSizeX and dist > 15*const.SlabSizeX and roll < chance then
-				  weapon_class = "GrenadeLauncher"
-				else
-				  weapon_class = (PrimaryNonGL(self) and PrimaryNonGL(self).weapon_class) or "AssaultRifle"
-				end
-				
-				if enemy and dist < 10*const.SlabSizeX then
-					archetype = "Legion_Assaulter"
-					weapon_class = "Melee"
-					PlayVoiceResponse(self, "AIArchetypeAngry")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-				  AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				return archetype
+				return JazzAI_PickCombatStance(self, proto_context)
 			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "HeavyWeapon")
@@ -97813,21 +96356,7 @@ PlaceObj('ModItemAIArchetype', {
 			'CanManEmplacements', false,
 			'MaxAttacks', 10,
 			'PickCustomArchetype', function (self, proto_context)
-				local enemy, dist = GetNearestEnemy(self)
-				local archetype = self.archetype
-				local weapon_class = "Mortar"
-				
-				if GameState.Underground or enemy and dist < 15*const.SlabSizeX then
-					archetype = "Skirmisher"
-					weapon_class = "Revolver"
-					PlayVoiceResponse(self, "AIArchetypeScared")
-				end
-				
-				if not self:GetActiveWeapons(weapon_class) then
-					AIPlayCombatAction("ChangeWeapon", self, 0)
-				end
-				
-				return archetype
+				return JazzAI_PickCombatStance(self, proto_context)
 			end,
 			'CustomEquipGear', function (self, items)
 				self:TryEquip(items, "Handheld A", "HeavyWeapon")
