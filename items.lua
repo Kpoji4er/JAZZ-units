@@ -84324,7 +84324,7 @@ return {
 						'TakeCoverChance', 50,
 					}),
 					PlaceObj('StandardAI', {
-						'Weight', 500,
+						'Weight', 80,
 						'Label', "Flanker AI",
 						'Fallback', false,
 						'RequiredKeywords', {
@@ -84345,7 +84345,7 @@ return {
 								'visibility_mode', "team",
 							}),
 							PlaceObj('AIPolicyFlanking', {
-								'Weight', 1000,
+								'Weight', 150,
 							}),
 							PlaceObj('AIPolicyAvoidDeathZones', {
 								'TargetDist', 1,
@@ -84451,11 +84451,11 @@ return {
 					}),
 					PlaceObj('PositioningAI', {
 						'BiasId', "Flanking",
-						'Weight', 500,
+						'Weight', 80,
 						'Label', "Flanker AI POS",
 						'Fallback', false,
 						'RequiredKeywords', {
-							"Flanks",
+							"Flank",
 						},
 						'Score', function (self, unit, proto_context, debug_data)
 							unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
@@ -84473,7 +84473,7 @@ return {
 								'visibility_mode', "team",
 							}),
 							PlaceObj('AIPolicyFlanking', {
-								'Weight', 1000,
+								'Weight', 150,
 							}),
 							PlaceObj('AIPolicyAvoidDeathZones', {
 								'TargetDist', 1,
@@ -85467,7 +85467,7 @@ return {
 						'VoiceResponse', "TacticalPressing",
 					}),
 					PlaceObj('StandardAI', {
-						'Weight', 1000,
+						'Weight', 80,
 						'Label', "Flanker AI",
 						'Fallback', false,
 						'RequiredKeywords', {
@@ -85489,7 +85489,7 @@ return {
 								'visibility_mode', "team",
 							}),
 							PlaceObj('AIPolicyFlanking', {
-								'Weight', 1000,
+								'Weight', 150,
 							}),
 							PlaceObj('AIPolicyAvoidDeathZones', {
 								'TargetDist', 1,
@@ -85501,7 +85501,7 @@ return {
 					}),
 					PlaceObj('PositioningAI', {
 						'BiasId', "Flanking",
-						'Weight', 1000,
+						'Weight', 80,
 						'Label', "Flanker AI",
 						'Fallback', false,
 						'RequiredKeywords', {
@@ -85514,7 +85514,7 @@ return {
 							}),
 							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyFlanking', {
-								'Weight', 1000,
+								'Weight', 150,
 								'AllyPlannedPosition', true,
 								'ReserveAttackAP', true,
 							}),
@@ -92859,7 +92859,7 @@ return {
 						'TakeCoverChance', 50,
 					}),
 					PlaceObj('StandardAI', {
-						'Weight', 500,
+						'Weight', 80,
 						'Label', "Flanker AI",
 						'Fallback', false,
 						'RequiredKeywords', {
@@ -92880,7 +92880,7 @@ return {
 								'visibility_mode', "team",
 							}),
 							PlaceObj('AIPolicyFlanking', {
-								'Weight', 1000,
+								'Weight', 150,
 							}),
 							PlaceObj('AIPolicyAvoidDeathZones', {
 								'TargetDist', 1,
@@ -92986,11 +92986,11 @@ return {
 					}),
 					PlaceObj('PositioningAI', {
 						'BiasId', "Flanking",
-						'Weight', 500,
+						'Weight', 80,
 						'Label', "Flanker AI POS",
 						'Fallback', false,
 						'RequiredKeywords', {
-							"Flanks",
+							"Flank",
 						},
 						'Score', function (self, unit, proto_context, debug_data)
 							unit.ai_context = unit.ai_context or AICreateContext(unit, proto_context)
@@ -93008,7 +93008,7 @@ return {
 								'visibility_mode', "team",
 							}),
 							PlaceObj('AIPolicyFlanking', {
-								'Weight', 1000,
+								'Weight', 150,
 							}),
 							PlaceObj('AIPolicyAvoidDeathZones', {
 								'TargetDist', 1,
@@ -94002,7 +94002,7 @@ PlaceObj('ModItemAIArchetype', {
 						'VoiceResponse', "TacticalPressing",
 					}),
 					PlaceObj('StandardAI', {
-						'Weight', 1000,
+						'Weight', 80,
 						'Label', "Flanker AI",
 						'Fallback', false,
 						'RequiredKeywords', {
@@ -94024,7 +94024,7 @@ PlaceObj('ModItemAIArchetype', {
 								'visibility_mode', "team",
 							}),
 							PlaceObj('AIPolicyFlanking', {
-								'Weight', 1000,
+								'Weight', 150,
 							}),
 							PlaceObj('AIPolicyAvoidDeathZones', {
 								'TargetDist', 1,
@@ -94036,7 +94036,7 @@ PlaceObj('ModItemAIArchetype', {
 					}),
 					PlaceObj('PositioningAI', {
 						'BiasId', "Flanking",
-						'Weight', 1000,
+						'Weight', 80,
 						'Label', "Flanker AI",
 						'Fallback', false,
 						'RequiredKeywords', {
@@ -94049,7 +94049,7 @@ PlaceObj('ModItemAIArchetype', {
 							}),
 							PlaceObj('AIPolicyTakeCover', nil),
 							PlaceObj('AIPolicyFlanking', {
-								'Weight', 1000,
+								'Weight', 150,
 								'AllyPlannedPosition', true,
 								'ReserveAttackAP', true,
 							}),
