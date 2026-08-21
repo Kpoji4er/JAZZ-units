@@ -100525,7 +100525,7 @@ displayName]] "Legion Garrison"),
 						'UnitCountMin', 0,
 						'UnitCountMax', 1,
 					}),
-					},
+				},
 					comment = "-- UNITS-007 Extra Mixed 6-9; per-unit specialty roll (not one type×N)",
 					displayName = T(890000000012516, --[[ModItemEnemySquads LegionExtra_Ernie_Mixed displayName]] "Усиление: смешанное"),
 					group = "Ernie",
@@ -100550,11 +100550,151 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 35,
 							}),
 						},
-						'UnitCountMin', 6,
-						'UnitCountMax', 8,
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Scout",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT1_Warden",
+								'spawnWeight', 35,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Scout",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT1_Warden",
+								'spawnWeight', 35,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Scout",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT1_Warden",
+								'spawnWeight', 35,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Scout",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT1_Warden",
+								'spawnWeight', 35,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Scout",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT1_Warden",
+								'spawnWeight', 35,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Scout",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT1_Warden",
+								'spawnWeight', 35,
+							}),
+						},
+						'UnitCountMin', 0,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Scout",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT2_Skirmisher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT1_Warden",
+								'spawnWeight', 35,
+							}),
+						},
+						'UnitCountMin', 0,
+						'UnitCountMax', 1,
 					}),
 				},
-					comment = "-- UNITS-007 Extra Flankers 6-8",
+					comment = "-- UNITS-007 Extra Flankers 6-8; per-unit roll (vanilla clones UnitCount)",
 					displayName = T(890000000012515, --[[ModItemEnemySquads LegionExtra_Ernie_Flankers displayName]] "Усиление: фланкеры"),
 					group = "Ernie",
 					id = "LegionExtra_Ernie_Flankers",
@@ -100578,11 +100718,151 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 12,
 							}),
 						},
-						'UnitCountMin', 6,
-						'UnitCountMax', 8,
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
+								'spawnWeight', 12,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
+								'spawnWeight', 12,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
+								'spawnWeight', 12,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
+								'spawnWeight', 12,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
+								'spawnWeight', 12,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
+								'spawnWeight', 12,
+							}),
+						},
+						'UnitCountMin', 0,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Crusher",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pillager",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Roughneck",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT3_SkullCrusher",
+								'spawnWeight', 12,
+							}),
+						},
+						'UnitCountMin', 0,
+						'UnitCountMax', 1,
 					}),
 				},
-					comment = "-- UNITS-007 Extra Melee 6-8",
+					comment = "-- UNITS-007 Extra Melee 6-8; per-unit roll (vanilla clones UnitCount)",
 					displayName = T(890000000012514, --[[ModItemEnemySquads LegionExtra_Ernie_Melee displayName]] "Усиление: ближний бой"),
 					group = "Ernie",
 					id = "LegionExtra_Ernie_Melee",
@@ -100607,11 +100887,137 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 20,
 							}),
 						},
-						'UnitCountMin', 5,
-						'UnitCountMax', 7,
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Veteran",
+								'spawnWeight', 45,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT3_Recon",
+								'spawnWeight', 20,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Veteran",
+								'spawnWeight', 45,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT3_Recon",
+								'spawnWeight', 20,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Veteran",
+								'spawnWeight', 45,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT3_Recon",
+								'spawnWeight', 20,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Veteran",
+								'spawnWeight', 45,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT3_Recon",
+								'spawnWeight', 20,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Veteran",
+								'spawnWeight', 45,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT3_Recon",
+								'spawnWeight', 20,
+							}),
+						},
+						'UnitCountMin', 0,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Raider",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Veteran",
+								'spawnWeight', 45,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_ShockTrooper",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FlankerT3_Recon",
+								'spawnWeight', 20,
+							}),
+						},
+						'UnitCountMin', 0,
+						'UnitCountMax', 1,
 					}),
 				},
-					comment = "-- UNITS-007 Extra Veterans light 5-7",
+					comment = "-- UNITS-007 Extra Veterans light 5-7; per-unit roll (vanilla clones UnitCount)",
 					displayName = T(890000000012513, --[[ModItemEnemySquads LegionExtra_Ernie_Veterans displayName]] "Усиление: ветераны"),
 					group = "Ernie",
 					id = "LegionExtra_Ernie_Veterans",
@@ -100632,11 +101038,113 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 15,
 							}),
 						},
-						'UnitCountMin', 5,
-						'UnitCountMax', 7,
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
+								'spawnWeight', 15,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
+								'spawnWeight', 15,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
+								'spawnWeight', 15,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
+								'spawnWeight', 15,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
+								'spawnWeight', 15,
+							}),
+						},
+						'UnitCountMin', 0,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT1_Grenadier",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_AssaultT2_Pyro",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_HeavyT2_Grenadier",
+								'spawnWeight', 15,
+							}),
+						},
+						'UnitCountMin', 0,
+						'UnitCountMax', 1,
 					}),
 				},
-					comment = "-- UNITS-007 Extra Grenadiers 5-7",
+					comment = "-- UNITS-007 Extra Grenadiers 5-7; per-unit roll (vanilla clones UnitCount)",
 					displayName = T(890000000012512, --[[ModItemEnemySquads LegionExtra_Ernie_Grenadiers displayName]] "Усиление: гранатомётчики"),
 					group = "Ernie",
 					id = "LegionExtra_Ernie_Grenadiers",
@@ -100657,11 +101165,130 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 20,
 							}),
 						},
-						'UnitCountMin', 6,
-						'UnitCountMax', 8,
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Sniper",
+								'spawnWeight', 20,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Sniper",
+								'spawnWeight', 20,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Sniper",
+								'spawnWeight', 20,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Sniper",
+								'spawnWeight', 20,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Sniper",
+								'spawnWeight', 20,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Sniper",
+								'spawnWeight', 20,
+							}),
+						},
+						'UnitCountMin', 0,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Marksman",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT2_Ambusher",
+								'spawnWeight', 40,
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_FrontT3_Sniper",
+								'spawnWeight', 20,
+							}),
+						},
+						'UnitCountMin', 0,
+						'UnitCountMax', 1,
 					}),
 				},
-					comment = "-- UNITS-007 Extra Marksmen 6-8",
+					comment = "-- UNITS-007 Extra Marksmen 6-8; per-unit roll (vanilla clones UnitCount)",
 					displayName = T(890000000012511, --[[ModItemEnemySquads LegionExtra_Ernie_Marksmen displayName]] "Усиление: стрелки"),
 					group = "Ernie",
 					id = "LegionExtra_Ernie_Marksmen",
@@ -100681,11 +101308,123 @@ displayName]] "Legion Garrison"),
 								'spawnWeight', 40,
 							}),
 						},
-						'UnitCountMin', 6,
-						'UnitCountMax', 8,
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+								'spawnWeight', 40,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+								'spawnWeight', 40,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+								'spawnWeight', 40,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+								'spawnWeight', 40,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+								'spawnWeight', 40,
+							}),
+						},
+						'UnitCountMin', 1,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+								'spawnWeight', 40,
+							}),
+						},
+						'UnitCountMin', 0,
+						'UnitCountMax', 1,
+					}),
+					PlaceObj('EnemySquadUnit', {
+						'weightedList', {
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_GMPG",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT2_AssaultGunner",
+							}),
+							PlaceObj('UnitTypeListWithWeights', {
+								'unitType', "JAZZ_Legion_GunnerT1_Gunner",
+								'spawnWeight', 40,
+							}),
+						},
+						'UnitCountMin', 0,
+						'UnitCountMax', 1,
 					}),
 				},
-					comment = "-- UNITS-007 Extra Gunners 6-8",
+					comment = "-- UNITS-007 Extra Gunners 6-8; per-unit roll (vanilla clones UnitCount)",
 					displayName = T(890000000012510, --[[ModItemEnemySquads LegionExtra_Ernie_Gunners displayName]] "Усиление: пулемётчики"),
 					group = "Ernie",
 					id = "LegionExtra_Ernie_Gunners",
