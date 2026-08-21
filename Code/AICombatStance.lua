@@ -663,6 +663,97 @@ function JazzAI_TryMedicSwitch(unit)
 	return false
 end
 
+function JazzAI_IsDedicatedMedicUnit(unit)
+	return unit and JazzAI_InferRoleFamily(unit) == "Medic"
+end
+
+local function JazzAI_UnitIsMedicCapable(unit)
+	if not unit or not IsValid(unit) or unit:IsDead() then
+		return false
+	end
+	if unit.IsDowned and unit:IsDowned() then
+		return false
+	end
+	if unit.IsIncapacitated and unit:IsIncapacitated() then
+		return false
+	end
+	return true
+end
+
+function JazzAI_TeamHasLivingDedicatedMedic(team)
+	if not team then
+		return false
+	end
+	for _, ally in ipairs(team.units or empty_table) do
+		if JazzAI_UnitIsMedicCapable(ally) and JazzAI_IsDedicatedMedicUnit(ally) then
+			return true
+		end
+	end
+	return false
+end
+
+local function JazzAI_FindNeediestPatient(team)
+	local best, best_bleed, best_hpp, best_handle = false, 1, 1000, 0x7fffffff
+	for _, ally in ipairs((team and team.units) or empty_table) do
+		if JazzAI_UnitIsMedicCapable(ally) and JazzAI_UnitNeedsMedicCare(ally) then
+			local bleed = JazzAI_UnitHasBleeding(ally) and 0 or 1
+			local max_hp = ally.MaxHitPoints or 1
+			local hpp = MulDivRound(ally.HitPoints or 0, 100, Max(1, max_hp))
+			local handle = ally.handle or 0
+			if bleed < best_bleed
+				or (bleed == best_bleed and hpp < best_hpp)
+				or (bleed == best_bleed and hpp == best_hpp and handle < best_handle) then
+				best, best_bleed, best_hpp, best_handle = ally, bleed, hpp, handle
+			end
+		end
+	end
+	return best
+end
+
+local function JazzAI_IsAssignedFillInMedic(unit)
+	if not unit or not unit.team or not JazzAI_HasUsableBleedMedicine(unit) then
+		return false
+	end
+	if JazzAI_IsDedicatedMedicUnit(unit) then
+		return false
+	end
+	local patient = JazzAI_FindNeediestPatient(unit.team)
+	if not patient then
+		return false
+	end
+	local best, best_dist, best_handle = false, 0x7fffffff, 0x7fffffff
+	for _, ally in ipairs(unit.team.units or empty_table) do
+		if JazzAI_UnitIsMedicCapable(ally)
+			and not JazzAI_IsDedicatedMedicUnit(ally)
+			and JazzAI_HasUsableBleedMedicine(ally) then
+			local dist = 0
+			if ally ~= patient and ally.GetDist then
+				dist = ally:GetDist(patient) or 0
+			end
+			local handle = ally.handle or 0
+			if dist < best_dist or (dist == best_dist and handle < best_handle) then
+				best, best_dist, best_handle = ally, dist, handle
+			end
+		end
+	end
+	return best == unit
+end
+
+-- MED-002: only dedicated medic (or one fill-in if none) becomes Medic.
+function JazzAI_ShouldBecomeMedic(unit, opts)
+	opts = opts or empty_table
+	if not unit or not JazzAI_TryMedicSwitch(unit) then
+		return false
+	end
+	if (opts.allow_medic or JazzAI_IsDedicatedMedicUnit(unit)) then
+		return true
+	end
+	if JazzAI_TeamHasLivingDedicatedMedic(unit.team) then
+		return false
+	end
+	return JazzAI_IsAssignedFillInMedic(unit)
+end
+
 -- Medic archetype Behavior Score helpers (items.lua Score closures).
 -- When self/ally needs care, combat behaviors must score 0 so Healer wins
 -- exclusively — otherwise Standard/SeekEnemy (~Weight 100) beat Healer (200)
@@ -772,15 +863,9 @@ function JazzAI_PickCombatStance(unit, proto_context, opts)
 		end
 	end
 
-	local dedicated_medic = opts.allow_medic or family == "Medic"
-	local carrying_bleed_medicine = JazzAI_HasUsableBleedMedicine(unit)
-		and JazzAI_TeamHasBleeding(unit)
-	if dedicated_medic or carrying_bleed_medicine then
-		-- F10: bleeding on self or allies triggers Medic immediately
-		if (dedicated_medic and JazzAI_TryMedicSwitch(unit)) or carrying_bleed_medicine then
-			JazzAI_ApplyMedicOptLocCap()
-			return "Medic"
-		end
+	if JazzAI_ShouldBecomeMedic(unit, opts) then
+		JazzAI_ApplyMedicOptLocCap()
+		return "Medic"
 	end
 	if family == "Leader" then
 		return archetype
