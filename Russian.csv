@@ -6566,3 +6566,9 @@ Move to a new location and then shoot the closest enemy.","<em>Раз в ход<
 890000000012515,Усиление: фланкеры,Усиление: фланкеры,,jazz-units:items.lua
 890000000012516,Усиление: смешанное,Усиление: смешанное,,jazz-units:items.lua
 890000000012601,Штурмовики Легиона,Штурмовики Легиона,,jazz-units:items.lua
+890000000010900,Практика: <xp> / <need>,Практика: <xp> / <need>,,jazz-units:Code/StatGainRework.lua
+890000000010901,"<help>
+
+<practice>","<help>
+
+<practice>",,jazz-units:Code/StatGainRework.lua

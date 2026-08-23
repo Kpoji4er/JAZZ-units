@@ -6561,3 +6561,9 @@ ID,Text,Translation,VoiceActor,Context
 890000000012515,Усиление: фланкеры,Reinforcement: flankers,,jazz-units:items.lua
 890000000012516,Усиление: смешанное,Reinforcement: mixed,,jazz-units:items.lua
 890000000012601,Штурмовики Легиона,Legion Attack Squad,,jazz-units:items.lua
+890000000010900,Практика: <xp> / <need>,Practice: <xp> / <need>,,jazz-units:Code/StatGainRework.lua
+890000000010901,"<help>
+
+<practice>","<help>
+
+<practice>",,jazz-units:Code/StatGainRework.lua
