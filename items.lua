@@ -33166,6 +33166,11 @@ return {
 							stack_max = 2,
 							stack_min = 1,
 						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "BlackPowder",
+							stack_max = 2,
+							stack_min = 1,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_Gen_NightEquipment",
 						}),
@@ -37596,6 +37601,11 @@ return {
 							item = "FragGrenade",
 							stack_max = 2,
 							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
+							item = "BlackPowder",
+							stack_max = 3,
+							stack_min = 2,
 						}),
 						PlaceObj('LootEntryInventoryItem', {
 							item = "JAZZ_Bandage",
@@ -74896,6 +74906,11 @@ return {
 						id = "ArmyDemo",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
+							item = "BlackPowder",
+							stack_max = 2,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
 							drop_chance_mod = 30,
 							item = "FragGrenade",
 							stack_max = 6,
@@ -74927,6 +74942,11 @@ return {
 						group = "Enemy - Army",
 						id = "ArmyDemo_Elite",
 						loot = "all",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "BlackPowder",
+							stack_max = 2,
+							stack_min = 1,
+						}),
 						PlaceObj('LootEntryInventoryItem', {
 							drop_chance_mod = 30,
 							item = "FragGrenade",
@@ -75601,6 +75621,11 @@ return {
 						group = "Enemy - Army",
 						id = "ArmyCommando_Demo",
 						loot = "all",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "BlackPowder",
+							stack_max = 2,
+							stack_min = 1,
+						}),
 						PlaceObj('LootEntryInventoryItem', {
 							drop_chance_mod = 30,
 							item = "FragGrenade",
@@ -77940,6 +77965,11 @@ return {
 						id = "AdonisDemolitions",
 						loot = "all",
 						PlaceObj('LootEntryInventoryItem', {
+							item = "BlackPowder",
+							stack_max = 3,
+							stack_min = 2,
+						}),
+						PlaceObj('LootEntryInventoryItem', {
 							Condition = 93,
 							item = "M79",
 							stack_max = 1,
@@ -77968,6 +77998,11 @@ return {
 						group = "Enemy - Adonis",
 						id = "AdonisDemolitions_Elite",
 						loot = "all",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "BlackPowder",
+							stack_max = 3,
+							stack_min = 2,
+						}),
 						PlaceObj('LootEntryInventoryItem', {
 							Condition = 93,
 							item = "MGL",
@@ -79884,6 +79919,11 @@ return {
 						group = "Enemy - Rebels",
 						id = "RebelGrenadier",
 						loot = "all",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "BlackPowder",
+							stack_max = 2,
+							stack_min = 1,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "RebelsExplosives",
 						}),
@@ -79959,6 +79999,11 @@ return {
 						group = "Default",
 						id = "RebelRPG",
 						loot = "all",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "BlackPowder",
+							stack_max = 3,
+							stack_min = 2,
+						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "HeavyGrenadier_Launcher",
 						}),
