@@ -49,7 +49,6 @@ DefineClass.JAZZ_Legion_FrontT4_MercenarySniper = {
 		"LightningReactionNPC",
 		"Instagib",
 		"Killzone",
-		"Spiritual",
 		"Hobbler",
 		"DeathFromAbove",
 		"Hotblood",
@@ -60,7 +59,6 @@ DefineClass.JAZZ_Legion_FrontT4_MercenarySniper = {
 		"StressManagement",
 		"HawksEye",
 		"SidneyPerk",
-		"Spiritual",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

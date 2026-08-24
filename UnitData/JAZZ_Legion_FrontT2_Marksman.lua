@@ -48,7 +48,6 @@ DefineClass.JAZZ_Legion_FrontT2_Marksman = {
 		"BunsPerk",
 		"Killzone",
 		"CancelShotPerk",
-		"Spiritual",
 		"Spotter",
 	},
 	AppearancesList = {

@@ -43,11 +43,9 @@ DefineClass.JAZZ_Legion_FrontT3_Sniper = {
 	MaxHitPoints = 50,
 	StartingPerks = {
 		"LightningReactionNPC",
-		"Spiritual",
 		"Instagib",
 		"HawksEye",
 		"Killzone",
-		"Spiritual",
 		"DeathFromAbove",
 		"SteadyBreathing",
 		"TrickShot",

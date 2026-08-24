@@ -85898,7 +85898,7 @@ return {
 						'MinDist', 5000,
 						'action_id', "RocketLauncherFire",
 						'LimitRange', true,
-						'MaxTargetRange', 30,
+						'MaxTargetRange', 40,
 					}),
 					PlaceObj('AIActionCancelShot', {
 						'Weight', 200,
@@ -87278,7 +87278,6 @@ return {
 					"Instagib",
 					"CancelShotPerk",
 					"Spotter",
-					"Spiritual",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -87549,7 +87548,6 @@ return {
 					"BunsPerk",
 					"Killzone",
 					"CancelShotPerk",
-					"Spiritual",
 					"Spotter",
 				},
 				'AppearancesList', {
@@ -87643,7 +87641,6 @@ return {
 					"DeathFromAbove",
 					"Instagib",
 					"Killzone",
-					"Spiritual",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -87829,11 +87826,9 @@ return {
 				'MaxHitPoints', 50,
 				'StartingPerks', {
 					"LightningReactionNPC",
-					"Spiritual",
 					"Instagib",
 					"HawksEye",
 					"Killzone",
-					"Spiritual",
 					"DeathFromAbove",
 					"SteadyBreathing",
 					"TrickShot",
@@ -88028,7 +88023,6 @@ return {
 					"LightningReactionNPC",
 					"Instagib",
 					"Killzone",
-					"Spiritual",
 					"Hobbler",
 					"DeathFromAbove",
 					"Hotblood",
@@ -88039,7 +88033,6 @@ return {
 					"StressManagement",
 					"HawksEye",
 					"SidneyPerk",
-					"Spiritual",
 				},
 				'AppearancesList', {
 					PlaceObj('AppearanceWeight', {
@@ -89141,7 +89134,6 @@ return {
 				'MaxHitPoints', 80,
 				'StartingPerks', {
 					"CQCTraining",
-					"Spiritual",
 					"BattleFocus",
 					"RelentlessAdvance",
 					"ShoulderToShoulder",
@@ -89239,7 +89231,6 @@ return {
 				'MaxHitPoints', 80,
 				'StartingPerks', {
 					"CQCTraining",
-					"Spiritual",
 					"BattleFocus",
 					"RelentlessAdvance",
 					"ShoulderToShoulder",
@@ -89349,7 +89340,6 @@ return {
 				'MaxHitPoints', 50,
 				'StartingPerks', {
 					"CQCTraining",
-					"Spiritual",
 					"BattleFocus",
 					"RelentlessAdvance",
 					"ShoulderToShoulder",
@@ -89457,7 +89447,6 @@ return {
 					"HitTheDeck",
 					"CollateralDamage",
 					"Hardened",
-					"Spiritual",
 					"BattleFocus",
 					"RelentlessAdvance",
 					"ShoulderToShoulder",
@@ -94433,7 +94422,7 @@ PlaceObj('ModItemAIArchetype', {
 						'MinDist', 5000,
 						'action_id', "RocketLauncherFire",
 						'LimitRange', true,
-						'MaxTargetRange', 30,
+						'MaxTargetRange', 40,
 					}),
 					PlaceObj('AIActionCancelShot', {
 						'Weight', 200,
@@ -117416,7 +117405,7 @@ displayName]] "Legion Garrison"),
 					'MinDist', 5000,
 					'action_id', "RocketLauncherFire",
 					'LimitRange', true,
-					'MaxTargetRange', 30,
+					'MaxTargetRange', 40,
 				}),
 				PlaceObj('AIConeAttack', {
 					'BiasId', "Overwatch",

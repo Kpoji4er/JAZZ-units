@@ -49,7 +49,6 @@ DefineClass.JAZZ_Legion_FrontT2_Ambusher = {
 		"DeathFromAbove",
 		"Instagib",
 		"Killzone",
-		"Spiritual",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

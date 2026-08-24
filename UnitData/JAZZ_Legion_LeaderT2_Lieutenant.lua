@@ -48,7 +48,6 @@ DefineClass.JAZZ_Legion_LeaderT2_Lieutenant = {
 	MaxHitPoints = 80,
 	StartingPerks = {
 		"CQCTraining",
-		"Spiritual",
 		"BattleFocus",
 		"RelentlessAdvance",
 		"ShoulderToShoulder",

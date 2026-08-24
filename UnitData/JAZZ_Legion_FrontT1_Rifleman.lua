@@ -46,7 +46,6 @@ DefineClass.JAZZ_Legion_FrontT1_Rifleman = {
 		"Instagib",
 		"CancelShotPerk",
 		"Spotter",
-		"Spiritual",
 	},
 	AppearancesList = {
 		PlaceObj('AppearanceWeight', {

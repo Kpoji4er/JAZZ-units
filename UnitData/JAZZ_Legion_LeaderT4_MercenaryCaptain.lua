@@ -62,7 +62,6 @@ DefineClass.JAZZ_Legion_LeaderT4_MercenaryCaptain = {
 		"HitTheDeck",
 		"CollateralDamage",
 		"Hardened",
-		"Spiritual",
 		"BattleFocus",
 		"RelentlessAdvance",
 		"ShoulderToShoulder",

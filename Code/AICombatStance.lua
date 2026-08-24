@@ -2,7 +2,23 @@
 -- Deterministic NeedPush/NeedFlank; panic tiers; melee secondary via AP-reach (F9).
 
 local function JazzAI_UnitClassName(unit)
-	return (unit and (unit.class or unit.className or unit.unitdatadef_id)) or ""
+	-- Live combat units are class "Unit"; role tokens live on UnitData id.
+	if not unit then
+		return ""
+	end
+	local def = unit.unitdatadef_id
+	if type(def) == "string" and def ~= "" then
+		return def
+	end
+	local name = unit.className
+	if type(name) == "string" and name ~= "" and name ~= "Unit" then
+		return name
+	end
+	local cls = unit.class
+	if type(cls) == "string" and cls ~= "" and cls ~= "Unit" then
+		return cls
+	end
+	return def or name or cls or ""
 end
 
 function JazzAI_FactionArchetypePrefix(unit)
@@ -779,6 +795,14 @@ function JazzAI_NeedsRegroup(unit)
 		return false
 	end
 	if unit.Affiliation ~= "Legion" then
+		return false
+	end
+	-- Rocketeer / mortar / GL: stay rear and shoot. Legion_Regroup has no
+	-- RocketLauncherFire, so isolation would silence them for the whole fight.
+	if JazzAI_InferRoleFamily(unit) == "Heavy" then
+		return false
+	end
+	if JazzAI_HasKeyword(unit, "Ordnance") then
 		return false
 	end
 	local team = unit.team
