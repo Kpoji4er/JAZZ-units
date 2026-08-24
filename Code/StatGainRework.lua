@@ -7,6 +7,10 @@ g_JAZZ_U009_RecalcWillPointsBase = rawget(_G, "g_JAZZ_U009_RecalcWillPointsBase"
 g_JAZZ_U009_ApplySuppressionStatusBase = rawget(_G, "g_JAZZ_U009_ApplySuppressionStatusBase") or false
 g_JAZZ_U009_GainStatBase = rawget(_G, "g_JAZZ_U009_GainStatBase") or false
 g_JAZZ_U009_MercStatsItemsBase = rawget(_G, "g_JAZZ_U009_MercStatsItemsBase") or false
+g_JAZZ_U009_MercStatsItemsFn = rawget(_G, "g_JAZZ_U009_MercStatsItemsFn") or false
+g_JAZZ_U009_GetRolloverTextBase = rawget(_G, "g_JAZZ_U009_GetRolloverTextBase") or false
+g_JAZZ_U009_GetRolloverTextFn = rawget(_G, "g_JAZZ_U009_GetRolloverTextFn") or false
+g_JAZZ_U009_CombatActionExecuteFn = rawget(_G, "g_JAZZ_U009_CombatActionExecuteFn") or {}
 g_JAZZ_U009_UnjamBase = rawget(_G, "g_JAZZ_U009_UnjamBase") or false
 g_JAZZ_U009_OnHealBase = rawget(_G, "g_JAZZ_U009_OnHealBase") or false
 g_JAZZ_U009_BandageBase = rawget(_G, "g_JAZZ_U009_BandageBase") or false
@@ -15,8 +19,8 @@ g_JAZZ_U009_MarkHealingBase = rawget(_G, "g_JAZZ_U009_MarkHealingBase") or false
 g_JAZZ_U009_StabilizeBase = rawget(_G, "g_JAZZ_U009_StabilizeBase") or false
 g_JAZZ_U009_DowngradeTraumaBase = rawget(_G, "g_JAZZ_U009_DowngradeTraumaBase") or false
 
-Jazz_LeadershipActivePerks = Jazz_LeadershipActivePerks or { OnMyTarget = 20 }
-Jazz_LeadershipAuraPerks = Jazz_LeadershipAuraPerks or {}
+Jazz_LeadershipActivePerks = rawget(_G, "Jazz_LeadershipActivePerks") or { OnMyTarget = 20 }
+Jazz_LeadershipAuraPerks = rawget(_G, "Jazz_LeadershipAuraPerks") or {}
 
 local kSkillXpFlag = "JazzSkillXP"
 local kHealthHpCreditFlag = "JazzHealthHpCredit"
@@ -205,7 +209,8 @@ function Jazz_AwardSkillPractice(unit, stat, base, fail_chance)
 		if not need or xp < need then break end
 		xp = xp - need
 		if type(GainStat) == "function" then
-			GainStat(unit, stat, 1)
+			-- Vanilla log reason: Practical experience / Практический опыт.
+			GainStat(unit, stat, 1, nil, "FieldExperience")
 		else
 			unit[stat] = current + 1
 		end
@@ -240,6 +245,26 @@ function Jazz_SkillPracticeRollover(unit, stat)
 	local need = Jazz_SkillXPThreshold(current)
 	if not need then return "" end
 	return T{890000000010900, "Практика: <xp> / <need>", xp = Jazz_GetSkillXP(unit, stat), need = need}
+end
+
+local function lTStr(v)
+	if v == nil or v == "" then return "" end
+	local tr = rawget(_G, "_InternalTranslate")
+	if type(tr) == "function" then
+		local ok, s = pcall(tr, v)
+		if ok and type(s) == "string" and s ~= "" then return s end
+	end
+	return tostring(v)
+end
+
+local function lComposePracticeHelp(help, extra)
+	if extra == nil or extra == "" then return help end
+	local composed = lTStr(help) .. "\n\n" .. lTStr(extra)
+	local untr = rawget(_G, "Untranslated")
+	if type(untr) == "function" then
+		return untr(composed)
+	end
+	return composed
 end
 
 function Jazz_AwardMarksmanshipAim(unit, rate, aim)
@@ -607,11 +632,18 @@ local function lClearOncePerMapVisit()
 end
 
 local function lWrapCombatAction(action_id, after_fn)
-	local actions = rawget(_G, "CombatActions") or rawget(_G, "CombatActions")
+	local actions = rawget(_G, "CombatActions")
 	local ca = actions and actions[action_id]
-	if not ca or type(ca.Execute) ~= "function" or ca.jazz_u009_wrapped then return end
+	if not ca or type(ca.Execute) ~= "function" then return end
+	local fns = rawget(_G, "g_JAZZ_U009_CombatActionExecuteFn")
+	if type(fns) ~= "table" then
+		fns = {}
+		rawset(_G, "g_JAZZ_U009_CombatActionExecuteFn", fns)
+	end
+	local our = fns[action_id]
+	if our and ca.Execute == our then return end
 	local base = ca.Execute
-	ca.Execute = function(self, units, args)
+	local function wrapped(self, units, args)
 		local unit = units and units[1]
 		local before_fm = unit and (unit.free_move_ap or unit.free_move or 0) or 0
 		local start_pos = unit and unit.GetPos and unit:GetPos()
@@ -619,7 +651,8 @@ local function lWrapCombatAction(action_id, after_fn)
 		after_fn(unit, args, before_fm, start_pos)
 		return result
 	end
-	ca.jazz_u009_wrapped = true
+	ca.Execute = wrapped
+	fns[action_id] = wrapped
 end
 
 local function lInstallSetPrerequisiteWrap(global_name)
@@ -643,6 +676,71 @@ local function lInstallSetPrerequisiteWrap(global_name)
 		end
 		return base(unit, id, state, reason)
 	end)
+end
+
+local function lInstallMercStatsWrap()
+	-- Bare MercStatsItems follows _G __index (rawget on a proxy _G is nil).
+	-- Replacing the engine global must use `function MercStatsItems`, not rawset.
+	local ok_cur, current = pcall(function() return MercStatsItems end)
+	if not ok_cur or type(current) ~= "function" then return end
+	local our = rawget(_G, "g_JAZZ_U009_MercStatsItemsFn")
+	if our and current == our then return end
+	local stored = rawget(_G, "g_JAZZ_U009_MercStatsItemsBase")
+	if type(stored) ~= "function" then
+		rawset(_G, "g_JAZZ_U009_MercStatsItemsBase", current)
+	end
+	local function wrapped(context)
+		local base = rawget(_G, "g_JAZZ_U009_MercStatsItemsBase")
+		local items = type(base) == "function" and base(context) or lEmpty()
+		for _, item in ipairs(items or lEmpty()) do
+			local extra = Jazz_SkillPracticeRollover(context, item.id or item.stat)
+			if extra ~= "" and item.help then
+				item.help = lComposePracticeHelp(item.help, extra)
+			end
+		end
+		return items
+	end
+	rawset(_G, "g_JAZZ_U009_MercStatsItemsFn", wrapped)
+	function MercStatsItems(context)
+		return wrapped(context)
+	end
+end
+
+-- PDAAimEvaluation / hired dossier bars use PDAAttributeRollover, not MercStatsItems.
+-- Vanilla keeps Studying / Training / Field Experience as separate boost rows.
+local function lInstallAttributeRolloverWrap()
+	local cls = rawget(_G, "XContextWindow")
+	if type(cls) ~= "table" then
+		local classes = rawget(_G, "g_Classes")
+		cls = classes and classes.XContextWindow
+	end
+	if type(cls) ~= "table" or type(cls.GetRolloverText) ~= "function" then return end
+	local our = rawget(_G, "g_JAZZ_U009_GetRolloverTextFn")
+	if our and cls.GetRolloverText == our then return end
+	if type(rawget(_G, "g_JAZZ_U009_GetRolloverTextBase")) ~= "function" then
+		rawset(_G, "g_JAZZ_U009_GetRolloverTextBase", cls.GetRolloverText)
+	end
+	local function wrapped(self, ...)
+		local text = g_JAZZ_U009_GetRolloverTextBase(self, ...)
+		local get_attr = self and self.GetAttribute
+		if type(get_attr) ~= "function" then return text end
+		local ctx = self.context
+		if not ctx and type(self.GetContext) == "function" then
+			ctx = self:GetContext()
+		end
+		local extra = Jazz_SkillPracticeRollover(ctx, get_attr(self))
+		if extra == "" then return text end
+		local extra_s = lTStr(extra)
+		local text_s = lTStr(text)
+		if extra_s ~= "" and type(text_s) == "string" and string.find(text_s, extra_s, 1, true) then
+			return text
+		end
+		return lComposePracticeHelp(text, extra)
+	end
+	rawset(_G, "g_JAZZ_U009_GetRolloverTextFn", wrapped)
+	function XContextWindow:GetRolloverText(...)
+		return wrapped(self, ...)
+	end
 end
 
 local function lInstallCoreWraps()
@@ -672,35 +770,7 @@ local function lInstallCoreWraps()
 		end
 	end
 
-	local gain = rawget(_G, "GainStat")
-	if type(gain) == "function" and not rawget(_G, "g_JAZZ_U009_GainStatBase") then
-		rawset(_G, "g_JAZZ_U009_GainStatBase", gain)
-		rawset(_G, "GainStat", function(unit, stat, amount, mod_id, reason)
-			local result = g_JAZZ_U009_GainStatBase(unit, stat, amount, mod_id, reason)
-			Jazz_OnGainStatPractice(unit, stat, amount, reason)
-			return result
-		end)
-	end
-
-	local function lInstallMercStatsWrap(global_name)
-		local merc_stats = rawget(_G, global_name)
-		if type(merc_stats) ~= "function" then return end
-		local flag = "g_JAZZ_U009_" .. global_name .. "Base"
-		if rawget(_G, flag) then return end
-		rawset(_G, flag, merc_stats)
-		rawset(_G, global_name, function(context)
-			local items = rawget(_G, flag)(context)
-			for _, item in ipairs(items or lEmpty()) do
-				local extra = Jazz_SkillPracticeRollover(context, item.id or item.stat)
-				if extra ~= "" and item.help then
-					item.help = T{890000000010901, "<help>\n\n<practice>", help = item.help, practice = extra}
-				end
-			end
-			return items
-		end)
-	end
-	lInstallMercStatsWrap("MercStatsItems")
-	lInstallMercStatsWrap("MercStatsItems")
+	lInstallMercStatsWrap()
 
 	lWrapCombatAction("Move", function(unit, args, before_fm, start_pos)
 		if not unit or not g_Combat then return end
@@ -728,7 +798,7 @@ local function lInstallCoreWraps()
 	lWrapCombatAction("VaultOver", vault_after)
 	local function lOnMyTarget(unit)
 		if unit then
-			Jazz_AwardLeadershipPractice(unit, Jazz_LeadershipActivePerks.OnMyTarget or Jazz_LeadershipActivePerks.OnMyTarget or 20)
+			Jazz_AwardLeadershipPractice(unit, Jazz_LeadershipActivePerks.OnMyTarget or 20)
 		end
 	end
 	lWrapCombatAction("OnMyTarget", lOnMyTarget)
@@ -844,24 +914,53 @@ local function lInstallLateWraps()
 	end
 end
 
-local function lInstallAllWraps()
-	lInstallCoreWraps()
-	lInstallLateWraps()
+function Jazz_Units009InstallWraps()
+	local ok, err = pcall(lInstallAttributeRolloverWrap)
+	if not ok then
+		print("[JAZZ-UNITS-009] attribute rollover wrap failed:", err)
+	end
+	ok, err = pcall(lInstallMercStatsWrap)
+	if not ok then
+		print("[JAZZ-UNITS-009] MercStatsItems wrap failed:", err)
+	end
+	ok, err = pcall(lInstallCoreWraps)
+	if not ok then
+		print("[JAZZ-UNITS-009] core wraps failed:", err)
+	end
+	ok, err = pcall(lInstallLateWraps)
+	if not ok then
+		print("[JAZZ-UNITS-009] late wraps failed:", err)
+	end
 	rawset(_G, "g_JAZZ_U009_WrapsInstalled", true)
 end
 
+local function lInstallAllWraps()
+	Jazz_Units009InstallWraps()
+end
+
 function OnMsg.DataLoaded()
-	lClearOncePerMapVisit()
+	pcall(lClearOncePerMapVisit)
 	lInstallAllWraps()
 end
 
 function OnMsg.ModsReloaded()
-	lClearOncePerMapVisit()
+	pcall(lClearOncePerMapVisit)
 	lInstallAllWraps()
 end
 
 function OnMsg.CombatStart()
 	lInstallAllWraps()
+end
+
+function OnMsg.Autorun()
+	lInstallAllWraps()
+end
+
+function OnMsg.StatIncreased(unit, stat, amount, reason)
+	local sid = unit and (unit.session_id or unit.SessionId)
+	local units = rawget(_G, "g_Units")
+	local live = sid and type(units) == "table" and units[sid]
+	Jazz_OnGainStatPractice(live or unit, stat, amount, reason)
 end
 
 function OnMsg.OnAttack(attacker, action, target, results, attack_args)
@@ -911,3 +1010,22 @@ Jazz_AwardMechanicalPractice = Jazz_AwardMechanicalPractice
 Jazz_AwardExplosivesPractice = Jazz_AwardExplosivesPractice
 Jazz_AwardMedicalPractice = Jazz_AwardMedicalPractice
 Jazz_AwardWillPractice = Jazz_AwardWillPractice
+
+Jazz_Units009InstallWraps()
+
+local function lDelayedMercStatsWrap()
+	local start = rawget(_G, "CreateRealTimeThread")
+	if type(start) ~= "function" then return end
+	start(function()
+		local sleep = rawget(_G, "Sleep")
+		if type(sleep) == "function" then
+			sleep(1)
+			Jazz_Units009InstallWraps()
+			sleep(200)
+			Jazz_Units009InstallWraps()
+		else
+			Jazz_Units009InstallWraps()
+		end
+	end)
+end
+lDelayedMercStatsWrap()
