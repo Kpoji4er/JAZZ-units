@@ -875,6 +875,9 @@ end
 --- Main entry for UnitData.PickCustomArchetype.
 --- opts.allow_medic = true for Bonemaker-style units.
 function JazzAI_PickCombatStance(unit, proto_context, opts)
+	if type(JazzAI_UsesJazzCombatAI) == "function" and not JazzAI_UsesJazzCombatAI(unit) then
+		return unit and unit.archetype
+	end
 	opts = opts or empty_table
 	local archetype = unit.archetype
 	local prefix = JazzAI_FactionArchetypePrefix(unit)
