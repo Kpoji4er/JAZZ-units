@@ -28,6 +28,10 @@ on:
         description: "Comma-separated suite packages touched (e.g. jazz,jazz-units,jazz-nomaps)"
         required: false
         type: string
+      suite_versions:
+        description: "Full engine versions: jazz:0.20-6206,jazz-units:0.19-2326"
+        required: false
+        type: string
 
 permissions:
   contents: read
@@ -44,6 +48,7 @@ jobs:
       dry_run: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
       force_publish: ${{ github.event_name == 'workflow_dispatch' && inputs.force_publish || false }}
       suite_packages: ${{ github.event_name == 'workflow_dispatch' && inputs.suite_packages || '' }}
+      suite_versions: ${{ github.event_name == 'workflow_dispatch' && inputs.suite_versions || '' }}
       openai_model: ${{ vars.OPENAI_MODEL }}
       discord_update_role_id: ${{ vars.DISCORD_UPDATE_ROLE_ID }}
       discord_mention_update_role: ${{ vars.DISCORD_MENTION_UPDATE_ROLE }}
