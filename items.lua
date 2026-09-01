@@ -18693,7 +18693,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryInventoryItem', {
 						drop_chance_mod = 200,
-						item = "_12gauge_Breacher",
+						item = "JAZZ_AMMO_12gauge_Buckshot",
 						stack_max = 48,
 						stack_min = 24,
 					}),
@@ -19655,7 +19655,7 @@ return {
 				id = "Bunker_Shotgun",
 				loot = "all",
 				PlaceObj('LootEntryInventoryItem', {
-					item = "_12gauge_Buckshot",
+					item = "JAZZ_AMMO_12gauge_Buckshot",
 					stack_max = 24,
 					stack_min = 12,
 				}),
