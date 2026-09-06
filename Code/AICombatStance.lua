@@ -1037,10 +1037,49 @@ function JazzAI_ApplyMedicOptLocCap()
 	end
 end
 
+-- PickCustom in items.lua evals against GetRawG, not this file's _ENV.
+-- rawget(_G, name) misses functions declared here when _G is the engine table.
+local function JazzAI_PublishStanceExports()
+	local rawg = _G
+	local mt = getmetatable(_G)
+	if type(mt) == "table" then
+		local idx = rawget(mt, "__index")
+		if type(idx) == "table" then
+			rawg = idx
+		end
+	end
+	local exports = {
+		JazzAI_PickCombatStance = JazzAI_PickCombatStance,
+		JazzAI_InferRoleFamily = JazzAI_InferRoleFamily,
+		JazzAI_UnitIsDedicatedSniper = JazzAI_UnitIsDedicatedSniper,
+		JazzAI_UnitIsDedicatedMG = JazzAI_UnitIsDedicatedMG,
+		JazzAI_UnitIsDynamicSemiSniper = JazzAI_UnitIsDynamicSemiSniper,
+		JazzAI_UnitIsDynamicPseudoMG = JazzAI_UnitIsDynamicPseudoMG,
+		JazzAI_UnitIsDynamicPusher = JazzAI_UnitIsDynamicPusher,
+		JazzAI_PickTeamSemiSniper = JazzAI_PickTeamSemiSniper,
+		JazzAI_PickTeamPseudoMG = JazzAI_PickTeamPseudoMG,
+		JazzAI_PickTeamPusher = JazzAI_PickTeamPusher,
+		JazzAI_TryMedicSwitch = JazzAI_TryMedicSwitch,
+		JazzAI_FactionArchetypePrefix = JazzAI_FactionArchetypePrefix,
+		JazzAI_MedicHealBehaviorScore = JazzAI_MedicHealBehaviorScore,
+		JazzAI_MedicCombatBehaviorScore = JazzAI_MedicCombatBehaviorScore,
+	}
+	for name, fn in pairs(exports) do
+		if type(fn) == "function" then
+			rawset(_G, name, fn)
+			rawset(rawg, name, fn)
+		end
+	end
+end
+
+JazzAI_PublishStanceExports()
+
 function OnMsg.ModsReloaded()
+	JazzAI_PublishStanceExports()
 	JazzAI_ApplyMedicOptLocCap()
 end
 
 function OnMsg.DataLoaded()
+	JazzAI_PublishStanceExports()
 	JazzAI_ApplyMedicOptLocCap()
 end

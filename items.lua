@@ -82243,6 +82243,9 @@ return {
 			'role', "Recon",
 			'RepositionArchetype', "Legion_Frontliner",
 			'PickCustomArchetype', function (self, proto_context)
+				local enemy, dist = GetNearestEnemy(self)
+				local archetype = self.archetype
+				local weapon_class = "Firearm"
 				local roll = self:Random(100)
 				local chance = 50
 				
@@ -85956,6 +85959,25 @@ return {
 						'Label', "MGSetup",
 						'Fallback', false,
 						'OptLocWeight', 20,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyLosToEnemy', {
+								'Weight', 300,
+								'Required', true,
+							}),
+							PlaceObj('AIPolicyWeaponRange', {
+								'Weight', 50,
+								'RangeMin', 40,
+								'RangeMax', 80,
+							}),
+							PlaceObj('AIPolicyDealDamage', nil),
+							PlaceObj('AIPolicyFlanking', {
+								'AllyPlannedPosition', true,
+								'ReserveAttackAP', true,
+							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 15,
+							}),
+						},
 						'SignatureActions', {
 							PlaceObj('AIActionMGSetup', {
 								'Weight', 200,
@@ -94479,6 +94501,25 @@ PlaceObj('ModItemAIArchetype', {
 						'Label', "MGSetup",
 						'Fallback', false,
 						'OptLocWeight', 20,
+						'EndTurnPolicies', {
+							PlaceObj('AIPolicyLosToEnemy', {
+								'Weight', 300,
+								'Required', true,
+							}),
+							PlaceObj('AIPolicyWeaponRange', {
+								'Weight', 50,
+								'RangeMin', 40,
+								'RangeMax', 80,
+							}),
+							PlaceObj('AIPolicyDealDamage', nil),
+							PlaceObj('AIPolicyFlanking', {
+								'AllyPlannedPosition', true,
+								'ReserveAttackAP', true,
+							}),
+							PlaceObj('AIPolicyAvoidDeathZones', {
+								'TargetDist', 15,
+							}),
+						},
 						'SignatureActions', {
 							PlaceObj('AIActionMGSetup', {
 								'Priority', true,
@@ -113892,6 +113933,22 @@ displayName]] "Legion Garrison"),
 			BaseMovementWeight = 10,
 			Behaviors = {
 				PlaceObj('StandardAI', {
+					'EndTurnPolicies', {
+						PlaceObj('AIPolicyLastEnemyPos', {
+							'Weight', 400,
+						}),
+						PlaceObj('AIPolicyTakeCover', {
+							'Weight', 200,
+						}),
+						PlaceObj('AIPolicyTakeCover', {
+							'Weight', 80,
+							'visibility_mode', "team",
+						}),
+						PlaceObj('AIPolicyAvoidDeathZones', {
+							'TargetDist', 1,
+							'Penalty', 20,
+						}),
+					},
 					'SignatureActions', {
 						PlaceObj('AIActionThrowFlare', {
 							'team_score', 0,
@@ -113905,7 +113962,7 @@ displayName]] "Legion Garrison"),
 							'min_score', 100,
 						}),
 					},
-					'TakeCoverChance', 0,
+					'TakeCoverChance', 60,
 				}),
 			},
 			Comment = "used to advance toward last known enemy location",
@@ -114034,7 +114091,7 @@ displayName]] "Legion Garrison"),
 						local enemies = {}
 						for _, descr in pairs(g_Pindown) do
 							if descr.target == self then
-								enemies[#enemies + 1] = enemy
+								enemies[#enemies + 1] = descr.attacker
 							end
 						end
 						return #enemies > 0 and self.Weight or 0

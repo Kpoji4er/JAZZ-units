@@ -31,6 +31,9 @@ DefineClass.ThugEnforcer_Stronger = {
 	role = "Recon",
 	RepositionArchetype = "Legion_Frontliner",
 	PickCustomArchetype = function (self, proto_context)
+		local enemy, dist = GetNearestEnemy(self)
+		local archetype = self.archetype
+		local weapon_class = "Firearm"
 		local roll = self:Random(100)
 		local chance = 50
 		
