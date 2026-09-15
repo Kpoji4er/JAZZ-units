@@ -4,7 +4,7 @@ DefineClass.JAZZ_Legion_AssaultT1_Crusher = {
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
 
-	comment = "Т1 Громила Crusher | Танк - Дробовик + Пистолет",
+	comment = "Т1 Громила Crusher | Танк - дробовик + пистолет или нож",
 	object_class = "UnitData",
 	Health = 75,
 	Agility = 65,
@@ -39,6 +39,7 @@ DefineClass.JAZZ_Legion_AssaultT1_Crusher = {
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Shotgun")
 		self:TryEquip(items, "Handheld B", "Pistol")
+		self:TryEquip(items, "Handheld B", "MeleeWeapon")
 	end,
 	MaxHitPoints = 100,
 	StartingPerks = {
