@@ -89487,7 +89487,7 @@ PlaceObj('LootEntryLootDef', {
 			PlaceObj('ModItemUnitDataCompositeDef', {
 				'Group', "Legion",
 				'Id', "JAZZ_Legion_AssaultT2_Pyro",
-				'comment', "Т2 Пироман Pyro | Дробовик и молотовы",
+				'comment', "Т2 Пироман Pyro | Дробовик и молотовы, без ножа",
 				'object_class', "UnitData",
 				'Health', 85,
 				'Agility', 70,
@@ -89510,7 +89510,6 @@ PlaceObj('LootEntryLootDef', {
 				'neutral_retaliate', true,
 				'AIKeywords', {
 					"CQB",
-					"Melee",
 					"Explosives",
 				},
 				'archetype', "Legion_Assaulter",
@@ -166265,4 +166264,1145 @@ displayName]] "Legion Garrison"),
 		}),
 	}),
 -- JAZZ-UNITS-005-AME-VR-END
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Id', "JAZZ_Legion_ArmorTest",
+    'Group', "JAZZ Tests",
+
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: cuirass + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_ImprovisedCuirass")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_Chainmail",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: Chainmail + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_Chainmail")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_TireBrigantine",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: TireBrigantine + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_TireBrigantine")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_TireArmor",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: TireArmor + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_TireArmor")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_TwaronLight",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: TwaronLight + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_TwaronLight")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_TwaronMedium",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: TwaronMedium + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_TwaronMedium")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_TwaronFull",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: TwaronFull + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_TwaronFull")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_GuardianLight",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: GuardianLight + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_GuardianLight")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_GuardianMedium",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: GuardianMedium + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_GuardianMedium")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_GuardianFull",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: GuardianFull + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_GuardianFull")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_ZylonLight",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: ZylonLight + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_ZylonLight")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_ZylonMedium",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: ZylonMedium + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_ZylonMedium")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_ZylonFull",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: ZylonFull + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_ZylonFull")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemAppearancePreset', {
+    Head = "",
+    Pants = "",
+    Hat = "",
+    Hat2 = "",
+    Hair = "",
+    Armor = "",
+    Shirt = "",
+    Chest = "",
+    Hip = "",
+    Body = "JAZZ_SpecOpsBody_Male",
+    group = "JAZZ Tests",
+    id = "JAZZ_Legion_SpecOpsTest",
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_SpecOpsTest",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: LDW woodland special forces prototype + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "РќРѕРІРѕР±СЂР°РЅРµС†"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "JAZZ_Legion_SpecOpsTest" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_Uniform")
+        self:TryEquip(items, "Torso", "Armor")
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_UniformPants")
+        self:TryEquip(items, "Legs", "Armor")
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_CamoBalaclava")
+        self:TryEquip(items, "Head", "Armor")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_FlakM1955",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: FlakM1955 + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_FlakM1955")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_FlakM69",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: FlakM69 + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_FlakM69")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_IBALight",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: IBALight + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_IBALight")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_IBA",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: IBA + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_IBA")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_IBAFull",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: IBAFull + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_IBAFull")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_UniformCap",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: UniformCap + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_UniformCap")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Head", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_ConstructionHelmet",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: ConstructionHelmet + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_ConstructionHelmet")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Head", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_AdrianHelmet",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: AdrianHelmet + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_AdrianHelmet")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Head", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_SovietHelm",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: SovietHelm + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_SovietHelm")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Head", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_M1Helm",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: M1Helm + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_M1Helm")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Head", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_Stahlhelm",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: Stahlhelm + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_Stahlhelm")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Head", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_PASGTHelm",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: PASGTHelm + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_PASGTHelm")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Head", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_6b7Helm",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: 6b7Helm + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_6b7Helm")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Head", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_TwaronHelm",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: TwaronHelm + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_TwaronHelm")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Head", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_TwaronHelmHeavy",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: TwaronHelmHeavy + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_TwaronHelmHeavy")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Head", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_ZylonHelm",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: ZylonHelm + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_ZylonHelm")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Head", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_ZylonHelmHeavy",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: ZylonHelmHeavy + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_ZylonHelmHeavy")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Head", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_GuardianHelm",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: GuardianHelm + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_GuardianHelm")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Head", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_GuardianHelmHeavy",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: GuardianHelmHeavy + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_GuardianHelmHeavy")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Head", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
 }

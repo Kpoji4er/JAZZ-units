@@ -26,7 +26,6 @@ DefineClass.JAZZ_Legion_HeavyT2_Grenadier = {
 	AIKeywords = {
 		"Ordnance",
 		"Control",
-		"Sniper",
 	},
 	archetype = "Artillery",
 	role = "Artillery",

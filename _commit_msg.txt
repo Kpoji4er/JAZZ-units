@@ -1,0 +1,3 @@
+Add JAZZ Tests units for Legion armor visuals [no new game] [skip discord]
+
+Isolated LegionGoon test loadouts for equipped torso and helmet models, outside campaign pools.

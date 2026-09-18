@@ -4,7 +4,7 @@ DefineClass.JAZZ_Legion_AssaultT2_Pyro = {
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
 
-	comment = "Т2 Пироман Pyro | Дробовик и молотовы",
+	comment = "Т2 Пироман Pyro | Дробовик и молотовы, без ножа",
 	object_class = "UnitData",
 	Health = 85,
 	Agility = 70,
@@ -27,7 +27,6 @@ DefineClass.JAZZ_Legion_AssaultT2_Pyro = {
 	neutral_retaliate = true,
 	AIKeywords = {
 		"CQB",
-		"Melee",
 		"Explosives",
 	},
 	archetype = "Legion_Assaulter",
@@ -40,7 +39,6 @@ DefineClass.JAZZ_Legion_AssaultT2_Pyro = {
 
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
-		self:TryEquip(items, "Handheld B", "MeleeWeapon")
 	end,
 	MaxHitPoints = 50,
 	StartingPerks = {

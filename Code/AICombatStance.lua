@@ -34,11 +34,12 @@ function JazzAI_InferRoleFamily(unit)
 	if class:find("Flanker", 1, true) or class == "RebelFlanker" then
 		return "Scout"
 	end
-	if class:find("Assault", 1, true) then
-		return "Pusher"
-	end
+	-- Gunner before Assault: AssaultGunner is MG, not Pusher (JAZZ-AI-ROLE-004).
 	if class:find("Gunner", 1, true) or class:find("Machinegun", 1, true) then
 		return "MG"
+	end
+	if class:find("Assault", 1, true) then
+		return "Pusher"
 	end
 	if class:find("Heavy", 1, true) or class:find("Mortar", 1, true) or class:find("Rocketeer", 1, true) then
 		return "Heavy"
@@ -392,9 +393,26 @@ function JazzAI_UnitIsDynamicPusher(unit)
 	return entry and entry.pusher == unit
 end
 
+--- Scout + Sniper/Marksman: hold flank, never Assaulter, CQB swap at ≤10.
+function JazzAI_UnitIsFlankingSniper(unit)
+	if not IsValid(unit) then
+		return false
+	end
+	if JazzAI_InferRoleFamily(unit) ~= "Scout" then
+		return false
+	end
+	return JazzAI_HasKeyword(unit, "Sniper") or JazzAI_HasKeyword(unit, "Marksman")
+end
+
 function JazzAI_NeverMelee(unit)
 	local family = JazzAI_InferRoleFamily(unit)
-	if family == "MG" or family == "Heavy" or family == "Leader" then
+	if family == "MG" then
+		if JazzAI_HasKeyword(unit, "CQB") and JazzAI_FindAltMeleeWeapon(unit) then
+			return false
+		end
+		return true
+	end
+	if family == "Heavy" or family == "Leader" then
 		return true
 	end
 	if JazzAI_HasKeyword(unit, "Sniper") or JazzAI_HasKeyword(unit, "Ordnance") then
@@ -422,7 +440,7 @@ end
 
 function JazzAI_FindAltCQBFirearm(unit)
 	for _, w in ipairs(JazzAI_GetAltWeapons(unit)) do
-		if IsKindOfClasses(w, "Revolver", "Pistol", "SubmachineGun") then
+		if IsKindOfClasses(w, "Revolver", "Pistol", "SubmachineGun", "AssaultRifle") then
 			return w
 		end
 	end
@@ -854,11 +872,24 @@ function JazzAI_ArchetypeExists(id)
 end
 
 --- Prefer requested id; if missing, fall back Assaulter → Frontliner → base unit.archetype.
-function JazzAI_ResolveKnownArchetype(id, prefix, fallback)
+--- Rocketeer / Mortarman never fall through to Assaulter (JAZZ-AI-ROLE-004).
+function JazzAI_ResolveKnownArchetype(id, prefix, fallback, unit)
 	if JazzAI_ArchetypeExists(id) then
 		return id
 	end
 	prefix = prefix or "Legion_"
+	local class = unit and JazzAI_UnitClassName(unit) or ""
+	if class:find("Rocketeer", 1, true) then
+		local fl = prefix .. "Frontliner"
+		if JazzAI_ArchetypeExists(fl) then
+			return fl
+		end
+	end
+	if class:find("Mortar", 1, true) then
+		if JazzAI_ArchetypeExists("Artillery") then
+			return "Artillery"
+		end
+	end
 	local candidates = {
 		prefix .. "Assaulter",
 		prefix .. "Frontliner",
@@ -935,6 +966,7 @@ function JazzAI_PickCombatStance(unit, proto_context, opts)
 	-- Sniper/Marksman / semi-sniper keep base (long-range / optics) — do not collapse into Frontliner.
 	local cover_hold = directive == "FallBack" or directive == "TakeCover"
 		or directive == "OccupyBuildings" or directive == "OccupyHeights" or directive == "GoHidden"
+	local is_flank_sniper = JazzAI_UnitIsFlankingSniper(unit)
 	if cover_hold and not is_sniper and not is_pseudo_mg then
 		if family == "Scout" or family == "Pusher" or family == "Recruit" or family == "Line" then
 			archetype = prefix .. "Frontliner"
@@ -942,11 +974,21 @@ function JazzAI_PickCombatStance(unit, proto_context, opts)
 	-- F2 role stance — Push only for aura-assigned pusher (or dedicated Pusher family).
 	elseif family == "Scout" then
 		archetype = prefix .. "Flanker"
-		local want_push = not (directive == "FallBack")
-			and (directive == "Push" or JazzAI_NeedPush(unit, enemy, dist)
-				or (unit.ai_context and unit.ai_context.jazz_flare_push))
-		if want_push and is_pusher then
-			archetype = prefix .. "Assaulter"
+		if is_flank_sniper then
+			-- Always Flanker. CQB swap at ≤10 tiles (carbine/AR/SMG/pistol).
+			if enemy and dist and dist <= 10 * const.SlabSizeX then
+				local cqb = JazzAI_FindAltCQBFirearm(unit)
+				if cqb and not unit:GetActiveWeapons(cqb.class) then
+					AIPlayCombatAction("ChangeWeapon", unit, 0)
+				end
+			end
+		else
+			local want_push = not (directive == "FallBack")
+				and (directive == "Push" or JazzAI_NeedPush(unit, enemy, dist)
+					or (unit.ai_context and unit.ai_context.jazz_flare_push))
+			if want_push and is_pusher then
+				archetype = prefix .. "Assaulter"
+			end
 		end
 	elseif family == "Pusher" then
 		archetype = prefix .. "Assaulter"
@@ -968,6 +1010,8 @@ function JazzAI_PickCombatStance(unit, proto_context, opts)
 		end
 	elseif family == "Recruit" then
 		archetype = prefix .. "Assaulter"
+	elseif family == "MG" or family == "Heavy" then
+		-- Keep authored Machinegunner / Frontliner / Artillery. Do not rewrite.
 	end
 
 	-- Dynamic fill-ins when the squad lacks dedicated roles / commander Push assign.
@@ -983,6 +1027,7 @@ function JazzAI_PickCombatStance(unit, proto_context, opts)
 		end
 	end
 	if is_pusher and not is_sniper and not is_pseudo_mg
+		and family ~= "Heavy" and family ~= "MG" and not is_flank_sniper
 		and (directive == "Push" or (unit.ai_context and unit.ai_context.jazz_flare_push)) then
 		archetype = prefix .. "Assaulter"
 	end
@@ -1003,7 +1048,7 @@ function JazzAI_PickCombatStance(unit, proto_context, opts)
 	if archetype == "Medic" or archetype == "Deserter" or archetype == "Melee" or archetype == "Legion_Regroup" then
 		return archetype
 	end
-	return JazzAI_ResolveKnownArchetype(archetype, prefix, unit.archetype)
+	return JazzAI_ResolveKnownArchetype(archetype, prefix, unit.archetype, unit)
 end
 
 -- MED-001: OptLoc ≤45 for Medic archetypes.
@@ -1051,6 +1096,7 @@ local function JazzAI_PublishStanceExports()
 	local exports = {
 		JazzAI_PickCombatStance = JazzAI_PickCombatStance,
 		JazzAI_InferRoleFamily = JazzAI_InferRoleFamily,
+		JazzAI_UnitIsFlankingSniper = JazzAI_UnitIsFlankingSniper,
 		JazzAI_UnitIsDedicatedSniper = JazzAI_UnitIsDedicatedSniper,
 		JazzAI_UnitIsDedicatedMG = JazzAI_UnitIsDedicatedMG,
 		JazzAI_UnitIsDynamicSemiSniper = JazzAI_UnitIsDynamicSemiSniper,

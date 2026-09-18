@@ -26,7 +26,9 @@ DefineClass.JAZZ_Legion_HeavyT1_Rocketeer = {
 	AIKeywords = {
 		"Ordnance",
 	},
+	archetype = "Legion_Frontliner",
 	role = "Artillery",
+	RepositionArchetype = "Legion_Frontliner",
 	CanManEmplacements = false,
 	MaxAttacks = 1,
 	PickCustomArchetype = function (self, proto_context)

@@ -4,7 +4,7 @@ DefineClass.JAZZ_Legion_FlankerT3_Pathfinder = {
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
 
-	comment = "Т3 Следопыт Pathfinder | Винтовк с глушителем и оптикой, камуфляж, полный стелс",
+	comment = "Т3 Следопыт Pathfinder | Глушёная винтовка с оптикой, фланговый снайпер",
 	object_class = "UnitData",
 	Health = 75,
 	Agility = 95,
