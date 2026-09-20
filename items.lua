@@ -5856,10 +5856,11 @@ return {
 					group = "Default",
 					id = "BattleRifles_FNFAL",
 					loot = "all",
-					PlaceObj('LootEntryInventoryItem', {
-						item = "FNFAL",
-						stack_max = 1,
-						stack_min = 1,
+					PlaceObj('LootEntryUpgradedWeapon', {
+						upgrades = {
+							"JAZZ_StockNormal",
+						},
+						weapon = "FNFAL",
 					}),
 					PlaceObj('LootEntryLootDef', {
 						loot_def = "762x51_ar_ammo",
@@ -5871,10 +5872,11 @@ return {
 					group = "Default",
 					id = "BattleRifles_FNFAL_AP",
 					loot = "all",
-					PlaceObj('LootEntryInventoryItem', {
-						item = "FNFAL",
-						stack_max = 1,
-						stack_min = 1,
+					PlaceObj('LootEntryUpgradedWeapon', {
+						upgrades = {
+							"JAZZ_StockNormal",
+						},
+						weapon = "FNFAL",
 					}),
 					PlaceObj('LootEntryLootDef', {
 						loot_def = "762x51_ar_ammo_ap",
@@ -5888,7 +5890,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"JAZZ_StockLight",
+							"JAZZ_StockLightUnFolded",
 						},
 						weapon = "FNFAL",
 					}),
@@ -5909,6 +5911,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_StockNormal",
 							"JAZZ_CombatScope_2x",
 						},
 						weapon = "FNFAL",
@@ -5925,6 +5928,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_StockNormal",
 							"JAZZ_Compensator",
 						},
 						weapon = "FNFAL",
@@ -5941,6 +5945,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_StockNormal",
 							"JAZZ_VerticalGrip",
 						},
 						weapon = "FNFAL",
@@ -5957,6 +5962,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_StockNormal",
 							"JAZZ_VerticalGrip",
 							"JAZZ_CombatScope_2x",
 						},
@@ -5974,10 +5980,53 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_StockNormal",
 							"JAZZ_VerticalGrip",
 							"JAZZ_CombatScope_2x",
 						},
 						weapon = "FNFAL",
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "762x51_ar_ammo_ap",
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T2-4",
+					comment = "T2-4",
+					group = "Default",
+					id = "BattleRifles_FNFAL_Tactical",
+					loot = "all",
+					PlaceObj('LootEntryUpgradedWeapon', {
+						weapon = "JAZZ_FNFAL_Tactical",
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "762x51_ar_ammo",
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T2-4",
+					comment = "T2-4",
+					group = "Default",
+					id = "BattleRifles_FNFAL_Tactical_AP",
+					loot = "all",
+					PlaceObj('LootEntryUpgradedWeapon', {
+						weapon = "JAZZ_FNFAL_Tactical",
+					}),
+					PlaceObj('LootEntryLootDef', {
+						loot_def = "762x51_ar_ammo_ap",
+					}),
+				}),
+				PlaceObj('ModItemLootDef', {
+					Comment = "T2-4",
+					comment = "T2-4",
+					group = "Default",
+					id = "BattleRifles_FNFAL_Tactical_Scope",
+					loot = "all",
+					PlaceObj('LootEntryUpgradedWeapon', {
+						upgrades = {
+							"JAZZ_CombatScope_2x",
+						},
+						weapon = "JAZZ_FNFAL_Tactical",
 					}),
 					PlaceObj('LootEntryLootDef', {
 						loot_def = "762x51_ar_ammo_ap",
@@ -24325,6 +24374,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_StockNormal",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "FNFAL",
@@ -24340,6 +24390,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_StockLightUnFolded",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "FNFAL",
@@ -71785,6 +71836,18 @@ PlaceObj('LootEntryLootDef', {
 							weight = 100000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							comment = "T2-1",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_FNFALLight",
+							weight = 100000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "T2-2",
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -71962,6 +72025,18 @@ PlaceObj('LootEntryLootDef', {
 								}),
 							},
 							loot_def = "BattleRifles_Galil_AP_Bipod_Scope",
+							weight = 800000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_FNFAL_Tactical_Scope",
 							weight = 800000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -74452,6 +74527,18 @@ PlaceObj('LootEntryLootDef', {
 							weight = 2000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_FNFALLight",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "T2-4",
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -74461,6 +74548,18 @@ PlaceObj('LootEntryLootDef', {
 								}),
 							},
 							loot_def = "BattleRifles_Galil",
+							weight = 2000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_FNFAL_Tactical",
 							weight = 2000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -74568,6 +74667,18 @@ PlaceObj('LootEntryLootDef', {
 							weight = 24000,
 						}),
 						PlaceObj('LootEntryLootDef', {
+							comment = "T2-3",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 23,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_FNFALLight",
+							weight = 24000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							comment = "T2-4",
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -74577,6 +74688,30 @@ PlaceObj('LootEntryLootDef', {
 								}),
 							},
 							loot_def = "BattleRifles_Galil_AP_DTK",
+							weight = 42000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_FNFAL_Tactical_AP",
+							weight = 42000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							comment = "T2-4",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 24,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "BattleRifles_FNFAL_Tactical_Scope",
 							weight = 42000,
 						}),
 						PlaceObj('LootEntryLootDef', {
@@ -78607,7 +78742,7 @@ PlaceObj('LootEntryLootDef', {
 					'name', "AdonisPresets",
 				}, {
 					PlaceObj('ModItemLootDef', {
-						comment = "HK33 M4 M16A4 AKM",
+						comment = "HK33 M4 M16A4 AKM FAL Tac",
 						group = "Default",
 						id = "Adonis_AssaultRifle",
 						PlaceObj('LootEntryLootDef', {
@@ -78658,9 +78793,17 @@ PlaceObj('LootEntryLootDef', {
 							loot_def = "Adonis_AKMAdvReflex",
 							weight = 2000,
 						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Adonis_FNFAL_Tactical",
+							weight = 3000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Adonis_FNFAL_Tactical_Reflex",
+							weight = 2000,
+						}),
 					}),
 					PlaceObj('ModItemLootDef', {
-						comment = "G36 AUG SIG550",
+						comment = "G36 AUG SIG550 FAL Tac",
 						group = "Default",
 						id = "AdonisElite_AssaultRifle",
 						PlaceObj('LootEntryLootDef', {
@@ -78717,6 +78860,14 @@ PlaceObj('LootEntryLootDef', {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "Adonis_SG552SWATReflex",
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Adonis_FNFAL_Tactical",
+							weight = 4000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "Adonis_FNFAL_Tactical_Reflex",
+							weight = 6000,
 						}),
 					}),
 					PlaceObj('ModItemLootDef', {
@@ -80445,6 +80596,37 @@ PlaceObj('LootEntryLootDef', {
 							}),
 							PlaceObj('LootEntryLootDef', {
 								loot_def = "Adonis_556",
+							}),
+						}),
+						PlaceObj('ModItemLootDef', {
+							comment = "T2",
+							group = "Enemy - General",
+							id = "Adonis_FNFAL_Tactical",
+							loot = "all",
+							PlaceObj('LootEntryUpgradedWeapon', {
+								upgrades = {
+									"JAZZ_LaserDot",
+								},
+								weapon = "JAZZ_FNFAL_Tactical",
+							}),
+							PlaceObj('LootEntryLootDef', {
+								loot_def = "Adonis_762x51",
+							}),
+						}),
+						PlaceObj('ModItemLootDef', {
+							comment = "T2",
+							group = "Enemy - General",
+							id = "Adonis_FNFAL_Tactical_Reflex",
+							loot = "all",
+							PlaceObj('LootEntryUpgradedWeapon', {
+								upgrades = {
+									"JAZZ_Reflex_M68",
+									"JAZZ_LaserDot",
+								},
+								weapon = "JAZZ_FNFAL_Tactical",
+							}),
+							PlaceObj('LootEntryLootDef', {
+								loot_def = "Adonis_762x51",
 							}),
 						}),
 						}),
