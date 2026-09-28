@@ -26,5 +26,7 @@
 | Player-facing эффект (бой, роли, витрина) | `../jazz/.cursor/rules/jazz-docs-sync.mdc` + `$document-jazz-systems` |
 | Красные/жёлтые пометки Mod Editor / Ged | `$diagnose-jazz-mod-editor` |
 | Броня/одежда Легиона, equipped appearance, `ArmorTest` | `../jazz/.agents/docs/playbooks/legion-armor-modeling.md` |
+| Blender mesh/FBX, нормали, сварка полигонов | `../jazz/.agents/docs/playbooks/mesh-export-normals.md` |
+| Приёмка свежих экспортов моделей / QA Астра | `../jazz/.agents/docs/playbooks/model-export-qa-handoff.md` |
 | Portrait мерка/NPC | `../jazz/.cursor/rules/jazz-merc-portraits.mdc` + `$create-jazz-merc-portraits` |
 | Полный мерк из generation-статьи | `$create-jazz-merc` |

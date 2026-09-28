@@ -33294,6 +33294,90 @@ return {
 							loot_def = "9x39_ammo",
 						}),
 					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "JAZZ-UNITS-003 weapon+ammo",
+						group = "Enemy - Legion",
+						id = "JAZZ_GenW_VektorR4_assault_m2_556_ar_ammo_ap",
+						loot = "all",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "VektorR4",
+							stack_max = 1,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "556_ar_ammo_ap",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "JAZZ-UNITS-003 weapon+ammo",
+						group = "Enemy - Legion",
+						id = "JAZZ_GenW_VektorR4_assault_m3_556_ar_ammo_ap",
+						loot = "all",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "VektorR4",
+							stack_max = 1,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "556_ar_ammo_ap",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "JAZZ-UNITS-003 weapon+ammo",
+						group = "Enemy - Legion",
+						id = "JAZZ_GenW_VektorR4_merc_m4_556_ar_ammo_ap",
+						loot = "all",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "VektorR4",
+							stack_max = 1,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "556_ar_ammo_ap",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "JAZZ-UNITS-003 weapon+ammo",
+						group = "Enemy - Legion",
+						id = "JAZZ_GenW_VZ58_assault_m2_762x39_ar_ammo_ap",
+						loot = "all",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "VZ58",
+							stack_max = 1,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "762x39_ar_ammo_ap",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "JAZZ-UNITS-003 weapon+ammo",
+						group = "Enemy - Legion",
+						id = "JAZZ_GenW_VZ58_assault_m3_762x39_ar_ammo_ap",
+						loot = "all",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "VZ58",
+							stack_max = 1,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "762x39_ar_ammo_ap",
+						}),
+					}),
+					PlaceObj('ModItemLootDef', {
+						Comment = "JAZZ-UNITS-003 weapon+ammo",
+						group = "Enemy - Legion",
+						id = "JAZZ_GenW_VZ58_merc_m4_762x39_ar_ammo_ap",
+						loot = "all",
+						PlaceObj('LootEntryInventoryItem', {
+							item = "VZ58",
+							stack_max = 1,
+							stack_min = 1,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							loot_def = "762x39_ar_ammo_ap",
+						}),
+					}),
 --[[ JAZZ-UNITS-003-GENERATED-END ]]
 																																																																																					PlaceObj('ModItemLootDef', {
 						Comment = "JAZZ-UNITS-003 generated",
@@ -39711,57 +39795,8 @@ PlaceObj('LootEntryInventoryItem', {
 						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 19,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 20,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
-							weight = 1,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -39794,6 +39829,40 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_SR3M_cqb_m2_9x39_ammo_ap",
 							weight = 102000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
+							weight = 10,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
+							weight = 1,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -41435,22 +41504,34 @@ PlaceObj('LootEntryLootDef', {
 						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK105_assault_m1_545_ar_ammo_ap",
+							weight = 101000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_SR3M_assault_m1_9x39_ammo_ap",
+							weight = 102000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
@@ -41480,33 +41561,6 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
 							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 31,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_AK105_assault_m1_545_ar_ammo_ap",
-							weight = 101000,
-						}),
-PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 32,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_SR3M_assault_m1_9x39_ammo_ap",
-							weight = 102000,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -42182,57 +42236,8 @@ PlaceObj('LootEntryLootDef', {
 						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 19,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 100,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 20,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
-							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -42265,6 +42270,40 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_SR3M_cqb_m2_9x39_ammo_ap",
 							weight = 102000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
+							weight = 100,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
+							weight = 10,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -43293,57 +43332,8 @@ PlaceObj('LootEntryLootDef', {
 
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 19,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 100,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 20,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
-							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -43376,6 +43366,40 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_AK74M_carbine_fold_545_ar_ammo_ap",
 							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
+							weight = 100,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
+							weight = 10,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -44664,57 +44688,8 @@ PlaceObj('LootEntryLootDef', {
 
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 19,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 100,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 20,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
-							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -44758,6 +44733,74 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_AK74M_carbine_fold_545_ar_ammo_ap",
 							weight = 6000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_VektorR4_assault_m2_556_ar_ammo_ap",
+							weight = 101000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_VZ58_assault_m2_762x39_ar_ammo_ap",
+							weight = 102000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
+							weight = 100,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
+							weight = 10,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -45614,22 +45657,34 @@ PlaceObj('LootEntryLootDef', {
 						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK105_cqb_m2_545_ar_ammo_ap",
+							weight = 101000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_SR3M_cqb_m2_9x39_ammo_ap",
+							weight = 102000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
@@ -45659,33 +45714,6 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
 							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 31,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_AK105_cqb_m2_545_ar_ammo_ap",
-							weight = 101000,
-						}),
-PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 32,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_SR3M_cqb_m2_9x39_ammo_ap",
-							weight = 102000,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -46368,57 +46396,8 @@ PlaceObj('LootEntryLootDef', {
 
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 19,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 100,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 20,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
-							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -46451,6 +46430,74 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_AK74M_carbine_fold_545_ar_ammo_ap",
 							weight = 6000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_VektorR4_assault_m2_556_ar_ammo_ap",
+							weight = 101000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_VZ58_assault_m2_762x39_ar_ammo_ap",
+							weight = 102000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
+							weight = 100,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
+							weight = 10,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -47133,57 +47180,8 @@ PlaceObj('LootEntryLootDef', {
 
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 19,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 100,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 20,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
-							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -47216,6 +47214,74 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_AK74M_carbine_fold_545_ar_ammo_ap",
 							weight = 6000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_VektorR4_assault_m3_556_ar_ammo_ap",
+							weight = 101000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_VZ58_assault_m3_762x39_ar_ammo_ap",
+							weight = 102000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
+							weight = 100,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
+							weight = 10,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -48666,57 +48732,8 @@ PlaceObj('LootEntryLootDef', {
 						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 19,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 100,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 20,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
-							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -48749,6 +48766,40 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_SR3M_cqb_m2_9x39_ammo_ap",
 							weight = 102000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
+							weight = 100,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
+							weight = 10,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -49346,19 +49397,26 @@ PlaceObj('LootEntryLootDef', {
 						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
 						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
+							weight = 20000,
 						}),
-					PlaceObj('LootEntryLootDef', {
+						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
 									Amount = 12,
@@ -49391,11 +49449,6 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_Mosin_m38_remnant_762x54_sniper_ammo",
 							weight = 1400,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
 						}),
 					}),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -51199,57 +51252,8 @@ PlaceObj('LootEntryLootDef', {
 
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 19,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 100,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 20,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
-							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -51282,6 +51286,40 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_AK74M_carbine_fold_545_ar_ammo_ap",
 							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
+							weight = 100,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
+							weight = 10,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -52570,57 +52608,8 @@ PlaceObj('LootEntryLootDef', {
 
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 19,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 100,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 20,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
-							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -52664,6 +52653,74 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_AK74M_carbine_fold_545_ar_ammo_ap",
 							weight = 6000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_VektorR4_assault_m2_556_ar_ammo_ap",
+							weight = 101000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_VZ58_assault_m2_762x39_ar_ammo_ap",
+							weight = 102000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
+							weight = 100,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
+							weight = 10,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -53261,19 +53318,26 @@ PlaceObj('LootEntryLootDef', {
 						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
 						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
+							weight = 20000,
 						}),
-					PlaceObj('LootEntryLootDef', {
+						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
 									Amount = 12,
@@ -53306,11 +53370,6 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_Mosin_m38_remnant_762x54_sniper_ammo",
 							weight = 1400,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
 						}),
 					}),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -53908,19 +53967,26 @@ PlaceObj('LootEntryLootDef', {
 						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
 						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
+							weight = 20000,
 						}),
-					PlaceObj('LootEntryLootDef', {
+						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
 									Amount = 12,
@@ -53953,11 +54019,6 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_Mosin_m38_remnant_762x54_sniper_ammo",
 							weight = 1400,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
 						}),
 					}),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -54640,57 +54701,8 @@ PlaceObj('LootEntryLootDef', {
 
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 19,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 100,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 20,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
-							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -54723,6 +54735,74 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_AK74M_carbine_fold_545_ar_ammo_ap",
 							weight = 6000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_VektorR4_assault_m2_556_ar_ammo_ap",
+							weight = 101000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_VZ58_assault_m2_762x39_ar_ammo_ap",
+							weight = 102000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
+							weight = 100,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
+							weight = 10,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -54973,22 +55053,29 @@ PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_GenW_PSG1_sniper_m3_762x51_sniper_ammo",
 							weight = 103000,
 						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_sniper_m2_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_sniper_m2_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
-									Amount = 11,
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_L42A1_sniper_m2_762x51_sniper_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
@@ -55021,25 +55108,8 @@ PlaceObj('LootEntryLootDef', {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_sniper_m2_762x54_sniper_ammo",
+							loot_def = "JAZZ_GenW_Gewehr98_sniper_m2_792x57_rifle_ammo",
 							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 21,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_L42A1_sniper_m2_762x51_sniper_ammo",
-							weight = 101000,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -55722,57 +55792,8 @@ PlaceObj('LootEntryLootDef', {
 
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 19,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 100,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 20,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
-							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -55805,6 +55826,74 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_AK74M_carbine_fold_545_ar_ammo_ap",
 							weight = 6000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_VektorR4_merc_m4_556_ar_ammo_ap",
+							weight = 101000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_VZ58_merc_m4_762x39_ar_ammo_ap",
+							weight = 102000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
+							weight = 100,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
+							weight = 10,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -56055,22 +56144,29 @@ PlaceObj('LootEntryLootDef', {
 							loot_def = "JAZZ_GenW_PSG1_sniper_m3_762x51_sniper_ammo",
 							weight = 103000,
 						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_sniper_m3_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_sniper_m3_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
-									Amount = 11,
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_L42A1_sniper_m3_762x51_sniper_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
@@ -56103,25 +56199,8 @@ PlaceObj('LootEntryLootDef', {
 						}),
 						PlaceObj('LootEntryLootDef', {
 							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_sniper_m3_762x54_sniper_ammo",
+							loot_def = "JAZZ_GenW_Gewehr98_sniper_m3_792x57_rifle_ammo",
 							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 21,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_L42A1_sniper_m3_762x51_sniper_ammo",
-							weight = 101000,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -57060,21 +57139,50 @@ PlaceObj('LootEntryLootDef', {
 
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK105_flanker_m1_545_ar_ammo_ap",
+							weight = 101000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK74M_carbine_fold_545_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
+							weight = 20000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
 									Amount = 12,
@@ -57094,7 +57202,7 @@ PlaceObj('LootEntryLootDef', {
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
+									Amount = 11,
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
@@ -57141,33 +57249,6 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
 							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 31,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_AK105_flanker_m1_545_ar_ammo_ap",
-							weight = 101000,
-						}),
-PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 31,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_AK74M_carbine_fold_545_ar_ammo_ap",
-							weight = 6000,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -57843,57 +57924,8 @@ PlaceObj('LootEntryLootDef', {
 						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 19,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 100,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 20,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
-							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -57926,6 +57958,40 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_SR3M_flanker_m3_9x39_ammo_ap",
 							weight = 102000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
+							weight = 100,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
+							weight = 10,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -58263,11 +58329,23 @@ PlaceObj('LootEntryLootDef', {
 
 
 						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
 							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
+							weight = 20000,
 						}),
-					PlaceObj('LootEntryLootDef', {
+						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
 									Amount = 12,
@@ -58300,11 +58378,6 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_Mosin_m38_remnant_762x54_sniper_ammo",
 							weight = 1400,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
 						}),
 					}),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -59333,57 +59406,8 @@ PlaceObj('LootEntryLootDef', {
 
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 19,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 100,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 20,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
-							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -59416,6 +59440,40 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_AK74M_carbine_fold_545_ar_ammo_ap",
 							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
+							weight = 100,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
+							weight = 10,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -60442,24 +60500,31 @@ PlaceObj('LootEntryLootDef', {
 						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_rifle_m2_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
-									Amount = 11,
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_L42A1_sniper_m2_762x51_sniper_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
@@ -60489,6 +60554,23 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_Mosin_sniper_m2_762x54_sniper_ammo",
 							weight = 1400,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
+							weight = 20000,
 						}),
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
@@ -60523,28 +60605,6 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_Mosin_m38_remnant_762x54_sniper_ammo",
 							weight = 1400,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_rifle_m2_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 21,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_L42A1_sniper_m2_762x51_sniper_ammo",
-							weight = 101000,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -61571,15 +61631,27 @@ PlaceObj('LootEntryLootDef', {
 						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_sniper_m2_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
-									Amount = 11,
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_L42A1_sniper_m3_762x51_sniper_ammo",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 13,
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
@@ -61609,28 +61681,6 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_Mosin_sniper_m3_762x54_sniper_ammo",
 							weight = 1400,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_sniper_m2_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 21,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_L42A1_sniper_m3_762x51_sniper_ammo",
-							weight = 101000,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -63667,22 +63717,34 @@ PlaceObj('LootEntryLootDef', {
 						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK74M_assault_m1_545_ar_ammo_ap",
+							weight = 101000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK105_assault_m1_545_ar_ammo_ap",
+							weight = 101000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
@@ -63712,33 +63774,6 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
 							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 31,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_AK74M_assault_m1_545_ar_ammo_ap",
-							weight = 101000,
-						}),
-PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 31,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_AK105_assault_m1_545_ar_ammo_ap",
-							weight = 101000,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -65044,57 +65079,8 @@ PlaceObj('LootEntryLootDef', {
 
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 19,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 100,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 20,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
-							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -65138,6 +65124,74 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_AK74M_carbine_fold_545_ar_ammo_ap",
 							weight = 6000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_VektorR4_assault_m2_556_ar_ammo_ap",
+							weight = 101000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_VZ58_assault_m2_762x39_ar_ammo_ap",
+							weight = 102000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
+							weight = 100,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
+							weight = 10,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -66076,21 +66130,50 @@ PlaceObj('LootEntryLootDef', {
 
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK105_sniper_m2_545_ar_ammo_ap",
+							weight = 101000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK74M_carbine_fold_545_ar_ammo_ap",
+							weight = 6000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
+							weight = 20000,
+						}),
+						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
 									Amount = 12,
@@ -66110,7 +66193,7 @@ PlaceObj('LootEntryLootDef', {
 						PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
+									Amount = 11,
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
@@ -66157,33 +66240,6 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
 							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 31,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_AK105_sniper_m2_545_ar_ammo_ap",
-							weight = 101000,
-						}),
-PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 31,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_AK74M_carbine_fold_545_ar_ammo_ap",
-							weight = 6000,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -66866,57 +66922,8 @@ PlaceObj('LootEntryLootDef', {
 
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_m38_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 19,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 100,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 20,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 29,
-									Condition = "<=",
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
-							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
@@ -66949,6 +66956,74 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_AK74M_carbine_fold_545_ar_ammo_ap",
 							weight = 6000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 21,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_VektorR4_merc_m4_556_ar_ammo_ap",
+							weight = 101000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 22,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_VZ58_merc_m4_762x39_ar_ammo_ap",
+							weight = 102000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 19,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
+							weight = 100,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 20,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 29,
+									Condition = "<=",
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
+							weight = 10,
 						}),
 }),
 					PlaceObj('ModItemLootDef', {
@@ -68390,22 +68465,34 @@ PlaceObj('LootEntryLootDef', {
 						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK105_cqb_m1_545_ar_ammo",
+							weight = 101000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_SR3M_cqb_m1_9x39_ammo",
+							weight = 102000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
@@ -68435,33 +68522,6 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
 							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 31,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_AK105_cqb_m1_545_ar_ammo",
-							weight = 101000,
-						}),
-PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 32,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_SR3M_cqb_m1_9x39_ammo",
-							weight = 102000,
 						}),
 }),
 					PlaceObj('ModItemLootDef', {
@@ -69900,22 +69960,34 @@ PlaceObj('LootEntryLootDef', {
 						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK105_cqb_m1_545_ar_ammo_ap",
+							weight = 101000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_SR3M_cqb_m1_9x39_ammo_ap",
+							weight = 102000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
@@ -69945,33 +70017,6 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
 							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 31,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_AK105_cqb_m1_545_ar_ammo_ap",
-							weight = 101000,
-						}),
-PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 32,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_SR3M_cqb_m1_9x39_ammo_ap",
-							weight = 102000,
 						}),
 }),
 																																																																																					PlaceObj('ModItemLootDef', {
@@ -71400,22 +71445,34 @@ PlaceObj('LootEntryLootDef', {
 						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 
 
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
 					PlaceObj('LootEntryLootDef', {
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
+									Amount = 31,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_AK105_cqb_m1_545_ar_ammo_ap",
+							weight = 101000,
+						}),
+PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 32,
+									Prop = "JAZZ_Legion_Tier",
+									QuestId = "JAZZ_LegionTier",
+								}),
+							},
+							loot_def = "JAZZ_GenW_SR3M_cqb_m1_9x39_ammo_ap",
+							weight = 102000,
+						}),
+						PlaceObj('LootEntryLootDef', {
+							game_conditions = {
+								PlaceObj('QuestIsVariableNum', {
+									Amount = 11,
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
@@ -71445,33 +71502,6 @@ PlaceObj('LootEntryLootDef', {
 							},
 							loot_def = "JAZZ_GenW_Mosin_obrez_remnant_762x54_sniper_ammo",
 							weight = 10,
-						}),
-						PlaceObj('LootEntryLootDef', {
-							comment = "JAZZ-UNITS-004 unconditional fallback",
-							loot_def = "JAZZ_GenW_Mosin_obrez_t1_762x54_sniper_ammo",
-							weight = 1000,
-						}),
-					PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 31,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_AK105_cqb_m1_545_ar_ammo_ap",
-							weight = 101000,
-						}),
-PlaceObj('LootEntryLootDef', {
-							game_conditions = {
-								PlaceObj('QuestIsVariableNum', {
-									Amount = 32,
-									Prop = "JAZZ_Legion_Tier",
-									QuestId = "JAZZ_LegionTier",
-								}),
-							},
-							loot_def = "JAZZ_GenW_SR3M_cqb_m1_9x39_ammo_ap",
-							weight = 102000,
 						}),
 }),
 					PlaceObj('ModItemLootDef', {
@@ -75429,10 +75459,10 @@ PlaceObj('LootEntryLootDef', {
 							weight = 2000,
 						}),
 						PlaceObj('LootEntryLootDef', {
-							comment = "T1-2",
+							comment = "T1-3",
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
-									Amount = 12,
+									Amount = 13,
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
@@ -75469,10 +75499,10 @@ PlaceObj('LootEntryLootDef', {
 						group = "Default",
 						id = "LegionT1_RifleSniper",
 						PlaceObj('LootEntryLootDef', {
-							comment = "T1",
+							comment = "T1-3",
 							game_conditions = {
 								PlaceObj('QuestIsVariableNum', {
-									Amount = 1,
+									Amount = 13,
 									Prop = "JAZZ_Legion_Tier",
 									QuestId = "JAZZ_LegionTier",
 								}),
@@ -167531,6 +167561,76 @@ PlaceObj('ModItemUnitDataCompositeDef', {
         ammo.Amount = 120
         items[#items + 1] = ammo
         self:TryEquip(items, "Head", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_6B3",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: 6B3 + SovietHelm (SSh68) + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_6B3")
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_SovietHelm")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
+        self:TryEquip(items, "Head", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_LeatherArmor",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: leather carrier + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_LeatherArmor")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
         self:TryEquip(items, "Handheld A", "Firearm")
         self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
     end,
