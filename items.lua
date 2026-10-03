@@ -160230,18 +160230,20 @@ displayName]] "Legion Garrison"),
 			id = "Colby",
 		}),
 		PlaceObj('ModItemAppearancePreset', {
+			Hip = "",
+			Chest = "",
+			Hat2 = "",
+			Hat = "",
+			Shirt = "",
+			Armor = "",
 			ArmorColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Body = "Faction_Adonis_Top_05",
-			Hair = "EquipmentLen_Hair",
-			BodyColor = PlaceObj('ColorizationPropSet', {
-			'EditableColor1', RGBA(185, 150, 120, 255),
-			'EditableColor2', RGBA(62, 72, 40, 255),
-			'EditableColor3', RGBA(40, 46, 28, 255),
-			}),
+			Body = "JAZZ_ConradBody",
+			Hair = "",
+			BodyColor = PlaceObj('ColorizationPropSet', {}),
 			ChestColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -160267,23 +160269,15 @@ displayName]] "Legion Garrison"),
 			'EditableColor2', RGBA(12, 12, 12, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Head = "Head_Len",
-			HeadColor = PlaceObj('ColorizationPropSet', {
-			'EditableColor1', RGBA(0, 0, 0, 255),
-			'EditableColor2', RGBA(0, 0, 0, 255),
-			'EditableColor3', RGBA(0, 0, 0, 255),
-			}),
+			Head = "JAZZ_ConradHead",
+			HeadColor = PlaceObj('ColorizationPropSet', {}),
 			HipColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
 			'EditableColor3', RGBA(0, 0, 0, 255),
 			}),
-			Pants = "Faction_Adonis_Bottom_02",
-			PantsColor = PlaceObj('ColorizationPropSet', {
-			'EditableColor1', RGBA(55, 64, 38, 255),
-			'EditableColor2', RGBA(12, 12, 12, 255),
-			'EditableColor3', RGBA(12, 12, 12, 255),
-			}),
+			Pants = "JAZZ_ConradPants",
+			PantsColor = PlaceObj('ColorizationPropSet', {}),
 			ShirtColor = PlaceObj('ColorizationPropSet', {
 			'EditableColor1', RGBA(0, 0, 0, 255),
 			'EditableColor2', RGBA(0, 0, 0, 255),
@@ -167603,40 +167597,6 @@ PlaceObj('ModItemUnitDataCompositeDef', {
 }),
 PlaceObj('ModItemUnitDataCompositeDef', {
     'Group', "JAZZ Tests",
-    'Id', "JAZZ_Legion_ArmorTest_LeatherArmor",
-    'comment', "JAZZ-APPEAR-001 TEST ONLY: leather carrier + MP40; not in campaign pools",
-    'object_class', "UnitData",
-    'Health', 85,
-    'Agility', 70,
-    'Dexterity', 70,
-    'Strength', 90,
-    'Wisdom', 50,
-    'Will', 60,
-    'Marksmanship', 70,
-    'MaxHitPoints', 85,
-    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
-    'BigPortrait', "UI/Enemies/LegionRaider",
-    'Name', T(890000000001643, "Новобранец"),
-    'Affiliation', "Legion",
-    'gender', "Male",
-    'Randomization', false,
-    'archetype', "Assault",
-    'role', "Stormer",
-    'Equipment', {},
-    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
-    'CustomEquipGear', function(self, items)
-        items[#items + 1] = PlaceInventoryItem("JazzArmor_LeatherArmor")
-        items[#items + 1] = PlaceInventoryItem("MP40")
-        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
-        ammo.Amount = 120
-        items[#items + 1] = ammo
-        self:TryEquip(items, "Torso", "Armor")
-        self:TryEquip(items, "Handheld A", "Firearm")
-        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
-    end,
-}),
-PlaceObj('ModItemUnitDataCompositeDef', {
-    'Group', "JAZZ Tests",
     'Id', "JAZZ_Legion_ArmorTest_6B13",
     'comment', "JAZZ-APPEAR-001 TEST ONLY: 6B13 + 6B7 (6B7-1M) + MP40; not in campaign pools",
     'object_class', "UnitData",
@@ -167667,6 +167627,40 @@ PlaceObj('ModItemUnitDataCompositeDef', {
         items[#items + 1] = ammo
         self:TryEquip(items, "Torso", "Armor")
         self:TryEquip(items, "Head", "Armor")
+        self:TryEquip(items, "Handheld A", "Firearm")
+        self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
+    end,
+}),
+PlaceObj('ModItemUnitDataCompositeDef', {
+    'Group', "JAZZ Tests",
+    'Id', "JAZZ_Legion_ArmorTest_LeatherArmor",
+    'comment', "JAZZ-APPEAR-001 TEST ONLY: leather carrier + MP40; not in campaign pools",
+    'object_class', "UnitData",
+    'Health', 85,
+    'Agility', 70,
+    'Dexterity', 70,
+    'Strength', 90,
+    'Wisdom', 50,
+    'Will', 60,
+    'Marksmanship', 70,
+    'MaxHitPoints', 85,
+    'Portrait', "Mod/Dv3mFVN/EnemyPortraits/Legion/Recruit.png",
+    'BigPortrait', "UI/Enemies/LegionRaider",
+    'Name', T(890000000001643, "Новобранец"),
+    'Affiliation', "Legion",
+    'gender', "Male",
+    'Randomization', false,
+    'archetype', "Assault",
+    'role', "Stormer",
+    'Equipment', {},
+    'AppearancesList', { PlaceObj('AppearanceWeight', { 'Preset', "LegionGoon" }) },
+    'CustomEquipGear', function(self, items)
+        items[#items + 1] = PlaceInventoryItem("JazzArmor_LeatherArmor")
+        items[#items + 1] = PlaceInventoryItem("MP40")
+        local ammo = PlaceInventoryItem("JAZZ_AMMO_9x19_FMJ")
+        ammo.Amount = 120
+        items[#items + 1] = ammo
+        self:TryEquip(items, "Torso", "Armor")
         self:TryEquip(items, "Handheld A", "Firearm")
         self:TryLoadAmmo("Handheld A", "Firearm", "JAZZ_AMMO_9x19_FMJ")
     end,
