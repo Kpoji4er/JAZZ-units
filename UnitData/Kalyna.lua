@@ -19,14 +19,14 @@ DefineClass.Kalyna = {
 	Portrait = "UI/MercsPortraits/Kalyna",
 	BigPortrait = "UI/Mercs/Kalyna",
 	IsMercenary = true,
-	Name = T(509273629491, --[[ModItemUnitDataCompositeDef Kalyna Name]] "Калина Соколова"),
-	Nick = T(967981889962, --[[ModItemUnitDataCompositeDef Kalyna Nick]] "Калина"),
-	AllCapsNick = T(776190610664, --[[ModItemUnitDataCompositeDef Kalyna AllCapsNick]] "КАЛИНА"),
-	Bio = T(429856793976, --[[ModItemUnitDataCompositeDef Kalyna Bio]] "Дочь украинских шахтёров, Калина с детства училась у своей бабушки, как стрелять дичь и чинить машины, обогревающие и снабжающие электричеством их небольшой посёлок. Чтобы отвлечь внучку от нищеты, в которой жила её семья, женщина забивала Калине голову народными сказками. Едва повзрослев, девушка покинула родной посёлок в поисках лучшей жизни. Коллектив A.I.M. рад приветствовать в своих рядах эту способную ученицу, талантливого механика и отличного стрелка."),
+	Name = T(509273629491, --[[ModItemUnitDataCompositeDef Kalyna Name]] "Kalyna Sokolova"),
+	Nick = T(967981889962, --[[ModItemUnitDataCompositeDef Kalyna Nick]] "Kalyna"),
+	AllCapsNick = T(776190610664, --[[ModItemUnitDataCompositeDef Kalyna AllCapsNick]] "KALYNA"),
+	Bio = T(429856793976, --[[ModItemUnitDataCompositeDef Kalyna Bio]] "The daughter of Ukrainian coal miners, Kalyna learned from her grandmother how to hunt game in the wild countryside and repair the machines and motors that helped heat and power the tiny town where they lived. The old woman filled her head with tales of adventure from Slavic folklore to distract her from her family's poverty. As soon as she was old enough, Kalyna left home to seek a better life for herself. With a natural aptitude for learning and excellent skills in both repair and marksmanship, A.I.M. welcomes her to its ranks with open arms."),
 	Nationality = "Ukraine",
 	Title = T(586433848631, --[[ModItemUnitDataCompositeDef Kalyna Title]] "A Cinderella Story"),
 	Email = T(380814063809, --[[ModItemUnitDataCompositeDef Kalyna Email]] "hero_princess@aim.com"),
-	snype_nick = T(910968647763, --[[ModItemUnitDataCompositeDef Kalyna snype_nick]] "smelaya_princessa"),
+	snype_nick = T(910968647763, --[[ModItemUnitDataCompositeDef Kalyna snype_nick]] "hero_princess"),
 	Haggles = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {

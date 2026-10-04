@@ -19,14 +19,14 @@ DefineClass.Len = {
 	Portrait = "UI/MercsPortraits/Len",
 	BigPortrait = "UI/Mercs/Len",
 	IsMercenary = true,
-	Name = T(856122685331, --[[ModItemUnitDataCompositeDef Len Name]] "Капрал Лен Андерсон"),
-	Nick = T(100823268874, --[[ModItemUnitDataCompositeDef Len Nick]] "Лен"),
-	AllCapsNick = T(765224105732, --[[ModItemUnitDataCompositeDef Len AllCapsNick]] "ЛЕН"),
-	Bio = T(651747616157, --[[ModItemUnitDataCompositeDef Len Bio]] "Записавшись в армию сразу же по окончании школы, капрал Андерсон большую частью своей взрослой жизни не выпускал из рук автомата. Лен отслужил в «зелёных беретах», а получив почётное увольнение со службы, переквалифицировался в солдата удачи, став одним из первых членов A.I.M. Лен располагает превосходными навыками во всех областях солдатской науки и имеет за плечами многие годы опыта борьбы с боевиками и спасения похищенных бизнесменов. Коллеги уважают его как командира и инструктора, а враги боятся как грозу мелких военных диктаторов."),
+	Name = T(856122685331, --[[ModItemUnitDataCompositeDef Len Name]] "Corp. Len Anderson"),
+	Nick = T(100823268874, --[[ModItemUnitDataCompositeDef Len Nick]] "Len"),
+	AllCapsNick = T(765224105732, --[[ModItemUnitDataCompositeDef Len AllCapsNick]] "LEN"),
+	Bio = T(651747616157, --[[ModItemUnitDataCompositeDef Len Bio]] "Recruited out of high school directly into the military, Len has seen combat for most of his adult life. After being honorably discharged from the Green Berets, Len became a soldier of fortune and was one of A.I.M.'s first members. With elite skills in every aspect of soldiering and years of battling warlords and rescuing kidnapped businessmen, Len has earned a reputation as a revered leader and mentor to mercenaries and feared adversary to third world dictators the world over."),
 	Nationality = "USA",
 	Title = T(452293562944, --[[ModItemUnitDataCompositeDef Len Title]] "The Soldier's Soldier"),
 	Email = T(159574405546, --[[ModItemUnitDataCompositeDef Len Email]] "corporal_anderson@aim.com"),
-	snype_nick = T(152770436506, --[[ModItemUnitDataCompositeDef Len snype_nick]] "len_anderson"),
+	snype_nick = T(152770436506, --[[ModItemUnitDataCompositeDef Len snype_nick]] "corporal_anderson"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

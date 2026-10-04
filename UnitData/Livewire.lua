@@ -19,14 +19,14 @@ DefineClass.Livewire = {
 	Portrait = "UI/MercsPortraits/Livewire",
 	BigPortrait = "UI/Mercs/Livewire",
 	IsMercenary = true,
-	Name = T(644364224049, --[[ModItemUnitDataCompositeDef Livewire Name]] 'Лейли Идриси «Фаза»'),
-	Nick = T(242623587127, --[[ModItemUnitDataCompositeDef Livewire Nick]] "Фаза"),
-	AllCapsNick = T(218487408008, --[[ModItemUnitDataCompositeDef Livewire AllCapsNick]] "ФАЗА"),
-	Bio = T(937077578267, --[[ModItemUnitDataCompositeDef Livewire Bio]] "Лейли родилась в подконтрольной Индии части Кашмира в семье беженцев. Детство её выдалось непростым: бесспорно талантливая ученица (девочка получила именную стипендию от Делийского университета), она вечно вращалась в неподходящей компании. Учась в университете, она параллельно увлекалась вскрытием замков; изучая криптографию, по ночам взламывала закрытые базы данных. С рождения одинаково хорошо владея и правой, и левой руками, «Фаза» вечно занималась сразу несколькими делами одновременно. В конце концов её криминальные шалости привлекли к себе внимание, и Лейли пришлось спешно покинуть альма-матер. Что именно там произошло, она не говорит, а мы в A.I.M. уважаем частную жизнь своих бойцов."),
+	Name = T(644364224049, --[[ModItemUnitDataCompositeDef Livewire Name]] 'Leili "Livewire" Idrisi'),
+	Nick = T(242623587127, --[[ModItemUnitDataCompositeDef Livewire Nick]] "Livewire"),
+	AllCapsNick = T(218487408008, --[[ModItemUnitDataCompositeDef Livewire AllCapsNick]] "LIVEWIRE"),
+	Bio = T(937077578267, --[[ModItemUnitDataCompositeDef Livewire Bio]] "Born to Pakistani refugees in Indian-controlled Kashmir territory, Leili had a rough childhood. Although a gifted child - she was given a full scholarship to the University of Delhi - Leili always seemed to find herself running with the wrong crowd. In addition to writing papers, she was picking locks. By day she would learn to code and by night she would hack into secure databases. Ambidextrous by nature, she always had more than one thing going at a time. Eventually, someone took notice of her nefarious activities and Leili fled university in a hurry. She won't say exactly what went wrong and A.I.M. respects the privacy of its members."),
 	Nationality = "Pakistan",
 	Title = T(452434978236, --[[ModItemUnitDataCompositeDef Livewire Title]] "Utterly Blameless and Completely Fabulous"),
 	Email = T(885737105013, --[[ModItemUnitDataCompositeDef Livewire Email]] "fantabulousdiva@aim.com"),
-	snype_nick = T(893845971026, --[[ModItemUnitDataCompositeDef Livewire snype_nick]] "fantastic_faza"),
+	snype_nick = T(893845971026, --[[ModItemUnitDataCompositeDef Livewire snype_nick]] "fantabulousdiva"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

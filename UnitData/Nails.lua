@@ -18,14 +18,14 @@ DefineClass.Nails = {
 	Portrait = "UI/MercsPortraits/Nails",
 	BigPortrait = "UI/Mercs/Nails",
 	IsMercenary = true,
-	Name = T(837593519203, --[[ModItemUnitDataCompositeDef Nails Name]] 'Эдгар Сморф «Гвоздь»'),
-	Nick = T(516388631352, --[[ModItemUnitDataCompositeDef Nails Nick]] "Гвоздь"),
-	AllCapsNick = T(597544800039, --[[ModItemUnitDataCompositeDef Nails AllCapsNick]] "ГВОЗДЬ"),
-	Bio = T(622487091001, --[[ModItemUnitDataCompositeDef Nails Bio]] "Основав первую в истории Арулько банду байкеров, Гвоздь вскоре с отвращением покинул её, поскольку так и не смог убедить товарищей сделать ограбления винных магазинов и поджоги автозаправок (тех, что бодяжат бензин, разумеется) двумя столпами их совместной деятельности. Сейчас Гвоздь рассматривает предложения нанимателей, которым пригодится его навык обращения со взрывчаткой и механизмами и крутой нрав. Он готов лететь куда угодно и стрелять по кому угодно при условии, что от него не будут требовать расстаться с косухой (во многих местах уже продырявленной и изрядно попахивающей)."),
+	Name = T(837593519203, --[[ModItemUnitDataCompositeDef Nails Name]] 'Edgar "Nails" Smorth'),
+	Nick = T(516388631352, --[[ModItemUnitDataCompositeDef Nails Nick]] "Nails"),
+	AllCapsNick = T(597544800039, --[[ModItemUnitDataCompositeDef Nails AllCapsNick]] "NAILS"),
+	Bio = T(622487091001, --[[ModItemUnitDataCompositeDef Nails Bio]] "Soon after starting Arulco's first biker gang, Nails resigned in disgust when he couldn't convince the other members that robbing liquor stores and blowing up gas stations (just the lame ones, of course) should be central pillars of their charter. Nails is ready to make his talents with explosives, tools and badassery available to the highest bidder. He's willing to go anywhere and shoot anyone, just don't ever ask him to take off his leather jacket, even though it has several bullet holes in it and is starting to smell like belly button lint."),
 	Nationality = "USA",
 	Title = T(494228139073, --[[ModItemUnitDataCompositeDef Nails Title]] "Don't Touch the Vest"),
 	Email = T(150606437691, --[[ModItemUnitDataCompositeDef Nails Email]] "hellbent4lthr@aim.com"),
-	snype_nick = T(309985618460, --[[ModItemUnitDataCompositeDef Nails snype_nick]] "kosuhu_ne_otdam"),
+	snype_nick = T(309985618460, --[[ModItemUnitDataCompositeDef Nails snype_nick]] "hellbent4lthr"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

@@ -3406,6 +3406,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_Beretta",
 							"JAZZ_LaserDot",
 						},
 						weapon = "Bereta92",
@@ -3547,6 +3548,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_P220",
 							"JAZZ_LaserDot",
 						},
 						weapon = "P220",
@@ -3753,6 +3755,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_Anaconda",
 							"JAZZ_CombatScope_ACOG",
 						},
 						weapon = "ColtAnaconda",
@@ -3818,6 +3821,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_MicroUZI",
 							"JAZZ_LaserDot",
 							"JAZZ_Compensator",
 						},
@@ -4240,6 +4244,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_UZI",
 							"JAZZ_Reflex_Closed",
 						},
 						weapon = "UZI",
@@ -4301,6 +4306,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_UZI",
 							"JAZZ_StockNormal",
 							"JAZZ_Reflex_Open",
 							"MagDrum_30-50",
@@ -4397,6 +4403,7 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Dovetail_AK",
 							"JAZZ_Reflex_Cobra",
 						},
 						weapon = "PP19Bizon",
@@ -4534,6 +4541,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_UMP",
 							"JAZZ_Reflex_Closed",
 						},
 						weapon = "UMP45",
@@ -4762,6 +4770,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_AR",
 							"JAZZ_Reflex_Aimpoint5000",
 							"JAZZ_MagNormal",
 						},
@@ -4960,6 +4969,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Dovetail_Val",
 							"JAZZ_Scope_PSO",
 						},
 						weapon = "VSS",
@@ -4994,6 +5004,7 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Dovetail_Val",
 							"JAZZ_Reflex_Cobra",
 						},
 						weapon = "AS_Val",
@@ -5101,6 +5112,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_AR",
 							"JAZZ_Reflex_Aimpoint5000",
 						},
 						weapon = "M16A1",
@@ -5117,6 +5129,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_AR",
 							"JAZZ_CombatScope_2x",
 						},
 						weapon = "M16A1",
@@ -5223,6 +5236,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_M16A2",
 							"JAZZ_CombatScope_3x",
 						},
 						weapon = "M16A2",
@@ -5239,6 +5253,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_M16A2",
 							"JAZZ_Reflex_Aimpoint5000",
 						},
 						weapon = "M16A2",
@@ -5255,6 +5270,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_M16A2",
 							"JAZZ_CombatScope_2x",
 						},
 						weapon = "M16A2",
@@ -5383,6 +5399,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Dovetail_AK",
 							"JAZZ_Compensator",
 							"JAZZ_Reflex_Cobra",
 						},
@@ -5400,6 +5417,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Dovetail_AK",
 							"JAZZ_Compensator",
 							"JAZZ_Scope_PSO",
 						},
@@ -5417,6 +5435,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Dovetail_AK",
 							"JAZZ_MagLarge_30_40",
 							"JAZZ_StockLightUnFolded",
 							"JAZZ_Reflex_Cobra",
@@ -5448,6 +5467,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_HK33",
 							"JAZZ_Reflex_Aimpoint5000",
 						},
 						weapon = "HK33",
@@ -5464,6 +5484,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_HK33",
 							"JAZZ_CombatScope_2x",
 						},
 						weapon = "HK33",
@@ -5529,6 +5550,7 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Dovetail_AK",
 							"JAZZ_Scope_PSO",
 						},
 						weapon = "AK74",
@@ -5545,6 +5567,7 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Dovetail_AK",
 							"JAZZ_Reflex_Cobra",
 						},
 						weapon = "AK74",
@@ -5561,6 +5584,7 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Dovetail_AK",
 							"JAZZ_CombatScope_1P29",
 						},
 						weapon = "AK74",
@@ -5780,6 +5804,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_AR",
 							"JAZZ_CombatScope_2x",
 						},
 						weapon = "AR10",
@@ -5826,6 +5851,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_M14",
 							"JAZZ_Reflex_Closed",
 						},
 						weapon = "M14SAW",
@@ -5842,6 +5868,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_M14",
 							"JAZZ_CombatScope_2x",
 						},
 						weapon = "M14SAW",
@@ -5911,6 +5938,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_FAL",
 							"JAZZ_StockNormal",
 							"JAZZ_CombatScope_2x",
 						},
@@ -5945,6 +5973,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_FAL",
 							"JAZZ_StockNormal",
 							"JAZZ_VerticalGrip",
 						},
@@ -5962,6 +5991,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_FAL",
 							"JAZZ_StockNormal",
 							"JAZZ_VerticalGrip",
 							"JAZZ_CombatScope_2x",
@@ -5980,6 +6010,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_FAL",
 							"JAZZ_StockNormal",
 							"JAZZ_VerticalGrip",
 							"JAZZ_CombatScope_2x",
@@ -6092,6 +6123,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_Galil",
 							"JAZZ_Bipod_Galil",
 							"JAZZ_CombatScope_2x",
 						},
@@ -6109,6 +6141,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_Galil",
 							"JAZZ_Bipod_Galil",
 							"JAZZ_CombatScope_2x",
 						},
@@ -6141,6 +6174,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_G3",
 							"JAZZ_CombatScope_2x",
 						},
 						weapon = "G3A3",
@@ -6160,6 +6194,7 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_G3",
 							"JAZZ_CombatScope_FeroZ24",
 						},
 						weapon = "G3A3",
@@ -6176,6 +6211,7 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_G3",
 							"JAZZ_Reflex_Closed",
 						},
 						weapon = "G3A3",
@@ -6207,6 +6243,7 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_G3",
 							"JAZZ_CombatScope_FeroZ24",
 						},
 						weapon = "G3A4",
@@ -6223,6 +6260,7 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_G3",
 							"JAZZ_Reflex_M68",
 						},
 						weapon = "G3A4",
@@ -6269,6 +6307,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Conversion_Garand",
 							"JAZZ_Scope_Garand",
 						},
 						weapon = "M1Garand",
@@ -6307,6 +6346,7 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Conversion_SVT",
 							"JAZZ_Scope_PU",
 						},
 						weapon = "SVT40",
@@ -6335,6 +6375,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Conversion_G43",
 							"JAZZ_Scope_ZF4",
 						},
 						weapon = "G43",
@@ -6409,6 +6450,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_M21",
 							"JAZZ_CombatScope_2x",
 						},
 						weapon = "M21",
@@ -6425,6 +6467,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_M21",
 							"JAZZ_Scope_6x",
 						},
 						weapon = "M21",
@@ -6441,6 +6484,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_M21",
 							"JAZZ_Scope_Scout",
 							"JAZZ_Suppressor",
 						},
@@ -6458,6 +6502,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_M21",
 							"JAZZ_Scope_12x",
 						},
 						weapon = "M21",
@@ -6521,6 +6566,8 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Dovetail_SVD",
+							"JAZZ_Rail_NATO_SVD",
 							"JAZZ_Scope_12x",
 						},
 						weapon = "DragunovSVD",
@@ -6539,6 +6586,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_G3",
 							"JAZZ_Scope_DA15_6x",
 						},
 						weapon = "G3SniperV1",
@@ -6668,6 +6716,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Conversion_Mosin",
 							"JAZZ_Scope_PU",
 						},
 						weapon = "Mosin",
@@ -6701,6 +6750,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Conversion_Gewehr",
 							"JAZZ_Scope_ZF4",
 						},
 						weapon = "Gewehr98",
@@ -6732,6 +6782,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Conversion_Springfield",
 							"JAZZ_Scope_Springfield",
 						},
 						weapon = "Springfield",
@@ -6776,6 +6827,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_M24",
 							"JAZZ_Scope_12x",
 						},
 						weapon = "M24Sniper",
@@ -6794,6 +6846,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_M24",
 							"JAZZ_Scope_Scout",
 							"JAZZ_Suppressor",
 						},
@@ -9462,6 +9515,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Conversion_Mosin",
 							"JAZZ_Scope_PU",
 						},
 						weapon = "Mosin",
@@ -10611,6 +10665,7 @@ return {
 						condition = "Difficulty VeryHard",
 						negate = true,
 						upgrades = {
+							"JAZZ_Rail_M16A2",
 							"JAZZ_CombatScope_3x",
 						},
 						weapon = "M16A2",
@@ -12348,6 +12403,7 @@ return {
 						condition = "Difficulty VeryHard",
 						negate = true,
 						upgrades = {
+							"JAZZ_Dovetail_AK",
 							"JAZZ_Scope_PSO",
 						},
 						weapon = "AKM",
@@ -12906,6 +12962,7 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_Beretta",
 							"JAZZ_Flashlight",
 						},
 						weapon = "Bereta92",
@@ -13032,6 +13089,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_P220",
 							"JAZZ_LaserDot",
 						},
 						weapon = "P220",
@@ -13133,6 +13191,7 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_Winchester",
 							"JAZZ_Scope_6x",
 							"JAZZ_BarrelLong",
 						},
@@ -14567,6 +14626,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_M1A",
 							"JAZZ_Scope_12x",
 						},
 						weapon = "M1A",
@@ -15442,6 +15502,7 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Rail_AR",
 							"JAZZ_Reflex_Aimpoint5000",
 							"JAZZ_Flashlight",
 						},
@@ -15804,6 +15865,7 @@ return {
 					}),
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
+							"JAZZ_Conversion_Springfield",
 							"JAZZ_Scope_Springfield",
 						},
 						weapon = "Springfield",
@@ -16006,6 +16068,7 @@ return {
 						condition = "Difficulty VeryHard",
 						negate = true,
 						upgrades = {
+							"JAZZ_Rail_HK33",
 							"JAZZ_BarrelShortRunNGun",
 							"JAZZ_Reflex_Aimpoint5000",
 						},
@@ -18298,6 +18361,7 @@ return {
 				PlaceObj('LootEntryUpgradedWeapon', {
 					Condition = 90,
 					upgrades = {
+						"JAZZ_Rail_AR",
 						"JAZZ_Flashlight",
 						"JAZZ_CombatScope_3x",
 					},
@@ -19249,6 +19313,7 @@ return {
 				PlaceObj('LootEntryUpgradedWeapon', {
 					Condition = 75,
 					upgrades = {
+						"JAZZ_Conversion_Gewehr",
 						"JAZZ_Scope_ZF4",
 					},
 					weapon = "Gewehr98",
@@ -19794,6 +19859,7 @@ return {
 				}),
 				PlaceObj('LootEntryUpgradedWeapon', {
 					upgrades = {
+						"JAZZ_Dovetail_AK",
 						"JAZZ_LaserDot",
 						"JAZZ_NightScope_NSPU",
 						"JAZZ_Compensator",
@@ -22121,6 +22187,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_AA12",
 								"JAZZ_LaserDot_aa12",
 								"JAZZ_MagLarge_25_AA12",
 							},
@@ -22137,6 +22204,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_AA12",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_LaserDot_aa12",
 								"JAZZ_MagLarge_25_AA12",
@@ -22246,6 +22314,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_AK",
 								"JAZZ_Reflex_Cobra",
 								"JAZZ_MagLarge_30_45",
 							},
@@ -22262,6 +22331,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_AK",
 								"JAZZ_Reflex_Cobra",
 								"JAZZ_MagLarge_30_45",
 								"JAZZ_Compensator",
@@ -22294,6 +22364,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_AK",
 								"JAZZ_Reflex_Cobra",
 								"JAZZ_MagLarge_30_45",
 								"JAZZ_Compensator",
@@ -22311,6 +22382,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_AK",
+								"JAZZ_Rail_NATO_AK",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_30_40",
 								"JAZZ_LaserDot",
@@ -22328,6 +22401,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_AK",
+								"JAZZ_Rail_NATO_AK",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_30_40",
 								"JAZZ_LaserDot",
@@ -22361,6 +22436,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_AK",
+								"JAZZ_Rail_NATO_AK",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_30_40",
 								"JAZZ_LaserDot",
@@ -22394,6 +22471,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_AKSU",
 								"JAZZ_MagLarge_30_45",
 								"JAZZ_LaserDot",
 							},
@@ -22410,6 +22488,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_AKSU",
 								"JAZZ_MagLarge_30_45",
 								"JAZZ_LaserDot",
 								"JAZZ_ImprovisedSuppressor",
@@ -22427,6 +22506,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_AKSU",
 								"JAZZ_LaserDot",
 								"JAZZ_MagLarge_30_45",
 							},
@@ -22459,6 +22539,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_AKSU",
 								"JAZZ_ImprovisedSuppressor",
 								"JAZZ_MagLarge_30_45",
 								"JAZZ_LaserDot",
@@ -22476,6 +22557,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_AKSU",
 								"JAZZ_MagLarge_30_45",
 								"JAZZ_LaserDot",
 								"JAZZ_ImprovisedSuppressor",
@@ -22682,6 +22764,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_AR",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "AR10",
@@ -22697,6 +22780,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_AR",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "AR10",
@@ -22712,6 +22796,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_Val",
+								"JAZZ_Rail_NATO_Val",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_10_20_VAL",
 							},
@@ -22728,6 +22814,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_Val",
+								"JAZZ_Rail_NATO_Val",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_10_20_VAL",
 								"JAZZ_LaserDot",
@@ -22746,6 +22834,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_Val",
+								"JAZZ_Rail_NATO_Val",
 								"JAZZ_LaserDot",
 								"JAZZ_MagLarge_10_20_VAL",
 							},
@@ -22762,6 +22852,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_Val",
+								"JAZZ_Rail_NATO_Val",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_SuppressorIntegrated",
 							},
@@ -22778,6 +22870,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_Val",
+								"JAZZ_Rail_NATO_Val",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_SuppressorIntegrated",
 								"JAZZ_MagLarge_10_20_VAL",
@@ -22796,6 +22890,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_Val",
+								"JAZZ_Rail_NATO_Val",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_10_20_VAL",
 								"JAZZ_LaserDot",
@@ -22814,6 +22910,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_Val",
+								"JAZZ_Rail_NATO_Val",
 								"JAZZ_CombatScope_ACOG",
 							},
 							weapon = "AS_Val",
@@ -22829,6 +22927,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_AUG",
+								"JAZZ_Rail_AUG_Side",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_30_42",
 								"JAZZ_LaserDot",
@@ -22846,6 +22946,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_AUG",
+								"JAZZ_Rail_AUG_Side",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_30_42",
 								"JAZZ_LaserDot",
@@ -22864,6 +22966,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_AUG",
+								"JAZZ_Rail_AUG_Side",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_30_42",
 								"JAZZ_LaserDot",
@@ -23234,6 +23338,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_Beretta",
 								"JAZZ_LaserDot",
 								"JAZZ_MagLarge_18_20",
 							},
@@ -23512,6 +23617,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_AR",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_AR15",
 							},
@@ -23528,6 +23634,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_AR",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_AR15",
 							},
@@ -23544,6 +23651,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_AR",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_AR15",
 								"JAZZ_Suppressor",
@@ -23576,6 +23684,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_AR",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_Suppressor",
 								"JAZZ_MagLarge_50_AR15",
@@ -23593,6 +23702,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_AR",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_Suppressor",
 								"JAZZ_MagLarge_50_AR15",
@@ -23610,6 +23720,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_AR",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_AR15",
 								"JAZZ_Suppressor",
@@ -23627,6 +23738,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_AR",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "CAR15",
@@ -23642,6 +23754,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_AR",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "CAR15",
@@ -23672,6 +23785,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_PistolUnder",
 								"JAZZ_LaserDot",
 								"JAZZ_MagLarge_13_PISTOL_52",
 							},
@@ -24130,6 +24244,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_SVD",
+								"JAZZ_Rail_NATO_SVD",
 								"JAZZ_Scope_12x",
 							},
 							weapon = "DragunovSVD",
@@ -24145,6 +24261,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_SVD",
+								"JAZZ_Rail_NATO_SVD",
 								"JAZZ_Scope_12x",
 							},
 							weapon = "DragunovSVD",
@@ -24160,6 +24278,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_SVD",
+								"JAZZ_Rail_NATO_SVD",
 								"JAZZ_CombatScope_ACOG",
 							},
 							weapon = "DragunovSVD",
@@ -24175,6 +24295,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_SVD",
+								"JAZZ_Rail_NATO_SVD",
 								"JAZZ_Scope_6x",
 								"JAZZ_Bipod",
 							},
@@ -24191,6 +24313,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_FAMAS",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_LaserDot",
 							},
@@ -24207,6 +24330,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_FAMAS",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_LaserDot",
 								"JAZZ_ImprovisedSuppressor",
@@ -24224,6 +24348,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_FAMAS",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_LaserDot",
 								"JAZZ_ImprovisedSuppressor",
@@ -24381,6 +24506,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_FAL",
 								"JAZZ_StockNormal",
 								"JAZZ_CombatScope_2x",
 							},
@@ -24397,6 +24523,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_FAL",
 								"JAZZ_StockLightUnFolded",
 								"JAZZ_CombatScope_2x",
 							},
@@ -24621,6 +24748,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_G36",
 								"JAZZ_Reflex_Closed",
 								"JAZZ_LaserDot",
 							},
@@ -24637,6 +24765,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_G36",
 								"JAZZ_Reflex_Closed",
 								"JAZZ_LaserDot",
 								"JAZZ_ImprovisedSuppressor",
@@ -24669,6 +24798,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_G36",
 								"JAZZ_Reflex_Closed",
 								"JAZZ_LaserDot",
 								"JAZZ_ImprovisedSuppressor",
@@ -24829,6 +24959,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_G3",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "G3A3",
@@ -24844,6 +24975,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_G3",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "G3A3",
@@ -24859,6 +24991,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_G3",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "G3A4",
@@ -24874,6 +25007,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_G3",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "G3A4",
@@ -24889,6 +25023,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_G3",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "G3SniperV1",
@@ -24904,6 +25039,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_G3",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "G3SniperV1",
@@ -24919,6 +25055,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_G3",
 								"JAZZ_Scope_6x",
 							},
 							weapon = "G3SniperV1",
@@ -24934,6 +25071,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_G3",
 								"JAZZ_Scope_6x",
 								"JAZZ_Bipod",
 							},
@@ -24992,6 +25130,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_Galil",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "Galil",
@@ -25007,6 +25146,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_Galil",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "Galil",
@@ -25036,6 +25176,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Conversion_Gewehr",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "Gewehr98",
@@ -25051,6 +25192,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Conversion_Gewehr",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "Gewehr98",
@@ -25066,6 +25208,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Conversion_Gewehr",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "Gewehr98",
@@ -25320,6 +25463,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_HK21",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_LaserDot",
 								"JAZZ_Compensator",
@@ -25352,6 +25496,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_HK21",
 								"JAZZ_Bipod",
 								"JAZZ_Reflex_Aimpoint5000",
 							},
@@ -25415,6 +25560,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_HK33",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_LaserDot",
 							},
@@ -25431,6 +25577,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_HK33",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_LaserDot",
 								"JAZZ_ImprovisedSuppressor",
@@ -25448,6 +25595,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_HK33",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_LaserDot",
 								"JAZZ_ImprovisedSuppressor",
@@ -25537,6 +25685,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_Ithaca",
 								"JAZZ_Reflex_Aimpoint5000",
 							},
 							weapon = "Ithaca",
@@ -25696,6 +25845,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_M14",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "M14SAW",
@@ -25711,6 +25861,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_M14",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "M14SAW",
@@ -25726,6 +25877,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_AR",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_AR15",
 								"JAZZ_LaserDot",
@@ -25743,6 +25895,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_AR",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_AR15",
 								"JAZZ_LaserDot",
@@ -25760,6 +25913,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_AR",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_AR15",
 								"JAZZ_LaserDot",
@@ -25777,6 +25931,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_M16A2",
+								"JAZZ_Rail_M16A2_Side",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_AR15",
 								"JAZZ_LaserDot",
@@ -25794,6 +25950,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_M16A2",
+								"JAZZ_Rail_M16A2_Side",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_AR15",
 								"JAZZ_LaserDot",
@@ -25812,6 +25970,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_M16A2",
+								"JAZZ_Rail_M16A2_Side",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_AR15",
 								"JAZZ_LaserDot",
@@ -25830,6 +25990,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Handguard_RIS",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_AR15",
 								"JAZZ_LaserDot",
@@ -25847,6 +26008,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Handguard_RIS",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_AR15",
 								"JAZZ_LaserDot",
@@ -25865,6 +26027,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Handguard_RIS",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_AR15",
 								"JAZZ_LaserDot",
@@ -25925,6 +26088,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_M1A",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_ImprovisedSuppressor",
 							},
@@ -25941,6 +26105,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_M1A",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "M1A",
@@ -25956,6 +26121,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_M1A",
 								"JAZZ_CombatScope_ACOG",
 							},
 							weapon = "M1A",
@@ -25971,6 +26137,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_M1A",
 								"JAZZ_Scope_6x",
 							},
 							weapon = "M1A",
@@ -26000,6 +26167,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Conversion_Garand",
 								"JAZZ_Reflex_Garand",
 							},
 							weapon = "M1Garand",
@@ -26029,6 +26197,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_M21",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "M21",
@@ -26044,6 +26213,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_M21",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "M21",
@@ -26059,6 +26229,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_M21",
 								"JAZZ_CombatScope_ACOG",
 							},
 							weapon = "M21",
@@ -26074,6 +26245,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_M21",
 								"JAZZ_Scope_6x",
 							},
 							weapon = "M21",
@@ -26089,6 +26261,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_M24",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "M24Sniper",
@@ -26104,6 +26277,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_M24",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "M24Sniper",
@@ -26119,6 +26293,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_M24",
 								"JAZZ_CombatScope_ACOG",
 							},
 							weapon = "M24Sniper",
@@ -26134,6 +26309,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_M24",
 								"JAZZ_Scope_6x",
 								"JAZZ_Bipod",
 							},
@@ -26627,6 +26803,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Handguard_RIS",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_AR15",
 								"JAZZ_LaserDot",
@@ -26644,6 +26821,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Handguard_RIS",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_AR15",
 								"JAZZ_LaserDot",
@@ -26662,6 +26840,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Handguard_RIS",
 								"JAZZ_LaserDot",
 								"JAZZ_MagLarge_50_AR15",
 							},
@@ -26695,6 +26874,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Handguard_RIS",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_ImprovisedSuppressor",
 								"JAZZ_MagLarge_50_AR15",
@@ -26713,6 +26893,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Handguard_RIS",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_AR15",
 								"JAZZ_LaserDot",
@@ -27069,6 +27250,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_PistolUnder",
 								"JAZZ_LaserDot",
 								"JAZZ_MagLarge_13_PISTOL_52",
 							},
@@ -27932,6 +28114,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_MP5K",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_MP5",
 							},
@@ -27948,6 +28131,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_MP5K",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_50_MP5",
 								"JAZZ_LaserDot",
@@ -27981,6 +28165,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_MP5K",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_LaserDot",
 								"JAZZ_MagLarge_50_MP5",
@@ -27998,6 +28183,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_MP5K",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_ImprovisedSuppressor",
 								"JAZZ_MagLarge_50_MP5",
@@ -28015,6 +28201,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_MP5K",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_ImprovisedSuppressor",
 								"JAZZ_MagLarge_50_MP5",
@@ -28602,6 +28789,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_MicroUZI",
 								"JAZZ_Reflex_Closed",
 								"JAZZ_MagLarge_20_30_UZI",
 							},
@@ -28618,6 +28806,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_MicroUZI",
 								"JAZZ_Reflex_Closed",
 								"JAZZ_MagLarge_20_30_UZI",
 								"JAZZ_LaserDot",
@@ -28635,6 +28824,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_MicroUZI",
 								"JAZZ_LaserDot",
 								"JAZZ_MagLarge_20_30_UZI",
 							},
@@ -28651,6 +28841,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_MicroUZI",
 								"JAZZ_Reflex_Closed",
 								"JAZZ_LaserDot",
 								"JAZZ_MagLarge_20_30_UZI",
@@ -28668,6 +28859,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_MicroUZI",
 								"JAZZ_Reflex_Closed",
 								"JAZZ_PistolSuppressor",
 								"JAZZ_MagLarge_20_30_UZI",
@@ -28685,6 +28877,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_MicroUZI",
 								"JAZZ_Reflex_Closed",
 								"JAZZ_PistolSuppressor",
 								"JAZZ_MagLarge_20_30_UZI",
@@ -28886,6 +29079,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Conversion_Mosin",
 								"JAZZ_Scope_PU",
 							},
 							weapon = "Mosin",
@@ -28901,6 +29095,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Conversion_Mosin",
 								"JAZZ_Mosin1891",
 								"JAZZ_Scope_PU",
 							},
@@ -28917,6 +29112,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Conversion_Mosin",
 								"JAZZ_Mosin1891",
 								"JAZZ_Scope_PU",
 							},
@@ -28933,6 +29129,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Conversion_Mosin",
 								"JAZZ_Mosin1891",
 								"JAZZ_Scope_PU",
 							},
@@ -29006,6 +29203,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_P220",
 								"JAZZ_Reflex_Pistol",
 								"JAZZ_MagLarge_8_10",
 							},
@@ -29022,6 +29220,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_P220",
 								"JAZZ_LaserDot",
 								"JAZZ_MagLarge_8_10",
 							},
@@ -29038,6 +29237,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_P220",
 								"JAZZ_Reflex_Pistol",
 								"JAZZ_LaserDot",
 								"JAZZ_MagLarge_8_10",
@@ -29331,6 +29531,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_AK",
 								"JAZZ_Reflex_Cobra",
 							},
 							weapon = "PP19Bizon",
@@ -29346,6 +29547,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_AK",
 								"JAZZ_Reflex_Cobra",
 							},
 							weapon = "PP19Bizon",
@@ -29375,6 +29577,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_AK",
 								"JAZZ_Reflex_Cobra",
 							},
 							weapon = "PP19Bizon",
@@ -29390,6 +29593,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_AK",
 								"JAZZ_Reflex_Cobra",
 							},
 							weapon = "PP19Bizon",
@@ -29405,6 +29609,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_AK",
 								"JAZZ_Reflex_Cobra",
 							},
 							weapon = "PP19Bizon",
@@ -29875,6 +30080,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_R870",
 								"JAZZ_LaserDot",
 							},
 							weapon = "R870",
@@ -29890,6 +30096,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_R870",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_LaserDot",
 							},
@@ -31940,6 +32147,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_UMP",
 								"JAZZ_Reflex_Closed",
 							},
 							weapon = "UMP45",
@@ -31955,6 +32163,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_UMP",
 								"JAZZ_Reflex_Closed",
 								"JAZZ_LaserDot",
 							},
@@ -31986,6 +32195,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_UMP",
 								"JAZZ_Reflex_Closed",
 								"JAZZ_LaserDot",
 							},
@@ -32002,6 +32212,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_UMP",
 								"JAZZ_Reflex_Closed",
 								"JAZZ_ImprovisedSuppressor",
 							},
@@ -32018,6 +32229,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_UMP",
 								"JAZZ_Reflex_Closed",
 								"JAZZ_ImprovisedSuppressor",
 								"JAZZ_LaserDot",
@@ -32124,6 +32336,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_UZI",
 								"JAZZ_Reflex_Closed",
 								"JAZZ_MagLarge_20_30_UZI",
 							},
@@ -32140,6 +32353,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_UZI",
 								"JAZZ_Reflex_Closed",
 								"JAZZ_MagLarge_20_30_UZI",
 							},
@@ -32171,6 +32385,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_UZI",
 								"JAZZ_Reflex_Closed",
 								"JAZZ_MagLarge_20_30_UZI",
 							},
@@ -32187,6 +32402,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_UZI",
 								"JAZZ_Reflex_Closed",
 								"JAZZ_PistolSuppressor",
 								"JAZZ_MagLarge_20_30_UZI",
@@ -32204,6 +32420,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_UZI",
 								"JAZZ_Reflex_Closed",
 								"JAZZ_PistolSuppressor",
 								"JAZZ_MagLarge_20_30_UZI",
@@ -32249,6 +32466,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_Val",
+								"JAZZ_Rail_NATO_Val",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_10_20_VAL",
 							},
@@ -32265,6 +32484,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_Val",
+								"JAZZ_Rail_NATO_Val",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_10_20_VAL",
 							},
@@ -32281,6 +32502,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_Val",
+								"JAZZ_Rail_NATO_Val",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_10_20_VAL",
 							},
@@ -32312,6 +32535,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_Val",
+								"JAZZ_Rail_NATO_Val",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_10_20_VAL",
 							},
@@ -32328,6 +32553,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_Val",
+								"JAZZ_Rail_NATO_Val",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_10_20_VAL",
 							},
@@ -32344,6 +32571,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_Val",
+								"JAZZ_Rail_NATO_Val",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_MagLarge_10_20_VAL",
 							},
@@ -32360,6 +32589,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_Val",
+								"JAZZ_Rail_NATO_Val",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "VSS",
@@ -32375,6 +32606,8 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_Val",
+								"JAZZ_Rail_NATO_Val",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "VSS",
@@ -32490,6 +32723,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_Winchester",
 								"JAZZ_Reflex_Aimpoint5000",
 							},
 							weapon = "Winchester1894",
@@ -32505,6 +32739,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_Winchester",
 								"JAZZ_Reflex_Aimpoint5000",
 							},
 							weapon = "Winchester1894",
@@ -32520,6 +32755,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_Winchester",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_ImprovisedSuppressor",
 							},
@@ -32550,6 +32786,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_Winchester",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_ImprovisedSuppressor",
 							},
@@ -32566,6 +32803,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_Winchester",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_ImprovisedSuppressor",
 							},
@@ -32596,6 +32834,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_Winchester",
 								"JAZZ_Reflex_Aimpoint5000",
 								"JAZZ_ImprovisedSuppressor",
 							},
@@ -32612,6 +32851,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_Winchester",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "Winchester1894",
@@ -32627,6 +32867,7 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_Winchester",
 								"JAZZ_CombatScope_2x",
 							},
 							weapon = "Winchester1894",
@@ -77071,6 +77312,8 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Dovetail_SVD",
+										"JAZZ_Rail_NATO_SVD",
 										"JAZZ_Scope_12x",
 									},
 									weapon = "DragunovSVD",
@@ -77086,6 +77329,8 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Dovetail_SVD",
+										"JAZZ_Rail_NATO_SVD",
 										"JAZZ_Scope_12x",
 										"JAZZ_StockLight",
 									},
@@ -77102,6 +77347,7 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Dovetail_SVD",
 										"JAZZ_NightScope_NSPU",
 									},
 									weapon = "DragunovSVD",
@@ -77117,6 +77363,7 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Dovetail_SVD",
 										"JAZZ_NightScope_NSPU",
 										"JAZZ_StockLight",
 									},
@@ -77249,6 +77496,7 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Rail_AR",
 										"JAZZ_MagNormal",
 										"JAZZ_Reflex_Aimpoint5000",
 									},
@@ -77265,6 +77513,7 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Rail_AR",
 										"JAZZ_MagNormal",
 										"JAZZ_Reflex_M68",
 									},
@@ -77281,6 +77530,7 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Rail_AR",
 										"JAZZ_MagNormal",
 										"JAZZ_CombatScope_3x",
 									},
@@ -77431,6 +77681,7 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Dovetail_Val",
 										"JAZZ_Reflex_Cobra",
 									},
 									weapon = "AS_Val",
@@ -77446,6 +77697,7 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Dovetail_Val",
 										"JAZZ_Reflex_PKAS",
 									},
 									weapon = "AS_Val",
@@ -77461,6 +77713,7 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Dovetail_Val",
 										"JAZZ_Scope_PSO",
 									},
 									weapon = "AS_Val",
@@ -77476,6 +77729,8 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Dovetail_Val",
+										"JAZZ_Rail_NATO_Val",
 										"JAZZ_CombatScope_ACOG",
 									},
 									weapon = "AS_Val",
@@ -77557,6 +77812,7 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Rail_M16A2",
 										"JAZZ_Reflex_Aimpoint5000",
 									},
 									weapon = "M16A2",
@@ -77572,6 +77828,7 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Rail_M16A2",
 										"JAZZ_Reflex_M68",
 									},
 									weapon = "M16A2",
@@ -77587,6 +77844,7 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Rail_M16A2",
 										"JAZZ_CombatScope_3x",
 									},
 									weapon = "M16A2",
@@ -77602,6 +77860,7 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Rail_M16A2",
 										"JAZZ_CombatScope_ACOG",
 									},
 									weapon = "M16A2",
@@ -77629,6 +77888,7 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Rail_G3",
 										"JAZZ_Reflex_M68",
 									},
 									weapon = "G3A4",
@@ -77644,6 +77904,7 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Rail_G3",
 										"JAZZ_Reflex_Eotech",
 									},
 									weapon = "G3A4",
@@ -77659,6 +77920,7 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Rail_G3",
 										"JAZZ_CombatScope_FeroZ24",
 									},
 									weapon = "G3A4",
@@ -77674,6 +77936,7 @@ PlaceObj('LootEntryLootDef', {
 								loot = "all",
 								PlaceObj('LootEntryUpgradedWeapon', {
 									upgrades = {
+										"JAZZ_Rail_G3",
 										"JAZZ_Scope_DA15_6x",
 									},
 									weapon = "G3A4",
@@ -79240,6 +79503,7 @@ PlaceObj('LootEntryLootDef', {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
+									"JAZZ_Rail_MicroUZI",
 									"JAZZ_Reflex_Pistol",
 									"JAZZ_LaserDot",
 								},
@@ -79254,6 +79518,7 @@ PlaceObj('LootEntryLootDef', {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
+									"JAZZ_Rail_MicroUZI",
 									"JAZZ_Compensator",
 									"JAZZ_Reflex_Eotech",
 									"JAZZ_LaserDot",
@@ -79269,6 +79534,7 @@ PlaceObj('LootEntryLootDef', {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
+									"JAZZ_Rail_MicroUZI",
 									"JAZZ_Compensator",
 									"JAZZ_Reflex_Eotech",
 									"JAZZ_FlashlightDot",
@@ -79284,6 +79550,7 @@ PlaceObj('LootEntryLootDef', {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
+									"JAZZ_Rail_UZI",
 									"JAZZ_Compensator",
 									"JAZZ_Reflex_Eotech",
 								},
@@ -79338,6 +79605,7 @@ PlaceObj('LootEntryLootDef', {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
+									"JAZZ_Rail_UMP",
 									"JAZZ_Flashlight",
 									"JAZZ_CombatScope_2x",
 								},
@@ -79352,6 +79620,7 @@ PlaceObj('LootEntryLootDef', {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
+									"JAZZ_Rail_UMP",
 									"JAZZ_FlashlightDot",
 									"JAZZ_Reflex_Eotech",
 									"JAZZ_PistolSuppressor",
@@ -79393,6 +79662,7 @@ PlaceObj('LootEntryLootDef', {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
+									"JAZZ_Rail_G36",
 									"JAZZ_VerticalGrip",
 									"JAZZ_Compensator",
 									"JAZZ_Reflex_Eotech",
@@ -79437,6 +79707,7 @@ PlaceObj('LootEntryLootDef', {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
+									"JAZZ_Rail_AUG_Side",
 									"JAZZ_AUGScope_Default",
 									"JAZZ_AUGCompensator_01",
 									"JAZZ_LaserDot",
@@ -79452,6 +79723,7 @@ PlaceObj('LootEntryLootDef', {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
+									"JAZZ_Rail_G3",
 									"JAZZ_Reflex_M68",
 									"JAZZ_Compensator",
 								},
@@ -79466,6 +79738,7 @@ PlaceObj('LootEntryLootDef', {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
+									"JAZZ_Handguard_RIS",
 									"JAZZ_Reflex_M68",
 									"JAZZ_VerticalGrip",
 									"JAZZ_LaserDot",
@@ -79481,6 +79754,7 @@ PlaceObj('LootEntryLootDef', {
 							PlaceObj('LootEntryUpgradedWeapon', {
 								drop_chance_mod = 0,
 								upgrades = {
+									"JAZZ_Handguard_RIS",
 									"JAZZ_StockLightFolded",
 									"JAZZ_VerticalGrip",
 									"JAZZ_Reflex_Eotech",
@@ -79533,6 +79807,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_P220",
 									"JAZZ_LaserDot",
 								},
 								weapon = "P220",
@@ -79609,6 +79884,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_PSG",
 									"JAZZ_LaserDot_PSG_M1",
 								},
 								weapon = "PSG1",
@@ -79624,6 +79900,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_PSG",
 									"JAZZ_Scope_PSG",
 									"JAZZ_Bipod",
 									"JAZZ_LaserDot_PSG_M1",
@@ -79657,6 +79934,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_M24",
 									"JAZZ_Scope_12x",
 									"JAZZ_Bipod",
 									"JAZZ_StockLight",
@@ -79674,6 +79952,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_M1A",
 									"JAZZ_CombatScope_ACOG",
 								},
 								weapon = "M1A",
@@ -79689,6 +79968,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_M1A",
 									"JAZZ_Scope_Scout",
 								},
 								weapon = "M1A",
@@ -79794,6 +80074,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_AA12",
 									"JAZZ_LaserDot_aa12",
 								},
 								weapon = "AA12",
@@ -79809,6 +80090,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_AA12",
 									"JAZZ_Reflex_Closed",
 									"JAZZ_LaserDot_aa12",
 								},
@@ -79825,6 +80107,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_AA12",
 									"JAZZ_Reflex_Eotech",
 									"JAZZ_BarrelLongShotgun",
 									"JAZZ_LaserDot_aa12",
@@ -79842,6 +80125,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_AA12",
 									"JAZZ_CombatScope_2x",
 									"JAZZ_BarrelLongShotgun",
 									"JAZZ_LaserDot_aa12",
@@ -79977,6 +80261,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_HK21",
 									"JAZZ_LaserDot",
 								},
 								weapon = "HK21",
@@ -79992,6 +80277,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_HK21",
 									"JAZZ_Reflex_Closed",
 									"MagBelt_40-100",
 									"JAZZ_LaserDot",
@@ -80009,6 +80295,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_HK21",
 									"JAZZ_Reflex_Eotech",
 									"MagBelt_40-100",
 									"JAZZ_LaserDot",
@@ -80026,6 +80313,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_HK21",
 									"JAZZ_CombatScope_ACOG",
 									"JAZZ_LaserDot",
 								},
@@ -80139,6 +80427,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_UMP",
 									"JAZZ_Reflex_M68",
 									"JAZZ_LaserDot",
 								},
@@ -80231,6 +80520,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_HK33",
 									"JAZZ_Reflex_M68",
 									"JAZZ_LaserDot",
 								},
@@ -80247,6 +80537,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_HK33",
 									"JAZZ_Reflex_Open",
 									"JAZZ_LaserDot",
 									"JAZZ_BarrelShortRunNGun",
@@ -80264,6 +80555,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_HK33",
 									"JAZZ_Scope_DA15_6x",
 									"JAZZ_BarrelLong",
 								},
@@ -80280,6 +80572,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Dovetail_AK",
 									"JAZZ_Reflex_PKAS",
 									"JAZZ_MagLarge_30_40",
 								},
@@ -80296,6 +80589,8 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Dovetail_AK",
+									"JAZZ_Rail_NATO_AK",
 									"JAZZ_Reflex_Eotech",
 									"JAZZ_MagLarge_30_40",
 								},
@@ -80312,6 +80607,8 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Dovetail_AK",
+									"JAZZ_Rail_NATO_AK",
 									"JAZZ_CombatScope_ACOG",
 									"JAZZ_MagLarge_30_40",
 								},
@@ -80328,6 +80625,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Handguard_RIS",
 									"JAZZ_LaserDot",
 								},
 								weapon = "M4A1",
@@ -80343,6 +80641,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Handguard_RIS",
 									"JAZZ_Reflex_M68",
 									"JAZZ_LaserDot",
 								},
@@ -80359,6 +80658,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Handguard_RIS",
 									"JAZZ_LaserDot",
 									"JAZZ_Reflex_Eotech",
 								},
@@ -80375,6 +80675,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Handguard_RIS",
 									"JAZZ_CombatScope_ACOG",
 									"JAZZ_LaserDot",
 								},
@@ -80422,6 +80723,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_G36",
 									"JAZZ_LaserDot",
 									"JAZZ_G36Sight",
 								},
@@ -80438,6 +80740,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_G36",
 									"JAZZ_G36Scope",
 									"JAZZ_LaserDot",
 									"JAZZ_BarrelLong",
@@ -80455,6 +80758,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Rail_AUG_Side",
 									"JAZZ_LaserDot",
 								},
 								weapon = "AUG",
@@ -80470,6 +80774,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Handguard_RIS",
 									"JAZZ_Reflex_Eotech",
 									"JAZZ_LaserDot",
 								},
@@ -80486,6 +80791,7 @@ PlaceObj('LootEntryLootDef', {
 							loot = "all",
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Handguard_RIS",
 									"JAZZ_CombatScope_ACOG",
 									"JAZZ_LaserDot",
 								},
@@ -82372,6 +82678,7 @@ PlaceObj('LootEntryLootDef', {
 							}),
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Dovetail_Val",
 									"JAZZ_Scope_PSO",
 								},
 								weapon = "VSS",
@@ -82439,6 +82746,7 @@ PlaceObj('LootEntryLootDef', {
 							}),
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Conversion_Mosin",
 									"JAZZ_Scope_PU",
 								},
 								weapon = "Mosin",
@@ -82454,6 +82762,7 @@ PlaceObj('LootEntryLootDef', {
 							}),
 							PlaceObj('LootEntryUpgradedWeapon', {
 								upgrades = {
+									"JAZZ_Conversion_Gewehr",
 									"JAZZ_Scope_ZF4",
 								},
 								weapon = "Gewehr98",
@@ -82684,6 +82993,8 @@ PlaceObj('LootEntryLootDef', {
 						}),
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_Val",
+								"JAZZ_Rail_NATO_Val",
 								"JAZZ_Reflex_Eotech",
 							},
 							weapon = "AS_Val",
@@ -82726,6 +83037,7 @@ PlaceObj('LootEntryLootDef', {
 						PlaceObj('LootEntryInventoryItem', { item = "JAZZ_Morphine", stack_min = 1, stack_max = 1, drop_chance = 25 }),
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Dovetail_Val",
 								"JAZZ_Scope_PSO",
 							},
 							weapon = "VSS",
@@ -83284,6 +83596,7 @@ PlaceObj('LootEntryLootDef', {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_HK33",
 								"JAZZ_Reflex_Open",
 							},
 							weapon = "HK33",
@@ -83338,6 +83651,7 @@ PlaceObj('LootEntryLootDef', {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
+								"JAZZ_Rail_UMP",
 								"JAZZ_Reflex_Open",
 							},
 							weapon = "UMP45",
@@ -84788,6 +85102,7 @@ PlaceObj('LootEntryLootDef', {
 					PlaceObj('LootEntryUpgradedWeapon', {
 						guaranteed = true,
 						upgrades = {
+							"JAZZ_Handguard_RIS",
 							"JAZZ_VerticalGrip",
 							"JAZZ_LaserDot",
 							"JAZZ_CombatScope_ACOG",
@@ -144511,12 +144826,12 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Smiley",
 				'BigPortrait', "UI/Mercs/Smiley",
 				'IsMercenary', true,
-				'Name', T(607241134056, --[[ModItemUnitDataCompositeDef Smiley Name]] 'Алехандро Диас «Смайли»'),
-				'Nick', T(623933115537, --[[ModItemUnitDataCompositeDef Smiley Nick]] "Смайли"),
-				'AllCapsNick', T(904548406102, --[[ModItemUnitDataCompositeDef Smiley AllCapsNick]] "СМАЙЛИ"),
+				'Name', T(607241134056, --[[ModItemUnitDataCompositeDef Smiley Name]] 'Alejandro "Smiley" Diaz'),
+				'Nick', T(623933115537, --[[ModItemUnitDataCompositeDef Smiley Nick]] "Smiley"),
+				'AllCapsNick', T(904548406102, --[[ModItemUnitDataCompositeDef Smiley AllCapsNick]] "SMILEY"),
 				'Affiliation', "Secret",
 				'HireStatus', "NotMet",
-				'Bio', T(660209893656, --[[ModItemUnitDataCompositeDef Smiley Bio]] 'Алехандро Диас по прозвищу «Смайли» прибыл в Гран-Шьен вместе с отрядом каких-то иностранных наёмников (который, впрочем, был разбит Майором в пух и прах ещё за несколько недель до вашего появления в стране). Уроженец Арулько, Смайли готов примкнуть к вам благодаря тому уважению, которым пользуется A.I.M. у него на родине.'),
+				'Bio', T(660209893656, --[[ModItemUnitDataCompositeDef Smiley Bio]] 'Alejandro "Smiley" Diaz came to Grand Chien as mercenary serving some unknown small group - which got totally obliterated by the Major a few weeks before your encounter with him. An Arulco native, he is eager to join up with you, as A.I.M. is held in great regard in the new order back at his home country.'),
 				'Nationality', "Arulco",
 				'Title', T(599631305679, --[[ModItemUnitDataCompositeDef Smiley Title]] "Romeo in Combat Fatigues"),
 				'SalaryLv1', 0,
@@ -144573,9 +144888,9 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Pierre",
 				'BigPortrait', "UI/Mercs/Pierre",
 				'IsMercenary', true,
-				'Name', T(232743658474, --[[ModItemUnitDataCompositeDef PierreMerc Name]] "Пьер Лоран"),
-				'Nick', T(873651462548, --[[ModItemUnitDataCompositeDef PierreMerc Nick]] "Пьер"),
-				'AllCapsNick', T(612136728344, --[[ModItemUnitDataCompositeDef PierreMerc AllCapsNick]] "ПЬЕР"),
+				'Name', T(232743658474, --[[ModItemUnitDataCompositeDef PierreMerc Name]] "Pierre Laurent"),
+				'Nick', T(873651462548, --[[ModItemUnitDataCompositeDef PierreMerc Nick]] "Pierre"),
+				'AllCapsNick', T(612136728344, --[[ModItemUnitDataCompositeDef PierreMerc AllCapsNick]] "PIERRE"),
 				'Affiliation', "Secret",
 				'Nationality', "GrandChien",
 				'Title', T(201430117731, --[[ModItemUnitDataCompositeDef PierreMerc Title]] "Welcome to the Jungle"),
@@ -144629,10 +144944,10 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Omryn",
 				'BigPortrait', "UI/Mercs/Omryn",
 				'IsMercenary', true,
-				'Name', T(991660835571, --[[ModItemUnitDataCompositeDef Omryn Name]] "Юрий Омрын"),
-				'Nick', T(703536100724, --[[ModItemUnitDataCompositeDef Omryn Nick]] "Омрын"),
-				'AllCapsNick', T(586907860855, --[[ModItemUnitDataCompositeDef Omryn AllCapsNick]] "ОМРЫН"),
-				'Bio', T(503386258599, --[[ModItemUnitDataCompositeDef Omryn Bio]] "Родившийся в стойбище оленеводов на Дальнем Востоке России, Омрын начал свою карьеру наёмника с того, что помогал M.E.R.C. выслеживать браконьеров в сибирской тайге. Почувствовав вкус к приключениям, молодой чукча уехал из России и вступил во французский Иностранный легион, в конце концов осев в этой стране. Прекрасная меткость, необычайная острота слуха, невозмутимость и знание английского, французского и русского принесли Омрыну расположение начальства и уважение товарищей. Человек по природе неторопливый и не амбициозный, Омрын в конце концов устал от службы и при первой возможности перешёл в A.I.M., сам подбирая задания себе по вкусу."),
+				'Name', T(991660835571, --[[ModItemUnitDataCompositeDef Omryn Name]] "Yuri Omryn"),
+				'Nick', T(703536100724, --[[ModItemUnitDataCompositeDef Omryn Nick]] "Omryn"),
+				'AllCapsNick', T(586907860855, --[[ModItemUnitDataCompositeDef Omryn AllCapsNick]] "OMRYN"),
+				'Bio', T(503386258599, --[[ModItemUnitDataCompositeDef Omryn Bio]] "Born and raised among the Chukchi peoples of far eastern Russia, Omryn began mercenary life helping M.E.R.C. track smugglers through the wilds of Siberia. It gave him a taste of adventure, so he left Russia and joined the French Foreign Legion, eventually claiming France as his home. His excellent marksmanship, uncanny perception, stolid manner, and mastery of English, French, and Russian languages earned him respect as well as commendations. Never an ambitious or energetic man, Omryn grew tired of full-time service and took the first opportunity to become an A.I.M. mercenary, working where and when it suited him."),
 				'Nationality', "Russia",
 				'Title', T(136809018730, --[[ModItemUnitDataCompositeDef Omryn Title]] "The Very Hungry Hunter"),
 				'Email', T(568909169483, --[[ModItemUnitDataCompositeDef Omryn Email]] "yura@aim.com"),
@@ -144772,14 +145087,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Livewire",
 				'BigPortrait', "UI/Mercs/Livewire",
 				'IsMercenary', true,
-				'Name', T(644364224049, --[[ModItemUnitDataCompositeDef Livewire Name]] 'Лейли Идриси «Фаза»'),
-				'Nick', T(242623587127, --[[ModItemUnitDataCompositeDef Livewire Nick]] "Фаза"),
-				'AllCapsNick', T(218487408008, --[[ModItemUnitDataCompositeDef Livewire AllCapsNick]] "ФАЗА"),
-				'Bio', T(937077578267, --[[ModItemUnitDataCompositeDef Livewire Bio]] "Лейли родилась в подконтрольной Индии части Кашмира в семье беженцев. Детство её выдалось непростым: бесспорно талантливая ученица (девочка получила именную стипендию от Делийского университета), она вечно вращалась в неподходящей компании. Учась в университете, она параллельно увлекалась вскрытием замков; изучая криптографию, по ночам взламывала закрытые базы данных. С рождения одинаково хорошо владея и правой, и левой руками, «Фаза» вечно занималась сразу несколькими делами одновременно. В конце концов её криминальные шалости привлекли к себе внимание, и Лейли пришлось спешно покинуть альма-матер. Что именно там произошло, она не говорит, а мы в A.I.M. уважаем частную жизнь своих бойцов."),
+				'Name', T(644364224049, --[[ModItemUnitDataCompositeDef Livewire Name]] 'Leili "Livewire" Idrisi'),
+				'Nick', T(242623587127, --[[ModItemUnitDataCompositeDef Livewire Nick]] "Livewire"),
+				'AllCapsNick', T(218487408008, --[[ModItemUnitDataCompositeDef Livewire AllCapsNick]] "LIVEWIRE"),
+				'Bio', T(937077578267, --[[ModItemUnitDataCompositeDef Livewire Bio]] "Born to Pakistani refugees in Indian-controlled Kashmir territory, Leili had a rough childhood. Although a gifted child - she was given a full scholarship to the University of Delhi - Leili always seemed to find herself running with the wrong crowd. In addition to writing papers, she was picking locks. By day she would learn to code and by night she would hack into secure databases. Ambidextrous by nature, she always had more than one thing going at a time. Eventually, someone took notice of her nefarious activities and Leili fled university in a hurry. She won't say exactly what went wrong and A.I.M. respects the privacy of its members."),
 				'Nationality', "Pakistan",
 				'Title', T(452434978236, --[[ModItemUnitDataCompositeDef Livewire Title]] "Utterly Blameless and Completely Fabulous"),
 				'Email', T(885737105013, --[[ModItemUnitDataCompositeDef Livewire Email]] "fantabulousdiva@aim.com"),
-				'snype_nick', T(893845971026, --[[ModItemUnitDataCompositeDef Livewire snype_nick]] "fantastic_faza"),
+				'snype_nick', T(893845971026, --[[ModItemUnitDataCompositeDef Livewire snype_nick]] "fantabulousdiva"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -144950,14 +145265,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Kalyna",
 				'BigPortrait', "UI/Mercs/Kalyna",
 				'IsMercenary', true,
-				'Name', T(509273629491, --[[ModItemUnitDataCompositeDef Kalyna Name]] "Калина Соколова"),
-				'Nick', T(967981889962, --[[ModItemUnitDataCompositeDef Kalyna Nick]] "Калина"),
-				'AllCapsNick', T(776190610664, --[[ModItemUnitDataCompositeDef Kalyna AllCapsNick]] "КАЛИНА"),
-				'Bio', T(429856793976, --[[ModItemUnitDataCompositeDef Kalyna Bio]] "Дочь украинских шахтёров, Калина с детства училась у своей бабушки, как стрелять дичь и чинить машины, обогревающие и снабжающие электричеством их небольшой посёлок. Чтобы отвлечь внучку от нищеты, в которой жила её семья, женщина забивала Калине голову народными сказками. Едва повзрослев, девушка покинула родной посёлок в поисках лучшей жизни. Коллектив A.I.M. рад приветствовать в своих рядах эту способную ученицу, талантливого механика и отличного стрелка."),
+				'Name', T(509273629491, --[[ModItemUnitDataCompositeDef Kalyna Name]] "Kalyna Sokolova"),
+				'Nick', T(967981889962, --[[ModItemUnitDataCompositeDef Kalyna Nick]] "Kalyna"),
+				'AllCapsNick', T(776190610664, --[[ModItemUnitDataCompositeDef Kalyna AllCapsNick]] "KALYNA"),
+				'Bio', T(429856793976, --[[ModItemUnitDataCompositeDef Kalyna Bio]] "The daughter of Ukrainian coal miners, Kalyna learned from her grandmother how to hunt game in the wild countryside and repair the machines and motors that helped heat and power the tiny town where they lived. The old woman filled her head with tales of adventure from Slavic folklore to distract her from her family's poverty. As soon as she was old enough, Kalyna left home to seek a better life for herself. With a natural aptitude for learning and excellent skills in both repair and marksmanship, A.I.M. welcomes her to its ranks with open arms."),
 				'Nationality', "Ukraine",
 				'Title', T(586433848631, --[[ModItemUnitDataCompositeDef Kalyna Title]] "A Cinderella Story"),
 				'Email', T(380814063809, --[[ModItemUnitDataCompositeDef Kalyna Email]] "hero_princess@aim.com"),
-				'snype_nick', T(910968647763, --[[ModItemUnitDataCompositeDef Kalyna snype_nick]] "smelaya_princessa"),
+				'snype_nick', T(910968647763, --[[ModItemUnitDataCompositeDef Kalyna snype_nick]] "hero_princess"),
 				'Haggles', {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
@@ -145089,12 +145404,12 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Flay",
 				'BigPortrait', "UI/Mercs/Flay",
 				'IsMercenary', true,
-				'Name', T(699164512124, --[[ModItemUnitDataCompositeDef Flay Name]] 'Жак Боэн «Живодёр»'),
-				'Nick', T(966243227542, --[[ModItemUnitDataCompositeDef Flay Nick]] "Живодёр"),
-				'AllCapsNick', T(443046260792, --[[ModItemUnitDataCompositeDef Flay AllCapsNick]] "ЖИВОДЁР"),
+				'Name', T(699164512124, --[[ModItemUnitDataCompositeDef Flay Name]] 'Jacques "Flay" Bohen'),
+				'Nick', T(966243227542, --[[ModItemUnitDataCompositeDef Flay Nick]] "Flay"),
+				'AllCapsNick', T(443046260792, --[[ModItemUnitDataCompositeDef Flay AllCapsNick]] "FLAY"),
 				'Affiliation', "Secret",
 				'HireStatus', "NotMet",
-				'Bio', T(418902593982, --[[ModItemUnitDataCompositeDef Flay Bio]] "Браконьер со стажем, за свою жизнь Живодёр успел поохотиться на все мыслимые виды животных. Теперь он переключился на новую для него добычу: человека.\nЖак не мастер располагать к себе сослуживцев, однако своё дело он знает в совершенстве и с готовностью согласился присоединиться к вам, видя в этом наилучшее поле для реализации своих садистских наклонностей."),
+				'Bio', T(418902593982, --[[ModItemUnitDataCompositeDef Flay Bio]] "An experienced poacher, Flay has hunted every animal imaginable. Now is the time to track down and kill the only beasts he has never hunted so far - humans.\nA difficult man to like, he is skilled in what he does and won't take much convincing to join you as it is obvious you are his best vehicle to achieve the loathsome goal."),
 				'Nationality', "GrandChien",
 				'Title', T(751458905244, --[[ModItemUnitDataCompositeDef Flay Title]] "Hunter Of Buckheads"),
 				'MedicalDeposit', "none",
@@ -145139,10 +145454,10 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Fauda",
 				'BigPortrait', "UI/Mercs/Fauda",
 				'IsMercenary', true,
-				'Name', T(433525179007, --[[ModItemUnitDataCompositeDef Fauda Name]] 'Кеви Аджит «Фауда»'),
-				'Nick', T(786968855598, --[[ModItemUnitDataCompositeDef Fauda Nick]] "Фауда"),
-				'AllCapsNick', T(560956094378, --[[ModItemUnitDataCompositeDef Fauda AllCapsNick]] "ФАУДА"),
-				'Bio', T(847511420495, --[[ModItemUnitDataCompositeDef Fauda Bio]] 'Когда Кеви и её брат Зоран сражались в рядах бойцов Пешмерги, их имена были на устах каждого курда. Однако когда Зоран погиб, а сама она еле выжила в засаде, устроенной на них иракскими националистами, Кеви принудительно комиссовали. Не пожелав сдаваться, она вступила в ряды A.I.M. с целью заработать достаточно денег, чтобы однажды снарядить собственную армию, вернуться на родину и отомстить убийцам брата. Товарищи прозвали Кеви «Фауда», так как в бою её вечно бросало в две крайности: безрассудную напористость либо чрезмерную осторожность. При всём том, в одном она постоянна: в своей любви к большим пушкам и гранатам. И те, и другие в её руках неизменно смертоносны.'),
+				'Name', T(433525179007, --[[ModItemUnitDataCompositeDef Fauda Name]] 'Kevi "Fauda" Agit'),
+				'Nick', T(786968855598, --[[ModItemUnitDataCompositeDef Fauda Nick]] "Fauda"),
+				'AllCapsNick', T(560956094378, --[[ModItemUnitDataCompositeDef Fauda AllCapsNick]] "FAUDA"),
+				'Bio', T(847511420495, --[[ModItemUnitDataCompositeDef Fauda Bio]] 'For several years, Kevi and her brother Zoran were legendary fighters for the Peshmerga. After an ambush by Iraqi Nationalists left Zoran dead and Kevi traumatized, she was forcibly retired from active duty. Not ready to give up the fight, she joined A.I.M. and resolved to earn enough money that she could one day raise her own personal army and return to her homeland to avenge her brother. In combat, Kevi earned the name "Fauda" because she alternates between being recklessly aggressive and overly cautious. What never wavers, however, is her stunning ability with big guns and thrown explosives, both of which she wields with deadly effectiveness.'),
 				'Nationality', "Iraq",
 				'Title', T(301899503224, --[[ModItemUnitDataCompositeDef Fauda Title]] "Peshmerga Deadly Dervish"),
 				'Email', T(990035155352, --[[ModItemUnitDataCompositeDef Fauda Email]] "Fauda@aim.com"),
@@ -145271,14 +145586,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Wolf",
 				'BigPortrait', "UI/Mercs/Wolf",
 				'IsMercenary', true,
-				'Name', T(415973309831, --[[ModItemUnitDataCompositeDef Wolf Name]] 'Питер Сандерсон «Волк»'),
-				'Nick', T(854057195964, --[[ModItemUnitDataCompositeDef Wolf Nick]] "Волк"),
-				'AllCapsNick', T(772197398311, --[[ModItemUnitDataCompositeDef Wolf AllCapsNick]] "ВОЛК"),
-				'Bio', T(947517898504, --[[ModItemUnitDataCompositeDef Wolf Bio]] 'Ненадолго покинув A.I.M., чтобы занять должность инструктора в элитном (и весьма высокооплачиваемом) загородном пейнтбольном клубе для состоятельных бизнесменов, Волк в конце концов устал учить заплывших жиром сорокалетних топ-менеджеров, как делать вид, что они убивают друг друга. Окончательно его добил недельный выездной лагерь, где он пытался обучить своих подопечных основам тактики и ночных операций, пока те шарились по лесу в светоотражающих оранжевых жилетах. Вернувшись в город, Сандерсон сообщил, что более чем готов вновь поработать наёмником. Волк - один из самых всесторонне подготовленных бойцов A.I.M., пользующийся популярностью у клиентов, которым нужен мастер на все руки. Спешите заключить с ним контракт сейчас, пока это не сделали за вас другие!'),
+				'Name', T(415973309831, --[[ModItemUnitDataCompositeDef Wolf Name]] 'Peter "Wolf" Sanderson'),
+				'Nick', T(854057195964, --[[ModItemUnitDataCompositeDef Wolf Nick]] "Wolf"),
+				'AllCapsNick', T(772197398311, --[[ModItemUnitDataCompositeDef Wolf AllCapsNick]] "WOLF"),
+				'Bio', T(947517898504, --[[ModItemUnitDataCompositeDef Wolf Bio]] 'After taking a short leave of absence to run a highly specialized (and highly lucrative) paintball retreat for Fortune 500 companies, Wolf grew tired of teaching fat, middle-aged men how to pretend to kill each other. Especially exhausting was the week-long minicamp "Oh-Dark-Dirty" where he attempted to instruct them in Night Operations concepts and tactics while making sure everyone was wearing safety orange. He reports he\'s ready and very eager to return to mercenary work. One of A.I.M.\'s most well-rounded members, Sanderson is highly sought after by clients looking for a merc who is capable of doing everything and is willing to do anything. Best to hire him as soon as he\'s available because he surely won\'t be without a contract for long!'),
 				'Nationality', "USA",
 				'Title', T(474239652453, --[[ModItemUnitDataCompositeDef Wolf Title]] "Jack Of All Trades, Master Of All"),
 				'Email', T(478313327038, --[[ModItemUnitDataCompositeDef Wolf Email]] "howling1@aim.com"),
-				'snype_nick', T(735297197775, --[[ModItemUnitDataCompositeDef Wolf snype_nick]] "volk1"),
+				'snype_nick', T(735297197775, --[[ModItemUnitDataCompositeDef Wolf snype_nick]] "howling1"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -145485,14 +145800,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Vicky",
 				'BigPortrait', "UI/Mercs/Vicky",
 				'IsMercenary', true,
-				'Name', T(997941066310, --[[ModItemUnitDataCompositeDef Vicki Name]] 'Виктория Уотерс «Вики»'),
-				'Nick', T(982571881202, --[[ModItemUnitDataCompositeDef Vicki Nick]] "Вики"),
-				'AllCapsNick', T(912931350387, --[[ModItemUnitDataCompositeDef Vicki AllCapsNick]] "ВИКИ"),
-				'Bio', T(978581055615, --[[ModItemUnitDataCompositeDef Vicki Bio]] "Вики Уотерс в совершенстве стреляет по-македонски и послужит прекрасным дополнением к любой команде. В данным момент она работает авиамехаником у Джемса Буллока, также известного как «Небесный Всадник», ремонтируя его вертолёт в промежутках между развозом туристов. Поговаривают, что эти двое - не просто деловые партнёры, однако сама Вики сообщает, что, если кому-то требуются её услуги, она готова к выполнению новых заданий."),
+				'Name', T(997941066310, --[[ModItemUnitDataCompositeDef Vicki Name]] 'Victoria "Vicki" Waters'),
+				'Nick', T(982571881202, --[[ModItemUnitDataCompositeDef Vicki Nick]] "Vicki"),
+				'AllCapsNick', T(912931350387, --[[ModItemUnitDataCompositeDef Vicki AllCapsNick]] "VICKI"),
+				'Bio', T(978581055615, --[[ModItemUnitDataCompositeDef Vicki Bio]] "A crack shot with pistols, the ambidextrous Vicki Waters is an asset to any team. She's currently working as a mechanic for James \"Skyrider\" Bullock, keeping his helicopter flying while he offers aerial tours of Arulco. The rumor is their partnership isn't just financial, but Vicki has informed A.I.M. she is ready for action should a good contract come her way."),
 				'Nationality', "Jamaica",
 				'Title', T(584992608799, --[[ModItemUnitDataCompositeDef Vicki Title]] "The Maven of Mechanics and Mayhem"),
 				'Email', T(459711242023, --[[ModItemUnitDataCompositeDef Vicki Email]] "deadly_vicki@aim.com"),
-				'snype_nick', T(600504575562, --[[ModItemUnitDataCompositeDef Vicki snype_nick]] "vicki"),
+				'snype_nick', T(600504575562, --[[ModItemUnitDataCompositeDef Vicki snype_nick]] "deadly_vicki"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -145682,14 +145997,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Thor",
 				'BigPortrait', "UI/Mercs/Thor",
 				'IsMercenary', true,
-				'Name', T(928760236378, --[[ModItemUnitDataCompositeDef Thor Name]] "Тор Кауфман"),
-				'Nick', T(520222526306, --[[ModItemUnitDataCompositeDef Thor Nick]] "Тор"),
-				'AllCapsNick', T(981910118838, --[[ModItemUnitDataCompositeDef Thor AllCapsNick]] "ТОР"),
-				'Bio', T(696466543743, --[[ModItemUnitDataCompositeDef Thor Bio]] "Тор только что вернулся с двухнедельного выездного семинара по очистке чакр в Нью-Мексико. Теперь, как он сам сообщает, его жизнь обогатилась двумя вещами: рецептом забойного смузи из авокадо и вновь пробудившейся жаждой приключений. Приверженность Кауфмана философии нью-эйдж делает из него одарённого целителя, а опыт медитации сообщает всем его движениям изящество и бесшумность. Немногочисленные недостатки Тора искупаются его буддийской безмятежностью, а в рукопашном бою равных ему почти нет. Тора отличает пытливый ум; нет такого умения, которое он не мог бы освоить прямо на ходу."),
+				'Name', T(928760236378, --[[ModItemUnitDataCompositeDef Thor Name]] "Thor Kaufman"),
+				'Nick', T(520222526306, --[[ModItemUnitDataCompositeDef Thor Nick]] "Thor"),
+				'AllCapsNick', T(981910118838, --[[ModItemUnitDataCompositeDef Thor AllCapsNick]] "THOR"),
+				'Bio', T(696466543743, --[[ModItemUnitDataCompositeDef Thor Bio]] "Just returned from a two-week chi-cleansing retreat in New Mexico, Thor reports that he has two things: a groovy recipe for an avocado smoothie and a thirst for adventure. Kaufman's new age lifestyle makes him a natural healer and his balance-focused conditioning allows him to move about with stealth and grace. His Zen-like demeanor makes it easy to overlook his fighting skills, but in hand-to-hand combat there are few that can match him. Thor also possesses an extremely inquisitive intellect, meaning there are few skills he can't pick up while on assignment."),
 				'Nationality', "Germany",
 				'Title', T(222862793640, --[[ModItemUnitDataCompositeDef Thor Title]] "Positive Thinking as a Deadly Force"),
 				'Email', T(369085666162, --[[ModItemUnitDataCompositeDef Thor Email]] "positivepower@aim.com"),
-				'snype_nick', T(702556725674, --[[ModItemUnitDataCompositeDef Thor snype_nick]] "sila_positiva"),
+				'snype_nick', T(702556725674, --[[ModItemUnitDataCompositeDef Thor snype_nick]] "positivepower"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -145866,10 +146181,10 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Tex",
 				'BigPortrait', "UI/Mercs/Tex",
 				'IsMercenary', true,
-				'Name', T(686198945827, --[[ModItemUnitDataCompositeDef Tex Name]] "Текс Р. Колберн"),
-				'Nick', T(384280286220, --[[ModItemUnitDataCompositeDef Tex Nick]] "Текс"),
-				'AllCapsNick', T(656022978516, --[[ModItemUnitDataCompositeDef Tex AllCapsNick]] "ТЕКС"),
-				'Bio', T(855301635048, --[[ModItemUnitDataCompositeDef Tex Bio]] "Учитывая, что ни один из кинопродюсеров так и не захотел положить начало новой эпохе «суши-вестернов», о которой так мечтал Текс, Колберн вынужденно вернулся к ремеслу наёмника. Однако неудачный поворот кинокарьеры не смутил вечного оптимиста Текса. Он всё так же любит похвастаться друзьям-наёмникам своей стрельбой с обеих рук и искусством зрелищно крутить револьверы. \nНа поле боя вы обыкновенно можете увидеть его стоящим на фоне закатного солнца и мужественно смотрящим вдаль из-под полей ковбойской шляпы."),
+				'Name', T(686198945827, --[[ModItemUnitDataCompositeDef Tex Name]] "Tex R. Colburn"),
+				'Nick', T(384280286220, --[[ModItemUnitDataCompositeDef Tex Nick]] "Tex"),
+				'AllCapsNick', T(656022978516, --[[ModItemUnitDataCompositeDef Tex AllCapsNick]] "TEX"),
+				'Bio', T(855301635048, --[[ModItemUnitDataCompositeDef Tex Bio]] "With scripts for Asian-themed westerns drying up like the proverbial Kyoto tumbleweed, Tex has returned to the mercenary trade. Not discouraged by this seeming reversal of fortune, the irrepressible Colburn loves showing off his ambidextrous skills and fancy pistol-twirling for his fellow mercs. \nOn the battlefield, you can find him with the sun at his back, squinting a steely glare out from under his ten-gallon hat."),
 				'Nationality', "Japan",
 				'Title', T(415603758957, --[[ModItemUnitDataCompositeDef Tex Title]] "Cowboy of the Rising Sun"),
 				'Email', T(595579036754, --[[ModItemUnitDataCompositeDef Tex Email]] "cowboydirector@aim.com"),
@@ -145991,10 +146306,10 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Steroid",
 				'BigPortrait', "UI/Mercs/Steroid",
 				'IsMercenary', true,
-				'Name', T(191942662733, --[[ModItemUnitDataCompositeDef Steroid Name]] 'Бобби Гонтарски «Анаболик»'),
-				'Nick', T(547412809082, --[[ModItemUnitDataCompositeDef Steroid Nick]] "Анаболик"),
-				'AllCapsNick', T(413371651152, --[[ModItemUnitDataCompositeDef Steroid AllCapsNick]] "АНАБОЛИК"),
-				'Bio', T(456387407873, --[[ModItemUnitDataCompositeDef Steroid Bio]] "Тушит ли он пожары в родной Варшаве или гасит карателей Дейдраны в Арулько, любой, кто видит неутомимого Бобби Гонтарски, понимает: у этого человека лучше не вставать на пути. Навыки обращения Анаболика с инструментами и приборами служат неплохим дополнением к его меткости, беспримерной физической силе и несгибаемой воле. Столкнувшись с проблемой, Бобби обыкновенно продолжает бить её до тех пор, пока «проблема» не упадёт замертво."),
+				'Name', T(191942662733, --[[ModItemUnitDataCompositeDef Steroid Name]] 'Bobby "Steroid" Gontarski'),
+				'Nick', T(547412809082, --[[ModItemUnitDataCompositeDef Steroid Nick]] "Steroid"),
+				'AllCapsNick', T(413371651152, --[[ModItemUnitDataCompositeDef Steroid AllCapsNick]] "STEROID"),
+				'Bio', T(456387407873, --[[ModItemUnitDataCompositeDef Steroid Bio]] "From fighting fires in Warsaw to winning firefights in Arulco, Bobby Gontarski uses his considerable strength and endurance to bend every encounter to his will. His skills with tools and gadgets are a nice bonus to his fine marksmanship and indomitable spirit. Steroid confronts every challenge with dogged determination, using his impressive stamina to always make sure his persistence pays off."),
 				'Nationality', "Poland",
 				'Title', T(545683006311, --[[ModItemUnitDataCompositeDef Steroid Title]] "The Performance-enhanced Pole"),
 				'Email', T(836836892923, --[[ModItemUnitDataCompositeDef Steroid Email]] "bobby@aim.com"),
@@ -146203,11 +146518,11 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Spike",
 				'BigPortrait', "UI/Mercs/Spike",
 				'IsMercenary', true,
-				'Name', T(179009952002, --[[ModItemUnitDataCompositeDef Spike Name]] "Майор Спайк Скэллион"),
-				'Nick', T(353222848335, --[[ModItemUnitDataCompositeDef Spike Nick]] "Спайк"),
-				'AllCapsNick', T(419643289579, --[[ModItemUnitDataCompositeDef Spike AllCapsNick]] "СПАЙК"),
+				'Name', T(179009952002, --[[ModItemUnitDataCompositeDef Spike Name]] "Maj. Spike Scallion"),
+				'Nick', T(353222848335, --[[ModItemUnitDataCompositeDef Spike Nick]] "Spike"),
+				'AllCapsNick', T(419643289579, --[[ModItemUnitDataCompositeDef Spike AllCapsNick]] "SPIKE"),
 				'Affiliation', "Secret",
-				'Bio', T(380759971288, --[[ModItemUnitDataCompositeDef Spike Bio]] "Теперь все знают, что Скэллион и был тем самым Майором, который объявил войну представляемой Сантьяго корпорации «Адонис», когда узнал, чего именно они добиваются в Гран-Шьене. Правда, изначально они его и наняли - но как именно он оказался на службе у «Адониса» и почему прервал свой долгосрочный контракт с властями Северной Кореи, неизвестно."),
+				'Bio', T(380759971288, --[[ModItemUnitDataCompositeDef Spike Bio]] "Spike is revealed to be the Major, fighting against the Santiago Corporation after realizing the nature of their activities in Grand Chien. Originally being hired by them, the sequence of events that led to Spike abandoning his lengthy contract with the North Koreans and joining the Santiago Corporation are unknown."),
 				'Nationality', "USA",
 				'SalaryLv1', 0,
 				'SalaryMaxLv', 0,
@@ -146258,14 +146573,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/SidneyN",
 				'BigPortrait', "UI/Mercs/SidneyN",
 				'IsMercenary', true,
-				'Name', T(841570945724, --[[ModItemUnitDataCompositeDef Sidney Name]] "Сидней Нетельсон"),
-				'Nick', T(753322319118, --[[ModItemUnitDataCompositeDef Sidney Nick]] "Сидней"),
-				'AllCapsNick', T(897461283861, --[[ModItemUnitDataCompositeDef Sidney AllCapsNick]] "СИДНЕЙ"),
-				'Bio', T(199288355089, --[[ModItemUnitDataCompositeDef Sidney Bio]] "Невозмутимого Сиднея Нетельсона чаще всего можно найти в ближайшем бридж-клубе играющим в карты и непринуждённо болтающим со сливками местного общества. Разумеется, всё это справедливо лишь для тех моментов, когда он не на задании - в этом случае он обыкновенно хладнокровно стоит под градом пуль, методично прореживая ряды противников метательными ножами, гранатами или любым подвернувшимся под руку огнестрельным оружием. После, за чашкой чая, он с удовольствием расскажет вам, как именно он всё это делал - разумеется, с неизменной английской импозантностью и сдержанностью."),
+				'Name', T(841570945724, --[[ModItemUnitDataCompositeDef Sidney Name]] "Sidney Nettleson"),
+				'Nick', T(753322319118, --[[ModItemUnitDataCompositeDef Sidney Nick]] "Sidney"),
+				'AllCapsNick', T(897461283861, --[[ModItemUnitDataCompositeDef Sidney AllCapsNick]] "SIDNEY"),
+				'Bio', T(199288355089, --[[ModItemUnitDataCompositeDef Sidney Bio]] "The unflappable Sidney Nettleson can most often be found at the nearest bridge club, taking tricks and trading quips with the city's upper crust. That is, of course, unless he is working - in which case you can find him stoically staring down a hail of bullets while coolly dispatching his foes with throwing knives, grenades or any firearm within reach. Afterwards, over tea, he'll be happy to tell you exactly how he did it: with aplomb and a stiff upper lip, naturally."),
 				'Nationality', "England",
 				'Title', T(887910706417, --[[ModItemUnitDataCompositeDef Sidney Title]] "Her Majesty's Humble Servant"),
 				'Email', T(148356789359, --[[ModItemUnitDataCompositeDef Sidney Email]] "fancy_chap@aim.com"),
-				'snype_nick', T(509119494377, --[[ModItemUnitDataCompositeDef Sidney snype_nick]] "nettleson"),
+				'snype_nick', T(509119494377, --[[ModItemUnitDataCompositeDef Sidney snype_nick]] "fancy_chap"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -146432,14 +146747,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Shadow",
 				'BigPortrait', "UI/Mercs/Shadow",
 				'IsMercenary', true,
-				'Name', T(760643490639, --[[ModItemUnitDataCompositeDef Shadow Name]] 'Кайл Симмонс «Тень»'),
-				'Nick', T(716325832691, --[[ModItemUnitDataCompositeDef Shadow Nick]] "Тень"),
-				'AllCapsNick', T(409225247825, --[[ModItemUnitDataCompositeDef Shadow AllCapsNick]] "ТЕНЬ"),
-				'Bio', T(501671952366, --[[ModItemUnitDataCompositeDef Shadow Bio]] "Симмонса можно назвать американской копией Стрелки: он в совершенстве умеет незаметно пересечь поле боя, чтобы сделать выстрел с идеальной позиции. Но если Стрелка специализируется на бое в городских условиях, Тень - неразговорчивый одиночка, предпочитающий в качестве поля боя леса и болота. То, с каким мастерством он маскируется, незаметно поджидая жертву, стоит запрашиваемого им гонорара. Кайл недавно прошёл трёхнедельный курс подготовки под названием «Щель и пропасть: искусство маскировки под естественные впадины» и готов к новым заданиям."),
+				'Name', T(760643490639, --[[ModItemUnitDataCompositeDef Shadow Name]] 'Kyle "Shadow" Simmons'),
+				'Nick', T(716325832691, --[[ModItemUnitDataCompositeDef Shadow Nick]] "Shadow"),
+				'AllCapsNick', T(409225247825, --[[ModItemUnitDataCompositeDef Shadow AllCapsNick]] "SHADOW"),
+				'Bio', T(501671952366, --[[ModItemUnitDataCompositeDef Shadow Bio]] "Practically the American mirror image of Scope, A.I.M.'s top sharpshooter, Shadow, excels at moving swiftly across the battlefield to set up for a perfect kill shot. But where Scope is friendly and trained in urban combat, Shadow is a quiet loner who prefers to use the great outdoors as his battlefield. His skill in using stealth and camouflage to hide from his target until the time is right for a lethal strike makes him worth every penny. Kyle has recently finished a three-week training program called 'Cleft and Chasm: The Art of Declivity Impersonation' and is ready for assignment."),
 				'Nationality', "USA",
 				'Title', T(449003441115, --[[ModItemUnitDataCompositeDef Shadow Title]] "Can't Kill What You Can't See"),
 				'Email', T(642342715921, --[[ModItemUnitDataCompositeDef Shadow Email]] "shadow@aim.com"),
-				'snype_nick', T(790007421865, --[[ModItemUnitDataCompositeDef Shadow snype_nick]] "ten'"),
+				'snype_nick', T(790007421865, --[[ModItemUnitDataCompositeDef Shadow snype_nick]] "shadow"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -146561,14 +146876,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Scully",
 				'BigPortrait', "UI/Mercs/Scully",
 				'IsMercenary', true,
-				'Name', T(357879375429, --[[ModItemUnitDataCompositeDef Scully Name]] "Роберт Джеймс Салливан"),
-				'Nick', T(639079993068, --[[ModItemUnitDataCompositeDef Scully Nick]] "Лысый"),
-				'AllCapsNick', T(250215016589, --[[ModItemUnitDataCompositeDef Scully AllCapsNick]] "ЛЫСЫЙ"),
-				'Bio', T(953273652898, --[[ModItemUnitDataCompositeDef Scully Bio]] "Хотя Салливан и родился в Англии, годы, проведённые им за катанием по волнам у берегов Австралии, сделали его неотличимым от урождённых жителей этой страны. Многие бойцы считают Лысого едва ли не лучшим наёмником A.I.M. - наверняка отчасти благодаря его врождённому дружелюбию. Как бы там ни было, трудно найти такое задание, с которым он не справился бы на ура. Салливан превосходно работает холодным оружием, но уверенно обращается и с огнестрельным и взрывчаткой, а также инструментами и аптечкой."),
+				'Name', T(357879375429, --[[ModItemUnitDataCompositeDef Scully Name]] "Robert James Sullivan"),
+				'Nick', T(639079993068, --[[ModItemUnitDataCompositeDef Scully Nick]] "Scully"),
+				'AllCapsNick', T(250215016589, --[[ModItemUnitDataCompositeDef Scully AllCapsNick]] "SCULLY"),
+				'Bio', T(953273652898, --[[ModItemUnitDataCompositeDef Scully Bio]] "Although he hails from the British Isles, considerable time spent catching waves down under has made Scully all but indistinguishable from an Aussie. Many mercs consider him to be perhaps the best soldier in A.I.M.'s ranks, although his friendly disposition no doubt contributes to his popularity. Regardless, there is very little this man can't do and do well. He excels at knife fighting but can reliably work with firearms and explosives as well as toolboxes and med kits."),
 				'Nationality', "England",
 				'Title', T(167544469426, --[[ModItemUnitDataCompositeDef Scully Title]] "Unchained Virility"),
 				'Email', T(681435230668, --[[ModItemUnitDataCompositeDef Scully Email]] "surfercad@aim.com"),
-				'snype_nick', T(160407166740, --[[ModItemUnitDataCompositeDef Scully snype_nick]] "surfer"),
+				'snype_nick', T(160407166740, --[[ModItemUnitDataCompositeDef Scully snype_nick]] "surfercad"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -146722,14 +147037,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Scope",
 				'BigPortrait', "UI/Mercs/Scope",
 				'IsMercenary', true,
-				'Name', T(630357922162, --[[ModItemUnitDataCompositeDef Scope Name]] 'Шейла Стерлинг «Стрелка»'),
-				'Nick', T(616337703669, --[[ModItemUnitDataCompositeDef Scope Nick]] "Стрелка"),
-				'AllCapsNick', T(947910685503, --[[ModItemUnitDataCompositeDef Scope AllCapsNick]] "СТРЕЛКА"),
-				'Bio', T(706856939539, --[[ModItemUnitDataCompositeDef Scope Bio]] "В прошлом снайпер британской «Спешиэл Эйр Сервис», Стрелка умеет стремительно выйти на огневую позицию и сделать выстрел точно в цель. Во время одного ночного рейда на вражескую военную базу Стерлинг поразила шесть подтверждённых целей, перемещаясь между зданиями так быстро, что противник решил, будто его окружили. Профессионал высшего класса, она при этом не брезгует делиться с товарищами практическими советами."),
+				'Name', T(630357922162, --[[ModItemUnitDataCompositeDef Scope Name]] 'Sheila "Scope" Sterling'),
+				'Nick', T(616337703669, --[[ModItemUnitDataCompositeDef Scope Nick]] "Scope"),
+				'AllCapsNick', T(947910685503, --[[ModItemUnitDataCompositeDef Scope AllCapsNick]] "SCOPE"),
+				'Bio', T(706856939539, --[[ModItemUnitDataCompositeDef Scope Bio]] "Formerly with the British SAS, nobody gets into position quicker and makes the kill shot better than Scope. She once recorded six confirmed kills in one night-raid on an enemy military base, moving so quickly between buildings in the dark that the opposition thought they were being attacked on all sides. A consummate professional, Scope is also generous with passing on to other mercs her various tips and tricks."),
 				'Nationality', "England",
 				'Title', T(125612851314, --[[ModItemUnitDataCompositeDef Scope Title]] "Guardian Mother of the Battlefield"),
 				'Email', T(792449207788, --[[ModItemUnitDataCompositeDef Scope Email]] "scopeandbiscuits@aim.com"),
-				'snype_nick', T(110116698394, --[[ModItemUnitDataCompositeDef Scope snype_nick]] "prizel_i_pechenje"),
+				'snype_nick', T(110116698394, --[[ModItemUnitDataCompositeDef Scope snype_nick]] "scopeandbiscuits"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -146904,14 +147219,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Red",
 				'BigPortrait', "UI/Mercs/Red",
 				'IsMercenary', true,
-				'Name', T(929255472486, --[[ModItemUnitDataCompositeDef Red Name]] 'Эрни Спрагг «Рыжий»'),
-				'Nick', T(898873386961, --[[ModItemUnitDataCompositeDef Red Nick]] "Рыжий"),
-				'AllCapsNick', T(402554487810, --[[ModItemUnitDataCompositeDef Red AllCapsNick]] "РЫЖИЙ"),
-				'Bio', T(519116089912, --[[ModItemUnitDataCompositeDef Red Bio]] "Коллеги любят шутить, что Рыжий продолжил пускать поезда под откос даже после официального окончания Первой мировой, однако Эрни остаётся одним из ведущих экспертов-подрывников в базе A.I.M. и, несмотря на возраст, находится в хорошей форме.\nХотя во время перестрелок он производит впечатление мрачного и даже вспыльчивого типа, дайте ему мину - и он установит (или обезвредит) её одной левой.\nИ не обращайте внимание на его старомодные взгляды на жизнь: во всём, что касается взрывчатых веществ, «Рыжий» уверенно идёт в ногу со временем."),
+				'Name', T(929255472486, --[[ModItemUnitDataCompositeDef Red Name]] 'Ernie "Red" Spragg'),
+				'Nick', T(898873386961, --[[ModItemUnitDataCompositeDef Red Nick]] "Red"),
+				'AllCapsNick', T(402554487810, --[[ModItemUnitDataCompositeDef Red AllCapsNick]] "RED"),
+				'Bio', T(519116089912, --[[ModItemUnitDataCompositeDef Red Bio]] "Other mercs like to joke that Ernie's been blowing up bridges for Scottish Highlander regiments since The Great War, but Ernie remains one of A.I.M.'s foremost explosives experts and effective soldiers despite his age.\nAlthough he can often be dour and sometimes excitable in a firefight, Red makes planting and removing mines look like child's play.\nDon't let his old-fashioned ideas about the world fool you, in the field of high explosives he's as interested in new ideas as anyone else."),
 				'Nationality', "Scotland",
 				'Title', T(610428368333, --[[ModItemUnitDataCompositeDef Red Title]] "The Scottish Tornado"),
 				'Email', T(738518702343, --[[ModItemUnitDataCompositeDef Red Email]] "feckoff@aim.com"),
-				'snype_nick', T(286093352279, --[[ModItemUnitDataCompositeDef Red snype_nick]] "gorets"),
+				'snype_nick', T(286093352279, --[[ModItemUnitDataCompositeDef Red snype_nick]] "feckoff"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -147098,14 +147413,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Reaper",
 				'BigPortrait', "UI/Mercs/Reaper",
 				'IsMercenary', true,
-				'Name', T(418504386182, --[[ModItemUnitDataCompositeDef Reaper Name]] 'Карл Шеппардс «Жнец»'),
-				'Nick', T(728059446658, --[[ModItemUnitDataCompositeDef Reaper Nick]] "Жнец"),
-				'AllCapsNick', T(554704973917, --[[ModItemUnitDataCompositeDef Reaper AllCapsNick]] "ЖНЕЦ"),
-				'Bio', T(344912752793, --[[ModItemUnitDataCompositeDef Reaper Bio]] "Как человек, свыкшийся с мыслью, что смерть - неотъемлемая часть жизни (или, по крайней мере, смерть врага - часть твоей жизни), Жнец - идеальный киллер. Навыки бесшумного перемещения и вскрытия замков помогают ему незаметно подкрадываться к цели, а леденящая кровь невозмутимость - с легкостью ее устранять. Шеппардс редко промахивается, но даже если и промахнулся, никогда не теряет голову и вторым выстрелом исправляет ситуацию. В настоящий момент Карл как раз закончил выслеживать парочку особо неуловимых международных террористов и готов к новым заданиям."),
+				'Name', T(418504386182, --[[ModItemUnitDataCompositeDef Reaper Name]] 'Carl "Reaper" Sheppards'),
+				'Nick', T(728059446658, --[[ModItemUnitDataCompositeDef Reaper Nick]] "Reaper"),
+				'AllCapsNick', T(554704973917, --[[ModItemUnitDataCompositeDef Reaper AllCapsNick]] "REAPER"),
+				'Bio', T(344912752793, --[[ModItemUnitDataCompositeDef Reaper Bio]] "A man who has accepted that death is a part of life - or at least that other people's deaths are a part of his life - Reaper is the perfect assassin. His skills at stealthy movement and lock picking make it easy for him to reach his prey and his chillingly calm demeanor makes it even easier for him to eliminate them. He rarely misses and even when he does, he has the steely determination to make sure the next shot does not. Carl just finished an assignment hunting down a few especially slippery international terrorists and is ready for a new assignment."),
 				'Nationality', "USA",
 				'Title', T(272376216454, --[[ModItemUnitDataCompositeDef Reaper Title]] "Harbinger of Death"),
 				'Email', T(426580911623, --[[ModItemUnitDataCompositeDef Reaper Email]] "reaperofsouls@aim.com"),
-				'snype_nick', T(458369100789, --[[ModItemUnitDataCompositeDef Reaper snype_nick]] "smert'"),
+				'snype_nick', T(458369100789, --[[ModItemUnitDataCompositeDef Reaper snype_nick]] "reaperofsouls"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -147303,14 +147618,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Raven",
 				'BigPortrait', "UI/Mercs/Raven",
 				'IsMercenary', true,
-				'Name', T(861196503875, --[[ModItemUnitDataCompositeDef Raven Name]] 'Шарлен Хиггенс «Сова»'),
-				'Nick', T(273069265497, --[[ModItemUnitDataCompositeDef Raven Nick]] "Сова"),
-				'AllCapsNick', T(830280514307, --[[ModItemUnitDataCompositeDef Raven AllCapsNick]] "СОВА"),
-				'Bio', T(615837234228, --[[ModItemUnitDataCompositeDef Raven Bio]] "Пока её муж Рон с помощниками отбивали попытки сомалийских пиратов взять их лайнер на абордаж, «Сова» использовала прикрытие ночи, одного за другим снимая нападающих чёткими короткими очередями из трофейного автомата. Шарлен - опытный снайпер с железной выдержкой и предпочитает сражаться бок о бок с мужем, но превосходно справится с поставленным заданием и самостоятельно. В команде она всегда старается поддерживать высокие профессиональные стандарты и дух товарищества."),
+				'Name', T(861196503875, --[[ModItemUnitDataCompositeDef Raven Name]] 'Charlene "Raven" Higgens'),
+				'Nick', T(273069265497, --[[ModItemUnitDataCompositeDef Raven Nick]] "Raven"),
+				'AllCapsNick', T(830280514307, --[[ModItemUnitDataCompositeDef Raven AllCapsNick]] "RAVEN"),
+				'Bio', T(615837234228, --[[ModItemUnitDataCompositeDef Raven Bio]] "While husband Ron and others kept Somali pirates attempting to board their cruise ship pinned down, Raven used the cover of night to systematically kill one after another using controlled bursts from a captured automatic rifle. A formidable markswoman with nerves of steel, Raven prefers to work alongside her husband but is an asset to any team that is looking to maintain a high standard of excellence and esprit de corps."),
 				'Nationality', "USA",
 				'Title', T(374351690992, --[[ModItemUnitDataCompositeDef Raven Title]] "Never More Badass"),
 				'Email', T(215342188748, --[[ModItemUnitDataCompositeDef Raven Email]] "nevermore@aim.com"),
-				'snype_nick', T(838938896346, --[[ModItemUnitDataCompositeDef Raven snype_nick]] "sova"),
+				'snype_nick', T(838938896346, --[[ModItemUnitDataCompositeDef Raven snype_nick]] "nevermore"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -147511,10 +147826,10 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Raider",
 				'BigPortrait', "UI/Mercs/Raider",
 				'IsMercenary', true,
-				'Name', T(931473807439, --[[ModItemUnitDataCompositeDef Raider Name]] 'Рон Хиггенс «Рейдер»'),
-				'Nick', T(730316817764, --[[ModItemUnitDataCompositeDef Raider Nick]] "Рейдер"),
-				'AllCapsNick', T(627615371784, --[[ModItemUnitDataCompositeDef Raider AllCapsNick]] "РЕЙДЕР"),
-				'Bio', T(153322253794, --[[ModItemUnitDataCompositeDef Raider Bio]] "Успешно поучаствовав в освобождении Арулько, Рон вместе со своей супругой Шарлен решил взять отпуск, отправившись в круиз по Красному морю. Правда, на их лайнер напали сомалийские пираты - с весьма прискорбным для последних исходом. Используя свои навыки командира спецназа полиции Лос-Анджелеса, Рон быстро обучил нескольких младших помощников повара, как стрелять из пистолета, после чего отразил все попытки взять их судно на абордаж. По природе хладнокровный и спокойный человек, Рон готов к любым заданиям - особенно вместе с супругой."),
+				'Name', T(931473807439, --[[ModItemUnitDataCompositeDef Raider Name]] 'Ron "Raider" Higgens'),
+				'Nick', T(730316817764, --[[ModItemUnitDataCompositeDef Raider Nick]] "Raider"),
+				'AllCapsNick', T(627615371784, --[[ModItemUnitDataCompositeDef Raider AllCapsNick]] "RAIDER"),
+				'Bio', T(153322253794, --[[ModItemUnitDataCompositeDef Raider Bio]] "After helping to liberate Arulco, Ron and his wife Charlene decided to take some time off and went for a cruise in the Red Sea. Their ship was attacked by Somali pirates, which turned out to be very unfortunate for the pirates. Using skills from his days as a SWAT team leader, Ron quickly instructed a number of young junior assistant pursers how to fire pistols and then proceeded to repel all boarders. Rested and relaxed, he and his wife are ready for assignment."),
 				'Nationality', "USA",
 				'Title', T(435483333529, --[[ModItemUnitDataCompositeDef Raider Title]] "Officer Trust Fall"),
 				'Email', T(699223544963, --[[ModItemUnitDataCompositeDef Raider Email]] "ron_higgens@aim.com"),
@@ -147797,14 +148112,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Nails",
 				'BigPortrait', "UI/Mercs/Nails",
 				'IsMercenary', true,
-				'Name', T(837593519203, --[[ModItemUnitDataCompositeDef Nails Name]] 'Эдгар Сморф «Гвоздь»'),
-				'Nick', T(516388631352, --[[ModItemUnitDataCompositeDef Nails Nick]] "Гвоздь"),
-				'AllCapsNick', T(597544800039, --[[ModItemUnitDataCompositeDef Nails AllCapsNick]] "ГВОЗДЬ"),
-				'Bio', T(622487091001, --[[ModItemUnitDataCompositeDef Nails Bio]] "Основав первую в истории Арулько банду байкеров, Гвоздь вскоре с отвращением покинул её, поскольку так и не смог убедить товарищей сделать ограбления винных магазинов и поджоги автозаправок (тех, что бодяжат бензин, разумеется) двумя столпами их совместной деятельности. Сейчас Гвоздь рассматривает предложения нанимателей, которым пригодится его навык обращения со взрывчаткой и механизмами и крутой нрав. Он готов лететь куда угодно и стрелять по кому угодно при условии, что от него не будут требовать расстаться с косухой (во многих местах уже продырявленной и изрядно попахивающей)."),
+				'Name', T(837593519203, --[[ModItemUnitDataCompositeDef Nails Name]] 'Edgar "Nails" Smorth'),
+				'Nick', T(516388631352, --[[ModItemUnitDataCompositeDef Nails Nick]] "Nails"),
+				'AllCapsNick', T(597544800039, --[[ModItemUnitDataCompositeDef Nails AllCapsNick]] "NAILS"),
+				'Bio', T(622487091001, --[[ModItemUnitDataCompositeDef Nails Bio]] "Soon after starting Arulco's first biker gang, Nails resigned in disgust when he couldn't convince the other members that robbing liquor stores and blowing up gas stations (just the lame ones, of course) should be central pillars of their charter. Nails is ready to make his talents with explosives, tools and badassery available to the highest bidder. He's willing to go anywhere and shoot anyone, just don't ever ask him to take off his leather jacket, even though it has several bullet holes in it and is starting to smell like belly button lint."),
 				'Nationality', "USA",
 				'Title', T(494228139073, --[[ModItemUnitDataCompositeDef Nails Title]] "Don't Touch the Vest"),
 				'Email', T(150606437691, --[[ModItemUnitDataCompositeDef Nails Email]] "hellbent4lthr@aim.com"),
-				'snype_nick', T(309985618460, --[[ModItemUnitDataCompositeDef Nails snype_nick]] "kosuhu_ne_otdam"),
+				'snype_nick', T(309985618460, --[[ModItemUnitDataCompositeDef Nails snype_nick]] "hellbent4lthr"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -147990,14 +148305,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Mouse",
 				'BigPortrait', "UI/Mercs/Mouse",
 				'IsMercenary', true,
-				'Name', T(522606213949, --[[ModItemUnitDataCompositeDef Mouse Name]] 'Анита Бахман «Мышь»'),
-				'Nick', T(558332461192, --[[ModItemUnitDataCompositeDef Mouse Nick]] "Мышь"),
-				'AllCapsNick', T(252782817625, --[[ModItemUnitDataCompositeDef Mouse AllCapsNick]] "МЫШЬ"),
-				'Bio', T(491873398820, --[[ModItemUnitDataCompositeDef Mouse Bio]] 'Хотя Анита не раскрывает причин, подтолкнувших её вновь вернуться в ряды A.I.M., ходят слухи, что ее отношения с доктором Маргарет (Стеллой) Траммел зашли в тупик. Другие, впрочем, утверждают, что именно Стелла подослала её с секретным заданием вновь наладить связи с коллегами. Как бы там ни было, умение Мыши передвигаться совершенно незаметно делает её ценным членом любой команды.'),
+				'Name', T(522606213949, --[[ModItemUnitDataCompositeDef Mouse Name]] 'Anita "Mouse" Backman'),
+				'Nick', T(558332461192, --[[ModItemUnitDataCompositeDef Mouse Nick]] "Mouse"),
+				'AllCapsNick', T(252782817625, --[[ModItemUnitDataCompositeDef Mouse AllCapsNick]] "MOUSE"),
+				'Bio', T(491873398820, --[[ModItemUnitDataCompositeDef Mouse Bio]] 'While Anita, who recently re-joined the ranks of A.I.M., will not disclose her motivations, there is speculation that her relationship with Dr. Margaret "Stella" Trammel has fractured. Still others believe she was sent by that same woman on a very specific (and very secret) mission that required reestablishing old mercenary contacts. Whatever her reasons, Mouse\'s abilities to move about undetected are uncanny and would make a valuable addition to any team.'),
 				'Nationality', "USA",
 				'Title', T(660752674735, --[[ModItemUnitDataCompositeDef Mouse Title]] "Squeaky Little Thing"),
 				'Email', T(752477644941, --[[ModItemUnitDataCompositeDef Mouse Email]] "squeaky@aim.com"),
-				'snype_nick', T(965473237479, --[[ModItemUnitDataCompositeDef Mouse snype_nick]] "mouse"),
+				'snype_nick', T(965473237479, --[[ModItemUnitDataCompositeDef Mouse snype_nick]] "squeaky"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -148192,14 +148507,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "Mod/Dv3mFVN/MercPortraits/Meltdown.png",
 				'BigPortrait', "Mod/Dv3mFVN/MercPortraits/Meltdown_Big.png",
 				'IsMercenary', true,
-				'Name', T(627005316845, --[[ModItemUnitDataCompositeDef Meltdown Name]] 'Норма Джессоп «Лава»'),
-				'Nick', T(801416212893, --[[ModItemUnitDataCompositeDef Meltdown Nick]] "Лава"),
-				'AllCapsNick', T(518123328833, --[[ModItemUnitDataCompositeDef Meltdown AllCapsNick]] "ЛАВА"),
-				'Bio', T(973893751536, --[[ModItemUnitDataCompositeDef Meltdown Bio]] "Норма Джессоп - женщина, шутки с которой плохи. С одинаковой готовностью поливая противников матом и свинцом, Лава обожает, когда от врага остаются лишь брызги крови и висящие по кустам кишки. Хотя она в совершенстве владеет стрельбой из пистолетов по-македонски, больше всего ей по нраву тяжёлые пушки. Как она сама любит выражаться, «Не было случайных пострадавших - деньги на ветер». В местах, недавно посещённых Нормой, страховые компании отказывают пострадавшим в выплатах."),
+				'Name', T(627005316845, --[[ModItemUnitDataCompositeDef Meltdown Name]] 'Norma "Meltdown" Jessop'),
+				'Nick', T(801416212893, --[[ModItemUnitDataCompositeDef Meltdown Nick]] "Meltdown"),
+				'AllCapsNick', T(518123328833, --[[ModItemUnitDataCompositeDef Meltdown AllCapsNick]] "MELTDOWN"),
+				'Bio', T(973893751536, --[[ModItemUnitDataCompositeDef Meltdown Bio]] "As fierce as she is profane, Norma Jessop is a woman not to be taken lightly. Always ready and eager for a fight, Meltdown revels in killing her enemies in the bloodiest and most explosive way imaginable. Although ambidextrous and often seen with a pistol in each hand, her preference is for heavy weapons. As she likes to say, 'if there isn't at least a little collateral damage, you didn't do it right'. Property insurers refuse to pay out any claims in locations Norma recently visited."),
 				'Nationality', "USA",
 				'Title', T(771770749853, --[[ModItemUnitDataCompositeDef Meltdown Title]] "Goddamned Role Model"),
 				'Email', T(337960420959, --[[ModItemUnitDataCompositeDef Meltdown Email]] "trailerqueen69@aim.com"),
-				'snype_nick', T(672285437236, --[[ModItemUnitDataCompositeDef Meltdown snype_nick]] "lava69"),
+				'snype_nick', T(672285437236, --[[ModItemUnitDataCompositeDef Meltdown snype_nick]] "trailerqueen69"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -148333,14 +148648,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Magic",
 				'BigPortrait', "UI/Mercs/Magic",
 				'IsMercenary', true,
-				'Name', T(990490681062, --[[ModItemUnitDataCompositeDef Magic Name]] 'Эрл Уолкер «Маг»'),
-				'Nick', T(597495451908, --[[ModItemUnitDataCompositeDef Magic Nick]] "Маг"),
-				'AllCapsNick', T(400907277958, --[[ModItemUnitDataCompositeDef Magic AllCapsNick]] "МАГ"),
-				'Bio', T(273999095685, --[[ModItemUnitDataCompositeDef Magic Bio]] 'Хоть сам Маг и старается не придавать этому большого значения, мы с гордостью сообщаем, что Эрл Уолкер стал победителем Международного конкурса наёмников сразу в двух номинациях: «самые ловкие пальцы» и «самый элегантный внешний вид». Зачёт, Маг! Сочетание олимпийского атлетизма, юркости, чуткости слуха и ловкости делают из Мага оперативника высшего класса. А в сочетании с исключительной меткостью - и вовсе аса среди наёмников.'),
+				'Name', T(990490681062, --[[ModItemUnitDataCompositeDef Magic Name]] 'Earl "Magic" Walker'),
+				'Nick', T(597495451908, --[[ModItemUnitDataCompositeDef Magic Nick]] "Magic"),
+				'AllCapsNick', T(400907277958, --[[ModItemUnitDataCompositeDef Magic AllCapsNick]] "MAGIC"),
+				'Bio', T(273999095685, --[[ModItemUnitDataCompositeDef Magic Bio]] 'Although he downplays it, A.I.M. is proud to announce Earl Walker as the winner of both the "Fastest Fingers" and "Best Dressed" competitions at this year\'s annual Worldwide Mercenary Awards. Congrats, Magic! Earl combines Olympic-level physical conditioning, stealth, alertness, and adeptness with a lockpick to be the foremost infiltrator among A.I.M.\'s members. Take all that and combine it with exceptional marksmanship and you have a merc at the top of his game.'),
 				'Nationality', "USA",
 				'Title', T(392626315903, --[[ModItemUnitDataCompositeDef Magic Title]] "The Man with the Magic Plan"),
 				'Email', T(201985029292, --[[ModItemUnitDataCompositeDef Magic Email]] "justlikemagic@aim.com"),
-				'snype_nick', T(367614979450, --[[ModItemUnitDataCompositeDef Magic snype_nick]] "magic"),
+				'snype_nick', T(367614979450, --[[ModItemUnitDataCompositeDef Magic snype_nick]] "justlikemagic"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -148546,14 +148861,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/MD",
 				'BigPortrait', "UI/Mercs/MD",
 				'IsMercenary', true,
-				'Name', T(686612112398, --[[ModItemUnitDataCompositeDef MD Name]] 'Др. Майкл Доусон «ЭмДи»'),
-				'Nick', T(484352976943, --[[ModItemUnitDataCompositeDef MD Nick]] "ЭмДи"),
-				'AllCapsNick', T(640628882023, --[[ModItemUnitDataCompositeDef MD AllCapsNick]] "ЭМДИ"),
-				'Bio', T(186460451002, --[[ModItemUnitDataCompositeDef MD Bio]] "Закончив мединститут, Майкл отказался от перспективной карьеры врача и подался в наёмники. Сам он на этот счёт отвечает уклончиво, но многие подозревают, что Доусон вступал в A.I.M. в полной уверенности, что имеет дело с отделением «Врачей без границ». Как бы то ни было, впервые нюхнув пороху в Арулько, ЭмДи нашёл, что солдатская жизнь ему по вкусу. Ловкость, с которой он обращается со скальпелем, пригождается ему и в бою, и в импровизированной операционной, а неистребимый оптимизм побуждает других учиться на его примере."),
+				'Name', T(686612112398, --[[ModItemUnitDataCompositeDef MD Name]] 'Dr. Michael "MD" Dawson'),
+				'Nick', T(484352976943, --[[ModItemUnitDataCompositeDef MD Nick]] "MD"),
+				'AllCapsNick', T(640628882023, --[[ModItemUnitDataCompositeDef MD AllCapsNick]] "MD"),
+				'Bio', T(186460451002, --[[ModItemUnitDataCompositeDef MD Bio]] "When he was just out of medical school, Michael gave up a bright future in medicine to become a mercenary. He is evasive when asked, but it's entirely possible Michael joined A.I.M. thinking it was Doctors Without Borders. Whatever the reason, MD saw his first combat in Arulco and has developed a taste for the soldiering life. His skills with knives come in handy for fighting as well as healing and his incurable optimism makes all who work with him want to learn from his example."),
 				'Nationality', "Canada",
 				'Title', T(892027636726, --[[ModItemUnitDataCompositeDef MD Title]] "Always Uncertain, Never Discouraged"),
 				'Email', T(853992834316, --[[ModItemUnitDataCompositeDef MD Email]] "goodguymichael@aim.com"),
-				'snype_nick', T(894034021981, --[[ModItemUnitDataCompositeDef MD snype_nick]] "md"),
+				'snype_nick', T(894034021981, --[[ModItemUnitDataCompositeDef MD snype_nick]] "goodguymichael"),
 				'Haggles', {
 					PlaceObj('MercChatHaggle', {
 						'Lines', {
@@ -148731,14 +149046,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Len",
 				'BigPortrait', "UI/Mercs/Len",
 				'IsMercenary', true,
-				'Name', T(856122685331, --[[ModItemUnitDataCompositeDef Len Name]] "Капрал Лен Андерсон"),
-				'Nick', T(100823268874, --[[ModItemUnitDataCompositeDef Len Nick]] "Лен"),
-				'AllCapsNick', T(765224105732, --[[ModItemUnitDataCompositeDef Len AllCapsNick]] "ЛЕН"),
-				'Bio', T(651747616157, --[[ModItemUnitDataCompositeDef Len Bio]] "Записавшись в армию сразу же по окончании школы, капрал Андерсон большую частью своей взрослой жизни не выпускал из рук автомата. Лен отслужил в «зелёных беретах», а получив почётное увольнение со службы, переквалифицировался в солдата удачи, став одним из первых членов A.I.M. Лен располагает превосходными навыками во всех областях солдатской науки и имеет за плечами многие годы опыта борьбы с боевиками и спасения похищенных бизнесменов. Коллеги уважают его как командира и инструктора, а враги боятся как грозу мелких военных диктаторов."),
+				'Name', T(856122685331, --[[ModItemUnitDataCompositeDef Len Name]] "Corp. Len Anderson"),
+				'Nick', T(100823268874, --[[ModItemUnitDataCompositeDef Len Nick]] "Len"),
+				'AllCapsNick', T(765224105732, --[[ModItemUnitDataCompositeDef Len AllCapsNick]] "LEN"),
+				'Bio', T(651747616157, --[[ModItemUnitDataCompositeDef Len Bio]] "Recruited out of high school directly into the military, Len has seen combat for most of his adult life. After being honorably discharged from the Green Berets, Len became a soldier of fortune and was one of A.I.M.'s first members. With elite skills in every aspect of soldiering and years of battling warlords and rescuing kidnapped businessmen, Len has earned a reputation as a revered leader and mentor to mercenaries and feared adversary to third world dictators the world over."),
 				'Nationality', "USA",
 				'Title', T(452293562944, --[[ModItemUnitDataCompositeDef Len Title]] "The Soldier's Soldier"),
 				'Email', T(159574405546, --[[ModItemUnitDataCompositeDef Len Email]] "corporal_anderson@aim.com"),
-				'snype_nick', T(152770436506, --[[ModItemUnitDataCompositeDef Len snype_nick]] "len_anderson"),
+				'snype_nick', T(152770436506, --[[ModItemUnitDataCompositeDef Len snype_nick]] "corporal_anderson"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -148947,12 +149262,12 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Larry_Addiceted",
 				'BigPortrait', "UI/Mercs/Larry_Addicted",
 				'IsMercenary', true,
-				'Name', T(869169089971, --[[ModItemUnitDataCompositeDef Larry Name]] "Ларри Роачберн"),
-				'Nick', T(753281095956, --[[ModItemUnitDataCompositeDef Larry Nick]] "Ларри"),
-				'AllCapsNick', T(620838526188, --[[ModItemUnitDataCompositeDef Larry AllCapsNick]] "ЛАРРИ"),
+				'Name', T(869169089971, --[[ModItemUnitDataCompositeDef Larry Name]] "Larry Roachburn"),
+				'Nick', T(753281095956, --[[ModItemUnitDataCompositeDef Larry Nick]] "Larry"),
+				'AllCapsNick', T(620838526188, --[[ModItemUnitDataCompositeDef Larry AllCapsNick]] "LARRY"),
 				'Affiliation', "Secret",
 				'HireStatus', "MIA",
-				'Bio', T(333869191425, --[[ModItemUnitDataCompositeDef Larry Bio]] "Чтобы обращаться со взрывчаткой, требуется верная рука, а вернее руки Ларри ещё нужно поискать - правда, это при условии, что он недавно ничего не принимал. Хотя в прошлом Роачберн регулярно уходил в запои и «марафоны», вот уже два года, как он держится молодцом. Глубокие практические познания в фармакологии пригождаются ему, когда нужно оказать помощь раненому товарищу, а опыт побегов из наркодиспансеров говорит о хорошо развитых навыках скрытного перемещения и вскрытия замков. Тем не менее, Ларри клянётся и божится, что отныне он чист, как стёклышко, и мы в M.E.R.C. с готовностью ему верим!"),
+				'Bio', T(333869191425, --[[ModItemUnitDataCompositeDef Larry Bio]] "Explosives require a steady hand, and Larry's got some of the steadiest - most of the time. Although he has in the past struggled with bouts of chemical dependency, Larry's been clean and sober for two years now. His knowledge of pharmaceuticals comes in handy when administering first aid and his history of checking himself out of rehab whenever he liked has also made him good at sneaking around and picking locks. But Larry swears all that is behind him and we here at M.E.R.C. believe him!"),
 				'Nationality', "UnicornLand",
 				'Title', T(157807300841, --[[ModItemUnitDataCompositeDef Larry Title]] "Artist. Paints with mines"),
 				'SalaryLv1', 0,
@@ -148996,12 +149311,12 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Larry",
 				'BigPortrait', "UI/Mercs/Larry",
 				'IsMercenary', true,
-				'Name', T(226963931566, --[[ModItemUnitDataCompositeDef Larry_Clean Name]] "Ларри Роачберн"),
-				'Nick', T(585663232996, --[[ModItemUnitDataCompositeDef Larry_Clean Nick]] "Ларри"),
-				'AllCapsNick', T(713622604085, --[[ModItemUnitDataCompositeDef Larry_Clean AllCapsNick]] "ЛАРРИ"),
+				'Name', T(226963931566, --[[ModItemUnitDataCompositeDef Larry_Clean Name]] "Larry Roachburn"),
+				'Nick', T(585663232996, --[[ModItemUnitDataCompositeDef Larry_Clean Nick]] "Larry"),
+				'AllCapsNick', T(713622604085, --[[ModItemUnitDataCompositeDef Larry_Clean AllCapsNick]] "LARRY"),
 				'Affiliation', "Secret",
 				'HireStatus', "MIA",
-				'Bio', T(489792807692, --[[ModItemUnitDataCompositeDef Larry_Clean Bio]] "Чтобы обращаться со взрывчаткой, требуется верная рука, а вернее руки Ларри ещё нужно поискать - правда, это при условии, что он недавно ничего не принимал. Хотя в прошлом Роачберн регулярно уходил в запои и «марафоны», вот уже два года, как он держится молодцом. Глубокие практические познания в фармакологии пригождаются ему, когда нужно оказать помощь раненому товарищу, а опыт побегов из наркодиспансеров говорит о хорошо развитых навыках скрытного перемещения и вскрытия замков. Тем не менее, Ларри клянётся и божится, что отныне он чист, как стёклышко, и мы в M.E.R.C. с готовностью ему верим!"),
+				'Bio', T(489792807692, --[[ModItemUnitDataCompositeDef Larry_Clean Bio]] "Explosives require a steady hand, and Larry's got some of the steadiest - most of the time. Although he has in the past struggled with bouts of chemical dependency, Larry's been clean and sober for two years now. His knowledge of pharmaceuticals comes in handy when administering first aid and his history of checking himself out of rehab whenever he liked has also made him good at sneaking around and picking locks. But Larry swears all that is behind him and we here at M.E.R.C. believe him!"),
 				'Nationality', "USA",
 				'Title', T(112796718025, --[[ModItemUnitDataCompositeDef Larry_Clean Title]] "Former Artist. Explosives Expert"),
 				'SalaryLv1', 0,
@@ -149067,10 +149382,10 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/IvanPortrait",
 				'BigPortrait', "UI/Mercs/Ivan",
 				'IsMercenary', true,
-				'Name', T(748830427164, --[[ModItemUnitDataCompositeDef Ivan Name]] "Иван Долвич"),
-				'Nick', T(493354712045, --[[ModItemUnitDataCompositeDef Ivan Nick]] "Иван"),
-				'AllCapsNick', T(857448797342, --[[ModItemUnitDataCompositeDef Ivan AllCapsNick]] "ИВАН"),
-				'Bio', T(631392006133, --[[ModItemUnitDataCompositeDef Ivan Bio]] "После развала Советского Союза Иван, в прошлом майор Советской Армии, решил попытать удачи на рынке капиталистических стран. Хотя разговорный английский по-прежнему дается ему с трудом, время, проведенное в A.I.M., лишь отточило его и без того выдающиеся навыки бойца. Иван настолько прославился своими подвигами, что в Голливуде даже решили снять о нем фильм. Однако проект пришлось отменить, поскольку Иван настаивал, что главную роль будет играть он сам, а все перестрелки в фильме должны вестись с применением боевого оружия."),
+				'Name', T(748830427164, --[[ModItemUnitDataCompositeDef Ivan Name]] "Ivan Dolvich"),
+				'Nick', T(493354712045, --[[ModItemUnitDataCompositeDef Ivan Nick]] "Ivan"),
+				'AllCapsNick', T(857448797342, --[[ModItemUnitDataCompositeDef Ivan AllCapsNick]] "IVAN"),
+				'Bio', T(631392006133, --[[ModItemUnitDataCompositeDef Ivan Bio]] "Once a Major in the Red Army, Ivan took his combat skills to the free market after the collapse of the Soviet Union. Although he still struggles to put anything more than the simplest of phrases into English, his enormous martial talents have only grown during his membership with A.I.M. His feats are so legendary, Hollywood tried to make a movie about him, but since he insisted on starring in it and only using live ammunition the project was canceled."),
 				'Nationality', "Russia",
 				'Title', T(659068379440, --[[ModItemUnitDataCompositeDef Ivan Title]] "The Russian Juggernaut"),
 				'Email', T(435235065061, --[[ModItemUnitDataCompositeDef Ivan Email]] "ivan@aim.com"),
@@ -149237,14 +149552,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Igor",
 				'BigPortrait', "UI/Mercs/Igor",
 				'IsMercenary', true,
-				'Name', T(951021360874, --[[ModItemUnitDataCompositeDef Igor Name]] "Игорь Долвич"),
-				'Nick', T(242446641011, --[[ModItemUnitDataCompositeDef Igor Nick]] "Игорь"),
-				'AllCapsNick', T(383779569786, --[[ModItemUnitDataCompositeDef Igor AllCapsNick]] "ИГОРЬ"),
-				'Bio', T(401565007653, --[[ModItemUnitDataCompositeDef Igor Bio]] "Хоть Игорь и гордится тем, что он - племянник самого Ивана Долвича, он по праву может похвалиться и собственными достижениями. Молодой, но исключительно талантливый наёмник, он уже завоевал уважение коллег своей выносливостью, отвагой, меткостью и способностью незаметно подкрадываться к противнику. Тем не менее, до своего легендарного дяди ему ещё расти и расти, и Игорь исполнен решимости преумножить славу семьи Долвичей. Крайне перспективный боец!"),
+				'Name', T(951021360874, --[[ModItemUnitDataCompositeDef Igor Name]] "Igor Dolvich"),
+				'Nick', T(242446641011, --[[ModItemUnitDataCompositeDef Igor Nick]] "Igor"),
+				'AllCapsNick', T(383779569786, --[[ModItemUnitDataCompositeDef Igor AllCapsNick]] "IGOR"),
+				'Bio', T(401565007653, --[[ModItemUnitDataCompositeDef Igor Bio]] "The proud nephew of Ivan, Igor is an exceptionally talented mercenary in his own right. Although still young, Igor has managed to already garner a reputation at A.I.M. for using toughness, courage, marksmanship and stealth to get the better of his foes. Still a ways off from ever matching his uncle's exploits, Igor is eager to live up to his name. A merc to watch!"),
 				'Nationality', "Russia",
 				'Title', T(753598137188, --[[ModItemUnitDataCompositeDef Igor Title]] "Most Meritorious Merc"),
 				'Email', T(673794011457, --[[ModItemUnitDataCompositeDef Igor Email]] "igorisgreatmerc@aim.com"),
-				'snype_nick', T(951768641593, --[[ModItemUnitDataCompositeDef Igor snype_nick]] "super_igor"),
+				'snype_nick', T(951768641593, --[[ModItemUnitDataCompositeDef Igor snype_nick]] "igorisgreatmerc"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -149475,14 +149790,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Ice",
 				'BigPortrait', "UI/Mercs/Ice",
 				'IsMercenary', true,
-				'Name', T(487023376427, --[[ModItemUnitDataCompositeDef Ice Name]] "Айс Уильямс"),
-				'Nick', T(176437286252, --[[ModItemUnitDataCompositeDef Ice Nick]] "Айс"),
-				'AllCapsNick', T(117433013766, --[[ModItemUnitDataCompositeDef Ice AllCapsNick]] "АЙС"),
-				'Bio', T(207628950939, --[[ModItemUnitDataCompositeDef Ice Bio]] "Один из наиболее востребованных наёмников в A.I.M., Айс пользуется популярностью как у новых, так и у постоянных клиентов благодаря своей ненавязчивой, дружеской манере общения. Хотя Уильямс с лёгкостью обращается и со снайперским оружием, его излюбленный режим стрельбы - старая добрая очередь из автомата, и он с готовностью делится с коллегами практическими советами, как лучше контролировать увод ствола в сторону."),
+				'Name', T(487023376427, --[[ModItemUnitDataCompositeDef Ice Name]] "Ice Williams"),
+				'Nick', T(176437286252, --[[ModItemUnitDataCompositeDef Ice Nick]] "Ice"),
+				'AllCapsNick', T(117433013766, --[[ModItemUnitDataCompositeDef Ice AllCapsNick]] "ICE"),
+				'Bio', T(207628950939, --[[ModItemUnitDataCompositeDef Ice Bio]] "One of A.I.M.'s most popular mercs among both new and frequent clients, Ice's smooth and friendly demeanor makes him highly sought after. Although an expert marksman with a sniper rifle, nothing gives Ice greater joy than going full auto. He can often be found teaching other mercs how to control muzzle climb during sustained bursts."),
 				'Nationality', "USA",
 				'Title', T(634721638536, --[[ModItemUnitDataCompositeDef Ice Title]] "Ice is in da House"),
 				'Email', T(234986731479, --[[ModItemUnitDataCompositeDef Ice Email]] "ice_cold@aim.com"),
-				'snype_nick', T(680935424578, --[[ModItemUnitDataCompositeDef Ice snype_nick]] "ice"),
+				'snype_nick', T(680935424578, --[[ModItemUnitDataCompositeDef Ice snype_nick]] "ice_cold"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -149716,14 +150031,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Hitman",
 				'BigPortrait', "UI/Mercs/Hitman",
 				'IsMercenary', true,
-				'Name', T(799859181071, --[[ModItemUnitDataCompositeDef Hitman Name]] 'Фрэнк Хеннеси «Стрелок»'),
-				'Nick', T(946077284416, --[[ModItemUnitDataCompositeDef Hitman Nick]] "Стрелок"),
-				'AllCapsNick', T(734624158090, --[[ModItemUnitDataCompositeDef Hitman AllCapsNick]] "СТРЕЛОК"),
-				'Bio', T(649246167400, --[[ModItemUnitDataCompositeDef Hitman Bio]] 'Проведя последние несколько лет в безуспешных попытках сбросить лишний вес, Фрэнк вынужден был признать, что стал очередным обладателем пивного животика (несмотря на то, что все в A.I.M. знают его как любителя женского пола, а не пива). Тем не менее, Хеннеси остаётся одним из лучших мастеров обращения с огнестрельным оружием и метательными ножами, а обходительные манеры делают из него превосходного инструктора. «Стрелок» - весомое во всех смыслах добавление к любой команде.'),
+				'Name', T(799859181071, --[[ModItemUnitDataCompositeDef Hitman Name]] 'Frank "Hitman" Hennessy'),
+				'Nick', T(946077284416, --[[ModItemUnitDataCompositeDef Hitman Nick]] "Hitman"),
+				'AllCapsNick', T(734624158090, --[[ModItemUnitDataCompositeDef Hitman AllCapsNick]] "HITMAN"),
+				'Bio', T(649246167400, --[[ModItemUnitDataCompositeDef Hitman Bio]] 'After spending the last couple of years fighting his own Battle of the Bulge, Frank has begrudgingly admitted that he is afflicted with "Dad Bod", although as far as A.I.M. knows he has no children nor even a wife. Still, he remains one of A.I.M.\'s best marksmen and his throwing arm is as strong as ever. On top of that, his affable manner serves him well when teaching and training others in the field. A valuable, if slightly oversized, addition to any team.'),
 				'Nationality', "USA",
 				'Title', T(831408309409, --[[ModItemUnitDataCompositeDef Hitman Title]] "The Affable Assassin"),
 				'Email', T(626379380637, --[[ModItemUnitDataCompositeDef Hitman Email]] "hitman@aim.com"),
-				'snype_nick', T(645661687272, --[[ModItemUnitDataCompositeDef Hitman snype_nick]] "strelok"),
+				'snype_nick', T(645661687272, --[[ModItemUnitDataCompositeDef Hitman snype_nick]] "hitman"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -149947,15 +150262,15 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Gus",
 				'BigPortrait', "UI/Mercs/Gus",
 				'IsMercenary', true,
-				'Name', T(427138476543, --[[ModItemUnitDataCompositeDef Gus Name]] "Гас Тарболс"),
-				'Nick', T(732907985726, --[[ModItemUnitDataCompositeDef Gus Nick]] "Гас"),
-				'AllCapsNick', T(980126090528, --[[ModItemUnitDataCompositeDef Gus AllCapsNick]] "ГАС"),
+				'Name', T(427138476543, --[[ModItemUnitDataCompositeDef Gus Name]] "Gus Tarballs"),
+				'Nick', T(732907985726, --[[ModItemUnitDataCompositeDef Gus Nick]] "Gus"),
+				'AllCapsNick', T(980126090528, --[[ModItemUnitDataCompositeDef Gus AllCapsNick]] "GUS"),
 				'HireStatus', "Retired",
-				'Bio', T(257144197846, --[[ModItemUnitDataCompositeDef Gus Bio]] "Ходят слухи, что, когда вновь избранный правитель Арулько предложил Тарболсу пост старшего военного советника, старый солдат отказался, заявив: «Я вам не штабная крыса, чёрт подери!» Он всё-таки задержался достаточно, чтобы помочь подготовить первые несколько отрядов новой армии Арулько, но в конце концов покинул страну, проворчав что-то насчёт новой ноги. На данный момент его анкета всё ещё значится в списке находящихся на активной боевой службе наёмников, однако Гас уже несколько месяцев как не отвечает на звонки."),
+				'Bio', T(257144197846, --[[ModItemUnitDataCompositeDef Gus Bio]] "Although offered a position as senior military advisor to the restored monarchy in Arulco, the badly limping Tarballs reportedly turned down the offer because he wasn't 'a dang paper pusher'. After spending a couple of weeks helping to train a few squads of Arulco's new army in the use of heavy weapons, he grumbled something about finding himself a new leg and disappeared into the hinterland. As of this moment, he is still on A.I.M.'s active duty roster, but he hasn't checked his voicemail in months."),
 				'Nationality', "USA",
 				'Title', T(453788960669, --[[ModItemUnitDataCompositeDef Gus Title]] "Not Cut Out for Management"),
 				'Email', T(844112356581, --[[ModItemUnitDataCompositeDef Gus Email]] "morningnapalm@aim.com"),
-				'snype_nick', T(568370092426, --[[ModItemUnitDataCompositeDef Gus snype_nick]] "napalm_poutru"),
+				'snype_nick', T(568370092426, --[[ModItemUnitDataCompositeDef Gus snype_nick]] "morningnapalm"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -150154,14 +150469,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Grunty",
 				'BigPortrait', "UI/Mercs/Grunty",
 				'IsMercenary', true,
-				'Name', T(509794901102, --[[ModItemUnitDataCompositeDef Grunty Name]] 'Гельмут Грунтер «Хряп»'),
-				'Nick', T(844792410600, --[[ModItemUnitDataCompositeDef Grunty Nick]] "Хряп"),
-				'AllCapsNick', T(878015981670, --[[ModItemUnitDataCompositeDef Grunty AllCapsNick]] "ХРЯП "),
-				'Bio', T(805883834301, --[[ModItemUnitDataCompositeDef Grunty Bio]] "Боец, стремительно взлетающий к вершинам карьеры наёмника, Хряп пользуется большой популярностью среди клиентов A.I.M. Гельмут - отличный солдат с умеренными денежными запросами, а дружелюбная матера общения и оптимизм делают его прекрасным товарищем по команде. Хряп - универсал, умеющий отлично обращаться с тяжелым оружием, так что едва ли найдётся тактическая задача, из которой он не вышел бы с победой."),
+				'Name', T(509794901102, --[[ModItemUnitDataCompositeDef Grunty Name]] 'Helmut "Grunty" Grunther'),
+				'Nick', T(844792410600, --[[ModItemUnitDataCompositeDef Grunty Nick]] "Grunty"),
+				'AllCapsNick', T(878015981670, --[[ModItemUnitDataCompositeDef Grunty AllCapsNick]] "GRUNTY"),
+				'Bio', T(805883834301, --[[ModItemUnitDataCompositeDef Grunty Bio]] "A mercenary rapidly approaching his prime, Grunty has become one of A.I.M.'s most popular members. A solid soldier at a reasonable price, Helmut's congeniality and positive attitude make him a joy to work with. A versatile merc that is also skilled with heavy weapons, there are few tactical situations for which he is unprepared."),
 				'Nationality', "Germany",
 				'Title', T(559710714576, --[[ModItemUnitDataCompositeDef Grunty Title]] "The Irrationally Exuberant Merc"),
 				'Email', T(930964299879, --[[ModItemUnitDataCompositeDef Grunty Email]] "mutti_liebling@aim.com"),
-				'snype_nick', T(511404631540, --[[ModItemUnitDataCompositeDef Grunty snype_nick]] "mamin_lubimez"),
+				'snype_nick', T(511404631540, --[[ModItemUnitDataCompositeDef Grunty snype_nick]] "mutti_liebling"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -150377,10 +150692,10 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Grizzly",
 				'BigPortrait', "UI/Mercs/Grizzly",
 				'IsMercenary', true,
-				'Name', T(118208459244, --[[ModItemUnitDataCompositeDef Grizzly Name]] 'Стив Борнелл «Гризли»'),
-				'Nick', T(954696021309, --[[ModItemUnitDataCompositeDef Grizzly Nick]] "Гризли"),
-				'AllCapsNick', T(136802932068, --[[ModItemUnitDataCompositeDef Grizzly AllCapsNick]] "ГРИЗЛИ"),
-				'Bio', T(163594350898, --[[ModItemUnitDataCompositeDef Grizzly Bio]] "Сказать, что Стив Борнелл крут, - это ещё ничего не сказать. В бою это ходячая машина для убийства. Если враг пеший - он может голыми руками порвать его, как тузик грелку. Если прячется в танке - разнести к чертям собачьим выстрелом из гранатомёта. И в драке, и в перестрелке за Гризли вы как за каменной стеной."),
+				'Name', T(118208459244, --[[ModItemUnitDataCompositeDef Grizzly Name]] 'Steve "Grizzly" Bornell'),
+				'Nick', T(954696021309, --[[ModItemUnitDataCompositeDef Grizzly Nick]] "Grizzly"),
+				'AllCapsNick', T(136802932068, --[[ModItemUnitDataCompositeDef Grizzly AllCapsNick]] "GRIZZLY"),
+				'Bio', T(163594350898, --[[ModItemUnitDataCompositeDef Grizzly Bio]] "Steve Bornell is so tough he doesn't just spit nails when he eats iron, he swallows rocks and craps out concrete bunkers. Never one to shy away from a fight, he can beat you to a pulp with his bare hands or take out the tank you're driving with a rocket launcher. And when you need a friend, Grizzly is the big cuddly bear in your corner."),
 				'Nationality', "USA",
 				'Title', T(978696341509, --[[ModItemUnitDataCompositeDef Grizzly Title]] "A Bear of a Man"),
 				'Email', T(669497410975, --[[ModItemUnitDataCompositeDef Grizzly Email]] "grizz@aim.com"),
@@ -150583,14 +150898,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Fox",
 				'BigPortrait', "UI/Mercs/Fox",
 				'IsMercenary', true,
-				'Name', T(653970492916, --[[ModItemUnitDataCompositeDef Fox Name]] 'Синтия Газмен «Лиска»'),
-				'Nick', T(550680559818, --[[ModItemUnitDataCompositeDef Fox Nick]] "Лиска"),
-				'AllCapsNick', T(533036246701, --[[ModItemUnitDataCompositeDef Fox AllCapsNick]] "ЛИСКА"),
-				'Bio', T(431815979541, --[[ModItemUnitDataCompositeDef Fox Bio]] "Согласившись задержаться в стране, чтобы позировать для рекламирующих новый мирный Арулько брошюр, Синтия с готовностью фотографировалась в бикини на местных пляжах и выступала на местных стрелковых конкурсах, щеголяя навыками стрельбы по-македонски. Её глубокие познания в человеческой анатомии также оказались востребованы: сын президента нанял её, чтобы она давала ему частные уроки. Тем не менее, недавно она сообщила, что вновь открыта к деловым отношениями, - где угодно, когда угодно и с кем угодно."),
+				'Name', T(653970492916, --[[ModItemUnitDataCompositeDef Fox Name]] 'Cynthia "Fox" Guzzman'),
+				'Nick', T(550680559818, --[[ModItemUnitDataCompositeDef Fox Nick]] "Fox"),
+				'AllCapsNick', T(533036246701, --[[ModItemUnitDataCompositeDef Fox AllCapsNick]] "FOX"),
+				'Bio', T(431815979541, --[[ModItemUnitDataCompositeDef Fox Bio]] "Contracted to model for a travel guide advertising the new and peaceful Arulco, Cynthia posed in bikinis on beaches and displayed her ambidextrous pistol shooting abilities at local talent shows. Never one to tolerate a dull moment, she also utilized her flawless knowledge of anatomy to make herself available for private tutoring lessons with the president's son. Recently, she has reported to A.I.M. that she is ready to make herself available to anyone, whenever and wherever."),
 				'Nationality', "USA",
 				'Title', T(643740690300, --[[ModItemUnitDataCompositeDef Fox Title]] "The Pin-Up Pistoleer"),
 				'Email', T(275428567670, --[[ModItemUnitDataCompositeDef Fox Email]] "foxy1@aim.com"),
-				'snype_nick', T(750146314874, --[[ModItemUnitDataCompositeDef Fox snype_nick]] "liska"),
+				'snype_nick', T(750146314874, --[[ModItemUnitDataCompositeDef Fox snype_nick]] "foxy1"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -150848,14 +151163,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Fidel",
 				'BigPortrait', "UI/Mercs/Fidel",
 				'IsMercenary', true,
-				'Name', T(118909675158, --[[ModItemUnitDataCompositeDef Fidel Name]] "Фидель Дахан"),
-				'Nick', T(489035873223, --[[ModItemUnitDataCompositeDef Fidel Nick]] "Фидель"),
-				'AllCapsNick', T(127950817003, --[[ModItemUnitDataCompositeDef Fidel AllCapsNick]] "ФИДЕЛЬ"),
-				'Bio', T(888155597181, --[[ModItemUnitDataCompositeDef Fidel Bio]] "Хотя власти Арулько так и не объявили его в розыск, мало кто сомневается, что именно Фидель взорвал пункт проката видеокассет в Альме после того, как владелец отказался пускать его в заднюю комнату магазинчика. По счастью, - правда, не на взгляд самого Фиделя - обошлось без жертв. Руководство A.I.M. допустило Фиделя к дальнейшей службе, так как специалисты-взрывотехники, равно хорошо владеющие и стрелковым оружием, всегда нарасхват."),
+				'Name', T(118909675158, --[[ModItemUnitDataCompositeDef Fidel Name]] "Fidel Dahan"),
+				'Nick', T(489035873223, --[[ModItemUnitDataCompositeDef Fidel Nick]] "Fidel"),
+				'AllCapsNick', T(127950817003, --[[ModItemUnitDataCompositeDef Fidel AllCapsNick]] "FIDEL"),
+				'Bio', T(888155597181, --[[ModItemUnitDataCompositeDef Fidel Bio]] "Although not officially listed as a suspect by Arulco authorities, there is little doubt at A.I.M. that Fidel blew up a video store in Alma after the proprietor refused to allow him into the back room. Thankfully, no one was hurt - a fact Fidel seems to lament - and A.I.M. has cleared him for active duty due to the high demand for his skills with explosives and firearms."),
 				'Nationality', "Cuba",
 				'Title', T(337961143159, --[[ModItemUnitDataCompositeDef Fidel Title]] "The Continuing Cuban Crisis"),
 				'Email', T(735301247589, --[[ModItemUnitDataCompositeDef Fidel Email]] "fidelmakeboom@aim.com"),
-				'snype_nick', T(843991705045, --[[ModItemUnitDataCompositeDef Fidel snype_nick]] "fidel_bomba"),
+				'snype_nick', T(843991705045, --[[ModItemUnitDataCompositeDef Fidel snype_nick]] "fidelmakeboom"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -150960,14 +151275,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/DrQ",
 				'BigPortrait', "UI/Mercs/DrQ",
 				'IsMercenary', true,
-				'Name', T(231173544601, --[[ModItemUnitDataCompositeDef DrQ Name]] "Доктор Кью Хуаонг"),
-				'Nick', T(293945362464, --[[ModItemUnitDataCompositeDef DrQ Nick]] "Кью"),
-				'AllCapsNick', T(562036496158, --[[ModItemUnitDataCompositeDef DrQ AllCapsNick]] "КЬЮ"),
-				'Bio', T(527433658116, --[[ModItemUnitDataCompositeDef DrQ Bio]] "Рассказывают, что однажды, приехав в некую страну на семинар по иглоукалыванию, доктор Кью умудрился не только прочитать там лекцию, но и тем же вечером применить свои навыки ночных операций вкупе с познаниями в боевых искусствах. Пробравшись в расположенный неподалёку лагерь местного наркобарона, он нейтрализовал охранников, стороживших захваченный груз медикаментов, и доставил его в ближайшую больницу. Поговаривают даже, что он отказался брать плату за свои услуги, хотя сам доктор это отрицает."),
+				'Name', T(231173544601, --[[ModItemUnitDataCompositeDef DrQ Name]] "Dr. Q. Huaong"),
+				'Nick', T(293945362464, --[[ModItemUnitDataCompositeDef DrQ Nick]] "Dr. Q"),
+				'AllCapsNick', T(562036496158, --[[ModItemUnitDataCompositeDef DrQ AllCapsNick]] "DR. Q"),
+				'Bio', T(527433658116, --[[ModItemUnitDataCompositeDef DrQ Bio]] "While attending a seminar on acupuncture where he served as guest lecturer, Dr. Q had the opportunity to use his skills in night operations and martial arts to infiltrate the compound of a nearby drug lord to liberate a hoard of medical supplies and deliver them to a local hospital. It is rumored he waived his usual fee for such services, but Huaong denies it."),
 				'Nationality', "China",
 				'Title', T(727721975643, --[[ModItemUnitDataCompositeDef DrQ Title]] "Expert in Aggressive Acupuncture"),
 				'Email', T(970559294874, --[[ModItemUnitDataCompositeDef DrQ Email]] "sage_q@aim.com"),
-				'snype_nick', T(893736356942, --[[ModItemUnitDataCompositeDef DrQ snype_nick]] "doctor_q"),
+				'snype_nick', T(893736356942, --[[ModItemUnitDataCompositeDef DrQ snype_nick]] "sage_q"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -151160,9 +151475,9 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Buns",
 				'BigPortrait', "UI/Mercs/Buns",
 				'IsMercenary', true,
-				'Name', T(956763701762, --[[ModItemUnitDataCompositeDef Buns Name]] 'Моника Зондергад «Сдоба»'),
-				'Nick', T(730486601047, --[[ModItemUnitDataCompositeDef Buns Nick]] "Сдоба"),
-				'AllCapsNick', T(355208859292, --[[ModItemUnitDataCompositeDef Buns AllCapsNick]] "СДОБА"),
+				'Name', T(956763701762, --[[ModItemUnitDataCompositeDef Buns Name]] 'Monica "Buns" Sondergaard'),
+				'Nick', T(730486601047, --[[ModItemUnitDataCompositeDef Buns Nick]] "Buns"),
+				'AllCapsNick', T(355208859292, --[[ModItemUnitDataCompositeDef Buns AllCapsNick]] "BUNS"),
 				'Bio', T(777309152047, --[[ModItemUnitDataCompositeDef Buns Bio]] "Резюме Моники Зондергад, кажется, специально написано для того, чтобы вызывать у читающих острый приступ синдрома самозванца: стрелок-олимпиец, медицинская сестра, автор видеоуроков по семейной форме обучения, технике искусственного дыхания, стрельбе из автоматического оружия, здоровому образу жизни и борьбе с депрессией посредством последовательного самосовершенствования.\n\nМногие могут спросить себя: разве может жизнь наёмника предложить такой женщине что-но новое? Тем не менее, коллеги по A.I.M. высоко ценят Монику как умелого специалиста и хорошего - пусть и въедливого - учителя."),
 				'Nationality', "Denmark",
 				'Title', T(852578438925, --[[ModItemUnitDataCompositeDef Buns Title]] "Buns Will Teach You"),
@@ -151357,14 +151672,14 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Blood",
 				'BigPortrait', "UI/Mercs/Blood",
 				'IsMercenary', true,
-				'Name', T(341095663210, --[[ModItemUnitDataCompositeDef Blood Name]] 'Кит Гансон «Блад»'),
-				'Nick', T(697027342093, --[[ModItemUnitDataCompositeDef Blood Nick]] "Блад"),
-				'AllCapsNick', T(941246151451, --[[ModItemUnitDataCompositeDef Blood AllCapsNick]] "БЛАД"),
-				'Bio', T(879797808599, --[[ModItemUnitDataCompositeDef Blood Bio]] "Не обманывайтесь дружелюбием Блада: этот боец знает тридцать способов, как убить человека одними только голыми руками (хотя сам предпочитает делать это метательными ножами). Как бывший член Африканского национального конгресса, Кит пристрастен к тиранам и эксплуататорам - и обычно выражает своё отношение к ним исключительными по своей агрессивности методами."),
+				'Name', T(341095663210, --[[ModItemUnitDataCompositeDef Blood Name]] 'Keith "Blood" Hanson'),
+				'Nick', T(697027342093, --[[ModItemUnitDataCompositeDef Blood Nick]] "Blood"),
+				'AllCapsNick', T(941246151451, --[[ModItemUnitDataCompositeDef Blood AllCapsNick]] "BLOOD"),
+				'Bio', T(879797808599, --[[ModItemUnitDataCompositeDef Blood Bio]] "Don't let Blood's genial disposition fool you. He knows thirty different ways to kill a person using just his hands, although his preference is by doing it with a skillfully thrown knife. A former member of the ANC, nothing gives Keith more pleasure than helping a downtrodden people overthrow their oppressors, preferably by using exceptionally violent methods."),
 				'Nationality', "SouthAfrica",
 				'Title', T(656795996276, --[[ModItemUnitDataCompositeDef Blood Title]] "There Will Be Blood"),
 				'Email', T(672490755828, --[[ModItemUnitDataCompositeDef Blood Email]] "soulfood_warrior@aim.com"),
-				'snype_nick', T(240898156196, --[[ModItemUnitDataCompositeDef Blood snype_nick]] "gurman"),
+				'snype_nick', T(240898156196, --[[ModItemUnitDataCompositeDef Blood snype_nick]] "soulfood_warrior"),
 				'Refusals', {
 					PlaceObj('MercChatRefusal', {
 						'Lines', {
@@ -151511,10 +151826,10 @@ displayName]] "Legion Garrison"),
 				'Portrait', "UI/MercsPortraits/Barry",
 				'BigPortrait', "UI/Mercs/Barry",
 				'IsMercenary', true,
-				'Name', T(919764309920, --[[ModItemUnitDataCompositeDef Barry Name]] "Барри Ангер"),
-				'Nick', T(872433137526, --[[ModItemUnitDataCompositeDef Barry Nick]] "Барри"),
-				'AllCapsNick', T(420472155832, --[[ModItemUnitDataCompositeDef Barry AllCapsNick]] "БАРРИ"),
-				'Bio', T(201477611708, --[[ModItemUnitDataCompositeDef Barry Bio]] "Благочестивый христианин и педант - на первый взгляд Барри Ангеру больше подошла бы карьера не солдата удачи, а электрика. Тем не менее, сам он предпочитает зарабатывать на жизнь, не прокладывая провода в своей родной Венгрии, а закладывая взрывчатку на складах противника (куда сам же и проникает, вскрывая замки)."),
+				'Name', T(919764309920, --[[ModItemUnitDataCompositeDef Barry Name]] "Barry Unger"),
+				'Nick', T(872433137526, --[[ModItemUnitDataCompositeDef Barry Nick]] "Barry"),
+				'AllCapsNick', T(420472155832, --[[ModItemUnitDataCompositeDef Barry AllCapsNick]] "BARRY"),
+				'Bio', T(201477611708, --[[ModItemUnitDataCompositeDef Barry Bio]] "A pious man with an immense attention to detail, at first glance Barry seems better suited to the humble life of an electrician than a soldier of fortune. Were it not for Barry's preference for blowing things up for money and picking locks for fun, he could easily lead a happy life installing cable in his homeland of Hungary."),
 				'Nationality', "Hungary",
 				'Title', T(139748625274, --[[ModItemUnitDataCompositeDef Barry Title]] "Patron Saint of Plastique"),
 				'Email', T(314757335274, --[[ModItemUnitDataCompositeDef Barry Email]] "unger.barry@aim.com"),

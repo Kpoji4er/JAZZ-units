@@ -19,14 +19,14 @@ DefineClass.Magic = {
 	Portrait = "UI/MercsPortraits/Magic",
 	BigPortrait = "UI/Mercs/Magic",
 	IsMercenary = true,
-	Name = T(990490681062, --[[ModItemUnitDataCompositeDef Magic Name]] 'Эрл Уолкер «Маг»'),
-	Nick = T(597495451908, --[[ModItemUnitDataCompositeDef Magic Nick]] "Маг"),
-	AllCapsNick = T(400907277958, --[[ModItemUnitDataCompositeDef Magic AllCapsNick]] "МАГ"),
-	Bio = T(273999095685, --[[ModItemUnitDataCompositeDef Magic Bio]] 'Хоть сам Маг и старается не придавать этому большого значения, мы с гордостью сообщаем, что Эрл Уолкер стал победителем Международного конкурса наёмников сразу в двух номинациях: «самые ловкие пальцы» и «самый элегантный внешний вид». Зачёт, Маг! Сочетание олимпийского атлетизма, юркости, чуткости слуха и ловкости делают из Мага оперативника высшего класса. А в сочетании с исключительной меткостью - и вовсе аса среди наёмников.'),
+	Name = T(990490681062, --[[ModItemUnitDataCompositeDef Magic Name]] 'Earl "Magic" Walker'),
+	Nick = T(597495451908, --[[ModItemUnitDataCompositeDef Magic Nick]] "Magic"),
+	AllCapsNick = T(400907277958, --[[ModItemUnitDataCompositeDef Magic AllCapsNick]] "MAGIC"),
+	Bio = T(273999095685, --[[ModItemUnitDataCompositeDef Magic Bio]] 'Although he downplays it, A.I.M. is proud to announce Earl Walker as the winner of both the "Fastest Fingers" and "Best Dressed" competitions at this year\'s annual Worldwide Mercenary Awards. Congrats, Magic! Earl combines Olympic-level physical conditioning, stealth, alertness, and adeptness with a lockpick to be the foremost infiltrator among A.I.M.\'s members. Take all that and combine it with exceptional marksmanship and you have a merc at the top of his game.'),
 	Nationality = "USA",
 	Title = T(392626315903, --[[ModItemUnitDataCompositeDef Magic Title]] "The Man with the Magic Plan"),
 	Email = T(201985029292, --[[ModItemUnitDataCompositeDef Magic Email]] "justlikemagic@aim.com"),
-	snype_nick = T(367614979450, --[[ModItemUnitDataCompositeDef Magic snype_nick]] "magic"),
+	snype_nick = T(367614979450, --[[ModItemUnitDataCompositeDef Magic snype_nick]] "justlikemagic"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

@@ -19,14 +19,14 @@ DefineClass.Vicki = {
 	Portrait = "UI/MercsPortraits/Vicky",
 	BigPortrait = "UI/Mercs/Vicky",
 	IsMercenary = true,
-	Name = T(997941066310, --[[ModItemUnitDataCompositeDef Vicki Name]] 'Виктория Уотерс «Вики»'),
-	Nick = T(982571881202, --[[ModItemUnitDataCompositeDef Vicki Nick]] "Вики"),
-	AllCapsNick = T(912931350387, --[[ModItemUnitDataCompositeDef Vicki AllCapsNick]] "ВИКИ"),
-	Bio = T(978581055615, --[[ModItemUnitDataCompositeDef Vicki Bio]] "Вики Уотерс в совершенстве стреляет по-македонски и послужит прекрасным дополнением к любой команде. В данным момент она работает авиамехаником у Джемса Буллока, также известного как «Небесный Всадник», ремонтируя его вертолёт в промежутках между развозом туристов. Поговаривают, что эти двое - не просто деловые партнёры, однако сама Вики сообщает, что, если кому-то требуются её услуги, она готова к выполнению новых заданий."),
+	Name = T(997941066310, --[[ModItemUnitDataCompositeDef Vicki Name]] 'Victoria "Vicki" Waters'),
+	Nick = T(982571881202, --[[ModItemUnitDataCompositeDef Vicki Nick]] "Vicki"),
+	AllCapsNick = T(912931350387, --[[ModItemUnitDataCompositeDef Vicki AllCapsNick]] "VICKI"),
+	Bio = T(978581055615, --[[ModItemUnitDataCompositeDef Vicki Bio]] "A crack shot with pistols, the ambidextrous Vicki Waters is an asset to any team. She's currently working as a mechanic for James \"Skyrider\" Bullock, keeping his helicopter flying while he offers aerial tours of Arulco. The rumor is their partnership isn't just financial, but Vicki has informed A.I.M. she is ready for action should a good contract come her way."),
 	Nationality = "Jamaica",
 	Title = T(584992608799, --[[ModItemUnitDataCompositeDef Vicki Title]] "The Maven of Mechanics and Mayhem"),
 	Email = T(459711242023, --[[ModItemUnitDataCompositeDef Vicki Email]] "deadly_vicki@aim.com"),
-	snype_nick = T(600504575562, --[[ModItemUnitDataCompositeDef Vicki snype_nick]] "vicki"),
+	snype_nick = T(600504575562, --[[ModItemUnitDataCompositeDef Vicki snype_nick]] "deadly_vicki"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

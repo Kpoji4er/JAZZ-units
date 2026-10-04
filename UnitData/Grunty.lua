@@ -19,14 +19,14 @@ DefineClass.Grunty = {
 	Portrait = "UI/MercsPortraits/Grunty",
 	BigPortrait = "UI/Mercs/Grunty",
 	IsMercenary = true,
-	Name = T(509794901102, --[[ModItemUnitDataCompositeDef Grunty Name]] 'Гельмут Грунтер «Хряп»'),
-	Nick = T(844792410600, --[[ModItemUnitDataCompositeDef Grunty Nick]] "Хряп"),
-	AllCapsNick = T(878015981670, --[[ModItemUnitDataCompositeDef Grunty AllCapsNick]] "ХРЯП "),
-	Bio = T(805883834301, --[[ModItemUnitDataCompositeDef Grunty Bio]] "Боец, стремительно взлетающий к вершинам карьеры наёмника, Хряп пользуется большой популярностью среди клиентов A.I.M. Гельмут - отличный солдат с умеренными денежными запросами, а дружелюбная матера общения и оптимизм делают его прекрасным товарищем по команде. Хряп - универсал, умеющий отлично обращаться с тяжелым оружием, так что едва ли найдётся тактическая задача, из которой он не вышел бы с победой."),
+	Name = T(509794901102, --[[ModItemUnitDataCompositeDef Grunty Name]] 'Helmut "Grunty" Grunther'),
+	Nick = T(844792410600, --[[ModItemUnitDataCompositeDef Grunty Nick]] "Grunty"),
+	AllCapsNick = T(878015981670, --[[ModItemUnitDataCompositeDef Grunty AllCapsNick]] "GRUNTY"),
+	Bio = T(805883834301, --[[ModItemUnitDataCompositeDef Grunty Bio]] "A mercenary rapidly approaching his prime, Grunty has become one of A.I.M.'s most popular members. A solid soldier at a reasonable price, Helmut's congeniality and positive attitude make him a joy to work with. A versatile merc that is also skilled with heavy weapons, there are few tactical situations for which he is unprepared."),
 	Nationality = "Germany",
 	Title = T(559710714576, --[[ModItemUnitDataCompositeDef Grunty Title]] "The Irrationally Exuberant Merc"),
 	Email = T(930964299879, --[[ModItemUnitDataCompositeDef Grunty Email]] "mutti_liebling@aim.com"),
-	snype_nick = T(511404631540, --[[ModItemUnitDataCompositeDef Grunty snype_nick]] "mamin_lubimez"),
+	snype_nick = T(511404631540, --[[ModItemUnitDataCompositeDef Grunty snype_nick]] "mutti_liebling"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

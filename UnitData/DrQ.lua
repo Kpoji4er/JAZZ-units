@@ -18,14 +18,14 @@ DefineClass.DrQ = {
 	Portrait = "UI/MercsPortraits/DrQ",
 	BigPortrait = "UI/Mercs/DrQ",
 	IsMercenary = true,
-	Name = T(231173544601, --[[ModItemUnitDataCompositeDef DrQ Name]] "Доктор Кью Хуаонг"),
-	Nick = T(293945362464, --[[ModItemUnitDataCompositeDef DrQ Nick]] "Кью"),
-	AllCapsNick = T(562036496158, --[[ModItemUnitDataCompositeDef DrQ AllCapsNick]] "КЬЮ"),
-	Bio = T(527433658116, --[[ModItemUnitDataCompositeDef DrQ Bio]] "Рассказывают, что однажды, приехав в некую страну на семинар по иглоукалыванию, доктор Кью умудрился не только прочитать там лекцию, но и тем же вечером применить свои навыки ночных операций вкупе с познаниями в боевых искусствах. Пробравшись в расположенный неподалёку лагерь местного наркобарона, он нейтрализовал охранников, стороживших захваченный груз медикаментов, и доставил его в ближайшую больницу. Поговаривают даже, что он отказался брать плату за свои услуги, хотя сам доктор это отрицает."),
+	Name = T(231173544601, --[[ModItemUnitDataCompositeDef DrQ Name]] "Dr. Q. Huaong"),
+	Nick = T(293945362464, --[[ModItemUnitDataCompositeDef DrQ Nick]] "Dr. Q"),
+	AllCapsNick = T(562036496158, --[[ModItemUnitDataCompositeDef DrQ AllCapsNick]] "DR. Q"),
+	Bio = T(527433658116, --[[ModItemUnitDataCompositeDef DrQ Bio]] "While attending a seminar on acupuncture where he served as guest lecturer, Dr. Q had the opportunity to use his skills in night operations and martial arts to infiltrate the compound of a nearby drug lord to liberate a hoard of medical supplies and deliver them to a local hospital. It is rumored he waived his usual fee for such services, but Huaong denies it."),
 	Nationality = "China",
 	Title = T(727721975643, --[[ModItemUnitDataCompositeDef DrQ Title]] "Expert in Aggressive Acupuncture"),
 	Email = T(970559294874, --[[ModItemUnitDataCompositeDef DrQ Email]] "sage_q@aim.com"),
-	snype_nick = T(893736356942, --[[ModItemUnitDataCompositeDef DrQ snype_nick]] "doctor_q"),
+	snype_nick = T(893736356942, --[[ModItemUnitDataCompositeDef DrQ snype_nick]] "sage_q"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

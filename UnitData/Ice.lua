@@ -19,14 +19,14 @@ DefineClass.Ice = {
 	Portrait = "UI/MercsPortraits/Ice",
 	BigPortrait = "UI/Mercs/Ice",
 	IsMercenary = true,
-	Name = T(487023376427, --[[ModItemUnitDataCompositeDef Ice Name]] "Айс Уильямс"),
-	Nick = T(176437286252, --[[ModItemUnitDataCompositeDef Ice Nick]] "Айс"),
-	AllCapsNick = T(117433013766, --[[ModItemUnitDataCompositeDef Ice AllCapsNick]] "АЙС"),
-	Bio = T(207628950939, --[[ModItemUnitDataCompositeDef Ice Bio]] "Один из наиболее востребованных наёмников в A.I.M., Айс пользуется популярностью как у новых, так и у постоянных клиентов благодаря своей ненавязчивой, дружеской манере общения. Хотя Уильямс с лёгкостью обращается и со снайперским оружием, его излюбленный режим стрельбы - старая добрая очередь из автомата, и он с готовностью делится с коллегами практическими советами, как лучше контролировать увод ствола в сторону."),
+	Name = T(487023376427, --[[ModItemUnitDataCompositeDef Ice Name]] "Ice Williams"),
+	Nick = T(176437286252, --[[ModItemUnitDataCompositeDef Ice Nick]] "Ice"),
+	AllCapsNick = T(117433013766, --[[ModItemUnitDataCompositeDef Ice AllCapsNick]] "ICE"),
+	Bio = T(207628950939, --[[ModItemUnitDataCompositeDef Ice Bio]] "One of A.I.M.'s most popular mercs among both new and frequent clients, Ice's smooth and friendly demeanor makes him highly sought after. Although an expert marksman with a sniper rifle, nothing gives Ice greater joy than going full auto. He can often be found teaching other mercs how to control muzzle climb during sustained bursts."),
 	Nationality = "USA",
 	Title = T(634721638536, --[[ModItemUnitDataCompositeDef Ice Title]] "Ice is in da House"),
 	Email = T(234986731479, --[[ModItemUnitDataCompositeDef Ice Email]] "ice_cold@aim.com"),
-	snype_nick = T(680935424578, --[[ModItemUnitDataCompositeDef Ice snype_nick]] "ice"),
+	snype_nick = T(680935424578, --[[ModItemUnitDataCompositeDef Ice snype_nick]] "ice_cold"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

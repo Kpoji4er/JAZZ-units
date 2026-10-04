@@ -19,14 +19,14 @@ DefineClass.Reaper = {
 	Portrait = "UI/MercsPortraits/Reaper",
 	BigPortrait = "UI/Mercs/Reaper",
 	IsMercenary = true,
-	Name = T(418504386182, --[[ModItemUnitDataCompositeDef Reaper Name]] 'Карл Шеппардс «Жнец»'),
-	Nick = T(728059446658, --[[ModItemUnitDataCompositeDef Reaper Nick]] "Жнец"),
-	AllCapsNick = T(554704973917, --[[ModItemUnitDataCompositeDef Reaper AllCapsNick]] "ЖНЕЦ"),
-	Bio = T(344912752793, --[[ModItemUnitDataCompositeDef Reaper Bio]] "Как человек, свыкшийся с мыслью, что смерть - неотъемлемая часть жизни (или, по крайней мере, смерть врага - часть твоей жизни), Жнец - идеальный киллер. Навыки бесшумного перемещения и вскрытия замков помогают ему незаметно подкрадываться к цели, а леденящая кровь невозмутимость - с легкостью ее устранять. Шеппардс редко промахивается, но даже если и промахнулся, никогда не теряет голову и вторым выстрелом исправляет ситуацию. В настоящий момент Карл как раз закончил выслеживать парочку особо неуловимых международных террористов и готов к новым заданиям."),
+	Name = T(418504386182, --[[ModItemUnitDataCompositeDef Reaper Name]] 'Carl "Reaper" Sheppards'),
+	Nick = T(728059446658, --[[ModItemUnitDataCompositeDef Reaper Nick]] "Reaper"),
+	AllCapsNick = T(554704973917, --[[ModItemUnitDataCompositeDef Reaper AllCapsNick]] "REAPER"),
+	Bio = T(344912752793, --[[ModItemUnitDataCompositeDef Reaper Bio]] "A man who has accepted that death is a part of life - or at least that other people's deaths are a part of his life - Reaper is the perfect assassin. His skills at stealthy movement and lock picking make it easy for him to reach his prey and his chillingly calm demeanor makes it even easier for him to eliminate them. He rarely misses and even when he does, he has the steely determination to make sure the next shot does not. Carl just finished an assignment hunting down a few especially slippery international terrorists and is ready for a new assignment."),
 	Nationality = "USA",
 	Title = T(272376216454, --[[ModItemUnitDataCompositeDef Reaper Title]] "Harbinger of Death"),
 	Email = T(426580911623, --[[ModItemUnitDataCompositeDef Reaper Email]] "reaperofsouls@aim.com"),
-	snype_nick = T(458369100789, --[[ModItemUnitDataCompositeDef Reaper snype_nick]] "smert'"),
+	snype_nick = T(458369100789, --[[ModItemUnitDataCompositeDef Reaper snype_nick]] "reaperofsouls"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
