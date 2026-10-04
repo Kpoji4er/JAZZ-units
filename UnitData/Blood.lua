@@ -19,14 +19,14 @@ DefineClass.Blood = {
 	Portrait = "UI/MercsPortraits/Blood",
 	BigPortrait = "UI/Mercs/Blood",
 	IsMercenary = true,
-	Name = T(341095663210, --[[ModItemUnitDataCompositeDef Blood Name]] 'Keith "Blood" Hanson'),
-	Nick = T(697027342093, --[[ModItemUnitDataCompositeDef Blood Nick]] "Blood"),
-	AllCapsNick = T(941246151451, --[[ModItemUnitDataCompositeDef Blood AllCapsNick]] "BLOOD"),
-	Bio = T(879797808599, --[[ModItemUnitDataCompositeDef Blood Bio]] "Don't let Blood's genial disposition fool you. He knows thirty different ways to kill a person using just his hands, although his preference is by doing it with a skillfully thrown knife. A former member of the ANC, nothing gives Keith more pleasure than helping a downtrodden people overthrow their oppressors, preferably by using exceptionally violent methods."),
+	Name = T(341095663210, --[[ModItemUnitDataCompositeDef Blood Name]] 'Кит Гансон «Блад»'),
+	Nick = T(697027342093, --[[ModItemUnitDataCompositeDef Blood Nick]] "Блад"),
+	AllCapsNick = T(941246151451, --[[ModItemUnitDataCompositeDef Blood AllCapsNick]] "БЛАД"),
+	Bio = T(879797808599, --[[ModItemUnitDataCompositeDef Blood Bio]] "Не обманывайтесь дружелюбием Блада: этот боец знает тридцать способов, как убить человека одними только голыми руками (хотя сам предпочитает делать это метательными ножами). Как бывший член Африканского национального конгресса, Кит пристрастен к тиранам и эксплуататорам - и обычно выражает своё отношение к ним исключительными по своей агрессивности методами."),
 	Nationality = "SouthAfrica",
 	Title = T(656795996276, --[[ModItemUnitDataCompositeDef Blood Title]] "There Will Be Blood"),
 	Email = T(672490755828, --[[ModItemUnitDataCompositeDef Blood Email]] "soulfood_warrior@aim.com"),
-	snype_nick = T(240898156196, --[[ModItemUnitDataCompositeDef Blood snype_nick]] "soulfood_warrior"),
+	snype_nick = T(240898156196, --[[ModItemUnitDataCompositeDef Blood snype_nick]] "gurman"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

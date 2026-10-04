@@ -19,14 +19,14 @@ DefineClass.Scope = {
 	Portrait = "UI/MercsPortraits/Scope",
 	BigPortrait = "UI/Mercs/Scope",
 	IsMercenary = true,
-	Name = T(630357922162, --[[ModItemUnitDataCompositeDef Scope Name]] 'Sheila "Scope" Sterling'),
-	Nick = T(616337703669, --[[ModItemUnitDataCompositeDef Scope Nick]] "Scope"),
-	AllCapsNick = T(947910685503, --[[ModItemUnitDataCompositeDef Scope AllCapsNick]] "SCOPE"),
-	Bio = T(706856939539, --[[ModItemUnitDataCompositeDef Scope Bio]] "Formerly with the British SAS, nobody gets into position quicker and makes the kill shot better than Scope. She once recorded six confirmed kills in one night-raid on an enemy military base, moving so quickly between buildings in the dark that the opposition thought they were being attacked on all sides. A consummate professional, Scope is also generous with passing on to other mercs her various tips and tricks."),
+	Name = T(630357922162, --[[ModItemUnitDataCompositeDef Scope Name]] 'Шейла Стерлинг «Стрелка»'),
+	Nick = T(616337703669, --[[ModItemUnitDataCompositeDef Scope Nick]] "Стрелка"),
+	AllCapsNick = T(947910685503, --[[ModItemUnitDataCompositeDef Scope AllCapsNick]] "СТРЕЛКА"),
+	Bio = T(706856939539, --[[ModItemUnitDataCompositeDef Scope Bio]] "В прошлом снайпер британской «Спешиэл Эйр Сервис», Стрелка умеет стремительно выйти на огневую позицию и сделать выстрел точно в цель. Во время одного ночного рейда на вражескую военную базу Стерлинг поразила шесть подтверждённых целей, перемещаясь между зданиями так быстро, что противник решил, будто его окружили. Профессионал высшего класса, она при этом не брезгует делиться с товарищами практическими советами."),
 	Nationality = "England",
 	Title = T(125612851314, --[[ModItemUnitDataCompositeDef Scope Title]] "Guardian Mother of the Battlefield"),
 	Email = T(792449207788, --[[ModItemUnitDataCompositeDef Scope Email]] "scopeandbiscuits@aim.com"),
-	snype_nick = T(110116698394, --[[ModItemUnitDataCompositeDef Scope snype_nick]] "scopeandbiscuits"),
+	snype_nick = T(110116698394, --[[ModItemUnitDataCompositeDef Scope snype_nick]] "prizel_i_pechenje"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

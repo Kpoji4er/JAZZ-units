@@ -6,13 +6,13 @@ DefineClass.Jazz_Cougar = {
 
 
 	object_class = "UnitData",
-	Health = 85,
-	Agility = 88,
-	Dexterity = 80,
-	Strength = 80,
+	Health = 88,
+	Agility = 83,
+	Dexterity = 79,
+	Strength = 87,
 	Wisdom = 70,
-	Will = 70,
-	Leadership = 30,
+	Will = 45,
+	Leadership = 31,
 	Marksmanship = 93,
 	Mechanical = 58,
 	Explosives = 45,
@@ -20,10 +20,10 @@ DefineClass.Jazz_Cougar = {
 	Portrait = "Mod/Dv3mFVN/MercPortraits/Cougar.png",
 	BigPortrait = "Mod/Dv3mFVN/MercPortraits/Cougar_Big.png",
 	IsMercenary = true,
-	Name = T(890000000003102, --[[ModItemUnitDataCompositeDef Jazz_Cougar Name]] "Джим «Пума» Уоллесс"),
+	Name = T(890000000003102, --[[ModItemUnitDataCompositeDef Jazz_Cougar Name]] "Джим Уоллесс «Пума»"),
 	Nick = T(890000000003103, --[[ModItemUnitDataCompositeDef Jazz_Cougar Nick]] "Пума"),
 	AllCapsNick = T(890000000003104, --[[ModItemUnitDataCompositeDef Jazz_Cougar AllCapsNick]] "ПУМА"),
-	Bio = T(890000000003105, --[[ModItemUnitDataCompositeDef Jazz_Cougar Bio]] "Статы 80–88, Marksmanship 93, Mechanical 58, Explosives 45, Medical 33. Мастер бесшумного автоогня — умеет подойти вплотную и снять цель раньше, чем она поймёт, что рядом кто-то есть. Дружит с Вульфом и Леном."),
+	Bio = T(890000000003105, --[[ModItemUnitDataCompositeDef Jazz_Cougar Bio]] "Один из немногих кадетов, которые получили оценку 'отлично' на всех выпускных экзаменах. Следует учесть, правда, что экзаменационная программа была составлена его отцом. Отлично владеет всем спектром военных навыков, особенно хорошо управляется с автоматическим оружием. Джим настоящий профессионал, возможно, лучший наемник в M.E.R.C."),
 	Nationality = "USA",
 	Title = T(890000000003106, --[[ModItemUnitDataCompositeDef Jazz_Cougar Title]] "Тихий автоматчик"),
 	Email = T(890000000003107, --[[ModItemUnitDataCompositeDef Jazz_Cougar Email]] "Cougar@merc.com"),
@@ -131,7 +131,7 @@ DefineClass.Jazz_Cougar = {
 	SalaryIncrease = 200,
 	SalaryLv1 = 700,
 	SalaryMaxLv = 4000,
-	StartingLevel = 4,
+	StartingLevel = 5,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 		self:TryEquip(items, "Handheld B", "Firearm")

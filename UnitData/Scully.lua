@@ -19,14 +19,14 @@ DefineClass.Scully = {
 	Portrait = "UI/MercsPortraits/Scully",
 	BigPortrait = "UI/Mercs/Scully",
 	IsMercenary = true,
-	Name = T(357879375429, --[[ModItemUnitDataCompositeDef Scully Name]] "Robert James Sullivan"),
-	Nick = T(639079993068, --[[ModItemUnitDataCompositeDef Scully Nick]] "Scully"),
-	AllCapsNick = T(250215016589, --[[ModItemUnitDataCompositeDef Scully AllCapsNick]] "SCULLY"),
-	Bio = T(953273652898, --[[ModItemUnitDataCompositeDef Scully Bio]] "Although he hails from the British Isles, considerable time spent catching waves down under has made Scully all but indistinguishable from an Aussie. Many mercs consider him to be perhaps the best soldier in A.I.M.'s ranks, although his friendly disposition no doubt contributes to his popularity. Regardless, there is very little this man can't do and do well. He excels at knife fighting but can reliably work with firearms and explosives as well as toolboxes and med kits."),
+	Name = T(357879375429, --[[ModItemUnitDataCompositeDef Scully Name]] "Роберт Джеймс Салливан"),
+	Nick = T(639079993068, --[[ModItemUnitDataCompositeDef Scully Nick]] "Лысый"),
+	AllCapsNick = T(250215016589, --[[ModItemUnitDataCompositeDef Scully AllCapsNick]] "ЛЫСЫЙ"),
+	Bio = T(953273652898, --[[ModItemUnitDataCompositeDef Scully Bio]] "Хотя Салливан и родился в Англии, годы, проведённые им за катанием по волнам у берегов Австралии, сделали его неотличимым от урождённых жителей этой страны. Многие бойцы считают Лысого едва ли не лучшим наёмником A.I.M. - наверняка отчасти благодаря его врождённому дружелюбию. Как бы там ни было, трудно найти такое задание, с которым он не справился бы на ура. Салливан превосходно работает холодным оружием, но уверенно обращается и с огнестрельным и взрывчаткой, а также инструментами и аптечкой."),
 	Nationality = "England",
 	Title = T(167544469426, --[[ModItemUnitDataCompositeDef Scully Title]] "Unchained Virility"),
 	Email = T(681435230668, --[[ModItemUnitDataCompositeDef Scully Email]] "surfercad@aim.com"),
-	snype_nick = T(160407166740, --[[ModItemUnitDataCompositeDef Scully snype_nick]] "surfercad"),
+	snype_nick = T(160407166740, --[[ModItemUnitDataCompositeDef Scully snype_nick]] "surfer"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

@@ -19,14 +19,14 @@ DefineClass.Sidney = {
 	Portrait = "UI/MercsPortraits/SidneyN",
 	BigPortrait = "UI/Mercs/SidneyN",
 	IsMercenary = true,
-	Name = T(841570945724, --[[ModItemUnitDataCompositeDef Sidney Name]] "Sidney Nettleson"),
-	Nick = T(753322319118, --[[ModItemUnitDataCompositeDef Sidney Nick]] "Sidney"),
-	AllCapsNick = T(897461283861, --[[ModItemUnitDataCompositeDef Sidney AllCapsNick]] "SIDNEY"),
-	Bio = T(199288355089, --[[ModItemUnitDataCompositeDef Sidney Bio]] "The unflappable Sidney Nettleson can most often be found at the nearest bridge club, taking tricks and trading quips with the city's upper crust. That is, of course, unless he is working - in which case you can find him stoically staring down a hail of bullets while coolly dispatching his foes with throwing knives, grenades or any firearm within reach. Afterwards, over tea, he'll be happy to tell you exactly how he did it: with aplomb and a stiff upper lip, naturally."),
+	Name = T(841570945724, --[[ModItemUnitDataCompositeDef Sidney Name]] "Сидней Нетельсон"),
+	Nick = T(753322319118, --[[ModItemUnitDataCompositeDef Sidney Nick]] "Сидней"),
+	AllCapsNick = T(897461283861, --[[ModItemUnitDataCompositeDef Sidney AllCapsNick]] "СИДНЕЙ"),
+	Bio = T(199288355089, --[[ModItemUnitDataCompositeDef Sidney Bio]] "Невозмутимого Сиднея Нетельсона чаще всего можно найти в ближайшем бридж-клубе играющим в карты и непринуждённо болтающим со сливками местного общества. Разумеется, всё это справедливо лишь для тех моментов, когда он не на задании - в этом случае он обыкновенно хладнокровно стоит под градом пуль, методично прореживая ряды противников метательными ножами, гранатами или любым подвернувшимся под руку огнестрельным оружием. После, за чашкой чая, он с удовольствием расскажет вам, как именно он всё это делал - разумеется, с неизменной английской импозантностью и сдержанностью."),
 	Nationality = "England",
 	Title = T(887910706417, --[[ModItemUnitDataCompositeDef Sidney Title]] "Her Majesty's Humble Servant"),
 	Email = T(148356789359, --[[ModItemUnitDataCompositeDef Sidney Email]] "fancy_chap@aim.com"),
-	snype_nick = T(509119494377, --[[ModItemUnitDataCompositeDef Sidney snype_nick]] "fancy_chap"),
+	snype_nick = T(509119494377, --[[ModItemUnitDataCompositeDef Sidney snype_nick]] "nettleson"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

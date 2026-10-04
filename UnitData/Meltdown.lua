@@ -19,14 +19,14 @@ DefineClass.Meltdown = {
 	Portrait = "Mod/Dv3mFVN/MercPortraits/Meltdown.png",
 	BigPortrait = "Mod/Dv3mFVN/MercPortraits/Meltdown_Big.png",
 	IsMercenary = true,
-	Name = T(627005316845, --[[ModItemUnitDataCompositeDef Meltdown Name]] 'Norma "Meltdown" Jessop'),
-	Nick = T(801416212893, --[[ModItemUnitDataCompositeDef Meltdown Nick]] "Meltdown"),
-	AllCapsNick = T(518123328833, --[[ModItemUnitDataCompositeDef Meltdown AllCapsNick]] "MELTDOWN"),
-	Bio = T(973893751536, --[[ModItemUnitDataCompositeDef Meltdown Bio]] "As fierce as she is profane, Norma Jessop is a woman not to be taken lightly. Always ready and eager for a fight, Meltdown revels in killing her enemies in the bloodiest and most explosive way imaginable. Although ambidextrous and often seen with a pistol in each hand, her preference is for heavy weapons. As she likes to say, 'if there isn't at least a little collateral damage, you didn't do it right'. Property insurers refuse to pay out any claims in locations Norma recently visited."),
+	Name = T(627005316845, --[[ModItemUnitDataCompositeDef Meltdown Name]] 'Норма Джессоп «Лава»'),
+	Nick = T(801416212893, --[[ModItemUnitDataCompositeDef Meltdown Nick]] "Лава"),
+	AllCapsNick = T(518123328833, --[[ModItemUnitDataCompositeDef Meltdown AllCapsNick]] "ЛАВА"),
+	Bio = T(973893751536, --[[ModItemUnitDataCompositeDef Meltdown Bio]] "Норма Джессоп - женщина, шутки с которой плохи. С одинаковой готовностью поливая противников матом и свинцом, Лава обожает, когда от врага остаются лишь брызги крови и висящие по кустам кишки. Хотя она в совершенстве владеет стрельбой из пистолетов по-македонски, больше всего ей по нраву тяжёлые пушки. Как она сама любит выражаться, «Не было случайных пострадавших - деньги на ветер». В местах, недавно посещённых Нормой, страховые компании отказывают пострадавшим в выплатах."),
 	Nationality = "USA",
 	Title = T(771770749853, --[[ModItemUnitDataCompositeDef Meltdown Title]] "Goddamned Role Model"),
 	Email = T(337960420959, --[[ModItemUnitDataCompositeDef Meltdown Email]] "trailerqueen69@aim.com"),
-	snype_nick = T(672285437236, --[[ModItemUnitDataCompositeDef Meltdown snype_nick]] "trailerqueen69"),
+	snype_nick = T(672285437236, --[[ModItemUnitDataCompositeDef Meltdown snype_nick]] "lava69"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

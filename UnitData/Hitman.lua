@@ -19,14 +19,14 @@ DefineClass.Hitman = {
 	Portrait = "UI/MercsPortraits/Hitman",
 	BigPortrait = "UI/Mercs/Hitman",
 	IsMercenary = true,
-	Name = T(799859181071, --[[ModItemUnitDataCompositeDef Hitman Name]] 'Frank "Hitman" Hennessy'),
-	Nick = T(946077284416, --[[ModItemUnitDataCompositeDef Hitman Nick]] "Hitman"),
-	AllCapsNick = T(734624158090, --[[ModItemUnitDataCompositeDef Hitman AllCapsNick]] "HITMAN"),
-	Bio = T(649246167400, --[[ModItemUnitDataCompositeDef Hitman Bio]] 'After spending the last couple of years fighting his own Battle of the Bulge, Frank has begrudgingly admitted that he is afflicted with "Dad Bod", although as far as A.I.M. knows he has no children nor even a wife. Still, he remains one of A.I.M.\'s best marksmen and his throwing arm is as strong as ever. On top of that, his affable manner serves him well when teaching and training others in the field. A valuable, if slightly oversized, addition to any team.'),
+	Name = T(799859181071, --[[ModItemUnitDataCompositeDef Hitman Name]] 'Фрэнк Хеннеси «Стрелок»'),
+	Nick = T(946077284416, --[[ModItemUnitDataCompositeDef Hitman Nick]] "Стрелок"),
+	AllCapsNick = T(734624158090, --[[ModItemUnitDataCompositeDef Hitman AllCapsNick]] "СТРЕЛОК"),
+	Bio = T(649246167400, --[[ModItemUnitDataCompositeDef Hitman Bio]] 'Проведя последние несколько лет в безуспешных попытках сбросить лишний вес, Фрэнк вынужден был признать, что стал очередным обладателем пивного животика (несмотря на то, что все в A.I.M. знают его как любителя женского пола, а не пива). Тем не менее, Хеннеси остаётся одним из лучших мастеров обращения с огнестрельным оружием и метательными ножами, а обходительные манеры делают из него превосходного инструктора. «Стрелок» - весомое во всех смыслах добавление к любой команде.'),
 	Nationality = "USA",
 	Title = T(831408309409, --[[ModItemUnitDataCompositeDef Hitman Title]] "The Affable Assassin"),
 	Email = T(626379380637, --[[ModItemUnitDataCompositeDef Hitman Email]] "hitman@aim.com"),
-	snype_nick = T(645661687272, --[[ModItemUnitDataCompositeDef Hitman snype_nick]] "hitman"),
+	snype_nick = T(645661687272, --[[ModItemUnitDataCompositeDef Hitman snype_nick]] "strelok"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

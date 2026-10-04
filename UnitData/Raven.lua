@@ -19,14 +19,14 @@ DefineClass.Raven = {
 	Portrait = "UI/MercsPortraits/Raven",
 	BigPortrait = "UI/Mercs/Raven",
 	IsMercenary = true,
-	Name = T(861196503875, --[[ModItemUnitDataCompositeDef Raven Name]] 'Charlene "Raven" Higgens'),
-	Nick = T(273069265497, --[[ModItemUnitDataCompositeDef Raven Nick]] "Raven"),
-	AllCapsNick = T(830280514307, --[[ModItemUnitDataCompositeDef Raven AllCapsNick]] "RAVEN"),
-	Bio = T(615837234228, --[[ModItemUnitDataCompositeDef Raven Bio]] "While husband Ron and others kept Somali pirates attempting to board their cruise ship pinned down, Raven used the cover of night to systematically kill one after another using controlled bursts from a captured automatic rifle. A formidable markswoman with nerves of steel, Raven prefers to work alongside her husband but is an asset to any team that is looking to maintain a high standard of excellence and esprit de corps."),
+	Name = T(861196503875, --[[ModItemUnitDataCompositeDef Raven Name]] 'Шарлен Хиггенс «Сова»'),
+	Nick = T(273069265497, --[[ModItemUnitDataCompositeDef Raven Nick]] "Сова"),
+	AllCapsNick = T(830280514307, --[[ModItemUnitDataCompositeDef Raven AllCapsNick]] "СОВА"),
+	Bio = T(615837234228, --[[ModItemUnitDataCompositeDef Raven Bio]] "Пока её муж Рон с помощниками отбивали попытки сомалийских пиратов взять их лайнер на абордаж, «Сова» использовала прикрытие ночи, одного за другим снимая нападающих чёткими короткими очередями из трофейного автомата. Шарлен - опытный снайпер с железной выдержкой и предпочитает сражаться бок о бок с мужем, но превосходно справится с поставленным заданием и самостоятельно. В команде она всегда старается поддерживать высокие профессиональные стандарты и дух товарищества."),
 	Nationality = "USA",
 	Title = T(374351690992, --[[ModItemUnitDataCompositeDef Raven Title]] "Never More Badass"),
 	Email = T(215342188748, --[[ModItemUnitDataCompositeDef Raven Email]] "nevermore@aim.com"),
-	snype_nick = T(838938896346, --[[ModItemUnitDataCompositeDef Raven snype_nick]] "nevermore"),
+	snype_nick = T(838938896346, --[[ModItemUnitDataCompositeDef Raven snype_nick]] "sova"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

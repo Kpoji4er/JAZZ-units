@@ -5,28 +5,28 @@ DefineClass.Jazz_Gamos = {
 
 
 	object_class = "UnitData",
-	Health = 65,
-	Agility = 70,
-	Dexterity = 65,
-	Strength = 65,
+	Health = 68,
+	Agility = 68,
+	Dexterity = 66,
+	Strength = 69,
 	Wisdom = 35,
-	Will = 55,
-	Leadership = 20,
+	Will = 33,
+	Leadership = 5,
 	Marksmanship = 78,
-	Mechanical = 15,
-	Explosives = 10,
-	Medical = 15,
+	Mechanical = 19,
+	Explosives = 1,
+	Medical = 1,
 	Portrait = "Mod/Dv3mFVN/MercPortraits/Gamos.png",
 	BigPortrait = "Mod/Dv3mFVN/MercPortraits/Gamos_Big.png",
 	IsMercenary = true,
 	Name = T(890000000003302, --[[ModItemUnitDataCompositeDef Jazz_Gamos Name]] "Гамос"),
 	Nick = T(890000000003303, --[[ModItemUnitDataCompositeDef Jazz_Gamos Nick]] "Гамос"),
 	AllCapsNick = T(890000000003304, --[[ModItemUnitDataCompositeDef Jazz_Gamos AllCapsNick]] "ГАМОС"),
-	Bio = T(890000000003305, --[[ModItemUnitDataCompositeDef Jazz_Gamos Bio]] "Статы 60–70, Wisdom 35, Marksmanship 78. Простой и дружелюбный местный проводник, исходивший джунгли Арулько вдоль и поперёк. Нейтрален к остальному отряду, дёшев в найме."),
+	Bio = T(890000000003305, --[[ModItemUnitDataCompositeDef Jazz_Gamos Bio]] "Гамос - скромный абориген острова Метавира, которого судьба постоянно сводит с наемниками AIM. Сначала он помогал наемникам в качестве проводника на самой Метавире, потом даже немного поработал наемником в операциях Гаса Тарболса против концерна DFK, после чего, неизвестно как, постречался Организации в ходе кризиса в Арулько за рулем угнанного фургончика. Так или иначе, этот миляга снова решил поработать на AIM и посмотреть мир, и мы не смогли ему в этой малости отказать."),
 	Nationality = "Metavira",
 	Title = T(890000000003306, --[[ModItemUnitDataCompositeDef Jazz_Gamos Title]] "Я много путешествовать"),
 	Email = T(890000000003307, --[[ModItemUnitDataCompositeDef Jazz_Gamos Email]] "Gamos@arulco.reb"),
-	snype_nick = T(890000000003308, --[[ModItemUnitDataCompositeDef Jazz_Gamos snype_nick]] "travelmuch"),
+	snype_nick = T(890000000003308, --[[ModItemUnitDataCompositeDef Jazz_Gamos snype_nick]] "Gamos"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
@@ -96,7 +96,7 @@ DefineClass.Jazz_Gamos = {
 	SalaryIncrease = 200,
 	SalaryLv1 = 100,
 	SalaryMaxLv = 1000,
-	StartingLevel = 3,
+	StartingLevel = 2,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 	end,

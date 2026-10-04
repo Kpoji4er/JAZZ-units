@@ -19,14 +19,14 @@ DefineClass.Shadow = {
 	Portrait = "UI/MercsPortraits/Shadow",
 	BigPortrait = "UI/Mercs/Shadow",
 	IsMercenary = true,
-	Name = T(760643490639, --[[ModItemUnitDataCompositeDef Shadow Name]] 'Kyle "Shadow" Simmons'),
-	Nick = T(716325832691, --[[ModItemUnitDataCompositeDef Shadow Nick]] "Shadow"),
-	AllCapsNick = T(409225247825, --[[ModItemUnitDataCompositeDef Shadow AllCapsNick]] "SHADOW"),
-	Bio = T(501671952366, --[[ModItemUnitDataCompositeDef Shadow Bio]] "Practically the American mirror image of Scope, A.I.M.'s top sharpshooter, Shadow, excels at moving swiftly across the battlefield to set up for a perfect kill shot. But where Scope is friendly and trained in urban combat, Shadow is a quiet loner who prefers to use the great outdoors as his battlefield. His skill in using stealth and camouflage to hide from his target until the time is right for a lethal strike makes him worth every penny. Kyle has recently finished a three-week training program called 'Cleft and Chasm: The Art of Declivity Impersonation' and is ready for assignment."),
+	Name = T(760643490639, --[[ModItemUnitDataCompositeDef Shadow Name]] 'Кайл Симмонс «Тень»'),
+	Nick = T(716325832691, --[[ModItemUnitDataCompositeDef Shadow Nick]] "Тень"),
+	AllCapsNick = T(409225247825, --[[ModItemUnitDataCompositeDef Shadow AllCapsNick]] "ТЕНЬ"),
+	Bio = T(501671952366, --[[ModItemUnitDataCompositeDef Shadow Bio]] "Симмонса можно назвать американской копией Стрелки: он в совершенстве умеет незаметно пересечь поле боя, чтобы сделать выстрел с идеальной позиции. Но если Стрелка специализируется на бое в городских условиях, Тень - неразговорчивый одиночка, предпочитающий в качестве поля боя леса и болота. То, с каким мастерством он маскируется, незаметно поджидая жертву, стоит запрашиваемого им гонорара. Кайл недавно прошёл трёхнедельный курс подготовки под названием «Щель и пропасть: искусство маскировки под естественные впадины» и готов к новым заданиям."),
 	Nationality = "USA",
 	Title = T(449003441115, --[[ModItemUnitDataCompositeDef Shadow Title]] "Can't Kill What You Can't See"),
 	Email = T(642342715921, --[[ModItemUnitDataCompositeDef Shadow Email]] "shadow@aim.com"),
-	snype_nick = T(790007421865, --[[ModItemUnitDataCompositeDef Shadow snype_nick]] "shadow"),
+	snype_nick = T(790007421865, --[[ModItemUnitDataCompositeDef Shadow snype_nick]] "ten'"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

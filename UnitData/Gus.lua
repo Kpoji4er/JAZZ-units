@@ -19,15 +19,15 @@ DefineClass.Gus = {
 	Portrait = "UI/MercsPortraits/Gus",
 	BigPortrait = "UI/Mercs/Gus",
 	IsMercenary = true,
-	Name = T(427138476543, --[[ModItemUnitDataCompositeDef Gus Name]] "Gus Tarballs"),
-	Nick = T(732907985726, --[[ModItemUnitDataCompositeDef Gus Nick]] "Gus"),
-	AllCapsNick = T(980126090528, --[[ModItemUnitDataCompositeDef Gus AllCapsNick]] "GUS"),
+	Name = T(427138476543, --[[ModItemUnitDataCompositeDef Gus Name]] "Гас Тарболс"),
+	Nick = T(732907985726, --[[ModItemUnitDataCompositeDef Gus Nick]] "Гас"),
+	AllCapsNick = T(980126090528, --[[ModItemUnitDataCompositeDef Gus AllCapsNick]] "ГАС"),
 	HireStatus = "Retired",
-	Bio = T(257144197846, --[[ModItemUnitDataCompositeDef Gus Bio]] "Although offered a position as senior military advisor to the restored monarchy in Arulco, the badly limping Tarballs reportedly turned down the offer because he wasn't 'a dang paper pusher'. After spending a couple of weeks helping to train a few squads of Arulco's new army in the use of heavy weapons, he grumbled something about finding himself a new leg and disappeared into the hinterland. As of this moment, he is still on A.I.M.'s active duty roster, but he hasn't checked his voicemail in months."),
+	Bio = T(257144197846, --[[ModItemUnitDataCompositeDef Gus Bio]] "Ходят слухи, что, когда вновь избранный правитель Арулько предложил Тарболсу пост старшего военного советника, старый солдат отказался, заявив: «Я вам не штабная крыса, чёрт подери!» Он всё-таки задержался достаточно, чтобы помочь подготовить первые несколько отрядов новой армии Арулько, но в конце концов покинул страну, проворчав что-то насчёт новой ноги. На данный момент его анкета всё ещё значится в списке находящихся на активной боевой службе наёмников, однако Гас уже несколько месяцев как не отвечает на звонки."),
 	Nationality = "USA",
 	Title = T(453788960669, --[[ModItemUnitDataCompositeDef Gus Title]] "Not Cut Out for Management"),
 	Email = T(844112356581, --[[ModItemUnitDataCompositeDef Gus Email]] "morningnapalm@aim.com"),
-	snype_nick = T(568370092426, --[[ModItemUnitDataCompositeDef Gus snype_nick]] "morningnapalm"),
+	snype_nick = T(568370092426, --[[ModItemUnitDataCompositeDef Gus snype_nick]] "napalm_poutru"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

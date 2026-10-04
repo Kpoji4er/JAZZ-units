@@ -19,14 +19,14 @@ DefineClass.Igor = {
 	Portrait = "UI/MercsPortraits/Igor",
 	BigPortrait = "UI/Mercs/Igor",
 	IsMercenary = true,
-	Name = T(951021360874, --[[ModItemUnitDataCompositeDef Igor Name]] "Igor Dolvich"),
-	Nick = T(242446641011, --[[ModItemUnitDataCompositeDef Igor Nick]] "Igor"),
-	AllCapsNick = T(383779569786, --[[ModItemUnitDataCompositeDef Igor AllCapsNick]] "IGOR"),
-	Bio = T(401565007653, --[[ModItemUnitDataCompositeDef Igor Bio]] "The proud nephew of Ivan, Igor is an exceptionally talented mercenary in his own right. Although still young, Igor has managed to already garner a reputation at A.I.M. for using toughness, courage, marksmanship and stealth to get the better of his foes. Still a ways off from ever matching his uncle's exploits, Igor is eager to live up to his name. A merc to watch!"),
+	Name = T(951021360874, --[[ModItemUnitDataCompositeDef Igor Name]] "Игорь Долвич"),
+	Nick = T(242446641011, --[[ModItemUnitDataCompositeDef Igor Nick]] "Игорь"),
+	AllCapsNick = T(383779569786, --[[ModItemUnitDataCompositeDef Igor AllCapsNick]] "ИГОРЬ"),
+	Bio = T(401565007653, --[[ModItemUnitDataCompositeDef Igor Bio]] "Хоть Игорь и гордится тем, что он - племянник самого Ивана Долвича, он по праву может похвалиться и собственными достижениями. Молодой, но исключительно талантливый наёмник, он уже завоевал уважение коллег своей выносливостью, отвагой, меткостью и способностью незаметно подкрадываться к противнику. Тем не менее, до своего легендарного дяди ему ещё расти и расти, и Игорь исполнен решимости преумножить славу семьи Долвичей. Крайне перспективный боец!"),
 	Nationality = "Russia",
 	Title = T(753598137188, --[[ModItemUnitDataCompositeDef Igor Title]] "Most Meritorious Merc"),
 	Email = T(673794011457, --[[ModItemUnitDataCompositeDef Igor Email]] "igorisgreatmerc@aim.com"),
-	snype_nick = T(951768641593, --[[ModItemUnitDataCompositeDef Igor snype_nick]] "igorisgreatmerc"),
+	snype_nick = T(951768641593, --[[ModItemUnitDataCompositeDef Igor snype_nick]] "super_igor"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

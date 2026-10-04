@@ -19,14 +19,14 @@ DefineClass.Fidel = {
 	Portrait = "UI/MercsPortraits/Fidel",
 	BigPortrait = "UI/Mercs/Fidel",
 	IsMercenary = true,
-	Name = T(118909675158, --[[ModItemUnitDataCompositeDef Fidel Name]] "Fidel Dahan"),
-	Nick = T(489035873223, --[[ModItemUnitDataCompositeDef Fidel Nick]] "Fidel"),
-	AllCapsNick = T(127950817003, --[[ModItemUnitDataCompositeDef Fidel AllCapsNick]] "FIDEL"),
-	Bio = T(888155597181, --[[ModItemUnitDataCompositeDef Fidel Bio]] "Although not officially listed as a suspect by Arulco authorities, there is little doubt at A.I.M. that Fidel blew up a video store in Alma after the proprietor refused to allow him into the back room. Thankfully, no one was hurt - a fact Fidel seems to lament - and A.I.M. has cleared him for active duty due to the high demand for his skills with explosives and firearms."),
+	Name = T(118909675158, --[[ModItemUnitDataCompositeDef Fidel Name]] "Фидель Дахан"),
+	Nick = T(489035873223, --[[ModItemUnitDataCompositeDef Fidel Nick]] "Фидель"),
+	AllCapsNick = T(127950817003, --[[ModItemUnitDataCompositeDef Fidel AllCapsNick]] "ФИДЕЛЬ"),
+	Bio = T(888155597181, --[[ModItemUnitDataCompositeDef Fidel Bio]] "Хотя власти Арулько так и не объявили его в розыск, мало кто сомневается, что именно Фидель взорвал пункт проката видеокассет в Альме после того, как владелец отказался пускать его в заднюю комнату магазинчика. По счастью, - правда, не на взгляд самого Фиделя - обошлось без жертв. Руководство A.I.M. допустило Фиделя к дальнейшей службе, так как специалисты-взрывотехники, равно хорошо владеющие и стрелковым оружием, всегда нарасхват."),
 	Nationality = "Cuba",
 	Title = T(337961143159, --[[ModItemUnitDataCompositeDef Fidel Title]] "The Continuing Cuban Crisis"),
 	Email = T(735301247589, --[[ModItemUnitDataCompositeDef Fidel Email]] "fidelmakeboom@aim.com"),
-	snype_nick = T(843991705045, --[[ModItemUnitDataCompositeDef Fidel snype_nick]] "fidelmakeboom"),
+	snype_nick = T(843991705045, --[[ModItemUnitDataCompositeDef Fidel snype_nick]] "fidel_bomba"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

@@ -19,14 +19,14 @@ DefineClass.Fox = {
 	Portrait = "UI/MercsPortraits/Fox",
 	BigPortrait = "UI/Mercs/Fox",
 	IsMercenary = true,
-	Name = T(653970492916, --[[ModItemUnitDataCompositeDef Fox Name]] 'Cynthia "Fox" Guzzman'),
-	Nick = T(550680559818, --[[ModItemUnitDataCompositeDef Fox Nick]] "Fox"),
-	AllCapsNick = T(533036246701, --[[ModItemUnitDataCompositeDef Fox AllCapsNick]] "FOX"),
-	Bio = T(431815979541, --[[ModItemUnitDataCompositeDef Fox Bio]] "Contracted to model for a travel guide advertising the new and peaceful Arulco, Cynthia posed in bikinis on beaches and displayed her ambidextrous pistol shooting abilities at local talent shows. Never one to tolerate a dull moment, she also utilized her flawless knowledge of anatomy to make herself available for private tutoring lessons with the president's son. Recently, she has reported to A.I.M. that she is ready to make herself available to anyone, whenever and wherever."),
+	Name = T(653970492916, --[[ModItemUnitDataCompositeDef Fox Name]] 'Синтия Газмен «Лиска»'),
+	Nick = T(550680559818, --[[ModItemUnitDataCompositeDef Fox Nick]] "Лиска"),
+	AllCapsNick = T(533036246701, --[[ModItemUnitDataCompositeDef Fox AllCapsNick]] "ЛИСКА"),
+	Bio = T(431815979541, --[[ModItemUnitDataCompositeDef Fox Bio]] "Согласившись задержаться в стране, чтобы позировать для рекламирующих новый мирный Арулько брошюр, Синтия с готовностью фотографировалась в бикини на местных пляжах и выступала на местных стрелковых конкурсах, щеголяя навыками стрельбы по-македонски. Её глубокие познания в человеческой анатомии также оказались востребованы: сын президента нанял её, чтобы она давала ему частные уроки. Тем не менее, недавно она сообщила, что вновь открыта к деловым отношениями, - где угодно, когда угодно и с кем угодно."),
 	Nationality = "USA",
 	Title = T(643740690300, --[[ModItemUnitDataCompositeDef Fox Title]] "The Pin-Up Pistoleer"),
 	Email = T(275428567670, --[[ModItemUnitDataCompositeDef Fox Email]] "foxy1@aim.com"),
-	snype_nick = T(750146314874, --[[ModItemUnitDataCompositeDef Fox snype_nick]] "foxy1"),
+	snype_nick = T(750146314874, --[[ModItemUnitDataCompositeDef Fox snype_nick]] "liska"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

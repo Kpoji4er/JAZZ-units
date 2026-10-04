@@ -19,14 +19,14 @@ DefineClass.Red = {
 	Portrait = "UI/MercsPortraits/Red",
 	BigPortrait = "UI/Mercs/Red",
 	IsMercenary = true,
-	Name = T(929255472486, --[[ModItemUnitDataCompositeDef Red Name]] 'Ernie "Red" Spragg'),
-	Nick = T(898873386961, --[[ModItemUnitDataCompositeDef Red Nick]] "Red"),
-	AllCapsNick = T(402554487810, --[[ModItemUnitDataCompositeDef Red AllCapsNick]] "RED"),
-	Bio = T(519116089912, --[[ModItemUnitDataCompositeDef Red Bio]] "Other mercs like to joke that Ernie's been blowing up bridges for Scottish Highlander regiments since The Great War, but Ernie remains one of A.I.M.'s foremost explosives experts and effective soldiers despite his age.\nAlthough he can often be dour and sometimes excitable in a firefight, Red makes planting and removing mines look like child's play.\nDon't let his old-fashioned ideas about the world fool you, in the field of high explosives he's as interested in new ideas as anyone else."),
+	Name = T(929255472486, --[[ModItemUnitDataCompositeDef Red Name]] 'Эрни Спрагг «Рыжий»'),
+	Nick = T(898873386961, --[[ModItemUnitDataCompositeDef Red Nick]] "Рыжий"),
+	AllCapsNick = T(402554487810, --[[ModItemUnitDataCompositeDef Red AllCapsNick]] "РЫЖИЙ"),
+	Bio = T(519116089912, --[[ModItemUnitDataCompositeDef Red Bio]] "Коллеги любят шутить, что Рыжий продолжил пускать поезда под откос даже после официального окончания Первой мировой, однако Эрни остаётся одним из ведущих экспертов-подрывников в базе A.I.M. и, несмотря на возраст, находится в хорошей форме.\nХотя во время перестрелок он производит впечатление мрачного и даже вспыльчивого типа, дайте ему мину - и он установит (или обезвредит) её одной левой.\nИ не обращайте внимание на его старомодные взгляды на жизнь: во всём, что касается взрывчатых веществ, «Рыжий» уверенно идёт в ногу со временем."),
 	Nationality = "Scotland",
 	Title = T(610428368333, --[[ModItemUnitDataCompositeDef Red Title]] "The Scottish Tornado"),
 	Email = T(738518702343, --[[ModItemUnitDataCompositeDef Red Email]] "feckoff@aim.com"),
-	snype_nick = T(286093352279, --[[ModItemUnitDataCompositeDef Red snype_nick]] "feckoff"),
+	snype_nick = T(286093352279, --[[ModItemUnitDataCompositeDef Red snype_nick]] "gorets"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

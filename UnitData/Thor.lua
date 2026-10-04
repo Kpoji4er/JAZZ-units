@@ -19,14 +19,14 @@ DefineClass.Thor = {
 	Portrait = "UI/MercsPortraits/Thor",
 	BigPortrait = "UI/Mercs/Thor",
 	IsMercenary = true,
-	Name = T(928760236378, --[[ModItemUnitDataCompositeDef Thor Name]] "Thor Kaufman"),
-	Nick = T(520222526306, --[[ModItemUnitDataCompositeDef Thor Nick]] "Thor"),
-	AllCapsNick = T(981910118838, --[[ModItemUnitDataCompositeDef Thor AllCapsNick]] "THOR"),
-	Bio = T(696466543743, --[[ModItemUnitDataCompositeDef Thor Bio]] "Just returned from a two-week chi-cleansing retreat in New Mexico, Thor reports that he has two things: a groovy recipe for an avocado smoothie and a thirst for adventure. Kaufman's new age lifestyle makes him a natural healer and his balance-focused conditioning allows him to move about with stealth and grace. His Zen-like demeanor makes it easy to overlook his fighting skills, but in hand-to-hand combat there are few that can match him. Thor also possesses an extremely inquisitive intellect, meaning there are few skills he can't pick up while on assignment."),
+	Name = T(928760236378, --[[ModItemUnitDataCompositeDef Thor Name]] "Тор Кауфман"),
+	Nick = T(520222526306, --[[ModItemUnitDataCompositeDef Thor Nick]] "Тор"),
+	AllCapsNick = T(981910118838, --[[ModItemUnitDataCompositeDef Thor AllCapsNick]] "ТОР"),
+	Bio = T(696466543743, --[[ModItemUnitDataCompositeDef Thor Bio]] "Тор только что вернулся с двухнедельного выездного семинара по очистке чакр в Нью-Мексико. Теперь, как он сам сообщает, его жизнь обогатилась двумя вещами: рецептом забойного смузи из авокадо и вновь пробудившейся жаждой приключений. Приверженность Кауфмана философии нью-эйдж делает из него одарённого целителя, а опыт медитации сообщает всем его движениям изящество и бесшумность. Немногочисленные недостатки Тора искупаются его буддийской безмятежностью, а в рукопашном бою равных ему почти нет. Тора отличает пытливый ум; нет такого умения, которое он не мог бы освоить прямо на ходу."),
 	Nationality = "Germany",
 	Title = T(222862793640, --[[ModItemUnitDataCompositeDef Thor Title]] "Positive Thinking as a Deadly Force"),
 	Email = T(369085666162, --[[ModItemUnitDataCompositeDef Thor Email]] "positivepower@aim.com"),
-	snype_nick = T(702556725674, --[[ModItemUnitDataCompositeDef Thor snype_nick]] "positivepower"),
+	snype_nick = T(702556725674, --[[ModItemUnitDataCompositeDef Thor snype_nick]] "sila_positiva"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {

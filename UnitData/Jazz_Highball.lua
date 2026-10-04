@@ -5,28 +5,28 @@ DefineClass.Jazz_Highball = {
 
 
 	object_class = "UnitData",
-	Health = 55,
+	Health = 82,
 	Agility = 50,
 	Dexterity = 55,
-	Strength = 55,
+	Strength = 64,
 	Wisdom = 87,
-	Will = 40,
-	Leadership = 20,
+	Will = 38,
+	Leadership = 33,
 	Marksmanship = 84,
-	Mechanical = 10,
-	Explosives = 10,
+	Mechanical = 4,
+	Explosives = 31,
 	Medical = 84,
 	Portrait = "Mod/Dv3mFVN/MercPortraits/Highball.png",
 	BigPortrait = "Mod/Dv3mFVN/MercPortraits/Highball_Big.png",
 	IsMercenary = true,
-	Name = T(890000000004202, --[[ModItemUnitDataCompositeDef Jazz_Highball Name]] "Клиффорд «Скала» Хайбол"),
+	Name = T(890000000004202, --[[ModItemUnitDataCompositeDef Jazz_Highball Name]] "Доктор Клиффорд Хайбол"),
 	Nick = T(890000000004203, --[[ModItemUnitDataCompositeDef Jazz_Highball Nick]] "Скала"),
 	AllCapsNick = T(890000000004204, --[[ModItemUnitDataCompositeDef Jazz_Highball AllCapsNick]] "СКАЛА"),
-	Bio = T(890000000004205, --[[ModItemUnitDataCompositeDef Jazz_Highball Bio]] "Худшие боевые статы в каталоге AIM (~50–60), но Wisdom 87, Marksmanship 84, Medical 84 всё ещё держат марку. Держится нейтрально к остальному отряду — слишком занят собственной фляжкой, чтобы с кем-то ссориться."),
+	Bio = T(890000000004205, --[[ModItemUnitDataCompositeDef Jazz_Highball Bio]] "Доктор Хайбол с переменным успехом то берет себя в руки, то накладывает себе в них же. Клифф обладает огромным опытом полевой хирургии и травматологии, но в отсутствие коллег, с которыми можно подискутировать, ему быстро становится скучно. Тем не менее, мастерство, как говорится, не пропьешь."),
 	Nationality = "USA",
 	Title = T(890000000004206, --[[ModItemUnitDataCompositeDef Jazz_Highball Title]] "Старый алкаш"),
 	Email = T(890000000004207, --[[ModItemUnitDataCompositeDef Jazz_Highball Email]] "Highball@aim.com"),
-	snype_nick = T(890000000004208, --[[ModItemUnitDataCompositeDef Jazz_Highball snype_nick]] "highball"),
+	snype_nick = T(890000000004208, --[[ModItemUnitDataCompositeDef Jazz_Highball snype_nick]] "Kliffyndor"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
@@ -96,7 +96,7 @@ DefineClass.Jazz_Highball = {
 	SalaryIncrease = 150,
 	SalaryLv1 = 400,
 	SalaryMaxLv = 2500,
-	StartingLevel = 3,
+	StartingLevel = 4,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 	end,

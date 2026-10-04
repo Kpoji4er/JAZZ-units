@@ -6,28 +6,28 @@ DefineClass.Jazz_Blade = {
 
 
 	object_class = "UnitData",
-	Health = 88,
-	Agility = 90,
-	Dexterity = 85,
-	Strength = 80,
+	Health = 84,
+	Agility = 88,
+	Dexterity = 91,
+	Strength = 86,
 	Wisdom = 53,
-	Will = 55,
-	Leadership = 20,
+	Will = 37,
+	Leadership = 4,
 	Marksmanship = 50,
-	Mechanical = 0,
-	Explosives = 5,
-	Medical = 5,
+	Mechanical = 8,
+	Explosives = 11,
+	Medical = 12,
 	Portrait = "Mod/Dv3mFVN/MercPortraits/Blade.png",
 	BigPortrait = "Mod/Dv3mFVN/MercPortraits/Blade_Big.png",
 	IsMercenary = true,
-	Name = T(890000000001802, --[[ModItemUnitDataCompositeDef Jazz_Blade Name]] "Билл «Бритва» Ламонт"),
+	Name = T(890000000001802, --[[ModItemUnitDataCompositeDef Jazz_Blade Name]] "Билл Ламонт «Бритва»"),
 	Nick = T(890000000001803, --[[ModItemUnitDataCompositeDef Jazz_Blade Nick]] "Бритва"),
 	AllCapsNick = T(890000000001804, --[[ModItemUnitDataCompositeDef Jazz_Blade AllCapsNick]] "БРИТВА"),
-	Bio = T(890000000001805, --[[ModItemUnitDataCompositeDef Jazz_Blade Bio]] "Бриллиант среди MERC. Статы 80–90, навыки около нуля — но в ноже «патроны» не кончаются. Псих, обожает резню в ближнем бою и не признаёт огнестрел серьёзным аргументом. Дружит с Фиделем и Нервным (родственные безумцы); не любит Бифа и Фло; презирает местных Арулько."),
+	Bio = T(890000000001805, --[[ModItemUnitDataCompositeDef Jazz_Blade Bio]] "Билла могли бы прозвать 'Мясником', не будь он так хирургически точен в обращении с ножом. Предпочитает работать с холодным, а не с огнестрельным оружием (от стволов так много шума и слишком просто!). Его гордость - способность вырезать на жертве весь алфавит (или хотя бы все гласные) раньше, чем она умрет от кровопотери."),
 	Nationality = "USA",
 	Title = T(890000000001806, --[[ModItemUnitDataCompositeDef Jazz_Blade Title]] "Нож не кончается"),
 	Email = T(890000000001807, --[[ModItemUnitDataCompositeDef Jazz_Blade Email]] "Blade@merc.com"),
-	snype_nick = T(890000000001808, --[[ModItemUnitDataCompositeDef Jazz_Blade snype_nick]] "sharpstuff"),
+	snype_nick = T(890000000001808, --[[ModItemUnitDataCompositeDef Jazz_Blade snype_nick]] "cutcutcutcut"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
 			'Lines', {
@@ -149,7 +149,7 @@ DefineClass.Jazz_Blade = {
 	SalaryIncrease = 200,
 	SalaryLv1 = 400,
 	SalaryMaxLv = 2500,
-	StartingLevel = 4,
+	StartingLevel = 2,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Melee")
 		self:TryEquip(items, "Handheld B", "Melee")
@@ -180,7 +180,7 @@ DefineClass.Jazz_Blade = {
 		"Loot_JAZZ_Blade",
 	},
 	Tier = "Veteran",
-	Specialization = "Melee",
+	Specialization = "AllRounder",
 	pollyvoice = "Matthew",
 	gender = "Male",
 	VoiceResponseId = "Jazz_Blade",

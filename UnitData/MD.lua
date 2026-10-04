@@ -19,14 +19,14 @@ DefineClass.MD = {
 	Portrait = "UI/MercsPortraits/MD",
 	BigPortrait = "UI/Mercs/MD",
 	IsMercenary = true,
-	Name = T(686612112398, --[[ModItemUnitDataCompositeDef MD Name]] 'Dr. Michael "MD" Dawson'),
-	Nick = T(484352976943, --[[ModItemUnitDataCompositeDef MD Nick]] "MD"),
-	AllCapsNick = T(640628882023, --[[ModItemUnitDataCompositeDef MD AllCapsNick]] "MD"),
-	Bio = T(186460451002, --[[ModItemUnitDataCompositeDef MD Bio]] "When he was just out of medical school, Michael gave up a bright future in medicine to become a mercenary. He is evasive when asked, but it's entirely possible Michael joined A.I.M. thinking it was Doctors Without Borders. Whatever the reason, MD saw his first combat in Arulco and has developed a taste for the soldiering life. His skills with knives come in handy for fighting as well as healing and his incurable optimism makes all who work with him want to learn from his example."),
+	Name = T(686612112398, --[[ModItemUnitDataCompositeDef MD Name]] 'Др. Майкл Доусон «ЭмДи»'),
+	Nick = T(484352976943, --[[ModItemUnitDataCompositeDef MD Nick]] "ЭмДи"),
+	AllCapsNick = T(640628882023, --[[ModItemUnitDataCompositeDef MD AllCapsNick]] "ЭМДИ"),
+	Bio = T(186460451002, --[[ModItemUnitDataCompositeDef MD Bio]] "Закончив мединститут, Майкл отказался от перспективной карьеры врача и подался в наёмники. Сам он на этот счёт отвечает уклончиво, но многие подозревают, что Доусон вступал в A.I.M. в полной уверенности, что имеет дело с отделением «Врачей без границ». Как бы то ни было, впервые нюхнув пороху в Арулько, ЭмДи нашёл, что солдатская жизнь ему по вкусу. Ловкость, с которой он обращается со скальпелем, пригождается ему и в бою, и в импровизированной операционной, а неистребимый оптимизм побуждает других учиться на его примере."),
 	Nationality = "Canada",
 	Title = T(892027636726, --[[ModItemUnitDataCompositeDef MD Title]] "Always Uncertain, Never Discouraged"),
 	Email = T(853992834316, --[[ModItemUnitDataCompositeDef MD Email]] "goodguymichael@aim.com"),
-	snype_nick = T(894034021981, --[[ModItemUnitDataCompositeDef MD snype_nick]] "goodguymichael"),
+	snype_nick = T(894034021981, --[[ModItemUnitDataCompositeDef MD snype_nick]] "md"),
 	Haggles = {
 		PlaceObj('MercChatHaggle', {
 			'Lines', {
