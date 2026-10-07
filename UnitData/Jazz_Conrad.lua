@@ -25,8 +25,8 @@ DefineClass.Jazz_Conrad = {
 	AllCapsNick = T(890000000002204, --[[ModItemUnitDataCompositeDef Jazz_Conrad AllCapsNick]] "КОНРАД"),
 	Bio = T(890000000002205, --[[ModItemUnitDataCompositeDef Jazz_Conrad Bio]] "Лейтенант Конрад Джиллет можно сказать, вовремя соскочил. В ходе кризиса в Арулько лейтенант исполнял обязанности инструктора армии Д. на элитном тренировочном комплексе в Альме. Надо ж было такому случиться, что кто-то забыл вовремя продлить лейтенанту контракт и он со спокойной совестью предложил свои услуги командира и инструктора войскам Сопротивления. После окончания активных боевых действий, MERC не пожалел денег и постарался перехватить к себе такого ценного специалиста"),
 	Nationality = "Germany",
-	Title = T(890000000002206, --[[ModItemUnitDataCompositeDef Jazz_Conrad Title]] "Дорогой лейтенант"),
-	Email = T(890000000002207, --[[ModItemUnitDataCompositeDef Jazz_Conrad Email]] "Conrad@merc.com"),
+	Title = T(890000000002206, "Gillett: The Best Instructor You Can Get"),
+	Email = T(890000000002207, "ltgillett@merc.com"),
 	snype_nick = T(890000000002208, --[[ModItemUnitDataCompositeDef Jazz_Conrad snype_nick]] "ltgillett"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {

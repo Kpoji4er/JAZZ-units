@@ -7,7 +7,7 @@ DefineClass.Jazz_Nervous = {
 
 	object_class = "UnitData",
 	Health = 65,
-	Agility = 70,
+	Agility = 60,
 	Dexterity = 76,
 	Strength = 71,
 	Wisdom = 58,
@@ -25,8 +25,8 @@ DefineClass.Jazz_Nervous = {
 	AllCapsNick = T(890000000002904, --[[ModItemUnitDataCompositeDef Jazz_Nervous AllCapsNick]] "НЕРВНЫЙ"),
 	Bio = T(890000000002905, --[[ModItemUnitDataCompositeDef Jazz_Nervous Bio]] "Убийства - специализация Фрэнки. В этом деле его больше интересует процесс, а не результат. Хотя он и не снайпер, но отлично владеет автоматическим оружием. То же самое можно сказать и о его умении обращаться с холодным оружием."),
 	Nationality = "USA",
-	Title = T(890000000002906, --[[ModItemUnitDataCompositeDef Jazz_Nervous Title]] "Суперочередь"),
-	Email = T(890000000002907, --[[ModItemUnitDataCompositeDef Jazz_Nervous Email]] "Nervous@merc.com"),
+	Title = T(890000000002906, "The Human Machine Gun"),
+	Email = T(890000000002907, "GordonFrankyman@merc.com"),
 	snype_nick = T(890000000002908, --[[ModItemUnitDataCompositeDef Jazz_Nervous snype_nick]] "Haywire"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
@@ -115,7 +115,7 @@ DefineClass.Jazz_Nervous = {
 	SalaryIncrease = 200,
 	SalaryLv1 = 350,
 	SalaryMaxLv = 2200,
-	StartingLevel = 3,
+	StartingLevel = 1,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 		self:TryEquip(items, "Handheld B", "Firearm")

@@ -25,8 +25,8 @@ DefineClass.Jazz_Hobbit = {
 	AllCapsNick = T(890000000004504, --[[ModItemUnitDataCompositeDef Jazz_Hobbit AllCapsNick]] "ХОББИТ"),
 	Bio = T(890000000004505, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Bio]] "Тим отлично разбирается во взрывчатке и быстро всему учится. Следует помнить, однако, что у саперов не может быть ошибок. Хиллман наверняка мог бы остаться в Гарварде и заниматься своим дипломом по электромагнитным полям, если бы не ужасная депрессия, вероятно, вызванная электромагнитным излучением. Из-за своей аллергии Тим предпочитает работать в странах с холодным климатом. Но кто ж его спрашивает. "),
 	Nationality = "USA",
-	Title = T(890000000004506, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Title]] "Несу вас"),
-	Email = T(890000000004507, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Email]] "Hobbit@merc.com"),
+	Title = T(890000000004506, "I Can Sweep the Minefield for You"),
+	Email = T(890000000004507, "Gumpy@merc.com"),
 	snype_nick = T(890000000004508, --[[ModItemUnitDataCompositeDef Jazz_Hobbit snype_nick]] "Coolguy"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
@@ -97,7 +97,7 @@ DefineClass.Jazz_Hobbit = {
 	SalaryIncrease = 150,
 	SalaryLv1 = 300,
 	SalaryMaxLv = 2200,
-	StartingLevel = 3,
+	StartingLevel = 1,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 	end,

@@ -6,7 +6,7 @@ DefineClass.Jazz_Highball = {
 
 	object_class = "UnitData",
 	Health = 82,
-	Agility = 50,
+	Agility = 60,
 	Dexterity = 55,
 	Strength = 64,
 	Wisdom = 87,
@@ -24,8 +24,8 @@ DefineClass.Jazz_Highball = {
 	AllCapsNick = T(890000000004204, --[[ModItemUnitDataCompositeDef Jazz_Highball AllCapsNick]] "СКАЛА"),
 	Bio = T(890000000004205, --[[ModItemUnitDataCompositeDef Jazz_Highball Bio]] "Доктор Хайбол с переменным успехом то берет себя в руки, то накладывает себе в них же. Клифф обладает огромным опытом полевой хирургии и травматологии, но в отсутствие коллег, с которыми можно подискутировать, ему быстро становится скучно. Тем не менее, мастерство, как говорится, не пропьешь."),
 	Nationality = "USA",
-	Title = T(890000000004206, --[[ModItemUnitDataCompositeDef Jazz_Highball Title]] "Старый алкаш"),
-	Email = T(890000000004207, --[[ModItemUnitDataCompositeDef Jazz_Highball Email]] "Highball@aim.com"),
+	Title = T(890000000004206, "Everybody Lies? Everybody Fucking Lies!"),
+	Email = T(890000000004207, "Kliff@aim.com"),
 	snype_nick = T(890000000004208, --[[ModItemUnitDataCompositeDef Jazz_Highball snype_nick]] "Kliffyndor"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {

@@ -25,8 +25,8 @@ DefineClass.Jazz_Blade = {
 	AllCapsNick = T(890000000001804, --[[ModItemUnitDataCompositeDef Jazz_Blade AllCapsNick]] "БРИТВА"),
 	Bio = T(890000000001805, --[[ModItemUnitDataCompositeDef Jazz_Blade Bio]] "Билла могли бы прозвать 'Мясником', не будь он так хирургически точен в обращении с ножом. Предпочитает работать с холодным, а не с огнестрельным оружием (от стволов так много шума и слишком просто!). Его гордость - способность вырезать на жертве весь алфавит (или хотя бы все гласные) раньше, чем она умрет от кровопотери."),
 	Nationality = "USA",
-	Title = T(890000000001806, --[[ModItemUnitDataCompositeDef Jazz_Blade Title]] "Нож не кончается"),
-	Email = T(890000000001807, --[[ModItemUnitDataCompositeDef Jazz_Blade Email]] "Blade@merc.com"),
+	Title = T(890000000001806, "A Knife Never Runs Out of Ammo"),
+	Email = T(890000000001807, "Razor@merc.com"),
 	snype_nick = T(890000000001808, --[[ModItemUnitDataCompositeDef Jazz_Blade snype_nick]] "cutcutcutcut"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {

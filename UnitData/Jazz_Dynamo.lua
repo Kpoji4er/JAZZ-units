@@ -25,7 +25,7 @@ DefineClass.Jazz_Dynamo = {
 	AllCapsNick = T(890000000003404, --[[ModItemUnitDataCompositeDef Jazz_Dynamo AllCapsNick]] "ДИНАМО"),
 	Bio = T(890000000003405, --[[ModItemUnitDataCompositeDef Jazz_Dynamo Bio]] "Динамо самый настоящий политический заключенный режима Д. Его жена и сын были казнены без суда, а он сам оказался в тюрьме, Алькатрас по сравнею с которой - санаторий. Когда Сопротивление захватило тюрьму и освободило заключенных, у Грегори просто не нашлось смысла продолжать жить. Кроме мести Д. А после ее совершения Грег предложил свои услуги MERC. Смерть ничем не хуже, чем любая другая, как он сказал. Странно такое слышать, конечно."),
 	Nationality = "Hungary",
-	Title = T(890000000003406, --[[ModItemUnitDataCompositeDef Jazz_Dynamo Title]] "Зек-механик"),
+	Title = T(890000000003406, "Alive Outside, Dead Inside"),
 	Email = T(890000000003407, --[[ModItemUnitDataCompositeDef Jazz_Dynamo Email]] "Dynamo@merc.com"),
 	snype_nick = T(890000000003408, --[[ModItemUnitDataCompositeDef Jazz_Dynamo snype_nick]] "dynamo"),
 	Refusals = {},
@@ -87,7 +87,7 @@ DefineClass.Jazz_Dynamo = {
 	SalaryIncrease = 200,
 	SalaryLv1 = 0,
 	SalaryMaxLv = 800,
-	StartingLevel = 3,
+	StartingLevel = 1,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Melee")
 		self:TryEquip(items, "Handheld B", "Melee")

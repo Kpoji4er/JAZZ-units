@@ -24,8 +24,8 @@ DefineClass.Jazz_Colby = {
 	AllCapsNick = T(890000000001704, --[[ModItemUnitDataCompositeDef Jazz_Colby AllCapsNick]] "ТРЕВОР"),
 	Bio = T(890000000001705, --[[ModItemUnitDataCompositeDef Jazz_Colby Bio]] "Иногда так бывает, что человек обнаруживает в себе неожиданные таланты и успешно их развивает. Тревор способен равнозначно как что угодно починить, запустить и отладить, так и взорвать, вскрыть и разобрать. Не делая больших различий, будь это двигатель, детонатор или автомат. Тревор превратит в смертельную ловушку все, что угодно."),
 	Nationality = "Australia",
-	Title = T(890000000001706, --[[ModItemUnitDataCompositeDef Jazz_Colby Title]] "Ловушечник"),
-	Email = T(890000000001707, --[[ModItemUnitDataCompositeDef Jazz_Colby Email]] "Colby@aim.com"),
+	Title = T(890000000001706, "Home Alone One, Home Alone Two, Home Alone Three"),
+	Email = T(890000000001707, "trev&shai@aim.com"),
 	snype_nick = T(890000000001708, --[[ModItemUnitDataCompositeDef Jazz_Colby snype_nick]] "tripwire"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {

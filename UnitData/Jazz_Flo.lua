@@ -25,7 +25,7 @@ DefineClass.Jazz_Flo = {
 	AllCapsNick = T(890000000003004, --[[ModItemUnitDataCompositeDef Jazz_Flo AllCapsNick]] "ФЛО"),
 	Bio = T(890000000003005, --[[ModItemUnitDataCompositeDef Jazz_Flo Bio]] "Дочь винодела. Большую часть детства Флоренс провела в провинции Коньяк во Франции. После переезда в Питтсбург, США, стала работать бухгалтером в одной из компаний, торгующих оружием. Там она получила обширные знания по огнестрельному оружию. Сообразительна, но несколько неуверенна в себе, поэтому ей недоплачивают."),
 	Nationality = "France",
-	Title = T(890000000003006, --[[ModItemUnitDataCompositeDef Jazz_Flo Title]] "Безголовая курица"),
+	Title = T(890000000003006, "An Arms... Baroness?"),
 	Email = T(890000000003007, --[[ModItemUnitDataCompositeDef Jazz_Flo Email]] "Flo@merc.com"),
 	snype_nick = T(890000000003008, --[[ModItemUnitDataCompositeDef Jazz_Flo snype_nick]] "mondieu"),
 	Refusals = {
@@ -131,7 +131,7 @@ DefineClass.Jazz_Flo = {
 	SalaryIncrease = 200,
 	SalaryLv1 = 200,
 	SalaryMaxLv = 1800,
-	StartingLevel = 2,
+	StartingLevel = 1,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 	end,

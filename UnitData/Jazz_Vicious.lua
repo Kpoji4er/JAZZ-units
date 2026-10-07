@@ -24,8 +24,8 @@ DefineClass.Jazz_Vicious = {
 	AllCapsNick = T(890000000002704, --[[ModItemUnitDataCompositeDef Jazz_Vicious AllCapsNick]] "ЗЛОБНЫЙ"),
 	Bio = T(890000000002705, --[[ModItemUnitDataCompositeDef Jazz_Vicious Bio]] "Грубоватый, но романтичный парень из французской Канады. В прошлом начинал еще вышибалой в ночном клубе, с тех пор продолжает прогрессировать на поприще контактного боя. В общевойсковых операциях с танками и авиацией ему делать нечего, но вот вышибить кому-нибудь мозги в рукопашной или на дистанции выстрела из дробовика - в этом Злобному равных нет."),
 	Nationality = "France",
-	Title = T(890000000002706, --[[ModItemUnitDataCompositeDef Jazz_Vicious Title]] "Мачо"),
-	Email = T(890000000002707, --[[ModItemUnitDataCompositeDef Jazz_Vicious Email]] "Vicious@aim.com"),
+	Title = T(890000000002706, "Hide Your Girls"),
+	Email = T(890000000002707, "Pierre.Jan-Pierre@aim.com"),
 	snype_nick = T(890000000002708, --[[ModItemUnitDataCompositeDef Jazz_Vicious snype_nick]] "lamalice"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {

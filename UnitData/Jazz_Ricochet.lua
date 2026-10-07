@@ -25,8 +25,8 @@ DefineClass.Jazz_Ricochet = {
 	AllCapsNick = T(890000000004604, --[[ModItemUnitDataCompositeDef Jazz_Ricochet AllCapsNick]] "РИКОШЕТ"),
 	Bio = T(890000000004605, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Bio]] "Некоторым людям просто не везет с внешностью. Тим Саттон - один из них. Его редко нанимали из-за ужасной стрижки и татуировки на шее. Тем не менее его резюме впечатляет: восточные единоборства, проведение операций в ночное время суток, снайперская и медицинская подготовка."),
 	Nationality = "USA",
-	Title = T(890000000004606, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Title]] "Ближник"),
-	Email = T(890000000004607, --[[ModItemUnitDataCompositeDef Jazz_Ricochet Email]] "Ricochet@merc.com"),
+	Title = T(890000000004606, "I Don't Fit in Any Box"),
+	Email = T(890000000004607, "Numb@merc.com"),
 	snype_nick = T(890000000004608, --[[ModItemUnitDataCompositeDef Jazz_Ricochet snype_nick]] "feelsonumb"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {

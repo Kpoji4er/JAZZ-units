@@ -25,8 +25,8 @@ DefineClass.Jazz_Cord = {
 	AllCapsNick = T(890000000004404, --[[ModItemUnitDataCompositeDef Jazz_Cord AllCapsNick]] "КАРДАН"),
 	Bio = T(890000000004405, --[[ModItemUnitDataCompositeDef Jazz_Cord Bio]] "Даг Милтон родился и вырос в Кентукки. В четвертом классе его выгнали из школы и он стал работать на автозаправке своего отца. Там он стал отличным механиком. После того, как сестра сменила его на работе, он начал шататься по стране и, в конце концов, решил стать наемником. Хобби: Стрельба по белкам и коллекционирование дорожных знаков."),
 	Nationality = "USA",
-	Title = T(890000000004406, --[[ModItemUnitDataCompositeDef Jazz_Cord Title]] "Забывчивый механик"),
-	Email = T(890000000004407, --[[ModItemUnitDataCompositeDef Jazz_Cord Email]] "Cord@merc.com"),
+	Title = T(890000000004406, "You Get What You Pay For"),
+	Email = T(890000000004407, "Gusket@merc.com"),
 	snype_nick = T(890000000004408, --[[ModItemUnitDataCompositeDef Jazz_Cord snype_nick]] "ilavvika"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
@@ -124,7 +124,7 @@ DefineClass.Jazz_Cord = {
 	SalaryIncrease = 150,
 	SalaryLv1 = 250,
 	SalaryMaxLv = 1800,
-	StartingLevel = 3,
+	StartingLevel = 1,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 	end,

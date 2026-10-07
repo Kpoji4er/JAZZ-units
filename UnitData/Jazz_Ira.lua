@@ -24,8 +24,8 @@ DefineClass.Jazz_Ira = {
 	AllCapsNick = T(890000000001904, --[[ModItemUnitDataCompositeDef Jazz_Ira AllCapsNick]] "АЙРА"),
 	Bio = T(890000000001905, --[[ModItemUnitDataCompositeDef Jazz_Ira Bio]] "Айра руководила гуманитарной миссией в Арулько во время правления королевы Д. Будучи под невероятным впечатлением от творившихся в стране нарушений прав человека, эта гуманистка и моралистка сама взяла в руки автомат и вступила в ряды мятежников Мигеля Кордоны. Организация чрезвычайно высоко оценивает заслуги мисс Смит в ходе конфликта,а также ее личную помощь наемникам Организации в качестве первоклассного проводника, медсестры и часового."),
 	Nationality = "USA",
-	Title = T(890000000001906, --[[ModItemUnitDataCompositeDef Jazz_Ira Title]] "Царица ополчения"),
-	Email = T(890000000001907, --[[ModItemUnitDataCompositeDef Jazz_Ira Email]] "Ira@arulco.reb"),
+	Title = T(890000000001906, "Don't You Dare Violate Human Rights!"),
+	Email = T(890000000001907, "Smythe@arulco.reb"),
 	snype_nick = T(890000000001908, --[[ModItemUnitDataCompositeDef Jazz_Ira snype_nick]] "rebelgirl"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {

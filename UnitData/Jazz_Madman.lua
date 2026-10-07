@@ -25,8 +25,8 @@ DefineClass.Jazz_Madman = {
 	AllCapsNick = T(890000000002104, --[[ModItemUnitDataCompositeDef Jazz_Madman AllCapsNick]] "БЕШЕНЫЙ"),
 	Bio = T(890000000002105, --[[ModItemUnitDataCompositeDef Jazz_Madman Bio]] "Кевин безвоздмездно помогал наемникам AIM и MERC в ходе боевых действий в Арулько в первую очередь своими навыками механика и ремонтника. В конце концов, он принял решение начать зарабатывать на этом деньги, и принял предложение Биффа Апскотта о трудоустройстве в MERC."),
 	Nationality = "USA",
-	Title = T(890000000002106, --[[ModItemUnitDataCompositeDef Jazz_Madman Title]] "Ржавый бампер"),
-	Email = T(890000000002107, --[[ModItemUnitDataCompositeDef Jazz_Madman Email]] "Madman@merc.com"),
+	Title = T(890000000002106, "A Rusty Roof Means a Leaky Attic"),
+	Email = T(890000000002107, "Maddog@merc.com"),
 	snype_nick = T(890000000002108, --[[ModItemUnitDataCompositeDef Jazz_Madman snype_nick]] "eatbugs"),
 	Refusals = {},
 	Haggles = {},
@@ -103,7 +103,7 @@ DefineClass.Jazz_Madman = {
 	SalaryIncrease = 200,
 	SalaryLv1 = 400,
 	SalaryMaxLv = 2500,
-	StartingLevel = 4,
+	StartingLevel = 1,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Melee")
 		self:TryEquip(items, "Handheld B", "Melee")

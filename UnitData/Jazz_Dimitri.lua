@@ -24,8 +24,8 @@ DefineClass.Jazz_Dimitri = {
 	AllCapsNick = T(890000000002004, --[[ModItemUnitDataCompositeDef Jazz_Dimitri AllCapsNick]] "ДИМИТРИЙ"),
 	Bio = T(890000000002005, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Bio]] "Мятежник и революционер, служил в сопротивлении Мигеля Кордоны. К сожалению, из-за своей забывчивости, так и не смог хоть сколько-нибудь продвинуться в послевоенном Арулько. Так что Димитрий просто решил исполнить обещание, данное им наемникам организации после штурма дворца Д, в котором он участвовал. Я иду с тобой. Охраняю любую дверь ты хочешь."),
 	Nationality = "Russia",
-	Title = T(890000000002006, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Title]] "Я забыл опять"),
-	Email = T(890000000002007, --[[ModItemUnitDataCompositeDef Jazz_Dimitri Email]] "Dima@arulco.reb"),
+	Title = T(890000000002006, "I Forgot. I Forgot Again"),
+	Email = T(890000000002007, "Dimitry@arulco.reb"),
 	snype_nick = T(890000000002008, --[[ModItemUnitDataCompositeDef Jazz_Dimitri snype_nick]] "Good?Bad?Great!"),
 	Refusals = {
 		PlaceObj('MercChatRefusal', {
@@ -122,7 +122,7 @@ DefineClass.Jazz_Dimitri = {
 	SalaryIncrease = 200,
 	SalaryLv1 = 250,
 	SalaryMaxLv = 1800,
-	StartingLevel = 3,
+	StartingLevel = 1,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Melee")
 		self:TryEquip(items, "Handheld B", "Melee")
