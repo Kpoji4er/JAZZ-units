@@ -6436,7 +6436,11 @@ return {
 					id = "RiflesSemi_M21",
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
-						weapon = "M21",
+						upgrades = {
+							"JAZZ_M14_SniperKit",
+							"JAZZ_Scope_M21_ART",
+						},
+						weapon = "M14SAW",
 					}),
 					PlaceObj('LootEntryLootDef', {
 						loot_def = "762x51_ar_ammo",
@@ -6450,10 +6454,10 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"JAZZ_Rail_M21",
+							"JAZZ_M14_SniperKit",
 							"JAZZ_CombatScope_2x",
 						},
-						weapon = "M21",
+						weapon = "M14SAW",
 					}),
 					PlaceObj('LootEntryLootDef', {
 						loot_def = "762x51_ar_ammo",
@@ -6467,10 +6471,10 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"JAZZ_Rail_M21",
+							"JAZZ_M14_SniperKit",
 							"JAZZ_Scope_6x",
 						},
-						weapon = "M21",
+						weapon = "M14SAW",
 					}),
 					PlaceObj('LootEntryLootDef', {
 						loot_def = "762x51_sniper_ammo",
@@ -6484,11 +6488,11 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"JAZZ_Rail_M21",
+							"JAZZ_M14_SniperKit",
 							"JAZZ_Scope_Scout",
 							"JAZZ_Suppressor",
 						},
-						weapon = "M21",
+						weapon = "M14SAW",
 					}),
 					PlaceObj('LootEntryLootDef', {
 						loot_def = "762x51_sniper_ammo",
@@ -6502,10 +6506,10 @@ return {
 					loot = "all",
 					PlaceObj('LootEntryUpgradedWeapon', {
 						upgrades = {
-							"JAZZ_Rail_M21",
+							"JAZZ_M14_SniperKit",
 							"JAZZ_Scope_12x",
 						},
-						weapon = "M21",
+						weapon = "M14SAW",
 					}),
 					PlaceObj('LootEntryLootDef', {
 						loot_def = "762x51_sniper_ammo",
@@ -26197,10 +26201,10 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"JAZZ_Rail_M21",
-								"JAZZ_CombatScope_2x",
-							},
-							weapon = "M21",
+							"JAZZ_M14_SniperKit",
+							"JAZZ_CombatScope_2x",
+						},
+							weapon = "M14SAW",
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "762x51_sniper_ammo",
@@ -26213,10 +26217,10 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"JAZZ_Rail_M21",
-								"JAZZ_CombatScope_2x",
-							},
-							weapon = "M21",
+							"JAZZ_M14_SniperKit",
+							"JAZZ_CombatScope_2x",
+						},
+							weapon = "M14SAW",
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "762x51_sniper_ammo",
@@ -26229,10 +26233,10 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"JAZZ_Rail_M21",
-								"JAZZ_CombatScope_ACOG",
-							},
-							weapon = "M21",
+							"JAZZ_M14_SniperKit",
+							"JAZZ_CombatScope_ACOG",
+						},
+							weapon = "M14SAW",
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "762x51_sniper_ammo",
@@ -26245,10 +26249,10 @@ return {
 						loot = "all",
 						PlaceObj('LootEntryUpgradedWeapon', {
 							upgrades = {
-								"JAZZ_Rail_M21",
-								"JAZZ_Scope_6x",
-							},
-							weapon = "M21",
+							"JAZZ_M14_SniperKit",
+							"JAZZ_Scope_6x",
+						},
+							weapon = "M14SAW",
 						}),
 						PlaceObj('LootEntryLootDef', {
 							loot_def = "762x51_sniper_ammo",
