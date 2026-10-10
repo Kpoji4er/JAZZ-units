@@ -1,5 +1,12 @@
 UndefineClass('Fidel')
 DefineClass.Fidel = {
+	Dislikes = {
+					"Jazz_Flo",
+				},
+	Likes = {
+					"Jazz_Blade",
+					"Jazz_Nervous",
+				},
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 

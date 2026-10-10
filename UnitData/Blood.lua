@@ -1,5 +1,9 @@
 UndefineClass('Blood')
 DefineClass.Blood = {
+	Dislikes = {
+					"Jazz_Highball",
+					"Jazz_Meat",
+				},
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -15,7 +19,7 @@ DefineClass.Blood = {
 	Marksmanship = 78,
 	Mechanical = 23,
 	Explosives = 31,
-	Medical = 51,
+	Medical = 42,
 	Portrait = "UI/MercsPortraits/Blood",
 	BigPortrait = "UI/Mercs/Blood",
 	IsMercenary = true,

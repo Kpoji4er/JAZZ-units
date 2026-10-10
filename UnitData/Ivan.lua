@@ -1,5 +1,8 @@
 UndefineClass('Ivan')
 DefineClass.Ivan = {
+	Dislikes = {
+					"Jazz_Meat",
+				},
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -131,7 +134,7 @@ DefineClass.Ivan = {
 			'Text', T(231732374331, --[[ModItemUnitDataCompositeDef Ivan Text RehireOutro ChatMessage voice:Ivan]] "Good. Этот, похоже, не настолько дурак, как все остальные, раз хочет со мной работать."),
 		}),
 	},
-	StartingSalary = 4500,
+	StartingSalary = 4200,
 	SalaryIncrease = 200,
 	SalaryLv1 = 2100,
 	SalaryMaxLv = 8000,

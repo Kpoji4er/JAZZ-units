@@ -1,5 +1,12 @@
 UndefineClass('Jazz_Lucky')
 DefineClass.Jazz_Lucky = {
+	Dislikes = {
+					"Jazz_Vicious",
+					"Jazz_Flo",
+				},
+	Likes = {
+					"Barry",
+				},
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -35,8 +42,8 @@ DefineClass.Jazz_Lucky = {
 	RehireIntro = { PlaceObj('ChatMessage', { 'Text', T(890000000004791, --[[ModItemUnitDataCompositeDef Jazz_Lucky Text RehireIntro ChatMessage voice:Jazz_Lucky]] "Мой контракт... Мы его продлеваем?") }) },
 	RehireOutro = { PlaceObj('ChatMessage', { 'Text', T(890000000004792, --[[ModItemUnitDataCompositeDef Jazz_Lucky Text RehireOutro ChatMessage voice:Jazz_Lucky]] "D'accord. Я согласен.") }) },
 	MedicalDeposit = "small",
-	StartingSalary = 1900,
-	SalaryIncrease = 150,
+	StartingSalary = 1500,
+	SalaryIncrease = 200,
 	SalaryLv1 = 700,
 	SalaryMaxLv = 4500,
 	StartingLevel = 3,

@@ -1,5 +1,6 @@
 UndefineClass('Jazz_Flo')
 DefineClass.Jazz_Flo = {
+	DurationDiscount = "none",
 	Affiliation = "MERC",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
@@ -126,8 +127,8 @@ DefineClass.Jazz_Flo = {
 			'Text', T(890000000003019, --[[ModItemUnitDataCompositeDef Jazz_Flo Text RehireOutro ChatMessage voice:Jazz_Flo]] "Остаюсь. Скидки у местных торговцев того стоят."),
 		}),
 	},
-	MedicalDeposit = "small",
-	StartingSalary = 500,
+	MedicalDeposit = "large",
+	StartingSalary = 150,
 	SalaryIncrease = 200,
 	SalaryLv1 = 200,
 	SalaryMaxLv = 1800,
@@ -140,7 +141,9 @@ DefineClass.Jazz_Flo = {
 		"Jazz_Biff",
 		"Jazz_Lynx",
 	},
-	Dislikes = {},
+	Dislikes = {
+					"Meltdown",
+				},
 	StartingPerks = {
 		"Jazz_Perk_Flo",
 		"Negotiator",

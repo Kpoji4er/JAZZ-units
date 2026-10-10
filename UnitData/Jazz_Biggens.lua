@@ -1,5 +1,6 @@
 UndefineClass('Jazz_Biggens')
 DefineClass.Jazz_Biggens = {
+	DurationDiscount = "none",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -34,9 +35,9 @@ DefineClass.Jazz_Biggens = {
 	PartingWords = { PlaceObj('ChatMessage', { 'Text', T(890000000004710, --[[ModItemUnitDataCompositeDef Jazz_Biggens Text PartingWords ChatMessage voice:Jazz_Biggens]] "Ещё один заряд не помешает. Иду.") }) },
 	RehireIntro = { PlaceObj('ChatMessage', { 'Text', T(890000000004711, --[[ModItemUnitDataCompositeDef Jazz_Biggens Text RehireIntro ChatMessage voice:Jazz_Biggens]] "Контракт заканчивается. Продлеваем?") }) },
 	RehireOutro = { PlaceObj('ChatMessage', { 'Text', T(890000000004712, --[[ModItemUnitDataCompositeDef Jazz_Biggens Text RehireOutro ChatMessage voice:Jazz_Biggens]] "Остаюсь. Дело своё знаю.") }) },
-	MedicalDeposit = "small",
-	StartingSalary = 900,
-	SalaryIncrease = 150,
+	MedicalDeposit = "extreme",
+	StartingSalary = 3500,
+	SalaryIncrease = 110,
 	SalaryLv1 = 400,
 	SalaryMaxLv = 2500,
 	StartingLevel = 7,
@@ -52,7 +53,7 @@ DefineClass.Jazz_Biggens = {
 	},
 	AppearancesList = { PlaceObj('AppearanceWeight', { 'Preset', "Biggens" }) },
 	Equipment = { "Loot_JAZZ_Biggens" },
-	Tier = "Regular",
+	Tier = "Legendary",
 	Specialization = "ExplosiveExpert",
 	pollyvoice = "Matthew",
 	gender = "Male",

@@ -6777,3 +6777,25 @@ Don't let his old-fashioned ideas about the world fool you, in the field of high
 890000000020602,Grunty,Хряп,,ModItemUnitDataCompositeDef Grunty Nick
 890000000020603,GRUNTY,ХРЯП,,ModItemUnitDataCompositeDef Grunty AllCapsNick
 890000000020604,"After taking a short leave of absence to run a highly specialized (and highly lucrative) paintball retreat for Fortune 500 companies, Wolf grew tired of teaching fat, middle-aged men how to pretend to kill each other. Especially exhausting was the week-long minicamp ""Oh-Dark-Dirty"" where he attempted to instruct them in Night Operations concepts and tactics while making sure everyone was wearing safety orange. He reports he's ready and very eager to return to mercenary work. One of A.I.M.'s most well-rounded members, Sanderson is highly sought after by clients looking for a merc who is capable of doing everything and is willing to do anything. Best to hire him as soon as he's available because he surely won't be without a contract for long!","Ненадолго покинув A.I.M., чтобы занять должность инструктора в элитном (и весьма высокооплачиваемом) загородном пейнтбольном клубе для состоятельных бизнесменов, Волк в конце концов устал учить заплывших жиром сорокалетних топ-менеджеров, как делать вид, что они убивают друг друга. Окончательно его добил недельный выездной лагерь, где он пытался обучить своих подопечных основам тактики и ночных операций, пока те шарились по лесу в светоотражающих оранжевых жилетах. Вернувшись в город, Сандерсон сообщил, что более чем готов вновь поработать наёмником. Волк - один из самых всесторонне подготовленных бойцов A.I.M., пользующийся популярностью у клиентов, которым нужен мастер на все руки. Спешите заключить с ним контракт сейчас, пока это не сделали за вас другие!",,ModItemUnitDataCompositeDef Wolf Bio
+920000000094,Серега,Серега,,jazz-units:Code/Rebels.lua:96
+920000000095,Серый,Серый,,jazz-units:Code/Rebels.lua:97
+920000000096,Сега,Сега,,jazz-units:Code/Rebels.lua:98
+920000000097,Серж,Серж,,jazz-units:Code/Rebels.lua:99
+920000000098,Серхио,Серхио,,jazz-units:Code/Rebels.lua:100
+920000000099,Серсей,Серсей,,jazz-units:Code/Rebels.lua:101
+920000000100,Сереня,Сереня,,jazz-units:Code/Rebels.lua:102
+920000000101,Сергуня,Сергуня,,jazz-units:Code/Rebels.lua:103
+920000000102,Серго,Серго,,jazz-units:Code/Rebels.lua:104
+920000000103,Сергий,Сергий,,jazz-units:Code/Rebels.lua:105
+920000000104,Севастьян,Севастьян,,jazz-units:Code/Rebels.lua:106
+920000000105,Сижу,Сижу,,jazz-units:Code/Rebels.lua:107
+920000001102,Пержу,Пержу,,jazz-units:Code/Rebels.lua:213
+920000002002,Баюнец,Баюнец,,jazz-units:Code/Rebels.lua:221
+920000002003,Баюнов,Баюнов,,jazz-units:Code/Rebels.lua:214
+920000002004,Баюняга,Баюняга,,jazz-units:Code/Rebels.lua:216
+920000002005,Баюнок,Баюнок,,jazz-units:Code/Rebels.lua:215
+920000002006,Баюня,Баюня,,jazz-units:Code/Rebels.lua:222
+920000002007,Баюн,Баюн,,jazz-units:Code/Rebels.lua:223
+920000002008,Баюныч,Баюныч,,jazz-units:Code/Rebels.lua:224
+920000002009,Кот Баюн,Кот Баюн,,jazz-units:Code/Rebels.lua:225
+920000002010,Баюнчик,Баюнчик,,jazz-units:Code/Rebels.lua:226

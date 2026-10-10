@@ -1,5 +1,7 @@
 UndefineClass('Jazz_Nervous')
 DefineClass.Jazz_Nervous = {
+	DurationDiscount = "none",
+	Haggling = "low",
 	Affiliation = "MERC",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
@@ -110,8 +112,8 @@ DefineClass.Jazz_Nervous = {
 			'Text', T(890000000002918, --[[ModItemUnitDataCompositeDef Jazz_Nervous Text RehireOutro ChatMessage voice:Jazz_Nervous]] "Остаюсь! Ещё патроны не кончились!"),
 		}),
 	},
-	MedicalDeposit = "small",
-	StartingSalary = 700,
+	MedicalDeposit = "none",
+	StartingSalary = 360,
 	SalaryIncrease = 200,
 	SalaryLv1 = 350,
 	SalaryMaxLv = 2200,
@@ -122,8 +124,9 @@ DefineClass.Jazz_Nervous = {
 	end,
 	MaxHitPoints = 65,
 	Likes = {
-		"Jazz_Blade",
-	},
+					"Jazz_Blade",
+					"Jazz_Ricochet",
+				},
 	Dislikes = {
 		"Jazz_Biff",
 	},

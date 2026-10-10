@@ -1,5 +1,12 @@
 UndefineClass('Meltdown')
 DefineClass.Meltdown = {
+	Dislikes = {
+					"Jazz_Biff",
+					"Jazz_Flo",
+				},
+	Likes = {
+					"Jazz_Rothman",
+				},
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 

@@ -1,5 +1,6 @@
 UndefineClass('Jazz_Cougar')
 DefineClass.Jazz_Cougar = {
+	DurationDiscount = "none",
 	Affiliation = "MERC",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
@@ -126,9 +127,9 @@ DefineClass.Jazz_Cougar = {
 			'Text', T(890000000003119, --[[ModItemUnitDataCompositeDef Jazz_Cougar Text RehireOutro ChatMessage voice:Jazz_Cougar]] "Остаюсь. Тихо, но остаюсь."),
 		}),
 	},
-	MedicalDeposit = "small",
-	StartingSalary = 1600,
-	SalaryIncrease = 200,
+	MedicalDeposit = "large",
+	StartingSalary = 2000,
+	SalaryIncrease = 230,
 	SalaryLv1 = 700,
 	SalaryMaxLv = 4000,
 	StartingLevel = 5,

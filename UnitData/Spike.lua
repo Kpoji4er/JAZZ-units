@@ -1,5 +1,8 @@
 UndefineClass('Spike')
 DefineClass.Spike = {
+	DurationDiscount = "long only",
+	Haggling = "low",
+	StartingSalary = 3900,
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 

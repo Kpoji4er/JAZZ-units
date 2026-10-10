@@ -1,5 +1,6 @@
 UndefineClass('Jazz_Dynamo')
 DefineClass.Jazz_Dynamo = {
+	DurationDiscount = "none",
 	Affiliation = "MERC",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
@@ -94,9 +95,12 @@ DefineClass.Jazz_Dynamo = {
 	end,
 	MaxHitPoints = 60,
 	Likes = {
-		"Blood",
-	},
-	Dislikes = {},
+					"Blood",
+					"Jazz_Shank",
+				},
+	Dislikes = {
+					"Jazz_Meat",
+				},
 	StartingPerks = {
 		"Jazz_Perk_Dynamo",
 		"MrFixit",

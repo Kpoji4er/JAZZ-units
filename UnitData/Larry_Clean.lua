@@ -1,5 +1,16 @@
 UndefineClass('Larry_Clean')
 DefineClass.Larry_Clean = {
+	Dislikes = {
+					"Jazz_Biff",
+					"Jazz_Flo",
+				},
+	DurationDiscount = "none",
+	Likes = {
+					"Jazz_Static",
+					"Steroid",
+				},
+	SalaryIncrease = 150,
+	StartingSalary = 600,
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 

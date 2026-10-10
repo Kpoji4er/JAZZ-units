@@ -1,5 +1,7 @@
 UndefineClass('Jazz_Blade')
 DefineClass.Jazz_Blade = {
+	DurationDiscount = "none",
+	Haggling = "low",
 	Affiliation = "MERC",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
@@ -144,9 +146,9 @@ DefineClass.Jazz_Blade = {
 			'Text', T(890000000001820, --[[ModItemUnitDataCompositeDef Jazz_Blade Text RehireOutro ChatMessage voice:Jazz_Blade]] "Остаюсь. Ещё не всех порезал."),
 		}),
 	},
-	MedicalDeposit = "small",
-	StartingSalary = 900,
-	SalaryIncrease = 200,
+	MedicalDeposit = "none",
+	StartingSalary = 429,
+	SalaryIncrease = 150,
 	SalaryLv1 = 400,
 	SalaryMaxLv = 2500,
 	StartingLevel = 2,

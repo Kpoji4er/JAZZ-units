@@ -1,5 +1,10 @@
 UndefineClass('Jazz_Meat')
 DefineClass.Jazz_Meat = {
+	DurationDiscount = "none",
+	Likes = {
+					"Jazz_Bull",
+					"Jazz_Buzz",
+				},
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -34,8 +39,8 @@ DefineClass.Jazz_Meat = {
 	PartingWords = { PlaceObj('ChatMessage', { 'Text', T(890000000006213, --[[ModItemUnitDataCompositeDef Jazz_Meat Text PartingWords ChatMessage voice:Jazz_Meat]] "Hired.") }) },
 	RehireIntro = { PlaceObj('ChatMessage', { 'Text', T(890000000006214, --[[ModItemUnitDataCompositeDef Jazz_Meat Text RehireIntro ChatMessage voice:Jazz_Meat]] "Contract ending?") }) },
 	RehireOutro = { PlaceObj('ChatMessage', { 'Text', T(890000000006215, --[[ModItemUnitDataCompositeDef Jazz_Meat Text RehireOutro ChatMessage voice:Jazz_Meat]] "Staying.") }) },
-	MedicalDeposit = "small",
-	StartingSalary = 750,
+	MedicalDeposit = "none",
+	StartingSalary = 700,
 	SalaryIncrease = 150,
 	SalaryLv1 = 300,
 	SalaryMaxLv = 2200,
@@ -52,7 +57,7 @@ DefineClass.Jazz_Meat = {
 	},
 	AppearancesList = { PlaceObj('AppearanceWeight', { 'Preset', "Meat" }) },
 	Equipment = { "Loot_JAZZ_Meat" },
-	Tier = "Regular",
+	Tier = "Veteran",
 	Specialization = "ExplosiveExpert",
 	pollyvoice = "Matthew",
 	gender = "Male",

@@ -128,8 +128,8 @@ DefineClass.Jazz_Monk = {
 			'Text', T(890000000003819, --[[ModItemUnitDataCompositeDef Jazz_Monk Text RehireOutro ChatMessage voice:Jazz_Monk]] "Хорошо... Очень хорошо."),
 		}),
 	},
-	MedicalDeposit = "small",
-	StartingSalary = 2400,
+	MedicalDeposit = "large",
+	StartingSalary = 2200,
 	SalaryIncrease = 200,
 	SalaryLv1 = 1000,
 	SalaryMaxLv = 5500,
@@ -139,8 +139,9 @@ DefineClass.Jazz_Monk = {
 	end,
 	MaxHitPoints = 88,
 	Likes = {
-		"Jazz_Laura",
-	},
+					"Jazz_Laura",
+					"Jazz_Allik",
+				},
 	Dislikes = {
 		"Ivan",
 		"Jazz_Conrad",
@@ -159,8 +160,8 @@ DefineClass.Jazz_Monk = {
 	Equipment = {
 		"Loot_JAZZ_Monk",
 	},
-	Tier = "Veteran",
-	Specialization = "Stealth",
+	Tier = "Elite",
+	Specialization = "Autoriflemen",
 	pollyvoice = "Matthew",
 	gender = "Male",
 	VoiceResponseId = "Jazz_Monk",

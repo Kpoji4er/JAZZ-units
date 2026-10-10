@@ -1,5 +1,12 @@
 UndefineClass('Reaper')
 DefineClass.Reaper = {
+	Dislikes = {
+					"Jazz_Ricochet",
+				},
+	Likes = {
+					"Blood",
+					"Shadow",
+				},
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 

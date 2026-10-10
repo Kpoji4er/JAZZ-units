@@ -1,5 +1,14 @@
 UndefineClass('Jazz_Steiger')
 DefineClass.Jazz_Steiger = {
+	Dislikes = {
+					"Jazz_Cord",
+					"Jazz_Bull",
+				},
+	Likes = {
+					"Jazz_Laura",
+					"Jazz_Henning",
+					"Grunty",
+				},
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -35,8 +44,8 @@ DefineClass.Jazz_Steiger = {
 	RehireIntro = { PlaceObj('ChatMessage', { 'Text', T(890000000004775, --[[ModItemUnitDataCompositeDef Jazz_Steiger Text RehireIntro ChatMessage voice:Jazz_Steiger]] "Заинтересован в продлении контракта? Я бы не отказался...") }) },
 	RehireOutro = { PlaceObj('ChatMessage', { 'Text', T(890000000004776, --[[ModItemUnitDataCompositeDef Jazz_Steiger Text RehireOutro ChatMessage voice:Jazz_Steiger]] "Выпьем за долгое и взаимовыгодное сотрудничество...") }) },
 	MedicalDeposit = "large",
-	StartingSalary = 5500,
-	SalaryIncrease = 150,
+	StartingSalary = 3600,
+	SalaryIncrease = 240,
 	SalaryLv1 = 2500,
 	SalaryMaxLv = 11000,
 	StartingLevel = 6,
@@ -53,7 +62,7 @@ DefineClass.Jazz_Steiger = {
 	},
 	AppearancesList = { PlaceObj('AppearanceWeight', { 'Preset', "Steiger" }) },
 	Equipment = { "Loot_JAZZ_Steiger" },
-	Tier = "Elite",
+	Tier = "Legendary",
 	Specialization = "Leader",
 	pollyvoice = "Matthew",
 	gender = "Male",

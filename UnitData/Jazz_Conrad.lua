@@ -1,5 +1,7 @@
 UndefineClass('Jazz_Conrad')
 DefineClass.Jazz_Conrad = {
+	DurationDiscount = "none",
+	Haggling = "high",
 	Affiliation = "MERC",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
@@ -147,7 +149,7 @@ DefineClass.Jazz_Conrad = {
 	},
 	MedicalDeposit = "large",
 	StartingSalary = 3300,
-	SalaryIncrease = 200,
+	SalaryIncrease = 270,
 	SalaryLv1 = 2000,
 	SalaryMaxLv = 8000,
 	StartingLevel = 5,

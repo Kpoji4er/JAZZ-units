@@ -1,5 +1,6 @@
 UndefineClass('Jazz_Cord')
 DefineClass.Jazz_Cord = {
+	DurationDiscount = "none",
 	Affiliation = "MERC",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
@@ -119,8 +120,8 @@ DefineClass.Jazz_Cord = {
 			'Text', T(890000000004418, --[[ModItemUnitDataCompositeDef Jazz_Cord Text RehireOutro ChatMessage voice:Jazz_Cord]] "Остаюсь. Кажется."),
 		}),
 	},
-	MedicalDeposit = "small",
-	StartingSalary = 550,
+	MedicalDeposit = "none",
+	StartingSalary = 250,
 	SalaryIncrease = 150,
 	SalaryLv1 = 250,
 	SalaryMaxLv = 1800,

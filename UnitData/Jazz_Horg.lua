@@ -1,5 +1,6 @@
 UndefineClass('Jazz_Horg')
 DefineClass.Jazz_Horg = {
+	DurationDiscount = "none",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -146,8 +147,9 @@ DefineClass.Jazz_Horg = {
 		"Jazz_Biff",
 	},
 	Dislikes = {
-		"Jazz_Colby",
-	},
+					"Jazz_Colby",
+					"Meltdown",
+				},
 	StartingPerks = {
 		"Jazz_Perk_Horg",
 		"HeavyWeaponsTraining",
@@ -162,7 +164,7 @@ DefineClass.Jazz_Horg = {
 	Equipment = {
 		"Loot_JAZZ_Horg",
 	},
-	Tier = "Veteran",
+	Tier = "Legendary",
 	Specialization = "HeavyWeapons",
 	pollyvoice = "Matthew",
 	gender = "Male",

@@ -124,7 +124,7 @@ DefineClass.Jazz_Manuel = {
 	},
 	MedicalDeposit = "small",
 	StartingSalary = 600,
-	SalaryIncrease = 200,
+	SalaryIncrease = 180,
 	SalaryLv1 = 300,
 	SalaryMaxLv = 2000,
 	StartingLevel = 4,
@@ -133,9 +133,14 @@ DefineClass.Jazz_Manuel = {
 	end,
 	MaxHitPoints = 72,
 	Likes = {
-		"Jazz_Miguel",
-	},
-	Dislikes = {},
+					"Jazz_Miguel",
+					"Jazz_Carlos",
+					"Jazz_Grom",
+				},
+	Dislikes = {
+					"Jazz_Ira",
+					"Jazz_Mike",
+				},
 	StartingPerks = {
 		"Jazz_Perk_Manuel",
 		"Stealthy",

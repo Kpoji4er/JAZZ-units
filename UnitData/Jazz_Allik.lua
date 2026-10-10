@@ -1,5 +1,7 @@
 UndefineClass('Jazz_Allik')
 DefineClass.Jazz_Allik = {
+	DurationDiscount = "long only",
+	Haggling = "low",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -132,8 +134,8 @@ DefineClass.Jazz_Allik = {
 		}),
 	},
 	MedicalDeposit = "small",
-	StartingSalary = 2600,
-	SalaryIncrease = 200,
+	StartingSalary = 1300,
+	SalaryIncrease = 230,
 	SalaryLv1 = 1100,
 	SalaryMaxLv = 6000,
 	StartingLevel = 3,
@@ -146,9 +148,9 @@ DefineClass.Jazz_Allik = {
 		"Jazz_Grace",
 	},
 	Dislikes = {
-		"Sidney",
-		"DrQ",
-	},
+					"Sidney",
+					"Reaper",
+				},
 	StartingPerks = {
 		"Jazz_Perk_Allik",
 		"MrFixit",
@@ -162,7 +164,7 @@ DefineClass.Jazz_Allik = {
 	Equipment = {
 		"Loot_JAZZ_Allik",
 	},
-	Tier = "Elite",
+	Tier = "Veteran",
 	Specialization = "HeavyWeapons",
 	pollyvoice = "Matthew",
 	gender = "Male",

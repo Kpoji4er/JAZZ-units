@@ -118,7 +118,7 @@ DefineClass.Jazz_Grom = {
 		}),
 	},
 	MedicalDeposit = "none",
-	StartingSalary = 2500,
+	StartingSalary = 2300,
 	SalaryIncrease = 200,
 	SalaryLv1 = 1000,
 	SalaryMaxLv = 6000,
@@ -134,8 +134,8 @@ DefineClass.Jazz_Grom = {
 		"Jazz_Iggy",
 	},
 	Dislikes = {
-		"Scope",
-	},
+					"Hitman",
+				},
 	StartingPerks = {
 		"Jazz_Perk_Grom",
 		"HeavyWeaponsTraining",
@@ -150,7 +150,7 @@ DefineClass.Jazz_Grom = {
 	Equipment = {
 		"Loot_JAZZ_Grom",
 	},
-	Tier = "Veteran",
+	Tier = "Elite",
 	Specialization = "HeavyWeapons",
 	pollyvoice = "Matthew",
 	gender = "Male",

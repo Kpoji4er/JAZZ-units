@@ -12,7 +12,7 @@ DefineClass.Fox = {
 	Wisdom = 76,
 	Will = 55,
 	Leadership = 21,
-	Marksmanship = 69,
+	Marksmanship = 63,
 	Mechanical = 15,
 	Explosives = 8,
 	Medical = 69,
@@ -201,8 +201,9 @@ DefineClass.Fox = {
 		"Fauda",
 	},
 	Dislikes = {
-		"Steroid",
-	},
+					"Steroid",
+					"Jazz_Nervous",
+				},
 	LearnToDislike = {
 		"Smiley",
 	},

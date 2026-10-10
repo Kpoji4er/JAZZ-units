@@ -1,5 +1,8 @@
 UndefineClass('Nails')
 DefineClass.Nails = {
+	Dislikes = {
+					"Jazz_Biff",
+				},
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -149,8 +152,9 @@ DefineClass.Nails = {
 	StartingLevel = 4,
 	MaxHitPoints = 72,
 	Likes = {
-		"Fox",
-	},
+					"Fox",
+					"Jazz_Bull",
+				},
 	StartingPerks = {
 		"MeleeTraining",
 		"Psycho",

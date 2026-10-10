@@ -160,9 +160,10 @@ DefineClass.Thor = {
 	StartingLevel = 3,
 	MaxHitPoints = 96,
 	Likes = {
-		"Ice",
-		"Jazz_Spider",
-	},
+					"Ice",
+					"Jazz_Spider",
+					"Jazz_Static",
+				},
 	LearnToLike = {
 		"Omryn",
 	},

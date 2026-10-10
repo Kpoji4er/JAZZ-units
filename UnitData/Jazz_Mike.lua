@@ -99,7 +99,7 @@ DefineClass.Jazz_Mike = {
 		}),
 	},
 	MedicalDeposit = "large",
-	StartingSalary = 4000,
+	StartingSalary = 9999,
 	SalaryIncrease = 200,
 	SalaryLv1 = 2000,
 	SalaryMaxLv = 9000,
@@ -110,9 +110,12 @@ DefineClass.Jazz_Mike = {
 	end,
 	MaxHitPoints = 90,
 	Likes = {
-		"Steroid",
-	},
-	Dislikes = {},
+					"Scully",
+				},
+	Dislikes = {
+					"Gus",
+					"Ivan",
+				},
 	StartingPerks = {
 		"Jazz_Perk_Mike",
 		"Loner",
@@ -129,7 +132,7 @@ DefineClass.Jazz_Mike = {
 	Equipment = {
 		"Loot_JAZZ_Mike",
 	},
-	Tier = "Elite",
+	Tier = "Legendary",
 	Specialization = "Autoriflemen",
 	pollyvoice = "Matthew",
 	gender = "Male",

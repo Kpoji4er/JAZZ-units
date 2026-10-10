@@ -1,5 +1,6 @@
 UndefineClass('Jazz_Ricochet')
 DefineClass.Jazz_Ricochet = {
+	DurationDiscount = "none",
 	Affiliation = "MERC",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
@@ -151,7 +152,7 @@ DefineClass.Jazz_Ricochet = {
 		}),
 	},
 	MedicalDeposit = "small",
-	StartingSalary = 800,
+	StartingSalary = 900,
 	SalaryIncrease = 150,
 	SalaryLv1 = 350,
 	SalaryMaxLv = 2400,
@@ -181,7 +182,7 @@ DefineClass.Jazz_Ricochet = {
 	Equipment = {
 		"Loot_JAZZ_Ricochet",
 	},
-	Tier = "Regular",
+	Tier = "Veteran",
 	Specialization = "Marksmen",
 	pollyvoice = "Matthew",
 	gender = "Male",

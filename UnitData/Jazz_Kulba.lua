@@ -1,5 +1,14 @@
 UndefineClass('Jazz_Kulba')
 DefineClass.Jazz_Kulba = {
+	Dislikes = {
+					"Ivan",
+					"Igor",
+					"Jazz_Ricochet",
+				},
+	DurationDiscount = "long only",
+	Likes = {
+					"Gus",
+				},
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -34,9 +43,9 @@ DefineClass.Jazz_Kulba = {
 	PartingWords = { PlaceObj('ChatMessage', { 'Text', T(890000000004726, --[[ModItemUnitDataCompositeDef Jazz_Kulba Text PartingWords ChatMessage voice:Jazz_Kulba]] "За свободу. Я в деле.") }) },
 	RehireIntro = { PlaceObj('ChatMessage', { 'Text', T(890000000004727, --[[ModItemUnitDataCompositeDef Jazz_Kulba Text RehireIntro ChatMessage voice:Jazz_Kulba]] "Контракт заканчивается. Продлеваем?") }) },
 	RehireOutro = { PlaceObj('ChatMessage', { 'Text', T(890000000004728, --[[ModItemUnitDataCompositeDef Jazz_Kulba Text RehireOutro ChatMessage voice:Jazz_Kulba]] "Остаюсь. Есть ещё порох в пороховницах.") }) },
-	MedicalDeposit = "small",
-	StartingSalary = 800,
-	SalaryIncrease = 150,
+	MedicalDeposit = "large",
+	StartingSalary = 510,
+	SalaryIncrease = 220,
 	SalaryLv1 = 350,
 	SalaryMaxLv = 2200,
 	StartingLevel = 2,

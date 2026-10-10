@@ -1,5 +1,8 @@
 UndefineClass('Ice')
 DefineClass.Ice = {
+	Dislikes = {
+					"Jazz_Meat",
+				},
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 

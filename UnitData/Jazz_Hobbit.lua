@@ -1,5 +1,6 @@
 UndefineClass('Jazz_Hobbit')
 DefineClass.Jazz_Hobbit = {
+	DurationDiscount = "none",
 	Affiliation = "MERC",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
@@ -92,8 +93,8 @@ DefineClass.Jazz_Hobbit = {
 			'Text', T(890000000004517, --[[ModItemUnitDataCompositeDef Jazz_Hobbit Text RehireOutro ChatMessage voice:Jazz_Hobbit]] "Остаюсь. Всё равно хуже уже не будет."),
 		}),
 	},
-	MedicalDeposit = "small",
-	StartingSalary = 700,
+	MedicalDeposit = "large",
+	StartingSalary = 350,
 	SalaryIncrease = 150,
 	SalaryLv1 = 300,
 	SalaryMaxLv = 2200,

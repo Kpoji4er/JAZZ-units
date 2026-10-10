@@ -163,9 +163,10 @@ DefineClass.Buns = {
 		"Sidney",
 	},
 	Dislikes = {
-		"Fox",
-		"Reaper",
-	},
+					"Fox",
+					"Reaper",
+					"Jazz_Hobbit",
+				},
 	StartingPerks = {
 		"BunsPerk",
 		"Negotiator",

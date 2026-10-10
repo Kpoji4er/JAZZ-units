@@ -158,9 +158,10 @@ DefineClass.Jazz_Spider = {
 	end,
 	MaxHitPoints = 79,
 	Likes = {
-		"Vicki",
-		"Raven",
-	},
+						"Vicki",
+						"Raven",
+						"Jazz_Static",
+					},
 	Dislikes = {
 		"Buns",
 	},

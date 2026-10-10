@@ -162,9 +162,10 @@ DefineClass.Grizzly = {
 	end,
 	MaxHitPoints = 94,
 	Likes = {
-		"Shadow",
-		"Wolf",
-	},
+					"Shadow",
+					"Wolf",
+					"Jazz_Bull",
+				},
 	Dislikes = {
 		"DrQ",
 	},

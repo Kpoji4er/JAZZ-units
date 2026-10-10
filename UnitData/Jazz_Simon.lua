@@ -1,5 +1,6 @@
 UndefineClass('Jazz_Simon')
 DefineClass.Jazz_Simon = {
+	DurationDiscount = "long only",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -62,9 +63,9 @@ DefineClass.Jazz_Simon = {
 			'Text', T(890000000006663, --[[ModItemUnitDataCompositeDef Jazz_Simon Text RehireOutro ChatMessage voice:Jazz_Simon]] "Остаюсь."),
 		}),
 	},
-	MedicalDeposit = "none",
-	StartingSalary = 3500,
-	SalaryIncrease = 200,
+	MedicalDeposit = "large",
+	StartingSalary = 7001,
+	SalaryIncrease = 270,
 	SalaryLv1 = 1400,
 	SalaryMaxLv = 7000,
 	StartingLevel = 9,
@@ -74,9 +75,10 @@ DefineClass.Jazz_Simon = {
 	end,
 	MaxHitPoints = 85,
 	Likes = {
-		"Jazz_Benny",
-		"Reaper",
-	},
+					"Jazz_Benny",
+					"Reaper",
+					"Scully",
+				},
 	Dislikes = {},
 	StartingPerks = {
 		"Jazz_Perk_Simon",
@@ -93,7 +95,7 @@ DefineClass.Jazz_Simon = {
 	Equipment = {
 		"Loot_JAZZ_Ira",
 	},
-	Tier = "Elite",
+	Tier = "Legendary",
 	Specialization = "Marksmen",
 	pollyvoice = "Matthew",
 	gender = "Male",

@@ -118,7 +118,7 @@ DefineClass.Jazz_Iggy = {
 			'Text', T(890000000004843, --[[ModItemUnitDataCompositeDef Jazz_Iggy Text RehireOutro ChatMessage voice:Jazz_Iggy]] "Остаюсь. Совесть уже чище, чем при королеве."),
 		}),
 	},
-	MedicalDeposit = "small",
+	MedicalDeposit = "extreme",
 	StartingSalary = 1950,
 	SalaryIncrease = 200,
 	SalaryLv1 = 1950,
@@ -130,11 +130,11 @@ DefineClass.Jazz_Iggy = {
 	end,
 	MaxHitPoints = 88,
 	Likes = {
-		"Ivan",
-	},
+					"Ivan",
+				},
 	Dislikes = {
-		"Fidel",
-	},
+					"Fidel",
+				},
 	StartingPerks = {
 		"Jazz_Perk_Iggy",
 		"HeavyWeaponsTraining",
@@ -149,7 +149,7 @@ DefineClass.Jazz_Iggy = {
 	Equipment = {
 		"Loot_JAZZ_Iggy",
 	},
-	Tier = "Veteran",
+	Tier = "Elite",
 	Specialization = "HeavyWeapons",
 	pollyvoice = "Matthew",
 	gender = "Male",

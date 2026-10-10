@@ -1,5 +1,7 @@
 UndefineClass('Jazz_Benny')
 DefineClass.Jazz_Benny = {
+	DurationDiscount = "long only",
+	Haggling = "high",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -62,8 +64,8 @@ DefineClass.Jazz_Benny = {
 			'Text', T(890000000006637, --[[ModItemUnitDataCompositeDef Jazz_Benny Text RehireOutro ChatMessage voice:Jazz_Benny]] "Остаюсь."),
 		}),
 	},
-	MedicalDeposit = "none",
-	StartingSalary = 2200,
+	MedicalDeposit = "large",
+	StartingSalary = 2700,
 	SalaryIncrease = 200,
 	SalaryLv1 = 900,
 	SalaryMaxLv = 5000,
@@ -74,9 +76,10 @@ DefineClass.Jazz_Benny = {
 	end,
 	MaxHitPoints = 91,
 	Likes = {
-		"Jazz_Simon",
-		"Jazz_Lynx",
-	},
+					"Jazz_Simon",
+					"Jazz_Lynx",
+					"Jazz_Colby",
+				},
 	Dislikes = {},
 	StartingPerks = {
 		"Jazz_Perk_Benny",
@@ -93,7 +96,7 @@ DefineClass.Jazz_Benny = {
 	Equipment = {
 		"Loot_JAZZ_Ira",
 	},
-	Tier = "Veteran",
+	Tier = "Legendary",
 	Specialization = "Mechanic",
 	pollyvoice = "Amy",
 	gender = "Female",

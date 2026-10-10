@@ -1,5 +1,6 @@
 UndefineClass('Jazz_Quinten')
 DefineClass.Jazz_Quinten = {
+	DurationDiscount = "long only",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -109,7 +110,7 @@ DefineClass.Jazz_Quinten = {
 		}),
 	},
 	MedicalDeposit = "large",
-	StartingSalary = 3000,
+	StartingSalary = 1200,
 	SalaryIncrease = 200,
 	SalaryLv1 = 1500,
 	SalaryMaxLv = 7500,
@@ -121,9 +122,10 @@ DefineClass.Jazz_Quinten = {
 	MaxHitPoints = 99,
 	Likes = {},
 	Dislikes = {
-		"Steroid",
-		"Jazz_Biff",
-	},
+					"Steroid",
+					"Jazz_Biff",
+					"Jazz_Meat",
+				},
 	StartingPerks = {
 		"Jazz_Perk_Quinten",
 		"Loner",

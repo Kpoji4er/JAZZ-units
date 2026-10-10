@@ -1,5 +1,8 @@
 UndefineClass('Sidney')
 DefineClass.Sidney = {
+	Dislikes = {
+					"Jazz_Nervous",
+				},
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -122,7 +125,7 @@ DefineClass.Sidney = {
 			'Text', T(962444405635, --[[ModItemUnitDataCompositeDef Sidney Text RehireOutro ChatMessage voice:Sidney]] "Jolly good! I enjoy getting those minor technicalities out of the way so I can concentrate on the matters at hand."),
 		}),
 	},
-	StartingSalary = 3600,
+	StartingSalary = 2200,
 	SalaryIncrease = 220,
 	SalaryLv1 = 370,
 	SalaryMaxLv = 4200,
@@ -130,8 +133,9 @@ DefineClass.Sidney = {
 	StartingLevel = 5,
 	MaxHitPoints = 80,
 	Likes = {
-		"Scope",
-	},
+					"Scope",
+					"Jazz_Rothman",
+				},
 	StartingPerks = {
 		"Throwing",
 		"Negotiator",

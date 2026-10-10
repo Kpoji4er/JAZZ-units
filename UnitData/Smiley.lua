@@ -1,5 +1,8 @@
 UndefineClass('Smiley')
 DefineClass.Smiley = {
+	DurationDiscount = "none",
+	SalaryIncrease = 150,
+	StartingSalary = 480,
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -58,7 +61,7 @@ DefineClass.Smiley = {
 			'Name', "SmileyNPC",
 		}),
 	},
-	Specialization = "AllRounder",
+	Specialization = "Autoriflemen",
 	gender = "Male",
 	VoiceResponseId = "Smiley",
 }

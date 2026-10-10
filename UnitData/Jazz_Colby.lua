@@ -159,7 +159,7 @@ DefineClass.Jazz_Colby = {
 	SalaryIncrease = 200,
 	SalaryLv1 = 1200,
 	SalaryMaxLv = 7000,
-	StartingLevel = 2,
+	StartingLevel = 3,
 	CustomEquipGear = function (self, items)
 		self:TryEquip(items, "Handheld A", "Firearm")
 		self:TryEquip(items, "Handheld B", "Firearm")
@@ -186,7 +186,7 @@ DefineClass.Jazz_Colby = {
 	Equipment = {
 		"Loot_JAZZ_Colby",
 	},
-	Tier = "Elite",
+	Tier = "Veteran",
 	Specialization = "Mechanic",
 	pollyvoice = "Matthew",
 	gender = "Male",

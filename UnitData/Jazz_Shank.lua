@@ -1,5 +1,7 @@
 UndefineClass('Jazz_Shank')
 DefineClass.Jazz_Shank = {
+	DurationDiscount = "none",
+	Haggling = "high",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -35,9 +37,9 @@ DefineClass.Jazz_Shank = {
 	RehireIntro = { PlaceObj('ChatMessage', { 'Text', T(890000000004663, --[[ModItemUnitDataCompositeDef Jazz_Shank Text RehireIntro ChatMessage voice:Jazz_Shank]] "Contract ending?") }) },
 	RehireOutro = { PlaceObj('ChatMessage', { 'Text', T(890000000004664, --[[ModItemUnitDataCompositeDef Jazz_Shank Text RehireOutro ChatMessage voice:Jazz_Shank]] "Staying.") }) },
 	MedicalDeposit = "none",
-	StartingSalary = 50,
-	SalaryIncrease = 150,
-	SalaryLv1 = 20,
+	StartingSalary = 25,
+	SalaryIncrease = 300,
+	SalaryLv1 = 19,
 	SalaryMaxLv = 400,
 	StartingLevel = 1,
 	CustomEquipGear = function (self, items)

@@ -116,9 +116,9 @@ DefineClass.Jazz_Rothman = {
 			'Text', T(890000000002450, --[[ModItemUnitDataCompositeDef Jazz_Rothman Text RehireOutro ChatMessage voice:Jazz_Rothman]] "Остаюсь. Работа ещё не закончена."),
 		}),
 	},
-	MedicalDeposit = "small",
-	StartingSalary = 2200,
-	SalaryIncrease = 200,
+	MedicalDeposit = "large",
+	StartingSalary = 1450,
+	SalaryIncrease = 232,
 	SalaryLv1 = 900,
 	SalaryMaxLv = 5500,
 	StartingLevel = 5,
@@ -127,7 +127,9 @@ DefineClass.Jazz_Rothman = {
 		self:TryEquip(items, "Handheld B", "Firearm")
 	end,
 	MaxHitPoints = 97,
-	Likes = {},
+	Likes = {
+					"Meltdown",
+				},
 	Dislikes = {
 		"Jazz_Static",
 		"Nails",

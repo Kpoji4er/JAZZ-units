@@ -1,5 +1,7 @@
 UndefineClass('Flay')
 DefineClass.Flay = {
+	DurationDiscount = "long only",
+	StartingSalary = 1200,
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -15,7 +17,7 @@ DefineClass.Flay = {
 	Marksmanship = 84,
 	Mechanical = 18,
 	Explosives = 0,
-	Medical = 50,
+	Medical = 36,
 	Portrait = "UI/MercsPortraits/Flay",
 	BigPortrait = "UI/Mercs/Flay",
 	IsMercenary = true,

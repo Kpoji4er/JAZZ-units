@@ -1,5 +1,6 @@
 UndefineClass('Jazz_Vince')
 DefineClass.Jazz_Vince = {
+	DurationDiscount = "none",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -34,8 +35,8 @@ DefineClass.Jazz_Vince = {
 	PartingWords = { PlaceObj('ChatMessage', { 'Text', T(890000000004678, --[[ModItemUnitDataCompositeDef Jazz_Vince Text PartingWords ChatMessage voice:Jazz_Vince]] "Готов учить и лечить. Иду.") }) },
 	RehireIntro = { PlaceObj('ChatMessage', { 'Text', T(890000000004679, --[[ModItemUnitDataCompositeDef Jazz_Vince Text RehireIntro ChatMessage voice:Jazz_Vince]] "Контракт заканчивается. Продлеваем?") }) },
 	RehireOutro = { PlaceObj('ChatMessage', { 'Text', T(890000000004680, --[[ModItemUnitDataCompositeDef Jazz_Vince Text RehireOutro ChatMessage voice:Jazz_Vince]] "Остаюсь. Ещё многому могу научить.") }) },
-	MedicalDeposit = "small",
-	StartingSalary = 1200,
+	MedicalDeposit = "extreme",
+	StartingSalary = 500,
 	SalaryIncrease = 150,
 	SalaryLv1 = 500,
 	SalaryMaxLv = 4000,

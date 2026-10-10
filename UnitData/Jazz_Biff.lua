@@ -1,5 +1,6 @@
 UndefineClass('Jazz_Biff')
 DefineClass.Jazz_Biff = {
+	DurationDiscount = "none",
 	Affiliation = "MERC",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
@@ -128,7 +129,7 @@ DefineClass.Jazz_Biff = {
 		}),
 	},
 	MedicalDeposit = "small",
-	StartingSalary = 600,
+	StartingSalary = 400,
 	SalaryIncrease = 200,
 	SalaryLv1 = 300,
 	SalaryMaxLv = 2000,

@@ -1,5 +1,6 @@
 UndefineClass('Jazz_Gaston')
 DefineClass.Jazz_Gaston = {
+	DurationDiscount = "none",
 	Affiliation = "MERC",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
@@ -132,9 +133,9 @@ DefineClass.Jazz_Gaston = {
 			'Text', T(890000000003519, --[[ModItemUnitDataCompositeDef Jazz_Gaston Text RehireOutro ChatMessage voice:Jazz_Gaston]] "Остаюсь. Крыши здесь превосходные."),
 		}),
 	},
-	MedicalDeposit = "small",
-	StartingSalary = 2500,
-	SalaryIncrease = 200,
+	MedicalDeposit = "large",
+	StartingSalary = 2111,
+	SalaryIncrease = 240,
 	SalaryLv1 = 1000,
 	SalaryMaxLv = 6000,
 	StartingLevel = 6,
@@ -148,9 +149,10 @@ DefineClass.Jazz_Gaston = {
 		"Fox",
 	},
 	Dislikes = {
-		"Jazz_Vicious",
-		"Jazz_Biff",
-	},
+					"Jazz_Vicious",
+					"Jazz_Biff",
+					"Jazz_Flo",
+				},
 	StartingPerks = {
 		"Jazz_Perk_Gaston",
 		"TakeAim",
@@ -166,7 +168,7 @@ DefineClass.Jazz_Gaston = {
 	Equipment = {
 		"Loot_JAZZ_Gaston",
 	},
-	Tier = "Elite",
+	Tier = "Legendary",
 	Specialization = "Marksmen",
 	pollyvoice = "Matthew",
 	gender = "Male",

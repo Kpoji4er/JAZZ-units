@@ -1,5 +1,6 @@
 UndefineClass('Jazz_Ira')
 DefineClass.Jazz_Ira = {
+	Haggling = "low",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -118,7 +119,7 @@ DefineClass.Jazz_Ira = {
 		}),
 	},
 	MedicalDeposit = "none",
-	StartingSalary = 400,
+	StartingSalary = 280,
 	SalaryIncrease = 200,
 	SalaryLv1 = 200,
 	SalaryMaxLv = 1500,

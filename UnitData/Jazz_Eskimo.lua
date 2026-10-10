@@ -1,5 +1,12 @@
 UndefineClass('Jazz_Eskimo')
 DefineClass.Jazz_Eskimo = {
+	DurationDiscount = "long only",
+	Haggling = "low",
+	Likes = {
+					"Jazz_Miguel",
+					"Jazz_Carlos",
+					"Jazz_Gamos",
+				},
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -35,7 +42,7 @@ DefineClass.Jazz_Eskimo = {
 	RehireIntro = { PlaceObj('ChatMessage', { 'Text', T(890000000004823, --[[ModItemUnitDataCompositeDef Jazz_Eskimo Text RehireIntro ChatMessage voice:Jazz_Eskimo]] "Контракт заканчивается. Продлеваем?") }) },
 	RehireOutro = { PlaceObj('ChatMessage', { 'Text', T(890000000004824, --[[ModItemUnitDataCompositeDef Jazz_Eskimo Text RehireOutro ChatMessage voice:Jazz_Eskimo]] "Остаюсь. Тюрьма научила меня терпению.") }) },
 	MedicalDeposit = "none",
-	StartingSalary = 400,
+	StartingSalary = 1600,
 	SalaryIncrease = 150,
 	SalaryLv1 = 150,
 	SalaryMaxLv = 1500,

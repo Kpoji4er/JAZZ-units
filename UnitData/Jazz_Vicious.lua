@@ -131,7 +131,7 @@ DefineClass.Jazz_Vicious = {
 		}),
 	},
 	MedicalDeposit = "small",
-	StartingSalary = 1800,
+	StartingSalary = 800,
 	SalaryIncrease = 200,
 	SalaryLv1 = 700,
 	SalaryMaxLv = 4500,
@@ -142,9 +142,10 @@ DefineClass.Jazz_Vicious = {
 	end,
 	MaxHitPoints = 88,
 	Likes = {
-		"Fox",
-		"Jazz_Spider",
-	},
+					"Fox",
+					"Jazz_Spider",
+					"Meltdown",
+				},
 	Dislikes = {},
 	StartingPerks = {
 		"Jazz_Perk_Vicious",

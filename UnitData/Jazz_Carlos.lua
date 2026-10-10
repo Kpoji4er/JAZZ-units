@@ -1,5 +1,14 @@
 UndefineClass('Jazz_Carlos')
 DefineClass.Jazz_Carlos = {
+	DurationDiscount = "long only",
+	Haggling = "low",
+	Likes = {
+					"Jazz_Miguel",
+					"Jazz_Ira",
+					"Jazz_Dimitri",
+					"Jazz_Manuel",
+					"Jazz_Eskimo",
+				},
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -35,7 +44,7 @@ DefineClass.Jazz_Carlos = {
 	RehireIntro = { PlaceObj('ChatMessage', { 'Text', T(890000000004631, --[[ModItemUnitDataCompositeDef Jazz_Carlos Text RehireIntro ChatMessage voice:Jazz_Carlos]] "Контракт заканчивается. Продлеваем?") }) },
 	RehireOutro = { PlaceObj('ChatMessage', { 'Text', T(890000000004632, --[[ModItemUnitDataCompositeDef Jazz_Carlos Text RehireOutro ChatMessage voice:Jazz_Carlos]] "Остаюсь. Хуже уже не будет.") }) },
 	MedicalDeposit = "small",
-	StartingSalary = 450,
+	StartingSalary = 1100,
 	SalaryIncrease = 150,
 	SalaryLv1 = 200,
 	SalaryMaxLv = 1500,
@@ -56,7 +65,7 @@ DefineClass.Jazz_Carlos = {
 	},
 	AppearancesList = { PlaceObj('AppearanceWeight', { 'Preset', "Carlos" }) },
 	Equipment = { "Loot_JAZZ_Carlos" },
-	Tier = "Regular",
+	Tier = "Veteran",
 	Specialization = "Stealth",
 	pollyvoice = "Matthew",
 	gender = "Male",

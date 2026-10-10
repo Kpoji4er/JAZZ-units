@@ -1,5 +1,6 @@
 UndefineClass('Jazz_Madman')
 DefineClass.Jazz_Madman = {
+	DurationDiscount = "none",
 	Affiliation = "MERC",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
@@ -99,8 +100,8 @@ DefineClass.Jazz_Madman = {
 		}),
 	},
 	MedicalDeposit = "none",
-	StartingSalary = 900,
-	SalaryIncrease = 200,
+	StartingSalary = 394,
+	SalaryIncrease = 150,
 	SalaryLv1 = 400,
 	SalaryMaxLv = 2500,
 	StartingLevel = 1,

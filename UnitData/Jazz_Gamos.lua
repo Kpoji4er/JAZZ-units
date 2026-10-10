@@ -1,5 +1,6 @@
 UndefineClass('Jazz_Gamos')
 DefineClass.Jazz_Gamos = {
+	Haggling = "low",
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 

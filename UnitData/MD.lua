@@ -1,5 +1,8 @@
 UndefineClass('MD')
 DefineClass.MD = {
+	Likes = {
+					"Jazz_Quinten",
+				},
 	__parents = { "UnitData" },
 	__generated_by_class = "ModItemUnitDataCompositeDef",
 
@@ -12,10 +15,10 @@ DefineClass.MD = {
 	Wisdom = 94,
 	Will = 68,
 	Leadership = 4,
-	Marksmanship = 68,
+	Marksmanship = 61,
 	Mechanical = 7,
 	Explosives = 0,
-	Medical = 81,
+	Medical = 76,
 	Portrait = "UI/MercsPortraits/MD",
 	BigPortrait = "UI/Mercs/MD",
 	IsMercenary = true,

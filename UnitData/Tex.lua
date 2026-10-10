@@ -100,9 +100,11 @@ DefineClass.Tex = {
 	end,
 	MaxHitPoints = 81,
 	Likes = {
-		"Fox",
-		"Larry",
-	},
+					"Fox",
+					"Larry",
+					"Larry_Clean",
+					"Jazz_Mike",
+				},
 	StartingPerks = {
 		"Ambidextrous",
 		"CQCTraining",
